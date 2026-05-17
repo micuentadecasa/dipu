@@ -11,7 +11,7 @@ If you want to test the exact production build that GitHub Pages will use:
    cd /Users/luis/projects/dipu/frontend                                                                                                               
    npm run build                                                                                                                                       
    npm run preview      
-                                                                                                                                  
+
  ```                                                                                                                                                   
                                                                                                                                                        
  Then open the preview URL shown, usually:                                                                                                             
@@ -35,7 +35,8 @@ If you want to test the exact production build that GitHub Pages will use:
                                                                                                                                                        
  ```text                                                                                                                                               
    Source: GitHub Actions                                                                                                                              
- ```                                                                                                                                                   
+ ```      
+                                                                                                                                              
                                                                                                                                                        
  5. Push to the main branch.                                                                                                                           
  6. GitHub will run the workflow in:                                                                                                                   
