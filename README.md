@@ -10,7 +10,8 @@ If you want to test the exact production build that GitHub Pages will use:
  ```bash                                                                                                                                               
    cd /Users/luis/projects/dipu/frontend                                                                                                               
    npm run build                                                                                                                                       
-   npm run preview                                                                                                                                     
+   npm run preview      
+                                                                                                                                  
  ```                                                                                                                                                   
                                                                                                                                                        
  Then open the preview URL shown, usually:                                                                                                             
