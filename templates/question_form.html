@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ 'Editar' if edit else 'Anadir' }} pregunta</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>{{ 'Editar' if edit else 'Anadir' }} pregunta</h1>
+        <p class="subtitle">Diputacion de Albacete - Disenador/a de Aplicaciones</p>
+    </header>
+
+    <main>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+        <div class="flash-messages">
+            {% for category, message in messages %}
+            <div class="flash flash-{{ category }}">{{ message }}</div>
+            {% endfor %}
+        </div>
+        {% endif %}
+        {% endwith %}
+
+        <form method="POST" class="question-form">
+            <div class="form-group">
+                <label for="topic_num">Tema:</label>
+                <select id="topic_num" name="topic_num" required>
+                    {% for t in topics %}
+                    <option value="{{ t.number }}" {{ 'selected' if data and data.topic_num == t.number else '' }}>
+                        {{ t.number }}. {{ t.title }}
+                    </option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="question">Pregunta:</label>
+                <textarea id="question" name="question" rows="3" required>{{ data.question if data else '' }}</textarea>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="option_a">Opcion A:</label>
+                    <input type="text" id="option_a" name="option_a" value="{{ data.option_a if data else '' }}" required>
+                </div>
+                <div class="form-group">
+                    <label for="option_b">Opcion B:</label>
+                    <input type="text" id="option_b" name="option_b" value="{{ data.option_b if data else '' }}" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="option_c">Opcion C:</label>
+                    <input type="text" id="option_c" name="option_c" value="{{ data.option_c if data else '' }}" required>
+                </div>
+                <div class="form-group">
+                    <label for="option_d">Opcion D:</label>
+                    <input type="text" id="option_d" name="option_d" value="{{ data.option_d if data else '' }}" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="correct">Respuesta correcta:</label>
+                <select id="correct" name="correct" required>
+                    <option value="A" {{ 'selected' if data and data.correct == 'A' else '' }}>A</option>
+                    <option value="B" {{ 'selected' if data and data.correct == 'B' else '' }}>B</option>
+                    <option value="C" {{ 'selected' if data and data.correct == 'C' else '' }}>C</option>
+                    <option value="D" {{ 'selected' if data and data.correct == 'D' else '' }}>D</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="explanation">Explicacion (opcional):</label>
+                <textarea id="explanation" name="explanation" rows="3">{{ data.explanation if data else '' }}</textarea>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary btn-lg">{{ 'Guardar cambios' if edit else 'Anadir pregunta' }}</button>
+                <a href="/questions" class="btn btn-secondary">Cancelar</a>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

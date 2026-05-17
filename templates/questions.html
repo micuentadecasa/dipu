@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Preguntas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <a href="/" class="home-icon" title="Inicio">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+        </a>
+        <h1>Gestion de Preguntas</h1>
+        <p class="subtitle">Anadir, editar o eliminar preguntas manualmente</p>
+    </header>
+
+    <main>
+        <div class="actions-top">
+            <a href="/question/add" class="btn btn-primary btn-lg">+ Anadir pregunta</a>
+            <a href="/" class="btn btn-secondary">Volver al inicio</a>
+        </div>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+        <div class="flash-messages">
+            {% for category, message in messages %}
+            <div class="flash flash-{{ category }}">{{ message }}</div>
+            {% endfor %}
+        </div>
+        {% endif %}
+        {% endwith %}
+
+        {% set ns = namespace(current_group="", current_topic=0) %}
+        {% for q in questions %}
+            {% set topic = topics_by_num.get(q.topic_num) %}
+            {% if topic and topic.group != ns.current_group %}
+                {% set ns.current_group = topic.group %}
+                <div class="group-header" style="margin-top:20px">
+                    <h2>{{ topic.group }}</h2>
+                </div>
+            {% endif %}
+            {% if q.topic_num != ns.current_topic %}
+                {% set ns.current_topic = q.topic_num %}
+                <div class="topic-subheader">
+                    <h3><span class="topic-num">{{ q.topic_num }}</span> {{ q.topic_title }}</h3>
+                </div>
+            {% endif %}
+
+            <div class="question-admin-card">
+                <div class="q-text">{{ loop.index }}. {{ q.question }}</div>
+                <div class="q-meta">
+                    <span class="q-correct">Respuesta: <strong>{{ q.correct }}</strong></span>
+                    <span class="q-id">ID: {{ q.id }}</span>
+                </div>
+                <div class="q-options-small">
+                    <span class="opt-sm {{ 'opt-correct-sm' if q.correct == 'A' }}">A. {{ q.option_a }}</span>
+                    <span class="opt-sm {{ 'opt-correct-sm' if q.correct == 'B' }}">B. {{ q.option_b }}</span>
+                    <span class="opt-sm {{ 'opt-correct-sm' if q.correct == 'C' }}">C. {{ q.option_c }}</span>
+                    <span class="opt-sm {{ 'opt-correct-sm' if q.correct == 'D' }}">D. {{ q.option_d }}</span>
+                </div>
+                {% if q.explanation %}
+                <div class="q-exp">{{ q.explanation }}</div>
+                {% endif %}
+                <div class="q-actions">
+                    <a href="/question/{{ q.id }}/edit" class="btn btn-sm btn-secondary">Editar</a>
+                    <form action="/question/{{ q.id }}/delete" method="POST" class="inline-form">
+                        <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Eliminar esta pregunta?')">Eliminar</button>
+                    </form>
+                </div>
+            </div>
+        {% else %}
+            <p class="no-data">No hay preguntas en la base de datos. <a href="/question/add">Anade la primera</a> o <a href="/">genera desde el temario</a>.</p>
+        {% endfor %}
+    </main>
+</body>
+</html>

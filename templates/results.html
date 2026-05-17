@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados del Examen</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <a href="/" class="home-icon" title="Inicio">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+        </a>
+        <h1>Resultados</h1>
+    </header>
+
+    <main>
+        <div class="score-card {{ 'passed' if passed else 'failed' }}">
+            <div class="score-value">{{ "%.2f" | format(score) }}</div>
+            <div class="score-label">sobre 10</div>
+            <div class="score-status">{{ 'APROBADO' if passed else 'SUSPENSO' }}</div>
+            <div class="score-breakdown">
+                <span class="stat-ok">{{ correct }} aciertos</span>
+                <span class="stat-bad">{{ wrong }} fallos</span>
+                <span class="stat-blank">{{ blank }} en blanco</span>
+                <span class="stat-total">de {{ total }}</span>
+            </div>
+        </div>
+
+        <div class="details-header">
+            <h2>Revision detallada</h2>
+            <button type="button" class="btn btn-sm" onclick="toggleExplanations()">Mostrar/Ocultar explicaciones</button>
+        </div>
+
+        <div class="details-list">
+            {% for d in details %}
+            <div class="detail-item {{ 'detail-ok' if d.is_correct else ('detail-blank' if d.is_blank else 'detail-wrong') }}">
+                <div class="detail-top">
+                    <span class="detail-num">{{ loop.index }}</span>
+                    <span class="detail-question">{{ d.question }}</span>
+                </div>
+                <div class="detail-options">
+                    <div class="opt {{ 'opt-correct' if d.correct == 'A' }} {{ 'opt-selected' if d.selected == 'A' }}">A. {{ d.option_a }}</div>
+                    <div class="opt {{ 'opt-correct' if d.correct == 'B' }} {{ 'opt-selected' if d.selected == 'B' }}">B. {{ d.option_b }}</div>
+                    <div class="opt {{ 'opt-correct' if d.correct == 'C' }} {{ 'opt-selected' if d.selected == 'C' }}">C. {{ d.option_c }}</div>
+                    <div class="opt {{ 'opt-correct' if d.correct == 'D' }} {{ 'opt-selected' if d.selected == 'D' }}">D. {{ d.option_d }}</div>
+                </div>
+                <div class="detail-answer">
+                    Correcta: <strong>{{ d.correct }}</strong>
+                    {% if not d.is_correct and not d.is_blank %}
+                    | Tu respuesta: <strong class="wrong-answer">{{ d.selected }}</strong>
+                    {% elif d.is_blank %}
+                    | Sin respuesta
+                    {% endif %}
+                </div>
+                {% if d.explanation %}
+                <div class="detail-explanation" style="display:none">
+                    <strong>Explicacion:</strong> {{ d.explanation }}
+                </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="results-actions">
+            <a href="/exam?count={{ total }}" class="btn btn-primary">Nuevo examen (mismo config)</a>
+            <a href="/exam/custom" class="btn btn-secondary">Examen personalizado</a>
+            <a href="/" class="btn btn-secondary">Inicio</a>
+        </div>
+    </main>
+
+    <script>
+        function toggleExplanations() {
+            document.querySelectorAll('.detail-explanation').forEach(el => {
+                el.style.display = el.style.display === 'none' ? 'block' : 'none';
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen - {{ count }} preguntas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="exam-page">
+    <header class="exam-header">
+        <a href="/" class="home-icon" title="Inicio">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+        </a>
+        <h1>Examen</h1>
+        <div class="exam-info">
+            <span>{{ count }} preguntas</span>
+            <span id="timer">00:00</span>
+        </div>
+    </header>
+
+    <main>
+        <form action="/results" method="POST" id="examForm">
+            <input type="hidden" name="questions" value='{{ questions | tojson | forceescape }}'>
+
+            {% for q in questions %}
+            <div class="question-card" id="q-{{ loop.index }}">
+                <div class="question-num">{{ loop.index }} / {{ count }}</div>
+                <div class="question-text">{{ q.question }}</div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q_{{ q.id }}" value="A">
+                        <span class="opt-label">A</span>
+                        <span class="opt-text">{{ q.option_a }}</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q_{{ q.id }}" value="B">
+                        <span class="opt-label">B</span>
+                        <span class="opt-text">{{ q.option_b }}</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q_{{ q.id }}" value="C">
+                        <span class="opt-label">C</span>
+                        <span class="opt-text">{{ q.option_c }}</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q_{{ q.id }}" value="D">
+                        <span class="opt-label">D</span>
+                        <span class="opt-text">{{ q.option_d }}</span>
+                    </label>
+                </div>
+            </div>
+            {% endfor %}
+
+            <div class="exam-actions">
+                <button type="submit" class="btn btn-primary btn-lg">Entregar examen</button>
+                <a href="/" class="btn btn-secondary">Cancelar</a>
+            </div>
+        </form>
+    </main>
+
+    <script>
+        let seconds = 0;
+        const timerEl = document.getElementById('timer');
+        setInterval(() => {
+            seconds++;
+            const m = String(Math.floor(seconds / 60)).padStart(2, '0');
+            const s = String(seconds % 60).padStart(2, '0');
+            timerEl.textContent = `${m}:${s}`;
+        }, 1000);
+
+        // Warn before leaving with unanswered questions
+        window.addEventListener('beforeunload', (e) => {
+            const total = {{ count }};
+            const answered = document.querySelectorAll('input[type="radio"]:checked').length;
+            if (answered < total) {
+                e.preventDefault();
+                e.returnValue = '';
+            }
+        });
+    </script>
+</body>
+</html>

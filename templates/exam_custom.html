@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Personalizado</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <a href="/" class="home-icon" title="Inicio">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+        </a>
+        <h1>Examen Personalizado</h1>
+        <p class="subtitle">Selecciona temas y numero de preguntas</p>
+    </header>
+
+    <main>
+        <form action="/exam" method="GET" class="custom-exam-form">
+            <div class="form-group">
+                <label for="count">Numero de preguntas:</label>
+                <input type="number" id="count" name="count" value="40" min="1" max="200">
+            </div>
+
+            <div class="form-group">
+                <label>Seleccionar temas:</label>
+                <div class="topic-checkboxes">
+                    {% set ns = namespace(current_group="") %}
+                    {% for topic in topics %}
+                        {% if topic.group != ns.current_group %}
+                            {% set ns.current_group = topic.group %}
+                            <div class="group-label">{{ topic.group }}</div>
+                        {% endif %}
+                        <label class="topic-check">
+                            <input type="checkbox" name="topics" value="{{ topic.number }}" checked>
+                            <span class="check-num">{{ topic.number }}</span>
+                            <span class="check-title">{{ topic.title }}</span>
+                            <span class="check-count">({{ counts.get(topic.number, 0) }})</span>
+                        </label>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="button" class="btn btn-secondary" onclick="toggleAll(true)">Marcar todos</button>
+                <button type="button" class="btn btn-secondary" onclick="toggleAll(false)">Desmarcar todos</button>
+                <button type="submit" class="btn btn-primary btn-lg">Comenzar examen</button>
+                <a href="/" class="btn btn-secondary">Volver</a>
+            </div>
+        </form>
+    </main>
+
+    <script>
+        function toggleAll(checked) {
+            document.querySelectorAll('input[name="topics"]').forEach(cb => cb.checked = checked);
+        }
+    </script>
+</body>
+</html>
