@@ -964,89 +964,195 @@ SEED_QUESTIONS = [
 
 
 # =====================================================================
-# EXTRA QUESTIONS GENERATED FROM temario.md
+# EXTRA QUESTIONS CURATED FROM temario.md
 # =====================================================================
-# The first 80 questions above are detailed questions. The following block
-# expands the bank with additional mobile-study questions for every tema.
-# They are intentionally static/deterministic so the GitHub Pages app can
-# work without a backend.
+# The first 80 questions above are detailed questions. This block adds
+# shorter mobile-study questions, but avoids generic prompts such as
+# "que contenido es clave". Each question asks for a concrete concept,
+# tool, law, principle, protocol, command, framework feature, or module.
 
-_TOPIC_STUDY_POINTS = {
-    1: ["estructura de la Constitucion", "Titulo Preliminar", "derechos y deberes fundamentales", "Cortes Generales"],
-    2: ["Gobierno y Administracion", "relaciones Gobierno-Cortes", "organizacion territorial", "comunidades autonomas"],
-    3: ["organizacion municipal", "alcalde y pleno", "organizacion provincial", "diputacion provincial"],
-    4: ["texto refundido de regimen local", "ROF", "organizacion de entidades locales", "funcionamiento local"],
-    5: ["interesados en el procedimiento", "capacidad de obrar", "representacion", "registros administrativos"],
-    6: ["actividad administrativa", "requisitos del acto administrativo", "eficacia de los actos", "nulidad y anulabilidad"],
-    7: ["prevencion de riesgos laborales", "principios de accion preventiva", "derecho a proteccion eficaz", "obligaciones de trabajadores"],
-    8: ["igualdad efectiva", "discriminacion por razon de sexo", "igualdad en el trabajo", "violencia de genero en Castilla-La Mancha"],
-    9: ["firma electronica", "certificado digital", "AutoFirma", "validacion de firma"],
-    10: ["cifrado simetrico y asimetrico", "PKI", "SSL/TLS", "PGP"],
-    11: ["Esquema Nacional de Seguridad", "politica de seguridad", "medidas de seguridad", "categorias de sistemas"],
-    12: ["proteccion de datos personales", "RGPD", "principios del tratamiento", "derechos de las personas interesadas"],
-    13: ["arquitectura servidor PostgreSQL", "procesos de servidor", "cluster de bases de datos", "conexion cliente-servidor"],
-    14: ["jerarquia de objetos PostgreSQL", "esquemas", "funciones", "roles y permisos"],
-    15: ["transacciones PostgreSQL", "ACID", "COMMIT y ROLLBACK", "aislamiento"],
-    16: ["psql", "pg_dump", "pg_restore", "importacion y exportacion de datos"],
-    17: ["optimizacion SQL", "indices", "EXPLAIN", "configuracion de servidor PostgreSQL"],
-    18: ["fundamentos de C#", "tipos y variables", "clases y objetos", "control de flujo"],
-    19: ["patron MVC", "controladores y vistas", "Bootstrap", "sitios web ASP.NET Core"],
-    20: ["Entity Framework Core", "DbContext", "entidades", "migraciones"],
-    21: ["LINQ", "consultas sobre colecciones", "expresiones lambda", "proyecciones y filtros"],
-    22: ["model binding", "validacion", "modificacion de datos con EF", "tareas asincronas"],
-    23: ["autenticacion", "autorizacion", "claims y roles", "filtros ASP.NET Core"],
-    24: ["Web API", "servicios REST", "controladores API", "codigos HTTP"],
-    25: ["OData", "exposicion de datos", "consultas con $filter", "consultas con $select"],
-    26: ["Blazor", "modelos de alojamiento", "Blazor Server", "Blazor WebAssembly"],
-    27: ["componentes Blazor", "binding", "parametros", "valores en cascada"],
-    28: ["componentes avanzados", "gestion de estilos", "CSS isolation", "RenderFragment"],
-    29: ["formularios Blazor", "EditForm", "DataAnnotations", "validacion"],
-    30: ["inyeccion de dependencias", "configuracion de servicios", "contenedor DI", "ciclos de vida de servicios"],
-    31: ["gestion de estado", "estado de componente", "estado compartido", "persistencia de estado"],
-    32: ["navegacion Blazor", "enrutado", "NavigationManager", "parametros de ruta"],
-    33: ["teoria de Git", "configuracion de Git", "repositorio local", "commit"],
-    34: ["ramas en Git", "merge", "rebase", "stash"],
-    35: ["repositorios remotos", "push y pull", "pull request", "estrategias de ramas"],
-    36: ["SedipuAlba", "sede electronica", "registro electronico", "expediente electronico"],
-    37: ["Segex", "Sefycu", "Segra", "Seres y Secoin"],
-    38: ["interoperabilidad estatal", "SCSP", "Red SARA", "intercambio de datos entre administraciones"],
-    39: ["Cl@ve", "DNIe", "FIRe", "Carpeta Ciudadana"],
-    40: ["accesibilidad web", "WCAG", "UNE-EN 301549", "nivel AA"],
+_EXTRA_EXACT_SPECS = {
+    1: [
+        ("Que parte de la Constitucion Espanola de 1978 recoge los valores superiores del ordenamiento juridico?", "Titulo Preliminar", ["Titulo IV", "Titulo VIII", "Disposicion derogatoria"], "El Titulo Preliminar recoge, entre otros aspectos, los valores superiores, la soberania nacional y la forma politica del Estado."),
+        ("Que institucion ejerce la potestad legislativa del Estado segun la Constitucion?", "Cortes Generales", ["Consejo de Estado", "Tribunal Constitucional", "Defensor del Pueblo"], "Las Cortes Generales representan al pueblo espanol y ejercen la potestad legislativa del Estado."),
+    ],
+    2: [
+        ("Que titulo constitucional regula el Gobierno y la Administracion?", "Titulo IV", ["Titulo I", "Titulo III", "Titulo X"], "El Titulo IV de la Constitucion regula el Gobierno y la Administracion."),
+        ("Que titulo constitucional trata la organizacion territorial del Estado?", "Titulo VIII", ["Titulo II", "Titulo V", "Titulo IX"], "El Titulo VIII regula municipios, provincias y comunidades autonomas."),
+    ],
+    3: [
+        ("Segun la Ley 7/1985, que entidad local basica tiene personalidad juridica y plena capacidad para el cumplimiento de sus fines?", "Municipio", ["Comarca", "Mancomunidad", "Area metropolitana"], "El municipio es la entidad local basica de la organizacion territorial del Estado."),
+        ("En la organizacion municipal comun, que organo preside la corporacion?", "Alcalde", ["Interventor", "Secretario", "Tesorero"], "El alcalde preside la corporacion municipal y dirige el gobierno y la administracion municipal."),
+    ],
+    4: [
+        ("Que norma aprueba el texto refundido de las disposiciones legales vigentes en materia de regimen local?", "Real Decreto Legislativo 781/1986", ["Ley Organica 3/2018", "Real Decreto 203/2021", "Ley 40/2015"], "El Real Decreto Legislativo 781/1986 aprueba el texto refundido de regimen local."),
+        ("Que reglamento regula la organizacion, funcionamiento y regimen juridico de las entidades locales?", "ROF", ["ENS", "RGPD", "TREBEP"], "El ROF es el Reglamento de Organizacion, Funcionamiento y Regimen Juridico de las Entidades Locales."),
+    ],
+    5: [
+        ("En la Ley 39/2015, como se denomina quien promueve un procedimiento administrativo como titular de derechos o intereses legitimos?", "Interesado", ["Contratista", "Fedatario", "Encargado del tratamiento"], "La Ley 39/2015 define quienes tienen la condicion de interesados en el procedimiento administrativo."),
+        ("Que permite acreditar que una persona actua en nombre de otra ante la Administracion?", "Representacion", ["Recusacion", "Convalidacion", "Publicacion"], "La representacion permite actuar ante las Administraciones Publicas por medio de otra persona."),
+    ],
+    6: [
+        ("Que vicio afecta a un acto administrativo que lesiona derechos fundamentales?", "Nulidad de pleno derecho", ["Anulabilidad leve", "Caducidad", "Prescripcion"], "Los actos que lesionan derechos y libertades susceptibles de amparo constitucional son nulos de pleno derecho."),
+        ("Que requisito exige que el acto administrativo exponga las razones juridicas y facticas de su decision?", "Motivacion", ["Notificacion por edictos", "Archivo", "Desistimiento"], "La motivacion explica los hechos y fundamentos de derecho que justifican el acto."),
+    ],
+    7: [
+        ("En prevencion de riesgos laborales, que principio exige combatir los riesgos en su origen?", "Principio de accion preventiva", ["Principio de caja unica", "Principio de publicidad registral", "Principio de devengo"], "La accion preventiva incluye evitar riesgos, evaluarlos y combatirlos en su origen."),
+        ("Que derecho tiene el trabajador frente a los riesgos laborales?", "Proteccion eficaz en seguridad y salud", ["Libre eleccion de proveedor", "Secreto profesional absoluto", "Exencion de formacion"], "La Ley 31/1995 reconoce el derecho a una proteccion eficaz en materia de seguridad y salud en el trabajo."),
+    ],
+    8: [
+        ("Que ley estatal regula la igualdad efectiva de mujeres y hombres?", "Ley Organica 3/2007", ["Ley 7/1985", "Ley 31/1995", "Ley 9/2017"], "La Ley Organica 3/2007 regula la igualdad efectiva de mujeres y hombres."),
+        ("Que tipo de discriminacion se produce cuando una medida aparentemente neutra perjudica especialmente a personas de un sexo?", "Discriminacion indirecta", ["Discriminacion positiva prohibida", "Recusacion", "Silencio administrativo"], "La discriminacion indirecta deriva de disposiciones, criterios o practicas aparentemente neutros con efecto desfavorable."),
+    ],
+    9: [
+        ("Que aplicacion se utiliza habitualmente en la Administracion espanola para firmar electronicamente desde el navegador o escritorio?", "AutoFirma", ["pg_restore", "Bootstrap", "Git stash"], "AutoFirma permite realizar firmas electronicas con certificados digitales en equipos de usuario."),
+        ("Que elemento vincula unos datos de verificacion de firma a un firmante y confirma su identidad?", "Certificado digital", ["Indice SQL", "Controlador MVC", "RenderFragment"], "El certificado digital asocia la identidad del titular con sus claves criptograficas."),
+    ],
+    10: [
+        ("Que infraestructura gestiona certificados digitales, autoridades de certificacion y revocacion?", "PKI", ["LINQ", "SCSP", "OData"], "Una PKI organiza certificados, autoridades de certificacion, registro y mecanismos de revocacion."),
+        ("Que protocolo protege comunicaciones web mediante cifrado sobre HTTP?", "TLS", ["PGP", "SIR", "MVC"], "HTTPS utiliza TLS para autenticar el servidor y cifrar la comunicacion."),
+    ],
+    11: [
+        ("Que norma establece la politica de seguridad para la utilizacion de medios electronicos en el sector publico espanol?", "Esquema Nacional de Seguridad", ["Bootstrap", "Entity Framework Core", "WCAG"], "El ENS fija principios, requisitos y medidas de seguridad para sistemas del sector publico."),
+        ("En el ENS, que determina la intensidad de las medidas de seguridad aplicables a un sistema?", "Categoria del sistema", ["Color corporativo", "Numero de usuarios anonimos", "Tipo de navegador"], "La categoria del sistema condiciona las medidas de seguridad que deben aplicarse."),
+    ],
+    12: [
+        ("Que reglamento europeo regula la proteccion de datos personales y su libre circulacion?", "RGPD", ["ROF", "ENS", "PGP"], "El Reglamento (UE) 2016/679 es el Reglamento General de Proteccion de Datos."),
+        ("Que principio exige tratar solo los datos personales adecuados, pertinentes y limitados a lo necesario?", "Minimizacion de datos", ["Devengo", "Rebase", "Polimorfismo"], "La minimizacion limita los datos tratados a los necesarios para la finalidad perseguida."),
+    ],
+    13: [
+        ("En PostgreSQL, como se denomina el conjunto de bases de datos gestionadas por una misma instancia?", "Cluster de bases de datos", ["Pull request", "Valor en cascada", "Sede electronica"], "Un cluster PostgreSQL es el conjunto de bases de datos de una instancia del servidor."),
+        ("Que proceso de PostgreSQL acepta conexiones de clientes y crea procesos de servidor?", "Postmaster", ["Kestrel", "AutoFirma", "NavigationManager"], "El proceso principal de PostgreSQL escucha conexiones y coordina procesos del servidor."),
+    ],
+    14: [
+        ("En PostgreSQL, que objeto agrupa tablas, vistas y funciones dentro de una base de datos?", "Esquema", ["Commit", "Claim", "Componente Razor"], "Los esquemas organizan objetos dentro de una base de datos PostgreSQL."),
+        ("Que mecanismo de PostgreSQL permite controlar privilegios de usuarios y grupos?", "Roles", ["Filtros MVC", "WCAG", "Ramas"], "PostgreSQL usa roles para usuarios, grupos y asignacion de permisos."),
+    ],
+    15: [
+        ("Que instruccion confirma definitivamente una transaccion en PostgreSQL?", "COMMIT", ["ROLLBACK", "EXPLAIN", "STASH"], "COMMIT confirma los cambios realizados en una transaccion."),
+        ("Que propiedad ACID garantiza que una transaccion se ejecuta completa o no se aplica?", "Atomicidad", ["Cascada", "Enrutado", "Accesibilidad"], "La atomicidad evita estados parciales: la transaccion se completa entera o se deshace."),
+    ],
+    16: [
+        ("Que herramienta de PostgreSQL genera copias de seguridad logicas de una base de datos?", "pg_dump", ["psql", "pg_restore", "AutoFirma"], "pg_dump exporta una base de datos PostgreSQL en formatos logicos de copia."),
+        ("Que comando de PostgreSQL se usa para restaurar copias en formato personalizado o directorio?", "pg_restore", ["pg_dump", "git rebase", "dotnet run"], "pg_restore restaura copias creadas por pg_dump en formatos no planos."),
+    ],
+    17: [
+        ("Que sentencia de PostgreSQL muestra el plan de ejecucion de una consulta?", "EXPLAIN", ["COMMIT", "SELECT DISTINCT", "MERGE"], "EXPLAIN permite analizar como PostgreSQL ejecutara una consulta."),
+        ("Que estructura acelera busquedas a cambio de espacio y coste de mantenimiento?", "Indice", ["RenderFragment", "Certificado", "Sede"], "Los indices mejoran consultas, aunque ocupan espacio y afectan a escrituras."),
+    ],
+    18: [
+        ("En C#, que palabra clave declara una clase?", "class", ["SELECT", "branch", "route"], "La palabra clave class declara tipos de referencia definidos por el usuario."),
+        ("En C#, que instruccion permite iterar sobre una coleccion elemento a elemento?", "foreach", ["rollback", "rebase", "scaffold"], "foreach recorre los elementos de una coleccion o secuencia enumerable."),
+    ],
+    19: [
+        ("En MVC, que componente recibe la peticion y selecciona la respuesta adecuada?", "Controlador", ["Vista", "Migracion", "Certificado"], "El controlador procesa la entrada, coordina el modelo y devuelve una vista o resultado."),
+        ("Que framework CSS se cita en el temario para construir sitios web responsive?", "Bootstrap", ["PostgreSQL", "AutoFirma", "Cl@ve"], "Bootstrap proporciona componentes y rejilla responsive para interfaces web."),
+    ],
+    20: [
+        ("En Entity Framework Core, que clase representa la sesion con la base de datos y permite consultar entidades?", "DbContext", ["Controller", "EditForm", "Postmaster"], "DbContext coordina consultas, seguimiento de cambios y persistencia en EF Core."),
+        ("En EF Core, que mecanismo aplica cambios del modelo al esquema de la base de datos?", "Migraciones", ["Claims", "Stash", "Valores en cascada"], "Las migraciones versionan y aplican cambios de esquema derivados del modelo."),
+    ],
+    21: [
+        ("Que tecnologia de .NET permite consultar colecciones con sintaxis integrada en el lenguaje?", "LINQ", ["SCSP", "PKI", "WCAG"], "LINQ integra consultas sobre colecciones, objetos y proveedores de datos."),
+        ("En LINQ, que tipo de expresion se usa frecuentemente para definir predicados y proyecciones?", "Expresion lambda", ["Certificado X.509", "Nivel AA", "Sede electronica"], "Las lambdas permiten expresar funciones anonimas usadas en Where, Select y otros operadores."),
+    ],
+    22: [
+        ("En ASP.NET Core MVC, que proceso enlaza valores de la peticion HTTP con parametros o propiedades del modelo?", "Model binding", ["Rebase", "Cifrado simetrico", "Revocacion"], "El model binding asigna datos de rutas, formularios o query string al modelo de accion."),
+        ("Que palabra clave de C# permite esperar una tarea asincrona sin bloquear el hilo?", "await", ["commit", "select", "grant"], "await espera la finalizacion de una Task dentro de metodos asincronos."),
+    ],
+    23: [
+        ("Que proceso verifica la identidad de un usuario?", "Autenticacion", ["Autorizacion", "Indexacion", "Enrutado"], "La autenticacion responde a quien es el usuario."),
+        ("Que proceso decide si un usuario autenticado puede acceder a un recurso?", "Autorizacion", ["Autenticacion", "Serializacion", "Compilacion"], "La autorizacion determina permisos sobre acciones o recursos."),
+    ],
+    24: [
+        ("Que estilo de servicio web suele exponer recursos mediante verbos HTTP como GET, POST, PUT y DELETE?", "REST", ["PGP", "ROF", "Stash"], "Las API REST usan recursos identificados por URI y operaciones HTTP."),
+        ("En HTTP, que codigo indica que una peticion se ha completado correctamente?", "200 OK", ["404 Not Found", "500 Internal Server Error", "301 Moved Permanently"], "200 OK indica respuesta satisfactoria para la peticion."),
+    ],
+    25: [
+        ("Que estandar permite consultar datos expuestos mediante parametros como $filter y $select?", "OData", ["SCSP", "TLS", "FIRe"], "OData define convenciones para exponer y consultar datos mediante HTTP."),
+        ("En OData, que parametro selecciona solo determinadas propiedades de una entidad?", "$select", ["$filter", "$orderby", "$top"], "$select limita las propiedades devueltas por el servicio."),
+    ],
+    26: [
+        ("Que modelo de alojamiento de Blazor ejecuta componentes en el servidor y actualiza la interfaz mediante SignalR?", "Blazor Server", ["Blazor WebAssembly", "MVC clasico", "Web API"], "Blazor Server mantiene la logica en el servidor y sincroniza la UI con SignalR."),
+        ("Que modelo de Blazor ejecuta la aplicacion .NET en el navegador del cliente?", "Blazor WebAssembly", ["Blazor Server", "Razor Pages", "Windows Forms"], "Blazor WebAssembly ejecuta codigo .NET en el navegador mediante WebAssembly."),
+    ],
+    27: [
+        ("En Blazor, que directiva se usa habitualmente para enlazar un valor de la interfaz con una propiedad?", "@bind", ["@route", "@inject", "@page"], "@bind implementa enlace de datos entre controles y propiedades."),
+        ("En Blazor, que atributo marca una propiedad para recibir valores desde un componente padre?", "[Parameter]", ["[Key]", "[Authorize]", "[Required]"], "[Parameter] permite pasar datos de un componente padre a uno hijo."),
+    ],
+    28: [
+        ("En Blazor, que tipo permite pasar fragmentos de interfaz como contenido reutilizable?", "RenderFragment", ["DbContext", "Claim", "Postmaster"], "RenderFragment representa un fragmento de UI renderizable."),
+        ("Que tecnica de Blazor limita estilos CSS al componente correspondiente?", "CSS isolation", ["TLS", "LINQ", "OData"], "CSS isolation genera estilos con ambito para evitar efectos globales no deseados."),
+    ],
+    29: [
+        ("Que componente de Blazor encapsula un formulario con validacion integrada?", "EditForm", ["DbSet", "Controller", "Router"], "EditForm coordina modelo, envio y validacion en formularios Blazor."),
+        ("Que atributos de .NET se usan habitualmente para reglas de validacion como Required o StringLength?", "DataAnnotations", ["Claims", "Migrations", "RenderFragments"], "DataAnnotations permite declarar reglas de validacion sobre modelos."),
+    ],
+    30: [
+        ("Que patron permite solicitar servicios en constructores o componentes sin crearlos manualmente?", "Inyeccion de dependencias", ["Cifrado simetrico", "Consulta OData", "Rebase interactivo"], "La inyeccion de dependencias desacopla clases de la creacion de sus dependencias."),
+        ("En .NET, que ciclo de vida crea una instancia nueva del servicio en cada solicitud HTTP?", "Scoped", ["Singleton", "Transient", "Static"], "Scoped mantiene una instancia por ambito, normalmente por solicitud web."),
+    ],
+    31: [
+        ("En Blazor, como se denomina la informacion mantenida por un componente durante su renderizado e interaccion?", "Estado de componente", ["Indice SQL", "Certificado digital", "Categoria ENS"], "El estado de componente incluye valores que afectan a su interfaz y comportamiento."),
+        ("Que tecnica permite conservar datos de usuario aunque se recargue la pagina en el navegador?", "Persistencia de estado", ["Rollback", "Revocacion", "Normalizacion"], "La persistencia de estado puede usar almacenamiento local, sesion u otros mecanismos."),
+    ],
+    32: [
+        ("En Blazor, que directiva define la ruta URL de un componente pagina?", "@page", ["@bind", "@code", "@typeparam"], "@page declara la plantilla de ruta que activa el componente como pagina."),
+        ("Que servicio de Blazor permite navegar por codigo y obtener la URI actual?", "NavigationManager", ["DbContext", "Postmaster", "AutoFirma"], "NavigationManager proporciona metodos y propiedades para navegacion y URI."),
+    ],
+    33: [
+        ("Que comando inicializa un repositorio Git local?", "git init", ["git push", "git merge", "git clone --bare"], "git init crea la estructura inicial del repositorio local."),
+        ("Que comando registra una instantanea de los cambios preparados en Git?", "git commit", ["git stash", "git fetch", "git reset --hard"], "git commit guarda en el historial los cambios del area de preparacion."),
+    ],
+    34: [
+        ("Que operacion de Git reaplica commits sobre otra base de historial?", "rebase", ["merge", "stash", "tag"], "Rebase mueve o reaplica commits encima de otra referencia base."),
+        ("Que comando guarda temporalmente cambios no confirmados para limpiar el arbol de trabajo?", "git stash", ["git branch", "git blame", "git remote"], "git stash aparta cambios locales para recuperarlos posteriormente."),
+    ],
+    35: [
+        ("Que comando envia commits locales a un repositorio remoto?", "git push", ["git pull", "git fetch", "git status"], "git push publica commits locales en el remoto configurado."),
+        ("Que practica propone integrar cambios mediante revision antes de fusionarlos en la rama principal?", "Pull request", ["Rollback", "Certificado digital", "Model binding"], "Una pull request facilita revision, debate y validaciones antes de integrar cambios."),
+    ],
+    36: [
+        ("En administracion electronica, que punto permite a la ciudadania acceder electronicamente a servicios y tramites?", "Sede electronica", ["Indice B-tree", "RenderFragment", "Repositorio bare"], "La sede electronica es la direccion electronica disponible para relaciones con la Administracion."),
+        ("Que concepto agrupa documentos, actuaciones y metadatos de un procedimiento administrativo electronico?", "Expediente electronico", ["Cluster PostgreSQL", "Pull request", "Claim"], "El expediente electronico reune documentos y actuaciones del procedimiento."),
+    ],
+    37: [
+        ("En SedipuAlba, que modulo se asocia a la gestion de expedientes?", "Segex", ["Sefycu", "Segra", "Secoin"], "Segex es el modulo de gestion de expedientes de la plataforma."),
+        ("En SedipuAlba, que modulo se asocia a la firma y custodia de documentos?", "Sefycu", ["Segex", "Segra", "Seres"], "Sefycu se relaciona con firma y custodia documental dentro de la plataforma."),
+    ],
+    38: [
+        ("Que red conecta administraciones publicas espanolas para intercambio seguro de informacion?", "Red SARA", ["Red TOR", "Red CDN", "Red NAT privada"], "La Red SARA facilita comunicaciones seguras entre Administraciones Publicas."),
+        ("Que especificaciones permiten consultar datos de otras administraciones evitando pedir documentos al ciudadano?", "SCSP", ["OData", "PGP", "WCAG"], "SCSP estandariza servicios de verificacion y consulta de datos entre administraciones."),
+    ],
+    39: [
+        ("Que sistema comun permite identificacion, autenticacion y firma para ciudadanos ante las AAPP?", "Cl@ve", ["Bootstrap", "pg_dump", "LINQ"], "Cl@ve es una plataforma comun de identificacion y autenticacion del sector publico."),
+        ("Que servicio facilita la firma electronica centralizada en el sector publico?", "FIRe", ["SIR", "PID", "WCAG"], "FIRe facilita integracion de servicios de firma electronica en aplicaciones publicas."),
+    ],
+    40: [
+        ("Que pautas internacionales sirven de referencia para accesibilidad del contenido web?", "WCAG", ["ACID", "PKI", "LINQ"], "Las WCAG establecen criterios de accesibilidad para contenido web."),
+        ("Que nivel de conformidad WCAG es el exigido habitualmente por la normativa europea para el sector publico?", "AA", ["A", "AAA", "Beta"], "La normativa suele tomar como referencia WCAG nivel AA."),
+    ],
 }
-
-_EXTRA_DISTRACTORS = [
-    "edicion de video digital", "maquetacion editorial impresa", "administracion de nominas privadas",
-    "diseño de hardware electronico", "marketing en redes sociales", "gestion de almacenes fisicos",
-    "produccion audiovisual", "calculo de estructuras de obra civil", "contabilidad financiera avanzada",
-]
 
 
 def _make_extra_questions():
     questions = []
-    all_points = [point for points in _TOPIC_STUDY_POINTS.values() for point in points]
-    for topic_num, points in _TOPIC_STUDY_POINTS.items():
-        for idx, point in enumerate(points, start=1):
-            # Mix distractors from unrelated study points and generic concepts.
-            other_points = [p for p in all_points if p not in points]
-            distractors = [
-                other_points[(topic_num * 7 + idx * 3) % len(other_points)],
-                other_points[(topic_num * 11 + idx * 5) % len(other_points)],
-                _EXTRA_DISTRACTORS[(topic_num + idx) % len(_EXTRA_DISTRACTORS)],
-            ]
-            options = [point] + distractors
+    for topic_num, specs in _EXTRA_EXACT_SPECS.items():
+        for idx, (question, answer, distractors, explanation) in enumerate(specs, start=1):
+            options = [answer] + list(distractors)
             # Rotate the correct answer so it is not always A.
             shift = (topic_num + idx) % 4
             options = options[shift:] + options[:shift]
-            correct = "ABCD"[options.index(point)]
+            correct = "ABCD"[options.index(answer)]
             questions.append({
                 "topic_num": topic_num,
-                "question": f"Tema {topic_num}: cual de los siguientes contenidos es clave para estudiar este tema?",
-                "option_a": options[0].capitalize(),
-                "option_b": options[1].capitalize(),
-                "option_c": options[2].capitalize(),
-                "option_d": options[3].capitalize(),
+                "question": question,
+                "option_a": options[0],
+                "option_b": options[1],
+                "option_c": options[2],
+                "option_d": options[3],
                 "correct": correct,
-                "explanation": f"'{point}' forma parte del nucleo del Tema {topic_num} segun el temario oficial.",
+                "explanation": explanation,
             })
     return questions
 
