@@ -1161,149 +1161,405 @@ SEED_QUESTIONS.extend(_make_extra_questions())
 
 
 # =====================================================================
-# FILLER TO REACH ABOUT 30 QUESTIONS PER TOPIC
+# DIRECT QUESTION FILLER TO REACH ABOUT 30 QUESTIONS PER TOPIC
 # =====================================================================
-# These are exact syllabus-location questions: they ask where a concrete
-# law, tool, protocol, command, concept, component or module is studied.
-# They deliberately avoid vague wording such as "contenido clave".
+# These questions are intentionally NOT "which topic does X belong to".
+# They ask direct exam-style questions about commands, concepts, definitions,
+# tools, protocols, principles or practical use cases.
 
 _TOPIC_SHORT_TITLES = {
-    1: "Constitucion: estructura, Titulo Preliminar, derechos y Cortes",
-    2: "Constitucion: Gobierno, Administracion y organizacion territorial",
-    3: "Ley 7/1985: municipio, provincia y entidades locales",
-    4: "Regimen local: RDL 781/1986 y ROF",
-    5: "Ley 39/2015: interesados, actividad, registros y terminos",
-    6: "Ley 39/2015: actos administrativos y procedimiento",
+    1: "Constitucion Espanola de 1978",
+    2: "Gobierno, Administracion y organizacion territorial",
+    3: "Ley 7/1985 y regimen local basico",
+    4: "RDL 781/1986 y ROF",
+    5: "Ley 39/2015: interesados, registros y plazos",
+    6: "Ley 39/2015: actos y procedimiento administrativo",
     7: "Prevencion de riesgos laborales",
-    8: "Legislacion basica sobre igualdad",
+    8: "Igualdad",
     9: "Firma electronica",
-    10: "Cifrado, PKI, certificados, SSL/TLS y PGP",
+    10: "Criptografia y certificados",
     11: "Esquema Nacional de Seguridad",
     12: "Proteccion de datos",
-    13: "PostgreSQL: arquitectura de servidor",
-    14: "PostgreSQL: jerarquia de objetos y funciones",
-    15: "PostgreSQL: transacciones",
-    16: "PostgreSQL: herramientas cliente e importacion/exportacion",
-    17: "PostgreSQL: optimizacion SQL y de servidor",
-    18: "Fundamentos de programacion C#",
+    13: "PostgreSQL servidor",
+    14: "PostgreSQL objetos y permisos",
+    15: "PostgreSQL transacciones",
+    16: "PostgreSQL herramientas cliente",
+    17: "PostgreSQL optimizacion",
+    18: "C#",
     19: "MVC y Bootstrap",
     20: "Entity Framework Core",
     21: "LINQ",
-    22: "Model binding, validacion, EF y tareas asincronas",
-    23: "Autenticacion, autorizacion y filtros",
+    22: "Model binding, validacion y asincronia",
+    23: "Autenticacion y autorizacion",
     24: "Web API",
     25: "OData",
-    26: "Blazor: modelos de alojamiento y solucion web",
-    27: "Blazor: componentes, binding y parametros",
-    28: "Blazor: componentes avanzados y estilos",
-    29: "Blazor: formularios y validacion",
-    30: "Blazor: inyeccion de dependencias y servicios",
-    31: "Blazor: gestion de estado",
-    32: "Blazor: navegacion y enrutado",
-    33: "Git local: teoria, instalacion y configuracion",
-    34: "Git: ramas, merge, rebase y stash",
-    35: "Git remoto: flujos y estrategias de ramas",
-    36: "SedipuAlba: conceptos basicos y sede electronica",
-    37: "SedipuAlba: herramientas para tramitadores",
-    38: "Interoperabilidad estatal, SCSP y Red SARA",
-    39: "Servicios compartidos: Cl@ve, DNIe, FIRe, Carpeta, SIR y PID",
+    26: "Blazor alojamiento",
+    27: "Blazor componentes",
+    28: "Blazor avanzado y estilos",
+    29: "Blazor formularios",
+    30: "Blazor servicios",
+    31: "Blazor estado",
+    32: "Blazor navegacion",
+    33: "Git local",
+    34: "Git ramas",
+    35: "Git remoto",
+    36: "SedipuAlba conceptos",
+    37: "SedipuAlba modulos",
+    38: "Interoperabilidad estatal",
+    39: "Servicios compartidos AAPP",
     40: "Accesibilidad web",
 }
 
-_TOPIC_CONCEPTS = {
-    1: ["estructura de la Constitucion", "Titulo Preliminar", "valores superiores", "soberania nacional", "monarquia parlamentaria", "derechos fundamentales", "deberes fundamentales", "Cortes Generales", "Congreso", "Senado"],
-    2: ["Titulo IV", "Gobierno", "Administracion", "Presidente del Gobierno", "Consejo de Ministros", "Titulo V", "relaciones Gobierno-Cortes", "mocion de censura", "cuestion de confianza", "Titulo VIII", "organizacion territorial", "comunidades autonomas"],
-    3: ["Ley 7/1985", "municipio", "termino municipal", "padron municipal", "alcalde", "pleno", "junta de gobierno local", "provincia", "diputacion provincial", "entidades locales"],
-    4: ["Real Decreto Legislativo 781/1986", "texto refundido de regimen local", "ROF", "organizacion local", "funcionamiento local", "regimen juridico local", "sesiones", "convocatorias", "actas", "ordenanzas"],
-    5: ["Ley 39/2015", "interesados", "capacidad de obrar", "representacion", "registros administrativos", "terminos", "plazos", "computo de plazos", "registro electronico", "archivo electronico"],
-    6: ["acto administrativo", "requisitos del acto", "motivacion", "eficacia", "notificacion", "publicacion", "nulidad", "anulabilidad", "iniciacion", "ordenacion", "instruccion", "terminacion"],
-    7: ["Ley 31/1995", "prevencion", "riesgo laboral", "condicion de trabajo", "danos derivados del trabajo", "equipo de trabajo", "principios de accion preventiva", "evaluacion de riesgos", "proteccion eficaz", "obligaciones de trabajadores"],
-    8: ["Ley Organica 3/2007", "igualdad efectiva", "igualdad de trato", "discriminacion directa", "discriminacion indirecta", "acoso sexual", "acoso por razon de sexo", "planes de igualdad", "violencia de genero", "Castilla-La Mancha"],
-    9: ["firma electronica", "firma avanzada", "firma cualificada", "certificado digital", "clave privada", "clave publica", "AutoFirma", "validacion de firma", "sellado de tiempo", "XAdES"],
-    10: ["cifrado simetrico", "cifrado asimetrico", "PKI", "autoridad de certificacion", "certificado X.509", "revocacion", "SSL", "TLS", "HTTPS", "PGP"],
-    11: ["ENS", "Esquema Nacional de Seguridad", "politica de seguridad", "principios basicos", "requisitos minimos", "medidas de seguridad", "categoria del sistema", "analisis de riesgos", "auditoria", "declaracion de conformidad"],
-    12: ["RGPD", "LOPDGDD", "dato personal", "responsable del tratamiento", "encargado del tratamiento", "consentimiento", "licitud", "minimizacion", "derecho de acceso", "derecho de supresion", "AEPD"],
-    13: ["PostgreSQL", "arquitectura cliente-servidor", "postmaster", "procesos de servidor", "cluster", "base de datos", "conexion", "puerto 5432", "shared buffers", "WAL"],
-    14: ["jerarquia de objetos", "database", "schema", "table", "view", "sequence", "function", "procedure", "role", "privileges", "GRANT"],
-    15: ["transaccion", "ACID", "atomicidad", "consistencia", "aislamiento", "durabilidad", "BEGIN", "COMMIT", "ROLLBACK", "SAVEPOINT", "MVCC"],
-    16: ["psql", "pg_dump", "pg_restore", "COPY", "\\copy", "CSV", "importacion", "exportacion", "backup logico", "restore", "pgAdmin"],
-    17: ["optimizacion SQL", "EXPLAIN", "EXPLAIN ANALYZE", "indice", "B-tree", "sequential scan", "query planner", "VACUUM", "ANALYZE", "configuracion del servidor", "work_mem"],
-    18: ["C#", "clase", "objeto", "metodo", "propiedad", "interfaz", "herencia", "polimorfismo", "excepcion", "genericos", "LINQ basico"],
-    19: ["MVC", "modelo", "vista", "controlador", "Razor", "routing", "Bootstrap", "grid responsive", "layout", "partial view", "ASP.NET Core"],
-    20: ["Entity Framework Core", "DbContext", "DbSet", "entidad", "migracion", "Code First", "tracking", "SaveChanges", "relaciones", "LINQ to Entities"],
-    21: ["LINQ", "Where", "Select", "OrderBy", "GroupBy", "Join", "expresion lambda", "consulta diferida", "IEnumerable", "IQueryable", "proyeccion"],
-    22: ["model binding", "validacion", "DataAnnotations", "ModelState", "modificacion de datos con EF", "Attach", "Update", "async", "await", "Task", "CancellationToken"],
-    23: ["autenticacion", "autorizacion", "claims", "roles", "cookies", "JWT", "Authorize", "AllowAnonymous", "filtros", "ActionFilter", "Policy"],
-    24: ["Web API", "REST", "endpoint", "controlador API", "GET", "POST", "PUT", "DELETE", "JSON", "HTTP 200", "HTTP 404", "Swagger"],
-    25: ["OData", "$filter", "$select", "$orderby", "$top", "$skip", "entidad", "metadata", "consulta HTTP", "exposicion de datos", "servicio OData"],
-    26: ["Blazor", "Blazor Server", "Blazor WebAssembly", "SignalR", "WebAssembly", "Razor component", "Program.cs", "wwwroot", "hosting model", "solucion Blazor"],
-    27: ["componente Blazor", "@bind", "one-way binding", "two-way binding", "[Parameter]", "EventCallback", "CascadingValue", "valores en cascada", "@code", "ciclo de vida"],
-    28: ["componentes avanzados", "RenderFragment", "ChildContent", "componentes genericos", "CSS isolation", "estilos", "plantillas", "composicion", "@typeparam", "parametros avanzados"],
-    29: ["EditForm", "EditContext", "InputText", "InputSelect", "InputNumber", "DataAnnotationsValidator", "ValidationSummary", "ValidationMessage", "Required", "StringLength", "validacion"],
-    30: ["inyeccion de dependencias", "servicios", "AddScoped", "AddSingleton", "AddTransient", "@inject", "IConfiguration", "appsettings.json", "contenedor DI", "ciclo de vida", "Program.cs"],
-    31: ["estado de componente", "estado compartido", "persistencia de estado", "localStorage", "sessionStorage", "servicio de estado", "parametros", "cascading state", "ProtectedBrowserStorage", "state container"],
-    32: ["@page", "Router", "NavLink", "NavigationManager", "NavigateTo", "parametro de ruta", "route constraints", "query string", "NotFound", "enrutado", "navegacion"],
-    33: ["Git", "git init", "git config", "git status", "git add", "git commit", "repositorio local", "working tree", "staging area", "HEAD", ".gitignore"],
-    34: ["rama", "git branch", "git checkout", "git switch", "merge", "rebase", "conflicto", "fast-forward", "git stash", "stash pop", "cherry-pick"],
-    35: ["remote", "origin", "git clone", "git fetch", "git pull", "git push", "pull request", "fork", "GitFlow", "trunk-based development", "estrategia de ramas"],
-    36: ["SedipuAlba", "sede electronica", "registro electronico", "expediente electronico", "documento electronico", "firma electronica", "CSV", "notificacion electronica", "carpeta ciudadana", "tramitacion electronica"],
-    37: ["Segex", "Sefycu", "Segra", "Seres", "Secoin", "modulos de tramitacion", "gestion de expedientes", "firma y custodia", "registro", "comunicaciones internas"],
-    38: ["interoperabilidad", "SCSP", "Red SARA", "PID", "consulta de datos", "verificacion de datos", "intercambio de datos", "servicios de intermediacion", "consentimiento", "no aportar documentos"],
-    39: ["Cl@ve", "DNIe", "FIRe", "Carpeta Ciudadana", "SIR", "PID", "plataforma de contratacion", "identificacion electronica", "firma centralizada", "servicios compartidos"],
-    40: ["accesibilidad web", "WCAG", "UNE-EN 301549", "nivel A", "nivel AA", "nivel AAA", "perceptible", "operable", "comprensible", "robusto", "declaracion de accesibilidad"],
+_DIRECT_POOLS = {
+    1: [
+        ("Que parte de la Constitucion proclama valores como libertad, justicia, igualdad y pluralismo politico?", "Titulo Preliminar", ["Titulo IV", "Titulo VIII", "Titulo X"], "El art. 1 CE, dentro del Titulo Preliminar, proclama esos valores superiores."),
+        ("Que articulo de la Constitucion reconoce el derecho a la vida y a la integridad fisica y moral?", "Articulo 15", ["Articulo 1", "Articulo 27", "Articulo 137"], "El articulo 15 CE reconoce el derecho a la vida y a la integridad fisica y moral."),
+        ("Que camaras forman las Cortes Generales?", "Congreso de los Diputados y Senado", ["Gobierno y Senado", "Tribunal Supremo y Congreso", "Consejo de Estado y Senado"], "Las Cortes Generales son bicamerales: Congreso y Senado."),
+        ("Que forma politica del Estado espanol establece la Constitucion?", "Monarquia parlamentaria", ["Republica federal", "Monarquia absoluta", "Confederacion autonoma"], "El art. 1.3 CE establece la monarquia parlamentaria."),
+        ("Donde reside la soberania nacional segun la Constitucion?", "En el pueblo espanol", ["En las Cortes exclusivamente", "En el Gobierno", "En las comunidades autonomas"], "El art. 1.2 CE indica que la soberania nacional reside en el pueblo espanol."),
+        ("Que institucion representa al pueblo espanol y ejerce la potestad legislativa del Estado?", "Cortes Generales", ["Consejo de Ministros", "Tribunal Constitucional", "Defensor del Pueblo"], "Las Cortes Generales representan al pueblo y ejercen la potestad legislativa."),
+    ],
+    2: [
+        ("Que organo dirige la politica interior y exterior, la Administracion civil y militar y la defensa del Estado?", "Gobierno", ["Senado", "Consejo General del Poder Judicial", "Tribunal de Cuentas"], "La Constitucion atribuye esas funciones al Gobierno."),
+        ("Quien propone al Rey el nombramiento y separacion de los ministros?", "Presidente del Gobierno", ["Presidente del Congreso", "Defensor del Pueblo", "Presidente del Senado"], "Corresponde al Presidente del Gobierno proponer el nombramiento y separacion de ministros."),
+        ("Que mecanismo parlamentario permite exigir responsabilidad politica al Gobierno mediante candidato alternativo?", "Mocion de censura", ["Recurso de amparo", "Cuestion prejudicial", "Iniciativa legislativa popular"], "La mocion de censura espanola es constructiva y exige candidato alternativo."),
+        ("Que entidades integran la organizacion territorial basica del Estado?", "Municipios, provincias y comunidades autonomas", ["Ministerios, juzgados y diputaciones", "Comarcas, partidos judiciales y distritos", "Cabildos, islas y parroquias exclusivamente"], "La Constitucion reconoce municipios, provincias y comunidades autonomas."),
+        ("Que principio constitucional reconoce autonomia para la gestion de intereses propios?", "Autonomia", ["Jerarquia normativa", "Irretroactividad penal", "Unidad jurisdiccional"], "La CE reconoce autonomia a municipios, provincias y comunidades autonomas."),
+        ("Que camara puede retirar la confianza al Gobierno mediante mocion de censura?", "Congreso de los Diputados", ["Senado", "Tribunal Constitucional", "Consejo de Estado"], "La responsabilidad politica del Gobierno se exige ante el Congreso."),
+    ],
+    3: [
+        ("Que entidad local basica tiene personalidad juridica y plena capacidad para cumplir sus fines?", "Municipio", ["Barrio", "Distrito censal", "Partido judicial"], "La LRBRL define el municipio como entidad local basica."),
+        ("Que registro administrativo acredita la residencia y domicilio de los vecinos de un municipio?", "Padron municipal", ["Registro Civil", "Inventario de bienes", "Libro de actas"], "El padron municipal contiene los vecinos del municipio."),
+        ("Que organo municipal esta integrado por todos los concejales y presidido por el alcalde?", "Pleno", ["Junta electoral", "Intervencion", "Tesoreria"], "El Pleno lo forman los concejales y lo preside el alcalde."),
+        ("Que organo unipersonal dirige el gobierno y la administracion municipal?", "Alcalde", ["Secretario", "Interventor", "Tesorero"], "El alcalde dirige el gobierno y la administracion municipal."),
+        ("Que entidad local agrupa municipios y tiene como fines la asistencia y cooperacion municipal?", "Provincia", ["Mancomunidad privada", "Comunidad de bienes", "Distrito hipotecario"], "La provincia garantiza solidaridad y asistencia a municipios."),
+        ("Que institucion gobierna y administra la provincia?", "Diputacion provincial", ["Subdelegacion del Gobierno", "Audiencia Provincial", "Delegacion de Hacienda"], "El gobierno y administracion autonoma de la provincia corresponde a la Diputacion u organos equivalentes."),
+    ],
+    4: [
+        ("Que norma aprueba el texto refundido de disposiciones legales vigentes en materia de regimen local?", "Real Decreto Legislativo 781/1986", ["Ley 39/2015", "Ley Organica 3/2018", "Real Decreto 203/2021"], "El RDL 781/1986 aprueba el texto refundido de regimen local."),
+        ("Que significan las siglas ROF en regimen local?", "Reglamento de Organizacion, Funcionamiento y Regimen Juridico", ["Registro Oficial de Funcionarios", "Reglamento Organico Fiscal", "Relacion Ordinaria de Funciones"], "El ROF regula organizacion, funcionamiento y regimen juridico de entidades locales."),
+        ("Que documento recoge formalmente lo tratado y acordado en una sesion de organo colegiado local?", "Acta", ["Padron", "Edicto tributario", "Orden de pago"], "El acta documenta asistentes, deliberaciones esenciales y acuerdos."),
+        ("Que tipo de norma local puede aprobar una entidad local dentro de sus competencias?", "Ordenanza", ["Ley organica", "Real decreto legislativo", "Tratado internacional"], "Las entidades locales pueden aprobar ordenanzas y reglamentos en su ambito competencial."),
+        ("Que requisito formal permite convocar validamente una sesion de un organo colegiado local?", "Convocatoria", ["Empadronamiento", "Recurso de casacion", "Certificado digital cualificado"], "La convocatoria comunica sesion, fecha, hora y asuntos a tratar."),
+        ("Que expresion identifica el conjunto de reglas aplicables a organizacion y funcionamiento de entidades locales?", "Regimen juridico local", ["Regimen hipotecario", "Regimen sancionador penal", "Regimen electoral europeo"], "El regimen juridico local ordena competencias, organos, funcionamiento y actos locales."),
+    ],
+    5: [
+        ("Como se denomina la persona que promueve un procedimiento administrativo por ser titular de derechos o intereses legitimos?", "Interesado", ["Fedatario", "Licitador", "Administrador concursal"], "La Ley 39/2015 regula la condicion de interesado."),
+        ("Que figura permite actuar ante la Administracion en nombre de otra persona?", "Representacion", ["Recusacion", "Abstencion", "Convalidacion"], "La representacion acredita que una persona actua por otra."),
+        ("Que sistema permite presentar solicitudes, escritos y comunicaciones ante la Administracion?", "Registro administrativo", ["Padron electoral", "Inventario contable", "Registro mercantil privado"], "Los registros administrativos reciben y anotan documentos dirigidos a la Administracion."),
+        ("Como se computan normalmente los plazos expresados en dias en la Ley 39/2015 si no se indica otra cosa?", "Dias habiles", ["Dias naturales", "Solo sabados", "Solo dias lectivos"], "Si la norma no dice otra cosa, los plazos por dias son habiles."),
+        ("Que medio permite registrar documentos por via telematica?", "Registro electronico", ["Libro de caja", "Indice B-tree", "Repositorio Git"], "El registro electronico permite la presentacion electronica de documentos."),
+        ("Que capacidad permite comparecer y actuar validamente ante las Administraciones Publicas?", "Capacidad de obrar", ["Capacidad contributiva exclusivamente", "Capacidad procesal penal", "Capacidad de endeudamiento"], "La Ley 39/2015 regula quienes tienen capacidad de obrar ante las AAPP."),
+    ],
+    6: [
+        ("Que requisito explica los hechos y fundamentos de derecho de un acto administrativo?", "Motivacion", ["Caducidad", "Prescripcion", "Reformatio in peius"], "La motivacion justifica la decision administrativa."),
+        ("Que comunicacion formal pone un acto administrativo en conocimiento de la persona interesada?", "Notificacion", ["Compulsa", "Alegacion", "Avocacion"], "La notificacion comunica el acto al interesado."),
+        ("Que vicio se produce en actos que lesionan derechos fundamentales?", "Nulidad de pleno derecho", ["Anulabilidad leve", "Subsanacion automatica", "Silencio estimatorio obligatorio"], "La lesion de derechos fundamentales determina nulidad de pleno derecho."),
+        ("Que fase del procedimiento incluye pruebas, informes y audiencia?", "Instruccion", ["Terminacion", "Archivo definitivo inicial", "Ejecucion presupuestaria"], "La instruccion realiza los actos necesarios para determinar y comprobar datos."),
+        ("Que forma normal pone fin a un procedimiento administrativo resolviendo el fondo?", "Resolucion", ["Providencia bancaria", "Asiento contable", "Diligencia penal"], "La resolucion decide las cuestiones planteadas en el procedimiento."),
+        ("Que defecto permite impugnar un acto pero no lo hace nulo de pleno derecho?", "Anulabilidad", ["Inexistencia fisica", "Derogacion constitucional", "Cosa juzgada penal"], "La anulabilidad cubre infracciones no incluidas en nulidad de pleno derecho."),
+    ],
+    7: [
+        ("Que norma basica regula la prevencion de riesgos laborales en Espana?", "Ley 31/1995", ["Ley 7/1985", "Ley 39/2015", "Ley 9/2017"], "La Ley 31/1995 es la norma basica de prevencion de riesgos laborales."),
+        ("Que principio preventivo exige eliminar el riesgo antes que proteger frente a el?", "Evitar los riesgos", ["Transferir siempre el riesgo", "Asegurar solo economicamente", "Ignorar riesgos leves"], "La accion preventiva empieza por evitar los riesgos."),
+        ("Que actuacion identifica y valora peligros para la seguridad y salud de los trabajadores?", "Evaluacion de riesgos", ["Liquidacion tributaria", "Auditoria contable", "Recurso de alzada"], "La evaluacion de riesgos permite planificar la actividad preventiva."),
+        ("Que derecho tiene el trabajador en materia de seguridad y salud laboral?", "Proteccion eficaz", ["Renuncia preventiva", "Secreto salarial absoluto", "Libre incumplimiento de instrucciones"], "El trabajador tiene derecho a proteccion eficaz frente a riesgos laborales."),
+        ("Que debe hacer el trabajador con los equipos de proteccion proporcionados?", "Usarlos correctamente", ["Venderlos", "Ignorarlos", "Modificar siempre su diseno"], "Los trabajadores deben usar adecuadamente medios y equipos de proteccion."),
+        ("Que concepto describe la posibilidad de que un trabajador sufra un dano derivado del trabajo?", "Riesgo laboral", ["Padron laboral", "Credito horario", "Turno voluntario"], "Riesgo laboral es la posibilidad de dano derivado del trabajo."),
+    ],
+    8: [
+        ("Que ley estatal regula la igualdad efectiva de mujeres y hombres?", "Ley Organica 3/2007", ["Ley 31/1995", "Ley 7/1985", "Ley 40/2015"], "La LO 3/2007 regula la igualdad efectiva."),
+        ("Que trato desfavorable por razon de sexo se produce de forma expresa y visible?", "Discriminacion directa", ["Discriminacion indirecta", "Recusacion", "Prescripcion"], "La discriminacion directa supone trato menos favorable por razon de sexo."),
+        ("Que discriminacion deriva de una medida aparentemente neutra con impacto desfavorable?", "Discriminacion indirecta", ["Abstencion", "Convalidacion", "Silencio administrativo"], "La discriminacion indirecta puede surgir de criterios aparentemente neutros."),
+        ("Que instrumento empresarial ordena medidas para alcanzar igualdad de trato y oportunidades?", "Plan de igualdad", ["Plan de tesoreria", "Plan de urbanismo", "Plan de backup"], "Los planes de igualdad ordenan objetivos y medidas de igualdad."),
+        ("Que conducta verbal, no verbal o fisica de naturaleza sexual atenta contra la dignidad?", "Acoso sexual", ["Acoso urbanistico", "Fraude de ley", "Enriquecimiento injusto"], "El acoso sexual es una conducta de naturaleza sexual que crea entorno intimidatorio u ofensivo."),
+        ("Que principio exige ausencia de discriminacion por sexo en empleo, formacion y promocion?", "Igualdad de trato", ["Jerarquia contable", "Unidad de caja", "Devengo"], "La igualdad de trato impide discriminacion directa o indirecta por sexo."),
+    ],
+    9: [
+        ("Que permite acreditar la identidad del firmante en una firma electronica?", "Certificado digital", ["Indice SQL", "Controlador MVC", "Hoja de estilos"], "El certificado digital vincula identidad y claves criptograficas."),
+        ("Que clave debe mantenerse secreta por el titular para firmar electronicamente?", "Clave privada", ["Clave publica", "Certificado raiz", "Hash publicado"], "La clave privada se protege y se usa para crear la firma."),
+        ("Que aplicacion se usa habitualmente para firmar documentos electronicamente en AAPP espanolas?", "AutoFirma", ["pg_dump", "Bootstrap", "Git stash"], "AutoFirma permite firmar con certificados digitales."),
+        ("Que proceso comprueba que una firma electronica es valida y no ha sido alterada?", "Validacion de firma", ["Normalizacion SQL", "Renderizado CSS", "Rebase interactivo"], "Validar firma comprueba integridad, certificado y estado."),
+        ("Que servicio acredita el momento en que existia una firma o documento?", "Sellado de tiempo", ["Compilacion JIT", "Indexacion B-tree", "Model binding"], "El sellado de tiempo aporta evidencia temporal."),
+        ("Que tipo de firma electronica tiene maximas garantias juridicas con certificado cualificado y dispositivo cualificado?", "Firma cualificada", ["Firma simple manuscrita escaneada", "Firma anonima", "Firma por usuario invitado"], "La firma electronica cualificada tiene los requisitos reforzados del Reglamento eIDAS."),
+    ],
+    10: [
+        ("Que cifrado utiliza la misma clave para cifrar y descifrar?", "Cifrado simetrico", ["Cifrado asimetrico", "Hash sin clave", "Firma digital"], "El cifrado simetrico comparte una clave secreta."),
+        ("Que cifrado utiliza un par de claves publica y privada?", "Cifrado asimetrico", ["Cifrado simetrico", "Compresion ZIP", "Codificacion Base64"], "El cifrado asimetrico usa clave publica y privada."),
+        ("Que infraestructura gestiona certificados, autoridades de certificacion y revocacion?", "PKI", ["LINQ", "OData", "MVC"], "La PKI organiza certificados y autoridades de certificacion."),
+        ("Que entidad emite y firma certificados digitales?", "Autoridad de certificacion", ["Router web", "Controlador API", "Repositorio Git"], "La CA emite certificados y garantiza su vinculacion."),
+        ("Que protocolo cifra comunicaciones web usadas por HTTPS?", "TLS", ["PGP", "FTP", "SMTP sin cifrar"], "HTTPS funciona sobre TLS para cifrar la comunicacion."),
+        ("Que tecnologia se asocia historicamente al cifrado y firma de correo o ficheros mediante pares de claves?", "PGP", ["WCAG", "SCSP", "SIR"], "PGP permite cifrar y firmar informacion con criptografia de clave publica."),
+    ],
+    11: [
+        ("Que esquema fija principios y requisitos de seguridad para sistemas del sector publico?", "ENS", ["OData", "Bootstrap", "LINQ"], "El Esquema Nacional de Seguridad establece la politica de seguridad en medios electronicos."),
+        ("Que documento define objetivos, organizacion y responsabilidades de seguridad?", "Politica de seguridad", ["Plan de marketing", "Hoja de calculo", "Contrato menor"], "La politica de seguridad ordena criterios y responsabilidades."),
+        ("Que actividad identifica amenazas, vulnerabilidades e impacto sobre la informacion?", "Analisis de riesgos", ["Rebase", "Model binding", "Empadronamiento"], "El analisis de riesgos permite seleccionar medidas adecuadas."),
+        ("Que determina si un sistema ENS es de categoria basica, media o alta?", "Categoria del sistema", ["Color de la interfaz", "Numero de pantallas", "Lenguaje de programacion"], "La categoria se obtiene valorando dimensiones de seguridad."),
+        ("Que revisa periodicamente el cumplimiento de medidas de seguridad?", "Auditoria", ["Compilacion", "Minificacion", "Paginacion"], "La auditoria comprueba el cumplimiento del ENS."),
+        ("Que conjunto de controles se aplica para proteger informacion y servicios?", "Medidas de seguridad", ["Estilos CSS", "Ramas Git", "Consultas LINQ"], "Las medidas protegen confidencialidad, integridad, disponibilidad, autenticidad y trazabilidad."),
+    ],
+    12: [
+        ("Que reglamento europeo regula la proteccion de datos personales?", "RGPD", ["ROF", "ENS", "PGP"], "El Reglamento UE 2016/679 es el RGPD."),
+        ("Como se llama la persona fisica identificada o identificable sobre la que trata la informacion?", "Interesado", ["Encargado", "Delegado", "Autoridad de certificacion"], "El interesado es la persona cuyos datos se tratan."),
+        ("Quien decide los fines y medios del tratamiento de datos personales?", "Responsable del tratamiento", ["Encargado del tratamiento", "Usuario anonimo", "Proveedor DNS"], "El responsable determina fines y medios del tratamiento."),
+        ("Quien trata datos personales por cuenta del responsable?", "Encargado del tratamiento", ["Responsable", "Afectado", "Autoridad judicial siempre"], "El encargado trata datos siguiendo instrucciones del responsable."),
+        ("Que principio exige tratar solo datos adecuados, pertinentes y necesarios?", "Minimizacion de datos", ["Maximizacion documental", "Rebase", "Indexacion"], "La minimizacion limita los datos a lo necesario."),
+        ("Que derecho permite obtener confirmacion de si se tratan datos personales propios?", "Derecho de acceso", ["Derecho de tanteo", "Derecho de superficie", "Derecho de retracto"], "El derecho de acceso permite conocer el tratamiento de datos propios."),
+    ],
+    13: [
+        ("Que SGBD objeto-relacional de codigo abierto se estudia en el temario?", "PostgreSQL", ["Photoshop", "AutoFirma", "Bootstrap"], "PostgreSQL es el sistema de bases de datos del bloque."),
+        ("Que puerto TCP utiliza PostgreSQL por defecto?", "5432", ["80", "443", "25"], "PostgreSQL escucha por defecto en el puerto 5432."),
+        ("Como se llama el conjunto de bases de datos gestionadas por una instancia PostgreSQL?", "Cluster", ["Pull request", "RenderFragment", "Sede electronica"], "Un cluster PostgreSQL agrupa bases de datos de una instancia."),
+        ("Que proceso principal acepta conexiones y coordina procesos en PostgreSQL?", "Postmaster", ["NavigationManager", "AutoFirma", "Kestrel siempre"], "El proceso principal de PostgreSQL gestiona conexiones."),
+        ("Que registro garantiza durabilidad y recuperacion ante fallos en PostgreSQL?", "WAL", ["CSS", "JWT", "CSV"], "Write-Ahead Logging registra cambios antes de aplicarlos definitivamente."),
+        ("Que memoria compartida cachea paginas de datos en PostgreSQL?", "shared buffers", ["localStorage", "sessionStorage", "RenderTree"], "shared_buffers define memoria para cache de paginas de datos."),
+    ],
+    14: [
+        ("Que objeto PostgreSQL agrupa tablas, vistas y funciones dentro de una base de datos?", "Schema", ["Commit", "Claim", "Cookie"], "Los schemas organizan objetos dentro de una base de datos."),
+        ("Que objeto almacena filas y columnas de datos?", "Table", ["Sequence", "Role", "Index only"], "Las tablas almacenan datos en filas y columnas."),
+        ("Que objeto representa una consulta almacenada que se usa como tabla virtual?", "View", ["Role", "Trigger solamente", "Backup"], "Una vista encapsula una consulta."),
+        ("Que objeto genera valores numericos consecutivos habitualmente usados como claves?", "Sequence", ["Schema", "Grant", "Policy"], "Las secuencias generan numeros consecutivos."),
+        ("Que sentencia concede privilegios en PostgreSQL?", "GRANT", ["ROLLBACK", "EXPLAIN", "VACUUM"], "GRANT concede permisos sobre objetos."),
+        ("Que entidad PostgreSQL puede representar usuarios o grupos y recibir permisos?", "Role", ["View", "Table", "Sequence"], "Los roles gestionan usuarios, grupos y privilegios."),
+    ],
+    15: [
+        ("Que instruccion inicia una transaccion explicita en PostgreSQL?", "BEGIN", ["EXPLAIN", "VACUUM", "GRANT"], "BEGIN abre una transaccion."),
+        ("Que instruccion confirma los cambios de una transaccion?", "COMMIT", ["ROLLBACK", "SAVEPOINT", "SELECT"], "COMMIT hace permanentes los cambios."),
+        ("Que instruccion deshace los cambios de una transaccion?", "ROLLBACK", ["COMMIT", "GRANT", "ANALYZE"], "ROLLBACK cancela la transaccion."),
+        ("Que propiedad ACID evita resultados parciales de una transaccion?", "Atomicidad", ["Durabilidad", "Aislamiento", "Indexacion"], "La atomicidad implica todo o nada."),
+        ("Que propiedad ACID garantiza que los cambios confirmados sobreviven a fallos?", "Durabilidad", ["Atomicidad", "Consistencia visual", "Polimorfismo"], "La durabilidad conserva cambios confirmados."),
+        ("Que tecnica de PostgreSQL permite concurrencia manteniendo multiples versiones de filas?", "MVCC", ["MVC", "WCAG", "PKI"], "MVCC significa Multi-Version Concurrency Control."),
+    ],
+    16: [
+        ("Que cliente de linea de comandos permite ejecutar SQL contra PostgreSQL?", "psql", ["pg_dump", "pg_restore", "AutoFirma"], "psql es el cliente interactivo de PostgreSQL."),
+        ("Que herramienta crea copias logicas de seguridad de bases PostgreSQL?", "pg_dump", ["psql", "VACUUM", "git push"], "pg_dump exporta una base de datos."),
+        ("Que herramienta restaura copias en formato personalizado o directorio?", "pg_restore", ["pg_dump", "COPY", "EXPLAIN"], "pg_restore restaura backups creados con pg_dump en ciertos formatos."),
+        ("Que instruccion importa o exporta datos entre tablas y ficheros?", "COPY", ["GRANT", "BEGIN", "REBASE"], "COPY transfiere datos entre tablas y archivos."),
+        ("Que formato de texto separado por comas se usa a menudo para importar y exportar datos?", "CSV", ["JWT", "CSS", "PDF firmado"], "CSV es habitual para intercambio tabular."),
+        ("Que herramienta grafica se usa frecuentemente para administrar PostgreSQL?", "pgAdmin", ["AutoFirma", "Visual Studio Code exclusivamente", "Cl@ve"], "pgAdmin es una herramienta grafica de administracion PostgreSQL."),
+    ],
+    17: [
+        ("Que sentencia muestra el plan de ejecucion estimado de una consulta?", "EXPLAIN", ["COMMIT", "GRANT", "COPY"], "EXPLAIN muestra el plan de ejecucion."),
+        ("Que variante ejecuta realmente la consulta y muestra tiempos reales?", "EXPLAIN ANALYZE", ["EXPLAIN ONLY", "ROLLBACK ANALYZE", "GRANT ANALYZE"], "EXPLAIN ANALYZE ejecuta y mide."),
+        ("Que estructura acelera busquedas a cambio de espacio y coste de escritura?", "Indice", ["Vista sin materializar siempre", "Rol", "Schema"], "Los indices mejoran lecturas concretas."),
+        ("Que tipo de indice es el mas habitual para igualdad y rangos en PostgreSQL?", "B-tree", ["JWT", "WCAG", "CSV"], "B-tree es el tipo por defecto y mas comun."),
+        ("Que operacion recopila estadisticas para el planificador?", "ANALYZE", ["COMMIT", "SAVEPOINT", "GRANT"], "ANALYZE actualiza estadisticas."),
+        ("Que operacion limpia tuplas muertas y ayuda a controlar el bloat?", "VACUUM", ["ROLLBACK", "FETCH", "PUSH"], "VACUUM recupera espacio reutilizable y mantiene la salud de tablas."),
+    ],
+    18: [
+        ("Que palabra clave declara una clase en C#?", "class", ["select", "branch", "route"], "class declara una clase."),
+        ("Que bloque captura excepciones en C#?", "catch", ["foreach", "namespace", "return"], "catch captura excepciones lanzadas en un try."),
+        ("Que palabra clave permite implementar una interfaz en una clase?", ":", ["implements", "extends", "using as always"], "En C# se usa dos puntos para herencia e implementacion."),
+        ("Que instruccion recorre una coleccion elemento a elemento?", "foreach", ["switch", "throw", "lock"], "foreach itera sobre colecciones enumerables."),
+        ("Que mecanismo permite definir tipos reutilizables con parametros de tipo?", "Genericos", ["Namespaces", "Comentarios XML", "Directivas using"], "Los genericos permiten clases y metodos parametrizados por tipo."),
+        ("Que miembro expone datos de una clase mediante get y set?", "Propiedad", ["Namespace", "Assembly", "Paquete NuGet"], "Las propiedades encapsulan acceso a datos."),
+    ],
+    19: [
+        ("En MVC, que componente recibe la peticion y coordina la respuesta?", "Controlador", ["Vista", "Modelo", "Migracion"], "El controlador procesa la entrada y devuelve resultados."),
+        ("En MVC, que componente representa datos y reglas de negocio?", "Modelo", ["Vista", "Controlador", "Layout"], "El modelo contiene datos y logica de dominio."),
+        ("En MVC, que componente genera la interfaz presentada al usuario?", "Vista", ["Modelo", "Controlador", "Repositorio remoto"], "La vista renderiza la salida."),
+        ("Que motor de plantillas se usa habitualmente en ASP.NET Core MVC?", "Razor", ["Jinja", "Twig", "Blade exclusivamente"], "Razor combina HTML y C#."),
+        ("Que framework CSS proporciona rejilla responsive y componentes?", "Bootstrap", ["PostgreSQL", "AutoFirma", "Git"], "Bootstrap facilita interfaces responsive."),
+        ("Que archivo o plantilla suele definir estructura comun de varias vistas?", "Layout", ["DbContext", "Controller", "Migration"], "El layout comparte cabecera, menu y estructura."),
+    ],
+    20: [
+        ("Que clase representa la sesion de trabajo con la base de datos en EF Core?", "DbContext", ["DbSet", "Controller", "EditForm"], "DbContext coordina consultas y persistencia."),
+        ("Que propiedad representa una coleccion consultable de entidades?", "DbSet", ["DbContext", "Migration", "Claim"], "DbSet representa entidades de un tipo."),
+        ("Que metodo guarda en base de datos los cambios pendientes?", "SaveChanges", ["AddScoped", "NavigateTo", "Authorize"], "SaveChanges persiste cambios rastreados."),
+        ("Que mecanismo versiona cambios del modelo al esquema de base de datos?", "Migraciones", ["Claims", "Stash", "RenderFragments"], "Las migraciones aplican cambios de esquema."),
+        ("Que enfoque parte de clases C# para generar o actualizar la base de datos?", "Code First", ["Database Last", "View Only", "Static First"], "Code First define el modelo en codigo."),
+        ("Que caracteristica recuerda cambios en entidades cargadas para persistirlos?", "Change tracking", ["Model binding", "Routing", "Hashing"], "El seguimiento de cambios detecta modificaciones de entidades."),
+    ],
+    21: [
+        ("Que operador LINQ filtra elementos por una condicion?", "Where", ["Select", "OrderBy", "Join"], "Where aplica un predicado."),
+        ("Que operador LINQ transforma cada elemento en otra forma?", "Select", ["Where", "GroupBy", "Skip"], "Select realiza proyecciones."),
+        ("Que operador LINQ ordena ascendentemente una secuencia?", "OrderBy", ["Join", "Where", "Take"], "OrderBy ordena por una clave."),
+        ("Que operador LINQ agrupa elementos por clave?", "GroupBy", ["Select", "Where", "Any"], "GroupBy crea grupos segun una clave."),
+        ("Que interfaz permite construir consultas que un proveedor puede traducir, por ejemplo a SQL?", "IQueryable", ["IEnumerable", "IDisposable", "IComparable"], "IQueryable representa consultas traducibles por proveedores."),
+        ("Que expresion anonima se usa mucho en predicados LINQ como x => x.Id > 0?", "Lambda", ["Delegate multicast siempre", "Namespace", "Atributo"], "Las lambdas expresan funciones anonimas."),
+    ],
+    22: [
+        ("Que proceso enlaza datos HTTP con parametros o propiedades del modelo?", "Model binding", ["Routing DNS", "Rebase", "Cifrado"], "Model binding toma datos de ruta, query, formulario o cuerpo."),
+        ("Que coleccion indica si el modelo recibido supera las reglas de validacion?", "ModelState", ["DbSet", "ClaimsPrincipal", "HttpClient"], "ModelState almacena estado de validacion."),
+        ("Que atributo DataAnnotations exige que un campo tenga valor?", "Required", ["StringLength", "Key", "Table"], "Required marca un campo obligatorio."),
+        ("Que palabra clave espera una tarea asincrona?", "await", ["yield", "lock", "base"], "await espera una Task sin bloquear de forma tradicional."),
+        ("Que tipo representa una operacion asincrona en .NET?", "Task", ["ThreadStatic", "ActionFilter", "DbSet"], "Task representa trabajo asincrono."),
+        ("Que token permite solicitar cancelacion cooperativa de una operacion asincrona?", "CancellationToken", ["AntiForgeryToken", "JwtToken", "RefreshToken siempre"], "CancellationToken comunica cancelacion."),
+    ],
+    23: [
+        ("Que proceso verifica la identidad del usuario?", "Autenticacion", ["Autorizacion", "Serializacion", "Indexacion"], "Autenticacion responde quien es el usuario."),
+        ("Que proceso decide si un usuario puede acceder a un recurso?", "Autorizacion", ["Autenticacion", "Compilacion", "Normalizacion"], "Autorizacion responde que puede hacer."),
+        ("Que atributo restringe acceso a controladores o acciones en ASP.NET Core?", "Authorize", ["AllowAnonymous", "Required", "HttpGet"], "Authorize exige usuario o politica autorizada."),
+        ("Que atributo permite acceso anonimo anulando restricciones de autorizacion?", "AllowAnonymous", ["Authorize", "ValidateAntiForgeryToken", "FromBody"], "AllowAnonymous habilita acceso sin autenticar."),
+        ("Que formato de token se usa habitualmente para autenticacion stateless en APIs?", "JWT", ["CSV", "CSS", "WAL"], "JWT transporta claims firmados."),
+        ("Que elemento representa afirmaciones sobre un usuario, como nombre o rol?", "Claim", ["Index", "Schema", "View"], "Un claim es una declaracion sobre la identidad."),
+    ],
+    24: [
+        ("Que verbo HTTP se usa normalmente para obtener un recurso?", "GET", ["POST", "PUT", "DELETE"], "GET solicita representaciones de recursos."),
+        ("Que verbo HTTP se usa normalmente para crear un recurso?", "POST", ["GET", "DELETE", "OPTIONS"], "POST se usa para crear o enviar datos."),
+        ("Que verbo HTTP se usa normalmente para reemplazar o actualizar un recurso?", "PUT", ["GET", "TRACE", "HEAD"], "PUT actualiza o reemplaza un recurso."),
+        ("Que verbo HTTP se usa normalmente para eliminar un recurso?", "DELETE", ["GET", "POST", "PATCH only"], "DELETE solicita borrar un recurso."),
+        ("Que codigo HTTP indica recurso no encontrado?", "404 Not Found", ["200 OK", "201 Created", "204 No Content"], "404 indica que no se encontro el recurso."),
+        ("Que formato ligero se usa habitualmente para intercambiar datos en Web API?", "JSON", ["BMP", "WAV", "EXE"], "JSON es comun en APIs REST."),
+    ],
+    25: [
+        ("Que parametro OData filtra resultados segun una condicion?", "$filter", ["$select", "$top", "$skip"], "$filter limita entidades por condicion."),
+        ("Que parametro OData selecciona propiedades concretas?", "$select", ["$filter", "$orderby", "$count"], "$select limita campos devueltos."),
+        ("Que parametro OData ordena resultados?", "$orderby", ["$skip", "$top", "$expand always"], "$orderby define ordenacion."),
+        ("Que parametro OData limita el numero de resultados devueltos?", "$top", ["$filter", "$select", "$metadata"], "$top establece un maximo."),
+        ("Que parametro OData omite un numero de resultados iniciales?", "$skip", ["$top", "$select", "$format"], "$skip se usa para paginacion."),
+        ("Que documento describe el modelo de datos expuesto por un servicio OData?", "$metadata", ["$filter", "$top", "$skip"], "$metadata expone metadatos del servicio."),
+    ],
+    26: [
+        ("Que modelo de Blazor ejecuta la logica en servidor y sincroniza la UI con SignalR?", "Blazor Server", ["Blazor WebAssembly", "MVC", "Web API"], "Blazor Server mantiene circuito SignalR con el servidor."),
+        ("Que modelo de Blazor ejecuta .NET en el navegador mediante WebAssembly?", "Blazor WebAssembly", ["Blazor Server", "Razor Pages", "Windows Forms"], "Blazor WebAssembly corre en el cliente."),
+        ("Que tecnologia permite comunicacion en tiempo real usada por Blazor Server?", "SignalR", ["OData", "PGP", "SCSP"], "SignalR mantiene comunicacion bidireccional."),
+        ("Que carpeta contiene activos estaticos publicos en una aplicacion Blazor?", "wwwroot", ["bin", "obj", "Migrations always"], "wwwroot almacena archivos estaticos."),
+        ("Que archivo suele configurar servicios y pipeline en una app .NET moderna?", "Program.cs", ["README.md", "package-lock.json", "web.config exclusively"], "Program.cs contiene configuracion de arranque."),
+        ("Como se denomina un componente de interfaz reutilizable escrito con Razor?", "Razor component", ["DbContext", "Migration", "Controller only"], "Los componentes Razor son bloques UI de Blazor."),
+    ],
+    27: [
+        ("Que directiva Blazor realiza enlace de datos bidireccional?", "@bind", ["@page", "@inject", "@code"], "@bind sincroniza valor y propiedad."),
+        ("Que atributo permite recibir valores desde un componente padre?", "[Parameter]", ["[Key]", "[Required]", "[Authorize]"], "[Parameter] marca parametros de componente."),
+        ("Que tipo se usa para notificar eventos desde un componente hijo al padre?", "EventCallback", ["DbSet", "Claim", "CancellationToken"], "EventCallback permite callbacks de eventos."),
+        ("Que componente permite suministrar un valor a descendientes sin pasarlo parametro a parametro?", "CascadingValue", ["EditForm", "NavLink", "AuthorizeView only"], "CascadingValue proporciona valores en cascada."),
+        ("Que bloque contiene codigo C# dentro de un componente Razor?", "@code", ["@page", "@bind", "@using only"], "@code contiene miembros y logica del componente."),
+        ("Que metodo de ciclo de vida se ejecuta al inicializar un componente?", "OnInitialized", ["SaveChanges", "ConfigureServices", "Main"], "OnInitialized se llama durante la inicializacion."),
+    ],
+    28: [
+        ("Que tipo Blazor representa un fragmento de interfaz renderizable?", "RenderFragment", ["DbContext", "Claim", "Postmaster"], "RenderFragment permite contenido reutilizable."),
+        ("Que parametro suele contener el contenido hijo no nombrado de un componente?", "ChildContent", ["ModelState", "DbSet", "HttpContext"], "ChildContent recibe contenido anidado."),
+        ("Que directiva declara un parametro de tipo generico en un componente?", "@typeparam", ["@bind", "@page", "@inject"], "@typeparam define componentes genericos."),
+        ("Que tecnica limita CSS al componente correspondiente?", "CSS isolation", ["TLS", "LINQ", "OData"], "CSS isolation evita colisiones globales."),
+        ("Que mecanismo permite componer componentes pasando plantillas de UI?", "Plantillas con RenderFragment", ["ROLLBACK", "GRANT", "pg_dump"], "Las plantillas permiten personalizar renderizado."),
+        ("Que archivo suele acompañar a un componente para estilos aislados?", ".razor.css", [".sql", ".dll.config", ".gitignore only"], "Los estilos aislados se colocan en archivos .razor.css."),
+    ],
+    29: [
+        ("Que componente Blazor encapsula formularios con validacion?", "EditForm", ["DbSet", "Controller", "Router"], "EditForm coordina modelo y validacion."),
+        ("Que objeto mantiene el estado de edicion y validacion de un formulario?", "EditContext", ["DbContext", "HttpClient", "Claim"], "EditContext sigue cambios y validacion."),
+        ("Que componente valida usando atributos DataAnnotations?", "DataAnnotationsValidator", ["ValidationSummary", "InputText", "NavLink"], "DataAnnotationsValidator activa esas reglas."),
+        ("Que componente muestra un resumen de errores de validacion?", "ValidationSummary", ["InputSelect", "Router", "AuthorizeView"], "ValidationSummary lista errores."),
+        ("Que componente Blazor captura texto en formularios?", "InputText", ["InputNumber", "InputSelect", "EditContext"], "InputText enlaza entradas de texto."),
+        ("Que atributo valida longitud maxima o minima de una cadena?", "StringLength", ["Required", "Key", "Table"], "StringLength limita longitud de strings."),
+    ],
+    30: [
+        ("Que patron suministra dependencias sin crearlas manualmente en la clase?", "Inyeccion de dependencias", ["Cifrado simetrico", "Consulta OData", "Rebase"], "DI desacopla creacion y uso de servicios."),
+        ("Que registro crea una instancia de servicio por ambito o solicitud?", "AddScoped", ["AddSingleton", "AddTransient", "AddStatic"], "Scoped crea una instancia por scope."),
+        ("Que registro reutiliza una unica instancia durante la vida de la aplicacion?", "AddSingleton", ["AddScoped", "AddTransient", "AddPerRequest"], "Singleton comparte una instancia."),
+        ("Que registro crea una instancia nueva cada vez que se solicita el servicio?", "AddTransient", ["AddSingleton", "AddScoped", "AddGlobal"], "Transient crea instancias nuevas."),
+        ("Que directiva inyecta un servicio en un componente Blazor?", "@inject", ["@bind", "@page", "@typeparam"], "@inject declara dependencias en Razor."),
+        ("Que archivo suele contener valores de configuracion JSON de una app .NET?", "appsettings.json", ["package-lock.json", "README.md", "index.html"], "appsettings.json guarda configuracion."),
+    ],
+    31: [
+        ("Que almacenamiento del navegador conserva datos incluso tras cerrar y abrir el navegador?", "localStorage", ["sessionStorage", "RenderFragment", "DbSet"], "localStorage persiste mas alla de la sesion."),
+        ("Que almacenamiento del navegador se asocia a la sesion de la pestaña?", "sessionStorage", ["localStorage", "Indexed Route", "DbContext"], "sessionStorage dura la sesion de la pestaña."),
+        ("Que patron centraliza datos compartidos entre componentes?", "Servicio de estado", ["Indice B-tree", "Certificado X.509", "Migracion"], "Un servicio de estado comparte datos y notifica cambios."),
+        ("Que estado pertenece internamente a un componente concreto?", "Estado de componente", ["Estado global del servidor siempre", "WAL", "JWT"], "El estado de componente afecta a su renderizado."),
+        ("Que mecanismo Blazor permite compartir valores descendentes sin parametro directo?", "Cascading state", ["pg_restore", "git fetch", "OData"], "Los valores en cascada pueden transportar estado."),
+        ("Que objetivo tiene persistir estado en una aplicacion?", "Conservar datos entre interacciones o recargas", ["Borrar siempre al renderizar", "Impedir navegacion", "Desactivar validacion"], "Persistir estado evita perder informacion util."),
+    ],
+    32: [
+        ("Que directiva define la ruta URL de un componente pagina?", "@page", ["@bind", "@code", "@inject"], "@page declara rutas."),
+        ("Que servicio permite navegar por codigo en Blazor?", "NavigationManager", ["DbContext", "Postmaster", "AutoFirma"], "NavigationManager expone NavigateTo y URI."),
+        ("Que metodo de NavigationManager cambia la ubicacion actual?", "NavigateTo", ["SaveChanges", "AddScoped", "ROLLBACK"], "NavigateTo navega a una URI."),
+        ("Que componente crea enlaces de navegacion con clase activa?", "NavLink", ["EditForm", "InputText", "DbSet"], "NavLink ayuda en menus de navegacion."),
+        ("Que componente Blazor selecciona el componente a mostrar segun la ruta?", "Router", ["EditContext", "DbContext", "Controller"], "Router resuelve rutas."),
+        ("Que elemento de ruta permite recibir valores desde la URL?", "Parametro de ruta", ["Claim", "Indice", "Certificado"], "Los parametros de ruta capturan segmentos de URL."),
+    ],
+    33: [
+        ("Que comando inicializa un repositorio Git?", "git init", ["git push", "git merge", "git fetch"], "git init crea el repositorio local."),
+        ("Que comando muestra el estado del arbol de trabajo?", "git status", ["git commit", "git clone", "git tag"], "git status informa cambios y rama."),
+        ("Que comando prepara archivos para el proximo commit?", "git add", ["git push", "git pull", "git reset --hard always"], "git add lleva cambios al staging area."),
+        ("Que comando crea una instantanea en el historial?", "git commit", ["git fetch", "git remote", "git stash"], "git commit registra cambios preparados."),
+        ("Que archivo indica patrones que Git debe ignorar?", ".gitignore", ["README.md", "package.json", "pyproject.toml"], ".gitignore contiene reglas de exclusion."),
+        ("Que puntero representa normalmente el commit actualmente extraido?", "HEAD", ["origin", "tag", "stash"], "HEAD apunta a la revision actual."),
+    ],
+    34: [
+        ("Que comando lista o crea ramas en Git?", "git branch", ["git fetch", "git push", "git log --oneline only"], "git branch gestiona ramas."),
+        ("Que comando moderno cambia de rama?", "git switch", ["git init", "git tag", "git remote"], "git switch cambia entre ramas."),
+        ("Que operacion integra historiales creando o no commit de fusion?", "merge", ["rebase", "stash", "tag"], "Merge combina ramas."),
+        ("Que operacion reaplica commits sobre otra base?", "rebase", ["merge", "stash", "clone"], "Rebase cambia la base de una serie de commits."),
+        ("Que comando guarda cambios temporalmente sin commit?", "git stash", ["git branch", "git blame", "git remote"], "git stash aparta cambios locales."),
+        ("Que situacion aparece cuando Git no puede combinar cambios automaticamente?", "Conflicto", ["Fast-forward", "Tag anotado", "Clone superficial"], "Un conflicto requiere resolucion manual."),
+    ],
+    35: [
+        ("Que nombre recibe por defecto el remoto principal al clonar un repositorio?", "origin", ["main", "HEAD", "stash"], "origin suele ser el remoto principal."),
+        ("Que comando descarga cambios remotos sin fusionarlos automaticamente?", "git fetch", ["git pull", "git push", "git commit"], "fetch trae referencias remotas."),
+        ("Que comando descarga e integra cambios remotos en la rama actual?", "git pull", ["git fetch", "git push", "git status"], "pull equivale a fetch mas integracion."),
+        ("Que comando envia commits locales al remoto?", "git push", ["git pull", "git fetch", "git clone"], "push publica commits."),
+        ("Que practica permite revisar cambios antes de integrarlos?", "Pull request", ["Rollback", "Model binding", "Certificado"], "Pull request facilita revision y validacion."),
+        ("Que flujo usa ramas feature, develop, release y main/master?", "GitFlow", ["Trunk-based puro", "OData", "SCSP"], "GitFlow define varias ramas de soporte."),
+    ],
+    36: [
+        ("Que punto electronico permite a la ciudadania acceder a servicios y tramites?", "Sede electronica", ["Indice B-tree", "RenderFragment", "Repositorio bare"], "La sede electronica es la direccion electronica de la Administracion."),
+        ("Que conjunto ordenado reune documentos y actuaciones de un procedimiento?", "Expediente electronico", ["Cluster PostgreSQL", "Pull request", "Claim"], "El expediente electronico agrupa documentos y actuaciones."),
+        ("Que asiento deja constancia de entrada o salida de documentos?", "Registro electronico", ["localStorage", "WAL", "DbSet"], "El registro electronico anota presentaciones."),
+        ("Que codigo permite verificar la autenticidad de un documento electronico?", "CSV", ["CSS", "JWT", "WAL"], "CSV significa Codigo Seguro de Verificacion."),
+        ("Que acto comunica electronicamente una resolucion o tramite al interesado?", "Notificacion electronica", ["Migracion", "Rebase", "Vacuum"], "La notificacion electronica comunica actos administrativos."),
+        ("Que concepto describe la gestion completa de procedimientos por medios electronicos?", "Tramitacion electronica", ["Indexacion SQL", "Minificacion JS", "Compilacion"], "La tramitacion electronica sustituye soportes y actuaciones en papel."),
+    ],
+    37: [
+        ("Que modulo SedipuAlba se asocia a gestion de expedientes?", "Segex", ["Sefycu", "Segra", "Secoin"], "Segex gestiona expedientes."),
+        ("Que modulo SedipuAlba se asocia a firma y custodia documental?", "Sefycu", ["Segex", "Segra", "Seres"], "Sefycu se vincula con firma y custodia."),
+        ("Que modulo SedipuAlba se asocia al registro?", "Segra", ["Segex", "Sefycu", "Secoin"], "Segra se relaciona con registro."),
+        ("Que modulo SedipuAlba se asocia a resoluciones o servicios relacionados con tramitacion?", "Seres", ["pg_restore", "Bootstrap", "GitFlow"], "Seres forma parte de las herramientas de tramitacion SedipuAlba."),
+        ("Que modulo SedipuAlba se asocia a comunicaciones internas?", "Secoin", ["Sefycu", "Segex", "AutoFirma"], "Secoin se vincula a comunicaciones internas."),
+        ("Que tipo de herramientas usa un tramitador para gestionar procedimientos en SedipuAlba?", "Modulos de tramitacion", ["Indices B-tree", "Componentes Razor genericos", "Comandos Git"], "Los tramitadores trabajan con modulos de la plataforma."),
+    ],
+    38: [
+        ("Que red conecta administraciones publicas para intercambio seguro de informacion?", "Red SARA", ["Red TOR", "Red CDN", "Red NAT privada"], "Red SARA interconecta Administraciones Publicas."),
+        ("Que especificaciones permiten consultar datos de otras administraciones?", "SCSP", ["OData", "PGP", "WCAG"], "SCSP estandariza servicios de verificacion y consulta."),
+        ("Que principio evita pedir al ciudadano documentos que ya obran en poder de la Administracion?", "No aportar documentos", ["Aportar siempre originales", "Duplicar expedientes", "Imprimir certificados"], "La interoperabilidad evita cargas documentales innecesarias."),
+        ("Que plataforma facilita servicios de intermediacion de datos?", "PID", ["PGP", "DI", "MVC"], "PID se asocia a intermediacion y consulta de datos."),
+        ("Que actuacion comprueba informacion de otra administracion sin exigir certificado al ciudadano?", "Verificacion de datos", ["Renderizado CSS", "Rebase", "Vacuum"], "La verificacion consulta datos disponibles electronicamente."),
+        ("Que capacidad permite que sistemas de distintas administraciones intercambien informacion?", "Interoperabilidad", ["Polimorfismo", "Minificacion", "Indexacion"], "Interoperabilidad permite cooperacion e intercambio de datos."),
+    ],
+    39: [
+        ("Que sistema comun permite identificacion y autenticacion ciudadana ante AAPP?", "Cl@ve", ["Bootstrap", "pg_dump", "LINQ"], "Cl@ve es plataforma comun de identificacion."),
+        ("Que documento electronico de identidad permite autenticacion y firma?", "DNIe", ["CSV", "WAL", "CSS"], "DNIe incorpora certificados para identificacion y firma."),
+        ("Que servicio facilita firma electronica centralizada?", "FIRe", ["SIR", "PID", "WCAG"], "FIRe integra servicios de firma."),
+        ("Que espacio permite a la ciudadania consultar expedientes y notificaciones de distintas AAPP?", "Carpeta Ciudadana", ["pgAdmin", "GitHub", "Swagger"], "Carpeta Ciudadana centraliza informacion administrativa."),
+        ("Que sistema se usa para intercambio registral entre administraciones?", "SIR", ["SCSS", "JWT", "B-tree"], "SIR es el Sistema de Interconexion de Registros."),
+        ("Que plataforma se relaciona con intermediacion y consulta de datos?", "PID", ["PGP", "MVC", "CSS"], "PID facilita servicios de intermediacion."),
+    ],
+    40: [
+        ("Que pautas internacionales definen criterios de accesibilidad web?", "WCAG", ["ACID", "PKI", "LINQ"], "WCAG establece pautas de accesibilidad."),
+        ("Que norma europea se usa como referencia de accesibilidad TIC en el sector publico?", "UNE-EN 301549", ["ISO 9001 exclusivamente", "RDL 781/1986", "PGP"], "UNE-EN 301549 recoge requisitos de accesibilidad TIC."),
+        ("Que nivel WCAG se exige habitualmente como referencia normativa en sector publico?", "AA", ["A solamente", "AAA siempre", "Beta"], "El nivel AA es la referencia habitual."),
+        ("Que principio WCAG exige que la informacion pueda ser percibida por los usuarios?", "Perceptible", ["Operable", "Comprensible", "Robusto"], "Perceptible implica alternativas textuales, contraste, etc."),
+        ("Que principio WCAG exige que la interfaz pueda manejarse?", "Operable", ["Perceptible", "Comprensible", "Robusto"], "Operable incluye teclado, tiempo suficiente y navegacion."),
+        ("Que documento publico informa sobre el grado de cumplimiento de accesibilidad de un sitio?", "Declaracion de accesibilidad", ["Commit", "Migration", "Certificado TLS"], "Las AAPP deben publicar declaracion de accesibilidad."),
+    ],
 }
 
-_SYLLABUS_QUESTION_TEMPLATES = [
-    "En el temario oficial, en que tema se estudia exactamente: '{concept}'?",
-    "A que tema pertenece el concepto o herramienta '{concept}'?",
-    "Si aparece '{concept}' en una pregunta de examen, con que tema del temario se relaciona directamente?",
-    "Que tema incluye expresamente el estudio de '{concept}'?",
-]
 
-
-def _make_syllabus_location_questions(target_per_topic=30):
+def _make_direct_filler_questions(target_per_topic=30):
     questions = []
     current_counts = {n: 0 for n in _TOPIC_SHORT_TITLES}
     for q in SEED_QUESTIONS:
         current_counts[q["topic_num"]] = current_counts.get(q["topic_num"], 0) + 1
 
-    topic_numbers = sorted(_TOPIC_SHORT_TITLES)
-    for topic_num in topic_numbers:
+    for topic_num in sorted(_TOPIC_SHORT_TITLES):
+        pool = _DIRECT_POOLS[topic_num]
         needed = max(0, target_per_topic - current_counts.get(topic_num, 0))
-        concepts = _TOPIC_CONCEPTS[topic_num]
         for idx in range(needed):
-            concept = concepts[idx % len(concepts)]
-            template = _SYLLABUS_QUESTION_TEMPLATES[idx % len(_SYLLABUS_QUESTION_TEMPLATES)]
-            answer = f"Tema {topic_num}: {_TOPIC_SHORT_TITLES[topic_num]}"
-            distractor_nums = [
-                topic_numbers[(topic_numbers.index(topic_num) + 7 + idx) % len(topic_numbers)],
-                topic_numbers[(topic_numbers.index(topic_num) + 17 + idx * 2) % len(topic_numbers)],
-                topic_numbers[(topic_numbers.index(topic_num) + 29 + idx * 3) % len(topic_numbers)],
-            ]
-            # Avoid accidental duplicate topic numbers in the options.
-            seen = {topic_num}
-            unique_distractors = []
-            for dn in distractor_nums:
-                while dn in seen:
-                    dn = topic_numbers[(topic_numbers.index(dn) + 1) % len(topic_numbers)]
-                seen.add(dn)
-                unique_distractors.append(f"Tema {dn}: {_TOPIC_SHORT_TITLES[dn]}")
-
-            options = [answer] + unique_distractors
+            question, answer, distractors, explanation = pool[idx % len(pool)]
+            options = [answer] + list(distractors)
             shift = (topic_num + idx) % 4
             options = options[shift:] + options[:shift]
             correct = "ABCD"[options.index(answer)]
             questions.append({
                 "topic_num": topic_num,
-                "question": template.format(concept=concept),
+                "question": question,
                 "option_a": options[0],
                 "option_b": options[1],
                 "option_c": options[2],
                 "option_d": options[3],
                 "correct": correct,
-                "explanation": f"'{concept}' corresponde al Tema {topic_num}: {_TOPIC_SHORT_TITLES[topic_num]}.",
+                "explanation": explanation,
             })
     return questions
 
 
-SEED_QUESTIONS.extend(_make_syllabus_location_questions(30))
+SEED_QUESTIONS.extend(_make_direct_filler_questions(30))
