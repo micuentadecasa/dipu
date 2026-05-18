@@ -1158,3 +1158,152 @@ def _make_extra_questions():
 
 
 SEED_QUESTIONS.extend(_make_extra_questions())
+
+
+# =====================================================================
+# FILLER TO REACH ABOUT 30 QUESTIONS PER TOPIC
+# =====================================================================
+# These are exact syllabus-location questions: they ask where a concrete
+# law, tool, protocol, command, concept, component or module is studied.
+# They deliberately avoid vague wording such as "contenido clave".
+
+_TOPIC_SHORT_TITLES = {
+    1: "Constitucion: estructura, Titulo Preliminar, derechos y Cortes",
+    2: "Constitucion: Gobierno, Administracion y organizacion territorial",
+    3: "Ley 7/1985: municipio, provincia y entidades locales",
+    4: "Regimen local: RDL 781/1986 y ROF",
+    5: "Ley 39/2015: interesados, actividad, registros y terminos",
+    6: "Ley 39/2015: actos administrativos y procedimiento",
+    7: "Prevencion de riesgos laborales",
+    8: "Legislacion basica sobre igualdad",
+    9: "Firma electronica",
+    10: "Cifrado, PKI, certificados, SSL/TLS y PGP",
+    11: "Esquema Nacional de Seguridad",
+    12: "Proteccion de datos",
+    13: "PostgreSQL: arquitectura de servidor",
+    14: "PostgreSQL: jerarquia de objetos y funciones",
+    15: "PostgreSQL: transacciones",
+    16: "PostgreSQL: herramientas cliente e importacion/exportacion",
+    17: "PostgreSQL: optimizacion SQL y de servidor",
+    18: "Fundamentos de programacion C#",
+    19: "MVC y Bootstrap",
+    20: "Entity Framework Core",
+    21: "LINQ",
+    22: "Model binding, validacion, EF y tareas asincronas",
+    23: "Autenticacion, autorizacion y filtros",
+    24: "Web API",
+    25: "OData",
+    26: "Blazor: modelos de alojamiento y solucion web",
+    27: "Blazor: componentes, binding y parametros",
+    28: "Blazor: componentes avanzados y estilos",
+    29: "Blazor: formularios y validacion",
+    30: "Blazor: inyeccion de dependencias y servicios",
+    31: "Blazor: gestion de estado",
+    32: "Blazor: navegacion y enrutado",
+    33: "Git local: teoria, instalacion y configuracion",
+    34: "Git: ramas, merge, rebase y stash",
+    35: "Git remoto: flujos y estrategias de ramas",
+    36: "SedipuAlba: conceptos basicos y sede electronica",
+    37: "SedipuAlba: herramientas para tramitadores",
+    38: "Interoperabilidad estatal, SCSP y Red SARA",
+    39: "Servicios compartidos: Cl@ve, DNIe, FIRe, Carpeta, SIR y PID",
+    40: "Accesibilidad web",
+}
+
+_TOPIC_CONCEPTS = {
+    1: ["estructura de la Constitucion", "Titulo Preliminar", "valores superiores", "soberania nacional", "monarquia parlamentaria", "derechos fundamentales", "deberes fundamentales", "Cortes Generales", "Congreso", "Senado"],
+    2: ["Titulo IV", "Gobierno", "Administracion", "Presidente del Gobierno", "Consejo de Ministros", "Titulo V", "relaciones Gobierno-Cortes", "mocion de censura", "cuestion de confianza", "Titulo VIII", "organizacion territorial", "comunidades autonomas"],
+    3: ["Ley 7/1985", "municipio", "termino municipal", "padron municipal", "alcalde", "pleno", "junta de gobierno local", "provincia", "diputacion provincial", "entidades locales"],
+    4: ["Real Decreto Legislativo 781/1986", "texto refundido de regimen local", "ROF", "organizacion local", "funcionamiento local", "regimen juridico local", "sesiones", "convocatorias", "actas", "ordenanzas"],
+    5: ["Ley 39/2015", "interesados", "capacidad de obrar", "representacion", "registros administrativos", "terminos", "plazos", "computo de plazos", "registro electronico", "archivo electronico"],
+    6: ["acto administrativo", "requisitos del acto", "motivacion", "eficacia", "notificacion", "publicacion", "nulidad", "anulabilidad", "iniciacion", "ordenacion", "instruccion", "terminacion"],
+    7: ["Ley 31/1995", "prevencion", "riesgo laboral", "condicion de trabajo", "danos derivados del trabajo", "equipo de trabajo", "principios de accion preventiva", "evaluacion de riesgos", "proteccion eficaz", "obligaciones de trabajadores"],
+    8: ["Ley Organica 3/2007", "igualdad efectiva", "igualdad de trato", "discriminacion directa", "discriminacion indirecta", "acoso sexual", "acoso por razon de sexo", "planes de igualdad", "violencia de genero", "Castilla-La Mancha"],
+    9: ["firma electronica", "firma avanzada", "firma cualificada", "certificado digital", "clave privada", "clave publica", "AutoFirma", "validacion de firma", "sellado de tiempo", "XAdES"],
+    10: ["cifrado simetrico", "cifrado asimetrico", "PKI", "autoridad de certificacion", "certificado X.509", "revocacion", "SSL", "TLS", "HTTPS", "PGP"],
+    11: ["ENS", "Esquema Nacional de Seguridad", "politica de seguridad", "principios basicos", "requisitos minimos", "medidas de seguridad", "categoria del sistema", "analisis de riesgos", "auditoria", "declaracion de conformidad"],
+    12: ["RGPD", "LOPDGDD", "dato personal", "responsable del tratamiento", "encargado del tratamiento", "consentimiento", "licitud", "minimizacion", "derecho de acceso", "derecho de supresion", "AEPD"],
+    13: ["PostgreSQL", "arquitectura cliente-servidor", "postmaster", "procesos de servidor", "cluster", "base de datos", "conexion", "puerto 5432", "shared buffers", "WAL"],
+    14: ["jerarquia de objetos", "database", "schema", "table", "view", "sequence", "function", "procedure", "role", "privileges", "GRANT"],
+    15: ["transaccion", "ACID", "atomicidad", "consistencia", "aislamiento", "durabilidad", "BEGIN", "COMMIT", "ROLLBACK", "SAVEPOINT", "MVCC"],
+    16: ["psql", "pg_dump", "pg_restore", "COPY", "\\copy", "CSV", "importacion", "exportacion", "backup logico", "restore", "pgAdmin"],
+    17: ["optimizacion SQL", "EXPLAIN", "EXPLAIN ANALYZE", "indice", "B-tree", "sequential scan", "query planner", "VACUUM", "ANALYZE", "configuracion del servidor", "work_mem"],
+    18: ["C#", "clase", "objeto", "metodo", "propiedad", "interfaz", "herencia", "polimorfismo", "excepcion", "genericos", "LINQ basico"],
+    19: ["MVC", "modelo", "vista", "controlador", "Razor", "routing", "Bootstrap", "grid responsive", "layout", "partial view", "ASP.NET Core"],
+    20: ["Entity Framework Core", "DbContext", "DbSet", "entidad", "migracion", "Code First", "tracking", "SaveChanges", "relaciones", "LINQ to Entities"],
+    21: ["LINQ", "Where", "Select", "OrderBy", "GroupBy", "Join", "expresion lambda", "consulta diferida", "IEnumerable", "IQueryable", "proyeccion"],
+    22: ["model binding", "validacion", "DataAnnotations", "ModelState", "modificacion de datos con EF", "Attach", "Update", "async", "await", "Task", "CancellationToken"],
+    23: ["autenticacion", "autorizacion", "claims", "roles", "cookies", "JWT", "Authorize", "AllowAnonymous", "filtros", "ActionFilter", "Policy"],
+    24: ["Web API", "REST", "endpoint", "controlador API", "GET", "POST", "PUT", "DELETE", "JSON", "HTTP 200", "HTTP 404", "Swagger"],
+    25: ["OData", "$filter", "$select", "$orderby", "$top", "$skip", "entidad", "metadata", "consulta HTTP", "exposicion de datos", "servicio OData"],
+    26: ["Blazor", "Blazor Server", "Blazor WebAssembly", "SignalR", "WebAssembly", "Razor component", "Program.cs", "wwwroot", "hosting model", "solucion Blazor"],
+    27: ["componente Blazor", "@bind", "one-way binding", "two-way binding", "[Parameter]", "EventCallback", "CascadingValue", "valores en cascada", "@code", "ciclo de vida"],
+    28: ["componentes avanzados", "RenderFragment", "ChildContent", "componentes genericos", "CSS isolation", "estilos", "plantillas", "composicion", "@typeparam", "parametros avanzados"],
+    29: ["EditForm", "EditContext", "InputText", "InputSelect", "InputNumber", "DataAnnotationsValidator", "ValidationSummary", "ValidationMessage", "Required", "StringLength", "validacion"],
+    30: ["inyeccion de dependencias", "servicios", "AddScoped", "AddSingleton", "AddTransient", "@inject", "IConfiguration", "appsettings.json", "contenedor DI", "ciclo de vida", "Program.cs"],
+    31: ["estado de componente", "estado compartido", "persistencia de estado", "localStorage", "sessionStorage", "servicio de estado", "parametros", "cascading state", "ProtectedBrowserStorage", "state container"],
+    32: ["@page", "Router", "NavLink", "NavigationManager", "NavigateTo", "parametro de ruta", "route constraints", "query string", "NotFound", "enrutado", "navegacion"],
+    33: ["Git", "git init", "git config", "git status", "git add", "git commit", "repositorio local", "working tree", "staging area", "HEAD", ".gitignore"],
+    34: ["rama", "git branch", "git checkout", "git switch", "merge", "rebase", "conflicto", "fast-forward", "git stash", "stash pop", "cherry-pick"],
+    35: ["remote", "origin", "git clone", "git fetch", "git pull", "git push", "pull request", "fork", "GitFlow", "trunk-based development", "estrategia de ramas"],
+    36: ["SedipuAlba", "sede electronica", "registro electronico", "expediente electronico", "documento electronico", "firma electronica", "CSV", "notificacion electronica", "carpeta ciudadana", "tramitacion electronica"],
+    37: ["Segex", "Sefycu", "Segra", "Seres", "Secoin", "modulos de tramitacion", "gestion de expedientes", "firma y custodia", "registro", "comunicaciones internas"],
+    38: ["interoperabilidad", "SCSP", "Red SARA", "PID", "consulta de datos", "verificacion de datos", "intercambio de datos", "servicios de intermediacion", "consentimiento", "no aportar documentos"],
+    39: ["Cl@ve", "DNIe", "FIRe", "Carpeta Ciudadana", "SIR", "PID", "plataforma de contratacion", "identificacion electronica", "firma centralizada", "servicios compartidos"],
+    40: ["accesibilidad web", "WCAG", "UNE-EN 301549", "nivel A", "nivel AA", "nivel AAA", "perceptible", "operable", "comprensible", "robusto", "declaracion de accesibilidad"],
+}
+
+_SYLLABUS_QUESTION_TEMPLATES = [
+    "En el temario oficial, en que tema se estudia exactamente: '{concept}'?",
+    "A que tema pertenece el concepto o herramienta '{concept}'?",
+    "Si aparece '{concept}' en una pregunta de examen, con que tema del temario se relaciona directamente?",
+    "Que tema incluye expresamente el estudio de '{concept}'?",
+]
+
+
+def _make_syllabus_location_questions(target_per_topic=30):
+    questions = []
+    current_counts = {n: 0 for n in _TOPIC_SHORT_TITLES}
+    for q in SEED_QUESTIONS:
+        current_counts[q["topic_num"]] = current_counts.get(q["topic_num"], 0) + 1
+
+    topic_numbers = sorted(_TOPIC_SHORT_TITLES)
+    for topic_num in topic_numbers:
+        needed = max(0, target_per_topic - current_counts.get(topic_num, 0))
+        concepts = _TOPIC_CONCEPTS[topic_num]
+        for idx in range(needed):
+            concept = concepts[idx % len(concepts)]
+            template = _SYLLABUS_QUESTION_TEMPLATES[idx % len(_SYLLABUS_QUESTION_TEMPLATES)]
+            answer = f"Tema {topic_num}: {_TOPIC_SHORT_TITLES[topic_num]}"
+            distractor_nums = [
+                topic_numbers[(topic_numbers.index(topic_num) + 7 + idx) % len(topic_numbers)],
+                topic_numbers[(topic_numbers.index(topic_num) + 17 + idx * 2) % len(topic_numbers)],
+                topic_numbers[(topic_numbers.index(topic_num) + 29 + idx * 3) % len(topic_numbers)],
+            ]
+            # Avoid accidental duplicate topic numbers in the options.
+            seen = {topic_num}
+            unique_distractors = []
+            for dn in distractor_nums:
+                while dn in seen:
+                    dn = topic_numbers[(topic_numbers.index(dn) + 1) % len(topic_numbers)]
+                seen.add(dn)
+                unique_distractors.append(f"Tema {dn}: {_TOPIC_SHORT_TITLES[dn]}")
+
+            options = [answer] + unique_distractors
+            shift = (topic_num + idx) % 4
+            options = options[shift:] + options[:shift]
+            correct = "ABCD"[options.index(answer)]
+            questions.append({
+                "topic_num": topic_num,
+                "question": template.format(concept=concept),
+                "option_a": options[0],
+                "option_b": options[1],
+                "option_c": options[2],
+                "option_d": options[3],
+                "correct": correct,
+                "explanation": f"'{concept}' corresponde al Tema {topic_num}: {_TOPIC_SHORT_TITLES[topic_num]}.",
+            })
+    return questions
+
+
+SEED_QUESTIONS.extend(_make_syllabus_location_questions(30))
