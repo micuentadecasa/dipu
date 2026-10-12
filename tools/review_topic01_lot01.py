@@ -55,7 +55,7 @@ REVIEW_MATRIX = {
 
 def main() -> int:
     payload = json.loads(CANDIDATE_PATH.read_text(encoding="utf-8"))
-    if payload["state"] != "candidates_written" or payload["revision"] != 2:
+    if payload["state"] != "candidates_written" or payload["revision"] != 3:
         raise RuntimeError("review requires the current candidate revision")
     accepted = []
     decisions = []
@@ -113,7 +113,7 @@ def main() -> int:
     review_audit = {
         "review_version": "1.0",
         "lot": "topic-01-lot-01",
-        "revision": 2,
+        "revision": payload["revision"],
         "reviewer": "independent-source-review-2026-10-12",
         "source_ids": ["BOE-CE-1978"],
         "source_tier": "official_primary",
@@ -126,7 +126,7 @@ def main() -> int:
         "state": "reviewed",
         "topic_num": payload["topic_num"],
         "lot_num": payload["lot_num"],
-        "revision": 2,
+        "revision": payload["revision"],
         "reviewed_at": DATE,
         "source_register_sha256": payload["source_register_sha256"],
         "objective_manifest_sha256": payload["objective_manifest_sha256"],
@@ -143,7 +143,7 @@ def main() -> int:
         "source_register_hash": payload["source_register_sha256"],
         "topic_num": 1,
         "lot_num": 1,
-        "revision": 2,
+        "revision": payload["revision"],
         "stage": "reviewed",
         "objective_ids": [question["learning_objective_id"] for question in accepted],
         "stable_ids": [question["stable_id"] for question in accepted],

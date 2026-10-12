@@ -1,6 +1,6 @@
 # Question-bank milestone 1: source coverage and validation seam
 
-**Status:** source-boundary comparison and validation seam completed; topic 1 lot 1 has 20 independently reviewed, import-validated records ready for authorized native publication; no runtime question was imported or exported.
+**Status:** source-boundary comparison and validation seam completed; topics 1 and 2 each have 20 independently reviewed, import-validated records, and the native static artifact now contains both batches. Topic 2 is ready for the authorized main-branch publication step.
 
 **Verified at:** 2026-10-12 (UTC)
 
@@ -8,12 +8,12 @@
 
 1. [`syllabus-comparison.md`](./syllabus-comparison.md) compares the preserved official call PDF with `temario.md`. It confirms the exact 40-topic boundary and records the PDF pages and SHA-256 used for the comparison.
 2. [`source-register.json`](./source-register.json) records the official source plan, source URLs, version/as-of policy, retrieval and verification dates, topic knowledge-map coverage, and explicit blocked/pending entries. It has one topic-coverage record for every topic 1--40 and records the captain-approved target policy: 200 objectives/topic, 40/100/60 difficulty counts, and 35/45/55/40/25 knowledge-type counts.
-3. [`objective-manifest.json`](./objective-manifest.json) records exactly 200 deterministic objective slots per topic (8,000 total), with the approved knowledge-type allocation and source IDs. Unresearched slots have `statement: null` and `planned_pending_source_verification`; researched statements remain pending acceptance until independently reviewed.
+3. [`objective-manifest.json`](./objective-manifest.json) records exactly 200 deterministic objective slots per topic (8,000 total), with the approved knowledge-type allocation and source IDs. One hundred statements for topics 1--5 are researched and independently reviewable; the remaining 7,900 slots have `statement: null` and `planned_pending_source_verification`.
 4. `docs/question-bank/question-record.schema.json` now accepts the optional `topic_title` and `group_name` context emitted by the legacy Flask adapter without changing the required static-frontend fields.
 5. `question_bank/validation.py` provides the pre-export seam: JSON Schema/format validation, option/correct-answer checks, deterministic stable IDs, exact/lexical/near-lexical screening, and explicit `uncertain` results for semantic/concept review that cannot be automated honestly.
 6. `question_bank/checkpoints.py` provides append-only lot-stage checkpoints. A retry of the same topic/lot/revision/stage and content hashes is a no-op; a conflicting retry is rejected.
 7. `tools/validate_question_bank.py` provides a command-line validation entry point. `tools/build_objective_manifest.py` rebuilds the objective-slot artifact from the source register. `tests/test_question_bank_validation.py` covers schema acceptance, legacy context fields, malformed records, five-level screening semantics, checkpoint idempotence/conflict handling, and exact 1--40 source coverage.
-8. `docs/question-bank/research/objectives/topic-01.json` records 20 BOE-backed objective statements. `tools/build_topic01_lot01.py` produced the quarantined candidate audit; `tools/review_topic01_lot01.py` produced a separate reviewed artifact with 20 accepted records after answer, explanation, semantic-duplicate, and concept-collision review. `tools/validate_accepted_batch.py` passed a native import dry-run without changing the frontend.
+8. `docs/question-bank/research/objectives/topic-01.json` through `topic-05.json` record 100 primary-source-backed objective statements. The topic-1 and topic-2 builders produced quarantined candidate audits; separate review artifacts contain 20 accepted records per topic after answer, explanation, semantic-duplicate, and concept-collision review. The generic topic-2 pipeline and native import step are recorded by `tools/build_topic_batch.py`, `tools/review_topic_batch.py`, `tools/validate_topic_batch.py`, and `tools/import_accepted_batch.py`.
 9. Every question source now carries `official_primary` or `secondary_reputable` tier metadata. The current accepted batch contains 20 official-primary records and no secondary-source records.
 
 ## Validation run
@@ -31,7 +31,7 @@
 
 ## Deliberately not done
 
-- No runtime question was imported, legacy migration was run, or `frontend/src/questions.js` export was generated. The original 20-record topic-1 lot remains quarantined as an audit trail; its separate reviewed artifact contains 20 accepted records. The remaining 7,980 slots stay source-gated. The objective manifest is not question content.
+- Topics 1 and 2 are now imported through `seed_data.py` and regenerated into `frontend/src/questions.js` (1,240 runtime records). The original candidate lots remain quarantined as audit trails; each separate reviewed artifact contains 20 accepted records. The remaining 7,900 objective slots stay source-gated. The objective manifest is not question content.
 - The existing 1,200 records remain untouched and are not counted as validated records.
 - Semantic and concept-level duplicate decisions for topic 1 lot 1 are recorded as independently reviewed unique; future lots still require the same reviewer decision and the validator does not label them unique automatically.
 
@@ -42,4 +42,4 @@
 - The objective target is 200 distinct objectives per topic, not 200 objectives reused across lots. The slot manifest is complete, but every statement still needs source research and independent review.
 - The official DOCM ELI URLs and Publications Office CELEX fallbacks are now recorded; verify current legal vigency/article amendments before acceptance. Administración Electrónica service pages remain WAF-blocked, and public SedipuAlba evidence remains incomplete for Segra and AdminSedeElectrónica. Missing or unverifiable claims remain quarantined.
 
-The reviewed topic 1 lot is ready for authorized native import/export. Publication is blocked because GitHub Pages deployment requires a default-branch push/merge, which this worker is not authorized to perform; no silent wait or runtime mutation is being used. Other topics remain sequential; secondary sources may now be used for inaccessible official pages only with explicit tier, URL/date/provenance and material-uncertainty reporting. The 8,000 count remains a target, never a padding requirement.
+Topic 1 is acknowledged by the captain as published at `https://micuentadecasa.github.io/dipu/`; topic 2 is ready for direct `main` push and deployment verification. Continue topics 3--5 sequentially after each publication milestone; secondary sources remain permitted only with explicit tier, URL/date/provenance and material-uncertainty reporting. The 8,000 count remains a target, never a padding requirement.

@@ -40,7 +40,7 @@ def checkpoint_key(manifest: dict[str, Any]) -> tuple[int, int, str, int]:
     if topic_num not in range(1, 41) or lot_num < 1:
         raise CheckpointError("checkpoint topic_num must be 1-40 and lot_num must be positive")
     stage = manifest.get("stage", "candidates_written")
-    if stage not in {"candidates_written", "reviewed", "import_validated", "published"}:
+    if stage not in {"candidates_written", "reviewed", "import_validated", "import_applied", "published"}:
         raise CheckpointError("checkpoint stage is not recognized")
     try:
         revision = int(manifest.get("revision", 1))
