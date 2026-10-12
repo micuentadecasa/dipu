@@ -1,7 +1,7 @@
 # Question-bank quality report — checkpoint 1
 
 **As of:** 2026-10-12 UTC
-**Scope:** topics 1--18 lot 1 are published with duplicate-free runtime data; topic 19 lot 1 is reviewed and import-validated, ready for deployment.
+**Scope:** topics 1--19 lot 1 are published with duplicate-free runtime data.
 
 ## Current counts
 
@@ -15,11 +15,11 @@
 | Deterministic duplicate matches | 0 | Exact, lexical and near-lexical checks against legacy/topic-lot records |
 | Semantic/concept decisions | 380 unique | Independently reviewed against the objective and proposition |
 | Native import/export | 380 | Accepted topics 1--19 are imported through `seed_data.py`; duplicate-free `frontend/src/questions.js` contains 779 records |
-| Published batches | 18 | Topics 1--18 are live at `https://micuentadecasa.github.io/dipu/`; topic 19 is deployment-ready |
+| Published batches | 19 | Topics 1--19 are live at `https://micuentadecasa.github.io/dipu/` |
 
 ## Lot 1 distributions
 
-Topics 1--19 lot 1 each use 4 basic, 10 intermediate and 6 advanced records. Topics 1--12 use documented official sources; topics 13--17 use the official PostgreSQL 18 documentation source, topic 18 uses the official Microsoft C# documentation source, and topic 19 uses official Microsoft ASP.NET Core MVC and Bootstrap 5.3 documentation. All nineteen independent review passes accepted 380 official-primary records after answer, explanation, semantic and concept checks. Topics 1--18 are live at `https://micuentadecasa.github.io/dipu/`; topic 19 is ready for deployment.
+Topics 1--19 lot 1 each use 4 basic, 10 intermediate and 6 advanced records. Topics 1--12 use documented official sources; topics 13--17 use the official PostgreSQL 18 documentation source, topic 18 uses the official Microsoft C# documentation source, and topic 19 uses official Microsoft ASP.NET Core MVC and Bootstrap 5.3 documentation. All nineteen independent review passes accepted 380 official-primary records after answer, explanation, semantic and concept checks. Topics 1--19 are live at `https://micuentadecasa.github.io/dipu/`.
 
 Candidate, reviewed, audit and checkpoint artifacts are recorded under `lots/`, `accepted/`, `reviews/` and `checkpoints/` for topics 1--19. Re-running the lot/review/import stages is idempotent.
 
@@ -42,4 +42,4 @@ Candidate, reviewed, audit and checkpoint artifacts are recorded under `lots/`, 
 - `cd frontend && npm run lint`: passed.
 - `cd frontend && npm run build`: passed after regenerating the duplicate-free runtime artifact.
 
-The reviewed artifacts pass answer, explanation, five-level duplicate review and source checks. Publication milestone: topics 1--18, lot 1, 20 accepted records each, are live at `https://micuentadecasa.github.io/dipu/`; workflow run `38269916818` completed successfully for commit `44c6677`. Topic 18 contributes 20 accepted official-primary records from Microsoft C# documentation. Topics 13--17 use PostgreSQL 18; AutoFirma facts remain limited to the official entry point and no version-sensitive claim. No secondary or provisional records are in these batches.
+The reviewed artifacts pass answer, explanation, five-level duplicate review and source checks. Publication milestone: topics 1--19, lot 1, 20 accepted records each, are live at `https://micuentadecasa.github.io/dipu/`; workflow run `38279168293` completed successfully for commit `f60b214`. Topic 19 contributes 20 accepted official-primary records from Microsoft ASP.NET Core MVC and Bootstrap 5.3 documentation. Topics 13--17 use PostgreSQL 18; AutoFirma facts remain limited to the official entry point and no version-sensitive claim. No secondary or provisional records are in these batches.

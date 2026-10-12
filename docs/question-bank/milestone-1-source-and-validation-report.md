@@ -1,6 +1,6 @@
 # Question-bank milestone 1: source coverage and validation seam
 
-**Status:** source-boundary comparison and validation seam completed; topics 1--18 are published with duplicate-free runtime data, and topic 19 has 20 independently reviewed, import-validated records ready for deployment.
+**Status:** source-boundary comparison and validation seam completed; topics 1--19 are published with duplicate-free runtime data.
 
 **Verified at:** 2026-10-12 (UTC)
 
@@ -42,4 +42,4 @@
 - The objective target is 200 distinct objectives per topic, not 200 objectives reused across lots. The slot manifest is complete, but every statement still needs source research and independent review.
 - The official DOCM ELI URLs and Publications Office CELEX fallbacks are now recorded; verify current legal vigency/article amendments before acceptance. Administración Electrónica service pages remain WAF-blocked, and public SedipuAlba evidence remains incomplete for Segra and AdminSedeElectrónica. Missing or unverifiable claims remain quarantined.
 
-Topics 1--18, lot 1, remain published at `https://micuentadecasa.github.io/dipu/` after successful workflow run `38270184555` for commit `795ef52`; topic 19 has passed the same review/import gates with official Microsoft ASP.NET Core MVC and Bootstrap 5.3 documentation and is ready for deployment. Publish topic 19 next and continue later topics sequentially under the same provenance and quarantine policy. The 8,000 count remains a target, never a padding requirement.
+Topics 1--19, lot 1, are published at `https://micuentadecasa.github.io/dipu/` after successful workflow run `38279168293` for commit `f60b214`; topic 19 uses official Microsoft ASP.NET Core MVC and Bootstrap 5.3 documentation. Continue later topics sequentially under the same provenance and quarantine policy. The 8,000 count remains a target, never a padding requirement.
