@@ -144,12 +144,30 @@ class SourceRegisterTests(unittest.TestCase):
         manifest = json.loads((ROOT / "docs/question-bank/objective-manifest.json").read_text(encoding="utf-8"))
         self.assertEqual(manifest["objective_count"], 8000)
         self.assertEqual(manifest["objectives_per_topic"], 200)
+        self.assertEqual(manifest["researched_objective_count"], 20)
         topic_counts = {}
+        researched_count = 0
         for objective in manifest["objectives"]:
             topic_counts[objective["topic_num"]] = topic_counts.get(objective["topic_num"], 0) + 1
-            self.assertIsNone(objective["statement"])
-            self.assertEqual(objective["coverage_state"], "planned_pending_source_verification")
+            if objective["statement"] is None:
+                self.assertEqual(objective["coverage_state"], "planned_pending_source_verification")
+            else:
+                researched_count += 1
+                self.assertEqual(objective["coverage_state"], "researched_pending_independent_review")
+                self.assertTrue(objective["citation"])
+            self.assertEqual(objective["reviewer_decision"], "not_reviewed")
+        self.assertEqual(researched_count, 20)
         self.assertEqual(topic_counts, {topic: 200 for topic in range(1, 41)})
+
+    def test_topic_one_lot_is_candidate_only_and_blockers_are_recorded(self):
+        lot = json.loads((ROOT / "docs/question-bank/lots/topic-01-lot-01.json").read_text(encoding="utf-8"))
+        register = json.loads((ROOT / "docs/question-bank/source-register.json").read_text(encoding="utf-8"))
+        self.assertEqual(lot["state"], "candidates_written")
+        self.assertEqual(lot["counts"]["accepted"], 0)
+        self.assertEqual(lot["counts"]["quarantined"], 20)
+        self.assertTrue(all(question["status"] == "quarantined" for question in lot["questions"]))
+        blocked_topics = {topic for entry in register["source_blocker_log"] for topic in entry["topic_nums"]}
+        self.assertTrue({37, 38, 39}.issubset(blocked_topics))
 
 
 if __name__ == "__main__":
