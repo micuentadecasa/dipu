@@ -3613,3 +3613,208 @@ SEED_QUESTIONS.extend([
     }
 ])
 # QUESTION_BANK_ACCEPTED_TOPIC_10_LOT_01_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_11_LOT_01_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 11,
+        "question": "¿Cuál es el objeto del Esquema Nacional de Seguridad?",
+        "option_a": "Establecer los principios y requisitos necesarios para una protección adecuada de la información y los servicios utilizados por las entidades de su ámbito",
+        "option_b": "Regular solo la contratación privada",
+        "option_c": "Sustituir la protección de datos",
+        "option_d": "Regular únicamente la firma electrónica",
+        "correct": "A",
+        "explanation": "El Real Decreto 311/2022 establece el ENS para fundamentar la confianza en el uso de medios electrónicos mediante protección adecuada de información y servicios."
+    },
+    {
+        "topic_num": 11,
+        "question": "¿Qué exige el principio de seguridad como función diferenciada en el ENS?",
+        "option_a": "Una protección basada en medidas adecuadas al riesgo y en la prevención, detección, respuesta y conservación",
+        "option_b": "Solo instalar antivirus",
+        "option_c": "No documentar incidentes",
+        "option_d": "Proteger únicamente la confidencialidad",
+        "correct": "A",
+        "explanation": "El ENS exige una protección integral y proporcional, con prevención, detección, respuesta y conservación frente a riesgos."
+    },
+    {
+        "topic_num": 11,
+        "question": "¿Cómo deben ser las medidas de seguridad del ENS?",
+        "option_a": "Proporcionadas a los riesgos y a la categoría del sistema, considerando la naturaleza de la información y los servicios",
+        "option_b": "Idénticas para todos los sistemas sin análisis",
+        "option_c": "Solo voluntarias para el sector público",
+        "option_d": "Aplicables únicamente después de un incidente",
+        "correct": "A",
+        "explanation": "El ENS vincula las medidas al análisis de riesgos y a la categoría del sistema, sin reducir la protección a una configuración idéntica."
+    },
+    {
+        "topic_num": 11,
+        "question": "¿Qué instrumento recoge las directrices de seguridad de una organización?",
+        "option_a": "La política de seguridad, aprobada por el órgano competente y aplicable al ámbito de la organización",
+        "option_b": "Una contraseña individual",
+        "option_c": "Un informe de auditoría externo solamente",
+        "option_d": "El inventario de hardware",
+        "correct": "A",
+        "explanation": "La política de seguridad establece las directrices de seguridad de la organización y debe aprobarse por el órgano competente."
+    },
+    {
+        "topic_num": 11,
+        "question": "¿Qué responsabilidades deben diferenciarse en la gobernanza de la seguridad?",
+        "option_a": "Las responsabilidades sobre la información, los servicios, la seguridad y los sistemas, sin perjuicio de las estructuras organizativas",
+        "option_b": "Una única responsabilidad siempre atribuida al usuario",
+        "option_c": "Solo la responsabilidad del proveedor externo",
+        "option_d": "Ninguna responsabilidad documentada",
+        "correct": "A",
+        "explanation": "El ENS exige una organización de la seguridad y la diferenciación de responsabilidades para información, servicios, seguridad y sistemas."
+    },
+    {
+        "topic_num": 11,
+        "question": "¿Qué categorías de seguridad contempla el ENS?",
+        "option_a": "Básica, media y alta",
+        "option_b": "Local, nacional y europea",
+        "option_c": "Preventiva, reactiva y penal",
+        "option_d": "A, B y C sin significado de riesgo",
+        "correct": "A",
+        "explanation": "El ENS clasifica los sistemas en categorías básica, media y alta según el impacto de un incidente sobre las dimensiones de seguridad."
+    },
+    {
+        "topic_num": 11,
+        "question": "¿Qué se tiene en cuenta para determinar la categoría de seguridad de un sistema?",
+        "option_a": "El impacto que tendría un incidente sobre las dimensiones de seguridad de la información y los servicios",
+        "option_b": "Solo el número de usuarios",
+        "option_c": "El fabricante del servidor",
+        "option_d": "El presupuesto anual",
+        "correct": "A",
+        "explanation": "La categoría se determina a partir de la valoración del impacto de los incidentes sobre las dimensiones de seguridad."
+    },
+    {
+        "topic_num": 11,
+        "question": "¿Qué relación hay entre el análisis de riesgos y las medidas ENS?",
+        "option_a": "El análisis de riesgos informa la selección de medidas, que deben ser adecuadas y proporcionales",
+        "option_b": "Las medidas se eligen sin relación con el riesgo",
+        "option_c": "El análisis solo se realiza después de un ataque",
+        "option_d": "El riesgo se elimina por decreto",
+        "correct": "A",
+        "explanation": "El principio de gestión de riesgos exige valorar amenazas y elegir medidas proporcionadas para reducirlas."
+    },
+    {
+        "topic_num": 11,
+        "question": "¿Para qué sirve la estructura de gobernanza de la seguridad?",
+        "option_a": "Para coordinar, supervisar y asignar responsabilidades de seguridad dentro de la organización",
+        "option_b": "Para sustituir todos los controles técnicos",
+        "option_c": "Solo para publicar contratos",
+        "option_d": "Para eliminar la función del responsable de seguridad",
+        "correct": "A",
+        "explanation": "La organización de la seguridad permite coordinar y asignar funciones, responsabilidades y decisiones de protección."
+    },
+    {
+        "topic_num": 11,
+        "question": "¿Qué documento debe describir la protección de un sistema?",
+        "option_a": "El plan de adecuación o de seguridad del sistema, con las medidas y decisiones aplicables al sistema",
+        "option_b": "Solo el registro de usuarios",
+        "option_c": "Únicamente el contrato de mantenimiento",
+        "option_d": "Una nota verbal no documentada",
+        "correct": "A",
+        "explanation": "El ENS exige planificar y documentar la seguridad del sistema, incluyendo medidas, responsables y decisiones de adecuación."
+    },
+    {
+        "topic_num": 11,
+        "question": "¿Qué grupos de medidas recoge el ENS?",
+        "option_a": "Medidas relativas al marco organizativo, al marco operacional y a las medidas de protección",
+        "option_b": "Solo medidas de hardware",
+        "option_c": "Solo medidas de cifrado",
+        "option_d": "Medidas exclusivamente presupuestarias",
+        "correct": "A",
+        "explanation": "El anexo II estructura el marco de medidas en organizativas, operacionales y de protección."
+    },
+    {
+        "topic_num": 11,
+        "question": "¿Qué control se asocia especialmente a sistemas de categoría alta?",
+        "option_a": "La auditoría de seguridad y, cuando proceda, la certificación o evaluación de conformidad conforme al ENS",
+        "option_b": "Solo una autoevaluación informal",
+        "option_c": "Ningún control adicional",
+        "option_d": "Una encuesta a usuarios",
+        "correct": "A",
+        "explanation": "El ENS prevé auditorías y evaluaciones de conformidad con exigencias reforzadas según la categoría del sistema."
+    },
+    {
+        "topic_num": 11,
+        "question": "¿Qué exige el ENS respecto de la seguridad a lo largo del tiempo?",
+        "option_a": "Revisión, actualización y mejora continua mediante monitorización y reevaluación periódica",
+        "option_b": "Configurar una vez y no volver a revisar",
+        "option_c": "Revisar solo cuando cambie el nombre del sistema",
+        "option_d": "No conservar registros",
+        "correct": "A",
+        "explanation": "El ENS aplica un ciclo de mejora continua y exige revisar la seguridad ante cambios, incidentes y evolución del riesgo."
+    },
+    {
+        "topic_num": 11,
+        "question": "¿Qué función cumple la gestión de incidentes de seguridad?",
+        "option_a": "Detectar, analizar, responder y aprender de incidentes, comunicándolos por los canales establecidos",
+        "option_b": "Ocultar cualquier incidente",
+        "option_c": "Sustituir las medidas preventivas",
+        "option_d": "Registrar solo incidentes de usuarios externos",
+        "correct": "A",
+        "explanation": "La gestión de incidentes es una capacidad de respuesta y mejora, con comunicaciones según los procedimientos y autoridades aplicables."
+    },
+    {
+        "topic_num": 11,
+        "question": "¿Qué implica aplicar el principio de mínimo privilegio?",
+        "option_a": "Conceder a cada usuario o proceso solo los permisos necesarios para sus funciones",
+        "option_b": "Conceder permisos de administrador a todos",
+        "option_c": "No revisar permisos nunca",
+        "option_d": "Permitir acceso anónimo a datos sensibles",
+        "correct": "A",
+        "explanation": "El control de acceso debe limitar los privilegios a los necesarios, reduciendo la superficie de ataque y el impacto de errores."
+    },
+    {
+        "topic_num": 11,
+        "question": "¿Qué dimensión puede verse afectada por un incidente de seguridad?",
+        "option_a": "Confidencialidad, integridad, autenticidad, trazabilidad o disponibilidad, según el marco aplicable",
+        "option_b": "Solo la disponibilidad",
+        "option_c": "Solo el coste económico",
+        "option_d": "Ninguna si existe copia de seguridad",
+        "correct": "A",
+        "explanation": "El ENS trabaja con dimensiones de seguridad que permiten valorar impactos más allá de la mera disponibilidad."
+    },
+    {
+        "topic_num": 11,
+        "question": "¿Qué debe proteger el ENS?",
+        "option_a": "La información tratada y los servicios prestados mediante sistemas, junto con los elementos que los soportan",
+        "option_b": "Solo los ordenadores personales",
+        "option_c": "Exclusivamente los datos publicados",
+        "option_d": "Solo el perímetro físico",
+        "correct": "A",
+        "explanation": "El ámbito material del ENS comprende la información y los servicios y los sistemas que los soportan."
+    },
+    {
+        "topic_num": 11,
+        "question": "¿Por qué el cumplimiento del ENS no es una configuración única?",
+        "option_a": "Porque exige gestión continua, análisis de cambios, incidentes, auditorías y mejora de medidas",
+        "option_b": "Porque solo se revisa cada veinte años",
+        "option_c": "Porque no requiere documentación",
+        "option_d": "Porque las categorías no cambian nunca",
+        "correct": "A",
+        "explanation": "La adecuación al ENS requiere un proceso permanente de gestión y revisión, no una instalación aislada."
+    },
+    {
+        "topic_num": 11,
+        "question": "¿Qué función tiene una entidad de evaluación de la conformidad?",
+        "option_a": "Evaluar o auditar la conformidad con los requisitos aplicables conforme al esquema de certificación",
+        "option_b": "Asignar por sí sola la categoría a todos los sistemas",
+        "option_c": "Sustituir al responsable del sistema",
+        "option_d": "Crear leyes",
+        "correct": "A",
+        "explanation": "El ENS contempla la evaluación y certificación de conformidad por entidades y procedimientos reconocidos."
+    },
+    {
+        "topic_num": 11,
+        "question": "¿Qué debe hacer una organización ante un incidente ENS relevante?",
+        "option_a": "Gestionarlo y comunicarlo por los canales y procedimientos establecidos, conservando la información necesaria",
+        "option_b": "Borrarlo para evitar auditorías",
+        "option_c": "Esperar siempre al cierre del ejercicio",
+        "option_d": "Informar solo a los usuarios afectados sin análisis",
+        "correct": "A",
+        "explanation": "El artículo 26 exige procedimientos de gestión y comunicación de incidentes de seguridad."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_11_LOT_01_END
