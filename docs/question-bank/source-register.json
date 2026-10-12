@@ -5,7 +5,22 @@
     "retrieved_at_and_verified_at_are_distinct": true,
     "item_requirement": "Every accepted item must cite a source_id, exact article/section/page, source version or effective date, retrieved_at, and verified_at.",
     "blocked_source_policy": "A source with status blocked, pending, or decision_required cannot support an accepted item; affected candidates remain quarantined.",
-    "primary_source_only": true
+    "primary_source_only": true,
+    "technical_version_policy": "Use the current stable reference version at research time; version-sensitive questions must state the version explicitly in the stem."
+  },
+  "captain_decisions": {
+    "objective_target": "200 distinct learning objectives per topic, 8,000 objective IDs across topics 1-40",
+    "difficulty_target_per_topic": {"basic": 40, "intermediate": 100, "advanced": 60},
+    "knowledge_type_target_per_topic": {
+      "definitions_concepts": 35,
+      "mechanisms": 45,
+      "practical_application": 55,
+      "error_scenario_analysis": 40,
+      "relationships": 25
+    },
+    "adaptation_rule": "Knowledge-type targets may change only when the topic genuinely cannot support a category; the objective manifest and quality report must record the reason.",
+    "accepted_at": "2026-10-12",
+    "authority": "Firstmate inbox decision 001"
   },
   "official_call": {
     "source_id": "CALL-2691",
@@ -102,34 +117,35 @@
       "source_id": "DOCM-LEY-12-2010",
       "title": "Ley 12/2010, de Igualdad entre Mujeres y Hombres de Castilla-La Mancha",
       "authority": "Diario Oficial de Castilla-La Mancha",
-      "url": "https://docm.jccm.es/portaldocm/",
-      "citation_scope": "Título III; búsqueda oficial por ley y fecha de publicación requerida",
-      "version_or_as_of": "Portal oficial localizado; URL del documento consolidado y vigencia por comprobar",
+      "url": "https://docm.jccm.es/docm/eli/es-cm/l/2010/11/18/12",
+      "citation_scope": "Título III; artículos exactos por objetivo",
+      "version_or_as_of": "Ley publicada el 18 de noviembre de 2010; vigencia consolidada debe comprobarse artículo a artículo",
       "retrieved_at": "2026-10-12",
-      "verified_at": null,
-      "status": "blocked_exact_document_url"
+      "verified_at": "2026-10-12",
+      "status": "verified_official_eli_entry"
     },
     {
       "source_id": "DOCM-LEY-4-2018",
       "title": "Ley 4/2018, para una Sociedad Libre de Violencia de Género en Castilla-La Mancha",
       "authority": "Diario Oficial de Castilla-La Mancha",
-      "url": "https://docm.jccm.es/portaldocm/",
-      "citation_scope": "Título I; búsqueda oficial por ley y fecha de publicación requerida",
-      "version_or_as_of": "Portal oficial localizado; URL del documento consolidado y vigencia por comprobar",
+      "url": "https://docm.jccm.es/docm/eli/es-cm/l/2018/10/08/4",
+      "citation_scope": "Título I; artículos exactos por objetivo",
+      "version_or_as_of": "Ley publicada el 8 de octubre de 2018; vigencia consolidada debe comprobarse artículo a artículo",
       "retrieved_at": "2026-10-12",
-      "verified_at": null,
-      "status": "blocked_exact_document_url"
+      "verified_at": "2026-10-12",
+      "status": "verified_official_eli_entry"
     },
     {
       "source_id": "EURLEX-EIDAS-2014",
       "title": "Reglamento (UE) n.º 910/2014 (eIDAS)",
-      "authority": "Unión Europea, EUR-Lex",
+      "authority": "Unión Europea, EUR-Lex / Publications Office of the European Union",
       "url": "https://eur-lex.europa.eu/eli/reg/2014/910/oj",
+      "fallback_url": "https://publications.europa.eu/resource/celex/32014R0910",
       "citation_scope": "Definiciones y requisitos de firma electrónica; artículos exactos por objetivo",
-      "version_or_as_of": "Reglamento y correcciones vigentes a fecha de verificación",
+      "version_or_as_of": "Reglamento; official consolidated resource 2014R0910/20241018 identified in Publications Office metadata",
       "retrieved_at": "2026-10-12",
-      "verified_at": null,
-      "status": "blocked_eurlex_edge_response"
+      "verified_at": "2026-10-12",
+      "status": "verified_official_celex_fallback"
     },
     {
       "source_id": "PAE-AUTOFIRMA",
@@ -189,13 +205,14 @@
     {
       "source_id": "EURLEX-RGPD-2016",
       "title": "Reglamento (UE) 2016/679 (RGPD)",
-      "authority": "Unión Europea, EUR-Lex",
+      "authority": "Unión Europea, EUR-Lex / Publications Office of the European Union",
       "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "fallback_url": "https://publications.europa.eu/resource/celex/32016R0679",
       "citation_scope": "Principios, información, derechos, responsable y encargado",
-      "version_or_as_of": "Reglamento y correcciones vigentes a fecha de verificación",
+      "version_or_as_of": "Reglamento; official CELEX resource verified, exact current consolidated act must be selected per article",
       "retrieved_at": "2026-10-12",
-      "verified_at": null,
-      "status": "blocked_eurlex_edge_response"
+      "verified_at": "2026-10-12",
+      "status": "verified_official_celex_fallback"
     },
     {
       "source_id": "BOE-LOPDGDD-2018",
@@ -214,10 +231,10 @@
       "authority": "PostgreSQL Global Development Group",
       "url": "https://www.postgresql.org/docs/18/",
       "citation_scope": "Arquitectura, objetos, transacciones, herramientas y optimización; sección exacta por objetivo",
-      "version_or_as_of": "PostgreSQL 18; versión objetivo propuesta, pendiente de confirmación del producto",
+      "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
       "retrieved_at": "2026-10-12",
       "verified_at": "2026-10-12",
-      "status": "decision_required_version_target"
+      "status": "verified_current_stable_reference"
     },
     {
       "source_id": "DOTNET-CSharp-10",
@@ -225,10 +242,10 @@
       "authority": "Microsoft Learn",
       "url": "https://learn.microsoft.com/en-us/dotnet/csharp/",
       "citation_scope": "Fundamentos de programación C#; referencia de lenguaje por objetivo",
-      "version_or_as_of": ".NET 10 / C# version target proposed, pending product confirmation",
+      "version_or_as_of": ".NET 10 / current stable C# reference at research time",
       "retrieved_at": "2026-10-12",
       "verified_at": "2026-10-12",
-      "status": "decision_required_version_target"
+      "status": "verified_current_stable_reference"
     },
     {
       "source_id": "ASPNET-MVC-10",
@@ -236,10 +253,10 @@
       "authority": "Microsoft Learn",
       "url": "https://learn.microsoft.com/en-us/aspnet/core/mvc/overview?view=aspnetcore-10.0",
       "citation_scope": "MVC y Bootstrap; páginas versionadas por objetivo",
-      "version_or_as_of": "ASP.NET Core 10.0 proposed, pending product confirmation",
+      "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
       "retrieved_at": "2026-10-12",
       "verified_at": "2026-10-12",
-      "status": "decision_required_version_target"
+      "status": "verified_current_stable_reference"
     },
     {
       "source_id": "BOOTSTRAP-5.3",
@@ -258,10 +275,10 @@
       "authority": "Microsoft Learn",
       "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
       "citation_scope": "DbContext, entidades, consultas, cambios y migraciones",
-      "version_or_as_of": "EF Core 10.0 proposed, pending product confirmation",
+      "version_or_as_of": "EF Core 10.0, current stable reference at research time",
       "retrieved_at": "2026-10-12",
       "verified_at": "2026-10-12",
-      "status": "decision_required_version_target"
+      "status": "verified_current_stable_reference"
     },
     {
       "source_id": "DOTNET-LINQ-10",
@@ -269,10 +286,10 @@
       "authority": "Microsoft Learn",
       "url": "https://learn.microsoft.com/en-us/dotnet/csharp/linq/",
       "citation_scope": "Operadores y ejecución de consultas LINQ",
-      "version_or_as_of": ".NET 10 / C# version target proposed, pending product confirmation",
+      "version_or_as_of": ".NET 10 / current stable LINQ reference at research time",
       "retrieved_at": "2026-10-12",
       "verified_at": "2026-10-12",
-      "status": "decision_required_version_target"
+      "status": "verified_current_stable_reference"
     },
     {
       "source_id": "ASPNET-MODEL-BINDING-10",
@@ -280,10 +297,10 @@
       "authority": "Microsoft Learn",
       "url": "https://learn.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-10.0",
       "citation_scope": "Model binding, validación, modificación con EF y asincronía",
-      "version_or_as_of": "ASP.NET Core 10.0 proposed, pending product confirmation",
+      "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
       "retrieved_at": "2026-10-12",
       "verified_at": "2026-10-12",
-      "status": "decision_required_version_target"
+      "status": "verified_current_stable_reference"
     },
     {
       "source_id": "ASPNET-SECURITY-10",
@@ -291,10 +308,10 @@
       "authority": "Microsoft Learn",
       "url": "https://learn.microsoft.com/en-us/aspnet/core/security/?view=aspnetcore-10.0",
       "citation_scope": "Autenticación, autorización y filtros",
-      "version_or_as_of": "ASP.NET Core 10.0 proposed, pending product confirmation",
+      "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
       "retrieved_at": "2026-10-12",
       "verified_at": "2026-10-12",
-      "status": "decision_required_version_target"
+      "status": "verified_current_stable_reference"
     },
     {
       "source_id": "ASPNET-WEBAPI-10",
@@ -302,10 +319,10 @@
       "authority": "Microsoft Learn",
       "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
       "citation_scope": "Creación y consumo de servicios Web y Web API",
-      "version_or_as_of": "ASP.NET Core 10.0 proposed, pending product confirmation",
+      "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
       "retrieved_at": "2026-10-12",
       "verified_at": "2026-10-12",
-      "status": "decision_required_version_target"
+      "status": "verified_current_stable_reference"
     },
     {
       "source_id": "ODATA-4.01",
@@ -324,10 +341,10 @@
       "authority": "Microsoft Learn",
       "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
       "citation_scope": "Alojamiento, componentes, binding, estilos, formularios, DI, estado, navegación y enrutado",
-      "version_or_as_of": "ASP.NET Core 10.0 proposed, pending product confirmation",
+      "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
       "retrieved_at": "2026-10-12",
       "verified_at": "2026-10-12",
-      "status": "decision_required_version_target"
+      "status": "verified_current_stable_reference"
     },
     {
       "source_id": "GIT-2.50",
@@ -342,14 +359,82 @@
     },
     {
       "source_id": "SEDIPUALBA-HOME",
-      "title": "SedipuAlba, portal oficial",
+      "title": "SedipuAlba, portal oficial y documentación pública",
       "authority": "Diputación Provincial de Albacete / SedipuAlba",
       "url": "https://sedipualba.es/",
-      "citation_scope": "Definiciones, conceptos básicos y sede electrónica",
-      "version_or_as_of": "Portal consultado el 2026-10-12; exact page/version per objective required",
+      "documentation_index_url": "https://sedipualba.es/documentos/",
+      "sede_url": "https://sede.dipualba.es/",
+      "citation_scope": "Definiciones, conceptos básicos, sede electrónica y catálogo de documentación pública",
+      "version_or_as_of": "Portal, sede e índice de documentos consultados el 2026-10-12",
       "retrieved_at": "2026-10-12",
       "verified_at": "2026-10-12",
-      "status": "verified_entry_point"
+      "status": "verified_official_document_index_partial"
+    },
+    {
+      "source_id": "SEDIPUALBA-SEGEX",
+      "title": "Tramitador de Expedientes SEGEX, manual público",
+      "authority": "Diputación Provincial de Albacete / SedipuAlba",
+      "url": "https://www.sedipualba.es/manual-de-tramitador-de-expedientes-segex-v1-1/",
+      "citation_scope": "Funciones documentadas en el manual; sección exacta por objetivo",
+      "version_or_as_of": "Manual SEGEX v1.1 publicado en el índice oficial",
+      "retrieved_at": "2026-10-12",
+      "verified_at": "2026-10-12",
+      "status": "verified_public_manual"
+    },
+    {
+      "source_id": "SEDIPUALBA-SERES",
+      "title": "Manual SERES v1.2023",
+      "authority": "Diputación Provincial de Albacete / SedipuAlba",
+      "url": "https://www.sedipualba.es/animsa_manual_seres/",
+      "citation_scope": "Funciones documentadas en el manual; sección exacta por objetivo",
+      "version_or_as_of": "Manual SERES v1.2023 publicado en el índice oficial",
+      "retrieved_at": "2026-10-12",
+      "verified_at": "2026-10-12",
+      "status": "verified_public_manual"
+    },
+    {
+      "source_id": "SEDIPUALBA-SEFYCU",
+      "title": "Manual SEFYCU v3.0",
+      "authority": "Diputación Provincial de Albacete / SedipuAlba",
+      "url": "https://www.sedipualba.es/manual-sefycu-v3/",
+      "citation_scope": "Funciones documentadas en el manual; sección exacta por objetivo",
+      "version_or_as_of": "Manual SEFYCU v3.0 publicado en el índice oficial",
+      "retrieved_at": "2026-10-12",
+      "verified_at": "2026-10-12",
+      "status": "verified_public_manual"
+    },
+    {
+      "source_id": "SEDIPUALBA-SEFACE",
+      "title": "Manual SEFACE",
+      "authority": "Diputación Provincial de Albacete / SedipuAlba",
+      "url": "https://www.sedipualba.es/manual_seface/",
+      "citation_scope": "Funciones documentadas en el manual; sección exacta por objetivo",
+      "version_or_as_of": "Manual SEFACE publicado en el índice oficial; versión a comprobar en cada página",
+      "retrieved_at": "2026-10-12",
+      "verified_at": "2026-10-12",
+      "status": "verified_public_manual_version_pending"
+    },
+    {
+      "source_id": "SEDIPUALBA-SECOIN",
+      "title": "Manual de SECOIN",
+      "authority": "Diputación Provincial de Albacete / SedipuAlba",
+      "url": "https://www.sedipualba.es/manual_secoin/",
+      "citation_scope": "Funciones documentadas en el manual; sección exacta por objetivo",
+      "version_or_as_of": "Manual SECOIN publicado en el índice oficial; versión a comprobar en cada página",
+      "retrieved_at": "2026-10-12",
+      "verified_at": "2026-10-12",
+      "status": "verified_public_manual_version_pending"
+    },
+    {
+      "source_id": "SEDIPUALBA-SECA",
+      "title": "Contratos menores en SEGEX-SECA v1.1",
+      "authority": "Diputación Provincial de Albacete / SedipuAlba",
+      "url": "https://www.sedipualba.es/manual-segex-seca-contratos-menores/",
+      "citation_scope": "Funciones documentadas en el manual; sección exacta por objetivo",
+      "version_or_as_of": "Manual SEGEX-SECA v1.1 publicado en el índice oficial",
+      "retrieved_at": "2026-10-12",
+      "verified_at": "2026-10-12",
+      "status": "verified_public_manual"
     },
     {
       "source_id": "PAE-INTEROP",
@@ -387,13 +472,14 @@
     {
       "source_id": "EURLEX-WEB-ACCESS-2016",
       "title": "Directive (EU) 2016/2102 on the accessibility of websites and mobile applications",
-      "authority": "Unión Europea, EUR-Lex",
+      "authority": "Unión Europea, EUR-Lex / Publications Office of the European Union",
       "url": "https://eur-lex.europa.eu/eli/dir/2016/2102/oj",
+      "fallback_url": "https://publications.europa.eu/resource/celex/32016L2102",
       "citation_scope": "Ámbito y obligaciones de accesibilidad web del sector público",
-      "version_or_as_of": "Directive and corrections in force at verification date",
+      "version_or_as_of": "Directive; official CELEX resource verified, exact current consolidated act must be selected per article",
       "retrieved_at": "2026-10-12",
-      "verified_at": null,
-      "status": "blocked_eurlex_edge_response"
+      "verified_at": "2026-10-12",
+      "status": "verified_official_celex_fallback"
     },
     {
       "source_id": "BOE-RD-1112-2018",
@@ -415,45 +501,44 @@
     {"topic_num": 5, "syllabus_scope": "Ley 39/2015: disposiciones generales e interesados, Título I, capítulos I y II", "knowledge_map": ["ámbito y principios", "interesados y representación", "identificación y firma", "derechos del interesado"], "primary_sources": ["CALL-2691", "BOE-LPACAP-2015"], "coverage_state": "ready_for_objective_design"},
     {"topic_num": 6, "syllabus_scope": "Ley 39/2015: actividad administrativa y actos; requisitos, eficacia, nulidad y anulabilidad", "knowledge_map": ["términos y plazos", "actos administrativos", "eficacia y notificación", "nulidad y anulabilidad"], "primary_sources": ["CALL-2691", "BOE-LPACAP-2015"], "coverage_state": "ready_for_objective_design"},
     {"topic_num": 7, "syllabus_scope": "Ley 31/1995: definiciones, protección, principios preventivos y obligaciones de trabajadores", "knowledge_map": ["conceptos preventivos", "derecho a protección", "principios de acción preventiva", "obligaciones"], "primary_sources": ["CALL-2691", "BOE-LPRL-1995"], "coverage_state": "ready_for_objective_design"},
-    {"topic_num": 8, "syllabus_scope": "Legislación básica sobre igualdad: LO 3/2007, Ley 12/2010 CLM y Ley 4/2018 CLM", "knowledge_map": ["igualdad y tutela", "igualdad en el trabajo", "discriminación en CLM", "violencia de género en CLM"], "primary_sources": ["CALL-2691", "BOE-LO-3-2007", "DOCM-LEY-12-2010", "DOCM-LEY-4-2018"], "coverage_state": "blocked_exact_docm_urls"},
-    {"topic_num": 9, "syllabus_scope": "Firma electrónica, métodos y aplicación AutoFirma del MINHAP", "knowledge_map": ["concepto y tipos de firma", "formatos y validación", "AutoFirma", "identificación y control"], "primary_sources": ["CALL-2691", "EURLEX-EIDAS-2014", "PAE-AUTOFIRMA"], "coverage_state": "blocked_eurlex_verification"},
+    {"topic_num": 8, "syllabus_scope": "Legislación básica sobre igualdad: LO 3/2007, Ley 12/2010 CLM y Ley 4/2018 CLM", "knowledge_map": ["igualdad y tutela", "igualdad en el trabajo", "discriminación en CLM", "violencia de género en CLM"], "primary_sources": ["CALL-2691", "BOE-LO-3-2007", "DOCM-LEY-12-2010", "DOCM-LEY-4-2018"], "coverage_state": "ready_for_objective_design_after_vigency_check"},
+    {"topic_num": 9, "syllabus_scope": "Firma electrónica, métodos y aplicación AutoFirma del MINHAP", "knowledge_map": ["concepto y tipos de firma", "formatos y validación", "AutoFirma", "identificación y control"], "primary_sources": ["CALL-2691", "EURLEX-EIDAS-2014", "PAE-AUTOFIRMA"], "coverage_state": "ready_for_objective_design"},
     {"topic_num": 10, "syllabus_scope": "Cifrado, PKI, certificados, SSL/TLS y PGP", "knowledge_map": ["cifrado simétrico y asimétrico", "PKI y certificados", "TLS 1.3", "OpenPGP"], "primary_sources": ["CALL-2691", "RFC-5280", "RFC-8446", "RFC-9580"], "coverage_state": "ready_for_objective_design"},
     {"topic_num": 11, "syllabus_scope": "Esquema Nacional de Seguridad", "knowledge_map": ["principios", "categorías", "medidas", "conformidad y responsabilidades"], "primary_sources": ["CALL-2691", "BOE-ENS-2022"], "coverage_state": "ready_for_objective_design"},
-    {"topic_num": 12, "syllabus_scope": "Protección de datos", "knowledge_map": ["principios RGPD", "bases y transparencia", "derechos", "LOPDGDD y derechos digitales"], "primary_sources": ["CALL-2691", "EURLEX-RGPD-2016", "BOE-LOPDGDD-2018"], "coverage_state": "blocked_rgpd_verification"},
-    {"topic_num": 13, "syllabus_scope": "PostgreSQL: arquitectura de servidor", "knowledge_map": ["cluster y procesos", "memoria y WAL", "conexiones", "mantenimiento"], "primary_sources": ["CALL-2691", "POSTGRESQL-18"], "coverage_state": "blocked_version_decision"},
-    {"topic_num": 14, "syllabus_scope": "PostgreSQL: jerarquía de objetos y funciones", "knowledge_map": ["cluster, bases y esquemas", "tablas, vistas e índices", "funciones y procedimientos", "privilegios"], "primary_sources": ["CALL-2691", "POSTGRESQL-18"], "coverage_state": "blocked_version_decision"},
-    {"topic_num": 15, "syllabus_scope": "PostgreSQL: transacciones", "knowledge_map": ["ACID", "niveles de aislamiento", "bloqueos y concurrencia", "commit y rollback"], "primary_sources": ["CALL-2691", "POSTGRESQL-18"], "coverage_state": "blocked_version_decision"},
-    {"topic_num": 16, "syllabus_scope": "PostgreSQL: herramientas cliente e importación/exportación", "knowledge_map": ["psql y pgAdmin", "pg_dump y pg_restore", "COPY y \u005c\u005ccopy", "formatos y seguridad"], "primary_sources": ["CALL-2691", "POSTGRESQL-18"], "coverage_state": "blocked_version_decision"},
-    {"topic_num": 17, "syllabus_scope": "PostgreSQL: optimización SQL y de servidor", "knowledge_map": ["EXPLAIN", "índices y planes", "estadísticas y ANALYZE", "configuración y rendimiento"], "primary_sources": ["CALL-2691", "POSTGRESQL-18"], "coverage_state": "blocked_version_decision"},
-    {"topic_num": 18, "syllabus_scope": "Fundamentos de programación C#", "knowledge_map": ["tipos y control de flujo", "métodos y excepciones", "orientación a objetos", "genéricos y LINQ básico"], "primary_sources": ["CALL-2691", "DOTNET-CSharp-10"], "coverage_state": "blocked_version_decision"},
-    {"topic_num": 19, "syllabus_scope": "Sitios web MVC y Bootstrap", "knowledge_map": ["MVC y routing", "controladores y vistas", "Razor", "componentes y responsive Bootstrap"], "primary_sources": ["CALL-2691", "ASPNET-MVC-10", "BOOTSTRAP-5.3"], "coverage_state": "blocked_version_decision"},
-    {"topic_num": 20, "syllabus_scope": "Datos con Entity Framework Core", "knowledge_map": ["modelo y DbContext", "consultas", "seguimiento y cambios", "migraciones"], "primary_sources": ["CALL-2691", "EFCORE-10"], "coverage_state": "blocked_version_decision"},
-    {"topic_num": 21, "syllabus_scope": "Manipulación de datos y consultas LINQ", "knowledge_map": ["sintaxis y operadores", "deferred execution", "proyección y agrupación", "IQueryable y IEnumerable"], "primary_sources": ["CALL-2691", "DOTNET-LINQ-10"], "coverage_state": "blocked_version_decision"},
-    {"topic_num": 22, "syllabus_scope": "Model binding, validación, modificar datos con EF y asincronía", "knowledge_map": ["binding de fuentes", "validación", "ciclo de cambios EF", "async y await"], "primary_sources": ["CALL-2691", "ASPNET-MODEL-BINDING-10", "EFCORE-10"], "coverage_state": "blocked_version_decision"},
-    {"topic_num": 23, "syllabus_scope": "Autenticación, autorización y filtros", "knowledge_map": ["identidad y claims", "políticas y roles", "middleware", "filtros MVC"], "primary_sources": ["CALL-2691", "ASPNET-SECURITY-10"], "coverage_state": "blocked_version_decision"},
-    {"topic_num": 24, "syllabus_scope": "Servicios Web y Web API", "knowledge_map": ["HTTP y routing", "controladores API", "serialización", "OpenAPI y clientes"], "primary_sources": ["CALL-2691", "ASPNET-WEBAPI-10"], "coverage_state": "blocked_version_decision"},
+    {"topic_num": 12, "syllabus_scope": "Protección de datos", "knowledge_map": ["principios RGPD", "bases y transparencia", "derechos", "LOPDGDD y derechos digitales"], "primary_sources": ["CALL-2691", "EURLEX-RGPD-2016", "BOE-LOPDGDD-2018"], "coverage_state": "ready_for_objective_design"},
+    {"topic_num": 13, "syllabus_scope": "PostgreSQL: arquitectura de servidor", "knowledge_map": ["cluster y procesos", "memoria y WAL", "conexiones", "mantenimiento"], "primary_sources": ["CALL-2691", "POSTGRESQL-18"], "coverage_state": "ready_for_objective_design"},
+    {"topic_num": 14, "syllabus_scope": "PostgreSQL: jerarquía de objetos y funciones", "knowledge_map": ["cluster, bases y esquemas", "tablas, vistas e índices", "funciones y procedimientos", "privilegios"], "primary_sources": ["CALL-2691", "POSTGRESQL-18"], "coverage_state": "ready_for_objective_design"},
+    {"topic_num": 15, "syllabus_scope": "PostgreSQL: transacciones", "knowledge_map": ["ACID", "niveles de aislamiento", "bloqueos y concurrencia", "commit y rollback"], "primary_sources": ["CALL-2691", "POSTGRESQL-18"], "coverage_state": "ready_for_objective_design"},
+    {"topic_num": 16, "syllabus_scope": "PostgreSQL: herramientas cliente e importación/exportación", "knowledge_map": ["psql y pgAdmin", "pg_dump y pg_restore", "COPY y \u005c\u005ccopy", "formatos y seguridad"], "primary_sources": ["CALL-2691", "POSTGRESQL-18"], "coverage_state": "ready_for_objective_design"},
+    {"topic_num": 17, "syllabus_scope": "PostgreSQL: optimización SQL y de servidor", "knowledge_map": ["EXPLAIN", "índices y planes", "estadísticas y ANALYZE", "configuración y rendimiento"], "primary_sources": ["CALL-2691", "POSTGRESQL-18"], "coverage_state": "ready_for_objective_design"},
+    {"topic_num": 18, "syllabus_scope": "Fundamentos de programación C#", "knowledge_map": ["tipos y control de flujo", "métodos y excepciones", "orientación a objetos", "genéricos y LINQ básico"], "primary_sources": ["CALL-2691", "DOTNET-CSharp-10"], "coverage_state": "ready_for_objective_design"},
+    {"topic_num": 19, "syllabus_scope": "Sitios web MVC y Bootstrap", "knowledge_map": ["MVC y routing", "controladores y vistas", "Razor", "componentes y responsive Bootstrap"], "primary_sources": ["CALL-2691", "ASPNET-MVC-10", "BOOTSTRAP-5.3"], "coverage_state": "ready_for_objective_design"},
+    {"topic_num": 20, "syllabus_scope": "Datos con Entity Framework Core", "knowledge_map": ["modelo y DbContext", "consultas", "seguimiento y cambios", "migraciones"], "primary_sources": ["CALL-2691", "EFCORE-10"], "coverage_state": "ready_for_objective_design"},
+    {"topic_num": 21, "syllabus_scope": "Manipulación de datos y consultas LINQ", "knowledge_map": ["sintaxis y operadores", "deferred execution", "proyección y agrupación", "IQueryable y IEnumerable"], "primary_sources": ["CALL-2691", "DOTNET-LINQ-10"], "coverage_state": "ready_for_objective_design"},
+    {"topic_num": 22, "syllabus_scope": "Model binding, validación, modificar datos con EF y asincronía", "knowledge_map": ["binding de fuentes", "validación", "ciclo de cambios EF", "async y await"], "primary_sources": ["CALL-2691", "ASPNET-MODEL-BINDING-10", "EFCORE-10"], "coverage_state": "ready_for_objective_design"},
+    {"topic_num": 23, "syllabus_scope": "Autenticación, autorización y filtros", "knowledge_map": ["identidad y claims", "políticas y roles", "middleware", "filtros MVC"], "primary_sources": ["CALL-2691", "ASPNET-SECURITY-10"], "coverage_state": "ready_for_objective_design"},
+    {"topic_num": 24, "syllabus_scope": "Servicios Web y Web API", "knowledge_map": ["HTTP y routing", "controladores API", "serialización", "OpenAPI y clientes"], "primary_sources": ["CALL-2691", "ASPNET-WEBAPI-10"], "coverage_state": "ready_for_objective_design"},
     {"topic_num": 25, "syllabus_scope": "Estándar de exposición de datos OData", "knowledge_map": ["recursos y modelo", "URL conventions", "query options", "seguridad y límites"], "primary_sources": ["CALL-2691", "ODATA-4.01"], "coverage_state": "ready_for_objective_design"},
-    {"topic_num": 26, "syllabus_scope": "Blazor: alojamiento y solución web", "knowledge_map": ["modelos de hosting", "proyecto y ciclo de vida", "render modes", "solución y despliegue"], "primary_sources": ["CALL-2691", "BLAZOR-10"], "coverage_state": "blocked_version_decision"},
-    {"topic_num": 27, "syllabus_scope": "Blazor: componentes, binding, parámetros y valores en cascada", "knowledge_map": ["componentes y renderizado", "binding", "parámetros", "cascading values"], "primary_sources": ["CALL-2691", "BLAZOR-10"], "coverage_state": "blocked_version_decision"},
-    {"topic_num": 28, "syllabus_scope": "Blazor: componentes avanzados y estilos", "knowledge_map": ["ciclo de vida avanzado", "RenderFragment", "CSS isolation", "componentización"], "primary_sources": ["CALL-2691", "BLAZOR-10"], "coverage_state": "blocked_version_decision"},
-    {"topic_num": 29, "syllabus_scope": "Blazor: formularios y validación", "knowledge_map": ["EditForm", "EditContext", "DataAnnotations", "mensajes y validación personalizada"], "primary_sources": ["CALL-2691", "BLAZOR-10"], "coverage_state": "blocked_version_decision"},
-    {"topic_num": 30, "syllabus_scope": "Blazor: inyección de dependencias y configuración", "knowledge_map": ["contenedor DI", "lifetimes", "configuración", "servicios en componentes"], "primary_sources": ["CALL-2691", "BLAZOR-10"], "coverage_state": "blocked_version_decision"},
-    {"topic_num": 31, "syllabus_scope": "Blazor: gestión de estado", "knowledge_map": ["estado de componente", "estado compartido", "persistencia", "prerendering y reconexión"], "primary_sources": ["CALL-2691", "BLAZOR-10"], "coverage_state": "blocked_version_decision"},
-    {"topic_num": 32, "syllabus_scope": "Blazor: navegación y enrutado", "knowledge_map": ["Router", "rutas y parámetros", "NavigationManager", "autorización y navegación"], "primary_sources": ["CALL-2691", "BLAZOR-10"], "coverage_state": "blocked_version_decision"},
+    {"topic_num": 26, "syllabus_scope": "Blazor: alojamiento y solución web", "knowledge_map": ["modelos de hosting", "proyecto y ciclo de vida", "render modes", "solución y despliegue"], "primary_sources": ["CALL-2691", "BLAZOR-10"], "coverage_state": "ready_for_objective_design"},
+    {"topic_num": 27, "syllabus_scope": "Blazor: componentes, binding, parámetros y valores en cascada", "knowledge_map": ["componentes y renderizado", "binding", "parámetros", "cascading values"], "primary_sources": ["CALL-2691", "BLAZOR-10"], "coverage_state": "ready_for_objective_design"},
+    {"topic_num": 28, "syllabus_scope": "Blazor: componentes avanzados y estilos", "knowledge_map": ["ciclo de vida avanzado", "RenderFragment", "CSS isolation", "componentización"], "primary_sources": ["CALL-2691", "BLAZOR-10"], "coverage_state": "ready_for_objective_design"},
+    {"topic_num": 29, "syllabus_scope": "Blazor: formularios y validación", "knowledge_map": ["EditForm", "EditContext", "DataAnnotations", "mensajes y validación personalizada"], "primary_sources": ["CALL-2691", "BLAZOR-10"], "coverage_state": "ready_for_objective_design"},
+    {"topic_num": 30, "syllabus_scope": "Blazor: inyección de dependencias y configuración", "knowledge_map": ["contenedor DI", "lifetimes", "configuración", "servicios en componentes"], "primary_sources": ["CALL-2691", "BLAZOR-10"], "coverage_state": "ready_for_objective_design"},
+    {"topic_num": 31, "syllabus_scope": "Blazor: gestión de estado", "knowledge_map": ["estado de componente", "estado compartido", "persistencia", "prerendering y reconexión"], "primary_sources": ["CALL-2691", "BLAZOR-10"], "coverage_state": "ready_for_objective_design"},
+    {"topic_num": 32, "syllabus_scope": "Blazor: navegación y enrutado", "knowledge_map": ["Router", "rutas y parámetros", "NavigationManager", "autorización y navegación"], "primary_sources": ["CALL-2691", "BLAZOR-10"], "coverage_state": "ready_for_objective_design"},
     {"topic_num": 33, "syllabus_scope": "Git: teoría, instalación/configuración y trabajo local", "knowledge_map": ["modelo de objetos", "configuración", "working tree y staging", "commits y referencias"], "primary_sources": ["CALL-2691", "GIT-2.50"], "coverage_state": "ready_for_objective_design"},
     {"topic_num": 34, "syllabus_scope": "Git: ramas, rebase, merge frente a rebase y stash", "knowledge_map": ["ramas", "merge y conflictos", "rebase", "stash"], "primary_sources": ["CALL-2691", "GIT-2.50"], "coverage_state": "ready_for_objective_design"},
     {"topic_num": 35, "syllabus_scope": "Git remoto, flujos de trabajo y estrategias de ramas", "knowledge_map": ["remotos", "fetch, pull y push", "pull requests", "trunk-based y GitFlow"], "primary_sources": ["CALL-2691", "GIT-2.50"], "coverage_state": "ready_for_objective_design"},
-    {"topic_num": 36, "syllabus_scope": "SedipuAlba: definiciones, conceptos básicos y sede electrónica", "knowledge_map": ["plataforma y sede", "expediente", "registro", "notificación y documento electrónico"], "primary_sources": ["CALL-2691", "SEDIPUALBA-HOME"], "coverage_state": "blocked_exact_public_pages"},
-    {"topic_num": 37, "syllabus_scope": "SedipuAlba: módulos Segex, Sefycu, Segra, Seres, Secoin, Seface, Seca y AdminSedeElectrónica", "knowledge_map": ["finalidad de cada módulo", "roles de tramitador", "intercambio entre módulos", "límites de evidencia pública"], "primary_sources": ["CALL-2691", "SEDIPUALBA-HOME"], "coverage_state": "blocked_module_specifications"},
+    {"topic_num": 36, "syllabus_scope": "SedipuAlba: definiciones, conceptos básicos y sede electrónica", "knowledge_map": ["plataforma y sede", "expediente", "registro", "notificación y documento electrónico"], "primary_sources": ["CALL-2691", "SEDIPUALBA-HOME"], "coverage_state": "ready_for_objective_design"},
+    {"topic_num": 37, "syllabus_scope": "SedipuAlba: módulos Segex, Sefycu, Segra, Seres, Secoin, Seface, Seca y AdminSedeElectrónica", "knowledge_map": ["finalidad de cada módulo", "roles de tramitador", "intercambio entre módulos", "límites de evidencia pública"], "primary_sources": ["CALL-2691", "SEDIPUALBA-SEGEX", "SEDIPUALBA-SEFYCU", "SEDIPUALBA-SECA", "SEDIPUALBA-SERES", "SEDIPUALBA-SECOIN", "SEDIPUALBA-SEFACE"], "coverage_state": "partial_public_evidence_quarantine_uncovered_modules"},
     {"topic_num": 38, "syllabus_scope": "Interoperabilidad estatal, SCSP y Red SARA", "knowledge_map": ["interoperabilidad", "SCSP", "Red SARA", "intermediación y trazabilidad"], "primary_sources": ["CALL-2691", "PAE-INTEROP"], "coverage_state": "blocked_waf_on_specific_pages"},
     {"topic_num": 39, "syllabus_scope": "Servicios compartidos: Cl@ve, DNIe, FIRe, Carpeta ciudadana, SIR, PID, contratación, subvenciones y FacturaE", "knowledge_map": ["identificación y firma", "carpeta y registro", "intermediación", "contratación, subvenciones y factura electrónica"], "primary_sources": ["CALL-2691", "PAE-INTEROP"], "coverage_state": "blocked_waf_on_specific_pages"},
-    {"topic_num": 40, "syllabus_scope": "Accesibilidad Web", "knowledge_map": ["WCAG principles", "criterios de conformidad", "EN 301 549", "declaración y obligaciones públicas"], "primary_sources": ["CALL-2691", "WCAG-2.1", "ETSI-EN-301-549", "EURLEX-WEB-ACCESS-2016", "BOE-RD-1112-2018"], "coverage_state": "blocked_version_verification_for_european_sources"}
+    {"topic_num": 40, "syllabus_scope": "Accesibilidad Web", "knowledge_map": ["WCAG principles", "criterios de conformidad", "EN 301 549", "declaración y obligaciones públicas"], "primary_sources": ["CALL-2691", "WCAG-2.1", "ETSI-EN-301-549", "EURLEX-WEB-ACCESS-2016", "BOE-RD-1112-2018"], "coverage_state": "blocked_etsi_edition_verification"}
   ],
   "open_gates": [
-    "Confirm the target PostgreSQL, .NET/ASP.NET/EF Core/Blazor and Bootstrap versions before generating version-sensitive items.",
-    "Resolve exact DOCM document URLs and effective versions for Laws 12/2010 and 4/2018.",
-    "Resolve EUR-Lex and Administración Electrónica pages that returned an edge/WAF response; do not cite them from an unverified copy.",
-    "Obtain public authoritative module specifications for every SedipuAlba module in topic 37; otherwise quarantine those objectives.",
-    "Provide the numerical difficulty/question-type target percentages and clarify whether 200 learning objectives means 200 total or 200 per topic."
+    "Verify current vigency/article amendments for Laws 12/2010 and 4/2018 before accepting legal objectives.",
+    "Resolve Administración Electrónica pages that returned a WAF response; use the verified official CELEX fallback for EU sources and record the exact consolidated act per objective.",
+    "Obtain public authoritative specifications for Segra and AdminSedeElectrónica in topic 37; objectives for undocumented modules remain quarantined.",
+    "Record objective-level citations and research verification for all 200 objective IDs in each topic before that topic can generate a lot."
   ]
 }

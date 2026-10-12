@@ -138,6 +138,18 @@ class SourceRegisterTests(unittest.TestCase):
         self.assertEqual([topic["topic_num"] for topic in topics], list(range(1, 41)))
         self.assertTrue(register["open_gates"])
         self.assertEqual(register["official_call"]["source_id"], "CALL-2691")
+        self.assertEqual(register["captain_decisions"]["objective_target"], "200 distinct learning objectives per topic, 8,000 objective IDs across topics 1-40")
+
+    def test_objective_manifest_has_200_gated_slots_per_topic(self):
+        manifest = json.loads((ROOT / "docs/question-bank/objective-manifest.json").read_text(encoding="utf-8"))
+        self.assertEqual(manifest["objective_count"], 8000)
+        self.assertEqual(manifest["objectives_per_topic"], 200)
+        topic_counts = {}
+        for objective in manifest["objectives"]:
+            topic_counts[objective["topic_num"]] = topic_counts.get(objective["topic_num"], 0) + 1
+            self.assertIsNone(objective["statement"])
+            self.assertEqual(objective["coverage_state"], "planned_pending_source_verification")
+        self.assertEqual(topic_counts, {topic: 200 for topic in range(1, 41)})
 
 
 if __name__ == "__main__":
