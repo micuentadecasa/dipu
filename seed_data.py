@@ -3818,3 +3818,208 @@ SEED_QUESTIONS.extend([
     }
 ])
 # QUESTION_BANK_ACCEPTED_TOPIC_11_LOT_01_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_12_LOT_01_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 12,
+        "question": "¿Qué es un dato personal según el RGPD?",
+        "option_a": "Toda información sobre una persona física identificada o identificable",
+        "option_b": "Solo el nombre y apellidos",
+        "option_c": "Cualquier dato de una empresa",
+        "option_d": "Solo un número de expediente judicial",
+        "correct": "A",
+        "explanation": "El artículo 4.1 del RGPD define dato personal como toda información sobre una persona física identificada o identificable."
+    },
+    {
+        "topic_num": 12,
+        "question": "¿Qué diferencia hay entre responsable y encargado del tratamiento?",
+        "option_a": "El responsable determina fines y medios; el encargado trata datos por cuenta del responsable",
+        "option_b": "El encargado determina siempre los fines y el responsable solo almacena",
+        "option_c": "Son siempre la misma persona",
+        "option_d": "El responsable es solo la autoridad de control",
+        "correct": "A",
+        "explanation": "El artículo 4 distingue al responsable que determina fines y medios del encargado que trata datos por cuenta del responsable."
+    },
+    {
+        "topic_num": 12,
+        "question": "¿Cuál es un principio del tratamiento de datos personales?",
+        "option_a": "Licitud, lealtad y transparencia",
+        "option_b": "Conservación ilimitada siempre",
+        "option_c": "Recoger todos los datos posibles",
+        "option_d": "Ocultar el responsable",
+        "correct": "A",
+        "explanation": "El artículo 5.1.a exige licitud, lealtad y transparencia, junto con los demás principios del apartado 1."
+    },
+    {
+        "topic_num": 12,
+        "question": "¿Cuál es una base jurídica del tratamiento?",
+        "option_a": "El consentimiento del interesado para uno o varios fines específicos",
+        "option_b": "La mera curiosidad del responsable",
+        "option_c": "La publicación de cualquier dato sin límite",
+        "option_d": "La ausencia de información",
+        "correct": "A",
+        "explanation": "El artículo 6.1.a incluye el consentimiento como base jurídica cuando se cumplen sus requisitos."
+    },
+    {
+        "topic_num": 12,
+        "question": "¿Qué requisito debe cumplir el consentimiento?",
+        "option_a": "Ser una manifestación de voluntad libre, específica, informada e inequívoca",
+        "option_b": "Ser siempre tácito",
+        "option_c": "No poder retirarse",
+        "option_d": "Ser válido aunque se oculte el fin",
+        "correct": "A",
+        "explanation": "El artículo 7 establece condiciones aplicables al consentimiento y el artículo 4.11 lo define como manifestación libre, específica, informada e inequívoca."
+    },
+    {
+        "topic_num": 12,
+        "question": "¿Qué información debe facilitarse al recoger datos directamente del interesado?",
+        "option_a": "Identidad y contacto del responsable, fines y base jurídica, entre otra información del artículo 13",
+        "option_b": "Solo el nombre del formulario",
+        "option_c": "Únicamente el plazo de conservación",
+        "option_d": "Ninguna si el tratamiento es electrónico",
+        "correct": "A",
+        "explanation": "El artículo 13 enumera la información que debe proporcionarse cuando los datos se obtienen del interesado."
+    },
+    {
+        "topic_num": 12,
+        "question": "¿Qué diferencia hay entre los artículos 13 y 14 del RGPD?",
+        "option_a": "El artículo 13 se aplica a datos obtenidos del interesado y el 14 a datos no obtenidos del interesado",
+        "option_b": "El 14 solo se aplica a empresas y el 13 a menores",
+        "option_c": "Son idénticos en todos los supuestos",
+        "option_d": "El 13 regula sanciones y el 14 contratos",
+        "correct": "A",
+        "explanation": "La diferencia deriva del origen de los datos: recogida del interesado o procedencia de otra fuente."
+    },
+    {
+        "topic_num": 12,
+        "question": "¿Qué permite el derecho de acceso?",
+        "option_a": "Obtener confirmación de si se tratan datos y, en su caso, acceso a los datos y a la información del artículo 15",
+        "option_b": "Borrar cualquier archivo público sin trámite",
+        "option_c": "Modificar la ley aplicable",
+        "option_d": "Impedir toda auditoría",
+        "correct": "A",
+        "explanation": "El artículo 15 reconoce confirmación, acceso a los datos y diversa información sobre el tratamiento."
+    },
+    {
+        "topic_num": 12,
+        "question": "¿Qué es el derecho de supresión?",
+        "option_a": "El derecho a obtener sin dilación indebida la supresión de datos personales cuando concurra alguno de los supuestos del artículo 17",
+        "option_b": "El derecho a conservar datos eternamente",
+        "option_c": "La obligación de borrar todos los datos sin excepciones",
+        "option_d": "Solo el derecho a corregir datos",
+        "correct": "A",
+        "explanation": "El artículo 17 reconoce el derecho de supresión, sujeto a excepciones como libertad de expresión, obligación legal o interés público."
+    },
+    {
+        "topic_num": 12,
+        "question": "¿Cuándo procede la portabilidad de los datos?",
+        "option_a": "Cuando el tratamiento se basa en consentimiento o contrato y se efectúa por medios automatizados, en los términos del artículo 20",
+        "option_b": "Siempre para cualquier tratamiento en papel",
+        "option_c": "Solo si lo ordena un juez penal",
+        "option_d": "Nunca frente a una Administración",
+        "correct": "A",
+        "explanation": "El artículo 20 establece esas condiciones y permite recibir datos en formato estructurado, de uso común y lectura mecánica."
+    },
+    {
+        "topic_num": 12,
+        "question": "¿Qué significa protección de datos desde el diseño?",
+        "option_a": "Aplicar medidas técnicas y organizativas apropiadas desde la determinación de los medios del tratamiento y durante el tratamiento",
+        "option_b": "Añadir privacidad solo después de una brecha",
+        "option_c": "Ocultar el registro de actividades",
+        "option_d": "No usar medidas técnicas",
+        "correct": "A",
+        "explanation": "El artículo 25 exige protección de datos desde el diseño y por defecto, teniendo en cuenta estado de la técnica, costes y riesgos."
+    },
+    {
+        "topic_num": 12,
+        "question": "¿Qué debe garantizar la seguridad del tratamiento?",
+        "option_a": "Un nivel de seguridad adecuado al riesgo, incluyendo medidas como seudonimización, cifrado, confidencialidad, integridad, disponibilidad y resiliencia",
+        "option_b": "Solo una contraseña común",
+        "option_c": "La publicación de todas las claves",
+        "option_d": "La eliminación de copias de seguridad",
+        "correct": "A",
+        "explanation": "El artículo 32 exige medidas apropiadas al riesgo y enumera ejemplos de capacidad y control de seguridad."
+    },
+    {
+        "topic_num": 12,
+        "question": "¿En qué plazo debe notificarse una violación de seguridad a la autoridad de control, cuando proceda?",
+        "option_a": "Sin dilación indebida y, de ser posible, a más tardar 72 horas después de tener constancia",
+        "option_b": "En un año",
+        "option_c": "Solo cuando lo pida el interesado",
+        "option_d": "No existe plazo",
+        "correct": "A",
+        "explanation": "El artículo 33 fija la notificación sin dilación indebida y, cuando sea posible, dentro de 72 horas desde que se tiene constancia."
+    },
+    {
+        "topic_num": 12,
+        "question": "¿Cuándo debe realizarse una evaluación de impacto?",
+        "option_a": "Antes del tratamiento cuando sea probable que entrañe un alto riesgo para los derechos y libertades de las personas físicas",
+        "option_b": "Solo después de una sanción",
+        "option_c": "Nunca si hay consentimiento",
+        "option_d": "Solo para datos en papel",
+        "correct": "A",
+        "explanation": "El artículo 35 exige evaluación previa para tratamientos que probablemente entrañen alto riesgo, especialmente en los supuestos indicados."
+    },
+    {
+        "topic_num": 12,
+        "question": "¿Cuál es una función del delegado de protección de datos?",
+        "option_a": "Informar y asesorar al responsable o encargado, supervisar el cumplimiento y cooperar con la autoridad de control",
+        "option_b": "Aprobar todas las leyes de privacidad",
+        "option_c": "Sustituir al responsable en toda decisión",
+        "option_d": "Imponer sanciones administrativas",
+        "correct": "A",
+        "explanation": "El artículo 39 enumera funciones del delegado, entre ellas informar, asesorar, supervisar y cooperar con la autoridad."
+    },
+    {
+        "topic_num": 12,
+        "question": "¿Qué edad fija la LOPDGDD para que un menor preste consentimiento en servicios de la sociedad de la información?",
+        "option_a": "Catorce años, salvo que una ley exija asistencia para el acto o negocio jurídico",
+        "option_b": "Dieciocho años siempre",
+        "option_c": "Doce años siempre",
+        "option_d": "No fija ninguna edad",
+        "correct": "A",
+        "explanation": "El artículo 7 de la LOPDGDD fija en catorce años la edad mínima para consentir por sí mismo, con la excepción legal indicada."
+    },
+    {
+        "topic_num": 12,
+        "question": "¿Qué permite la LOPDGDD respecto de datos de contacto profesionales?",
+        "option_a": "El tratamiento de datos de contacto y función o puesto de personas que prestan servicios en una persona jurídica cuando se limita a su localización profesional y finalidad legal",
+        "option_b": "Publicar cualquier dato personal sin base",
+        "option_c": "Tratar siempre datos privados de familiares",
+        "option_d": "Usar datos para cualquier marketing",
+        "correct": "A",
+        "explanation": "El artículo 19 regula el tratamiento de datos de contacto y función de personas que prestan servicios en una persona jurídica en los términos legales."
+    },
+    {
+        "topic_num": 12,
+        "question": "¿Qué autoridad controla en España el cumplimiento de la normativa de protección de datos en el ámbito estatal?",
+        "option_a": "La Agencia Española de Protección de Datos, sin perjuicio de las autoridades autonómicas competentes",
+        "option_b": "La Comisión Europea exclusivamente",
+        "option_c": "El Banco de España",
+        "option_d": "El Tribunal de Cuentas",
+        "correct": "A",
+        "explanation": "La LOPDGDD configura la Agencia Española de Protección de Datos como autoridad de protección de datos de ámbito estatal."
+    },
+    {
+        "topic_num": 12,
+        "question": "¿Qué debe documentar el responsable para demostrar cumplimiento del RGPD?",
+        "option_a": "Las medidas y decisiones de cumplimiento, conforme al principio de responsabilidad proactiva",
+        "option_b": "Solo una declaración verbal",
+        "option_c": "Únicamente el consentimiento",
+        "option_d": "Nada si no hubo una brecha",
+        "correct": "A",
+        "explanation": "El artículo 5.2 obliga al responsable a ser capaz de demostrar el cumplimiento de los principios del tratamiento."
+    },
+    {
+        "topic_num": 12,
+        "question": "¿Cuál es la relación correcta entre el RGPD y la LOPDGDD?",
+        "option_a": "El RGPD es una norma europea directamente aplicable y la LOPDGDD complementa el marco español en los ámbitos que permite el Reglamento",
+        "option_b": "La LOPDGDD deroga el RGPD en España",
+        "option_c": "Solo se aplica la LOPDGDD a entidades públicas",
+        "option_d": "El RGPD solo sirve como recomendación",
+        "correct": "A",
+        "explanation": "El Reglamento europeo se aplica directamente y la ley orgánica española desarrolla aspectos nacionales dentro del marco europeo."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_12_LOT_01_END
