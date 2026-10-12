@@ -34,6 +34,7 @@ def valid_record() -> dict:
             "source_id": "RFC-5280",
             "title": "Internet X.509 Public Key Infrastructure Certificate and CRL Profile",
             "authority": "IETF RFC Editor",
+            "tier": "official_primary",
             "url": "https://www.rfc-editor.org/rfc/rfc5280",
             "citation": "section 3",
             "version_or_as_of": "RFC 5280",
@@ -166,6 +167,13 @@ class SourceRegisterTests(unittest.TestCase):
         self.assertEqual(lot["counts"]["accepted"], 0)
         self.assertEqual(lot["counts"]["quarantined"], 20)
         self.assertTrue(all(question["status"] == "quarantined" for question in lot["questions"]))
+        accepted = json.loads((ROOT / "docs/question-bank/accepted/topic-01-lot-01.json").read_text(encoding="utf-8"))
+        import_report = json.loads((ROOT / "docs/question-bank/imports/topic-01-lot-01-dry-run.json").read_text(encoding="utf-8"))
+        self.assertEqual(accepted["state"], "reviewed")
+        self.assertEqual(accepted["counts"]["accepted"], 20)
+        self.assertTrue(all(question["status"] == "validated" for question in accepted["questions"]))
+        self.assertEqual(import_report["status"], "passed")
+        self.assertEqual(import_report["writes_performed"], 0)
         blocked_topics = {topic for entry in register["source_blocker_log"] for topic in entry["topic_nums"]}
         self.assertTrue({37, 38, 39}.issubset(blocked_topics))
 

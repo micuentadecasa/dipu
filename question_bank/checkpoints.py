@@ -31,7 +31,7 @@ def file_sha256(path: str | Path) -> str:
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 
-def checkpoint_key(manifest: dict[str, Any]) -> tuple[int, int]:
+def checkpoint_key(manifest: dict[str, Any]) -> tuple[int, int, str, int]:
     try:
         topic_num = int(manifest["topic_num"])
         lot_num = int(manifest["lot_num"])
@@ -39,7 +39,16 @@ def checkpoint_key(manifest: dict[str, Any]) -> tuple[int, int]:
         raise CheckpointError("checkpoint requires numeric topic_num and lot_num") from exc
     if topic_num not in range(1, 41) or lot_num < 1:
         raise CheckpointError("checkpoint topic_num must be 1-40 and lot_num must be positive")
-    return topic_num, lot_num
+    stage = manifest.get("stage", "candidates_written")
+    if stage not in {"candidates_written", "reviewed", "import_validated", "published"}:
+        raise CheckpointError("checkpoint stage is not recognized")
+    try:
+        revision = int(manifest.get("revision", 1))
+    except (TypeError, ValueError) as exc:
+        raise CheckpointError("checkpoint revision must be numeric") from exc
+    if revision < 1:
+        raise CheckpointError("checkpoint revision must be positive")
+    return topic_num, lot_num, stage, revision
 
 
 def validate_manifest(manifest: dict[str, Any]) -> None:
