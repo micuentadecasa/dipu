@@ -13053,3 +13053,1028 @@ SEED_QUESTIONS.extend([
     }
 ])
 # QUESTION_BANK_ACCEPTED_TOPIC_28_LOT_05_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_29_LOT_01_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 29,
+        "question": "Al estudiar el formulario «el modelo asociado al formulario», ¿qué regla de Blazor se aplica? (objetivo t29-lo-001)",
+        "option_a": "Pasar el modelo mediante el parámetro Model de EditForm.",
+        "option_b": "Una migración de base de datos sin relación con formularios.",
+        "option_c": "Una vista MVC que no usa EditContext.",
+        "option_d": "Una regla CSS global.",
+        "correct": "A",
+        "explanation": "EditForm puede recibir un modelo y crear el EditContext asociado automáticamente."
+    },
+    {
+        "topic_num": 29,
+        "question": "La guía oficial trata «un contexto existente». ¿Cuál es la interpretación correcta? — t29-lo-002",
+        "option_a": "Una migración de base de datos sin relación con formularios.",
+        "option_b": "Pasar el EditContext mediante el parámetro correspondiente.",
+        "option_c": "Una vista MVC que no usa EditContext.",
+        "option_d": "Una regla CSS global.",
+        "correct": "B",
+        "explanation": "EditForm puede recibir explícitamente un EditContext existente."
+    },
+    {
+        "topic_num": 29,
+        "question": "En el caso «dos fuentes de contexto», ¿qué comportamiento documenta Blazor? Referencia t29-lo-003",
+        "option_a": "Una migración de base de datos sin relación con formularios.",
+        "option_b": "Una vista MVC que no usa EditContext.",
+        "option_c": "Elegir Model o EditContext, pero no ambos.",
+        "option_d": "Una regla CSS global.",
+        "correct": "C",
+        "explanation": "Model y EditContext no deben configurarse simultáneamente en el mismo EditForm."
+    },
+    {
+        "topic_num": 29,
+        "question": "Para «una sumisión válida», selecciona la conducta respaldada por Microsoft Learn. [t29-lo-004]",
+        "option_a": "Una consulta SQL sin formulario.",
+        "option_b": "Una hoja de estilos global.",
+        "option_c": "Una ruta que no procesa datos.",
+        "option_d": "Usar OnValidSubmit.",
+        "correct": "D",
+        "explanation": "OnValidSubmit se ejecuta cuando la validación del formulario termina sin errores."
+    },
+    {
+        "topic_num": 29,
+        "question": "Un revisor encuentra «una sumisión inválida». ¿Qué debe concluir según la guía? (t29-lo-005)",
+        "option_a": "Usar OnInvalidSubmit.",
+        "option_b": "Una consulta SQL sin formulario.",
+        "option_c": "Una hoja de estilos global.",
+        "option_d": "Una ruta que no procesa datos.",
+        "correct": "A",
+        "explanation": "OnInvalidSubmit se ejecuta cuando la validación del formulario encuentra errores."
+    },
+    {
+        "topic_num": 29,
+        "question": "Al estudiar el formulario «control manual del envío», ¿qué regla de Blazor se aplica? (objetivo t29-lo-006)",
+        "option_a": "Una consulta SQL sin formulario.",
+        "option_b": "Usar OnSubmit.",
+        "option_c": "Una hoja de estilos global.",
+        "option_d": "Una ruta que no procesa datos.",
+        "correct": "B",
+        "explanation": "OnSubmit permite controlar manualmente el proceso de sumisión del formulario."
+    },
+    {
+        "topic_num": 29,
+        "question": "La guía oficial trata «validación durante un envío manual». ¿Cuál es la interpretación correcta? — t29-lo-007",
+        "option_a": "Una consulta SQL sin formulario.",
+        "option_b": "Una hoja de estilos global.",
+        "option_c": "Llamar a EditContext.Validate().",
+        "option_d": "Una ruta que no procesa datos.",
+        "correct": "C",
+        "explanation": "Con OnSubmit, el controlador debe invocar explícitamente la validación si la necesita."
+    },
+    {
+        "topic_num": 29,
+        "question": "En el caso «un campo textual», ¿qué comportamiento documenta Blazor? Referencia t29-lo-008",
+        "option_a": "Una migración de base de datos sin relación con formularios.",
+        "option_b": "Una vista MVC que no usa EditContext.",
+        "option_c": "Una regla CSS global.",
+        "option_d": "Usar InputText.",
+        "correct": "D",
+        "explanation": "InputText es el componente de entrada destinado a valores de texto."
+    },
+    {
+        "topic_num": 29,
+        "question": "Para «conversión de un número», selecciona la conducta respaldada por Microsoft Learn. [t29-lo-009]",
+        "option_a": "Usar InputNumber<TValue>.",
+        "option_b": "Una migración de base de datos sin relación con formularios.",
+        "option_c": "Una vista MVC que no usa EditContext.",
+        "option_d": "Una regla CSS global.",
+        "correct": "A",
+        "explanation": "InputNumber<TValue> convierte el valor del control al tipo numérico indicado."
+    },
+    {
+        "topic_num": 29,
+        "question": "Un revisor encuentra «un valor de fecha». ¿Qué debe concluir según la guía? (t29-lo-010)",
+        "option_a": "Una migración de base de datos sin relación con formularios.",
+        "option_b": "Usar InputDate<TValue>.",
+        "option_c": "Una vista MVC que no usa EditContext.",
+        "option_d": "Una regla CSS global.",
+        "correct": "B",
+        "explanation": "InputDate<TValue> proporciona enlace tipado para valores de fecha."
+    },
+    {
+        "topic_num": 29,
+        "question": "Al estudiar el formulario «una selección tipada», ¿qué regla de Blazor se aplica? (objetivo t29-lo-011)",
+        "option_a": "Una migración de base de datos sin relación con formularios.",
+        "option_b": "Una vista MVC que no usa EditContext.",
+        "option_c": "Usar InputSelect<TValue>.",
+        "option_d": "Una regla CSS global.",
+        "correct": "C",
+        "explanation": "InputSelect<TValue> representa una selección cuyo valor se convierte al tipo indicado."
+    },
+    {
+        "topic_num": 29,
+        "question": "La guía oficial trata «el estado de una casilla». ¿Cuál es la interpretación correcta? — t29-lo-012",
+        "option_a": "Una migración de base de datos sin relación con formularios.",
+        "option_b": "Una vista MVC que no usa EditContext.",
+        "option_c": "Una regla CSS global.",
+        "option_d": "Usar InputCheckbox.",
+        "correct": "D",
+        "explanation": "InputCheckbox enlaza el estado booleano de una casilla."
+    },
+    {
+        "topic_num": 29,
+        "question": "En el caso «texto multilínea», ¿qué comportamiento documenta Blazor? Referencia t29-lo-013",
+        "option_a": "Usar InputTextArea.",
+        "option_b": "Una migración de base de datos sin relación con formularios.",
+        "option_c": "Una vista MVC que no usa EditContext.",
+        "option_d": "Una regla CSS global.",
+        "correct": "A",
+        "explanation": "InputTextArea proporciona un control de texto multilínea integrado con EditContext."
+    },
+    {
+        "topic_num": 29,
+        "question": "Para «opciones de radio agrupadas», selecciona la conducta respaldada por Microsoft Learn. [t29-lo-014]",
+        "option_a": "Una migración de base de datos sin relación con formularios.",
+        "option_b": "Usar InputRadioGroup<TValue>.",
+        "option_c": "Una vista MVC que no usa EditContext.",
+        "option_d": "Una regla CSS global.",
+        "correct": "B",
+        "explanation": "InputRadioGroup<TValue> agrupa opciones de radio que comparten un valor tipado."
+    },
+    {
+        "topic_num": 29,
+        "question": "Un revisor encuentra «una opción de radio». ¿Qué debe concluir según la guía? (t29-lo-015)",
+        "option_a": "Una migración de base de datos sin relación con formularios.",
+        "option_b": "Una vista MVC que no usa EditContext.",
+        "option_c": "Usar InputRadio<TValue>.",
+        "option_d": "Una regla CSS global.",
+        "correct": "C",
+        "explanation": "InputRadio<TValue> representa una opción dentro de un grupo de radio."
+    },
+    {
+        "topic_num": 29,
+        "question": "Al estudiar el formulario «el enlace de valor del control», ¿qué regla de Blazor se aplica? (objetivo t29-lo-016)",
+        "option_a": "Una migración de base de datos sin relación con formularios.",
+        "option_b": "Una vista MVC que no usa EditContext.",
+        "option_c": "Una regla CSS global.",
+        "option_d": "Usar @bind-Value.",
+        "correct": "D",
+        "explanation": "Los componentes de entrada de Blazor usan @bind-Value para el enlace de valor."
+    },
+    {
+        "topic_num": 29,
+        "question": "La guía oficial trata «la base común de entradas». ¿Cuál es la interpretación correcta? — t29-lo-017",
+        "option_a": "Derivar o trabajar con InputBase<TValue>.",
+        "option_b": "Una migración de base de datos sin relación con formularios.",
+        "option_c": "Una vista MVC que no usa EditContext.",
+        "option_d": "Una regla CSS global.",
+        "correct": "A",
+        "explanation": "Los componentes InputBase<TValue> comparten la infraestructura de entrada basada en EditContext."
+    },
+    {
+        "topic_num": 29,
+        "question": "En el caso «la identidad del formulario», ¿qué comportamiento documenta Blazor? Referencia t29-lo-018",
+        "option_a": "Una consulta SQL sin formulario.",
+        "option_b": "Asignar un FormName único.",
+        "option_c": "Una hoja de estilos global.",
+        "option_d": "Una ruta que no procesa datos.",
+        "correct": "B",
+        "explanation": "FormName identifica de manera única un formulario nombrado en escenarios de manejo de formularios."
+    },
+    {
+        "topic_num": 29,
+        "question": "Para «compatibilidad entre modelo y controles», selecciona la conducta respaldada por Microsoft Learn. [t29-lo-019]",
+        "option_a": "Una migración de base de datos sin relación con formularios.",
+        "option_b": "Una vista MVC que no usa EditContext.",
+        "option_c": "Usar propiedades compatibles con los controles.",
+        "option_d": "Una regla CSS global.",
+        "correct": "C",
+        "explanation": "El modelo enlazado a un formulario debe exponer propiedades compatibles con los componentes de entrada usados."
+    },
+    {
+        "topic_num": 29,
+        "question": "Un revisor encuentra «restablecer el formulario». ¿Qué debe concluir según la guía? (t29-lo-020)",
+        "option_a": "Una política de autorización.",
+        "option_b": "Una migración de esquema.",
+        "option_c": "Una regla de estilos.",
+        "option_d": "Asignar un nuevo modelo o restablecer el contexto.",
+        "correct": "D",
+        "explanation": "Un formulario puede limpiarse asignando un nuevo modelo o restableciendo los valores del contexto."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_29_LOT_01_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_29_LOT_02_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 29,
+        "question": "Al estudiar el formulario «estado del formulario», ¿qué regla de Blazor se aplica? (objetivo t29-lo-021)",
+        "option_a": "Usar EditContext.",
+        "option_b": "Una migración de base de datos sin relación con formularios.",
+        "option_c": "Una vista MVC que no usa EditContext.",
+        "option_d": "Una regla CSS global.",
+        "correct": "A",
+        "explanation": "EditContext mantiene el estado de edición y validación del modelo de un formulario."
+    },
+    {
+        "topic_num": 29,
+        "question": "La guía oficial trata «una validación explícita». ¿Cuál es la interpretación correcta? — t29-lo-022",
+        "option_a": "Una hoja CSS sin contexto.",
+        "option_b": "Llamar a Validate().",
+        "option_c": "Una migración de datos.",
+        "option_d": "Una ruta de navegación.",
+        "correct": "B",
+        "explanation": "EditContext.Validate() solicita la validación y devuelve si el modelo es válido."
+    },
+    {
+        "topic_num": 29,
+        "question": "En el caso «cambio de un campo», ¿qué comportamiento documenta Blazor? Referencia t29-lo-023",
+        "option_a": "Una consulta SQL.",
+        "option_b": "Una ruta HTTP sin modelo.",
+        "option_c": "Suscribirse a OnFieldChanged.",
+        "option_d": "Una configuración de hosting.",
+        "correct": "C",
+        "explanation": "OnFieldChanged notifica que un campo del EditContext ha cambiado."
+    },
+    {
+        "topic_num": 29,
+        "question": "Para «una solicitud de validación», selecciona la conducta respaldada por Microsoft Learn. [t29-lo-024]",
+        "option_a": "Una consulta SQL.",
+        "option_b": "Una ruta HTTP sin modelo.",
+        "option_c": "Una configuración de hosting.",
+        "option_d": "Suscribirse a OnValidationRequested.",
+        "correct": "D",
+        "explanation": "OnValidationRequested se produce cuando se solicita validar el contexto completo."
+    },
+    {
+        "topic_num": 29,
+        "question": "Un revisor encuentra «cambio del estado de validación». ¿Qué debe concluir según la guía? (t29-lo-025)",
+        "option_a": "Suscribirse a OnValidationStateChanged.",
+        "option_b": "Una consulta SQL.",
+        "option_c": "Una ruta HTTP sin modelo.",
+        "option_d": "Una configuración de hosting.",
+        "correct": "A",
+        "explanation": "OnValidationStateChanged notifica que cambió el conjunto de mensajes de validación."
+    },
+    {
+        "topic_num": 29,
+        "question": "Al estudiar el formulario «la identidad de un campo», ¿qué regla de Blazor se aplica? (objetivo t29-lo-026)",
+        "option_a": "Una consulta SQL.",
+        "option_b": "Usar FieldIdentifier.",
+        "option_c": "Una ruta HTTP sin modelo.",
+        "option_d": "Una configuración de hosting.",
+        "correct": "B",
+        "explanation": "FieldIdentifier identifica un modelo y el nombre de una propiedad de campo."
+    },
+    {
+        "topic_num": 29,
+        "question": "La guía oficial trata «un almacén de mensajes». ¿Cuál es la interpretación correcta? — t29-lo-027",
+        "option_a": "Una hoja CSS.",
+        "option_b": "Una ruta de navegación.",
+        "option_c": "Usar ValidationMessageStore.",
+        "option_d": "Una migración SQL.",
+        "correct": "C",
+        "explanation": "ValidationMessageStore almacena mensajes asociados a campos de un EditContext."
+    },
+    {
+        "topic_num": 29,
+        "question": "En el caso «limpiar mensajes», ¿qué comportamiento documenta Blazor? Referencia t29-lo-028",
+        "option_a": "Una hoja CSS.",
+        "option_b": "Una ruta de navegación.",
+        "option_c": "Una migración SQL.",
+        "option_d": "Llamar a Clear.",
+        "correct": "D",
+        "explanation": "ValidationMessageStore.Clear elimina los mensajes almacenados para el campo o contexto indicado."
+    },
+    {
+        "topic_num": 29,
+        "question": "Para «añadir un error de campo», selecciona la conducta respaldada por Microsoft Learn. [t29-lo-029]",
+        "option_a": "Llamar a Add con el FieldIdentifier.",
+        "option_b": "Una hoja CSS.",
+        "option_c": "Una ruta de navegación.",
+        "option_d": "Una migración SQL.",
+        "correct": "A",
+        "explanation": "ValidationMessageStore.Add añade un mensaje para un FieldIdentifier."
+    },
+    {
+        "topic_num": 29,
+        "question": "Un revisor encuentra «refrescar mensajes manuales». ¿Qué debe concluir según la guía? (t29-lo-030)",
+        "option_a": "Una consulta SQL.",
+        "option_b": "Llamar a NotifyValidationStateChanged().",
+        "option_c": "Una ruta HTTP sin modelo.",
+        "option_d": "Una configuración de hosting.",
+        "correct": "B",
+        "explanation": "Después de cambiar mensajes manualmente se debe notificar el cambio del estado de validación."
+    },
+    {
+        "topic_num": 29,
+        "question": "Al estudiar el formulario «saber si hubo edición», ¿qué regla de Blazor se aplica? (objetivo t29-lo-031)",
+        "option_a": "Una consulta SQL.",
+        "option_b": "Una ruta HTTP sin modelo.",
+        "option_c": "Consultar IsModified.",
+        "option_d": "Una configuración de hosting.",
+        "correct": "C",
+        "explanation": "EditContext.IsModified indica si el contexto o un campo ha sido modificado."
+    },
+    {
+        "topic_num": 29,
+        "question": "La guía oficial trata «un campo modificado». ¿Cuál es la interpretación correcta? — t29-lo-032",
+        "option_a": "Una consulta SQL.",
+        "option_b": "Una ruta HTTP sin modelo.",
+        "option_c": "Una configuración de hosting.",
+        "option_d": "Consultar IsModified para el FieldIdentifier.",
+        "correct": "D",
+        "explanation": "EditContext.IsModified(FieldIdentifier) comprueba el estado modificado de un campo concreto."
+    },
+    {
+        "topic_num": 29,
+        "question": "En el caso «notificar edición de campo», ¿qué comportamiento documenta Blazor? Referencia t29-lo-033",
+        "option_a": "Llamar a NotifyFieldChanged.",
+        "option_b": "Una consulta SQL.",
+        "option_c": "Una ruta HTTP sin modelo.",
+        "option_d": "Una configuración de hosting.",
+        "correct": "A",
+        "explanation": "EditContext.NotifyFieldChanged marca un campo como modificado y notifica el cambio."
+    },
+    {
+        "topic_num": 29,
+        "question": "Para «obtener mensajes de validación», selecciona la conducta respaldada por Microsoft Learn. [t29-lo-034]",
+        "option_a": "Una política de red.",
+        "option_b": "Consultar GetValidationMessages().",
+        "option_c": "Una consulta de base de datos.",
+        "option_d": "Una regla CSS sin formulario.",
+        "correct": "B",
+        "explanation": "EditContext.GetValidationMessages devuelve los mensajes de validación disponibles."
+    },
+    {
+        "topic_num": 29,
+        "question": "Un revisor encuentra «mensajes de un campo». ¿Qué debe concluir según la guía? (t29-lo-035)",
+        "option_a": "Una política de red.",
+        "option_b": "Una consulta de base de datos.",
+        "option_c": "Pasar el FieldIdentifier.",
+        "option_d": "Una regla CSS sin formulario.",
+        "correct": "C",
+        "explanation": "GetValidationMessages puede recibir un FieldIdentifier para limitar el resultado a un campo."
+    },
+    {
+        "topic_num": 29,
+        "question": "Al estudiar el formulario «notificar nuevo estado», ¿qué regla de Blazor se aplica? (objetivo t29-lo-036)",
+        "option_a": "Una consulta SQL.",
+        "option_b": "Una ruta HTTP sin modelo.",
+        "option_c": "Una configuración de hosting.",
+        "option_d": "Llamar a NotifyValidationStateChanged.",
+        "correct": "D",
+        "explanation": "EditContext.NotifyValidationStateChanged actualiza a los suscriptores del estado de validación."
+    },
+    {
+        "topic_num": 29,
+        "question": "La guía oficial trata «validación al cambiar un campo». ¿Cuál es la interpretación correcta? — t29-lo-037",
+        "option_a": "Notificar NotifyFieldChanged.",
+        "option_b": "Una migración de datos.",
+        "option_c": "Una hoja CSS global.",
+        "option_d": "Una ruta de navegación.",
+        "correct": "A",
+        "explanation": "La validación de un campo puede activarse al notificar su cambio al EditContext."
+    },
+    {
+        "topic_num": 29,
+        "question": "En el caso «una expresión de campo», ¿qué comportamiento documenta Blazor? Referencia t29-lo-038",
+        "option_a": "Una consulta SQL.",
+        "option_b": "Crear el FieldIdentifier correspondiente.",
+        "option_c": "Una ruta HTTP sin modelo.",
+        "option_d": "Una configuración de hosting.",
+        "correct": "B",
+        "explanation": "Un componente puede crear FieldIdentifier desde una expresión de campo del modelo."
+    },
+    {
+        "topic_num": 29,
+        "question": "Para «asociación de mensajes», selecciona la conducta respaldada por Microsoft Learn. [t29-lo-039]",
+        "option_a": "Una política de red.",
+        "option_b": "Una consulta de base de datos.",
+        "option_c": "Asociarlos mediante FieldIdentifier.",
+        "option_d": "Una regla CSS sin formulario.",
+        "correct": "C",
+        "explanation": "Los mensajes de validación se asocian al modelo y no únicamente al texto mostrado por el control."
+    },
+    {
+        "topic_num": 29,
+        "question": "Un revisor encuentra «compartir estado de edición». ¿Qué debe concluir según la guía? (t29-lo-040)",
+        "option_a": "Una migración de base de datos sin relación con formularios.",
+        "option_b": "Una vista MVC que no usa EditContext.",
+        "option_c": "Una regla CSS global.",
+        "option_d": "Proporcionar el mismo EditContext.",
+        "correct": "D",
+        "explanation": "Un formulario puede compartir su EditContext con componentes que necesiten reaccionar a su estado."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_29_LOT_02_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_29_LOT_03_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 29,
+        "question": "Al estudiar el formulario «anotaciones del modelo», ¿qué regla de Blazor se aplica? (objetivo t29-lo-041)",
+        "option_a": "Añadir DataAnnotationsValidator.",
+        "option_b": "Una ruta HTTP.",
+        "option_c": "Una operación SQL.",
+        "option_d": "Una hoja CSS.",
+        "correct": "A",
+        "explanation": "DataAnnotationsValidator conecta las anotaciones de datos del modelo con la validación del EditContext."
+    },
+    {
+        "topic_num": 29,
+        "question": "La guía oficial trata «un valor obligatorio». ¿Cuál es la interpretación correcta? — t29-lo-042",
+        "option_a": "Una ruta HTTP.",
+        "option_b": "Aplicar Required.",
+        "option_c": "Una operación SQL.",
+        "option_d": "Una hoja CSS.",
+        "correct": "B",
+        "explanation": "Required exige que un valor esté presente según las reglas de validación de datos."
+    },
+    {
+        "topic_num": 29,
+        "question": "En el caso «longitud de texto», ¿qué comportamiento documenta Blazor? Referencia t29-lo-043",
+        "option_a": "Una ruta HTTP.",
+        "option_b": "Una operación SQL.",
+        "option_c": "Aplicar StringLength.",
+        "option_d": "Una hoja CSS.",
+        "correct": "C",
+        "explanation": "StringLength limita la longitud permitida de una cadena."
+    },
+    {
+        "topic_num": 29,
+        "question": "Para «un intervalo numérico», selecciona la conducta respaldada por Microsoft Learn. [t29-lo-044]",
+        "option_a": "Una ruta HTTP.",
+        "option_b": "Una operación SQL.",
+        "option_c": "Una hoja CSS.",
+        "option_d": "Aplicar Range.",
+        "correct": "D",
+        "explanation": "Range restringe un valor a un intervalo permitido."
+    },
+    {
+        "topic_num": 29,
+        "question": "Un revisor encuentra «comparar dos valores». ¿Qué debe concluir según la guía? (t29-lo-045)",
+        "option_a": "Aplicar Compare.",
+        "option_b": "Una ruta HTTP.",
+        "option_c": "Una operación SQL.",
+        "option_d": "Una hoja CSS.",
+        "correct": "A",
+        "explanation": "Compare comprueba que dos propiedades tengan valores comparables iguales."
+    },
+    {
+        "topic_num": 29,
+        "question": "Al estudiar el formulario «formato de correo», ¿qué regla de Blazor se aplica? (objetivo t29-lo-046)",
+        "option_a": "Una ruta HTTP.",
+        "option_b": "Aplicar EmailAddress.",
+        "option_c": "Una operación SQL.",
+        "option_d": "Una hoja CSS.",
+        "correct": "B",
+        "explanation": "EmailAddress valida el formato de una dirección de correo electrónico."
+    },
+    {
+        "topic_num": 29,
+        "question": "La guía oficial trata «el momento de evaluar anotaciones». ¿Cuál es la interpretación correcta? — t29-lo-047",
+        "option_a": "Una migración de datos.",
+        "option_b": "Una hoja CSS global.",
+        "option_c": "Ejecutar la validación del contexto.",
+        "option_d": "Una ruta de navegación.",
+        "correct": "C",
+        "explanation": "Las anotaciones de datos se evalúan cuando se ejecuta la validación del EditContext."
+    },
+    {
+        "topic_num": 29,
+        "question": "En el caso «la ubicación del validador», ¿qué comportamiento documenta Blazor? Referencia t29-lo-048",
+        "option_a": "Una migración.",
+        "option_b": "Una política de autenticación.",
+        "option_c": "Una consulta SQL.",
+        "option_d": "Colocarlo dentro de EditForm.",
+        "correct": "D",
+        "explanation": "DataAnnotationsValidator se coloca dentro del EditForm que debe validar."
+    },
+    {
+        "topic_num": 29,
+        "question": "Para «un modelo con objetos anidados», selecciona la conducta respaldada por Microsoft Learn. [t29-lo-049]",
+        "option_a": "Configurar validación del grafo de objetos.",
+        "option_b": "Una hoja CSS.",
+        "option_c": "Una ruta de navegación.",
+        "option_d": "Una operación SQL.",
+        "correct": "A",
+        "explanation": "La validación de objetos anidados requiere habilitar el soporte de validación del grafo correspondiente."
+    },
+    {
+        "topic_num": 29,
+        "question": "Un revisor encuentra «anotaciones en objetos anidados». ¿Qué debe concluir según la guía? (t29-lo-050)",
+        "option_a": "Una hoja CSS.",
+        "option_b": "Usar ObjectGraphDataAnnotationsValidator.",
+        "option_c": "Una ruta de navegación.",
+        "option_d": "Una operación SQL.",
+        "correct": "B",
+        "explanation": "ObjectGraphDataAnnotationsValidator valida anotaciones en un grafo de objetos anidado."
+    },
+    {
+        "topic_num": 29,
+        "question": "Al estudiar el formulario «una regla de modelo propia», ¿qué regla de Blazor se aplica? (objetivo t29-lo-051)",
+        "option_a": "Una hoja CSS.",
+        "option_b": "Una ruta de navegación.",
+        "option_c": "Derivar de ValidationAttribute.",
+        "option_d": "Una migración SQL.",
+        "correct": "C",
+        "explanation": "Una ValidationAttribute personalizada puede implementar reglas de modelo específicas."
+    },
+    {
+        "topic_num": 29,
+        "question": "La guía oficial trata «una regla entre propiedades». ¿Cuál es la interpretación correcta? — t29-lo-052",
+        "option_a": "Una hoja CSS.",
+        "option_b": "Una ruta de navegación.",
+        "option_c": "Una migración SQL.",
+        "option_d": "Implementar IValidatableObject.",
+        "correct": "D",
+        "explanation": "IValidatableObject permite expresar validación que depende de varias propiedades del modelo."
+    },
+    {
+        "topic_num": 29,
+        "question": "En el caso «resultados de validación de modelo», ¿qué comportamiento documenta Blazor? Referencia t29-lo-053",
+        "option_a": "Devolver ValidationResult.",
+        "option_b": "Una hoja CSS.",
+        "option_c": "Una ruta de navegación.",
+        "option_d": "Una migración SQL.",
+        "correct": "A",
+        "explanation": "Validate de IValidatableObject devuelve resultados de validación para el modelo completo."
+    },
+    {
+        "topic_num": 29,
+        "question": "Para «una regla sin error», selecciona la conducta respaldada por Microsoft Learn. [t29-lo-054]",
+        "option_a": "Una hoja CSS.",
+        "option_b": "Devolver ValidationResult.Success.",
+        "option_c": "Una ruta de navegación.",
+        "option_d": "Una migración SQL.",
+        "correct": "B",
+        "explanation": "Una regla personalizada puede devolver ValidationResult.Success cuando no detecta errores."
+    },
+    {
+        "topic_num": 29,
+        "question": "Un revisor encuentra «errores de un servicio». ¿Qué debe concluir según la guía? (t29-lo-055)",
+        "option_a": "Una hoja CSS.",
+        "option_b": "Una ruta de navegación.",
+        "option_c": "Añadirlos al ValidationMessageStore.",
+        "option_d": "Una migración SQL.",
+        "correct": "C",
+        "explanation": "ValidationMessageStore permite incorporar errores recibidos de una API o servicio externo."
+    },
+    {
+        "topic_num": 29,
+        "question": "Al estudiar el formulario «asociación de errores externos», ¿qué regla de Blazor se aplica? (objetivo t29-lo-056)",
+        "option_a": "Una hoja CSS.",
+        "option_b": "Una ruta de navegación.",
+        "option_c": "Una migración SQL.",
+        "option_d": "Usar el FieldIdentifier correcto.",
+        "correct": "D",
+        "explanation": "Los errores externos deben asociarse al campo correcto para aparecer junto al control correspondiente."
+    },
+    {
+        "topic_num": 29,
+        "question": "La guía oficial trata «invariantes de negocio». ¿Cuál es la interpretación correcta? — t29-lo-057",
+        "option_a": "Añadir una regla personalizada.",
+        "option_b": "Una hoja CSS.",
+        "option_c": "Una ruta de navegación.",
+        "option_d": "Una migración SQL.",
+        "correct": "A",
+        "explanation": "La validación de anotaciones no sustituye las reglas personalizadas necesarias para invariantes de negocio."
+    },
+    {
+        "topic_num": 29,
+        "question": "En el caso «propiedades anidadas del modelo», ¿qué comportamiento documenta Blazor? Referencia t29-lo-058",
+        "option_a": "Una hoja CSS.",
+        "option_b": "Incluirlas en el modelo validado.",
+        "option_c": "Una ruta de navegación.",
+        "option_d": "Una operación SQL.",
+        "correct": "B",
+        "explanation": "Las propiedades anidadas deben estar incluidas en el modelo que se entrega al formulario para validarlas."
+    },
+    {
+        "topic_num": 29,
+        "question": "Para «decidir tras un envío», selecciona la conducta respaldada por Microsoft Learn. [t29-lo-059]",
+        "option_a": "Una hoja CSS sin contexto.",
+        "option_b": "Una migración de datos.",
+        "option_c": "Validar dentro de OnSubmit.",
+        "option_d": "Una ruta de navegación.",
+        "correct": "C",
+        "explanation": "Una validación de modelo puede ejecutarse desde OnSubmit antes de decidir si se procesa el formulario."
+    },
+    {
+        "topic_num": 29,
+        "question": "Un revisor encuentra «contexto compartido de validación». ¿Qué debe concluir según la guía? (t29-lo-060)",
+        "option_a": "Una migración.",
+        "option_b": "Una política de autenticación.",
+        "option_c": "Una consulta SQL.",
+        "option_d": "Usar el mismo EditContext.",
+        "correct": "D",
+        "explanation": "El componente de validación debe usar el mismo EditContext que los controles del formulario."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_29_LOT_03_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_29_LOT_04_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 29,
+        "question": "Al estudiar el formulario «mensajes junto al campo», ¿qué regla de Blazor se aplica? (objetivo t29-lo-061)",
+        "option_a": "Usar ValidationMessage.",
+        "option_b": "Una política de red.",
+        "option_c": "Una consulta de base de datos.",
+        "option_d": "Una regla CSS sin formulario.",
+        "correct": "A",
+        "explanation": "ValidationMessage muestra los mensajes asociados a la expresión de un campo."
+    },
+    {
+        "topic_num": 29,
+        "question": "La guía oficial trata «resumen de errores». ¿Cuál es la interpretación correcta? — t29-lo-062",
+        "option_a": "Una política de red.",
+        "option_b": "Usar ValidationSummary.",
+        "option_c": "Una consulta de base de datos.",
+        "option_d": "Una regla CSS sin formulario.",
+        "correct": "B",
+        "explanation": "ValidationSummary muestra los mensajes de validación del modelo en un resumen."
+    },
+    {
+        "topic_num": 29,
+        "question": "En el caso «atributos del mensaje», ¿qué comportamiento documenta Blazor? Referencia t29-lo-063",
+        "option_a": "Una política de red.",
+        "option_b": "Una consulta de base de datos.",
+        "option_c": "Pasar atributos adicionales.",
+        "option_d": "Una regla CSS sin formulario.",
+        "correct": "C",
+        "explanation": "ValidationMessage admite atributos adicionales para personalizar su marcado."
+    },
+    {
+        "topic_num": 29,
+        "question": "Para «la expresión del campo», selecciona la conducta respaldada por Microsoft Learn. [t29-lo-064]",
+        "option_a": "Una política de red.",
+        "option_b": "Una consulta de base de datos.",
+        "option_c": "Una regla CSS sin formulario.",
+        "option_d": "Configurar For.",
+        "correct": "D",
+        "explanation": "ValidationMessage puede recibir una expresión For que identifica el campo mostrado."
+    },
+    {
+        "topic_num": 29,
+        "question": "Un revisor encuentra «clases CSS de validación». ¿Qué debe concluir según la guía? (t29-lo-065)",
+        "option_a": "Usar FieldCssClassProvider.",
+        "option_b": "Una operación SQL.",
+        "option_c": "Una ruta de navegación.",
+        "option_d": "Una política de seguridad.",
+        "correct": "A",
+        "explanation": "FieldCssClassProvider permite personalizar las clases CSS de estado de los campos."
+    },
+    {
+        "topic_num": 29,
+        "question": "Al estudiar el formulario «instalar clases personalizadas», ¿qué regla de Blazor se aplica? (objetivo t29-lo-066)",
+        "option_a": "Una operación SQL.",
+        "option_b": "Llamar a SetFieldCssClassProvider.",
+        "option_c": "Una ruta de navegación.",
+        "option_d": "Una política de seguridad.",
+        "correct": "B",
+        "explanation": "EditContext.SetFieldCssClassProvider instala el proveedor de clases CSS para el contexto."
+    },
+    {
+        "topic_num": 29,
+        "question": "La guía oficial trata «estados visuales del campo». ¿Cuál es la interpretación correcta? — t29-lo-067",
+        "option_a": "Una operación SQL.",
+        "option_b": "Una ruta de navegación.",
+        "option_c": "Devolver clases según el estado.",
+        "option_d": "Una política de seguridad.",
+        "correct": "C",
+        "explanation": "FieldCssClassProvider puede distinguir estados modificado, válido e inválido."
+    },
+    {
+        "topic_num": 29,
+        "question": "En el caso «datos del proveedor visual», ¿qué comportamiento documenta Blazor? Referencia t29-lo-068",
+        "option_a": "Una operación SQL.",
+        "option_b": "Una ruta de navegación.",
+        "option_c": "Una política de seguridad.",
+        "option_d": "Usar el campo y el contexto recibidos.",
+        "correct": "D",
+        "explanation": "El proveedor de clases recibe el FieldIdentifier y el EditContext para decidir la clase."
+    },
+    {
+        "topic_num": 29,
+        "question": "Para «refrescar una vista propia», selecciona la conducta respaldada por Microsoft Learn. [t29-lo-069]",
+        "option_a": "Suscribirse a OnValidationStateChanged.",
+        "option_b": "Una consulta SQL.",
+        "option_c": "Una ruta HTTP sin modelo.",
+        "option_d": "Una configuración de hosting.",
+        "correct": "A",
+        "explanation": "La interfaz de usuario puede reaccionar a OnValidationStateChanged para refrescar un resumen propio."
+    },
+    {
+        "topic_num": 29,
+        "question": "Un revisor encuentra «una presentación personalizada». ¿Qué debe concluir según la guía? (t29-lo-070)",
+        "option_a": "Una política de red.",
+        "option_b": "Construirla con GetValidationMessages.",
+        "option_c": "Una consulta de base de datos.",
+        "option_d": "Una regla CSS sin formulario.",
+        "correct": "B",
+        "explanation": "GetValidationMessages permite construir una presentación de errores distinta de los componentes estándar."
+    },
+    {
+        "topic_num": 29,
+        "question": "Al estudiar el formulario «filtrar errores de campo», ¿qué regla de Blazor se aplica? (objetivo t29-lo-071)",
+        "option_a": "Una política de red.",
+        "option_b": "Una consulta de base de datos.",
+        "option_c": "Consultar los mensajes del FieldIdentifier.",
+        "option_d": "Una regla CSS sin formulario.",
+        "correct": "C",
+        "explanation": "Los mensajes de un campo pueden filtrarse mediante su FieldIdentifier."
+    },
+    {
+        "topic_num": 29,
+        "question": "La guía oficial trata «errores generales del formulario». ¿Cuál es la interpretación correcta? — t29-lo-072",
+        "option_a": "Una política de red.",
+        "option_b": "Una consulta de base de datos.",
+        "option_c": "Una regla CSS sin formulario.",
+        "option_d": "Usar ValidationSummary.",
+        "correct": "D",
+        "explanation": "Un ValidationSummary es adecuado para mostrar errores que no se presentan junto a un campo concreto."
+    },
+    {
+        "topic_num": 29,
+        "question": "En el caso «clase dependiente del estado», ¿qué comportamiento documenta Blazor? Referencia t29-lo-073",
+        "option_a": "Calcularla con FieldCssClassProvider.",
+        "option_b": "Una operación SQL.",
+        "option_c": "Una ruta de navegación.",
+        "option_d": "Una política de seguridad.",
+        "correct": "A",
+        "explanation": "La clase CSS de un control puede depender de si el usuario lo modificó y de su validez."
+    },
+    {
+        "topic_num": 29,
+        "question": "Para «apariencia común», selecciona la conducta respaldada por Microsoft Learn. [t29-lo-074]",
+        "option_a": "Una operación SQL.",
+        "option_b": "Instalar un proveedor en el contexto.",
+        "option_c": "Una ruta de navegación.",
+        "option_d": "Una política de seguridad.",
+        "correct": "B",
+        "explanation": "Un formulario puede aplicar una apariencia común instalando un único proveedor en su EditContext."
+    },
+    {
+        "topic_num": 29,
+        "question": "Un revisor encuentra «hacer visibles errores propios». ¿Qué debe concluir según la guía? (t29-lo-075)",
+        "option_a": "Una consulta SQL.",
+        "option_b": "Una ruta HTTP sin modelo.",
+        "option_c": "Notificar NotifyValidationStateChanged.",
+        "option_d": "Una configuración de hosting.",
+        "correct": "C",
+        "explanation": "Los mensajes personalizados se vuelven visibles cuando el contexto notifica el cambio de validación."
+    },
+    {
+        "topic_num": 29,
+        "question": "Al estudiar el formulario «separación entre regla y vista», ¿qué regla de Blazor se aplica? (objetivo t29-lo-076)",
+        "option_a": "Una política de red.",
+        "option_b": "Una consulta de base de datos.",
+        "option_c": "Una regla CSS sin formulario.",
+        "option_d": "Separar validación y presentación.",
+        "correct": "D",
+        "explanation": "La presentación de mensajes y la regla que los produce son responsabilidades separables."
+    },
+    {
+        "topic_num": 29,
+        "question": "La guía oficial trata «cambiar estilo sin cambiar modelo». ¿Cuál es la interpretación correcta? — t29-lo-077",
+        "option_a": "Cambiar el FieldCssClassProvider.",
+        "option_b": "Una operación SQL.",
+        "option_c": "Una ruta de navegación.",
+        "option_d": "Una política de seguridad.",
+        "correct": "A",
+        "explanation": "El estilo de validación puede sustituirse sin cambiar las anotaciones del modelo."
+    },
+    {
+        "topic_num": 29,
+        "question": "En el caso «contexto consultado por validadores», ¿qué comportamiento documenta Blazor? Referencia t29-lo-078",
+        "option_a": "Una política de red.",
+        "option_b": "Proporcionar el EditContext del formulario.",
+        "option_c": "Una consulta de base de datos.",
+        "option_d": "Una regla CSS sin formulario.",
+        "correct": "B",
+        "explanation": "Los componentes de validación consultan el EditContext proporcionado por el formulario."
+    },
+    {
+        "topic_num": 29,
+        "question": "Para «actualización de presentación», selecciona la conducta respaldada por Microsoft Learn. [t29-lo-079]",
+        "option_a": "Una consulta SQL.",
+        "option_b": "Una ruta HTTP sin modelo.",
+        "option_c": "Escuchar el cambio del estado.",
+        "option_d": "Una configuración de hosting.",
+        "correct": "C",
+        "explanation": "Una presentación propia debe actualizarse cuando cambie el conjunto de ValidationMessageStore."
+    },
+    {
+        "topic_num": 29,
+        "question": "Un revisor encuentra «estado visual frente a validez». ¿Qué debe concluir según la guía? (t29-lo-080)",
+        "option_a": "Una hoja CSS sin contexto.",
+        "option_b": "Una migración de datos.",
+        "option_c": "Una ruta de navegación.",
+        "option_d": "Usar Validate para la decisión y clases para la apariencia.",
+        "correct": "D",
+        "explanation": "El estado visual no debe confundirse con la decisión de validez que devuelve Validate."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_29_LOT_04_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_29_LOT_05_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 29,
+        "question": "Al estudiar el formulario «protección de envíos», ¿qué regla de Blazor se aplica? (objetivo t29-lo-081)",
+        "option_a": "Usar el soporte antiforgery del formulario.",
+        "option_b": "Una regla de CSS.",
+        "option_c": "Una consulta SQL.",
+        "option_d": "Una migración de datos.",
+        "correct": "A",
+        "explanation": "Los formularios de Blazor incluyen soporte antiforgery para proteger envíos al servidor."
+    },
+    {
+        "topic_num": 29,
+        "question": "La guía oficial trata «un token antiforgery explícito». ¿Cuál es la interpretación correcta? — t29-lo-082",
+        "option_a": "Una regla de CSS.",
+        "option_b": "Renderizar AntiforgeryToken.",
+        "option_c": "Una consulta SQL.",
+        "option_d": "Una migración de datos.",
+        "correct": "B",
+        "explanation": "Los formularios estáticos pueden incluir el componente AntiforgeryToken cuando el escenario lo requiere."
+    },
+    {
+        "topic_num": 29,
+        "question": "En el caso «verificación del envío», ¿qué comportamiento documenta Blazor? Referencia t29-lo-083",
+        "option_a": "Una regla de CSS.",
+        "option_b": "Una consulta SQL.",
+        "option_c": "Validar el token antiforgery.",
+        "option_d": "Una migración de datos.",
+        "correct": "C",
+        "explanation": "La protección antiforgery verifica que el envío procede de un contexto autorizado."
+    },
+    {
+        "topic_num": 29,
+        "question": "Para «suministro de datos del formulario», selecciona la conducta respaldada por Microsoft Learn. [t29-lo-084]",
+        "option_a": "Una consulta SQL sin formulario.",
+        "option_b": "Una hoja de estilos global.",
+        "option_c": "Una ruta que no procesa datos.",
+        "option_d": "Usar SupplyParameterFromForm.",
+        "correct": "D",
+        "explanation": "SupplyParameterFromForm permite suministrar valores enviados por un formulario a una propiedad del componente."
+    },
+    {
+        "topic_num": 29,
+        "question": "Un revisor encuentra «identidad de un formulario SSR». ¿Qué debe concluir según la guía? (t29-lo-085)",
+        "option_a": "Asignar un FormName único.",
+        "option_b": "Una consulta SQL sin formulario.",
+        "option_c": "Una hoja de estilos global.",
+        "option_d": "Una ruta que no procesa datos.",
+        "correct": "A",
+        "explanation": "El nombre del formulario debe ser único cuando se usa el suministro de parámetros desde formularios."
+    },
+    {
+        "topic_num": 29,
+        "question": "Al estudiar el formulario «sobrepublicación de propiedades», ¿qué regla de Blazor se aplica? (objetivo t29-lo-086)",
+        "option_a": "Una hoja de estilos.",
+        "option_b": "Usar un modelo de entrada específico.",
+        "option_c": "Una ruta de navegación.",
+        "option_d": "Una consulta SQL.",
+        "correct": "B",
+        "explanation": "Un modelo de entrada específico reduce la superficie de sobrepublicación frente a enlazar una entidad completa."
+    },
+    {
+        "topic_num": 29,
+        "question": "La guía oficial trata «propiedades no autorizadas». ¿Cuál es la interpretación correcta? — t29-lo-087",
+        "option_a": "Una hoja de estilos.",
+        "option_b": "Una ruta de navegación.",
+        "option_c": "Limitar las propiedades enlazables.",
+        "option_d": "Una consulta SQL.",
+        "correct": "C",
+        "explanation": "La sobrepublicación puede permitir que el cliente establezca propiedades que no debía controlar."
+    },
+    {
+        "topic_num": 29,
+        "question": "En el caso «procesamiento en el servidor», ¿qué comportamiento documenta Blazor? Referencia t29-lo-088",
+        "option_a": "Una consulta SQL sin formulario.",
+        "option_b": "Una hoja de estilos global.",
+        "option_c": "Una ruta que no procesa datos.",
+        "option_d": "Usar el handler del formulario.",
+        "correct": "D",
+        "explanation": "Un formulario puede procesarse mediante un handler que recibe datos suministrados desde el formulario."
+    },
+    {
+        "topic_num": 29,
+        "question": "Para «envío mejorado», selecciona la conducta respaldada por Microsoft Learn. [t29-lo-089]",
+        "option_a": "Habilitar enhanced form handling.",
+        "option_b": "Una migración.",
+        "option_c": "Una política CSS.",
+        "option_d": "Una consulta SQL.",
+        "correct": "A",
+        "explanation": "El manejo mejorado permite enviar un formulario sin una recarga completa de la página."
+    },
+    {
+        "topic_num": 29,
+        "question": "Un revisor encuentra «la mejora de EditForm». ¿Qué debe concluir según la guía? (t29-lo-090)",
+        "option_a": "Una migración.",
+        "option_b": "Configurar Enhance.",
+        "option_c": "Una política CSS.",
+        "option_d": "Una consulta SQL.",
+        "correct": "B",
+        "explanation": "Enhance en EditForm habilita el manejo mejorado del envío del formulario."
+    },
+    {
+        "topic_num": 29,
+        "question": "Al estudiar el formulario «mejora en HTML», ¿qué regla de Blazor se aplica? (objetivo t29-lo-091)",
+        "option_a": "Una migración.",
+        "option_b": "Una política CSS.",
+        "option_c": "Usar data-enhance.",
+        "option_d": "Una consulta SQL.",
+        "correct": "C",
+        "explanation": "data-enhance expresa el manejo mejorado en un formulario HTML compatible."
+    },
+    {
+        "topic_num": 29,
+        "question": "La guía oficial trata «validación cliente interactiva». ¿Cuál es la interpretación correcta? — t29-lo-092",
+        "option_a": "Una ruta HTTP.",
+        "option_b": "Una migración SQL.",
+        "option_c": "Una hoja CSS.",
+        "option_d": "Disponer de un circuito de Blazor.",
+        "correct": "D",
+        "explanation": "La validación del lado cliente de un formulario interactivo requiere un circuito de Blazor."
+    },
+    {
+        "topic_num": 29,
+        "question": "En el caso «validación en static SSR», ¿qué comportamiento documenta Blazor? Referencia t29-lo-093",
+        "option_a": "Validar durante el procesamiento del servidor.",
+        "option_b": "Una consulta SQL.",
+        "option_c": "Una regla CSS.",
+        "option_d": "Una ruta sin formulario.",
+        "correct": "A",
+        "explanation": "En un formulario de static SSR, la validación del lado servidor se ejecuta al procesar el envío."
+    },
+    {
+        "topic_num": 29,
+        "question": "Para «límites del static SSR», selecciona la conducta respaldada por Microsoft Learn. [t29-lo-094]",
+        "option_a": "Una migración.",
+        "option_b": "Aplicar solo las características soportadas.",
+        "option_c": "Una hoja de estilos.",
+        "option_d": "Una consulta SQL.",
+        "correct": "B",
+        "explanation": "No todas las características de validación interactiva están disponibles en formularios static SSR."
+    },
+    {
+        "topic_num": 29,
+        "question": "Un revisor encuentra «respuesta de un envío mejorado». ¿Qué debe concluir según la guía? (t29-lo-095)",
+        "option_a": "Una migración.",
+        "option_b": "Una política CSS.",
+        "option_c": "Procesar la respuesta sin recarga completa.",
+        "option_d": "Una consulta SQL.",
+        "correct": "C",
+        "explanation": "Un formulario mejorado puede actualizar el contenido de la página como respuesta del servidor."
+    },
+    {
+        "topic_num": 29,
+        "question": "Al estudiar el formulario «dos controles de seguridad», ¿qué regla de Blazor se aplica? (objetivo t29-lo-096)",
+        "option_a": "Una regla de CSS.",
+        "option_b": "Una consulta SQL.",
+        "option_c": "Una migración de datos.",
+        "option_d": "Combinar antiforgery y un modelo limitado.",
+        "correct": "D",
+        "explanation": "La protección antiforgery y la limitación de propiedades son controles distintos que pueden combinarse."
+    },
+    {
+        "topic_num": 29,
+        "question": "La guía oficial trata «validación frente a autorización». ¿Cuál es la interpretación correcta? — t29-lo-097",
+        "option_a": "Comprobar autorización en el servidor.",
+        "option_b": "Una hoja CSS sin contexto.",
+        "option_c": "Una migración de datos.",
+        "option_d": "Una ruta de navegación.",
+        "correct": "A",
+        "explanation": "OnValidSubmit no sustituye la autorización del usuario ni las comprobaciones del servidor."
+    },
+    {
+        "topic_num": 29,
+        "question": "En el caso «confianza en la validación cliente», ¿qué comportamiento documenta Blazor? Referencia t29-lo-098",
+        "option_a": "Una hoja de estilos.",
+        "option_b": "Validar también en el servidor.",
+        "option_c": "Una ruta de navegación.",
+        "option_d": "Una consulta SQL.",
+        "correct": "B",
+        "explanation": "La validación de datos de entrada debe repetirse en el servidor aunque exista validación en el cliente."
+    },
+    {
+        "topic_num": 29,
+        "question": "Para «identificación del origen de valores», selecciona la conducta respaldada por Microsoft Learn. [t29-lo-099]",
+        "option_a": "Una consulta SQL sin formulario.",
+        "option_b": "Una hoja de estilos global.",
+        "option_c": "Usar FormName.",
+        "option_d": "Una ruta que no procesa datos.",
+        "correct": "C",
+        "explanation": "Un formulario con nombre facilita identificar qué formulario suministra los valores al componente."
+    },
+    {
+        "topic_num": 29,
+        "question": "Un revisor encuentra «defensa combinada del formulario». ¿Qué debe concluir según la guía? (t29-lo-100)",
+        "option_a": "Una hoja de estilos.",
+        "option_b": "Una ruta de navegación.",
+        "option_c": "Una consulta SQL.",
+        "option_d": "Aplicar las tres medidas.",
+        "correct": "D",
+        "explanation": "La combinación de modelo de entrada, antiforgery y validación de servidor reduce riesgos al aceptar datos de formularios."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_29_LOT_05_END

@@ -1,0 +1,610 @@
+{
+  "topic_num": 29,
+  "source_ids": [
+    "BLAZOR-10"
+  ],
+  "researched_at": "2026-10-12",
+  "research_status": "primary_source_checked_pending_independent_review",
+  "objectives": [
+    {
+      "objective_id": "t29-lo-001",
+      "statement": "EditForm puede recibir un modelo y crear el EditContext asociado automáticamente.",
+      "citation": "Input components and forms",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-002",
+      "statement": "EditForm puede recibir explícitamente un EditContext existente.",
+      "citation": "Input components and forms",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-003",
+      "statement": "Model y EditContext no deben configurarse simultáneamente en el mismo EditForm.",
+      "citation": "Input components and forms",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-004",
+      "statement": "OnValidSubmit se ejecuta cuando la validación del formulario termina sin errores.",
+      "citation": "Handle form submission",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-005",
+      "statement": "OnInvalidSubmit se ejecuta cuando la validación del formulario encuentra errores.",
+      "citation": "Handle form submission",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-006",
+      "statement": "OnSubmit permite controlar manualmente el proceso de sumisión del formulario.",
+      "citation": "Handle form submission",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-007",
+      "statement": "Con OnSubmit, el controlador debe invocar explícitamente la validación si la necesita.",
+      "citation": "Handle form submission",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-008",
+      "statement": "InputText es el componente de entrada destinado a valores de texto.",
+      "citation": "Input components and forms",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-009",
+      "statement": "InputNumber<TValue> convierte el valor del control al tipo numérico indicado.",
+      "citation": "Input components and forms",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-010",
+      "statement": "InputDate<TValue> proporciona enlace tipado para valores de fecha.",
+      "citation": "Input components and forms",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-011",
+      "statement": "InputSelect<TValue> representa una selección cuyo valor se convierte al tipo indicado.",
+      "citation": "Input components and forms",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-012",
+      "statement": "InputCheckbox enlaza el estado booleano de una casilla.",
+      "citation": "Input components and forms",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-013",
+      "statement": "InputTextArea proporciona un control de texto multilínea integrado con EditContext.",
+      "citation": "Input components and forms",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-014",
+      "statement": "InputRadioGroup<TValue> agrupa opciones de radio que comparten un valor tipado.",
+      "citation": "Input components and forms",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-015",
+      "statement": "InputRadio<TValue> representa una opción dentro de un grupo de radio.",
+      "citation": "Input components and forms",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-016",
+      "statement": "Los componentes de entrada de Blazor usan @bind-Value para el enlace de valor.",
+      "citation": "Input components and forms",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-017",
+      "statement": "Los componentes InputBase<TValue> comparten la infraestructura de entrada basada en EditContext.",
+      "citation": "Input components and forms",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-018",
+      "statement": "FormName identifica de manera única un formulario nombrado en escenarios de manejo de formularios.",
+      "citation": "Handle form submission",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-019",
+      "statement": "El modelo enlazado a un formulario debe exponer propiedades compatibles con los componentes de entrada usados.",
+      "citation": "Input components and forms",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-020",
+      "statement": "Un formulario puede limpiarse asignando un nuevo modelo o restableciendo los valores del contexto.",
+      "citation": "Clear a form or field",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-021",
+      "statement": "EditContext mantiene el estado de edición y validación del modelo de un formulario.",
+      "citation": "Input components and forms",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-022",
+      "statement": "EditContext.Validate() solicita la validación y devuelve si el modelo es válido.",
+      "citation": "Control form submission",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-023",
+      "statement": "OnFieldChanged notifica que un campo del EditContext ha cambiado.",
+      "citation": "Respond to validation state",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-024",
+      "statement": "OnValidationRequested se produce cuando se solicita validar el contexto completo.",
+      "citation": "Respond to validation state",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-025",
+      "statement": "OnValidationStateChanged notifica que cambió el conjunto de mensajes de validación.",
+      "citation": "Respond to validation state",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-026",
+      "statement": "FieldIdentifier identifica un modelo y el nombre de una propiedad de campo.",
+      "citation": "Respond to validation state",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-027",
+      "statement": "ValidationMessageStore almacena mensajes asociados a campos de un EditContext.",
+      "citation": "Write model-based custom rules",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-028",
+      "statement": "ValidationMessageStore.Clear elimina los mensajes almacenados para el campo o contexto indicado.",
+      "citation": "Write model-based custom rules",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-029",
+      "statement": "ValidationMessageStore.Add añade un mensaje para un FieldIdentifier.",
+      "citation": "Write model-based custom rules",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-030",
+      "statement": "Después de cambiar mensajes manualmente se debe notificar el cambio del estado de validación.",
+      "citation": "Respond to validation state",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-031",
+      "statement": "EditContext.IsModified indica si el contexto o un campo ha sido modificado.",
+      "citation": "Respond to validation state",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-032",
+      "statement": "EditContext.IsModified(FieldIdentifier) comprueba el estado modificado de un campo concreto.",
+      "citation": "Respond to validation state",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-033",
+      "statement": "EditContext.NotifyFieldChanged marca un campo como modificado y notifica el cambio.",
+      "citation": "Respond to validation state",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-034",
+      "statement": "EditContext.GetValidationMessages devuelve los mensajes de validación disponibles.",
+      "citation": "Display validation messages",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-035",
+      "statement": "GetValidationMessages puede recibir un FieldIdentifier para limitar el resultado a un campo.",
+      "citation": "Display validation messages",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-036",
+      "statement": "EditContext.NotifyValidationStateChanged actualiza a los suscriptores del estado de validación.",
+      "citation": "Respond to validation state",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-037",
+      "statement": "La validación de un campo puede activarse al notificar su cambio al EditContext.",
+      "citation": "When validation runs",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-038",
+      "statement": "Un componente puede crear FieldIdentifier desde una expresión de campo del modelo.",
+      "citation": "Respond to validation state",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-039",
+      "statement": "Los mensajes de validación se asocian al modelo y no únicamente al texto mostrado por el control.",
+      "citation": "Display validation messages",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-040",
+      "statement": "Un formulario puede compartir su EditContext con componentes que necesiten reaccionar a su estado.",
+      "citation": "Input components and forms",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-041",
+      "statement": "DataAnnotationsValidator conecta las anotaciones de datos del modelo con la validación del EditContext.",
+      "citation": "Validate with data annotations",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-042",
+      "statement": "Required exige que un valor esté presente según las reglas de validación de datos.",
+      "citation": "Validate with data annotations",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-043",
+      "statement": "StringLength limita la longitud permitida de una cadena.",
+      "citation": "Validate with data annotations",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-044",
+      "statement": "Range restringe un valor a un intervalo permitido.",
+      "citation": "Validate with data annotations",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-045",
+      "statement": "Compare comprueba que dos propiedades tengan valores comparables iguales.",
+      "citation": "Validate with data annotations",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-046",
+      "statement": "EmailAddress valida el formato de una dirección de correo electrónico.",
+      "citation": "Validate with data annotations",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-047",
+      "statement": "Las anotaciones de datos se evalúan cuando se ejecuta la validación del EditContext.",
+      "citation": "When validation runs",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-048",
+      "statement": "DataAnnotationsValidator se coloca dentro del EditForm que debe validar.",
+      "citation": "Configure data annotations validation",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-049",
+      "statement": "La validación de objetos anidados requiere habilitar el soporte de validación del grafo correspondiente.",
+      "citation": "Validate nested object graphs",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-050",
+      "statement": "ObjectGraphDataAnnotationsValidator valida anotaciones en un grafo de objetos anidado.",
+      "citation": "Validate nested object graphs",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-051",
+      "statement": "Una ValidationAttribute personalizada puede implementar reglas de modelo específicas.",
+      "citation": "Write model-based custom rules",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-052",
+      "statement": "IValidatableObject permite expresar validación que depende de varias propiedades del modelo.",
+      "citation": "Write model-based custom rules",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-053",
+      "statement": "Validate de IValidatableObject devuelve resultados de validación para el modelo completo.",
+      "citation": "Write model-based custom rules",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-054",
+      "statement": "Una regla personalizada puede devolver ValidationResult.Success cuando no detecta errores.",
+      "citation": "Write model-based custom rules",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-055",
+      "statement": "ValidationMessageStore permite incorporar errores recibidos de una API o servicio externo.",
+      "citation": "Write model-based custom rules",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-056",
+      "statement": "Los errores externos deben asociarse al campo correcto para aparecer junto al control correspondiente.",
+      "citation": "Write model-based custom rules",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-057",
+      "statement": "La validación de anotaciones no sustituye las reglas personalizadas necesarias para invariantes de negocio.",
+      "citation": "Write model-based custom rules",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-058",
+      "statement": "Las propiedades anidadas deben estar incluidas en el modelo que se entrega al formulario para validarlas.",
+      "citation": "Validate nested object graphs",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-059",
+      "statement": "Una validación de modelo puede ejecutarse desde OnSubmit antes de decidir si se procesa el formulario.",
+      "citation": "Control form submission",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-060",
+      "statement": "El componente de validación debe usar el mismo EditContext que los controles del formulario.",
+      "citation": "Configure data annotations validation",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-061",
+      "statement": "ValidationMessage muestra los mensajes asociados a la expresión de un campo.",
+      "citation": "Display validation messages",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-062",
+      "statement": "ValidationSummary muestra los mensajes de validación del modelo en un resumen.",
+      "citation": "Display validation messages",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-063",
+      "statement": "ValidationMessage admite atributos adicionales para personalizar su marcado.",
+      "citation": "Display validation messages",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-064",
+      "statement": "ValidationMessage puede recibir una expresión For que identifica el campo mostrado.",
+      "citation": "Display validation messages",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-065",
+      "statement": "FieldCssClassProvider permite personalizar las clases CSS de estado de los campos.",
+      "citation": "Customize validation appearance",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-066",
+      "statement": "EditContext.SetFieldCssClassProvider instala el proveedor de clases CSS para el contexto.",
+      "citation": "Customize validation appearance",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-067",
+      "statement": "FieldCssClassProvider puede distinguir estados modificado, válido e inválido.",
+      "citation": "Customize validation appearance",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-068",
+      "statement": "El proveedor de clases recibe el FieldIdentifier y el EditContext para decidir la clase.",
+      "citation": "Customize validation appearance",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-069",
+      "statement": "La interfaz de usuario puede reaccionar a OnValidationStateChanged para refrescar un resumen propio.",
+      "citation": "Respond to validation state",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-070",
+      "statement": "GetValidationMessages permite construir una presentación de errores distinta de los componentes estándar.",
+      "citation": "Display validation messages",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-071",
+      "statement": "Los mensajes de un campo pueden filtrarse mediante su FieldIdentifier.",
+      "citation": "Display validation messages",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-072",
+      "statement": "Un ValidationSummary es adecuado para mostrar errores que no se presentan junto a un campo concreto.",
+      "citation": "Display validation messages",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-073",
+      "statement": "La clase CSS de un control puede depender de si el usuario lo modificó y de su validez.",
+      "citation": "Customize validation appearance",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-074",
+      "statement": "Un formulario puede aplicar una apariencia común instalando un único proveedor en su EditContext.",
+      "citation": "Customize validation appearance",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-075",
+      "statement": "Los mensajes personalizados se vuelven visibles cuando el contexto notifica el cambio de validación.",
+      "citation": "Respond to validation state",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-076",
+      "statement": "La presentación de mensajes y la regla que los produce son responsabilidades separables.",
+      "citation": "Display validation messages",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-077",
+      "statement": "El estilo de validación puede sustituirse sin cambiar las anotaciones del modelo.",
+      "citation": "Customize validation appearance",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-078",
+      "statement": "Los componentes de validación consultan el EditContext proporcionado por el formulario.",
+      "citation": "Display validation messages",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-079",
+      "statement": "Una presentación propia debe actualizarse cuando cambie el conjunto de ValidationMessageStore.",
+      "citation": "Respond to validation state",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-080",
+      "statement": "El estado visual no debe confundirse con la decisión de validez que devuelve Validate.",
+      "citation": "Control form submission",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-081",
+      "statement": "Los formularios de Blazor incluyen soporte antiforgery para proteger envíos al servidor.",
+      "citation": "Antiforgery support",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-082",
+      "statement": "Los formularios estáticos pueden incluir el componente AntiforgeryToken cuando el escenario lo requiere.",
+      "citation": "Antiforgery support",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-083",
+      "statement": "La protección antiforgery verifica que el envío procede de un contexto autorizado.",
+      "citation": "Antiforgery support",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-084",
+      "statement": "SupplyParameterFromForm permite suministrar valores enviados por un formulario a una propiedad del componente.",
+      "citation": "Handle form submission",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-085",
+      "statement": "El nombre del formulario debe ser único cuando se usa el suministro de parámetros desde formularios.",
+      "citation": "Handle form submission",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-086",
+      "statement": "Un modelo de entrada específico reduce la superficie de sobrepublicación frente a enlazar una entidad completa.",
+      "citation": "Mitigate overposting attacks",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-087",
+      "statement": "La sobrepublicación puede permitir que el cliente establezca propiedades que no debía controlar.",
+      "citation": "Mitigate overposting attacks",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-088",
+      "statement": "Un formulario puede procesarse mediante un handler que recibe datos suministrados desde el formulario.",
+      "citation": "Handle form submission",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-089",
+      "statement": "El manejo mejorado permite enviar un formulario sin una recarga completa de la página.",
+      "citation": "Enhanced form handling",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-090",
+      "statement": "Enhance en EditForm habilita el manejo mejorado del envío del formulario.",
+      "citation": "Enhanced form handling",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-091",
+      "statement": "data-enhance expresa el manejo mejorado en un formulario HTML compatible.",
+      "citation": "Enhanced form handling",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-092",
+      "statement": "La validación del lado cliente de un formulario interactivo requiere un circuito de Blazor.",
+      "citation": "Client-side validation requires a circuit",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-093",
+      "statement": "En un formulario de static SSR, la validación del lado servidor se ejecuta al procesar el envío.",
+      "citation": "Client-side validation in static SSR forms",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-094",
+      "statement": "No todas las características de validación interactiva están disponibles en formularios static SSR.",
+      "citation": "Unsupported validation features",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-095",
+      "statement": "Un formulario mejorado puede actualizar el contenido de la página como respuesta del servidor.",
+      "citation": "Enhanced form handling",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-096",
+      "statement": "La protección antiforgery y la limitación de propiedades son controles distintos que pueden combinarse.",
+      "citation": "Antiforgery support",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-097",
+      "statement": "OnValidSubmit no sustituye la autorización del usuario ni las comprobaciones del servidor.",
+      "citation": "Control form submission",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-098",
+      "statement": "La validación de datos de entrada debe repetirse en el servidor aunque exista validación en el cliente.",
+      "citation": "Mitigate overposting attacks",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-099",
+      "statement": "Un formulario con nombre facilita identificar qué formulario suministra los valores al componente.",
+      "citation": "Handle form submission",
+      "source_id": "BLAZOR-10"
+    },
+    {
+      "objective_id": "t29-lo-100",
+      "statement": "La combinación de modelo de entrada, antiforgery y validación de servidor reduce riesgos al aceptar datos de formularios.",
+      "citation": "Mitigate overposting attacks",
+      "source_id": "BLAZOR-10"
+    }
+  ]
+}
