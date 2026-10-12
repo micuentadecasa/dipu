@@ -180,7 +180,7 @@ class SourceRegisterTests(unittest.TestCase):
         manifest = json.loads((ROOT / "docs/question-bank/objective-manifest.json").read_text(encoding="utf-8"))
         self.assertEqual(manifest["objective_count"], 8000)
         self.assertEqual(manifest["objectives_per_topic"], 200)
-        self.assertEqual(manifest["researched_objective_count"], 1020)
+        self.assertEqual(manifest["researched_objective_count"], 1120)
         topic_counts = {}
         researched_count = 0
         for objective in manifest["objectives"]:
@@ -192,7 +192,7 @@ class SourceRegisterTests(unittest.TestCase):
                 self.assertEqual(objective["coverage_state"], "researched_pending_independent_review")
                 self.assertTrue(objective["citation"])
             self.assertEqual(objective["reviewer_decision"], "not_reviewed")
-        self.assertEqual(researched_count, 1020)
+        self.assertEqual(researched_count, 1120)
         self.assertEqual(topic_counts, {topic: 200 for topic in range(1, 41)})
 
     def test_topic_one_lot_is_candidate_only_and_blockers_are_recorded(self):
