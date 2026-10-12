@@ -75,12 +75,15 @@ EXPECTATIONS = {
     16: {
         1:("A","psql, Description"),2:("A","pg_dump, Description"),3:("A","SQL COPY, Description"),4:("A","SQL COPY, Notes"),5:("A","pg_restore, Description"),6:("A","SQL Dump; pg_dump, Description"),7:("A","SQL COPY, Notes; psql, Meta-Commands"),8:("A","SQL COPY, Parameters"),9:("A","psql, Options, -f/--file"),10:("A","pg_dump, Description"),11:("A","pg_dump, Description, Output Formats"),12:("A","pg_restore, Description"),13:("A","SQL COPY, Notes"),14:("A","SQL COPY, Description"),15:("A","SQL COPY, Binary Format"),16:("A","pg_dump, Description"),17:("A","pg_restore, Warning"),18:("A","SQL COPY, Notes"),19:("A","SQL Dump, Restoring the Dump"),20:("A","pg_restore, Options, -l/--list and -L/--use-list")
     },
+    17: {
+        1:("A","14.1. Using EXPLAIN"),2:("A","11.1. Introduction"),3:("A","ANALYZE, Description"),4:("A","19.7. Query Planning"),5:("A","14.1.1. EXPLAIN Basics"),6:("A","11.2.1. B-Tree"),7:("A","14.2. Statistics Used by the Planner"),8:("A","24.1. Routine Vacuuming"),9:("A","14.1.2. EXPLAIN ANALYZE"),10:("A","11.3. Multicolumn Indexes"),11:("A","ANALYZE, Description"),12:("A","19.7.2. Planner Cost Constants"),13:("A","14.1.1. EXPLAIN Basics"),14:("A","11.8. Partial Indexes"),15:("A","14.2. Statistics Used by the Planner"),16:("A","24.1. Routine Vacuuming"),17:("A","27.2.3. pg_stat_activity"),18:("A","Chapter 15. Parallel Query"),19:("A","11.4. Indexes and ORDER BY"),20:("A","24.1.6. The Autovacuum Daemon")
+    },
 }
 
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("topic_num", type=int, choices=tuple(range(2, 17)))
+    parser.add_argument("topic_num", type=int, choices=tuple(range(2, 18)))
     args = parser.parse_args()
     lot_path = ROOT / "docs/question-bank/lots" / f"topic-{args.topic_num:02d}-lot-01.json"
     checkpoint_path = ROOT / "docs/question-bank/checkpoints" / f"topic-{args.topic_num:02d}-lot-01.jsonl"

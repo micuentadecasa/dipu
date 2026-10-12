@@ -20,7 +20,7 @@ SEED_PATH = ROOT / "seed_data.py"
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("topic_num", type=int, choices=tuple(range(1, 17)))
+    parser.add_argument("topic_num", type=int, choices=tuple(range(1, 18)))
     args = parser.parse_args()
     stem = f"topic-{args.topic_num:02d}-lot-01"
     accepted_path = ROOT / "docs/question-bank/accepted" / f"{stem}.json"
