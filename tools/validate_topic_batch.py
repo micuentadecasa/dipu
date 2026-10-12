@@ -19,7 +19,7 @@ from seed_data import SEED_QUESTIONS
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("topic_num", type=int, choices=tuple(range(2, 18)))
+    parser.add_argument("topic_num", type=int, choices=tuple(range(2, 19)))
     args = parser.parse_args()
     stem = f"topic-{args.topic_num:02d}-lot-01"
     accepted_path = ROOT / "docs/question-bank/accepted" / f"{stem}.json"

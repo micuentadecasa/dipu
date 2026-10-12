@@ -5048,3 +5048,208 @@ SEED_QUESTIONS.extend([
     }
 ])
 # QUESTION_BANK_ACCEPTED_TOPIC_17_LOT_01_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_18_LOT_01_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 18,
+        "question": "¿Qué caracteriza al sistema de tipos de C#?",
+        "option_a": "Es estáticamente tipado: las variables y expresiones tienen un tipo determinado",
+        "option_b": "Los tipos solo se comprueban después de ejecutar el programa",
+        "option_c": "Cualquier variable puede cambiar de tipo sin restricciones",
+        "option_d": "C# no utiliza tipos",
+        "correct": "A",
+        "explanation": "La documentación de C# describe un lenguaje de tipado estático en el que cada variable y expresión tiene un tipo."
+    },
+    {
+        "topic_num": 18,
+        "question": "¿Qué diferencia general existe entre tipos de valor y tipos de referencia?",
+        "option_a": "Un tipo de valor contiene directamente su dato; una variable de tipo de referencia contiene una referencia a un objeto",
+        "option_b": "Ambos se almacenan siempre exactamente de la misma forma",
+        "option_c": "Un tipo de referencia nunca puede ser una clase",
+        "option_d": "Los tipos de valor solo pueden contener texto",
+        "correct": "A",
+        "explanation": "C# distingue tipos de valor, que contienen directamente el valor, y tipos de referencia, cuyas variables hacen referencia a objetos."
+    },
+    {
+        "topic_num": 18,
+        "question": "¿Qué implica declarar una variable local con var?",
+        "option_a": "El compilador infiere su tipo a partir de la expresión inicial; no se convierte en una variable sin tipo",
+        "option_b": "La variable puede cambiar libremente de tipo en cada asignación",
+        "option_c": "El tipo solo se decide al ejecutar el programa",
+        "option_d": "var obliga siempre a usar object",
+        "correct": "A",
+        "explanation": "var permite inferir el tipo en tiempo de compilación a partir del inicializador, manteniendo el tipado estático."
+    },
+    {
+        "topic_num": 18,
+        "question": "¿Para qué sirven los parámetros de tipo genérico?",
+        "option_a": "Para escribir tipos y métodos reutilizables conservando información de tipos y comprobación estática",
+        "option_b": "Para eliminar todos los tipos en tiempo de compilación",
+        "option_c": "Para convertir automáticamente cualquier valor en texto",
+        "option_d": "Para impedir que una clase tenga métodos",
+        "correct": "A",
+        "explanation": "Los genéricos permiten definir algoritmos y tipos reutilizables parametrizados por tipos concretos."
+    },
+    {
+        "topic_num": 18,
+        "question": "¿Qué conjunto contiene sentencias de selección de C#?",
+        "option_a": "if, else y switch",
+        "option_b": "for, while y do",
+        "option_c": "try, catch y finally",
+        "option_d": "class, struct y enum",
+        "correct": "A",
+        "explanation": "Las sentencias if, else y switch seleccionan qué instrucciones ejecutar según condiciones o patrones."
+    },
+    {
+        "topic_num": 18,
+        "question": "¿Qué elementos principales aparecen en la declaración de un método C#?",
+        "option_a": "Un tipo de retorno, un nombre y una lista de parámetros, además del cuerpo o la expresión del método",
+        "option_b": "Solo el nombre del archivo",
+        "option_c": "Únicamente una variable global",
+        "option_d": "Solo un bloque catch",
+        "correct": "A",
+        "explanation": "La declaración de un método especifica, entre otros elementos, el tipo de retorno, el nombre y los parámetros."
+    },
+    {
+        "topic_num": 18,
+        "question": "¿Qué relación describe correctamente una clase y un objeto?",
+        "option_a": "La clase define un tipo y el objeto es una instancia de ese tipo",
+        "option_b": "La clase siempre es una instancia creada en tiempo de ejecución",
+        "option_c": "Un objeto define obligatoriamente todas las clases",
+        "option_d": "No existe relación entre ambos",
+        "correct": "A",
+        "explanation": "Una clase define la estructura y comportamiento de un tipo; los objetos son instancias creadas a partir de ese tipo."
+    },
+    {
+        "topic_num": 18,
+        "question": "¿Qué ventaja proporciona una clase genérica frente a duplicar código por tipo?",
+        "option_a": "Permite reutilizar la misma definición con distintos argumentos de tipo manteniendo comprobación estática",
+        "option_b": "Obliga a convertir todo a string",
+        "option_c": "Elimina la necesidad de compilar",
+        "option_d": "Solo puede utilizarse con un tipo concreto",
+        "correct": "A",
+        "explanation": "Una definición genérica puede reutilizarse con distintos tipos y evita duplicar implementaciones específicas."
+    },
+    {
+        "topic_num": 18,
+        "question": "¿Qué conjunto contiene sentencias de iteración de C#?",
+        "option_a": "while, do y for",
+        "option_b": "if, else y switch",
+        "option_c": "try, catch y finally",
+        "option_d": "namespace, class y interface",
+        "correct": "A",
+        "explanation": "while, do y for son las formas principales de repetir instrucciones en C#."
+    },
+    {
+        "topic_num": 18,
+        "question": "¿Qué diferencia describe correctamente ref y out frente al paso por valor?",
+        "option_a": "ref y out permiten pasar un argumento por referencia con reglas adicionales; el paso ordinario transmite el valor del argumento",
+        "option_b": "ref y out siempre crean una copia independiente",
+        "option_c": "El paso por valor obliga a usar punteros",
+        "option_d": "ref y out solo sirven para constantes",
+        "correct": "A",
+        "explanation": "Los modificadores ref y out cambian la forma de paso del argumento y permiten que el método opere sobre la variable del llamador conforme a sus reglas."
+    },
+    {
+        "topic_num": 18,
+        "question": "¿Qué es la herencia en C#?",
+        "option_a": "Un mecanismo por el que una clase derivada reutiliza y puede extender una clase base",
+        "option_b": "Una forma de copiar archivos entre proyectos",
+        "option_c": "Una conversión automática de cualquier tipo a string",
+        "option_d": "Un mecanismo exclusivo de las variables locales",
+        "correct": "A",
+        "explanation": "La herencia permite que una clase derivada reutilice miembros de una clase base y añada o modifique comportamiento."
+    },
+    {
+        "topic_num": 18,
+        "question": "¿Cómo contribuyen los genéricos a la seguridad de tipos?",
+        "option_a": "Permiten conservar el tipo concreto en la API y reducen la necesidad de conversiones explícitas o casts",
+        "option_b": "Obligan a tratar todos los valores como object",
+        "option_c": "Eliminan la comprobación de tipos",
+        "option_d": "Solo funcionan durante la ejecución",
+        "correct": "A",
+        "explanation": "Los genéricos conservan la información del tipo en la definición y en el uso, lo que favorece la comprobación estática."
+    },
+    {
+        "topic_num": 18,
+        "question": "¿Qué efecto tienen break y continue dentro de un bucle?",
+        "option_a": "break termina el bucle y continue pasa a la siguiente iteración según las reglas del bucle",
+        "option_b": "Ambos reinician siempre el programa",
+        "option_c": "break salta solo una expresión y continue termina el proceso",
+        "option_d": "Ninguno modifica el control de iteración",
+        "correct": "A",
+        "explanation": "break finaliza la sentencia de iteración y continue omite el resto de la iteración actual para continuar con la siguiente."
+    },
+    {
+        "topic_num": 18,
+        "question": "¿Qué función cumplen try, catch y finally?",
+        "option_a": "try contiene el código vigilado, catch trata excepciones compatibles y finally contiene código de finalización",
+        "option_b": "try siempre captura, catch siempre se ejecuta y finally nunca se ejecuta",
+        "option_c": "Solo sirven para declarar clases",
+        "option_d": "finally reemplaza siempre a catch",
+        "correct": "A",
+        "explanation": "El bloque try contiene la operación, catch permite gestionar excepciones y finally se usa para código que debe ejecutarse al finalizar el control correspondiente."
+    },
+    {
+        "topic_num": 18,
+        "question": "¿Qué expresa la encapsulación mediante public y private?",
+        "option_a": "public permite acceso desde contextos autorizados por su accesibilidad y private restringe el miembro al tipo que lo declara, salvo reglas específicas",
+        "option_b": "private hace que el miembro sea accesible desde cualquier ensamblado",
+        "option_c": "public impide usar el miembro desde otras clases",
+        "option_d": "Los modificadores de acceso solo afectan a comentarios",
+        "correct": "A",
+        "explanation": "Los modificadores de acceso controlan desde qué contextos se puede acceder a tipos y miembros; private es más restrictivo que public."
+    },
+    {
+        "topic_num": 18,
+        "question": "¿Qué es LINQ?",
+        "option_a": "Un conjunto de tecnologías que integra capacidades de consulta en C# mediante operadores sobre fuentes de datos",
+        "option_b": "Un protocolo de red obligatorio para C#",
+        "option_c": "Un formato de imagen",
+        "option_d": "Un sustituto del compilador",
+        "correct": "A",
+        "explanation": "LINQ proporciona capacidades de consulta integradas en el lenguaje y operadores aplicables a diferentes fuentes de datos."
+    },
+    {
+        "topic_num": 18,
+        "question": "¿Qué permite el pattern matching de C#?",
+        "option_a": "Comprobar una expresión frente a un patrón y, cuando corresponde, extraer información del valor",
+        "option_b": "Convertir siempre cualquier objeto en una cadena",
+        "option_c": "Desactivar el análisis estático",
+        "option_d": "Crear automáticamente una base de datos",
+        "correct": "A",
+        "explanation": "El reconocimiento de patrones permite comprobar formas o tipos de valores y puede declarar variables con información extraída."
+    },
+    {
+        "topic_num": 18,
+        "question": "¿Qué efecto tiene throw en el control de excepciones?",
+        "option_a": "Lanza una excepción y transfiere el control hacia un bloque catch compatible, si existe",
+        "option_b": "Convierte la excepción en un valor booleano sin control",
+        "option_c": "Finaliza siempre solo el bucle actual",
+        "option_d": "Ignora cualquier excepción pendiente",
+        "correct": "A",
+        "explanation": "throw produce o relanza una excepción y el control busca un manejador compatible en la cadena de llamadas."
+    },
+    {
+        "topic_num": 18,
+        "question": "¿Qué relación describe correctamente virtual, override y abstract?",
+        "option_a": "virtual permite reemplazo en una derivada, override proporciona esa redefinición y abstract declara un miembro que debe implementarse en derivadas concretas",
+        "option_b": "Los tres significan que el miembro es siempre privado",
+        "option_c": "override declara siempre una clase nueva sin relación",
+        "option_d": "abstract proporciona siempre una implementación completa",
+        "correct": "A",
+        "explanation": "virtual habilita la redefinición, override la implementa en la clase derivada y abstract exige implementación en clases derivadas concretas."
+    },
+    {
+        "topic_num": 18,
+        "question": "¿Qué hacen las restricciones de tipo genérico?",
+        "option_a": "Limitan los argumentos de tipo que pueden utilizarse y permiten al compilador conocer las operaciones disponibles",
+        "option_b": "Permiten cualquier tipo sin comprobación",
+        "option_c": "Solo cambian el nombre del ensamblado",
+        "option_d": "Eliminan todos los parámetros de tipo",
+        "correct": "A",
+        "explanation": "Las restricciones especifican requisitos para los argumentos genéricos y permiten usar de forma segura miembros garantizados por esos requisitos."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_18_LOT_01_END
