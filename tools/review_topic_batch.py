@@ -81,12 +81,15 @@ EXPECTATIONS = {
     18: {
         1:("A","C# type system overview"),2:("A","C# type system: value types and reference types"),3:("A","Implicitly typed local variables"),4:("A","Generics in .NET"),5:("A","Selection statements"),6:("A","Methods, overview"),7:("A","Classes and objects"),8:("A","Generics in .NET"),9:("A","Iteration statements"),10:("A","Parameter passing"),11:("A","Inheritance in C#"),12:("A","Generics in .NET"),13:("A","Jump statements"),14:("A","Exception handling statements"),15:("A","Access modifiers"),16:("A","LINQ overview"),17:("A","Pattern matching overview"),18:("A","Exception handling statements"),19:("A","Methods and polymorphism"),20:("A","Generic constraints")
     },
+    19: {
+        1:("B","MVC pattern"),2:("C","What is a Controller?"),3:("A","Razor syntax"),4:("D","Grid system"),5:("B","MVC pattern"),6:("C","Defining Actions"),7:("A","Views in ASP.NET Core MVC"),8:("D","Grid system"),9:("A","Conventional routing; Attribute routing for REST APIs"),10:("C","What is a Layout"),11:("B","Razor syntax"),12:("D","How they work"),13:("A","Route templates"),14:("C","What is a Controller?"),15:("B","@model"),16:("D","Core concepts"),17:("A","Partial views"),18:("C","Specifying a Layout"),19:("B","Implicit Razor expressions"),20:("D","How it works")
+    },
 }
 
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("topic_num", type=int, choices=tuple(range(2, 19)))
+    parser.add_argument("topic_num", type=int, choices=tuple(range(2, 20)))
     args = parser.parse_args()
     lot_path = ROOT / "docs/question-bank/lots" / f"topic-{args.topic_num:02d}-lot-01.json"
     checkpoint_path = ROOT / "docs/question-bank/checkpoints" / f"topic-{args.topic_num:02d}-lot-01.jsonl"

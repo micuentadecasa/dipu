@@ -5263,3 +5263,208 @@ SEED_QUESTIONS.extend([
     }
 ])
 # QUESTION_BANK_ACCEPTED_TOPIC_18_LOT_01_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_19_LOT_01_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 19,
+        "question": "¿Qué grupos separa el patrón MVC?",
+        "option_a": "Modelos y bases de datos",
+        "option_b": "Modelos, vistas y controladores",
+        "option_c": "Rutas, filtros y middleware",
+        "option_d": "HTML, CSS y JavaScript",
+        "correct": "B",
+        "explanation": "El patrón Model-View-Controller separa la aplicación en modelos, vistas y controladores para distribuir responsabilidades."
+    },
+    {
+        "topic_num": 19,
+        "question": "¿Qué es un controlador en ASP.NET Core MVC?",
+        "option_a": "Una plantilla HTML que solo contiene estilos",
+        "option_b": "Un registro de configuración de Bootstrap",
+        "option_c": "Una clase que define y agrupa acciones que gestionan solicitudes",
+        "option_d": "Un archivo que almacena exclusivamente consultas SQL",
+        "correct": "C",
+        "explanation": "Microsoft describe el controlador como una clase que define y agrupa acciones; una acción es un método que atiende solicitudes."
+    },
+    {
+        "topic_num": 19,
+        "question": "¿Qué es Razor en ASP.NET Core?",
+        "option_a": "Una sintaxis de marcado para insertar código basado en .NET en páginas web",
+        "option_b": "Un sistema de base de datos relacional",
+        "option_c": "Un protocolo para enrutar peticiones HTTP",
+        "option_d": "Una biblioteca de iconos de Bootstrap",
+        "correct": "A",
+        "explanation": "Razor es una sintaxis de marcado que permite incrustar código basado en .NET en páginas web, normalmente en archivos .cshtml."
+    },
+    {
+        "topic_num": 19,
+        "question": "¿Qué describe mejor la cuadrícula de Bootstrap?",
+        "option_a": "Una tabla de base de datos con columnas fijas",
+        "option_b": "Un motor de plantillas del servidor",
+        "option_c": "Un enrutador que asigna URLs a controladores",
+        "option_d": "Un sistema mobile-first basado en flexbox, contenedores, filas y columnas de doce unidades",
+        "correct": "D",
+        "explanation": "La documentación de Bootstrap describe su grid como un sistema mobile-first basado en flexbox y doce columnas, organizado con contenedores, filas y columnas."
+    },
+    {
+        "topic_num": 19,
+        "question": "En el flujo MVC habitual, ¿qué ocurre después de recibir una solicitud?",
+        "option_a": "La vista consulta directamente la base de datos y crea siempre el controlador",
+        "option_b": "La solicitud se enruta a un controlador, que trabaja con el modelo y elige la vista que mostrar",
+        "option_c": "Bootstrap convierte la solicitud en una migración de base de datos",
+        "option_d": "El modelo genera CSS y evita que se ejecute una acción",
+        "correct": "B",
+        "explanation": "En el patrón MVC, la solicitud se dirige a un controlador; este trabaja con el modelo para la acción o consulta y selecciona la vista con los datos necesarios."
+    },
+    {
+        "topic_num": 19,
+        "question": "¿Qué describe correctamente una acción MVC?",
+        "option_a": "Una clase que agrupa varios controladores",
+        "option_b": "Un archivo CSS que responde a una media query",
+        "option_c": "Un método del controlador que atiende una solicitud y suele devolver IActionResult o Task<IActionResult>",
+        "option_d": "Una ruta que solo puede devolver texto plano",
+        "correct": "C",
+        "explanation": "Las acciones son métodos de un controlador que gestionan solicitudes y con frecuencia devuelven IActionResult, o Task<IActionResult> en métodos asíncronos."
+    },
+    {
+        "topic_num": 19,
+        "question": "¿Qué caracteriza a una vista MVC de ASP.NET Core?",
+        "option_a": "Es una plantilla HTML que puede contener marcado Razor y C# y normalmente usa la extensión .cshtml",
+        "option_b": "Es un controlador compilado que nunca genera HTML",
+        "option_c": "Es una hoja de estilos que solo contiene clases Bootstrap",
+        "option_d": "Es un archivo JSON que define las rutas de la aplicación",
+        "correct": "A",
+        "explanation": "Las vistas son plantillas HTML con marcado Razor; en MVC se almacenan normalmente como archivos .cshtml y se agrupan según el controlador."
+    },
+    {
+        "topic_num": 19,
+        "question": "¿Cómo se combinan los elementos principales del grid de Bootstrap?",
+        "option_a": "Las filas contienen contenedores y cada columna define una aplicación completa",
+        "option_b": "Los contenedores solo sirven para ejecutar JavaScript y las filas para validar modelos",
+        "option_c": "Las columnas ignoran las filas y siempre ocupan toda la ventana",
+        "option_d": "Los contenedores envuelven filas y las filas organizan columnas dentro de un sistema responsive de doce columnas",
+        "correct": "D",
+        "explanation": "Bootstrap organiza el layout con contenedores, filas y columnas; sus clases de grid usan flexbox y permiten controlar el comportamiento responsive."
+    },
+    {
+        "topic_num": 19,
+        "question": "¿Qué diferencia hay entre el routing convencional y el routing por atributos?",
+        "option_a": "El convencional suele definir rutas globales, mientras que el routing por atributos coloca rutas en el controlador o la acción",
+        "option_b": "El convencional solo sirve para CSS y el de atributos solo para bases de datos",
+        "option_c": "Ambos exigen siempre una ruta escrita en cada elemento HTML",
+        "option_d": "El routing por atributos no puede asociarse a una acción",
+        "correct": "A",
+        "explanation": "La documentación distingue el routing convencional, habitual en controladores y vistas, del routing por atributos, que se aplica mediante atributos en controladores o acciones."
+    },
+    {
+        "topic_num": 19,
+        "question": "¿Para qué sirve principalmente un layout en MVC?",
+        "option_a": "Para sustituir todas las acciones del controlador",
+        "option_b": "Para almacenar exclusivamente los modelos de datos",
+        "option_c": "Para compartir estructura común como cabecera, navegación, scripts y pie entre varias vistas",
+        "option_d": "Para convertir automáticamente una vista en una API",
+        "correct": "C",
+        "explanation": "Un layout proporciona una experiencia consistente y concentra elementos compartidos, reduciendo código repetido en las vistas."
+    },
+    {
+        "topic_num": 19,
+        "question": "¿Qué efecto tiene normalmente el símbolo @ en Razor?",
+        "option_a": "Cambia siempre el método HTTP de la solicitud",
+        "option_b": "Indica una transición desde HTML hacia código C# o marcado específico de Razor",
+        "option_c": "Desactiva la codificación HTML de la respuesta",
+        "option_d": "Declara automáticamente una clase Bootstrap",
+        "correct": "B",
+        "explanation": "Razor usa @ para pasar del marcado HTML a C#; cuando va seguido de una palabra reservada de Razor, inicia marcado específico de Razor."
+    },
+    {
+        "topic_num": 19,
+        "question": "¿Qué diferencia describe correctamente .container y .container-fluid en Bootstrap?",
+        "option_a": ".container-fluid fija un ancho máximo y .container siempre ocupa el 100%",
+        "option_b": "Ambas clases son alias sin efecto sobre el ancho",
+        "option_c": ".container solo funciona en dispositivos móviles",
+        "option_d": ".container usa anchos máximos responsive por breakpoint, mientras .container-fluid ocupa el 100% en todos los breakpoints",
+        "correct": "D",
+        "explanation": "Bootstrap define .container como un contenedor responsive de ancho máximo y .container-fluid como uno con anchura del 100% en todos los breakpoints."
+    },
+    {
+        "topic_num": 19,
+        "question": "¿Qué función cumplen las plantillas de ruta?",
+        "option_a": "Describen cómo se comparan las rutas URL con las acciones y también pueden usarse para generar URLs",
+        "option_b": "Solo determinan el color de los enlaces",
+        "option_c": "Impidan que una acción devuelva un resultado",
+        "option_d": "Solo son válidas dentro de una hoja CSS",
+        "correct": "A",
+        "explanation": "Las plantillas de ruta describen cómo se emparejan las rutas URL con las acciones y se usan también para generar URLs."
+    },
+    {
+        "topic_num": 19,
+        "question": "¿Cuál es una convención habitual para identificar controladores MVC?",
+        "option_a": "Deben ser siempre archivos .css en la carpeta Views",
+        "option_b": "Suelen terminar en View y heredar de RazorPage",
+        "option_c": "Suelen estar en Controllers y tener el sufijo Controller o heredar de una clase cuyo nombre lo tiene",
+        "option_d": "Solo se reconocen si contienen una clase Bootstrap",
+        "correct": "C",
+        "explanation": "Entre las convenciones indicadas por ASP.NET Core están la carpeta Controllers, el sufijo Controller y la herencia de una clase con ese sufijo."
+    },
+    {
+        "topic_num": 19,
+        "question": "¿Qué especifica la directiva @model en una vista MVC?",
+        "option_a": "El nombre de la ruta que debe ejecutar el navegador",
+        "option_b": "El tipo del modelo pasado a la vista y, por tanto, el tipo de su propiedad Model",
+        "option_c": "El número de columnas de la cuadrícula Bootstrap",
+        "option_d": "El layout que se aplica a todas las vistas del proyecto",
+        "correct": "B",
+        "explanation": "La directiva @model especifica el tipo del modelo que se pasa a la vista y el tipo de la propiedad Model expuesta por Razor."
+    },
+    {
+        "topic_num": 19,
+        "question": "¿Cómo funcionan los breakpoints predeterminados de Bootstrap?",
+        "option_a": "Son seis tamaños basados en max-width y diseñados primero para escritorio",
+        "option_b": "Son tres tamaños que solo afectan a imágenes",
+        "option_c": "Se calculan exclusivamente según el ancho de la base de datos",
+        "option_d": "Son seis tiers basados normalmente en media queries min-width dentro de un diseño mobile-first",
+        "correct": "D",
+        "explanation": "Bootstrap incluye seis breakpoints predeterminados y usa media queries min-width; los estilos parten del tamaño menor y se amplían para tamaños mayores."
+    },
+    {
+        "topic_num": 19,
+        "question": "¿Cuándo es apropiado usar una vista parcial frente a un componente de vista?",
+        "option_a": "Una vista parcial reutiliza contenido de vista sin código de servidor; un componente de vista es adecuado cuando ese contenido necesita ejecutar código en el servidor",
+        "option_b": "La vista parcial siempre sustituye al controlador y el componente solo sirve para CSS",
+        "option_c": "Ambos son exclusivamente mecanismos de routing y no generan HTML",
+        "option_d": "Un componente de vista solo puede contener texto estático y la vista parcial requiere siempre una base de datos",
+        "correct": "A",
+        "explanation": "Las vistas parciales reducen duplicación para contenido reutilizable; los componentes de vista son apropiados cuando se necesita código de servidor para renderizar el contenido."
+    },
+    {
+        "topic_num": 19,
+        "question": "¿Qué relación existe entre Layout = \"_Layout\" y RenderBody en una vista Razor?",
+        "option_a": "Layout = \"_Layout\" desactiva el layout y RenderBody inicia el routing",
+        "option_b": "Layout = \"_Layout\" crea una migración y RenderBody valida el modelo",
+        "option_c": "La vista selecciona ese layout y RenderBody indica dónde se inserta su contenido",
+        "option_d": "Ambos son nombres de clases CSS sin efecto en Razor",
+        "correct": "C",
+        "explanation": "Una vista puede seleccionar un layout mediante su propiedad Layout; el layout debe llamar a RenderBody para colocar el contenido de la vista."
+    },
+    {
+        "topic_num": 19,
+        "question": "¿Por qué puede fallar la expresión implícita @GenericMethod<int>() en Razor?",
+        "option_a": "Porque Razor no permite ningún método C# en una vista",
+        "option_b": "Porque los signos angulares del genérico pueden interpretarse como una etiqueta HTML; hay que usar una expresión explícita",
+        "option_c": "Porque Bootstrap elimina todos los tipos genéricos",
+        "option_d": "Porque una expresión implícita siempre debe comenzar con una ruta MVC",
+        "correct": "B",
+        "explanation": "En expresiones Razor implícitas, los signos <> de un genérico pueden interpretarse como HTML; la documentación indica envolver la llamada en una expresión explícita."
+    },
+    {
+        "topic_num": 19,
+        "question": "¿Qué implica la clase Bootstrap .col-sm-4?",
+        "option_a": "La columna ocupa cuatro píxeles en todos los dispositivos",
+        "option_b": "La columna ocupa cuatro de doce columnas únicamente por debajo de sm",
+        "option_c": "La clase desactiva el comportamiento responsive de la fila",
+        "option_d": "La columna ocupa cuatro de doce unidades desde el breakpoint sm y los superiores, siguiendo el enfoque mobile-first",
+        "correct": "D",
+        "explanation": "Las clases de columnas se aplican desde su breakpoint y los superiores; .col-sm-4 representa cuatro de doce columnas a partir de sm, mientras el diseño parte del tamaño móvil."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_19_LOT_01_END
