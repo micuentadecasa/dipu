@@ -90,6 +90,9 @@ EXPECTATIONS = {
     21: {
         1:("B","Standard query operators overview"),2:("C","Standard query operators overview"),3:("A","Projection operations"),4:("D","Filtering Data in C# with LINQ"),5:("B","Standard query operators overview"),6:("C","Standard query operators overview"),7:("A","Standard query operators overview"),8:("D","Grouping Data (C#)"),9:("B","Join operations in LINQ"),10:("C","Join operations in LINQ"),11:("A","Set operations (C#)"),12:("D","Quantifier operations in LINQ (C#)"),13:("B","Quantifier operations in LINQ (C#)"),14:("C","Partitioning data (C#)"),15:("A","Projection operations (C#)"),16:("D","Join operations in LINQ"),17:("B","Standard query operators overview"),18:("C","Standard query operators overview"),19:("A","Grouping Data (C#)"),20:("D","Standard query operators overview")
     },
+    22: {
+        1:("B","Model Binding in ASP.NET Core"),2:("B","Model Binding in ASP.NET Core"),3:("C","Model Binding in ASP.NET Core"),4:("A","Model Binding in ASP.NET Core"),5:("B","Model Binding in ASP.NET Core"),6:("C","Model validation in ASP.NET Core MVC and Razor Pages"),7:("A","Model validation in ASP.NET Core MVC and Razor Pages"),8:("D","Model validation in ASP.NET Core MVC and Razor Pages"),9:("A","Model validation in ASP.NET Core MVC and Razor Pages"),10:("B","Model validation in ASP.NET Core MVC and Razor Pages"),11:("A","Understand entity states"),12:("C","Understand entity states"),13:("A","Use recommended HttpPost Edit code: Read and update"),14:("B","Protect against overposting"),15:("B","Handle transactions"),16:("A","Asynchronous Programming - EF Core"),17:("B","Asynchronous Programming - EF Core"),18:("B","Asynchronous Programming - EF Core"),19:("B","Model state"),20:("A","Protect against overposting")
+    },
 }
 
 

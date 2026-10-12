@@ -6698,3 +6698,208 @@ SEED_QUESTIONS.extend([
     }
 ])
 # QUESTION_BANK_ACCEPTED_TOPIC_21_LOT_01_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_22_LOT_01_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 22,
+        "question": "¿Qué proceso describe mejor el model binding de ASP.NET Core?",
+        "option_a": "La creación de tablas SQL a partir de una vista",
+        "option_b": "La obtención de datos de la solicitud para poblar parámetros de acción o propiedades del modelo",
+        "option_c": "La ejecución automática de todas las migraciones",
+        "option_d": "La compresión de la respuesta HTTP",
+        "correct": "B",
+        "explanation": "El model binding obtiene datos de la solicitud y los utiliza para poblar parámetros de métodos o propiedades de tipos complejos."
+    },
+    {
+        "topic_num": 22,
+        "question": "¿Qué información registra ModelState?",
+        "option_a": "Solo las rutas de archivos estáticos",
+        "option_b": "Los datos enlazados y los errores de binding o validación",
+        "option_c": "Únicamente las migraciones aplicadas",
+        "option_d": "Solo las consultas ejecutadas por EF Core",
+        "correct": "B",
+        "explanation": "ModelState conserva el registro de los datos enlazados y de los errores de enlace o validación; ModelState.IsValid permite comprobar el resultado."
+    },
+    {
+        "topic_num": 22,
+        "question": "¿Qué origen corresponde a [FromRoute]?",
+        "option_a": "Los datos de la cadena de consulta",
+        "option_b": "Los campos de un formulario publicado",
+        "option_c": "Los datos de ruta",
+        "option_d": "El cuerpo de la solicitud",
+        "correct": "C",
+        "explanation": "FromRoute obtiene valores de los datos de ruta; FromQuery, FromForm y FromBody corresponden a otros orígenes de binding."
+    },
+    {
+        "topic_num": 22,
+        "question": "¿Qué componente lee el cuerpo cuando un parámetro usa [FromBody]?",
+        "option_a": "Un input formatter",
+        "option_b": "El motor de migraciones",
+        "option_c": "El enrutador de archivos estáticos",
+        "option_d": "El change tracker",
+        "correct": "A",
+        "explanation": "Cuando se aplica FromBody, el runtime de ASP.NET Core delega la lectura del cuerpo de la solicitud a un input formatter."
+    },
+    {
+        "topic_num": 22,
+        "question": "Al enlazar una propiedad de un tipo complejo, ¿qué búsqueda realiza normalmente el model binder?",
+        "option_a": "Busca siempre solo el nombre sin prefijo",
+        "option_b": "Busca primero el patrón prefijo.propiedad y después el nombre de propiedad sin prefijo si no encuentra el primero",
+        "option_c": "Busca únicamente el nombre de la tabla de base de datos",
+        "option_d": "Convierte siempre el valor en JSON antes de buscarlo",
+        "correct": "B",
+        "explanation": "Para una propiedad de un tipo complejo, el binding busca el patrón prefijo.propiedad y, si no encuentra datos, busca la propiedad sin prefijo."
+    },
+    {
+        "topic_num": 22,
+        "question": "¿Cuál es el orden correcto entre model binding, model validation y la ejecución de la acción?",
+        "option_a": "La acción se ejecuta primero y la validación después",
+        "option_b": "La validación ocurre antes del binding",
+        "option_c": "El binding y la validación ocurren antes de ejecutar la acción",
+        "option_d": "Solo se valida después de SaveChanges",
+        "correct": "C",
+        "explanation": "La documentación indica que el model binding y la validación ocurren antes de ejecutar la acción del controlador o el handler de Razor Pages."
+    },
+    {
+        "topic_num": 22,
+        "question": "¿Qué diferencia hay entre un error de model binding y uno de model validation?",
+        "option_a": "El primero suele ser de conversión de datos y el segundo indica que los datos no cumplen reglas de negocio",
+        "option_b": "El primero solo ocurre en SQL y el segundo solo en CSS",
+        "option_c": "El primero siempre es una excepción de red y el segundo una migración",
+        "option_d": "No hay diferencia en ModelState",
+        "correct": "A",
+        "explanation": "La documentación pone como ejemplo de binding introducir una x en un entero y como ejemplo de validación introducir un 0 cuando una regla exige un valor entre 1 y 5."
+    },
+    {
+        "topic_num": 22,
+        "question": "¿Qué debe comprobar normalmente una aplicación MVC antes de continuar con un modelo recibido?",
+        "option_a": "Que la respuesta ya tenga código 500",
+        "option_b": "Que la consulta tenga un GroupBy",
+        "option_c": "Que el contexto sea singleton",
+        "option_d": "ModelState.IsValid",
+        "correct": "D",
+        "explanation": "Una aplicación web debe inspeccionar ModelState.IsValid y reaccionar ante errores antes de continuar con el procesamiento válido."
+    },
+    {
+        "topic_num": 22,
+        "question": "¿Para qué sirven los atributos de validación?",
+        "option_a": "Para especificar reglas de validación de las propiedades del modelo",
+        "option_b": "Para elegir el proveedor SQL de EF Core",
+        "option_c": "Para ordenar rutas HTTP",
+        "option_d": "Para desactivar ModelState",
+        "correct": "A",
+        "explanation": "Los atributos de validación permiten declarar reglas de validación para las propiedades del modelo."
+    },
+    {
+        "topic_num": 22,
+        "question": "¿Qué comportamiento se asocia a un controlador Web API con [ApiController] cuando ModelState es inválido?",
+        "option_a": "Se ejecuta siempre SaveChangesAsync",
+        "option_b": "Se devuelve automáticamente una respuesta HTTP 400 con detalles de error",
+        "option_c": "Se ignoran todos los errores de validación",
+        "option_d": "Se convierte la solicitud en una migración",
+        "correct": "B",
+        "explanation": "Con ApiController, los controladores Web API no tienen que comprobar manualmente ModelState.IsValid para este caso porque se devuelve automáticamente un HTTP 400 con los detalles."
+    },
+    {
+        "topic_num": 22,
+        "question": "¿Qué relación entre estados de entidad y comandos de SaveChanges es correcta?",
+        "option_a": "Added produce INSERT, Modified produce UPDATE y Deleted produce DELETE",
+        "option_b": "Added produce SELECT, Modified produce INSERT y Deleted produce UPDATE",
+        "option_c": "Todos los estados producen siempre SELECT",
+        "option_d": "Los estados solo afectan a la interfaz",
+        "correct": "A",
+        "explanation": "La documentación relaciona Added con INSERT, Modified con UPDATE y Deleted con DELETE cuando se llama a SaveChanges."
+    },
+    {
+        "topic_num": 22,
+        "question": "¿Qué ocurre con una entidad nueva pasada a Add antes de SaveChanges?",
+        "option_a": "Se marca como Deleted y se elimina",
+        "option_b": "Se marca como Unchanged y nunca se guarda",
+        "option_c": "Se marca como Added y SaveChanges genera una inserción",
+        "option_d": "Se convierte en una consulta sin seguimiento",
+        "correct": "C",
+        "explanation": "Al pasar una entidad nueva a Add, su estado pasa a Added; al llamar a SaveChanges, el contexto emite un comando INSERT."
+    },
+    {
+        "topic_num": 22,
+        "question": "¿Qué caracteriza al patrón de edición recomendado de lectura y actualización?",
+        "option_a": "Leer la entidad existente, actualizar solo propiedades permitidas y guardar los cambios seguidos",
+        "option_b": "Crear siempre una entidad nueva y marcar todas sus columnas como modificadas",
+        "option_c": "Ignorar ModelState y guardar cualquier campo recibido",
+        "option_d": "Aplicar una migración en vez de consultar la entidad",
+        "correct": "A",
+        "explanation": "El patrón recomendado recupera primero la entidad y usa una lista explícita de propiedades permitidas para actualizarla antes de guardar los cambios rastreados."
+    },
+    {
+        "topic_num": 22,
+        "question": "¿Qué opción ayuda a proteger una acción contra overposting?",
+        "option_a": "Aceptar siempre directamente todas las propiedades de la entidad",
+        "option_b": "Usar Bind con una lista permitida o un view model que contenga solo propiedades actualizables",
+        "option_c": "Desactivar la validación del servidor",
+        "option_d": "Hacer que el contexto sea global",
+        "correct": "B",
+        "explanation": "La documentación presenta Bind como una forma de limitar campos y señala los view models como alternativa para exponer solo las propiedades que se quieren actualizar."
+    },
+    {
+        "topic_num": 22,
+        "question": "¿Qué garantía ofrece por defecto la transacción implícita de EF al llamar a SaveChanges?",
+        "option_a": "Cada fila se confirma aunque falle otra",
+        "option_b": "Los cambios de varias filas o tablas tienen éxito conjuntamente o se revierten conjuntamente",
+        "option_c": "Solo se guarda la primera propiedad modificada",
+        "option_d": "La transacción sustituye al model binding",
+        "correct": "B",
+        "explanation": "La documentación del flujo CRUD indica que EF implementa transacciones implícitas para que los cambios tengan éxito todos juntos o fallen y se reviertan todos juntos."
+    },
+    {
+        "topic_num": 22,
+        "question": "Una aplicación inicia dos operaciones EF Core en paralelo usando la misma instancia de DbContext. ¿Qué corrección es adecuada?",
+        "option_a": "Esperar cada operación y evitar operaciones paralelas sobre la misma instancia",
+        "option_b": "Compartir el contexto como singleton para sincronizarlas",
+        "option_c": "Convertir todas las consultas en migraciones",
+        "option_d": "Eliminar todos los await",
+        "correct": "A",
+        "explanation": "Las operaciones asíncronas deben esperarse y no se admiten operaciones paralelas sobre la misma instancia de DbContext."
+    },
+    {
+        "topic_num": 22,
+        "question": "¿Qué tienen en común ToListAsync, FirstOrDefaultAsync y SaveChangesAsync?",
+        "option_a": "Son atributos de validación",
+        "option_b": "Son métodos asíncronos de EF Core que representan operaciones de base de datos mediante tareas",
+        "option_c": "Solo funcionan durante la compilación",
+        "option_d": "Desactivan siempre el tracking",
+        "correct": "B",
+        "explanation": "EF Core ofrece métodos asíncronos para consultas y guardado; esos métodos devuelven tareas que deben esperarse para obtener o completar el resultado."
+    },
+    {
+        "topic_num": 22,
+        "question": "En una acción MVC async que consulta y guarda con EF Core, ¿qué secuencia es coherente?",
+        "option_a": "Iniciar las tareas, ignorarlas y devolver inmediatamente la vista",
+        "option_b": "Esperar las operaciones EF con await antes de continuar y devolver el resultado de la acción",
+        "option_c": "Llamar a SaveChanges antes de crear el contexto",
+        "option_d": "Convertir ModelState en una migración",
+        "correct": "B",
+        "explanation": "El patrón asíncrono espera las operaciones EF antes de continuar con la unidad de trabajo o devolver el resultado de la acción."
+    },
+    {
+        "topic_num": 22,
+        "question": "Un formulario contiene un valor que no puede convertirse al tipo de destino y ModelState no es válido. ¿Qué debería hacer la acción?",
+        "option_a": "Guardar de todos modos el modelo parcialmente válido",
+        "option_b": "Inspeccionar ModelState y redisplayar o devolver los errores sin guardar el dato inválido",
+        "option_c": "Marcar todas las entidades como Deleted",
+        "option_d": "Aplicar SaveChangesAsync antes de validar",
+        "correct": "B",
+        "explanation": "Los errores de conversión forman parte de ModelState; la aplicación debe comprobar su validez y reaccionar con errores antes de continuar con el guardado."
+    },
+    {
+        "topic_num": 22,
+        "question": "Una edición permite que el usuario publique una propiedad Secret que no aparece en el formulario, y la entidad se enlaza directamente. ¿Qué medida corrige el riesgo?",
+        "option_a": "Leer la entidad y actualizar solo una lista permitida o usar un view model sin Secret antes de SaveChanges",
+        "option_b": "Aceptar todas las propiedades porque no están visibles",
+        "option_c": "Desactivar ModelState.IsValid",
+        "option_d": "Marcar toda la entidad como Modified sin revisar campos",
+        "correct": "A",
+        "explanation": "Un atacante puede enviar campos adicionales aunque no estén en el formulario; una lista de propiedades permitidas o un view model limita el binding y protege la propiedad antes de guardar."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_22_LOT_01_END
