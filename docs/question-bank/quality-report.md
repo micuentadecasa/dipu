@@ -1,7 +1,7 @@
 # Question-bank quality report — checkpoint 1
 
 **As of:** 2026-10-12 UTC
-**Scope:** topics 1, 2 and 3 lot 1 are published; topic 4 lot 1 is reviewed and import-validated, ready for deployment.
+**Scope:** topics 1--4 lot 1 are reviewed, imported and published incrementally; topic 5 is the next sequential batch.
 
 ## Current counts
 
@@ -15,11 +15,11 @@
 | Deterministic duplicate matches | 0 | Exact, lexical and near-lexical checks against legacy/topic-lot records |
 | Semantic/concept decisions | 20 unique | Independently reviewed against the objective and proposition |
 | Native import/export | 80 | Accepted topics 1--4 are imported through `seed_data.py`; `frontend/src/questions.js` contains 1,280 records |
-| Published batches | 3 | Topics 1--3 are live at `https://micuentadecasa.github.io/dipu/`; topic 4 is deployment-ready |
+| Published batches | 4 | Topics 1--4 are live at `https://micuentadecasa.github.io/dipu/` |
 
 ## Lot 1 distributions
 
-Topics 1--4 lot 1 each use 4 basic, 10 intermediate and 6 advanced records. Topics 1--3 use verified BOE sources; topic 4 uses BOE RDL 781/1986 plus the official RD 2568/1986 text with its recorded correction notice. All four independent review passes accepted 80 official-primary records after answer, explanation, semantic and concept checks. Topics 1--3 are live at `https://micuentadecasa.github.io/dipu/`; topic 4 is ready for the next deployment.
+Topics 1--4 lot 1 each use 4 basic, 10 intermediate and 6 advanced records. Topics 1--3 use verified BOE sources; topic 4 uses BOE RDL 781/1986 plus the official RD 2568/1986 text with its recorded correction notice. All four independent review passes accepted 80 official-primary records after answer, explanation, semantic and concept checks. All four batches are live at `https://micuentadecasa.github.io/dipu/`; the deployed JavaScript returned HTTP 200 and contains representative questions from topics 1--4.
 
 Candidate, reviewed, audit and checkpoint artifacts are recorded under `lots/`, `accepted/`, `reviews/` and `checkpoints/` for both topics. Re-running the lot/review/import stages is idempotent.
 
@@ -42,4 +42,4 @@ Candidate, reviewed, audit and checkpoint artifacts are recorded under `lots/`, 
 - `cd frontend && npm run lint`: passed.
 - `cd frontend && npm run build`: passed; the build uses the unchanged runtime artifact.
 
-The reviewed artifact passes answer, explanation, five-level duplicate review and source checks. Publication milestone: topics 1--3, lot 1, 20 accepted records each, are live at `https://micuentadecasa.github.io/dipu/`; workflow run `38252617211` completed successfully for commit `cbf5179`. Topic 4 has 20 accepted official-primary records, including the documented RD 2568/1986 correction-review source, and is ready to publish. No secondary or provisional records are in these batches. Continue topic 5 sequentially.
+The reviewed artifact passes answer, explanation, five-level duplicate review and source checks. Publication milestone: topics 1--4, lot 1, 20 accepted records each, are live at `https://micuentadecasa.github.io/dipu/`; workflow run `38252913616` completed successfully for commit `ba00627`. Topic 4 includes the documented RD 2568/1986 correction-review source. No secondary or provisional records are in these batches. Continue topic 5 sequentially.
