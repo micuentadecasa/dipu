@@ -1,0 +1,334 @@
+{
+  "generated_at": "2026-10-12",
+  "batches": [
+    {
+      "topic_num": 17,
+      "lot_num": 1,
+      "source_ids": [
+        "POSTGRESQL-18"
+      ],
+      "questions": [
+        {
+          "objective_id": "t17-lo-001",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Para qué sirve EXPLAIN en PostgreSQL?",
+          "options": [
+            "Para mostrar el plan de consulta que el planificador crea para una sentencia",
+            "Para crear automáticamente un índice en cada columna",
+            "Para ejecutar siempre una copia de seguridad",
+            "Para modificar la configuración del sistema operativo"
+          ],
+          "correct": "A",
+          "explanation": "EXPLAIN permite ver el plan de consulta que crea el planificador para una consulta.",
+          "citation": "14.1. Using EXPLAIN",
+          "source_id": "POSTGRESQL-18"
+        },
+        {
+          "objective_id": "t17-lo-002",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Cuál es la finalidad general de un índice?",
+          "options": [
+            "Proporcionar una vía de acceso que puede mejorar el rendimiento al localizar filas",
+            "Un índice no afecta al acceso a filas",
+            "Un índice sustituye siempre a la tabla",
+            "Un índice solo almacena usuarios"
+          ],
+          "correct": "A",
+          "explanation": "La documentación presenta los índices como una forma habitual de mejorar el rendimiento al proporcionar acceso eficiente a los datos.",
+          "citation": "11.1. Introduction",
+          "source_id": "POSTGRESQL-18"
+        },
+        {
+          "objective_id": "t17-lo-003",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué recopila el comando ANALYZE?",
+          "options": [
+            "Estadísticas sobre el contenido de las tablas que usa posteriormente el planificador",
+            "Elimina todas las filas muertas de las tablas",
+            "Crea una copia física del clúster",
+            "Solo informa de las conexiones activas"
+          ],
+          "correct": "A",
+          "explanation": "ANALYZE recoge estadísticas sobre el contenido de las tablas y las almacena para ayudar al planificador.",
+          "citation": "ANALYZE, Description",
+          "source_id": "POSTGRESQL-18"
+        },
+        {
+          "objective_id": "t17-lo-004",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué finalidad tienen los parámetros de configuración de planificación de consultas?",
+          "options": [
+            "Influir de forma general en los planes elegidos por el optimizador",
+            "Sustituir la necesidad de escribir SQL",
+            "Desactivar siempre el planificador",
+            "Crear una copia de cada consulta"
+          ],
+          "correct": "A",
+          "explanation": "Los parámetros de planificación proporcionan una forma de influir en los planes escogidos por el optimizador cuando el plan predeterminado no resulta adecuado.",
+          "citation": "19.7. Query Planning",
+          "source_id": "POSTGRESQL-18"
+        },
+        {
+          "objective_id": "t17-lo-005",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Cómo se estructura normalmente un plan mostrado por EXPLAIN?",
+          "options": [
+            "Como un árbol de nodos de plan con información estimada de costes y filas",
+            "Como una lista de usuarios con permisos",
+            "Como un archivo de volcado",
+            "Solo como el texto de la consulta original"
+          ],
+          "correct": "A",
+          "explanation": "La salida de EXPLAIN representa la estructura del plan como un árbol de nodos, con estimaciones como coste y filas.",
+          "citation": "14.1.1. EXPLAIN Basics",
+          "source_id": "POSTGRESQL-18"
+        },
+        {
+          "objective_id": "t17-lo-006",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Qué afirmación describe correctamente los índices B-tree?",
+          "options": [
+            "Son el tipo de índice predeterminado y resultan adecuados para muchas consultas de igualdad y ordenación",
+            "Solo pueden usarse para datos binarios",
+            "Nunca permiten ordenar resultados",
+            "Solo almacenan estadísticas del planificador"
+          ],
+          "correct": "A",
+          "explanation": "B-tree es el tipo de índice predeterminado y soporta los patrones habituales de igualdad, comparación y ordenación descritos por la documentación.",
+          "citation": "11.2.1. B-Tree",
+          "source_id": "POSTGRESQL-18"
+        },
+        {
+          "objective_id": "t17-lo-007",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Por qué son importantes las estadísticas del planificador?",
+          "options": [
+            "Porque describen el contenido de las tablas y ayudan a elegir planes con mejores estimaciones",
+            "Porque sustituyen los índices en todas las consultas",
+            "Porque impiden cualquier cambio de datos",
+            "Porque solo se usan para autenticar usuarios"
+          ],
+          "correct": "A",
+          "explanation": "Las estadísticas permiten al planificador estimar la distribución y cantidad de datos y elegir planes más adecuados.",
+          "citation": "14.2. Statistics Used by the Planner",
+          "source_id": "POSTGRESQL-18"
+        },
+        {
+          "objective_id": "t17-lo-008",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Qué diferencia básica hay entre VACUUM y ANALYZE?",
+          "options": [
+            "VACUUM realiza mantenimiento de versiones de filas y espacio; ANALYZE recoge estadísticas para el planificador",
+            "Ambos solo crean índices",
+            "VACUUM recopila únicamente estadísticas y ANALYZE elimina siempre filas muertas",
+            "Ninguno tiene relación con el mantenimiento"
+          ],
+          "correct": "A",
+          "explanation": "VACUUM mantiene tablas e índices retirando versiones muertas, mientras ANALYZE actualiza información estadística del planificador.",
+          "citation": "24.1. Routine Vacuuming",
+          "source_id": "POSTGRESQL-18"
+        },
+        {
+          "objective_id": "t17-lo-009",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué implica usar EXPLAIN ANALYZE?",
+          "options": [
+            "Ejecuta la sentencia y muestra información real de ejecución además del plan",
+            "Solo analiza la sintaxis sin ejecutar nada",
+            "Siempre crea un índice",
+            "Convierte la consulta en una vista"
+          ],
+          "correct": "A",
+          "explanation": "EXPLAIN ANALYZE ejecuta la sentencia y permite comparar información real de ejecución con las estimaciones del plan.",
+          "citation": "14.1.2. EXPLAIN ANALYZE",
+          "source_id": "POSTGRESQL-18"
+        },
+        {
+          "objective_id": "t17-lo-010",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Por qué importa el orden de las columnas en un índice multicolumna?",
+          "options": [
+            "La organización por columnas determina qué condiciones y órdenes pueden aprovechar eficazmente el índice",
+            "El orden nunca tiene efecto",
+            "Solo afecta al nombre del índice",
+            "Determina el propietario de la tabla"
+          ],
+          "correct": "A",
+          "explanation": "La documentación de índices multicolumna explica que el orden de las columnas influye en cómo se puede utilizar el índice.",
+          "citation": "11.3. Multicolumn Indexes",
+          "source_id": "POSTGRESQL-18"
+        },
+        {
+          "objective_id": "t17-lo-011",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Dónde se almacenan las estadísticas recopiladas por ANALYZE?",
+          "options": [
+            "En el catálogo de sistema pg_statistic, para que las use posteriormente el planificador",
+            "En el catálogo de usuarios del sistema operativo",
+            "En cada archivo de consulta del cliente",
+            "Únicamente en los índices B-tree"
+          ],
+          "correct": "A",
+          "explanation": "ANALYZE recoge estadísticas del contenido de las tablas y almacena los resultados en el catálogo pg_statistic.",
+          "citation": "ANALYZE, Description",
+          "source_id": "POSTGRESQL-18"
+        },
+        {
+          "objective_id": "t17-lo-012",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué efecto tienen los costes del planificador?",
+          "options": [
+            "Son valores de configuración que intervienen en la estimación y comparación de costes de los planes",
+            "Son el tiempo exacto garantizado de ejecución",
+            "Solo sirven para mostrar errores de sintaxis",
+            "No intervienen en la elección de planes"
+          ],
+          "correct": "A",
+          "explanation": "Los parámetros de costes del planificador se usan para estimar el coste relativo de distintas operaciones y planes.",
+          "citation": "19.7.2. Planner Cost Constants",
+          "source_id": "POSTGRESQL-18"
+        },
+        {
+          "objective_id": "t17-lo-013",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Qué tipos de nodos de exploración de tablas menciona EXPLAIN?",
+          "options": [
+            "Exploración secuencial, exploración mediante índice y exploración mediante bitmap de índice",
+            "Solo exploración secuencial",
+            "Solo exploración mediante hash",
+            "Solo exploración de archivos externos"
+          ],
+          "correct": "A",
+          "explanation": "Entre los nodos de acceso a tablas están los sequential scans, index scans y bitmap index scans.",
+          "citation": "14.1.1. EXPLAIN Basics",
+          "source_id": "POSTGRESQL-18"
+        },
+        {
+          "objective_id": "t17-lo-014",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué es un índice parcial?",
+          "options": [
+            "Un índice construido solo sobre las filas que satisfacen un predicado",
+            "Un índice que contiene siempre la mitad de la tabla",
+            "Un índice que solo puede tener una columna",
+            "Un índice sin condición alguna"
+          ],
+          "correct": "A",
+          "explanation": "Los índices parciales se construyen sobre un subconjunto de las filas definido por una condición o predicado.",
+          "citation": "11.8. Partial Indexes",
+          "source_id": "POSTGRESQL-18"
+        },
+        {
+          "objective_id": "t17-lo-015",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué controla default_statistics_target?",
+          "options": [
+            "El límite predeterminado de información estadística que se recopila para las columnas",
+            "El número de conexiones de clientes",
+            "La cantidad de archivos WAL que se conservan",
+            "El número de índices que puede tener una tabla"
+          ],
+          "correct": "A",
+          "explanation": "default_statistics_target establece el límite predeterminado de entradas estadísticas, como valores frecuentes y límites de histogramas, para las columnas.",
+          "citation": "14.2. Statistics Used by the Planner",
+          "source_id": "POSTGRESQL-18"
+        },
+        {
+          "objective_id": "t17-lo-016",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Qué diferencia describe correctamente VACUUM FULL?",
+          "options": [
+            "VACUUM FULL escribe una versión nueva y compactada de la tabla, mientras VACUUM normal deja espacio para reutilización y normalmente no lo devuelve al sistema operativo",
+            "VACUUM FULL solo actualiza estadísticas",
+            "VACUUM normal siempre reescribe completamente la tabla",
+            "Ambos son idénticos en bloqueo y espacio"
+          ],
+          "correct": "A",
+          "explanation": "VACUUM normal retira versiones muertas y deja espacio reutilizable; VACUUM FULL compacta escribiendo una nueva versión completa de la tabla.",
+          "citation": "24.1. Routine Vacuuming",
+          "source_id": "POSTGRESQL-18"
+        },
+        {
+          "objective_id": "t17-lo-017",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué información proporciona pg_stat_activity?",
+          "options": [
+            "Una fila por proceso del servidor con información de actividad, como su estado y consulta actual",
+            "Solo el tamaño de los índices",
+            "Únicamente estadísticas de replicación",
+            "La definición de todas las tablas"
+          ],
+          "correct": "A",
+          "explanation": "pg_stat_activity muestra información de actividad de los procesos del servidor, incluido su estado y consulta actual.",
+          "citation": "27.2.3. pg_stat_activity",
+          "source_id": "POSTGRESQL-18"
+        },
+        {
+          "objective_id": "t17-lo-018",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué finalidad tiene una consulta paralela?",
+          "options": [
+            "Permitir que operaciones elegibles usen trabajadores paralelos para ejecutar partes del plan",
+            "Ejecutar siempre cada consulta en un único proceso",
+            "Sustituir los índices por archivos externos",
+            "Desactivar la planificación"
+          ],
+          "correct": "A",
+          "explanation": "La consulta paralela permite que el planificador use procesos trabajadores para ejecutar partes elegibles de una operación en paralelo.",
+          "citation": "Chapter 15. Parallel Query",
+          "source_id": "POSTGRESQL-18"
+        },
+        {
+          "objective_id": "t17-lo-019",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Cuándo puede un índice ayudar con ORDER BY?",
+          "options": [
+            "Cuando la ordenación solicitada es compatible con el orden que proporciona el índice",
+            "Siempre, aunque el orden sea incompatible",
+            "Solo cuando no existe ninguna tabla",
+            "Nunca, porque los índices no tienen orden"
+          ],
+          "correct": "A",
+          "explanation": "Un índice puede satisfacer o ayudar a una ordenación cuando su orden resulta compatible con la cláusula ORDER BY.",
+          "citation": "11.4. Indexes and ORDER BY",
+          "source_id": "POSTGRESQL-18"
+        },
+        {
+          "objective_id": "t17-lo-020",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Qué función cumple el demonio autovacuum?",
+          "options": [
+            "Ejecuta automáticamente operaciones de mantenimiento y ANALYZE cuando la actividad de las tablas alcanza los umbrales configurados",
+            "Desactiva permanentemente VACUUM",
+            "Solo crea índices nuevos",
+            "Sustituye las consultas del usuario"
+          ],
+          "correct": "A",
+          "explanation": "El demonio autovacuum automatiza tareas de vacuum y emite ANALYZE cuando el contenido de una tabla ha cambiado suficientemente.",
+          "citation": "24.1.6. The Autovacuum Daemon",
+          "source_id": "POSTGRESQL-18"
+        }
+      ]
+    }
+  ]
+}
