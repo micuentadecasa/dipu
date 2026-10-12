@@ -15,3 +15,4 @@ When updating this file, preserve this bar for all agents and keep entries conci
 
 - The deployed product path is the static React app: `seed_data.py` is the authoring input and `frontend/src/questions.js` is the generated artifact consumed by `frontend/src/App.jsx`; `app.py`, `db.py`, `generator.py`, and `templates/` are legacy Flask/SQLite paths. See `README.md` and `guide_dev.md`.
 - Question-bank milestone constraints, source evidence, metadata schema, and resumable checkpoint design are recorded in `docs/question-bank/inventory-and-checkpoint-plan.md`; the machine-readable record contract is `docs/question-bank/question-record.schema.json`.
+- Source boundary/completeness evidence is in `docs/question-bank/syllabus-comparison.md` and `docs/question-bank/source-register.json`; pre-generation validation and append-only lot checkpoints live in `question_bank/` with tests under `tests/test_question_bank_validation.py`.

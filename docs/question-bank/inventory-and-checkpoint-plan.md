@@ -201,6 +201,6 @@ The quality report must show per-topic accepted counts, objective coverage, diff
 
 ## 7. Immediate next gate
 
-Do not generate or import thousands of questions from this milestone. First complete the PDF-to-`temario.md` comparison, build the source register with pinned versions/dates for all 40 topics, and land the validator/dedup/import tests against this schema. Only then start topic 1, lot 1 and record its checkpoint.
+Do not generate or import thousands of questions from this milestone. The follow-up comparison, source register, and pre-generation validator/checkpoint seam are recorded in `docs/question-bank/milestone-1-source-and-validation-report.md`, `docs/question-bank/syllabus-comparison.md`, `docs/question-bank/source-register.json`, and `question_bank/`. Topic 1, lot 1 remains gated until the open source/version and objective-map decisions in that report are resolved and its checkpoint is recorded.
 
 The brief requires difficulty/type targets but does not state their numerical percentages in the repository or in the milestone evidence. Before generation, copy the authoritative percentages from the complete captain specification into the checkpoint manifest; do not infer or silently choose a distribution.
