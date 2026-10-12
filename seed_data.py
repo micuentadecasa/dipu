@@ -4228,3 +4228,208 @@ SEED_QUESTIONS.extend([
     }
 ])
 # QUESTION_BANK_ACCEPTED_TOPIC_13_LOT_01_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_14_LOT_01_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 14,
+        "question": "¿Qué representa una tabla en PostgreSQL?",
+        "option_a": "Una relación organizada en filas y columnas que almacena datos",
+        "option_b": "Un proceso backend",
+        "option_c": "Un certificado",
+        "option_d": "Un tablespace sin filas",
+        "correct": "A",
+        "explanation": "Las tablas son relaciones con columnas definidas y filas que contienen los valores almacenados."
+    },
+    {
+        "topic_num": 14,
+        "question": "¿Qué diferencia hay entre una vista y una vista materializada?",
+        "option_a": "La vista ejecuta su consulta al acceder; la materializada almacena el resultado y requiere refresco",
+        "option_b": "Ambas almacenan siempre el mismo resultado físicamente",
+        "option_c": "La vista materializada no puede consultarse",
+        "option_d": "La vista siempre es una tabla base",
+        "correct": "A",
+        "explanation": "La documentación distingue la vista, definida por una consulta, de la vista materializada, que conserva un resultado que puede refrescarse."
+    },
+    {
+        "topic_num": 14,
+        "question": "¿Para qué sirve un índice?",
+        "option_a": "Proporcionar una estructura que puede acelerar el acceso a filas según determinadas condiciones, con coste de mantenimiento",
+        "option_b": "Garantizar siempre que toda consulta sea más rápida",
+        "option_c": "Almacenar copias completas obligatorias de la base",
+        "option_d": "Sustituir las restricciones",
+        "correct": "A",
+        "explanation": "Los índices pueden acelerar ciertas búsquedas, pero consumen almacenamiento y deben mantenerse al modificar la tabla."
+    },
+    {
+        "topic_num": 14,
+        "question": "¿Qué es una secuencia?",
+        "option_a": "Un objeto que genera valores numéricos y puede usarse para asignar identificadores",
+        "option_b": "Una consulta guardada sin nombre",
+        "option_c": "Un tipo de índice único obligatorio",
+        "option_d": "Un proceso de recuperación",
+        "correct": "A",
+        "explanation": "Las secuencias son objetos destinados a generar valores, normalmente mediante nextval y funciones relacionadas."
+    },
+    {
+        "topic_num": 14,
+        "question": "¿Qué diferencia básica hay entre una función y un procedimiento?",
+        "option_a": "Una función puede usarse para devolver un valor en expresiones; un procedimiento se invoca con CALL y tiene semántica propia",
+        "option_b": "Son siempre sinónimos",
+        "option_c": "Solo las funciones pueden tener parámetros",
+        "option_d": "Los procedimientos son índices",
+        "correct": "A",
+        "explanation": "PostgreSQL distingue funciones y procedimientos por su invocación y capacidades transaccionales y de retorno."
+    },
+    {
+        "topic_num": 14,
+        "question": "¿Qué es un trigger?",
+        "option_a": "Una acción asociada a eventos de una tabla, vista o evento de base de datos que ejecuta una función cuando se dispara",
+        "option_b": "Una tabla temporal",
+        "option_c": "Un rol sin privilegios",
+        "option_d": "Un certificado de servidor",
+        "correct": "A",
+        "explanation": "CREATE TRIGGER define acciones que se ejecutan antes, después o en lugar de eventos según las reglas del trigger."
+    },
+    {
+        "topic_num": 14,
+        "question": "¿Qué aporta una extensión PostgreSQL?",
+        "option_a": "Instala objetos y funcionalidad adicional en una base de datos mediante el mecanismo de extensiones",
+        "option_b": "Cambia siempre el kernel del sistema operativo",
+        "option_c": "Solo crea copias de seguridad",
+        "option_d": "Elimina la necesidad de roles",
+        "correct": "A",
+        "explanation": "Las extensiones empaquetan objetos y funcionalidades que pueden instalarse con CREATE EXTENSION cuando están disponibles."
+    },
+    {
+        "topic_num": 14,
+        "question": "¿Qué función tiene search_path?",
+        "option_a": "Determinar el orden en que PostgreSQL busca objetos no cualificados en los esquemas",
+        "option_b": "Definir la ruta de copias de seguridad exclusivamente",
+        "option_c": "Indicar la ruta de un ejecutable cliente",
+        "option_d": "Configurar TLS",
+        "correct": "A",
+        "explanation": "search_path define los esquemas que se buscan y el orden de resolución de nombres no cualificados."
+    },
+    {
+        "topic_num": 14,
+        "question": "¿Qué garantiza una clave primaria?",
+        "option_a": "Identifica de forma única las filas y no admite valores nulos en sus columnas",
+        "option_b": "Permite siempre duplicados y nulos",
+        "option_c": "Cifra toda la tabla",
+        "option_d": "Solo crea un rol",
+        "correct": "A",
+        "explanation": "Una primary key impone unicidad y no nulidad y sirve como identidad de las filas."
+    },
+    {
+        "topic_num": 14,
+        "question": "¿Qué expresa una clave foránea?",
+        "option_a": "Una restricción de integridad referencial que exige que los valores correspondan a una clave de la tabla referenciada, salvo acciones definidas",
+        "option_b": "Un índice de texto completo",
+        "option_c": "Una clave privada",
+        "option_d": "Una vista materializada",
+        "correct": "A",
+        "explanation": "Las foreign keys mantienen integridad referencial y permiten definir acciones ante cambios o borrados."
+    },
+    {
+        "topic_num": 14,
+        "question": "¿Cuál es la jerarquía lógica básica?",
+        "option_a": "Un clúster contiene bases de datos; cada base contiene esquemas y los esquemas contienen objetos como tablas, vistas y funciones",
+        "option_b": "Los esquemas contienen servidores completos",
+        "option_c": "Las tablas contienen bases de datos",
+        "option_d": "Los roles contienen físicamente los discos",
+        "correct": "A",
+        "explanation": "La documentación organiza los objetos en el clúster, las bases de datos, los esquemas y los objetos de cada esquema."
+    },
+    {
+        "topic_num": 14,
+        "question": "¿Qué es una tabla temporal?",
+        "option_a": "Una tabla cuya existencia o visibilidad está vinculada a la sesión o transacción según su definición",
+        "option_b": "Una tabla que nunca puede contener datos",
+        "option_c": "Un índice temporal del planificador",
+        "option_d": "Una vista global obligatoria",
+        "correct": "A",
+        "explanation": "CREATE TEMPORARY TABLE crea tablas temporales con reglas de duración y visibilidad propias."
+    },
+    {
+        "topic_num": 14,
+        "question": "¿Qué permite la herencia de tablas?",
+        "option_a": "Una tabla hija puede heredar columnas y comportamiento de una tabla padre, conforme a las reglas de PostgreSQL",
+        "option_b": "Convierte todas las tablas en vistas",
+        "option_c": "Cifra las filas heredadas",
+        "option_d": "Impide consultas a la tabla padre",
+        "correct": "A",
+        "explanation": "PostgreSQL documenta herencia de tablas como una relación de estructura y consulta con semántica específica."
+    },
+    {
+        "topic_num": 14,
+        "question": "¿Qué objeto se define para representar una consulta reutilizable sin almacenar necesariamente su resultado?",
+        "option_a": "Una vista",
+        "option_b": "Una secuencia",
+        "option_c": "Un tablespace",
+        "option_d": "Una CRL",
+        "correct": "A",
+        "explanation": "CREATE VIEW define una vista basada en una consulta; el resultado se obtiene al consultar la vista."
+    },
+    {
+        "topic_num": 14,
+        "question": "¿Qué indican las categorías de volatilidad de una función?",
+        "option_a": "Las suposiciones sobre si puede cambiar el resultado y sobre los efectos observables, para ayudar al optimizador",
+        "option_b": "El nivel de cifrado de la función",
+        "option_c": "El rol propietario únicamente",
+        "option_d": "El tamaño del índice",
+        "correct": "A",
+        "explanation": "IMMUTABLE, STABLE y VOLATILE informan de la estabilidad del resultado y efectos de una función."
+    },
+    {
+        "topic_num": 14,
+        "question": "¿Qué permite RETURNING en INSERT, UPDATE o DELETE?",
+        "option_a": "Devolver datos de las filas afectadas por el comando sin tener que ejecutar una consulta separada",
+        "option_b": "Crear automáticamente una copia de seguridad",
+        "option_c": "Cambiar el propietario de la tabla",
+        "option_d": "Iniciar siempre una transacción nueva",
+        "correct": "A",
+        "explanation": "La cláusula RETURNING permite devolver valores de las filas insertadas, actualizadas o eliminadas."
+    },
+    {
+        "topic_num": 14,
+        "question": "¿Cómo se actualiza el resultado de una vista materializada?",
+        "option_a": "Mediante REFRESH MATERIALIZED VIEW, que vuelve a calcular y almacena su resultado",
+        "option_b": "Cada SELECT la actualiza automáticamente siempre",
+        "option_c": "No puede actualizarse",
+        "option_d": "Solo con VACUUM",
+        "correct": "A",
+        "explanation": "Las vistas materializadas conservan un resultado que debe refrescarse explícitamente mediante el comando correspondiente."
+    },
+    {
+        "topic_num": 14,
+        "question": "¿Qué diferencia puede tener un trigger FOR EACH ROW frente a FOR EACH STATEMENT?",
+        "option_a": "El primero puede ejecutarse por cada fila afectada y el segundo una vez por sentencia",
+        "option_b": "Ambos siempre se ejecutan una vez por base de datos",
+        "option_c": "FOR EACH ROW solo se aplica a SELECT",
+        "option_d": "FOR EACH STATEMENT crea un índice",
+        "correct": "A",
+        "explanation": "CREATE TRIGGER distingue el nivel de fila y de sentencia para determinar cuántas veces se ejecuta la acción."
+    },
+    {
+        "topic_num": 14,
+        "question": "¿Qué relación hay entre propietario y privilegios de un objeto?",
+        "option_a": "El propietario tiene control sobre el objeto y puede conceder privilegios, sin perjuicio de reglas como ACL y pertenencia a roles",
+        "option_b": "Todo usuario tiene los mismos privilegios",
+        "option_c": "Solo el superusuario puede consultar cualquier tabla",
+        "option_d": "Los privilegios no se pueden revocar",
+        "correct": "A",
+        "explanation": "PostgreSQL combina propiedad, roles y privilegios explícitos para controlar el acceso a objetos."
+    },
+    {
+        "topic_num": 14,
+        "question": "¿Qué riesgo existe al usar nombres de objetos sin cualificar?",
+        "option_a": "La resolución depende de search_path y podría encontrar un objeto de otro esquema si los privilegios y el orden lo permiten",
+        "option_b": "Siempre se encuentra el objeto correcto sin configuración",
+        "option_c": "El nombre se convierte en una clave primaria",
+        "option_d": "No se realiza ninguna búsqueda",
+        "correct": "A",
+        "explanation": "La resolución por search_path debe comprenderse junto con los privilegios y la posibilidad de colisión de nombres."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_14_LOT_01_END
