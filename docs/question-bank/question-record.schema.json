@@ -1,0 +1,294 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/micuentadecasa/dipu/question-bank/question-record.schema.json",
+  "title": "Diputest validated question record",
+  "description": "Additive contract for the existing seed_data.py -> frontend/src/questions.js path. It is not a second runtime store.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "stable_id",
+    "topic_num",
+    "question",
+    "option_a",
+    "option_b",
+    "option_c",
+    "option_d",
+    "correct",
+    "explanation",
+    "learning_objective_id",
+    "difficulty",
+    "question_type",
+    "sources",
+    "verification",
+    "deduplication",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Numeric compatibility/export ID retained for the current React UI and legacy API."
+    },
+    "stable_id": {
+      "type": "string",
+      "pattern": "^qb-t[0-9]{2}-[a-z0-9][a-z0-9._-]*-[a-f0-9]{16,64}$",
+      "description": "Immutable idempotency key derived from topic, objective, and canonical content digest."
+    },
+    "topic_num": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 40
+    },
+    "question": {
+      "type": "string",
+      "minLength": 1
+    },
+    "option_a": {
+      "type": "string",
+      "minLength": 1
+    },
+    "option_b": {
+      "type": "string",
+      "minLength": 1
+    },
+    "option_c": {
+      "type": "string",
+      "minLength": 1
+    },
+    "option_d": {
+      "type": "string",
+      "minLength": 1
+    },
+    "correct": {
+      "enum": ["A", "B", "C", "D"]
+    },
+    "explanation": {
+      "type": "string",
+      "minLength": 1
+    },
+    "learning_objective_id": {
+      "type": "string",
+      "pattern": "^t[0-9]{2}-lo-[a-z0-9][a-z0-9._-]*$"
+    },
+    "difficulty": {
+      "enum": ["basic", "intermediate", "advanced"]
+    },
+    "question_type": {
+      "enum": [
+        "definition",
+        "legal_provision",
+        "concept",
+        "comparison",
+        "scenario",
+        "procedure",
+        "code",
+        "sql"
+      ]
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    },
+    "verification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "answer",
+        "explanation",
+        "reviewed_at",
+        "reviewer_decision"
+      ],
+      "properties": {
+        "answer": {
+          "$ref": "#/$defs/review"
+        },
+        "explanation": {
+          "$ref": "#/$defs/review"
+        },
+        "reviewed_at": {
+          "type": "string",
+          "format": "date"
+        },
+        "reviewer_decision": {
+          "enum": ["accepted", "rejected", "quarantined"]
+        },
+        "code_or_sql": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status"],
+          "properties": {
+            "status": {
+              "enum": ["not_applicable", "passed", "failed", "quarantined"]
+            },
+            "language_or_engine": {
+              "type": "string"
+            },
+            "version": {
+              "type": "string"
+            },
+            "command_or_fixture": {
+              "type": "string"
+            },
+            "output_digest": {
+              "type": "string"
+            },
+            "checked_at": {
+              "type": "string",
+              "format": "date"
+            }
+          }
+        }
+      }
+    },
+    "deduplication": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "exact",
+        "lexical",
+        "near_lexical",
+        "semantic",
+        "concept"
+      ],
+      "properties": {
+        "exact": {
+          "$ref": "#/$defs/dedup_result"
+        },
+        "lexical": {
+          "$ref": "#/$defs/dedup_result"
+        },
+        "near_lexical": {
+          "$ref": "#/$defs/dedup_result"
+        },
+        "semantic": {
+          "$ref": "#/$defs/dedup_result"
+        },
+        "concept": {
+          "$ref": "#/$defs/dedup_result"
+        }
+      }
+    },
+    "status": {
+      "enum": ["candidate", "validated", "quarantined", "rejected"]
+    },
+    "legacy": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "origin": {
+          "enum": ["existing_seed", "existing_generated", "new_research"]
+        },
+        "legacy_id": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "migrated_at": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_id",
+        "title",
+        "authority",
+        "url",
+        "citation",
+        "version_or_as_of",
+        "retrieved_at",
+        "verified_at"
+      ],
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "pattern": "^[A-Z0-9][A-Z0-9._-]*$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "authority": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "citation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version_or_as_of": {
+          "type": "string",
+          "minLength": 1
+        },
+        "retrieved_at": {
+          "type": "string",
+          "format": "date"
+        },
+        "verified_at": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "reviewer", "checked_at", "basis"],
+      "properties": {
+        "status": {
+          "enum": ["passed", "failed", "uncertain"]
+        },
+        "reviewer": {
+          "type": "string",
+          "minLength": 1
+        },
+        "checked_at": {
+          "type": "string",
+          "format": "date"
+        },
+        "basis": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "dedup_result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "checked_at", "basis"],
+      "properties": {
+        "status": {
+          "enum": ["unique", "duplicate", "uncertain"]
+        },
+        "matched_stable_id": {
+          "type": "string"
+        },
+        "score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "checked_at": {
+          "type": "string",
+          "format": "date"
+        },
+        "basis": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}
