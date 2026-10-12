@@ -1,6 +1,6 @@
 # Question-bank milestone 1: source coverage and validation seam
 
-**Status:** source-boundary comparison and validation seam completed; topics 1--19 lot 1 and topic 20 lots 1--3 are published with duplicate-free runtime data, and topic 20 lot 4 is import-validated pending deployment.
+**Status:** source-boundary comparison and validation seam completed; topics 1--19 lot 1 and topic 20 lots 1--4 are published with duplicate-free runtime data.
 
 **Verified at:** 2026-10-12 (UTC)
 
@@ -42,4 +42,4 @@
 - The objective target is 200 distinct objectives per topic, not 200 objectives reused across lots. The slot manifest is complete, but every statement still needs source research and independent review.
 - The official DOCM ELI URLs and Publications Office CELEX fallbacks are now recorded; verify current legal vigency/article amendments before acceptance. Administración Electrónica service pages remain WAF-blocked, and public SedipuAlba evidence remains incomplete for Segra and AdminSedeElectrónica. Missing or unverifiable claims remain quarantined.
 
-Topics 1--20 lot 1 and topic 20 lots 2--3 are published at `https://micuentadecasa.github.io/dipu/`; topic 20 lot 4 has passed the review and import gates with official Microsoft EF Core 10 documentation and is pending deployment. Process topic 20 expansion lot 5 next after publication, then later topics sequentially under the same provenance and quarantine policy. The 8,000 count remains a target, never a padding requirement.
+Topics 1--20 lot 1 and topic 20 lots 2--4 are published at `https://micuentadecasa.github.io/dipu/` after successful workflow run `38284181768` for commit `f73229a`; the expansion lots use official Microsoft EF Core 10 documentation. Process topic 20 expansion lot 5 next, then later topics sequentially under the same provenance and quarantine policy. The 8,000 count remains a target, never a padding requirement.
