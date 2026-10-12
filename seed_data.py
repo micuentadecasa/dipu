@@ -5878,3 +5878,208 @@ SEED_QUESTIONS.extend([
     }
 ])
 # QUESTION_BANK_ACCEPTED_TOPIC_20_LOT_02_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_20_LOT_03_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 20,
+        "question": "¿Qué función cumple el change tracker de EF Core?",
+        "option_a": "Define los breakpoints de una aplicación",
+        "option_b": "Registra cambios de entidades para que SaveChanges pueda persistirlos",
+        "option_c": "Genera únicamente tablas de lectura",
+        "option_d": "Sustituye las clases de entidad por SQL",
+        "correct": "B",
+        "explanation": "Cada DbContext rastrea los cambios realizados en entidades y esos cambios impulsan las operaciones de base de datos cuando se llama a SaveChanges."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Cuál es un conjunto de estados de entidad de EF Core?",
+        "option_a": "Detached, Unchanged, Added, Deleted y Modified",
+        "option_b": "Open, Closed, Sent, Cached y Routed",
+        "option_c": "Model, View, Controller, Route y Filter",
+        "option_d": "Created, Styled, Parsed, Signed y Published",
+        "correct": "A",
+        "explanation": "EF Core utiliza estados como Detached, Unchanged, Added, Deleted y Modified para representar el estado de seguimiento de una entidad."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué diferencia describe mejor las formas de entrada de una entidad en un DbContext?",
+        "option_a": "Una entidad puede ser devuelta por una consulta, adjuntarse explícitamente o detectarse al estar conectada a otra entidad seguida",
+        "option_b": "Toda entidad entra únicamente mediante una migración",
+        "option_c": "Una entidad solo puede entrar desde un archivo CSS",
+        "option_d": "Las consultas nunca pueden producir entidades seguidas",
+        "correct": "A",
+        "explanation": "Las entidades pueden quedar seguidas al devolverlas una consulta, al adjuntarlas explícitamente o al detectarlas conectadas a entidades que ya se siguen."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué estado suele marcar Add para una entidad nueva?",
+        "option_a": "Unchanged",
+        "option_b": "Detached",
+        "option_c": "Deleted",
+        "option_d": "Added",
+        "correct": "D",
+        "explanation": "Add es uno de los métodos que hace que una entidad nueva se siga para su inserción cuando se guardan los cambios."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué finalidad tiene normalmente llamar a Update sobre una entidad?",
+        "option_a": "Adjuntar o seguir la entidad para procesar sus cambios como una actualización",
+        "option_b": "Eliminar siempre la base de datos",
+        "option_c": "Convertir la entidad en keyless",
+        "option_d": "Desactivar el change tracker",
+        "correct": "A",
+        "explanation": "Update es uno de los métodos explícitos que hacen que una entidad pase a ser seguida para el procesamiento de actualización."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué sucede con el seguimiento al desechar el DbContext?",
+        "option_a": "Todas las entidades pasan a Added en otro contexto automáticamente",
+        "option_b": "El contexto deja de seguir sus entidades y termina su unidad de trabajo",
+        "option_c": "Las entidades se convierten en migraciones",
+        "option_d": "El contexto se comparte con todos los hilos",
+        "correct": "B",
+        "explanation": "Las entidades dejan de estar seguidas cuando se desecha el DbContext, cuyo ciclo de vida representa una unidad de trabajo corta."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Cuál es un flujo habitual para modificar una entidad con EF Core?",
+        "option_a": "Crear CSS, ejecutar una migración y cerrar el navegador",
+        "option_b": "Cambiar el esquema sin cargar ningún modelo",
+        "option_c": "Consultar la entidad, modificarla y llamar a SaveChanges",
+        "option_d": "Llamar siempre a ExecuteDelete después de cada lectura",
+        "correct": "C",
+        "explanation": "El patrón documentado consulta los datos, modifica una entidad seguida y llama a SaveChanges para persistir la unidad de trabajo."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué diferencia a ExecuteUpdate del flujo tradicional con SaveChanges?",
+        "option_a": "ExecuteUpdate solo configura anotaciones",
+        "option_b": "El flujo tradicional nunca usa entidades",
+        "option_c": "ExecuteUpdate exige siempre cargar y seguir cada entidad",
+        "option_d": "ExecuteUpdate realiza una operación masiva directa en lugar de cargar entidades, modificarlas y guardar cambios seguidos",
+        "correct": "D",
+        "explanation": "La documentación presenta ExecuteUpdate como un enfoque de actualización masiva distinto de cargar entidades, modificarlas y persistirlas con SaveChanges."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué operación representa ExecuteDelete?",
+        "option_a": "Una eliminación masiva directa de las filas que cumplen la consulta",
+        "option_b": "Una consulta que solo cambia el estado a Unchanged",
+        "option_c": "Una migración que renombra todas las tablas",
+        "option_d": "Una operación que siempre necesita cargar cada entidad",
+        "correct": "A",
+        "explanation": "ExecuteDelete es el enfoque de operación masiva para eliminar directamente en la base de datos las filas que cumplen la consulta."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué característica comparten ExecuteUpdate y ExecuteDelete?",
+        "option_a": "Solo se ejecutan al llamar a SaveChanges",
+        "option_b": "Se ejecutan directamente contra la base de datos y no se acumulan como cambios de entidades en el change tracker",
+        "option_c": "Solo sirven para generar migraciones",
+        "option_d": "Siempre devuelven entidades seguidas",
+        "correct": "B",
+        "explanation": "Las operaciones masivas se ejecutan directamente contra la base de datos y siguen un enfoque diferente del seguimiento de entidades y SaveChanges."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué representa normalmente una clave foránea en una relación EF Core?",
+        "option_a": "El enlace del lado dependiente hacia la entidad principal",
+        "option_b": "Una propiedad que siempre contiene CSS",
+        "option_c": "El identificador de una migración",
+        "option_d": "Una consulta que no tiene entidad",
+        "correct": "A",
+        "explanation": "En una relación, la clave foránea representa el vínculo del tipo dependiente con el principal."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué son las propiedades de navegación?",
+        "option_a": "Archivos de migración que describen tablas",
+        "option_b": "Propiedades .NET que permiten navegar entre instancias de entidades relacionadas",
+        "option_c": "Métodos que solo traducen SQL",
+        "option_d": "Estados del proveedor",
+        "correct": "B",
+        "explanation": "Las propiedades de navegación son propiedades de las entidades que representan el acceso a entidades relacionadas."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué relación describe correctamente principal y dependiente?",
+        "option_a": "El principal nunca participa en una relación",
+        "option_b": "El dependiente configura siempre el proveedor",
+        "option_c": "El principal es la entidad referenciada y el dependiente contiene normalmente la clave foránea",
+        "option_d": "Ambos términos designan exclusivamente contextos",
+        "correct": "C",
+        "explanation": "En el modelo relacional de EF Core, el dependiente suele contener la clave foránea que referencia al principal."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Cómo puede configurarse una relación de EF Core?",
+        "option_a": "Solo escribiendo HTML",
+        "option_b": "Por convenciones o explícitamente mediante configuración del modelo",
+        "option_c": "Únicamente después de aplicar una migración",
+        "option_d": "Solo mediante consultas sin seguimiento",
+        "correct": "B",
+        "explanation": "EF Core puede descubrir relaciones mediante convenciones y permite configurarlas explícitamente durante la construcción del modelo."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué representa una relación uno a muchos?",
+        "option_a": "Una entidad principal relacionada con exactamente una entidad y sin dependientes",
+        "option_b": "Una relación entre dos bases de datos distintas",
+        "option_c": "Una entidad principal relacionada con cero o más entidades dependientes",
+        "option_d": "Una relación sin claves ni navegación",
+        "correct": "C",
+        "explanation": "En una relación uno a muchos, un principal puede relacionarse con cero o más dependientes."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué caracteriza a una relación uno a uno?",
+        "option_a": "Cada lado debe tener siempre miles de dependientes",
+        "option_b": "Conecta una entidad principal con como máximo una entidad dependiente en el otro lado",
+        "option_c": "Solo puede existir en una migración",
+        "option_d": "No puede usar una clave foránea",
+        "correct": "B",
+        "explanation": "Una relación uno a uno conecta un principal con como máximo un dependiente en el otro extremo."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué describe una relación muchos a muchos?",
+        "option_a": "Múltiples entidades de cada lado pueden estar relacionadas con múltiples entidades del otro lado",
+        "option_b": "Un único registro sin clave",
+        "option_c": "Una relación exclusiva entre contexto y proveedor",
+        "option_d": "Una vista que nunca tiene navegación",
+        "correct": "A",
+        "explanation": "En una relación muchos a muchos, varias entidades de cada lado pueden asociarse con varias entidades del otro lado."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Cómo puede descubrir EF Core tipos relacionados al construir el modelo?",
+        "option_a": "Explorando recursivamente las propiedades de navegación de entidades ya descubiertas",
+        "option_b": "Leyendo solo los estilos de la aplicación",
+        "option_c": "Ejecutando SaveChanges antes de crear el modelo",
+        "option_d": "Ignorando todas las propiedades de navegación",
+        "correct": "A",
+        "explanation": "EF Core incluye tipos que encuentra al explorar recursivamente las propiedades de navegación de otros tipos de entidad descubiertos."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué es una instantánea del modelo en el proceso de migraciones?",
+        "option_a": "Una copia de la interfaz de usuario",
+        "option_b": "Una tabla temporal del proveedor",
+        "option_c": "La representación del modelo anterior que se usa para calcular diferencias",
+        "option_d": "Un estado del change tracker",
+        "correct": "C",
+        "explanation": "EF Core compara el modelo actual con la instantánea del modelo anterior para determinar los cambios de una nueva migración."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Dónde pueden conservarse los archivos fuente de las migraciones?",
+        "option_a": "Solo en la memoria del proceso",
+        "option_b": "En el control de código fuente como otros archivos fuente del proyecto",
+        "option_c": "Únicamente en el navegador",
+        "option_d": "Solo dentro de una consulta LINQ",
+        "correct": "B",
+        "explanation": "La documentación indica que los archivos fuente generados por migraciones pueden seguirse en el control de código fuente como cualquier otro archivo del proyecto."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_20_LOT_03_END
