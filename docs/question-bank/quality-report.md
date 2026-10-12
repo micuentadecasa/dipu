@@ -1,7 +1,7 @@
 # Question-bank quality report — checkpoint 1
 
 **As of:** 2026-10-12 UTC
-**Scope:** topics 1--19 lot 1 and topic 20 lots 1--2 are published; topic 20 lot 3 is reviewed and import-validated, ready for deployment.
+**Scope:** topics 1--19 lot 1 and topic 20 lots 1--3 are published with duplicate-free runtime data.
 
 ## Current counts
 
@@ -15,11 +15,11 @@
 | Deterministic duplicate matches | 0 | Exact, lexical and near-lexical checks against legacy/topic-lot records |
 | Semantic/concept decisions | 440 unique | Independently reviewed against the objective and proposition |
 | Native import/export | 440 | Accepted topics 1--20 lot 1 plus topic 20 lots 2--3 are imported through `seed_data.py`; duplicate-free `frontend/src/questions.js` contains 839 records |
-| Published batches | 21 | Topics 1--19 lot 1 and topic 20 lots 1--2 are live at `https://micuentadecasa.github.io/dipu/`; topic 20 lot 3 is deployment-ready |
+| Published batches | 22 | Topics 1--19 lot 1 and topic 20 lots 1--3 are live at `https://micuentadecasa.github.io/dipu/` |
 
 ## Lot 1 distributions
 
-Each accepted lot uses 4 basic, 10 intermediate and 6 advanced records. Topics 1--12 use documented official sources; topics 13--17 use PostgreSQL 18, topic 18 uses Microsoft C#, topic 19 uses Microsoft ASP.NET Core MVC and Bootstrap 5.3, and topic 20 uses Microsoft EF Core 10. Twenty-two independent review passes accepted 440 official-primary records across topics 1--20 lot 1 and topic 20 lots 2--3. Topics 1--19 lot 1 and topic 20 lots 1--2 are live; topic 20 lot 3 is ready for deployment.
+Each accepted lot uses 4 basic, 10 intermediate and 6 advanced records. Topics 1--12 use documented official sources; topics 13--17 use PostgreSQL 18, topic 18 uses Microsoft C#, topic 19 uses Microsoft ASP.NET Core MVC and Bootstrap 5.3, and topic 20 uses Microsoft EF Core 10. Twenty-two independent review passes accepted 440 official-primary records across topics 1--20 lot 1 and topic 20 lots 2--3. Topics 1--19 lot 1 and topic 20 lots 1--3 are live at `https://micuentadecasa.github.io/dipu/`.
 
 Candidate, reviewed, audit and checkpoint artifacts are recorded under `lots/`, `accepted/`, `reviews/` and `checkpoints/` for topics 1--20 and topic 20 lots 2--3. Re-running the lot/review/import stages is idempotent.
 
@@ -42,4 +42,4 @@ Candidate, reviewed, audit and checkpoint artifacts are recorded under `lots/`, 
 - `cd frontend && npm run lint`: passed.
 - `cd frontend && npm run build`: passed after regenerating the duplicate-free runtime artifact.
 
-The reviewed artifacts pass answer, explanation, five-level duplicate review and source checks. Publication milestone: topics 1--19 lot 1 and topic 20 lots 1--2 are live at `https://micuentadecasa.github.io/dipu/`; topic 20 lot 3 contains 20 accepted official-primary EF Core records and is ready for deployment. Topics 13--17 use PostgreSQL 18; AutoFirma facts remain limited to the official entry point and no version-sensitive claim. No secondary or provisional records are in these batches.
+The reviewed artifacts pass answer, explanation, five-level duplicate review and source checks. Publication milestone: topics 1--19 lot 1 and topic 20 lots 1--3 are live at `https://micuentadecasa.github.io/dipu/`; workflow run `38283298245` completed successfully for commit `5740af5`. Topic 20 lot 3 contributes 20 accepted official-primary EF Core records. Topics 13--17 use PostgreSQL 18; AutoFirma facts remain limited to the official entry point and no version-sensitive claim. No secondary or provisional records are in these batches.
