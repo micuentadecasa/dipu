@@ -1,20 +1,20 @@
 # Question-bank quality report — checkpoint 1
 
 **As of:** 2026-10-12 UTC
-**Scope:** topics 1--15 lot 1 are published; topic 16 lot 1 is reviewed and import-validated, ready for deployment.
+**Scope:** topics 1--15 lot 1 are published; topic 16 lot 1 is reviewed and import-validated, ready for deployment. The runtime duplicate cleanup below is local and is not live until its build is deployed.
 
 ## Current counts
 
 | Measure | Count | Interpretation |
 |---|---:|---|
-| Legacy runtime records | 1,200 | Preserved baseline; not validated or counted toward the target |
+| Legacy runtime records | 399 | One normalized prompt retained from the pre-cleanup 1,200-record baseline; the removed duplicate history remains in Git |
 | Objective slots | 8,000 | 200 per topic; 320 topic-1-to-16 statements researched, 7,680 slots pending |
 | Topics 1--16 lot 1 candidates | 320 | Generated only after source verification |
 | Reviewed accepted artifacts | 320 | Topics 1--16 records passed independent review matrices |
 | Quarantined candidate audits | 320 | Original candidate lots remain unchanged as audit trails |
 | Deterministic duplicate matches | 0 | Exact, lexical and near-lexical checks against legacy/topic-lot records |
 | Semantic/concept decisions | 320 unique | Independently reviewed against the objective and proposition |
-| Native import/export | 320 | Accepted topics 1--16 are imported through `seed_data.py`; `frontend/src/questions.js` contains 1,520 records |
+| Native import/export | 320 | Accepted topics 1--16 remain imported through `seed_data.py`; duplicate-free `frontend/src/questions.js` now contains 719 records |
 | Published batches | 15 | Topics 1--15 are live at `https://micuentadecasa.github.io/dipu/`; topic 16 is deployment-ready |
 
 ## Lot 1 distributions
@@ -37,9 +37,9 @@ Candidate, reviewed, audit and checkpoint artifacts are recorded under `lots/`, 
 - `python3 -m unittest discover -s tests -v`: 10 passed.
 - `python3 tools/validate_question_bank.py docs/question-bank/lots/topic-01-lot-01.json`: passed for 20 candidates.
 - `python3 tools/validate_question_bank.py` passed for all sixteen accepted artifacts (320 records).
-- Topic 1--16 import validation passed; legacy snapshot 1,200 preserved, 320 stable/numeric IDs collision-free, followed by native seed/static import.
+- Topic 1--16 import validation passed before cleanup; the pre-cleanup 1,200-record legacy snapshot remains recoverable in Git, while the current runtime retains 399 unique legacy records and 320 accepted records.
 - JSON parsing, Python compilation and `git diff --check`: passed.
 - `cd frontend && npm run lint`: passed.
-- `cd frontend && npm run build`: passed; the build uses the unchanged runtime artifact.
+- `cd frontend && npm run build`: passed after regenerating the duplicate-free runtime artifact.
 
 The reviewed artifacts pass answer, explanation, five-level duplicate review and source checks. Publication milestone: topics 1--15, lot 1, 20 accepted records each, remain live at `https://micuentadecasa.github.io/dipu/`; topic 16 has 20 accepted official-primary records and is ready for deployment. Workflow run `38258226538` completed successfully for the prior published commit `7f32586`. Topics 13--16 use the PostgreSQL 18 documentation source; AutoFirma facts remain limited to the official entry point and no version-sensitive claim. No secondary or provisional records are in these batches.

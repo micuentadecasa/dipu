@@ -1828,11380 +1828,2569 @@ export const QUESTIONS = [
   },
   {
     "id": 167,
-    "topic_num": 1,
-    "question": "Que parte de la Constitucion proclama valores como libertad, justicia, igualdad y pluralismo politico?",
-    "option_a": "Titulo X",
-    "option_b": "Titulo Preliminar",
-    "option_c": "Titulo IV",
-    "option_d": "Titulo VIII",
-    "correct": "B",
-    "explanation": "El art. 1 CE, dentro del Titulo Preliminar, proclama esos valores superiores."
+    "topic_num": 2,
+    "question": "Que organo dirige la politica interior y exterior, la Administracion civil y militar y la defensa del Estado?",
+    "option_a": "Consejo General del Poder Judicial",
+    "option_b": "Tribunal de Cuentas",
+    "option_c": "Gobierno",
+    "option_d": "Senado",
+    "correct": "C",
+    "explanation": "La Constitucion atribuye esas funciones al Gobierno."
   },
   {
     "id": 168,
-    "topic_num": 1,
-    "question": "Que articulo de la Constitucion reconoce el derecho a la vida y a la integridad fisica y moral?",
-    "option_a": "Articulo 15",
-    "option_b": "Articulo 1",
-    "option_c": "Articulo 27",
-    "option_d": "Articulo 137",
-    "correct": "A",
-    "explanation": "El articulo 15 CE reconoce el derecho a la vida y a la integridad fisica y moral."
+    "topic_num": 2,
+    "question": "Quien propone al Rey el nombramiento y separacion de los ministros?",
+    "option_a": "Presidente del Senado",
+    "option_b": "Presidente del Gobierno",
+    "option_c": "Presidente del Congreso",
+    "option_d": "Defensor del Pueblo",
+    "correct": "B",
+    "explanation": "Corresponde al Presidente del Gobierno proponer el nombramiento y separacion de ministros."
   },
   {
     "id": 169,
-    "topic_num": 1,
-    "question": "Que camaras forman las Cortes Generales?",
-    "option_a": "Gobierno y Senado",
-    "option_b": "Tribunal Supremo y Congreso",
-    "option_c": "Consejo de Estado y Senado",
-    "option_d": "Congreso de los Diputados y Senado",
-    "correct": "D",
-    "explanation": "Las Cortes Generales son bicamerales: Congreso y Senado."
+    "topic_num": 2,
+    "question": "Que mecanismo parlamentario permite exigir responsabilidad politica al Gobierno mediante candidato alternativo?",
+    "option_a": "Mocion de censura",
+    "option_b": "Recurso de amparo",
+    "option_c": "Cuestion prejudicial",
+    "option_d": "Iniciativa legislativa popular",
+    "correct": "A",
+    "explanation": "La mocion de censura espanola es constructiva y exige candidato alternativo."
   },
   {
     "id": 170,
-    "topic_num": 1,
-    "question": "Que forma politica del Estado espanol establece la Constitucion?",
-    "option_a": "Monarquia absoluta",
-    "option_b": "Confederacion autonoma",
-    "option_c": "Monarquia parlamentaria",
-    "option_d": "Republica federal",
-    "correct": "C",
-    "explanation": "El art. 1.3 CE establece la monarquia parlamentaria."
+    "topic_num": 2,
+    "question": "Que entidades integran la organizacion territorial basica del Estado?",
+    "option_a": "Ministerios, juzgados y diputaciones",
+    "option_b": "Comarcas, partidos judiciales y distritos",
+    "option_c": "Cabildos, islas y parroquias exclusivamente",
+    "option_d": "Municipios, provincias y comunidades autonomas",
+    "correct": "D",
+    "explanation": "La Constitucion reconoce municipios, provincias y comunidades autonomas."
   },
   {
     "id": 171,
-    "topic_num": 1,
-    "question": "Donde reside la soberania nacional segun la Constitucion?",
-    "option_a": "En las comunidades autonomas",
-    "option_b": "En el pueblo espanol",
-    "option_c": "En las Cortes exclusivamente",
-    "option_d": "En el Gobierno",
-    "correct": "B",
-    "explanation": "El art. 1.2 CE indica que la soberania nacional reside en el pueblo espanol."
+    "topic_num": 2,
+    "question": "Que principio constitucional reconoce autonomia para la gestion de intereses propios?",
+    "option_a": "Irretroactividad penal",
+    "option_b": "Unidad jurisdiccional",
+    "option_c": "Autonomia",
+    "option_d": "Jerarquia normativa",
+    "correct": "C",
+    "explanation": "La CE reconoce autonomia a municipios, provincias y comunidades autonomas."
   },
   {
     "id": 172,
-    "topic_num": 1,
-    "question": "Que institucion representa al pueblo espanol y ejerce la potestad legislativa del Estado?",
-    "option_a": "Cortes Generales",
-    "option_b": "Consejo de Ministros",
-    "option_c": "Tribunal Constitucional",
-    "option_d": "Defensor del Pueblo",
-    "correct": "A",
-    "explanation": "Las Cortes Generales representan al pueblo y ejercen la potestad legislativa."
+    "topic_num": 2,
+    "question": "Que camara puede retirar la confianza al Gobierno mediante mocion de censura?",
+    "option_a": "Consejo de Estado",
+    "option_b": "Congreso de los Diputados",
+    "option_c": "Senado",
+    "option_d": "Tribunal Constitucional",
+    "correct": "B",
+    "explanation": "La responsabilidad politica del Gobierno se exige ante el Congreso."
   },
   {
     "id": 173,
-    "topic_num": 1,
-    "question": "Que parte de la Constitucion proclama valores como libertad, justicia, igualdad y pluralismo politico?",
-    "option_a": "Titulo IV",
-    "option_b": "Titulo VIII",
-    "option_c": "Titulo X",
-    "option_d": "Titulo Preliminar",
-    "correct": "D",
-    "explanation": "El art. 1 CE, dentro del Titulo Preliminar, proclama esos valores superiores."
+    "topic_num": 3,
+    "question": "Que entidad local basica tiene personalidad juridica y plena capacidad para cumplir sus fines?",
+    "option_a": "Partido judicial",
+    "option_b": "Municipio",
+    "option_c": "Barrio",
+    "option_d": "Distrito censal",
+    "correct": "B",
+    "explanation": "La LRBRL define el municipio como entidad local basica."
   },
   {
     "id": 174,
-    "topic_num": 1,
-    "question": "Que articulo de la Constitucion reconoce el derecho a la vida y a la integridad fisica y moral?",
-    "option_a": "Articulo 27",
-    "option_b": "Articulo 137",
-    "option_c": "Articulo 15",
-    "option_d": "Articulo 1",
-    "correct": "C",
-    "explanation": "El articulo 15 CE reconoce el derecho a la vida y a la integridad fisica y moral."
+    "topic_num": 3,
+    "question": "Que registro administrativo acredita la residencia y domicilio de los vecinos de un municipio?",
+    "option_a": "Padron municipal",
+    "option_b": "Registro Civil",
+    "option_c": "Inventario de bienes",
+    "option_d": "Libro de actas",
+    "correct": "A",
+    "explanation": "El padron municipal contiene los vecinos del municipio."
   },
   {
     "id": 175,
-    "topic_num": 1,
-    "question": "Que camaras forman las Cortes Generales?",
-    "option_a": "Consejo de Estado y Senado",
-    "option_b": "Congreso de los Diputados y Senado",
-    "option_c": "Gobierno y Senado",
-    "option_d": "Tribunal Supremo y Congreso",
-    "correct": "B",
-    "explanation": "Las Cortes Generales son bicamerales: Congreso y Senado."
+    "topic_num": 3,
+    "question": "Que organo municipal esta integrado por todos los concejales y presidido por el alcalde?",
+    "option_a": "Junta electoral",
+    "option_b": "Intervencion",
+    "option_c": "Tesoreria",
+    "option_d": "Pleno",
+    "correct": "D",
+    "explanation": "El Pleno lo forman los concejales y lo preside el alcalde."
   },
   {
     "id": 176,
-    "topic_num": 1,
-    "question": "Que forma politica del Estado espanol establece la Constitucion?",
-    "option_a": "Monarquia parlamentaria",
-    "option_b": "Republica federal",
-    "option_c": "Monarquia absoluta",
-    "option_d": "Confederacion autonoma",
-    "correct": "A",
-    "explanation": "El art. 1.3 CE establece la monarquia parlamentaria."
+    "topic_num": 3,
+    "question": "Que organo unipersonal dirige el gobierno y la administracion municipal?",
+    "option_a": "Interventor",
+    "option_b": "Tesorero",
+    "option_c": "Alcalde",
+    "option_d": "Secretario",
+    "correct": "C",
+    "explanation": "El alcalde dirige el gobierno y la administracion municipal."
   },
   {
     "id": 177,
-    "topic_num": 1,
-    "question": "Donde reside la soberania nacional segun la Constitucion?",
-    "option_a": "En las Cortes exclusivamente",
-    "option_b": "En el Gobierno",
-    "option_c": "En las comunidades autonomas",
-    "option_d": "En el pueblo espanol",
-    "correct": "D",
-    "explanation": "El art. 1.2 CE indica que la soberania nacional reside en el pueblo espanol."
+    "topic_num": 3,
+    "question": "Que entidad local agrupa municipios y tiene como fines la asistencia y cooperacion municipal?",
+    "option_a": "Distrito hipotecario",
+    "option_b": "Provincia",
+    "option_c": "Mancomunidad privada",
+    "option_d": "Comunidad de bienes",
+    "correct": "B",
+    "explanation": "La provincia garantiza solidaridad y asistencia a municipios."
   },
   {
     "id": 178,
-    "topic_num": 1,
-    "question": "Que institucion representa al pueblo espanol y ejerce la potestad legislativa del Estado?",
-    "option_a": "Tribunal Constitucional",
-    "option_b": "Defensor del Pueblo",
-    "option_c": "Cortes Generales",
-    "option_d": "Consejo de Ministros",
-    "correct": "C",
-    "explanation": "Las Cortes Generales representan al pueblo y ejercen la potestad legislativa."
+    "topic_num": 3,
+    "question": "Que institucion gobierna y administra la provincia?",
+    "option_a": "Diputacion provincial",
+    "option_b": "Subdelegacion del Gobierno",
+    "option_c": "Audiencia Provincial",
+    "option_d": "Delegacion de Hacienda",
+    "correct": "A",
+    "explanation": "El gobierno y administracion autonoma de la provincia corresponde a la Diputacion u organos equivalentes."
   },
   {
     "id": 179,
-    "topic_num": 1,
-    "question": "Que parte de la Constitucion proclama valores como libertad, justicia, igualdad y pluralismo politico?",
-    "option_a": "Titulo X",
-    "option_b": "Titulo Preliminar",
-    "option_c": "Titulo IV",
-    "option_d": "Titulo VIII",
-    "correct": "B",
-    "explanation": "El art. 1 CE, dentro del Titulo Preliminar, proclama esos valores superiores."
+    "topic_num": 4,
+    "question": "Que norma aprueba el texto refundido de disposiciones legales vigentes en materia de regimen local?",
+    "option_a": "Real Decreto Legislativo 781/1986",
+    "option_b": "Ley 39/2015",
+    "option_c": "Ley Organica 3/2018",
+    "option_d": "Real Decreto 203/2021",
+    "correct": "A",
+    "explanation": "El RDL 781/1986 aprueba el texto refundido de regimen local."
   },
   {
     "id": 180,
-    "topic_num": 1,
-    "question": "Que articulo de la Constitucion reconoce el derecho a la vida y a la integridad fisica y moral?",
-    "option_a": "Articulo 15",
-    "option_b": "Articulo 1",
-    "option_c": "Articulo 27",
-    "option_d": "Articulo 137",
-    "correct": "A",
-    "explanation": "El articulo 15 CE reconoce el derecho a la vida y a la integridad fisica y moral."
+    "topic_num": 4,
+    "question": "Que significan las siglas ROF en regimen local?",
+    "option_a": "Registro Oficial de Funcionarios",
+    "option_b": "Reglamento Organico Fiscal",
+    "option_c": "Relacion Ordinaria de Funciones",
+    "option_d": "Reglamento de Organizacion, Funcionamiento y Regimen Juridico",
+    "correct": "D",
+    "explanation": "El ROF regula organizacion, funcionamiento y regimen juridico de entidades locales."
   },
   {
     "id": 181,
-    "topic_num": 1,
-    "question": "Que camaras forman las Cortes Generales?",
-    "option_a": "Gobierno y Senado",
-    "option_b": "Tribunal Supremo y Congreso",
-    "option_c": "Consejo de Estado y Senado",
-    "option_d": "Congreso de los Diputados y Senado",
-    "correct": "D",
-    "explanation": "Las Cortes Generales son bicamerales: Congreso y Senado."
+    "topic_num": 4,
+    "question": "Que documento recoge formalmente lo tratado y acordado en una sesion de organo colegiado local?",
+    "option_a": "Edicto tributario",
+    "option_b": "Orden de pago",
+    "option_c": "Acta",
+    "option_d": "Padron",
+    "correct": "C",
+    "explanation": "El acta documenta asistentes, deliberaciones esenciales y acuerdos."
   },
   {
     "id": 182,
-    "topic_num": 1,
-    "question": "Que forma politica del Estado espanol establece la Constitucion?",
-    "option_a": "Monarquia absoluta",
-    "option_b": "Confederacion autonoma",
-    "option_c": "Monarquia parlamentaria",
-    "option_d": "Republica federal",
-    "correct": "C",
-    "explanation": "El art. 1.3 CE establece la monarquia parlamentaria."
+    "topic_num": 4,
+    "question": "Que tipo de norma local puede aprobar una entidad local dentro de sus competencias?",
+    "option_a": "Tratado internacional",
+    "option_b": "Ordenanza",
+    "option_c": "Ley organica",
+    "option_d": "Real decreto legislativo",
+    "correct": "B",
+    "explanation": "Las entidades locales pueden aprobar ordenanzas y reglamentos en su ambito competencial."
   },
   {
     "id": 183,
-    "topic_num": 1,
-    "question": "Donde reside la soberania nacional segun la Constitucion?",
-    "option_a": "En las comunidades autonomas",
-    "option_b": "En el pueblo espanol",
-    "option_c": "En las Cortes exclusivamente",
-    "option_d": "En el Gobierno",
-    "correct": "B",
-    "explanation": "El art. 1.2 CE indica que la soberania nacional reside en el pueblo espanol."
+    "topic_num": 4,
+    "question": "Que requisito formal permite convocar validamente una sesion de un organo colegiado local?",
+    "option_a": "Convocatoria",
+    "option_b": "Empadronamiento",
+    "option_c": "Recurso de casacion",
+    "option_d": "Certificado digital cualificado",
+    "correct": "A",
+    "explanation": "La convocatoria comunica sesion, fecha, hora y asuntos a tratar."
   },
   {
     "id": 184,
-    "topic_num": 1,
-    "question": "Que institucion representa al pueblo espanol y ejerce la potestad legislativa del Estado?",
-    "option_a": "Cortes Generales",
-    "option_b": "Consejo de Ministros",
-    "option_c": "Tribunal Constitucional",
-    "option_d": "Defensor del Pueblo",
-    "correct": "A",
-    "explanation": "Las Cortes Generales representan al pueblo y ejercen la potestad legislativa."
+    "topic_num": 4,
+    "question": "Que expresion identifica el conjunto de reglas aplicables a organizacion y funcionamiento de entidades locales?",
+    "option_a": "Regimen hipotecario",
+    "option_b": "Regimen sancionador penal",
+    "option_c": "Regimen electoral europeo",
+    "option_d": "Regimen juridico local",
+    "correct": "D",
+    "explanation": "El regimen juridico local ordena competencias, organos, funcionamiento y actos locales."
   },
   {
     "id": 185,
-    "topic_num": 1,
-    "question": "Que parte de la Constitucion proclama valores como libertad, justicia, igualdad y pluralismo politico?",
-    "option_a": "Titulo IV",
-    "option_b": "Titulo VIII",
-    "option_c": "Titulo X",
-    "option_d": "Titulo Preliminar",
+    "topic_num": 5,
+    "question": "Como se denomina la persona que promueve un procedimiento administrativo por ser titular de derechos o intereses legitimos?",
+    "option_a": "Fedatario",
+    "option_b": "Licitador",
+    "option_c": "Administrador concursal",
+    "option_d": "Interesado",
     "correct": "D",
-    "explanation": "El art. 1 CE, dentro del Titulo Preliminar, proclama esos valores superiores."
+    "explanation": "La Ley 39/2015 regula la condicion de interesado."
   },
   {
     "id": 186,
-    "topic_num": 1,
-    "question": "Que articulo de la Constitucion reconoce el derecho a la vida y a la integridad fisica y moral?",
-    "option_a": "Articulo 27",
-    "option_b": "Articulo 137",
-    "option_c": "Articulo 15",
-    "option_d": "Articulo 1",
+    "topic_num": 5,
+    "question": "Que figura permite actuar ante la Administracion en nombre de otra persona?",
+    "option_a": "Abstencion",
+    "option_b": "Convalidacion",
+    "option_c": "Representacion",
+    "option_d": "Recusacion",
     "correct": "C",
-    "explanation": "El articulo 15 CE reconoce el derecho a la vida y a la integridad fisica y moral."
+    "explanation": "La representacion acredita que una persona actua por otra."
   },
   {
     "id": 187,
-    "topic_num": 2,
-    "question": "Que organo dirige la politica interior y exterior, la Administracion civil y militar y la defensa del Estado?",
-    "option_a": "Consejo General del Poder Judicial",
-    "option_b": "Tribunal de Cuentas",
-    "option_c": "Gobierno",
-    "option_d": "Senado",
-    "correct": "C",
-    "explanation": "La Constitucion atribuye esas funciones al Gobierno."
+    "topic_num": 5,
+    "question": "Que sistema permite presentar solicitudes, escritos y comunicaciones ante la Administracion?",
+    "option_a": "Registro mercantil privado",
+    "option_b": "Registro administrativo",
+    "option_c": "Padron electoral",
+    "option_d": "Inventario contable",
+    "correct": "B",
+    "explanation": "Los registros administrativos reciben y anotan documentos dirigidos a la Administracion."
   },
   {
     "id": 188,
-    "topic_num": 2,
-    "question": "Quien propone al Rey el nombramiento y separacion de los ministros?",
-    "option_a": "Presidente del Senado",
-    "option_b": "Presidente del Gobierno",
-    "option_c": "Presidente del Congreso",
-    "option_d": "Defensor del Pueblo",
-    "correct": "B",
-    "explanation": "Corresponde al Presidente del Gobierno proponer el nombramiento y separacion de ministros."
+    "topic_num": 5,
+    "question": "Como se computan normalmente los plazos expresados en dias en la Ley 39/2015 si no se indica otra cosa?",
+    "option_a": "Dias habiles",
+    "option_b": "Dias naturales",
+    "option_c": "Solo sabados",
+    "option_d": "Solo dias lectivos",
+    "correct": "A",
+    "explanation": "Si la norma no dice otra cosa, los plazos por dias son habiles."
   },
   {
     "id": 189,
-    "topic_num": 2,
-    "question": "Que mecanismo parlamentario permite exigir responsabilidad politica al Gobierno mediante candidato alternativo?",
-    "option_a": "Mocion de censura",
-    "option_b": "Recurso de amparo",
-    "option_c": "Cuestion prejudicial",
-    "option_d": "Iniciativa legislativa popular",
-    "correct": "A",
-    "explanation": "La mocion de censura espanola es constructiva y exige candidato alternativo."
+    "topic_num": 5,
+    "question": "Que medio permite registrar documentos por via telematica?",
+    "option_a": "Libro de caja",
+    "option_b": "Indice B-tree",
+    "option_c": "Repositorio Git",
+    "option_d": "Registro electronico",
+    "correct": "D",
+    "explanation": "El registro electronico permite la presentacion electronica de documentos."
   },
   {
     "id": 190,
-    "topic_num": 2,
-    "question": "Que entidades integran la organizacion territorial basica del Estado?",
-    "option_a": "Ministerios, juzgados y diputaciones",
-    "option_b": "Comarcas, partidos judiciales y distritos",
-    "option_c": "Cabildos, islas y parroquias exclusivamente",
-    "option_d": "Municipios, provincias y comunidades autonomas",
-    "correct": "D",
-    "explanation": "La Constitucion reconoce municipios, provincias y comunidades autonomas."
+    "topic_num": 5,
+    "question": "Que capacidad permite comparecer y actuar validamente ante las Administraciones Publicas?",
+    "option_a": "Capacidad procesal penal",
+    "option_b": "Capacidad de endeudamiento",
+    "option_c": "Capacidad de obrar",
+    "option_d": "Capacidad contributiva exclusivamente",
+    "correct": "C",
+    "explanation": "La Ley 39/2015 regula quienes tienen capacidad de obrar ante las AAPP."
   },
   {
     "id": 191,
-    "topic_num": 2,
-    "question": "Que principio constitucional reconoce autonomia para la gestion de intereses propios?",
-    "option_a": "Irretroactividad penal",
-    "option_b": "Unidad jurisdiccional",
-    "option_c": "Autonomia",
-    "option_d": "Jerarquia normativa",
+    "topic_num": 6,
+    "question": "Que requisito explica los hechos y fundamentos de derecho de un acto administrativo?",
+    "option_a": "Prescripcion",
+    "option_b": "Reformatio in peius",
+    "option_c": "Motivacion",
+    "option_d": "Caducidad",
     "correct": "C",
-    "explanation": "La CE reconoce autonomia a municipios, provincias y comunidades autonomas."
+    "explanation": "La motivacion justifica la decision administrativa."
   },
   {
     "id": 192,
-    "topic_num": 2,
-    "question": "Que camara puede retirar la confianza al Gobierno mediante mocion de censura?",
-    "option_a": "Consejo de Estado",
-    "option_b": "Congreso de los Diputados",
-    "option_c": "Senado",
-    "option_d": "Tribunal Constitucional",
+    "topic_num": 6,
+    "question": "Que comunicacion formal pone un acto administrativo en conocimiento de la persona interesada?",
+    "option_a": "Avocacion",
+    "option_b": "Notificacion",
+    "option_c": "Compulsa",
+    "option_d": "Alegacion",
     "correct": "B",
-    "explanation": "La responsabilidad politica del Gobierno se exige ante el Congreso."
+    "explanation": "La notificacion comunica el acto al interesado."
   },
   {
     "id": 193,
-    "topic_num": 2,
-    "question": "Que organo dirige la politica interior y exterior, la Administracion civil y militar y la defensa del Estado?",
-    "option_a": "Gobierno",
-    "option_b": "Senado",
-    "option_c": "Consejo General del Poder Judicial",
-    "option_d": "Tribunal de Cuentas",
+    "topic_num": 6,
+    "question": "Que vicio se produce en actos que lesionan derechos fundamentales?",
+    "option_a": "Nulidad de pleno derecho",
+    "option_b": "Anulabilidad leve",
+    "option_c": "Subsanacion automatica",
+    "option_d": "Silencio estimatorio obligatorio",
     "correct": "A",
-    "explanation": "La Constitucion atribuye esas funciones al Gobierno."
+    "explanation": "La lesion de derechos fundamentales determina nulidad de pleno derecho."
   },
   {
     "id": 194,
-    "topic_num": 2,
-    "question": "Quien propone al Rey el nombramiento y separacion de los ministros?",
-    "option_a": "Presidente del Congreso",
-    "option_b": "Defensor del Pueblo",
-    "option_c": "Presidente del Senado",
-    "option_d": "Presidente del Gobierno",
+    "topic_num": 6,
+    "question": "Que fase del procedimiento incluye pruebas, informes y audiencia?",
+    "option_a": "Terminacion",
+    "option_b": "Archivo definitivo inicial",
+    "option_c": "Ejecucion presupuestaria",
+    "option_d": "Instruccion",
     "correct": "D",
-    "explanation": "Corresponde al Presidente del Gobierno proponer el nombramiento y separacion de ministros."
+    "explanation": "La instruccion realiza los actos necesarios para determinar y comprobar datos."
   },
   {
     "id": 195,
-    "topic_num": 2,
-    "question": "Que mecanismo parlamentario permite exigir responsabilidad politica al Gobierno mediante candidato alternativo?",
-    "option_a": "Cuestion prejudicial",
-    "option_b": "Iniciativa legislativa popular",
-    "option_c": "Mocion de censura",
-    "option_d": "Recurso de amparo",
+    "topic_num": 6,
+    "question": "Que forma normal pone fin a un procedimiento administrativo resolviendo el fondo?",
+    "option_a": "Asiento contable",
+    "option_b": "Diligencia penal",
+    "option_c": "Resolucion",
+    "option_d": "Providencia bancaria",
     "correct": "C",
-    "explanation": "La mocion de censura espanola es constructiva y exige candidato alternativo."
+    "explanation": "La resolucion decide las cuestiones planteadas en el procedimiento."
   },
   {
     "id": 196,
-    "topic_num": 2,
-    "question": "Que entidades integran la organizacion territorial basica del Estado?",
-    "option_a": "Cabildos, islas y parroquias exclusivamente",
-    "option_b": "Municipios, provincias y comunidades autonomas",
-    "option_c": "Ministerios, juzgados y diputaciones",
-    "option_d": "Comarcas, partidos judiciales y distritos",
+    "topic_num": 6,
+    "question": "Que defecto permite impugnar un acto pero no lo hace nulo de pleno derecho?",
+    "option_a": "Cosa juzgada penal",
+    "option_b": "Anulabilidad",
+    "option_c": "Inexistencia fisica",
+    "option_d": "Derogacion constitucional",
     "correct": "B",
-    "explanation": "La Constitucion reconoce municipios, provincias y comunidades autonomas."
+    "explanation": "La anulabilidad cubre infracciones no incluidas en nulidad de pleno derecho."
   },
   {
     "id": 197,
-    "topic_num": 2,
-    "question": "Que principio constitucional reconoce autonomia para la gestion de intereses propios?",
-    "option_a": "Autonomia",
-    "option_b": "Jerarquia normativa",
-    "option_c": "Irretroactividad penal",
-    "option_d": "Unidad jurisdiccional",
-    "correct": "A",
-    "explanation": "La CE reconoce autonomia a municipios, provincias y comunidades autonomas."
+    "topic_num": 7,
+    "question": "Que norma basica regula la prevencion de riesgos laborales en Espana?",
+    "option_a": "Ley 9/2017",
+    "option_b": "Ley 31/1995",
+    "option_c": "Ley 7/1985",
+    "option_d": "Ley 39/2015",
+    "correct": "B",
+    "explanation": "La Ley 31/1995 es la norma basica de prevencion de riesgos laborales."
   },
   {
     "id": 198,
-    "topic_num": 2,
-    "question": "Que camara puede retirar la confianza al Gobierno mediante mocion de censura?",
-    "option_a": "Senado",
-    "option_b": "Tribunal Constitucional",
-    "option_c": "Consejo de Estado",
-    "option_d": "Congreso de los Diputados",
-    "correct": "D",
-    "explanation": "La responsabilidad politica del Gobierno se exige ante el Congreso."
+    "topic_num": 7,
+    "question": "Que principio preventivo exige eliminar el riesgo antes que proteger frente a el?",
+    "option_a": "Evitar los riesgos",
+    "option_b": "Transferir siempre el riesgo",
+    "option_c": "Asegurar solo economicamente",
+    "option_d": "Ignorar riesgos leves",
+    "correct": "A",
+    "explanation": "La accion preventiva empieza por evitar los riesgos."
   },
   {
     "id": 199,
-    "topic_num": 2,
-    "question": "Que organo dirige la politica interior y exterior, la Administracion civil y militar y la defensa del Estado?",
-    "option_a": "Consejo General del Poder Judicial",
-    "option_b": "Tribunal de Cuentas",
-    "option_c": "Gobierno",
-    "option_d": "Senado",
-    "correct": "C",
-    "explanation": "La Constitucion atribuye esas funciones al Gobierno."
+    "topic_num": 7,
+    "question": "Que actuacion identifica y valora peligros para la seguridad y salud de los trabajadores?",
+    "option_a": "Liquidacion tributaria",
+    "option_b": "Auditoria contable",
+    "option_c": "Recurso de alzada",
+    "option_d": "Evaluacion de riesgos",
+    "correct": "D",
+    "explanation": "La evaluacion de riesgos permite planificar la actividad preventiva."
   },
   {
     "id": 200,
-    "topic_num": 2,
-    "question": "Quien propone al Rey el nombramiento y separacion de los ministros?",
-    "option_a": "Presidente del Senado",
-    "option_b": "Presidente del Gobierno",
-    "option_c": "Presidente del Congreso",
-    "option_d": "Defensor del Pueblo",
-    "correct": "B",
-    "explanation": "Corresponde al Presidente del Gobierno proponer el nombramiento y separacion de ministros."
+    "topic_num": 7,
+    "question": "Que derecho tiene el trabajador en materia de seguridad y salud laboral?",
+    "option_a": "Secreto salarial absoluto",
+    "option_b": "Libre incumplimiento de instrucciones",
+    "option_c": "Proteccion eficaz",
+    "option_d": "Renuncia preventiva",
+    "correct": "C",
+    "explanation": "El trabajador tiene derecho a proteccion eficaz frente a riesgos laborales."
   },
   {
     "id": 201,
-    "topic_num": 2,
-    "question": "Que mecanismo parlamentario permite exigir responsabilidad politica al Gobierno mediante candidato alternativo?",
-    "option_a": "Mocion de censura",
-    "option_b": "Recurso de amparo",
-    "option_c": "Cuestion prejudicial",
-    "option_d": "Iniciativa legislativa popular",
-    "correct": "A",
-    "explanation": "La mocion de censura espanola es constructiva y exige candidato alternativo."
+    "topic_num": 7,
+    "question": "Que debe hacer el trabajador con los equipos de proteccion proporcionados?",
+    "option_a": "Modificar siempre su diseno",
+    "option_b": "Usarlos correctamente",
+    "option_c": "Venderlos",
+    "option_d": "Ignorarlos",
+    "correct": "B",
+    "explanation": "Los trabajadores deben usar adecuadamente medios y equipos de proteccion."
   },
   {
     "id": 202,
-    "topic_num": 2,
-    "question": "Que entidades integran la organizacion territorial basica del Estado?",
-    "option_a": "Ministerios, juzgados y diputaciones",
-    "option_b": "Comarcas, partidos judiciales y distritos",
-    "option_c": "Cabildos, islas y parroquias exclusivamente",
-    "option_d": "Municipios, provincias y comunidades autonomas",
-    "correct": "D",
-    "explanation": "La Constitucion reconoce municipios, provincias y comunidades autonomas."
+    "topic_num": 7,
+    "question": "Que concepto describe la posibilidad de que un trabajador sufra un dano derivado del trabajo?",
+    "option_a": "Riesgo laboral",
+    "option_b": "Padron laboral",
+    "option_c": "Credito horario",
+    "option_d": "Turno voluntario",
+    "correct": "A",
+    "explanation": "Riesgo laboral es la posibilidad de dano derivado del trabajo."
   },
   {
     "id": 203,
-    "topic_num": 2,
-    "question": "Que principio constitucional reconoce autonomia para la gestion de intereses propios?",
-    "option_a": "Irretroactividad penal",
-    "option_b": "Unidad jurisdiccional",
-    "option_c": "Autonomia",
-    "option_d": "Jerarquia normativa",
-    "correct": "C",
-    "explanation": "La CE reconoce autonomia a municipios, provincias y comunidades autonomas."
+    "topic_num": 8,
+    "question": "Que trato desfavorable por razon de sexo se produce de forma expresa y visible?",
+    "option_a": "Discriminacion indirecta",
+    "option_b": "Recusacion",
+    "option_c": "Prescripcion",
+    "option_d": "Discriminacion directa",
+    "correct": "D",
+    "explanation": "La discriminacion directa supone trato menos favorable por razon de sexo."
   },
   {
     "id": 204,
-    "topic_num": 2,
-    "question": "Que camara puede retirar la confianza al Gobierno mediante mocion de censura?",
-    "option_a": "Consejo de Estado",
-    "option_b": "Congreso de los Diputados",
-    "option_c": "Senado",
-    "option_d": "Tribunal Constitucional",
-    "correct": "B",
-    "explanation": "La responsabilidad politica del Gobierno se exige ante el Congreso."
+    "topic_num": 8,
+    "question": "Que discriminacion deriva de una medida aparentemente neutra con impacto desfavorable?",
+    "option_a": "Convalidacion",
+    "option_b": "Silencio administrativo",
+    "option_c": "Discriminacion indirecta",
+    "option_d": "Abstencion",
+    "correct": "C",
+    "explanation": "La discriminacion indirecta puede surgir de criterios aparentemente neutros."
   },
   {
     "id": 205,
-    "topic_num": 2,
-    "question": "Que organo dirige la politica interior y exterior, la Administracion civil y militar y la defensa del Estado?",
-    "option_a": "Gobierno",
-    "option_b": "Senado",
-    "option_c": "Consejo General del Poder Judicial",
-    "option_d": "Tribunal de Cuentas",
-    "correct": "A",
-    "explanation": "La Constitucion atribuye esas funciones al Gobierno."
+    "topic_num": 8,
+    "question": "Que instrumento empresarial ordena medidas para alcanzar igualdad de trato y oportunidades?",
+    "option_a": "Plan de backup",
+    "option_b": "Plan de igualdad",
+    "option_c": "Plan de tesoreria",
+    "option_d": "Plan de urbanismo",
+    "correct": "B",
+    "explanation": "Los planes de igualdad ordenan objetivos y medidas de igualdad."
   },
   {
     "id": 206,
-    "topic_num": 2,
-    "question": "Quien propone al Rey el nombramiento y separacion de los ministros?",
-    "option_a": "Presidente del Congreso",
-    "option_b": "Defensor del Pueblo",
-    "option_c": "Presidente del Senado",
-    "option_d": "Presidente del Gobierno",
-    "correct": "D",
-    "explanation": "Corresponde al Presidente del Gobierno proponer el nombramiento y separacion de ministros."
+    "topic_num": 8,
+    "question": "Que conducta verbal, no verbal o fisica de naturaleza sexual atenta contra la dignidad?",
+    "option_a": "Acoso sexual",
+    "option_b": "Acoso urbanistico",
+    "option_c": "Fraude de ley",
+    "option_d": "Enriquecimiento injusto",
+    "correct": "A",
+    "explanation": "El acoso sexual es una conducta de naturaleza sexual que crea entorno intimidatorio u ofensivo."
   },
   {
     "id": 207,
-    "topic_num": 2,
-    "question": "Que mecanismo parlamentario permite exigir responsabilidad politica al Gobierno mediante candidato alternativo?",
-    "option_a": "Cuestion prejudicial",
-    "option_b": "Iniciativa legislativa popular",
-    "option_c": "Mocion de censura",
-    "option_d": "Recurso de amparo",
-    "correct": "C",
-    "explanation": "La mocion de censura espanola es constructiva y exige candidato alternativo."
+    "topic_num": 8,
+    "question": "Que principio exige ausencia de discriminacion por sexo en empleo, formacion y promocion?",
+    "option_a": "Jerarquia contable",
+    "option_b": "Unidad de caja",
+    "option_c": "Devengo",
+    "option_d": "Igualdad de trato",
+    "correct": "D",
+    "explanation": "La igualdad de trato impide discriminacion directa o indirecta por sexo."
   },
   {
     "id": 208,
-    "topic_num": 2,
-    "question": "Que entidades integran la organizacion territorial basica del Estado?",
-    "option_a": "Cabildos, islas y parroquias exclusivamente",
-    "option_b": "Municipios, provincias y comunidades autonomas",
-    "option_c": "Ministerios, juzgados y diputaciones",
-    "option_d": "Comarcas, partidos judiciales y distritos",
-    "correct": "B",
-    "explanation": "La Constitucion reconoce municipios, provincias y comunidades autonomas."
+    "topic_num": 9,
+    "question": "Que permite acreditar la identidad del firmante en una firma electronica?",
+    "option_a": "Indice SQL",
+    "option_b": "Controlador MVC",
+    "option_c": "Hoja de estilos",
+    "option_d": "Certificado digital",
+    "correct": "D",
+    "explanation": "El certificado digital vincula identidad y claves criptograficas."
   },
   {
     "id": 209,
-    "topic_num": 2,
-    "question": "Que principio constitucional reconoce autonomia para la gestion de intereses propios?",
-    "option_a": "Autonomia",
-    "option_b": "Jerarquia normativa",
-    "option_c": "Irretroactividad penal",
-    "option_d": "Unidad jurisdiccional",
-    "correct": "A",
-    "explanation": "La CE reconoce autonomia a municipios, provincias y comunidades autonomas."
+    "topic_num": 9,
+    "question": "Que clave debe mantenerse secreta por el titular para firmar electronicamente?",
+    "option_a": "Certificado raiz",
+    "option_b": "Hash publicado",
+    "option_c": "Clave privada",
+    "option_d": "Clave publica",
+    "correct": "C",
+    "explanation": "La clave privada se protege y se usa para crear la firma."
   },
   {
     "id": 210,
-    "topic_num": 2,
-    "question": "Que camara puede retirar la confianza al Gobierno mediante mocion de censura?",
-    "option_a": "Senado",
-    "option_b": "Tribunal Constitucional",
-    "option_c": "Consejo de Estado",
-    "option_d": "Congreso de los Diputados",
-    "correct": "D",
-    "explanation": "La responsabilidad politica del Gobierno se exige ante el Congreso."
+    "topic_num": 9,
+    "question": "Que aplicacion se usa habitualmente para firmar documentos electronicamente en AAPP espanolas?",
+    "option_a": "Git stash",
+    "option_b": "AutoFirma",
+    "option_c": "pg_dump",
+    "option_d": "Bootstrap",
+    "correct": "B",
+    "explanation": "AutoFirma permite firmar con certificados digitales."
   },
   {
     "id": 211,
-    "topic_num": 2,
-    "question": "Que organo dirige la politica interior y exterior, la Administracion civil y militar y la defensa del Estado?",
-    "option_a": "Consejo General del Poder Judicial",
-    "option_b": "Tribunal de Cuentas",
-    "option_c": "Gobierno",
-    "option_d": "Senado",
-    "correct": "C",
-    "explanation": "La Constitucion atribuye esas funciones al Gobierno."
+    "topic_num": 9,
+    "question": "Que proceso comprueba que una firma electronica es valida y no ha sido alterada?",
+    "option_a": "Validacion de firma",
+    "option_b": "Normalizacion SQL",
+    "option_c": "Renderizado CSS",
+    "option_d": "Rebase interactivo",
+    "correct": "A",
+    "explanation": "Validar firma comprueba integridad, certificado y estado."
   },
   {
     "id": 212,
-    "topic_num": 2,
-    "question": "Quien propone al Rey el nombramiento y separacion de los ministros?",
-    "option_a": "Presidente del Senado",
-    "option_b": "Presidente del Gobierno",
-    "option_c": "Presidente del Congreso",
-    "option_d": "Defensor del Pueblo",
-    "correct": "B",
-    "explanation": "Corresponde al Presidente del Gobierno proponer el nombramiento y separacion de ministros."
+    "topic_num": 9,
+    "question": "Que servicio acredita el momento en que existia una firma o documento?",
+    "option_a": "Compilacion JIT",
+    "option_b": "Indexacion B-tree",
+    "option_c": "Model binding",
+    "option_d": "Sellado de tiempo",
+    "correct": "D",
+    "explanation": "El sellado de tiempo aporta evidencia temporal."
   },
   {
     "id": 213,
-    "topic_num": 3,
-    "question": "Que entidad local basica tiene personalidad juridica y plena capacidad para cumplir sus fines?",
-    "option_a": "Partido judicial",
-    "option_b": "Municipio",
-    "option_c": "Barrio",
-    "option_d": "Distrito censal",
-    "correct": "B",
-    "explanation": "La LRBRL define el municipio como entidad local basica."
+    "topic_num": 9,
+    "question": "Que tipo de firma electronica tiene maximas garantias juridicas con certificado cualificado y dispositivo cualificado?",
+    "option_a": "Firma anonima",
+    "option_b": "Firma por usuario invitado",
+    "option_c": "Firma cualificada",
+    "option_d": "Firma simple manuscrita escaneada",
+    "correct": "C",
+    "explanation": "La firma electronica cualificada tiene los requisitos reforzados del Reglamento eIDAS."
   },
   {
     "id": 214,
-    "topic_num": 3,
-    "question": "Que registro administrativo acredita la residencia y domicilio de los vecinos de un municipio?",
-    "option_a": "Padron municipal",
-    "option_b": "Registro Civil",
-    "option_c": "Inventario de bienes",
-    "option_d": "Libro de actas",
-    "correct": "A",
-    "explanation": "El padron municipal contiene los vecinos del municipio."
+    "topic_num": 10,
+    "question": "Que cifrado utiliza la misma clave para cifrar y descifrar?",
+    "option_a": "Hash sin clave",
+    "option_b": "Firma digital",
+    "option_c": "Cifrado simetrico",
+    "option_d": "Cifrado asimetrico",
+    "correct": "C",
+    "explanation": "El cifrado simetrico comparte una clave secreta."
   },
   {
     "id": 215,
-    "topic_num": 3,
-    "question": "Que organo municipal esta integrado por todos los concejales y presidido por el alcalde?",
-    "option_a": "Junta electoral",
-    "option_b": "Intervencion",
-    "option_c": "Tesoreria",
-    "option_d": "Pleno",
-    "correct": "D",
-    "explanation": "El Pleno lo forman los concejales y lo preside el alcalde."
+    "topic_num": 10,
+    "question": "Que cifrado utiliza un par de claves publica y privada?",
+    "option_a": "Codificacion Base64",
+    "option_b": "Cifrado asimetrico",
+    "option_c": "Cifrado simetrico",
+    "option_d": "Compresion ZIP",
+    "correct": "B",
+    "explanation": "El cifrado asimetrico usa clave publica y privada."
   },
   {
     "id": 216,
-    "topic_num": 3,
-    "question": "Que organo unipersonal dirige el gobierno y la administracion municipal?",
-    "option_a": "Interventor",
-    "option_b": "Tesorero",
-    "option_c": "Alcalde",
-    "option_d": "Secretario",
-    "correct": "C",
-    "explanation": "El alcalde dirige el gobierno y la administracion municipal."
+    "topic_num": 10,
+    "question": "Que infraestructura gestiona certificados, autoridades de certificacion y revocacion?",
+    "option_a": "PKI",
+    "option_b": "LINQ",
+    "option_c": "OData",
+    "option_d": "MVC",
+    "correct": "A",
+    "explanation": "La PKI organiza certificados y autoridades de certificacion."
   },
   {
     "id": 217,
-    "topic_num": 3,
-    "question": "Que entidad local agrupa municipios y tiene como fines la asistencia y cooperacion municipal?",
-    "option_a": "Distrito hipotecario",
-    "option_b": "Provincia",
-    "option_c": "Mancomunidad privada",
-    "option_d": "Comunidad de bienes",
-    "correct": "B",
-    "explanation": "La provincia garantiza solidaridad y asistencia a municipios."
+    "topic_num": 10,
+    "question": "Que entidad emite y firma certificados digitales?",
+    "option_a": "Router web",
+    "option_b": "Controlador API",
+    "option_c": "Repositorio Git",
+    "option_d": "Autoridad de certificacion",
+    "correct": "D",
+    "explanation": "La CA emite certificados y garantiza su vinculacion."
   },
   {
     "id": 218,
-    "topic_num": 3,
-    "question": "Que institucion gobierna y administra la provincia?",
-    "option_a": "Diputacion provincial",
-    "option_b": "Subdelegacion del Gobierno",
-    "option_c": "Audiencia Provincial",
-    "option_d": "Delegacion de Hacienda",
-    "correct": "A",
-    "explanation": "El gobierno y administracion autonoma de la provincia corresponde a la Diputacion u organos equivalentes."
+    "topic_num": 10,
+    "question": "Que protocolo cifra comunicaciones web usadas por HTTPS?",
+    "option_a": "FTP",
+    "option_b": "SMTP sin cifrar",
+    "option_c": "TLS",
+    "option_d": "PGP",
+    "correct": "C",
+    "explanation": "HTTPS funciona sobre TLS para cifrar la comunicacion."
   },
   {
     "id": 219,
-    "topic_num": 3,
-    "question": "Que entidad local basica tiene personalidad juridica y plena capacidad para cumplir sus fines?",
-    "option_a": "Barrio",
-    "option_b": "Distrito censal",
-    "option_c": "Partido judicial",
-    "option_d": "Municipio",
-    "correct": "D",
-    "explanation": "La LRBRL define el municipio como entidad local basica."
+    "topic_num": 10,
+    "question": "Que tecnologia se asocia historicamente al cifrado y firma de correo o ficheros mediante pares de claves?",
+    "option_a": "SIR",
+    "option_b": "PGP",
+    "option_c": "WCAG",
+    "option_d": "SCSP",
+    "correct": "B",
+    "explanation": "PGP permite cifrar y firmar informacion con criptografia de clave publica."
   },
   {
     "id": 220,
-    "topic_num": 3,
-    "question": "Que registro administrativo acredita la residencia y domicilio de los vecinos de un municipio?",
-    "option_a": "Inventario de bienes",
-    "option_b": "Libro de actas",
-    "option_c": "Padron municipal",
-    "option_d": "Registro Civil",
-    "correct": "C",
-    "explanation": "El padron municipal contiene los vecinos del municipio."
+    "topic_num": 11,
+    "question": "Que esquema fija principios y requisitos de seguridad para sistemas del sector publico?",
+    "option_a": "LINQ",
+    "option_b": "ENS",
+    "option_c": "OData",
+    "option_d": "Bootstrap",
+    "correct": "B",
+    "explanation": "El Esquema Nacional de Seguridad establece la politica de seguridad en medios electronicos."
   },
   {
     "id": 221,
-    "topic_num": 3,
-    "question": "Que organo municipal esta integrado por todos los concejales y presidido por el alcalde?",
-    "option_a": "Tesoreria",
-    "option_b": "Pleno",
-    "option_c": "Junta electoral",
-    "option_d": "Intervencion",
-    "correct": "B",
-    "explanation": "El Pleno lo forman los concejales y lo preside el alcalde."
+    "topic_num": 11,
+    "question": "Que documento define objetivos, organizacion y responsabilidades de seguridad?",
+    "option_a": "Politica de seguridad",
+    "option_b": "Plan de marketing",
+    "option_c": "Hoja de calculo",
+    "option_d": "Contrato menor",
+    "correct": "A",
+    "explanation": "La politica de seguridad ordena criterios y responsabilidades."
   },
   {
     "id": 222,
-    "topic_num": 3,
-    "question": "Que organo unipersonal dirige el gobierno y la administracion municipal?",
-    "option_a": "Alcalde",
-    "option_b": "Secretario",
-    "option_c": "Interventor",
-    "option_d": "Tesorero",
-    "correct": "A",
-    "explanation": "El alcalde dirige el gobierno y la administracion municipal."
+    "topic_num": 11,
+    "question": "Que actividad identifica amenazas, vulnerabilidades e impacto sobre la informacion?",
+    "option_a": "Rebase",
+    "option_b": "Model binding",
+    "option_c": "Empadronamiento",
+    "option_d": "Analisis de riesgos",
+    "correct": "D",
+    "explanation": "El analisis de riesgos permite seleccionar medidas adecuadas."
   },
   {
     "id": 223,
-    "topic_num": 3,
-    "question": "Que entidad local agrupa municipios y tiene como fines la asistencia y cooperacion municipal?",
-    "option_a": "Mancomunidad privada",
-    "option_b": "Comunidad de bienes",
-    "option_c": "Distrito hipotecario",
-    "option_d": "Provincia",
-    "correct": "D",
-    "explanation": "La provincia garantiza solidaridad y asistencia a municipios."
+    "topic_num": 11,
+    "question": "Que determina si un sistema ENS es de categoria basica, media o alta?",
+    "option_a": "Numero de pantallas",
+    "option_b": "Lenguaje de programacion",
+    "option_c": "Categoria del sistema",
+    "option_d": "Color de la interfaz",
+    "correct": "C",
+    "explanation": "La categoria se obtiene valorando dimensiones de seguridad."
   },
   {
     "id": 224,
-    "topic_num": 3,
-    "question": "Que institucion gobierna y administra la provincia?",
-    "option_a": "Audiencia Provincial",
-    "option_b": "Delegacion de Hacienda",
-    "option_c": "Diputacion provincial",
-    "option_d": "Subdelegacion del Gobierno",
-    "correct": "C",
-    "explanation": "El gobierno y administracion autonoma de la provincia corresponde a la Diputacion u organos equivalentes."
+    "topic_num": 11,
+    "question": "Que revisa periodicamente el cumplimiento de medidas de seguridad?",
+    "option_a": "Paginacion",
+    "option_b": "Auditoria",
+    "option_c": "Compilacion",
+    "option_d": "Minificacion",
+    "correct": "B",
+    "explanation": "La auditoria comprueba el cumplimiento del ENS."
   },
   {
     "id": 225,
-    "topic_num": 3,
-    "question": "Que entidad local basica tiene personalidad juridica y plena capacidad para cumplir sus fines?",
-    "option_a": "Partido judicial",
-    "option_b": "Municipio",
-    "option_c": "Barrio",
-    "option_d": "Distrito censal",
-    "correct": "B",
-    "explanation": "La LRBRL define el municipio como entidad local basica."
+    "topic_num": 11,
+    "question": "Que conjunto de controles se aplica para proteger informacion y servicios?",
+    "option_a": "Medidas de seguridad",
+    "option_b": "Estilos CSS",
+    "option_c": "Ramas Git",
+    "option_d": "Consultas LINQ",
+    "correct": "A",
+    "explanation": "Las medidas protegen confidencialidad, integridad, disponibilidad, autenticidad y trazabilidad."
   },
   {
     "id": 226,
-    "topic_num": 3,
-    "question": "Que registro administrativo acredita la residencia y domicilio de los vecinos de un municipio?",
-    "option_a": "Padron municipal",
-    "option_b": "Registro Civil",
-    "option_c": "Inventario de bienes",
-    "option_d": "Libro de actas",
+    "topic_num": 12,
+    "question": "Que reglamento europeo regula la proteccion de datos personales?",
+    "option_a": "RGPD",
+    "option_b": "ROF",
+    "option_c": "ENS",
+    "option_d": "PGP",
     "correct": "A",
-    "explanation": "El padron municipal contiene los vecinos del municipio."
+    "explanation": "El Reglamento UE 2016/679 es el RGPD."
   },
   {
     "id": 227,
-    "topic_num": 3,
-    "question": "Que organo municipal esta integrado por todos los concejales y presidido por el alcalde?",
-    "option_a": "Junta electoral",
-    "option_b": "Intervencion",
-    "option_c": "Tesoreria",
-    "option_d": "Pleno",
+    "topic_num": 12,
+    "question": "Como se llama la persona fisica identificada o identificable sobre la que trata la informacion?",
+    "option_a": "Encargado",
+    "option_b": "Delegado",
+    "option_c": "Autoridad de certificacion",
+    "option_d": "Interesado",
     "correct": "D",
-    "explanation": "El Pleno lo forman los concejales y lo preside el alcalde."
+    "explanation": "El interesado es la persona cuyos datos se tratan."
   },
   {
     "id": 228,
-    "topic_num": 3,
-    "question": "Que organo unipersonal dirige el gobierno y la administracion municipal?",
-    "option_a": "Interventor",
-    "option_b": "Tesorero",
-    "option_c": "Alcalde",
-    "option_d": "Secretario",
+    "topic_num": 12,
+    "question": "Quien decide los fines y medios del tratamiento de datos personales?",
+    "option_a": "Usuario anonimo",
+    "option_b": "Proveedor DNS",
+    "option_c": "Responsable del tratamiento",
+    "option_d": "Encargado del tratamiento",
     "correct": "C",
-    "explanation": "El alcalde dirige el gobierno y la administracion municipal."
+    "explanation": "El responsable determina fines y medios del tratamiento."
   },
   {
     "id": 229,
-    "topic_num": 3,
-    "question": "Que entidad local agrupa municipios y tiene como fines la asistencia y cooperacion municipal?",
-    "option_a": "Distrito hipotecario",
-    "option_b": "Provincia",
-    "option_c": "Mancomunidad privada",
-    "option_d": "Comunidad de bienes",
+    "topic_num": 12,
+    "question": "Quien trata datos personales por cuenta del responsable?",
+    "option_a": "Autoridad judicial siempre",
+    "option_b": "Encargado del tratamiento",
+    "option_c": "Responsable",
+    "option_d": "Afectado",
     "correct": "B",
-    "explanation": "La provincia garantiza solidaridad y asistencia a municipios."
+    "explanation": "El encargado trata datos siguiendo instrucciones del responsable."
   },
   {
     "id": 230,
-    "topic_num": 3,
-    "question": "Que institucion gobierna y administra la provincia?",
-    "option_a": "Diputacion provincial",
-    "option_b": "Subdelegacion del Gobierno",
-    "option_c": "Audiencia Provincial",
-    "option_d": "Delegacion de Hacienda",
+    "topic_num": 12,
+    "question": "Que principio exige tratar solo datos adecuados, pertinentes y necesarios?",
+    "option_a": "Minimizacion de datos",
+    "option_b": "Maximizacion documental",
+    "option_c": "Rebase",
+    "option_d": "Indexacion",
     "correct": "A",
-    "explanation": "El gobierno y administracion autonoma de la provincia corresponde a la Diputacion u organos equivalentes."
+    "explanation": "La minimizacion limita los datos a lo necesario."
   },
   {
     "id": 231,
-    "topic_num": 3,
-    "question": "Que entidad local basica tiene personalidad juridica y plena capacidad para cumplir sus fines?",
-    "option_a": "Barrio",
-    "option_b": "Distrito censal",
-    "option_c": "Partido judicial",
-    "option_d": "Municipio",
+    "topic_num": 12,
+    "question": "Que derecho permite obtener confirmacion de si se tratan datos personales propios?",
+    "option_a": "Derecho de tanteo",
+    "option_b": "Derecho de superficie",
+    "option_c": "Derecho de retracto",
+    "option_d": "Derecho de acceso",
     "correct": "D",
-    "explanation": "La LRBRL define el municipio como entidad local basica."
+    "explanation": "El derecho de acceso permite conocer el tratamiento de datos propios."
   },
   {
     "id": 232,
-    "topic_num": 3,
-    "question": "Que registro administrativo acredita la residencia y domicilio de los vecinos de un municipio?",
-    "option_a": "Inventario de bienes",
-    "option_b": "Libro de actas",
-    "option_c": "Padron municipal",
-    "option_d": "Registro Civil",
-    "correct": "C",
-    "explanation": "El padron municipal contiene los vecinos del municipio."
+    "topic_num": 13,
+    "question": "Que SGBD objeto-relacional de codigo abierto se estudia en el temario?",
+    "option_a": "Photoshop",
+    "option_b": "AutoFirma",
+    "option_c": "Bootstrap",
+    "option_d": "PostgreSQL",
+    "correct": "D",
+    "explanation": "PostgreSQL es el sistema de bases de datos del bloque."
   },
   {
     "id": 233,
-    "topic_num": 3,
-    "question": "Que organo municipal esta integrado por todos los concejales y presidido por el alcalde?",
-    "option_a": "Tesoreria",
-    "option_b": "Pleno",
-    "option_c": "Junta electoral",
-    "option_d": "Intervencion",
-    "correct": "B",
-    "explanation": "El Pleno lo forman los concejales y lo preside el alcalde."
+    "topic_num": 13,
+    "question": "Que puerto TCP utiliza PostgreSQL por defecto?",
+    "option_a": "443",
+    "option_b": "25",
+    "option_c": "5432",
+    "option_d": "80",
+    "correct": "C",
+    "explanation": "PostgreSQL escucha por defecto en el puerto 5432."
   },
   {
     "id": 234,
-    "topic_num": 3,
-    "question": "Que organo unipersonal dirige el gobierno y la administracion municipal?",
-    "option_a": "Alcalde",
-    "option_b": "Secretario",
-    "option_c": "Interventor",
-    "option_d": "Tesorero",
-    "correct": "A",
-    "explanation": "El alcalde dirige el gobierno y la administracion municipal."
+    "topic_num": 13,
+    "question": "Como se llama el conjunto de bases de datos gestionadas por una instancia PostgreSQL?",
+    "option_a": "Sede electronica",
+    "option_b": "Cluster",
+    "option_c": "Pull request",
+    "option_d": "RenderFragment",
+    "correct": "B",
+    "explanation": "Un cluster PostgreSQL agrupa bases de datos de una instancia."
   },
   {
     "id": 235,
-    "topic_num": 3,
-    "question": "Que entidad local agrupa municipios y tiene como fines la asistencia y cooperacion municipal?",
-    "option_a": "Mancomunidad privada",
-    "option_b": "Comunidad de bienes",
-    "option_c": "Distrito hipotecario",
-    "option_d": "Provincia",
-    "correct": "D",
-    "explanation": "La provincia garantiza solidaridad y asistencia a municipios."
+    "topic_num": 13,
+    "question": "Que proceso principal acepta conexiones y coordina procesos en PostgreSQL?",
+    "option_a": "Postmaster",
+    "option_b": "NavigationManager",
+    "option_c": "AutoFirma",
+    "option_d": "Kestrel siempre",
+    "correct": "A",
+    "explanation": "El proceso principal de PostgreSQL gestiona conexiones."
   },
   {
     "id": 236,
-    "topic_num": 3,
-    "question": "Que institucion gobierna y administra la provincia?",
-    "option_a": "Audiencia Provincial",
-    "option_b": "Delegacion de Hacienda",
-    "option_c": "Diputacion provincial",
-    "option_d": "Subdelegacion del Gobierno",
-    "correct": "C",
-    "explanation": "El gobierno y administracion autonoma de la provincia corresponde a la Diputacion u organos equivalentes."
+    "topic_num": 13,
+    "question": "Que registro garantiza durabilidad y recuperacion ante fallos en PostgreSQL?",
+    "option_a": "CSS",
+    "option_b": "JWT",
+    "option_c": "CSV",
+    "option_d": "WAL",
+    "correct": "D",
+    "explanation": "Write-Ahead Logging registra cambios antes de aplicarlos definitivamente."
   },
   {
     "id": 237,
-    "topic_num": 3,
-    "question": "Que entidad local basica tiene personalidad juridica y plena capacidad para cumplir sus fines?",
-    "option_a": "Partido judicial",
-    "option_b": "Municipio",
-    "option_c": "Barrio",
-    "option_d": "Distrito censal",
-    "correct": "B",
-    "explanation": "La LRBRL define el municipio como entidad local basica."
+    "topic_num": 13,
+    "question": "Que memoria compartida cachea paginas de datos en PostgreSQL?",
+    "option_a": "sessionStorage",
+    "option_b": "RenderTree",
+    "option_c": "shared buffers",
+    "option_d": "localStorage",
+    "correct": "C",
+    "explanation": "shared_buffers define memoria para cache de paginas de datos."
   },
   {
     "id": 238,
-    "topic_num": 3,
-    "question": "Que registro administrativo acredita la residencia y domicilio de los vecinos de un municipio?",
-    "option_a": "Padron municipal",
-    "option_b": "Registro Civil",
-    "option_c": "Inventario de bienes",
-    "option_d": "Libro de actas",
-    "correct": "A",
-    "explanation": "El padron municipal contiene los vecinos del municipio."
+    "topic_num": 14,
+    "question": "Que objeto PostgreSQL agrupa tablas, vistas y funciones dentro de una base de datos?",
+    "option_a": "Claim",
+    "option_b": "Cookie",
+    "option_c": "Schema",
+    "option_d": "Commit",
+    "correct": "C",
+    "explanation": "Los schemas organizan objetos dentro de una base de datos."
   },
   {
     "id": 239,
-    "topic_num": 4,
-    "question": "Que norma aprueba el texto refundido de disposiciones legales vigentes en materia de regimen local?",
-    "option_a": "Real Decreto Legislativo 781/1986",
-    "option_b": "Ley 39/2015",
-    "option_c": "Ley Organica 3/2018",
-    "option_d": "Real Decreto 203/2021",
-    "correct": "A",
-    "explanation": "El RDL 781/1986 aprueba el texto refundido de regimen local."
+    "topic_num": 14,
+    "question": "Que objeto almacena filas y columnas de datos?",
+    "option_a": "Index only",
+    "option_b": "Table",
+    "option_c": "Sequence",
+    "option_d": "Role",
+    "correct": "B",
+    "explanation": "Las tablas almacenan datos en filas y columnas."
   },
   {
     "id": 240,
-    "topic_num": 4,
-    "question": "Que significan las siglas ROF en regimen local?",
-    "option_a": "Registro Oficial de Funcionarios",
-    "option_b": "Reglamento Organico Fiscal",
-    "option_c": "Relacion Ordinaria de Funciones",
-    "option_d": "Reglamento de Organizacion, Funcionamiento y Regimen Juridico",
-    "correct": "D",
-    "explanation": "El ROF regula organizacion, funcionamiento y regimen juridico de entidades locales."
+    "topic_num": 14,
+    "question": "Que objeto representa una consulta almacenada que se usa como tabla virtual?",
+    "option_a": "View",
+    "option_b": "Role",
+    "option_c": "Trigger solamente",
+    "option_d": "Backup",
+    "correct": "A",
+    "explanation": "Una vista encapsula una consulta."
   },
   {
     "id": 241,
-    "topic_num": 4,
-    "question": "Que documento recoge formalmente lo tratado y acordado en una sesion de organo colegiado local?",
-    "option_a": "Edicto tributario",
-    "option_b": "Orden de pago",
-    "option_c": "Acta",
-    "option_d": "Padron",
-    "correct": "C",
-    "explanation": "El acta documenta asistentes, deliberaciones esenciales y acuerdos."
+    "topic_num": 14,
+    "question": "Que objeto genera valores numericos consecutivos habitualmente usados como claves?",
+    "option_a": "Schema",
+    "option_b": "Grant",
+    "option_c": "Policy",
+    "option_d": "Sequence",
+    "correct": "D",
+    "explanation": "Las secuencias generan numeros consecutivos."
   },
   {
     "id": 242,
-    "topic_num": 4,
-    "question": "Que tipo de norma local puede aprobar una entidad local dentro de sus competencias?",
-    "option_a": "Tratado internacional",
-    "option_b": "Ordenanza",
-    "option_c": "Ley organica",
-    "option_d": "Real decreto legislativo",
-    "correct": "B",
-    "explanation": "Las entidades locales pueden aprobar ordenanzas y reglamentos en su ambito competencial."
+    "topic_num": 14,
+    "question": "Que sentencia concede privilegios en PostgreSQL?",
+    "option_a": "EXPLAIN",
+    "option_b": "VACUUM",
+    "option_c": "GRANT",
+    "option_d": "ROLLBACK",
+    "correct": "C",
+    "explanation": "GRANT concede permisos sobre objetos."
   },
   {
     "id": 243,
-    "topic_num": 4,
-    "question": "Que requisito formal permite convocar validamente una sesion de un organo colegiado local?",
-    "option_a": "Convocatoria",
-    "option_b": "Empadronamiento",
-    "option_c": "Recurso de casacion",
-    "option_d": "Certificado digital cualificado",
-    "correct": "A",
-    "explanation": "La convocatoria comunica sesion, fecha, hora y asuntos a tratar."
+    "topic_num": 14,
+    "question": "Que entidad PostgreSQL puede representar usuarios o grupos y recibir permisos?",
+    "option_a": "Sequence",
+    "option_b": "Role",
+    "option_c": "View",
+    "option_d": "Table",
+    "correct": "B",
+    "explanation": "Los roles gestionan usuarios, grupos y privilegios."
   },
   {
     "id": 244,
-    "topic_num": 4,
-    "question": "Que expresion identifica el conjunto de reglas aplicables a organizacion y funcionamiento de entidades locales?",
-    "option_a": "Regimen hipotecario",
-    "option_b": "Regimen sancionador penal",
-    "option_c": "Regimen electoral europeo",
-    "option_d": "Regimen juridico local",
-    "correct": "D",
-    "explanation": "El regimen juridico local ordena competencias, organos, funcionamiento y actos locales."
+    "topic_num": 15,
+    "question": "Que instruccion inicia una transaccion explicita en PostgreSQL?",
+    "option_a": "GRANT",
+    "option_b": "BEGIN",
+    "option_c": "EXPLAIN",
+    "option_d": "VACUUM",
+    "correct": "B",
+    "explanation": "BEGIN abre una transaccion."
   },
   {
     "id": 245,
-    "topic_num": 4,
-    "question": "Que norma aprueba el texto refundido de disposiciones legales vigentes en materia de regimen local?",
-    "option_a": "Ley Organica 3/2018",
-    "option_b": "Real Decreto 203/2021",
-    "option_c": "Real Decreto Legislativo 781/1986",
-    "option_d": "Ley 39/2015",
-    "correct": "C",
-    "explanation": "El RDL 781/1986 aprueba el texto refundido de regimen local."
+    "topic_num": 15,
+    "question": "Que instruccion confirma los cambios de una transaccion?",
+    "option_a": "COMMIT",
+    "option_b": "ROLLBACK",
+    "option_c": "SAVEPOINT",
+    "option_d": "SELECT",
+    "correct": "A",
+    "explanation": "COMMIT hace permanentes los cambios."
   },
   {
     "id": 246,
-    "topic_num": 4,
-    "question": "Que significan las siglas ROF en regimen local?",
-    "option_a": "Relacion Ordinaria de Funciones",
-    "option_b": "Reglamento de Organizacion, Funcionamiento y Regimen Juridico",
-    "option_c": "Registro Oficial de Funcionarios",
-    "option_d": "Reglamento Organico Fiscal",
-    "correct": "B",
-    "explanation": "El ROF regula organizacion, funcionamiento y regimen juridico de entidades locales."
+    "topic_num": 15,
+    "question": "Que instruccion deshace los cambios de una transaccion?",
+    "option_a": "COMMIT",
+    "option_b": "GRANT",
+    "option_c": "ANALYZE",
+    "option_d": "ROLLBACK",
+    "correct": "D",
+    "explanation": "ROLLBACK cancela la transaccion."
   },
   {
     "id": 247,
-    "topic_num": 4,
-    "question": "Que documento recoge formalmente lo tratado y acordado en una sesion de organo colegiado local?",
-    "option_a": "Acta",
-    "option_b": "Padron",
-    "option_c": "Edicto tributario",
-    "option_d": "Orden de pago",
-    "correct": "A",
-    "explanation": "El acta documenta asistentes, deliberaciones esenciales y acuerdos."
+    "topic_num": 15,
+    "question": "Que propiedad ACID evita resultados parciales de una transaccion?",
+    "option_a": "Aislamiento",
+    "option_b": "Indexacion",
+    "option_c": "Atomicidad",
+    "option_d": "Durabilidad",
+    "correct": "C",
+    "explanation": "La atomicidad implica todo o nada."
   },
   {
     "id": 248,
-    "topic_num": 4,
-    "question": "Que tipo de norma local puede aprobar una entidad local dentro de sus competencias?",
-    "option_a": "Ley organica",
-    "option_b": "Real decreto legislativo",
-    "option_c": "Tratado internacional",
-    "option_d": "Ordenanza",
-    "correct": "D",
-    "explanation": "Las entidades locales pueden aprobar ordenanzas y reglamentos en su ambito competencial."
+    "topic_num": 15,
+    "question": "Que propiedad ACID garantiza que los cambios confirmados sobreviven a fallos?",
+    "option_a": "Polimorfismo",
+    "option_b": "Durabilidad",
+    "option_c": "Atomicidad",
+    "option_d": "Consistencia visual",
+    "correct": "B",
+    "explanation": "La durabilidad conserva cambios confirmados."
   },
   {
     "id": 249,
-    "topic_num": 4,
-    "question": "Que requisito formal permite convocar validamente una sesion de un organo colegiado local?",
-    "option_a": "Recurso de casacion",
-    "option_b": "Certificado digital cualificado",
-    "option_c": "Convocatoria",
-    "option_d": "Empadronamiento",
-    "correct": "C",
-    "explanation": "La convocatoria comunica sesion, fecha, hora y asuntos a tratar."
+    "topic_num": 15,
+    "question": "Que tecnica de PostgreSQL permite concurrencia manteniendo multiples versiones de filas?",
+    "option_a": "MVCC",
+    "option_b": "MVC",
+    "option_c": "WCAG",
+    "option_d": "PKI",
+    "correct": "A",
+    "explanation": "MVCC significa Multi-Version Concurrency Control."
   },
   {
     "id": 250,
-    "topic_num": 4,
-    "question": "Que expresion identifica el conjunto de reglas aplicables a organizacion y funcionamiento de entidades locales?",
-    "option_a": "Regimen electoral europeo",
-    "option_b": "Regimen juridico local",
-    "option_c": "Regimen hipotecario",
-    "option_d": "Regimen sancionador penal",
-    "correct": "B",
-    "explanation": "El regimen juridico local ordena competencias, organos, funcionamiento y actos locales."
+    "topic_num": 16,
+    "question": "Que cliente de linea de comandos permite ejecutar SQL contra PostgreSQL?",
+    "option_a": "psql",
+    "option_b": "pg_dump",
+    "option_c": "pg_restore",
+    "option_d": "AutoFirma",
+    "correct": "A",
+    "explanation": "psql es el cliente interactivo de PostgreSQL."
   },
   {
     "id": 251,
-    "topic_num": 4,
-    "question": "Que norma aprueba el texto refundido de disposiciones legales vigentes en materia de regimen local?",
-    "option_a": "Real Decreto Legislativo 781/1986",
-    "option_b": "Ley 39/2015",
-    "option_c": "Ley Organica 3/2018",
-    "option_d": "Real Decreto 203/2021",
-    "correct": "A",
-    "explanation": "El RDL 781/1986 aprueba el texto refundido de regimen local."
+    "topic_num": 16,
+    "question": "Que herramienta crea copias logicas de seguridad de bases PostgreSQL?",
+    "option_a": "psql",
+    "option_b": "VACUUM",
+    "option_c": "git push",
+    "option_d": "pg_dump",
+    "correct": "D",
+    "explanation": "pg_dump exporta una base de datos."
   },
   {
     "id": 252,
-    "topic_num": 4,
-    "question": "Que significan las siglas ROF en regimen local?",
-    "option_a": "Registro Oficial de Funcionarios",
-    "option_b": "Reglamento Organico Fiscal",
-    "option_c": "Relacion Ordinaria de Funciones",
-    "option_d": "Reglamento de Organizacion, Funcionamiento y Regimen Juridico",
-    "correct": "D",
-    "explanation": "El ROF regula organizacion, funcionamiento y regimen juridico de entidades locales."
+    "topic_num": 16,
+    "question": "Que herramienta restaura copias en formato personalizado o directorio?",
+    "option_a": "COPY",
+    "option_b": "EXPLAIN",
+    "option_c": "pg_restore",
+    "option_d": "pg_dump",
+    "correct": "C",
+    "explanation": "pg_restore restaura backups creados con pg_dump en ciertos formatos."
   },
   {
     "id": 253,
-    "topic_num": 4,
-    "question": "Que documento recoge formalmente lo tratado y acordado en una sesion de organo colegiado local?",
-    "option_a": "Edicto tributario",
-    "option_b": "Orden de pago",
-    "option_c": "Acta",
-    "option_d": "Padron",
-    "correct": "C",
-    "explanation": "El acta documenta asistentes, deliberaciones esenciales y acuerdos."
+    "topic_num": 16,
+    "question": "Que instruccion importa o exporta datos entre tablas y ficheros?",
+    "option_a": "REBASE",
+    "option_b": "COPY",
+    "option_c": "GRANT",
+    "option_d": "BEGIN",
+    "correct": "B",
+    "explanation": "COPY transfiere datos entre tablas y archivos."
   },
   {
     "id": 254,
-    "topic_num": 4,
-    "question": "Que tipo de norma local puede aprobar una entidad local dentro de sus competencias?",
-    "option_a": "Tratado internacional",
-    "option_b": "Ordenanza",
-    "option_c": "Ley organica",
-    "option_d": "Real decreto legislativo",
-    "correct": "B",
-    "explanation": "Las entidades locales pueden aprobar ordenanzas y reglamentos en su ambito competencial."
+    "topic_num": 16,
+    "question": "Que formato de texto separado por comas se usa a menudo para importar y exportar datos?",
+    "option_a": "CSV",
+    "option_b": "JWT",
+    "option_c": "CSS",
+    "option_d": "PDF firmado",
+    "correct": "A",
+    "explanation": "CSV es habitual para intercambio tabular."
   },
   {
     "id": 255,
-    "topic_num": 4,
-    "question": "Que requisito formal permite convocar validamente una sesion de un organo colegiado local?",
-    "option_a": "Convocatoria",
-    "option_b": "Empadronamiento",
-    "option_c": "Recurso de casacion",
-    "option_d": "Certificado digital cualificado",
-    "correct": "A",
-    "explanation": "La convocatoria comunica sesion, fecha, hora y asuntos a tratar."
+    "topic_num": 16,
+    "question": "Que herramienta grafica se usa frecuentemente para administrar PostgreSQL?",
+    "option_a": "AutoFirma",
+    "option_b": "Visual Studio Code exclusivamente",
+    "option_c": "Cl@ve",
+    "option_d": "pgAdmin",
+    "correct": "D",
+    "explanation": "pgAdmin es una herramienta grafica de administracion PostgreSQL."
   },
   {
     "id": 256,
-    "topic_num": 4,
-    "question": "Que expresion identifica el conjunto de reglas aplicables a organizacion y funcionamiento de entidades locales?",
-    "option_a": "Regimen hipotecario",
-    "option_b": "Regimen sancionador penal",
-    "option_c": "Regimen electoral europeo",
-    "option_d": "Regimen juridico local",
+    "topic_num": 17,
+    "question": "Que sentencia muestra el plan de ejecucion estimado de una consulta?",
+    "option_a": "COMMIT",
+    "option_b": "GRANT",
+    "option_c": "COPY",
+    "option_d": "EXPLAIN",
     "correct": "D",
-    "explanation": "El regimen juridico local ordena competencias, organos, funcionamiento y actos locales."
+    "explanation": "EXPLAIN muestra el plan de ejecucion."
   },
   {
     "id": 257,
-    "topic_num": 4,
-    "question": "Que norma aprueba el texto refundido de disposiciones legales vigentes en materia de regimen local?",
-    "option_a": "Ley Organica 3/2018",
-    "option_b": "Real Decreto 203/2021",
-    "option_c": "Real Decreto Legislativo 781/1986",
-    "option_d": "Ley 39/2015",
+    "topic_num": 17,
+    "question": "Que variante ejecuta realmente la consulta y muestra tiempos reales?",
+    "option_a": "ROLLBACK ANALYZE",
+    "option_b": "GRANT ANALYZE",
+    "option_c": "EXPLAIN ANALYZE",
+    "option_d": "EXPLAIN ONLY",
     "correct": "C",
-    "explanation": "El RDL 781/1986 aprueba el texto refundido de regimen local."
+    "explanation": "EXPLAIN ANALYZE ejecuta y mide."
   },
   {
     "id": 258,
-    "topic_num": 4,
-    "question": "Que significan las siglas ROF en regimen local?",
-    "option_a": "Relacion Ordinaria de Funciones",
-    "option_b": "Reglamento de Organizacion, Funcionamiento y Regimen Juridico",
-    "option_c": "Registro Oficial de Funcionarios",
-    "option_d": "Reglamento Organico Fiscal",
+    "topic_num": 17,
+    "question": "Que estructura acelera busquedas a cambio de espacio y coste de escritura?",
+    "option_a": "Schema",
+    "option_b": "Indice",
+    "option_c": "Vista sin materializar siempre",
+    "option_d": "Rol",
     "correct": "B",
-    "explanation": "El ROF regula organizacion, funcionamiento y regimen juridico de entidades locales."
+    "explanation": "Los indices mejoran lecturas concretas."
   },
   {
     "id": 259,
-    "topic_num": 4,
-    "question": "Que documento recoge formalmente lo tratado y acordado en una sesion de organo colegiado local?",
-    "option_a": "Acta",
-    "option_b": "Padron",
-    "option_c": "Edicto tributario",
-    "option_d": "Orden de pago",
+    "topic_num": 17,
+    "question": "Que tipo de indice es el mas habitual para igualdad y rangos en PostgreSQL?",
+    "option_a": "B-tree",
+    "option_b": "JWT",
+    "option_c": "WCAG",
+    "option_d": "CSV",
     "correct": "A",
-    "explanation": "El acta documenta asistentes, deliberaciones esenciales y acuerdos."
+    "explanation": "B-tree es el tipo por defecto y mas comun."
   },
   {
     "id": 260,
-    "topic_num": 4,
-    "question": "Que tipo de norma local puede aprobar una entidad local dentro de sus competencias?",
-    "option_a": "Ley organica",
-    "option_b": "Real decreto legislativo",
-    "option_c": "Tratado internacional",
-    "option_d": "Ordenanza",
+    "topic_num": 17,
+    "question": "Que operacion recopila estadisticas para el planificador?",
+    "option_a": "COMMIT",
+    "option_b": "SAVEPOINT",
+    "option_c": "GRANT",
+    "option_d": "ANALYZE",
     "correct": "D",
-    "explanation": "Las entidades locales pueden aprobar ordenanzas y reglamentos en su ambito competencial."
+    "explanation": "ANALYZE actualiza estadisticas."
   },
   {
     "id": 261,
-    "topic_num": 4,
-    "question": "Que requisito formal permite convocar validamente una sesion de un organo colegiado local?",
-    "option_a": "Recurso de casacion",
-    "option_b": "Certificado digital cualificado",
-    "option_c": "Convocatoria",
-    "option_d": "Empadronamiento",
+    "topic_num": 17,
+    "question": "Que operacion limpia tuplas muertas y ayuda a controlar el bloat?",
+    "option_a": "FETCH",
+    "option_b": "PUSH",
+    "option_c": "VACUUM",
+    "option_d": "ROLLBACK",
     "correct": "C",
-    "explanation": "La convocatoria comunica sesion, fecha, hora y asuntos a tratar."
+    "explanation": "VACUUM recupera espacio reutilizable y mantiene la salud de tablas."
   },
   {
     "id": 262,
-    "topic_num": 4,
-    "question": "Que expresion identifica el conjunto de reglas aplicables a organizacion y funcionamiento de entidades locales?",
-    "option_a": "Regimen electoral europeo",
-    "option_b": "Regimen juridico local",
-    "option_c": "Regimen hipotecario",
-    "option_d": "Regimen sancionador penal",
-    "correct": "B",
-    "explanation": "El regimen juridico local ordena competencias, organos, funcionamiento y actos locales."
+    "topic_num": 18,
+    "question": "Que palabra clave declara una clase en C#?",
+    "option_a": "branch",
+    "option_b": "route",
+    "option_c": "class",
+    "option_d": "select",
+    "correct": "C",
+    "explanation": "class declara una clase."
   },
   {
     "id": 263,
-    "topic_num": 4,
-    "question": "Que norma aprueba el texto refundido de disposiciones legales vigentes en materia de regimen local?",
-    "option_a": "Real Decreto Legislativo 781/1986",
-    "option_b": "Ley 39/2015",
-    "option_c": "Ley Organica 3/2018",
-    "option_d": "Real Decreto 203/2021",
-    "correct": "A",
-    "explanation": "El RDL 781/1986 aprueba el texto refundido de regimen local."
+    "topic_num": 18,
+    "question": "Que bloque captura excepciones en C#?",
+    "option_a": "return",
+    "option_b": "catch",
+    "option_c": "foreach",
+    "option_d": "namespace",
+    "correct": "B",
+    "explanation": "catch captura excepciones lanzadas en un try."
   },
   {
     "id": 264,
-    "topic_num": 4,
-    "question": "Que significan las siglas ROF en regimen local?",
-    "option_a": "Registro Oficial de Funcionarios",
-    "option_b": "Reglamento Organico Fiscal",
-    "option_c": "Relacion Ordinaria de Funciones",
-    "option_d": "Reglamento de Organizacion, Funcionamiento y Regimen Juridico",
-    "correct": "D",
-    "explanation": "El ROF regula organizacion, funcionamiento y regimen juridico de entidades locales."
+    "topic_num": 18,
+    "question": "Que palabra clave permite implementar una interfaz en una clase?",
+    "option_a": ":",
+    "option_b": "implements",
+    "option_c": "extends",
+    "option_d": "using as always",
+    "correct": "A",
+    "explanation": "En C# se usa dos puntos para herencia e implementacion."
   },
   {
     "id": 265,
-    "topic_num": 5,
-    "question": "Como se denomina la persona que promueve un procedimiento administrativo por ser titular de derechos o intereses legitimos?",
-    "option_a": "Fedatario",
-    "option_b": "Licitador",
-    "option_c": "Administrador concursal",
-    "option_d": "Interesado",
+    "topic_num": 18,
+    "question": "Que instruccion recorre una coleccion elemento a elemento?",
+    "option_a": "switch",
+    "option_b": "throw",
+    "option_c": "lock",
+    "option_d": "foreach",
     "correct": "D",
-    "explanation": "La Ley 39/2015 regula la condicion de interesado."
+    "explanation": "foreach itera sobre colecciones enumerables."
   },
   {
     "id": 266,
-    "topic_num": 5,
-    "question": "Que figura permite actuar ante la Administracion en nombre de otra persona?",
-    "option_a": "Abstencion",
-    "option_b": "Convalidacion",
-    "option_c": "Representacion",
-    "option_d": "Recusacion",
+    "topic_num": 18,
+    "question": "Que mecanismo permite definir tipos reutilizables con parametros de tipo?",
+    "option_a": "Comentarios XML",
+    "option_b": "Directivas using",
+    "option_c": "Genericos",
+    "option_d": "Namespaces",
     "correct": "C",
-    "explanation": "La representacion acredita que una persona actua por otra."
+    "explanation": "Los genericos permiten clases y metodos parametrizados por tipo."
   },
   {
     "id": 267,
-    "topic_num": 5,
-    "question": "Que sistema permite presentar solicitudes, escritos y comunicaciones ante la Administracion?",
-    "option_a": "Registro mercantil privado",
-    "option_b": "Registro administrativo",
-    "option_c": "Padron electoral",
-    "option_d": "Inventario contable",
+    "topic_num": 18,
+    "question": "Que miembro expone datos de una clase mediante get y set?",
+    "option_a": "Paquete NuGet",
+    "option_b": "Propiedad",
+    "option_c": "Namespace",
+    "option_d": "Assembly",
     "correct": "B",
-    "explanation": "Los registros administrativos reciben y anotan documentos dirigidos a la Administracion."
+    "explanation": "Las propiedades encapsulan acceso a datos."
   },
   {
     "id": 268,
-    "topic_num": 5,
-    "question": "Como se computan normalmente los plazos expresados en dias en la Ley 39/2015 si no se indica otra cosa?",
-    "option_a": "Dias habiles",
-    "option_b": "Dias naturales",
-    "option_c": "Solo sabados",
-    "option_d": "Solo dias lectivos",
-    "correct": "A",
-    "explanation": "Si la norma no dice otra cosa, los plazos por dias son habiles."
+    "topic_num": 19,
+    "question": "En MVC, que componente recibe la peticion y coordina la respuesta?",
+    "option_a": "Migracion",
+    "option_b": "Controlador",
+    "option_c": "Vista",
+    "option_d": "Modelo",
+    "correct": "B",
+    "explanation": "El controlador procesa la entrada y devuelve resultados."
   },
   {
     "id": 269,
-    "topic_num": 5,
-    "question": "Que medio permite registrar documentos por via telematica?",
-    "option_a": "Libro de caja",
-    "option_b": "Indice B-tree",
-    "option_c": "Repositorio Git",
-    "option_d": "Registro electronico",
-    "correct": "D",
-    "explanation": "El registro electronico permite la presentacion electronica de documentos."
+    "topic_num": 19,
+    "question": "En MVC, que componente representa datos y reglas de negocio?",
+    "option_a": "Modelo",
+    "option_b": "Vista",
+    "option_c": "Controlador",
+    "option_d": "Layout",
+    "correct": "A",
+    "explanation": "El modelo contiene datos y logica de dominio."
   },
   {
     "id": 270,
-    "topic_num": 5,
-    "question": "Que capacidad permite comparecer y actuar validamente ante las Administraciones Publicas?",
-    "option_a": "Capacidad procesal penal",
-    "option_b": "Capacidad de endeudamiento",
-    "option_c": "Capacidad de obrar",
-    "option_d": "Capacidad contributiva exclusivamente",
-    "correct": "C",
-    "explanation": "La Ley 39/2015 regula quienes tienen capacidad de obrar ante las AAPP."
+    "topic_num": 19,
+    "question": "En MVC, que componente genera la interfaz presentada al usuario?",
+    "option_a": "Modelo",
+    "option_b": "Controlador",
+    "option_c": "Repositorio remoto",
+    "option_d": "Vista",
+    "correct": "D",
+    "explanation": "La vista renderiza la salida."
   },
   {
     "id": 271,
-    "topic_num": 5,
-    "question": "Como se denomina la persona que promueve un procedimiento administrativo por ser titular de derechos o intereses legitimos?",
-    "option_a": "Administrador concursal",
-    "option_b": "Interesado",
-    "option_c": "Fedatario",
-    "option_d": "Licitador",
-    "correct": "B",
-    "explanation": "La Ley 39/2015 regula la condicion de interesado."
+    "topic_num": 19,
+    "question": "Que motor de plantillas se usa habitualmente en ASP.NET Core MVC?",
+    "option_a": "Twig",
+    "option_b": "Blade exclusivamente",
+    "option_c": "Razor",
+    "option_d": "Jinja",
+    "correct": "C",
+    "explanation": "Razor combina HTML y C#."
   },
   {
     "id": 272,
-    "topic_num": 5,
-    "question": "Que figura permite actuar ante la Administracion en nombre de otra persona?",
-    "option_a": "Representacion",
-    "option_b": "Recusacion",
-    "option_c": "Abstencion",
-    "option_d": "Convalidacion",
-    "correct": "A",
-    "explanation": "La representacion acredita que una persona actua por otra."
+    "topic_num": 19,
+    "question": "Que framework CSS proporciona rejilla responsive y componentes?",
+    "option_a": "Git",
+    "option_b": "Bootstrap",
+    "option_c": "PostgreSQL",
+    "option_d": "AutoFirma",
+    "correct": "B",
+    "explanation": "Bootstrap facilita interfaces responsive."
   },
   {
     "id": 273,
-    "topic_num": 5,
-    "question": "Que sistema permite presentar solicitudes, escritos y comunicaciones ante la Administracion?",
-    "option_a": "Padron electoral",
-    "option_b": "Inventario contable",
-    "option_c": "Registro mercantil privado",
-    "option_d": "Registro administrativo",
-    "correct": "D",
-    "explanation": "Los registros administrativos reciben y anotan documentos dirigidos a la Administracion."
+    "topic_num": 19,
+    "question": "Que archivo o plantilla suele definir estructura comun de varias vistas?",
+    "option_a": "Layout",
+    "option_b": "DbContext",
+    "option_c": "Controller",
+    "option_d": "Migration",
+    "correct": "A",
+    "explanation": "El layout comparte cabecera, menu y estructura."
   },
   {
     "id": 274,
-    "topic_num": 5,
-    "question": "Como se computan normalmente los plazos expresados en dias en la Ley 39/2015 si no se indica otra cosa?",
-    "option_a": "Solo sabados",
-    "option_b": "Solo dias lectivos",
-    "option_c": "Dias habiles",
-    "option_d": "Dias naturales",
-    "correct": "C",
-    "explanation": "Si la norma no dice otra cosa, los plazos por dias son habiles."
+    "topic_num": 20,
+    "question": "Que clase representa la sesion de trabajo con la base de datos en EF Core?",
+    "option_a": "DbContext",
+    "option_b": "DbSet",
+    "option_c": "Controller",
+    "option_d": "EditForm",
+    "correct": "A",
+    "explanation": "DbContext coordina consultas y persistencia."
   },
   {
     "id": 275,
-    "topic_num": 5,
-    "question": "Que medio permite registrar documentos por via telematica?",
-    "option_a": "Repositorio Git",
-    "option_b": "Registro electronico",
-    "option_c": "Libro de caja",
-    "option_d": "Indice B-tree",
-    "correct": "B",
-    "explanation": "El registro electronico permite la presentacion electronica de documentos."
+    "topic_num": 20,
+    "question": "Que propiedad representa una coleccion consultable de entidades?",
+    "option_a": "DbContext",
+    "option_b": "Migration",
+    "option_c": "Claim",
+    "option_d": "DbSet",
+    "correct": "D",
+    "explanation": "DbSet representa entidades de un tipo."
   },
   {
     "id": 276,
-    "topic_num": 5,
-    "question": "Que capacidad permite comparecer y actuar validamente ante las Administraciones Publicas?",
-    "option_a": "Capacidad de obrar",
-    "option_b": "Capacidad contributiva exclusivamente",
-    "option_c": "Capacidad procesal penal",
-    "option_d": "Capacidad de endeudamiento",
-    "correct": "A",
-    "explanation": "La Ley 39/2015 regula quienes tienen capacidad de obrar ante las AAPP."
+    "topic_num": 20,
+    "question": "Que metodo guarda en base de datos los cambios pendientes?",
+    "option_a": "NavigateTo",
+    "option_b": "Authorize",
+    "option_c": "SaveChanges",
+    "option_d": "AddScoped",
+    "correct": "C",
+    "explanation": "SaveChanges persiste cambios rastreados."
   },
   {
     "id": 277,
-    "topic_num": 5,
-    "question": "Como se denomina la persona que promueve un procedimiento administrativo por ser titular de derechos o intereses legitimos?",
-    "option_a": "Fedatario",
-    "option_b": "Licitador",
-    "option_c": "Administrador concursal",
-    "option_d": "Interesado",
-    "correct": "D",
-    "explanation": "La Ley 39/2015 regula la condicion de interesado."
+    "topic_num": 20,
+    "question": "Que mecanismo versiona cambios del modelo al esquema de base de datos?",
+    "option_a": "RenderFragments",
+    "option_b": "Migraciones",
+    "option_c": "Claims",
+    "option_d": "Stash",
+    "correct": "B",
+    "explanation": "Las migraciones aplican cambios de esquema."
   },
   {
     "id": 278,
-    "topic_num": 5,
-    "question": "Que figura permite actuar ante la Administracion en nombre de otra persona?",
-    "option_a": "Abstencion",
-    "option_b": "Convalidacion",
-    "option_c": "Representacion",
-    "option_d": "Recusacion",
-    "correct": "C",
-    "explanation": "La representacion acredita que una persona actua por otra."
+    "topic_num": 20,
+    "question": "Que enfoque parte de clases C# para generar o actualizar la base de datos?",
+    "option_a": "Code First",
+    "option_b": "Database Last",
+    "option_c": "View Only",
+    "option_d": "Static First",
+    "correct": "A",
+    "explanation": "Code First define el modelo en codigo."
   },
   {
     "id": 279,
-    "topic_num": 5,
-    "question": "Que sistema permite presentar solicitudes, escritos y comunicaciones ante la Administracion?",
-    "option_a": "Registro mercantil privado",
-    "option_b": "Registro administrativo",
-    "option_c": "Padron electoral",
-    "option_d": "Inventario contable",
-    "correct": "B",
-    "explanation": "Los registros administrativos reciben y anotan documentos dirigidos a la Administracion."
+    "topic_num": 20,
+    "question": "Que caracteristica recuerda cambios en entidades cargadas para persistirlos?",
+    "option_a": "Model binding",
+    "option_b": "Routing",
+    "option_c": "Hashing",
+    "option_d": "Change tracking",
+    "correct": "D",
+    "explanation": "El seguimiento de cambios detecta modificaciones de entidades."
   },
   {
     "id": 280,
-    "topic_num": 5,
-    "question": "Como se computan normalmente los plazos expresados en dias en la Ley 39/2015 si no se indica otra cosa?",
-    "option_a": "Dias habiles",
-    "option_b": "Dias naturales",
-    "option_c": "Solo sabados",
-    "option_d": "Solo dias lectivos",
-    "correct": "A",
-    "explanation": "Si la norma no dice otra cosa, los plazos por dias son habiles."
+    "topic_num": 21,
+    "question": "Que operador LINQ filtra elementos por una condicion?",
+    "option_a": "Select",
+    "option_b": "OrderBy",
+    "option_c": "Join",
+    "option_d": "Where",
+    "correct": "D",
+    "explanation": "Where aplica un predicado."
   },
   {
     "id": 281,
-    "topic_num": 5,
-    "question": "Que medio permite registrar documentos por via telematica?",
-    "option_a": "Libro de caja",
-    "option_b": "Indice B-tree",
-    "option_c": "Repositorio Git",
-    "option_d": "Registro electronico",
-    "correct": "D",
-    "explanation": "El registro electronico permite la presentacion electronica de documentos."
+    "topic_num": 21,
+    "question": "Que operador LINQ transforma cada elemento en otra forma?",
+    "option_a": "GroupBy",
+    "option_b": "Skip",
+    "option_c": "Select",
+    "option_d": "Where",
+    "correct": "C",
+    "explanation": "Select realiza proyecciones."
   },
   {
     "id": 282,
-    "topic_num": 5,
-    "question": "Que capacidad permite comparecer y actuar validamente ante las Administraciones Publicas?",
-    "option_a": "Capacidad procesal penal",
-    "option_b": "Capacidad de endeudamiento",
-    "option_c": "Capacidad de obrar",
-    "option_d": "Capacidad contributiva exclusivamente",
-    "correct": "C",
-    "explanation": "La Ley 39/2015 regula quienes tienen capacidad de obrar ante las AAPP."
+    "topic_num": 21,
+    "question": "Que operador LINQ ordena ascendentemente una secuencia?",
+    "option_a": "Take",
+    "option_b": "OrderBy",
+    "option_c": "Join",
+    "option_d": "Where",
+    "correct": "B",
+    "explanation": "OrderBy ordena por una clave."
   },
   {
     "id": 283,
-    "topic_num": 5,
-    "question": "Como se denomina la persona que promueve un procedimiento administrativo por ser titular de derechos o intereses legitimos?",
-    "option_a": "Administrador concursal",
-    "option_b": "Interesado",
-    "option_c": "Fedatario",
-    "option_d": "Licitador",
-    "correct": "B",
-    "explanation": "La Ley 39/2015 regula la condicion de interesado."
+    "topic_num": 21,
+    "question": "Que operador LINQ agrupa elementos por clave?",
+    "option_a": "GroupBy",
+    "option_b": "Select",
+    "option_c": "Where",
+    "option_d": "Any",
+    "correct": "A",
+    "explanation": "GroupBy crea grupos segun una clave."
   },
   {
     "id": 284,
-    "topic_num": 5,
-    "question": "Que figura permite actuar ante la Administracion en nombre de otra persona?",
-    "option_a": "Representacion",
-    "option_b": "Recusacion",
-    "option_c": "Abstencion",
-    "option_d": "Convalidacion",
-    "correct": "A",
-    "explanation": "La representacion acredita que una persona actua por otra."
+    "topic_num": 21,
+    "question": "Que interfaz permite construir consultas que un proveedor puede traducir, por ejemplo a SQL?",
+    "option_a": "IEnumerable",
+    "option_b": "IDisposable",
+    "option_c": "IComparable",
+    "option_d": "IQueryable",
+    "correct": "D",
+    "explanation": "IQueryable representa consultas traducibles por proveedores."
   },
   {
     "id": 285,
-    "topic_num": 5,
-    "question": "Que sistema permite presentar solicitudes, escritos y comunicaciones ante la Administracion?",
-    "option_a": "Padron electoral",
-    "option_b": "Inventario contable",
-    "option_c": "Registro mercantil privado",
-    "option_d": "Registro administrativo",
-    "correct": "D",
-    "explanation": "Los registros administrativos reciben y anotan documentos dirigidos a la Administracion."
+    "topic_num": 21,
+    "question": "Que expresion anonima se usa mucho en predicados LINQ como x => x.Id > 0?",
+    "option_a": "Namespace",
+    "option_b": "Atributo",
+    "option_c": "Lambda",
+    "option_d": "Delegate multicast siempre",
+    "correct": "C",
+    "explanation": "Las lambdas expresan funciones anonimas."
   },
   {
     "id": 286,
-    "topic_num": 5,
-    "question": "Como se computan normalmente los plazos expresados en dias en la Ley 39/2015 si no se indica otra cosa?",
-    "option_a": "Solo sabados",
-    "option_b": "Solo dias lectivos",
-    "option_c": "Dias habiles",
-    "option_d": "Dias naturales",
+    "topic_num": 22,
+    "question": "Que proceso enlaza datos HTTP con parametros o propiedades del modelo?",
+    "option_a": "Rebase",
+    "option_b": "Cifrado",
+    "option_c": "Model binding",
+    "option_d": "Routing DNS",
     "correct": "C",
-    "explanation": "Si la norma no dice otra cosa, los plazos por dias son habiles."
+    "explanation": "Model binding toma datos de ruta, query, formulario o cuerpo."
   },
   {
     "id": 287,
-    "topic_num": 5,
-    "question": "Que medio permite registrar documentos por via telematica?",
-    "option_a": "Repositorio Git",
-    "option_b": "Registro electronico",
-    "option_c": "Libro de caja",
-    "option_d": "Indice B-tree",
+    "topic_num": 22,
+    "question": "Que coleccion indica si el modelo recibido supera las reglas de validacion?",
+    "option_a": "HttpClient",
+    "option_b": "ModelState",
+    "option_c": "DbSet",
+    "option_d": "ClaimsPrincipal",
     "correct": "B",
-    "explanation": "El registro electronico permite la presentacion electronica de documentos."
+    "explanation": "ModelState almacena estado de validacion."
   },
   {
     "id": 288,
-    "topic_num": 5,
-    "question": "Que capacidad permite comparecer y actuar validamente ante las Administraciones Publicas?",
-    "option_a": "Capacidad de obrar",
-    "option_b": "Capacidad contributiva exclusivamente",
-    "option_c": "Capacidad procesal penal",
-    "option_d": "Capacidad de endeudamiento",
+    "topic_num": 22,
+    "question": "Que atributo DataAnnotations exige que un campo tenga valor?",
+    "option_a": "Required",
+    "option_b": "StringLength",
+    "option_c": "Key",
+    "option_d": "Table",
     "correct": "A",
-    "explanation": "La Ley 39/2015 regula quienes tienen capacidad de obrar ante las AAPP."
+    "explanation": "Required marca un campo obligatorio."
   },
   {
     "id": 289,
-    "topic_num": 5,
-    "question": "Como se denomina la persona que promueve un procedimiento administrativo por ser titular de derechos o intereses legitimos?",
-    "option_a": "Fedatario",
-    "option_b": "Licitador",
-    "option_c": "Administrador concursal",
-    "option_d": "Interesado",
+    "topic_num": 22,
+    "question": "Que palabra clave espera una tarea asincrona?",
+    "option_a": "yield",
+    "option_b": "lock",
+    "option_c": "base",
+    "option_d": "await",
     "correct": "D",
-    "explanation": "La Ley 39/2015 regula la condicion de interesado."
+    "explanation": "await espera una Task sin bloquear de forma tradicional."
   },
   {
     "id": 290,
-    "topic_num": 5,
-    "question": "Que figura permite actuar ante la Administracion en nombre de otra persona?",
-    "option_a": "Abstencion",
-    "option_b": "Convalidacion",
-    "option_c": "Representacion",
-    "option_d": "Recusacion",
+    "topic_num": 22,
+    "question": "Que tipo representa una operacion asincrona en .NET?",
+    "option_a": "ActionFilter",
+    "option_b": "DbSet",
+    "option_c": "Task",
+    "option_d": "ThreadStatic",
     "correct": "C",
-    "explanation": "La representacion acredita que una persona actua por otra."
+    "explanation": "Task representa trabajo asincrono."
   },
   {
     "id": 291,
-    "topic_num": 6,
-    "question": "Que requisito explica los hechos y fundamentos de derecho de un acto administrativo?",
-    "option_a": "Prescripcion",
-    "option_b": "Reformatio in peius",
-    "option_c": "Motivacion",
-    "option_d": "Caducidad",
-    "correct": "C",
-    "explanation": "La motivacion justifica la decision administrativa."
+    "topic_num": 22,
+    "question": "Que token permite solicitar cancelacion cooperativa de una operacion asincrona?",
+    "option_a": "RefreshToken siempre",
+    "option_b": "CancellationToken",
+    "option_c": "AntiForgeryToken",
+    "option_d": "JwtToken",
+    "correct": "B",
+    "explanation": "CancellationToken comunica cancelacion."
   },
   {
     "id": 292,
-    "topic_num": 6,
-    "question": "Que comunicacion formal pone un acto administrativo en conocimiento de la persona interesada?",
-    "option_a": "Avocacion",
-    "option_b": "Notificacion",
-    "option_c": "Compulsa",
-    "option_d": "Alegacion",
+    "topic_num": 23,
+    "question": "Que proceso verifica la identidad del usuario?",
+    "option_a": "Indexacion",
+    "option_b": "Autenticacion",
+    "option_c": "Autorizacion",
+    "option_d": "Serializacion",
     "correct": "B",
-    "explanation": "La notificacion comunica el acto al interesado."
+    "explanation": "Autenticacion responde quien es el usuario."
   },
   {
     "id": 293,
-    "topic_num": 6,
-    "question": "Que vicio se produce en actos que lesionan derechos fundamentales?",
-    "option_a": "Nulidad de pleno derecho",
-    "option_b": "Anulabilidad leve",
-    "option_c": "Subsanacion automatica",
-    "option_d": "Silencio estimatorio obligatorio",
+    "topic_num": 23,
+    "question": "Que proceso decide si un usuario puede acceder a un recurso?",
+    "option_a": "Autorizacion",
+    "option_b": "Autenticacion",
+    "option_c": "Compilacion",
+    "option_d": "Normalizacion",
     "correct": "A",
-    "explanation": "La lesion de derechos fundamentales determina nulidad de pleno derecho."
+    "explanation": "Autorizacion responde que puede hacer."
   },
   {
     "id": 294,
-    "topic_num": 6,
-    "question": "Que fase del procedimiento incluye pruebas, informes y audiencia?",
-    "option_a": "Terminacion",
-    "option_b": "Archivo definitivo inicial",
-    "option_c": "Ejecucion presupuestaria",
-    "option_d": "Instruccion",
+    "topic_num": 23,
+    "question": "Que atributo restringe acceso a controladores o acciones en ASP.NET Core?",
+    "option_a": "AllowAnonymous",
+    "option_b": "Required",
+    "option_c": "HttpGet",
+    "option_d": "Authorize",
     "correct": "D",
-    "explanation": "La instruccion realiza los actos necesarios para determinar y comprobar datos."
+    "explanation": "Authorize exige usuario o politica autorizada."
   },
   {
     "id": 295,
-    "topic_num": 6,
-    "question": "Que forma normal pone fin a un procedimiento administrativo resolviendo el fondo?",
-    "option_a": "Asiento contable",
-    "option_b": "Diligencia penal",
-    "option_c": "Resolucion",
-    "option_d": "Providencia bancaria",
+    "topic_num": 23,
+    "question": "Que atributo permite acceso anonimo anulando restricciones de autorizacion?",
+    "option_a": "ValidateAntiForgeryToken",
+    "option_b": "FromBody",
+    "option_c": "AllowAnonymous",
+    "option_d": "Authorize",
     "correct": "C",
-    "explanation": "La resolucion decide las cuestiones planteadas en el procedimiento."
+    "explanation": "AllowAnonymous habilita acceso sin autenticar."
   },
   {
     "id": 296,
-    "topic_num": 6,
-    "question": "Que defecto permite impugnar un acto pero no lo hace nulo de pleno derecho?",
-    "option_a": "Cosa juzgada penal",
-    "option_b": "Anulabilidad",
-    "option_c": "Inexistencia fisica",
-    "option_d": "Derogacion constitucional",
+    "topic_num": 23,
+    "question": "Que formato de token se usa habitualmente para autenticacion stateless en APIs?",
+    "option_a": "WAL",
+    "option_b": "JWT",
+    "option_c": "CSV",
+    "option_d": "CSS",
     "correct": "B",
-    "explanation": "La anulabilidad cubre infracciones no incluidas en nulidad de pleno derecho."
+    "explanation": "JWT transporta claims firmados."
   },
   {
     "id": 297,
-    "topic_num": 6,
-    "question": "Que requisito explica los hechos y fundamentos de derecho de un acto administrativo?",
-    "option_a": "Motivacion",
-    "option_b": "Caducidad",
-    "option_c": "Prescripcion",
-    "option_d": "Reformatio in peius",
+    "topic_num": 23,
+    "question": "Que elemento representa afirmaciones sobre un usuario, como nombre o rol?",
+    "option_a": "Claim",
+    "option_b": "Index",
+    "option_c": "Schema",
+    "option_d": "View",
     "correct": "A",
-    "explanation": "La motivacion justifica la decision administrativa."
+    "explanation": "Un claim es una declaracion sobre la identidad."
   },
   {
     "id": 298,
-    "topic_num": 6,
-    "question": "Que comunicacion formal pone un acto administrativo en conocimiento de la persona interesada?",
-    "option_a": "Compulsa",
-    "option_b": "Alegacion",
-    "option_c": "Avocacion",
-    "option_d": "Notificacion",
-    "correct": "D",
-    "explanation": "La notificacion comunica el acto al interesado."
+    "topic_num": 24,
+    "question": "Que verbo HTTP se usa normalmente para obtener un recurso?",
+    "option_a": "GET",
+    "option_b": "POST",
+    "option_c": "PUT",
+    "option_d": "DELETE",
+    "correct": "A",
+    "explanation": "GET solicita representaciones de recursos."
   },
   {
     "id": 299,
-    "topic_num": 6,
-    "question": "Que vicio se produce en actos que lesionan derechos fundamentales?",
-    "option_a": "Subsanacion automatica",
-    "option_b": "Silencio estimatorio obligatorio",
-    "option_c": "Nulidad de pleno derecho",
-    "option_d": "Anulabilidad leve",
-    "correct": "C",
-    "explanation": "La lesion de derechos fundamentales determina nulidad de pleno derecho."
+    "topic_num": 24,
+    "question": "Que verbo HTTP se usa normalmente para crear un recurso?",
+    "option_a": "GET",
+    "option_b": "DELETE",
+    "option_c": "OPTIONS",
+    "option_d": "POST",
+    "correct": "D",
+    "explanation": "POST se usa para crear o enviar datos."
   },
   {
     "id": 300,
-    "topic_num": 6,
-    "question": "Que fase del procedimiento incluye pruebas, informes y audiencia?",
-    "option_a": "Ejecucion presupuestaria",
-    "option_b": "Instruccion",
-    "option_c": "Terminacion",
-    "option_d": "Archivo definitivo inicial",
-    "correct": "B",
-    "explanation": "La instruccion realiza los actos necesarios para determinar y comprobar datos."
+    "topic_num": 24,
+    "question": "Que verbo HTTP se usa normalmente para reemplazar o actualizar un recurso?",
+    "option_a": "TRACE",
+    "option_b": "HEAD",
+    "option_c": "PUT",
+    "option_d": "GET",
+    "correct": "C",
+    "explanation": "PUT actualiza o reemplaza un recurso."
   },
   {
     "id": 301,
-    "topic_num": 6,
-    "question": "Que forma normal pone fin a un procedimiento administrativo resolviendo el fondo?",
-    "option_a": "Resolucion",
-    "option_b": "Providencia bancaria",
-    "option_c": "Asiento contable",
-    "option_d": "Diligencia penal",
-    "correct": "A",
-    "explanation": "La resolucion decide las cuestiones planteadas en el procedimiento."
+    "topic_num": 24,
+    "question": "Que verbo HTTP se usa normalmente para eliminar un recurso?",
+    "option_a": "PATCH only",
+    "option_b": "DELETE",
+    "option_c": "GET",
+    "option_d": "POST",
+    "correct": "B",
+    "explanation": "DELETE solicita borrar un recurso."
   },
   {
     "id": 302,
-    "topic_num": 6,
-    "question": "Que defecto permite impugnar un acto pero no lo hace nulo de pleno derecho?",
-    "option_a": "Inexistencia fisica",
-    "option_b": "Derogacion constitucional",
-    "option_c": "Cosa juzgada penal",
-    "option_d": "Anulabilidad",
-    "correct": "D",
-    "explanation": "La anulabilidad cubre infracciones no incluidas en nulidad de pleno derecho."
+    "topic_num": 24,
+    "question": "Que codigo HTTP indica recurso no encontrado?",
+    "option_a": "404 Not Found",
+    "option_b": "200 OK",
+    "option_c": "201 Created",
+    "option_d": "204 No Content",
+    "correct": "A",
+    "explanation": "404 indica que no se encontro el recurso."
   },
   {
     "id": 303,
-    "topic_num": 6,
-    "question": "Que requisito explica los hechos y fundamentos de derecho de un acto administrativo?",
-    "option_a": "Prescripcion",
-    "option_b": "Reformatio in peius",
-    "option_c": "Motivacion",
-    "option_d": "Caducidad",
-    "correct": "C",
-    "explanation": "La motivacion justifica la decision administrativa."
+    "topic_num": 24,
+    "question": "Que formato ligero se usa habitualmente para intercambiar datos en Web API?",
+    "option_a": "BMP",
+    "option_b": "WAV",
+    "option_c": "EXE",
+    "option_d": "JSON",
+    "correct": "D",
+    "explanation": "JSON es comun en APIs REST."
   },
   {
     "id": 304,
-    "topic_num": 6,
-    "question": "Que comunicacion formal pone un acto administrativo en conocimiento de la persona interesada?",
-    "option_a": "Avocacion",
-    "option_b": "Notificacion",
-    "option_c": "Compulsa",
-    "option_d": "Alegacion",
-    "correct": "B",
-    "explanation": "La notificacion comunica el acto al interesado."
+    "topic_num": 25,
+    "question": "Que parametro OData filtra resultados segun una condicion?",
+    "option_a": "$select",
+    "option_b": "$top",
+    "option_c": "$skip",
+    "option_d": "$filter",
+    "correct": "D",
+    "explanation": "$filter limita entidades por condicion."
   },
   {
     "id": 305,
-    "topic_num": 6,
-    "question": "Que vicio se produce en actos que lesionan derechos fundamentales?",
-    "option_a": "Nulidad de pleno derecho",
-    "option_b": "Anulabilidad leve",
-    "option_c": "Subsanacion automatica",
-    "option_d": "Silencio estimatorio obligatorio",
-    "correct": "A",
-    "explanation": "La lesion de derechos fundamentales determina nulidad de pleno derecho."
+    "topic_num": 25,
+    "question": "Que parametro OData selecciona propiedades concretas?",
+    "option_a": "$orderby",
+    "option_b": "$count",
+    "option_c": "$select",
+    "option_d": "$filter",
+    "correct": "C",
+    "explanation": "$select limita campos devueltos."
   },
   {
     "id": 306,
-    "topic_num": 6,
-    "question": "Que fase del procedimiento incluye pruebas, informes y audiencia?",
-    "option_a": "Terminacion",
-    "option_b": "Archivo definitivo inicial",
-    "option_c": "Ejecucion presupuestaria",
-    "option_d": "Instruccion",
-    "correct": "D",
-    "explanation": "La instruccion realiza los actos necesarios para determinar y comprobar datos."
+    "topic_num": 25,
+    "question": "Que parametro OData ordena resultados?",
+    "option_a": "$expand always",
+    "option_b": "$orderby",
+    "option_c": "$skip",
+    "option_d": "$top",
+    "correct": "B",
+    "explanation": "$orderby define ordenacion."
   },
   {
     "id": 307,
-    "topic_num": 6,
-    "question": "Que forma normal pone fin a un procedimiento administrativo resolviendo el fondo?",
-    "option_a": "Asiento contable",
-    "option_b": "Diligencia penal",
-    "option_c": "Resolucion",
-    "option_d": "Providencia bancaria",
-    "correct": "C",
-    "explanation": "La resolucion decide las cuestiones planteadas en el procedimiento."
+    "topic_num": 25,
+    "question": "Que parametro OData limita el numero de resultados devueltos?",
+    "option_a": "$top",
+    "option_b": "$filter",
+    "option_c": "$select",
+    "option_d": "$metadata",
+    "correct": "A",
+    "explanation": "$top establece un maximo."
   },
   {
     "id": 308,
-    "topic_num": 6,
-    "question": "Que defecto permite impugnar un acto pero no lo hace nulo de pleno derecho?",
-    "option_a": "Cosa juzgada penal",
-    "option_b": "Anulabilidad",
-    "option_c": "Inexistencia fisica",
-    "option_d": "Derogacion constitucional",
-    "correct": "B",
-    "explanation": "La anulabilidad cubre infracciones no incluidas en nulidad de pleno derecho."
+    "topic_num": 25,
+    "question": "Que parametro OData omite un numero de resultados iniciales?",
+    "option_a": "$top",
+    "option_b": "$select",
+    "option_c": "$format",
+    "option_d": "$skip",
+    "correct": "D",
+    "explanation": "$skip se usa para paginacion."
   },
   {
     "id": 309,
-    "topic_num": 6,
-    "question": "Que requisito explica los hechos y fundamentos de derecho de un acto administrativo?",
-    "option_a": "Motivacion",
-    "option_b": "Caducidad",
-    "option_c": "Prescripcion",
-    "option_d": "Reformatio in peius",
-    "correct": "A",
-    "explanation": "La motivacion justifica la decision administrativa."
+    "topic_num": 25,
+    "question": "Que documento describe el modelo de datos expuesto por un servicio OData?",
+    "option_a": "$top",
+    "option_b": "$skip",
+    "option_c": "$metadata",
+    "option_d": "$filter",
+    "correct": "C",
+    "explanation": "$metadata expone metadatos del servicio."
   },
   {
     "id": 310,
-    "topic_num": 6,
-    "question": "Que comunicacion formal pone un acto administrativo en conocimiento de la persona interesada?",
-    "option_a": "Compulsa",
-    "option_b": "Alegacion",
-    "option_c": "Avocacion",
-    "option_d": "Notificacion",
-    "correct": "D",
-    "explanation": "La notificacion comunica el acto al interesado."
+    "topic_num": 26,
+    "question": "Que modelo de Blazor ejecuta la logica en servidor y sincroniza la UI con SignalR?",
+    "option_a": "MVC",
+    "option_b": "Web API",
+    "option_c": "Blazor Server",
+    "option_d": "Blazor WebAssembly",
+    "correct": "C",
+    "explanation": "Blazor Server mantiene circuito SignalR con el servidor."
   },
   {
     "id": 311,
-    "topic_num": 6,
-    "question": "Que vicio se produce en actos que lesionan derechos fundamentales?",
-    "option_a": "Subsanacion automatica",
-    "option_b": "Silencio estimatorio obligatorio",
-    "option_c": "Nulidad de pleno derecho",
-    "option_d": "Anulabilidad leve",
-    "correct": "C",
-    "explanation": "La lesion de derechos fundamentales determina nulidad de pleno derecho."
+    "topic_num": 26,
+    "question": "Que modelo de Blazor ejecuta .NET en el navegador mediante WebAssembly?",
+    "option_a": "Windows Forms",
+    "option_b": "Blazor WebAssembly",
+    "option_c": "Blazor Server",
+    "option_d": "Razor Pages",
+    "correct": "B",
+    "explanation": "Blazor WebAssembly corre en el cliente."
   },
   {
     "id": 312,
-    "topic_num": 6,
-    "question": "Que fase del procedimiento incluye pruebas, informes y audiencia?",
-    "option_a": "Ejecucion presupuestaria",
-    "option_b": "Instruccion",
-    "option_c": "Terminacion",
-    "option_d": "Archivo definitivo inicial",
-    "correct": "B",
-    "explanation": "La instruccion realiza los actos necesarios para determinar y comprobar datos."
+    "topic_num": 26,
+    "question": "Que tecnologia permite comunicacion en tiempo real usada por Blazor Server?",
+    "option_a": "SignalR",
+    "option_b": "OData",
+    "option_c": "PGP",
+    "option_d": "SCSP",
+    "correct": "A",
+    "explanation": "SignalR mantiene comunicacion bidireccional."
   },
   {
     "id": 313,
-    "topic_num": 6,
-    "question": "Que forma normal pone fin a un procedimiento administrativo resolviendo el fondo?",
-    "option_a": "Resolucion",
-    "option_b": "Providencia bancaria",
-    "option_c": "Asiento contable",
-    "option_d": "Diligencia penal",
-    "correct": "A",
-    "explanation": "La resolucion decide las cuestiones planteadas en el procedimiento."
+    "topic_num": 26,
+    "question": "Que carpeta contiene activos estaticos publicos en una aplicacion Blazor?",
+    "option_a": "bin",
+    "option_b": "obj",
+    "option_c": "Migrations always",
+    "option_d": "wwwroot",
+    "correct": "D",
+    "explanation": "wwwroot almacena archivos estaticos."
   },
   {
     "id": 314,
-    "topic_num": 6,
-    "question": "Que defecto permite impugnar un acto pero no lo hace nulo de pleno derecho?",
-    "option_a": "Inexistencia fisica",
-    "option_b": "Derogacion constitucional",
-    "option_c": "Cosa juzgada penal",
-    "option_d": "Anulabilidad",
-    "correct": "D",
-    "explanation": "La anulabilidad cubre infracciones no incluidas en nulidad de pleno derecho."
+    "topic_num": 26,
+    "question": "Que archivo suele configurar servicios y pipeline en una app .NET moderna?",
+    "option_a": "package-lock.json",
+    "option_b": "web.config exclusively",
+    "option_c": "Program.cs",
+    "option_d": "README.md",
+    "correct": "C",
+    "explanation": "Program.cs contiene configuracion de arranque."
   },
   {
     "id": 315,
-    "topic_num": 6,
-    "question": "Que requisito explica los hechos y fundamentos de derecho de un acto administrativo?",
-    "option_a": "Prescripcion",
-    "option_b": "Reformatio in peius",
-    "option_c": "Motivacion",
-    "option_d": "Caducidad",
-    "correct": "C",
-    "explanation": "La motivacion justifica la decision administrativa."
+    "topic_num": 26,
+    "question": "Como se denomina un componente de interfaz reutilizable escrito con Razor?",
+    "option_a": "Controller only",
+    "option_b": "Razor component",
+    "option_c": "DbContext",
+    "option_d": "Migration",
+    "correct": "B",
+    "explanation": "Los componentes Razor son bloques UI de Blazor."
   },
   {
     "id": 316,
-    "topic_num": 6,
-    "question": "Que comunicacion formal pone un acto administrativo en conocimiento de la persona interesada?",
-    "option_a": "Avocacion",
-    "option_b": "Notificacion",
-    "option_c": "Compulsa",
-    "option_d": "Alegacion",
+    "topic_num": 27,
+    "question": "Que directiva Blazor realiza enlace de datos bidireccional?",
+    "option_a": "@code",
+    "option_b": "@bind",
+    "option_c": "@page",
+    "option_d": "@inject",
     "correct": "B",
-    "explanation": "La notificacion comunica el acto al interesado."
+    "explanation": "@bind sincroniza valor y propiedad."
   },
   {
     "id": 317,
-    "topic_num": 7,
-    "question": "Que norma basica regula la prevencion de riesgos laborales en Espana?",
-    "option_a": "Ley 9/2017",
-    "option_b": "Ley 31/1995",
-    "option_c": "Ley 7/1985",
-    "option_d": "Ley 39/2015",
-    "correct": "B",
-    "explanation": "La Ley 31/1995 es la norma basica de prevencion de riesgos laborales."
+    "topic_num": 27,
+    "question": "Que atributo permite recibir valores desde un componente padre?",
+    "option_a": "[Parameter]",
+    "option_b": "[Key]",
+    "option_c": "[Required]",
+    "option_d": "[Authorize]",
+    "correct": "A",
+    "explanation": "[Parameter] marca parametros de componente."
   },
   {
     "id": 318,
-    "topic_num": 7,
-    "question": "Que principio preventivo exige eliminar el riesgo antes que proteger frente a el?",
-    "option_a": "Evitar los riesgos",
-    "option_b": "Transferir siempre el riesgo",
-    "option_c": "Asegurar solo economicamente",
-    "option_d": "Ignorar riesgos leves",
-    "correct": "A",
-    "explanation": "La accion preventiva empieza por evitar los riesgos."
+    "topic_num": 27,
+    "question": "Que tipo se usa para notificar eventos desde un componente hijo al padre?",
+    "option_a": "DbSet",
+    "option_b": "Claim",
+    "option_c": "CancellationToken",
+    "option_d": "EventCallback",
+    "correct": "D",
+    "explanation": "EventCallback permite callbacks de eventos."
   },
   {
     "id": 319,
-    "topic_num": 7,
-    "question": "Que actuacion identifica y valora peligros para la seguridad y salud de los trabajadores?",
-    "option_a": "Liquidacion tributaria",
-    "option_b": "Auditoria contable",
-    "option_c": "Recurso de alzada",
-    "option_d": "Evaluacion de riesgos",
-    "correct": "D",
-    "explanation": "La evaluacion de riesgos permite planificar la actividad preventiva."
+    "topic_num": 27,
+    "question": "Que componente permite suministrar un valor a descendientes sin pasarlo parametro a parametro?",
+    "option_a": "NavLink",
+    "option_b": "AuthorizeView only",
+    "option_c": "CascadingValue",
+    "option_d": "EditForm",
+    "correct": "C",
+    "explanation": "CascadingValue proporciona valores en cascada."
   },
   {
     "id": 320,
-    "topic_num": 7,
-    "question": "Que derecho tiene el trabajador en materia de seguridad y salud laboral?",
-    "option_a": "Secreto salarial absoluto",
-    "option_b": "Libre incumplimiento de instrucciones",
-    "option_c": "Proteccion eficaz",
-    "option_d": "Renuncia preventiva",
-    "correct": "C",
-    "explanation": "El trabajador tiene derecho a proteccion eficaz frente a riesgos laborales."
+    "topic_num": 27,
+    "question": "Que bloque contiene codigo C# dentro de un componente Razor?",
+    "option_a": "@using only",
+    "option_b": "@code",
+    "option_c": "@page",
+    "option_d": "@bind",
+    "correct": "B",
+    "explanation": "@code contiene miembros y logica del componente."
   },
   {
     "id": 321,
-    "topic_num": 7,
-    "question": "Que debe hacer el trabajador con los equipos de proteccion proporcionados?",
-    "option_a": "Modificar siempre su diseno",
-    "option_b": "Usarlos correctamente",
-    "option_c": "Venderlos",
-    "option_d": "Ignorarlos",
-    "correct": "B",
-    "explanation": "Los trabajadores deben usar adecuadamente medios y equipos de proteccion."
+    "topic_num": 27,
+    "question": "Que metodo de ciclo de vida se ejecuta al inicializar un componente?",
+    "option_a": "OnInitialized",
+    "option_b": "SaveChanges",
+    "option_c": "ConfigureServices",
+    "option_d": "Main",
+    "correct": "A",
+    "explanation": "OnInitialized se llama durante la inicializacion."
   },
   {
     "id": 322,
-    "topic_num": 7,
-    "question": "Que concepto describe la posibilidad de que un trabajador sufra un dano derivado del trabajo?",
-    "option_a": "Riesgo laboral",
-    "option_b": "Padron laboral",
-    "option_c": "Credito horario",
-    "option_d": "Turno voluntario",
+    "topic_num": 28,
+    "question": "Que tipo Blazor representa un fragmento de interfaz renderizable?",
+    "option_a": "RenderFragment",
+    "option_b": "DbContext",
+    "option_c": "Claim",
+    "option_d": "Postmaster",
     "correct": "A",
-    "explanation": "Riesgo laboral es la posibilidad de dano derivado del trabajo."
+    "explanation": "RenderFragment permite contenido reutilizable."
   },
   {
     "id": 323,
-    "topic_num": 7,
-    "question": "Que norma basica regula la prevencion de riesgos laborales en Espana?",
-    "option_a": "Ley 7/1985",
-    "option_b": "Ley 39/2015",
-    "option_c": "Ley 9/2017",
-    "option_d": "Ley 31/1995",
+    "topic_num": 28,
+    "question": "Que parametro suele contener el contenido hijo no nombrado de un componente?",
+    "option_a": "ModelState",
+    "option_b": "DbSet",
+    "option_c": "HttpContext",
+    "option_d": "ChildContent",
     "correct": "D",
-    "explanation": "La Ley 31/1995 es la norma basica de prevencion de riesgos laborales."
+    "explanation": "ChildContent recibe contenido anidado."
   },
   {
     "id": 324,
-    "topic_num": 7,
-    "question": "Que principio preventivo exige eliminar el riesgo antes que proteger frente a el?",
-    "option_a": "Asegurar solo economicamente",
-    "option_b": "Ignorar riesgos leves",
-    "option_c": "Evitar los riesgos",
-    "option_d": "Transferir siempre el riesgo",
+    "topic_num": 28,
+    "question": "Que directiva declara un parametro de tipo generico en un componente?",
+    "option_a": "@page",
+    "option_b": "@inject",
+    "option_c": "@typeparam",
+    "option_d": "@bind",
     "correct": "C",
-    "explanation": "La accion preventiva empieza por evitar los riesgos."
+    "explanation": "@typeparam define componentes genericos."
   },
   {
     "id": 325,
-    "topic_num": 7,
-    "question": "Que actuacion identifica y valora peligros para la seguridad y salud de los trabajadores?",
-    "option_a": "Recurso de alzada",
-    "option_b": "Evaluacion de riesgos",
-    "option_c": "Liquidacion tributaria",
-    "option_d": "Auditoria contable",
+    "topic_num": 28,
+    "question": "Que tecnica limita CSS al componente correspondiente?",
+    "option_a": "OData",
+    "option_b": "CSS isolation",
+    "option_c": "TLS",
+    "option_d": "LINQ",
     "correct": "B",
-    "explanation": "La evaluacion de riesgos permite planificar la actividad preventiva."
+    "explanation": "CSS isolation evita colisiones globales."
   },
   {
     "id": 326,
-    "topic_num": 7,
-    "question": "Que derecho tiene el trabajador en materia de seguridad y salud laboral?",
-    "option_a": "Proteccion eficaz",
-    "option_b": "Renuncia preventiva",
-    "option_c": "Secreto salarial absoluto",
-    "option_d": "Libre incumplimiento de instrucciones",
+    "topic_num": 28,
+    "question": "Que mecanismo permite componer componentes pasando plantillas de UI?",
+    "option_a": "Plantillas con RenderFragment",
+    "option_b": "ROLLBACK",
+    "option_c": "GRANT",
+    "option_d": "pg_dump",
     "correct": "A",
-    "explanation": "El trabajador tiene derecho a proteccion eficaz frente a riesgos laborales."
+    "explanation": "Las plantillas permiten personalizar renderizado."
   },
   {
     "id": 327,
-    "topic_num": 7,
-    "question": "Que debe hacer el trabajador con los equipos de proteccion proporcionados?",
-    "option_a": "Venderlos",
-    "option_b": "Ignorarlos",
-    "option_c": "Modificar siempre su diseno",
-    "option_d": "Usarlos correctamente",
+    "topic_num": 28,
+    "question": "Que archivo suele acompañar a un componente para estilos aislados?",
+    "option_a": ".sql",
+    "option_b": ".dll.config",
+    "option_c": ".gitignore only",
+    "option_d": ".razor.css",
     "correct": "D",
-    "explanation": "Los trabajadores deben usar adecuadamente medios y equipos de proteccion."
+    "explanation": "Los estilos aislados se colocan en archivos .razor.css."
   },
   {
     "id": 328,
-    "topic_num": 7,
-    "question": "Que concepto describe la posibilidad de que un trabajador sufra un dano derivado del trabajo?",
-    "option_a": "Credito horario",
-    "option_b": "Turno voluntario",
-    "option_c": "Riesgo laboral",
-    "option_d": "Padron laboral",
-    "correct": "C",
-    "explanation": "Riesgo laboral es la posibilidad de dano derivado del trabajo."
+    "topic_num": 29,
+    "question": "Que componente Blazor encapsula formularios con validacion?",
+    "option_a": "DbSet",
+    "option_b": "Controller",
+    "option_c": "Router",
+    "option_d": "EditForm",
+    "correct": "D",
+    "explanation": "EditForm coordina modelo y validacion."
   },
   {
     "id": 329,
-    "topic_num": 7,
-    "question": "Que norma basica regula la prevencion de riesgos laborales en Espana?",
-    "option_a": "Ley 9/2017",
-    "option_b": "Ley 31/1995",
-    "option_c": "Ley 7/1985",
-    "option_d": "Ley 39/2015",
-    "correct": "B",
-    "explanation": "La Ley 31/1995 es la norma basica de prevencion de riesgos laborales."
+    "topic_num": 29,
+    "question": "Que objeto mantiene el estado de edicion y validacion de un formulario?",
+    "option_a": "HttpClient",
+    "option_b": "Claim",
+    "option_c": "EditContext",
+    "option_d": "DbContext",
+    "correct": "C",
+    "explanation": "EditContext sigue cambios y validacion."
   },
   {
     "id": 330,
-    "topic_num": 7,
-    "question": "Que principio preventivo exige eliminar el riesgo antes que proteger frente a el?",
-    "option_a": "Evitar los riesgos",
-    "option_b": "Transferir siempre el riesgo",
-    "option_c": "Asegurar solo economicamente",
-    "option_d": "Ignorar riesgos leves",
-    "correct": "A",
-    "explanation": "La accion preventiva empieza por evitar los riesgos."
+    "topic_num": 29,
+    "question": "Que componente valida usando atributos DataAnnotations?",
+    "option_a": "NavLink",
+    "option_b": "DataAnnotationsValidator",
+    "option_c": "ValidationSummary",
+    "option_d": "InputText",
+    "correct": "B",
+    "explanation": "DataAnnotationsValidator activa esas reglas."
   },
   {
     "id": 331,
-    "topic_num": 7,
-    "question": "Que actuacion identifica y valora peligros para la seguridad y salud de los trabajadores?",
-    "option_a": "Liquidacion tributaria",
-    "option_b": "Auditoria contable",
-    "option_c": "Recurso de alzada",
-    "option_d": "Evaluacion de riesgos",
-    "correct": "D",
-    "explanation": "La evaluacion de riesgos permite planificar la actividad preventiva."
+    "topic_num": 29,
+    "question": "Que componente muestra un resumen de errores de validacion?",
+    "option_a": "ValidationSummary",
+    "option_b": "InputSelect",
+    "option_c": "Router",
+    "option_d": "AuthorizeView",
+    "correct": "A",
+    "explanation": "ValidationSummary lista errores."
   },
   {
     "id": 332,
-    "topic_num": 7,
-    "question": "Que derecho tiene el trabajador en materia de seguridad y salud laboral?",
-    "option_a": "Secreto salarial absoluto",
-    "option_b": "Libre incumplimiento de instrucciones",
-    "option_c": "Proteccion eficaz",
-    "option_d": "Renuncia preventiva",
-    "correct": "C",
-    "explanation": "El trabajador tiene derecho a proteccion eficaz frente a riesgos laborales."
+    "topic_num": 29,
+    "question": "Que componente Blazor captura texto en formularios?",
+    "option_a": "InputNumber",
+    "option_b": "InputSelect",
+    "option_c": "EditContext",
+    "option_d": "InputText",
+    "correct": "D",
+    "explanation": "InputText enlaza entradas de texto."
   },
   {
     "id": 333,
-    "topic_num": 7,
-    "question": "Que debe hacer el trabajador con los equipos de proteccion proporcionados?",
-    "option_a": "Modificar siempre su diseno",
-    "option_b": "Usarlos correctamente",
-    "option_c": "Venderlos",
-    "option_d": "Ignorarlos",
-    "correct": "B",
-    "explanation": "Los trabajadores deben usar adecuadamente medios y equipos de proteccion."
+    "topic_num": 29,
+    "question": "Que atributo valida longitud maxima o minima de una cadena?",
+    "option_a": "Key",
+    "option_b": "Table",
+    "option_c": "StringLength",
+    "option_d": "Required",
+    "correct": "C",
+    "explanation": "StringLength limita longitud de strings."
   },
   {
     "id": 334,
-    "topic_num": 7,
-    "question": "Que concepto describe la posibilidad de que un trabajador sufra un dano derivado del trabajo?",
-    "option_a": "Riesgo laboral",
-    "option_b": "Padron laboral",
-    "option_c": "Credito horario",
-    "option_d": "Turno voluntario",
-    "correct": "A",
-    "explanation": "Riesgo laboral es la posibilidad de dano derivado del trabajo."
+    "topic_num": 30,
+    "question": "Que patron suministra dependencias sin crearlas manualmente en la clase?",
+    "option_a": "Consulta OData",
+    "option_b": "Rebase",
+    "option_c": "Inyeccion de dependencias",
+    "option_d": "Cifrado simetrico",
+    "correct": "C",
+    "explanation": "DI desacopla creacion y uso de servicios."
   },
   {
     "id": 335,
-    "topic_num": 7,
-    "question": "Que norma basica regula la prevencion de riesgos laborales en Espana?",
-    "option_a": "Ley 7/1985",
-    "option_b": "Ley 39/2015",
-    "option_c": "Ley 9/2017",
-    "option_d": "Ley 31/1995",
-    "correct": "D",
-    "explanation": "La Ley 31/1995 es la norma basica de prevencion de riesgos laborales."
+    "topic_num": 30,
+    "question": "Que registro crea una instancia de servicio por ambito o solicitud?",
+    "option_a": "AddStatic",
+    "option_b": "AddScoped",
+    "option_c": "AddSingleton",
+    "option_d": "AddTransient",
+    "correct": "B",
+    "explanation": "Scoped crea una instancia por scope."
   },
   {
     "id": 336,
-    "topic_num": 7,
-    "question": "Que principio preventivo exige eliminar el riesgo antes que proteger frente a el?",
-    "option_a": "Asegurar solo economicamente",
-    "option_b": "Ignorar riesgos leves",
-    "option_c": "Evitar los riesgos",
-    "option_d": "Transferir siempre el riesgo",
-    "correct": "C",
-    "explanation": "La accion preventiva empieza por evitar los riesgos."
+    "topic_num": 30,
+    "question": "Que registro reutiliza una unica instancia durante la vida de la aplicacion?",
+    "option_a": "AddSingleton",
+    "option_b": "AddScoped",
+    "option_c": "AddTransient",
+    "option_d": "AddPerRequest",
+    "correct": "A",
+    "explanation": "Singleton comparte una instancia."
   },
   {
     "id": 337,
-    "topic_num": 7,
-    "question": "Que actuacion identifica y valora peligros para la seguridad y salud de los trabajadores?",
-    "option_a": "Recurso de alzada",
-    "option_b": "Evaluacion de riesgos",
-    "option_c": "Liquidacion tributaria",
-    "option_d": "Auditoria contable",
-    "correct": "B",
-    "explanation": "La evaluacion de riesgos permite planificar la actividad preventiva."
+    "topic_num": 30,
+    "question": "Que registro crea una instancia nueva cada vez que se solicita el servicio?",
+    "option_a": "AddSingleton",
+    "option_b": "AddScoped",
+    "option_c": "AddGlobal",
+    "option_d": "AddTransient",
+    "correct": "D",
+    "explanation": "Transient crea instancias nuevas."
   },
   {
     "id": 338,
-    "topic_num": 7,
-    "question": "Que derecho tiene el trabajador en materia de seguridad y salud laboral?",
-    "option_a": "Proteccion eficaz",
-    "option_b": "Renuncia preventiva",
-    "option_c": "Secreto salarial absoluto",
-    "option_d": "Libre incumplimiento de instrucciones",
-    "correct": "A",
-    "explanation": "El trabajador tiene derecho a proteccion eficaz frente a riesgos laborales."
+    "topic_num": 30,
+    "question": "Que directiva inyecta un servicio en un componente Blazor?",
+    "option_a": "@page",
+    "option_b": "@typeparam",
+    "option_c": "@inject",
+    "option_d": "@bind",
+    "correct": "C",
+    "explanation": "@inject declara dependencias en Razor."
   },
   {
     "id": 339,
-    "topic_num": 7,
-    "question": "Que debe hacer el trabajador con los equipos de proteccion proporcionados?",
-    "option_a": "Venderlos",
-    "option_b": "Ignorarlos",
-    "option_c": "Modificar siempre su diseno",
-    "option_d": "Usarlos correctamente",
-    "correct": "D",
-    "explanation": "Los trabajadores deben usar adecuadamente medios y equipos de proteccion."
+    "topic_num": 30,
+    "question": "Que archivo suele contener valores de configuracion JSON de una app .NET?",
+    "option_a": "index.html",
+    "option_b": "appsettings.json",
+    "option_c": "package-lock.json",
+    "option_d": "README.md",
+    "correct": "B",
+    "explanation": "appsettings.json guarda configuracion."
   },
   {
     "id": 340,
-    "topic_num": 7,
-    "question": "Que concepto describe la posibilidad de que un trabajador sufra un dano derivado del trabajo?",
-    "option_a": "Credito horario",
-    "option_b": "Turno voluntario",
-    "option_c": "Riesgo laboral",
-    "option_d": "Padron laboral",
-    "correct": "C",
-    "explanation": "Riesgo laboral es la posibilidad de dano derivado del trabajo."
+    "topic_num": 31,
+    "question": "Que almacenamiento del navegador conserva datos incluso tras cerrar y abrir el navegador?",
+    "option_a": "DbSet",
+    "option_b": "localStorage",
+    "option_c": "sessionStorage",
+    "option_d": "RenderFragment",
+    "correct": "B",
+    "explanation": "localStorage persiste mas alla de la sesion."
   },
   {
     "id": 341,
-    "topic_num": 7,
-    "question": "Que norma basica regula la prevencion de riesgos laborales en Espana?",
-    "option_a": "Ley 9/2017",
-    "option_b": "Ley 31/1995",
-    "option_c": "Ley 7/1985",
-    "option_d": "Ley 39/2015",
-    "correct": "B",
-    "explanation": "La Ley 31/1995 es la norma basica de prevencion de riesgos laborales."
+    "topic_num": 31,
+    "question": "Que almacenamiento del navegador se asocia a la sesion de la pestaña?",
+    "option_a": "sessionStorage",
+    "option_b": "localStorage",
+    "option_c": "Indexed Route",
+    "option_d": "DbContext",
+    "correct": "A",
+    "explanation": "sessionStorage dura la sesion de la pestaña."
   },
   {
     "id": 342,
-    "topic_num": 7,
-    "question": "Que principio preventivo exige eliminar el riesgo antes que proteger frente a el?",
-    "option_a": "Evitar los riesgos",
-    "option_b": "Transferir siempre el riesgo",
-    "option_c": "Asegurar solo economicamente",
-    "option_d": "Ignorar riesgos leves",
-    "correct": "A",
-    "explanation": "La accion preventiva empieza por evitar los riesgos."
+    "topic_num": 31,
+    "question": "Que patron centraliza datos compartidos entre componentes?",
+    "option_a": "Indice B-tree",
+    "option_b": "Certificado X.509",
+    "option_c": "Migracion",
+    "option_d": "Servicio de estado",
+    "correct": "D",
+    "explanation": "Un servicio de estado comparte datos y notifica cambios."
   },
   {
     "id": 343,
-    "topic_num": 8,
-    "question": "Que ley estatal regula la igualdad efectiva de mujeres y hombres?",
-    "option_a": "Ley Organica 3/2007",
-    "option_b": "Ley 31/1995",
-    "option_c": "Ley 7/1985",
-    "option_d": "Ley 40/2015",
-    "correct": "A",
-    "explanation": "La LO 3/2007 regula la igualdad efectiva."
+    "topic_num": 31,
+    "question": "Que estado pertenece internamente a un componente concreto?",
+    "option_a": "WAL",
+    "option_b": "JWT",
+    "option_c": "Estado de componente",
+    "option_d": "Estado global del servidor siempre",
+    "correct": "C",
+    "explanation": "El estado de componente afecta a su renderizado."
   },
   {
     "id": 344,
-    "topic_num": 8,
-    "question": "Que trato desfavorable por razon de sexo se produce de forma expresa y visible?",
-    "option_a": "Discriminacion indirecta",
-    "option_b": "Recusacion",
-    "option_c": "Prescripcion",
-    "option_d": "Discriminacion directa",
-    "correct": "D",
-    "explanation": "La discriminacion directa supone trato menos favorable por razon de sexo."
+    "topic_num": 31,
+    "question": "Que mecanismo Blazor permite compartir valores descendentes sin parametro directo?",
+    "option_a": "OData",
+    "option_b": "Cascading state",
+    "option_c": "pg_restore",
+    "option_d": "git fetch",
+    "correct": "B",
+    "explanation": "Los valores en cascada pueden transportar estado."
   },
   {
     "id": 345,
-    "topic_num": 8,
-    "question": "Que discriminacion deriva de una medida aparentemente neutra con impacto desfavorable?",
-    "option_a": "Convalidacion",
-    "option_b": "Silencio administrativo",
-    "option_c": "Discriminacion indirecta",
-    "option_d": "Abstencion",
-    "correct": "C",
-    "explanation": "La discriminacion indirecta puede surgir de criterios aparentemente neutros."
+    "topic_num": 31,
+    "question": "Que objetivo tiene persistir estado en una aplicacion?",
+    "option_a": "Conservar datos entre interacciones o recargas",
+    "option_b": "Borrar siempre al renderizar",
+    "option_c": "Impedir navegacion",
+    "option_d": "Desactivar validacion",
+    "correct": "A",
+    "explanation": "Persistir estado evita perder informacion util."
   },
   {
     "id": 346,
-    "topic_num": 8,
-    "question": "Que instrumento empresarial ordena medidas para alcanzar igualdad de trato y oportunidades?",
-    "option_a": "Plan de backup",
-    "option_b": "Plan de igualdad",
-    "option_c": "Plan de tesoreria",
-    "option_d": "Plan de urbanismo",
-    "correct": "B",
-    "explanation": "Los planes de igualdad ordenan objetivos y medidas de igualdad."
+    "topic_num": 32,
+    "question": "Que directiva define la ruta URL de un componente pagina?",
+    "option_a": "@page",
+    "option_b": "@bind",
+    "option_c": "@code",
+    "option_d": "@inject",
+    "correct": "A",
+    "explanation": "@page declara rutas."
   },
   {
     "id": 347,
-    "topic_num": 8,
-    "question": "Que conducta verbal, no verbal o fisica de naturaleza sexual atenta contra la dignidad?",
-    "option_a": "Acoso sexual",
-    "option_b": "Acoso urbanistico",
-    "option_c": "Fraude de ley",
-    "option_d": "Enriquecimiento injusto",
-    "correct": "A",
-    "explanation": "El acoso sexual es una conducta de naturaleza sexual que crea entorno intimidatorio u ofensivo."
+    "topic_num": 32,
+    "question": "Que servicio permite navegar por codigo en Blazor?",
+    "option_a": "DbContext",
+    "option_b": "Postmaster",
+    "option_c": "AutoFirma",
+    "option_d": "NavigationManager",
+    "correct": "D",
+    "explanation": "NavigationManager expone NavigateTo y URI."
   },
   {
     "id": 348,
-    "topic_num": 8,
-    "question": "Que principio exige ausencia de discriminacion por sexo en empleo, formacion y promocion?",
-    "option_a": "Jerarquia contable",
-    "option_b": "Unidad de caja",
-    "option_c": "Devengo",
-    "option_d": "Igualdad de trato",
-    "correct": "D",
-    "explanation": "La igualdad de trato impide discriminacion directa o indirecta por sexo."
+    "topic_num": 32,
+    "question": "Que metodo de NavigationManager cambia la ubicacion actual?",
+    "option_a": "AddScoped",
+    "option_b": "ROLLBACK",
+    "option_c": "NavigateTo",
+    "option_d": "SaveChanges",
+    "correct": "C",
+    "explanation": "NavigateTo navega a una URI."
   },
   {
     "id": 349,
-    "topic_num": 8,
-    "question": "Que ley estatal regula la igualdad efectiva de mujeres y hombres?",
-    "option_a": "Ley 7/1985",
-    "option_b": "Ley 40/2015",
-    "option_c": "Ley Organica 3/2007",
-    "option_d": "Ley 31/1995",
-    "correct": "C",
-    "explanation": "La LO 3/2007 regula la igualdad efectiva."
+    "topic_num": 32,
+    "question": "Que componente crea enlaces de navegacion con clase activa?",
+    "option_a": "DbSet",
+    "option_b": "NavLink",
+    "option_c": "EditForm",
+    "option_d": "InputText",
+    "correct": "B",
+    "explanation": "NavLink ayuda en menus de navegacion."
   },
   {
     "id": 350,
-    "topic_num": 8,
-    "question": "Que trato desfavorable por razon de sexo se produce de forma expresa y visible?",
-    "option_a": "Prescripcion",
-    "option_b": "Discriminacion directa",
-    "option_c": "Discriminacion indirecta",
-    "option_d": "Recusacion",
-    "correct": "B",
-    "explanation": "La discriminacion directa supone trato menos favorable por razon de sexo."
+    "topic_num": 32,
+    "question": "Que componente Blazor selecciona el componente a mostrar segun la ruta?",
+    "option_a": "Router",
+    "option_b": "EditContext",
+    "option_c": "DbContext",
+    "option_d": "Controller",
+    "correct": "A",
+    "explanation": "Router resuelve rutas."
   },
   {
     "id": 351,
-    "topic_num": 8,
-    "question": "Que discriminacion deriva de una medida aparentemente neutra con impacto desfavorable?",
-    "option_a": "Discriminacion indirecta",
-    "option_b": "Abstencion",
-    "option_c": "Convalidacion",
-    "option_d": "Silencio administrativo",
-    "correct": "A",
-    "explanation": "La discriminacion indirecta puede surgir de criterios aparentemente neutros."
+    "topic_num": 32,
+    "question": "Que elemento de ruta permite recibir valores desde la URL?",
+    "option_a": "Claim",
+    "option_b": "Indice",
+    "option_c": "Certificado",
+    "option_d": "Parametro de ruta",
+    "correct": "D",
+    "explanation": "Los parametros de ruta capturan segmentos de URL."
   },
   {
     "id": 352,
-    "topic_num": 8,
-    "question": "Que instrumento empresarial ordena medidas para alcanzar igualdad de trato y oportunidades?",
-    "option_a": "Plan de tesoreria",
-    "option_b": "Plan de urbanismo",
-    "option_c": "Plan de backup",
-    "option_d": "Plan de igualdad",
+    "topic_num": 33,
+    "question": "Que comando inicializa un repositorio Git?",
+    "option_a": "git push",
+    "option_b": "git merge",
+    "option_c": "git fetch",
+    "option_d": "git init",
     "correct": "D",
-    "explanation": "Los planes de igualdad ordenan objetivos y medidas de igualdad."
+    "explanation": "git init crea el repositorio local."
   },
   {
     "id": 353,
-    "topic_num": 8,
-    "question": "Que conducta verbal, no verbal o fisica de naturaleza sexual atenta contra la dignidad?",
-    "option_a": "Fraude de ley",
-    "option_b": "Enriquecimiento injusto",
-    "option_c": "Acoso sexual",
-    "option_d": "Acoso urbanistico",
+    "topic_num": 33,
+    "question": "Que comando muestra el estado del arbol de trabajo?",
+    "option_a": "git clone",
+    "option_b": "git tag",
+    "option_c": "git status",
+    "option_d": "git commit",
     "correct": "C",
-    "explanation": "El acoso sexual es una conducta de naturaleza sexual que crea entorno intimidatorio u ofensivo."
+    "explanation": "git status informa cambios y rama."
   },
   {
     "id": 354,
-    "topic_num": 8,
-    "question": "Que principio exige ausencia de discriminacion por sexo en empleo, formacion y promocion?",
-    "option_a": "Devengo",
-    "option_b": "Igualdad de trato",
-    "option_c": "Jerarquia contable",
-    "option_d": "Unidad de caja",
+    "topic_num": 33,
+    "question": "Que comando prepara archivos para el proximo commit?",
+    "option_a": "git reset --hard always",
+    "option_b": "git add",
+    "option_c": "git push",
+    "option_d": "git pull",
     "correct": "B",
-    "explanation": "La igualdad de trato impide discriminacion directa o indirecta por sexo."
+    "explanation": "git add lleva cambios al staging area."
   },
   {
     "id": 355,
-    "topic_num": 8,
-    "question": "Que ley estatal regula la igualdad efectiva de mujeres y hombres?",
-    "option_a": "Ley Organica 3/2007",
-    "option_b": "Ley 31/1995",
-    "option_c": "Ley 7/1985",
-    "option_d": "Ley 40/2015",
+    "topic_num": 33,
+    "question": "Que comando crea una instantanea en el historial?",
+    "option_a": "git commit",
+    "option_b": "git fetch",
+    "option_c": "git remote",
+    "option_d": "git stash",
     "correct": "A",
-    "explanation": "La LO 3/2007 regula la igualdad efectiva."
+    "explanation": "git commit registra cambios preparados."
   },
   {
     "id": 356,
-    "topic_num": 8,
-    "question": "Que trato desfavorable por razon de sexo se produce de forma expresa y visible?",
-    "option_a": "Discriminacion indirecta",
-    "option_b": "Recusacion",
-    "option_c": "Prescripcion",
-    "option_d": "Discriminacion directa",
+    "topic_num": 33,
+    "question": "Que archivo indica patrones que Git debe ignorar?",
+    "option_a": "README.md",
+    "option_b": "package.json",
+    "option_c": "pyproject.toml",
+    "option_d": ".gitignore",
     "correct": "D",
-    "explanation": "La discriminacion directa supone trato menos favorable por razon de sexo."
+    "explanation": ".gitignore contiene reglas de exclusion."
   },
   {
     "id": 357,
-    "topic_num": 8,
-    "question": "Que discriminacion deriva de una medida aparentemente neutra con impacto desfavorable?",
-    "option_a": "Convalidacion",
-    "option_b": "Silencio administrativo",
-    "option_c": "Discriminacion indirecta",
-    "option_d": "Abstencion",
+    "topic_num": 33,
+    "question": "Que puntero representa normalmente el commit actualmente extraido?",
+    "option_a": "tag",
+    "option_b": "stash",
+    "option_c": "HEAD",
+    "option_d": "origin",
     "correct": "C",
-    "explanation": "La discriminacion indirecta puede surgir de criterios aparentemente neutros."
+    "explanation": "HEAD apunta a la revision actual."
   },
   {
     "id": 358,
-    "topic_num": 8,
-    "question": "Que instrumento empresarial ordena medidas para alcanzar igualdad de trato y oportunidades?",
-    "option_a": "Plan de backup",
-    "option_b": "Plan de igualdad",
-    "option_c": "Plan de tesoreria",
-    "option_d": "Plan de urbanismo",
-    "correct": "B",
-    "explanation": "Los planes de igualdad ordenan objetivos y medidas de igualdad."
+    "topic_num": 34,
+    "question": "Que comando lista o crea ramas en Git?",
+    "option_a": "git push",
+    "option_b": "git log --oneline only",
+    "option_c": "git branch",
+    "option_d": "git fetch",
+    "correct": "C",
+    "explanation": "git branch gestiona ramas."
   },
   {
     "id": 359,
-    "topic_num": 8,
-    "question": "Que conducta verbal, no verbal o fisica de naturaleza sexual atenta contra la dignidad?",
-    "option_a": "Acoso sexual",
-    "option_b": "Acoso urbanistico",
-    "option_c": "Fraude de ley",
-    "option_d": "Enriquecimiento injusto",
-    "correct": "A",
-    "explanation": "El acoso sexual es una conducta de naturaleza sexual que crea entorno intimidatorio u ofensivo."
+    "topic_num": 34,
+    "question": "Que comando moderno cambia de rama?",
+    "option_a": "git remote",
+    "option_b": "git switch",
+    "option_c": "git init",
+    "option_d": "git tag",
+    "correct": "B",
+    "explanation": "git switch cambia entre ramas."
   },
   {
     "id": 360,
-    "topic_num": 8,
-    "question": "Que principio exige ausencia de discriminacion por sexo en empleo, formacion y promocion?",
-    "option_a": "Jerarquia contable",
-    "option_b": "Unidad de caja",
-    "option_c": "Devengo",
-    "option_d": "Igualdad de trato",
-    "correct": "D",
-    "explanation": "La igualdad de trato impide discriminacion directa o indirecta por sexo."
+    "topic_num": 34,
+    "question": "Que operacion integra historiales creando o no commit de fusion?",
+    "option_a": "merge",
+    "option_b": "rebase",
+    "option_c": "stash",
+    "option_d": "tag",
+    "correct": "A",
+    "explanation": "Merge combina ramas."
   },
   {
     "id": 361,
-    "topic_num": 8,
-    "question": "Que ley estatal regula la igualdad efectiva de mujeres y hombres?",
-    "option_a": "Ley 7/1985",
-    "option_b": "Ley 40/2015",
-    "option_c": "Ley Organica 3/2007",
-    "option_d": "Ley 31/1995",
-    "correct": "C",
-    "explanation": "La LO 3/2007 regula la igualdad efectiva."
+    "topic_num": 34,
+    "question": "Que operacion reaplica commits sobre otra base?",
+    "option_a": "merge",
+    "option_b": "stash",
+    "option_c": "clone",
+    "option_d": "rebase",
+    "correct": "D",
+    "explanation": "Rebase cambia la base de una serie de commits."
   },
   {
     "id": 362,
-    "topic_num": 8,
-    "question": "Que trato desfavorable por razon de sexo se produce de forma expresa y visible?",
-    "option_a": "Prescripcion",
-    "option_b": "Discriminacion directa",
-    "option_c": "Discriminacion indirecta",
-    "option_d": "Recusacion",
-    "correct": "B",
-    "explanation": "La discriminacion directa supone trato menos favorable por razon de sexo."
+    "topic_num": 34,
+    "question": "Que comando guarda cambios temporalmente sin commit?",
+    "option_a": "git blame",
+    "option_b": "git remote",
+    "option_c": "git stash",
+    "option_d": "git branch",
+    "correct": "C",
+    "explanation": "git stash aparta cambios locales."
   },
   {
     "id": 363,
-    "topic_num": 8,
-    "question": "Que discriminacion deriva de una medida aparentemente neutra con impacto desfavorable?",
-    "option_a": "Discriminacion indirecta",
-    "option_b": "Abstencion",
-    "option_c": "Convalidacion",
-    "option_d": "Silencio administrativo",
-    "correct": "A",
-    "explanation": "La discriminacion indirecta puede surgir de criterios aparentemente neutros."
+    "topic_num": 34,
+    "question": "Que situacion aparece cuando Git no puede combinar cambios automaticamente?",
+    "option_a": "Clone superficial",
+    "option_b": "Conflicto",
+    "option_c": "Fast-forward",
+    "option_d": "Tag anotado",
+    "correct": "B",
+    "explanation": "Un conflicto requiere resolucion manual."
   },
   {
     "id": 364,
-    "topic_num": 8,
-    "question": "Que instrumento empresarial ordena medidas para alcanzar igualdad de trato y oportunidades?",
-    "option_a": "Plan de tesoreria",
-    "option_b": "Plan de urbanismo",
-    "option_c": "Plan de backup",
-    "option_d": "Plan de igualdad",
-    "correct": "D",
-    "explanation": "Los planes de igualdad ordenan objetivos y medidas de igualdad."
+    "topic_num": 35,
+    "question": "Que nombre recibe por defecto el remoto principal al clonar un repositorio?",
+    "option_a": "stash",
+    "option_b": "origin",
+    "option_c": "main",
+    "option_d": "HEAD",
+    "correct": "B",
+    "explanation": "origin suele ser el remoto principal."
   },
   {
     "id": 365,
-    "topic_num": 8,
-    "question": "Que conducta verbal, no verbal o fisica de naturaleza sexual atenta contra la dignidad?",
-    "option_a": "Fraude de ley",
-    "option_b": "Enriquecimiento injusto",
-    "option_c": "Acoso sexual",
-    "option_d": "Acoso urbanistico",
-    "correct": "C",
-    "explanation": "El acoso sexual es una conducta de naturaleza sexual que crea entorno intimidatorio u ofensivo."
+    "topic_num": 35,
+    "question": "Que comando descarga cambios remotos sin fusionarlos automaticamente?",
+    "option_a": "git fetch",
+    "option_b": "git pull",
+    "option_c": "git push",
+    "option_d": "git commit",
+    "correct": "A",
+    "explanation": "fetch trae referencias remotas."
   },
   {
     "id": 366,
-    "topic_num": 8,
-    "question": "Que principio exige ausencia de discriminacion por sexo en empleo, formacion y promocion?",
-    "option_a": "Devengo",
-    "option_b": "Igualdad de trato",
-    "option_c": "Jerarquia contable",
-    "option_d": "Unidad de caja",
-    "correct": "B",
-    "explanation": "La igualdad de trato impide discriminacion directa o indirecta por sexo."
+    "topic_num": 35,
+    "question": "Que comando descarga e integra cambios remotos en la rama actual?",
+    "option_a": "git fetch",
+    "option_b": "git push",
+    "option_c": "git status",
+    "option_d": "git pull",
+    "correct": "D",
+    "explanation": "pull equivale a fetch mas integracion."
   },
   {
     "id": 367,
-    "topic_num": 8,
-    "question": "Que ley estatal regula la igualdad efectiva de mujeres y hombres?",
-    "option_a": "Ley Organica 3/2007",
-    "option_b": "Ley 31/1995",
-    "option_c": "Ley 7/1985",
-    "option_d": "Ley 40/2015",
-    "correct": "A",
-    "explanation": "La LO 3/2007 regula la igualdad efectiva."
+    "topic_num": 35,
+    "question": "Que comando envia commits locales al remoto?",
+    "option_a": "git fetch",
+    "option_b": "git clone",
+    "option_c": "git push",
+    "option_d": "git pull",
+    "correct": "C",
+    "explanation": "push publica commits."
   },
   {
     "id": 368,
-    "topic_num": 8,
-    "question": "Que trato desfavorable por razon de sexo se produce de forma expresa y visible?",
-    "option_a": "Discriminacion indirecta",
-    "option_b": "Recusacion",
-    "option_c": "Prescripcion",
-    "option_d": "Discriminacion directa",
-    "correct": "D",
-    "explanation": "La discriminacion directa supone trato menos favorable por razon de sexo."
+    "topic_num": 35,
+    "question": "Que practica permite revisar cambios antes de integrarlos?",
+    "option_a": "Certificado",
+    "option_b": "Pull request",
+    "option_c": "Rollback",
+    "option_d": "Model binding",
+    "correct": "B",
+    "explanation": "Pull request facilita revision y validacion."
   },
   {
     "id": 369,
-    "topic_num": 9,
-    "question": "Que permite acreditar la identidad del firmante en una firma electronica?",
-    "option_a": "Indice SQL",
-    "option_b": "Controlador MVC",
-    "option_c": "Hoja de estilos",
-    "option_d": "Certificado digital",
-    "correct": "D",
-    "explanation": "El certificado digital vincula identidad y claves criptograficas."
+    "topic_num": 35,
+    "question": "Que flujo usa ramas feature, develop, release y main/master?",
+    "option_a": "GitFlow",
+    "option_b": "Trunk-based puro",
+    "option_c": "OData",
+    "option_d": "SCSP",
+    "correct": "A",
+    "explanation": "GitFlow define varias ramas de soporte."
   },
   {
     "id": 370,
-    "topic_num": 9,
-    "question": "Que clave debe mantenerse secreta por el titular para firmar electronicamente?",
-    "option_a": "Certificado raiz",
-    "option_b": "Hash publicado",
-    "option_c": "Clave privada",
-    "option_d": "Clave publica",
-    "correct": "C",
-    "explanation": "La clave privada se protege y se usa para crear la firma."
+    "topic_num": 36,
+    "question": "Que punto electronico permite a la ciudadania acceder a servicios y tramites?",
+    "option_a": "Sede electronica",
+    "option_b": "Indice B-tree",
+    "option_c": "RenderFragment",
+    "option_d": "Repositorio bare",
+    "correct": "A",
+    "explanation": "La sede electronica es la direccion electronica de la Administracion."
   },
   {
     "id": 371,
-    "topic_num": 9,
-    "question": "Que aplicacion se usa habitualmente para firmar documentos electronicamente en AAPP espanolas?",
-    "option_a": "Git stash",
-    "option_b": "AutoFirma",
-    "option_c": "pg_dump",
-    "option_d": "Bootstrap",
-    "correct": "B",
-    "explanation": "AutoFirma permite firmar con certificados digitales."
+    "topic_num": 36,
+    "question": "Que conjunto ordenado reune documentos y actuaciones de un procedimiento?",
+    "option_a": "Cluster PostgreSQL",
+    "option_b": "Pull request",
+    "option_c": "Claim",
+    "option_d": "Expediente electronico",
+    "correct": "D",
+    "explanation": "El expediente electronico agrupa documentos y actuaciones."
   },
   {
     "id": 372,
-    "topic_num": 9,
-    "question": "Que proceso comprueba que una firma electronica es valida y no ha sido alterada?",
-    "option_a": "Validacion de firma",
-    "option_b": "Normalizacion SQL",
-    "option_c": "Renderizado CSS",
-    "option_d": "Rebase interactivo",
-    "correct": "A",
-    "explanation": "Validar firma comprueba integridad, certificado y estado."
+    "topic_num": 36,
+    "question": "Que asiento deja constancia de entrada o salida de documentos?",
+    "option_a": "WAL",
+    "option_b": "DbSet",
+    "option_c": "Registro electronico",
+    "option_d": "localStorage",
+    "correct": "C",
+    "explanation": "El registro electronico anota presentaciones."
   },
   {
     "id": 373,
-    "topic_num": 9,
-    "question": "Que servicio acredita el momento en que existia una firma o documento?",
-    "option_a": "Compilacion JIT",
-    "option_b": "Indexacion B-tree",
-    "option_c": "Model binding",
-    "option_d": "Sellado de tiempo",
-    "correct": "D",
-    "explanation": "El sellado de tiempo aporta evidencia temporal."
+    "topic_num": 36,
+    "question": "Que codigo permite verificar la autenticidad de un documento electronico?",
+    "option_a": "WAL",
+    "option_b": "CSV",
+    "option_c": "CSS",
+    "option_d": "JWT",
+    "correct": "B",
+    "explanation": "CSV significa Codigo Seguro de Verificacion."
   },
   {
     "id": 374,
-    "topic_num": 9,
-    "question": "Que tipo de firma electronica tiene maximas garantias juridicas con certificado cualificado y dispositivo cualificado?",
-    "option_a": "Firma anonima",
-    "option_b": "Firma por usuario invitado",
-    "option_c": "Firma cualificada",
-    "option_d": "Firma simple manuscrita escaneada",
-    "correct": "C",
-    "explanation": "La firma electronica cualificada tiene los requisitos reforzados del Reglamento eIDAS."
+    "topic_num": 36,
+    "question": "Que acto comunica electronicamente una resolucion o tramite al interesado?",
+    "option_a": "Notificacion electronica",
+    "option_b": "Migracion",
+    "option_c": "Rebase",
+    "option_d": "Vacuum",
+    "correct": "A",
+    "explanation": "La notificacion electronica comunica actos administrativos."
   },
   {
     "id": 375,
-    "topic_num": 9,
-    "question": "Que permite acreditar la identidad del firmante en una firma electronica?",
-    "option_a": "Hoja de estilos",
-    "option_b": "Certificado digital",
-    "option_c": "Indice SQL",
-    "option_d": "Controlador MVC",
-    "correct": "B",
-    "explanation": "El certificado digital vincula identidad y claves criptograficas."
+    "topic_num": 36,
+    "question": "Que concepto describe la gestion completa de procedimientos por medios electronicos?",
+    "option_a": "Indexacion SQL",
+    "option_b": "Minificacion JS",
+    "option_c": "Compilacion",
+    "option_d": "Tramitacion electronica",
+    "correct": "D",
+    "explanation": "La tramitacion electronica sustituye soportes y actuaciones en papel."
   },
   {
     "id": 376,
-    "topic_num": 9,
-    "question": "Que clave debe mantenerse secreta por el titular para firmar electronicamente?",
-    "option_a": "Clave privada",
-    "option_b": "Clave publica",
-    "option_c": "Certificado raiz",
-    "option_d": "Hash publicado",
-    "correct": "A",
-    "explanation": "La clave privada se protege y se usa para crear la firma."
+    "topic_num": 37,
+    "question": "Que modulo SedipuAlba se asocia a gestion de expedientes?",
+    "option_a": "Sefycu",
+    "option_b": "Segra",
+    "option_c": "Secoin",
+    "option_d": "Segex",
+    "correct": "D",
+    "explanation": "Segex gestiona expedientes."
   },
   {
     "id": 377,
-    "topic_num": 9,
-    "question": "Que aplicacion se usa habitualmente para firmar documentos electronicamente en AAPP espanolas?",
-    "option_a": "pg_dump",
-    "option_b": "Bootstrap",
-    "option_c": "Git stash",
-    "option_d": "AutoFirma",
-    "correct": "D",
-    "explanation": "AutoFirma permite firmar con certificados digitales."
+    "topic_num": 37,
+    "question": "Que modulo SedipuAlba se asocia a firma y custodia documental?",
+    "option_a": "Segra",
+    "option_b": "Seres",
+    "option_c": "Sefycu",
+    "option_d": "Segex",
+    "correct": "C",
+    "explanation": "Sefycu se vincula con firma y custodia."
   },
   {
     "id": 378,
-    "topic_num": 9,
-    "question": "Que proceso comprueba que una firma electronica es valida y no ha sido alterada?",
-    "option_a": "Renderizado CSS",
-    "option_b": "Rebase interactivo",
-    "option_c": "Validacion de firma",
-    "option_d": "Normalizacion SQL",
-    "correct": "C",
-    "explanation": "Validar firma comprueba integridad, certificado y estado."
+    "topic_num": 37,
+    "question": "Que modulo SedipuAlba se asocia al registro?",
+    "option_a": "Secoin",
+    "option_b": "Segra",
+    "option_c": "Segex",
+    "option_d": "Sefycu",
+    "correct": "B",
+    "explanation": "Segra se relaciona con registro."
   },
   {
     "id": 379,
-    "topic_num": 9,
-    "question": "Que servicio acredita el momento en que existia una firma o documento?",
-    "option_a": "Model binding",
-    "option_b": "Sellado de tiempo",
-    "option_c": "Compilacion JIT",
-    "option_d": "Indexacion B-tree",
-    "correct": "B",
-    "explanation": "El sellado de tiempo aporta evidencia temporal."
+    "topic_num": 37,
+    "question": "Que modulo SedipuAlba se asocia a resoluciones o servicios relacionados con tramitacion?",
+    "option_a": "Seres",
+    "option_b": "pg_restore",
+    "option_c": "Bootstrap",
+    "option_d": "GitFlow",
+    "correct": "A",
+    "explanation": "Seres forma parte de las herramientas de tramitacion SedipuAlba."
   },
   {
     "id": 380,
-    "topic_num": 9,
-    "question": "Que tipo de firma electronica tiene maximas garantias juridicas con certificado cualificado y dispositivo cualificado?",
-    "option_a": "Firma cualificada",
-    "option_b": "Firma simple manuscrita escaneada",
-    "option_c": "Firma anonima",
-    "option_d": "Firma por usuario invitado",
-    "correct": "A",
-    "explanation": "La firma electronica cualificada tiene los requisitos reforzados del Reglamento eIDAS."
+    "topic_num": 37,
+    "question": "Que modulo SedipuAlba se asocia a comunicaciones internas?",
+    "option_a": "Sefycu",
+    "option_b": "Segex",
+    "option_c": "AutoFirma",
+    "option_d": "Secoin",
+    "correct": "D",
+    "explanation": "Secoin se vincula a comunicaciones internas."
   },
   {
     "id": 381,
-    "topic_num": 9,
-    "question": "Que permite acreditar la identidad del firmante en una firma electronica?",
-    "option_a": "Indice SQL",
-    "option_b": "Controlador MVC",
-    "option_c": "Hoja de estilos",
-    "option_d": "Certificado digital",
-    "correct": "D",
-    "explanation": "El certificado digital vincula identidad y claves criptograficas."
+    "topic_num": 37,
+    "question": "Que tipo de herramientas usa un tramitador para gestionar procedimientos en SedipuAlba?",
+    "option_a": "Componentes Razor genericos",
+    "option_b": "Comandos Git",
+    "option_c": "Modulos de tramitacion",
+    "option_d": "Indices B-tree",
+    "correct": "C",
+    "explanation": "Los tramitadores trabajan con modulos de la plataforma."
   },
   {
     "id": 382,
-    "topic_num": 9,
-    "question": "Que clave debe mantenerse secreta por el titular para firmar electronicamente?",
-    "option_a": "Certificado raiz",
-    "option_b": "Hash publicado",
-    "option_c": "Clave privada",
-    "option_d": "Clave publica",
+    "topic_num": 38,
+    "question": "Que red conecta administraciones publicas para intercambio seguro de informacion?",
+    "option_a": "Red CDN",
+    "option_b": "Red NAT privada",
+    "option_c": "Red SARA",
+    "option_d": "Red TOR",
     "correct": "C",
-    "explanation": "La clave privada se protege y se usa para crear la firma."
+    "explanation": "Red SARA interconecta Administraciones Publicas."
   },
   {
     "id": 383,
-    "topic_num": 9,
-    "question": "Que aplicacion se usa habitualmente para firmar documentos electronicamente en AAPP espanolas?",
-    "option_a": "Git stash",
-    "option_b": "AutoFirma",
-    "option_c": "pg_dump",
-    "option_d": "Bootstrap",
+    "topic_num": 38,
+    "question": "Que especificaciones permiten consultar datos de otras administraciones?",
+    "option_a": "WCAG",
+    "option_b": "SCSP",
+    "option_c": "OData",
+    "option_d": "PGP",
     "correct": "B",
-    "explanation": "AutoFirma permite firmar con certificados digitales."
+    "explanation": "SCSP estandariza servicios de verificacion y consulta."
   },
   {
     "id": 384,
-    "topic_num": 9,
-    "question": "Que proceso comprueba que una firma electronica es valida y no ha sido alterada?",
-    "option_a": "Validacion de firma",
-    "option_b": "Normalizacion SQL",
-    "option_c": "Renderizado CSS",
-    "option_d": "Rebase interactivo",
+    "topic_num": 38,
+    "question": "Que principio evita pedir al ciudadano documentos que ya obran en poder de la Administracion?",
+    "option_a": "No aportar documentos",
+    "option_b": "Aportar siempre originales",
+    "option_c": "Duplicar expedientes",
+    "option_d": "Imprimir certificados",
     "correct": "A",
-    "explanation": "Validar firma comprueba integridad, certificado y estado."
+    "explanation": "La interoperabilidad evita cargas documentales innecesarias."
   },
   {
     "id": 385,
-    "topic_num": 9,
-    "question": "Que servicio acredita el momento en que existia una firma o documento?",
-    "option_a": "Compilacion JIT",
-    "option_b": "Indexacion B-tree",
-    "option_c": "Model binding",
-    "option_d": "Sellado de tiempo",
+    "topic_num": 38,
+    "question": "Que plataforma facilita servicios de intermediacion de datos?",
+    "option_a": "PGP",
+    "option_b": "DI",
+    "option_c": "MVC",
+    "option_d": "PID",
     "correct": "D",
-    "explanation": "El sellado de tiempo aporta evidencia temporal."
+    "explanation": "PID se asocia a intermediacion y consulta de datos."
   },
   {
     "id": 386,
-    "topic_num": 9,
-    "question": "Que tipo de firma electronica tiene maximas garantias juridicas con certificado cualificado y dispositivo cualificado?",
-    "option_a": "Firma anonima",
-    "option_b": "Firma por usuario invitado",
-    "option_c": "Firma cualificada",
-    "option_d": "Firma simple manuscrita escaneada",
+    "topic_num": 38,
+    "question": "Que actuacion comprueba informacion de otra administracion sin exigir certificado al ciudadano?",
+    "option_a": "Rebase",
+    "option_b": "Vacuum",
+    "option_c": "Verificacion de datos",
+    "option_d": "Renderizado CSS",
     "correct": "C",
-    "explanation": "La firma electronica cualificada tiene los requisitos reforzados del Reglamento eIDAS."
+    "explanation": "La verificacion consulta datos disponibles electronicamente."
   },
   {
     "id": 387,
-    "topic_num": 9,
-    "question": "Que permite acreditar la identidad del firmante en una firma electronica?",
-    "option_a": "Hoja de estilos",
-    "option_b": "Certificado digital",
-    "option_c": "Indice SQL",
-    "option_d": "Controlador MVC",
+    "topic_num": 38,
+    "question": "Que capacidad permite que sistemas de distintas administraciones intercambien informacion?",
+    "option_a": "Indexacion",
+    "option_b": "Interoperabilidad",
+    "option_c": "Polimorfismo",
+    "option_d": "Minificacion",
     "correct": "B",
-    "explanation": "El certificado digital vincula identidad y claves criptograficas."
+    "explanation": "Interoperabilidad permite cooperacion e intercambio de datos."
   },
   {
     "id": 388,
-    "topic_num": 9,
-    "question": "Que clave debe mantenerse secreta por el titular para firmar electronicamente?",
-    "option_a": "Clave privada",
-    "option_b": "Clave publica",
-    "option_c": "Certificado raiz",
-    "option_d": "Hash publicado",
-    "correct": "A",
-    "explanation": "La clave privada se protege y se usa para crear la firma."
+    "topic_num": 39,
+    "question": "Que sistema comun permite identificacion y autenticacion ciudadana ante AAPP?",
+    "option_a": "LINQ",
+    "option_b": "Cl@ve",
+    "option_c": "Bootstrap",
+    "option_d": "pg_dump",
+    "correct": "B",
+    "explanation": "Cl@ve es plataforma comun de identificacion."
   },
   {
     "id": 389,
-    "topic_num": 9,
-    "question": "Que aplicacion se usa habitualmente para firmar documentos electronicamente en AAPP espanolas?",
-    "option_a": "pg_dump",
-    "option_b": "Bootstrap",
-    "option_c": "Git stash",
-    "option_d": "AutoFirma",
-    "correct": "D",
-    "explanation": "AutoFirma permite firmar con certificados digitales."
+    "topic_num": 39,
+    "question": "Que documento electronico de identidad permite autenticacion y firma?",
+    "option_a": "DNIe",
+    "option_b": "CSV",
+    "option_c": "WAL",
+    "option_d": "CSS",
+    "correct": "A",
+    "explanation": "DNIe incorpora certificados para identificacion y firma."
   },
   {
     "id": 390,
-    "topic_num": 9,
-    "question": "Que proceso comprueba que una firma electronica es valida y no ha sido alterada?",
-    "option_a": "Renderizado CSS",
-    "option_b": "Rebase interactivo",
-    "option_c": "Validacion de firma",
-    "option_d": "Normalizacion SQL",
-    "correct": "C",
-    "explanation": "Validar firma comprueba integridad, certificado y estado."
+    "topic_num": 39,
+    "question": "Que servicio facilita firma electronica centralizada?",
+    "option_a": "SIR",
+    "option_b": "PID",
+    "option_c": "WCAG",
+    "option_d": "FIRe",
+    "correct": "D",
+    "explanation": "FIRe integra servicios de firma."
   },
   {
     "id": 391,
-    "topic_num": 9,
-    "question": "Que servicio acredita el momento en que existia una firma o documento?",
-    "option_a": "Model binding",
-    "option_b": "Sellado de tiempo",
-    "option_c": "Compilacion JIT",
-    "option_d": "Indexacion B-tree",
-    "correct": "B",
-    "explanation": "El sellado de tiempo aporta evidencia temporal."
+    "topic_num": 39,
+    "question": "Que espacio permite a la ciudadania consultar expedientes y notificaciones de distintas AAPP?",
+    "option_a": "GitHub",
+    "option_b": "Swagger",
+    "option_c": "Carpeta Ciudadana",
+    "option_d": "pgAdmin",
+    "correct": "C",
+    "explanation": "Carpeta Ciudadana centraliza informacion administrativa."
   },
   {
     "id": 392,
-    "topic_num": 9,
-    "question": "Que tipo de firma electronica tiene maximas garantias juridicas con certificado cualificado y dispositivo cualificado?",
-    "option_a": "Firma cualificada",
-    "option_b": "Firma simple manuscrita escaneada",
-    "option_c": "Firma anonima",
-    "option_d": "Firma por usuario invitado",
-    "correct": "A",
-    "explanation": "La firma electronica cualificada tiene los requisitos reforzados del Reglamento eIDAS."
+    "topic_num": 39,
+    "question": "Que sistema se usa para intercambio registral entre administraciones?",
+    "option_a": "B-tree",
+    "option_b": "SIR",
+    "option_c": "SCSS",
+    "option_d": "JWT",
+    "correct": "B",
+    "explanation": "SIR es el Sistema de Interconexion de Registros."
   },
   {
     "id": 393,
-    "topic_num": 9,
-    "question": "Que permite acreditar la identidad del firmante en una firma electronica?",
-    "option_a": "Indice SQL",
-    "option_b": "Controlador MVC",
-    "option_c": "Hoja de estilos",
-    "option_d": "Certificado digital",
-    "correct": "D",
-    "explanation": "El certificado digital vincula identidad y claves criptograficas."
+    "topic_num": 39,
+    "question": "Que plataforma se relaciona con intermediacion y consulta de datos?",
+    "option_a": "PID",
+    "option_b": "PGP",
+    "option_c": "MVC",
+    "option_d": "CSS",
+    "correct": "A",
+    "explanation": "PID facilita servicios de intermediacion."
   },
   {
     "id": 394,
-    "topic_num": 9,
-    "question": "Que clave debe mantenerse secreta por el titular para firmar electronicamente?",
-    "option_a": "Certificado raiz",
-    "option_b": "Hash publicado",
-    "option_c": "Clave privada",
-    "option_d": "Clave publica",
-    "correct": "C",
-    "explanation": "La clave privada se protege y se usa para crear la firma."
+    "topic_num": 40,
+    "question": "Que pautas internacionales definen criterios de accesibilidad web?",
+    "option_a": "WCAG",
+    "option_b": "ACID",
+    "option_c": "PKI",
+    "option_d": "LINQ",
+    "correct": "A",
+    "explanation": "WCAG establece pautas de accesibilidad."
   },
   {
     "id": 395,
-    "topic_num": 10,
-    "question": "Que cifrado utiliza la misma clave para cifrar y descifrar?",
-    "option_a": "Hash sin clave",
-    "option_b": "Firma digital",
-    "option_c": "Cifrado simetrico",
-    "option_d": "Cifrado asimetrico",
-    "correct": "C",
-    "explanation": "El cifrado simetrico comparte una clave secreta."
+    "topic_num": 40,
+    "question": "Que norma europea se usa como referencia de accesibilidad TIC en el sector publico?",
+    "option_a": "ISO 9001 exclusivamente",
+    "option_b": "RDL 781/1986",
+    "option_c": "PGP",
+    "option_d": "UNE-EN 301549",
+    "correct": "D",
+    "explanation": "UNE-EN 301549 recoge requisitos de accesibilidad TIC."
   },
   {
     "id": 396,
-    "topic_num": 10,
-    "question": "Que cifrado utiliza un par de claves publica y privada?",
-    "option_a": "Codificacion Base64",
-    "option_b": "Cifrado asimetrico",
-    "option_c": "Cifrado simetrico",
-    "option_d": "Compresion ZIP",
-    "correct": "B",
-    "explanation": "El cifrado asimetrico usa clave publica y privada."
+    "topic_num": 40,
+    "question": "Que nivel WCAG se exige habitualmente como referencia normativa en sector publico?",
+    "option_a": "AAA siempre",
+    "option_b": "Beta",
+    "option_c": "AA",
+    "option_d": "A solamente",
+    "correct": "C",
+    "explanation": "El nivel AA es la referencia habitual."
   },
   {
     "id": 397,
-    "topic_num": 10,
-    "question": "Que infraestructura gestiona certificados, autoridades de certificacion y revocacion?",
-    "option_a": "PKI",
-    "option_b": "LINQ",
-    "option_c": "OData",
-    "option_d": "MVC",
-    "correct": "A",
-    "explanation": "La PKI organiza certificados y autoridades de certificacion."
+    "topic_num": 40,
+    "question": "Que principio WCAG exige que la informacion pueda ser percibida por los usuarios?",
+    "option_a": "Robusto",
+    "option_b": "Perceptible",
+    "option_c": "Operable",
+    "option_d": "Comprensible",
+    "correct": "B",
+    "explanation": "Perceptible implica alternativas textuales, contraste, etc."
   },
   {
     "id": 398,
-    "topic_num": 10,
-    "question": "Que entidad emite y firma certificados digitales?",
-    "option_a": "Router web",
-    "option_b": "Controlador API",
-    "option_c": "Repositorio Git",
-    "option_d": "Autoridad de certificacion",
-    "correct": "D",
-    "explanation": "La CA emite certificados y garantiza su vinculacion."
+    "topic_num": 40,
+    "question": "Que principio WCAG exige que la interfaz pueda manejarse?",
+    "option_a": "Operable",
+    "option_b": "Perceptible",
+    "option_c": "Comprensible",
+    "option_d": "Robusto",
+    "correct": "A",
+    "explanation": "Operable incluye teclado, tiempo suficiente y navegacion."
   },
   {
     "id": 399,
-    "topic_num": 10,
-    "question": "Que protocolo cifra comunicaciones web usadas por HTTPS?",
-    "option_a": "FTP",
-    "option_b": "SMTP sin cifrar",
-    "option_c": "TLS",
-    "option_d": "PGP",
-    "correct": "C",
-    "explanation": "HTTPS funciona sobre TLS para cifrar la comunicacion."
+    "topic_num": 40,
+    "question": "Que documento publico informa sobre el grado de cumplimiento de accesibilidad de un sitio?",
+    "option_a": "Commit",
+    "option_b": "Migration",
+    "option_c": "Certificado TLS",
+    "option_d": "Declaracion de accesibilidad",
+    "correct": "D",
+    "explanation": "Las AAPP deben publicar declaracion de accesibilidad."
   },
   {
     "id": 400,
-    "topic_num": 10,
-    "question": "Que tecnologia se asocia historicamente al cifrado y firma de correo o ficheros mediante pares de claves?",
-    "option_a": "SIR",
-    "option_b": "PGP",
-    "option_c": "WCAG",
-    "option_d": "SCSP",
-    "correct": "B",
-    "explanation": "PGP permite cifrar y firmar informacion con criptografia de clave publica."
-  },
-  {
-    "id": 401,
-    "topic_num": 10,
-    "question": "Que cifrado utiliza la misma clave para cifrar y descifrar?",
-    "option_a": "Cifrado simetrico",
-    "option_b": "Cifrado asimetrico",
-    "option_c": "Hash sin clave",
-    "option_d": "Firma digital",
-    "correct": "A",
-    "explanation": "El cifrado simetrico comparte una clave secreta."
-  },
-  {
-    "id": 402,
-    "topic_num": 10,
-    "question": "Que cifrado utiliza un par de claves publica y privada?",
-    "option_a": "Cifrado simetrico",
-    "option_b": "Compresion ZIP",
-    "option_c": "Codificacion Base64",
-    "option_d": "Cifrado asimetrico",
-    "correct": "D",
-    "explanation": "El cifrado asimetrico usa clave publica y privada."
-  },
-  {
-    "id": 403,
-    "topic_num": 10,
-    "question": "Que infraestructura gestiona certificados, autoridades de certificacion y revocacion?",
-    "option_a": "OData",
-    "option_b": "MVC",
-    "option_c": "PKI",
-    "option_d": "LINQ",
-    "correct": "C",
-    "explanation": "La PKI organiza certificados y autoridades de certificacion."
-  },
-  {
-    "id": 404,
-    "topic_num": 10,
-    "question": "Que entidad emite y firma certificados digitales?",
-    "option_a": "Repositorio Git",
-    "option_b": "Autoridad de certificacion",
-    "option_c": "Router web",
-    "option_d": "Controlador API",
-    "correct": "B",
-    "explanation": "La CA emite certificados y garantiza su vinculacion."
-  },
-  {
-    "id": 405,
-    "topic_num": 10,
-    "question": "Que protocolo cifra comunicaciones web usadas por HTTPS?",
-    "option_a": "TLS",
-    "option_b": "PGP",
-    "option_c": "FTP",
-    "option_d": "SMTP sin cifrar",
-    "correct": "A",
-    "explanation": "HTTPS funciona sobre TLS para cifrar la comunicacion."
-  },
-  {
-    "id": 406,
-    "topic_num": 10,
-    "question": "Que tecnologia se asocia historicamente al cifrado y firma de correo o ficheros mediante pares de claves?",
-    "option_a": "WCAG",
-    "option_b": "SCSP",
-    "option_c": "SIR",
-    "option_d": "PGP",
-    "correct": "D",
-    "explanation": "PGP permite cifrar y firmar informacion con criptografia de clave publica."
-  },
-  {
-    "id": 407,
-    "topic_num": 10,
-    "question": "Que cifrado utiliza la misma clave para cifrar y descifrar?",
-    "option_a": "Hash sin clave",
-    "option_b": "Firma digital",
-    "option_c": "Cifrado simetrico",
-    "option_d": "Cifrado asimetrico",
-    "correct": "C",
-    "explanation": "El cifrado simetrico comparte una clave secreta."
-  },
-  {
-    "id": 408,
-    "topic_num": 10,
-    "question": "Que cifrado utiliza un par de claves publica y privada?",
-    "option_a": "Codificacion Base64",
-    "option_b": "Cifrado asimetrico",
-    "option_c": "Cifrado simetrico",
-    "option_d": "Compresion ZIP",
-    "correct": "B",
-    "explanation": "El cifrado asimetrico usa clave publica y privada."
-  },
-  {
-    "id": 409,
-    "topic_num": 10,
-    "question": "Que infraestructura gestiona certificados, autoridades de certificacion y revocacion?",
-    "option_a": "PKI",
-    "option_b": "LINQ",
-    "option_c": "OData",
-    "option_d": "MVC",
-    "correct": "A",
-    "explanation": "La PKI organiza certificados y autoridades de certificacion."
-  },
-  {
-    "id": 410,
-    "topic_num": 10,
-    "question": "Que entidad emite y firma certificados digitales?",
-    "option_a": "Router web",
-    "option_b": "Controlador API",
-    "option_c": "Repositorio Git",
-    "option_d": "Autoridad de certificacion",
-    "correct": "D",
-    "explanation": "La CA emite certificados y garantiza su vinculacion."
-  },
-  {
-    "id": 411,
-    "topic_num": 10,
-    "question": "Que protocolo cifra comunicaciones web usadas por HTTPS?",
-    "option_a": "FTP",
-    "option_b": "SMTP sin cifrar",
-    "option_c": "TLS",
-    "option_d": "PGP",
-    "correct": "C",
-    "explanation": "HTTPS funciona sobre TLS para cifrar la comunicacion."
-  },
-  {
-    "id": 412,
-    "topic_num": 10,
-    "question": "Que tecnologia se asocia historicamente al cifrado y firma de correo o ficheros mediante pares de claves?",
-    "option_a": "SIR",
-    "option_b": "PGP",
-    "option_c": "WCAG",
-    "option_d": "SCSP",
-    "correct": "B",
-    "explanation": "PGP permite cifrar y firmar informacion con criptografia de clave publica."
-  },
-  {
-    "id": 413,
-    "topic_num": 10,
-    "question": "Que cifrado utiliza la misma clave para cifrar y descifrar?",
-    "option_a": "Cifrado simetrico",
-    "option_b": "Cifrado asimetrico",
-    "option_c": "Hash sin clave",
-    "option_d": "Firma digital",
-    "correct": "A",
-    "explanation": "El cifrado simetrico comparte una clave secreta."
-  },
-  {
-    "id": 414,
-    "topic_num": 10,
-    "question": "Que cifrado utiliza un par de claves publica y privada?",
-    "option_a": "Cifrado simetrico",
-    "option_b": "Compresion ZIP",
-    "option_c": "Codificacion Base64",
-    "option_d": "Cifrado asimetrico",
-    "correct": "D",
-    "explanation": "El cifrado asimetrico usa clave publica y privada."
-  },
-  {
-    "id": 415,
-    "topic_num": 10,
-    "question": "Que infraestructura gestiona certificados, autoridades de certificacion y revocacion?",
-    "option_a": "OData",
-    "option_b": "MVC",
-    "option_c": "PKI",
-    "option_d": "LINQ",
-    "correct": "C",
-    "explanation": "La PKI organiza certificados y autoridades de certificacion."
-  },
-  {
-    "id": 416,
-    "topic_num": 10,
-    "question": "Que entidad emite y firma certificados digitales?",
-    "option_a": "Repositorio Git",
-    "option_b": "Autoridad de certificacion",
-    "option_c": "Router web",
-    "option_d": "Controlador API",
-    "correct": "B",
-    "explanation": "La CA emite certificados y garantiza su vinculacion."
-  },
-  {
-    "id": 417,
-    "topic_num": 10,
-    "question": "Que protocolo cifra comunicaciones web usadas por HTTPS?",
-    "option_a": "TLS",
-    "option_b": "PGP",
-    "option_c": "FTP",
-    "option_d": "SMTP sin cifrar",
-    "correct": "A",
-    "explanation": "HTTPS funciona sobre TLS para cifrar la comunicacion."
-  },
-  {
-    "id": 418,
-    "topic_num": 10,
-    "question": "Que tecnologia se asocia historicamente al cifrado y firma de correo o ficheros mediante pares de claves?",
-    "option_a": "WCAG",
-    "option_b": "SCSP",
-    "option_c": "SIR",
-    "option_d": "PGP",
-    "correct": "D",
-    "explanation": "PGP permite cifrar y firmar informacion con criptografia de clave publica."
-  },
-  {
-    "id": 419,
-    "topic_num": 10,
-    "question": "Que cifrado utiliza la misma clave para cifrar y descifrar?",
-    "option_a": "Hash sin clave",
-    "option_b": "Firma digital",
-    "option_c": "Cifrado simetrico",
-    "option_d": "Cifrado asimetrico",
-    "correct": "C",
-    "explanation": "El cifrado simetrico comparte una clave secreta."
-  },
-  {
-    "id": 420,
-    "topic_num": 10,
-    "question": "Que cifrado utiliza un par de claves publica y privada?",
-    "option_a": "Codificacion Base64",
-    "option_b": "Cifrado asimetrico",
-    "option_c": "Cifrado simetrico",
-    "option_d": "Compresion ZIP",
-    "correct": "B",
-    "explanation": "El cifrado asimetrico usa clave publica y privada."
-  },
-  {
-    "id": 421,
-    "topic_num": 11,
-    "question": "Que esquema fija principios y requisitos de seguridad para sistemas del sector publico?",
-    "option_a": "LINQ",
-    "option_b": "ENS",
-    "option_c": "OData",
-    "option_d": "Bootstrap",
-    "correct": "B",
-    "explanation": "El Esquema Nacional de Seguridad establece la politica de seguridad en medios electronicos."
-  },
-  {
-    "id": 422,
-    "topic_num": 11,
-    "question": "Que documento define objetivos, organizacion y responsabilidades de seguridad?",
-    "option_a": "Politica de seguridad",
-    "option_b": "Plan de marketing",
-    "option_c": "Hoja de calculo",
-    "option_d": "Contrato menor",
-    "correct": "A",
-    "explanation": "La politica de seguridad ordena criterios y responsabilidades."
-  },
-  {
-    "id": 423,
-    "topic_num": 11,
-    "question": "Que actividad identifica amenazas, vulnerabilidades e impacto sobre la informacion?",
-    "option_a": "Rebase",
-    "option_b": "Model binding",
-    "option_c": "Empadronamiento",
-    "option_d": "Analisis de riesgos",
-    "correct": "D",
-    "explanation": "El analisis de riesgos permite seleccionar medidas adecuadas."
-  },
-  {
-    "id": 424,
-    "topic_num": 11,
-    "question": "Que determina si un sistema ENS es de categoria basica, media o alta?",
-    "option_a": "Numero de pantallas",
-    "option_b": "Lenguaje de programacion",
-    "option_c": "Categoria del sistema",
-    "option_d": "Color de la interfaz",
-    "correct": "C",
-    "explanation": "La categoria se obtiene valorando dimensiones de seguridad."
-  },
-  {
-    "id": 425,
-    "topic_num": 11,
-    "question": "Que revisa periodicamente el cumplimiento de medidas de seguridad?",
-    "option_a": "Paginacion",
-    "option_b": "Auditoria",
-    "option_c": "Compilacion",
-    "option_d": "Minificacion",
-    "correct": "B",
-    "explanation": "La auditoria comprueba el cumplimiento del ENS."
-  },
-  {
-    "id": 426,
-    "topic_num": 11,
-    "question": "Que conjunto de controles se aplica para proteger informacion y servicios?",
-    "option_a": "Medidas de seguridad",
-    "option_b": "Estilos CSS",
-    "option_c": "Ramas Git",
-    "option_d": "Consultas LINQ",
-    "correct": "A",
-    "explanation": "Las medidas protegen confidencialidad, integridad, disponibilidad, autenticidad y trazabilidad."
-  },
-  {
-    "id": 427,
-    "topic_num": 11,
-    "question": "Que esquema fija principios y requisitos de seguridad para sistemas del sector publico?",
-    "option_a": "OData",
-    "option_b": "Bootstrap",
-    "option_c": "LINQ",
-    "option_d": "ENS",
-    "correct": "D",
-    "explanation": "El Esquema Nacional de Seguridad establece la politica de seguridad en medios electronicos."
-  },
-  {
-    "id": 428,
-    "topic_num": 11,
-    "question": "Que documento define objetivos, organizacion y responsabilidades de seguridad?",
-    "option_a": "Hoja de calculo",
-    "option_b": "Contrato menor",
-    "option_c": "Politica de seguridad",
-    "option_d": "Plan de marketing",
-    "correct": "C",
-    "explanation": "La politica de seguridad ordena criterios y responsabilidades."
-  },
-  {
-    "id": 429,
-    "topic_num": 11,
-    "question": "Que actividad identifica amenazas, vulnerabilidades e impacto sobre la informacion?",
-    "option_a": "Empadronamiento",
-    "option_b": "Analisis de riesgos",
-    "option_c": "Rebase",
-    "option_d": "Model binding",
-    "correct": "B",
-    "explanation": "El analisis de riesgos permite seleccionar medidas adecuadas."
-  },
-  {
-    "id": 430,
-    "topic_num": 11,
-    "question": "Que determina si un sistema ENS es de categoria basica, media o alta?",
-    "option_a": "Categoria del sistema",
-    "option_b": "Color de la interfaz",
-    "option_c": "Numero de pantallas",
-    "option_d": "Lenguaje de programacion",
-    "correct": "A",
-    "explanation": "La categoria se obtiene valorando dimensiones de seguridad."
-  },
-  {
-    "id": 431,
-    "topic_num": 11,
-    "question": "Que revisa periodicamente el cumplimiento de medidas de seguridad?",
-    "option_a": "Compilacion",
-    "option_b": "Minificacion",
-    "option_c": "Paginacion",
-    "option_d": "Auditoria",
-    "correct": "D",
-    "explanation": "La auditoria comprueba el cumplimiento del ENS."
-  },
-  {
-    "id": 432,
-    "topic_num": 11,
-    "question": "Que conjunto de controles se aplica para proteger informacion y servicios?",
-    "option_a": "Ramas Git",
-    "option_b": "Consultas LINQ",
-    "option_c": "Medidas de seguridad",
-    "option_d": "Estilos CSS",
-    "correct": "C",
-    "explanation": "Las medidas protegen confidencialidad, integridad, disponibilidad, autenticidad y trazabilidad."
-  },
-  {
-    "id": 433,
-    "topic_num": 11,
-    "question": "Que esquema fija principios y requisitos de seguridad para sistemas del sector publico?",
-    "option_a": "LINQ",
-    "option_b": "ENS",
-    "option_c": "OData",
-    "option_d": "Bootstrap",
-    "correct": "B",
-    "explanation": "El Esquema Nacional de Seguridad establece la politica de seguridad en medios electronicos."
-  },
-  {
-    "id": 434,
-    "topic_num": 11,
-    "question": "Que documento define objetivos, organizacion y responsabilidades de seguridad?",
-    "option_a": "Politica de seguridad",
-    "option_b": "Plan de marketing",
-    "option_c": "Hoja de calculo",
-    "option_d": "Contrato menor",
-    "correct": "A",
-    "explanation": "La politica de seguridad ordena criterios y responsabilidades."
-  },
-  {
-    "id": 435,
-    "topic_num": 11,
-    "question": "Que actividad identifica amenazas, vulnerabilidades e impacto sobre la informacion?",
-    "option_a": "Rebase",
-    "option_b": "Model binding",
-    "option_c": "Empadronamiento",
-    "option_d": "Analisis de riesgos",
-    "correct": "D",
-    "explanation": "El analisis de riesgos permite seleccionar medidas adecuadas."
-  },
-  {
-    "id": 436,
-    "topic_num": 11,
-    "question": "Que determina si un sistema ENS es de categoria basica, media o alta?",
-    "option_a": "Numero de pantallas",
-    "option_b": "Lenguaje de programacion",
-    "option_c": "Categoria del sistema",
-    "option_d": "Color de la interfaz",
-    "correct": "C",
-    "explanation": "La categoria se obtiene valorando dimensiones de seguridad."
-  },
-  {
-    "id": 437,
-    "topic_num": 11,
-    "question": "Que revisa periodicamente el cumplimiento de medidas de seguridad?",
-    "option_a": "Paginacion",
-    "option_b": "Auditoria",
-    "option_c": "Compilacion",
-    "option_d": "Minificacion",
-    "correct": "B",
-    "explanation": "La auditoria comprueba el cumplimiento del ENS."
-  },
-  {
-    "id": 438,
-    "topic_num": 11,
-    "question": "Que conjunto de controles se aplica para proteger informacion y servicios?",
-    "option_a": "Medidas de seguridad",
-    "option_b": "Estilos CSS",
-    "option_c": "Ramas Git",
-    "option_d": "Consultas LINQ",
-    "correct": "A",
-    "explanation": "Las medidas protegen confidencialidad, integridad, disponibilidad, autenticidad y trazabilidad."
-  },
-  {
-    "id": 439,
-    "topic_num": 11,
-    "question": "Que esquema fija principios y requisitos de seguridad para sistemas del sector publico?",
-    "option_a": "OData",
-    "option_b": "Bootstrap",
-    "option_c": "LINQ",
-    "option_d": "ENS",
-    "correct": "D",
-    "explanation": "El Esquema Nacional de Seguridad establece la politica de seguridad en medios electronicos."
-  },
-  {
-    "id": 440,
-    "topic_num": 11,
-    "question": "Que documento define objetivos, organizacion y responsabilidades de seguridad?",
-    "option_a": "Hoja de calculo",
-    "option_b": "Contrato menor",
-    "option_c": "Politica de seguridad",
-    "option_d": "Plan de marketing",
-    "correct": "C",
-    "explanation": "La politica de seguridad ordena criterios y responsabilidades."
-  },
-  {
-    "id": 441,
-    "topic_num": 11,
-    "question": "Que actividad identifica amenazas, vulnerabilidades e impacto sobre la informacion?",
-    "option_a": "Empadronamiento",
-    "option_b": "Analisis de riesgos",
-    "option_c": "Rebase",
-    "option_d": "Model binding",
-    "correct": "B",
-    "explanation": "El analisis de riesgos permite seleccionar medidas adecuadas."
-  },
-  {
-    "id": 442,
-    "topic_num": 11,
-    "question": "Que determina si un sistema ENS es de categoria basica, media o alta?",
-    "option_a": "Categoria del sistema",
-    "option_b": "Color de la interfaz",
-    "option_c": "Numero de pantallas",
-    "option_d": "Lenguaje de programacion",
-    "correct": "A",
-    "explanation": "La categoria se obtiene valorando dimensiones de seguridad."
-  },
-  {
-    "id": 443,
-    "topic_num": 11,
-    "question": "Que revisa periodicamente el cumplimiento de medidas de seguridad?",
-    "option_a": "Compilacion",
-    "option_b": "Minificacion",
-    "option_c": "Paginacion",
-    "option_d": "Auditoria",
-    "correct": "D",
-    "explanation": "La auditoria comprueba el cumplimiento del ENS."
-  },
-  {
-    "id": 444,
-    "topic_num": 11,
-    "question": "Que conjunto de controles se aplica para proteger informacion y servicios?",
-    "option_a": "Ramas Git",
-    "option_b": "Consultas LINQ",
-    "option_c": "Medidas de seguridad",
-    "option_d": "Estilos CSS",
-    "correct": "C",
-    "explanation": "Las medidas protegen confidencialidad, integridad, disponibilidad, autenticidad y trazabilidad."
-  },
-  {
-    "id": 445,
-    "topic_num": 11,
-    "question": "Que esquema fija principios y requisitos de seguridad para sistemas del sector publico?",
-    "option_a": "LINQ",
-    "option_b": "ENS",
-    "option_c": "OData",
-    "option_d": "Bootstrap",
-    "correct": "B",
-    "explanation": "El Esquema Nacional de Seguridad establece la politica de seguridad en medios electronicos."
-  },
-  {
-    "id": 446,
-    "topic_num": 11,
-    "question": "Que documento define objetivos, organizacion y responsabilidades de seguridad?",
-    "option_a": "Politica de seguridad",
-    "option_b": "Plan de marketing",
-    "option_c": "Hoja de calculo",
-    "option_d": "Contrato menor",
-    "correct": "A",
-    "explanation": "La politica de seguridad ordena criterios y responsabilidades."
-  },
-  {
-    "id": 447,
-    "topic_num": 12,
-    "question": "Que reglamento europeo regula la proteccion de datos personales?",
-    "option_a": "RGPD",
-    "option_b": "ROF",
-    "option_c": "ENS",
-    "option_d": "PGP",
-    "correct": "A",
-    "explanation": "El Reglamento UE 2016/679 es el RGPD."
-  },
-  {
-    "id": 448,
-    "topic_num": 12,
-    "question": "Como se llama la persona fisica identificada o identificable sobre la que trata la informacion?",
-    "option_a": "Encargado",
-    "option_b": "Delegado",
-    "option_c": "Autoridad de certificacion",
-    "option_d": "Interesado",
-    "correct": "D",
-    "explanation": "El interesado es la persona cuyos datos se tratan."
-  },
-  {
-    "id": 449,
-    "topic_num": 12,
-    "question": "Quien decide los fines y medios del tratamiento de datos personales?",
-    "option_a": "Usuario anonimo",
-    "option_b": "Proveedor DNS",
-    "option_c": "Responsable del tratamiento",
-    "option_d": "Encargado del tratamiento",
-    "correct": "C",
-    "explanation": "El responsable determina fines y medios del tratamiento."
-  },
-  {
-    "id": 450,
-    "topic_num": 12,
-    "question": "Quien trata datos personales por cuenta del responsable?",
-    "option_a": "Autoridad judicial siempre",
-    "option_b": "Encargado del tratamiento",
-    "option_c": "Responsable",
-    "option_d": "Afectado",
-    "correct": "B",
-    "explanation": "El encargado trata datos siguiendo instrucciones del responsable."
-  },
-  {
-    "id": 451,
-    "topic_num": 12,
-    "question": "Que principio exige tratar solo datos adecuados, pertinentes y necesarios?",
-    "option_a": "Minimizacion de datos",
-    "option_b": "Maximizacion documental",
-    "option_c": "Rebase",
-    "option_d": "Indexacion",
-    "correct": "A",
-    "explanation": "La minimizacion limita los datos a lo necesario."
-  },
-  {
-    "id": 452,
-    "topic_num": 12,
-    "question": "Que derecho permite obtener confirmacion de si se tratan datos personales propios?",
-    "option_a": "Derecho de tanteo",
-    "option_b": "Derecho de superficie",
-    "option_c": "Derecho de retracto",
-    "option_d": "Derecho de acceso",
-    "correct": "D",
-    "explanation": "El derecho de acceso permite conocer el tratamiento de datos propios."
-  },
-  {
-    "id": 453,
-    "topic_num": 12,
-    "question": "Que reglamento europeo regula la proteccion de datos personales?",
-    "option_a": "ENS",
-    "option_b": "PGP",
-    "option_c": "RGPD",
-    "option_d": "ROF",
-    "correct": "C",
-    "explanation": "El Reglamento UE 2016/679 es el RGPD."
-  },
-  {
-    "id": 454,
-    "topic_num": 12,
-    "question": "Como se llama la persona fisica identificada o identificable sobre la que trata la informacion?",
-    "option_a": "Autoridad de certificacion",
-    "option_b": "Interesado",
-    "option_c": "Encargado",
-    "option_d": "Delegado",
-    "correct": "B",
-    "explanation": "El interesado es la persona cuyos datos se tratan."
-  },
-  {
-    "id": 455,
-    "topic_num": 12,
-    "question": "Quien decide los fines y medios del tratamiento de datos personales?",
-    "option_a": "Responsable del tratamiento",
-    "option_b": "Encargado del tratamiento",
-    "option_c": "Usuario anonimo",
-    "option_d": "Proveedor DNS",
-    "correct": "A",
-    "explanation": "El responsable determina fines y medios del tratamiento."
-  },
-  {
-    "id": 456,
-    "topic_num": 12,
-    "question": "Quien trata datos personales por cuenta del responsable?",
-    "option_a": "Responsable",
-    "option_b": "Afectado",
-    "option_c": "Autoridad judicial siempre",
-    "option_d": "Encargado del tratamiento",
-    "correct": "D",
-    "explanation": "El encargado trata datos siguiendo instrucciones del responsable."
-  },
-  {
-    "id": 457,
-    "topic_num": 12,
-    "question": "Que principio exige tratar solo datos adecuados, pertinentes y necesarios?",
-    "option_a": "Rebase",
-    "option_b": "Indexacion",
-    "option_c": "Minimizacion de datos",
-    "option_d": "Maximizacion documental",
-    "correct": "C",
-    "explanation": "La minimizacion limita los datos a lo necesario."
-  },
-  {
-    "id": 458,
-    "topic_num": 12,
-    "question": "Que derecho permite obtener confirmacion de si se tratan datos personales propios?",
-    "option_a": "Derecho de retracto",
-    "option_b": "Derecho de acceso",
-    "option_c": "Derecho de tanteo",
-    "option_d": "Derecho de superficie",
-    "correct": "B",
-    "explanation": "El derecho de acceso permite conocer el tratamiento de datos propios."
-  },
-  {
-    "id": 459,
-    "topic_num": 12,
-    "question": "Que reglamento europeo regula la proteccion de datos personales?",
-    "option_a": "RGPD",
-    "option_b": "ROF",
-    "option_c": "ENS",
-    "option_d": "PGP",
-    "correct": "A",
-    "explanation": "El Reglamento UE 2016/679 es el RGPD."
-  },
-  {
-    "id": 460,
-    "topic_num": 12,
-    "question": "Como se llama la persona fisica identificada o identificable sobre la que trata la informacion?",
-    "option_a": "Encargado",
-    "option_b": "Delegado",
-    "option_c": "Autoridad de certificacion",
-    "option_d": "Interesado",
-    "correct": "D",
-    "explanation": "El interesado es la persona cuyos datos se tratan."
-  },
-  {
-    "id": 461,
-    "topic_num": 12,
-    "question": "Quien decide los fines y medios del tratamiento de datos personales?",
-    "option_a": "Usuario anonimo",
-    "option_b": "Proveedor DNS",
-    "option_c": "Responsable del tratamiento",
-    "option_d": "Encargado del tratamiento",
-    "correct": "C",
-    "explanation": "El responsable determina fines y medios del tratamiento."
-  },
-  {
-    "id": 462,
-    "topic_num": 12,
-    "question": "Quien trata datos personales por cuenta del responsable?",
-    "option_a": "Autoridad judicial siempre",
-    "option_b": "Encargado del tratamiento",
-    "option_c": "Responsable",
-    "option_d": "Afectado",
-    "correct": "B",
-    "explanation": "El encargado trata datos siguiendo instrucciones del responsable."
-  },
-  {
-    "id": 463,
-    "topic_num": 12,
-    "question": "Que principio exige tratar solo datos adecuados, pertinentes y necesarios?",
-    "option_a": "Minimizacion de datos",
-    "option_b": "Maximizacion documental",
-    "option_c": "Rebase",
-    "option_d": "Indexacion",
-    "correct": "A",
-    "explanation": "La minimizacion limita los datos a lo necesario."
-  },
-  {
-    "id": 464,
-    "topic_num": 12,
-    "question": "Que derecho permite obtener confirmacion de si se tratan datos personales propios?",
-    "option_a": "Derecho de tanteo",
-    "option_b": "Derecho de superficie",
-    "option_c": "Derecho de retracto",
-    "option_d": "Derecho de acceso",
-    "correct": "D",
-    "explanation": "El derecho de acceso permite conocer el tratamiento de datos propios."
-  },
-  {
-    "id": 465,
-    "topic_num": 12,
-    "question": "Que reglamento europeo regula la proteccion de datos personales?",
-    "option_a": "ENS",
-    "option_b": "PGP",
-    "option_c": "RGPD",
-    "option_d": "ROF",
-    "correct": "C",
-    "explanation": "El Reglamento UE 2016/679 es el RGPD."
-  },
-  {
-    "id": 466,
-    "topic_num": 12,
-    "question": "Como se llama la persona fisica identificada o identificable sobre la que trata la informacion?",
-    "option_a": "Autoridad de certificacion",
-    "option_b": "Interesado",
-    "option_c": "Encargado",
-    "option_d": "Delegado",
-    "correct": "B",
-    "explanation": "El interesado es la persona cuyos datos se tratan."
-  },
-  {
-    "id": 467,
-    "topic_num": 12,
-    "question": "Quien decide los fines y medios del tratamiento de datos personales?",
-    "option_a": "Responsable del tratamiento",
-    "option_b": "Encargado del tratamiento",
-    "option_c": "Usuario anonimo",
-    "option_d": "Proveedor DNS",
-    "correct": "A",
-    "explanation": "El responsable determina fines y medios del tratamiento."
-  },
-  {
-    "id": 468,
-    "topic_num": 12,
-    "question": "Quien trata datos personales por cuenta del responsable?",
-    "option_a": "Responsable",
-    "option_b": "Afectado",
-    "option_c": "Autoridad judicial siempre",
-    "option_d": "Encargado del tratamiento",
-    "correct": "D",
-    "explanation": "El encargado trata datos siguiendo instrucciones del responsable."
-  },
-  {
-    "id": 469,
-    "topic_num": 12,
-    "question": "Que principio exige tratar solo datos adecuados, pertinentes y necesarios?",
-    "option_a": "Rebase",
-    "option_b": "Indexacion",
-    "option_c": "Minimizacion de datos",
-    "option_d": "Maximizacion documental",
-    "correct": "C",
-    "explanation": "La minimizacion limita los datos a lo necesario."
-  },
-  {
-    "id": 470,
-    "topic_num": 12,
-    "question": "Que derecho permite obtener confirmacion de si se tratan datos personales propios?",
-    "option_a": "Derecho de retracto",
-    "option_b": "Derecho de acceso",
-    "option_c": "Derecho de tanteo",
-    "option_d": "Derecho de superficie",
-    "correct": "B",
-    "explanation": "El derecho de acceso permite conocer el tratamiento de datos propios."
-  },
-  {
-    "id": 471,
-    "topic_num": 12,
-    "question": "Que reglamento europeo regula la proteccion de datos personales?",
-    "option_a": "RGPD",
-    "option_b": "ROF",
-    "option_c": "ENS",
-    "option_d": "PGP",
-    "correct": "A",
-    "explanation": "El Reglamento UE 2016/679 es el RGPD."
-  },
-  {
-    "id": 472,
-    "topic_num": 12,
-    "question": "Como se llama la persona fisica identificada o identificable sobre la que trata la informacion?",
-    "option_a": "Encargado",
-    "option_b": "Delegado",
-    "option_c": "Autoridad de certificacion",
-    "option_d": "Interesado",
-    "correct": "D",
-    "explanation": "El interesado es la persona cuyos datos se tratan."
-  },
-  {
-    "id": 473,
-    "topic_num": 13,
-    "question": "Que SGBD objeto-relacional de codigo abierto se estudia en el temario?",
-    "option_a": "Photoshop",
-    "option_b": "AutoFirma",
-    "option_c": "Bootstrap",
-    "option_d": "PostgreSQL",
-    "correct": "D",
-    "explanation": "PostgreSQL es el sistema de bases de datos del bloque."
-  },
-  {
-    "id": 474,
-    "topic_num": 13,
-    "question": "Que puerto TCP utiliza PostgreSQL por defecto?",
-    "option_a": "443",
-    "option_b": "25",
-    "option_c": "5432",
-    "option_d": "80",
-    "correct": "C",
-    "explanation": "PostgreSQL escucha por defecto en el puerto 5432."
-  },
-  {
-    "id": 475,
-    "topic_num": 13,
-    "question": "Como se llama el conjunto de bases de datos gestionadas por una instancia PostgreSQL?",
-    "option_a": "Sede electronica",
-    "option_b": "Cluster",
-    "option_c": "Pull request",
-    "option_d": "RenderFragment",
-    "correct": "B",
-    "explanation": "Un cluster PostgreSQL agrupa bases de datos de una instancia."
-  },
-  {
-    "id": 476,
-    "topic_num": 13,
-    "question": "Que proceso principal acepta conexiones y coordina procesos en PostgreSQL?",
-    "option_a": "Postmaster",
-    "option_b": "NavigationManager",
-    "option_c": "AutoFirma",
-    "option_d": "Kestrel siempre",
-    "correct": "A",
-    "explanation": "El proceso principal de PostgreSQL gestiona conexiones."
-  },
-  {
-    "id": 477,
-    "topic_num": 13,
-    "question": "Que registro garantiza durabilidad y recuperacion ante fallos en PostgreSQL?",
-    "option_a": "CSS",
-    "option_b": "JWT",
-    "option_c": "CSV",
-    "option_d": "WAL",
-    "correct": "D",
-    "explanation": "Write-Ahead Logging registra cambios antes de aplicarlos definitivamente."
-  },
-  {
-    "id": 478,
-    "topic_num": 13,
-    "question": "Que memoria compartida cachea paginas de datos en PostgreSQL?",
-    "option_a": "sessionStorage",
-    "option_b": "RenderTree",
-    "option_c": "shared buffers",
-    "option_d": "localStorage",
-    "correct": "C",
-    "explanation": "shared_buffers define memoria para cache de paginas de datos."
-  },
-  {
-    "id": 479,
-    "topic_num": 13,
-    "question": "Que SGBD objeto-relacional de codigo abierto se estudia en el temario?",
-    "option_a": "Bootstrap",
-    "option_b": "PostgreSQL",
-    "option_c": "Photoshop",
-    "option_d": "AutoFirma",
-    "correct": "B",
-    "explanation": "PostgreSQL es el sistema de bases de datos del bloque."
-  },
-  {
-    "id": 480,
-    "topic_num": 13,
-    "question": "Que puerto TCP utiliza PostgreSQL por defecto?",
-    "option_a": "5432",
-    "option_b": "80",
-    "option_c": "443",
-    "option_d": "25",
-    "correct": "A",
-    "explanation": "PostgreSQL escucha por defecto en el puerto 5432."
-  },
-  {
-    "id": 481,
-    "topic_num": 13,
-    "question": "Como se llama el conjunto de bases de datos gestionadas por una instancia PostgreSQL?",
-    "option_a": "Pull request",
-    "option_b": "RenderFragment",
-    "option_c": "Sede electronica",
-    "option_d": "Cluster",
-    "correct": "D",
-    "explanation": "Un cluster PostgreSQL agrupa bases de datos de una instancia."
-  },
-  {
-    "id": 482,
-    "topic_num": 13,
-    "question": "Que proceso principal acepta conexiones y coordina procesos en PostgreSQL?",
-    "option_a": "AutoFirma",
-    "option_b": "Kestrel siempre",
-    "option_c": "Postmaster",
-    "option_d": "NavigationManager",
-    "correct": "C",
-    "explanation": "El proceso principal de PostgreSQL gestiona conexiones."
-  },
-  {
-    "id": 483,
-    "topic_num": 13,
-    "question": "Que registro garantiza durabilidad y recuperacion ante fallos en PostgreSQL?",
-    "option_a": "CSV",
-    "option_b": "WAL",
-    "option_c": "CSS",
-    "option_d": "JWT",
-    "correct": "B",
-    "explanation": "Write-Ahead Logging registra cambios antes de aplicarlos definitivamente."
-  },
-  {
-    "id": 484,
-    "topic_num": 13,
-    "question": "Que memoria compartida cachea paginas de datos en PostgreSQL?",
-    "option_a": "shared buffers",
-    "option_b": "localStorage",
-    "option_c": "sessionStorage",
-    "option_d": "RenderTree",
-    "correct": "A",
-    "explanation": "shared_buffers define memoria para cache de paginas de datos."
-  },
-  {
-    "id": 485,
-    "topic_num": 13,
-    "question": "Que SGBD objeto-relacional de codigo abierto se estudia en el temario?",
-    "option_a": "Photoshop",
-    "option_b": "AutoFirma",
-    "option_c": "Bootstrap",
-    "option_d": "PostgreSQL",
-    "correct": "D",
-    "explanation": "PostgreSQL es el sistema de bases de datos del bloque."
-  },
-  {
-    "id": 486,
-    "topic_num": 13,
-    "question": "Que puerto TCP utiliza PostgreSQL por defecto?",
-    "option_a": "443",
-    "option_b": "25",
-    "option_c": "5432",
-    "option_d": "80",
-    "correct": "C",
-    "explanation": "PostgreSQL escucha por defecto en el puerto 5432."
-  },
-  {
-    "id": 487,
-    "topic_num": 13,
-    "question": "Como se llama el conjunto de bases de datos gestionadas por una instancia PostgreSQL?",
-    "option_a": "Sede electronica",
-    "option_b": "Cluster",
-    "option_c": "Pull request",
-    "option_d": "RenderFragment",
-    "correct": "B",
-    "explanation": "Un cluster PostgreSQL agrupa bases de datos de una instancia."
-  },
-  {
-    "id": 488,
-    "topic_num": 13,
-    "question": "Que proceso principal acepta conexiones y coordina procesos en PostgreSQL?",
-    "option_a": "Postmaster",
-    "option_b": "NavigationManager",
-    "option_c": "AutoFirma",
-    "option_d": "Kestrel siempre",
-    "correct": "A",
-    "explanation": "El proceso principal de PostgreSQL gestiona conexiones."
-  },
-  {
-    "id": 489,
-    "topic_num": 13,
-    "question": "Que registro garantiza durabilidad y recuperacion ante fallos en PostgreSQL?",
-    "option_a": "CSS",
-    "option_b": "JWT",
-    "option_c": "CSV",
-    "option_d": "WAL",
-    "correct": "D",
-    "explanation": "Write-Ahead Logging registra cambios antes de aplicarlos definitivamente."
-  },
-  {
-    "id": 490,
-    "topic_num": 13,
-    "question": "Que memoria compartida cachea paginas de datos en PostgreSQL?",
-    "option_a": "sessionStorage",
-    "option_b": "RenderTree",
-    "option_c": "shared buffers",
-    "option_d": "localStorage",
-    "correct": "C",
-    "explanation": "shared_buffers define memoria para cache de paginas de datos."
-  },
-  {
-    "id": 491,
-    "topic_num": 13,
-    "question": "Que SGBD objeto-relacional de codigo abierto se estudia en el temario?",
-    "option_a": "Bootstrap",
-    "option_b": "PostgreSQL",
-    "option_c": "Photoshop",
-    "option_d": "AutoFirma",
-    "correct": "B",
-    "explanation": "PostgreSQL es el sistema de bases de datos del bloque."
-  },
-  {
-    "id": 492,
-    "topic_num": 13,
-    "question": "Que puerto TCP utiliza PostgreSQL por defecto?",
-    "option_a": "5432",
-    "option_b": "80",
-    "option_c": "443",
-    "option_d": "25",
-    "correct": "A",
-    "explanation": "PostgreSQL escucha por defecto en el puerto 5432."
-  },
-  {
-    "id": 493,
-    "topic_num": 13,
-    "question": "Como se llama el conjunto de bases de datos gestionadas por una instancia PostgreSQL?",
-    "option_a": "Pull request",
-    "option_b": "RenderFragment",
-    "option_c": "Sede electronica",
-    "option_d": "Cluster",
-    "correct": "D",
-    "explanation": "Un cluster PostgreSQL agrupa bases de datos de una instancia."
-  },
-  {
-    "id": 494,
-    "topic_num": 13,
-    "question": "Que proceso principal acepta conexiones y coordina procesos en PostgreSQL?",
-    "option_a": "AutoFirma",
-    "option_b": "Kestrel siempre",
-    "option_c": "Postmaster",
-    "option_d": "NavigationManager",
-    "correct": "C",
-    "explanation": "El proceso principal de PostgreSQL gestiona conexiones."
-  },
-  {
-    "id": 495,
-    "topic_num": 13,
-    "question": "Que registro garantiza durabilidad y recuperacion ante fallos en PostgreSQL?",
-    "option_a": "CSV",
-    "option_b": "WAL",
-    "option_c": "CSS",
-    "option_d": "JWT",
-    "correct": "B",
-    "explanation": "Write-Ahead Logging registra cambios antes de aplicarlos definitivamente."
-  },
-  {
-    "id": 496,
-    "topic_num": 13,
-    "question": "Que memoria compartida cachea paginas de datos en PostgreSQL?",
-    "option_a": "shared buffers",
-    "option_b": "localStorage",
-    "option_c": "sessionStorage",
-    "option_d": "RenderTree",
-    "correct": "A",
-    "explanation": "shared_buffers define memoria para cache de paginas de datos."
-  },
-  {
-    "id": 497,
-    "topic_num": 13,
-    "question": "Que SGBD objeto-relacional de codigo abierto se estudia en el temario?",
-    "option_a": "Photoshop",
-    "option_b": "AutoFirma",
-    "option_c": "Bootstrap",
-    "option_d": "PostgreSQL",
-    "correct": "D",
-    "explanation": "PostgreSQL es el sistema de bases de datos del bloque."
-  },
-  {
-    "id": 498,
-    "topic_num": 13,
-    "question": "Que puerto TCP utiliza PostgreSQL por defecto?",
-    "option_a": "443",
-    "option_b": "25",
-    "option_c": "5432",
-    "option_d": "80",
-    "correct": "C",
-    "explanation": "PostgreSQL escucha por defecto en el puerto 5432."
-  },
-  {
-    "id": 499,
-    "topic_num": 14,
-    "question": "Que objeto PostgreSQL agrupa tablas, vistas y funciones dentro de una base de datos?",
-    "option_a": "Claim",
-    "option_b": "Cookie",
-    "option_c": "Schema",
-    "option_d": "Commit",
-    "correct": "C",
-    "explanation": "Los schemas organizan objetos dentro de una base de datos."
-  },
-  {
-    "id": 500,
-    "topic_num": 14,
-    "question": "Que objeto almacena filas y columnas de datos?",
-    "option_a": "Index only",
-    "option_b": "Table",
-    "option_c": "Sequence",
-    "option_d": "Role",
-    "correct": "B",
-    "explanation": "Las tablas almacenan datos en filas y columnas."
-  },
-  {
-    "id": 501,
-    "topic_num": 14,
-    "question": "Que objeto representa una consulta almacenada que se usa como tabla virtual?",
-    "option_a": "View",
-    "option_b": "Role",
-    "option_c": "Trigger solamente",
-    "option_d": "Backup",
-    "correct": "A",
-    "explanation": "Una vista encapsula una consulta."
-  },
-  {
-    "id": 502,
-    "topic_num": 14,
-    "question": "Que objeto genera valores numericos consecutivos habitualmente usados como claves?",
-    "option_a": "Schema",
-    "option_b": "Grant",
-    "option_c": "Policy",
-    "option_d": "Sequence",
-    "correct": "D",
-    "explanation": "Las secuencias generan numeros consecutivos."
-  },
-  {
-    "id": 503,
-    "topic_num": 14,
-    "question": "Que sentencia concede privilegios en PostgreSQL?",
-    "option_a": "EXPLAIN",
-    "option_b": "VACUUM",
-    "option_c": "GRANT",
-    "option_d": "ROLLBACK",
-    "correct": "C",
-    "explanation": "GRANT concede permisos sobre objetos."
-  },
-  {
-    "id": 504,
-    "topic_num": 14,
-    "question": "Que entidad PostgreSQL puede representar usuarios o grupos y recibir permisos?",
-    "option_a": "Sequence",
-    "option_b": "Role",
-    "option_c": "View",
-    "option_d": "Table",
-    "correct": "B",
-    "explanation": "Los roles gestionan usuarios, grupos y privilegios."
-  },
-  {
-    "id": 505,
-    "topic_num": 14,
-    "question": "Que objeto PostgreSQL agrupa tablas, vistas y funciones dentro de una base de datos?",
-    "option_a": "Schema",
-    "option_b": "Commit",
-    "option_c": "Claim",
-    "option_d": "Cookie",
-    "correct": "A",
-    "explanation": "Los schemas organizan objetos dentro de una base de datos."
-  },
-  {
-    "id": 506,
-    "topic_num": 14,
-    "question": "Que objeto almacena filas y columnas de datos?",
-    "option_a": "Sequence",
-    "option_b": "Role",
-    "option_c": "Index only",
-    "option_d": "Table",
-    "correct": "D",
-    "explanation": "Las tablas almacenan datos en filas y columnas."
-  },
-  {
-    "id": 507,
-    "topic_num": 14,
-    "question": "Que objeto representa una consulta almacenada que se usa como tabla virtual?",
-    "option_a": "Trigger solamente",
-    "option_b": "Backup",
-    "option_c": "View",
-    "option_d": "Role",
-    "correct": "C",
-    "explanation": "Una vista encapsula una consulta."
-  },
-  {
-    "id": 508,
-    "topic_num": 14,
-    "question": "Que objeto genera valores numericos consecutivos habitualmente usados como claves?",
-    "option_a": "Policy",
-    "option_b": "Sequence",
-    "option_c": "Schema",
-    "option_d": "Grant",
-    "correct": "B",
-    "explanation": "Las secuencias generan numeros consecutivos."
-  },
-  {
-    "id": 509,
-    "topic_num": 14,
-    "question": "Que sentencia concede privilegios en PostgreSQL?",
-    "option_a": "GRANT",
-    "option_b": "ROLLBACK",
-    "option_c": "EXPLAIN",
-    "option_d": "VACUUM",
-    "correct": "A",
-    "explanation": "GRANT concede permisos sobre objetos."
-  },
-  {
-    "id": 510,
-    "topic_num": 14,
-    "question": "Que entidad PostgreSQL puede representar usuarios o grupos y recibir permisos?",
-    "option_a": "View",
-    "option_b": "Table",
-    "option_c": "Sequence",
-    "option_d": "Role",
-    "correct": "D",
-    "explanation": "Los roles gestionan usuarios, grupos y privilegios."
-  },
-  {
-    "id": 511,
-    "topic_num": 14,
-    "question": "Que objeto PostgreSQL agrupa tablas, vistas y funciones dentro de una base de datos?",
-    "option_a": "Claim",
-    "option_b": "Cookie",
-    "option_c": "Schema",
-    "option_d": "Commit",
-    "correct": "C",
-    "explanation": "Los schemas organizan objetos dentro de una base de datos."
-  },
-  {
-    "id": 512,
-    "topic_num": 14,
-    "question": "Que objeto almacena filas y columnas de datos?",
-    "option_a": "Index only",
-    "option_b": "Table",
-    "option_c": "Sequence",
-    "option_d": "Role",
-    "correct": "B",
-    "explanation": "Las tablas almacenan datos en filas y columnas."
-  },
-  {
-    "id": 513,
-    "topic_num": 14,
-    "question": "Que objeto representa una consulta almacenada que se usa como tabla virtual?",
-    "option_a": "View",
-    "option_b": "Role",
-    "option_c": "Trigger solamente",
-    "option_d": "Backup",
-    "correct": "A",
-    "explanation": "Una vista encapsula una consulta."
-  },
-  {
-    "id": 514,
-    "topic_num": 14,
-    "question": "Que objeto genera valores numericos consecutivos habitualmente usados como claves?",
-    "option_a": "Schema",
-    "option_b": "Grant",
-    "option_c": "Policy",
-    "option_d": "Sequence",
-    "correct": "D",
-    "explanation": "Las secuencias generan numeros consecutivos."
-  },
-  {
-    "id": 515,
-    "topic_num": 14,
-    "question": "Que sentencia concede privilegios en PostgreSQL?",
-    "option_a": "EXPLAIN",
-    "option_b": "VACUUM",
-    "option_c": "GRANT",
-    "option_d": "ROLLBACK",
-    "correct": "C",
-    "explanation": "GRANT concede permisos sobre objetos."
-  },
-  {
-    "id": 516,
-    "topic_num": 14,
-    "question": "Que entidad PostgreSQL puede representar usuarios o grupos y recibir permisos?",
-    "option_a": "Sequence",
-    "option_b": "Role",
-    "option_c": "View",
-    "option_d": "Table",
-    "correct": "B",
-    "explanation": "Los roles gestionan usuarios, grupos y privilegios."
-  },
-  {
-    "id": 517,
-    "topic_num": 14,
-    "question": "Que objeto PostgreSQL agrupa tablas, vistas y funciones dentro de una base de datos?",
-    "option_a": "Schema",
-    "option_b": "Commit",
-    "option_c": "Claim",
-    "option_d": "Cookie",
-    "correct": "A",
-    "explanation": "Los schemas organizan objetos dentro de una base de datos."
-  },
-  {
-    "id": 518,
-    "topic_num": 14,
-    "question": "Que objeto almacena filas y columnas de datos?",
-    "option_a": "Sequence",
-    "option_b": "Role",
-    "option_c": "Index only",
-    "option_d": "Table",
-    "correct": "D",
-    "explanation": "Las tablas almacenan datos en filas y columnas."
-  },
-  {
-    "id": 519,
-    "topic_num": 14,
-    "question": "Que objeto representa una consulta almacenada que se usa como tabla virtual?",
-    "option_a": "Trigger solamente",
-    "option_b": "Backup",
-    "option_c": "View",
-    "option_d": "Role",
-    "correct": "C",
-    "explanation": "Una vista encapsula una consulta."
-  },
-  {
-    "id": 520,
-    "topic_num": 14,
-    "question": "Que objeto genera valores numericos consecutivos habitualmente usados como claves?",
-    "option_a": "Policy",
-    "option_b": "Sequence",
-    "option_c": "Schema",
-    "option_d": "Grant",
-    "correct": "B",
-    "explanation": "Las secuencias generan numeros consecutivos."
-  },
-  {
-    "id": 521,
-    "topic_num": 14,
-    "question": "Que sentencia concede privilegios en PostgreSQL?",
-    "option_a": "GRANT",
-    "option_b": "ROLLBACK",
-    "option_c": "EXPLAIN",
-    "option_d": "VACUUM",
-    "correct": "A",
-    "explanation": "GRANT concede permisos sobre objetos."
-  },
-  {
-    "id": 522,
-    "topic_num": 14,
-    "question": "Que entidad PostgreSQL puede representar usuarios o grupos y recibir permisos?",
-    "option_a": "View",
-    "option_b": "Table",
-    "option_c": "Sequence",
-    "option_d": "Role",
-    "correct": "D",
-    "explanation": "Los roles gestionan usuarios, grupos y privilegios."
-  },
-  {
-    "id": 523,
-    "topic_num": 14,
-    "question": "Que objeto PostgreSQL agrupa tablas, vistas y funciones dentro de una base de datos?",
-    "option_a": "Claim",
-    "option_b": "Cookie",
-    "option_c": "Schema",
-    "option_d": "Commit",
-    "correct": "C",
-    "explanation": "Los schemas organizan objetos dentro de una base de datos."
-  },
-  {
-    "id": 524,
-    "topic_num": 14,
-    "question": "Que objeto almacena filas y columnas de datos?",
-    "option_a": "Index only",
-    "option_b": "Table",
-    "option_c": "Sequence",
-    "option_d": "Role",
-    "correct": "B",
-    "explanation": "Las tablas almacenan datos en filas y columnas."
-  },
-  {
-    "id": 525,
-    "topic_num": 15,
-    "question": "Que instruccion inicia una transaccion explicita en PostgreSQL?",
-    "option_a": "GRANT",
-    "option_b": "BEGIN",
-    "option_c": "EXPLAIN",
-    "option_d": "VACUUM",
-    "correct": "B",
-    "explanation": "BEGIN abre una transaccion."
-  },
-  {
-    "id": 526,
-    "topic_num": 15,
-    "question": "Que instruccion confirma los cambios de una transaccion?",
-    "option_a": "COMMIT",
-    "option_b": "ROLLBACK",
-    "option_c": "SAVEPOINT",
-    "option_d": "SELECT",
-    "correct": "A",
-    "explanation": "COMMIT hace permanentes los cambios."
-  },
-  {
-    "id": 527,
-    "topic_num": 15,
-    "question": "Que instruccion deshace los cambios de una transaccion?",
-    "option_a": "COMMIT",
-    "option_b": "GRANT",
-    "option_c": "ANALYZE",
-    "option_d": "ROLLBACK",
-    "correct": "D",
-    "explanation": "ROLLBACK cancela la transaccion."
-  },
-  {
-    "id": 528,
-    "topic_num": 15,
-    "question": "Que propiedad ACID evita resultados parciales de una transaccion?",
-    "option_a": "Aislamiento",
-    "option_b": "Indexacion",
-    "option_c": "Atomicidad",
-    "option_d": "Durabilidad",
-    "correct": "C",
-    "explanation": "La atomicidad implica todo o nada."
-  },
-  {
-    "id": 529,
-    "topic_num": 15,
-    "question": "Que propiedad ACID garantiza que los cambios confirmados sobreviven a fallos?",
-    "option_a": "Polimorfismo",
-    "option_b": "Durabilidad",
-    "option_c": "Atomicidad",
-    "option_d": "Consistencia visual",
-    "correct": "B",
-    "explanation": "La durabilidad conserva cambios confirmados."
-  },
-  {
-    "id": 530,
-    "topic_num": 15,
-    "question": "Que tecnica de PostgreSQL permite concurrencia manteniendo multiples versiones de filas?",
-    "option_a": "MVCC",
-    "option_b": "MVC",
-    "option_c": "WCAG",
-    "option_d": "PKI",
-    "correct": "A",
-    "explanation": "MVCC significa Multi-Version Concurrency Control."
-  },
-  {
-    "id": 531,
-    "topic_num": 15,
-    "question": "Que instruccion inicia una transaccion explicita en PostgreSQL?",
-    "option_a": "EXPLAIN",
-    "option_b": "VACUUM",
-    "option_c": "GRANT",
-    "option_d": "BEGIN",
-    "correct": "D",
-    "explanation": "BEGIN abre una transaccion."
-  },
-  {
-    "id": 532,
-    "topic_num": 15,
-    "question": "Que instruccion confirma los cambios de una transaccion?",
-    "option_a": "SAVEPOINT",
-    "option_b": "SELECT",
-    "option_c": "COMMIT",
-    "option_d": "ROLLBACK",
-    "correct": "C",
-    "explanation": "COMMIT hace permanentes los cambios."
-  },
-  {
-    "id": 533,
-    "topic_num": 15,
-    "question": "Que instruccion deshace los cambios de una transaccion?",
-    "option_a": "ANALYZE",
-    "option_b": "ROLLBACK",
-    "option_c": "COMMIT",
-    "option_d": "GRANT",
-    "correct": "B",
-    "explanation": "ROLLBACK cancela la transaccion."
-  },
-  {
-    "id": 534,
-    "topic_num": 15,
-    "question": "Que propiedad ACID evita resultados parciales de una transaccion?",
-    "option_a": "Atomicidad",
-    "option_b": "Durabilidad",
-    "option_c": "Aislamiento",
-    "option_d": "Indexacion",
-    "correct": "A",
-    "explanation": "La atomicidad implica todo o nada."
-  },
-  {
-    "id": 535,
-    "topic_num": 15,
-    "question": "Que propiedad ACID garantiza que los cambios confirmados sobreviven a fallos?",
-    "option_a": "Atomicidad",
-    "option_b": "Consistencia visual",
-    "option_c": "Polimorfismo",
-    "option_d": "Durabilidad",
-    "correct": "D",
-    "explanation": "La durabilidad conserva cambios confirmados."
-  },
-  {
-    "id": 536,
-    "topic_num": 15,
-    "question": "Que tecnica de PostgreSQL permite concurrencia manteniendo multiples versiones de filas?",
-    "option_a": "WCAG",
-    "option_b": "PKI",
-    "option_c": "MVCC",
-    "option_d": "MVC",
-    "correct": "C",
-    "explanation": "MVCC significa Multi-Version Concurrency Control."
-  },
-  {
-    "id": 537,
-    "topic_num": 15,
-    "question": "Que instruccion inicia una transaccion explicita en PostgreSQL?",
-    "option_a": "GRANT",
-    "option_b": "BEGIN",
-    "option_c": "EXPLAIN",
-    "option_d": "VACUUM",
-    "correct": "B",
-    "explanation": "BEGIN abre una transaccion."
-  },
-  {
-    "id": 538,
-    "topic_num": 15,
-    "question": "Que instruccion confirma los cambios de una transaccion?",
-    "option_a": "COMMIT",
-    "option_b": "ROLLBACK",
-    "option_c": "SAVEPOINT",
-    "option_d": "SELECT",
-    "correct": "A",
-    "explanation": "COMMIT hace permanentes los cambios."
-  },
-  {
-    "id": 539,
-    "topic_num": 15,
-    "question": "Que instruccion deshace los cambios de una transaccion?",
-    "option_a": "COMMIT",
-    "option_b": "GRANT",
-    "option_c": "ANALYZE",
-    "option_d": "ROLLBACK",
-    "correct": "D",
-    "explanation": "ROLLBACK cancela la transaccion."
-  },
-  {
-    "id": 540,
-    "topic_num": 15,
-    "question": "Que propiedad ACID evita resultados parciales de una transaccion?",
-    "option_a": "Aislamiento",
-    "option_b": "Indexacion",
-    "option_c": "Atomicidad",
-    "option_d": "Durabilidad",
-    "correct": "C",
-    "explanation": "La atomicidad implica todo o nada."
-  },
-  {
-    "id": 541,
-    "topic_num": 15,
-    "question": "Que propiedad ACID garantiza que los cambios confirmados sobreviven a fallos?",
-    "option_a": "Polimorfismo",
-    "option_b": "Durabilidad",
-    "option_c": "Atomicidad",
-    "option_d": "Consistencia visual",
-    "correct": "B",
-    "explanation": "La durabilidad conserva cambios confirmados."
-  },
-  {
-    "id": 542,
-    "topic_num": 15,
-    "question": "Que tecnica de PostgreSQL permite concurrencia manteniendo multiples versiones de filas?",
-    "option_a": "MVCC",
-    "option_b": "MVC",
-    "option_c": "WCAG",
-    "option_d": "PKI",
-    "correct": "A",
-    "explanation": "MVCC significa Multi-Version Concurrency Control."
-  },
-  {
-    "id": 543,
-    "topic_num": 15,
-    "question": "Que instruccion inicia una transaccion explicita en PostgreSQL?",
-    "option_a": "EXPLAIN",
-    "option_b": "VACUUM",
-    "option_c": "GRANT",
-    "option_d": "BEGIN",
-    "correct": "D",
-    "explanation": "BEGIN abre una transaccion."
-  },
-  {
-    "id": 544,
-    "topic_num": 15,
-    "question": "Que instruccion confirma los cambios de una transaccion?",
-    "option_a": "SAVEPOINT",
-    "option_b": "SELECT",
-    "option_c": "COMMIT",
-    "option_d": "ROLLBACK",
-    "correct": "C",
-    "explanation": "COMMIT hace permanentes los cambios."
-  },
-  {
-    "id": 545,
-    "topic_num": 15,
-    "question": "Que instruccion deshace los cambios de una transaccion?",
-    "option_a": "ANALYZE",
-    "option_b": "ROLLBACK",
-    "option_c": "COMMIT",
-    "option_d": "GRANT",
-    "correct": "B",
-    "explanation": "ROLLBACK cancela la transaccion."
-  },
-  {
-    "id": 546,
-    "topic_num": 15,
-    "question": "Que propiedad ACID evita resultados parciales de una transaccion?",
-    "option_a": "Atomicidad",
-    "option_b": "Durabilidad",
-    "option_c": "Aislamiento",
-    "option_d": "Indexacion",
-    "correct": "A",
-    "explanation": "La atomicidad implica todo o nada."
-  },
-  {
-    "id": 547,
-    "topic_num": 15,
-    "question": "Que propiedad ACID garantiza que los cambios confirmados sobreviven a fallos?",
-    "option_a": "Atomicidad",
-    "option_b": "Consistencia visual",
-    "option_c": "Polimorfismo",
-    "option_d": "Durabilidad",
-    "correct": "D",
-    "explanation": "La durabilidad conserva cambios confirmados."
-  },
-  {
-    "id": 548,
-    "topic_num": 15,
-    "question": "Que tecnica de PostgreSQL permite concurrencia manteniendo multiples versiones de filas?",
-    "option_a": "WCAG",
-    "option_b": "PKI",
-    "option_c": "MVCC",
-    "option_d": "MVC",
-    "correct": "C",
-    "explanation": "MVCC significa Multi-Version Concurrency Control."
-  },
-  {
-    "id": 549,
-    "topic_num": 15,
-    "question": "Que instruccion inicia una transaccion explicita en PostgreSQL?",
-    "option_a": "GRANT",
-    "option_b": "BEGIN",
-    "option_c": "EXPLAIN",
-    "option_d": "VACUUM",
-    "correct": "B",
-    "explanation": "BEGIN abre una transaccion."
-  },
-  {
-    "id": 550,
-    "topic_num": 15,
-    "question": "Que instruccion confirma los cambios de una transaccion?",
-    "option_a": "COMMIT",
-    "option_b": "ROLLBACK",
-    "option_c": "SAVEPOINT",
-    "option_d": "SELECT",
-    "correct": "A",
-    "explanation": "COMMIT hace permanentes los cambios."
-  },
-  {
-    "id": 551,
-    "topic_num": 16,
-    "question": "Que cliente de linea de comandos permite ejecutar SQL contra PostgreSQL?",
-    "option_a": "psql",
-    "option_b": "pg_dump",
-    "option_c": "pg_restore",
-    "option_d": "AutoFirma",
-    "correct": "A",
-    "explanation": "psql es el cliente interactivo de PostgreSQL."
-  },
-  {
-    "id": 552,
-    "topic_num": 16,
-    "question": "Que herramienta crea copias logicas de seguridad de bases PostgreSQL?",
-    "option_a": "psql",
-    "option_b": "VACUUM",
-    "option_c": "git push",
-    "option_d": "pg_dump",
-    "correct": "D",
-    "explanation": "pg_dump exporta una base de datos."
-  },
-  {
-    "id": 553,
-    "topic_num": 16,
-    "question": "Que herramienta restaura copias en formato personalizado o directorio?",
-    "option_a": "COPY",
-    "option_b": "EXPLAIN",
-    "option_c": "pg_restore",
-    "option_d": "pg_dump",
-    "correct": "C",
-    "explanation": "pg_restore restaura backups creados con pg_dump en ciertos formatos."
-  },
-  {
-    "id": 554,
-    "topic_num": 16,
-    "question": "Que instruccion importa o exporta datos entre tablas y ficheros?",
-    "option_a": "REBASE",
-    "option_b": "COPY",
-    "option_c": "GRANT",
-    "option_d": "BEGIN",
-    "correct": "B",
-    "explanation": "COPY transfiere datos entre tablas y archivos."
-  },
-  {
-    "id": 555,
-    "topic_num": 16,
-    "question": "Que formato de texto separado por comas se usa a menudo para importar y exportar datos?",
-    "option_a": "CSV",
-    "option_b": "JWT",
-    "option_c": "CSS",
-    "option_d": "PDF firmado",
-    "correct": "A",
-    "explanation": "CSV es habitual para intercambio tabular."
-  },
-  {
-    "id": 556,
-    "topic_num": 16,
-    "question": "Que herramienta grafica se usa frecuentemente para administrar PostgreSQL?",
-    "option_a": "AutoFirma",
-    "option_b": "Visual Studio Code exclusivamente",
-    "option_c": "Cl@ve",
-    "option_d": "pgAdmin",
-    "correct": "D",
-    "explanation": "pgAdmin es una herramienta grafica de administracion PostgreSQL."
-  },
-  {
-    "id": 557,
-    "topic_num": 16,
-    "question": "Que cliente de linea de comandos permite ejecutar SQL contra PostgreSQL?",
-    "option_a": "pg_restore",
-    "option_b": "AutoFirma",
-    "option_c": "psql",
-    "option_d": "pg_dump",
-    "correct": "C",
-    "explanation": "psql es el cliente interactivo de PostgreSQL."
-  },
-  {
-    "id": 558,
-    "topic_num": 16,
-    "question": "Que herramienta crea copias logicas de seguridad de bases PostgreSQL?",
-    "option_a": "git push",
-    "option_b": "pg_dump",
-    "option_c": "psql",
-    "option_d": "VACUUM",
-    "correct": "B",
-    "explanation": "pg_dump exporta una base de datos."
-  },
-  {
-    "id": 559,
-    "topic_num": 16,
-    "question": "Que herramienta restaura copias en formato personalizado o directorio?",
-    "option_a": "pg_restore",
-    "option_b": "pg_dump",
-    "option_c": "COPY",
-    "option_d": "EXPLAIN",
-    "correct": "A",
-    "explanation": "pg_restore restaura backups creados con pg_dump en ciertos formatos."
-  },
-  {
-    "id": 560,
-    "topic_num": 16,
-    "question": "Que instruccion importa o exporta datos entre tablas y ficheros?",
-    "option_a": "GRANT",
-    "option_b": "BEGIN",
-    "option_c": "REBASE",
-    "option_d": "COPY",
-    "correct": "D",
-    "explanation": "COPY transfiere datos entre tablas y archivos."
-  },
-  {
-    "id": 561,
-    "topic_num": 16,
-    "question": "Que formato de texto separado por comas se usa a menudo para importar y exportar datos?",
-    "option_a": "CSS",
-    "option_b": "PDF firmado",
-    "option_c": "CSV",
-    "option_d": "JWT",
-    "correct": "C",
-    "explanation": "CSV es habitual para intercambio tabular."
-  },
-  {
-    "id": 562,
-    "topic_num": 16,
-    "question": "Que herramienta grafica se usa frecuentemente para administrar PostgreSQL?",
-    "option_a": "Cl@ve",
-    "option_b": "pgAdmin",
-    "option_c": "AutoFirma",
-    "option_d": "Visual Studio Code exclusivamente",
-    "correct": "B",
-    "explanation": "pgAdmin es una herramienta grafica de administracion PostgreSQL."
-  },
-  {
-    "id": 563,
-    "topic_num": 16,
-    "question": "Que cliente de linea de comandos permite ejecutar SQL contra PostgreSQL?",
-    "option_a": "psql",
-    "option_b": "pg_dump",
-    "option_c": "pg_restore",
-    "option_d": "AutoFirma",
-    "correct": "A",
-    "explanation": "psql es el cliente interactivo de PostgreSQL."
-  },
-  {
-    "id": 564,
-    "topic_num": 16,
-    "question": "Que herramienta crea copias logicas de seguridad de bases PostgreSQL?",
-    "option_a": "psql",
-    "option_b": "VACUUM",
-    "option_c": "git push",
-    "option_d": "pg_dump",
-    "correct": "D",
-    "explanation": "pg_dump exporta una base de datos."
-  },
-  {
-    "id": 565,
-    "topic_num": 16,
-    "question": "Que herramienta restaura copias en formato personalizado o directorio?",
-    "option_a": "COPY",
-    "option_b": "EXPLAIN",
-    "option_c": "pg_restore",
-    "option_d": "pg_dump",
-    "correct": "C",
-    "explanation": "pg_restore restaura backups creados con pg_dump en ciertos formatos."
-  },
-  {
-    "id": 566,
-    "topic_num": 16,
-    "question": "Que instruccion importa o exporta datos entre tablas y ficheros?",
-    "option_a": "REBASE",
-    "option_b": "COPY",
-    "option_c": "GRANT",
-    "option_d": "BEGIN",
-    "correct": "B",
-    "explanation": "COPY transfiere datos entre tablas y archivos."
-  },
-  {
-    "id": 567,
-    "topic_num": 16,
-    "question": "Que formato de texto separado por comas se usa a menudo para importar y exportar datos?",
-    "option_a": "CSV",
-    "option_b": "JWT",
-    "option_c": "CSS",
-    "option_d": "PDF firmado",
-    "correct": "A",
-    "explanation": "CSV es habitual para intercambio tabular."
-  },
-  {
-    "id": 568,
-    "topic_num": 16,
-    "question": "Que herramienta grafica se usa frecuentemente para administrar PostgreSQL?",
-    "option_a": "AutoFirma",
-    "option_b": "Visual Studio Code exclusivamente",
-    "option_c": "Cl@ve",
-    "option_d": "pgAdmin",
-    "correct": "D",
-    "explanation": "pgAdmin es una herramienta grafica de administracion PostgreSQL."
-  },
-  {
-    "id": 569,
-    "topic_num": 16,
-    "question": "Que cliente de linea de comandos permite ejecutar SQL contra PostgreSQL?",
-    "option_a": "pg_restore",
-    "option_b": "AutoFirma",
-    "option_c": "psql",
-    "option_d": "pg_dump",
-    "correct": "C",
-    "explanation": "psql es el cliente interactivo de PostgreSQL."
-  },
-  {
-    "id": 570,
-    "topic_num": 16,
-    "question": "Que herramienta crea copias logicas de seguridad de bases PostgreSQL?",
-    "option_a": "git push",
-    "option_b": "pg_dump",
-    "option_c": "psql",
-    "option_d": "VACUUM",
-    "correct": "B",
-    "explanation": "pg_dump exporta una base de datos."
-  },
-  {
-    "id": 571,
-    "topic_num": 16,
-    "question": "Que herramienta restaura copias en formato personalizado o directorio?",
-    "option_a": "pg_restore",
-    "option_b": "pg_dump",
-    "option_c": "COPY",
-    "option_d": "EXPLAIN",
-    "correct": "A",
-    "explanation": "pg_restore restaura backups creados con pg_dump en ciertos formatos."
-  },
-  {
-    "id": 572,
-    "topic_num": 16,
-    "question": "Que instruccion importa o exporta datos entre tablas y ficheros?",
-    "option_a": "GRANT",
-    "option_b": "BEGIN",
-    "option_c": "REBASE",
-    "option_d": "COPY",
-    "correct": "D",
-    "explanation": "COPY transfiere datos entre tablas y archivos."
-  },
-  {
-    "id": 573,
-    "topic_num": 16,
-    "question": "Que formato de texto separado por comas se usa a menudo para importar y exportar datos?",
-    "option_a": "CSS",
-    "option_b": "PDF firmado",
-    "option_c": "CSV",
-    "option_d": "JWT",
-    "correct": "C",
-    "explanation": "CSV es habitual para intercambio tabular."
-  },
-  {
-    "id": 574,
-    "topic_num": 16,
-    "question": "Que herramienta grafica se usa frecuentemente para administrar PostgreSQL?",
-    "option_a": "Cl@ve",
-    "option_b": "pgAdmin",
-    "option_c": "AutoFirma",
-    "option_d": "Visual Studio Code exclusivamente",
-    "correct": "B",
-    "explanation": "pgAdmin es una herramienta grafica de administracion PostgreSQL."
-  },
-  {
-    "id": 575,
-    "topic_num": 16,
-    "question": "Que cliente de linea de comandos permite ejecutar SQL contra PostgreSQL?",
-    "option_a": "psql",
-    "option_b": "pg_dump",
-    "option_c": "pg_restore",
-    "option_d": "AutoFirma",
-    "correct": "A",
-    "explanation": "psql es el cliente interactivo de PostgreSQL."
-  },
-  {
-    "id": 576,
-    "topic_num": 16,
-    "question": "Que herramienta crea copias logicas de seguridad de bases PostgreSQL?",
-    "option_a": "psql",
-    "option_b": "VACUUM",
-    "option_c": "git push",
-    "option_d": "pg_dump",
-    "correct": "D",
-    "explanation": "pg_dump exporta una base de datos."
-  },
-  {
-    "id": 577,
-    "topic_num": 17,
-    "question": "Que sentencia muestra el plan de ejecucion estimado de una consulta?",
-    "option_a": "COMMIT",
-    "option_b": "GRANT",
-    "option_c": "COPY",
-    "option_d": "EXPLAIN",
-    "correct": "D",
-    "explanation": "EXPLAIN muestra el plan de ejecucion."
-  },
-  {
-    "id": 578,
-    "topic_num": 17,
-    "question": "Que variante ejecuta realmente la consulta y muestra tiempos reales?",
-    "option_a": "ROLLBACK ANALYZE",
-    "option_b": "GRANT ANALYZE",
-    "option_c": "EXPLAIN ANALYZE",
-    "option_d": "EXPLAIN ONLY",
-    "correct": "C",
-    "explanation": "EXPLAIN ANALYZE ejecuta y mide."
-  },
-  {
-    "id": 579,
-    "topic_num": 17,
-    "question": "Que estructura acelera busquedas a cambio de espacio y coste de escritura?",
-    "option_a": "Schema",
-    "option_b": "Indice",
-    "option_c": "Vista sin materializar siempre",
-    "option_d": "Rol",
-    "correct": "B",
-    "explanation": "Los indices mejoran lecturas concretas."
-  },
-  {
-    "id": 580,
-    "topic_num": 17,
-    "question": "Que tipo de indice es el mas habitual para igualdad y rangos en PostgreSQL?",
-    "option_a": "B-tree",
-    "option_b": "JWT",
-    "option_c": "WCAG",
-    "option_d": "CSV",
-    "correct": "A",
-    "explanation": "B-tree es el tipo por defecto y mas comun."
-  },
-  {
-    "id": 581,
-    "topic_num": 17,
-    "question": "Que operacion recopila estadisticas para el planificador?",
-    "option_a": "COMMIT",
-    "option_b": "SAVEPOINT",
-    "option_c": "GRANT",
-    "option_d": "ANALYZE",
-    "correct": "D",
-    "explanation": "ANALYZE actualiza estadisticas."
-  },
-  {
-    "id": 582,
-    "topic_num": 17,
-    "question": "Que operacion limpia tuplas muertas y ayuda a controlar el bloat?",
-    "option_a": "FETCH",
-    "option_b": "PUSH",
-    "option_c": "VACUUM",
-    "option_d": "ROLLBACK",
-    "correct": "C",
-    "explanation": "VACUUM recupera espacio reutilizable y mantiene la salud de tablas."
-  },
-  {
-    "id": 583,
-    "topic_num": 17,
-    "question": "Que sentencia muestra el plan de ejecucion estimado de una consulta?",
-    "option_a": "COPY",
-    "option_b": "EXPLAIN",
-    "option_c": "COMMIT",
-    "option_d": "GRANT",
-    "correct": "B",
-    "explanation": "EXPLAIN muestra el plan de ejecucion."
-  },
-  {
-    "id": 584,
-    "topic_num": 17,
-    "question": "Que variante ejecuta realmente la consulta y muestra tiempos reales?",
-    "option_a": "EXPLAIN ANALYZE",
-    "option_b": "EXPLAIN ONLY",
-    "option_c": "ROLLBACK ANALYZE",
-    "option_d": "GRANT ANALYZE",
-    "correct": "A",
-    "explanation": "EXPLAIN ANALYZE ejecuta y mide."
-  },
-  {
-    "id": 585,
-    "topic_num": 17,
-    "question": "Que estructura acelera busquedas a cambio de espacio y coste de escritura?",
-    "option_a": "Vista sin materializar siempre",
-    "option_b": "Rol",
-    "option_c": "Schema",
-    "option_d": "Indice",
-    "correct": "D",
-    "explanation": "Los indices mejoran lecturas concretas."
-  },
-  {
-    "id": 586,
-    "topic_num": 17,
-    "question": "Que tipo de indice es el mas habitual para igualdad y rangos en PostgreSQL?",
-    "option_a": "WCAG",
-    "option_b": "CSV",
-    "option_c": "B-tree",
-    "option_d": "JWT",
-    "correct": "C",
-    "explanation": "B-tree es el tipo por defecto y mas comun."
-  },
-  {
-    "id": 587,
-    "topic_num": 17,
-    "question": "Que operacion recopila estadisticas para el planificador?",
-    "option_a": "GRANT",
-    "option_b": "ANALYZE",
-    "option_c": "COMMIT",
-    "option_d": "SAVEPOINT",
-    "correct": "B",
-    "explanation": "ANALYZE actualiza estadisticas."
-  },
-  {
-    "id": 588,
-    "topic_num": 17,
-    "question": "Que operacion limpia tuplas muertas y ayuda a controlar el bloat?",
-    "option_a": "VACUUM",
-    "option_b": "ROLLBACK",
-    "option_c": "FETCH",
-    "option_d": "PUSH",
-    "correct": "A",
-    "explanation": "VACUUM recupera espacio reutilizable y mantiene la salud de tablas."
-  },
-  {
-    "id": 589,
-    "topic_num": 17,
-    "question": "Que sentencia muestra el plan de ejecucion estimado de una consulta?",
-    "option_a": "COMMIT",
-    "option_b": "GRANT",
-    "option_c": "COPY",
-    "option_d": "EXPLAIN",
-    "correct": "D",
-    "explanation": "EXPLAIN muestra el plan de ejecucion."
-  },
-  {
-    "id": 590,
-    "topic_num": 17,
-    "question": "Que variante ejecuta realmente la consulta y muestra tiempos reales?",
-    "option_a": "ROLLBACK ANALYZE",
-    "option_b": "GRANT ANALYZE",
-    "option_c": "EXPLAIN ANALYZE",
-    "option_d": "EXPLAIN ONLY",
-    "correct": "C",
-    "explanation": "EXPLAIN ANALYZE ejecuta y mide."
-  },
-  {
-    "id": 591,
-    "topic_num": 17,
-    "question": "Que estructura acelera busquedas a cambio de espacio y coste de escritura?",
-    "option_a": "Schema",
-    "option_b": "Indice",
-    "option_c": "Vista sin materializar siempre",
-    "option_d": "Rol",
-    "correct": "B",
-    "explanation": "Los indices mejoran lecturas concretas."
-  },
-  {
-    "id": 592,
-    "topic_num": 17,
-    "question": "Que tipo de indice es el mas habitual para igualdad y rangos en PostgreSQL?",
-    "option_a": "B-tree",
-    "option_b": "JWT",
-    "option_c": "WCAG",
-    "option_d": "CSV",
-    "correct": "A",
-    "explanation": "B-tree es el tipo por defecto y mas comun."
-  },
-  {
-    "id": 593,
-    "topic_num": 17,
-    "question": "Que operacion recopila estadisticas para el planificador?",
-    "option_a": "COMMIT",
-    "option_b": "SAVEPOINT",
-    "option_c": "GRANT",
-    "option_d": "ANALYZE",
-    "correct": "D",
-    "explanation": "ANALYZE actualiza estadisticas."
-  },
-  {
-    "id": 594,
-    "topic_num": 17,
-    "question": "Que operacion limpia tuplas muertas y ayuda a controlar el bloat?",
-    "option_a": "FETCH",
-    "option_b": "PUSH",
-    "option_c": "VACUUM",
-    "option_d": "ROLLBACK",
-    "correct": "C",
-    "explanation": "VACUUM recupera espacio reutilizable y mantiene la salud de tablas."
-  },
-  {
-    "id": 595,
-    "topic_num": 17,
-    "question": "Que sentencia muestra el plan de ejecucion estimado de una consulta?",
-    "option_a": "COPY",
-    "option_b": "EXPLAIN",
-    "option_c": "COMMIT",
-    "option_d": "GRANT",
-    "correct": "B",
-    "explanation": "EXPLAIN muestra el plan de ejecucion."
-  },
-  {
-    "id": 596,
-    "topic_num": 17,
-    "question": "Que variante ejecuta realmente la consulta y muestra tiempos reales?",
-    "option_a": "EXPLAIN ANALYZE",
-    "option_b": "EXPLAIN ONLY",
-    "option_c": "ROLLBACK ANALYZE",
-    "option_d": "GRANT ANALYZE",
-    "correct": "A",
-    "explanation": "EXPLAIN ANALYZE ejecuta y mide."
-  },
-  {
-    "id": 597,
-    "topic_num": 17,
-    "question": "Que estructura acelera busquedas a cambio de espacio y coste de escritura?",
-    "option_a": "Vista sin materializar siempre",
-    "option_b": "Rol",
-    "option_c": "Schema",
-    "option_d": "Indice",
-    "correct": "D",
-    "explanation": "Los indices mejoran lecturas concretas."
-  },
-  {
-    "id": 598,
-    "topic_num": 17,
-    "question": "Que tipo de indice es el mas habitual para igualdad y rangos en PostgreSQL?",
-    "option_a": "WCAG",
-    "option_b": "CSV",
-    "option_c": "B-tree",
-    "option_d": "JWT",
-    "correct": "C",
-    "explanation": "B-tree es el tipo por defecto y mas comun."
-  },
-  {
-    "id": 599,
-    "topic_num": 17,
-    "question": "Que operacion recopila estadisticas para el planificador?",
-    "option_a": "GRANT",
-    "option_b": "ANALYZE",
-    "option_c": "COMMIT",
-    "option_d": "SAVEPOINT",
-    "correct": "B",
-    "explanation": "ANALYZE actualiza estadisticas."
-  },
-  {
-    "id": 600,
-    "topic_num": 17,
-    "question": "Que operacion limpia tuplas muertas y ayuda a controlar el bloat?",
-    "option_a": "VACUUM",
-    "option_b": "ROLLBACK",
-    "option_c": "FETCH",
-    "option_d": "PUSH",
-    "correct": "A",
-    "explanation": "VACUUM recupera espacio reutilizable y mantiene la salud de tablas."
-  },
-  {
-    "id": 601,
-    "topic_num": 17,
-    "question": "Que sentencia muestra el plan de ejecucion estimado de una consulta?",
-    "option_a": "COMMIT",
-    "option_b": "GRANT",
-    "option_c": "COPY",
-    "option_d": "EXPLAIN",
-    "correct": "D",
-    "explanation": "EXPLAIN muestra el plan de ejecucion."
-  },
-  {
-    "id": 602,
-    "topic_num": 17,
-    "question": "Que variante ejecuta realmente la consulta y muestra tiempos reales?",
-    "option_a": "ROLLBACK ANALYZE",
-    "option_b": "GRANT ANALYZE",
-    "option_c": "EXPLAIN ANALYZE",
-    "option_d": "EXPLAIN ONLY",
-    "correct": "C",
-    "explanation": "EXPLAIN ANALYZE ejecuta y mide."
-  },
-  {
-    "id": 603,
-    "topic_num": 18,
-    "question": "Que palabra clave declara una clase en C#?",
-    "option_a": "branch",
-    "option_b": "route",
-    "option_c": "class",
-    "option_d": "select",
-    "correct": "C",
-    "explanation": "class declara una clase."
-  },
-  {
-    "id": 604,
-    "topic_num": 18,
-    "question": "Que bloque captura excepciones en C#?",
-    "option_a": "return",
-    "option_b": "catch",
-    "option_c": "foreach",
-    "option_d": "namespace",
-    "correct": "B",
-    "explanation": "catch captura excepciones lanzadas en un try."
-  },
-  {
-    "id": 605,
-    "topic_num": 18,
-    "question": "Que palabra clave permite implementar una interfaz en una clase?",
-    "option_a": ":",
-    "option_b": "implements",
-    "option_c": "extends",
-    "option_d": "using as always",
-    "correct": "A",
-    "explanation": "En C# se usa dos puntos para herencia e implementacion."
-  },
-  {
-    "id": 606,
-    "topic_num": 18,
-    "question": "Que instruccion recorre una coleccion elemento a elemento?",
-    "option_a": "switch",
-    "option_b": "throw",
-    "option_c": "lock",
-    "option_d": "foreach",
-    "correct": "D",
-    "explanation": "foreach itera sobre colecciones enumerables."
-  },
-  {
-    "id": 607,
-    "topic_num": 18,
-    "question": "Que mecanismo permite definir tipos reutilizables con parametros de tipo?",
-    "option_a": "Comentarios XML",
-    "option_b": "Directivas using",
-    "option_c": "Genericos",
-    "option_d": "Namespaces",
-    "correct": "C",
-    "explanation": "Los genericos permiten clases y metodos parametrizados por tipo."
-  },
-  {
-    "id": 608,
-    "topic_num": 18,
-    "question": "Que miembro expone datos de una clase mediante get y set?",
-    "option_a": "Paquete NuGet",
-    "option_b": "Propiedad",
-    "option_c": "Namespace",
-    "option_d": "Assembly",
-    "correct": "B",
-    "explanation": "Las propiedades encapsulan acceso a datos."
-  },
-  {
-    "id": 609,
-    "topic_num": 18,
-    "question": "Que palabra clave declara una clase en C#?",
-    "option_a": "class",
-    "option_b": "select",
-    "option_c": "branch",
-    "option_d": "route",
-    "correct": "A",
-    "explanation": "class declara una clase."
-  },
-  {
-    "id": 610,
-    "topic_num": 18,
-    "question": "Que bloque captura excepciones en C#?",
-    "option_a": "foreach",
-    "option_b": "namespace",
-    "option_c": "return",
-    "option_d": "catch",
-    "correct": "D",
-    "explanation": "catch captura excepciones lanzadas en un try."
-  },
-  {
-    "id": 611,
-    "topic_num": 18,
-    "question": "Que palabra clave permite implementar una interfaz en una clase?",
-    "option_a": "extends",
-    "option_b": "using as always",
-    "option_c": ":",
-    "option_d": "implements",
-    "correct": "C",
-    "explanation": "En C# se usa dos puntos para herencia e implementacion."
-  },
-  {
-    "id": 612,
-    "topic_num": 18,
-    "question": "Que instruccion recorre una coleccion elemento a elemento?",
-    "option_a": "lock",
-    "option_b": "foreach",
-    "option_c": "switch",
-    "option_d": "throw",
-    "correct": "B",
-    "explanation": "foreach itera sobre colecciones enumerables."
-  },
-  {
-    "id": 613,
-    "topic_num": 18,
-    "question": "Que mecanismo permite definir tipos reutilizables con parametros de tipo?",
-    "option_a": "Genericos",
-    "option_b": "Namespaces",
-    "option_c": "Comentarios XML",
-    "option_d": "Directivas using",
-    "correct": "A",
-    "explanation": "Los genericos permiten clases y metodos parametrizados por tipo."
-  },
-  {
-    "id": 614,
-    "topic_num": 18,
-    "question": "Que miembro expone datos de una clase mediante get y set?",
-    "option_a": "Namespace",
-    "option_b": "Assembly",
-    "option_c": "Paquete NuGet",
-    "option_d": "Propiedad",
-    "correct": "D",
-    "explanation": "Las propiedades encapsulan acceso a datos."
-  },
-  {
-    "id": 615,
-    "topic_num": 18,
-    "question": "Que palabra clave declara una clase en C#?",
-    "option_a": "branch",
-    "option_b": "route",
-    "option_c": "class",
-    "option_d": "select",
-    "correct": "C",
-    "explanation": "class declara una clase."
-  },
-  {
-    "id": 616,
-    "topic_num": 18,
-    "question": "Que bloque captura excepciones en C#?",
-    "option_a": "return",
-    "option_b": "catch",
-    "option_c": "foreach",
-    "option_d": "namespace",
-    "correct": "B",
-    "explanation": "catch captura excepciones lanzadas en un try."
-  },
-  {
-    "id": 617,
-    "topic_num": 18,
-    "question": "Que palabra clave permite implementar una interfaz en una clase?",
-    "option_a": ":",
-    "option_b": "implements",
-    "option_c": "extends",
-    "option_d": "using as always",
-    "correct": "A",
-    "explanation": "En C# se usa dos puntos para herencia e implementacion."
-  },
-  {
-    "id": 618,
-    "topic_num": 18,
-    "question": "Que instruccion recorre una coleccion elemento a elemento?",
-    "option_a": "switch",
-    "option_b": "throw",
-    "option_c": "lock",
-    "option_d": "foreach",
-    "correct": "D",
-    "explanation": "foreach itera sobre colecciones enumerables."
-  },
-  {
-    "id": 619,
-    "topic_num": 18,
-    "question": "Que mecanismo permite definir tipos reutilizables con parametros de tipo?",
-    "option_a": "Comentarios XML",
-    "option_b": "Directivas using",
-    "option_c": "Genericos",
-    "option_d": "Namespaces",
-    "correct": "C",
-    "explanation": "Los genericos permiten clases y metodos parametrizados por tipo."
-  },
-  {
-    "id": 620,
-    "topic_num": 18,
-    "question": "Que miembro expone datos de una clase mediante get y set?",
-    "option_a": "Paquete NuGet",
-    "option_b": "Propiedad",
-    "option_c": "Namespace",
-    "option_d": "Assembly",
-    "correct": "B",
-    "explanation": "Las propiedades encapsulan acceso a datos."
-  },
-  {
-    "id": 621,
-    "topic_num": 18,
-    "question": "Que palabra clave declara una clase en C#?",
-    "option_a": "class",
-    "option_b": "select",
-    "option_c": "branch",
-    "option_d": "route",
-    "correct": "A",
-    "explanation": "class declara una clase."
-  },
-  {
-    "id": 622,
-    "topic_num": 18,
-    "question": "Que bloque captura excepciones en C#?",
-    "option_a": "foreach",
-    "option_b": "namespace",
-    "option_c": "return",
-    "option_d": "catch",
-    "correct": "D",
-    "explanation": "catch captura excepciones lanzadas en un try."
-  },
-  {
-    "id": 623,
-    "topic_num": 18,
-    "question": "Que palabra clave permite implementar una interfaz en una clase?",
-    "option_a": "extends",
-    "option_b": "using as always",
-    "option_c": ":",
-    "option_d": "implements",
-    "correct": "C",
-    "explanation": "En C# se usa dos puntos para herencia e implementacion."
-  },
-  {
-    "id": 624,
-    "topic_num": 18,
-    "question": "Que instruccion recorre una coleccion elemento a elemento?",
-    "option_a": "lock",
-    "option_b": "foreach",
-    "option_c": "switch",
-    "option_d": "throw",
-    "correct": "B",
-    "explanation": "foreach itera sobre colecciones enumerables."
-  },
-  {
-    "id": 625,
-    "topic_num": 18,
-    "question": "Que mecanismo permite definir tipos reutilizables con parametros de tipo?",
-    "option_a": "Genericos",
-    "option_b": "Namespaces",
-    "option_c": "Comentarios XML",
-    "option_d": "Directivas using",
-    "correct": "A",
-    "explanation": "Los genericos permiten clases y metodos parametrizados por tipo."
-  },
-  {
-    "id": 626,
-    "topic_num": 18,
-    "question": "Que miembro expone datos de una clase mediante get y set?",
-    "option_a": "Namespace",
-    "option_b": "Assembly",
-    "option_c": "Paquete NuGet",
-    "option_d": "Propiedad",
-    "correct": "D",
-    "explanation": "Las propiedades encapsulan acceso a datos."
-  },
-  {
-    "id": 627,
-    "topic_num": 18,
-    "question": "Que palabra clave declara una clase en C#?",
-    "option_a": "branch",
-    "option_b": "route",
-    "option_c": "class",
-    "option_d": "select",
-    "correct": "C",
-    "explanation": "class declara una clase."
-  },
-  {
-    "id": 628,
-    "topic_num": 18,
-    "question": "Que bloque captura excepciones en C#?",
-    "option_a": "return",
-    "option_b": "catch",
-    "option_c": "foreach",
-    "option_d": "namespace",
-    "correct": "B",
-    "explanation": "catch captura excepciones lanzadas en un try."
-  },
-  {
-    "id": 629,
-    "topic_num": 19,
-    "question": "En MVC, que componente recibe la peticion y coordina la respuesta?",
-    "option_a": "Migracion",
-    "option_b": "Controlador",
-    "option_c": "Vista",
-    "option_d": "Modelo",
-    "correct": "B",
-    "explanation": "El controlador procesa la entrada y devuelve resultados."
-  },
-  {
-    "id": 630,
-    "topic_num": 19,
-    "question": "En MVC, que componente representa datos y reglas de negocio?",
-    "option_a": "Modelo",
-    "option_b": "Vista",
-    "option_c": "Controlador",
-    "option_d": "Layout",
-    "correct": "A",
-    "explanation": "El modelo contiene datos y logica de dominio."
-  },
-  {
-    "id": 631,
-    "topic_num": 19,
-    "question": "En MVC, que componente genera la interfaz presentada al usuario?",
-    "option_a": "Modelo",
-    "option_b": "Controlador",
-    "option_c": "Repositorio remoto",
-    "option_d": "Vista",
-    "correct": "D",
-    "explanation": "La vista renderiza la salida."
-  },
-  {
-    "id": 632,
-    "topic_num": 19,
-    "question": "Que motor de plantillas se usa habitualmente en ASP.NET Core MVC?",
-    "option_a": "Twig",
-    "option_b": "Blade exclusivamente",
-    "option_c": "Razor",
-    "option_d": "Jinja",
-    "correct": "C",
-    "explanation": "Razor combina HTML y C#."
-  },
-  {
-    "id": 633,
-    "topic_num": 19,
-    "question": "Que framework CSS proporciona rejilla responsive y componentes?",
-    "option_a": "Git",
-    "option_b": "Bootstrap",
-    "option_c": "PostgreSQL",
-    "option_d": "AutoFirma",
-    "correct": "B",
-    "explanation": "Bootstrap facilita interfaces responsive."
-  },
-  {
-    "id": 634,
-    "topic_num": 19,
-    "question": "Que archivo o plantilla suele definir estructura comun de varias vistas?",
-    "option_a": "Layout",
-    "option_b": "DbContext",
-    "option_c": "Controller",
-    "option_d": "Migration",
-    "correct": "A",
-    "explanation": "El layout comparte cabecera, menu y estructura."
-  },
-  {
-    "id": 635,
-    "topic_num": 19,
-    "question": "En MVC, que componente recibe la peticion y coordina la respuesta?",
-    "option_a": "Vista",
-    "option_b": "Modelo",
-    "option_c": "Migracion",
-    "option_d": "Controlador",
-    "correct": "D",
-    "explanation": "El controlador procesa la entrada y devuelve resultados."
-  },
-  {
-    "id": 636,
-    "topic_num": 19,
-    "question": "En MVC, que componente representa datos y reglas de negocio?",
-    "option_a": "Controlador",
-    "option_b": "Layout",
-    "option_c": "Modelo",
-    "option_d": "Vista",
-    "correct": "C",
-    "explanation": "El modelo contiene datos y logica de dominio."
-  },
-  {
-    "id": 637,
-    "topic_num": 19,
-    "question": "En MVC, que componente genera la interfaz presentada al usuario?",
-    "option_a": "Repositorio remoto",
-    "option_b": "Vista",
-    "option_c": "Modelo",
-    "option_d": "Controlador",
-    "correct": "B",
-    "explanation": "La vista renderiza la salida."
-  },
-  {
-    "id": 638,
-    "topic_num": 19,
-    "question": "Que motor de plantillas se usa habitualmente en ASP.NET Core MVC?",
-    "option_a": "Razor",
-    "option_b": "Jinja",
-    "option_c": "Twig",
-    "option_d": "Blade exclusivamente",
-    "correct": "A",
-    "explanation": "Razor combina HTML y C#."
-  },
-  {
-    "id": 639,
-    "topic_num": 19,
-    "question": "Que framework CSS proporciona rejilla responsive y componentes?",
-    "option_a": "PostgreSQL",
-    "option_b": "AutoFirma",
-    "option_c": "Git",
-    "option_d": "Bootstrap",
-    "correct": "D",
-    "explanation": "Bootstrap facilita interfaces responsive."
-  },
-  {
-    "id": 640,
-    "topic_num": 19,
-    "question": "Que archivo o plantilla suele definir estructura comun de varias vistas?",
-    "option_a": "Controller",
-    "option_b": "Migration",
-    "option_c": "Layout",
-    "option_d": "DbContext",
-    "correct": "C",
-    "explanation": "El layout comparte cabecera, menu y estructura."
-  },
-  {
-    "id": 641,
-    "topic_num": 19,
-    "question": "En MVC, que componente recibe la peticion y coordina la respuesta?",
-    "option_a": "Migracion",
-    "option_b": "Controlador",
-    "option_c": "Vista",
-    "option_d": "Modelo",
-    "correct": "B",
-    "explanation": "El controlador procesa la entrada y devuelve resultados."
-  },
-  {
-    "id": 642,
-    "topic_num": 19,
-    "question": "En MVC, que componente representa datos y reglas de negocio?",
-    "option_a": "Modelo",
-    "option_b": "Vista",
-    "option_c": "Controlador",
-    "option_d": "Layout",
-    "correct": "A",
-    "explanation": "El modelo contiene datos y logica de dominio."
-  },
-  {
-    "id": 643,
-    "topic_num": 19,
-    "question": "En MVC, que componente genera la interfaz presentada al usuario?",
-    "option_a": "Modelo",
-    "option_b": "Controlador",
-    "option_c": "Repositorio remoto",
-    "option_d": "Vista",
-    "correct": "D",
-    "explanation": "La vista renderiza la salida."
-  },
-  {
-    "id": 644,
-    "topic_num": 19,
-    "question": "Que motor de plantillas se usa habitualmente en ASP.NET Core MVC?",
-    "option_a": "Twig",
-    "option_b": "Blade exclusivamente",
-    "option_c": "Razor",
-    "option_d": "Jinja",
-    "correct": "C",
-    "explanation": "Razor combina HTML y C#."
-  },
-  {
-    "id": 645,
-    "topic_num": 19,
-    "question": "Que framework CSS proporciona rejilla responsive y componentes?",
-    "option_a": "Git",
-    "option_b": "Bootstrap",
-    "option_c": "PostgreSQL",
-    "option_d": "AutoFirma",
-    "correct": "B",
-    "explanation": "Bootstrap facilita interfaces responsive."
-  },
-  {
-    "id": 646,
-    "topic_num": 19,
-    "question": "Que archivo o plantilla suele definir estructura comun de varias vistas?",
-    "option_a": "Layout",
-    "option_b": "DbContext",
-    "option_c": "Controller",
-    "option_d": "Migration",
-    "correct": "A",
-    "explanation": "El layout comparte cabecera, menu y estructura."
-  },
-  {
-    "id": 647,
-    "topic_num": 19,
-    "question": "En MVC, que componente recibe la peticion y coordina la respuesta?",
-    "option_a": "Vista",
-    "option_b": "Modelo",
-    "option_c": "Migracion",
-    "option_d": "Controlador",
-    "correct": "D",
-    "explanation": "El controlador procesa la entrada y devuelve resultados."
-  },
-  {
-    "id": 648,
-    "topic_num": 19,
-    "question": "En MVC, que componente representa datos y reglas de negocio?",
-    "option_a": "Controlador",
-    "option_b": "Layout",
-    "option_c": "Modelo",
-    "option_d": "Vista",
-    "correct": "C",
-    "explanation": "El modelo contiene datos y logica de dominio."
-  },
-  {
-    "id": 649,
-    "topic_num": 19,
-    "question": "En MVC, que componente genera la interfaz presentada al usuario?",
-    "option_a": "Repositorio remoto",
-    "option_b": "Vista",
-    "option_c": "Modelo",
-    "option_d": "Controlador",
-    "correct": "B",
-    "explanation": "La vista renderiza la salida."
-  },
-  {
-    "id": 650,
-    "topic_num": 19,
-    "question": "Que motor de plantillas se usa habitualmente en ASP.NET Core MVC?",
-    "option_a": "Razor",
-    "option_b": "Jinja",
-    "option_c": "Twig",
-    "option_d": "Blade exclusivamente",
-    "correct": "A",
-    "explanation": "Razor combina HTML y C#."
-  },
-  {
-    "id": 651,
-    "topic_num": 19,
-    "question": "Que framework CSS proporciona rejilla responsive y componentes?",
-    "option_a": "PostgreSQL",
-    "option_b": "AutoFirma",
-    "option_c": "Git",
-    "option_d": "Bootstrap",
-    "correct": "D",
-    "explanation": "Bootstrap facilita interfaces responsive."
-  },
-  {
-    "id": 652,
-    "topic_num": 19,
-    "question": "Que archivo o plantilla suele definir estructura comun de varias vistas?",
-    "option_a": "Controller",
-    "option_b": "Migration",
-    "option_c": "Layout",
-    "option_d": "DbContext",
-    "correct": "C",
-    "explanation": "El layout comparte cabecera, menu y estructura."
-  },
-  {
-    "id": 653,
-    "topic_num": 19,
-    "question": "En MVC, que componente recibe la peticion y coordina la respuesta?",
-    "option_a": "Migracion",
-    "option_b": "Controlador",
-    "option_c": "Vista",
-    "option_d": "Modelo",
-    "correct": "B",
-    "explanation": "El controlador procesa la entrada y devuelve resultados."
-  },
-  {
-    "id": 654,
-    "topic_num": 19,
-    "question": "En MVC, que componente representa datos y reglas de negocio?",
-    "option_a": "Modelo",
-    "option_b": "Vista",
-    "option_c": "Controlador",
-    "option_d": "Layout",
-    "correct": "A",
-    "explanation": "El modelo contiene datos y logica de dominio."
-  },
-  {
-    "id": 655,
-    "topic_num": 20,
-    "question": "Que clase representa la sesion de trabajo con la base de datos en EF Core?",
-    "option_a": "DbContext",
-    "option_b": "DbSet",
-    "option_c": "Controller",
-    "option_d": "EditForm",
-    "correct": "A",
-    "explanation": "DbContext coordina consultas y persistencia."
-  },
-  {
-    "id": 656,
-    "topic_num": 20,
-    "question": "Que propiedad representa una coleccion consultable de entidades?",
-    "option_a": "DbContext",
-    "option_b": "Migration",
-    "option_c": "Claim",
-    "option_d": "DbSet",
-    "correct": "D",
-    "explanation": "DbSet representa entidades de un tipo."
-  },
-  {
-    "id": 657,
-    "topic_num": 20,
-    "question": "Que metodo guarda en base de datos los cambios pendientes?",
-    "option_a": "NavigateTo",
-    "option_b": "Authorize",
-    "option_c": "SaveChanges",
-    "option_d": "AddScoped",
-    "correct": "C",
-    "explanation": "SaveChanges persiste cambios rastreados."
-  },
-  {
-    "id": 658,
-    "topic_num": 20,
-    "question": "Que mecanismo versiona cambios del modelo al esquema de base de datos?",
-    "option_a": "RenderFragments",
-    "option_b": "Migraciones",
-    "option_c": "Claims",
-    "option_d": "Stash",
-    "correct": "B",
-    "explanation": "Las migraciones aplican cambios de esquema."
-  },
-  {
-    "id": 659,
-    "topic_num": 20,
-    "question": "Que enfoque parte de clases C# para generar o actualizar la base de datos?",
-    "option_a": "Code First",
-    "option_b": "Database Last",
-    "option_c": "View Only",
-    "option_d": "Static First",
-    "correct": "A",
-    "explanation": "Code First define el modelo en codigo."
-  },
-  {
-    "id": 660,
-    "topic_num": 20,
-    "question": "Que caracteristica recuerda cambios en entidades cargadas para persistirlos?",
-    "option_a": "Model binding",
-    "option_b": "Routing",
-    "option_c": "Hashing",
-    "option_d": "Change tracking",
-    "correct": "D",
-    "explanation": "El seguimiento de cambios detecta modificaciones de entidades."
-  },
-  {
-    "id": 661,
-    "topic_num": 20,
-    "question": "Que clase representa la sesion de trabajo con la base de datos en EF Core?",
-    "option_a": "Controller",
-    "option_b": "EditForm",
-    "option_c": "DbContext",
-    "option_d": "DbSet",
-    "correct": "C",
-    "explanation": "DbContext coordina consultas y persistencia."
-  },
-  {
-    "id": 662,
-    "topic_num": 20,
-    "question": "Que propiedad representa una coleccion consultable de entidades?",
-    "option_a": "Claim",
-    "option_b": "DbSet",
-    "option_c": "DbContext",
-    "option_d": "Migration",
-    "correct": "B",
-    "explanation": "DbSet representa entidades de un tipo."
-  },
-  {
-    "id": 663,
-    "topic_num": 20,
-    "question": "Que metodo guarda en base de datos los cambios pendientes?",
-    "option_a": "SaveChanges",
-    "option_b": "AddScoped",
-    "option_c": "NavigateTo",
-    "option_d": "Authorize",
-    "correct": "A",
-    "explanation": "SaveChanges persiste cambios rastreados."
-  },
-  {
-    "id": 664,
-    "topic_num": 20,
-    "question": "Que mecanismo versiona cambios del modelo al esquema de base de datos?",
-    "option_a": "Claims",
-    "option_b": "Stash",
-    "option_c": "RenderFragments",
-    "option_d": "Migraciones",
-    "correct": "D",
-    "explanation": "Las migraciones aplican cambios de esquema."
-  },
-  {
-    "id": 665,
-    "topic_num": 20,
-    "question": "Que enfoque parte de clases C# para generar o actualizar la base de datos?",
-    "option_a": "View Only",
-    "option_b": "Static First",
-    "option_c": "Code First",
-    "option_d": "Database Last",
-    "correct": "C",
-    "explanation": "Code First define el modelo en codigo."
-  },
-  {
-    "id": 666,
-    "topic_num": 20,
-    "question": "Que caracteristica recuerda cambios en entidades cargadas para persistirlos?",
-    "option_a": "Hashing",
-    "option_b": "Change tracking",
-    "option_c": "Model binding",
-    "option_d": "Routing",
-    "correct": "B",
-    "explanation": "El seguimiento de cambios detecta modificaciones de entidades."
-  },
-  {
-    "id": 667,
-    "topic_num": 20,
-    "question": "Que clase representa la sesion de trabajo con la base de datos en EF Core?",
-    "option_a": "DbContext",
-    "option_b": "DbSet",
-    "option_c": "Controller",
-    "option_d": "EditForm",
-    "correct": "A",
-    "explanation": "DbContext coordina consultas y persistencia."
-  },
-  {
-    "id": 668,
-    "topic_num": 20,
-    "question": "Que propiedad representa una coleccion consultable de entidades?",
-    "option_a": "DbContext",
-    "option_b": "Migration",
-    "option_c": "Claim",
-    "option_d": "DbSet",
-    "correct": "D",
-    "explanation": "DbSet representa entidades de un tipo."
-  },
-  {
-    "id": 669,
-    "topic_num": 20,
-    "question": "Que metodo guarda en base de datos los cambios pendientes?",
-    "option_a": "NavigateTo",
-    "option_b": "Authorize",
-    "option_c": "SaveChanges",
-    "option_d": "AddScoped",
-    "correct": "C",
-    "explanation": "SaveChanges persiste cambios rastreados."
-  },
-  {
-    "id": 670,
-    "topic_num": 20,
-    "question": "Que mecanismo versiona cambios del modelo al esquema de base de datos?",
-    "option_a": "RenderFragments",
-    "option_b": "Migraciones",
-    "option_c": "Claims",
-    "option_d": "Stash",
-    "correct": "B",
-    "explanation": "Las migraciones aplican cambios de esquema."
-  },
-  {
-    "id": 671,
-    "topic_num": 20,
-    "question": "Que enfoque parte de clases C# para generar o actualizar la base de datos?",
-    "option_a": "Code First",
-    "option_b": "Database Last",
-    "option_c": "View Only",
-    "option_d": "Static First",
-    "correct": "A",
-    "explanation": "Code First define el modelo en codigo."
-  },
-  {
-    "id": 672,
-    "topic_num": 20,
-    "question": "Que caracteristica recuerda cambios en entidades cargadas para persistirlos?",
-    "option_a": "Model binding",
-    "option_b": "Routing",
-    "option_c": "Hashing",
-    "option_d": "Change tracking",
-    "correct": "D",
-    "explanation": "El seguimiento de cambios detecta modificaciones de entidades."
-  },
-  {
-    "id": 673,
-    "topic_num": 20,
-    "question": "Que clase representa la sesion de trabajo con la base de datos en EF Core?",
-    "option_a": "Controller",
-    "option_b": "EditForm",
-    "option_c": "DbContext",
-    "option_d": "DbSet",
-    "correct": "C",
-    "explanation": "DbContext coordina consultas y persistencia."
-  },
-  {
-    "id": 674,
-    "topic_num": 20,
-    "question": "Que propiedad representa una coleccion consultable de entidades?",
-    "option_a": "Claim",
-    "option_b": "DbSet",
-    "option_c": "DbContext",
-    "option_d": "Migration",
-    "correct": "B",
-    "explanation": "DbSet representa entidades de un tipo."
-  },
-  {
-    "id": 675,
-    "topic_num": 20,
-    "question": "Que metodo guarda en base de datos los cambios pendientes?",
-    "option_a": "SaveChanges",
-    "option_b": "AddScoped",
-    "option_c": "NavigateTo",
-    "option_d": "Authorize",
-    "correct": "A",
-    "explanation": "SaveChanges persiste cambios rastreados."
-  },
-  {
-    "id": 676,
-    "topic_num": 20,
-    "question": "Que mecanismo versiona cambios del modelo al esquema de base de datos?",
-    "option_a": "Claims",
-    "option_b": "Stash",
-    "option_c": "RenderFragments",
-    "option_d": "Migraciones",
-    "correct": "D",
-    "explanation": "Las migraciones aplican cambios de esquema."
-  },
-  {
-    "id": 677,
-    "topic_num": 20,
-    "question": "Que enfoque parte de clases C# para generar o actualizar la base de datos?",
-    "option_a": "View Only",
-    "option_b": "Static First",
-    "option_c": "Code First",
-    "option_d": "Database Last",
-    "correct": "C",
-    "explanation": "Code First define el modelo en codigo."
-  },
-  {
-    "id": 678,
-    "topic_num": 20,
-    "question": "Que caracteristica recuerda cambios en entidades cargadas para persistirlos?",
-    "option_a": "Hashing",
-    "option_b": "Change tracking",
-    "option_c": "Model binding",
-    "option_d": "Routing",
-    "correct": "B",
-    "explanation": "El seguimiento de cambios detecta modificaciones de entidades."
-  },
-  {
-    "id": 679,
-    "topic_num": 20,
-    "question": "Que clase representa la sesion de trabajo con la base de datos en EF Core?",
-    "option_a": "DbContext",
-    "option_b": "DbSet",
-    "option_c": "Controller",
-    "option_d": "EditForm",
-    "correct": "A",
-    "explanation": "DbContext coordina consultas y persistencia."
-  },
-  {
-    "id": 680,
-    "topic_num": 20,
-    "question": "Que propiedad representa una coleccion consultable de entidades?",
-    "option_a": "DbContext",
-    "option_b": "Migration",
-    "option_c": "Claim",
-    "option_d": "DbSet",
-    "correct": "D",
-    "explanation": "DbSet representa entidades de un tipo."
-  },
-  {
-    "id": 681,
-    "topic_num": 21,
-    "question": "Que operador LINQ filtra elementos por una condicion?",
-    "option_a": "Select",
-    "option_b": "OrderBy",
-    "option_c": "Join",
-    "option_d": "Where",
-    "correct": "D",
-    "explanation": "Where aplica un predicado."
-  },
-  {
-    "id": 682,
-    "topic_num": 21,
-    "question": "Que operador LINQ transforma cada elemento en otra forma?",
-    "option_a": "GroupBy",
-    "option_b": "Skip",
-    "option_c": "Select",
-    "option_d": "Where",
-    "correct": "C",
-    "explanation": "Select realiza proyecciones."
-  },
-  {
-    "id": 683,
-    "topic_num": 21,
-    "question": "Que operador LINQ ordena ascendentemente una secuencia?",
-    "option_a": "Take",
-    "option_b": "OrderBy",
-    "option_c": "Join",
-    "option_d": "Where",
-    "correct": "B",
-    "explanation": "OrderBy ordena por una clave."
-  },
-  {
-    "id": 684,
-    "topic_num": 21,
-    "question": "Que operador LINQ agrupa elementos por clave?",
-    "option_a": "GroupBy",
-    "option_b": "Select",
-    "option_c": "Where",
-    "option_d": "Any",
-    "correct": "A",
-    "explanation": "GroupBy crea grupos segun una clave."
-  },
-  {
-    "id": 685,
-    "topic_num": 21,
-    "question": "Que interfaz permite construir consultas que un proveedor puede traducir, por ejemplo a SQL?",
-    "option_a": "IEnumerable",
-    "option_b": "IDisposable",
-    "option_c": "IComparable",
-    "option_d": "IQueryable",
-    "correct": "D",
-    "explanation": "IQueryable representa consultas traducibles por proveedores."
-  },
-  {
-    "id": 686,
-    "topic_num": 21,
-    "question": "Que expresion anonima se usa mucho en predicados LINQ como x => x.Id > 0?",
-    "option_a": "Namespace",
-    "option_b": "Atributo",
-    "option_c": "Lambda",
-    "option_d": "Delegate multicast siempre",
-    "correct": "C",
-    "explanation": "Las lambdas expresan funciones anonimas."
-  },
-  {
-    "id": 687,
-    "topic_num": 21,
-    "question": "Que operador LINQ filtra elementos por una condicion?",
-    "option_a": "Join",
-    "option_b": "Where",
-    "option_c": "Select",
-    "option_d": "OrderBy",
-    "correct": "B",
-    "explanation": "Where aplica un predicado."
-  },
-  {
-    "id": 688,
-    "topic_num": 21,
-    "question": "Que operador LINQ transforma cada elemento en otra forma?",
-    "option_a": "Select",
-    "option_b": "Where",
-    "option_c": "GroupBy",
-    "option_d": "Skip",
-    "correct": "A",
-    "explanation": "Select realiza proyecciones."
-  },
-  {
-    "id": 689,
-    "topic_num": 21,
-    "question": "Que operador LINQ ordena ascendentemente una secuencia?",
-    "option_a": "Join",
-    "option_b": "Where",
-    "option_c": "Take",
-    "option_d": "OrderBy",
-    "correct": "D",
-    "explanation": "OrderBy ordena por una clave."
-  },
-  {
-    "id": 690,
-    "topic_num": 21,
-    "question": "Que operador LINQ agrupa elementos por clave?",
-    "option_a": "Where",
-    "option_b": "Any",
-    "option_c": "GroupBy",
-    "option_d": "Select",
-    "correct": "C",
-    "explanation": "GroupBy crea grupos segun una clave."
-  },
-  {
-    "id": 691,
-    "topic_num": 21,
-    "question": "Que interfaz permite construir consultas que un proveedor puede traducir, por ejemplo a SQL?",
-    "option_a": "IComparable",
-    "option_b": "IQueryable",
-    "option_c": "IEnumerable",
-    "option_d": "IDisposable",
-    "correct": "B",
-    "explanation": "IQueryable representa consultas traducibles por proveedores."
-  },
-  {
-    "id": 692,
-    "topic_num": 21,
-    "question": "Que expresion anonima se usa mucho en predicados LINQ como x => x.Id > 0?",
-    "option_a": "Lambda",
-    "option_b": "Delegate multicast siempre",
-    "option_c": "Namespace",
-    "option_d": "Atributo",
-    "correct": "A",
-    "explanation": "Las lambdas expresan funciones anonimas."
-  },
-  {
-    "id": 693,
-    "topic_num": 21,
-    "question": "Que operador LINQ filtra elementos por una condicion?",
-    "option_a": "Select",
-    "option_b": "OrderBy",
-    "option_c": "Join",
-    "option_d": "Where",
-    "correct": "D",
-    "explanation": "Where aplica un predicado."
-  },
-  {
-    "id": 694,
-    "topic_num": 21,
-    "question": "Que operador LINQ transforma cada elemento en otra forma?",
-    "option_a": "GroupBy",
-    "option_b": "Skip",
-    "option_c": "Select",
-    "option_d": "Where",
-    "correct": "C",
-    "explanation": "Select realiza proyecciones."
-  },
-  {
-    "id": 695,
-    "topic_num": 21,
-    "question": "Que operador LINQ ordena ascendentemente una secuencia?",
-    "option_a": "Take",
-    "option_b": "OrderBy",
-    "option_c": "Join",
-    "option_d": "Where",
-    "correct": "B",
-    "explanation": "OrderBy ordena por una clave."
-  },
-  {
-    "id": 696,
-    "topic_num": 21,
-    "question": "Que operador LINQ agrupa elementos por clave?",
-    "option_a": "GroupBy",
-    "option_b": "Select",
-    "option_c": "Where",
-    "option_d": "Any",
-    "correct": "A",
-    "explanation": "GroupBy crea grupos segun una clave."
-  },
-  {
-    "id": 697,
-    "topic_num": 21,
-    "question": "Que interfaz permite construir consultas que un proveedor puede traducir, por ejemplo a SQL?",
-    "option_a": "IEnumerable",
-    "option_b": "IDisposable",
-    "option_c": "IComparable",
-    "option_d": "IQueryable",
-    "correct": "D",
-    "explanation": "IQueryable representa consultas traducibles por proveedores."
-  },
-  {
-    "id": 698,
-    "topic_num": 21,
-    "question": "Que expresion anonima se usa mucho en predicados LINQ como x => x.Id > 0?",
-    "option_a": "Namespace",
-    "option_b": "Atributo",
-    "option_c": "Lambda",
-    "option_d": "Delegate multicast siempre",
-    "correct": "C",
-    "explanation": "Las lambdas expresan funciones anonimas."
-  },
-  {
-    "id": 699,
-    "topic_num": 21,
-    "question": "Que operador LINQ filtra elementos por una condicion?",
-    "option_a": "Join",
-    "option_b": "Where",
-    "option_c": "Select",
-    "option_d": "OrderBy",
-    "correct": "B",
-    "explanation": "Where aplica un predicado."
-  },
-  {
-    "id": 700,
-    "topic_num": 21,
-    "question": "Que operador LINQ transforma cada elemento en otra forma?",
-    "option_a": "Select",
-    "option_b": "Where",
-    "option_c": "GroupBy",
-    "option_d": "Skip",
-    "correct": "A",
-    "explanation": "Select realiza proyecciones."
-  },
-  {
-    "id": 701,
-    "topic_num": 21,
-    "question": "Que operador LINQ ordena ascendentemente una secuencia?",
-    "option_a": "Join",
-    "option_b": "Where",
-    "option_c": "Take",
-    "option_d": "OrderBy",
-    "correct": "D",
-    "explanation": "OrderBy ordena por una clave."
-  },
-  {
-    "id": 702,
-    "topic_num": 21,
-    "question": "Que operador LINQ agrupa elementos por clave?",
-    "option_a": "Where",
-    "option_b": "Any",
-    "option_c": "GroupBy",
-    "option_d": "Select",
-    "correct": "C",
-    "explanation": "GroupBy crea grupos segun una clave."
-  },
-  {
-    "id": 703,
-    "topic_num": 21,
-    "question": "Que interfaz permite construir consultas que un proveedor puede traducir, por ejemplo a SQL?",
-    "option_a": "IComparable",
-    "option_b": "IQueryable",
-    "option_c": "IEnumerable",
-    "option_d": "IDisposable",
-    "correct": "B",
-    "explanation": "IQueryable representa consultas traducibles por proveedores."
-  },
-  {
-    "id": 704,
-    "topic_num": 21,
-    "question": "Que expresion anonima se usa mucho en predicados LINQ como x => x.Id > 0?",
-    "option_a": "Lambda",
-    "option_b": "Delegate multicast siempre",
-    "option_c": "Namespace",
-    "option_d": "Atributo",
-    "correct": "A",
-    "explanation": "Las lambdas expresan funciones anonimas."
-  },
-  {
-    "id": 705,
-    "topic_num": 21,
-    "question": "Que operador LINQ filtra elementos por una condicion?",
-    "option_a": "Select",
-    "option_b": "OrderBy",
-    "option_c": "Join",
-    "option_d": "Where",
-    "correct": "D",
-    "explanation": "Where aplica un predicado."
-  },
-  {
-    "id": 706,
-    "topic_num": 21,
-    "question": "Que operador LINQ transforma cada elemento en otra forma?",
-    "option_a": "GroupBy",
-    "option_b": "Skip",
-    "option_c": "Select",
-    "option_d": "Where",
-    "correct": "C",
-    "explanation": "Select realiza proyecciones."
-  },
-  {
-    "id": 707,
-    "topic_num": 22,
-    "question": "Que proceso enlaza datos HTTP con parametros o propiedades del modelo?",
-    "option_a": "Rebase",
-    "option_b": "Cifrado",
-    "option_c": "Model binding",
-    "option_d": "Routing DNS",
-    "correct": "C",
-    "explanation": "Model binding toma datos de ruta, query, formulario o cuerpo."
-  },
-  {
-    "id": 708,
-    "topic_num": 22,
-    "question": "Que coleccion indica si el modelo recibido supera las reglas de validacion?",
-    "option_a": "HttpClient",
-    "option_b": "ModelState",
-    "option_c": "DbSet",
-    "option_d": "ClaimsPrincipal",
-    "correct": "B",
-    "explanation": "ModelState almacena estado de validacion."
-  },
-  {
-    "id": 709,
-    "topic_num": 22,
-    "question": "Que atributo DataAnnotations exige que un campo tenga valor?",
-    "option_a": "Required",
-    "option_b": "StringLength",
-    "option_c": "Key",
-    "option_d": "Table",
-    "correct": "A",
-    "explanation": "Required marca un campo obligatorio."
-  },
-  {
-    "id": 710,
-    "topic_num": 22,
-    "question": "Que palabra clave espera una tarea asincrona?",
-    "option_a": "yield",
-    "option_b": "lock",
-    "option_c": "base",
-    "option_d": "await",
-    "correct": "D",
-    "explanation": "await espera una Task sin bloquear de forma tradicional."
-  },
-  {
-    "id": 711,
-    "topic_num": 22,
-    "question": "Que tipo representa una operacion asincrona en .NET?",
-    "option_a": "ActionFilter",
-    "option_b": "DbSet",
-    "option_c": "Task",
-    "option_d": "ThreadStatic",
-    "correct": "C",
-    "explanation": "Task representa trabajo asincrono."
-  },
-  {
-    "id": 712,
-    "topic_num": 22,
-    "question": "Que token permite solicitar cancelacion cooperativa de una operacion asincrona?",
-    "option_a": "RefreshToken siempre",
-    "option_b": "CancellationToken",
-    "option_c": "AntiForgeryToken",
-    "option_d": "JwtToken",
-    "correct": "B",
-    "explanation": "CancellationToken comunica cancelacion."
-  },
-  {
-    "id": 713,
-    "topic_num": 22,
-    "question": "Que proceso enlaza datos HTTP con parametros o propiedades del modelo?",
-    "option_a": "Model binding",
-    "option_b": "Routing DNS",
-    "option_c": "Rebase",
-    "option_d": "Cifrado",
-    "correct": "A",
-    "explanation": "Model binding toma datos de ruta, query, formulario o cuerpo."
-  },
-  {
-    "id": 714,
-    "topic_num": 22,
-    "question": "Que coleccion indica si el modelo recibido supera las reglas de validacion?",
-    "option_a": "DbSet",
-    "option_b": "ClaimsPrincipal",
-    "option_c": "HttpClient",
-    "option_d": "ModelState",
-    "correct": "D",
-    "explanation": "ModelState almacena estado de validacion."
-  },
-  {
-    "id": 715,
-    "topic_num": 22,
-    "question": "Que atributo DataAnnotations exige que un campo tenga valor?",
-    "option_a": "Key",
-    "option_b": "Table",
-    "option_c": "Required",
-    "option_d": "StringLength",
-    "correct": "C",
-    "explanation": "Required marca un campo obligatorio."
-  },
-  {
-    "id": 716,
-    "topic_num": 22,
-    "question": "Que palabra clave espera una tarea asincrona?",
-    "option_a": "base",
-    "option_b": "await",
-    "option_c": "yield",
-    "option_d": "lock",
-    "correct": "B",
-    "explanation": "await espera una Task sin bloquear de forma tradicional."
-  },
-  {
-    "id": 717,
-    "topic_num": 22,
-    "question": "Que tipo representa una operacion asincrona en .NET?",
-    "option_a": "Task",
-    "option_b": "ThreadStatic",
-    "option_c": "ActionFilter",
-    "option_d": "DbSet",
-    "correct": "A",
-    "explanation": "Task representa trabajo asincrono."
-  },
-  {
-    "id": 718,
-    "topic_num": 22,
-    "question": "Que token permite solicitar cancelacion cooperativa de una operacion asincrona?",
-    "option_a": "AntiForgeryToken",
-    "option_b": "JwtToken",
-    "option_c": "RefreshToken siempre",
-    "option_d": "CancellationToken",
-    "correct": "D",
-    "explanation": "CancellationToken comunica cancelacion."
-  },
-  {
-    "id": 719,
-    "topic_num": 22,
-    "question": "Que proceso enlaza datos HTTP con parametros o propiedades del modelo?",
-    "option_a": "Rebase",
-    "option_b": "Cifrado",
-    "option_c": "Model binding",
-    "option_d": "Routing DNS",
-    "correct": "C",
-    "explanation": "Model binding toma datos de ruta, query, formulario o cuerpo."
-  },
-  {
-    "id": 720,
-    "topic_num": 22,
-    "question": "Que coleccion indica si el modelo recibido supera las reglas de validacion?",
-    "option_a": "HttpClient",
-    "option_b": "ModelState",
-    "option_c": "DbSet",
-    "option_d": "ClaimsPrincipal",
-    "correct": "B",
-    "explanation": "ModelState almacena estado de validacion."
-  },
-  {
-    "id": 721,
-    "topic_num": 22,
-    "question": "Que atributo DataAnnotations exige que un campo tenga valor?",
-    "option_a": "Required",
-    "option_b": "StringLength",
-    "option_c": "Key",
-    "option_d": "Table",
-    "correct": "A",
-    "explanation": "Required marca un campo obligatorio."
-  },
-  {
-    "id": 722,
-    "topic_num": 22,
-    "question": "Que palabra clave espera una tarea asincrona?",
-    "option_a": "yield",
-    "option_b": "lock",
-    "option_c": "base",
-    "option_d": "await",
-    "correct": "D",
-    "explanation": "await espera una Task sin bloquear de forma tradicional."
-  },
-  {
-    "id": 723,
-    "topic_num": 22,
-    "question": "Que tipo representa una operacion asincrona en .NET?",
-    "option_a": "ActionFilter",
-    "option_b": "DbSet",
-    "option_c": "Task",
-    "option_d": "ThreadStatic",
-    "correct": "C",
-    "explanation": "Task representa trabajo asincrono."
-  },
-  {
-    "id": 724,
-    "topic_num": 22,
-    "question": "Que token permite solicitar cancelacion cooperativa de una operacion asincrona?",
-    "option_a": "RefreshToken siempre",
-    "option_b": "CancellationToken",
-    "option_c": "AntiForgeryToken",
-    "option_d": "JwtToken",
-    "correct": "B",
-    "explanation": "CancellationToken comunica cancelacion."
-  },
-  {
-    "id": 725,
-    "topic_num": 22,
-    "question": "Que proceso enlaza datos HTTP con parametros o propiedades del modelo?",
-    "option_a": "Model binding",
-    "option_b": "Routing DNS",
-    "option_c": "Rebase",
-    "option_d": "Cifrado",
-    "correct": "A",
-    "explanation": "Model binding toma datos de ruta, query, formulario o cuerpo."
-  },
-  {
-    "id": 726,
-    "topic_num": 22,
-    "question": "Que coleccion indica si el modelo recibido supera las reglas de validacion?",
-    "option_a": "DbSet",
-    "option_b": "ClaimsPrincipal",
-    "option_c": "HttpClient",
-    "option_d": "ModelState",
-    "correct": "D",
-    "explanation": "ModelState almacena estado de validacion."
-  },
-  {
-    "id": 727,
-    "topic_num": 22,
-    "question": "Que atributo DataAnnotations exige que un campo tenga valor?",
-    "option_a": "Key",
-    "option_b": "Table",
-    "option_c": "Required",
-    "option_d": "StringLength",
-    "correct": "C",
-    "explanation": "Required marca un campo obligatorio."
-  },
-  {
-    "id": 728,
-    "topic_num": 22,
-    "question": "Que palabra clave espera una tarea asincrona?",
-    "option_a": "base",
-    "option_b": "await",
-    "option_c": "yield",
-    "option_d": "lock",
-    "correct": "B",
-    "explanation": "await espera una Task sin bloquear de forma tradicional."
-  },
-  {
-    "id": 729,
-    "topic_num": 22,
-    "question": "Que tipo representa una operacion asincrona en .NET?",
-    "option_a": "Task",
-    "option_b": "ThreadStatic",
-    "option_c": "ActionFilter",
-    "option_d": "DbSet",
-    "correct": "A",
-    "explanation": "Task representa trabajo asincrono."
-  },
-  {
-    "id": 730,
-    "topic_num": 22,
-    "question": "Que token permite solicitar cancelacion cooperativa de una operacion asincrona?",
-    "option_a": "AntiForgeryToken",
-    "option_b": "JwtToken",
-    "option_c": "RefreshToken siempre",
-    "option_d": "CancellationToken",
-    "correct": "D",
-    "explanation": "CancellationToken comunica cancelacion."
-  },
-  {
-    "id": 731,
-    "topic_num": 22,
-    "question": "Que proceso enlaza datos HTTP con parametros o propiedades del modelo?",
-    "option_a": "Rebase",
-    "option_b": "Cifrado",
-    "option_c": "Model binding",
-    "option_d": "Routing DNS",
-    "correct": "C",
-    "explanation": "Model binding toma datos de ruta, query, formulario o cuerpo."
-  },
-  {
-    "id": 732,
-    "topic_num": 22,
-    "question": "Que coleccion indica si el modelo recibido supera las reglas de validacion?",
-    "option_a": "HttpClient",
-    "option_b": "ModelState",
-    "option_c": "DbSet",
-    "option_d": "ClaimsPrincipal",
-    "correct": "B",
-    "explanation": "ModelState almacena estado de validacion."
-  },
-  {
-    "id": 733,
-    "topic_num": 23,
-    "question": "Que proceso verifica la identidad del usuario?",
-    "option_a": "Indexacion",
-    "option_b": "Autenticacion",
-    "option_c": "Autorizacion",
-    "option_d": "Serializacion",
-    "correct": "B",
-    "explanation": "Autenticacion responde quien es el usuario."
-  },
-  {
-    "id": 734,
-    "topic_num": 23,
-    "question": "Que proceso decide si un usuario puede acceder a un recurso?",
-    "option_a": "Autorizacion",
-    "option_b": "Autenticacion",
-    "option_c": "Compilacion",
-    "option_d": "Normalizacion",
-    "correct": "A",
-    "explanation": "Autorizacion responde que puede hacer."
-  },
-  {
-    "id": 735,
-    "topic_num": 23,
-    "question": "Que atributo restringe acceso a controladores o acciones en ASP.NET Core?",
-    "option_a": "AllowAnonymous",
-    "option_b": "Required",
-    "option_c": "HttpGet",
-    "option_d": "Authorize",
-    "correct": "D",
-    "explanation": "Authorize exige usuario o politica autorizada."
-  },
-  {
-    "id": 736,
-    "topic_num": 23,
-    "question": "Que atributo permite acceso anonimo anulando restricciones de autorizacion?",
-    "option_a": "ValidateAntiForgeryToken",
-    "option_b": "FromBody",
-    "option_c": "AllowAnonymous",
-    "option_d": "Authorize",
-    "correct": "C",
-    "explanation": "AllowAnonymous habilita acceso sin autenticar."
-  },
-  {
-    "id": 737,
-    "topic_num": 23,
-    "question": "Que formato de token se usa habitualmente para autenticacion stateless en APIs?",
-    "option_a": "WAL",
-    "option_b": "JWT",
-    "option_c": "CSV",
-    "option_d": "CSS",
-    "correct": "B",
-    "explanation": "JWT transporta claims firmados."
-  },
-  {
-    "id": 738,
-    "topic_num": 23,
-    "question": "Que elemento representa afirmaciones sobre un usuario, como nombre o rol?",
-    "option_a": "Claim",
-    "option_b": "Index",
-    "option_c": "Schema",
-    "option_d": "View",
-    "correct": "A",
-    "explanation": "Un claim es una declaracion sobre la identidad."
-  },
-  {
-    "id": 739,
-    "topic_num": 23,
-    "question": "Que proceso verifica la identidad del usuario?",
-    "option_a": "Autorizacion",
-    "option_b": "Serializacion",
-    "option_c": "Indexacion",
-    "option_d": "Autenticacion",
-    "correct": "D",
-    "explanation": "Autenticacion responde quien es el usuario."
-  },
-  {
-    "id": 740,
-    "topic_num": 23,
-    "question": "Que proceso decide si un usuario puede acceder a un recurso?",
-    "option_a": "Compilacion",
-    "option_b": "Normalizacion",
-    "option_c": "Autorizacion",
-    "option_d": "Autenticacion",
-    "correct": "C",
-    "explanation": "Autorizacion responde que puede hacer."
-  },
-  {
-    "id": 741,
-    "topic_num": 23,
-    "question": "Que atributo restringe acceso a controladores o acciones en ASP.NET Core?",
-    "option_a": "HttpGet",
-    "option_b": "Authorize",
-    "option_c": "AllowAnonymous",
-    "option_d": "Required",
-    "correct": "B",
-    "explanation": "Authorize exige usuario o politica autorizada."
-  },
-  {
-    "id": 742,
-    "topic_num": 23,
-    "question": "Que atributo permite acceso anonimo anulando restricciones de autorizacion?",
-    "option_a": "AllowAnonymous",
-    "option_b": "Authorize",
-    "option_c": "ValidateAntiForgeryToken",
-    "option_d": "FromBody",
-    "correct": "A",
-    "explanation": "AllowAnonymous habilita acceso sin autenticar."
-  },
-  {
-    "id": 743,
-    "topic_num": 23,
-    "question": "Que formato de token se usa habitualmente para autenticacion stateless en APIs?",
-    "option_a": "CSV",
-    "option_b": "CSS",
-    "option_c": "WAL",
-    "option_d": "JWT",
-    "correct": "D",
-    "explanation": "JWT transporta claims firmados."
-  },
-  {
-    "id": 744,
-    "topic_num": 23,
-    "question": "Que elemento representa afirmaciones sobre un usuario, como nombre o rol?",
-    "option_a": "Schema",
-    "option_b": "View",
-    "option_c": "Claim",
-    "option_d": "Index",
-    "correct": "C",
-    "explanation": "Un claim es una declaracion sobre la identidad."
-  },
-  {
-    "id": 745,
-    "topic_num": 23,
-    "question": "Que proceso verifica la identidad del usuario?",
-    "option_a": "Indexacion",
-    "option_b": "Autenticacion",
-    "option_c": "Autorizacion",
-    "option_d": "Serializacion",
-    "correct": "B",
-    "explanation": "Autenticacion responde quien es el usuario."
-  },
-  {
-    "id": 746,
-    "topic_num": 23,
-    "question": "Que proceso decide si un usuario puede acceder a un recurso?",
-    "option_a": "Autorizacion",
-    "option_b": "Autenticacion",
-    "option_c": "Compilacion",
-    "option_d": "Normalizacion",
-    "correct": "A",
-    "explanation": "Autorizacion responde que puede hacer."
-  },
-  {
-    "id": 747,
-    "topic_num": 23,
-    "question": "Que atributo restringe acceso a controladores o acciones en ASP.NET Core?",
-    "option_a": "AllowAnonymous",
-    "option_b": "Required",
-    "option_c": "HttpGet",
-    "option_d": "Authorize",
-    "correct": "D",
-    "explanation": "Authorize exige usuario o politica autorizada."
-  },
-  {
-    "id": 748,
-    "topic_num": 23,
-    "question": "Que atributo permite acceso anonimo anulando restricciones de autorizacion?",
-    "option_a": "ValidateAntiForgeryToken",
-    "option_b": "FromBody",
-    "option_c": "AllowAnonymous",
-    "option_d": "Authorize",
-    "correct": "C",
-    "explanation": "AllowAnonymous habilita acceso sin autenticar."
-  },
-  {
-    "id": 749,
-    "topic_num": 23,
-    "question": "Que formato de token se usa habitualmente para autenticacion stateless en APIs?",
-    "option_a": "WAL",
-    "option_b": "JWT",
-    "option_c": "CSV",
-    "option_d": "CSS",
-    "correct": "B",
-    "explanation": "JWT transporta claims firmados."
-  },
-  {
-    "id": 750,
-    "topic_num": 23,
-    "question": "Que elemento representa afirmaciones sobre un usuario, como nombre o rol?",
-    "option_a": "Claim",
-    "option_b": "Index",
-    "option_c": "Schema",
-    "option_d": "View",
-    "correct": "A",
-    "explanation": "Un claim es una declaracion sobre la identidad."
-  },
-  {
-    "id": 751,
-    "topic_num": 23,
-    "question": "Que proceso verifica la identidad del usuario?",
-    "option_a": "Autorizacion",
-    "option_b": "Serializacion",
-    "option_c": "Indexacion",
-    "option_d": "Autenticacion",
-    "correct": "D",
-    "explanation": "Autenticacion responde quien es el usuario."
-  },
-  {
-    "id": 752,
-    "topic_num": 23,
-    "question": "Que proceso decide si un usuario puede acceder a un recurso?",
-    "option_a": "Compilacion",
-    "option_b": "Normalizacion",
-    "option_c": "Autorizacion",
-    "option_d": "Autenticacion",
-    "correct": "C",
-    "explanation": "Autorizacion responde que puede hacer."
-  },
-  {
-    "id": 753,
-    "topic_num": 23,
-    "question": "Que atributo restringe acceso a controladores o acciones en ASP.NET Core?",
-    "option_a": "HttpGet",
-    "option_b": "Authorize",
-    "option_c": "AllowAnonymous",
-    "option_d": "Required",
-    "correct": "B",
-    "explanation": "Authorize exige usuario o politica autorizada."
-  },
-  {
-    "id": 754,
-    "topic_num": 23,
-    "question": "Que atributo permite acceso anonimo anulando restricciones de autorizacion?",
-    "option_a": "AllowAnonymous",
-    "option_b": "Authorize",
-    "option_c": "ValidateAntiForgeryToken",
-    "option_d": "FromBody",
-    "correct": "A",
-    "explanation": "AllowAnonymous habilita acceso sin autenticar."
-  },
-  {
-    "id": 755,
-    "topic_num": 23,
-    "question": "Que formato de token se usa habitualmente para autenticacion stateless en APIs?",
-    "option_a": "CSV",
-    "option_b": "CSS",
-    "option_c": "WAL",
-    "option_d": "JWT",
-    "correct": "D",
-    "explanation": "JWT transporta claims firmados."
-  },
-  {
-    "id": 756,
-    "topic_num": 23,
-    "question": "Que elemento representa afirmaciones sobre un usuario, como nombre o rol?",
-    "option_a": "Schema",
-    "option_b": "View",
-    "option_c": "Claim",
-    "option_d": "Index",
-    "correct": "C",
-    "explanation": "Un claim es una declaracion sobre la identidad."
-  },
-  {
-    "id": 757,
-    "topic_num": 23,
-    "question": "Que proceso verifica la identidad del usuario?",
-    "option_a": "Indexacion",
-    "option_b": "Autenticacion",
-    "option_c": "Autorizacion",
-    "option_d": "Serializacion",
-    "correct": "B",
-    "explanation": "Autenticacion responde quien es el usuario."
-  },
-  {
-    "id": 758,
-    "topic_num": 23,
-    "question": "Que proceso decide si un usuario puede acceder a un recurso?",
-    "option_a": "Autorizacion",
-    "option_b": "Autenticacion",
-    "option_c": "Compilacion",
-    "option_d": "Normalizacion",
-    "correct": "A",
-    "explanation": "Autorizacion responde que puede hacer."
-  },
-  {
-    "id": 759,
-    "topic_num": 24,
-    "question": "Que verbo HTTP se usa normalmente para obtener un recurso?",
-    "option_a": "GET",
-    "option_b": "POST",
-    "option_c": "PUT",
-    "option_d": "DELETE",
-    "correct": "A",
-    "explanation": "GET solicita representaciones de recursos."
-  },
-  {
-    "id": 760,
-    "topic_num": 24,
-    "question": "Que verbo HTTP se usa normalmente para crear un recurso?",
-    "option_a": "GET",
-    "option_b": "DELETE",
-    "option_c": "OPTIONS",
-    "option_d": "POST",
-    "correct": "D",
-    "explanation": "POST se usa para crear o enviar datos."
-  },
-  {
-    "id": 761,
-    "topic_num": 24,
-    "question": "Que verbo HTTP se usa normalmente para reemplazar o actualizar un recurso?",
-    "option_a": "TRACE",
-    "option_b": "HEAD",
-    "option_c": "PUT",
-    "option_d": "GET",
-    "correct": "C",
-    "explanation": "PUT actualiza o reemplaza un recurso."
-  },
-  {
-    "id": 762,
-    "topic_num": 24,
-    "question": "Que verbo HTTP se usa normalmente para eliminar un recurso?",
-    "option_a": "PATCH only",
-    "option_b": "DELETE",
-    "option_c": "GET",
-    "option_d": "POST",
-    "correct": "B",
-    "explanation": "DELETE solicita borrar un recurso."
-  },
-  {
-    "id": 763,
-    "topic_num": 24,
-    "question": "Que codigo HTTP indica recurso no encontrado?",
-    "option_a": "404 Not Found",
-    "option_b": "200 OK",
-    "option_c": "201 Created",
-    "option_d": "204 No Content",
-    "correct": "A",
-    "explanation": "404 indica que no se encontro el recurso."
-  },
-  {
-    "id": 764,
-    "topic_num": 24,
-    "question": "Que formato ligero se usa habitualmente para intercambiar datos en Web API?",
-    "option_a": "BMP",
-    "option_b": "WAV",
-    "option_c": "EXE",
-    "option_d": "JSON",
-    "correct": "D",
-    "explanation": "JSON es comun en APIs REST."
-  },
-  {
-    "id": 765,
-    "topic_num": 24,
-    "question": "Que verbo HTTP se usa normalmente para obtener un recurso?",
-    "option_a": "PUT",
-    "option_b": "DELETE",
-    "option_c": "GET",
-    "option_d": "POST",
-    "correct": "C",
-    "explanation": "GET solicita representaciones de recursos."
-  },
-  {
-    "id": 766,
-    "topic_num": 24,
-    "question": "Que verbo HTTP se usa normalmente para crear un recurso?",
-    "option_a": "OPTIONS",
-    "option_b": "POST",
-    "option_c": "GET",
-    "option_d": "DELETE",
-    "correct": "B",
-    "explanation": "POST se usa para crear o enviar datos."
-  },
-  {
-    "id": 767,
-    "topic_num": 24,
-    "question": "Que verbo HTTP se usa normalmente para reemplazar o actualizar un recurso?",
-    "option_a": "PUT",
-    "option_b": "GET",
-    "option_c": "TRACE",
-    "option_d": "HEAD",
-    "correct": "A",
-    "explanation": "PUT actualiza o reemplaza un recurso."
-  },
-  {
-    "id": 768,
-    "topic_num": 24,
-    "question": "Que verbo HTTP se usa normalmente para eliminar un recurso?",
-    "option_a": "GET",
-    "option_b": "POST",
-    "option_c": "PATCH only",
-    "option_d": "DELETE",
-    "correct": "D",
-    "explanation": "DELETE solicita borrar un recurso."
-  },
-  {
-    "id": 769,
-    "topic_num": 24,
-    "question": "Que codigo HTTP indica recurso no encontrado?",
-    "option_a": "201 Created",
-    "option_b": "204 No Content",
-    "option_c": "404 Not Found",
-    "option_d": "200 OK",
-    "correct": "C",
-    "explanation": "404 indica que no se encontro el recurso."
-  },
-  {
-    "id": 770,
-    "topic_num": 24,
-    "question": "Que formato ligero se usa habitualmente para intercambiar datos en Web API?",
-    "option_a": "EXE",
-    "option_b": "JSON",
-    "option_c": "BMP",
-    "option_d": "WAV",
-    "correct": "B",
-    "explanation": "JSON es comun en APIs REST."
-  },
-  {
-    "id": 771,
-    "topic_num": 24,
-    "question": "Que verbo HTTP se usa normalmente para obtener un recurso?",
-    "option_a": "GET",
-    "option_b": "POST",
-    "option_c": "PUT",
-    "option_d": "DELETE",
-    "correct": "A",
-    "explanation": "GET solicita representaciones de recursos."
-  },
-  {
-    "id": 772,
-    "topic_num": 24,
-    "question": "Que verbo HTTP se usa normalmente para crear un recurso?",
-    "option_a": "GET",
-    "option_b": "DELETE",
-    "option_c": "OPTIONS",
-    "option_d": "POST",
-    "correct": "D",
-    "explanation": "POST se usa para crear o enviar datos."
-  },
-  {
-    "id": 773,
-    "topic_num": 24,
-    "question": "Que verbo HTTP se usa normalmente para reemplazar o actualizar un recurso?",
-    "option_a": "TRACE",
-    "option_b": "HEAD",
-    "option_c": "PUT",
-    "option_d": "GET",
-    "correct": "C",
-    "explanation": "PUT actualiza o reemplaza un recurso."
-  },
-  {
-    "id": 774,
-    "topic_num": 24,
-    "question": "Que verbo HTTP se usa normalmente para eliminar un recurso?",
-    "option_a": "PATCH only",
-    "option_b": "DELETE",
-    "option_c": "GET",
-    "option_d": "POST",
-    "correct": "B",
-    "explanation": "DELETE solicita borrar un recurso."
-  },
-  {
-    "id": 775,
-    "topic_num": 24,
-    "question": "Que codigo HTTP indica recurso no encontrado?",
-    "option_a": "404 Not Found",
-    "option_b": "200 OK",
-    "option_c": "201 Created",
-    "option_d": "204 No Content",
-    "correct": "A",
-    "explanation": "404 indica que no se encontro el recurso."
-  },
-  {
-    "id": 776,
-    "topic_num": 24,
-    "question": "Que formato ligero se usa habitualmente para intercambiar datos en Web API?",
-    "option_a": "BMP",
-    "option_b": "WAV",
-    "option_c": "EXE",
-    "option_d": "JSON",
-    "correct": "D",
-    "explanation": "JSON es comun en APIs REST."
-  },
-  {
-    "id": 777,
-    "topic_num": 24,
-    "question": "Que verbo HTTP se usa normalmente para obtener un recurso?",
-    "option_a": "PUT",
-    "option_b": "DELETE",
-    "option_c": "GET",
-    "option_d": "POST",
-    "correct": "C",
-    "explanation": "GET solicita representaciones de recursos."
-  },
-  {
-    "id": 778,
-    "topic_num": 24,
-    "question": "Que verbo HTTP se usa normalmente para crear un recurso?",
-    "option_a": "OPTIONS",
-    "option_b": "POST",
-    "option_c": "GET",
-    "option_d": "DELETE",
-    "correct": "B",
-    "explanation": "POST se usa para crear o enviar datos."
-  },
-  {
-    "id": 779,
-    "topic_num": 24,
-    "question": "Que verbo HTTP se usa normalmente para reemplazar o actualizar un recurso?",
-    "option_a": "PUT",
-    "option_b": "GET",
-    "option_c": "TRACE",
-    "option_d": "HEAD",
-    "correct": "A",
-    "explanation": "PUT actualiza o reemplaza un recurso."
-  },
-  {
-    "id": 780,
-    "topic_num": 24,
-    "question": "Que verbo HTTP se usa normalmente para eliminar un recurso?",
-    "option_a": "GET",
-    "option_b": "POST",
-    "option_c": "PATCH only",
-    "option_d": "DELETE",
-    "correct": "D",
-    "explanation": "DELETE solicita borrar un recurso."
-  },
-  {
-    "id": 781,
-    "topic_num": 24,
-    "question": "Que codigo HTTP indica recurso no encontrado?",
-    "option_a": "201 Created",
-    "option_b": "204 No Content",
-    "option_c": "404 Not Found",
-    "option_d": "200 OK",
-    "correct": "C",
-    "explanation": "404 indica que no se encontro el recurso."
-  },
-  {
-    "id": 782,
-    "topic_num": 24,
-    "question": "Que formato ligero se usa habitualmente para intercambiar datos en Web API?",
-    "option_a": "EXE",
-    "option_b": "JSON",
-    "option_c": "BMP",
-    "option_d": "WAV",
-    "correct": "B",
-    "explanation": "JSON es comun en APIs REST."
-  },
-  {
-    "id": 783,
-    "topic_num": 24,
-    "question": "Que verbo HTTP se usa normalmente para obtener un recurso?",
-    "option_a": "GET",
-    "option_b": "POST",
-    "option_c": "PUT",
-    "option_d": "DELETE",
-    "correct": "A",
-    "explanation": "GET solicita representaciones de recursos."
-  },
-  {
-    "id": 784,
-    "topic_num": 24,
-    "question": "Que verbo HTTP se usa normalmente para crear un recurso?",
-    "option_a": "GET",
-    "option_b": "DELETE",
-    "option_c": "OPTIONS",
-    "option_d": "POST",
-    "correct": "D",
-    "explanation": "POST se usa para crear o enviar datos."
-  },
-  {
-    "id": 785,
-    "topic_num": 25,
-    "question": "Que parametro OData filtra resultados segun una condicion?",
-    "option_a": "$select",
-    "option_b": "$top",
-    "option_c": "$skip",
-    "option_d": "$filter",
-    "correct": "D",
-    "explanation": "$filter limita entidades por condicion."
-  },
-  {
-    "id": 786,
-    "topic_num": 25,
-    "question": "Que parametro OData selecciona propiedades concretas?",
-    "option_a": "$orderby",
-    "option_b": "$count",
-    "option_c": "$select",
-    "option_d": "$filter",
-    "correct": "C",
-    "explanation": "$select limita campos devueltos."
-  },
-  {
-    "id": 787,
-    "topic_num": 25,
-    "question": "Que parametro OData ordena resultados?",
-    "option_a": "$expand always",
-    "option_b": "$orderby",
-    "option_c": "$skip",
-    "option_d": "$top",
-    "correct": "B",
-    "explanation": "$orderby define ordenacion."
-  },
-  {
-    "id": 788,
-    "topic_num": 25,
-    "question": "Que parametro OData limita el numero de resultados devueltos?",
-    "option_a": "$top",
-    "option_b": "$filter",
-    "option_c": "$select",
-    "option_d": "$metadata",
-    "correct": "A",
-    "explanation": "$top establece un maximo."
-  },
-  {
-    "id": 789,
-    "topic_num": 25,
-    "question": "Que parametro OData omite un numero de resultados iniciales?",
-    "option_a": "$top",
-    "option_b": "$select",
-    "option_c": "$format",
-    "option_d": "$skip",
-    "correct": "D",
-    "explanation": "$skip se usa para paginacion."
-  },
-  {
-    "id": 790,
-    "topic_num": 25,
-    "question": "Que documento describe el modelo de datos expuesto por un servicio OData?",
-    "option_a": "$top",
-    "option_b": "$skip",
-    "option_c": "$metadata",
-    "option_d": "$filter",
-    "correct": "C",
-    "explanation": "$metadata expone metadatos del servicio."
-  },
-  {
-    "id": 791,
-    "topic_num": 25,
-    "question": "Que parametro OData filtra resultados segun una condicion?",
-    "option_a": "$skip",
-    "option_b": "$filter",
-    "option_c": "$select",
-    "option_d": "$top",
-    "correct": "B",
-    "explanation": "$filter limita entidades por condicion."
-  },
-  {
-    "id": 792,
-    "topic_num": 25,
-    "question": "Que parametro OData selecciona propiedades concretas?",
-    "option_a": "$select",
-    "option_b": "$filter",
-    "option_c": "$orderby",
-    "option_d": "$count",
-    "correct": "A",
-    "explanation": "$select limita campos devueltos."
-  },
-  {
-    "id": 793,
-    "topic_num": 25,
-    "question": "Que parametro OData ordena resultados?",
-    "option_a": "$skip",
-    "option_b": "$top",
-    "option_c": "$expand always",
-    "option_d": "$orderby",
-    "correct": "D",
-    "explanation": "$orderby define ordenacion."
-  },
-  {
-    "id": 794,
-    "topic_num": 25,
-    "question": "Que parametro OData limita el numero de resultados devueltos?",
-    "option_a": "$select",
-    "option_b": "$metadata",
-    "option_c": "$top",
-    "option_d": "$filter",
-    "correct": "C",
-    "explanation": "$top establece un maximo."
-  },
-  {
-    "id": 795,
-    "topic_num": 25,
-    "question": "Que parametro OData omite un numero de resultados iniciales?",
-    "option_a": "$format",
-    "option_b": "$skip",
-    "option_c": "$top",
-    "option_d": "$select",
-    "correct": "B",
-    "explanation": "$skip se usa para paginacion."
-  },
-  {
-    "id": 796,
-    "topic_num": 25,
-    "question": "Que documento describe el modelo de datos expuesto por un servicio OData?",
-    "option_a": "$metadata",
-    "option_b": "$filter",
-    "option_c": "$top",
-    "option_d": "$skip",
-    "correct": "A",
-    "explanation": "$metadata expone metadatos del servicio."
-  },
-  {
-    "id": 797,
-    "topic_num": 25,
-    "question": "Que parametro OData filtra resultados segun una condicion?",
-    "option_a": "$select",
-    "option_b": "$top",
-    "option_c": "$skip",
-    "option_d": "$filter",
-    "correct": "D",
-    "explanation": "$filter limita entidades por condicion."
-  },
-  {
-    "id": 798,
-    "topic_num": 25,
-    "question": "Que parametro OData selecciona propiedades concretas?",
-    "option_a": "$orderby",
-    "option_b": "$count",
-    "option_c": "$select",
-    "option_d": "$filter",
-    "correct": "C",
-    "explanation": "$select limita campos devueltos."
-  },
-  {
-    "id": 799,
-    "topic_num": 25,
-    "question": "Que parametro OData ordena resultados?",
-    "option_a": "$expand always",
-    "option_b": "$orderby",
-    "option_c": "$skip",
-    "option_d": "$top",
-    "correct": "B",
-    "explanation": "$orderby define ordenacion."
-  },
-  {
-    "id": 800,
-    "topic_num": 25,
-    "question": "Que parametro OData limita el numero de resultados devueltos?",
-    "option_a": "$top",
-    "option_b": "$filter",
-    "option_c": "$select",
-    "option_d": "$metadata",
-    "correct": "A",
-    "explanation": "$top establece un maximo."
-  },
-  {
-    "id": 801,
-    "topic_num": 25,
-    "question": "Que parametro OData omite un numero de resultados iniciales?",
-    "option_a": "$top",
-    "option_b": "$select",
-    "option_c": "$format",
-    "option_d": "$skip",
-    "correct": "D",
-    "explanation": "$skip se usa para paginacion."
-  },
-  {
-    "id": 802,
-    "topic_num": 25,
-    "question": "Que documento describe el modelo de datos expuesto por un servicio OData?",
-    "option_a": "$top",
-    "option_b": "$skip",
-    "option_c": "$metadata",
-    "option_d": "$filter",
-    "correct": "C",
-    "explanation": "$metadata expone metadatos del servicio."
-  },
-  {
-    "id": 803,
-    "topic_num": 25,
-    "question": "Que parametro OData filtra resultados segun una condicion?",
-    "option_a": "$skip",
-    "option_b": "$filter",
-    "option_c": "$select",
-    "option_d": "$top",
-    "correct": "B",
-    "explanation": "$filter limita entidades por condicion."
-  },
-  {
-    "id": 804,
-    "topic_num": 25,
-    "question": "Que parametro OData selecciona propiedades concretas?",
-    "option_a": "$select",
-    "option_b": "$filter",
-    "option_c": "$orderby",
-    "option_d": "$count",
-    "correct": "A",
-    "explanation": "$select limita campos devueltos."
-  },
-  {
-    "id": 805,
-    "topic_num": 25,
-    "question": "Que parametro OData ordena resultados?",
-    "option_a": "$skip",
-    "option_b": "$top",
-    "option_c": "$expand always",
-    "option_d": "$orderby",
-    "correct": "D",
-    "explanation": "$orderby define ordenacion."
-  },
-  {
-    "id": 806,
-    "topic_num": 25,
-    "question": "Que parametro OData limita el numero de resultados devueltos?",
-    "option_a": "$select",
-    "option_b": "$metadata",
-    "option_c": "$top",
-    "option_d": "$filter",
-    "correct": "C",
-    "explanation": "$top establece un maximo."
-  },
-  {
-    "id": 807,
-    "topic_num": 25,
-    "question": "Que parametro OData omite un numero de resultados iniciales?",
-    "option_a": "$format",
-    "option_b": "$skip",
-    "option_c": "$top",
-    "option_d": "$select",
-    "correct": "B",
-    "explanation": "$skip se usa para paginacion."
-  },
-  {
-    "id": 808,
-    "topic_num": 25,
-    "question": "Que documento describe el modelo de datos expuesto por un servicio OData?",
-    "option_a": "$metadata",
-    "option_b": "$filter",
-    "option_c": "$top",
-    "option_d": "$skip",
-    "correct": "A",
-    "explanation": "$metadata expone metadatos del servicio."
-  },
-  {
-    "id": 809,
-    "topic_num": 25,
-    "question": "Que parametro OData filtra resultados segun una condicion?",
-    "option_a": "$select",
-    "option_b": "$top",
-    "option_c": "$skip",
-    "option_d": "$filter",
-    "correct": "D",
-    "explanation": "$filter limita entidades por condicion."
-  },
-  {
-    "id": 810,
-    "topic_num": 25,
-    "question": "Que parametro OData selecciona propiedades concretas?",
-    "option_a": "$orderby",
-    "option_b": "$count",
-    "option_c": "$select",
-    "option_d": "$filter",
-    "correct": "C",
-    "explanation": "$select limita campos devueltos."
-  },
-  {
-    "id": 811,
-    "topic_num": 26,
-    "question": "Que modelo de Blazor ejecuta la logica en servidor y sincroniza la UI con SignalR?",
-    "option_a": "MVC",
-    "option_b": "Web API",
-    "option_c": "Blazor Server",
-    "option_d": "Blazor WebAssembly",
-    "correct": "C",
-    "explanation": "Blazor Server mantiene circuito SignalR con el servidor."
-  },
-  {
-    "id": 812,
-    "topic_num": 26,
-    "question": "Que modelo de Blazor ejecuta .NET en el navegador mediante WebAssembly?",
-    "option_a": "Windows Forms",
-    "option_b": "Blazor WebAssembly",
-    "option_c": "Blazor Server",
-    "option_d": "Razor Pages",
-    "correct": "B",
-    "explanation": "Blazor WebAssembly corre en el cliente."
-  },
-  {
-    "id": 813,
-    "topic_num": 26,
-    "question": "Que tecnologia permite comunicacion en tiempo real usada por Blazor Server?",
-    "option_a": "SignalR",
-    "option_b": "OData",
-    "option_c": "PGP",
-    "option_d": "SCSP",
-    "correct": "A",
-    "explanation": "SignalR mantiene comunicacion bidireccional."
-  },
-  {
-    "id": 814,
-    "topic_num": 26,
-    "question": "Que carpeta contiene activos estaticos publicos en una aplicacion Blazor?",
-    "option_a": "bin",
-    "option_b": "obj",
-    "option_c": "Migrations always",
-    "option_d": "wwwroot",
-    "correct": "D",
-    "explanation": "wwwroot almacena archivos estaticos."
-  },
-  {
-    "id": 815,
-    "topic_num": 26,
-    "question": "Que archivo suele configurar servicios y pipeline en una app .NET moderna?",
-    "option_a": "package-lock.json",
-    "option_b": "web.config exclusively",
-    "option_c": "Program.cs",
-    "option_d": "README.md",
-    "correct": "C",
-    "explanation": "Program.cs contiene configuracion de arranque."
-  },
-  {
-    "id": 816,
-    "topic_num": 26,
-    "question": "Como se denomina un componente de interfaz reutilizable escrito con Razor?",
-    "option_a": "Controller only",
-    "option_b": "Razor component",
-    "option_c": "DbContext",
-    "option_d": "Migration",
-    "correct": "B",
-    "explanation": "Los componentes Razor son bloques UI de Blazor."
-  },
-  {
-    "id": 817,
-    "topic_num": 26,
-    "question": "Que modelo de Blazor ejecuta la logica en servidor y sincroniza la UI con SignalR?",
-    "option_a": "Blazor Server",
-    "option_b": "Blazor WebAssembly",
-    "option_c": "MVC",
-    "option_d": "Web API",
-    "correct": "A",
-    "explanation": "Blazor Server mantiene circuito SignalR con el servidor."
-  },
-  {
-    "id": 818,
-    "topic_num": 26,
-    "question": "Que modelo de Blazor ejecuta .NET en el navegador mediante WebAssembly?",
-    "option_a": "Blazor Server",
-    "option_b": "Razor Pages",
-    "option_c": "Windows Forms",
-    "option_d": "Blazor WebAssembly",
-    "correct": "D",
-    "explanation": "Blazor WebAssembly corre en el cliente."
-  },
-  {
-    "id": 819,
-    "topic_num": 26,
-    "question": "Que tecnologia permite comunicacion en tiempo real usada por Blazor Server?",
-    "option_a": "PGP",
-    "option_b": "SCSP",
-    "option_c": "SignalR",
-    "option_d": "OData",
-    "correct": "C",
-    "explanation": "SignalR mantiene comunicacion bidireccional."
-  },
-  {
-    "id": 820,
-    "topic_num": 26,
-    "question": "Que carpeta contiene activos estaticos publicos en una aplicacion Blazor?",
-    "option_a": "Migrations always",
-    "option_b": "wwwroot",
-    "option_c": "bin",
-    "option_d": "obj",
-    "correct": "B",
-    "explanation": "wwwroot almacena archivos estaticos."
-  },
-  {
-    "id": 821,
-    "topic_num": 26,
-    "question": "Que archivo suele configurar servicios y pipeline en una app .NET moderna?",
-    "option_a": "Program.cs",
-    "option_b": "README.md",
-    "option_c": "package-lock.json",
-    "option_d": "web.config exclusively",
-    "correct": "A",
-    "explanation": "Program.cs contiene configuracion de arranque."
-  },
-  {
-    "id": 822,
-    "topic_num": 26,
-    "question": "Como se denomina un componente de interfaz reutilizable escrito con Razor?",
-    "option_a": "DbContext",
-    "option_b": "Migration",
-    "option_c": "Controller only",
-    "option_d": "Razor component",
-    "correct": "D",
-    "explanation": "Los componentes Razor son bloques UI de Blazor."
-  },
-  {
-    "id": 823,
-    "topic_num": 26,
-    "question": "Que modelo de Blazor ejecuta la logica en servidor y sincroniza la UI con SignalR?",
-    "option_a": "MVC",
-    "option_b": "Web API",
-    "option_c": "Blazor Server",
-    "option_d": "Blazor WebAssembly",
-    "correct": "C",
-    "explanation": "Blazor Server mantiene circuito SignalR con el servidor."
-  },
-  {
-    "id": 824,
-    "topic_num": 26,
-    "question": "Que modelo de Blazor ejecuta .NET en el navegador mediante WebAssembly?",
-    "option_a": "Windows Forms",
-    "option_b": "Blazor WebAssembly",
-    "option_c": "Blazor Server",
-    "option_d": "Razor Pages",
-    "correct": "B",
-    "explanation": "Blazor WebAssembly corre en el cliente."
-  },
-  {
-    "id": 825,
-    "topic_num": 26,
-    "question": "Que tecnologia permite comunicacion en tiempo real usada por Blazor Server?",
-    "option_a": "SignalR",
-    "option_b": "OData",
-    "option_c": "PGP",
-    "option_d": "SCSP",
-    "correct": "A",
-    "explanation": "SignalR mantiene comunicacion bidireccional."
-  },
-  {
-    "id": 826,
-    "topic_num": 26,
-    "question": "Que carpeta contiene activos estaticos publicos en una aplicacion Blazor?",
-    "option_a": "bin",
-    "option_b": "obj",
-    "option_c": "Migrations always",
-    "option_d": "wwwroot",
-    "correct": "D",
-    "explanation": "wwwroot almacena archivos estaticos."
-  },
-  {
-    "id": 827,
-    "topic_num": 26,
-    "question": "Que archivo suele configurar servicios y pipeline en una app .NET moderna?",
-    "option_a": "package-lock.json",
-    "option_b": "web.config exclusively",
-    "option_c": "Program.cs",
-    "option_d": "README.md",
-    "correct": "C",
-    "explanation": "Program.cs contiene configuracion de arranque."
-  },
-  {
-    "id": 828,
-    "topic_num": 26,
-    "question": "Como se denomina un componente de interfaz reutilizable escrito con Razor?",
-    "option_a": "Controller only",
-    "option_b": "Razor component",
-    "option_c": "DbContext",
-    "option_d": "Migration",
-    "correct": "B",
-    "explanation": "Los componentes Razor son bloques UI de Blazor."
-  },
-  {
-    "id": 829,
-    "topic_num": 26,
-    "question": "Que modelo de Blazor ejecuta la logica en servidor y sincroniza la UI con SignalR?",
-    "option_a": "Blazor Server",
-    "option_b": "Blazor WebAssembly",
-    "option_c": "MVC",
-    "option_d": "Web API",
-    "correct": "A",
-    "explanation": "Blazor Server mantiene circuito SignalR con el servidor."
-  },
-  {
-    "id": 830,
-    "topic_num": 26,
-    "question": "Que modelo de Blazor ejecuta .NET en el navegador mediante WebAssembly?",
-    "option_a": "Blazor Server",
-    "option_b": "Razor Pages",
-    "option_c": "Windows Forms",
-    "option_d": "Blazor WebAssembly",
-    "correct": "D",
-    "explanation": "Blazor WebAssembly corre en el cliente."
-  },
-  {
-    "id": 831,
-    "topic_num": 26,
-    "question": "Que tecnologia permite comunicacion en tiempo real usada por Blazor Server?",
-    "option_a": "PGP",
-    "option_b": "SCSP",
-    "option_c": "SignalR",
-    "option_d": "OData",
-    "correct": "C",
-    "explanation": "SignalR mantiene comunicacion bidireccional."
-  },
-  {
-    "id": 832,
-    "topic_num": 26,
-    "question": "Que carpeta contiene activos estaticos publicos en una aplicacion Blazor?",
-    "option_a": "Migrations always",
-    "option_b": "wwwroot",
-    "option_c": "bin",
-    "option_d": "obj",
-    "correct": "B",
-    "explanation": "wwwroot almacena archivos estaticos."
-  },
-  {
-    "id": 833,
-    "topic_num": 26,
-    "question": "Que archivo suele configurar servicios y pipeline en una app .NET moderna?",
-    "option_a": "Program.cs",
-    "option_b": "README.md",
-    "option_c": "package-lock.json",
-    "option_d": "web.config exclusively",
-    "correct": "A",
-    "explanation": "Program.cs contiene configuracion de arranque."
-  },
-  {
-    "id": 834,
-    "topic_num": 26,
-    "question": "Como se denomina un componente de interfaz reutilizable escrito con Razor?",
-    "option_a": "DbContext",
-    "option_b": "Migration",
-    "option_c": "Controller only",
-    "option_d": "Razor component",
-    "correct": "D",
-    "explanation": "Los componentes Razor son bloques UI de Blazor."
-  },
-  {
-    "id": 835,
-    "topic_num": 26,
-    "question": "Que modelo de Blazor ejecuta la logica en servidor y sincroniza la UI con SignalR?",
-    "option_a": "MVC",
-    "option_b": "Web API",
-    "option_c": "Blazor Server",
-    "option_d": "Blazor WebAssembly",
-    "correct": "C",
-    "explanation": "Blazor Server mantiene circuito SignalR con el servidor."
-  },
-  {
-    "id": 836,
-    "topic_num": 26,
-    "question": "Que modelo de Blazor ejecuta .NET en el navegador mediante WebAssembly?",
-    "option_a": "Windows Forms",
-    "option_b": "Blazor WebAssembly",
-    "option_c": "Blazor Server",
-    "option_d": "Razor Pages",
-    "correct": "B",
-    "explanation": "Blazor WebAssembly corre en el cliente."
-  },
-  {
-    "id": 837,
-    "topic_num": 27,
-    "question": "Que directiva Blazor realiza enlace de datos bidireccional?",
-    "option_a": "@code",
-    "option_b": "@bind",
-    "option_c": "@page",
-    "option_d": "@inject",
-    "correct": "B",
-    "explanation": "@bind sincroniza valor y propiedad."
-  },
-  {
-    "id": 838,
-    "topic_num": 27,
-    "question": "Que atributo permite recibir valores desde un componente padre?",
-    "option_a": "[Parameter]",
-    "option_b": "[Key]",
-    "option_c": "[Required]",
-    "option_d": "[Authorize]",
-    "correct": "A",
-    "explanation": "[Parameter] marca parametros de componente."
-  },
-  {
-    "id": 839,
-    "topic_num": 27,
-    "question": "Que tipo se usa para notificar eventos desde un componente hijo al padre?",
-    "option_a": "DbSet",
-    "option_b": "Claim",
-    "option_c": "CancellationToken",
-    "option_d": "EventCallback",
-    "correct": "D",
-    "explanation": "EventCallback permite callbacks de eventos."
-  },
-  {
-    "id": 840,
-    "topic_num": 27,
-    "question": "Que componente permite suministrar un valor a descendientes sin pasarlo parametro a parametro?",
-    "option_a": "NavLink",
-    "option_b": "AuthorizeView only",
-    "option_c": "CascadingValue",
-    "option_d": "EditForm",
-    "correct": "C",
-    "explanation": "CascadingValue proporciona valores en cascada."
-  },
-  {
-    "id": 841,
-    "topic_num": 27,
-    "question": "Que bloque contiene codigo C# dentro de un componente Razor?",
-    "option_a": "@using only",
-    "option_b": "@code",
-    "option_c": "@page",
-    "option_d": "@bind",
-    "correct": "B",
-    "explanation": "@code contiene miembros y logica del componente."
-  },
-  {
-    "id": 842,
-    "topic_num": 27,
-    "question": "Que metodo de ciclo de vida se ejecuta al inicializar un componente?",
-    "option_a": "OnInitialized",
-    "option_b": "SaveChanges",
-    "option_c": "ConfigureServices",
-    "option_d": "Main",
-    "correct": "A",
-    "explanation": "OnInitialized se llama durante la inicializacion."
-  },
-  {
-    "id": 843,
-    "topic_num": 27,
-    "question": "Que directiva Blazor realiza enlace de datos bidireccional?",
-    "option_a": "@page",
-    "option_b": "@inject",
-    "option_c": "@code",
-    "option_d": "@bind",
-    "correct": "D",
-    "explanation": "@bind sincroniza valor y propiedad."
-  },
-  {
-    "id": 844,
-    "topic_num": 27,
-    "question": "Que atributo permite recibir valores desde un componente padre?",
-    "option_a": "[Required]",
-    "option_b": "[Authorize]",
-    "option_c": "[Parameter]",
-    "option_d": "[Key]",
-    "correct": "C",
-    "explanation": "[Parameter] marca parametros de componente."
-  },
-  {
-    "id": 845,
-    "topic_num": 27,
-    "question": "Que tipo se usa para notificar eventos desde un componente hijo al padre?",
-    "option_a": "CancellationToken",
-    "option_b": "EventCallback",
-    "option_c": "DbSet",
-    "option_d": "Claim",
-    "correct": "B",
-    "explanation": "EventCallback permite callbacks de eventos."
-  },
-  {
-    "id": 846,
-    "topic_num": 27,
-    "question": "Que componente permite suministrar un valor a descendientes sin pasarlo parametro a parametro?",
-    "option_a": "CascadingValue",
-    "option_b": "EditForm",
-    "option_c": "NavLink",
-    "option_d": "AuthorizeView only",
-    "correct": "A",
-    "explanation": "CascadingValue proporciona valores en cascada."
-  },
-  {
-    "id": 847,
-    "topic_num": 27,
-    "question": "Que bloque contiene codigo C# dentro de un componente Razor?",
-    "option_a": "@page",
-    "option_b": "@bind",
-    "option_c": "@using only",
-    "option_d": "@code",
-    "correct": "D",
-    "explanation": "@code contiene miembros y logica del componente."
-  },
-  {
-    "id": 848,
-    "topic_num": 27,
-    "question": "Que metodo de ciclo de vida se ejecuta al inicializar un componente?",
-    "option_a": "ConfigureServices",
-    "option_b": "Main",
-    "option_c": "OnInitialized",
-    "option_d": "SaveChanges",
-    "correct": "C",
-    "explanation": "OnInitialized se llama durante la inicializacion."
-  },
-  {
-    "id": 849,
-    "topic_num": 27,
-    "question": "Que directiva Blazor realiza enlace de datos bidireccional?",
-    "option_a": "@code",
-    "option_b": "@bind",
-    "option_c": "@page",
-    "option_d": "@inject",
-    "correct": "B",
-    "explanation": "@bind sincroniza valor y propiedad."
-  },
-  {
-    "id": 850,
-    "topic_num": 27,
-    "question": "Que atributo permite recibir valores desde un componente padre?",
-    "option_a": "[Parameter]",
-    "option_b": "[Key]",
-    "option_c": "[Required]",
-    "option_d": "[Authorize]",
-    "correct": "A",
-    "explanation": "[Parameter] marca parametros de componente."
-  },
-  {
-    "id": 851,
-    "topic_num": 27,
-    "question": "Que tipo se usa para notificar eventos desde un componente hijo al padre?",
-    "option_a": "DbSet",
-    "option_b": "Claim",
-    "option_c": "CancellationToken",
-    "option_d": "EventCallback",
-    "correct": "D",
-    "explanation": "EventCallback permite callbacks de eventos."
-  },
-  {
-    "id": 852,
-    "topic_num": 27,
-    "question": "Que componente permite suministrar un valor a descendientes sin pasarlo parametro a parametro?",
-    "option_a": "NavLink",
-    "option_b": "AuthorizeView only",
-    "option_c": "CascadingValue",
-    "option_d": "EditForm",
-    "correct": "C",
-    "explanation": "CascadingValue proporciona valores en cascada."
-  },
-  {
-    "id": 853,
-    "topic_num": 27,
-    "question": "Que bloque contiene codigo C# dentro de un componente Razor?",
-    "option_a": "@using only",
-    "option_b": "@code",
-    "option_c": "@page",
-    "option_d": "@bind",
-    "correct": "B",
-    "explanation": "@code contiene miembros y logica del componente."
-  },
-  {
-    "id": 854,
-    "topic_num": 27,
-    "question": "Que metodo de ciclo de vida se ejecuta al inicializar un componente?",
-    "option_a": "OnInitialized",
-    "option_b": "SaveChanges",
-    "option_c": "ConfigureServices",
-    "option_d": "Main",
-    "correct": "A",
-    "explanation": "OnInitialized se llama durante la inicializacion."
-  },
-  {
-    "id": 855,
-    "topic_num": 27,
-    "question": "Que directiva Blazor realiza enlace de datos bidireccional?",
-    "option_a": "@page",
-    "option_b": "@inject",
-    "option_c": "@code",
-    "option_d": "@bind",
-    "correct": "D",
-    "explanation": "@bind sincroniza valor y propiedad."
-  },
-  {
-    "id": 856,
-    "topic_num": 27,
-    "question": "Que atributo permite recibir valores desde un componente padre?",
-    "option_a": "[Required]",
-    "option_b": "[Authorize]",
-    "option_c": "[Parameter]",
-    "option_d": "[Key]",
-    "correct": "C",
-    "explanation": "[Parameter] marca parametros de componente."
-  },
-  {
-    "id": 857,
-    "topic_num": 27,
-    "question": "Que tipo se usa para notificar eventos desde un componente hijo al padre?",
-    "option_a": "CancellationToken",
-    "option_b": "EventCallback",
-    "option_c": "DbSet",
-    "option_d": "Claim",
-    "correct": "B",
-    "explanation": "EventCallback permite callbacks de eventos."
-  },
-  {
-    "id": 858,
-    "topic_num": 27,
-    "question": "Que componente permite suministrar un valor a descendientes sin pasarlo parametro a parametro?",
-    "option_a": "CascadingValue",
-    "option_b": "EditForm",
-    "option_c": "NavLink",
-    "option_d": "AuthorizeView only",
-    "correct": "A",
-    "explanation": "CascadingValue proporciona valores en cascada."
-  },
-  {
-    "id": 859,
-    "topic_num": 27,
-    "question": "Que bloque contiene codigo C# dentro de un componente Razor?",
-    "option_a": "@page",
-    "option_b": "@bind",
-    "option_c": "@using only",
-    "option_d": "@code",
-    "correct": "D",
-    "explanation": "@code contiene miembros y logica del componente."
-  },
-  {
-    "id": 860,
-    "topic_num": 27,
-    "question": "Que metodo de ciclo de vida se ejecuta al inicializar un componente?",
-    "option_a": "ConfigureServices",
-    "option_b": "Main",
-    "option_c": "OnInitialized",
-    "option_d": "SaveChanges",
-    "correct": "C",
-    "explanation": "OnInitialized se llama durante la inicializacion."
-  },
-  {
-    "id": 861,
-    "topic_num": 27,
-    "question": "Que directiva Blazor realiza enlace de datos bidireccional?",
-    "option_a": "@code",
-    "option_b": "@bind",
-    "option_c": "@page",
-    "option_d": "@inject",
-    "correct": "B",
-    "explanation": "@bind sincroniza valor y propiedad."
-  },
-  {
-    "id": 862,
-    "topic_num": 27,
-    "question": "Que atributo permite recibir valores desde un componente padre?",
-    "option_a": "[Parameter]",
-    "option_b": "[Key]",
-    "option_c": "[Required]",
-    "option_d": "[Authorize]",
-    "correct": "A",
-    "explanation": "[Parameter] marca parametros de componente."
-  },
-  {
-    "id": 863,
-    "topic_num": 28,
-    "question": "Que tipo Blazor representa un fragmento de interfaz renderizable?",
-    "option_a": "RenderFragment",
-    "option_b": "DbContext",
-    "option_c": "Claim",
-    "option_d": "Postmaster",
-    "correct": "A",
-    "explanation": "RenderFragment permite contenido reutilizable."
-  },
-  {
-    "id": 864,
-    "topic_num": 28,
-    "question": "Que parametro suele contener el contenido hijo no nombrado de un componente?",
-    "option_a": "ModelState",
-    "option_b": "DbSet",
-    "option_c": "HttpContext",
-    "option_d": "ChildContent",
-    "correct": "D",
-    "explanation": "ChildContent recibe contenido anidado."
-  },
-  {
-    "id": 865,
-    "topic_num": 28,
-    "question": "Que directiva declara un parametro de tipo generico en un componente?",
-    "option_a": "@page",
-    "option_b": "@inject",
-    "option_c": "@typeparam",
-    "option_d": "@bind",
-    "correct": "C",
-    "explanation": "@typeparam define componentes genericos."
-  },
-  {
-    "id": 866,
-    "topic_num": 28,
-    "question": "Que tecnica limita CSS al componente correspondiente?",
-    "option_a": "OData",
-    "option_b": "CSS isolation",
-    "option_c": "TLS",
-    "option_d": "LINQ",
-    "correct": "B",
-    "explanation": "CSS isolation evita colisiones globales."
-  },
-  {
-    "id": 867,
-    "topic_num": 28,
-    "question": "Que mecanismo permite componer componentes pasando plantillas de UI?",
-    "option_a": "Plantillas con RenderFragment",
-    "option_b": "ROLLBACK",
-    "option_c": "GRANT",
-    "option_d": "pg_dump",
-    "correct": "A",
-    "explanation": "Las plantillas permiten personalizar renderizado."
-  },
-  {
-    "id": 868,
-    "topic_num": 28,
-    "question": "Que archivo suele acompañar a un componente para estilos aislados?",
-    "option_a": ".sql",
-    "option_b": ".dll.config",
-    "option_c": ".gitignore only",
-    "option_d": ".razor.css",
-    "correct": "D",
-    "explanation": "Los estilos aislados se colocan en archivos .razor.css."
-  },
-  {
-    "id": 869,
-    "topic_num": 28,
-    "question": "Que tipo Blazor representa un fragmento de interfaz renderizable?",
-    "option_a": "Claim",
-    "option_b": "Postmaster",
-    "option_c": "RenderFragment",
-    "option_d": "DbContext",
-    "correct": "C",
-    "explanation": "RenderFragment permite contenido reutilizable."
-  },
-  {
-    "id": 870,
-    "topic_num": 28,
-    "question": "Que parametro suele contener el contenido hijo no nombrado de un componente?",
-    "option_a": "HttpContext",
-    "option_b": "ChildContent",
-    "option_c": "ModelState",
-    "option_d": "DbSet",
-    "correct": "B",
-    "explanation": "ChildContent recibe contenido anidado."
-  },
-  {
-    "id": 871,
-    "topic_num": 28,
-    "question": "Que directiva declara un parametro de tipo generico en un componente?",
-    "option_a": "@typeparam",
-    "option_b": "@bind",
-    "option_c": "@page",
-    "option_d": "@inject",
-    "correct": "A",
-    "explanation": "@typeparam define componentes genericos."
-  },
-  {
-    "id": 872,
-    "topic_num": 28,
-    "question": "Que tecnica limita CSS al componente correspondiente?",
-    "option_a": "TLS",
-    "option_b": "LINQ",
-    "option_c": "OData",
-    "option_d": "CSS isolation",
-    "correct": "D",
-    "explanation": "CSS isolation evita colisiones globales."
-  },
-  {
-    "id": 873,
-    "topic_num": 28,
-    "question": "Que mecanismo permite componer componentes pasando plantillas de UI?",
-    "option_a": "GRANT",
-    "option_b": "pg_dump",
-    "option_c": "Plantillas con RenderFragment",
-    "option_d": "ROLLBACK",
-    "correct": "C",
-    "explanation": "Las plantillas permiten personalizar renderizado."
-  },
-  {
-    "id": 874,
-    "topic_num": 28,
-    "question": "Que archivo suele acompañar a un componente para estilos aislados?",
-    "option_a": ".gitignore only",
-    "option_b": ".razor.css",
-    "option_c": ".sql",
-    "option_d": ".dll.config",
-    "correct": "B",
-    "explanation": "Los estilos aislados se colocan en archivos .razor.css."
-  },
-  {
-    "id": 875,
-    "topic_num": 28,
-    "question": "Que tipo Blazor representa un fragmento de interfaz renderizable?",
-    "option_a": "RenderFragment",
-    "option_b": "DbContext",
-    "option_c": "Claim",
-    "option_d": "Postmaster",
-    "correct": "A",
-    "explanation": "RenderFragment permite contenido reutilizable."
-  },
-  {
-    "id": 876,
-    "topic_num": 28,
-    "question": "Que parametro suele contener el contenido hijo no nombrado de un componente?",
-    "option_a": "ModelState",
-    "option_b": "DbSet",
-    "option_c": "HttpContext",
-    "option_d": "ChildContent",
-    "correct": "D",
-    "explanation": "ChildContent recibe contenido anidado."
-  },
-  {
-    "id": 877,
-    "topic_num": 28,
-    "question": "Que directiva declara un parametro de tipo generico en un componente?",
-    "option_a": "@page",
-    "option_b": "@inject",
-    "option_c": "@typeparam",
-    "option_d": "@bind",
-    "correct": "C",
-    "explanation": "@typeparam define componentes genericos."
-  },
-  {
-    "id": 878,
-    "topic_num": 28,
-    "question": "Que tecnica limita CSS al componente correspondiente?",
-    "option_a": "OData",
-    "option_b": "CSS isolation",
-    "option_c": "TLS",
-    "option_d": "LINQ",
-    "correct": "B",
-    "explanation": "CSS isolation evita colisiones globales."
-  },
-  {
-    "id": 879,
-    "topic_num": 28,
-    "question": "Que mecanismo permite componer componentes pasando plantillas de UI?",
-    "option_a": "Plantillas con RenderFragment",
-    "option_b": "ROLLBACK",
-    "option_c": "GRANT",
-    "option_d": "pg_dump",
-    "correct": "A",
-    "explanation": "Las plantillas permiten personalizar renderizado."
-  },
-  {
-    "id": 880,
-    "topic_num": 28,
-    "question": "Que archivo suele acompañar a un componente para estilos aislados?",
-    "option_a": ".sql",
-    "option_b": ".dll.config",
-    "option_c": ".gitignore only",
-    "option_d": ".razor.css",
-    "correct": "D",
-    "explanation": "Los estilos aislados se colocan en archivos .razor.css."
-  },
-  {
-    "id": 881,
-    "topic_num": 28,
-    "question": "Que tipo Blazor representa un fragmento de interfaz renderizable?",
-    "option_a": "Claim",
-    "option_b": "Postmaster",
-    "option_c": "RenderFragment",
-    "option_d": "DbContext",
-    "correct": "C",
-    "explanation": "RenderFragment permite contenido reutilizable."
-  },
-  {
-    "id": 882,
-    "topic_num": 28,
-    "question": "Que parametro suele contener el contenido hijo no nombrado de un componente?",
-    "option_a": "HttpContext",
-    "option_b": "ChildContent",
-    "option_c": "ModelState",
-    "option_d": "DbSet",
-    "correct": "B",
-    "explanation": "ChildContent recibe contenido anidado."
-  },
-  {
-    "id": 883,
-    "topic_num": 28,
-    "question": "Que directiva declara un parametro de tipo generico en un componente?",
-    "option_a": "@typeparam",
-    "option_b": "@bind",
-    "option_c": "@page",
-    "option_d": "@inject",
-    "correct": "A",
-    "explanation": "@typeparam define componentes genericos."
-  },
-  {
-    "id": 884,
-    "topic_num": 28,
-    "question": "Que tecnica limita CSS al componente correspondiente?",
-    "option_a": "TLS",
-    "option_b": "LINQ",
-    "option_c": "OData",
-    "option_d": "CSS isolation",
-    "correct": "D",
-    "explanation": "CSS isolation evita colisiones globales."
-  },
-  {
-    "id": 885,
-    "topic_num": 28,
-    "question": "Que mecanismo permite componer componentes pasando plantillas de UI?",
-    "option_a": "GRANT",
-    "option_b": "pg_dump",
-    "option_c": "Plantillas con RenderFragment",
-    "option_d": "ROLLBACK",
-    "correct": "C",
-    "explanation": "Las plantillas permiten personalizar renderizado."
-  },
-  {
-    "id": 886,
-    "topic_num": 28,
-    "question": "Que archivo suele acompañar a un componente para estilos aislados?",
-    "option_a": ".gitignore only",
-    "option_b": ".razor.css",
-    "option_c": ".sql",
-    "option_d": ".dll.config",
-    "correct": "B",
-    "explanation": "Los estilos aislados se colocan en archivos .razor.css."
-  },
-  {
-    "id": 887,
-    "topic_num": 28,
-    "question": "Que tipo Blazor representa un fragmento de interfaz renderizable?",
-    "option_a": "RenderFragment",
-    "option_b": "DbContext",
-    "option_c": "Claim",
-    "option_d": "Postmaster",
-    "correct": "A",
-    "explanation": "RenderFragment permite contenido reutilizable."
-  },
-  {
-    "id": 888,
-    "topic_num": 28,
-    "question": "Que parametro suele contener el contenido hijo no nombrado de un componente?",
-    "option_a": "ModelState",
-    "option_b": "DbSet",
-    "option_c": "HttpContext",
-    "option_d": "ChildContent",
-    "correct": "D",
-    "explanation": "ChildContent recibe contenido anidado."
-  },
-  {
-    "id": 889,
-    "topic_num": 29,
-    "question": "Que componente Blazor encapsula formularios con validacion?",
-    "option_a": "DbSet",
-    "option_b": "Controller",
-    "option_c": "Router",
-    "option_d": "EditForm",
-    "correct": "D",
-    "explanation": "EditForm coordina modelo y validacion."
-  },
-  {
-    "id": 890,
-    "topic_num": 29,
-    "question": "Que objeto mantiene el estado de edicion y validacion de un formulario?",
-    "option_a": "HttpClient",
-    "option_b": "Claim",
-    "option_c": "EditContext",
-    "option_d": "DbContext",
-    "correct": "C",
-    "explanation": "EditContext sigue cambios y validacion."
-  },
-  {
-    "id": 891,
-    "topic_num": 29,
-    "question": "Que componente valida usando atributos DataAnnotations?",
-    "option_a": "NavLink",
-    "option_b": "DataAnnotationsValidator",
-    "option_c": "ValidationSummary",
-    "option_d": "InputText",
-    "correct": "B",
-    "explanation": "DataAnnotationsValidator activa esas reglas."
-  },
-  {
-    "id": 892,
-    "topic_num": 29,
-    "question": "Que componente muestra un resumen de errores de validacion?",
-    "option_a": "ValidationSummary",
-    "option_b": "InputSelect",
-    "option_c": "Router",
-    "option_d": "AuthorizeView",
-    "correct": "A",
-    "explanation": "ValidationSummary lista errores."
-  },
-  {
-    "id": 893,
-    "topic_num": 29,
-    "question": "Que componente Blazor captura texto en formularios?",
-    "option_a": "InputNumber",
-    "option_b": "InputSelect",
-    "option_c": "EditContext",
-    "option_d": "InputText",
-    "correct": "D",
-    "explanation": "InputText enlaza entradas de texto."
-  },
-  {
-    "id": 894,
-    "topic_num": 29,
-    "question": "Que atributo valida longitud maxima o minima de una cadena?",
-    "option_a": "Key",
-    "option_b": "Table",
-    "option_c": "StringLength",
-    "option_d": "Required",
-    "correct": "C",
-    "explanation": "StringLength limita longitud de strings."
-  },
-  {
-    "id": 895,
-    "topic_num": 29,
-    "question": "Que componente Blazor encapsula formularios con validacion?",
-    "option_a": "Router",
-    "option_b": "EditForm",
-    "option_c": "DbSet",
-    "option_d": "Controller",
-    "correct": "B",
-    "explanation": "EditForm coordina modelo y validacion."
-  },
-  {
-    "id": 896,
-    "topic_num": 29,
-    "question": "Que objeto mantiene el estado de edicion y validacion de un formulario?",
-    "option_a": "EditContext",
-    "option_b": "DbContext",
-    "option_c": "HttpClient",
-    "option_d": "Claim",
-    "correct": "A",
-    "explanation": "EditContext sigue cambios y validacion."
-  },
-  {
-    "id": 897,
-    "topic_num": 29,
-    "question": "Que componente valida usando atributos DataAnnotations?",
-    "option_a": "ValidationSummary",
-    "option_b": "InputText",
-    "option_c": "NavLink",
-    "option_d": "DataAnnotationsValidator",
-    "correct": "D",
-    "explanation": "DataAnnotationsValidator activa esas reglas."
-  },
-  {
-    "id": 898,
-    "topic_num": 29,
-    "question": "Que componente muestra un resumen de errores de validacion?",
-    "option_a": "Router",
-    "option_b": "AuthorizeView",
-    "option_c": "ValidationSummary",
-    "option_d": "InputSelect",
-    "correct": "C",
-    "explanation": "ValidationSummary lista errores."
-  },
-  {
-    "id": 899,
-    "topic_num": 29,
-    "question": "Que componente Blazor captura texto en formularios?",
-    "option_a": "EditContext",
-    "option_b": "InputText",
-    "option_c": "InputNumber",
-    "option_d": "InputSelect",
-    "correct": "B",
-    "explanation": "InputText enlaza entradas de texto."
-  },
-  {
-    "id": 900,
-    "topic_num": 29,
-    "question": "Que atributo valida longitud maxima o minima de una cadena?",
-    "option_a": "StringLength",
-    "option_b": "Required",
-    "option_c": "Key",
-    "option_d": "Table",
-    "correct": "A",
-    "explanation": "StringLength limita longitud de strings."
-  },
-  {
-    "id": 901,
-    "topic_num": 29,
-    "question": "Que componente Blazor encapsula formularios con validacion?",
-    "option_a": "DbSet",
-    "option_b": "Controller",
-    "option_c": "Router",
-    "option_d": "EditForm",
-    "correct": "D",
-    "explanation": "EditForm coordina modelo y validacion."
-  },
-  {
-    "id": 902,
-    "topic_num": 29,
-    "question": "Que objeto mantiene el estado de edicion y validacion de un formulario?",
-    "option_a": "HttpClient",
-    "option_b": "Claim",
-    "option_c": "EditContext",
-    "option_d": "DbContext",
-    "correct": "C",
-    "explanation": "EditContext sigue cambios y validacion."
-  },
-  {
-    "id": 903,
-    "topic_num": 29,
-    "question": "Que componente valida usando atributos DataAnnotations?",
-    "option_a": "NavLink",
-    "option_b": "DataAnnotationsValidator",
-    "option_c": "ValidationSummary",
-    "option_d": "InputText",
-    "correct": "B",
-    "explanation": "DataAnnotationsValidator activa esas reglas."
-  },
-  {
-    "id": 904,
-    "topic_num": 29,
-    "question": "Que componente muestra un resumen de errores de validacion?",
-    "option_a": "ValidationSummary",
-    "option_b": "InputSelect",
-    "option_c": "Router",
-    "option_d": "AuthorizeView",
-    "correct": "A",
-    "explanation": "ValidationSummary lista errores."
-  },
-  {
-    "id": 905,
-    "topic_num": 29,
-    "question": "Que componente Blazor captura texto en formularios?",
-    "option_a": "InputNumber",
-    "option_b": "InputSelect",
-    "option_c": "EditContext",
-    "option_d": "InputText",
-    "correct": "D",
-    "explanation": "InputText enlaza entradas de texto."
-  },
-  {
-    "id": 906,
-    "topic_num": 29,
-    "question": "Que atributo valida longitud maxima o minima de una cadena?",
-    "option_a": "Key",
-    "option_b": "Table",
-    "option_c": "StringLength",
-    "option_d": "Required",
-    "correct": "C",
-    "explanation": "StringLength limita longitud de strings."
-  },
-  {
-    "id": 907,
-    "topic_num": 29,
-    "question": "Que componente Blazor encapsula formularios con validacion?",
-    "option_a": "Router",
-    "option_b": "EditForm",
-    "option_c": "DbSet",
-    "option_d": "Controller",
-    "correct": "B",
-    "explanation": "EditForm coordina modelo y validacion."
-  },
-  {
-    "id": 908,
-    "topic_num": 29,
-    "question": "Que objeto mantiene el estado de edicion y validacion de un formulario?",
-    "option_a": "EditContext",
-    "option_b": "DbContext",
-    "option_c": "HttpClient",
-    "option_d": "Claim",
-    "correct": "A",
-    "explanation": "EditContext sigue cambios y validacion."
-  },
-  {
-    "id": 909,
-    "topic_num": 29,
-    "question": "Que componente valida usando atributos DataAnnotations?",
-    "option_a": "ValidationSummary",
-    "option_b": "InputText",
-    "option_c": "NavLink",
-    "option_d": "DataAnnotationsValidator",
-    "correct": "D",
-    "explanation": "DataAnnotationsValidator activa esas reglas."
-  },
-  {
-    "id": 910,
-    "topic_num": 29,
-    "question": "Que componente muestra un resumen de errores de validacion?",
-    "option_a": "Router",
-    "option_b": "AuthorizeView",
-    "option_c": "ValidationSummary",
-    "option_d": "InputSelect",
-    "correct": "C",
-    "explanation": "ValidationSummary lista errores."
-  },
-  {
-    "id": 911,
-    "topic_num": 29,
-    "question": "Que componente Blazor captura texto en formularios?",
-    "option_a": "EditContext",
-    "option_b": "InputText",
-    "option_c": "InputNumber",
-    "option_d": "InputSelect",
-    "correct": "B",
-    "explanation": "InputText enlaza entradas de texto."
-  },
-  {
-    "id": 912,
-    "topic_num": 29,
-    "question": "Que atributo valida longitud maxima o minima de una cadena?",
-    "option_a": "StringLength",
-    "option_b": "Required",
-    "option_c": "Key",
-    "option_d": "Table",
-    "correct": "A",
-    "explanation": "StringLength limita longitud de strings."
-  },
-  {
-    "id": 913,
-    "topic_num": 29,
-    "question": "Que componente Blazor encapsula formularios con validacion?",
-    "option_a": "DbSet",
-    "option_b": "Controller",
-    "option_c": "Router",
-    "option_d": "EditForm",
-    "correct": "D",
-    "explanation": "EditForm coordina modelo y validacion."
-  },
-  {
-    "id": 914,
-    "topic_num": 29,
-    "question": "Que objeto mantiene el estado de edicion y validacion de un formulario?",
-    "option_a": "HttpClient",
-    "option_b": "Claim",
-    "option_c": "EditContext",
-    "option_d": "DbContext",
-    "correct": "C",
-    "explanation": "EditContext sigue cambios y validacion."
-  },
-  {
-    "id": 915,
-    "topic_num": 30,
-    "question": "Que patron suministra dependencias sin crearlas manualmente en la clase?",
-    "option_a": "Consulta OData",
-    "option_b": "Rebase",
-    "option_c": "Inyeccion de dependencias",
-    "option_d": "Cifrado simetrico",
-    "correct": "C",
-    "explanation": "DI desacopla creacion y uso de servicios."
-  },
-  {
-    "id": 916,
-    "topic_num": 30,
-    "question": "Que registro crea una instancia de servicio por ambito o solicitud?",
-    "option_a": "AddStatic",
-    "option_b": "AddScoped",
-    "option_c": "AddSingleton",
-    "option_d": "AddTransient",
-    "correct": "B",
-    "explanation": "Scoped crea una instancia por scope."
-  },
-  {
-    "id": 917,
-    "topic_num": 30,
-    "question": "Que registro reutiliza una unica instancia durante la vida de la aplicacion?",
-    "option_a": "AddSingleton",
-    "option_b": "AddScoped",
-    "option_c": "AddTransient",
-    "option_d": "AddPerRequest",
-    "correct": "A",
-    "explanation": "Singleton comparte una instancia."
-  },
-  {
-    "id": 918,
-    "topic_num": 30,
-    "question": "Que registro crea una instancia nueva cada vez que se solicita el servicio?",
-    "option_a": "AddSingleton",
-    "option_b": "AddScoped",
-    "option_c": "AddGlobal",
-    "option_d": "AddTransient",
-    "correct": "D",
-    "explanation": "Transient crea instancias nuevas."
-  },
-  {
-    "id": 919,
-    "topic_num": 30,
-    "question": "Que directiva inyecta un servicio en un componente Blazor?",
-    "option_a": "@page",
-    "option_b": "@typeparam",
-    "option_c": "@inject",
-    "option_d": "@bind",
-    "correct": "C",
-    "explanation": "@inject declara dependencias en Razor."
-  },
-  {
-    "id": 920,
-    "topic_num": 30,
-    "question": "Que archivo suele contener valores de configuracion JSON de una app .NET?",
-    "option_a": "index.html",
-    "option_b": "appsettings.json",
-    "option_c": "package-lock.json",
-    "option_d": "README.md",
-    "correct": "B",
-    "explanation": "appsettings.json guarda configuracion."
-  },
-  {
-    "id": 921,
-    "topic_num": 30,
-    "question": "Que patron suministra dependencias sin crearlas manualmente en la clase?",
-    "option_a": "Inyeccion de dependencias",
-    "option_b": "Cifrado simetrico",
-    "option_c": "Consulta OData",
-    "option_d": "Rebase",
-    "correct": "A",
-    "explanation": "DI desacopla creacion y uso de servicios."
-  },
-  {
-    "id": 922,
-    "topic_num": 30,
-    "question": "Que registro crea una instancia de servicio por ambito o solicitud?",
-    "option_a": "AddSingleton",
-    "option_b": "AddTransient",
-    "option_c": "AddStatic",
-    "option_d": "AddScoped",
-    "correct": "D",
-    "explanation": "Scoped crea una instancia por scope."
-  },
-  {
-    "id": 923,
-    "topic_num": 30,
-    "question": "Que registro reutiliza una unica instancia durante la vida de la aplicacion?",
-    "option_a": "AddTransient",
-    "option_b": "AddPerRequest",
-    "option_c": "AddSingleton",
-    "option_d": "AddScoped",
-    "correct": "C",
-    "explanation": "Singleton comparte una instancia."
-  },
-  {
-    "id": 924,
-    "topic_num": 30,
-    "question": "Que registro crea una instancia nueva cada vez que se solicita el servicio?",
-    "option_a": "AddGlobal",
-    "option_b": "AddTransient",
-    "option_c": "AddSingleton",
-    "option_d": "AddScoped",
-    "correct": "B",
-    "explanation": "Transient crea instancias nuevas."
-  },
-  {
-    "id": 925,
-    "topic_num": 30,
-    "question": "Que directiva inyecta un servicio en un componente Blazor?",
-    "option_a": "@inject",
-    "option_b": "@bind",
-    "option_c": "@page",
-    "option_d": "@typeparam",
-    "correct": "A",
-    "explanation": "@inject declara dependencias en Razor."
-  },
-  {
-    "id": 926,
-    "topic_num": 30,
-    "question": "Que archivo suele contener valores de configuracion JSON de una app .NET?",
-    "option_a": "package-lock.json",
-    "option_b": "README.md",
-    "option_c": "index.html",
-    "option_d": "appsettings.json",
-    "correct": "D",
-    "explanation": "appsettings.json guarda configuracion."
-  },
-  {
-    "id": 927,
-    "topic_num": 30,
-    "question": "Que patron suministra dependencias sin crearlas manualmente en la clase?",
-    "option_a": "Consulta OData",
-    "option_b": "Rebase",
-    "option_c": "Inyeccion de dependencias",
-    "option_d": "Cifrado simetrico",
-    "correct": "C",
-    "explanation": "DI desacopla creacion y uso de servicios."
-  },
-  {
-    "id": 928,
-    "topic_num": 30,
-    "question": "Que registro crea una instancia de servicio por ambito o solicitud?",
-    "option_a": "AddStatic",
-    "option_b": "AddScoped",
-    "option_c": "AddSingleton",
-    "option_d": "AddTransient",
-    "correct": "B",
-    "explanation": "Scoped crea una instancia por scope."
-  },
-  {
-    "id": 929,
-    "topic_num": 30,
-    "question": "Que registro reutiliza una unica instancia durante la vida de la aplicacion?",
-    "option_a": "AddSingleton",
-    "option_b": "AddScoped",
-    "option_c": "AddTransient",
-    "option_d": "AddPerRequest",
-    "correct": "A",
-    "explanation": "Singleton comparte una instancia."
-  },
-  {
-    "id": 930,
-    "topic_num": 30,
-    "question": "Que registro crea una instancia nueva cada vez que se solicita el servicio?",
-    "option_a": "AddSingleton",
-    "option_b": "AddScoped",
-    "option_c": "AddGlobal",
-    "option_d": "AddTransient",
-    "correct": "D",
-    "explanation": "Transient crea instancias nuevas."
-  },
-  {
-    "id": 931,
-    "topic_num": 30,
-    "question": "Que directiva inyecta un servicio en un componente Blazor?",
-    "option_a": "@page",
-    "option_b": "@typeparam",
-    "option_c": "@inject",
-    "option_d": "@bind",
-    "correct": "C",
-    "explanation": "@inject declara dependencias en Razor."
-  },
-  {
-    "id": 932,
-    "topic_num": 30,
-    "question": "Que archivo suele contener valores de configuracion JSON de una app .NET?",
-    "option_a": "index.html",
-    "option_b": "appsettings.json",
-    "option_c": "package-lock.json",
-    "option_d": "README.md",
-    "correct": "B",
-    "explanation": "appsettings.json guarda configuracion."
-  },
-  {
-    "id": 933,
-    "topic_num": 30,
-    "question": "Que patron suministra dependencias sin crearlas manualmente en la clase?",
-    "option_a": "Inyeccion de dependencias",
-    "option_b": "Cifrado simetrico",
-    "option_c": "Consulta OData",
-    "option_d": "Rebase",
-    "correct": "A",
-    "explanation": "DI desacopla creacion y uso de servicios."
-  },
-  {
-    "id": 934,
-    "topic_num": 30,
-    "question": "Que registro crea una instancia de servicio por ambito o solicitud?",
-    "option_a": "AddSingleton",
-    "option_b": "AddTransient",
-    "option_c": "AddStatic",
-    "option_d": "AddScoped",
-    "correct": "D",
-    "explanation": "Scoped crea una instancia por scope."
-  },
-  {
-    "id": 935,
-    "topic_num": 30,
-    "question": "Que registro reutiliza una unica instancia durante la vida de la aplicacion?",
-    "option_a": "AddTransient",
-    "option_b": "AddPerRequest",
-    "option_c": "AddSingleton",
-    "option_d": "AddScoped",
-    "correct": "C",
-    "explanation": "Singleton comparte una instancia."
-  },
-  {
-    "id": 936,
-    "topic_num": 30,
-    "question": "Que registro crea una instancia nueva cada vez que se solicita el servicio?",
-    "option_a": "AddGlobal",
-    "option_b": "AddTransient",
-    "option_c": "AddSingleton",
-    "option_d": "AddScoped",
-    "correct": "B",
-    "explanation": "Transient crea instancias nuevas."
-  },
-  {
-    "id": 937,
-    "topic_num": 30,
-    "question": "Que directiva inyecta un servicio en un componente Blazor?",
-    "option_a": "@inject",
-    "option_b": "@bind",
-    "option_c": "@page",
-    "option_d": "@typeparam",
-    "correct": "A",
-    "explanation": "@inject declara dependencias en Razor."
-  },
-  {
-    "id": 938,
-    "topic_num": 30,
-    "question": "Que archivo suele contener valores de configuracion JSON de una app .NET?",
-    "option_a": "package-lock.json",
-    "option_b": "README.md",
-    "option_c": "index.html",
-    "option_d": "appsettings.json",
-    "correct": "D",
-    "explanation": "appsettings.json guarda configuracion."
-  },
-  {
-    "id": 939,
-    "topic_num": 30,
-    "question": "Que patron suministra dependencias sin crearlas manualmente en la clase?",
-    "option_a": "Consulta OData",
-    "option_b": "Rebase",
-    "option_c": "Inyeccion de dependencias",
-    "option_d": "Cifrado simetrico",
-    "correct": "C",
-    "explanation": "DI desacopla creacion y uso de servicios."
-  },
-  {
-    "id": 940,
-    "topic_num": 30,
-    "question": "Que registro crea una instancia de servicio por ambito o solicitud?",
-    "option_a": "AddStatic",
-    "option_b": "AddScoped",
-    "option_c": "AddSingleton",
-    "option_d": "AddTransient",
-    "correct": "B",
-    "explanation": "Scoped crea una instancia por scope."
-  },
-  {
-    "id": 941,
-    "topic_num": 31,
-    "question": "Que almacenamiento del navegador conserva datos incluso tras cerrar y abrir el navegador?",
-    "option_a": "DbSet",
-    "option_b": "localStorage",
-    "option_c": "sessionStorage",
-    "option_d": "RenderFragment",
-    "correct": "B",
-    "explanation": "localStorage persiste mas alla de la sesion."
-  },
-  {
-    "id": 942,
-    "topic_num": 31,
-    "question": "Que almacenamiento del navegador se asocia a la sesion de la pestaña?",
-    "option_a": "sessionStorage",
-    "option_b": "localStorage",
-    "option_c": "Indexed Route",
-    "option_d": "DbContext",
-    "correct": "A",
-    "explanation": "sessionStorage dura la sesion de la pestaña."
-  },
-  {
-    "id": 943,
-    "topic_num": 31,
-    "question": "Que patron centraliza datos compartidos entre componentes?",
-    "option_a": "Indice B-tree",
-    "option_b": "Certificado X.509",
-    "option_c": "Migracion",
-    "option_d": "Servicio de estado",
-    "correct": "D",
-    "explanation": "Un servicio de estado comparte datos y notifica cambios."
-  },
-  {
-    "id": 944,
-    "topic_num": 31,
-    "question": "Que estado pertenece internamente a un componente concreto?",
-    "option_a": "WAL",
-    "option_b": "JWT",
-    "option_c": "Estado de componente",
-    "option_d": "Estado global del servidor siempre",
-    "correct": "C",
-    "explanation": "El estado de componente afecta a su renderizado."
-  },
-  {
-    "id": 945,
-    "topic_num": 31,
-    "question": "Que mecanismo Blazor permite compartir valores descendentes sin parametro directo?",
-    "option_a": "OData",
-    "option_b": "Cascading state",
-    "option_c": "pg_restore",
-    "option_d": "git fetch",
-    "correct": "B",
-    "explanation": "Los valores en cascada pueden transportar estado."
-  },
-  {
-    "id": 946,
-    "topic_num": 31,
-    "question": "Que objetivo tiene persistir estado en una aplicacion?",
-    "option_a": "Conservar datos entre interacciones o recargas",
-    "option_b": "Borrar siempre al renderizar",
-    "option_c": "Impedir navegacion",
-    "option_d": "Desactivar validacion",
-    "correct": "A",
-    "explanation": "Persistir estado evita perder informacion util."
-  },
-  {
-    "id": 947,
-    "topic_num": 31,
-    "question": "Que almacenamiento del navegador conserva datos incluso tras cerrar y abrir el navegador?",
-    "option_a": "sessionStorage",
-    "option_b": "RenderFragment",
-    "option_c": "DbSet",
-    "option_d": "localStorage",
-    "correct": "D",
-    "explanation": "localStorage persiste mas alla de la sesion."
-  },
-  {
-    "id": 948,
-    "topic_num": 31,
-    "question": "Que almacenamiento del navegador se asocia a la sesion de la pestaña?",
-    "option_a": "Indexed Route",
-    "option_b": "DbContext",
-    "option_c": "sessionStorage",
-    "option_d": "localStorage",
-    "correct": "C",
-    "explanation": "sessionStorage dura la sesion de la pestaña."
-  },
-  {
-    "id": 949,
-    "topic_num": 31,
-    "question": "Que patron centraliza datos compartidos entre componentes?",
-    "option_a": "Migracion",
-    "option_b": "Servicio de estado",
-    "option_c": "Indice B-tree",
-    "option_d": "Certificado X.509",
-    "correct": "B",
-    "explanation": "Un servicio de estado comparte datos y notifica cambios."
-  },
-  {
-    "id": 950,
-    "topic_num": 31,
-    "question": "Que estado pertenece internamente a un componente concreto?",
-    "option_a": "Estado de componente",
-    "option_b": "Estado global del servidor siempre",
-    "option_c": "WAL",
-    "option_d": "JWT",
-    "correct": "A",
-    "explanation": "El estado de componente afecta a su renderizado."
-  },
-  {
-    "id": 951,
-    "topic_num": 31,
-    "question": "Que mecanismo Blazor permite compartir valores descendentes sin parametro directo?",
-    "option_a": "pg_restore",
-    "option_b": "git fetch",
-    "option_c": "OData",
-    "option_d": "Cascading state",
-    "correct": "D",
-    "explanation": "Los valores en cascada pueden transportar estado."
-  },
-  {
-    "id": 952,
-    "topic_num": 31,
-    "question": "Que objetivo tiene persistir estado en una aplicacion?",
-    "option_a": "Impedir navegacion",
-    "option_b": "Desactivar validacion",
-    "option_c": "Conservar datos entre interacciones o recargas",
-    "option_d": "Borrar siempre al renderizar",
-    "correct": "C",
-    "explanation": "Persistir estado evita perder informacion util."
-  },
-  {
-    "id": 953,
-    "topic_num": 31,
-    "question": "Que almacenamiento del navegador conserva datos incluso tras cerrar y abrir el navegador?",
-    "option_a": "DbSet",
-    "option_b": "localStorage",
-    "option_c": "sessionStorage",
-    "option_d": "RenderFragment",
-    "correct": "B",
-    "explanation": "localStorage persiste mas alla de la sesion."
-  },
-  {
-    "id": 954,
-    "topic_num": 31,
-    "question": "Que almacenamiento del navegador se asocia a la sesion de la pestaña?",
-    "option_a": "sessionStorage",
-    "option_b": "localStorage",
-    "option_c": "Indexed Route",
-    "option_d": "DbContext",
-    "correct": "A",
-    "explanation": "sessionStorage dura la sesion de la pestaña."
-  },
-  {
-    "id": 955,
-    "topic_num": 31,
-    "question": "Que patron centraliza datos compartidos entre componentes?",
-    "option_a": "Indice B-tree",
-    "option_b": "Certificado X.509",
-    "option_c": "Migracion",
-    "option_d": "Servicio de estado",
-    "correct": "D",
-    "explanation": "Un servicio de estado comparte datos y notifica cambios."
-  },
-  {
-    "id": 956,
-    "topic_num": 31,
-    "question": "Que estado pertenece internamente a un componente concreto?",
-    "option_a": "WAL",
-    "option_b": "JWT",
-    "option_c": "Estado de componente",
-    "option_d": "Estado global del servidor siempre",
-    "correct": "C",
-    "explanation": "El estado de componente afecta a su renderizado."
-  },
-  {
-    "id": 957,
-    "topic_num": 31,
-    "question": "Que mecanismo Blazor permite compartir valores descendentes sin parametro directo?",
-    "option_a": "OData",
-    "option_b": "Cascading state",
-    "option_c": "pg_restore",
-    "option_d": "git fetch",
-    "correct": "B",
-    "explanation": "Los valores en cascada pueden transportar estado."
-  },
-  {
-    "id": 958,
-    "topic_num": 31,
-    "question": "Que objetivo tiene persistir estado en una aplicacion?",
-    "option_a": "Conservar datos entre interacciones o recargas",
-    "option_b": "Borrar siempre al renderizar",
-    "option_c": "Impedir navegacion",
-    "option_d": "Desactivar validacion",
-    "correct": "A",
-    "explanation": "Persistir estado evita perder informacion util."
-  },
-  {
-    "id": 959,
-    "topic_num": 31,
-    "question": "Que almacenamiento del navegador conserva datos incluso tras cerrar y abrir el navegador?",
-    "option_a": "sessionStorage",
-    "option_b": "RenderFragment",
-    "option_c": "DbSet",
-    "option_d": "localStorage",
-    "correct": "D",
-    "explanation": "localStorage persiste mas alla de la sesion."
-  },
-  {
-    "id": 960,
-    "topic_num": 31,
-    "question": "Que almacenamiento del navegador se asocia a la sesion de la pestaña?",
-    "option_a": "Indexed Route",
-    "option_b": "DbContext",
-    "option_c": "sessionStorage",
-    "option_d": "localStorage",
-    "correct": "C",
-    "explanation": "sessionStorage dura la sesion de la pestaña."
-  },
-  {
-    "id": 961,
-    "topic_num": 31,
-    "question": "Que patron centraliza datos compartidos entre componentes?",
-    "option_a": "Migracion",
-    "option_b": "Servicio de estado",
-    "option_c": "Indice B-tree",
-    "option_d": "Certificado X.509",
-    "correct": "B",
-    "explanation": "Un servicio de estado comparte datos y notifica cambios."
-  },
-  {
-    "id": 962,
-    "topic_num": 31,
-    "question": "Que estado pertenece internamente a un componente concreto?",
-    "option_a": "Estado de componente",
-    "option_b": "Estado global del servidor siempre",
-    "option_c": "WAL",
-    "option_d": "JWT",
-    "correct": "A",
-    "explanation": "El estado de componente afecta a su renderizado."
-  },
-  {
-    "id": 963,
-    "topic_num": 31,
-    "question": "Que mecanismo Blazor permite compartir valores descendentes sin parametro directo?",
-    "option_a": "pg_restore",
-    "option_b": "git fetch",
-    "option_c": "OData",
-    "option_d": "Cascading state",
-    "correct": "D",
-    "explanation": "Los valores en cascada pueden transportar estado."
-  },
-  {
-    "id": 964,
-    "topic_num": 31,
-    "question": "Que objetivo tiene persistir estado en una aplicacion?",
-    "option_a": "Impedir navegacion",
-    "option_b": "Desactivar validacion",
-    "option_c": "Conservar datos entre interacciones o recargas",
-    "option_d": "Borrar siempre al renderizar",
-    "correct": "C",
-    "explanation": "Persistir estado evita perder informacion util."
-  },
-  {
-    "id": 965,
-    "topic_num": 31,
-    "question": "Que almacenamiento del navegador conserva datos incluso tras cerrar y abrir el navegador?",
-    "option_a": "DbSet",
-    "option_b": "localStorage",
-    "option_c": "sessionStorage",
-    "option_d": "RenderFragment",
-    "correct": "B",
-    "explanation": "localStorage persiste mas alla de la sesion."
-  },
-  {
-    "id": 966,
-    "topic_num": 31,
-    "question": "Que almacenamiento del navegador se asocia a la sesion de la pestaña?",
-    "option_a": "sessionStorage",
-    "option_b": "localStorage",
-    "option_c": "Indexed Route",
-    "option_d": "DbContext",
-    "correct": "A",
-    "explanation": "sessionStorage dura la sesion de la pestaña."
-  },
-  {
-    "id": 967,
-    "topic_num": 32,
-    "question": "Que directiva define la ruta URL de un componente pagina?",
-    "option_a": "@page",
-    "option_b": "@bind",
-    "option_c": "@code",
-    "option_d": "@inject",
-    "correct": "A",
-    "explanation": "@page declara rutas."
-  },
-  {
-    "id": 968,
-    "topic_num": 32,
-    "question": "Que servicio permite navegar por codigo en Blazor?",
-    "option_a": "DbContext",
-    "option_b": "Postmaster",
-    "option_c": "AutoFirma",
-    "option_d": "NavigationManager",
-    "correct": "D",
-    "explanation": "NavigationManager expone NavigateTo y URI."
-  },
-  {
-    "id": 969,
-    "topic_num": 32,
-    "question": "Que metodo de NavigationManager cambia la ubicacion actual?",
-    "option_a": "AddScoped",
-    "option_b": "ROLLBACK",
-    "option_c": "NavigateTo",
-    "option_d": "SaveChanges",
-    "correct": "C",
-    "explanation": "NavigateTo navega a una URI."
-  },
-  {
-    "id": 970,
-    "topic_num": 32,
-    "question": "Que componente crea enlaces de navegacion con clase activa?",
-    "option_a": "DbSet",
-    "option_b": "NavLink",
-    "option_c": "EditForm",
-    "option_d": "InputText",
-    "correct": "B",
-    "explanation": "NavLink ayuda en menus de navegacion."
-  },
-  {
-    "id": 971,
-    "topic_num": 32,
-    "question": "Que componente Blazor selecciona el componente a mostrar segun la ruta?",
-    "option_a": "Router",
-    "option_b": "EditContext",
-    "option_c": "DbContext",
-    "option_d": "Controller",
-    "correct": "A",
-    "explanation": "Router resuelve rutas."
-  },
-  {
-    "id": 972,
-    "topic_num": 32,
-    "question": "Que elemento de ruta permite recibir valores desde la URL?",
-    "option_a": "Claim",
-    "option_b": "Indice",
-    "option_c": "Certificado",
-    "option_d": "Parametro de ruta",
-    "correct": "D",
-    "explanation": "Los parametros de ruta capturan segmentos de URL."
-  },
-  {
-    "id": 973,
-    "topic_num": 32,
-    "question": "Que directiva define la ruta URL de un componente pagina?",
-    "option_a": "@code",
-    "option_b": "@inject",
-    "option_c": "@page",
-    "option_d": "@bind",
-    "correct": "C",
-    "explanation": "@page declara rutas."
-  },
-  {
-    "id": 974,
-    "topic_num": 32,
-    "question": "Que servicio permite navegar por codigo en Blazor?",
-    "option_a": "AutoFirma",
-    "option_b": "NavigationManager",
-    "option_c": "DbContext",
-    "option_d": "Postmaster",
-    "correct": "B",
-    "explanation": "NavigationManager expone NavigateTo y URI."
-  },
-  {
-    "id": 975,
-    "topic_num": 32,
-    "question": "Que metodo de NavigationManager cambia la ubicacion actual?",
-    "option_a": "NavigateTo",
-    "option_b": "SaveChanges",
-    "option_c": "AddScoped",
-    "option_d": "ROLLBACK",
-    "correct": "A",
-    "explanation": "NavigateTo navega a una URI."
-  },
-  {
-    "id": 976,
-    "topic_num": 32,
-    "question": "Que componente crea enlaces de navegacion con clase activa?",
-    "option_a": "EditForm",
-    "option_b": "InputText",
-    "option_c": "DbSet",
-    "option_d": "NavLink",
-    "correct": "D",
-    "explanation": "NavLink ayuda en menus de navegacion."
-  },
-  {
-    "id": 977,
-    "topic_num": 32,
-    "question": "Que componente Blazor selecciona el componente a mostrar segun la ruta?",
-    "option_a": "DbContext",
-    "option_b": "Controller",
-    "option_c": "Router",
-    "option_d": "EditContext",
-    "correct": "C",
-    "explanation": "Router resuelve rutas."
-  },
-  {
-    "id": 978,
-    "topic_num": 32,
-    "question": "Que elemento de ruta permite recibir valores desde la URL?",
-    "option_a": "Certificado",
-    "option_b": "Parametro de ruta",
-    "option_c": "Claim",
-    "option_d": "Indice",
-    "correct": "B",
-    "explanation": "Los parametros de ruta capturan segmentos de URL."
-  },
-  {
-    "id": 979,
-    "topic_num": 32,
-    "question": "Que directiva define la ruta URL de un componente pagina?",
-    "option_a": "@page",
-    "option_b": "@bind",
-    "option_c": "@code",
-    "option_d": "@inject",
-    "correct": "A",
-    "explanation": "@page declara rutas."
-  },
-  {
-    "id": 980,
-    "topic_num": 32,
-    "question": "Que servicio permite navegar por codigo en Blazor?",
-    "option_a": "DbContext",
-    "option_b": "Postmaster",
-    "option_c": "AutoFirma",
-    "option_d": "NavigationManager",
-    "correct": "D",
-    "explanation": "NavigationManager expone NavigateTo y URI."
-  },
-  {
-    "id": 981,
-    "topic_num": 32,
-    "question": "Que metodo de NavigationManager cambia la ubicacion actual?",
-    "option_a": "AddScoped",
-    "option_b": "ROLLBACK",
-    "option_c": "NavigateTo",
-    "option_d": "SaveChanges",
-    "correct": "C",
-    "explanation": "NavigateTo navega a una URI."
-  },
-  {
-    "id": 982,
-    "topic_num": 32,
-    "question": "Que componente crea enlaces de navegacion con clase activa?",
-    "option_a": "DbSet",
-    "option_b": "NavLink",
-    "option_c": "EditForm",
-    "option_d": "InputText",
-    "correct": "B",
-    "explanation": "NavLink ayuda en menus de navegacion."
-  },
-  {
-    "id": 983,
-    "topic_num": 32,
-    "question": "Que componente Blazor selecciona el componente a mostrar segun la ruta?",
-    "option_a": "Router",
-    "option_b": "EditContext",
-    "option_c": "DbContext",
-    "option_d": "Controller",
-    "correct": "A",
-    "explanation": "Router resuelve rutas."
-  },
-  {
-    "id": 984,
-    "topic_num": 32,
-    "question": "Que elemento de ruta permite recibir valores desde la URL?",
-    "option_a": "Claim",
-    "option_b": "Indice",
-    "option_c": "Certificado",
-    "option_d": "Parametro de ruta",
-    "correct": "D",
-    "explanation": "Los parametros de ruta capturan segmentos de URL."
-  },
-  {
-    "id": 985,
-    "topic_num": 32,
-    "question": "Que directiva define la ruta URL de un componente pagina?",
-    "option_a": "@code",
-    "option_b": "@inject",
-    "option_c": "@page",
-    "option_d": "@bind",
-    "correct": "C",
-    "explanation": "@page declara rutas."
-  },
-  {
-    "id": 986,
-    "topic_num": 32,
-    "question": "Que servicio permite navegar por codigo en Blazor?",
-    "option_a": "AutoFirma",
-    "option_b": "NavigationManager",
-    "option_c": "DbContext",
-    "option_d": "Postmaster",
-    "correct": "B",
-    "explanation": "NavigationManager expone NavigateTo y URI."
-  },
-  {
-    "id": 987,
-    "topic_num": 32,
-    "question": "Que metodo de NavigationManager cambia la ubicacion actual?",
-    "option_a": "NavigateTo",
-    "option_b": "SaveChanges",
-    "option_c": "AddScoped",
-    "option_d": "ROLLBACK",
-    "correct": "A",
-    "explanation": "NavigateTo navega a una URI."
-  },
-  {
-    "id": 988,
-    "topic_num": 32,
-    "question": "Que componente crea enlaces de navegacion con clase activa?",
-    "option_a": "EditForm",
-    "option_b": "InputText",
-    "option_c": "DbSet",
-    "option_d": "NavLink",
-    "correct": "D",
-    "explanation": "NavLink ayuda en menus de navegacion."
-  },
-  {
-    "id": 989,
-    "topic_num": 32,
-    "question": "Que componente Blazor selecciona el componente a mostrar segun la ruta?",
-    "option_a": "DbContext",
-    "option_b": "Controller",
-    "option_c": "Router",
-    "option_d": "EditContext",
-    "correct": "C",
-    "explanation": "Router resuelve rutas."
-  },
-  {
-    "id": 990,
-    "topic_num": 32,
-    "question": "Que elemento de ruta permite recibir valores desde la URL?",
-    "option_a": "Certificado",
-    "option_b": "Parametro de ruta",
-    "option_c": "Claim",
-    "option_d": "Indice",
-    "correct": "B",
-    "explanation": "Los parametros de ruta capturan segmentos de URL."
-  },
-  {
-    "id": 991,
-    "topic_num": 32,
-    "question": "Que directiva define la ruta URL de un componente pagina?",
-    "option_a": "@page",
-    "option_b": "@bind",
-    "option_c": "@code",
-    "option_d": "@inject",
-    "correct": "A",
-    "explanation": "@page declara rutas."
-  },
-  {
-    "id": 992,
-    "topic_num": 32,
-    "question": "Que servicio permite navegar por codigo en Blazor?",
-    "option_a": "DbContext",
-    "option_b": "Postmaster",
-    "option_c": "AutoFirma",
-    "option_d": "NavigationManager",
-    "correct": "D",
-    "explanation": "NavigationManager expone NavigateTo y URI."
-  },
-  {
-    "id": 993,
-    "topic_num": 33,
-    "question": "Que comando inicializa un repositorio Git?",
-    "option_a": "git push",
-    "option_b": "git merge",
-    "option_c": "git fetch",
-    "option_d": "git init",
-    "correct": "D",
-    "explanation": "git init crea el repositorio local."
-  },
-  {
-    "id": 994,
-    "topic_num": 33,
-    "question": "Que comando muestra el estado del arbol de trabajo?",
-    "option_a": "git clone",
-    "option_b": "git tag",
-    "option_c": "git status",
-    "option_d": "git commit",
-    "correct": "C",
-    "explanation": "git status informa cambios y rama."
-  },
-  {
-    "id": 995,
-    "topic_num": 33,
-    "question": "Que comando prepara archivos para el proximo commit?",
-    "option_a": "git reset --hard always",
-    "option_b": "git add",
-    "option_c": "git push",
-    "option_d": "git pull",
-    "correct": "B",
-    "explanation": "git add lleva cambios al staging area."
-  },
-  {
-    "id": 996,
-    "topic_num": 33,
-    "question": "Que comando crea una instantanea en el historial?",
-    "option_a": "git commit",
-    "option_b": "git fetch",
-    "option_c": "git remote",
-    "option_d": "git stash",
-    "correct": "A",
-    "explanation": "git commit registra cambios preparados."
-  },
-  {
-    "id": 997,
-    "topic_num": 33,
-    "question": "Que archivo indica patrones que Git debe ignorar?",
-    "option_a": "README.md",
-    "option_b": "package.json",
-    "option_c": "pyproject.toml",
-    "option_d": ".gitignore",
-    "correct": "D",
-    "explanation": ".gitignore contiene reglas de exclusion."
-  },
-  {
-    "id": 998,
-    "topic_num": 33,
-    "question": "Que puntero representa normalmente el commit actualmente extraido?",
-    "option_a": "tag",
-    "option_b": "stash",
-    "option_c": "HEAD",
-    "option_d": "origin",
-    "correct": "C",
-    "explanation": "HEAD apunta a la revision actual."
-  },
-  {
-    "id": 999,
-    "topic_num": 33,
-    "question": "Que comando inicializa un repositorio Git?",
-    "option_a": "git fetch",
-    "option_b": "git init",
-    "option_c": "git push",
-    "option_d": "git merge",
-    "correct": "B",
-    "explanation": "git init crea el repositorio local."
-  },
-  {
-    "id": 1000,
-    "topic_num": 33,
-    "question": "Que comando muestra el estado del arbol de trabajo?",
-    "option_a": "git status",
-    "option_b": "git commit",
-    "option_c": "git clone",
-    "option_d": "git tag",
-    "correct": "A",
-    "explanation": "git status informa cambios y rama."
-  },
-  {
-    "id": 1001,
-    "topic_num": 33,
-    "question": "Que comando prepara archivos para el proximo commit?",
-    "option_a": "git push",
-    "option_b": "git pull",
-    "option_c": "git reset --hard always",
-    "option_d": "git add",
-    "correct": "D",
-    "explanation": "git add lleva cambios al staging area."
-  },
-  {
-    "id": 1002,
-    "topic_num": 33,
-    "question": "Que comando crea una instantanea en el historial?",
-    "option_a": "git remote",
-    "option_b": "git stash",
-    "option_c": "git commit",
-    "option_d": "git fetch",
-    "correct": "C",
-    "explanation": "git commit registra cambios preparados."
-  },
-  {
-    "id": 1003,
-    "topic_num": 33,
-    "question": "Que archivo indica patrones que Git debe ignorar?",
-    "option_a": "pyproject.toml",
-    "option_b": ".gitignore",
-    "option_c": "README.md",
-    "option_d": "package.json",
-    "correct": "B",
-    "explanation": ".gitignore contiene reglas de exclusion."
-  },
-  {
-    "id": 1004,
-    "topic_num": 33,
-    "question": "Que puntero representa normalmente el commit actualmente extraido?",
-    "option_a": "HEAD",
-    "option_b": "origin",
-    "option_c": "tag",
-    "option_d": "stash",
-    "correct": "A",
-    "explanation": "HEAD apunta a la revision actual."
-  },
-  {
-    "id": 1005,
-    "topic_num": 33,
-    "question": "Que comando inicializa un repositorio Git?",
-    "option_a": "git push",
-    "option_b": "git merge",
-    "option_c": "git fetch",
-    "option_d": "git init",
-    "correct": "D",
-    "explanation": "git init crea el repositorio local."
-  },
-  {
-    "id": 1006,
-    "topic_num": 33,
-    "question": "Que comando muestra el estado del arbol de trabajo?",
-    "option_a": "git clone",
-    "option_b": "git tag",
-    "option_c": "git status",
-    "option_d": "git commit",
-    "correct": "C",
-    "explanation": "git status informa cambios y rama."
-  },
-  {
-    "id": 1007,
-    "topic_num": 33,
-    "question": "Que comando prepara archivos para el proximo commit?",
-    "option_a": "git reset --hard always",
-    "option_b": "git add",
-    "option_c": "git push",
-    "option_d": "git pull",
-    "correct": "B",
-    "explanation": "git add lleva cambios al staging area."
-  },
-  {
-    "id": 1008,
-    "topic_num": 33,
-    "question": "Que comando crea una instantanea en el historial?",
-    "option_a": "git commit",
-    "option_b": "git fetch",
-    "option_c": "git remote",
-    "option_d": "git stash",
-    "correct": "A",
-    "explanation": "git commit registra cambios preparados."
-  },
-  {
-    "id": 1009,
-    "topic_num": 33,
-    "question": "Que archivo indica patrones que Git debe ignorar?",
-    "option_a": "README.md",
-    "option_b": "package.json",
-    "option_c": "pyproject.toml",
-    "option_d": ".gitignore",
-    "correct": "D",
-    "explanation": ".gitignore contiene reglas de exclusion."
-  },
-  {
-    "id": 1010,
-    "topic_num": 33,
-    "question": "Que puntero representa normalmente el commit actualmente extraido?",
-    "option_a": "tag",
-    "option_b": "stash",
-    "option_c": "HEAD",
-    "option_d": "origin",
-    "correct": "C",
-    "explanation": "HEAD apunta a la revision actual."
-  },
-  {
-    "id": 1011,
-    "topic_num": 33,
-    "question": "Que comando inicializa un repositorio Git?",
-    "option_a": "git fetch",
-    "option_b": "git init",
-    "option_c": "git push",
-    "option_d": "git merge",
-    "correct": "B",
-    "explanation": "git init crea el repositorio local."
-  },
-  {
-    "id": 1012,
-    "topic_num": 33,
-    "question": "Que comando muestra el estado del arbol de trabajo?",
-    "option_a": "git status",
-    "option_b": "git commit",
-    "option_c": "git clone",
-    "option_d": "git tag",
-    "correct": "A",
-    "explanation": "git status informa cambios y rama."
-  },
-  {
-    "id": 1013,
-    "topic_num": 33,
-    "question": "Que comando prepara archivos para el proximo commit?",
-    "option_a": "git push",
-    "option_b": "git pull",
-    "option_c": "git reset --hard always",
-    "option_d": "git add",
-    "correct": "D",
-    "explanation": "git add lleva cambios al staging area."
-  },
-  {
-    "id": 1014,
-    "topic_num": 33,
-    "question": "Que comando crea una instantanea en el historial?",
-    "option_a": "git remote",
-    "option_b": "git stash",
-    "option_c": "git commit",
-    "option_d": "git fetch",
-    "correct": "C",
-    "explanation": "git commit registra cambios preparados."
-  },
-  {
-    "id": 1015,
-    "topic_num": 33,
-    "question": "Que archivo indica patrones que Git debe ignorar?",
-    "option_a": "pyproject.toml",
-    "option_b": ".gitignore",
-    "option_c": "README.md",
-    "option_d": "package.json",
-    "correct": "B",
-    "explanation": ".gitignore contiene reglas de exclusion."
-  },
-  {
-    "id": 1016,
-    "topic_num": 33,
-    "question": "Que puntero representa normalmente el commit actualmente extraido?",
-    "option_a": "HEAD",
-    "option_b": "origin",
-    "option_c": "tag",
-    "option_d": "stash",
-    "correct": "A",
-    "explanation": "HEAD apunta a la revision actual."
-  },
-  {
-    "id": 1017,
-    "topic_num": 33,
-    "question": "Que comando inicializa un repositorio Git?",
-    "option_a": "git push",
-    "option_b": "git merge",
-    "option_c": "git fetch",
-    "option_d": "git init",
-    "correct": "D",
-    "explanation": "git init crea el repositorio local."
-  },
-  {
-    "id": 1018,
-    "topic_num": 33,
-    "question": "Que comando muestra el estado del arbol de trabajo?",
-    "option_a": "git clone",
-    "option_b": "git tag",
-    "option_c": "git status",
-    "option_d": "git commit",
-    "correct": "C",
-    "explanation": "git status informa cambios y rama."
-  },
-  {
-    "id": 1019,
-    "topic_num": 34,
-    "question": "Que comando lista o crea ramas en Git?",
-    "option_a": "git push",
-    "option_b": "git log --oneline only",
-    "option_c": "git branch",
-    "option_d": "git fetch",
-    "correct": "C",
-    "explanation": "git branch gestiona ramas."
-  },
-  {
-    "id": 1020,
-    "topic_num": 34,
-    "question": "Que comando moderno cambia de rama?",
-    "option_a": "git remote",
-    "option_b": "git switch",
-    "option_c": "git init",
-    "option_d": "git tag",
-    "correct": "B",
-    "explanation": "git switch cambia entre ramas."
-  },
-  {
-    "id": 1021,
-    "topic_num": 34,
-    "question": "Que operacion integra historiales creando o no commit de fusion?",
-    "option_a": "merge",
-    "option_b": "rebase",
-    "option_c": "stash",
-    "option_d": "tag",
-    "correct": "A",
-    "explanation": "Merge combina ramas."
-  },
-  {
-    "id": 1022,
-    "topic_num": 34,
-    "question": "Que operacion reaplica commits sobre otra base?",
-    "option_a": "merge",
-    "option_b": "stash",
-    "option_c": "clone",
-    "option_d": "rebase",
-    "correct": "D",
-    "explanation": "Rebase cambia la base de una serie de commits."
-  },
-  {
-    "id": 1023,
-    "topic_num": 34,
-    "question": "Que comando guarda cambios temporalmente sin commit?",
-    "option_a": "git blame",
-    "option_b": "git remote",
-    "option_c": "git stash",
-    "option_d": "git branch",
-    "correct": "C",
-    "explanation": "git stash aparta cambios locales."
-  },
-  {
-    "id": 1024,
-    "topic_num": 34,
-    "question": "Que situacion aparece cuando Git no puede combinar cambios automaticamente?",
-    "option_a": "Clone superficial",
-    "option_b": "Conflicto",
-    "option_c": "Fast-forward",
-    "option_d": "Tag anotado",
-    "correct": "B",
-    "explanation": "Un conflicto requiere resolucion manual."
-  },
-  {
-    "id": 1025,
-    "topic_num": 34,
-    "question": "Que comando lista o crea ramas en Git?",
-    "option_a": "git branch",
-    "option_b": "git fetch",
-    "option_c": "git push",
-    "option_d": "git log --oneline only",
-    "correct": "A",
-    "explanation": "git branch gestiona ramas."
-  },
-  {
-    "id": 1026,
-    "topic_num": 34,
-    "question": "Que comando moderno cambia de rama?",
-    "option_a": "git init",
-    "option_b": "git tag",
-    "option_c": "git remote",
-    "option_d": "git switch",
-    "correct": "D",
-    "explanation": "git switch cambia entre ramas."
-  },
-  {
-    "id": 1027,
-    "topic_num": 34,
-    "question": "Que operacion integra historiales creando o no commit de fusion?",
-    "option_a": "stash",
-    "option_b": "tag",
-    "option_c": "merge",
-    "option_d": "rebase",
-    "correct": "C",
-    "explanation": "Merge combina ramas."
-  },
-  {
-    "id": 1028,
-    "topic_num": 34,
-    "question": "Que operacion reaplica commits sobre otra base?",
-    "option_a": "clone",
-    "option_b": "rebase",
-    "option_c": "merge",
-    "option_d": "stash",
-    "correct": "B",
-    "explanation": "Rebase cambia la base de una serie de commits."
-  },
-  {
-    "id": 1029,
-    "topic_num": 34,
-    "question": "Que comando guarda cambios temporalmente sin commit?",
-    "option_a": "git stash",
-    "option_b": "git branch",
-    "option_c": "git blame",
-    "option_d": "git remote",
-    "correct": "A",
-    "explanation": "git stash aparta cambios locales."
-  },
-  {
-    "id": 1030,
-    "topic_num": 34,
-    "question": "Que situacion aparece cuando Git no puede combinar cambios automaticamente?",
-    "option_a": "Fast-forward",
-    "option_b": "Tag anotado",
-    "option_c": "Clone superficial",
-    "option_d": "Conflicto",
-    "correct": "D",
-    "explanation": "Un conflicto requiere resolucion manual."
-  },
-  {
-    "id": 1031,
-    "topic_num": 34,
-    "question": "Que comando lista o crea ramas en Git?",
-    "option_a": "git push",
-    "option_b": "git log --oneline only",
-    "option_c": "git branch",
-    "option_d": "git fetch",
-    "correct": "C",
-    "explanation": "git branch gestiona ramas."
-  },
-  {
-    "id": 1032,
-    "topic_num": 34,
-    "question": "Que comando moderno cambia de rama?",
-    "option_a": "git remote",
-    "option_b": "git switch",
-    "option_c": "git init",
-    "option_d": "git tag",
-    "correct": "B",
-    "explanation": "git switch cambia entre ramas."
-  },
-  {
-    "id": 1033,
-    "topic_num": 34,
-    "question": "Que operacion integra historiales creando o no commit de fusion?",
-    "option_a": "merge",
-    "option_b": "rebase",
-    "option_c": "stash",
-    "option_d": "tag",
-    "correct": "A",
-    "explanation": "Merge combina ramas."
-  },
-  {
-    "id": 1034,
-    "topic_num": 34,
-    "question": "Que operacion reaplica commits sobre otra base?",
-    "option_a": "merge",
-    "option_b": "stash",
-    "option_c": "clone",
-    "option_d": "rebase",
-    "correct": "D",
-    "explanation": "Rebase cambia la base de una serie de commits."
-  },
-  {
-    "id": 1035,
-    "topic_num": 34,
-    "question": "Que comando guarda cambios temporalmente sin commit?",
-    "option_a": "git blame",
-    "option_b": "git remote",
-    "option_c": "git stash",
-    "option_d": "git branch",
-    "correct": "C",
-    "explanation": "git stash aparta cambios locales."
-  },
-  {
-    "id": 1036,
-    "topic_num": 34,
-    "question": "Que situacion aparece cuando Git no puede combinar cambios automaticamente?",
-    "option_a": "Clone superficial",
-    "option_b": "Conflicto",
-    "option_c": "Fast-forward",
-    "option_d": "Tag anotado",
-    "correct": "B",
-    "explanation": "Un conflicto requiere resolucion manual."
-  },
-  {
-    "id": 1037,
-    "topic_num": 34,
-    "question": "Que comando lista o crea ramas en Git?",
-    "option_a": "git branch",
-    "option_b": "git fetch",
-    "option_c": "git push",
-    "option_d": "git log --oneline only",
-    "correct": "A",
-    "explanation": "git branch gestiona ramas."
-  },
-  {
-    "id": 1038,
-    "topic_num": 34,
-    "question": "Que comando moderno cambia de rama?",
-    "option_a": "git init",
-    "option_b": "git tag",
-    "option_c": "git remote",
-    "option_d": "git switch",
-    "correct": "D",
-    "explanation": "git switch cambia entre ramas."
-  },
-  {
-    "id": 1039,
-    "topic_num": 34,
-    "question": "Que operacion integra historiales creando o no commit de fusion?",
-    "option_a": "stash",
-    "option_b": "tag",
-    "option_c": "merge",
-    "option_d": "rebase",
-    "correct": "C",
-    "explanation": "Merge combina ramas."
-  },
-  {
-    "id": 1040,
-    "topic_num": 34,
-    "question": "Que operacion reaplica commits sobre otra base?",
-    "option_a": "clone",
-    "option_b": "rebase",
-    "option_c": "merge",
-    "option_d": "stash",
-    "correct": "B",
-    "explanation": "Rebase cambia la base de una serie de commits."
-  },
-  {
-    "id": 1041,
-    "topic_num": 34,
-    "question": "Que comando guarda cambios temporalmente sin commit?",
-    "option_a": "git stash",
-    "option_b": "git branch",
-    "option_c": "git blame",
-    "option_d": "git remote",
-    "correct": "A",
-    "explanation": "git stash aparta cambios locales."
-  },
-  {
-    "id": 1042,
-    "topic_num": 34,
-    "question": "Que situacion aparece cuando Git no puede combinar cambios automaticamente?",
-    "option_a": "Fast-forward",
-    "option_b": "Tag anotado",
-    "option_c": "Clone superficial",
-    "option_d": "Conflicto",
-    "correct": "D",
-    "explanation": "Un conflicto requiere resolucion manual."
-  },
-  {
-    "id": 1043,
-    "topic_num": 34,
-    "question": "Que comando lista o crea ramas en Git?",
-    "option_a": "git push",
-    "option_b": "git log --oneline only",
-    "option_c": "git branch",
-    "option_d": "git fetch",
-    "correct": "C",
-    "explanation": "git branch gestiona ramas."
-  },
-  {
-    "id": 1044,
-    "topic_num": 34,
-    "question": "Que comando moderno cambia de rama?",
-    "option_a": "git remote",
-    "option_b": "git switch",
-    "option_c": "git init",
-    "option_d": "git tag",
-    "correct": "B",
-    "explanation": "git switch cambia entre ramas."
-  },
-  {
-    "id": 1045,
-    "topic_num": 35,
-    "question": "Que nombre recibe por defecto el remoto principal al clonar un repositorio?",
-    "option_a": "stash",
-    "option_b": "origin",
-    "option_c": "main",
-    "option_d": "HEAD",
-    "correct": "B",
-    "explanation": "origin suele ser el remoto principal."
-  },
-  {
-    "id": 1046,
-    "topic_num": 35,
-    "question": "Que comando descarga cambios remotos sin fusionarlos automaticamente?",
-    "option_a": "git fetch",
-    "option_b": "git pull",
-    "option_c": "git push",
-    "option_d": "git commit",
-    "correct": "A",
-    "explanation": "fetch trae referencias remotas."
-  },
-  {
-    "id": 1047,
-    "topic_num": 35,
-    "question": "Que comando descarga e integra cambios remotos en la rama actual?",
-    "option_a": "git fetch",
-    "option_b": "git push",
-    "option_c": "git status",
-    "option_d": "git pull",
-    "correct": "D",
-    "explanation": "pull equivale a fetch mas integracion."
-  },
-  {
-    "id": 1048,
-    "topic_num": 35,
-    "question": "Que comando envia commits locales al remoto?",
-    "option_a": "git fetch",
-    "option_b": "git clone",
-    "option_c": "git push",
-    "option_d": "git pull",
-    "correct": "C",
-    "explanation": "push publica commits."
-  },
-  {
-    "id": 1049,
-    "topic_num": 35,
-    "question": "Que practica permite revisar cambios antes de integrarlos?",
-    "option_a": "Certificado",
-    "option_b": "Pull request",
-    "option_c": "Rollback",
-    "option_d": "Model binding",
-    "correct": "B",
-    "explanation": "Pull request facilita revision y validacion."
-  },
-  {
-    "id": 1050,
-    "topic_num": 35,
-    "question": "Que flujo usa ramas feature, develop, release y main/master?",
-    "option_a": "GitFlow",
-    "option_b": "Trunk-based puro",
-    "option_c": "OData",
-    "option_d": "SCSP",
-    "correct": "A",
-    "explanation": "GitFlow define varias ramas de soporte."
-  },
-  {
-    "id": 1051,
-    "topic_num": 35,
-    "question": "Que nombre recibe por defecto el remoto principal al clonar un repositorio?",
-    "option_a": "main",
-    "option_b": "HEAD",
-    "option_c": "stash",
-    "option_d": "origin",
-    "correct": "D",
-    "explanation": "origin suele ser el remoto principal."
-  },
-  {
-    "id": 1052,
-    "topic_num": 35,
-    "question": "Que comando descarga cambios remotos sin fusionarlos automaticamente?",
-    "option_a": "git push",
-    "option_b": "git commit",
-    "option_c": "git fetch",
-    "option_d": "git pull",
-    "correct": "C",
-    "explanation": "fetch trae referencias remotas."
-  },
-  {
-    "id": 1053,
-    "topic_num": 35,
-    "question": "Que comando descarga e integra cambios remotos en la rama actual?",
-    "option_a": "git status",
-    "option_b": "git pull",
-    "option_c": "git fetch",
-    "option_d": "git push",
-    "correct": "B",
-    "explanation": "pull equivale a fetch mas integracion."
-  },
-  {
-    "id": 1054,
-    "topic_num": 35,
-    "question": "Que comando envia commits locales al remoto?",
-    "option_a": "git push",
-    "option_b": "git pull",
-    "option_c": "git fetch",
-    "option_d": "git clone",
-    "correct": "A",
-    "explanation": "push publica commits."
-  },
-  {
-    "id": 1055,
-    "topic_num": 35,
-    "question": "Que practica permite revisar cambios antes de integrarlos?",
-    "option_a": "Rollback",
-    "option_b": "Model binding",
-    "option_c": "Certificado",
-    "option_d": "Pull request",
-    "correct": "D",
-    "explanation": "Pull request facilita revision y validacion."
-  },
-  {
-    "id": 1056,
-    "topic_num": 35,
-    "question": "Que flujo usa ramas feature, develop, release y main/master?",
-    "option_a": "OData",
-    "option_b": "SCSP",
-    "option_c": "GitFlow",
-    "option_d": "Trunk-based puro",
-    "correct": "C",
-    "explanation": "GitFlow define varias ramas de soporte."
-  },
-  {
-    "id": 1057,
-    "topic_num": 35,
-    "question": "Que nombre recibe por defecto el remoto principal al clonar un repositorio?",
-    "option_a": "stash",
-    "option_b": "origin",
-    "option_c": "main",
-    "option_d": "HEAD",
-    "correct": "B",
-    "explanation": "origin suele ser el remoto principal."
-  },
-  {
-    "id": 1058,
-    "topic_num": 35,
-    "question": "Que comando descarga cambios remotos sin fusionarlos automaticamente?",
-    "option_a": "git fetch",
-    "option_b": "git pull",
-    "option_c": "git push",
-    "option_d": "git commit",
-    "correct": "A",
-    "explanation": "fetch trae referencias remotas."
-  },
-  {
-    "id": 1059,
-    "topic_num": 35,
-    "question": "Que comando descarga e integra cambios remotos en la rama actual?",
-    "option_a": "git fetch",
-    "option_b": "git push",
-    "option_c": "git status",
-    "option_d": "git pull",
-    "correct": "D",
-    "explanation": "pull equivale a fetch mas integracion."
-  },
-  {
-    "id": 1060,
-    "topic_num": 35,
-    "question": "Que comando envia commits locales al remoto?",
-    "option_a": "git fetch",
-    "option_b": "git clone",
-    "option_c": "git push",
-    "option_d": "git pull",
-    "correct": "C",
-    "explanation": "push publica commits."
-  },
-  {
-    "id": 1061,
-    "topic_num": 35,
-    "question": "Que practica permite revisar cambios antes de integrarlos?",
-    "option_a": "Certificado",
-    "option_b": "Pull request",
-    "option_c": "Rollback",
-    "option_d": "Model binding",
-    "correct": "B",
-    "explanation": "Pull request facilita revision y validacion."
-  },
-  {
-    "id": 1062,
-    "topic_num": 35,
-    "question": "Que flujo usa ramas feature, develop, release y main/master?",
-    "option_a": "GitFlow",
-    "option_b": "Trunk-based puro",
-    "option_c": "OData",
-    "option_d": "SCSP",
-    "correct": "A",
-    "explanation": "GitFlow define varias ramas de soporte."
-  },
-  {
-    "id": 1063,
-    "topic_num": 35,
-    "question": "Que nombre recibe por defecto el remoto principal al clonar un repositorio?",
-    "option_a": "main",
-    "option_b": "HEAD",
-    "option_c": "stash",
-    "option_d": "origin",
-    "correct": "D",
-    "explanation": "origin suele ser el remoto principal."
-  },
-  {
-    "id": 1064,
-    "topic_num": 35,
-    "question": "Que comando descarga cambios remotos sin fusionarlos automaticamente?",
-    "option_a": "git push",
-    "option_b": "git commit",
-    "option_c": "git fetch",
-    "option_d": "git pull",
-    "correct": "C",
-    "explanation": "fetch trae referencias remotas."
-  },
-  {
-    "id": 1065,
-    "topic_num": 35,
-    "question": "Que comando descarga e integra cambios remotos en la rama actual?",
-    "option_a": "git status",
-    "option_b": "git pull",
-    "option_c": "git fetch",
-    "option_d": "git push",
-    "correct": "B",
-    "explanation": "pull equivale a fetch mas integracion."
-  },
-  {
-    "id": 1066,
-    "topic_num": 35,
-    "question": "Que comando envia commits locales al remoto?",
-    "option_a": "git push",
-    "option_b": "git pull",
-    "option_c": "git fetch",
-    "option_d": "git clone",
-    "correct": "A",
-    "explanation": "push publica commits."
-  },
-  {
-    "id": 1067,
-    "topic_num": 35,
-    "question": "Que practica permite revisar cambios antes de integrarlos?",
-    "option_a": "Rollback",
-    "option_b": "Model binding",
-    "option_c": "Certificado",
-    "option_d": "Pull request",
-    "correct": "D",
-    "explanation": "Pull request facilita revision y validacion."
-  },
-  {
-    "id": 1068,
-    "topic_num": 35,
-    "question": "Que flujo usa ramas feature, develop, release y main/master?",
-    "option_a": "OData",
-    "option_b": "SCSP",
-    "option_c": "GitFlow",
-    "option_d": "Trunk-based puro",
-    "correct": "C",
-    "explanation": "GitFlow define varias ramas de soporte."
-  },
-  {
-    "id": 1069,
-    "topic_num": 35,
-    "question": "Que nombre recibe por defecto el remoto principal al clonar un repositorio?",
-    "option_a": "stash",
-    "option_b": "origin",
-    "option_c": "main",
-    "option_d": "HEAD",
-    "correct": "B",
-    "explanation": "origin suele ser el remoto principal."
-  },
-  {
-    "id": 1070,
-    "topic_num": 35,
-    "question": "Que comando descarga cambios remotos sin fusionarlos automaticamente?",
-    "option_a": "git fetch",
-    "option_b": "git pull",
-    "option_c": "git push",
-    "option_d": "git commit",
-    "correct": "A",
-    "explanation": "fetch trae referencias remotas."
-  },
-  {
-    "id": 1071,
-    "topic_num": 36,
-    "question": "Que punto electronico permite a la ciudadania acceder a servicios y tramites?",
-    "option_a": "Sede electronica",
-    "option_b": "Indice B-tree",
-    "option_c": "RenderFragment",
-    "option_d": "Repositorio bare",
-    "correct": "A",
-    "explanation": "La sede electronica es la direccion electronica de la Administracion."
-  },
-  {
-    "id": 1072,
-    "topic_num": 36,
-    "question": "Que conjunto ordenado reune documentos y actuaciones de un procedimiento?",
-    "option_a": "Cluster PostgreSQL",
-    "option_b": "Pull request",
-    "option_c": "Claim",
-    "option_d": "Expediente electronico",
-    "correct": "D",
-    "explanation": "El expediente electronico agrupa documentos y actuaciones."
-  },
-  {
-    "id": 1073,
-    "topic_num": 36,
-    "question": "Que asiento deja constancia de entrada o salida de documentos?",
-    "option_a": "WAL",
-    "option_b": "DbSet",
-    "option_c": "Registro electronico",
-    "option_d": "localStorage",
-    "correct": "C",
-    "explanation": "El registro electronico anota presentaciones."
-  },
-  {
-    "id": 1074,
-    "topic_num": 36,
-    "question": "Que codigo permite verificar la autenticidad de un documento electronico?",
-    "option_a": "WAL",
-    "option_b": "CSV",
-    "option_c": "CSS",
-    "option_d": "JWT",
-    "correct": "B",
-    "explanation": "CSV significa Codigo Seguro de Verificacion."
-  },
-  {
-    "id": 1075,
-    "topic_num": 36,
-    "question": "Que acto comunica electronicamente una resolucion o tramite al interesado?",
-    "option_a": "Notificacion electronica",
-    "option_b": "Migracion",
-    "option_c": "Rebase",
-    "option_d": "Vacuum",
-    "correct": "A",
-    "explanation": "La notificacion electronica comunica actos administrativos."
-  },
-  {
-    "id": 1076,
-    "topic_num": 36,
-    "question": "Que concepto describe la gestion completa de procedimientos por medios electronicos?",
-    "option_a": "Indexacion SQL",
-    "option_b": "Minificacion JS",
-    "option_c": "Compilacion",
-    "option_d": "Tramitacion electronica",
-    "correct": "D",
-    "explanation": "La tramitacion electronica sustituye soportes y actuaciones en papel."
-  },
-  {
-    "id": 1077,
-    "topic_num": 36,
-    "question": "Que punto electronico permite a la ciudadania acceder a servicios y tramites?",
-    "option_a": "RenderFragment",
-    "option_b": "Repositorio bare",
-    "option_c": "Sede electronica",
-    "option_d": "Indice B-tree",
-    "correct": "C",
-    "explanation": "La sede electronica es la direccion electronica de la Administracion."
-  },
-  {
-    "id": 1078,
-    "topic_num": 36,
-    "question": "Que conjunto ordenado reune documentos y actuaciones de un procedimiento?",
-    "option_a": "Claim",
-    "option_b": "Expediente electronico",
-    "option_c": "Cluster PostgreSQL",
-    "option_d": "Pull request",
-    "correct": "B",
-    "explanation": "El expediente electronico agrupa documentos y actuaciones."
-  },
-  {
-    "id": 1079,
-    "topic_num": 36,
-    "question": "Que asiento deja constancia de entrada o salida de documentos?",
-    "option_a": "Registro electronico",
-    "option_b": "localStorage",
-    "option_c": "WAL",
-    "option_d": "DbSet",
-    "correct": "A",
-    "explanation": "El registro electronico anota presentaciones."
-  },
-  {
-    "id": 1080,
-    "topic_num": 36,
-    "question": "Que codigo permite verificar la autenticidad de un documento electronico?",
-    "option_a": "CSS",
-    "option_b": "JWT",
-    "option_c": "WAL",
-    "option_d": "CSV",
-    "correct": "D",
-    "explanation": "CSV significa Codigo Seguro de Verificacion."
-  },
-  {
-    "id": 1081,
-    "topic_num": 36,
-    "question": "Que acto comunica electronicamente una resolucion o tramite al interesado?",
-    "option_a": "Rebase",
-    "option_b": "Vacuum",
-    "option_c": "Notificacion electronica",
-    "option_d": "Migracion",
-    "correct": "C",
-    "explanation": "La notificacion electronica comunica actos administrativos."
-  },
-  {
-    "id": 1082,
-    "topic_num": 36,
-    "question": "Que concepto describe la gestion completa de procedimientos por medios electronicos?",
-    "option_a": "Compilacion",
-    "option_b": "Tramitacion electronica",
-    "option_c": "Indexacion SQL",
-    "option_d": "Minificacion JS",
-    "correct": "B",
-    "explanation": "La tramitacion electronica sustituye soportes y actuaciones en papel."
-  },
-  {
-    "id": 1083,
-    "topic_num": 36,
-    "question": "Que punto electronico permite a la ciudadania acceder a servicios y tramites?",
-    "option_a": "Sede electronica",
-    "option_b": "Indice B-tree",
-    "option_c": "RenderFragment",
-    "option_d": "Repositorio bare",
-    "correct": "A",
-    "explanation": "La sede electronica es la direccion electronica de la Administracion."
-  },
-  {
-    "id": 1084,
-    "topic_num": 36,
-    "question": "Que conjunto ordenado reune documentos y actuaciones de un procedimiento?",
-    "option_a": "Cluster PostgreSQL",
-    "option_b": "Pull request",
-    "option_c": "Claim",
-    "option_d": "Expediente electronico",
-    "correct": "D",
-    "explanation": "El expediente electronico agrupa documentos y actuaciones."
-  },
-  {
-    "id": 1085,
-    "topic_num": 36,
-    "question": "Que asiento deja constancia de entrada o salida de documentos?",
-    "option_a": "WAL",
-    "option_b": "DbSet",
-    "option_c": "Registro electronico",
-    "option_d": "localStorage",
-    "correct": "C",
-    "explanation": "El registro electronico anota presentaciones."
-  },
-  {
-    "id": 1086,
-    "topic_num": 36,
-    "question": "Que codigo permite verificar la autenticidad de un documento electronico?",
-    "option_a": "WAL",
-    "option_b": "CSV",
-    "option_c": "CSS",
-    "option_d": "JWT",
-    "correct": "B",
-    "explanation": "CSV significa Codigo Seguro de Verificacion."
-  },
-  {
-    "id": 1087,
-    "topic_num": 36,
-    "question": "Que acto comunica electronicamente una resolucion o tramite al interesado?",
-    "option_a": "Notificacion electronica",
-    "option_b": "Migracion",
-    "option_c": "Rebase",
-    "option_d": "Vacuum",
-    "correct": "A",
-    "explanation": "La notificacion electronica comunica actos administrativos."
-  },
-  {
-    "id": 1088,
-    "topic_num": 36,
-    "question": "Que concepto describe la gestion completa de procedimientos por medios electronicos?",
-    "option_a": "Indexacion SQL",
-    "option_b": "Minificacion JS",
-    "option_c": "Compilacion",
-    "option_d": "Tramitacion electronica",
-    "correct": "D",
-    "explanation": "La tramitacion electronica sustituye soportes y actuaciones en papel."
-  },
-  {
-    "id": 1089,
-    "topic_num": 36,
-    "question": "Que punto electronico permite a la ciudadania acceder a servicios y tramites?",
-    "option_a": "RenderFragment",
-    "option_b": "Repositorio bare",
-    "option_c": "Sede electronica",
-    "option_d": "Indice B-tree",
-    "correct": "C",
-    "explanation": "La sede electronica es la direccion electronica de la Administracion."
-  },
-  {
-    "id": 1090,
-    "topic_num": 36,
-    "question": "Que conjunto ordenado reune documentos y actuaciones de un procedimiento?",
-    "option_a": "Claim",
-    "option_b": "Expediente electronico",
-    "option_c": "Cluster PostgreSQL",
-    "option_d": "Pull request",
-    "correct": "B",
-    "explanation": "El expediente electronico agrupa documentos y actuaciones."
-  },
-  {
-    "id": 1091,
-    "topic_num": 36,
-    "question": "Que asiento deja constancia de entrada o salida de documentos?",
-    "option_a": "Registro electronico",
-    "option_b": "localStorage",
-    "option_c": "WAL",
-    "option_d": "DbSet",
-    "correct": "A",
-    "explanation": "El registro electronico anota presentaciones."
-  },
-  {
-    "id": 1092,
-    "topic_num": 36,
-    "question": "Que codigo permite verificar la autenticidad de un documento electronico?",
-    "option_a": "CSS",
-    "option_b": "JWT",
-    "option_c": "WAL",
-    "option_d": "CSV",
-    "correct": "D",
-    "explanation": "CSV significa Codigo Seguro de Verificacion."
-  },
-  {
-    "id": 1093,
-    "topic_num": 36,
-    "question": "Que acto comunica electronicamente una resolucion o tramite al interesado?",
-    "option_a": "Rebase",
-    "option_b": "Vacuum",
-    "option_c": "Notificacion electronica",
-    "option_d": "Migracion",
-    "correct": "C",
-    "explanation": "La notificacion electronica comunica actos administrativos."
-  },
-  {
-    "id": 1094,
-    "topic_num": 36,
-    "question": "Que concepto describe la gestion completa de procedimientos por medios electronicos?",
-    "option_a": "Compilacion",
-    "option_b": "Tramitacion electronica",
-    "option_c": "Indexacion SQL",
-    "option_d": "Minificacion JS",
-    "correct": "B",
-    "explanation": "La tramitacion electronica sustituye soportes y actuaciones en papel."
-  },
-  {
-    "id": 1095,
-    "topic_num": 36,
-    "question": "Que punto electronico permite a la ciudadania acceder a servicios y tramites?",
-    "option_a": "Sede electronica",
-    "option_b": "Indice B-tree",
-    "option_c": "RenderFragment",
-    "option_d": "Repositorio bare",
-    "correct": "A",
-    "explanation": "La sede electronica es la direccion electronica de la Administracion."
-  },
-  {
-    "id": 1096,
-    "topic_num": 36,
-    "question": "Que conjunto ordenado reune documentos y actuaciones de un procedimiento?",
-    "option_a": "Cluster PostgreSQL",
-    "option_b": "Pull request",
-    "option_c": "Claim",
-    "option_d": "Expediente electronico",
-    "correct": "D",
-    "explanation": "El expediente electronico agrupa documentos y actuaciones."
-  },
-  {
-    "id": 1097,
-    "topic_num": 37,
-    "question": "Que modulo SedipuAlba se asocia a gestion de expedientes?",
-    "option_a": "Sefycu",
-    "option_b": "Segra",
-    "option_c": "Secoin",
-    "option_d": "Segex",
-    "correct": "D",
-    "explanation": "Segex gestiona expedientes."
-  },
-  {
-    "id": 1098,
-    "topic_num": 37,
-    "question": "Que modulo SedipuAlba se asocia a firma y custodia documental?",
-    "option_a": "Segra",
-    "option_b": "Seres",
-    "option_c": "Sefycu",
-    "option_d": "Segex",
-    "correct": "C",
-    "explanation": "Sefycu se vincula con firma y custodia."
-  },
-  {
-    "id": 1099,
-    "topic_num": 37,
-    "question": "Que modulo SedipuAlba se asocia al registro?",
-    "option_a": "Secoin",
-    "option_b": "Segra",
-    "option_c": "Segex",
-    "option_d": "Sefycu",
-    "correct": "B",
-    "explanation": "Segra se relaciona con registro."
-  },
-  {
-    "id": 1100,
-    "topic_num": 37,
-    "question": "Que modulo SedipuAlba se asocia a resoluciones o servicios relacionados con tramitacion?",
-    "option_a": "Seres",
-    "option_b": "pg_restore",
-    "option_c": "Bootstrap",
-    "option_d": "GitFlow",
-    "correct": "A",
-    "explanation": "Seres forma parte de las herramientas de tramitacion SedipuAlba."
-  },
-  {
-    "id": 1101,
-    "topic_num": 37,
-    "question": "Que modulo SedipuAlba se asocia a comunicaciones internas?",
-    "option_a": "Sefycu",
-    "option_b": "Segex",
-    "option_c": "AutoFirma",
-    "option_d": "Secoin",
-    "correct": "D",
-    "explanation": "Secoin se vincula a comunicaciones internas."
-  },
-  {
-    "id": 1102,
-    "topic_num": 37,
-    "question": "Que tipo de herramientas usa un tramitador para gestionar procedimientos en SedipuAlba?",
-    "option_a": "Componentes Razor genericos",
-    "option_b": "Comandos Git",
-    "option_c": "Modulos de tramitacion",
-    "option_d": "Indices B-tree",
-    "correct": "C",
-    "explanation": "Los tramitadores trabajan con modulos de la plataforma."
-  },
-  {
-    "id": 1103,
-    "topic_num": 37,
-    "question": "Que modulo SedipuAlba se asocia a gestion de expedientes?",
-    "option_a": "Secoin",
-    "option_b": "Segex",
-    "option_c": "Sefycu",
-    "option_d": "Segra",
-    "correct": "B",
-    "explanation": "Segex gestiona expedientes."
-  },
-  {
-    "id": 1104,
-    "topic_num": 37,
-    "question": "Que modulo SedipuAlba se asocia a firma y custodia documental?",
-    "option_a": "Sefycu",
-    "option_b": "Segex",
-    "option_c": "Segra",
-    "option_d": "Seres",
-    "correct": "A",
-    "explanation": "Sefycu se vincula con firma y custodia."
-  },
-  {
-    "id": 1105,
-    "topic_num": 37,
-    "question": "Que modulo SedipuAlba se asocia al registro?",
-    "option_a": "Segex",
-    "option_b": "Sefycu",
-    "option_c": "Secoin",
-    "option_d": "Segra",
-    "correct": "D",
-    "explanation": "Segra se relaciona con registro."
-  },
-  {
-    "id": 1106,
-    "topic_num": 37,
-    "question": "Que modulo SedipuAlba se asocia a resoluciones o servicios relacionados con tramitacion?",
-    "option_a": "Bootstrap",
-    "option_b": "GitFlow",
-    "option_c": "Seres",
-    "option_d": "pg_restore",
-    "correct": "C",
-    "explanation": "Seres forma parte de las herramientas de tramitacion SedipuAlba."
-  },
-  {
-    "id": 1107,
-    "topic_num": 37,
-    "question": "Que modulo SedipuAlba se asocia a comunicaciones internas?",
-    "option_a": "AutoFirma",
-    "option_b": "Secoin",
-    "option_c": "Sefycu",
-    "option_d": "Segex",
-    "correct": "B",
-    "explanation": "Secoin se vincula a comunicaciones internas."
-  },
-  {
-    "id": 1108,
-    "topic_num": 37,
-    "question": "Que tipo de herramientas usa un tramitador para gestionar procedimientos en SedipuAlba?",
-    "option_a": "Modulos de tramitacion",
-    "option_b": "Indices B-tree",
-    "option_c": "Componentes Razor genericos",
-    "option_d": "Comandos Git",
-    "correct": "A",
-    "explanation": "Los tramitadores trabajan con modulos de la plataforma."
-  },
-  {
-    "id": 1109,
-    "topic_num": 37,
-    "question": "Que modulo SedipuAlba se asocia a gestion de expedientes?",
-    "option_a": "Sefycu",
-    "option_b": "Segra",
-    "option_c": "Secoin",
-    "option_d": "Segex",
-    "correct": "D",
-    "explanation": "Segex gestiona expedientes."
-  },
-  {
-    "id": 1110,
-    "topic_num": 37,
-    "question": "Que modulo SedipuAlba se asocia a firma y custodia documental?",
-    "option_a": "Segra",
-    "option_b": "Seres",
-    "option_c": "Sefycu",
-    "option_d": "Segex",
-    "correct": "C",
-    "explanation": "Sefycu se vincula con firma y custodia."
-  },
-  {
-    "id": 1111,
-    "topic_num": 37,
-    "question": "Que modulo SedipuAlba se asocia al registro?",
-    "option_a": "Secoin",
-    "option_b": "Segra",
-    "option_c": "Segex",
-    "option_d": "Sefycu",
-    "correct": "B",
-    "explanation": "Segra se relaciona con registro."
-  },
-  {
-    "id": 1112,
-    "topic_num": 37,
-    "question": "Que modulo SedipuAlba se asocia a resoluciones o servicios relacionados con tramitacion?",
-    "option_a": "Seres",
-    "option_b": "pg_restore",
-    "option_c": "Bootstrap",
-    "option_d": "GitFlow",
-    "correct": "A",
-    "explanation": "Seres forma parte de las herramientas de tramitacion SedipuAlba."
-  },
-  {
-    "id": 1113,
-    "topic_num": 37,
-    "question": "Que modulo SedipuAlba se asocia a comunicaciones internas?",
-    "option_a": "Sefycu",
-    "option_b": "Segex",
-    "option_c": "AutoFirma",
-    "option_d": "Secoin",
-    "correct": "D",
-    "explanation": "Secoin se vincula a comunicaciones internas."
-  },
-  {
-    "id": 1114,
-    "topic_num": 37,
-    "question": "Que tipo de herramientas usa un tramitador para gestionar procedimientos en SedipuAlba?",
-    "option_a": "Componentes Razor genericos",
-    "option_b": "Comandos Git",
-    "option_c": "Modulos de tramitacion",
-    "option_d": "Indices B-tree",
-    "correct": "C",
-    "explanation": "Los tramitadores trabajan con modulos de la plataforma."
-  },
-  {
-    "id": 1115,
-    "topic_num": 37,
-    "question": "Que modulo SedipuAlba se asocia a gestion de expedientes?",
-    "option_a": "Secoin",
-    "option_b": "Segex",
-    "option_c": "Sefycu",
-    "option_d": "Segra",
-    "correct": "B",
-    "explanation": "Segex gestiona expedientes."
-  },
-  {
-    "id": 1116,
-    "topic_num": 37,
-    "question": "Que modulo SedipuAlba se asocia a firma y custodia documental?",
-    "option_a": "Sefycu",
-    "option_b": "Segex",
-    "option_c": "Segra",
-    "option_d": "Seres",
-    "correct": "A",
-    "explanation": "Sefycu se vincula con firma y custodia."
-  },
-  {
-    "id": 1117,
-    "topic_num": 37,
-    "question": "Que modulo SedipuAlba se asocia al registro?",
-    "option_a": "Segex",
-    "option_b": "Sefycu",
-    "option_c": "Secoin",
-    "option_d": "Segra",
-    "correct": "D",
-    "explanation": "Segra se relaciona con registro."
-  },
-  {
-    "id": 1118,
-    "topic_num": 37,
-    "question": "Que modulo SedipuAlba se asocia a resoluciones o servicios relacionados con tramitacion?",
-    "option_a": "Bootstrap",
-    "option_b": "GitFlow",
-    "option_c": "Seres",
-    "option_d": "pg_restore",
-    "correct": "C",
-    "explanation": "Seres forma parte de las herramientas de tramitacion SedipuAlba."
-  },
-  {
-    "id": 1119,
-    "topic_num": 37,
-    "question": "Que modulo SedipuAlba se asocia a comunicaciones internas?",
-    "option_a": "AutoFirma",
-    "option_b": "Secoin",
-    "option_c": "Sefycu",
-    "option_d": "Segex",
-    "correct": "B",
-    "explanation": "Secoin se vincula a comunicaciones internas."
-  },
-  {
-    "id": 1120,
-    "topic_num": 37,
-    "question": "Que tipo de herramientas usa un tramitador para gestionar procedimientos en SedipuAlba?",
-    "option_a": "Modulos de tramitacion",
-    "option_b": "Indices B-tree",
-    "option_c": "Componentes Razor genericos",
-    "option_d": "Comandos Git",
-    "correct": "A",
-    "explanation": "Los tramitadores trabajan con modulos de la plataforma."
-  },
-  {
-    "id": 1121,
-    "topic_num": 37,
-    "question": "Que modulo SedipuAlba se asocia a gestion de expedientes?",
-    "option_a": "Sefycu",
-    "option_b": "Segra",
-    "option_c": "Secoin",
-    "option_d": "Segex",
-    "correct": "D",
-    "explanation": "Segex gestiona expedientes."
-  },
-  {
-    "id": 1122,
-    "topic_num": 37,
-    "question": "Que modulo SedipuAlba se asocia a firma y custodia documental?",
-    "option_a": "Segra",
-    "option_b": "Seres",
-    "option_c": "Sefycu",
-    "option_d": "Segex",
-    "correct": "C",
-    "explanation": "Sefycu se vincula con firma y custodia."
-  },
-  {
-    "id": 1123,
-    "topic_num": 38,
-    "question": "Que red conecta administraciones publicas para intercambio seguro de informacion?",
-    "option_a": "Red CDN",
-    "option_b": "Red NAT privada",
-    "option_c": "Red SARA",
-    "option_d": "Red TOR",
-    "correct": "C",
-    "explanation": "Red SARA interconecta Administraciones Publicas."
-  },
-  {
-    "id": 1124,
-    "topic_num": 38,
-    "question": "Que especificaciones permiten consultar datos de otras administraciones?",
-    "option_a": "WCAG",
-    "option_b": "SCSP",
-    "option_c": "OData",
-    "option_d": "PGP",
-    "correct": "B",
-    "explanation": "SCSP estandariza servicios de verificacion y consulta."
-  },
-  {
-    "id": 1125,
-    "topic_num": 38,
-    "question": "Que principio evita pedir al ciudadano documentos que ya obran en poder de la Administracion?",
-    "option_a": "No aportar documentos",
-    "option_b": "Aportar siempre originales",
-    "option_c": "Duplicar expedientes",
-    "option_d": "Imprimir certificados",
-    "correct": "A",
-    "explanation": "La interoperabilidad evita cargas documentales innecesarias."
-  },
-  {
-    "id": 1126,
-    "topic_num": 38,
-    "question": "Que plataforma facilita servicios de intermediacion de datos?",
-    "option_a": "PGP",
-    "option_b": "DI",
-    "option_c": "MVC",
-    "option_d": "PID",
-    "correct": "D",
-    "explanation": "PID se asocia a intermediacion y consulta de datos."
-  },
-  {
-    "id": 1127,
-    "topic_num": 38,
-    "question": "Que actuacion comprueba informacion de otra administracion sin exigir certificado al ciudadano?",
-    "option_a": "Rebase",
-    "option_b": "Vacuum",
-    "option_c": "Verificacion de datos",
-    "option_d": "Renderizado CSS",
-    "correct": "C",
-    "explanation": "La verificacion consulta datos disponibles electronicamente."
-  },
-  {
-    "id": 1128,
-    "topic_num": 38,
-    "question": "Que capacidad permite que sistemas de distintas administraciones intercambien informacion?",
-    "option_a": "Indexacion",
-    "option_b": "Interoperabilidad",
-    "option_c": "Polimorfismo",
-    "option_d": "Minificacion",
-    "correct": "B",
-    "explanation": "Interoperabilidad permite cooperacion e intercambio de datos."
-  },
-  {
-    "id": 1129,
-    "topic_num": 38,
-    "question": "Que red conecta administraciones publicas para intercambio seguro de informacion?",
-    "option_a": "Red SARA",
-    "option_b": "Red TOR",
-    "option_c": "Red CDN",
-    "option_d": "Red NAT privada",
-    "correct": "A",
-    "explanation": "Red SARA interconecta Administraciones Publicas."
-  },
-  {
-    "id": 1130,
-    "topic_num": 38,
-    "question": "Que especificaciones permiten consultar datos de otras administraciones?",
-    "option_a": "OData",
-    "option_b": "PGP",
-    "option_c": "WCAG",
-    "option_d": "SCSP",
-    "correct": "D",
-    "explanation": "SCSP estandariza servicios de verificacion y consulta."
-  },
-  {
-    "id": 1131,
-    "topic_num": 38,
-    "question": "Que principio evita pedir al ciudadano documentos que ya obran en poder de la Administracion?",
-    "option_a": "Duplicar expedientes",
-    "option_b": "Imprimir certificados",
-    "option_c": "No aportar documentos",
-    "option_d": "Aportar siempre originales",
-    "correct": "C",
-    "explanation": "La interoperabilidad evita cargas documentales innecesarias."
-  },
-  {
-    "id": 1132,
-    "topic_num": 38,
-    "question": "Que plataforma facilita servicios de intermediacion de datos?",
-    "option_a": "MVC",
-    "option_b": "PID",
-    "option_c": "PGP",
-    "option_d": "DI",
-    "correct": "B",
-    "explanation": "PID se asocia a intermediacion y consulta de datos."
-  },
-  {
-    "id": 1133,
-    "topic_num": 38,
-    "question": "Que actuacion comprueba informacion de otra administracion sin exigir certificado al ciudadano?",
-    "option_a": "Verificacion de datos",
-    "option_b": "Renderizado CSS",
-    "option_c": "Rebase",
-    "option_d": "Vacuum",
-    "correct": "A",
-    "explanation": "La verificacion consulta datos disponibles electronicamente."
-  },
-  {
-    "id": 1134,
-    "topic_num": 38,
-    "question": "Que capacidad permite que sistemas de distintas administraciones intercambien informacion?",
-    "option_a": "Polimorfismo",
-    "option_b": "Minificacion",
-    "option_c": "Indexacion",
-    "option_d": "Interoperabilidad",
-    "correct": "D",
-    "explanation": "Interoperabilidad permite cooperacion e intercambio de datos."
-  },
-  {
-    "id": 1135,
-    "topic_num": 38,
-    "question": "Que red conecta administraciones publicas para intercambio seguro de informacion?",
-    "option_a": "Red CDN",
-    "option_b": "Red NAT privada",
-    "option_c": "Red SARA",
-    "option_d": "Red TOR",
-    "correct": "C",
-    "explanation": "Red SARA interconecta Administraciones Publicas."
-  },
-  {
-    "id": 1136,
-    "topic_num": 38,
-    "question": "Que especificaciones permiten consultar datos de otras administraciones?",
-    "option_a": "WCAG",
-    "option_b": "SCSP",
-    "option_c": "OData",
-    "option_d": "PGP",
-    "correct": "B",
-    "explanation": "SCSP estandariza servicios de verificacion y consulta."
-  },
-  {
-    "id": 1137,
-    "topic_num": 38,
-    "question": "Que principio evita pedir al ciudadano documentos que ya obran en poder de la Administracion?",
-    "option_a": "No aportar documentos",
-    "option_b": "Aportar siempre originales",
-    "option_c": "Duplicar expedientes",
-    "option_d": "Imprimir certificados",
-    "correct": "A",
-    "explanation": "La interoperabilidad evita cargas documentales innecesarias."
-  },
-  {
-    "id": 1138,
-    "topic_num": 38,
-    "question": "Que plataforma facilita servicios de intermediacion de datos?",
-    "option_a": "PGP",
-    "option_b": "DI",
-    "option_c": "MVC",
-    "option_d": "PID",
-    "correct": "D",
-    "explanation": "PID se asocia a intermediacion y consulta de datos."
-  },
-  {
-    "id": 1139,
-    "topic_num": 38,
-    "question": "Que actuacion comprueba informacion de otra administracion sin exigir certificado al ciudadano?",
-    "option_a": "Rebase",
-    "option_b": "Vacuum",
-    "option_c": "Verificacion de datos",
-    "option_d": "Renderizado CSS",
-    "correct": "C",
-    "explanation": "La verificacion consulta datos disponibles electronicamente."
-  },
-  {
-    "id": 1140,
-    "topic_num": 38,
-    "question": "Que capacidad permite que sistemas de distintas administraciones intercambien informacion?",
-    "option_a": "Indexacion",
-    "option_b": "Interoperabilidad",
-    "option_c": "Polimorfismo",
-    "option_d": "Minificacion",
-    "correct": "B",
-    "explanation": "Interoperabilidad permite cooperacion e intercambio de datos."
-  },
-  {
-    "id": 1141,
-    "topic_num": 38,
-    "question": "Que red conecta administraciones publicas para intercambio seguro de informacion?",
-    "option_a": "Red SARA",
-    "option_b": "Red TOR",
-    "option_c": "Red CDN",
-    "option_d": "Red NAT privada",
-    "correct": "A",
-    "explanation": "Red SARA interconecta Administraciones Publicas."
-  },
-  {
-    "id": 1142,
-    "topic_num": 38,
-    "question": "Que especificaciones permiten consultar datos de otras administraciones?",
-    "option_a": "OData",
-    "option_b": "PGP",
-    "option_c": "WCAG",
-    "option_d": "SCSP",
-    "correct": "D",
-    "explanation": "SCSP estandariza servicios de verificacion y consulta."
-  },
-  {
-    "id": 1143,
-    "topic_num": 38,
-    "question": "Que principio evita pedir al ciudadano documentos que ya obran en poder de la Administracion?",
-    "option_a": "Duplicar expedientes",
-    "option_b": "Imprimir certificados",
-    "option_c": "No aportar documentos",
-    "option_d": "Aportar siempre originales",
-    "correct": "C",
-    "explanation": "La interoperabilidad evita cargas documentales innecesarias."
-  },
-  {
-    "id": 1144,
-    "topic_num": 38,
-    "question": "Que plataforma facilita servicios de intermediacion de datos?",
-    "option_a": "MVC",
-    "option_b": "PID",
-    "option_c": "PGP",
-    "option_d": "DI",
-    "correct": "B",
-    "explanation": "PID se asocia a intermediacion y consulta de datos."
-  },
-  {
-    "id": 1145,
-    "topic_num": 38,
-    "question": "Que actuacion comprueba informacion de otra administracion sin exigir certificado al ciudadano?",
-    "option_a": "Verificacion de datos",
-    "option_b": "Renderizado CSS",
-    "option_c": "Rebase",
-    "option_d": "Vacuum",
-    "correct": "A",
-    "explanation": "La verificacion consulta datos disponibles electronicamente."
-  },
-  {
-    "id": 1146,
-    "topic_num": 38,
-    "question": "Que capacidad permite que sistemas de distintas administraciones intercambien informacion?",
-    "option_a": "Polimorfismo",
-    "option_b": "Minificacion",
-    "option_c": "Indexacion",
-    "option_d": "Interoperabilidad",
-    "correct": "D",
-    "explanation": "Interoperabilidad permite cooperacion e intercambio de datos."
-  },
-  {
-    "id": 1147,
-    "topic_num": 38,
-    "question": "Que red conecta administraciones publicas para intercambio seguro de informacion?",
-    "option_a": "Red CDN",
-    "option_b": "Red NAT privada",
-    "option_c": "Red SARA",
-    "option_d": "Red TOR",
-    "correct": "C",
-    "explanation": "Red SARA interconecta Administraciones Publicas."
-  },
-  {
-    "id": 1148,
-    "topic_num": 38,
-    "question": "Que especificaciones permiten consultar datos de otras administraciones?",
-    "option_a": "WCAG",
-    "option_b": "SCSP",
-    "option_c": "OData",
-    "option_d": "PGP",
-    "correct": "B",
-    "explanation": "SCSP estandariza servicios de verificacion y consulta."
-  },
-  {
-    "id": 1149,
-    "topic_num": 39,
-    "question": "Que sistema comun permite identificacion y autenticacion ciudadana ante AAPP?",
-    "option_a": "LINQ",
-    "option_b": "Cl@ve",
-    "option_c": "Bootstrap",
-    "option_d": "pg_dump",
-    "correct": "B",
-    "explanation": "Cl@ve es plataforma comun de identificacion."
-  },
-  {
-    "id": 1150,
-    "topic_num": 39,
-    "question": "Que documento electronico de identidad permite autenticacion y firma?",
-    "option_a": "DNIe",
-    "option_b": "CSV",
-    "option_c": "WAL",
-    "option_d": "CSS",
-    "correct": "A",
-    "explanation": "DNIe incorpora certificados para identificacion y firma."
-  },
-  {
-    "id": 1151,
-    "topic_num": 39,
-    "question": "Que servicio facilita firma electronica centralizada?",
-    "option_a": "SIR",
-    "option_b": "PID",
-    "option_c": "WCAG",
-    "option_d": "FIRe",
-    "correct": "D",
-    "explanation": "FIRe integra servicios de firma."
-  },
-  {
-    "id": 1152,
-    "topic_num": 39,
-    "question": "Que espacio permite a la ciudadania consultar expedientes y notificaciones de distintas AAPP?",
-    "option_a": "GitHub",
-    "option_b": "Swagger",
-    "option_c": "Carpeta Ciudadana",
-    "option_d": "pgAdmin",
-    "correct": "C",
-    "explanation": "Carpeta Ciudadana centraliza informacion administrativa."
-  },
-  {
-    "id": 1153,
-    "topic_num": 39,
-    "question": "Que sistema se usa para intercambio registral entre administraciones?",
-    "option_a": "B-tree",
-    "option_b": "SIR",
-    "option_c": "SCSS",
-    "option_d": "JWT",
-    "correct": "B",
-    "explanation": "SIR es el Sistema de Interconexion de Registros."
-  },
-  {
-    "id": 1154,
-    "topic_num": 39,
-    "question": "Que plataforma se relaciona con intermediacion y consulta de datos?",
-    "option_a": "PID",
-    "option_b": "PGP",
-    "option_c": "MVC",
-    "option_d": "CSS",
-    "correct": "A",
-    "explanation": "PID facilita servicios de intermediacion."
-  },
-  {
-    "id": 1155,
-    "topic_num": 39,
-    "question": "Que sistema comun permite identificacion y autenticacion ciudadana ante AAPP?",
-    "option_a": "Bootstrap",
-    "option_b": "pg_dump",
-    "option_c": "LINQ",
-    "option_d": "Cl@ve",
-    "correct": "D",
-    "explanation": "Cl@ve es plataforma comun de identificacion."
-  },
-  {
-    "id": 1156,
-    "topic_num": 39,
-    "question": "Que documento electronico de identidad permite autenticacion y firma?",
-    "option_a": "WAL",
-    "option_b": "CSS",
-    "option_c": "DNIe",
-    "option_d": "CSV",
-    "correct": "C",
-    "explanation": "DNIe incorpora certificados para identificacion y firma."
-  },
-  {
-    "id": 1157,
-    "topic_num": 39,
-    "question": "Que servicio facilita firma electronica centralizada?",
-    "option_a": "WCAG",
-    "option_b": "FIRe",
-    "option_c": "SIR",
-    "option_d": "PID",
-    "correct": "B",
-    "explanation": "FIRe integra servicios de firma."
-  },
-  {
-    "id": 1158,
-    "topic_num": 39,
-    "question": "Que espacio permite a la ciudadania consultar expedientes y notificaciones de distintas AAPP?",
-    "option_a": "Carpeta Ciudadana",
-    "option_b": "pgAdmin",
-    "option_c": "GitHub",
-    "option_d": "Swagger",
-    "correct": "A",
-    "explanation": "Carpeta Ciudadana centraliza informacion administrativa."
-  },
-  {
-    "id": 1159,
-    "topic_num": 39,
-    "question": "Que sistema se usa para intercambio registral entre administraciones?",
-    "option_a": "SCSS",
-    "option_b": "JWT",
-    "option_c": "B-tree",
-    "option_d": "SIR",
-    "correct": "D",
-    "explanation": "SIR es el Sistema de Interconexion de Registros."
-  },
-  {
-    "id": 1160,
-    "topic_num": 39,
-    "question": "Que plataforma se relaciona con intermediacion y consulta de datos?",
-    "option_a": "MVC",
-    "option_b": "CSS",
-    "option_c": "PID",
-    "option_d": "PGP",
-    "correct": "C",
-    "explanation": "PID facilita servicios de intermediacion."
-  },
-  {
-    "id": 1161,
-    "topic_num": 39,
-    "question": "Que sistema comun permite identificacion y autenticacion ciudadana ante AAPP?",
-    "option_a": "LINQ",
-    "option_b": "Cl@ve",
-    "option_c": "Bootstrap",
-    "option_d": "pg_dump",
-    "correct": "B",
-    "explanation": "Cl@ve es plataforma comun de identificacion."
-  },
-  {
-    "id": 1162,
-    "topic_num": 39,
-    "question": "Que documento electronico de identidad permite autenticacion y firma?",
-    "option_a": "DNIe",
-    "option_b": "CSV",
-    "option_c": "WAL",
-    "option_d": "CSS",
-    "correct": "A",
-    "explanation": "DNIe incorpora certificados para identificacion y firma."
-  },
-  {
-    "id": 1163,
-    "topic_num": 39,
-    "question": "Que servicio facilita firma electronica centralizada?",
-    "option_a": "SIR",
-    "option_b": "PID",
-    "option_c": "WCAG",
-    "option_d": "FIRe",
-    "correct": "D",
-    "explanation": "FIRe integra servicios de firma."
-  },
-  {
-    "id": 1164,
-    "topic_num": 39,
-    "question": "Que espacio permite a la ciudadania consultar expedientes y notificaciones de distintas AAPP?",
-    "option_a": "GitHub",
-    "option_b": "Swagger",
-    "option_c": "Carpeta Ciudadana",
-    "option_d": "pgAdmin",
-    "correct": "C",
-    "explanation": "Carpeta Ciudadana centraliza informacion administrativa."
-  },
-  {
-    "id": 1165,
-    "topic_num": 39,
-    "question": "Que sistema se usa para intercambio registral entre administraciones?",
-    "option_a": "B-tree",
-    "option_b": "SIR",
-    "option_c": "SCSS",
-    "option_d": "JWT",
-    "correct": "B",
-    "explanation": "SIR es el Sistema de Interconexion de Registros."
-  },
-  {
-    "id": 1166,
-    "topic_num": 39,
-    "question": "Que plataforma se relaciona con intermediacion y consulta de datos?",
-    "option_a": "PID",
-    "option_b": "PGP",
-    "option_c": "MVC",
-    "option_d": "CSS",
-    "correct": "A",
-    "explanation": "PID facilita servicios de intermediacion."
-  },
-  {
-    "id": 1167,
-    "topic_num": 39,
-    "question": "Que sistema comun permite identificacion y autenticacion ciudadana ante AAPP?",
-    "option_a": "Bootstrap",
-    "option_b": "pg_dump",
-    "option_c": "LINQ",
-    "option_d": "Cl@ve",
-    "correct": "D",
-    "explanation": "Cl@ve es plataforma comun de identificacion."
-  },
-  {
-    "id": 1168,
-    "topic_num": 39,
-    "question": "Que documento electronico de identidad permite autenticacion y firma?",
-    "option_a": "WAL",
-    "option_b": "CSS",
-    "option_c": "DNIe",
-    "option_d": "CSV",
-    "correct": "C",
-    "explanation": "DNIe incorpora certificados para identificacion y firma."
-  },
-  {
-    "id": 1169,
-    "topic_num": 39,
-    "question": "Que servicio facilita firma electronica centralizada?",
-    "option_a": "WCAG",
-    "option_b": "FIRe",
-    "option_c": "SIR",
-    "option_d": "PID",
-    "correct": "B",
-    "explanation": "FIRe integra servicios de firma."
-  },
-  {
-    "id": 1170,
-    "topic_num": 39,
-    "question": "Que espacio permite a la ciudadania consultar expedientes y notificaciones de distintas AAPP?",
-    "option_a": "Carpeta Ciudadana",
-    "option_b": "pgAdmin",
-    "option_c": "GitHub",
-    "option_d": "Swagger",
-    "correct": "A",
-    "explanation": "Carpeta Ciudadana centraliza informacion administrativa."
-  },
-  {
-    "id": 1171,
-    "topic_num": 39,
-    "question": "Que sistema se usa para intercambio registral entre administraciones?",
-    "option_a": "SCSS",
-    "option_b": "JWT",
-    "option_c": "B-tree",
-    "option_d": "SIR",
-    "correct": "D",
-    "explanation": "SIR es el Sistema de Interconexion de Registros."
-  },
-  {
-    "id": 1172,
-    "topic_num": 39,
-    "question": "Que plataforma se relaciona con intermediacion y consulta de datos?",
-    "option_a": "MVC",
-    "option_b": "CSS",
-    "option_c": "PID",
-    "option_d": "PGP",
-    "correct": "C",
-    "explanation": "PID facilita servicios de intermediacion."
-  },
-  {
-    "id": 1173,
-    "topic_num": 39,
-    "question": "Que sistema comun permite identificacion y autenticacion ciudadana ante AAPP?",
-    "option_a": "LINQ",
-    "option_b": "Cl@ve",
-    "option_c": "Bootstrap",
-    "option_d": "pg_dump",
-    "correct": "B",
-    "explanation": "Cl@ve es plataforma comun de identificacion."
-  },
-  {
-    "id": 1174,
-    "topic_num": 39,
-    "question": "Que documento electronico de identidad permite autenticacion y firma?",
-    "option_a": "DNIe",
-    "option_b": "CSV",
-    "option_c": "WAL",
-    "option_d": "CSS",
-    "correct": "A",
-    "explanation": "DNIe incorpora certificados para identificacion y firma."
-  },
-  {
-    "id": 1175,
-    "topic_num": 40,
-    "question": "Que pautas internacionales definen criterios de accesibilidad web?",
-    "option_a": "WCAG",
-    "option_b": "ACID",
-    "option_c": "PKI",
-    "option_d": "LINQ",
-    "correct": "A",
-    "explanation": "WCAG establece pautas de accesibilidad."
-  },
-  {
-    "id": 1176,
-    "topic_num": 40,
-    "question": "Que norma europea se usa como referencia de accesibilidad TIC en el sector publico?",
-    "option_a": "ISO 9001 exclusivamente",
-    "option_b": "RDL 781/1986",
-    "option_c": "PGP",
-    "option_d": "UNE-EN 301549",
-    "correct": "D",
-    "explanation": "UNE-EN 301549 recoge requisitos de accesibilidad TIC."
-  },
-  {
-    "id": 1177,
-    "topic_num": 40,
-    "question": "Que nivel WCAG se exige habitualmente como referencia normativa en sector publico?",
-    "option_a": "AAA siempre",
-    "option_b": "Beta",
-    "option_c": "AA",
-    "option_d": "A solamente",
-    "correct": "C",
-    "explanation": "El nivel AA es la referencia habitual."
-  },
-  {
-    "id": 1178,
-    "topic_num": 40,
-    "question": "Que principio WCAG exige que la informacion pueda ser percibida por los usuarios?",
-    "option_a": "Robusto",
-    "option_b": "Perceptible",
-    "option_c": "Operable",
-    "option_d": "Comprensible",
-    "correct": "B",
-    "explanation": "Perceptible implica alternativas textuales, contraste, etc."
-  },
-  {
-    "id": 1179,
-    "topic_num": 40,
-    "question": "Que principio WCAG exige que la interfaz pueda manejarse?",
-    "option_a": "Operable",
-    "option_b": "Perceptible",
-    "option_c": "Comprensible",
-    "option_d": "Robusto",
-    "correct": "A",
-    "explanation": "Operable incluye teclado, tiempo suficiente y navegacion."
-  },
-  {
-    "id": 1180,
-    "topic_num": 40,
-    "question": "Que documento publico informa sobre el grado de cumplimiento de accesibilidad de un sitio?",
-    "option_a": "Commit",
-    "option_b": "Migration",
-    "option_c": "Certificado TLS",
-    "option_d": "Declaracion de accesibilidad",
-    "correct": "D",
-    "explanation": "Las AAPP deben publicar declaracion de accesibilidad."
-  },
-  {
-    "id": 1181,
-    "topic_num": 40,
-    "question": "Que pautas internacionales definen criterios de accesibilidad web?",
-    "option_a": "PKI",
-    "option_b": "LINQ",
-    "option_c": "WCAG",
-    "option_d": "ACID",
-    "correct": "C",
-    "explanation": "WCAG establece pautas de accesibilidad."
-  },
-  {
-    "id": 1182,
-    "topic_num": 40,
-    "question": "Que norma europea se usa como referencia de accesibilidad TIC en el sector publico?",
-    "option_a": "PGP",
-    "option_b": "UNE-EN 301549",
-    "option_c": "ISO 9001 exclusivamente",
-    "option_d": "RDL 781/1986",
-    "correct": "B",
-    "explanation": "UNE-EN 301549 recoge requisitos de accesibilidad TIC."
-  },
-  {
-    "id": 1183,
-    "topic_num": 40,
-    "question": "Que nivel WCAG se exige habitualmente como referencia normativa en sector publico?",
-    "option_a": "AA",
-    "option_b": "A solamente",
-    "option_c": "AAA siempre",
-    "option_d": "Beta",
-    "correct": "A",
-    "explanation": "El nivel AA es la referencia habitual."
-  },
-  {
-    "id": 1184,
-    "topic_num": 40,
-    "question": "Que principio WCAG exige que la informacion pueda ser percibida por los usuarios?",
-    "option_a": "Operable",
-    "option_b": "Comprensible",
-    "option_c": "Robusto",
-    "option_d": "Perceptible",
-    "correct": "D",
-    "explanation": "Perceptible implica alternativas textuales, contraste, etc."
-  },
-  {
-    "id": 1185,
-    "topic_num": 40,
-    "question": "Que principio WCAG exige que la interfaz pueda manejarse?",
-    "option_a": "Comprensible",
-    "option_b": "Robusto",
-    "option_c": "Operable",
-    "option_d": "Perceptible",
-    "correct": "C",
-    "explanation": "Operable incluye teclado, tiempo suficiente y navegacion."
-  },
-  {
-    "id": 1186,
-    "topic_num": 40,
-    "question": "Que documento publico informa sobre el grado de cumplimiento de accesibilidad de un sitio?",
-    "option_a": "Certificado TLS",
-    "option_b": "Declaracion de accesibilidad",
-    "option_c": "Commit",
-    "option_d": "Migration",
-    "correct": "B",
-    "explanation": "Las AAPP deben publicar declaracion de accesibilidad."
-  },
-  {
-    "id": 1187,
-    "topic_num": 40,
-    "question": "Que pautas internacionales definen criterios de accesibilidad web?",
-    "option_a": "WCAG",
-    "option_b": "ACID",
-    "option_c": "PKI",
-    "option_d": "LINQ",
-    "correct": "A",
-    "explanation": "WCAG establece pautas de accesibilidad."
-  },
-  {
-    "id": 1188,
-    "topic_num": 40,
-    "question": "Que norma europea se usa como referencia de accesibilidad TIC en el sector publico?",
-    "option_a": "ISO 9001 exclusivamente",
-    "option_b": "RDL 781/1986",
-    "option_c": "PGP",
-    "option_d": "UNE-EN 301549",
-    "correct": "D",
-    "explanation": "UNE-EN 301549 recoge requisitos de accesibilidad TIC."
-  },
-  {
-    "id": 1189,
-    "topic_num": 40,
-    "question": "Que nivel WCAG se exige habitualmente como referencia normativa en sector publico?",
-    "option_a": "AAA siempre",
-    "option_b": "Beta",
-    "option_c": "AA",
-    "option_d": "A solamente",
-    "correct": "C",
-    "explanation": "El nivel AA es la referencia habitual."
-  },
-  {
-    "id": 1190,
-    "topic_num": 40,
-    "question": "Que principio WCAG exige que la informacion pueda ser percibida por los usuarios?",
-    "option_a": "Robusto",
-    "option_b": "Perceptible",
-    "option_c": "Operable",
-    "option_d": "Comprensible",
-    "correct": "B",
-    "explanation": "Perceptible implica alternativas textuales, contraste, etc."
-  },
-  {
-    "id": 1191,
-    "topic_num": 40,
-    "question": "Que principio WCAG exige que la interfaz pueda manejarse?",
-    "option_a": "Operable",
-    "option_b": "Perceptible",
-    "option_c": "Comprensible",
-    "option_d": "Robusto",
-    "correct": "A",
-    "explanation": "Operable incluye teclado, tiempo suficiente y navegacion."
-  },
-  {
-    "id": 1192,
-    "topic_num": 40,
-    "question": "Que documento publico informa sobre el grado de cumplimiento de accesibilidad de un sitio?",
-    "option_a": "Commit",
-    "option_b": "Migration",
-    "option_c": "Certificado TLS",
-    "option_d": "Declaracion de accesibilidad",
-    "correct": "D",
-    "explanation": "Las AAPP deben publicar declaracion de accesibilidad."
-  },
-  {
-    "id": 1193,
-    "topic_num": 40,
-    "question": "Que pautas internacionales definen criterios de accesibilidad web?",
-    "option_a": "PKI",
-    "option_b": "LINQ",
-    "option_c": "WCAG",
-    "option_d": "ACID",
-    "correct": "C",
-    "explanation": "WCAG establece pautas de accesibilidad."
-  },
-  {
-    "id": 1194,
-    "topic_num": 40,
-    "question": "Que norma europea se usa como referencia de accesibilidad TIC en el sector publico?",
-    "option_a": "PGP",
-    "option_b": "UNE-EN 301549",
-    "option_c": "ISO 9001 exclusivamente",
-    "option_d": "RDL 781/1986",
-    "correct": "B",
-    "explanation": "UNE-EN 301549 recoge requisitos de accesibilidad TIC."
-  },
-  {
-    "id": 1195,
-    "topic_num": 40,
-    "question": "Que nivel WCAG se exige habitualmente como referencia normativa en sector publico?",
-    "option_a": "AA",
-    "option_b": "A solamente",
-    "option_c": "AAA siempre",
-    "option_d": "Beta",
-    "correct": "A",
-    "explanation": "El nivel AA es la referencia habitual."
-  },
-  {
-    "id": 1196,
-    "topic_num": 40,
-    "question": "Que principio WCAG exige que la informacion pueda ser percibida por los usuarios?",
-    "option_a": "Operable",
-    "option_b": "Comprensible",
-    "option_c": "Robusto",
-    "option_d": "Perceptible",
-    "correct": "D",
-    "explanation": "Perceptible implica alternativas textuales, contraste, etc."
-  },
-  {
-    "id": 1197,
-    "topic_num": 40,
-    "question": "Que principio WCAG exige que la interfaz pueda manejarse?",
-    "option_a": "Comprensible",
-    "option_b": "Robusto",
-    "option_c": "Operable",
-    "option_d": "Perceptible",
-    "correct": "C",
-    "explanation": "Operable incluye teclado, tiempo suficiente y navegacion."
-  },
-  {
-    "id": 1198,
-    "topic_num": 40,
-    "question": "Que documento publico informa sobre el grado de cumplimiento de accesibilidad de un sitio?",
-    "option_a": "Certificado TLS",
-    "option_b": "Declaracion de accesibilidad",
-    "option_c": "Commit",
-    "option_d": "Migration",
-    "correct": "B",
-    "explanation": "Las AAPP deben publicar declaracion de accesibilidad."
-  },
-  {
-    "id": 1199,
-    "topic_num": 40,
-    "question": "Que pautas internacionales definen criterios de accesibilidad web?",
-    "option_a": "WCAG",
-    "option_b": "ACID",
-    "option_c": "PKI",
-    "option_d": "LINQ",
-    "correct": "A",
-    "explanation": "WCAG establece pautas de accesibilidad."
-  },
-  {
-    "id": 1200,
-    "topic_num": 40,
-    "question": "Que norma europea se usa como referencia de accesibilidad TIC en el sector publico?",
-    "option_a": "ISO 9001 exclusivamente",
-    "option_b": "RDL 781/1986",
-    "option_c": "PGP",
-    "option_d": "UNE-EN 301549",
-    "correct": "D",
-    "explanation": "UNE-EN 301549 recoge requisitos de accesibilidad TIC."
-  },
-  {
-    "id": 1201,
     "topic_num": 1,
     "question": "¿Cuál de estas enumeraciones describe correctamente la estructura básica de la Constitución Española de 1978?",
     "option_a": "Título Preliminar, diez Títulos y disposiciones adicionales, transitorias, derogatorias y final",
@@ -13212,7 +4401,7 @@ export const QUESTIONS = [
     "explanation": "La estructura constitucional comprende un Título Preliminar, los Títulos I a X y disposiciones adicionales, transitorias, derogatorias y final."
   },
   {
-    "id": 1202,
+    "id": 401,
     "topic_num": 1,
     "question": "Según el artículo 1.3 de la Constitución Española, ¿cuál es la forma política del Estado español?",
     "option_a": "República federal",
@@ -13223,7 +4412,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 1.3 establece literalmente que la forma política del Estado español es la Monarquía parlamentaria."
   },
   {
-    "id": 1203,
+    "id": 402,
     "topic_num": 1,
     "question": "¿Qué combinación recoge los principios del artículo 2 de la Constitución Española?",
     "option_a": "Unidad de la Nación, autonomía y solidaridad",
@@ -13234,7 +4423,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 2 se fundamenta en la indisoluble unidad de la Nación española y reconoce y garantiza la autonomía y la solidaridad entre sus partes."
   },
   {
-    "id": 1204,
+    "id": 403,
     "topic_num": 1,
     "question": "Conforme al artículo 3.1 de la Constitución, ¿qué afirmación es correcta sobre el castellano?",
     "option_a": "Es la lengua oficial del Estado y todos tienen el deber de conocerla y el derecho a usarla",
@@ -13245,7 +4434,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 3.1 declara el castellano lengua española oficial del Estado y establece el deber de conocerla y el derecho a usarla."
   },
   {
-    "id": 1205,
+    "id": 404,
     "topic_num": 1,
     "question": "¿Cuál de los siguientes principios aparece expresamente en el artículo 9.3 de la Constitución Española?",
     "option_a": "Legalidad y seguridad jurídica",
@@ -13256,7 +4445,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 9.3 garantiza, entre otros, los principios de legalidad, jerarquía normativa, publicidad de las normas, irretroactividad de disposiciones sancionadoras no favorables o restrictivas, seguridad jurídica, responsabilidad e interdicción de la arbitrariedad."
   },
   {
-    "id": 1206,
+    "id": 405,
     "topic_num": 1,
     "question": "¿Qué constituye, según el artículo 10.1, el fundamento del orden político y de la paz social?",
     "option_a": "La dignidad de la persona y el libre desarrollo de la personalidad",
@@ -13267,7 +4456,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 10.1 sitúa la dignidad de la persona, los derechos inviolables inherentes, el libre desarrollo de la personalidad y el respeto a la ley y a los derechos ajenos como fundamento del orden político y la paz social."
   },
   {
-    "id": 1207,
+    "id": 406,
     "topic_num": 1,
     "question": "Una norma establece un trato desfavorable por razón de nacimiento. ¿Qué parámetro constitucional resulta directamente aplicable?",
     "option_a": "La igualdad ante la ley y la prohibición de discriminación del artículo 14",
@@ -13278,7 +4467,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 14 proclama la igualdad ante la ley y prohíbe la discriminación, entre otros motivos, por razón de nacimiento, raza, sexo, religión, opinión o cualquier otra condición o circunstancia personal o social."
   },
   {
-    "id": 1208,
+    "id": 407,
     "topic_num": 1,
     "question": "¿Qué protege expresamente el artículo 15 de la Constitución Española?",
     "option_a": "La vida y la integridad física y moral",
@@ -13289,7 +4478,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 15 reconoce el derecho a la vida y a la integridad física y moral y prohíbe la tortura y las penas o tratos inhumanos o degradantes."
   },
   {
-    "id": 1209,
+    "id": 408,
     "topic_num": 1,
     "question": "Según el artículo 16.2, ¿qué puede exigirse a una persona sobre su religión o creencias?",
     "option_a": "Nada: nadie puede ser obligado a declarar sobre su religión o creencias",
@@ -13300,7 +4489,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 16.2 dispone que nadie podrá ser obligado a declarar sobre su ideología, religión o creencias."
   },
   {
-    "id": 1210,
+    "id": 409,
     "topic_num": 1,
     "question": "¿Cuál es el límite máximo ordinario de la detención preventiva previsto en el artículo 17.2?",
     "option_a": "24 horas en todo caso",
@@ -13311,7 +4500,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 17.2 establece que la detención preventiva no puede durar más del tiempo estrictamente necesario y, en todo caso, debe finalizar en un máximo de 72 horas con libertad o puesta a disposición judicial."
   },
   {
-    "id": 1211,
+    "id": 410,
     "topic_num": 1,
     "question": "La entrada en un domicilio sin consentimiento del titular exige, como regla constitucional, una resolución judicial o que exista flagrante delito. ¿Qué derecho fundamenta esta regla?",
     "option_a": "La inviolabilidad del domicilio del artículo 18.2",
@@ -13322,7 +4511,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 18.2 declara inviolable el domicilio y solo permite la entrada o registro con consentimiento del titular, resolución judicial o en caso de flagrante delito."
   },
   {
-    "id": 1212,
+    "id": 411,
     "topic_num": 1,
     "question": "¿Qué límite establece el artículo 20.2 respecto del ejercicio de las libertades de expresión e información?",
     "option_a": "No pueden restringirse mediante ningún procedimiento judicial",
@@ -13333,7 +4522,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 20.2 dispone que el ejercicio de estos derechos no puede restringirse mediante ningún tipo de censura previa."
   },
   {
-    "id": 1213,
+    "id": 412,
     "topic_num": 1,
     "question": "Para una manifestación en un lugar de tránsito público, ¿qué exige el artículo 21.2 como regla general?",
     "option_a": "Autorización previa del Gobierno",
@@ -13344,7 +4533,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 21.2 exige comunicación previa para reuniones en lugares de tránsito público y manifestaciones; no establece un régimen de autorización previa."
   },
   {
-    "id": 1214,
+    "id": 413,
     "topic_num": 1,
     "question": "Una convocatoria para acceder a una función pública debe respetar, según el artículo 23.2, el derecho de la ciudadanía a acceder en condiciones de:",
     "option_a": "Igualdad, con los requisitos que señalen las leyes",
@@ -13355,7 +4544,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 23.2 reconoce el derecho a acceder en condiciones de igualdad a las funciones y cargos públicos, con los requisitos que señalen las leyes."
   },
   {
-    "id": 1215,
+    "id": 414,
     "topic_num": 1,
     "question": "En un proceso judicial, ¿qué garantía del artículo 24.2 protege a la persona frente a la obligación de declarar contra sí misma?",
     "option_a": "El derecho a no declarar contra sí mismo y a no confesarse culpable",
@@ -13366,7 +4555,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 24.2 reconoce, entre las garantías del proceso, el derecho a no declarar contra sí mismo y a no confesarse culpable."
   },
   {
-    "id": 1216,
+    "id": 415,
     "topic_num": 1,
     "question": "¿Qué combinación recoge el artículo 27.1 de la Constitución Española?",
     "option_a": "Derecho a la educación y libertad de enseñanza",
@@ -13377,7 +4566,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 27.1 reconoce el derecho de todos a la educación y la libertad de enseñanza."
   },
   {
-    "id": 1217,
+    "id": 416,
     "topic_num": 1,
     "question": "Respecto del derecho de huelga, ¿qué prevé el artículo 28.2?",
     "option_a": "Lo reconoce para la defensa de los intereses de los trabajadores y permite regular por ley el mantenimiento de servicios esenciales",
@@ -13388,7 +4577,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 28.2 reconoce el derecho a la huelga para la defensa de los intereses de los trabajadores y ordena que la ley regule las garantías para asegurar el mantenimiento de los servicios esenciales de la comunidad."
   },
   {
-    "id": 1218,
+    "id": 417,
     "topic_num": 1,
     "question": "Un sistema tributario que ignore la capacidad económica y no respete la igualdad contradice directamente el artículo:",
     "option_a": "31.1",
@@ -13399,7 +4588,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 31.1 exige que todos contribuyan al sostenimiento de los gastos públicos conforme a su capacidad económica, mediante un sistema tributario justo inspirado en igualdad y progresividad."
   },
   {
-    "id": 1219,
+    "id": 418,
     "topic_num": 1,
     "question": "¿Qué órganos integran las Cortes Generales según el artículo 66.1?",
     "option_a": "Congreso de los Diputados y Senado",
@@ -13410,7 +4599,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 66.1 establece que las Cortes Generales representan al pueblo español y están formadas por el Congreso de los Diputados y el Senado."
   },
   {
-    "id": 1220,
+    "id": 419,
     "topic_num": 1,
     "question": "¿Qué mayoría exige el artículo 81.2 para aprobar, modificar o derogar una ley orgánica?",
     "option_a": "Mayoría simple del Senado",
@@ -13421,7 +4610,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 81.2 exige mayoría absoluta del Congreso, en una votación final sobre el conjunto del proyecto, para aprobar, modificar o derogar leyes orgánicas."
   },
   {
-    "id": 1221,
+    "id": 420,
     "topic_num": 2,
     "question": "¿Qué función constitucional corresponde al Gobierno conforme al artículo 97?",
     "option_a": "Dirigir la política interior y exterior, la Administración civil y militar y la defensa del Estado",
@@ -13432,7 +4621,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 97 atribuye al Gobierno la dirección de la política interior y exterior, de la Administración civil y militar y de la defensa del Estado, además de la función ejecutiva y la potestad reglamentaria."
   },
   {
-    "id": 1222,
+    "id": 421,
     "topic_num": 2,
     "question": "¿Quiénes componen el Gobierno según el artículo 98.1 de la Constitución?",
     "option_a": "Presidente, Vicepresidentes en su caso, Ministros y demás miembros que establezca la ley",
@@ -13443,7 +4632,7 @@ export const QUESTIONS = [
     "explanation": "El Gobierno se compone del Presidente, de los Vicepresidentes en su caso, de los Ministros y de los demás miembros que establezca la ley."
   },
   {
-    "id": 1223,
+    "id": 422,
     "topic_num": 2,
     "question": "¿Qué relación establece el artículo 98.2 entre el Presidente del Gobierno y los Ministros?",
     "option_a": "El Presidente dirige la acción del Gobierno y coordina las funciones de sus miembros, sin perjuicio de la competencia y responsabilidad directa de estos",
@@ -13454,7 +4643,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 98.2 distingue la dirección y coordinación del Presidente de la competencia y responsabilidad directa de los Ministros en su gestión."
   },
   {
-    "id": 1224,
+    "id": 423,
     "topic_num": 2,
     "question": "¿Qué regla de incompatibilidad se aplica a los miembros del Gobierno?",
     "option_a": "No pueden ejercer otras funciones representativas que las propias del mandato parlamentario ni otra función pública no derivada de su cargo, ni actividad profesional o mercantil",
@@ -13465,7 +4654,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 98.3 establece esa incompatibilidad, con la excepción de las funciones representativas propias del mandato parlamentario."
   },
   {
-    "id": 1225,
+    "id": 424,
     "topic_num": 2,
     "question": "¿Quién nombra y separa a los Ministros?",
     "option_a": "El Congreso, por mayoría absoluta",
@@ -13476,7 +4665,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 100 dispone que los demás miembros del Gobierno son nombrados y separados por el Rey, a propuesta de su Presidente."
   },
   {
-    "id": 1226,
+    "id": 425,
     "topic_num": 2,
     "question": "¿Ante qué Cámara es políticamente responsable el Gobierno en su conjunto?",
     "option_a": "Ante el Senado exclusivamente",
@@ -13487,7 +4676,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 108 establece que el Gobierno responde solidariamente en su gestión política ante el Congreso de los Diputados."
   },
   {
-    "id": 1227,
+    "id": 426,
     "topic_num": 2,
     "question": "Respecto de la responsabilidad criminal del Presidente y los Ministros, ¿qué afirmación es constitucionalmente correcta?",
     "option_a": "La acusación por traición o delito contra la seguridad del Estado solo puede plantearse por iniciativa de la cuarta parte del Congreso y con aprobación de mayoría absoluta",
@@ -13498,7 +4687,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 102 exige iniciativa de la cuarta parte del Congreso y aprobación por mayoría absoluta para esa acusación; no procede la prerrogativa real de gracia en el caso de traición."
   },
   {
-    "id": 1228,
+    "id": 427,
     "topic_num": 2,
     "question": "¿Qué instrumento parlamentario permite a un diputado o senador solicitar explicaciones al Gobierno sobre un asunto?",
     "option_a": "Preguntas e interpelaciones, en los términos que establezcan los Reglamentos parlamentarios",
@@ -13509,7 +4698,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 111 prevé que el Gobierno y cada uno de sus miembros están sometidos a las interpelaciones y preguntas que se les formulen en las Cámaras."
   },
   {
-    "id": 1229,
+    "id": 428,
     "topic_num": 2,
     "question": "¿Quién puede plantear la cuestión de confianza?",
     "option_a": "El Presidente del Gobierno, previa deliberación del Consejo de Ministros",
@@ -13520,7 +4709,7 @@ export const QUESTIONS = [
     "explanation": "Conforme al artículo 112, el Presidente del Gobierno, previa deliberación del Consejo de Ministros, puede plantear ante el Congreso la cuestión de confianza sobre su programa o una declaración de política general."
   },
   {
-    "id": 1230,
+    "id": 429,
     "topic_num": 2,
     "question": "¿Qué requisito singular caracteriza la moción de censura constitucional?",
     "option_a": "Debe incluir un candidato a la Presidencia del Gobierno",
@@ -13531,7 +4720,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 113 configura la moción de censura como constructiva: debe ser propuesta al menos por la décima parte de los diputados e incluir un candidato a la Presidencia."
   },
   {
-    "id": 1231,
+    "id": 430,
     "topic_num": 2,
     "question": "¿Cuál es la diferencia constitucional básica entre cuestión de confianza y moción de censura?",
     "option_a": "La primera la plantea el Presidente sobre su programa o política general; la segunda es propuesta por diputados e incluye candidato alternativo",
@@ -13542,7 +4731,7 @@ export const QUESTIONS = [
     "explanation": "Los artículos 112 y 113 regulan mecanismos distintos: iniciativa presidencial en la confianza e iniciativa parlamentaria constructiva en la censura."
   },
   {
-    "id": 1232,
+    "id": 431,
     "topic_num": 2,
     "question": "¿Qué límite se aplica a la propuesta de disolución de las Cámaras por el Presidente del Gobierno?",
     "option_a": "No puede proponerse mientras esté en trámite una moción de censura",
@@ -13553,7 +4742,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 115 impide presentar propuesta de disolución mientras esté en trámite una moción de censura."
   },
   {
-    "id": 1233,
+    "id": 432,
     "topic_num": 2,
     "question": "¿Qué entidades territoriales se organizan constitucionalmente y gozan de autonomía para la gestión de sus respectivos intereses?",
     "option_a": "Municipios, provincias y Comunidades Autónomas",
@@ -13564,7 +4753,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 137 organiza territorialmente el Estado en municipios, provincias y Comunidades Autónomas, todas dotadas de autonomía para la gestión de sus intereses."
   },
   {
-    "id": 1234,
+    "id": 433,
     "topic_num": 2,
     "question": "¿Cómo se gobiernan y administran los municipios según el artículo 140?",
     "option_a": "Por Ayuntamientos integrados por Alcaldes y Concejales",
@@ -13575,7 +4764,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 140 garantiza la autonomía municipal y dispone que el gobierno y administración de los municipios corresponde a sus respectivos Ayuntamientos, integrados por Alcaldes y Concejales."
   },
   {
-    "id": 1235,
+    "id": 434,
     "topic_num": 2,
     "question": "¿Qué definición constitucional corresponde a la provincia?",
     "option_a": "Entidad local con personalidad jurídica propia determinada por la agrupación de municipios y división territorial para el cumplimiento de actividades del Estado",
@@ -13586,7 +4775,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 141 define la provincia como entidad local con personalidad jurídica propia, determinada por la agrupación de municipios, y como división territorial para actividades del Estado."
   },
   {
-    "id": 1236,
+    "id": 435,
     "topic_num": 2,
     "question": "¿Qué exige la Constitución respecto de las Haciendas locales?",
     "option_a": "Disponer de medios suficientes para el desempeño de las funciones que la ley atribuye a las Corporaciones respectivas",
@@ -13597,7 +4786,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 142 exige que las Haciendas locales dispongan de medios suficientes y prevé que se nutran de tributos propios y participación en los del Estado y las Comunidades Autónomas."
   },
   {
-    "id": 1237,
+    "id": 436,
     "topic_num": 2,
     "question": "¿Cuál de estos contenidos debe figurar en un Estatuto de Autonomía?",
     "option_a": "La denominación, organización y sede de las instituciones autónomas propias",
@@ -13608,7 +4797,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 147.2 incluye, entre otros contenidos, la denominación de la Comunidad, su territorio, la denominación, organización y sede de sus instituciones autónomas propias y las competencias asumidas."
   },
   {
-    "id": 1238,
+    "id": 437,
     "topic_num": 2,
     "question": "¿Qué afirmación refleja la distribución constitucional de competencias?",
     "option_a": "Las materias no atribuidas expresamente al Estado pueden corresponder a las Comunidades Autónomas según sus Estatutos, y el derecho estatal es supletorio",
@@ -13619,7 +4808,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 149.3 establece la cláusula residual a favor de las Comunidades Autónomas en los términos indicados, la prevalencia del derecho estatal en caso de conflicto fuera de la competencia exclusiva autonómica y su carácter supletorio."
   },
   {
-    "id": 1239,
+    "id": 438,
     "topic_num": 2,
     "question": "¿Qué control corresponde al Tribunal Constitucional sobre disposiciones normativas con fuerza de ley de las Comunidades Autónomas?",
     "option_a": "El control de su constitucionalidad",
@@ -13630,7 +4819,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 153.a atribuye al Tribunal Constitucional el control de la constitucionalidad de las disposiciones normativas con fuerza de ley de las Comunidades Autónomas."
   },
   {
-    "id": 1240,
+    "id": 439,
     "topic_num": 2,
     "question": "Para adoptar medidas del artículo 155 frente a una Comunidad Autónoma incumplidora, ¿qué requisito parlamentario se exige?",
     "option_a": "La aprobación por mayoría absoluta del Senado, después del requerimiento al Presidente autonómico",
@@ -13641,7 +4830,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 155 exige requerimiento previo al Presidente de la Comunidad y, si no es atendido, aprobación por mayoría absoluta del Senado para adoptar las medidas previstas."
   },
   {
-    "id": 1241,
+    "id": 440,
     "topic_num": 3,
     "question": "¿Qué es el municipio según la Ley 7/1985?",
     "option_a": "La entidad local básica de la organización territorial del Estado",
@@ -13652,7 +4841,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 11 define el municipio como la entidad local básica de la organización territorial del Estado, con personalidad jurídica y plena capacidad para el cumplimiento de sus fines."
   },
   {
-    "id": 1242,
+    "id": 441,
     "topic_num": 3,
     "question": "¿Cuáles son los elementos del municipio?",
     "option_a": "El territorio, la población y la organización",
@@ -13663,7 +4852,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 11.2 identifica como elementos del municipio el territorio, la población y la organización."
   },
   {
-    "id": 1243,
+    "id": 442,
     "topic_num": 3,
     "question": "¿Qué regla territorial establece la Ley 7/1985 para los municipios?",
     "option_a": "Cada municipio pertenece a una sola provincia",
@@ -13674,7 +4863,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 12.2 establece que cada municipio pertenecerá a una sola provincia."
   },
   {
-    "id": 1244,
+    "id": 443,
     "topic_num": 3,
     "question": "¿Qué instrumento acredita la residencia y el domicilio habitual en un municipio?",
     "option_a": "El padrón municipal",
@@ -13685,7 +4874,7 @@ export const QUESTIONS = [
     "explanation": "El padrón municipal es el registro administrativo donde constan los vecinos del municipio y sus datos constituyen prueba de la residencia y del domicilio habitual en él."
   },
   {
-    "id": 1245,
+    "id": 444,
     "topic_num": 3,
     "question": "¿Qué órganos existen en todos los Ayuntamientos?",
     "option_a": "Alcalde, Tenientes de Alcalde y Pleno",
@@ -13696,7 +4885,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 20.1.a dispone que el Alcalde, los Tenientes de Alcalde y el Pleno existen en todos los Ayuntamientos."
   },
   {
-    "id": 1246,
+    "id": 445,
     "topic_num": 3,
     "question": "¿Cuándo existe la Junta de Gobierno Local conforme a la regla general del artículo 20.1.b?",
     "option_a": "En municipios con población superior a 5.000 habitantes y en los de menos cuando lo disponga el reglamento orgánico o lo acuerde el Pleno",
@@ -13707,7 +4896,7 @@ export const QUESTIONS = [
     "explanation": "La Junta de Gobierno Local existe en todos los municipios con población superior a 5.000 habitantes y en los de menos cuando concurra alguno de los supuestos legales indicados."
   },
   {
-    "id": 1247,
+    "id": 446,
     "topic_num": 3,
     "question": "¿Qué función corresponde al Alcalde como órgano municipal?",
     "option_a": "Dirigir el gobierno y la administración municipal y representar al Ayuntamiento",
@@ -13718,7 +4907,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 21.1 atribuye al Alcalde la dirección del gobierno y la administración municipal y la representación del Ayuntamiento, entre otras funciones."
   },
   {
-    "id": 1248,
+    "id": 447,
     "topic_num": 3,
     "question": "¿Qué función tiene el Pleno respecto del gobierno municipal?",
     "option_a": "El control y la fiscalización de los órganos de gobierno",
@@ -13729,7 +4918,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 22.2.a atribuye al Pleno el control y la fiscalización de los órganos de gobierno."
   },
   {
-    "id": 1249,
+    "id": 448,
     "topic_num": 3,
     "question": "¿Cuál de estas materias corresponde al Pleno municipal?",
     "option_a": "La aprobación del reglamento orgánico y de las ordenanzas",
@@ -13740,7 +4929,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 22.2.d atribuye al Pleno la aprobación del reglamento orgánico y de las ordenanzas, sin perjuicio de otras competencias enumeradas."
   },
   {
-    "id": 1250,
+    "id": 449,
     "topic_num": 3,
     "question": "¿Cuál es la función propia de la Junta de Gobierno Local?",
     "option_a": "Asistir al Alcalde en el ejercicio de sus atribuciones y ejercer las atribuciones que le deleguen o atribuyan las leyes",
@@ -13751,7 +4940,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 23.2 establece que la Junta de Gobierno Local asiste al Alcalde y ejerce las atribuciones que el Alcalde u otro órgano le delegue o le atribuyan las leyes."
   },
   {
-    "id": 1251,
+    "id": 450,
     "topic_num": 3,
     "question": "¿Cómo define la Ley 7/1985 a la provincia?",
     "option_a": "Entidad local determinada por la agrupación de municipios, con personalidad jurídica propia, y división territorial para actividades del Estado",
@@ -13762,7 +4951,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 31 define la provincia en esos términos y reconoce su autonomía para la gestión de sus intereses."
   },
   {
-    "id": 1252,
+    "id": 451,
     "topic_num": 3,
     "question": "¿Qué órganos son necesarios en todas las Diputaciones?",
     "option_a": "Presidente, Vicepresidentes, Junta de Gobierno y Pleno",
@@ -13773,7 +4962,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 32.1 establece como órganos necesarios de la Diputación el Presidente, los Vicepresidentes, la Junta de Gobierno y el Pleno."
   },
   {
-    "id": 1253,
+    "id": 452,
     "topic_num": 3,
     "question": "¿Qué función corresponde al Presidente de la Diputación?",
     "option_a": "Dirigir el gobierno y la administración de la provincia y representar a la Diputación",
@@ -13784,7 +4973,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 34.1 atribuye al Presidente la dirección del gobierno y la administración de la provincia y la representación de la Diputación, entre otras competencias."
   },
   {
-    "id": 1254,
+    "id": 453,
     "topic_num": 3,
     "question": "¿Qué función de control corresponde al Pleno de la Diputación?",
     "option_a": "El control y la fiscalización de los órganos de gobierno",
@@ -13795,7 +4984,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 33.2.a atribuye al Pleno provincial el control y la fiscalización de los órganos de gobierno."
   },
   {
-    "id": 1255,
+    "id": 454,
     "topic_num": 3,
     "question": "¿Qué asistencia debe prestar la Diputación a los municipios?",
     "option_a": "Asistencia y cooperación jurídica, económica y técnica, especialmente a los municipios de menor capacidad económica y de gestión",
@@ -13806,7 +4995,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 36.1.b atribuye a la Diputación la asistencia y cooperación jurídica, económica y técnica a los municipios, especialmente a los de menor capacidad."
   },
   {
-    "id": 1256,
+    "id": 455,
     "topic_num": 3,
     "question": "¿Qué competencia provincial se refiere a los servicios municipales entre sí?",
     "option_a": "La coordinación de los servicios municipales para garantizar una prestación integral y adecuada",
@@ -13817,7 +5006,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 36.1.a atribuye a la Diputación la coordinación de los servicios municipales entre sí para garantizar la prestación integral y adecuada."
   },
   {
-    "id": 1257,
+    "id": 456,
     "topic_num": 3,
     "question": "¿Qué tipo de servicios puede prestar la Diputación conforme al artículo 36.1.c?",
     "option_a": "Servicios públicos de carácter supramunicipal y, en su caso, supracomarcal",
@@ -13828,7 +5017,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 36.1.c incluye la prestación de servicios públicos de carácter supramunicipal y, en su caso, supracomarcal, además del fomento o coordinación de prestación unificada."
   },
   {
-    "id": 1258,
+    "id": 457,
     "topic_num": 3,
     "question": "¿Qué instrumento provincial debe aprobarse anualmente para cooperar en obras y servicios municipales?",
     "option_a": "Un plan provincial de cooperación a las obras y servicios de competencia municipal",
@@ -13839,7 +5028,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 36.2.a prevé la aprobación anual de un plan provincial de cooperación, elaborado con participación de los municipios."
   },
   {
-    "id": 1259,
+    "id": 458,
     "topic_num": 3,
     "question": "¿Qué finalidad tiene la asistencia provincial respecto de los servicios mínimos municipales?",
     "option_a": "Asegurar el acceso de la población al conjunto de los servicios mínimos y la mayor eficacia y economía en su prestación",
@@ -13850,7 +5039,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 36.2.b encomienda a la Diputación asegurar el acceso de la población provincial al conjunto de los servicios mínimos de competencia municipal y la mayor eficacia y economía en su prestación."
   },
   {
-    "id": 1260,
+    "id": 459,
     "topic_num": 3,
     "question": "¿Qué relación describe correctamente la organización municipal y provincial?",
     "option_a": "Ambas son entidades locales con órganos propios y autonomía para gestionar sus intereses, dentro del marco legal",
@@ -13861,7 +5050,7 @@ export const QUESTIONS = [
     "explanation": "La Ley 7/1985 reconoce personalidad y autonomía a municipios y provincias, y regula sus órganos y competencias sin convertir la provincia en superior jerárquico general de los Ayuntamientos."
   },
   {
-    "id": 1261,
+    "id": 460,
     "topic_num": 4,
     "question": "¿Ante quién se exige la responsabilidad civil y penal de los miembros de las Corporaciones Locales?",
     "option_a": "Ante los Tribunales de Justicia competentes, por el procedimiento ordinario aplicable",
@@ -13872,7 +5061,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 22.3 del texto refundido dispone que la responsabilidad se exigirá ante los Tribunales de Justicia competentes y se tramitará por el procedimiento ordinario aplicable."
   },
   {
-    "id": 1262,
+    "id": 461,
     "topic_num": 4,
     "question": "¿Cuándo debe abstenerse un miembro de una Corporación Local?",
     "option_a": "Cuando concurra una causa de abstención prevista en la legislación de procedimiento administrativo o de contratos públicos",
@@ -13883,7 +5072,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 21 obliga a abstenerse de deliberar, votar, decidir y ejecutar cuando concurra una causa legal de incompatibilidad o abstención."
   },
   {
-    "id": 1263,
+    "id": 462,
     "topic_num": 4,
     "question": "¿Cómo se constituyen los miembros de las Corporaciones Locales a efectos de su actuación corporativa?",
     "option_a": "En grupos, sin que nadie pueda pertenecer simultáneamente a más de uno",
@@ -13894,7 +5083,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 23 dispone que los miembros se constituirán en grupos y que nadie puede pertenecer simultáneamente a más de uno."
   },
   {
-    "id": 1264,
+    "id": 463,
     "topic_num": 4,
     "question": "¿A quién se dirige el escrito de constitución de un grupo político local?",
     "option_a": "Al Presidente, suscrito por todos sus integrantes y presentado en la Secretaría General dentro de los cinco días hábiles siguientes a la constitución",
@@ -13905,7 +5094,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 24.1 exige escrito dirigido al Presidente y suscrito por todos los integrantes, presentado en Secretaría General dentro de los cinco días hábiles siguientes a la constitución."
   },
   {
-    "id": 1265,
+    "id": 464,
     "topic_num": 4,
     "question": "¿Quién tiene la custodia y dirección del Registro de Intereses de los miembros de la Corporación?",
     "option_a": "El Secretario de la Corporación",
@@ -13916,7 +5105,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 30.1 atribuye la custodia y dirección del Registro de Intereses al Secretario."
   },
   {
-    "id": 1266,
+    "id": 465,
     "topic_num": 4,
     "question": "Si varían las circunstancias declaradas en el Registro de Intereses, ¿qué plazo tiene el miembro de la Corporación para comunicar la variación?",
     "option_a": "Un mes desde el día en que se produjo la variación",
@@ -13927,7 +5116,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 30.2.b fija un mes desde el día en que se hayan producido las variaciones."
   },
   {
-    "id": 1267,
+    "id": 466,
     "topic_num": 4,
     "question": "¿Qué órganos son necesarios en un Ayuntamiento conforme al artículo 35 del texto refundido?",
     "option_a": "Alcalde, Tenientes de Alcalde, Pleno y Comisión de Gobierno en los supuestos previstos",
@@ -13938,7 +5127,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 35 enumera como órganos necesarios el Alcalde, los Tenientes de Alcalde, el Pleno y la Comisión de Gobierno en los municipios y supuestos que indica."
   },
   {
-    "id": 1268,
+    "id": 467,
     "topic_num": 4,
     "question": "¿Cuándo es necesaria la Comisión de Gobierno según el artículo 35.2.d del texto refundido?",
     "option_a": "En municipios con población de derecho superior a 5.000 habitantes y, en los de menos, cuando lo disponga el reglamento orgánico o lo acuerde el Pleno",
@@ -13949,7 +5138,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 35.2.d establece ese umbral y las dos vías alternativas para municipios de menor población."
   },
   {
-    "id": 1269,
+    "id": 468,
     "topic_num": 4,
     "question": "¿Qué órganos enumera el artículo 32 del texto refundido para la provincia?",
     "option_a": "Presidente, Vicepresidentes, Comisión de Gobierno y Pleno",
@@ -13960,7 +5149,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 32 enumera Presidente, Vicepresidentes, Comisión de Gobierno y Pleno como órganos de la provincia, con las reglas que establece."
   },
   {
-    "id": 1270,
+    "id": 469,
     "topic_num": 4,
     "question": "¿Qué tratamiento corresponde a los Presidentes de las Diputaciones Provinciales según el artículo 34?",
     "option_a": "Excelencia al de la Diputación de Barcelona e Ilustrísima a los de las demás Diputaciones",
@@ -13971,7 +5160,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 34.1 atribuye tratamiento de Excelencia al Presidente de la Diputación de Barcelona y de Ilustrísima a los de las demás Diputaciones."
   },
   {
-    "id": 1271,
+    "id": 470,
     "topic_num": 4,
     "question": "¿Quién designa representantes de un grupo político en órganos colegiados integrados por miembros de varios grupos?",
     "option_a": "El grupo político, mediante escrito de su portavoz dirigido al Presidente",
@@ -13982,7 +5171,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 29 atribuye esa designación a los grupos políticos mediante escrito de su portavoz dirigido al Presidente."
   },
   {
-    "id": 1272,
+    "id": 471,
     "topic_num": 4,
     "question": "¿Qué se necesita para acceder a los datos del Registro de Intereses?",
     "option_a": "Acreditar la condición legal de interesado legítimo directo conforme a la legislación aplicable",
@@ -13993,7 +5182,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 32 exige acreditar la condición legal de interesado legítimo directo con arreglo a la legislación autonómica o estatal aplicable."
   },
   {
-    "id": 1273,
+    "id": 472,
     "topic_num": 4,
     "question": "¿A qué órgano da cuenta el Presidente de la constitución de los grupos políticos?",
     "option_a": "Al Pleno, en la primera sesión que se celebre después de cumplirse el plazo legal",
@@ -14004,7 +5193,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 25 dispone que el Presidente dará cuenta al Pleno en la primera sesión celebrada tras cumplirse el plazo del artículo 24.1."
   },
   {
-    "id": 1274,
+    "id": 473,
     "topic_num": 4,
     "question": "¿Qué debe hacer un miembro de la Corporación que adquiere su condición después de la sesión constitutiva?",
     "option_a": "Incorporarse a los grupos conforme a las reglas acordadas por la Corporación",
@@ -14015,7 +5204,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 26 exige la incorporación a los grupos conforme a las reglas acordadas por la Corporación."
   },
   {
-    "id": 1275,
+    "id": 474,
     "topic_num": 4,
     "question": "¿Qué medios pueden poner las Corporaciones Locales a disposición de los grupos políticos?",
     "option_a": "Un despacho o local para reunirse y recibir visitas, junto con una infraestructura mínima según las posibilidades funcionales",
@@ -14026,7 +5215,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 27 prevé despacho o local e infraestructura mínima de medios materiales y personales en la medida de las posibilidades funcionales de la organización administrativa."
   },
   {
-    "id": 1276,
+    "id": 475,
     "topic_num": 4,
     "question": "¿Qué límite establece el artículo 28.3 para las reuniones de grupos políticos en locales corporativos?",
     "option_a": "No pueden coincidir con sesiones del Pleno o de la Comisión de Gobierno",
@@ -14037,7 +5226,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 28.3 prohíbe que esas reuniones coincidan con sesiones del Pleno o de la Comisión de Gobierno."
   },
   {
-    "id": 1277,
+    "id": 476,
     "topic_num": 4,
     "question": "¿Qué debe incluir necesariamente la declaración de intereses?",
     "option_a": "La identificación de bienes, actividades y ocupaciones profesionales o privadas y otros intereses relacionados con las competencias corporativas",
@@ -14048,7 +5237,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 31 incluye bienes muebles e inmuebles, actividades y ocupaciones y otros intereses o actividades privadas relacionados con las competencias de la Corporación."
   },
   {
-    "id": 1278,
+    "id": 477,
     "topic_num": 4,
     "question": "¿Qué carácter tiene el Ayuntamiento según el artículo 35.1 del texto refundido?",
     "option_a": "Es el órgano de gobierno y administración del municipio, con carácter de Corporación de Derecho Público",
@@ -14059,7 +5248,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 35.1 define al Ayuntamiento como órgano de gobierno y administración del municipio, con carácter de Corporación de Derecho Público."
   },
   {
-    "id": 1279,
+    "id": 478,
     "topic_num": 4,
     "question": "¿Qué regla especial se aplica a los Presidentes de Cabildos y Consejos Insulares?",
     "option_a": "Ostentan el mismo tratamiento, deberes y derechos reconocidos a los Presidentes de Diputación",
@@ -14070,7 +5259,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 34.2 extiende a los Presidentes de Cabildos y Consejos Insulares el mismo tratamiento, deberes y derechos reconocidos a los Presidentes de Diputación."
   },
   {
-    "id": 1280,
+    "id": 479,
     "topic_num": 4,
     "question": "¿Qué afirmación distingue correctamente los artículos 24 y 30 del texto refundido?",
     "option_a": "El artículo 24 regula la constitución de grupos políticos y el artículo 30 el Registro de Intereses",
@@ -14081,7 +5270,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 24 establece requisitos de constitución de grupos políticos y el artículo 30 regula el Registro de Intereses de los miembros de la Corporación."
   },
   {
-    "id": 1281,
+    "id": 480,
     "topic_num": 5,
     "question": "¿Qué regula principalmente la Ley 39/2015?",
     "option_a": "Los requisitos de validez y eficacia de los actos administrativos, el procedimiento común y los principios de iniciativa legislativa y potestad reglamentaria",
@@ -14092,7 +5281,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 1 define el objeto de la Ley 39/2015 en esos términos, incluyendo el procedimiento administrativo común y la potestad sancionadora y de responsabilidad."
   },
   {
-    "id": 1282,
+    "id": 481,
     "topic_num": 5,
     "question": "¿A qué entidades se aplica la Ley 39/2015 como Administraciones Públicas?",
     "option_a": "A la Administración General del Estado, Comunidades Autónomas, entidades locales y organismos públicos y entidades de derecho público vinculados o dependientes",
@@ -14103,7 +5292,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 2.3 considera Administraciones Públicas la Administración General del Estado, las Administraciones autonómicas, las entidades locales y los organismos públicos y entidades de derecho público dependientes o vinculados."
   },
   {
-    "id": 1283,
+    "id": 482,
     "topic_num": 5,
     "question": "¿Qué capacidad tienen los menores en sus relaciones con las Administraciones Públicas?",
     "option_a": "La capacidad de obrar que les reconozcan expresamente las leyes para el ejercicio y defensa de sus derechos e intereses, salvo limitación legal",
@@ -14114,7 +5303,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 3 reconoce esa capacidad a los menores para el ejercicio y defensa de sus derechos e intereses cuya actuación permita el ordenamiento jurídico sin asistencia de quien ejerza patria potestad, tutela o curatela."
   },
   {
-    "id": 1284,
+    "id": 483,
     "topic_num": 5,
     "question": "¿Quién tiene la condición de interesado en un procedimiento administrativo?",
     "option_a": "Quienes lo promuevan como titulares de derechos o intereses legítimos individuales o colectivos y quienes puedan resultar afectados por la resolución",
@@ -14125,7 +5314,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 4.1 incluye a quienes promuevan el procedimiento y a quienes, sin haberlo iniciado, tengan derechos que puedan resultar afectados o intereses legítimos que puedan resultar afectados."
   },
   {
-    "id": 1285,
+    "id": 484,
     "topic_num": 5,
     "question": "¿Qué ocurre con los sucesores en los derechos del interesado cuando este fallece?",
     "option_a": "Se subrogan en su posición cualquiera que sea el estado del procedimiento, salvo que la acción no sea transmisible",
@@ -14136,7 +5325,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 4.3 establece la sucesión en la posición del interesado cuando la condición derive de una relación transmisible, cualquiera que sea el estado del procedimiento."
   },
   {
-    "id": 1286,
+    "id": 485,
     "topic_num": 5,
     "question": "¿Cuándo puede una persona actuar mediante representante ante la Administración?",
     "option_a": "Cuando tenga capacidad de obrar y, salvo manifestación expresa en contrario, las actuaciones se entienden con el representante",
@@ -14147,7 +5336,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 5.1 permite actuar por medio de representante a los interesados con capacidad de obrar y dirige a este las actuaciones salvo manifestación expresa en contra."
   },
   {
-    "id": 1287,
+    "id": 486,
     "topic_num": 5,
     "question": "¿Cómo puede acreditarse la representación?",
     "option_a": "Por cualquier medio válido en Derecho que deje constancia fidedigna de su existencia, incluido el apoderamiento apud acta",
@@ -14158,7 +5347,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 5.4 admite cualquier medio válido en Derecho que deje constancia fidedigna y menciona el apud acta y el registro electrónico de apoderamientos."
   },
   {
-    "id": 1288,
+    "id": 487,
     "topic_num": 5,
     "question": "Si falta o es insuficiente la acreditación de la representación, ¿qué debe hacer la Administración?",
     "option_a": "Conceder un plazo de diez días para aportar o subsanar, ampliable cuando las circunstancias lo requieran",
@@ -14169,7 +5358,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 5.6 permite tener por realizado el acto si se aporta o subsana el defecto en diez días, o en un plazo superior si las circunstancias lo requieren."
   },
   {
-    "id": 1289,
+    "id": 488,
     "topic_num": 5,
     "question": "¿Qué derecho tiene el interesado sobre el estado de su procedimiento?",
     "option_a": "A conocer en cualquier momento su tramitación, el sentido del silencio, el órgano competente y los actos de trámite, y a obtener copia de los documentos",
@@ -14180,7 +5369,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 53.1.a reconoce esos derechos, incluido el acceso y copia de los documentos contenidos en el procedimiento."
   },
   {
-    "id": 1290,
+    "id": 489,
     "topic_num": 5,
     "question": "¿Quiénes están obligados en todo caso a relacionarse electrónicamente con las Administraciones?",
     "option_a": "Las personas jurídicas, entre otros sujetos enumerados por la ley",
@@ -14191,7 +5380,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 14.2 incluye en todo caso a las personas jurídicas, entidades sin personalidad, determinados profesionales colegiados, representantes de obligados y empleados públicos en los supuestos previstos."
   },
   {
-    "id": 1291,
+    "id": 490,
     "topic_num": 5,
     "question": "¿Puede una persona física cambiar el medio elegido para comunicarse con la Administración?",
     "option_a": "Sí, puede modificarlo en cualquier momento, salvo que esté obligada a relacionarse electrónicamente",
@@ -14202,7 +5391,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 14.1 permite a las personas físicas elegir el medio y modificarlo en cualquier momento, salvo obligación legal de relación electrónica."
   },
   {
-    "id": 1292,
+    "id": 491,
     "topic_num": 5,
     "question": "¿Qué diferencia recoge la Ley 39/2015 entre identificación y firma electrónica?",
     "option_a": "La identificación permite verificar la identidad; la firma permite acreditar la voluntad y consentimiento, con los sistemas previstos legalmente",
@@ -14213,7 +5402,7 @@ export const QUESTIONS = [
     "explanation": "Los artículos 9 y 10 regulan sistemas de identificación y firma, con funciones jurídicas diferenciadas aunque puedan usar sistemas relacionados."
   },
   {
-    "id": 1293,
+    "id": 492,
     "topic_num": 5,
     "question": "En un procedimiento de la Administración General del Estado en una Comunidad Autónoma con lengua cooficial, ¿qué regla lingüística se aplica?",
     "option_a": "El interesado puede usar también la lengua cooficial y el procedimiento se tramita en la lengua elegida, con las reglas legales para varios interesados",
@@ -14224,7 +5413,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 15.1 establece el castellano como lengua de la AGE, pero permite al interesado usar la lengua cooficial; si hay varios interesados con discrepancia, se tramita en castellano."
   },
   {
-    "id": 1294,
+    "id": 493,
     "topic_num": 5,
     "question": "¿Qué documento no debe presentar el interesado, como regla general?",
     "option_a": "Datos y documentos no exigidos por la norma o que ya estén en poder de las Administraciones Públicas o hayan sido elaborados por ellas",
@@ -14235,7 +5424,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 53.1.d reconoce el derecho a no presentar datos y documentos no exigidos o que ya estén en poder de las Administraciones o hayan sido elaborados por ellas."
   },
   {
-    "id": 1295,
+    "id": 494,
     "topic_num": 5,
     "question": "¿Hasta qué momento puede el interesado aportar documentos y alegaciones que deben tenerse en cuenta al redactar la propuesta?",
     "option_a": "En cualquier fase anterior al trámite de audiencia",
@@ -14246,7 +5435,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 53.1.e reconoce ese derecho en cualquier fase del procedimiento anterior al trámite de audiencia."
   },
   {
-    "id": 1296,
+    "id": 495,
     "topic_num": 5,
     "question": "¿Qué derecho de asistencia reconoce el artículo 53.1.g?",
     "option_a": "Actuar asistido de asesor cuando el interesado lo considere conveniente en defensa de sus intereses",
@@ -14257,7 +5446,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 53.1.g reconoce al interesado el derecho a actuar asistido de asesor cuando lo considere conveniente en defensa de sus intereses."
   },
   {
-    "id": 1297,
+    "id": 496,
     "topic_num": 5,
     "question": "¿A través de qué medios puede el interesado cumplir obligaciones de pago?",
     "option_a": "A través de los medios electrónicos previstos en el artículo 98.2",
@@ -14268,7 +5457,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 53.1.h reconoce el derecho a cumplir obligaciones de pago mediante los medios electrónicos previstos en el artículo 98.2."
   },
   {
-    "id": 1298,
+    "id": 497,
     "topic_num": 5,
     "question": "¿Puede una persona jurídica actuar como representante de otra ante una Administración?",
     "option_a": "Sí, cuando esté previsto en sus Estatutos, además de las personas físicas con capacidad de obrar",
@@ -14279,7 +5468,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 5.2 permite a las personas físicas con capacidad de obrar y a las personas jurídicas, cuando lo prevean sus Estatutos, actuar en representación de otras."
   },
   {
-    "id": 1299,
+    "id": 498,
     "topic_num": 5,
     "question": "¿Qué ocurre si varios interesados discrepan sobre la lengua en un procedimiento de la AGE?",
     "option_a": "El procedimiento se tramita en castellano, aunque los documentos o testimonios se expiden en la lengua elegida por cada interesado",
@@ -14290,7 +5479,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 15.1 establece esa solución cuando concurren varios interesados y existe discrepancia sobre la lengua."
   },
   {
-    "id": 1300,
+    "id": 499,
     "topic_num": 5,
     "question": "¿Qué afirmación diferencia correctamente actuar asistido de asesor y actuar mediante representante?",
     "option_a": "La asistencia de asesor es un derecho cuando conviene al interesado; la representación implica actuar por medio de otra persona conforme al artículo 5",
@@ -14301,7 +5490,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 53.1.g reconoce asistencia de asesor, mientras que el artículo 5 regula la actuación mediante representante y sus efectos y acreditación."
   },
   {
-    "id": 1301,
+    "id": 500,
     "topic_num": 6,
     "question": "¿Cuál es la regla general sobre los documentos que obran en los expedientes administrativos?",
     "option_a": "Se emitirán por escrito a través de medios electrónicos, salvo que su naturaleza exija otra forma más adecuada de expresión y constancia",
@@ -14312,7 +5501,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 26 establece la regla de emisión escrita por medios electrónicos, con la excepción ligada a la naturaleza del documento."
   },
   {
-    "id": 1302,
+    "id": 501,
     "topic_num": 6,
     "question": "¿Qué debe contener un expediente administrativo?",
     "option_a": "El conjunto ordenado de documentos y actuaciones que sirven de antecedente y fundamento a la resolución, así como las diligencias encaminadas a ejecutarla",
@@ -14323,7 +5512,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 70 define el expediente como un conjunto ordenado de documentos y actuaciones y exige incorporar la resolución y las diligencias de ejecución."
   },
   {
-    "id": 1303,
+    "id": 502,
     "topic_num": 6,
     "question": "Cuando un plazo se señala por horas, ¿cómo se computa con carácter general?",
     "option_a": "De hora en hora y de minuto en minuto desde la hora y minuto en que tenga lugar la notificación o publicación del acto",
@@ -14334,7 +5523,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 30.1 dispone que los plazos expresados por horas se entienden hábiles y se computan de hora en hora y de minuto en minuto desde la notificación o publicación."
   },
   {
-    "id": 1304,
+    "id": 503,
     "topic_num": 6,
     "question": "Si el último día de un plazo expresado en días es inhábil, ¿qué sucede?",
     "option_a": "Se prorroga al primer día hábil siguiente",
@@ -14345,7 +5534,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 30.5 establece que cuando el último día sea inhábil se entenderá prorrogado al primer día hábil siguiente."
   },
   {
-    "id": 1305,
+    "id": 504,
     "topic_num": 6,
     "question": "¿Cuándo puede concederse una ampliación de plazo?",
     "option_a": "Antes del vencimiento, de oficio o a petición, si las circunstancias lo aconsejan y no se perjudican derechos de tercero",
@@ -14356,7 +5545,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 32 exige que la ampliación se acuerde antes del vencimiento, cuando las circunstancias lo aconsejen y no se perjudiquen derechos de tercero."
   },
   {
-    "id": 1306,
+    "id": 505,
     "topic_num": 6,
     "question": "¿Qué obligación general tiene la Administración al resolver un procedimiento?",
     "option_a": "Dictar resolución expresa y notificarla en todos los procedimientos, cualquiera que sea su forma de iniciación",
@@ -14367,7 +5556,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 21 impone la obligación de dictar resolución expresa y notificarla en todos los procedimientos."
   },
   {
-    "id": 1307,
+    "id": 506,
     "topic_num": 6,
     "question": "¿Qué efecto produce con carácter general el silencio en procedimientos iniciados a solicitud del interesado?",
     "option_a": "La estimación de la solicitud, salvo las excepciones legales",
@@ -14378,7 +5567,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 24 establece como regla general el silencio positivo, con las excepciones previstas por la ley o por norma con rango de ley."
   },
   {
-    "id": 1308,
+    "id": 507,
     "topic_num": 6,
     "question": "¿Qué exige el artículo 34 para que un acto administrativo sea válido?",
     "option_a": "Que se dicte por el órgano competente y ajustándose a los requisitos y procedimiento establecidos",
@@ -14389,7 +5578,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 34 exige que los actos se produzcan por el órgano competente y ajustándose a los requisitos y al procedimiento establecido."
   },
   {
-    "id": 1309,
+    "id": 508,
     "topic_num": 6,
     "question": "¿Cuál de estos actos debe ser motivado?",
     "option_a": "El que limite derechos subjetivos o intereses legítimos",
@@ -14400,7 +5589,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 35 incluye entre los actos que deben motivarse los que limiten derechos subjetivos o intereses legítimos."
   },
   {
-    "id": 1310,
+    "id": 509,
     "topic_num": 6,
     "question": "¿Cuál es la forma general de los actos administrativos?",
     "option_a": "Se producirán por escrito a través de medios electrónicos, salvo que su naturaleza exija otra forma más adecuada",
@@ -14411,7 +5600,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 36 establece la forma escrita electrónica como regla general, con una excepción por la naturaleza del acto."
   },
   {
-    "id": 1311,
+    "id": 510,
     "topic_num": 6,
     "question": "¿Cuándo producen efectos los actos administrativos?",
     "option_a": "Desde la fecha en que se dicten, salvo que se disponga otra cosa o su eficacia quede demorada por la propia naturaleza del acto",
@@ -14422,7 +5611,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 39.1 fija la eficacia desde la fecha en que se dictan, salvo disposición en contrario o demora legalmente prevista."
   },
   {
-    "id": 1312,
+    "id": 511,
     "topic_num": 6,
     "question": "¿En qué plazo debe cursarse una notificación desde que se dicta el acto?",
     "option_a": "Dentro del plazo de diez días desde que se dictó el acto",
@@ -14433,7 +5622,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 40.2 indica que toda notificación debe cursarse dentro del plazo de diez días a partir de la fecha en que el acto haya sido dictado."
   },
   {
-    "id": 1313,
+    "id": 512,
     "topic_num": 6,
     "question": "¿Qué debe incluir la notificación de una resolución?",
     "option_a": "El texto íntegro de la resolución, si pone fin o no a la vía administrativa, los recursos procedentes, el órgano ante el que interponerlos y el plazo",
@@ -14444,7 +5633,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 40.2 exige el texto íntegro y la indicación de los recursos, órgano y plazo, entre otros extremos."
   },
   {
-    "id": 1314,
+    "id": 513,
     "topic_num": 6,
     "question": "¿Cuándo puede la publicación sustituir a la notificación?",
     "option_a": "Cuando el acto tenga por destinatarios una pluralidad indeterminada o cuando la Administración estime que la notificación a un solo interesado es insuficiente para garantizar la notificación a todos",
@@ -14455,7 +5644,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 45 prevé esos supuestos de publicación sustitutiva o complementaria de la notificación."
   },
   {
-    "id": 1315,
+    "id": 514,
     "topic_num": 6,
     "question": "¿Cuál es causa de nulidad de pleno derecho?",
     "option_a": "Un acto que lesione los derechos y libertades susceptibles de amparo constitucional",
@@ -14466,7 +5655,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 47.1.a declara nulos los actos que lesionen los derechos y libertades susceptibles de amparo constitucional."
   },
   {
-    "id": 1316,
+    "id": 515,
     "topic_num": 6,
     "question": "¿Qué caracteriza a la anulabilidad?",
     "option_a": "Cualquier infracción del ordenamiento jurídico, incluida la desviación de poder, salvo los supuestos de nulidad de pleno derecho",
@@ -14477,7 +5666,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 48.1 establece la anulabilidad para las infracciones del ordenamiento jurídico, incluida la desviación de poder, fuera de los casos de nulidad."
   },
   {
-    "id": 1317,
+    "id": 516,
     "topic_num": 6,
     "question": "¿Qué efecto tiene la conservación de actos y trámites?",
     "option_a": "El órgano que resuelve la nulidad o anulación puede disponer la conservación de actos y trámites cuyo contenido se habría mantenido igual",
@@ -14488,7 +5677,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 51 permite conservar aquellos actos y trámites cuyo contenido se hubiera mantenido igual de no haberse cometido la infracción."
   },
   {
-    "id": 1318,
+    "id": 517,
     "topic_num": 6,
     "question": "¿Qué debe hacer la Administración para impugnar ante la jurisdicción un acto favorable que considera lesivo para el interés público?",
     "option_a": "Declarar previamente su lesividad para el interés público",
@@ -14499,7 +5688,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 107 exige la previa declaración de lesividad para impugnar actos favorables que sean anulables."
   },
   {
-    "id": 1319,
+    "id": 518,
     "topic_num": 6,
     "question": "¿Cuándo puede ampliarse el plazo máximo para resolver y notificar?",
     "option_a": "Excepcionalmente, cuando se hayan agotado los medios personales y materiales disponibles, y con motivación",
@@ -14510,7 +5699,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 23 permite ampliar excepcionalmente el plazo máximo cuando se han agotado los medios disponibles, mediante resolución motivada."
   },
   {
-    "id": 1320,
+    "id": 519,
     "topic_num": 6,
     "question": "¿Cuándo se entiende rechazada una notificación electrónica obligatoria o elegida que no se abre?",
     "option_a": "Cuando transcurren diez días naturales desde su puesta a disposición sin acceder a su contenido",
@@ -14521,7 +5710,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 43.2 establece el rechazo transcurridos diez días naturales desde la puesta a disposición sin acceso, salvo imposibilidad técnica o material justificada."
   },
   {
-    "id": 1321,
+    "id": 520,
     "topic_num": 7,
     "question": "¿Qué es la prevención según la Ley 31/1995?",
     "option_a": "El conjunto de actividades o medidas adoptadas o previstas en todas las fases de actividad para evitar o disminuir los riesgos derivados del trabajo",
@@ -14532,7 +5721,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 4.1 define la prevención como el conjunto de actividades o medidas adoptadas o previstas en todas las fases de actividad para evitar o disminuir los riesgos derivados del trabajo."
   },
   {
-    "id": 1322,
+    "id": 521,
     "topic_num": 7,
     "question": "¿Cuál es el objeto de la Ley de Prevención de Riesgos Laborales?",
     "option_a": "Promover la seguridad y la salud de los trabajadores mediante medidas y actividades preventivas",
@@ -14543,7 +5732,7 @@ export const QUESTIONS = [
     "explanation": "La ley tiene por objeto promover la seguridad y la salud de los trabajadores mediante la aplicación de medidas y actividades preventivas."
   },
   {
-    "id": 1323,
+    "id": 522,
     "topic_num": 7,
     "question": "¿Qué derecho reconoce el artículo 14 a los trabajadores?",
     "option_a": "Una protección eficaz en materia de seguridad y salud en el trabajo",
@@ -14554,7 +5743,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 14 reconoce el derecho de los trabajadores a una protección eficaz en materia de seguridad y salud en el trabajo."
   },
   {
-    "id": 1324,
+    "id": 523,
     "topic_num": 7,
     "question": "¿Quién debe garantizar la seguridad y salud de los trabajadores?",
     "option_a": "El empresario, en todos los aspectos relacionados con el trabajo",
@@ -14565,7 +5754,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 14.2 atribuye al empresario el deber de garantizar la seguridad y salud de los trabajadores a su servicio en todos los aspectos relacionados con el trabajo."
   },
   {
-    "id": 1325,
+    "id": 524,
     "topic_num": 7,
     "question": "¿Puede el empresario trasladar su responsabilidad preventiva al trabajador?",
     "option_a": "No; la atribución de funciones preventivas a trabajadores o servicios no exime al empresario de su deber",
@@ -14576,7 +5765,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 14.4 dispone que las obligaciones de los trabajadores y las funciones atribuidas a otras personas no eximen al empresario de su responsabilidad."
   },
   {
-    "id": 1326,
+    "id": 525,
     "topic_num": 7,
     "question": "¿Cuál es un principio de la acción preventiva?",
     "option_a": "Evitar los riesgos y evaluar los que no se puedan evitar",
@@ -14587,7 +5776,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 15 incluye evitar los riesgos, evaluar los inevitables y combatirlos en su origen, entre otros principios."
   },
   {
-    "id": 1327,
+    "id": 526,
     "topic_num": 7,
     "question": "¿Cómo debe integrarse la prevención en la empresa?",
     "option_a": "En el sistema general de gestión de la empresa, mediante un plan de prevención",
@@ -14598,7 +5787,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 16 exige integrar la prevención en el sistema general de gestión mediante el plan de prevención."
   },
   {
-    "id": 1328,
+    "id": 527,
     "topic_num": 7,
     "question": "¿Cuándo debe utilizarse protección individual?",
     "option_a": "Cuando los riesgos no se puedan evitar o limitar suficientemente por medios de protección colectiva o procedimientos de organización del trabajo",
@@ -14609,7 +5798,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 17.2 exige proporcionar equipos de protección individual cuando los riesgos no puedan evitarse o limitarse suficientemente por protección colectiva u organización."
   },
   {
-    "id": 1329,
+    "id": 528,
     "topic_num": 7,
     "question": "¿Qué debe hacer el empresario respecto de la información preventiva?",
     "option_a": "Informar sobre los riesgos para la seguridad y salud y sobre las medidas y actividades de protección y prevención aplicables",
@@ -14620,7 +5809,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 18 exige información sobre riesgos, medidas y actividades de protección y prevención y medidas de emergencia."
   },
   {
-    "id": 1330,
+    "id": 529,
     "topic_num": 7,
     "question": "¿Qué características debe tener la formación preventiva?",
     "option_a": "Ser suficiente y adecuada, teórica y práctica, al contratar y cuando cambien funciones o tecnologías",
@@ -14631,7 +5820,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 19 exige formación suficiente y adecuada, teórica y práctica, tanto al inicio como cuando cambien funciones, tecnologías o equipos."
   },
   {
-    "id": 1331,
+    "id": 530,
     "topic_num": 7,
     "question": "¿Qué debe prever el empresario en materia de emergencias?",
     "option_a": "Medidas de primeros auxilios, lucha contra incendios y evacuación, designando personal y comprobando periódicamente su funcionamiento",
@@ -14642,7 +5831,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 20 exige analizar posibles emergencias y adoptar medidas de primeros auxilios, lucha contra incendios y evacuación."
   },
   {
-    "id": 1332,
+    "id": 531,
     "topic_num": 7,
     "question": "Ante un riesgo grave e inminente, ¿qué derecho tiene el trabajador?",
     "option_a": "Interrumpir su actividad y abandonar el lugar si resulta necesario, en los términos legales",
@@ -14653,7 +5842,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 21 reconoce el derecho a interrumpir la actividad y abandonar el lugar cuando sea necesario ante un riesgo grave e inminente."
   },
   {
-    "id": 1333,
+    "id": 532,
     "topic_num": 7,
     "question": "¿Cuál es la regla general sobre vigilancia de la salud?",
     "option_a": "Requiere el consentimiento del trabajador, salvo las excepciones previstas legalmente",
@@ -14664,7 +5853,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 22 establece que la vigilancia periódica de la salud requiere el consentimiento del trabajador, con excepciones vinculadas a riesgos concretos y garantías legales."
   },
   {
-    "id": 1334,
+    "id": 533,
     "topic_num": 7,
     "question": "¿Qué documento debe incluir el empresario en materia preventiva?",
     "option_a": "La evaluación de riesgos y la planificación de la actividad preventiva, incluida la protección y prevención y los equipos de protección",
@@ -14675,7 +5864,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 23 exige documentación preventiva, entre ella la evaluación de riesgos y la planificación de la actividad preventiva."
   },
   {
-    "id": 1335,
+    "id": 534,
     "topic_num": 7,
     "question": "Cuando varias empresas trabajan en un mismo centro, ¿qué deben hacer?",
     "option_a": "Cooperar en la aplicación de la normativa preventiva y establecer los medios de coordinación necesarios",
@@ -14686,7 +5875,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 24 exige cooperación y coordinación cuando concurren trabajadores de varias empresas en un mismo centro de trabajo."
   },
   {
-    "id": 1336,
+    "id": 535,
     "topic_num": 7,
     "question": "¿Qué debe hacer el empresario respecto de trabajadores especialmente sensibles?",
     "option_a": "Garantizar una protección específica y no emplearlos en puestos incompatibles con sus características conocidas",
@@ -14697,7 +5886,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 25 exige protección específica de trabajadores especialmente sensibles y prohíbe emplearlos en puestos incompatibles con sus características."
   },
   {
-    "id": 1337,
+    "id": 536,
     "topic_num": 7,
     "question": "Si la evaluación revela riesgo para una trabajadora embarazada, ¿qué debe intentarse primero?",
     "option_a": "Adaptar las condiciones o el tiempo de trabajo y, si no es posible, cambiar de puesto o aplicar las medidas previstas legalmente",
@@ -14708,7 +5897,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 26 establece una secuencia de adaptación y cambio de puesto, con la protección específica durante embarazo y lactancia."
   },
   {
-    "id": 1338,
+    "id": 537,
     "topic_num": 7,
     "question": "¿Qué obligación preventiva tiene cada trabajador?",
     "option_a": "Velar por su propia seguridad y salud y por la de otras personas afectadas por su actividad, conforme a su formación e instrucciones",
@@ -14719,7 +5908,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 29 obliga a cada trabajador a velar por su seguridad y la de otras personas, usando adecuadamente máquinas, equipos y dispositivos."
   },
   {
-    "id": 1339,
+    "id": 538,
     "topic_num": 7,
     "question": "¿Cómo participan los trabajadores en la prevención?",
     "option_a": "A través de los Delegados de Prevención y del Comité de Seguridad y Salud en los supuestos legales",
@@ -14730,7 +5919,7 @@ export const QUESTIONS = [
     "explanation": "Los artículos 34 y 35 regulan los derechos de participación y representación mediante Delegados de Prevención y otros órganos."
   },
   {
-    "id": 1340,
+    "id": 539,
     "topic_num": 7,
     "question": "¿Qué función tiene un servicio de prevención?",
     "option_a": "Proporcionar asesoramiento y apoyo para diseñar y aplicar la acción preventiva, sin sustituir el deber general del empresario",
@@ -14741,7 +5930,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 31 configura los servicios de prevención como medios de asesoramiento y apoyo para la actividad preventiva y no como sustitutos del deber empresarial."
   },
   {
-    "id": 1341,
+    "id": 540,
     "topic_num": 8,
     "question": "¿Cuál es el objeto de la Ley Orgánica 3/2007?",
     "option_a": "Hacer efectivo el derecho de igualdad de trato y de oportunidades entre mujeres y hombres, especialmente mediante la eliminación de la discriminación de la mujer",
@@ -14752,7 +5941,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 1 establece el objeto de hacer efectivo el derecho de igualdad de trato y oportunidades y eliminar la discriminación de la mujer."
   },
   {
-    "id": 1342,
+    "id": 541,
     "topic_num": 8,
     "question": "¿Qué es discriminación directa por razón de sexo?",
     "option_a": "La situación en que una persona es, ha sido o pudiera ser tratada de manera menos favorable que otra en situación comparable por razón de sexo",
@@ -14763,7 +5952,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 6.1 define la discriminación directa en esos términos."
   },
   {
-    "id": 1343,
+    "id": 542,
     "topic_num": 8,
     "question": "¿Qué conducta constituye acoso sexual?",
     "option_a": "Cualquier comportamiento, verbal o físico, de naturaleza sexual que tenga el propósito o produzca el efecto de atentar contra la dignidad y crear un entorno intimidatorio, degradante u ofensivo",
@@ -14774,7 +5963,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 7.1 define el acoso sexual como comportamiento de naturaleza sexual con ese propósito o efecto."
   },
   {
-    "id": 1344,
+    "id": 543,
     "topic_num": 8,
     "question": "¿Qué es acoso por razón de sexo?",
     "option_a": "Un comportamiento realizado en función del sexo de una persona que atenta contra su dignidad y crea un entorno intimidatorio, degradante u ofensivo",
@@ -14785,7 +5974,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 7.2 define el acoso por razón de sexo en esos términos."
   },
   {
-    "id": 1345,
+    "id": 544,
     "topic_num": 8,
     "question": "¿Qué efecto tiene una orden de discriminar por razón de sexo?",
     "option_a": "También constituye discriminación por razón de sexo",
@@ -14796,7 +5985,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 6.3 dispone que se considera discriminación toda orden de discriminar, directa o indirectamente, por razón de sexo."
   },
   {
-    "id": 1346,
+    "id": 545,
     "topic_num": 8,
     "question": "¿Qué son las acciones positivas?",
     "option_a": "Medidas específicas a favor de las mujeres para corregir situaciones patentes de desigualdad de hecho respecto de los hombres",
@@ -14807,7 +5996,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 11 permite medidas específicas a favor de las mujeres para corregir desigualdades de hecho, razonables y proporcionadas."
   },
   {
-    "id": 1347,
+    "id": 546,
     "topic_num": 8,
     "question": "¿Qué principio se aplica a las condiciones de trabajo?",
     "option_a": "El principio de igualdad de trato y de oportunidades debe garantizarse en el empleo privado y público",
@@ -14818,7 +6007,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 5 extiende la igualdad de trato y oportunidades al empleo, la formación, la promoción profesional y las condiciones de trabajo."
   },
   {
-    "id": 1348,
+    "id": 547,
     "topic_num": 8,
     "question": "¿Qué debe contener un plan de igualdad?",
     "option_a": "Un conjunto ordenado de medidas evaluables para hacer efectiva la igualdad y evitar cualquier discriminación por razón de sexo",
@@ -14829,7 +6018,7 @@ export const QUESTIONS = [
     "explanation": "Los artículos 45 y 46 configuran los planes de igualdad como medidas ordenadas y evaluables tras un diagnóstico de situación."
   },
   {
-    "id": 1349,
+    "id": 548,
     "topic_num": 8,
     "question": "¿Qué promueve la Ley Orgánica 3/2007 en la negociación colectiva?",
     "option_a": "La adopción de medidas dirigidas a evitar cualquier tipo de discriminación laboral entre mujeres y hombres y, en su caso, planes de igualdad",
@@ -14840,7 +6029,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 43 promueve medidas de acción positiva mediante negociación colectiva para favorecer la igualdad real."
   },
   {
-    "id": 1350,
+    "id": 549,
     "topic_num": 8,
     "question": "¿Qué regla probatoria se aplica en procedimientos por discriminación?",
     "option_a": "La persona demandada debe probar la ausencia de discriminación en los términos previstos, salvo en procesos penales",
@@ -14851,7 +6040,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 13 prevé la inversión de la carga de la prueba en los procesos civiles, laborales y contencioso-administrativos, con la excepción de los procesos penales."
   },
   {
-    "id": 1351,
+    "id": 550,
     "topic_num": 8,
     "question": "¿Qué protección tiene una persona frente a una discriminación por razón de sexo?",
     "option_a": "Puede recabar tutela judicial y reclamar indemnización o reparación efectiva, proporcional y disuasoria",
@@ -14862,7 +6051,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 12 reconoce tutela judicial efectiva y el artículo 10 establece consecuencias jurídicas y reparación para conductas discriminatorias."
   },
   {
-    "id": 1352,
+    "id": 551,
     "topic_num": 8,
     "question": "¿Qué deben promover las Administraciones Públicas en el acceso al empleo público?",
     "option_a": "La presencia equilibrada de mujeres y hombres y la igualdad en el acceso, formación, promoción y condiciones de trabajo",
@@ -14873,7 +6062,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 51 enumera criterios de actuación de las Administraciones Públicas para hacer efectivo el principio de igualdad en el empleo público."
   },
   {
-    "id": 1353,
+    "id": 552,
     "topic_num": 8,
     "question": "¿Qué puede incluirse en contratos y subvenciones públicas para promover la igualdad?",
     "option_a": "Condiciones especiales relacionadas con la igualdad y medidas de igualdad en los contratos y subvenciones, dentro de la legislación aplicable",
@@ -14884,7 +6073,7 @@ export const QUESTIONS = [
     "explanation": "Los artículos 33 y 35 permiten establecer condiciones especiales y criterios relacionados con la igualdad en contratos y subvenciones públicas."
   },
   {
-    "id": 1354,
+    "id": 553,
     "topic_num": 8,
     "question": "¿Qué debe preceder a la elaboración de medidas de un plan de igualdad?",
     "option_a": "Un diagnóstico de situación negociado o elaborado conforme a la normativa aplicable",
@@ -14895,7 +6084,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 46 vincula el contenido del plan de igualdad al diagnóstico de situación y a las materias legalmente previstas."
   },
   {
-    "id": 1355,
+    "id": 554,
     "topic_num": 8,
     "question": "¿Qué conducta constituye discriminación directa por razón de sexo en relación con el embarazo?",
     "option_a": "Todo trato desfavorable a las mujeres relacionado con el embarazo o la maternidad",
@@ -14906,7 +6095,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 8 considera discriminación directa por razón de sexo todo trato desfavorable a las mujeres relacionado con el embarazo o la maternidad."
   },
   {
-    "id": 1356,
+    "id": 555,
     "topic_num": 8,
     "question": "¿Qué es la indemnidad frente a represalias?",
     "option_a": "La protección frente a trato adverso o efecto negativo por presentar queja, reclamación o denuncia destinada a impedir discriminación",
@@ -14917,7 +6106,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 9 protege frente a represalias por presentar queja, reclamación, denuncia o recurso para impedir la discriminación."
   },
   {
-    "id": 1357,
+    "id": 556,
     "topic_num": 8,
     "question": "¿Qué deben evitar los poderes públicos en sus comunicaciones?",
     "option_a": "El lenguaje sexista y los estereotipos discriminatorios, promoviendo una imagen igualitaria y plural",
@@ -14928,7 +6117,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 14 incluye la implantación de un lenguaje no sexista en el ámbito administrativo y su fomento en las relaciones sociales."
   },
   {
-    "id": 1358,
+    "id": 557,
     "topic_num": 8,
     "question": "¿Qué objetivo tiene la igualdad en la formación profesional?",
     "option_a": "Garantizar una formación que permita el desarrollo de la carrera profesional sin discriminación y con igualdad de oportunidades",
@@ -14939,7 +6128,7 @@ export const QUESTIONS = [
     "explanation": "El Título IV incorpora medidas de igualdad en la formación profesional y el acceso y permanencia en el empleo."
   },
   {
-    "id": 1359,
+    "id": 558,
     "topic_num": 8,
     "question": "¿Qué obligación tiene la publicidad institucional respecto de la igualdad?",
     "option_a": "No puede justificar o tolerar la discriminación por razón de sexo y debe respetar la igualdad",
@@ -14950,7 +6139,7 @@ export const QUESTIONS = [
     "explanation": "La ley contiene criterios de actuación de los poderes públicos y prohíbe la publicidad o comunicación que comporte discriminación por razón de sexo."
   },
   {
-    "id": 1360,
+    "id": 559,
     "topic_num": 8,
     "question": "¿Qué implica la transversalidad del principio de igualdad?",
     "option_a": "Integrar activamente la igualdad de trato y oportunidades en la elaboración y aplicación de todas las políticas públicas",
@@ -14961,7 +6150,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 15 exige integrar de forma activa el principio de igualdad en la elaboración y ejecución de las disposiciones normativas y políticas públicas."
   },
   {
-    "id": 1361,
+    "id": 560,
     "topic_num": 9,
     "question": "¿Qué relación describe correctamente la identificación electrónica y la firma electrónica?",
     "option_a": "La identificación acredita quién es una persona o entidad; la firma se vincula a datos firmados y expresa o acredita voluntad",
@@ -14972,7 +6161,7 @@ export const QUESTIONS = [
     "explanation": "El eIDAS define identificación electrónica y firma como conceptos relacionados pero distintos, con funciones propias."
   },
   {
-    "id": 1362,
+    "id": 561,
     "topic_num": 9,
     "question": "¿Qué principio establece eIDAS para no obstaculizar el mercado interior?",
     "option_a": "No se denegarán efectos jurídicos ni admisibilidad como prueba a una firma electrónica por el mero hecho de ser electrónica o no cualificada",
@@ -14983,7 +6172,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 25.1 contiene la regla de que no se denieguen efectos jurídicos ni admisibilidad probatoria por la forma electrónica o por no ser cualificada."
   },
   {
-    "id": 1363,
+    "id": 562,
     "topic_num": 9,
     "question": "¿Qué exige eIDAS a los Estados miembros respecto de ciertos medios de identificación electrónica notificados?",
     "option_a": "Reconocer los medios de identificación electrónica de otros Estados miembros en las condiciones del Reglamento",
@@ -14994,7 +6183,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 6 regula el reconocimiento mutuo de medios de identificación electrónica notificados en el nivel de seguridad correspondiente."
   },
   {
-    "id": 1364,
+    "id": 563,
     "topic_num": 9,
     "question": "¿Qué es un servicio de confianza?",
     "option_a": "Un servicio electrónico consistente en creación, verificación y validación de firmas, sellos, sellos de tiempo, entrega certificada u otros servicios definidos por eIDAS",
@@ -15005,7 +6194,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 3 enumera los servicios electrónicos de confianza y sus categorías."
   },
   {
-    "id": 1365,
+    "id": 564,
     "topic_num": 9,
     "question": "¿Qué distingue una firma electrónica avanzada?",
     "option_a": "Está vinculada de forma única al firmante, permite identificarlo, se crea con datos bajo su control y detecta cambios posteriores en los datos firmados",
@@ -15016,7 +6205,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 26 establece los requisitos acumulativos de una firma electrónica avanzada."
   },
   {
-    "id": 1366,
+    "id": 565,
     "topic_num": 9,
     "question": "¿Qué efecto tiene una firma electrónica cualificada?",
     "option_a": "Tiene un efecto jurídico equivalente al de una firma manuscrita",
@@ -15027,7 +6216,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 25.2 reconoce a la firma electrónica cualificada un efecto jurídico equivalente al de la firma manuscrita."
   },
   {
-    "id": 1367,
+    "id": 566,
     "topic_num": 9,
     "question": "¿Qué acredita un certificado cualificado de firma electrónica?",
     "option_a": "La vinculación de los datos de validación de una firma con una persona física y la identidad de esta conforme a los requisitos cualificados",
@@ -15038,7 +6227,7 @@ export const QUESTIONS = [
     "explanation": "El régimen de certificados cualificados y sus requisitos se regula en los artículos 28 y 3 del Reglamento."
   },
   {
-    "id": 1368,
+    "id": 567,
     "topic_num": 9,
     "question": "¿Qué debe garantizar un dispositivo cualificado de creación de firma?",
     "option_a": "Que los datos de creación de firma permanezcan confidenciales, sean únicos y estén protegidos frente a falsificación y uso ajeno",
@@ -15049,7 +6238,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 29 y el anexo II fijan requisitos de los dispositivos cualificados de creación de firma."
   },
   {
-    "id": 1369,
+    "id": 568,
     "topic_num": 9,
     "question": "¿Qué es AutoFirma según su fuente oficial de descargas?",
     "option_a": "Una aplicación cliente que se descarga desde el portal oficial de firma electrónica para realizar operaciones de firma electrónica",
@@ -15060,7 +6249,7 @@ export const QUESTIONS = [
     "explanation": "La página oficial de descargas de firma electrónica identifica AutoFirma como aplicación cliente de firma; la página no autoriza a atribuirle la condición de prestador cualificado."
   },
   {
-    "id": 1370,
+    "id": 569,
     "topic_num": 9,
     "question": "¿Qué debe hacer un lote que formule una pregunta sobre la versión concreta de AutoFirma?",
     "option_a": "Fijar y registrar la versión descargada y su fecha de verificación",
@@ -15071,7 +6260,7 @@ export const QUESTIONS = [
     "explanation": "El registro de fuente indica que la versión de la aplicación debe fijarse por lote; una pregunta version-sensitive no puede dejar la versión implícita."
   },
   {
-    "id": 1371,
+    "id": 570,
     "topic_num": 9,
     "question": "¿Qué función cumple una aplicación cliente como AutoFirma en un flujo de firma?",
     "option_a": "Ejecuta localmente la operación de firma con los medios del firmante, pero no se convierte por ello en el prestador del servicio de confianza",
@@ -15082,7 +6271,7 @@ export const QUESTIONS = [
     "explanation": "La aplicación cliente puede realizar la operación local; eIDAS distingue la aplicación del prestador y del servicio de confianza."
   },
   {
-    "id": 1372,
+    "id": 571,
     "topic_num": 9,
     "question": "¿Qué diferencia hay entre un prestador de servicios de confianza y una aplicación de firma?",
     "option_a": "El prestador ofrece servicios regulados y sujeto a requisitos eIDAS; la aplicación es una herramienta cliente que puede utilizarse para ejecutar una firma",
@@ -15093,7 +6282,7 @@ export const QUESTIONS = [
     "explanation": "eIDAS define al prestador y sus obligaciones, mientras que una aplicación cliente no adquiere por ello esa condición jurídica."
   },
   {
-    "id": 1373,
+    "id": 572,
     "topic_num": 9,
     "question": "¿Qué debe poder hacer un prestador cualificado al verificar la identidad?",
     "option_a": "Verificar la identidad de la persona física o jurídica a la que expide un certificado o presta el servicio conforme a los métodos admitidos",
@@ -15104,7 +6293,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 24 exige requisitos de identificación y comprobación para prestadores de servicios de confianza."
   },
   {
-    "id": 1374,
+    "id": 573,
     "topic_num": 9,
     "question": "¿Qué efecto tiene un sello electrónico cualificado?",
     "option_a": "Disfruta de la presunción de integridad de los datos y de la corrección del origen de los datos a los que está vinculado",
@@ -15115,7 +6304,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 35 regula los efectos del sello electrónico cualificado y su presunción de integridad y origen."
   },
   {
-    "id": 1375,
+    "id": 574,
     "topic_num": 9,
     "question": "¿Qué es una lista de confianza?",
     "option_a": "Una lista publicada por un Estado miembro con información sobre los prestadores cualificados y los servicios cualificados supervisados",
@@ -15126,7 +6315,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 22 regula las listas de confianza con información sobre prestadores cualificados y servicios cualificados."
   },
   {
-    "id": 1376,
+    "id": 575,
     "topic_num": 9,
     "question": "¿Qué finalidad tiene un sello de tiempo electrónico?",
     "option_a": "Vincular otros datos a una fecha y hora de forma que se pueda demostrar razonablemente que existían en ese momento",
@@ -15137,7 +6326,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 3 define el sello de tiempo electrónico como una vinculación de datos con fecha y hora para demostrar su existencia temporal."
   },
   {
-    "id": 1377,
+    "id": 576,
     "topic_num": 9,
     "question": "¿Qué afirmación es correcta sobre una firma electrónica no cualificada?",
     "option_a": "No puede rechazarse como prueba por el mero hecho de ser electrónica o no cualificada, aunque no tenga automáticamente la equivalencia del artículo 25.2",
@@ -15148,7 +6337,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 25.1 contiene la regla de admisibilidad; la equivalencia específica del apartado 2 corresponde a firmas cualificadas."
   },
   {
-    "id": 1378,
+    "id": 577,
     "topic_num": 9,
     "question": "¿Qué debe conservar un servicio cualificado de conservación de firmas?",
     "option_a": "Información suficiente para prolongar la fiabilidad de la firma más allá del periodo de validez tecnológica, conforme al artículo 34",
@@ -15159,7 +6348,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 34 regula los servicios cualificados de conservación de firmas electrónicas cualificadas."
   },
   {
-    "id": 1379,
+    "id": 578,
     "topic_num": 9,
     "question": "¿Qué es un certificado de sello electrónico frente a uno de firma?",
     "option_a": "El primero se expide a una persona jurídica para crear sellos; el segundo se vincula a una persona física para crear firmas",
@@ -15170,7 +6359,7 @@ export const QUESTIONS = [
     "explanation": "eIDAS distingue certificados cualificados de firma y de sello según el titular y los datos de creación asociados."
   },
   {
-    "id": 1380,
+    "id": 579,
     "topic_num": 9,
     "question": "¿Qué dato debe acompañar a una pregunta version-sensitive sobre AutoFirma para ser publicable?",
     "option_a": "La versión exacta, URL oficial, fecha de consulta y la función verificada",
@@ -15181,7 +6370,7 @@ export const QUESTIONS = [
     "explanation": "La política de fuente exige fijar versión, URL, fecha y proveniencia para evitar atribuir a AutoFirma hechos no verificables."
   },
   {
-    "id": 1381,
+    "id": 580,
     "topic_num": 10,
     "question": "¿Qué vincula un certificado X.509?",
     "option_a": "La identidad de un sujeto con una clave pública mediante una autoridad certificadora",
@@ -15192,7 +6381,7 @@ export const QUESTIONS = [
     "explanation": "RFC 5280 describe el certificado como una vinculación firmada entre la identidad del sujeto y su clave pública."
   },
   {
-    "id": 1382,
+    "id": 581,
     "topic_num": 10,
     "question": "¿Qué diferencia hay entre una autoridad certificadora y el sujeto de un certificado?",
     "option_a": "La autoridad emite y firma certificados; el sujeto es la entidad identificada por el certificado",
@@ -15203,7 +6392,7 @@ export const QUESTIONS = [
     "explanation": "RFC 5280 distingue al emisor o autoridad certificadora del sujeto cuya clave pública se certifica."
   },
   {
-    "id": 1383,
+    "id": 582,
     "topic_num": 10,
     "question": "¿Para qué sirve una lista de revocación de certificados?",
     "option_a": "Para identificar certificados revocados antes de su fecha de expiración",
@@ -15214,7 +6403,7 @@ export const QUESTIONS = [
     "explanation": "Una CRL publicada por una autoridad informa de certificados revocados y sus números de serie, conforme al modelo de RFC 5280."
   },
   {
-    "id": 1384,
+    "id": 583,
     "topic_num": 10,
     "question": "¿Cuál es un campo básico de un certificado X.509?",
     "option_a": "El nombre del sujeto, el emisor, el periodo de validez y la clave pública del sujeto",
@@ -15225,7 +6414,7 @@ export const QUESTIONS = [
     "explanation": "RFC 5280 estructura el certificado con versión, número de serie, emisor, validez, sujeto, información de clave pública y firma."
   },
   {
-    "id": 1385,
+    "id": 584,
     "topic_num": 10,
     "question": "¿Qué función cumple la extensión Key Usage?",
     "option_a": "Restringir los usos criptográficos permitidos para la clave certificada, como firma digital o cifrado de claves",
@@ -15236,7 +6425,7 @@ export const QUESTIONS = [
     "explanation": "RFC 5280 define Key Usage como extensión que indica los usos permitidos de la clave pública."
   },
   {
-    "id": 1386,
+    "id": 585,
     "topic_num": 10,
     "question": "¿Qué caracteriza a un certificado autofirmado?",
     "option_a": "La firma del certificado se verifica con la propia clave pública incluida o asociada al sujeto",
@@ -15247,7 +6436,7 @@ export const QUESTIONS = [
     "explanation": "En un certificado autofirmado, el emisor y el sujeto coinciden normalmente y la firma se valida con la propia clave pública."
   },
   {
-    "id": 1387,
+    "id": 586,
     "topic_num": 10,
     "question": "¿Qué versión de TLS especifica RFC 8446?",
     "option_a": "TLS 1.3",
@@ -15258,7 +6447,7 @@ export const QUESTIONS = [
     "explanation": "RFC 8446 es la especificación del protocolo Transport Layer Security versión 1.3."
   },
   {
-    "id": 1388,
+    "id": 587,
     "topic_num": 10,
     "question": "¿Qué negocia el handshake de TLS 1.3?",
     "option_a": "Las versiones y parámetros criptográficos, autenticación y claves necesarias para proteger la conexión",
@@ -15269,7 +6458,7 @@ export const QUESTIONS = [
     "explanation": "El handshake de TLS 1.3 establece parámetros, autentica el servidor cuando procede y deriva secretos para la protección de registros."
   },
   {
-    "id": 1389,
+    "id": 588,
     "topic_num": 10,
     "question": "¿Qué propiedad proporciona el cifrado autenticado usado en los registros TLS 1.3?",
     "option_a": "Confidencialidad e integridad autenticada de los datos del registro",
@@ -15280,7 +6469,7 @@ export const QUESTIONS = [
     "explanation": "RFC 8446 usa algoritmos AEAD para proteger los registros con confidencialidad e integridad autenticada."
   },
   {
-    "id": 1390,
+    "id": 589,
     "topic_num": 10,
     "question": "¿Qué riesgo debe considerarse al usar 0-RTT en TLS 1.3?",
     "option_a": "Los datos tempranos pueden ser susceptibles de reproducción, por lo que la aplicación debe limitar sus usos",
@@ -15291,7 +6480,7 @@ export const QUESTIONS = [
     "explanation": "RFC 8446 advierte de las propiedades de replay del early data y exige que los protocolos superiores lo tengan en cuenta."
   },
   {
-    "id": 1391,
+    "id": 590,
     "topic_num": 10,
     "question": "¿Qué es una clave pública transferible en OpenPGP?",
     "option_a": "Una estructura que contiene una clave pública y los datos asociados, incluidas identidades y firmas según corresponda",
@@ -15302,7 +6491,7 @@ export const QUESTIONS = [
     "explanation": "RFC 9580 define estructuras de claves públicas transferibles que pueden incluir claves, identidades y firmas de enlace."
   },
   {
-    "id": 1392,
+    "id": 591,
     "topic_num": 10,
     "question": "¿Qué diferencia básica hay entre una firma OpenPGP y el cifrado OpenPGP?",
     "option_a": "La firma permite verificar origen e integridad; el cifrado busca confidencialidad para destinatarios autorizados",
@@ -15313,7 +6502,7 @@ export const QUESTIONS = [
     "explanation": "RFC 9580 trata firmas como mecanismos de autenticidad/integridad y cifrado como protección de confidencialidad."
   },
   {
-    "id": 1393,
+    "id": 592,
     "topic_num": 10,
     "question": "¿Qué finalidad tiene una clave de revocación OpenPGP?",
     "option_a": "Permitir revocar una clave o identidad cuando la autoridad de revocación correspondiente se utiliza",
@@ -15324,7 +6513,7 @@ export const QUESTIONS = [
     "explanation": "RFC 9580 define la información de clave de revocación para permitir una revocación autorizada."
   },
   {
-    "id": 1394,
+    "id": 593,
     "topic_num": 10,
     "question": "¿Qué permite comprobar una firma digital OpenPGP?",
     "option_a": "Que los datos fueron firmados por quien controla la clave correspondiente y no han cambiado, si la clave es confiable",
@@ -15335,7 +6524,7 @@ export const QUESTIONS = [
     "explanation": "La firma digital permite comprobar integridad y asociación con la clave firmante; la confianza en la identidad requiere el modelo de OpenPGP."
   },
   {
-    "id": 1395,
+    "id": 594,
     "topic_num": 10,
     "question": "¿Qué relación hay entre clave pública y clave secreta en OpenPGP?",
     "option_a": "Forman un par criptográfico para operaciones complementarias como verificación/firma o cifrado/descifrado",
@@ -15346,7 +6535,7 @@ export const QUESTIONS = [
     "explanation": "RFC 9580 distingue material público y secreto de los pares de claves OpenPGP y sus usos complementarios."
   },
   {
-    "id": 1396,
+    "id": 595,
     "topic_num": 10,
     "question": "¿Qué diferencia hay entre validación de certificado y cifrado?",
     "option_a": "La validación comprueba la cadena, firmas, nombres, fechas y restricciones; el cifrado protege la confidencialidad de datos",
@@ -15357,7 +6546,7 @@ export const QUESTIONS = [
     "explanation": "RFC 5280 describe la validación de rutas; cifrar es una operación distinta que no sustituye la comprobación de confianza."
   },
   {
-    "id": 1397,
+    "id": 596,
     "topic_num": 10,
     "question": "¿Por qué una validación de ruta de certificados necesita un ancla de confianza?",
     "option_a": "Porque la ruta debe terminar en una autoridad cuya clave y confianza se configuran fuera de la ruta que se está validando",
@@ -15368,7 +6557,7 @@ export const QUESTIONS = [
     "explanation": "RFC 5280 define la validación respecto de trust anchors preconfigurados, no obtenidos como una certificación más de la misma ruta."
   },
   {
-    "id": 1398,
+    "id": 597,
     "topic_num": 10,
     "question": "¿Qué versión negocia TLS 1.3 cuando se completa un handshake conforme a RFC 8446?",
     "option_a": "TLS 1.3, sin negociar las versiones obsoletas como si fueran la versión de la conexión",
@@ -15379,7 +6568,7 @@ export const QUESTIONS = [
     "explanation": "RFC 8446 define TLS 1.3 y su negociación mediante supported_versions, separando la versión real de compatibilidades heredadas."
   },
   {
-    "id": 1399,
+    "id": 598,
     "topic_num": 10,
     "question": "Si un certificado solo autoriza digitalSignature mediante Key Usage, ¿qué debe hacer un verificador?",
     "option_a": "No usarlo para una finalidad incompatible con las restricciones de Key Usage",
@@ -15390,7 +6579,7 @@ export const QUESTIONS = [
     "explanation": "Las restricciones de Key Usage son parte de la validación y deben respetarse para el uso propuesto."
   },
   {
-    "id": 1400,
+    "id": 599,
     "topic_num": 10,
     "question": "¿Qué afirmación evita confluir los modelos de confianza de PKI, TLS y OpenPGP?",
     "option_a": "X.509/PKI valida rutas de certificados, TLS protege una conexión negociada y OpenPGP usa asociaciones de claves y firmas propias",
@@ -15401,7 +6590,7 @@ export const QUESTIONS = [
     "explanation": "RFC 5280, RFC 8446 y RFC 9580 describen mecanismos relacionados con criptografía, pero con objetivos y modelos de confianza distintos."
   },
   {
-    "id": 1401,
+    "id": 600,
     "topic_num": 11,
     "question": "¿Cuál es el objeto del Esquema Nacional de Seguridad?",
     "option_a": "Establecer los principios y requisitos necesarios para una protección adecuada de la información y los servicios utilizados por las entidades de su ámbito",
@@ -15412,7 +6601,7 @@ export const QUESTIONS = [
     "explanation": "El Real Decreto 311/2022 establece el ENS para fundamentar la confianza en el uso de medios electrónicos mediante protección adecuada de información y servicios."
   },
   {
-    "id": 1402,
+    "id": 601,
     "topic_num": 11,
     "question": "¿Qué exige el principio de seguridad como función diferenciada en el ENS?",
     "option_a": "Una protección basada en medidas adecuadas al riesgo y en la prevención, detección, respuesta y conservación",
@@ -15423,7 +6612,7 @@ export const QUESTIONS = [
     "explanation": "El ENS exige una protección integral y proporcional, con prevención, detección, respuesta y conservación frente a riesgos."
   },
   {
-    "id": 1403,
+    "id": 602,
     "topic_num": 11,
     "question": "¿Cómo deben ser las medidas de seguridad del ENS?",
     "option_a": "Proporcionadas a los riesgos y a la categoría del sistema, considerando la naturaleza de la información y los servicios",
@@ -15434,7 +6623,7 @@ export const QUESTIONS = [
     "explanation": "El ENS vincula las medidas al análisis de riesgos y a la categoría del sistema, sin reducir la protección a una configuración idéntica."
   },
   {
-    "id": 1404,
+    "id": 603,
     "topic_num": 11,
     "question": "¿Qué instrumento recoge las directrices de seguridad de una organización?",
     "option_a": "La política de seguridad, aprobada por el órgano competente y aplicable al ámbito de la organización",
@@ -15445,7 +6634,7 @@ export const QUESTIONS = [
     "explanation": "La política de seguridad establece las directrices de seguridad de la organización y debe aprobarse por el órgano competente."
   },
   {
-    "id": 1405,
+    "id": 604,
     "topic_num": 11,
     "question": "¿Qué responsabilidades deben diferenciarse en la gobernanza de la seguridad?",
     "option_a": "Las responsabilidades sobre la información, los servicios, la seguridad y los sistemas, sin perjuicio de las estructuras organizativas",
@@ -15456,7 +6645,7 @@ export const QUESTIONS = [
     "explanation": "El ENS exige una organización de la seguridad y la diferenciación de responsabilidades para información, servicios, seguridad y sistemas."
   },
   {
-    "id": 1406,
+    "id": 605,
     "topic_num": 11,
     "question": "¿Qué categorías de seguridad contempla el ENS?",
     "option_a": "Básica, media y alta",
@@ -15467,7 +6656,7 @@ export const QUESTIONS = [
     "explanation": "El ENS clasifica los sistemas en categorías básica, media y alta según el impacto de un incidente sobre las dimensiones de seguridad."
   },
   {
-    "id": 1407,
+    "id": 606,
     "topic_num": 11,
     "question": "¿Qué se tiene en cuenta para determinar la categoría de seguridad de un sistema?",
     "option_a": "El impacto que tendría un incidente sobre las dimensiones de seguridad de la información y los servicios",
@@ -15478,7 +6667,7 @@ export const QUESTIONS = [
     "explanation": "La categoría se determina a partir de la valoración del impacto de los incidentes sobre las dimensiones de seguridad."
   },
   {
-    "id": 1408,
+    "id": 607,
     "topic_num": 11,
     "question": "¿Qué relación hay entre el análisis de riesgos y las medidas ENS?",
     "option_a": "El análisis de riesgos informa la selección de medidas, que deben ser adecuadas y proporcionales",
@@ -15489,7 +6678,7 @@ export const QUESTIONS = [
     "explanation": "El principio de gestión de riesgos exige valorar amenazas y elegir medidas proporcionadas para reducirlas."
   },
   {
-    "id": 1409,
+    "id": 608,
     "topic_num": 11,
     "question": "¿Para qué sirve la estructura de gobernanza de la seguridad?",
     "option_a": "Para coordinar, supervisar y asignar responsabilidades de seguridad dentro de la organización",
@@ -15500,7 +6689,7 @@ export const QUESTIONS = [
     "explanation": "La organización de la seguridad permite coordinar y asignar funciones, responsabilidades y decisiones de protección."
   },
   {
-    "id": 1410,
+    "id": 609,
     "topic_num": 11,
     "question": "¿Qué documento debe describir la protección de un sistema?",
     "option_a": "El plan de adecuación o de seguridad del sistema, con las medidas y decisiones aplicables al sistema",
@@ -15511,7 +6700,7 @@ export const QUESTIONS = [
     "explanation": "El ENS exige planificar y documentar la seguridad del sistema, incluyendo medidas, responsables y decisiones de adecuación."
   },
   {
-    "id": 1411,
+    "id": 610,
     "topic_num": 11,
     "question": "¿Qué grupos de medidas recoge el ENS?",
     "option_a": "Medidas relativas al marco organizativo, al marco operacional y a las medidas de protección",
@@ -15522,7 +6711,7 @@ export const QUESTIONS = [
     "explanation": "El anexo II estructura el marco de medidas en organizativas, operacionales y de protección."
   },
   {
-    "id": 1412,
+    "id": 611,
     "topic_num": 11,
     "question": "¿Qué control se asocia especialmente a sistemas de categoría alta?",
     "option_a": "La auditoría de seguridad y, cuando proceda, la certificación o evaluación de conformidad conforme al ENS",
@@ -15533,7 +6722,7 @@ export const QUESTIONS = [
     "explanation": "El ENS prevé auditorías y evaluaciones de conformidad con exigencias reforzadas según la categoría del sistema."
   },
   {
-    "id": 1413,
+    "id": 612,
     "topic_num": 11,
     "question": "¿Qué exige el ENS respecto de la seguridad a lo largo del tiempo?",
     "option_a": "Revisión, actualización y mejora continua mediante monitorización y reevaluación periódica",
@@ -15544,7 +6733,7 @@ export const QUESTIONS = [
     "explanation": "El ENS aplica un ciclo de mejora continua y exige revisar la seguridad ante cambios, incidentes y evolución del riesgo."
   },
   {
-    "id": 1414,
+    "id": 613,
     "topic_num": 11,
     "question": "¿Qué función cumple la gestión de incidentes de seguridad?",
     "option_a": "Detectar, analizar, responder y aprender de incidentes, comunicándolos por los canales establecidos",
@@ -15555,7 +6744,7 @@ export const QUESTIONS = [
     "explanation": "La gestión de incidentes es una capacidad de respuesta y mejora, con comunicaciones según los procedimientos y autoridades aplicables."
   },
   {
-    "id": 1415,
+    "id": 614,
     "topic_num": 11,
     "question": "¿Qué implica aplicar el principio de mínimo privilegio?",
     "option_a": "Conceder a cada usuario o proceso solo los permisos necesarios para sus funciones",
@@ -15566,7 +6755,7 @@ export const QUESTIONS = [
     "explanation": "El control de acceso debe limitar los privilegios a los necesarios, reduciendo la superficie de ataque y el impacto de errores."
   },
   {
-    "id": 1416,
+    "id": 615,
     "topic_num": 11,
     "question": "¿Qué dimensión puede verse afectada por un incidente de seguridad?",
     "option_a": "Confidencialidad, integridad, autenticidad, trazabilidad o disponibilidad, según el marco aplicable",
@@ -15577,7 +6766,7 @@ export const QUESTIONS = [
     "explanation": "El ENS trabaja con dimensiones de seguridad que permiten valorar impactos más allá de la mera disponibilidad."
   },
   {
-    "id": 1417,
+    "id": 616,
     "topic_num": 11,
     "question": "¿Qué debe proteger el ENS?",
     "option_a": "La información tratada y los servicios prestados mediante sistemas, junto con los elementos que los soportan",
@@ -15588,7 +6777,7 @@ export const QUESTIONS = [
     "explanation": "El ámbito material del ENS comprende la información y los servicios y los sistemas que los soportan."
   },
   {
-    "id": 1418,
+    "id": 617,
     "topic_num": 11,
     "question": "¿Por qué el cumplimiento del ENS no es una configuración única?",
     "option_a": "Porque exige gestión continua, análisis de cambios, incidentes, auditorías y mejora de medidas",
@@ -15599,7 +6788,7 @@ export const QUESTIONS = [
     "explanation": "La adecuación al ENS requiere un proceso permanente de gestión y revisión, no una instalación aislada."
   },
   {
-    "id": 1419,
+    "id": 618,
     "topic_num": 11,
     "question": "¿Qué función tiene una entidad de evaluación de la conformidad?",
     "option_a": "Evaluar o auditar la conformidad con los requisitos aplicables conforme al esquema de certificación",
@@ -15610,7 +6799,7 @@ export const QUESTIONS = [
     "explanation": "El ENS contempla la evaluación y certificación de conformidad por entidades y procedimientos reconocidos."
   },
   {
-    "id": 1420,
+    "id": 619,
     "topic_num": 11,
     "question": "¿Qué debe hacer una organización ante un incidente ENS relevante?",
     "option_a": "Gestionarlo y comunicarlo por los canales y procedimientos establecidos, conservando la información necesaria",
@@ -15621,7 +6810,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 26 exige procedimientos de gestión y comunicación de incidentes de seguridad."
   },
   {
-    "id": 1421,
+    "id": 620,
     "topic_num": 12,
     "question": "¿Qué es un dato personal según el RGPD?",
     "option_a": "Toda información sobre una persona física identificada o identificable",
@@ -15632,7 +6821,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 4.1 del RGPD define dato personal como toda información sobre una persona física identificada o identificable."
   },
   {
-    "id": 1422,
+    "id": 621,
     "topic_num": 12,
     "question": "¿Qué diferencia hay entre responsable y encargado del tratamiento?",
     "option_a": "El responsable determina fines y medios; el encargado trata datos por cuenta del responsable",
@@ -15643,7 +6832,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 4 distingue al responsable que determina fines y medios del encargado que trata datos por cuenta del responsable."
   },
   {
-    "id": 1423,
+    "id": 622,
     "topic_num": 12,
     "question": "¿Cuál es un principio del tratamiento de datos personales?",
     "option_a": "Licitud, lealtad y transparencia",
@@ -15654,7 +6843,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 5.1.a exige licitud, lealtad y transparencia, junto con los demás principios del apartado 1."
   },
   {
-    "id": 1424,
+    "id": 623,
     "topic_num": 12,
     "question": "¿Cuál es una base jurídica del tratamiento?",
     "option_a": "El consentimiento del interesado para uno o varios fines específicos",
@@ -15665,7 +6854,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 6.1.a incluye el consentimiento como base jurídica cuando se cumplen sus requisitos."
   },
   {
-    "id": 1425,
+    "id": 624,
     "topic_num": 12,
     "question": "¿Qué requisito debe cumplir el consentimiento?",
     "option_a": "Ser una manifestación de voluntad libre, específica, informada e inequívoca",
@@ -15676,7 +6865,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 7 establece condiciones aplicables al consentimiento y el artículo 4.11 lo define como manifestación libre, específica, informada e inequívoca."
   },
   {
-    "id": 1426,
+    "id": 625,
     "topic_num": 12,
     "question": "¿Qué información debe facilitarse al recoger datos directamente del interesado?",
     "option_a": "Identidad y contacto del responsable, fines y base jurídica, entre otra información del artículo 13",
@@ -15687,7 +6876,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 13 enumera la información que debe proporcionarse cuando los datos se obtienen del interesado."
   },
   {
-    "id": 1427,
+    "id": 626,
     "topic_num": 12,
     "question": "¿Qué diferencia hay entre los artículos 13 y 14 del RGPD?",
     "option_a": "El artículo 13 se aplica a datos obtenidos del interesado y el 14 a datos no obtenidos del interesado",
@@ -15698,7 +6887,7 @@ export const QUESTIONS = [
     "explanation": "La diferencia deriva del origen de los datos: recogida del interesado o procedencia de otra fuente."
   },
   {
-    "id": 1428,
+    "id": 627,
     "topic_num": 12,
     "question": "¿Qué permite el derecho de acceso?",
     "option_a": "Obtener confirmación de si se tratan datos y, en su caso, acceso a los datos y a la información del artículo 15",
@@ -15709,7 +6898,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 15 reconoce confirmación, acceso a los datos y diversa información sobre el tratamiento."
   },
   {
-    "id": 1429,
+    "id": 628,
     "topic_num": 12,
     "question": "¿Qué es el derecho de supresión?",
     "option_a": "El derecho a obtener sin dilación indebida la supresión de datos personales cuando concurra alguno de los supuestos del artículo 17",
@@ -15720,7 +6909,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 17 reconoce el derecho de supresión, sujeto a excepciones como libertad de expresión, obligación legal o interés público."
   },
   {
-    "id": 1430,
+    "id": 629,
     "topic_num": 12,
     "question": "¿Cuándo procede la portabilidad de los datos?",
     "option_a": "Cuando el tratamiento se basa en consentimiento o contrato y se efectúa por medios automatizados, en los términos del artículo 20",
@@ -15731,7 +6920,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 20 establece esas condiciones y permite recibir datos en formato estructurado, de uso común y lectura mecánica."
   },
   {
-    "id": 1431,
+    "id": 630,
     "topic_num": 12,
     "question": "¿Qué significa protección de datos desde el diseño?",
     "option_a": "Aplicar medidas técnicas y organizativas apropiadas desde la determinación de los medios del tratamiento y durante el tratamiento",
@@ -15742,7 +6931,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 25 exige protección de datos desde el diseño y por defecto, teniendo en cuenta estado de la técnica, costes y riesgos."
   },
   {
-    "id": 1432,
+    "id": 631,
     "topic_num": 12,
     "question": "¿Qué debe garantizar la seguridad del tratamiento?",
     "option_a": "Un nivel de seguridad adecuado al riesgo, incluyendo medidas como seudonimización, cifrado, confidencialidad, integridad, disponibilidad y resiliencia",
@@ -15753,7 +6942,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 32 exige medidas apropiadas al riesgo y enumera ejemplos de capacidad y control de seguridad."
   },
   {
-    "id": 1433,
+    "id": 632,
     "topic_num": 12,
     "question": "¿En qué plazo debe notificarse una violación de seguridad a la autoridad de control, cuando proceda?",
     "option_a": "Sin dilación indebida y, de ser posible, a más tardar 72 horas después de tener constancia",
@@ -15764,7 +6953,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 33 fija la notificación sin dilación indebida y, cuando sea posible, dentro de 72 horas desde que se tiene constancia."
   },
   {
-    "id": 1434,
+    "id": 633,
     "topic_num": 12,
     "question": "¿Cuándo debe realizarse una evaluación de impacto?",
     "option_a": "Antes del tratamiento cuando sea probable que entrañe un alto riesgo para los derechos y libertades de las personas físicas",
@@ -15775,7 +6964,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 35 exige evaluación previa para tratamientos que probablemente entrañen alto riesgo, especialmente en los supuestos indicados."
   },
   {
-    "id": 1435,
+    "id": 634,
     "topic_num": 12,
     "question": "¿Cuál es una función del delegado de protección de datos?",
     "option_a": "Informar y asesorar al responsable o encargado, supervisar el cumplimiento y cooperar con la autoridad de control",
@@ -15786,7 +6975,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 39 enumera funciones del delegado, entre ellas informar, asesorar, supervisar y cooperar con la autoridad."
   },
   {
-    "id": 1436,
+    "id": 635,
     "topic_num": 12,
     "question": "¿Qué edad fija la LOPDGDD para que un menor preste consentimiento en servicios de la sociedad de la información?",
     "option_a": "Catorce años, salvo que una ley exija asistencia para el acto o negocio jurídico",
@@ -15797,7 +6986,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 7 de la LOPDGDD fija en catorce años la edad mínima para consentir por sí mismo, con la excepción legal indicada."
   },
   {
-    "id": 1437,
+    "id": 636,
     "topic_num": 12,
     "question": "¿Qué permite la LOPDGDD respecto de datos de contacto profesionales?",
     "option_a": "El tratamiento de datos de contacto y función o puesto de personas que prestan servicios en una persona jurídica cuando se limita a su localización profesional y finalidad legal",
@@ -15808,7 +6997,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 19 regula el tratamiento de datos de contacto y función de personas que prestan servicios en una persona jurídica en los términos legales."
   },
   {
-    "id": 1438,
+    "id": 637,
     "topic_num": 12,
     "question": "¿Qué autoridad controla en España el cumplimiento de la normativa de protección de datos en el ámbito estatal?",
     "option_a": "La Agencia Española de Protección de Datos, sin perjuicio de las autoridades autonómicas competentes",
@@ -15819,7 +7008,7 @@ export const QUESTIONS = [
     "explanation": "La LOPDGDD configura la Agencia Española de Protección de Datos como autoridad de protección de datos de ámbito estatal."
   },
   {
-    "id": 1439,
+    "id": 638,
     "topic_num": 12,
     "question": "¿Qué debe documentar el responsable para demostrar cumplimiento del RGPD?",
     "option_a": "Las medidas y decisiones de cumplimiento, conforme al principio de responsabilidad proactiva",
@@ -15830,7 +7019,7 @@ export const QUESTIONS = [
     "explanation": "El artículo 5.2 obliga al responsable a ser capaz de demostrar el cumplimiento de los principios del tratamiento."
   },
   {
-    "id": 1440,
+    "id": 639,
     "topic_num": 12,
     "question": "¿Cuál es la relación correcta entre el RGPD y la LOPDGDD?",
     "option_a": "El RGPD es una norma europea directamente aplicable y la LOPDGDD complementa el marco español en los ámbitos que permite el Reglamento",
@@ -15841,7 +7030,7 @@ export const QUESTIONS = [
     "explanation": "El Reglamento europeo se aplica directamente y la ley orgánica española desarrolla aspectos nacionales dentro del marco europeo."
   },
   {
-    "id": 1441,
+    "id": 640,
     "topic_num": 13,
     "question": "¿Qué modelo arquitectónico usa PostgreSQL para atender conexiones?",
     "option_a": "Un proceso servidor acepta conexiones y crea o atiende procesos backend para los clientes",
@@ -15852,7 +7041,7 @@ export const QUESTIONS = [
     "explanation": "La arquitectura cliente-servidor de PostgreSQL separa el proceso servidor y los clientes, con procesos backend asociados a conexiones."
   },
   {
-    "id": 1442,
+    "id": 641,
     "topic_num": 13,
     "question": "¿Qué es un clúster de bases de datos PostgreSQL?",
     "option_a": "Una colección de bases de datos gestionada por una única instancia o servidor PostgreSQL",
@@ -15863,7 +7052,7 @@ export const QUESTIONS = [
     "explanation": "La documentación usa database cluster para la colección de bases de datos gestionada por una instancia PostgreSQL."
   },
   {
-    "id": 1443,
+    "id": 642,
     "topic_num": 13,
     "question": "¿Qué función tiene el proceso servidor principal de PostgreSQL?",
     "option_a": "Escuchar conexiones, gestionar procesos backend y coordinar la actividad del servidor",
@@ -15874,7 +7063,7 @@ export const QUESTIONS = [
     "explanation": "El servidor principal coordina la aceptación de conexiones y los procesos que atienden las sesiones."
   },
   {
-    "id": 1444,
+    "id": 643,
     "topic_num": 13,
     "question": "¿Qué son los shared buffers?",
     "option_a": "El área de memoria compartida que PostgreSQL usa para almacenar páginas de datos y otros datos compartidos",
@@ -15885,7 +7074,7 @@ export const QUESTIONS = [
     "explanation": "shared_buffers es el parámetro que determina la memoria compartida destinada a los búferes de datos del servidor."
   },
   {
-    "id": 1445,
+    "id": 644,
     "topic_num": 13,
     "question": "¿Qué finalidad tiene el Write-Ahead Log?",
     "option_a": "Registrar cambios antes de escribir las páginas de datos para permitir durabilidad y recuperación ante fallos",
@@ -15896,7 +7085,7 @@ export const QUESTIONS = [
     "explanation": "El principio WAL exige registrar el cambio en el log antes de escribir la página modificada, base de la recuperación y durabilidad."
   },
   {
-    "id": 1446,
+    "id": 645,
     "topic_num": 13,
     "question": "¿Qué es un checkpoint en PostgreSQL?",
     "option_a": "Un punto desde el que el proceso de recuperación puede empezar a aplicar WAL, después de asegurar determinadas páginas de datos",
@@ -15907,7 +7096,7 @@ export const QUESTIONS = [
     "explanation": "Los checkpoints establecen puntos de sincronización que reducen el trabajo de recuperación y escriben páginas sucias según la política del servidor."
   },
   {
-    "id": 1447,
+    "id": 646,
     "topic_num": 13,
     "question": "¿Qué componente inicia y coordina la limpieza automática?",
     "option_a": "El autovacuum launcher, que inicia workers para ejecutar tareas de mantenimiento",
@@ -15918,7 +7107,7 @@ export const QUESTIONS = [
     "explanation": "PostgreSQL dispone de un autovacuum launcher que lanza procesos worker para analizar y limpiar tablas según la configuración."
   },
   {
-    "id": 1448,
+    "id": 647,
     "topic_num": 13,
     "question": "¿Dónde se configuran normalmente los parámetros del servidor PostgreSQL?",
     "option_a": "En el archivo de configuración del servidor, como postgresql.conf, y mediante los mecanismos de configuración documentados",
@@ -15929,7 +7118,7 @@ export const QUESTIONS = [
     "explanation": "El capítulo de configuración describe postgresql.conf y las fuentes y niveles desde los que pueden establecerse parámetros."
   },
   {
-    "id": 1449,
+    "id": 648,
     "topic_num": 13,
     "question": "¿Qué es un rol en PostgreSQL?",
     "option_a": "Una identidad que puede poseer objetos y tener privilegios; los roles pueden actuar como usuarios o grupos",
@@ -15940,7 +7129,7 @@ export const QUESTIONS = [
     "explanation": "PostgreSQL unifica usuarios y grupos bajo el concepto de role, con atributos, pertenencia, propiedad y privilegios."
   },
   {
-    "id": 1450,
+    "id": 649,
     "topic_num": 13,
     "question": "¿A qué base de datos pertenece una conexión PostgreSQL?",
     "option_a": "A una base de datos concreta dentro del clúster, elegida al establecer la conexión",
@@ -15951,7 +7140,7 @@ export const QUESTIONS = [
     "explanation": "Una sesión se conecta a una base de datos concreta; la documentación explica cómo se crean y gestionan las bases dentro del clúster."
   },
   {
-    "id": 1451,
+    "id": 650,
     "topic_num": 13,
     "question": "¿Qué función cumple un esquema?",
     "option_a": "Proporcionar un espacio de nombres dentro de una base de datos para organizar objetos",
@@ -15962,7 +7151,7 @@ export const QUESTIONS = [
     "explanation": "Los esquemas permiten organizar objetos dentro de una base de datos y pueden ser propiedad de roles y protegerse con privilegios."
   },
   {
-    "id": 1452,
+    "id": 651,
     "topic_num": 13,
     "question": "¿Qué es un tablespace?",
     "option_a": "Una ubicación del sistema de archivos donde pueden almacenarse objetos de bases de datos",
@@ -15973,7 +7162,7 @@ export const QUESTIONS = [
     "explanation": "Los tablespaces permiten definir ubicaciones de almacenamiento para objetos de bases de datos."
   },
   {
-    "id": 1453,
+    "id": 652,
     "topic_num": 13,
     "question": "¿Qué significa MVCC en PostgreSQL?",
     "option_a": "El control de concurrencia mediante múltiples versiones, que permite que las transacciones vean una instantánea coherente",
@@ -15984,7 +7173,7 @@ export const QUESTIONS = [
     "explanation": "PostgreSQL usa multiversion concurrency control para mantener versiones y proporcionar aislamiento de lectura sin bloquear todas las operaciones."
   },
   {
-    "id": 1454,
+    "id": 653,
     "topic_num": 13,
     "question": "¿Qué finalidad principal tiene VACUUM?",
     "option_a": "Recuperar o reutilizar espacio de filas obsoletas y mantener la salud de las tablas y estadísticas según el comando",
@@ -15995,7 +7184,7 @@ export const QUESTIONS = [
     "explanation": "VACUUM procesa versiones de filas obsoletas, ayuda a reutilizar espacio y puede actualizar información asociada; no equivale a borrar todo."
   },
   {
-    "id": 1455,
+    "id": 654,
     "topic_num": 13,
     "question": "¿Para qué usa el planificador las estadísticas?",
     "option_a": "Para estimar costes y cardinalidades y elegir planes de ejecución más adecuados",
@@ -16006,7 +7195,7 @@ export const QUESTIONS = [
     "explanation": "El planificador usa estadísticas sobre tablas y columnas para estimar resultados y costes de distintos planes."
   },
   {
-    "id": 1456,
+    "id": 655,
     "topic_num": 13,
     "question": "¿Qué diferencia hay entre un segmento WAL y una página de datos?",
     "option_a": "El segmento pertenece al flujo de registros de recuperación; la página es una unidad de datos que puede escribirse en los archivos de relación",
@@ -16017,7 +7206,7 @@ export const QUESTIONS = [
     "explanation": "El WAL y las páginas de datos cumplen funciones distintas dentro del almacenamiento y la recuperación."
   },
   {
-    "id": 1457,
+    "id": 656,
     "topic_num": 13,
     "question": "¿Qué diferencia hay entre un apagado smart y uno immediate?",
     "option_a": "Smart espera a que los clientes se desconecten; immediate termina procesos y requiere recuperación al arrancar",
@@ -16028,7 +7217,7 @@ export const QUESTIONS = [
     "explanation": "Los modos de apagado documentados por pg_ctl difieren en cómo esperan o terminan conexiones y en las consecuencias para la recuperación."
   },
   {
-    "id": 1458,
+    "id": 657,
     "topic_num": 13,
     "question": "¿Qué regula pg_hba.conf?",
     "option_a": "La autenticación de clientes y las reglas de acceso a bases de datos, usuarios, direcciones y métodos",
@@ -16039,7 +7228,7 @@ export const QUESTIONS = [
     "explanation": "pg_hba.conf contiene reglas de autenticación de clientes y control inicial de acceso por conexión."
   },
   {
-    "id": 1459,
+    "id": 658,
     "topic_num": 13,
     "question": "¿Por qué se asocia un backend con una conexión?",
     "option_a": "Porque el proceso backend atiende las consultas y operaciones de una sesión cliente concreta",
@@ -16050,7 +7239,7 @@ export const QUESTIONS = [
     "explanation": "La arquitectura de procesos de PostgreSQL asigna un backend a la sesión para ejecutar las operaciones solicitadas."
   },
   {
-    "id": 1460,
+    "id": 659,
     "topic_num": 13,
     "question": "Tras un fallo del servidor, ¿qué relación permite la recuperación?",
     "option_a": "Los checkpoints proporcionan un punto de referencia y el WAL permite rehacer cambios necesarios desde él",
@@ -16061,7 +7250,7 @@ export const QUESTIONS = [
     "explanation": "La recuperación usa los puntos de checkpoint y los registros WAL para llevar los archivos a un estado consistente."
   },
   {
-    "id": 1461,
+    "id": 660,
     "topic_num": 14,
     "question": "¿Qué representa una tabla en PostgreSQL?",
     "option_a": "Una relación organizada en filas y columnas que almacena datos",
@@ -16072,7 +7261,7 @@ export const QUESTIONS = [
     "explanation": "Las tablas son relaciones con columnas definidas y filas que contienen los valores almacenados."
   },
   {
-    "id": 1462,
+    "id": 661,
     "topic_num": 14,
     "question": "¿Qué diferencia hay entre una vista y una vista materializada?",
     "option_a": "La vista ejecuta su consulta al acceder; la materializada almacena el resultado y requiere refresco",
@@ -16083,7 +7272,7 @@ export const QUESTIONS = [
     "explanation": "La documentación distingue la vista, definida por una consulta, de la vista materializada, que conserva un resultado que puede refrescarse."
   },
   {
-    "id": 1463,
+    "id": 662,
     "topic_num": 14,
     "question": "¿Para qué sirve un índice?",
     "option_a": "Proporcionar una estructura que puede acelerar el acceso a filas según determinadas condiciones, con coste de mantenimiento",
@@ -16094,7 +7283,7 @@ export const QUESTIONS = [
     "explanation": "Los índices pueden acelerar ciertas búsquedas, pero consumen almacenamiento y deben mantenerse al modificar la tabla."
   },
   {
-    "id": 1464,
+    "id": 663,
     "topic_num": 14,
     "question": "¿Qué es una secuencia?",
     "option_a": "Un objeto que genera valores numéricos y puede usarse para asignar identificadores",
@@ -16105,7 +7294,7 @@ export const QUESTIONS = [
     "explanation": "Las secuencias son objetos destinados a generar valores, normalmente mediante nextval y funciones relacionadas."
   },
   {
-    "id": 1465,
+    "id": 664,
     "topic_num": 14,
     "question": "¿Qué diferencia básica hay entre una función y un procedimiento?",
     "option_a": "Una función puede usarse para devolver un valor en expresiones; un procedimiento se invoca con CALL y tiene semántica propia",
@@ -16116,7 +7305,7 @@ export const QUESTIONS = [
     "explanation": "PostgreSQL distingue funciones y procedimientos por su invocación y capacidades transaccionales y de retorno."
   },
   {
-    "id": 1466,
+    "id": 665,
     "topic_num": 14,
     "question": "¿Qué es un trigger?",
     "option_a": "Una acción asociada a eventos de una tabla, vista o evento de base de datos que ejecuta una función cuando se dispara",
@@ -16127,7 +7316,7 @@ export const QUESTIONS = [
     "explanation": "CREATE TRIGGER define acciones que se ejecutan antes, después o en lugar de eventos según las reglas del trigger."
   },
   {
-    "id": 1467,
+    "id": 666,
     "topic_num": 14,
     "question": "¿Qué aporta una extensión PostgreSQL?",
     "option_a": "Instala objetos y funcionalidad adicional en una base de datos mediante el mecanismo de extensiones",
@@ -16138,7 +7327,7 @@ export const QUESTIONS = [
     "explanation": "Las extensiones empaquetan objetos y funcionalidades que pueden instalarse con CREATE EXTENSION cuando están disponibles."
   },
   {
-    "id": 1468,
+    "id": 667,
     "topic_num": 14,
     "question": "¿Qué función tiene search_path?",
     "option_a": "Determinar el orden en que PostgreSQL busca objetos no cualificados en los esquemas",
@@ -16149,7 +7338,7 @@ export const QUESTIONS = [
     "explanation": "search_path define los esquemas que se buscan y el orden de resolución de nombres no cualificados."
   },
   {
-    "id": 1469,
+    "id": 668,
     "topic_num": 14,
     "question": "¿Qué garantiza una clave primaria?",
     "option_a": "Identifica de forma única las filas y no admite valores nulos en sus columnas",
@@ -16160,7 +7349,7 @@ export const QUESTIONS = [
     "explanation": "Una primary key impone unicidad y no nulidad y sirve como identidad de las filas."
   },
   {
-    "id": 1470,
+    "id": 669,
     "topic_num": 14,
     "question": "¿Qué expresa una clave foránea?",
     "option_a": "Una restricción de integridad referencial que exige que los valores correspondan a una clave de la tabla referenciada, salvo acciones definidas",
@@ -16171,7 +7360,7 @@ export const QUESTIONS = [
     "explanation": "Las foreign keys mantienen integridad referencial y permiten definir acciones ante cambios o borrados."
   },
   {
-    "id": 1471,
+    "id": 670,
     "topic_num": 14,
     "question": "¿Cuál es la jerarquía lógica básica?",
     "option_a": "Un clúster contiene bases de datos; cada base contiene esquemas y los esquemas contienen objetos como tablas, vistas y funciones",
@@ -16182,7 +7371,7 @@ export const QUESTIONS = [
     "explanation": "La documentación organiza los objetos en el clúster, las bases de datos, los esquemas y los objetos de cada esquema."
   },
   {
-    "id": 1472,
+    "id": 671,
     "topic_num": 14,
     "question": "¿Qué es una tabla temporal?",
     "option_a": "Una tabla cuya existencia o visibilidad está vinculada a la sesión o transacción según su definición",
@@ -16193,7 +7382,7 @@ export const QUESTIONS = [
     "explanation": "CREATE TEMPORARY TABLE crea tablas temporales con reglas de duración y visibilidad propias."
   },
   {
-    "id": 1473,
+    "id": 672,
     "topic_num": 14,
     "question": "¿Qué permite la herencia de tablas?",
     "option_a": "Una tabla hija puede heredar columnas y comportamiento de una tabla padre, conforme a las reglas de PostgreSQL",
@@ -16204,7 +7393,7 @@ export const QUESTIONS = [
     "explanation": "PostgreSQL documenta herencia de tablas como una relación de estructura y consulta con semántica específica."
   },
   {
-    "id": 1474,
+    "id": 673,
     "topic_num": 14,
     "question": "¿Qué objeto se define para representar una consulta reutilizable sin almacenar necesariamente su resultado?",
     "option_a": "Una vista",
@@ -16215,7 +7404,7 @@ export const QUESTIONS = [
     "explanation": "CREATE VIEW define una vista basada en una consulta; el resultado se obtiene al consultar la vista."
   },
   {
-    "id": 1475,
+    "id": 674,
     "topic_num": 14,
     "question": "¿Qué indican las categorías de volatilidad de una función?",
     "option_a": "Las suposiciones sobre si puede cambiar el resultado y sobre los efectos observables, para ayudar al optimizador",
@@ -16226,7 +7415,7 @@ export const QUESTIONS = [
     "explanation": "IMMUTABLE, STABLE y VOLATILE informan de la estabilidad del resultado y efectos de una función."
   },
   {
-    "id": 1476,
+    "id": 675,
     "topic_num": 14,
     "question": "¿Qué permite RETURNING en INSERT, UPDATE o DELETE?",
     "option_a": "Devolver datos de las filas afectadas por el comando sin tener que ejecutar una consulta separada",
@@ -16237,7 +7426,7 @@ export const QUESTIONS = [
     "explanation": "La cláusula RETURNING permite devolver valores de las filas insertadas, actualizadas o eliminadas."
   },
   {
-    "id": 1477,
+    "id": 676,
     "topic_num": 14,
     "question": "¿Cómo se actualiza el resultado de una vista materializada?",
     "option_a": "Mediante REFRESH MATERIALIZED VIEW, que vuelve a calcular y almacena su resultado",
@@ -16248,7 +7437,7 @@ export const QUESTIONS = [
     "explanation": "Las vistas materializadas conservan un resultado que debe refrescarse explícitamente mediante el comando correspondiente."
   },
   {
-    "id": 1478,
+    "id": 677,
     "topic_num": 14,
     "question": "¿Qué diferencia puede tener un trigger FOR EACH ROW frente a FOR EACH STATEMENT?",
     "option_a": "El primero puede ejecutarse por cada fila afectada y el segundo una vez por sentencia",
@@ -16259,7 +7448,7 @@ export const QUESTIONS = [
     "explanation": "CREATE TRIGGER distingue el nivel de fila y de sentencia para determinar cuántas veces se ejecuta la acción."
   },
   {
-    "id": 1479,
+    "id": 678,
     "topic_num": 14,
     "question": "¿Qué relación hay entre propietario y privilegios de un objeto?",
     "option_a": "El propietario tiene control sobre el objeto y puede conceder privilegios, sin perjuicio de reglas como ACL y pertenencia a roles",
@@ -16270,7 +7459,7 @@ export const QUESTIONS = [
     "explanation": "PostgreSQL combina propiedad, roles y privilegios explícitos para controlar el acceso a objetos."
   },
   {
-    "id": 1480,
+    "id": 679,
     "topic_num": 14,
     "question": "¿Qué riesgo existe al usar nombres de objetos sin cualificar?",
     "option_a": "La resolución depende de search_path y podría encontrar un objeto de otro esquema si los privilegios y el orden lo permiten",
@@ -16281,7 +7470,7 @@ export const QUESTIONS = [
     "explanation": "La resolución por search_path debe comprenderse junto con los privilegios y la posibilidad de colisión de nombres."
   },
   {
-    "id": 1481,
+    "id": 680,
     "topic_num": 15,
     "question": "¿Qué comandos inician y terminan normalmente una transacción?",
     "option_a": "BEGIN inicia; COMMIT confirma y ROLLBACK deshace la transacción",
@@ -16292,7 +7481,7 @@ export const QUESTIONS = [
     "explanation": "PostgreSQL documenta BEGIN/START TRANSACTION y los comandos COMMIT y ROLLBACK para gestionar transacciones."
   },
   {
-    "id": 1482,
+    "id": 681,
     "topic_num": 15,
     "question": "¿Qué expresa la atomicidad de una transacción?",
     "option_a": "Que sus operaciones se confirman como una unidad o se deshacen como una unidad",
@@ -16303,7 +7492,7 @@ export const QUESTIONS = [
     "explanation": "La atomicidad es la propiedad por la que una transacción no deja parcialmente aplicadas sus operaciones confirmadas."
   },
   {
-    "id": 1483,
+    "id": 682,
     "topic_num": 15,
     "question": "¿Para qué sirve SAVEPOINT?",
     "option_a": "Crear un punto dentro de la transacción al que se puede volver con ROLLBACK TO SAVEPOINT sin deshacer toda la transacción",
@@ -16314,7 +7503,7 @@ export const QUESTIONS = [
     "explanation": "Los savepoints permiten controlar parcialmente los efectos de una transacción y continuar después de volver a un punto."
   },
   {
-    "id": 1484,
+    "id": 683,
     "topic_num": 15,
     "question": "¿Qué diferencia hay entre COMMIT y ROLLBACK?",
     "option_a": "COMMIT hace permanentes los cambios de la transacción; ROLLBACK los descarta según el alcance",
@@ -16325,7 +7514,7 @@ export const QUESTIONS = [
     "explanation": "COMMIT confirma la transacción y ROLLBACK abandona sus cambios no confirmados."
   },
   {
-    "id": 1485,
+    "id": 684,
     "topic_num": 15,
     "question": "¿Cuál es el nivel de aislamiento predeterminado de PostgreSQL?",
     "option_a": "Read Committed",
@@ -16336,7 +7525,7 @@ export const QUESTIONS = [
     "explanation": "La documentación de aislamiento indica que Read Committed es el nivel predeterminado de PostgreSQL."
   },
   {
-    "id": 1486,
+    "id": 685,
     "topic_num": 15,
     "question": "En Read Committed, ¿qué vista obtiene normalmente cada sentencia?",
     "option_a": "Una instantánea de los datos confirmados disponible al comenzar esa sentencia",
@@ -16347,7 +7536,7 @@ export const QUESTIONS = [
     "explanation": "En Read Committed cada sentencia comienza con una nueva instantánea que incluye datos confirmados hasta su inicio."
   },
   {
-    "id": 1487,
+    "id": 686,
     "topic_num": 15,
     "question": "¿Qué diferencia general hay entre Repeatable Read y Serializable?",
     "option_a": "Serializable añade una garantía de ejecución equivalente a algún orden serial y puede abortar transacciones por conflictos; Repeatable Read ofrece una instantánea estable",
@@ -16358,7 +7547,7 @@ export const QUESTIONS = [
     "explanation": "PostgreSQL describe Repeatable Read y Serializable como niveles con garantías crecientes y posibles abortos por conflictos."
   },
   {
-    "id": 1488,
+    "id": 687,
     "topic_num": 15,
     "question": "¿Cuál es un mecanismo de bloqueo explícito?",
     "option_a": "SELECT FOR UPDATE",
@@ -16369,7 +7558,7 @@ export const QUESTIONS = [
     "explanation": "SELECT FOR UPDATE y variantes bloquean filas seleccionadas para coordinar actualizaciones concurrentes."
   },
   {
-    "id": 1489,
+    "id": 688,
     "topic_num": 15,
     "question": "¿Qué efecto tiene normalmente un bloqueo de fila ante una actualización concurrente?",
     "option_a": "La operación concurrente puede esperar hasta que la transacción que posee el bloqueo confirme o deshaga, según el caso",
@@ -16380,7 +7569,7 @@ export const QUESTIONS = [
     "explanation": "Los bloqueos de fila coordinan operaciones concurrentes y pueden provocar espera o decisiones según el comando y el aislamiento."
   },
   {
-    "id": 1490,
+    "id": 689,
     "topic_num": 15,
     "question": "¿Qué es un interbloqueo o deadlock?",
     "option_a": "Una espera circular en la que transacciones se bloquean mutuamente; PostgreSQL detecta el caso y aborta una de ellas",
@@ -16391,7 +7580,7 @@ export const QUESTIONS = [
     "explanation": "PostgreSQL detecta ciclos de espera y aborta una transacción para romper el interbloqueo."
   },
   {
-    "id": 1491,
+    "id": 690,
     "topic_num": 15,
     "question": "¿Qué relación hay entre instantáneas y MVCC?",
     "option_a": "Las instantáneas determinan qué versiones de filas son visibles para una transacción o sentencia",
@@ -16402,7 +7591,7 @@ export const QUESTIONS = [
     "explanation": "MVCC mantiene versiones y las instantáneas determinan su visibilidad conforme al aislamiento."
   },
   {
-    "id": 1492,
+    "id": 691,
     "topic_num": 15,
     "question": "¿Qué característica tienen muchas operaciones DDL de PostgreSQL respecto de las transacciones?",
     "option_a": "Pueden ejecutarse dentro de transacciones y confirmarse o deshacerse, aunque existen excepciones documentadas",
@@ -16413,7 +7602,7 @@ export const QUESTIONS = [
     "explanation": "PostgreSQL soporta DDL transaccional para muchas operaciones, con excepciones concretas documentadas."
   },
   {
-    "id": 1493,
+    "id": 692,
     "topic_num": 15,
     "question": "¿Qué permiten PREPARE TRANSACTION y COMMIT PREPARED?",
     "option_a": "Gestionar una transacción preparada como parte del protocolo de confirmación en dos fases",
@@ -16424,7 +7613,7 @@ export const QUESTIONS = [
     "explanation": "La confirmación en dos fases permite preparar una transacción y confirmarla o deshacerla posteriormente con los comandos preparados."
   },
   {
-    "id": 1494,
+    "id": 693,
     "topic_num": 15,
     "question": "¿Cómo se establece el nivel de aislamiento?",
     "option_a": "Con SET TRANSACTION o las opciones de configuración y sintaxis previstas para la transacción",
@@ -16435,7 +7624,7 @@ export const QUESTIONS = [
     "explanation": "PostgreSQL permite especificar el nivel de aislamiento de la transacción mediante la sintaxis documentada y parámetros aplicables."
   },
   {
-    "id": 1495,
+    "id": 694,
     "topic_num": 15,
     "question": "¿Qué diferencia hay entre una espera por bloqueo y un deadlock?",
     "option_a": "La espera puede resolverse cuando libera el bloqueador; el deadlock forma un ciclo y requiere abortar al menos una transacción",
@@ -16446,7 +7635,7 @@ export const QUESTIONS = [
     "explanation": "Una espera lineal puede terminar; un ciclo de dependencias necesita detección y ruptura del interbloqueo."
   },
   {
-    "id": 1496,
+    "id": 695,
     "topic_num": 15,
     "question": "¿Por qué una transacción larga puede retrasar la limpieza de versiones?",
     "option_a": "Puede mantener una instantánea que todavía necesite versiones antiguas de filas, impidiendo que VACUUM las elimine",
@@ -16457,7 +7646,7 @@ export const QUESTIONS = [
     "explanation": "Las transacciones largas pueden conservar snapshots antiguos y retrasar la eliminación segura de versiones obsoletas."
   },
   {
-    "id": 1497,
+    "id": 696,
     "topic_num": 15,
     "question": "¿Qué controla synchronous_commit?",
     "option_a": "La espera de la confirmación para asegurar distintos niveles de durabilidad de la transacción frente a fallos",
@@ -16468,7 +7657,7 @@ export const QUESTIONS = [
     "explanation": "synchronous_commit controla si la confirmación espera la escritura/confirmación de WAL según la configuración de sincronización."
   },
   {
-    "id": 1498,
+    "id": 697,
     "topic_num": 15,
     "question": "Si una sentencia falla dentro de una transacción, ¿qué debe hacer el cliente para continuar con seguridad?",
     "option_a": "Resolver el estado de error con ROLLBACK o SAVEPOINT y ROLLBACK TO antes de ejecutar nuevas operaciones permitidas",
@@ -16479,7 +7668,7 @@ export const QUESTIONS = [
     "explanation": "Una transacción en estado de error requiere rollback total o a un savepoint antes de continuar con operaciones normales."
   },
   {
-    "id": 1499,
+    "id": 698,
     "topic_num": 15,
     "question": "¿Qué debe hacer una aplicación ante un fallo de serialización?",
     "option_a": "Reintentar la transacción completa con una nueva instantánea, después de hacer rollback",
@@ -16490,7 +7679,7 @@ export const QUESTIONS = [
     "explanation": "La documentación de Serializable exige que la aplicación esté preparada para reintentar una transacción abortada por conflicto de serialización."
   },
   {
-    "id": 1500,
+    "id": 699,
     "topic_num": 15,
     "question": "¿Qué relación es correcta entre transacciones, locks, MVCC y WAL?",
     "option_a": "Las transacciones agrupan operaciones, los locks coordinan acceso, MVCC gestiona visibilidad y WAL ayuda a la durabilidad y recuperación",
@@ -16501,7 +7690,7 @@ export const QUESTIONS = [
     "explanation": "Son mecanismos relacionados pero distintos dentro de la ejecución concurrente, la visibilidad y la recuperación de PostgreSQL."
   },
   {
-    "id": 1501,
+    "id": 700,
     "topic_num": 16,
     "question": "¿Qué es psql en el ecosistema de PostgreSQL?",
     "option_a": "Un front end basado en terminal para introducir consultas y ver sus resultados",
@@ -16512,7 +7701,7 @@ export const QUESTIONS = [
     "explanation": "La documentación describe psql como un front end basado en terminal que permite introducir consultas y ver sus resultados."
   },
   {
-    "id": 1502,
+    "id": 701,
     "topic_num": 16,
     "question": "¿Cuál es la finalidad principal de pg_dump?",
     "option_a": "Exportar una base de datos PostgreSQL a un script SQL o a otros formatos",
@@ -16523,7 +7712,7 @@ export const QUESTIONS = [
     "explanation": "pg_dump es la utilidad de PostgreSQL para exportar una base de datos a un script SQL u otros formatos."
   },
   {
-    "id": 1503,
+    "id": 702,
     "topic_num": 16,
     "question": "¿Qué diferencia básica existe entre COPY FROM y COPY TO?",
     "option_a": "COPY FROM copia datos desde una fuente a una tabla y COPY TO copia datos de una tabla o consulta a una salida",
@@ -16534,7 +7723,7 @@ export const QUESTIONS = [
     "explanation": "COPY FROM carga datos en una tabla, mientras COPY TO exporta datos de una tabla o del resultado de una consulta."
   },
   {
-    "id": 1504,
+    "id": 703,
     "topic_num": 16,
     "question": "¿Dónde debe estar un archivo usado directamente por COPY con nombre de archivo?",
     "option_a": "En una ubicación accesible para el servidor PostgreSQL y su usuario de ejecución",
@@ -16545,7 +7734,7 @@ export const QUESTIONS = [
     "explanation": "COPY con nombre de archivo hace que el servidor lea o escriba directamente el archivo, que debe ser accesible para el usuario PostgreSQL desde el servidor."
   },
   {
-    "id": 1505,
+    "id": 704,
     "topic_num": 16,
     "question": "¿Para qué sirve pg_restore?",
     "option_a": "Para restaurar un archivo de archivo no textual creado por pg_dump",
@@ -16556,7 +7745,7 @@ export const QUESTIONS = [
     "explanation": "pg_restore restaura un archivo de archivo creado por pg_dump en uno de los formatos no textuales."
   },
   {
-    "id": 1506,
+    "id": 705,
     "topic_num": 16,
     "question": "¿Qué combinación describe correctamente los formatos de volcado?",
     "option_a": "Un volcado de texto se restaura normalmente con psql; los formatos de archivo no textual se restauran con pg_restore",
@@ -16567,7 +7756,7 @@ export const QUESTIONS = [
     "explanation": "Los scripts SQL de texto se ejecutan con psql, mientras que los formatos de archivo alternativos requieren pg_restore."
   },
   {
-    "id": 1507,
+    "id": 706,
     "topic_num": 16,
     "question": "¿Qué hace la metaorden \\copy de psql?",
     "option_a": "Ejecuta una operación COPY, pero psql lee o escribe el archivo del cliente y transfiere los datos por la conexión",
@@ -16578,7 +7767,7 @@ export const QUESTIONS = [
     "explanation": "\\copy realiza una copia desde el lado cliente: psql gestiona el archivo y canaliza los datos mediante la conexión."
   },
   {
-    "id": 1508,
+    "id": 707,
     "topic_num": 16,
     "question": "¿Qué formatos admite COPY y cuál es el predeterminado?",
     "option_a": "Texto, CSV y binario; el formato predeterminado es texto",
@@ -16589,7 +7778,7 @@ export const QUESTIONS = [
     "explanation": "La opción FORMAT de COPY admite text, csv y binary, y el formato predeterminado es text."
   },
   {
-    "id": 1509,
+    "id": 708,
     "topic_num": 16,
     "question": "¿Qué indica la opción -f de psql?",
     "option_a": "Leer comandos desde el archivo indicado en vez de la entrada estándar",
@@ -16600,7 +7789,7 @@ export const QUESTIONS = [
     "explanation": "La opción -f/--file hace que psql lea comandos del archivo indicado; puede combinarse con -c."
   },
   {
-    "id": 1510,
+    "id": 709,
     "topic_num": 16,
     "question": "¿Qué característica tiene un volcado realizado con pg_dump mientras hay actividad concurrente?",
     "option_a": "Produce una exportación consistente y no bloquea el acceso de otros usuarios en las condiciones documentadas",
@@ -16611,7 +7800,7 @@ export const QUESTIONS = [
     "explanation": "La documentación indica que pg_dump realiza exportaciones consistentes aunque se use la base de datos concurrentemente y no bloquea a lectores ni escritores."
   },
   {
-    "id": 1511,
+    "id": 710,
     "topic_num": 16,
     "question": "¿Qué afirmación distingue correctamente los formatos custom y directory de pg_dump?",
     "option_a": "Permiten seleccionar y reordenar elementos y admiten restauración paralela; directory es el único que admite volcado paralelo",
@@ -16622,7 +7811,7 @@ export const QUESTIONS = [
     "explanation": "La documentación identifica custom y directory como formatos flexibles para selección, reordenación y restauración paralela, y señala que directory admite el volcado paralelo."
   },
   {
-    "id": 1512,
+    "id": 711,
     "topic_num": 16,
     "question": "¿Qué permite hacer pg_restore con un archivo de archivo?",
     "option_a": "Seleccionar elementos concretos o reordenarlos antes de restaurarlos",
@@ -16633,7 +7822,7 @@ export const QUESTIONS = [
     "explanation": "Los archivos de archivo permiten que pg_restore seleccione elementos o los reordene antes de la restauración."
   },
   {
-    "id": 1513,
+    "id": 712,
     "topic_num": 16,
     "question": "¿Cuál es la diferencia de acceso a archivos entre COPY y \\copy?",
     "option_a": "COPY con archivo usa el sistema de archivos del servidor; \\copy usa un archivo accesible para el cliente psql",
@@ -16644,7 +7833,7 @@ export const QUESTIONS = [
     "explanation": "COPY con nombre de archivo se ejecuta en el servidor, mientras \\copy hace que psql lea o escriba en el lado cliente."
   },
   {
-    "id": 1514,
+    "id": 713,
     "topic_num": 16,
     "question": "¿Qué ocurre cuando COPY usa STDIN o STDOUT?",
     "option_a": "Los datos se transmiten a través de la conexión entre el cliente y el servidor",
@@ -16655,7 +7844,7 @@ export const QUESTIONS = [
     "explanation": "Con STDIN o STDOUT, COPY transmite los datos mediante la conexión cliente-servidor."
   },
   {
-    "id": 1515,
+    "id": 714,
     "topic_num": 16,
     "question": "¿Qué inconveniente de portabilidad tiene el formato binario de COPY?",
     "option_a": "Es menos portable entre arquitecturas y versiones de PostgreSQL y es específico de los tipos de datos",
@@ -16666,7 +7855,7 @@ export const QUESTIONS = [
     "explanation": "El formato binario puede ser más rápido, pero es menos portable entre arquitecturas y versiones y depende fuertemente de los tipos."
   },
   {
-    "id": 1516,
+    "id": 715,
     "topic_num": 16,
     "question": "Para que pg_dump pueda exportar una tabla, ¿qué condición general debe cumplirse?",
     "option_a": "La cuenta usada debe tener acceso de lectura a los objetos que se quieren volcar; pg_dump no opera con privilegios especiales",
@@ -16677,7 +7866,7 @@ export const QUESTIONS = [
     "explanation": "pg_dump es una aplicación cliente normal y necesita acceso de lectura a las tablas que se desean exportar."
   },
   {
-    "id": 1517,
+    "id": 716,
     "topic_num": 16,
     "question": "¿Qué riesgo debe considerarse al restaurar un volcado de origen no confiable?",
     "option_a": "La restauración hace que el destino ejecute código arbitrario elegido por los superusuarios del origen",
@@ -16688,7 +7877,7 @@ export const QUESTIONS = [
     "explanation": "La documentación advierte que restaurar un volcado ejecuta código arbitrario elegido por los superusuarios del origen, incluso en restauraciones parciales."
   },
   {
-    "id": 1518,
+    "id": 717,
     "topic_num": 16,
     "question": "¿Qué afirmación es correcta sobre COPY PROGRAM?",
     "option_a": "El servidor ejecuta el comando y el acceso requiere privilegios de superusuario o el rol de sistema correspondiente; las entradas no confiables deben escaparse",
@@ -16699,7 +7888,7 @@ export const QUESTIONS = [
     "explanation": "COPY PROGRAM ejecuta el comando desde el servidor y la documentación exige cautela con entradas no confiables y limita el acceso a privilegios específicos."
   },
   {
-    "id": 1519,
+    "id": 718,
     "topic_num": 16,
     "question": "¿Qué debe hacerse antes de restaurar un volcado SQL de texto con psql?",
     "option_a": "Crear la base de datos destino, normalmente desde template0, y ejecutar psql -X sobre el archivo; los propietarios y usuarios necesarios deben existir",
@@ -16710,7 +7899,7 @@ export const QUESTIONS = [
     "explanation": "Para un volcado de texto se debe crear la base de datos porque psql no la crea; además, los usuarios propietarios o con permisos deben existir para reproducir propiedad y privilegios."
   },
   {
-    "id": 1520,
+    "id": 719,
     "topic_num": 16,
     "question": "¿Cómo se puede inspeccionar y limitar el orden de restauración de un archivo con pg_restore?",
     "option_a": "-l/--list muestra el índice de contenidos y -L/--use-list restaura solo los elementos enumerados y en el orden del archivo de lista",

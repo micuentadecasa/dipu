@@ -1,6 +1,6 @@
 # Diputest random-repeat diagnosis
 
-**Status:** diagnosis complete; no product code or question data was changed.
+**Status:** diagnosis complete; the authorized duplicate-removal follow-up is recorded below.
 
 ## Conclusion
 
@@ -117,6 +117,12 @@ Do not change the shuffle or add a seed workaround. First decide the product inv
 - Add a pre-build bank validation that reports both exact fingerprint duplicates and normalized-prompt duplicates, with an explicit allowlist if variants are intentional. Test that IDs remain unique and that the 300 accepted records do not overlap the runtime set.
 - Add an end-to-end local production-build test that clicks `Nueva ronda` repeatedly, extracts a stable question identifier/fingerprint, and asserts the selected invariant. The current DOM does not expose numeric IDs, so use a test-only data attribute or a pure exported round-builder test rather than inferring IDs from rendered text.
 - Keep refresh behavior as a separate test: document that overlap across reloads is allowed, or add persistent history only if the product decision changes.
+
+## Authorized duplicate-removal follow-up
+
+The duplicate-removal follow-up changed the generated filler path in `seed_data.py` so it no longer cycles short pools to pad topics. It retains one record per normalized prompt, regenerates `frontend/src/questions.js`, and keeps the reviewed accepted records. The resulting local runtime contains **719 records**, with **719 distinct prompts and fingerprints**; numeric artifact IDs are regenerated as 1–719. The historical 1,200-record baseline remains recoverable in Git, and the published site remains unchanged until this branch is deployed.
+
+The regression test in `tests/test_question_bank_validation.py` now checks source and generated-artifact prompt/fingerprint uniqueness and sequential IDs.
 
 ## Unresolved uncertainty
 

@@ -1,6 +1,6 @@
 # Question-bank milestone 1: source coverage and validation seam
 
-**Status:** source-boundary comparison and validation seam completed; topics 1--15 are published and topic 16 has 20 independently reviewed, import-validated records in the native static artifact, ready for deployment.
+**Status:** source-boundary comparison and validation seam completed; topics 1--15 are published and topic 16 has 20 independently reviewed, import-validated records in the native static artifact, ready for deployment. The local runtime artifact now removes repeated legacy prompts.
 
 **Verified at:** 2026-10-12 (UTC)
 
@@ -18,21 +18,21 @@
 
 ## Validation run
 
-- `python3 -m unittest discover -s tests -v`: 10 tests passed after the schema/review/import additions.
+- `python3 -m unittest discover -s tests -v`: 11 tests passed after the schema/review/import and runtime-uniqueness additions.
 - `python3 -m json.tool docs/question-bank/question-record.schema.json`: passed.
 - `python3 -m json.tool docs/question-bank/source-register.json`: passed.
 - `python3 tools/build_objective_manifest.py` followed by JSON validation: passed; 8,000 slots, 200 per topic, with source-register and syllabus hashes.
 - `python3 tools/validate_question_bank.py docs/question-bank/lots/topic-01-lot-01.json`: passed for 20 candidate records.
 - All sixteen accepted artifacts passed `python3 tools/validate_question_bank.py`: 320 reviewed records.
-- Topic 1 and topics 2--16 import validation passed with 1,200 legacy records preserved and 320 collision-free additions, followed by native seed/static imports.
+- Topic 1 and topics 2--16 import validation passed before runtime cleanup; the historical 1,200-record baseline remains recoverable in Git, while the current native runtime retains 399 unique legacy records and 320 collision-free additions.
 - Re-running lot, review and import stages produced no duplicate checkpoint stage; checkpoint retries are idempotent.
 - `uv lock`: passed; `jsonschema` is now declared and locked.
-- Frontend lint/build passed after each native import; `frontend/src/questions.js` now contains 1,520 runtime records.
+- Frontend lint/build passed after each native import; the current duplicate-free `frontend/src/questions.js` contains 719 runtime records.
 
 ## Deliberately not done
 
-- Topics 1--16 are now imported through `seed_data.py` and regenerated into `frontend/src/questions.js` (1,520 runtime records). The original candidate lots remain quarantined as audit trails; each separate reviewed artifact contains 20 accepted records. The remaining 7,680 objective slots stay source-gated. The objective manifest is not question content.
-- The existing 1,200 records remain untouched and are not counted as validated records.
+- Topics 1--16 are imported through `seed_data.py` and regenerated into a duplicate-free `frontend/src/questions.js` (719 runtime records). The original candidate lots remain quarantined as audit trails; each separate reviewed artifact contains 20 accepted records. The remaining 7,680 objective slots stay source-gated. The objective manifest is not question content.
+- The pre-cleanup 1,200-record baseline remains recoverable in Git but is no longer published wholesale; 399 unique legacy records remain in the runtime and are not counted as validated records.
 - Semantic and concept-level duplicate decisions for topics 1--16 lot 1 are recorded as independently reviewed unique; future lots still require the same reviewer decision and the validator does not label them unique automatically.
 
 ## Blocking decisions before topic 1, lot 1
