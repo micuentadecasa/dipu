@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tests Oposiciones - Disenador/a de Aplicaciones</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Tests de Oposicion</h1>
+        <p class="subtitle">Disenador/a de Aplicaciones - Diputacion de Albacete</p>
+        <div class="stats">
+            <span class="stat">{{ total }} preguntas en total</span>
+        </div>
+    </header>
+
+    <main>
+        <div class="actions-top">
+            {% if total >= 10 %}
+            <a href="/exam?count=80" class="btn btn-primary btn-lg">Examen completo (80 preguntas)</a>
+            <a href="/exam/custom" class="btn btn-secondary">Examen personalizado</a>
+            {% endif %}
+            <a href="/questions" class="btn btn-secondary">Gestionar preguntas</a>
+            <form action="/generate/all" method="POST" class="inline-form" id="generateAllForm">
+                <label>Cargar preguntas predefinidas:</label>
+                <input type="number" name="num_per_topic" value="2" min="1" max="10" class="input-sm">
+                <button type="submit" class="btn btn-warning" id="btnGenerateAll">Cargar del temario (todos)</button>
+            </form>
+        </div>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+        <div class="flash-messages">
+            {% for category, message in messages %}
+            <div class="flash flash-{{ category }}">{{ message }}</div>
+            {% endfor %}
+        </div>
+        {% endif %}
+        {% endwith %}
+
+        <div class="topics-grid">
+            {% set ns = namespace(current_group="") %}
+            {% for topic in topics %}
+                {% if topic.group != ns.current_group %}
+                    {% set ns.current_group = topic.group %}
+                    <div class="group-header">
+                        <h2>{{ topic.group }}</h2>
+                    </div>
+                {% endif %}
+                <div class="topic-card">
+                    <div class="topic-header">
+                        <span class="topic-num">{{ topic.number }}</span>
+                        <h3>{{ topic.title }}</h3>
+                    </div>
+                    <div class="topic-body">
+                        <span class="question-count {{ 'has-questions' if counts.get(topic.number, 0) > 0 else 'no-questions' }}">
+                            {{ counts.get(topic.number, 0) }} preguntas
+                        </span>
+                        <div class="topic-actions">
+                            <form action="/generate/{{ topic.number }}" method="POST" class="gen-form">
+                                <input type="number" name="num_questions" value="2" min="1" max="20" class="input-sm">
+                                <button type="submit" class="btn btn-sm">Cargar</button>
+                            </form>
+                            {% if counts.get(topic.number, 0) > 0 %}
+                            <a href="/exam?count={{ counts[topic.number] }}&topics={{ topic.number }}" class="btn btn-sm btn-primary">Test</a>
+                            <form action="/delete/{{ topic.number }}" method="POST" class="inline-form">
+                                <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Eliminar todas las preguntas de este tema?')">Borrar</button>
+                            </form>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('generateAllForm')?.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const btn = document.getElementById('btnGenerateAll');
+            btn.disabled = true;
+            btn.textContent = 'Cargando...';
+            const form = e.target;
+            const resp = await fetch(form.action, { method: 'POST', body: new FormData(form) });
+            const data = await resp.json();
+            const success = data.results.filter(r => r.ok).reduce((s, r) => s + r.generated, 0);
+            const failed = data.results.filter(r => !r.ok).length;
+            alert(`Cargadas: ${success} preguntas. Fallos: ${failed}. Recarga la pagina.`);
+            btn.disabled = false;
+            btn.textContent = 'Cargar del temario (todos)';
+            location.reload();
+        });
+
+        document.querySelectorAll('.gen-form').forEach(form => {
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const btn = form.querySelector('button');
+                btn.disabled = true;
+                btn.textContent = '...';
+                const resp = await fetch(form.action, { method: 'POST', body: new FormData(form) });
+                const data = await resp.json();
+                btn.textContent = data.ok ? `${data.generated} ok` : 'Error';
+                setTimeout(() => { btn.disabled = false; btn.textContent = 'Cargar'; location.reload(); }, 1500);
+            });
+        });
+    </script>
+</body>
+</html>
