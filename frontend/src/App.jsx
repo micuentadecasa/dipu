@@ -1,22 +1,9 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import './App.css'
 import { QUESTIONS } from './questions.js'
+import { EXAM_SIZE, makeRound, markQuestionsShown } from './round.js'
 
-const EXAM_SIZE = 30
 const LETTERS = ['A', 'B', 'C', 'D']
-
-function shuffle(array) {
-  const copy = [...array]
-  for (let i = copy.length - 1; i > 0; i -= 1) {
-    const j = Math.floor(Math.random() * (i + 1))
-    ;[copy[i], copy[j]] = [copy[j], copy[i]]
-  }
-  return copy
-}
-
-function makeRound() {
-  return shuffle(QUESTIONS).slice(0, Math.min(EXAM_SIZE, QUESTIONS.length))
-}
 
 function optionText(question, letter) {
   return question[`option_${letter.toLowerCase()}`]
@@ -24,9 +11,13 @@ function optionText(question, letter) {
 
 function App() {
   const [roundId, setRoundId] = useState(1)
-  const [questions, setQuestions] = useState(() => makeRound())
+  const [questions, setQuestions] = useState(() => makeRound(QUESTIONS))
   const [answers, setAnswers] = useState({})
   const [showAnswers, setShowAnswers] = useState(false)
+
+  useEffect(() => {
+    markQuestionsShown(questions)
+  }, [questions])
 
   const answeredCount = Object.keys(answers).length
   const correctCount = useMemo(
@@ -37,7 +28,7 @@ function App() {
   const progress = Math.round((answeredCount / questions.length) * 100) || 0
 
   function startNewRound() {
-    setQuestions(makeRound())
+    setQuestions(makeRound(QUESTIONS))
     setAnswers({})
     setShowAnswers(false)
     setRoundId((id) => id + 1)
@@ -55,8 +46,8 @@ function App() {
         <div className="hero-badge">Oposición · Diputación de Albacete</div>
         <h1>Test de estudio</h1>
         <p>
-          Cada vez que entras o pulsas “Nueva ronda” se cargan {EXAM_SIZE} preguntas aleatorias.
-          Responde y verás la corrección al instante.
+          Cada vez que entras o pulsas “Nueva ronda” se cargan hasta {EXAM_SIZE} preguntas aleatorias.
+          Una pregunta no vuelve a salir hasta que pasan 14 horas. Responde y verás la corrección al instante.
         </p>
       </header>
 
@@ -122,7 +113,7 @@ function App() {
         <button className="btn reveal" onClick={() => setShowAnswers((value) => !value)}>
           {showAnswers ? 'Ocultar respuestas' : 'Mostrar respuestas correctas'}
         </button>
-        <button className="btn primary" onClick={startNewRound}>Nueva ronda de 30</button>
+        <button className="btn primary" onClick={startNewRound}>Nueva ronda de hasta {EXAM_SIZE}</button>
       </footer>
     </div>
   )
