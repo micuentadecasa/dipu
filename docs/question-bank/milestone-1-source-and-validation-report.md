@@ -1,6 +1,6 @@
 # Question-bank milestone 1: source coverage and validation seam
 
-**Status:** source-boundary comparison and validation seam completed; topics 1--8 are published and topic 9 has 20 independently reviewed, import-validated records in the native static artifact, ready for deployment.
+**Status:** source-boundary comparison and validation seam completed; topics 1--9 are published and topic 10 has 20 independently reviewed, import-validated records in the native static artifact, ready for deployment.
 
 **Verified at:** 2026-10-12 (UTC)
 
@@ -42,4 +42,4 @@
 - The objective target is 200 distinct objectives per topic, not 200 objectives reused across lots. The slot manifest is complete, but every statement still needs source research and independent review.
 - The official DOCM ELI URLs and Publications Office CELEX fallbacks are now recorded; verify current legal vigency/article amendments before acceptance. Administración Electrónica service pages remain WAF-blocked, and public SedipuAlba evidence remains incomplete for Segra and AdminSedeElectrónica. Missing or unverifiable claims remain quarantined.
 
-Topics 1--8, lot 1, are published at `https://micuentadecasa.github.io/dipu/` after successful workflow run `38256384973` for commit `d049218`; topic 9 has passed the same review/import gates with official eIDAS and AutoFirma entry-point sources. Publish topic 9 next and continue topics 10--15 sequentially under the same provenance and quarantine policy. The 8,000 count remains a target, never a padding requirement.
+Topics 1--9, lot 1, are published at `https://micuentadecasa.github.io/dipu/` after successful workflow run `38256662263` for commit `c6f5e65`; topic 10 has passed the same review/import gates with RFC 5280, RFC 8446 and RFC 9580. Publish topic 10 next and continue topics 11--15 sequentially under the same provenance and quarantine policy. The 8,000 count remains a target, never a padding requirement.
