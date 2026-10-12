@@ -1,6 +1,6 @@
 # Question-bank milestone 1: source coverage and validation seam
 
-**Status:** source-boundary comparison and validation seam completed; topics 1--19 lot 1 and topic 20 lots 1--4 are published with duplicate-free runtime data.
+**Status:** source-boundary comparison and validation seam completed; topics 1--19 lot 1 and topic 20 lots 1--4 are published with duplicate-free runtime data, and topic 20 lot 5 is import-validated pending deployment.
 
 **Verified at:** 2026-10-12 (UTC)
 
@@ -13,8 +13,8 @@
 5. `question_bank/validation.py` provides the pre-export seam: JSON Schema/format validation, option/correct-answer checks, deterministic stable IDs, exact/lexical/near-lexical screening, and explicit `uncertain` results for semantic/concept review that cannot be automated honestly.
 6. `question_bank/checkpoints.py` provides append-only lot-stage checkpoints. A retry of the same topic/lot/revision/stage and content hashes is a no-op; a conflicting retry is rejected.
 7. `tools/validate_question_bank.py` provides a command-line validation entry point. `tools/build_objective_manifest.py` rebuilds the objective-slot artifact from the source register. `tests/test_question_bank_validation.py` covers schema acceptance, legacy context fields, malformed records, five-level screening semantics, checkpoint idempotence/conflict handling, and exact 1--40 source coverage.
-8. `docs/question-bank/research/objectives/topic-01.json` through `topic-05.json`, `topics-06-15.json`, and `topic-16.json` through `topic-20.json` record 480 primary-source-backed objective statements. The topic-1 and generic topic-2--20 pipelines produced quarantined candidate audits; separate review artifacts contain 20 accepted records per first lot plus topic 20 lot 2 after answer, explanation, semantic-duplicate, and concept-collision review. Native imports use `tools/import_accepted_batch.py`.
-9. Every question source now carries `official_primary` or `secondary_reputable` tier metadata. The current accepted set contains 460 official-primary records and no secondary-source records.
+8. `docs/question-bank/research/objectives/topic-01.json` through `topic-05.json`, `topics-06-15.json`, and `topic-16.json` through `topic-20.json` record 480 primary-source-backed objective statements. The topic-1 and generic topic-2--20 pipelines produced quarantined candidate audits; separate review artifacts contain 20 accepted records per first lot plus topic 20 lots 2--5 after answer, explanation, semantic-duplicate, and concept-collision review. Native imports use `tools/import_accepted_batch.py`.
+9. Every question source now carries `official_primary` or `secondary_reputable` tier metadata. The current accepted set contains 480 official-primary records and no secondary-source records.
 
 ## Validation run
 
@@ -23,17 +23,17 @@
 - `python3 -m json.tool docs/question-bank/source-register.json`: passed.
 - `python3 tools/build_objective_manifest.py` followed by JSON validation: passed; 8,000 slots, 200 per topic, with source-register and syllabus hashes.
 - `python3 tools/validate_question_bank.py docs/question-bank/lots/topic-01-lot-01.json`: passed for 20 candidate records.
-- The twenty first-lot artifacts plus topic 20 lots 2--4 passed `python3 tools/validate_question_bank.py`: 460 reviewed records.
-- Topic 1 and topics 2--20 first-lot imports plus topic 20 lots 2--4 passed validation; the historical 1,200-record baseline remains recoverable in Git, while the current duplicate-free runtime retains 399 unique legacy records and 460 collision-free additions.
+- The twenty first-lot artifacts plus topic 20 lots 2--5 passed `python3 tools/validate_question_bank.py`: 480 reviewed records.
+- Topic 1 and topics 2--20 first-lot imports plus topic 20 lots 2--5 passed validation; the historical 1,200-record baseline remains recoverable in Git, while the current duplicate-free runtime retains 399 unique legacy records and 480 collision-free additions.
 - Re-running lot, review and import stages produced no duplicate checkpoint stage; checkpoint retries are idempotent.
 - `uv lock`: passed; `jsonschema` is now declared and locked.
-- Frontend lint/build passed after each native import; the current duplicate-free `frontend/src/questions.js` contains 859 runtime records.
+- Frontend lint/build passed after each native import; the current duplicate-free `frontend/src/questions.js` contains 879 runtime records.
 
 ## Deliberately not done
 
-- Topics 1--20 first lots and topic 20 lots 2--4 are imported through `seed_data.py` and regenerated into a duplicate-free `frontend/src/questions.js` (859 runtime records). The original candidate lots remain quarantined as audit trails; each separate reviewed artifact contains 20 accepted records. The remaining 7,520 objective slots stay source-gated. The objective manifest is not question content.
+- Topics 1--20 first lots and topic 20 lots 2--5 are imported through `seed_data.py` and regenerated into a duplicate-free `frontend/src/questions.js` (879 runtime records). The original candidate lots remain quarantined as audit trails; each separate reviewed artifact contains 20 accepted records. The remaining 7,520 objective slots stay source-gated. The objective manifest is not question content.
 - The pre-cleanup 1,200-record baseline remains recoverable in Git but is no longer published wholesale; 399 unique legacy records remain in the runtime and are not counted as validated records.
-- Semantic and concept-level duplicate decisions for topics 1--20 lot 1 and topic 20 lots 2--4 are recorded as independently reviewed unique; future lots still require the same reviewer decision and the validator does not label them unique automatically.
+- Semantic and concept-level duplicate decisions for topics 1--20 lot 1 and topic 20 lots 2--5 are recorded as independently reviewed unique; future lots still require the same reviewer decision and the validator does not label them unique automatically.
 
 ## Blocking decisions before topic 1, lot 1
 
@@ -42,4 +42,4 @@
 - The objective target is 200 distinct objectives per topic, not 200 objectives reused across lots. The slot manifest is complete, but every statement still needs source research and independent review.
 - The official DOCM ELI URLs and Publications Office CELEX fallbacks are now recorded; verify current legal vigency/article amendments before acceptance. Administración Electrónica service pages remain WAF-blocked, and public SedipuAlba evidence remains incomplete for Segra and AdminSedeElectrónica. Missing or unverifiable claims remain quarantined.
 
-Topics 1--20 lot 1 and topic 20 lots 2--4 are published at `https://micuentadecasa.github.io/dipu/` after successful workflow run `38284181768` for commit `f73229a`; the expansion lots use official Microsoft EF Core 10 documentation. Process topic 20 expansion lot 5 next, then later topics sequentially under the same provenance and quarantine policy. The 8,000 count remains a target, never a padding requirement.
+Topics 1--20 lot 1 and topic 20 lots 2--4 are published at `https://micuentadecasa.github.io/dipu/`; topic 20 lot 5 has passed the same review/import gates with official Microsoft EF Core 10 documentation and is pending deployment. After publication, continue with later topics sequentially under the same provenance and quarantine policy. The 8,000 count remains a target, never a padding requirement.

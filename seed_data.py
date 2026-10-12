@@ -6288,3 +6288,208 @@ SEED_QUESTIONS.extend([
     }
 ])
 # QUESTION_BANK_ACCEPTED_TOPIC_20_LOT_04_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_20_LOT_05_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 20,
+        "question": "¿Qué describe el modelo metadata de EF Core?",
+        "option_a": "Solo las rutas HTTP",
+        "option_b": "Cómo se asignan los tipos de entidad de la aplicación a la base de datos subyacente",
+        "option_c": "Únicamente los estilos de las entidades",
+        "option_d": "Los usuarios conectados al servidor",
+        "correct": "B",
+        "explanation": "EF Core utiliza un modelo metadata para describir cómo se asignan los tipos de entidad de la aplicación a la base de datos subyacente."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué método se usa habitualmente para aplicar configuración Fluent API?",
+        "option_a": "OnModelCreating",
+        "option_b": "SaveChangesAsync",
+        "option_c": "ToListAsync",
+        "option_d": "DisposeAsync",
+        "correct": "A",
+        "explanation": "La configuración Fluent API se aplica habitualmente con ModelBuilder dentro de OnModelCreating."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué puede aportar un proveedor específico al modelado EF Core?",
+        "option_a": "Solo componentes de interfaz",
+        "option_b": "Configuración específica del almacén de datos además de la configuración general",
+        "option_c": "Una sustitución obligatoria del contexto",
+        "option_d": "Únicamente migraciones de otra aplicación",
+        "correct": "B",
+        "explanation": "Los proveedores pueden habilitar configuración específica de su almacén de datos, además de la configuración general del modelo."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué diferencia hay entre una propiedad DbSet y una tabla física?",
+        "option_a": "Una propiedad DbSet expone un conjunto de entidades en el modelo; la tabla es una decisión de mapeo del almacén",
+        "option_b": "Son siempre el mismo objeto con el mismo nombre",
+        "option_c": "La tabla existe solo durante la compilación",
+        "option_d": "DbSet solo sirve para estilos",
+        "correct": "A",
+        "explanation": "DbSet incluye o expone un tipo de entidad en el modelo, mientras que el mapeo a una tabla física se configura como parte de la relación con el almacén."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué opciones de mapeo relacional se refieren al nombre y esquema de una tabla?",
+        "option_a": "Table name y Table schema",
+        "option_b": "Tracking y No-tracking",
+        "option_c": "Add y Attach",
+        "option_d": "Model y View",
+        "correct": "A",
+        "explanation": "EF Core documenta Table name y Table schema como opciones de configuración del mapeo de un tipo de entidad."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué permite el mapeo a una vista de EF Core?",
+        "option_a": "Mapear un tipo de entidad a una vista de la base de datos en lugar de a una tabla normal",
+        "option_b": "Convertir una vista en una migración obligatoria",
+        "option_c": "Eliminar todas las propiedades de navegación",
+        "option_d": "Ejecutar consultas exclusivamente en memoria",
+        "correct": "A",
+        "explanation": "EF Core incluye configuración para mapear tipos de entidad a vistas de la base de datos."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué dos mecanismos pueden incluir tipos en el modelo EF Core?",
+        "option_a": "Propiedades DbSet y tipos especificados en OnModelCreating",
+        "option_b": "Solo archivos CSS y JavaScript",
+        "option_c": "Únicamente llamadas a Dispose",
+        "option_d": "Solo tablas creadas por migraciones",
+        "correct": "A",
+        "explanation": "Los tipos expuestos por DbSet, especificados en OnModelCreating o descubiertos mediante navegaciones pueden incluirse en el modelo."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué puede hacer un proveedor con una configuración no aplicable a su almacén?",
+        "option_a": "Debe convertirla siempre en una tabla",
+        "option_b": "Puede ignorarla si no está soportada o no es aplicable al almacén de datos",
+        "option_c": "Debe eliminar el DbContext",
+        "option_d": "Solo puede transformarla en CSS",
+        "correct": "B",
+        "explanation": "La configuración específica puede variar por proveedor; la documentación indica que un proveedor puede ignorar configuración no soportada o no aplicable."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué diferencia hay entre cargar todos los datos y cargar una sola entidad?",
+        "option_a": "La primera obtiene el conjunto de resultados y la segunda limita la operación a una entidad",
+        "option_b": "Ambas operaciones siempre eliminan datos",
+        "option_c": "Cargar una sola entidad solo sirve para migraciones",
+        "option_d": "Cargar todos los datos nunca usa LINQ",
+        "correct": "A",
+        "explanation": "La documentación separa el patrón de cargar todos los datos del de cargar una sola entidad, que restringe el resultado a un elemento."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué efecto tiene componer un filtro LINQ antes de materializar una consulta?",
+        "option_a": "Restringe la consulta mediante una condición antes de obtener sus resultados",
+        "option_b": "Marca todos los resultados como Deleted",
+        "option_c": "Elimina el proveedor",
+        "option_d": "Fuerza a que todas las entidades sean keyless",
+        "correct": "A",
+        "explanation": "Un filtro LINQ permite componer una condición que restringe los resultados que se materializan desde la base de datos."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué relación entre claves y tracking es correcta?",
+        "option_a": "Las consultas de tipos de entidad con clave se rastrean por defecto; los tipos keyless nunca se rastrean",
+        "option_b": "Todos los tipos keyless se rastrean siempre",
+        "option_c": "Las claves solo afectan a CSS",
+        "option_d": "Ninguna entidad puede rastrearse",
+        "correct": "A",
+        "explanation": "Las consultas de entidades con clave tienen tracking por defecto, mientras que la documentación indica que los tipos keyless nunca se rastrean."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué se consigue al configurar el comportamiento de tracking predeterminado?",
+        "option_a": "Se cambia el comportamiento base de las consultas del contexto sin tener que indicarlo en cada una",
+        "option_b": "Se crea una migración de datos inmediatamente",
+        "option_c": "Se eliminan las claves primarias",
+        "option_d": "Se desactiva el proveedor de consultas",
+        "correct": "A",
+        "explanation": "EF Core permite configurar el comportamiento de tracking predeterminado para establecer la política base de las consultas del contexto."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué diferencia práctica existe entre resultados tracked y no-tracked?",
+        "option_a": "Los resultados tracked pueden participar en la persistencia de cambios mediante SaveChanges; los no-tracked no se mantienen en el change tracker",
+        "option_b": "Los no-tracked siempre se guardan automáticamente",
+        "option_c": "Los tracked solo sirven para migraciones",
+        "option_d": "No hay diferencia en el contexto",
+        "correct": "A",
+        "explanation": "El tracking mantiene información de las entidades para persistir cambios mediante SaveChanges; una consulta no-tracking evita ese seguimiento."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué información utiliza el change tracker para detectar modificaciones?",
+        "option_a": "Valores actuales y valores originales de las entidades seguidas",
+        "option_b": "Solo el nombre del proveedor",
+        "option_c": "Únicamente el texto de una vista",
+        "option_d": "Solo el número de migración",
+        "correct": "A",
+        "explanation": "El seguimiento de cambios conserva información de los valores de las entidades para detectar qué se modificó antes de guardar."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué expresa desechar un DbContext respecto a la unidad de trabajo?",
+        "option_a": "Que termina su ciclo de vida y su ámbito de seguimiento",
+        "option_b": "Que se convierte en singleton",
+        "option_c": "Que todas las entidades se insertan automáticamente",
+        "option_d": "Que se genera una nueva migración",
+        "correct": "A",
+        "explanation": "El ciclo de vida del DbContext termina al desechar la instancia, lo que cierra la unidad de trabajo y su seguimiento asociado."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué decisión distingue una actualización masiva de una actualización mediante entidades?",
+        "option_a": "ExecuteUpdate actúa directamente sobre las filas; SaveChanges persiste cambios de entidades seguidas",
+        "option_b": "ExecuteUpdate solo modifica archivos fuente",
+        "option_c": "SaveChanges nunca usa entidades",
+        "option_d": "Ambos requieren exactamente el mismo seguimiento",
+        "correct": "A",
+        "explanation": "ExecuteUpdate y ExecuteDelete son operaciones masivas directas, mientras que el enfoque tradicional modifica entidades seguidas y llama a SaveChanges."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué compara EF Core para generar una migración aunque la base de datos no se compare como texto?",
+        "option_a": "El modelo actual y la instantánea del modelo anterior",
+        "option_b": "Solo las cadenas de conexión",
+        "option_c": "Los estilos y las rutas HTTP",
+        "option_d": "El contenido de una vista HTML",
+        "correct": "A",
+        "explanation": "La generación de migraciones se basa en comparar el modelo actual con la instantánea del modelo anterior y generar las diferencias."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué describe correctamente la ingeniería inversa de EF Core?",
+        "option_a": "Es una tarea de herramientas de diseño que genera clases a partir del esquema, no el flujo normal de consulta en ejecución",
+        "option_b": "Es una técnica para aplicar CSS a las entidades",
+        "option_c": "Es una operación que siempre elimina la base",
+        "option_d": "Es otra forma de llamar a SaveChanges",
+        "correct": "A",
+        "explanation": "La ingeniería inversa pertenece a las tareas de desarrollo de las herramientas de EF Core y genera tipos desde un esquema existente."
+    },
+    {
+        "topic_num": 20,
+        "question": "Una aplicación inicia consultas paralelas con la misma instancia de DbContext. ¿Qué debe corregirse?",
+        "option_a": "El diseño de ciclo de vida y concurrencia: se deben evitar operaciones paralelas sobre una instancia y usar contextos apropiados",
+        "option_b": "Solo el nombre de la entidad",
+        "option_c": "La hoja de estilos de la aplicación",
+        "option_d": "La clave primaria de todas las tablas",
+        "correct": "A",
+        "explanation": "El uso concurrente de una misma instancia no está admitido; el diseño debe respetar el ciclo de vida del contexto y esperar las operaciones."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué combinación describe una unidad de trabajo segura con EF Core?",
+        "option_a": "Un contexto de vida corta, operaciones asíncronas esperadas y SaveChanges para persistir cambios",
+        "option_b": "Un contexto global compartido, tareas sin await y eliminación de migraciones",
+        "option_c": "Solo consultas CSS y un proveedor no configurado",
+        "option_d": "Un contexto nuevo por cada propiedad sin guardar cambios",
+        "correct": "A",
+        "explanation": "Una unidad de trabajo adecuada usa un contexto de vida corta, espera las operaciones asíncronas y guarda los cambios mediante SaveChanges cuando corresponde."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_20_LOT_05_END
