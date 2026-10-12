@@ -30,6 +30,7 @@ SPEC_PATHS = [
     ROOT / "docs/question-bank/research/questions/topics-06-15-lot-01.json",
     ROOT / "docs/question-bank/research/questions/topics-16-lot-01.json",
     ROOT / "docs/question-bank/research/questions/topics-17-lot-01.json",
+    ROOT / "docs/question-bank/research/questions/topics-18-lot-01.json",
 ]
 
 
@@ -85,7 +86,7 @@ def make_record(spec: dict, source: dict, numeric_id: int) -> dict:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("topic_num", type=int, choices=tuple(range(2, 18)))
+    parser.add_argument("topic_num", type=int, choices=tuple(range(2, 19)))
     args = parser.parse_args()
     batch = load_batch(args.topic_num)
     register = json.loads(REGISTER_PATH.read_text(encoding="utf-8"))

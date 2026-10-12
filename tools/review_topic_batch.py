@@ -78,12 +78,15 @@ EXPECTATIONS = {
     17: {
         1:("A","14.1. Using EXPLAIN"),2:("A","11.1. Introduction"),3:("A","ANALYZE, Description"),4:("A","19.7. Query Planning"),5:("A","14.1.1. EXPLAIN Basics"),6:("A","11.2.1. B-Tree"),7:("A","14.2. Statistics Used by the Planner"),8:("A","24.1. Routine Vacuuming"),9:("A","14.1.2. EXPLAIN ANALYZE"),10:("A","11.3. Multicolumn Indexes"),11:("A","ANALYZE, Description"),12:("A","19.7.2. Planner Cost Constants"),13:("A","14.1.1. EXPLAIN Basics"),14:("A","11.8. Partial Indexes"),15:("A","14.2. Statistics Used by the Planner"),16:("A","24.1. Routine Vacuuming"),17:("A","27.2.3. pg_stat_activity"),18:("A","Chapter 15. Parallel Query"),19:("A","11.4. Indexes and ORDER BY"),20:("A","24.1.6. The Autovacuum Daemon")
     },
+    18: {
+        1:("A","C# type system overview"),2:("A","C# type system: value types and reference types"),3:("A","Implicitly typed local variables"),4:("A","Generics in .NET"),5:("A","Selection statements"),6:("A","Methods, overview"),7:("A","Classes and objects"),8:("A","Generics in .NET"),9:("A","Iteration statements"),10:("A","Parameter passing"),11:("A","Inheritance in C#"),12:("A","Generics in .NET"),13:("A","Jump statements"),14:("A","Exception handling statements"),15:("A","Access modifiers"),16:("A","LINQ overview"),17:("A","Pattern matching overview"),18:("A","Exception handling statements"),19:("A","Methods and polymorphism"),20:("A","Generic constraints")
+    },
 }
 
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("topic_num", type=int, choices=tuple(range(2, 18)))
+    parser.add_argument("topic_num", type=int, choices=tuple(range(2, 19)))
     args = parser.parse_args()
     lot_path = ROOT / "docs/question-bank/lots" / f"topic-{args.topic_num:02d}-lot-01.json"
     checkpoint_path = ROOT / "docs/question-bank/checkpoints" / f"topic-{args.topic_num:02d}-lot-01.jsonl"
