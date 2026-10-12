@@ -19,7 +19,7 @@
 
 ## Lot 1 distributions
 
-Topics 1--13 lot 1 each use 4 basic, 10 intermediate and 6 advanced records. Topics 1--12 use documented official sources; topic 13 uses the official Código Civil BOE source. All thirteen independent review passes accepted 260 official-primary records after answer, explanation, semantic and concept checks. Topics 1--12 are live at `https://micuentadecasa.github.io/dipu/`; topic 13 is ready for the next deployment.
+Topics 1--13 lot 1 each use 4 basic, 10 intermediate and 6 advanced records. Topics 1--12 use documented official sources; topic 13 uses the official PostgreSQL 18 documentation source. All thirteen independent review passes accepted 260 official-primary records after answer, explanation, semantic and concept checks. Topics 1--12 are live at `https://micuentadecasa.github.io/dipu/`; topic 13 is ready for the next deployment.
 
 Candidate, reviewed, audit and checkpoint artifacts are recorded under `lots/`, `accepted/`, `reviews/` and `checkpoints/` for topics 1--5. Re-running the lot/review/import stages is idempotent.
 
@@ -42,4 +42,4 @@ Candidate, reviewed, audit and checkpoint artifacts are recorded under `lots/`, 
 - `cd frontend && npm run lint`: passed.
 - `cd frontend && npm run build`: passed; the build uses the unchanged runtime artifact.
 
-The reviewed artifacts pass answer, explanation, five-level duplicate review and source checks. Publication milestone: topics 1--12, lot 1, 20 accepted records each, are live at `https://micuentadecasa.github.io/dipu/`; workflow run `38257393498` completed successfully for commit `8e414ad`. Topic 13 has 20 accepted official-primary records from the official Código Civil source and is ready for deployment. AutoFirma facts remain limited to the official entry point and no version-sensitive claim. No secondary or provisional records are in these batches.
+The reviewed artifacts pass answer, explanation, five-level duplicate review and source checks. Publication milestone: topics 1--12, lot 1, 20 accepted records each, are live at `https://micuentadecasa.github.io/dipu/`; workflow run `38257393498` completed successfully for commit `8e414ad`. Topic 13 has 20 accepted official-primary records from the PostgreSQL 18 documentation source and is ready for deployment. AutoFirma facts remain limited to the official entry point and no version-sensitive claim. No secondary or provisional records are in these batches.
