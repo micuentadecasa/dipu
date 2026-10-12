@@ -24,18 +24,18 @@ The official call supplied for this work was fetched without credentials and pre
 | Area | Current implementation | Baseline finding | Risk / implication |
 |---|---|---|---|
 | Deployed app | `frontend/src/App.jsx` + Vite/React | Static GitHub Pages app; imports `QUESTIONS` and shows 30 random items | This is the active product path, not Flask/SQLite |
-| Canonical authoring input | `seed_data.py` | `SEED_QUESTIONS` is built from a base list plus generated extra/direct filler; runtime total is 1,200, exactly 30/topic | Dynamic filler makes provenance and stable identity difficult; do not treat the filler as validated |
-| Generated frontend data | `frontend/src/questions.js` | 1,200 records, numeric IDs 1--1,200, 30/topic | Generated artifact must remain compatible with the current field names |
+| Canonical authoring input | `seed_data.py` | `SEED_QUESTIONS` is built from a base list plus generated extra/direct filler; the pre-cleanup baseline was 1,200 records, while the current runtime retains one normalized prompt per record | Dynamic filler makes provenance and stable identity difficult; do not treat the filler as validated |
+| Generated frontend data | `frontend/src/questions.js` | Current duplicate-free artifact has 719 records with numeric IDs 1--719; accepted records are additive and topic counts are no longer padded with repeated filler | Generated artifact must remain compatible with the current field names |
 | Legacy backend | `app.py`, `db.py`, `generator.py`, `templates/` | Flask API and SQLite table exist, but README says production does not use them | Preserve as legacy compatibility; do not introduce a parallel question service |
 | SQLite schema | `db.py::init_db` | `questions` has topic/group, prompt, four options, answer, explanation, created timestamp; only topic index | No source, objective, difficulty, type, review state, stable key, or uniqueness constraint |
 | Backend import/generation | `app.py::api_generate*`, `generator.py`, `db.py::insert_questions` | Generator slices seed data and inserts blindly; repeated calls can duplicate rows | Never use current generation endpoints for a bulk import without an idempotency layer |
 | Static export | Procedure in `guide_dev.md` | Imports Python source and rewrites `frontend/src/questions.js` with sequential IDs | Keep this native path, but make identity/content validation and atomic export explicit before bulk lots |
 | Frontend contract | `App.jsx::optionText`, `question.id`, `question.correct`, `question.explanation` | Uses `topic_num`, `question`, `option_a..d`, `correct`, `explanation`; ignores additional properties | Add metadata without removing or renaming existing fields; preserve numeric `id` for UI compatibility |
 | Tests | Repository-wide test search | No Python test suite, frontend test script, Playwright setup, or bank validator is present | Validation gates must be added before importing lots |
-| Existing duplicate state | Runtime `seed_data.SEED_QUESTIONS` and generated JS | 1,200 total; only 399 normalized prompt texts; 801 repeated prompt occurrences; 480 exact full-record duplicate groups with 560 extra occurrences | Existing records are a legacy baseline, not 1,200 validated learning objectives |
-| Existing field validity | Runtime `seed_data.SEED_QUESTIONS` | All 1,200 have four non-empty distinct options, a valid A--D answer, and a non-empty explanation | Structural validity is not evidence validity or conceptual distinctness |
+| Existing duplicate state | Historical runtime `seed_data.SEED_QUESTIONS` and generated JS | Before cleanup, the 1,200-record baseline had only 399 normalized prompt texts, 801 repeated prompt occurrences, and 480 exact full-record duplicate groups with 560 extra occurrences; current runtime has no duplicate prompts or fingerprints | Historical duplicate records remain recoverable in Git; runtime records are not 1,200 validated learning objectives |
+| Existing field validity | Runtime `seed_data.SEED_QUESTIONS` | All current 719 records have four non-empty distinct options, a valid A--D answer, and a non-empty explanation | Structural validity is not evidence validity or conceptual distinctness |
 
-The duplicate counts above use Unicode accent folding, lower-casing, punctuation removal, and whitespace collapse for prompt comparison. They are screening counts, not a semantic-review verdict.
+The historical duplicate counts above used Unicode normalization, case-folding, and whitespace collapse for prompt comparison. They are screening counts, not a semantic-review verdict; the current runtime uniqueness gate uses the same normalized-prompt key.
 
 ## 2. Exact 40-topic boundary
 
@@ -185,7 +185,7 @@ Before the first generation lot, add tests/tools for:
 - five-level duplicate screening and rejection-audit persistence;
 - independent answer verification, including an explicit disagreement/quarantine path;
 - safe, bounded code/SQL execution for items marked executable, with version and output captured;
-- idempotent import/export and preservation of the 1,200-record legacy snapshot;
+- idempotent import/export and preservation of the historical 1,200-record legacy snapshot in Git while publishing only the duplicate-free runtime view;
 - static build (`npm run build`) and lint (`npm run lint`);
 - Flask legacy API compatibility if the old backend remains supported;
 - browser flow: load a round, answer an item, reveal the explanation, start a new round, and ensure duplicate stable IDs are not emitted.

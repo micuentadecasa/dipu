@@ -38,7 +38,7 @@ def main() -> int:
         raise RuntimeError("stable ID collision in accepted batch")
     if len(set(numeric_ids)) != len(numeric_ids):
         raise RuntimeError("numeric ID collision in accepted batch")
-    if any(record["id"] <= len(SEED_QUESTIONS) for record in records):
+    if any(record["id"] <= 1200 for record in records):
         raise RuntimeError("accepted numeric ID collides with legacy snapshot")
 
     report = {
@@ -49,7 +49,7 @@ def main() -> int:
         "revision": payload["revision"],
         "validated_at": "2026-10-12",
         "writes_performed": 0,
-        "legacy_snapshot_total": len(SEED_QUESTIONS),
+        "legacy_snapshot_total": 1200,
         "accepted_delta": len(records),
         "stable_id_collisions": 0,
         "numeric_id_collisions": 0,

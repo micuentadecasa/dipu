@@ -3,14 +3,24 @@ from __future__ import annotations
 import copy
 import json
 import tempfile
+import unicodedata
 import unittest
 from pathlib import Path
 
 from question_bank.checkpoints import CheckpointError, append_checkpoint, load_checkpoints
 from question_bank.validation import screen_duplicates, stable_id_for, validate_record
+from seed_data import SEED_QUESTIONS
 
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def prompt_key(question: str) -> str:
+    return " ".join(unicodedata.normalize("NFKC", question).casefold().split())
+
+
+def fingerprint(record: dict) -> tuple:
+    return tuple(record[field] for field in ("topic_num", "question", "option_a", "option_b", "option_c", "option_d"))
 
 
 def valid_record() -> dict:
@@ -98,6 +108,19 @@ class QuestionRecordTests(unittest.TestCase):
         self.assertGreaterEqual(screen.near_lexical.score, 0.92)
 
 
+class RuntimeQuestionBankTests(unittest.TestCase):
+    def test_runtime_bank_has_unique_prompts_and_fingerprints(self):
+        artifact = (ROOT / "frontend/src/questions.js").read_text(encoding="utf-8")
+        runtime = json.loads(artifact[artifact.index("["):])
+
+        self.assertEqual(len(runtime), len(SEED_QUESTIONS))
+        self.assertEqual([question["id"] for question in runtime], list(range(1, len(runtime) + 1)))
+        self.assertEqual(len({prompt_key(question["question"]) for question in SEED_QUESTIONS}), len(SEED_QUESTIONS))
+        self.assertEqual(len({fingerprint(question) for question in SEED_QUESTIONS}), len(SEED_QUESTIONS))
+        self.assertEqual(len({prompt_key(question["question"]) for question in runtime}), len(runtime))
+        self.assertEqual(len({fingerprint(question) for question in runtime}), len(runtime))
+
+
 class CheckpointTests(unittest.TestCase):
     def manifest(self):
         return {
@@ -145,7 +168,7 @@ class SourceRegisterTests(unittest.TestCase):
         manifest = json.loads((ROOT / "docs/question-bank/objective-manifest.json").read_text(encoding="utf-8"))
         self.assertEqual(manifest["objective_count"], 8000)
         self.assertEqual(manifest["objectives_per_topic"], 200)
-        self.assertEqual(manifest["researched_objective_count"], 20)
+        self.assertEqual(manifest["researched_objective_count"], 320)
         topic_counts = {}
         researched_count = 0
         for objective in manifest["objectives"]:
@@ -157,7 +180,7 @@ class SourceRegisterTests(unittest.TestCase):
                 self.assertEqual(objective["coverage_state"], "researched_pending_independent_review")
                 self.assertTrue(objective["citation"])
             self.assertEqual(objective["reviewer_decision"], "not_reviewed")
-        self.assertEqual(researched_count, 20)
+        self.assertEqual(researched_count, 320)
         self.assertEqual(topic_counts, {topic: 200 for topic in range(1, 41)})
 
     def test_topic_one_lot_is_candidate_only_and_blockers_are_recorded(self):

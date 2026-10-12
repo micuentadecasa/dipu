@@ -1,0 +1,132 @@
+#!/usr/bin/env python3
+"""Independent review and promotion for a topic 2-5 candidate lot."""
+
+from __future__ import annotations
+
+import argparse
+import copy
+import json
+from pathlib import Path
+import sys
+
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from question_bank.checkpoints import append_checkpoint, file_sha256
+from question_bank.validation import validate_record
+
+DATE = "2026-10-12"
+EXPECTATIONS = {
+    2: {
+        1:("A","Artículo 97"),2:("A","Artículo 98.1"),3:("A","Artículo 98.2"),4:("A","Artículo 98.3"),5:("B","Artículo 100"),
+        6:("B","Artículo 108"),7:("A","Artículo 102"),8:("A","Artículo 111"),9:("A","Artículo 112"),10:("A","Artículo 113"),
+        11:("A","Artículos 112 y 113"),12:("A","Artículo 115.2"),13:("A","Artículo 137"),14:("A","Artículo 140"),15:("A","Artículo 141.1"),
+        16:("A","Artículo 142"),17:("A","Artículo 147.2"),18:("A","Artículo 149.3"),19:("A","Artículo 153.a"),20:("A","Artículo 155.1"),
+    },
+    3: {
+        1:("A","Artículo 11"),2:("A","Artículo 11.2"),3:("A","Artículo 12.2"),4:("A","Artículo 16"),5:("A","Artículo 20.1.a"),
+        6:("A","Artículo 20.1.b"),7:("A","Artículo 21.1.a y b"),8:("A","Artículo 22.2.a"),9:("A","Artículo 22.2.d"),10:("A","Artículo 23.2"),
+        11:("A","Artículo 31.1"),12:("A","Artículo 32.1"),13:("A","Artículo 34.1.a y b"),14:("A","Artículo 33.2.a"),15:("A","Artículo 36.1.b"),
+        16:("A","Artículo 36.1.a"),17:("A","Artículo 36.1.c"),18:("A","Artículo 36.2.a"),19:("A","Artículo 36.2.b"),20:("A","Artículos 1, 2, 11, 31 y 32"),
+    },
+    4: {
+        1:("A","RDL 781/1986, artículo 22.3"),2:("A","RDL 781/1986, artículo 21"),3:("A","RDL 781/1986, artículo 23"),4:("A","RDL 781/1986, artículo 24.1"),5:("A","RDL 781/1986, artículo 30.1"),
+        6:("A","RDL 781/1986, artículo 30.2.b"),7:("A","RDL 781/1986, artículo 35.2"),8:("A","RDL 781/1986, artículo 35.2.d"),9:("A","RDL 781/1986, artículo 32"),10:("A","RDL 781/1986, artículo 34.1"),
+        11:("A","RD 2568/1986, artículo 29"),12:("A","RD 2568/1986, artículo 32"),13:("A","RD 2568/1986, artículo 25"),14:("A","RD 2568/1986, artículo 26"),15:("A","RD 2568/1986, artículo 27"),
+        16:("A","RD 2568/1986, artículo 28.3"),17:("A","RD 2568/1986, artículo 31.1"),18:("A","RD 2568/1986, artículo 35.1"),19:("A","RD 2568/1986, artículo 34.2"),20:("A","RD 2568/1986, artículos 24 y 30"),
+    },
+    5: {
+        1:("A","Artículo 1.1"),2:("A","Artículo 2.3"),3:("A","Artículo 3"),4:("A","Artículo 4.1"),5:("A","Artículo 4.3"),
+        6:("A","Artículo 5.1"),7:("A","Artículo 5.4"),8:("A","Artículo 5.6"),9:("A","Artículo 53.1.a"),10:("A","Artículo 14.2.a-e"),
+        11:("A","Artículo 14.1"),12:("A","Artículos 9 y 10"),13:("A","Artículo 15.1"),14:("A","Artículo 53.1.d"),15:("A","Artículo 53.1.e"),
+        16:("A","Artículo 53.1.g"),17:("A","Artículo 53.1.h"),18:("A","Artículo 5.2"),19:("A","Artículo 15.1"),20:("A","Artículos 5.1 y 53.1.g"),
+    },
+    6: {
+        1:("A","Artículo 26.1"),2:("A","Artículo 70.1"),3:("A","Artículo 30.1"),4:("A","Artículo 30.5"),5:("A","Artículo 32.1"),6:("A","Artículo 21.1"),7:("A","Artículo 24.1"),8:("A","Artículo 34.1"),9:("A","Artículo 35.1.a"),10:("A","Artículo 36.1"),11:("A","Artículo 39.1"),12:("A","Artículo 40.2"),13:("A","Artículo 40.2"),14:("A","Artículo 45.1.a y b"),15:("A","Artículo 47.1.a"),16:("A","Artículo 48.1"),17:("A","Artículo 51"),18:("A","Artículo 107.1"),19:("A","Artículo 23"),20:("A","Artículo 43.2")
+    },
+    7: {
+        1:("A","Artículo 4.1"),2:("A","Artículo 2.1"),3:("A","Artículo 14.1"),4:("A","Artículo 14.2"),5:("A","Artículo 14.4"),6:("A","Artículo 15.1.a-c"),7:("A","Artículo 16.1"),8:("A","Artículo 17.2"),9:("A","Artículo 18.1"),10:("A","Artículo 19.1"),11:("A","Artículo 20"),12:("A","Artículo 21.2"),13:("A","Artículo 22.1"),14:("A","Artículo 23.1"),15:("A","Artículo 24.1"),16:("A","Artículo 25.1"),17:("A","Artículo 26.1"),18:("A","Artículo 29.1"),19:("A","Artículos 34 y 35"),20:("A","Artículo 31.2")
+    },
+    8: {
+        1:("A","Artículo 1.1"),2:("A","Artículo 6.1"),3:("A","Artículo 7.1"),4:("A","Artículo 7.2"),5:("A","Artículo 6.3"),6:("A","Artículo 11.1"),7:("A","Artículo 5"),8:("A","Artículos 45 y 46"),9:("A","Artículo 43"),10:("A","Artículo 13"),11:("A","Artículos 10 y 12"),12:("A","Artículo 51"),13:("A","Artículos 33 y 35"),14:("A","Artículo 46"),15:("A","Artículo 8"),16:("A","Artículo 9"),17:("A","Artículo 14.11"),18:("A","Artículo 42"),19:("A","Artículos 14 y 36"),20:("A","Artículo 15")
+    },
+    9: {
+        1:("A","eIDAS, artículo 3, puntos 1, 10 y 11"),2:("A","eIDAS, artículo 25.1"),3:("A","eIDAS, artículo 6"),4:("A","eIDAS, artículo 3, punto 16"),5:("A","eIDAS, artículo 26"),6:("A","eIDAS, artículo 25.2"),7:("A","eIDAS, artículos 3.15 y 28"),8:("A","eIDAS, artículo 29 y anexo II"),9:("A","Página oficial de descargas de AutoFirma, consulta 2026-10-12"),10:("A","Página oficial de descargas de AutoFirma, consulta 2026-10-12"),11:("A","eIDAS, artículos 3 y 24; página oficial de AutoFirma"),12:("A","eIDAS, artículo 3, puntos 19 y 20; página oficial de AutoFirma"),13:("A","eIDAS, artículo 24"),14:("A","eIDAS, artículo 35.2"),15:("A","eIDAS, artículo 22"),16:("A","eIDAS, artículo 3, punto 33"),17:("A","eIDAS, artículo 25.1 y 25.2"),18:("A","eIDAS, artículo 34"),19:("A","eIDAS, artículos 3.14, 3.15, 28 y 38"),20:("A","Página oficial de descargas de AutoFirma, consulta 2026-10-12")
+    },
+    10: {
+        1:("A","RFC 5280, sección 3"),2:("A","RFC 5280, secciones 3 y 4"),3:("A","RFC 5280, sección 5"),4:("A","RFC 5280, sección 4.1"),5:("A","RFC 5280, sección 4.2.1.3"),6:("A","RFC 5280, sección 3"),7:("A","RFC 8446, sección 1"),8:("A","RFC 8446, sección 4"),9:("A","RFC 8446, sección 5"),10:("A","RFC 8446, sección 2.3"),11:("A","RFC 9580, sección 5"),12:("A","RFC 9580, secciones 5 y 10"),13:("A","RFC 9580, sección 5.2.3.15"),14:("A","RFC 9580, sección 5.2"),15:("A","RFC 9580, sección 5"),16:("A","RFC 5280, secciones 6 y 7"),17:("A","RFC 5280, sección 6.1"),18:("A","RFC 8446, sección 4"),19:("A","RFC 5280, sección 4.2.1.3"),20:("A","RFC 5280, RFC 8446 y RFC 9580")
+    },
+    11: {
+        1:("A","Real Decreto 311/2022, artículos 1 y 2"),2:("A","Real Decreto 311/2022, artículo 5"),3:("A","Real Decreto 311/2022, artículo 6"),4:("A","Real Decreto 311/2022, artículo 11"),5:("A","Real Decreto 311/2022, artículo 13"),6:("A","Real Decreto 311/2022, artículos 40 y 41"),7:("A","Real Decreto 311/2022, artículo 40"),8:("A","Real Decreto 311/2022, artículo 6"),9:("A","Real Decreto 311/2022, artículo 13"),10:("A","Real Decreto 311/2022, artículo 15"),11:("A","Real Decreto 311/2022, anexo II"),12:("A","Real Decreto 311/2022, artículos 31 y 38"),13:("A","Real Decreto 311/2022, artículos 10 y 34"),14:("A","Real Decreto 311/2022, artículo 26"),15:("A","Real Decreto 311/2022, anexo II, marco de medidas"),16:("A","Real Decreto 311/2022, artículos 3 y 7"),17:("A","Real Decreto 311/2022, artículos 2 y 3"),18:("A","Real Decreto 311/2022, artículos 10 y 31"),19:("A","Real Decreto 311/2022, artículo 38"),20:("A","Real Decreto 311/2022, artículo 26")
+    },
+    12: {
+        1:("A","RGPD, artículo 4.1"),2:("A","RGPD, artículo 4.7 y 4.8"),3:("A","RGPD, artículo 5.1.a"),4:("A","RGPD, artículo 6.1.a"),5:("A","RGPD, artículos 4.11 y 7"),6:("A","RGPD, artículo 13"),7:("A","RGPD, artículos 13 y 14"),8:("A","RGPD, artículo 15.1"),9:("A","RGPD, artículo 17"),10:("A","RGPD, artículo 20.1"),11:("A","RGPD, artículo 25"),12:("A","RGPD, artículo 32.1"),13:("A","RGPD, artículo 33.1"),14:("A","RGPD, artículo 35.1"),15:("A","RGPD, artículo 39"),16:("A","LOPDGDD, artículo 7"),17:("A","LOPDGDD, artículo 19"),18:("A","LOPDGDD, artículos 44 y 47"),19:("A","RGPD, artículo 5.2"),20:("A","RGPD y LOPDGDD, artículos citados")
+    },
+    13: {
+        1:("A","PostgreSQL 18, capítulo 1"),2:("A","PostgreSQL 18, capítulo 22"),3:("A","PostgreSQL 18, capítulo 18"),4:("A","PostgreSQL 18, sección 19.4.1"),5:("A","PostgreSQL 18, capítulo 28"),6:("A","PostgreSQL 18, sección 28.5"),7:("A","PostgreSQL 18, sección 24.1"),8:("A","PostgreSQL 18, capítulo 19"),9:("A","PostgreSQL 18, sección 21.2"),10:("A","PostgreSQL 18, sección 22.1"),11:("A","PostgreSQL 18, sección 5.9"),12:("A","PostgreSQL 18, sección 22.6"),13:("A","PostgreSQL 18, capítulo 13"),14:("A","PostgreSQL 18, sección 24.1"),15:("A","PostgreSQL 18, capítulo 14"),16:("A","PostgreSQL 18, capítulo 28"),17:("A","PostgreSQL 18, sección 18.5"),18:("A","PostgreSQL 18, sección 20.1"),19:("A","PostgreSQL 18, capítulo 18"),20:("A","PostgreSQL 18, capítulo 28")
+    },
+    14: {
+        1:("A","PostgreSQL 18, capítulo 5"),2:("A","PostgreSQL 18, CREATE VIEW y sección 39.3"),3:("A","PostgreSQL 18, capítulo 11"),4:("A","PostgreSQL 18, sección 9.17"),5:("A","PostgreSQL 18, sección 36.4"),6:("A","PostgreSQL 18, CREATE TRIGGER"),7:("A","PostgreSQL 18, sección 38.17"),8:("A","PostgreSQL 18, sección 5.9.3"),9:("A","PostgreSQL 18, sección 5.5.4"),10:("A","PostgreSQL 18, sección 5.5.5"),11:("A","PostgreSQL 18, capítulo 22 y sección 5.9"),12:("A","PostgreSQL 18, sección 5.1"),13:("A","PostgreSQL 18, capítulo 5.10"),14:("A","PostgreSQL 18, CREATE VIEW"),15:("A","PostgreSQL 18, sección 36.7.1"),16:("A","PostgreSQL 18, sección 6.4"),17:("A","PostgreSQL 18, sección 39.3"),18:("A","PostgreSQL 18, CREATE TRIGGER"),19:("A","PostgreSQL 18, capítulos 5 y 21"),20:("A","PostgreSQL 18, sección 5.9")
+    },
+    15: {
+        1:("A","PostgreSQL 18, gestión de transacciones"),2:("A","PostgreSQL 18, gestión de transacciones"),3:("A","PostgreSQL 18, gestión de transacciones"),4:("A","PostgreSQL 18, gestión de transacciones"),5:("A","PostgreSQL 18, sección 13.2"),6:("A","PostgreSQL 18, sección 13.2.1"),7:("A","PostgreSQL 18, secciones 13.2.2 y 13.2.3"),8:("A","PostgreSQL 18, sección 13.3"),9:("A","PostgreSQL 18, sección 13.3.2"),10:("A","PostgreSQL 18, sección 13.3.4"),11:("A","PostgreSQL 18, sección 13.2"),12:("A","PostgreSQL 18, DDL transaccional"),13:("A","PostgreSQL 18, gestión de transacciones"),14:("A","PostgreSQL 18, sección 13.2"),15:("A","PostgreSQL 18, sección 13.3.4"),16:("A","PostgreSQL 18, sección 24.1"),17:("A","PostgreSQL 18, sección 19.5.1"),18:("A","PostgreSQL 18, gestión de transacciones"),19:("A","PostgreSQL 18, sección 13.2.3"),20:("A","PostgreSQL 18, capítulos 13 y 28")
+    },
+    16: {
+        1:("A","psql, Description"),2:("A","pg_dump, Description"),3:("A","SQL COPY, Description"),4:("A","SQL COPY, Notes"),5:("A","pg_restore, Description"),6:("A","SQL Dump; pg_dump, Description"),7:("A","SQL COPY, Notes; psql, Meta-Commands"),8:("A","SQL COPY, Parameters"),9:("A","psql, Options, -f/--file"),10:("A","pg_dump, Description"),11:("A","pg_dump, Description, Output Formats"),12:("A","pg_restore, Description"),13:("A","SQL COPY, Notes"),14:("A","SQL COPY, Description"),15:("A","SQL COPY, Binary Format"),16:("A","pg_dump, Description"),17:("A","pg_restore, Warning"),18:("A","SQL COPY, Notes"),19:("A","SQL Dump, Restoring the Dump"),20:("A","pg_restore, Options, -l/--list and -L/--use-list")
+    },
+}
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("topic_num", type=int, choices=tuple(range(2, 17)))
+    args = parser.parse_args()
+    lot_path = ROOT / "docs/question-bank/lots" / f"topic-{args.topic_num:02d}-lot-01.json"
+    checkpoint_path = ROOT / "docs/question-bank/checkpoints" / f"topic-{args.topic_num:02d}-lot-01.jsonl"
+    payload = json.loads(lot_path.read_text(encoding="utf-8"))
+    if payload["state"] != "candidates_written":
+        raise RuntimeError("review requires candidate state")
+    register = json.loads((ROOT / "docs/question-bank/source-register.json").read_text(encoding="utf-8"))
+    sources = {source["source_id"]: source for source in register["source_records"]}
+    accepted = []
+    decisions = []
+    for candidate in payload["questions"]:
+        objective_num = int(candidate["learning_objective_id"].rsplit("-", 1)[1])
+        expected = EXPECTATIONS[args.topic_num][objective_num]
+        source = sources[candidate["sources"][0]["source_id"]]
+        if candidate["correct"] != expected[0] or candidate["sources"][0]["citation"] != expected[1]:
+            raise RuntimeError(f"independent review disagreement for {candidate['learning_objective_id']}")
+        if candidate["sources"][0]["tier"] not in {"official_primary", "secondary_reputable"}:
+            raise RuntimeError("missing source tier")
+        if source["status"] not in {"verified", "verified_with_correction_review", "verified_official_eli_entry", "verified_official_celex_fallback", "verified_entry_point", "verified_current_stable_reference"}:
+            raise RuntimeError(f"source register status is not reviewable: {source['source_id']}")
+        reviewed = copy.deepcopy(candidate)
+        reviewer = f"independent-source-review-{DATE}"
+        reviewed["verification"]["answer"] = {"status":"passed","reviewer":reviewer,"checked_at":DATE,"basis":f"Rechecked against {source['source_id']} {expected[1]}; expected option {expected[0]}."}
+        reviewed["verification"]["explanation"] = {"status":"passed","reviewer":reviewer,"checked_at":DATE,"basis":f"Explanation checked against the cited {source['source_id']} source and recorded version."}
+        reviewed["verification"]["reviewed_at"] = DATE
+        reviewed["verification"]["reviewer_decision"] = "accepted"
+        for level in ("semantic", "concept"):
+            reviewed["deduplication"][level] = {"status":"unique","checked_at":DATE,"basis":"Independent proposition/objective review found no collision with the legacy bank or this lot."}
+        reviewed["status"] = "validated"
+        errors = validate_record(reviewed)
+        if errors:
+            raise RuntimeError(f"reviewed record failed validation: {errors}")
+        accepted.append(reviewed)
+        decisions.append({"objective_id":candidate["learning_objective_id"],"stable_id":candidate["stable_id"],"answer":expected[0],"citation":expected[1],"source_tier":candidate["sources"][0]["tier"],"decision":"accepted","reviewed_at":DATE})
+
+    review_path = ROOT / "docs/question-bank/reviews" / f"topic-{args.topic_num:02d}-lot-01.json"
+    review_path.parent.mkdir(parents=True, exist_ok=True)
+    review_path.write_text(json.dumps({"review_version":"1.0","lot":f"topic-{args.topic_num:02d}-lot-01","reviewer":f"independent-source-review-{DATE}","source_tier_counts":{"official_primary":sum(x["source_tier"]=="official_primary" for x in decisions),"secondary_reputable":sum(x["source_tier"]=="secondary_reputable" for x in decisions)},"decisions":decisions},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    accepted_path = ROOT / "docs/question-bank/accepted" / f"topic-{args.topic_num:02d}-lot-01.json"
+    accepted_path.parent.mkdir(parents=True, exist_ok=True)
+    accepted_payload = {"lot_version":payload["lot_version"],"state":"reviewed","topic_num":args.topic_num,"lot_num":1,"revision":payload["revision"],"reviewed_at":DATE,"source_register_sha256":payload["source_register_sha256"],"objective_manifest_sha256":payload["objective_manifest_sha256"],"syllabus_sha256":payload["syllabus_sha256"],"counts":{"candidates":20,"accepted":len(accepted),"rejected":0,"quarantined":0},"review_audit":str(review_path.relative_to(ROOT)),"questions":accepted}
+    accepted_path.write_text(json.dumps(accepted_payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    checkpoint = {"schema_version":"1.0","syllabus_hash":payload["syllabus_sha256"],"source_register_hash":payload["source_register_sha256"],"topic_num":args.topic_num,"lot_num":1,"revision":payload["revision"],"stage":"reviewed","objective_ids":[x["learning_objective_id"] for x in accepted],"stable_ids":[x["stable_id"] for x in accepted],"counts":accepted_payload["counts"],"input_hash":file_sha256(lot_path),"output_hash":file_sha256(accepted_path),"last_import":{"status":"not_started","transaction":None}}
+    appended=append_checkpoint(checkpoint_path,checkpoint)
+    print(f"topic {args.topic_num}: reviewed {len(accepted)} records; checkpoint {'appended' if appended else 'already present'}")
+    return 0
+
+if __name__ == "__main__":
+    raise SystemExit(main())

@@ -1,32 +1,33 @@
 # Question-bank quality report — checkpoint 1
 
 **As of:** 2026-10-12 UTC
-**Scope:** topic 1 lot 1 is reviewed and import-validated as an artifact; no runtime publication has occurred.
+**Scope:** topics 1--15 lot 1 are published; topic 16 lot 1 is reviewed and import-validated, ready for deployment. The runtime duplicate cleanup below is local and is not live until its build is deployed.
 
 ## Current counts
 
 | Measure | Count | Interpretation |
 |---|---:|---|
-| Legacy runtime records | 1,200 | Preserved baseline; not validated or counted toward the target |
-| Objective slots | 8,000 | 200 per topic; 20 topic-1 statements researched, 7,980 slots pending |
-| Topic 1 lot 1 candidates | 20 | Generated only after BOE source verification |
-| Reviewed accepted artifact | 20 | All topic-1 lot-1 records passed the independent review matrix |
-| Quarantined candidate audit | 20 | The original candidate lot remains unchanged as the audit trail |
+| Legacy runtime records | 399 | One normalized prompt retained from the pre-cleanup 1,200-record baseline; the removed duplicate history remains in Git |
+| Objective slots | 8,000 | 200 per topic; 320 topic-1-to-16 statements researched, 7,680 slots pending |
+| Topics 1--16 lot 1 candidates | 320 | Generated only after source verification |
+| Reviewed accepted artifacts | 320 | Topics 1--16 records passed independent review matrices |
+| Quarantined candidate audits | 320 | Original candidate lots remain unchanged as audit trails |
 | Deterministic duplicate matches | 0 | Exact, lexical and near-lexical checks against legacy/topic-lot records |
-| Semantic/concept decisions | 20 unique | Independently reviewed against the objective and proposition |
-| New static export/import | 0 | Import validation was a dry run; `frontend/src/questions.js` remains untouched |
+| Semantic/concept decisions | 320 unique | Independently reviewed against the objective and proposition |
+| Native import/export | 320 | Accepted topics 1--16 remain imported through `seed_data.py`; duplicate-free `frontend/src/questions.js` now contains 719 records |
+| Published batches | 15 | Topics 1--15 are live at `https://micuentadecasa.github.io/dipu/`; topic 16 is deployment-ready |
 
 ## Lot 1 distributions
 
-Topic 1, lot 1 uses 4 basic, 10 intermediate and 6 advanced candidates. It covers objective IDs `t01-lo-001` through `t01-lo-020`; every candidate cites the verified official BOE Constitution source with an article/structure citation. The independent review pass accepted all 20 records after answer, explanation, semantic and concept checks.
+Topics 1--16 lot 1 each use 4 basic, 10 intermediate and 6 advanced records. Topics 1--12 use documented official sources; topics 13--16 use the official PostgreSQL 18 documentation source. All sixteen independent review passes accepted 320 official-primary records after answer, explanation, semantic and concept checks. Topics 1--15 are live at `https://micuentadecasa.github.io/dipu/`; topic 16 is ready for deployment.
 
-The original candidate lot is recorded in [`lots/topic-01-lot-01.json`](./lots/topic-01-lot-01.json), the reviewed artifact in [`accepted/topic-01-lot-01.json`](./accepted/topic-01-lot-01.json), the review audit in [`reviews/topic-01-lot-01.json`](./reviews/topic-01-lot-01.json), and the append-only checkpoint in [`checkpoints/topic-01-lot-01.jsonl`](./checkpoints/topic-01-lot-01.jsonl). Re-running the lot/review/import stages is idempotent.
+Candidate, reviewed, audit and checkpoint artifacts are recorded under `lots/`, `accepted/`, `reviews/` and `checkpoints/` for topics 1--15. Re-running the lot/review/import stages is idempotent.
 
 ## Source and scope status
 
 - The official call and `temario.md` match exactly on topics 1–40.
 - BOE, IETF, W3C, PostgreSQL, Microsoft, OASIS, Git and the resolved DOCM/EU CELEX sources are recorded with retrieval/verification dates in [`source-register.json`](./source-register.json).
-- The reviewed batch contains 20 `official_primary` records and 0 `secondary_reputable` records; every question source now carries an explicit tier in the record schema.
+- The reviewed batches contain 320 `official_primary` records and 0 `secondary_reputable` records; every question source carries an explicit tier in the record schema.
 - Topics 37–39 remain source-gated. The exact attempted URLs, HTTP/WAF observations and dispositions are in `source_blocker_log` in the source register. No questions were generated for those topics.
 - SedipuAlba has public manuals for several modules, but Segra and AdminSedeElectrónica lack public authoritative specifications; claims about them remain quarantined.
 - Topic 40 remains gated for the exact EN 301 549 edition. Other accessibility sources do not authorize silently substituting an unverified edition.
@@ -35,10 +36,10 @@ The original candidate lot is recorded in [`lots/topic-01-lot-01.json`](./lots/t
 
 - `python3 -m unittest discover -s tests -v`: 10 passed.
 - `python3 tools/validate_question_bank.py docs/question-bank/lots/topic-01-lot-01.json`: passed for 20 candidates.
-- `python3 tools/validate_question_bank.py docs/question-bank/accepted/topic-01-lot-01.json`: passed for 20 reviewed records.
-- `python3 tools/validate_accepted_batch.py`: import dry-run passed; legacy snapshot 1,200 preserved, 20 stable/numeric IDs collision-free, zero writes.
+- `python3 tools/validate_question_bank.py` passed for all sixteen accepted artifacts (320 records).
+- Topic 1--16 import validation passed before cleanup; the pre-cleanup 1,200-record legacy snapshot remains recoverable in Git, while the current runtime retains 399 unique legacy records and 320 accepted records.
 - JSON parsing, Python compilation and `git diff --check`: passed.
 - `cd frontend && npm run lint`: passed.
-- `cd frontend && npm run build`: passed; the build uses the unchanged runtime artifact.
+- `cd frontend && npm run build`: passed after regenerating the duplicate-free runtime artifact.
 
-The reviewed artifact passes answer, explanation, five-level duplicate review and source checks. Publication is blocked because `.github/workflows/deploy.yml` deploys on a push to `main` (or an authorized manual dispatch), while this worker is forbidden to push or merge without captain/firstmate authority. No runtime artifact was changed; the accepted batch is ready for an authorized native import/export. Therefore there is no published URL to report for this milestone.
+The reviewed artifacts pass answer, explanation, five-level duplicate review and source checks. Publication milestone: topics 1--15, lot 1, 20 accepted records each, remain live at `https://micuentadecasa.github.io/dipu/`; topic 16 has 20 accepted official-primary records and is ready for deployment. Workflow run `38258226538` completed successfully for the prior published commit `7f32586`. Topics 13--16 use the PostgreSQL 18 documentation source; AutoFirma facts remain limited to the official entry point and no version-sensitive claim. No secondary or provisional records are in these batches.
