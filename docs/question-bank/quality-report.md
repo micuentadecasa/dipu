@@ -1,7 +1,7 @@
 # Question-bank quality report — checkpoint 1
 
 **As of:** 2026-10-12 UTC
-**Scope:** topics 1--19 lot 1, topic 20 lots 1--5 and topics 21--22 lot 1 are published; topic 23 lot 1 is import-validated pending deployment.
+**Scope:** topics 1--19 lot 1, topic 20 lots 1--5 and topics 21--23 lot 1 are published with duplicate-free runtime data.
 
 ## Current counts
 
@@ -15,11 +15,11 @@
 | Deterministic duplicate matches | 0 | Exact, lexical and near-lexical checks against legacy/topic-lot records |
 | Semantic/concept decisions | 540 unique | Independently reviewed against the objective and proposition |
 | Native import/export | 540 | Accepted topics 1--20 lot 1, topic 20 lots 2--5, and topics 21--23 lot 1 are imported through `seed_data.py`; duplicate-free `frontend/src/questions.js` contains 939 records |
-| Published batches | 26 | Topics 1--19 lot 1, topic 20 lots 1--5 and topics 21--22 lot 1 are live; topic 23 lot 1 is pending deployment |
+| Published batches | 27 | Topics 1--19 lot 1, topic 20 lots 1--5 and topics 21--23 lot 1 are live at `https://micuentadecasa.github.io/dipu/` |
 
 ## Lot 1 distributions
 
-Each accepted lot uses 4 basic, 10 intermediate and 6 advanced records. Topics 1--12 use documented official sources; topics 13--17 use PostgreSQL 18, topic 18 uses Microsoft C#, topic 19 uses Microsoft ASP.NET Core MVC and Bootstrap 5.3, topic 20 uses Microsoft EF Core 10, topic 21 uses Microsoft LINQ documentation for .NET 10, topic 22 uses ASP.NET Core model binding/validation and EF Core documentation for .NET 10, and topic 23 uses ASP.NET Core security documentation for .NET 10. Twenty-seven independent review passes accepted 540 official-primary records across topics 1--23 lot 1 plus topic 20 lots 2--5. Topics 1--19 lot 1, topic 20 lots 1--5 and topics 21--22 lot 1 are live; topic 23 lot 1 is pending deployment.
+Each accepted lot uses 4 basic, 10 intermediate and 6 advanced records. Topics 1--12 use documented official sources; topics 13--17 use PostgreSQL 18, topic 18 uses Microsoft C#, topic 19 uses Microsoft ASP.NET Core MVC and Bootstrap 5.3, topic 20 uses Microsoft EF Core 10, topic 21 uses Microsoft LINQ documentation for .NET 10, topic 22 uses ASP.NET Core model binding/validation and EF Core documentation for .NET 10, and topic 23 uses ASP.NET Core security documentation for .NET 10. Twenty-seven independent review passes accepted 540 official-primary records across topics 1--23 lot 1 plus topic 20 lots 2--5. Topics 1--19 lot 1, topic 20 lots 1--5 and topics 21--23 lot 1 are live at `https://micuentadecasa.github.io/dipu/`.
 
 Candidate, reviewed, audit and checkpoint artifacts are recorded under `lots/`, `accepted/`, `reviews/` and `checkpoints/` for topics 1--23 and topic 20 lots 2--5. Re-running the lot/review/import stages is idempotent.
 
@@ -42,4 +42,4 @@ Candidate, reviewed, audit and checkpoint artifacts are recorded under `lots/`, 
 - `cd frontend && npm run lint`: passed.
 - `cd frontend && npm run build`: passed after regenerating the duplicate-free runtime artifact.
 
-The reviewed artifacts pass answer, explanation, five-level duplicate review and source checks. Publication milestone: topics 1--19 lot 1, topic 20 lots 1--5 and topics 21--22 lot 1 are live at `https://micuentadecasa.github.io/dipu/`; topic 23 lot 1 contributes 20 accepted official-primary ASP.NET Core security records and is pending deployment. Topic 22 lot 1 contributes 20 accepted official-primary ASP.NET Core/EF Core records; topic 21 lot 1 contributes 20 accepted official-primary LINQ records; topic 20 lots 3--5 contribute 60 accepted official-primary EF Core records. Topics 13--17 use PostgreSQL 18; AutoFirma facts remain limited to the official entry point and no version-sensitive claim. No secondary or provisional records are in these batches.
+The reviewed artifacts pass answer, explanation, five-level duplicate review and source checks. Publication milestone: topics 1--19 lot 1, topic 20 lots 1--5 and topics 21--23 lot 1 are live at `https://micuentadecasa.github.io/dipu/`; workflow run `38286172786` completed successfully for commit `ad8f7e3`. Topic 23 lot 1 contributes 20 accepted official-primary ASP.NET Core security records; topic 22 lot 1 contributes 20 accepted official-primary ASP.NET Core/EF Core records; topic 21 lot 1 contributes 20 accepted official-primary LINQ records; topic 20 lots 3--5 contribute 60 accepted official-primary EF Core records. Topics 13--17 use PostgreSQL 18; AutoFirma facts remain limited to the official entry point and no version-sensitive claim. No secondary or provisional records are in these batches.
