@@ -1,7 +1,7 @@
 # Question-bank quality report — checkpoint 1
 
 **As of:** 2026-10-12 UTC
-**Scope:** topics 1, 2 and 3 lot 1 are reviewed, imported and published incrementally.
+**Scope:** topics 1, 2 and 3 lot 1 are published; topic 4 lot 1 is reviewed and import-validated, ready for deployment.
 
 ## Current counts
 
@@ -9,17 +9,17 @@
 |---|---:|---|
 | Legacy runtime records | 1,200 | Preserved baseline; not validated or counted toward the target |
 | Objective slots | 8,000 | 200 per topic; 100 topic-1-to-5 statements researched, 7,900 slots pending |
-| Topics 1--3 lot 1 candidates | 60 | Generated only after official-source verification |
-| Reviewed accepted artifacts | 60 | Topics 1--3 records passed independent review matrices |
-| Quarantined candidate audits | 60 | Original candidate lots remain unchanged as audit trails |
+| Topics 1--4 lot 1 candidates | 80 | Generated only after official-source verification |
+| Reviewed accepted artifacts | 80 | Topics 1--4 records passed independent review matrices |
+| Quarantined candidate audits | 80 | Original candidate lots remain unchanged as audit trails |
 | Deterministic duplicate matches | 0 | Exact, lexical and near-lexical checks against legacy/topic-lot records |
 | Semantic/concept decisions | 20 unique | Independently reviewed against the objective and proposition |
-| Native import/export | 60 | Accepted topics 1--3 are imported through `seed_data.py`; `frontend/src/questions.js` contains 1,260 records |
-| Published batches | 3 | Topics 1--3 are live at `https://micuentadecasa.github.io/dipu/` |
+| Native import/export | 80 | Accepted topics 1--4 are imported through `seed_data.py`; `frontend/src/questions.js` contains 1,280 records |
+| Published batches | 3 | Topics 1--3 are live at `https://micuentadecasa.github.io/dipu/`; topic 4 is deployment-ready |
 
 ## Lot 1 distributions
 
-Topics 1--3 lot 1 each use 4 basic, 10 intermediate and 6 advanced records. Topic 1 covers `t01-lo-001` through `t01-lo-020`; topic 2 covers `t02-lo-001` through `t02-lo-020`; topic 3 covers `t03-lo-001` through `t03-lo-020`. All three independent review passes accepted 60 official-primary records after answer, explanation, semantic and concept checks. All three batches are live at `https://micuentadecasa.github.io/dipu/`; the deployed JavaScript returned HTTP 200 and contains representative questions from topics 1, 2 and 3.
+Topics 1--4 lot 1 each use 4 basic, 10 intermediate and 6 advanced records. Topics 1--3 use verified BOE sources; topic 4 uses BOE RDL 781/1986 plus the official RD 2568/1986 text with its recorded correction notice. All four independent review passes accepted 80 official-primary records after answer, explanation, semantic and concept checks. Topics 1--3 are live at `https://micuentadecasa.github.io/dipu/`; topic 4 is ready for the next deployment.
 
 Candidate, reviewed, audit and checkpoint artifacts are recorded under `lots/`, `accepted/`, `reviews/` and `checkpoints/` for both topics. Re-running the lot/review/import stages is idempotent.
 
@@ -42,4 +42,4 @@ Candidate, reviewed, audit and checkpoint artifacts are recorded under `lots/`, 
 - `cd frontend && npm run lint`: passed.
 - `cd frontend && npm run build`: passed; the build uses the unchanged runtime artifact.
 
-The reviewed artifact passes answer, explanation, five-level duplicate review and source checks. Publication milestone: topics 1--3, lot 1, 20 accepted records each, are live at `https://micuentadecasa.github.io/dipu/`; workflow run `38252486326` completed successfully for commit `a59d45f`. No provisional or secondary sources are in these batches. Continue topics 4--5 sequentially.
+The reviewed artifact passes answer, explanation, five-level duplicate review and source checks. Publication milestone: topics 1--3, lot 1, 20 accepted records each, are live at `https://micuentadecasa.github.io/dipu/`; workflow run `38252617211` completed successfully for commit `cbf5179`. Topic 4 has 20 accepted official-primary records, including the documented RD 2568/1986 correction-review source, and is ready to publish. No secondary or provisional records are in these batches. Continue topic 5 sequentially.

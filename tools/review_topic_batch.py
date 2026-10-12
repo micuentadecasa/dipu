@@ -33,8 +33,8 @@ EXPECTATIONS = {
     4: {
         1:("A","RDL 781/1986, artículo 22.3"),2:("A","RDL 781/1986, artículo 21"),3:("A","RDL 781/1986, artículo 23"),4:("A","RDL 781/1986, artículo 24.1"),5:("A","RDL 781/1986, artículo 30.1"),
         6:("A","RDL 781/1986, artículo 30.2.b"),7:("A","RDL 781/1986, artículo 35.2"),8:("A","RDL 781/1986, artículo 35.2.d"),9:("A","RDL 781/1986, artículo 32"),10:("A","RDL 781/1986, artículo 34.1"),
-        11:("A","RDL 781/1986, artículo 29"),12:("A","RDL 781/1986, artículo 32"),13:("A","RDL 781/1986, artículo 25"),14:("A","RDL 781/1986, artículo 26"),15:("A","RDL 781/1986, artículo 27"),
-        16:("A","RDL 781/1986, artículo 28.3"),17:("A","RDL 781/1986, artículo 31.1"),18:("A","RDL 781/1986, artículo 35.1"),19:("A","RDL 781/1986, artículo 34.2"),20:("A","RDL 781/1986, artículos 24 y 30"),
+        11:("A","RD 2568/1986, artículo 29"),12:("A","RD 2568/1986, artículo 32"),13:("A","RD 2568/1986, artículo 25"),14:("A","RD 2568/1986, artículo 26"),15:("A","RD 2568/1986, artículo 27"),
+        16:("A","RD 2568/1986, artículo 28.3"),17:("A","RD 2568/1986, artículo 31.1"),18:("A","RD 2568/1986, artículo 35.1"),19:("A","RD 2568/1986, artículo 34.2"),20:("A","RD 2568/1986, artículos 24 y 30"),
     },
     5: {
         1:("A","Artículo 1.1"),2:("A","Artículo 2.3"),3:("A","Artículo 3"),4:("A","Artículo 4.1"),5:("A","Artículo 4.3"),

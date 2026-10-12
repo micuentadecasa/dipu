@@ -2178,3 +2178,208 @@ SEED_QUESTIONS.extend([
     }
 ])
 # QUESTION_BANK_ACCEPTED_TOPIC_03_LOT_01_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_04_LOT_01_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 4,
+        "question": "¿Ante quién se exige la responsabilidad civil y penal de los miembros de las Corporaciones Locales?",
+        "option_a": "Ante los Tribunales de Justicia competentes, por el procedimiento ordinario aplicable",
+        "option_b": "Ante el Pleno, sin intervención judicial",
+        "option_c": "Ante la Diputación Provincial en vía administrativa",
+        "option_d": "Ante el Senado",
+        "correct": "A",
+        "explanation": "El artículo 22.3 del texto refundido dispone que la responsabilidad se exigirá ante los Tribunales de Justicia competentes y se tramitará por el procedimiento ordinario aplicable."
+    },
+    {
+        "topic_num": 4,
+        "question": "¿Cuándo debe abstenerse un miembro de una Corporación Local?",
+        "option_a": "Cuando concurra una causa de abstención prevista en la legislación de procedimiento administrativo o de contratos públicos",
+        "option_b": "Solo cuando lo ordene el Alcalde",
+        "option_c": "Únicamente en asuntos presupuestarios",
+        "option_d": "Nunca, porque el cargo electo no puede abstenerse",
+        "correct": "A",
+        "explanation": "El artículo 21 obliga a abstenerse de deliberar, votar, decidir y ejecutar cuando concurra una causa legal de incompatibilidad o abstención."
+    },
+    {
+        "topic_num": 4,
+        "question": "¿Cómo se constituyen los miembros de las Corporaciones Locales a efectos de su actuación corporativa?",
+        "option_a": "En grupos, sin que nadie pueda pertenecer simultáneamente a más de uno",
+        "option_b": "En un único grupo obligatorio sin portavoz",
+        "option_c": "En grupos designados por el Gobierno",
+        "option_d": "Individualmente, sin posibilidad de grupos",
+        "correct": "A",
+        "explanation": "El artículo 23 dispone que los miembros se constituirán en grupos y que nadie puede pertenecer simultáneamente a más de uno."
+    },
+    {
+        "topic_num": 4,
+        "question": "¿A quién se dirige el escrito de constitución de un grupo político local?",
+        "option_a": "Al Presidente, suscrito por todos sus integrantes y presentado en la Secretaría General dentro de los cinco días hábiles siguientes a la constitución",
+        "option_b": "Al Rey dentro de los treinta días naturales",
+        "option_c": "Al Delegado del Gobierno sin firma de sus integrantes",
+        "option_d": "Al Secretario judicial en cualquier momento",
+        "correct": "A",
+        "explanation": "El artículo 24.1 exige escrito dirigido al Presidente y suscrito por todos los integrantes, presentado en Secretaría General dentro de los cinco días hábiles siguientes a la constitución."
+    },
+    {
+        "topic_num": 4,
+        "question": "¿Quién tiene la custodia y dirección del Registro de Intereses de los miembros de la Corporación?",
+        "option_a": "El Secretario de la Corporación",
+        "option_b": "El Presidente del Gobierno",
+        "option_c": "El portavoz del grupo mayoritario",
+        "option_d": "El Delegado del Gobierno",
+        "correct": "A",
+        "explanation": "El artículo 30.1 atribuye la custodia y dirección del Registro de Intereses al Secretario."
+    },
+    {
+        "topic_num": 4,
+        "question": "Si varían las circunstancias declaradas en el Registro de Intereses, ¿qué plazo tiene el miembro de la Corporación para comunicar la variación?",
+        "option_a": "Un mes desde el día en que se produjo la variación",
+        "option_b": "Cinco días hábiles desde la sesión plenaria",
+        "option_c": "Un año desde la toma de posesión",
+        "option_d": "No existe plazo",
+        "correct": "A",
+        "explanation": "El artículo 30.2.b fija un mes desde el día en que se hayan producido las variaciones."
+    },
+    {
+        "topic_num": 4,
+        "question": "¿Qué órganos son necesarios en un Ayuntamiento conforme al artículo 35 del texto refundido?",
+        "option_a": "Alcalde, Tenientes de Alcalde, Pleno y Comisión de Gobierno en los supuestos previstos",
+        "option_b": "Presidente provincial, Senado y Pleno autonómico",
+        "option_c": "Solo Alcalde y Secretario",
+        "option_d": "Alcalde y Tribunal de Cuentas",
+        "correct": "A",
+        "explanation": "El artículo 35 enumera como órganos necesarios el Alcalde, los Tenientes de Alcalde, el Pleno y la Comisión de Gobierno en los municipios y supuestos que indica."
+    },
+    {
+        "topic_num": 4,
+        "question": "¿Cuándo es necesaria la Comisión de Gobierno según el artículo 35.2.d del texto refundido?",
+        "option_a": "En municipios con población de derecho superior a 5.000 habitantes y, en los de menos, cuando lo disponga el reglamento orgánico o lo acuerde el Pleno",
+        "option_b": "Solo en municipios de menos de 5.000 habitantes",
+        "option_c": "En todos los municipios sin excepción",
+        "option_d": "Solo cuando lo solicite la Diputación",
+        "correct": "A",
+        "explanation": "El artículo 35.2.d establece ese umbral y las dos vías alternativas para municipios de menor población."
+    },
+    {
+        "topic_num": 4,
+        "question": "¿Qué órganos enumera el artículo 32 del texto refundido para la provincia?",
+        "option_a": "Presidente, Vicepresidentes, Comisión de Gobierno y Pleno",
+        "option_b": "Alcalde, Tenientes y Senado",
+        "option_c": "Solo Presidente y Secretario",
+        "option_d": "Delegado del Gobierno y Tribunal Superior de Justicia",
+        "correct": "A",
+        "explanation": "El artículo 32 enumera Presidente, Vicepresidentes, Comisión de Gobierno y Pleno como órganos de la provincia, con las reglas que establece."
+    },
+    {
+        "topic_num": 4,
+        "question": "¿Qué tratamiento corresponde a los Presidentes de las Diputaciones Provinciales según el artículo 34?",
+        "option_a": "Excelencia al de la Diputación de Barcelona e Ilustrísima a los de las demás Diputaciones",
+        "option_b": "Siempre Señoría sin excepciones",
+        "option_c": "Siempre Excelencia para todas las Diputaciones",
+        "option_d": "El tratamiento del Alcalde del municipio sede",
+        "correct": "A",
+        "explanation": "El artículo 34.1 atribuye tratamiento de Excelencia al Presidente de la Diputación de Barcelona y de Ilustrísima a los de las demás Diputaciones."
+    },
+    {
+        "topic_num": 4,
+        "question": "¿Quién designa representantes de un grupo político en órganos colegiados integrados por miembros de varios grupos?",
+        "option_a": "El grupo político, mediante escrito de su portavoz dirigido al Presidente",
+        "option_b": "El Secretario de Estado de Administraciones Públicas",
+        "option_c": "El Tribunal Constitucional",
+        "option_d": "El grupo político más votado de otra Corporación",
+        "correct": "A",
+        "explanation": "El artículo 29 atribuye esa designación a los grupos políticos mediante escrito de su portavoz dirigido al Presidente."
+    },
+    {
+        "topic_num": 4,
+        "question": "¿Qué se necesita para acceder a los datos del Registro de Intereses?",
+        "option_a": "Acreditar la condición legal de interesado legítimo directo conforme a la legislación aplicable",
+        "option_b": "La autorización de cualquier concejal",
+        "option_c": "La autorización del Gobierno de la Nación en todo caso",
+        "option_d": "Ningún requisito",
+        "correct": "A",
+        "explanation": "El artículo 32 exige acreditar la condición legal de interesado legítimo directo con arreglo a la legislación autonómica o estatal aplicable."
+    },
+    {
+        "topic_num": 4,
+        "question": "¿A qué órgano da cuenta el Presidente de la constitución de los grupos políticos?",
+        "option_a": "Al Pleno, en la primera sesión que se celebre después de cumplirse el plazo legal",
+        "option_b": "A la Junta de Gobierno de la Comunidad Autónoma",
+        "option_c": "Al Senado en la sesión siguiente",
+        "option_d": "Al Tribunal de Cuentas",
+        "correct": "A",
+        "explanation": "El artículo 25 dispone que el Presidente dará cuenta al Pleno en la primera sesión celebrada tras cumplirse el plazo del artículo 24.1."
+    },
+    {
+        "topic_num": 4,
+        "question": "¿Qué debe hacer un miembro de la Corporación que adquiere su condición después de la sesión constitutiva?",
+        "option_a": "Incorporarse a los grupos conforme a las reglas acordadas por la Corporación",
+        "option_b": "Actuar siempre sin grupo político",
+        "option_c": "Solicitar autorización al Senado",
+        "option_d": "Formar automáticamente un grupo propio",
+        "correct": "A",
+        "explanation": "El artículo 26 exige la incorporación a los grupos conforme a las reglas acordadas por la Corporación."
+    },
+    {
+        "topic_num": 4,
+        "question": "¿Qué medios pueden poner las Corporaciones Locales a disposición de los grupos políticos?",
+        "option_a": "Un despacho o local para reunirse y recibir visitas, junto con una infraestructura mínima según las posibilidades funcionales",
+        "option_b": "Solo vehículos oficiales para cada miembro",
+        "option_c": "Únicamente una cuenta bancaria privada",
+        "option_d": "Ningún medio material o personal",
+        "correct": "A",
+        "explanation": "El artículo 27 prevé despacho o local e infraestructura mínima de medios materiales y personales en la medida de las posibilidades funcionales de la organización administrativa."
+    },
+    {
+        "topic_num": 4,
+        "question": "¿Qué límite establece el artículo 28.3 para las reuniones de grupos políticos en locales corporativos?",
+        "option_a": "No pueden coincidir con sesiones del Pleno o de la Comisión de Gobierno",
+        "option_b": "Solo pueden celebrarse durante sesiones del Pleno",
+        "option_c": "Deben celebrarse siempre fuera de la sede",
+        "option_d": "No existe límite temporal",
+        "correct": "A",
+        "explanation": "El artículo 28.3 prohíbe que esas reuniones coincidan con sesiones del Pleno o de la Comisión de Gobierno."
+    },
+    {
+        "topic_num": 4,
+        "question": "¿Qué debe incluir necesariamente la declaración de intereses?",
+        "option_a": "La identificación de bienes, actividades y ocupaciones profesionales o privadas y otros intereses relacionados con las competencias corporativas",
+        "option_b": "Solo la declaración de bienes inmuebles",
+        "option_c": "Únicamente la afiliación política",
+        "option_d": "Solo las retribuciones públicas",
+        "correct": "A",
+        "explanation": "El artículo 31 incluye bienes muebles e inmuebles, actividades y ocupaciones y otros intereses o actividades privadas relacionados con las competencias de la Corporación."
+    },
+    {
+        "topic_num": 4,
+        "question": "¿Qué carácter tiene el Ayuntamiento según el artículo 35.1 del texto refundido?",
+        "option_a": "Es el órgano de gobierno y administración del municipio, con carácter de Corporación de Derecho Público",
+        "option_b": "Es un órgano consultivo de la Diputación",
+        "option_c": "Es una empresa pública estatal",
+        "option_d": "Es una asociación privada sin personalidad",
+        "correct": "A",
+        "explanation": "El artículo 35.1 define al Ayuntamiento como órgano de gobierno y administración del municipio, con carácter de Corporación de Derecho Público."
+    },
+    {
+        "topic_num": 4,
+        "question": "¿Qué regla especial se aplica a los Presidentes de Cabildos y Consejos Insulares?",
+        "option_a": "Ostentan el mismo tratamiento, deberes y derechos reconocidos a los Presidentes de Diputación",
+        "option_b": "Carecen de tratamiento institucional",
+        "option_c": "Tienen siempre el tratamiento de Excelencia",
+        "option_d": "Solo pueden ejercer funciones consultivas",
+        "correct": "A",
+        "explanation": "El artículo 34.2 extiende a los Presidentes de Cabildos y Consejos Insulares el mismo tratamiento, deberes y derechos reconocidos a los Presidentes de Diputación."
+    },
+    {
+        "topic_num": 4,
+        "question": "¿Qué afirmación distingue correctamente los artículos 24 y 30 del texto refundido?",
+        "option_a": "El artículo 24 regula la constitución de grupos políticos y el artículo 30 el Registro de Intereses",
+        "option_b": "El artículo 24 regula presupuestos y el 30 elecciones generales",
+        "option_c": "Ambos regulan exclusivamente sesiones plenarias",
+        "option_d": "El artículo 24 regula tribunales y el 30 contratos estatales",
+        "correct": "A",
+        "explanation": "El artículo 24 establece requisitos de constitución de grupos políticos y el artículo 30 regula el Registro de Intereses de los miembros de la Corporación."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_04_LOT_01_END
