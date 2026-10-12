@@ -9978,3 +9978,1028 @@ SEED_QUESTIONS.extend([
     }
 ])
 # QUESTION_BANK_ACCEPTED_TOPIC_25_LOT_05_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_26_LOT_01_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 26,
+        "question": "¿Qué afirmación es correcta? Blazor es un framework web para construir componentes de interfaz Razor.",
+        "option_a": "Blazor es un framework web para construir componentes de interfaz Razor.",
+        "option_b": "Una operación SQL local sin relación con componentes.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "A",
+        "explanation": "Blazor es un framework web para construir componentes de interfaz Razor."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Cómo debe interpretarse esta regla? Los componentes Razor pueden ejecutarse en servidor, navegador o aplicaciones nativas según el modelo de alojamiento.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Los componentes Razor pueden ejecutarse en servidor, navegador o aplicaciones nativas según el modelo de alojamiento.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "B",
+        "explanation": "Los componentes Razor pueden ejecutarse en servidor, navegador o aplicaciones nativas según el modelo de alojamiento."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué efecto tiene esta característica? Blazor Server ejecuta los componentes en el servidor dentro de una aplicación ASP.NET Core.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "Blazor Server ejecuta los componentes en el servidor dentro de una aplicación ASP.NET Core.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "C",
+        "explanation": "Blazor Server ejecuta los componentes en el servidor dentro de una aplicación ASP.NET Core."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué debe saber el desarrollador? Blazor WebAssembly ejecuta los componentes en el navegador sobre un runtime .NET basado en WebAssembly.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "Una configuración que desactiva todo renderizado.",
+        "option_d": "Blazor WebAssembly ejecuta los componentes en el navegador sobre un runtime .NET basado en WebAssembly.",
+        "correct": "D",
+        "explanation": "Blazor WebAssembly ejecuta los componentes en el navegador sobre un runtime .NET basado en WebAssembly."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Cuál es la aplicación práctica? Blazor Hybrid ejecuta componentes Razor en aplicaciones móviles o de escritorio mediante un Web View embebido.",
+        "option_a": "Blazor Hybrid ejecuta componentes Razor en aplicaciones móviles o de escritorio mediante un Web View embebido.",
+        "option_b": "Una operación SQL local sin relación con componentes.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "A",
+        "explanation": "Blazor Hybrid ejecuta componentes Razor en aplicaciones móviles o de escritorio mediante un Web View embebido."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué comportamiento describe la documentación? La forma de construir componentes Razor es la misma entre los modelos de alojamiento.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "La forma de construir componentes Razor es la misma entre los modelos de alojamiento.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "B",
+        "explanation": "La forma de construir componentes Razor es la misma entre los modelos de alojamiento."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué opción explica correctamente el caso? En Blazor Server, las actualizaciones de UI y eventos viajan por una conexión SignalR.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "En Blazor Server, las actualizaciones de UI y eventos viajan por una conexión SignalR.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "C",
+        "explanation": "En Blazor Server, las actualizaciones de UI y eventos viajan por una conexión SignalR."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué relación es válida? El circuito mantiene en servidor el estado asociado a un cliente conectado de Blazor Server.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "Una configuración que desactiva todo renderizado.",
+        "option_d": "El circuito mantiene en servidor el estado asociado a un cliente conectado de Blazor Server.",
+        "correct": "D",
+        "explanation": "El circuito mantiene en servidor el estado asociado a un cliente conectado de Blazor Server."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Cómo se diseña correctamente esta solución? Un circuito Blazor Server puede tolerar interrupciones temporales y reconexiones.",
+        "option_a": "Un circuito Blazor Server puede tolerar interrupciones temporales y reconexiones.",
+        "option_b": "Una operación SQL local sin relación con componentes.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "A",
+        "explanation": "Un circuito Blazor Server puede tolerar interrupciones temporales y reconexiones."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué diagnóstico corresponde? Cada pestaña del navegador requiere un circuito separado en Blazor Server.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Cada pestaña del navegador requiere un circuito separado en Blazor Server.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "B",
+        "explanation": "Cada pestaña del navegador requiere un circuito separado en Blazor Server."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué afirmación es correcta? Blazor Server suele tener una descarga inicial menor que Blazor WebAssembly.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "Blazor Server suele tener una descarga inicial menor que Blazor WebAssembly.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "C",
+        "explanation": "Blazor Server suele tener una descarga inicial menor que Blazor WebAssembly."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Cómo debe interpretarse esta regla? Blazor Server puede usar las API .NET disponibles en el servidor.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "Una configuración que desactiva todo renderizado.",
+        "option_d": "Blazor Server puede usar las API .NET disponibles en el servidor.",
+        "correct": "D",
+        "explanation": "Blazor Server puede usar las API .NET disponibles en el servidor."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué efecto tiene esta característica? Escalar Blazor Server exige recursos para conexiones y estado de los clientes.",
+        "option_a": "Escalar Blazor Server exige recursos para conexiones y estado de los clientes.",
+        "option_b": "Una operación SQL local sin relación con componentes.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "A",
+        "explanation": "Escalar Blazor Server exige recursos para conexiones y estado de los clientes."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué debe saber el desarrollador? Blazor Server requiere un servidor ASP.NET Core y no es un escenario de despliegue exclusivamente CDN.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Blazor Server requiere un servidor ASP.NET Core y no es un escenario de despliegue exclusivamente CDN.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "B",
+        "explanation": "Blazor Server requiere un servidor ASP.NET Core y no es un escenario de despliegue exclusivamente CDN."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Cuál es la aplicación práctica? Azure SignalR Service puede ayudar a escalar conexiones de una aplicación Blazor Server.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "Azure SignalR Service puede ayudar a escalar conexiones de una aplicación Blazor Server.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "C",
+        "explanation": "Azure SignalR Service puede ayudar a escalar conexiones de una aplicación Blazor Server."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué comportamiento describe la documentación? En WebAssembly se descargan al navegador componentes, dependencias y runtime .NET.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "Una configuración que desactiva todo renderizado.",
+        "option_d": "En WebAssembly se descargan al navegador componentes, dependencias y runtime .NET.",
+        "correct": "D",
+        "explanation": "En WebAssembly se descargan al navegador componentes, dependencias y runtime .NET."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué opción explica correctamente el caso? Los componentes WebAssembly se ejecutan en el hilo de UI del navegador.",
+        "option_a": "Los componentes WebAssembly se ejecutan en el hilo de UI del navegador.",
+        "option_b": "Una operación SQL local sin relación con componentes.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "A",
+        "explanation": "Los componentes WebAssembly se ejecutan en el hilo de UI del navegador."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué relación es válida? Una aplicación WebAssembly puede desplegar sus assets como archivos estáticos.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una aplicación WebAssembly puede desplegar sus assets como archivos estáticos.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "B",
+        "explanation": "Una aplicación WebAssembly puede desplegar sus assets como archivos estáticos."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Cómo se diseña correctamente esta solución? Una aplicación Blazor WebAssembly standalone no necesita una aplicación ASP.NET Core backend para servir sus archivos.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "Una aplicación Blazor WebAssembly standalone no necesita una aplicación ASP.NET Core backend para servir sus archivos.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "C",
+        "explanation": "Una aplicación Blazor WebAssembly standalone no necesita una aplicación ASP.NET Core backend para servir sus archivos."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué diagnóstico corresponde? Una aplicación WebAssembly hosted usa una aplicación ASP.NET Core para servir sus archivos.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "Una configuración que desactiva todo renderizado.",
+        "option_d": "Una aplicación WebAssembly hosted usa una aplicación ASP.NET Core para servir sus archivos.",
+        "correct": "D",
+        "explanation": "Una aplicación WebAssembly hosted usa una aplicación ASP.NET Core para servir sus archivos."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_26_LOT_01_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_26_LOT_02_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 26,
+        "question": "¿Qué afirmación es correcta? El modelo hosted permite compartir código entre aplicaciones cliente y servidor.",
+        "option_a": "El modelo hosted permite compartir código entre aplicaciones cliente y servidor.",
+        "option_b": "Una operación SQL local sin relación con componentes.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "A",
+        "explanation": "El modelo hosted permite compartir código entre aplicaciones cliente y servidor."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Cómo debe interpretarse esta regla? El modelo hosted puede integrarse con MVC y Razor Pages.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "El modelo hosted puede integrarse con MVC y Razor Pages.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "B",
+        "explanation": "El modelo hosted puede integrarse con MVC y Razor Pages."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué efecto tiene esta característica? Un cliente WebAssembly hosted puede comunicarse con el backend mediante una Web API.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "Un cliente WebAssembly hosted puede comunicarse con el backend mediante una Web API.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "C",
+        "explanation": "Un cliente WebAssembly hosted puede comunicarse con el backend mediante una Web API."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué debe saber el desarrollador? Una PWA Blazor WebAssembly puede usar APIs del navegador para capacidades offline.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "Una configuración que desactiva todo renderizado.",
+        "option_d": "Una PWA Blazor WebAssembly puede usar APIs del navegador para capacidades offline.",
+        "correct": "D",
+        "explanation": "Una PWA Blazor WebAssembly puede usar APIs del navegador para capacidades offline."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Cuál es la aplicación práctica? El payload publicado es un factor importante del rendimiento de una aplicación WebAssembly.",
+        "option_a": "El payload publicado es un factor importante del rendimiento de una aplicación WebAssembly.",
+        "option_b": "Una operación SQL local sin relación con componentes.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "A",
+        "explanation": "El payload publicado es un factor importante del rendimiento de una aplicación WebAssembly."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué comportamiento describe la documentación? Blazor Hybrid aprovecha controles Web View de plataformas móviles o de escritorio.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Blazor Hybrid aprovecha controles Web View de plataformas móviles o de escritorio.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "B",
+        "explanation": "Blazor Hybrid aprovecha controles Web View de plataformas móviles o de escritorio."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué opción explica correctamente el caso? En .NET 8 y posterior es útil distinguir los modelos por cómo se renderizan los componentes.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "En .NET 8 y posterior es útil distinguir los modelos por cómo se renderizan los componentes.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "C",
+        "explanation": "En .NET 8 y posterior es útil distinguir los modelos por cómo se renderizan los componentes."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué relación es válida? Un render mode determina cómo y dónde se renderiza e interactúa con un componente.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "Una configuración que desactiva todo renderizado.",
+        "option_d": "Un render mode determina cómo y dónde se renderiza e interactúa con un componente.",
+        "correct": "D",
+        "explanation": "Un render mode determina cómo y dónde se renderiza e interactúa con un componente."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Cómo se diseña correctamente esta solución? Static se usa para renderizado estático sin interactividad de componente.",
+        "option_a": "Static se usa para renderizado estático sin interactividad de componente.",
+        "option_b": "Una operación SQL local sin relación con componentes.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "A",
+        "explanation": "Static se usa para renderizado estático sin interactividad de componente."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué diagnóstico corresponde? InteractiveServer habilita interactividad usando una conexión al servidor.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "InteractiveServer habilita interactividad usando una conexión al servidor.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "B",
+        "explanation": "InteractiveServer habilita interactividad usando una conexión al servidor."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué afirmación es correcta? InteractiveWebAssembly habilita interactividad ejecutando el componente en WebAssembly.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "InteractiveWebAssembly habilita interactividad ejecutando el componente en WebAssembly.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "C",
+        "explanation": "InteractiveWebAssembly habilita interactividad ejecutando el componente en WebAssembly."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Cómo debe interpretarse esta regla? InteractiveAuto usa inicialmente servidor y puede cambiar a WebAssembly cuando está disponible.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "Una configuración que desactiva todo renderizado.",
+        "option_d": "InteractiveAuto usa inicialmente servidor y puede cambiar a WebAssembly cuando está disponible.",
+        "correct": "D",
+        "explanation": "InteractiveAuto usa inicialmente servidor y puede cambiar a WebAssembly cuando está disponible."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué efecto tiene esta característica? Un componente puede declarar un render mode mediante la directiva @rendermode.",
+        "option_a": "Un componente puede declarar un render mode mediante la directiva @rendermode.",
+        "option_b": "Una operación SQL local sin relación con componentes.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "A",
+        "explanation": "Un componente puede declarar un render mode mediante la directiva @rendermode."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué debe saber el desarrollador? Un render mode puede aplicarse en la raíz para que se herede a componentes descendientes.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Un render mode puede aplicarse en la raíz para que se herede a componentes descendientes.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "B",
+        "explanation": "Un render mode puede aplicarse en la raíz para que se herede a componentes descendientes."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Cuál es la aplicación práctica? El prerendering genera HTML inicial antes de que se active la interactividad.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "El prerendering genera HTML inicial antes de que se active la interactividad.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "C",
+        "explanation": "El prerendering genera HTML inicial antes de que se active la interactividad."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué comportamiento describe la documentación? Los modos interactivos suelen prerenderizar por defecto cuando la aplicación está configurada para ello.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "Una configuración que desactiva todo renderizado.",
+        "option_d": "Los modos interactivos suelen prerenderizar por defecto cuando la aplicación está configurada para ello.",
+        "correct": "D",
+        "explanation": "Los modos interactivos suelen prerenderizar por defecto cuando la aplicación está configurada para ello."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué opción explica correctamente el caso? Desactivar prerendering es distinto de desactivar la interactividad.",
+        "option_a": "Desactivar prerendering es distinto de desactivar la interactividad.",
+        "option_b": "Una operación SQL local sin relación con componentes.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "A",
+        "explanation": "Desactivar prerendering es distinto de desactivar la interactividad."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué relación es válida? La interactividad WebAssembly requiere que el cliente descargue los recursos necesarios.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "La interactividad WebAssembly requiere que el cliente descargue los recursos necesarios.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "B",
+        "explanation": "La interactividad WebAssembly requiere que el cliente descargue los recursos necesarios."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Cómo se diseña correctamente esta solución? El modo InteractiveServer conserva la ejecución del componente en el servidor.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "El modo InteractiveServer conserva la ejecución del componente en el servidor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "C",
+        "explanation": "El modo InteractiveServer conserva la ejecución del componente en el servidor."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué diagnóstico corresponde? El modo InteractiveWebAssembly requiere un proyecto o recursos cliente WebAssembly configurados.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "Una configuración que desactiva todo renderizado.",
+        "option_d": "El modo InteractiveWebAssembly requiere un proyecto o recursos cliente WebAssembly configurados.",
+        "correct": "D",
+        "explanation": "El modo InteractiveWebAssembly requiere un proyecto o recursos cliente WebAssembly configurados."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_26_LOT_02_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_26_LOT_03_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 26,
+        "question": "¿Qué afirmación es correcta? El render mode elegido afecta a dónde se ejecuta el código del componente.",
+        "option_a": "El render mode elegido afecta a dónde se ejecuta el código del componente.",
+        "option_b": "Una operación SQL local sin relación con componentes.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "A",
+        "explanation": "El render mode elegido afecta a dónde se ejecuta el código del componente."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Cómo debe interpretarse esta regla? La plantilla de Blazor Web App permite combinar renderizado estático e interactivo.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "La plantilla de Blazor Web App permite combinar renderizado estático e interactivo.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "B",
+        "explanation": "La plantilla de Blazor Web App permite combinar renderizado estático e interactivo."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué efecto tiene esta característica? Los componentes pueden adoptar un modo interactivo individual aunque la aplicación use varios modos.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "Los componentes pueden adoptar un modo interactivo individual aunque la aplicación use varios modos.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "C",
+        "explanation": "Los componentes pueden adoptar un modo interactivo individual aunque la aplicación use varios modos."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué debe saber el desarrollador? El modo de renderizado no cambia la sintaxis básica de un componente Razor.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "Una configuración que desactiva todo renderizado.",
+        "option_d": "El modo de renderizado no cambia la sintaxis básica de un componente Razor.",
+        "correct": "D",
+        "explanation": "El modo de renderizado no cambia la sintaxis básica de un componente Razor."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Cuál es la aplicación práctica? Una solución Blazor Web App contiene un proyecto que aloja componentes y configuración ASP.NET Core.",
+        "option_a": "Una solución Blazor Web App contiene un proyecto que aloja componentes y configuración ASP.NET Core.",
+        "option_b": "Una operación SQL local sin relación con componentes.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "A",
+        "explanation": "Una solución Blazor Web App contiene un proyecto que aloja componentes y configuración ASP.NET Core."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué comportamiento describe la documentación? El archivo Program.cs configura servicios y el pipeline de una aplicación Blazor.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "El archivo Program.cs configura servicios y el pipeline de una aplicación Blazor.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "B",
+        "explanation": "El archivo Program.cs configura servicios y el pipeline de una aplicación Blazor."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué opción explica correctamente el caso? El componente App.razor representa la raíz de la aplicación de componentes.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "El componente App.razor representa la raíz de la aplicación de componentes.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "C",
+        "explanation": "El componente App.razor representa la raíz de la aplicación de componentes."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué relación es válida? El componente Routes.razor participa en la definición del enrutamiento de páginas.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "Una configuración que desactiva todo renderizado.",
+        "option_d": "El componente Routes.razor participa en la definición del enrutamiento de páginas.",
+        "correct": "D",
+        "explanation": "El componente Routes.razor participa en la definición del enrutamiento de páginas."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Cómo se diseña correctamente esta solución? La carpeta Components contiene componentes Razor de la aplicación.",
+        "option_a": "La carpeta Components contiene componentes Razor de la aplicación.",
+        "option_b": "Una operación SQL local sin relación con componentes.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "A",
+        "explanation": "La carpeta Components contiene componentes Razor de la aplicación."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué diagnóstico corresponde? La carpeta wwwroot contiene assets estáticos de la aplicación.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "La carpeta wwwroot contiene assets estáticos de la aplicación.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "B",
+        "explanation": "La carpeta wwwroot contiene assets estáticos de la aplicación."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué afirmación es correcta? El archivo _Imports.razor permite centralizar directivas e imports Razor.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "El archivo _Imports.razor permite centralizar directivas e imports Razor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "C",
+        "explanation": "El archivo _Imports.razor permite centralizar directivas e imports Razor."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Cómo debe interpretarse esta regla? Los layouts proporcionan una estructura visual común para páginas.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "Una configuración que desactiva todo renderizado.",
+        "option_d": "Los layouts proporcionan una estructura visual común para páginas.",
+        "correct": "D",
+        "explanation": "Los layouts proporcionan una estructura visual común para páginas."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué efecto tiene esta característica? Una página enrutable se identifica mediante una directiva @page.",
+        "option_a": "Una página enrutable se identifica mediante una directiva @page.",
+        "option_b": "Una operación SQL local sin relación con componentes.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "A",
+        "explanation": "Una página enrutable se identifica mediante una directiva @page."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué debe saber el desarrollador? El proyecto de servidor configura endpoints y servicios necesarios para la aplicación.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "El proyecto de servidor configura endpoints y servicios necesarios para la aplicación.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "B",
+        "explanation": "El proyecto de servidor configura endpoints y servicios necesarios para la aplicación."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Cuál es la aplicación práctica? El proyecto cliente WebAssembly contiene recursos que se descargan y ejecutan en el navegador.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "El proyecto cliente WebAssembly contiene recursos que se descargan y ejecutan en el navegador.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "C",
+        "explanation": "El proyecto cliente WebAssembly contiene recursos que se descargan y ejecutan en el navegador."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué comportamiento describe la documentación? Una solución puede separar cliente, servidor y librerías compartidas.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "Una configuración que desactiva todo renderizado.",
+        "option_d": "Una solución puede separar cliente, servidor y librerías compartidas.",
+        "correct": "D",
+        "explanation": "Una solución puede separar cliente, servidor y librerías compartidas."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué opción explica correctamente el caso? Una librería de clases compartida puede contener componentes o modelos usados por varios proyectos.",
+        "option_a": "Una librería de clases compartida puede contener componentes o modelos usados por varios proyectos.",
+        "option_b": "Una operación SQL local sin relación con componentes.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "A",
+        "explanation": "Una librería de clases compartida puede contener componentes o modelos usados por varios proyectos."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué relación es válida? La configuración de render modes se registra durante la configuración de servicios de componentes.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "La configuración de render modes se registra durante la configuración de servicios de componentes.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "B",
+        "explanation": "La configuración de render modes se registra durante la configuración de servicios de componentes."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Cómo se diseña correctamente esta solución? El pipeline debe mapear los endpoints necesarios para una Blazor Web App.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "El pipeline debe mapear los endpoints necesarios para una Blazor Web App.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "C",
+        "explanation": "El pipeline debe mapear los endpoints necesarios para una Blazor Web App."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué diagnóstico corresponde? Los assets estáticos deben publicarse junto con la aplicación o en el servicio estático elegido.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "Una configuración que desactiva todo renderizado.",
+        "option_d": "Los assets estáticos deben publicarse junto con la aplicación o en el servicio estático elegido.",
+        "correct": "D",
+        "explanation": "Los assets estáticos deben publicarse junto con la aplicación o en el servicio estático elegido."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_26_LOT_03_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_26_LOT_04_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 26,
+        "question": "¿Qué afirmación es correcta? Una aplicación standalone WebAssembly puede alojarse en un servidor de archivos estáticos.",
+        "option_a": "Una aplicación standalone WebAssembly puede alojarse en un servidor de archivos estáticos.",
+        "option_b": "Una operación SQL local sin relación con componentes.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "A",
+        "explanation": "Una aplicación standalone WebAssembly puede alojarse en un servidor de archivos estáticos."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Cómo debe interpretarse esta regla? Una aplicación hosted necesita el backend para servir el cliente y proporcionar sus APIs.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una aplicación hosted necesita el backend para servir el cliente y proporcionar sus APIs.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "B",
+        "explanation": "Una aplicación hosted necesita el backend para servir el cliente y proporcionar sus APIs."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué efecto tiene esta característica? El despliegue WebAssembly debe considerar el tamaño del runtime y las dependencias descargadas.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "El despliegue WebAssembly debe considerar el tamaño del runtime y las dependencias descargadas.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "C",
+        "explanation": "El despliegue WebAssembly debe considerar el tamaño del runtime y las dependencias descargadas."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué debe saber el desarrollador? La compresión de assets puede reducir el coste de descarga de una aplicación WebAssembly.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "Una configuración que desactiva todo renderizado.",
+        "option_d": "La compresión de assets puede reducir el coste de descarga de una aplicación WebAssembly.",
+        "correct": "D",
+        "explanation": "La compresión de assets puede reducir el coste de descarga de una aplicación WebAssembly."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Cuál es la aplicación práctica? El fingerprinting de assets permite identificar versiones publicadas de recursos estáticos.",
+        "option_a": "El fingerprinting de assets permite identificar versiones publicadas de recursos estáticos.",
+        "option_b": "Una operación SQL local sin relación con componentes.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "A",
+        "explanation": "El fingerprinting de assets permite identificar versiones publicadas de recursos estáticos."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué comportamiento describe la documentación? Blazor Server puede conservar circuitos desconectados durante un intervalo configurable.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Blazor Server puede conservar circuitos desconectados durante un intervalo configurable.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "B",
+        "explanation": "Blazor Server puede conservar circuitos desconectados durante un intervalo configurable."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué opción explica correctamente el caso? Cerrar una pestaña es una terminación normal del circuito Blazor Server.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "Cerrar una pestaña es una terminación normal del circuito Blazor Server.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "C",
+        "explanation": "Cerrar una pestaña es una terminación normal del circuito Blazor Server."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué relación es válida? Una desconexión de red puede ser no normal y permitir una reconexión posterior.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "Una configuración que desactiva todo renderizado.",
+        "option_d": "Una desconexión de red puede ser no normal y permitir una reconexión posterior.",
+        "correct": "D",
+        "explanation": "Una desconexión de red puede ser no normal y permitir una reconexión posterior."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Cómo se diseña correctamente esta solución? Cada circuito contiene instancias de estado administrado para esa sesión de cliente.",
+        "option_a": "Cada circuito contiene instancias de estado administrado para esa sesión de cliente.",
+        "option_b": "Una operación SQL local sin relación con componentes.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "A",
+        "explanation": "Cada circuito contiene instancias de estado administrado para esa sesión de cliente."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué diagnóstico corresponde? El estado de circuito aumenta el consumo de servidor por cliente en Blazor Server.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "El estado de circuito aumenta el consumo de servidor por cliente en Blazor Server.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "B",
+        "explanation": "El estado de circuito aumenta el consumo de servidor por cliente en Blazor Server."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué afirmación es correcta? La elección de Server puede ser adecuada cuando se necesita mantener lógica y recursos en el servidor.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "La elección de Server puede ser adecuada cuando se necesita mantener lógica y recursos en el servidor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "C",
+        "explanation": "La elección de Server puede ser adecuada cuando se necesita mantener lógica y recursos en el servidor."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Cómo debe interpretarse esta regla? La elección de WebAssembly puede ser adecuada cuando se busca ejecución cliente y despliegue estático.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "Una configuración que desactiva todo renderizado.",
+        "option_d": "La elección de WebAssembly puede ser adecuada cuando se busca ejecución cliente y despliegue estático.",
+        "correct": "D",
+        "explanation": "La elección de WebAssembly puede ser adecuada cuando se busca ejecución cliente y despliegue estático."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué efecto tiene esta característica? La elección Hybrid puede integrar UI Razor con capacidades nativas del dispositivo.",
+        "option_a": "La elección Hybrid puede integrar UI Razor con capacidades nativas del dispositivo.",
+        "option_b": "Una operación SQL local sin relación con componentes.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "A",
+        "explanation": "La elección Hybrid puede integrar UI Razor con capacidades nativas del dispositivo."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué debe saber el desarrollador? El modelo de hosting no obliga a cambiar los componentes Razor que no dependan de APIs específicas.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "El modelo de hosting no obliga a cambiar los componentes Razor que no dependan de APIs específicas.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "B",
+        "explanation": "El modelo de hosting no obliga a cambiar los componentes Razor que no dependan de APIs específicas."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Cuál es la aplicación práctica? Un componente interactivo no debe asumirse interactivo si solo se ha prerenderizado estáticamente.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "Un componente interactivo no debe asumirse interactivo si solo se ha prerenderizado estáticamente.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "C",
+        "explanation": "Un componente interactivo no debe asumirse interactivo si solo se ha prerenderizado estáticamente."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué comportamiento describe la documentación? Durante prerendering no están disponibles todas las capacidades que requieren un circuito activo.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "Una configuración que desactiva todo renderizado.",
+        "option_d": "Durante prerendering no están disponibles todas las capacidades que requieren un circuito activo.",
+        "correct": "D",
+        "explanation": "Durante prerendering no están disponibles todas las capacidades que requieren un circuito activo."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué opción explica correctamente el caso? Un componente puede requerir un render mode interactivo para responder a eventos de usuario.",
+        "option_a": "Un componente puede requerir un render mode interactivo para responder a eventos de usuario.",
+        "option_b": "Una operación SQL local sin relación con componentes.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "A",
+        "explanation": "Un componente puede requerir un render mode interactivo para responder a eventos de usuario."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué relación es válida? Los modos de renderizado pueden configurarse por componente, página o aplicación.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Los modos de renderizado pueden configurarse por componente, página o aplicación.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "B",
+        "explanation": "Los modos de renderizado pueden configurarse por componente, página o aplicación."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Cómo se diseña correctamente esta solución? La selección de InteractiveServer implica dependencia de la conexión cliente-servidor para eventos.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "La selección de InteractiveServer implica dependencia de la conexión cliente-servidor para eventos.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "C",
+        "explanation": "La selección de InteractiveServer implica dependencia de la conexión cliente-servidor para eventos."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué diagnóstico corresponde? La selección de InteractiveWebAssembly implica entregar al navegador el código cliente necesario.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "Una configuración que desactiva todo renderizado.",
+        "option_d": "La selección de InteractiveWebAssembly implica entregar al navegador el código cliente necesario.",
+        "correct": "D",
+        "explanation": "La selección de InteractiveWebAssembly implica entregar al navegador el código cliente necesario."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_26_LOT_04_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_26_LOT_05_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 26,
+        "question": "¿Qué afirmación es correcta? InteractiveAuto intenta combinar la carga inicial server-side con la posterior ejecución WebAssembly.",
+        "option_a": "InteractiveAuto intenta combinar la carga inicial server-side con la posterior ejecución WebAssembly.",
+        "option_b": "Una operación SQL local sin relación con componentes.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "A",
+        "explanation": "InteractiveAuto intenta combinar la carga inicial server-side con la posterior ejecución WebAssembly."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Cómo debe interpretarse esta regla? El render mode se propaga a componentes descendientes según dónde se aplique.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "El render mode se propaga a componentes descendientes según dónde se aplique.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "B",
+        "explanation": "El render mode se propaga a componentes descendientes según dónde se aplique."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué efecto tiene esta característica? Una solución debe registrar los servicios correspondientes al modelo de componentes que utiliza.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "Una solución debe registrar los servicios correspondientes al modelo de componentes que utiliza.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "C",
+        "explanation": "Una solución debe registrar los servicios correspondientes al modelo de componentes que utiliza."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué debe saber el desarrollador? El archivo de configuración del proyecto determina el SDK y referencias usadas por Blazor.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "Una configuración que desactiva todo renderizado.",
+        "option_d": "El archivo de configuración del proyecto determina el SDK y referencias usadas por Blazor.",
+        "correct": "D",
+        "explanation": "El archivo de configuración del proyecto determina el SDK y referencias usadas por Blazor."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Cuál es la aplicación práctica? Una aplicación Blazor puede consumir una Web API usando el modelo de hosting elegido.",
+        "option_a": "Una aplicación Blazor puede consumir una Web API usando el modelo de hosting elegido.",
+        "option_b": "Una operación SQL local sin relación con componentes.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "A",
+        "explanation": "Una aplicación Blazor puede consumir una Web API usando el modelo de hosting elegido."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué comportamiento describe la documentación? La lógica que accede directamente a recursos del servidor no puede trasladarse sin cambios al WebAssembly cliente.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "La lógica que accede directamente a recursos del servidor no puede trasladarse sin cambios al WebAssembly cliente.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "B",
+        "explanation": "La lógica que accede directamente a recursos del servidor no puede trasladarse sin cambios al WebAssembly cliente."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué opción explica correctamente el caso? Los componentes y dependencias se comparten solo cuando sus APIs son compatibles con el entorno de ejecución.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "Los componentes y dependencias se comparten solo cuando sus APIs son compatibles con el entorno de ejecución.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "C",
+        "explanation": "Los componentes y dependencias se comparten solo cuando sus APIs son compatibles con el entorno de ejecución."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué relación es válida? La seguridad de operaciones servidor debe mantenerse en el backend aunque exista UI WebAssembly.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "Una configuración que desactiva todo renderizado.",
+        "option_d": "La seguridad de operaciones servidor debe mantenerse en el backend aunque exista UI WebAssembly.",
+        "correct": "D",
+        "explanation": "La seguridad de operaciones servidor debe mantenerse en el backend aunque exista UI WebAssembly."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Cómo se diseña correctamente esta solución? El despliegue de una Blazor Web App debe incluir la configuración de endpoints y assets requerida por su modo.",
+        "option_a": "El despliegue de una Blazor Web App debe incluir la configuración de endpoints y assets requerida por su modo.",
+        "option_b": "Una operación SQL local sin relación con componentes.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "A",
+        "explanation": "El despliegue de una Blazor Web App debe incluir la configuración de endpoints y assets requerida por su modo."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué diagnóstico corresponde? El tamaño del payload debe evaluarse al elegir WebAssembly para conexiones lentas.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "El tamaño del payload debe evaluarse al elegir WebAssembly para conexiones lentas.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "B",
+        "explanation": "El tamaño del payload debe evaluarse al elegir WebAssembly para conexiones lentas."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué afirmación es correcta? La disponibilidad de WebAssembly en el navegador es una consideración del modelo cliente.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "La disponibilidad de WebAssembly en el navegador es una consideración del modelo cliente.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "C",
+        "explanation": "La disponibilidad de WebAssembly en el navegador es una consideración del modelo cliente."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Cómo debe interpretarse esta regla? Un entorno sin soporte WebAssembly puede favorecer Blazor Server.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "Una configuración que desactiva todo renderizado.",
+        "option_d": "Un entorno sin soporte WebAssembly puede favorecer Blazor Server.",
+        "correct": "D",
+        "explanation": "Un entorno sin soporte WebAssembly puede favorecer Blazor Server."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué efecto tiene esta característica? La escala de conexiones simultáneas es una consideración del modelo Blazor Server.",
+        "option_a": "La escala de conexiones simultáneas es una consideración del modelo Blazor Server.",
+        "option_b": "Una operación SQL local sin relación con componentes.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "A",
+        "explanation": "La escala de conexiones simultáneas es una consideración del modelo Blazor Server."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué debe saber el desarrollador? Un diseño de Blazor Web App debe decidir explícitamente qué partes son estáticas o interactivas.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Un diseño de Blazor Web App debe decidir explícitamente qué partes son estáticas o interactivas.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "B",
+        "explanation": "Un diseño de Blazor Web App debe decidir explícitamente qué partes son estáticas o interactivas."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Cuál es la aplicación práctica? Una solución de Blazor debe elegir hosting, render mode y despliegue de forma coherente.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "Una solución de Blazor debe elegir hosting, render mode y despliegue de forma coherente.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "C",
+        "explanation": "Una solución de Blazor debe elegir hosting, render mode y despliegue de forma coherente."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué comportamiento describe la documentación? Una aplicación debe publicar los recursos estáticos que necesita el modelo de hosting elegido.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "Una configuración que desactiva todo renderizado.",
+        "option_d": "Una aplicación debe publicar los recursos estáticos que necesita el modelo de hosting elegido.",
+        "correct": "D",
+        "explanation": "Una aplicación debe publicar los recursos estáticos que necesita el modelo de hosting elegido."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué opción explica correctamente el caso? La configuración de producción debe preservar las rutas y endpoints usados por la aplicación Blazor.",
+        "option_a": "La configuración de producción debe preservar las rutas y endpoints usados por la aplicación Blazor.",
+        "option_b": "Una operación SQL local sin relación con componentes.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "A",
+        "explanation": "La configuración de producción debe preservar las rutas y endpoints usados por la aplicación Blazor."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué relación es válida? El modelo de hosting elegido es una decisión de arquitectura y no solo una opción visual.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "El modelo de hosting elegido es una decisión de arquitectura y no solo una opción visual.",
+        "option_c": "Una vista MVC que no participa en Blazor.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "B",
+        "explanation": "El modelo de hosting elegido es una decisión de arquitectura y no solo una opción visual."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Cómo se diseña correctamente esta solución? El modo de renderizado debe probarse en el entorno de despliegue real.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "El modo de renderizado debe probarse en el entorno de despliegue real.",
+        "option_d": "Una configuración que desactiva todo renderizado.",
+        "correct": "C",
+        "explanation": "El modo de renderizado debe probarse en el entorno de despliegue real."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué diagnóstico corresponde? La solución debe documentar si el estado de la UI vive en servidor, cliente o ambos.",
+        "option_a": "Una operación SQL local sin relación con componentes.",
+        "option_b": "Una vista MVC que no participa en Blazor.",
+        "option_c": "Una configuración que desactiva todo renderizado.",
+        "option_d": "La solución debe documentar si el estado de la UI vive en servidor, cliente o ambos.",
+        "correct": "D",
+        "explanation": "La solución debe documentar si el estado de la UI vive en servidor, cliente o ambos."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_26_LOT_05_END
