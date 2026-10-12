@@ -76,7 +76,12 @@ def main() -> int:
     manifest["source_register_sha256"] = _sha256(args.register)
     manifest["syllabus_sha256"] = _sha256(ROOT / "temario.md")
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    objectives = manifest.pop("objectives")
+    metadata = json.dumps(manifest, ensure_ascii=False, indent=2)
+    metadata = metadata.rsplit("\n}", 1)[0]
+    objective_lines = [json.dumps(objective, ensure_ascii=False, separators=(",", ":")) for objective in objectives]
+    content = metadata + ',\n  "objectives": [\n' + ",\n".join(f"    {line}" for line in objective_lines) + "\n  ]\n}\n"
+    args.output.write_text(content, encoding="utf-8")
     print(f"wrote {manifest['objective_count']} objective slots to {args.output}")
     return 0
 
