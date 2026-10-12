@@ -8953,3 +8953,1028 @@ SEED_QUESTIONS.extend([
     }
 ])
 # QUESTION_BANK_ACCEPTED_TOPIC_23_LOT_05_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_25_LOT_01_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 25,
+        "question": "¿Qué afirmación es correcta? OData expone datos mediante un modelo conceptual y un protocolo basado en recursos HTTP.",
+        "option_a": "OData expone datos mediante un modelo conceptual y un protocolo basado en recursos HTTP.",
+        "option_b": "Una operación SQL local sin relación con HTTP.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "A",
+        "explanation": "OData expone datos mediante un modelo conceptual y un protocolo basado en recursos HTTP."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Cómo debe interpretarse esta regla? El documento de metadatos describe el modelo de entidad expuesto por el servicio.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "El documento de metadatos describe el modelo de entidad expuesto por el servicio.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "B",
+        "explanation": "El documento de metadatos describe el modelo de entidad expuesto por el servicio."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué efecto tiene esta característica? La URL raíz del servicio identifica el punto de entrada del servicio OData.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "La URL raíz del servicio identifica el punto de entrada del servicio OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "C",
+        "explanation": "La URL raíz del servicio identifica el punto de entrada del servicio OData."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué debe saber el cliente OData? La ruta $metadata solicita el documento de metadatos del servicio.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Una regla que desactiva el modelo y sus metadatos.",
+        "option_d": "La ruta $metadata solicita el documento de metadatos del servicio.",
+        "correct": "D",
+        "explanation": "La ruta $metadata solicita el documento de metadatos del servicio."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Cuál es la aplicación práctica? Un entity type define la estructura de una entidad mediante propiedades y navegación.",
+        "option_a": "Un entity type define la estructura de una entidad mediante propiedades y navegación.",
+        "option_b": "Una operación SQL local sin relación con HTTP.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "A",
+        "explanation": "Un entity type define la estructura de una entidad mediante propiedades y navegación."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué comportamiento describe el estándar? Un entity set es una colección de entidades del mismo tipo o de tipos derivados.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Un entity set es una colección de entidades del mismo tipo o de tipos derivados.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "B",
+        "explanation": "Un entity set es una colección de entidades del mismo tipo o de tipos derivados."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué opción explica correctamente el caso? Un singleton identifica una entidad única en el contenedor del servicio.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Un singleton identifica una entidad única en el contenedor del servicio.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "C",
+        "explanation": "Un singleton identifica una entidad única en el contenedor del servicio."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué relación es válida? Un complex type agrupa propiedades sin tener identidad propia como una entidad.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Una regla que desactiva el modelo y sus metadatos.",
+        "option_d": "Un complex type agrupa propiedades sin tener identidad propia como una entidad.",
+        "correct": "D",
+        "explanation": "Un complex type agrupa propiedades sin tener identidad propia como una entidad."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Cómo se diseña correctamente este endpoint? Una propiedad de navegación representa una relación con otras entidades.",
+        "option_a": "Una propiedad de navegación representa una relación con otras entidades.",
+        "option_b": "Una operación SQL local sin relación con HTTP.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "A",
+        "explanation": "Una propiedad de navegación representa una relación con otras entidades."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué diagnóstico corresponde? La clave de una entidad permite identificarla dentro de su entity set.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "La clave de una entidad permite identificarla dentro de su entity set.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "B",
+        "explanation": "La clave de una entidad permite identificarla dentro de su entity set."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué afirmación es correcta? El contenedor de entidades agrupa entity sets, singletons y operaciones expuestas.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "El contenedor de entidades agrupa entity sets, singletons y operaciones expuestas.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "C",
+        "explanation": "El contenedor de entidades agrupa entity sets, singletons y operaciones expuestas."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Cómo debe interpretarse esta regla? Una propiedad primitiva contiene un valor de un tipo primitivo del modelo.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Una regla que desactiva el modelo y sus metadatos.",
+        "option_d": "Una propiedad primitiva contiene un valor de un tipo primitivo del modelo.",
+        "correct": "D",
+        "explanation": "Una propiedad primitiva contiene un valor de un tipo primitivo del modelo."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué efecto tiene esta característica? Una propiedad de colección contiene cero o más valores del tipo declarado.",
+        "option_a": "Una propiedad de colección contiene cero o más valores del tipo declarado.",
+        "option_b": "Una operación SQL local sin relación con HTTP.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "A",
+        "explanation": "Una propiedad de colección contiene cero o más valores del tipo declarado."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué debe saber el cliente OData? Un modelo OData puede declarar tipos derivados mediante herencia de entity types.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Un modelo OData puede declarar tipos derivados mediante herencia de entity types.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "B",
+        "explanation": "Un modelo OData puede declarar tipos derivados mediante herencia de entity types."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Cuál es la aplicación práctica? Una asociación de navegación puede ser de uno a uno, uno a muchos o muchos a muchos.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Una asociación de navegación puede ser de uno a uno, uno a muchos o muchos a muchos.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "C",
+        "explanation": "Una asociación de navegación puede ser de uno a uno, uno a muchos o muchos a muchos."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué comportamiento describe el estándar? La ruta de recursos identifica el recurso solicitado después de la raíz del servicio.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Una regla que desactiva el modelo y sus metadatos.",
+        "option_d": "La ruta de recursos identifica el recurso solicitado después de la raíz del servicio.",
+        "correct": "D",
+        "explanation": "La ruta de recursos identifica el recurso solicitado después de la raíz del servicio."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué opción explica correctamente el caso? Una clave entre paréntesis identifica una entidad concreta de un entity set.",
+        "option_a": "Una clave entre paréntesis identifica una entidad concreta de un entity set.",
+        "option_b": "Una operación SQL local sin relación con HTTP.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "A",
+        "explanation": "Una clave entre paréntesis identifica una entidad concreta de un entity set."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué relación es válida? Una ruta de navegación permite recorrer una propiedad de navegación desde una entidad.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una ruta de navegación permite recorrer una propiedad de navegación desde una entidad.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "B",
+        "explanation": "Una ruta de navegación permite recorrer una propiedad de navegación desde una entidad."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Cómo se diseña correctamente este endpoint? Una ruta puede terminar en una propiedad para solicitar ese valor en lugar de toda la entidad.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Una ruta puede terminar en una propiedad para solicitar ese valor en lugar de toda la entidad.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "C",
+        "explanation": "Una ruta puede terminar en una propiedad para solicitar ese valor en lugar de toda la entidad."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué diagnóstico corresponde? Una ruta de colección puede dirigirse a un elemento concreto mediante un índice o clave según el recurso.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Una regla que desactiva el modelo y sus metadatos.",
+        "option_d": "Una ruta de colección puede dirigirse a un elemento concreto mediante un índice o clave según el recurso.",
+        "correct": "D",
+        "explanation": "Una ruta de colección puede dirigirse a un elemento concreto mediante un índice o clave según el recurso."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_25_LOT_01_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_25_LOT_02_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 25,
+        "question": "¿Qué afirmación es correcta? Los query options modifican la representación o el conjunto de recursos solicitado.",
+        "option_a": "Los query options modifican la representación o el conjunto de recursos solicitado.",
+        "option_b": "Una operación SQL local sin relación con HTTP.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "A",
+        "explanation": "Los query options modifican la representación o el conjunto de recursos solicitado."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Cómo debe interpretarse esta regla? $filter restringe los recursos según una expresión booleana.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "$filter restringe los recursos según una expresión booleana.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "B",
+        "explanation": "$filter restringe los recursos según una expresión booleana."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué efecto tiene esta característica? $select limita las propiedades incluidas en la respuesta.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "$select limita las propiedades incluidas en la respuesta.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "C",
+        "explanation": "$select limita las propiedades incluidas en la respuesta."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué debe saber el cliente OData? $expand incluye recursos relacionados mediante propiedades de navegación.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Una regla que desactiva el modelo y sus metadatos.",
+        "option_d": "$expand incluye recursos relacionados mediante propiedades de navegación.",
+        "correct": "D",
+        "explanation": "$expand incluye recursos relacionados mediante propiedades de navegación."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Cuál es la aplicación práctica? $orderby establece el orden de los recursos de una colección.",
+        "option_a": "$orderby establece el orden de los recursos de una colección.",
+        "option_b": "Una operación SQL local sin relación con HTTP.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "A",
+        "explanation": "$orderby establece el orden de los recursos de una colección."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué comportamiento describe el estándar? $top limita el número máximo de recursos devueltos.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "$top limita el número máximo de recursos devueltos.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "B",
+        "explanation": "$top limita el número máximo de recursos devueltos."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué opción explica correctamente el caso? $skip omite un número de recursos al principio de una colección.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "$skip omite un número de recursos al principio de una colección.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "C",
+        "explanation": "$skip omite un número de recursos al principio de una colección."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué relación es válida? $count=true solicita información sobre el número de elementos de la colección.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Una regla que desactiva el modelo y sus metadatos.",
+        "option_d": "$count=true solicita información sobre el número de elementos de la colección.",
+        "correct": "D",
+        "explanation": "$count=true solicita información sobre el número de elementos de la colección."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Cómo se diseña correctamente este endpoint? $search restringe los resultados mediante una expresión de búsqueda textual.",
+        "option_a": "$search restringe los resultados mediante una expresión de búsqueda textual.",
+        "option_b": "Una operación SQL local sin relación con HTTP.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "A",
+        "explanation": "$search restringe los resultados mediante una expresión de búsqueda textual."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué diagnóstico corresponde? $format solicita una representación concreta del resultado.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "$format solicita una representación concreta del resultado.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "B",
+        "explanation": "$format solicita una representación concreta del resultado."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué afirmación es correcta? Las opciones de consulta pueden combinarse cuando sus restricciones sean compatibles.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Las opciones de consulta pueden combinarse cuando sus restricciones sean compatibles.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "C",
+        "explanation": "Las opciones de consulta pueden combinarse cuando sus restricciones sean compatibles."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Cómo debe interpretarse esta regla? El operador eq compara un valor con otro en una expresión $filter.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Una regla que desactiva el modelo y sus metadatos.",
+        "option_d": "El operador eq compara un valor con otro en una expresión $filter.",
+        "correct": "D",
+        "explanation": "El operador eq compara un valor con otro en una expresión $filter."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué efecto tiene esta característica? Los operadores gt, ge, lt y le permiten comparar valores ordenables.",
+        "option_a": "Los operadores gt, ge, lt y le permiten comparar valores ordenables.",
+        "option_b": "Una operación SQL local sin relación con HTTP.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "A",
+        "explanation": "Los operadores gt, ge, lt y le permiten comparar valores ordenables."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué debe saber el cliente OData? Una expresión $filter puede combinar condiciones con operadores lógicos.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una expresión $filter puede combinar condiciones con operadores lógicos.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "B",
+        "explanation": "Una expresión $filter puede combinar condiciones con operadores lógicos."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Cuál es la aplicación práctica? Una expresión $orderby puede especificar asc o desc para la dirección del orden.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Una expresión $orderby puede especificar asc o desc para la dirección del orden.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "C",
+        "explanation": "Una expresión $orderby puede especificar asc o desc para la dirección del orden."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué comportamiento describe el estándar? El orden de aplicación de $skip y $top afecta al subconjunto resultante.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Una regla que desactiva el modelo y sus metadatos.",
+        "option_d": "El orden de aplicación de $skip y $top afecta al subconjunto resultante.",
+        "correct": "D",
+        "explanation": "El orden de aplicación de $skip y $top afecta al subconjunto resultante."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué opción explica correctamente el caso? Un $expand puede contener opciones de consulta anidadas para la navegación expandida.",
+        "option_a": "Un $expand puede contener opciones de consulta anidadas para la navegación expandida.",
+        "option_b": "Una operación SQL local sin relación con HTTP.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "A",
+        "explanation": "Un $expand puede contener opciones de consulta anidadas para la navegación expandida."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué relación es válida? $select y $expand pueden usarse juntos para controlar propiedades y relaciones.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "$select y $expand pueden usarse juntos para controlar propiedades y relaciones.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "B",
+        "explanation": "$select y $expand pueden usarse juntos para controlar propiedades y relaciones."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Cómo se diseña correctamente este endpoint? El servidor puede rechazar una query option que no soporte.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "El servidor puede rechazar una query option que no soporte.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "C",
+        "explanation": "El servidor puede rechazar una query option que no soporte."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué diagnóstico corresponde? El servidor puede imponer límites de complejidad o tamaño a las consultas OData.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Una regla que desactiva el modelo y sus metadatos.",
+        "option_d": "El servidor puede imponer límites de complejidad o tamaño a las consultas OData.",
+        "correct": "D",
+        "explanation": "El servidor puede imponer límites de complejidad o tamaño a las consultas OData."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_25_LOT_02_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_25_LOT_03_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 25,
+        "question": "¿Qué afirmación es correcta? GET solicita una representación de un recurso sin modificarlo.",
+        "option_a": "GET solicita una representación de un recurso sin modificarlo.",
+        "option_b": "Una operación SQL local sin relación con HTTP.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "A",
+        "explanation": "GET solicita una representación de un recurso sin modificarlo."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Cómo debe interpretarse esta regla? POST puede crear una nueva entidad en un entity set.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "POST puede crear una nueva entidad en un entity set.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "B",
+        "explanation": "POST puede crear una nueva entidad en un entity set."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué efecto tiene esta característica? PUT reemplaza la representación de un recurso identificado.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "PUT reemplaza la representación de un recurso identificado.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "C",
+        "explanation": "PUT reemplaza la representación de un recurso identificado."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué debe saber el cliente OData? PATCH modifica parcialmente una entidad existente.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Una regla que desactiva el modelo y sus metadatos.",
+        "option_d": "PATCH modifica parcialmente una entidad existente.",
+        "correct": "D",
+        "explanation": "PATCH modifica parcialmente una entidad existente."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Cuál es la aplicación práctica? DELETE elimina la entidad identificada por la URL de recurso.",
+        "option_a": "DELETE elimina la entidad identificada por la URL de recurso.",
+        "option_b": "Una operación SQL local sin relación con HTTP.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "A",
+        "explanation": "DELETE elimina la entidad identificada por la URL de recurso."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué comportamiento describe el estándar? Una creación correcta puede devolver 201 Created.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una creación correcta puede devolver 201 Created.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "B",
+        "explanation": "Una creación correcta puede devolver 201 Created."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué opción explica correctamente el caso? Una actualización correcta puede devolver 204 No Content cuando no se devuelve representación.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Una actualización correcta puede devolver 204 No Content cuando no se devuelve representación.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "C",
+        "explanation": "Una actualización correcta puede devolver 204 No Content cuando no se devuelve representación."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué relación es válida? Una eliminación correcta puede devolver 204 No Content.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Una regla que desactiva el modelo y sus metadatos.",
+        "option_d": "Una eliminación correcta puede devolver 204 No Content.",
+        "correct": "D",
+        "explanation": "Una eliminación correcta puede devolver 204 No Content."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Cómo se diseña correctamente este endpoint? Una petición a una entidad inexistente puede devolver 404 Not Found.",
+        "option_a": "Una petición a una entidad inexistente puede devolver 404 Not Found.",
+        "option_b": "Una operación SQL local sin relación con HTTP.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "A",
+        "explanation": "Una petición a una entidad inexistente puede devolver 404 Not Found."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué diagnóstico corresponde? El encabezado Location puede identificar el recurso recién creado.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "El encabezado Location puede identificar el recurso recién creado.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "B",
+        "explanation": "El encabezado Location puede identificar el recurso recién creado."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué afirmación es correcta? ETag identifica una versión de la representación de un recurso.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "ETag identifica una versión de la representación de un recurso.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "C",
+        "explanation": "ETag identifica una versión de la representación de un recurso."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Cómo debe interpretarse esta regla? If-Match permite exigir que la versión actual coincida con una ETag esperada.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Una regla que desactiva el modelo y sus metadatos.",
+        "option_d": "If-Match permite exigir que la versión actual coincida con una ETag esperada.",
+        "correct": "D",
+        "explanation": "If-Match permite exigir que la versión actual coincida con una ETag esperada."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué efecto tiene esta característica? If-None-Match permite condicionar una petición a que no coincida una ETag.",
+        "option_a": "If-None-Match permite condicionar una petición a que no coincida una ETag.",
+        "option_b": "Una operación SQL local sin relación con HTTP.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "A",
+        "explanation": "If-None-Match permite condicionar una petición a que no coincida una ETag."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué debe saber el cliente OData? Una condición de ETag fallida puede producir 412 Precondition Failed.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una condición de ETag fallida puede producir 412 Precondition Failed.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "B",
+        "explanation": "Una condición de ETag fallida puede producir 412 Precondition Failed."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Cuál es la aplicación práctica? La concurrencia optimista evita sobrescribir silenciosamente una versión modificada.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "La concurrencia optimista evita sobrescribir silenciosamente una versión modificada.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "C",
+        "explanation": "La concurrencia optimista evita sobrescribir silenciosamente una versión modificada."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué comportamiento describe el estándar? El servicio puede proporcionar paginación controlada por el servidor.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Una regla que desactiva el modelo y sus metadatos.",
+        "option_d": "El servicio puede proporcionar paginación controlada por el servidor.",
+        "correct": "D",
+        "explanation": "El servicio puede proporcionar paginación controlada por el servidor."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué opción explica correctamente el caso? Una respuesta paginada puede incluir nextLink para obtener la página siguiente.",
+        "option_a": "Una respuesta paginada puede incluir nextLink para obtener la página siguiente.",
+        "option_b": "Una operación SQL local sin relación con HTTP.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "A",
+        "explanation": "Una respuesta paginada puede incluir nextLink para obtener la página siguiente."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué relación es válida? nextLink debe tratarse como la URL proporcionada por el servicio para continuar la iteración.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "nextLink debe tratarse como la URL proporcionada por el servicio para continuar la iteración.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "B",
+        "explanation": "nextLink debe tratarse como la URL proporcionada por el servicio para continuar la iteración."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Cómo se diseña correctamente este endpoint? El cliente no debe reconstruir arbitrariamente una nextLink sustituyéndola por otra query.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "El cliente no debe reconstruir arbitrariamente una nextLink sustituyéndola por otra query.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "C",
+        "explanation": "El cliente no debe reconstruir arbitrariamente una nextLink sustituyéndola por otra query."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué diagnóstico corresponde? Una delta link permite solicitar cambios posteriores a una consulta delta.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Una regla que desactiva el modelo y sus metadatos.",
+        "option_d": "Una delta link permite solicitar cambios posteriores a una consulta delta.",
+        "correct": "D",
+        "explanation": "Una delta link permite solicitar cambios posteriores a una consulta delta."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_25_LOT_03_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_25_LOT_04_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 25,
+        "question": "¿Qué afirmación es correcta? Una respuesta delta puede contener entidades añadidas, modificadas o eliminadas.",
+        "option_a": "Una respuesta delta puede contener entidades añadidas, modificadas o eliminadas.",
+        "option_b": "Una operación SQL local sin relación con HTTP.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "A",
+        "explanation": "Una respuesta delta puede contener entidades añadidas, modificadas o eliminadas."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Cómo debe interpretarse esta regla? La operación $batch agrupa varias peticiones en una petición multipart.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "La operación $batch agrupa varias peticiones en una petición multipart.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "B",
+        "explanation": "La operación $batch agrupa varias peticiones en una petición multipart."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué efecto tiene esta característica? Las peticiones de cambio de un batch pueden organizarse en un change set.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Las peticiones de cambio de un batch pueden organizarse en un change set.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "C",
+        "explanation": "Las peticiones de cambio de un batch pueden organizarse en un change set."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué debe saber el cliente OData? Un change set proporciona semántica atómica para un conjunto de operaciones de cambio.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Una regla que desactiva el modelo y sus metadatos.",
+        "option_d": "Un change set proporciona semántica atómica para un conjunto de operaciones de cambio.",
+        "correct": "D",
+        "explanation": "Un change set proporciona semántica atómica para un conjunto de operaciones de cambio."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Cuál es la aplicación práctica? Las partes de una petición batch tienen sus propios métodos, URLs y cabeceras HTTP.",
+        "option_a": "Las partes de una petición batch tienen sus propios métodos, URLs y cabeceras HTTP.",
+        "option_b": "Una operación SQL local sin relación con HTTP.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "A",
+        "explanation": "Las partes de una petición batch tienen sus propios métodos, URLs y cabeceras HTTP."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué comportamiento describe el estándar? Una función OData representa una operación sin efectos secundarios según el modelo de operaciones.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una función OData representa una operación sin efectos secundarios según el modelo de operaciones.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "B",
+        "explanation": "Una función OData representa una operación sin efectos secundarios según el modelo de operaciones."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué opción explica correctamente el caso? Una acción OData representa una operación que puede tener efectos secundarios.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Una acción OData representa una operación que puede tener efectos secundarios.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "C",
+        "explanation": "Una acción OData representa una operación que puede tener efectos secundarios."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué relación es válida? Una función puede estar enlazada a una instancia o colección de un tipo.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Una regla que desactiva el modelo y sus metadatos.",
+        "option_d": "Una función puede estar enlazada a una instancia o colección de un tipo.",
+        "correct": "D",
+        "explanation": "Una función puede estar enlazada a una instancia o colección de un tipo."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Cómo se diseña correctamente este endpoint? Una acción puede estar enlazada a una instancia o colección de un tipo.",
+        "option_a": "Una acción puede estar enlazada a una instancia o colección de un tipo.",
+        "option_b": "Una operación SQL local sin relación con HTTP.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "A",
+        "explanation": "Una acción puede estar enlazada a una instancia o colección de un tipo."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué diagnóstico corresponde? Una operación no enlazada se expone en el contenedor de entidades.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una operación no enlazada se expone en el contenedor de entidades.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "B",
+        "explanation": "Una operación no enlazada se expone en el contenedor de entidades."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué afirmación es correcta? Las funciones pueden aceptar parámetros que forman parte de la llamada de operación.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Las funciones pueden aceptar parámetros que forman parte de la llamada de operación.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "C",
+        "explanation": "Las funciones pueden aceptar parámetros que forman parte de la llamada de operación."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Cómo debe interpretarse esta regla? Una acción se invoca mediante una petición HTTP POST.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Una regla que desactiva el modelo y sus metadatos.",
+        "option_d": "Una acción se invoca mediante una petición HTTP POST.",
+        "correct": "D",
+        "explanation": "Una acción se invoca mediante una petición HTTP POST."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué efecto tiene esta característica? La ruta de una función enlazada incluye el recurso al que se aplica.",
+        "option_a": "La ruta de una función enlazada incluye el recurso al que se aplica.",
+        "option_b": "Una operación SQL local sin relación con HTTP.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "A",
+        "explanation": "La ruta de una función enlazada incluye el recurso al que se aplica."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué debe saber el cliente OData? Las operaciones se describen en el documento de metadatos.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Las operaciones se describen en el documento de metadatos.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "B",
+        "explanation": "Las operaciones se describen en el documento de metadatos."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Cuál es la aplicación práctica? Las anotaciones OData aportan información adicional al modelo o a sus elementos.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Las anotaciones OData aportan información adicional al modelo o a sus elementos.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "C",
+        "explanation": "Las anotaciones OData aportan información adicional al modelo o a sus elementos."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué comportamiento describe el estándar? Las capacidades de un servicio pueden describirse mediante vocabularios y anotaciones.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Una regla que desactiva el modelo y sus metadatos.",
+        "option_d": "Las capacidades de un servicio pueden describirse mediante vocabularios y anotaciones.",
+        "correct": "D",
+        "explanation": "Las capacidades de un servicio pueden describirse mediante vocabularios y anotaciones."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué opción explica correctamente el caso? El documento de metadatos permite a un cliente conocer tipos, conjuntos y relaciones expuestos.",
+        "option_a": "El documento de metadatos permite a un cliente conocer tipos, conjuntos y relaciones expuestos.",
+        "option_b": "Una operación SQL local sin relación con HTTP.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "A",
+        "explanation": "El documento de metadatos permite a un cliente conocer tipos, conjuntos y relaciones expuestos."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué relación es válida? La versión del protocolo puede comunicarse mediante cabeceras OData.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "La versión del protocolo puede comunicarse mediante cabeceras OData.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "B",
+        "explanation": "La versión del protocolo puede comunicarse mediante cabeceras OData."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Cómo se diseña correctamente este endpoint? El servicio debe documentar o rechazar las opciones y convenciones que no soporte.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "El servicio debe documentar o rechazar las opciones y convenciones que no soporte.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "C",
+        "explanation": "El servicio debe documentar o rechazar las opciones y convenciones que no soporte."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué diagnóstico corresponde? OData usa HTTP y sus métodos para transportar operaciones sobre recursos.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Una regla que desactiva el modelo y sus metadatos.",
+        "option_d": "OData usa HTTP y sus métodos para transportar operaciones sobre recursos.",
+        "correct": "D",
+        "explanation": "OData usa HTTP y sus métodos para transportar operaciones sobre recursos."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_25_LOT_04_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_25_LOT_05_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 25,
+        "question": "¿Qué afirmación es correcta? La autenticación y autorización concretas suelen depender del servicio y del entorno de despliegue.",
+        "option_a": "La autenticación y autorización concretas suelen depender del servicio y del entorno de despliegue.",
+        "option_b": "Una operación SQL local sin relación con HTTP.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "A",
+        "explanation": "La autenticación y autorización concretas suelen depender del servicio y del entorno de despliegue."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Cómo debe interpretarse esta regla? Exponer una query option no elimina la necesidad de aplicar autorización al recurso.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Exponer una query option no elimina la necesidad de aplicar autorización al recurso.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "B",
+        "explanation": "Exponer una query option no elimina la necesidad de aplicar autorización al recurso."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué efecto tiene esta característica? Un servicio puede limitar $top y otras opciones para proteger recursos.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Un servicio puede limitar $top y otras opciones para proteger recursos.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "C",
+        "explanation": "Un servicio puede limitar $top y otras opciones para proteger recursos."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué debe saber el cliente OData? Un servicio debe evitar que las consultas habilitadas permitan un consumo ilimitado de recursos.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Una regla que desactiva el modelo y sus metadatos.",
+        "option_d": "Un servicio debe evitar que las consultas habilitadas permitan un consumo ilimitado de recursos.",
+        "correct": "D",
+        "explanation": "Un servicio debe evitar que las consultas habilitadas permitan un consumo ilimitado de recursos."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Cuál es la aplicación práctica? Los valores de URL deben codificarse conforme a las reglas de URL y percent-encoding.",
+        "option_a": "Los valores de URL deben codificarse conforme a las reglas de URL y percent-encoding.",
+        "option_b": "Una operación SQL local sin relación con HTTP.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "A",
+        "explanation": "Los valores de URL deben codificarse conforme a las reglas de URL y percent-encoding."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué comportamiento describe el estándar? Un literal de cadena en una expresión OData se representa con la sintaxis definida por el protocolo.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Un literal de cadena en una expresión OData se representa con la sintaxis definida por el protocolo.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "B",
+        "explanation": "Un literal de cadena en una expresión OData se representa con la sintaxis definida por el protocolo."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué opción explica correctamente el caso? Una clave compuesta identifica una entidad mediante más de una propiedad clave.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Una clave compuesta identifica una entidad mediante más de una propiedad clave.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "C",
+        "explanation": "Una clave compuesta identifica una entidad mediante más de una propiedad clave."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué relación es válida? Una entidad puede incluir propiedades de navegación y propiedades primitivas en su representación.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Una regla que desactiva el modelo y sus metadatos.",
+        "option_d": "Una entidad puede incluir propiedades de navegación y propiedades primitivas en su representación.",
+        "correct": "D",
+        "explanation": "Una entidad puede incluir propiedades de navegación y propiedades primitivas en su representación."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Cómo se diseña correctamente este endpoint? Una consulta de una propiedad puede devolver el valor de esa propiedad en vez de una entidad completa.",
+        "option_a": "Una consulta de una propiedad puede devolver el valor de esa propiedad en vez de una entidad completa.",
+        "option_b": "Una operación SQL local sin relación con HTTP.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "A",
+        "explanation": "Una consulta de una propiedad puede devolver el valor de esa propiedad en vez de una entidad completa."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué diagnóstico corresponde? El cliente debe respetar el tipo y la nulabilidad declarados por el modelo de metadatos.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "El cliente debe respetar el tipo y la nulabilidad declarados por el modelo de metadatos.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "B",
+        "explanation": "El cliente debe respetar el tipo y la nulabilidad declarados por el modelo de metadatos."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué afirmación es correcta? El formato de respuesta debe corresponder a una representación soportada por el servicio.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "El formato de respuesta debe corresponder a una representación soportada por el servicio.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "C",
+        "explanation": "El formato de respuesta debe corresponder a una representación soportada por el servicio."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Cómo debe interpretarse esta regla? El diseño de un endpoint OData debe separar ruta de recurso y opciones de consulta.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Una regla que desactiva el modelo y sus metadatos.",
+        "option_d": "El diseño de un endpoint OData debe separar ruta de recurso y opciones de consulta.",
+        "correct": "D",
+        "explanation": "El diseño de un endpoint OData debe separar ruta de recurso y opciones de consulta."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué efecto tiene esta característica? Una consulta paginada debe seguir nextLink hasta completar la colección si necesita todos los datos.",
+        "option_a": "Una consulta paginada debe seguir nextLink hasta completar la colección si necesita todos los datos.",
+        "option_b": "Una operación SQL local sin relación con HTTP.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "A",
+        "explanation": "Una consulta paginada debe seguir nextLink hasta completar la colección si necesita todos los datos."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué debe saber el cliente OData? Una actualización condicional debe usar la ETag recibida para detectar conflictos de concurrencia.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una actualización condicional debe usar la ETag recibida para detectar conflictos de concurrencia.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "B",
+        "explanation": "Una actualización condicional debe usar la ETag recibida para detectar conflictos de concurrencia."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Cuál es la aplicación práctica? Una política segura para OData limita opciones de consulta, aplica autorización y controla paginación.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Una política segura para OData limita opciones de consulta, aplica autorización y controla paginación.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "C",
+        "explanation": "Una política segura para OData limita opciones de consulta, aplica autorización y controla paginación."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué comportamiento describe el estándar? Una respuesta de colección OData contiene los elementos según la representación definida por el formato elegido.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Una regla que desactiva el modelo y sus metadatos.",
+        "option_d": "Una respuesta de colección OData contiene los elementos según la representación definida por el formato elegido.",
+        "correct": "D",
+        "explanation": "Una respuesta de colección OData contiene los elementos según la representación definida por el formato elegido."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué opción explica correctamente el caso? Una respuesta de entidad puede incluir enlaces de navegación según la representación OData usada.",
+        "option_a": "Una respuesta de entidad puede incluir enlaces de navegación según la representación OData usada.",
+        "option_b": "Una operación SQL local sin relación con HTTP.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "A",
+        "explanation": "Una respuesta de entidad puede incluir enlaces de navegación según la representación OData usada."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué relación es válida? Una petición inválida debe producir un error HTTP y no una actualización parcial silenciosa.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una petición inválida debe producir un error HTTP y no una actualización parcial silenciosa.",
+        "option_c": "Una vista Razor que no usa el protocolo OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "B",
+        "explanation": "Una petición inválida debe producir un error HTTP y no una actualización parcial silenciosa."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Cómo se diseña correctamente este endpoint? El cliente debe interpretar los códigos de estado y cabeceras de la respuesta OData.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "El cliente debe interpretar los códigos de estado y cabeceras de la respuesta OData.",
+        "option_d": "Una regla que desactiva el modelo y sus metadatos.",
+        "correct": "C",
+        "explanation": "El cliente debe interpretar los códigos de estado y cabeceras de la respuesta OData."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué diagnóstico corresponde? El contrato de metadatos y las convenciones de URL deben mantenerse coherentes para los clientes.",
+        "option_a": "Una operación SQL local sin relación con HTTP.",
+        "option_b": "Una vista Razor que no usa el protocolo OData.",
+        "option_c": "Una regla que desactiva el modelo y sus metadatos.",
+        "option_d": "El contrato de metadatos y las convenciones de URL deben mantenerse coherentes para los clientes.",
+        "correct": "D",
+        "explanation": "El contrato de metadatos y las convenciones de URL deben mantenerse coherentes para los clientes."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_25_LOT_05_END
