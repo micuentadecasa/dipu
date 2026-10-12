@@ -1,6 +1,6 @@
 # Question-bank milestone 1: source coverage and validation seam
 
-**Status:** source-boundary comparison and validation seam completed; topics 1--19 lot 1, topic 20 lots 1--5, topics 21--22 lot 1, and topics 23--27 lots 1--5 are published; topic 28 lots 1--5 are staged pending deployment.
+**Status:** source-boundary comparison and validation seam completed; topics 1--19 lot 1, topic 20 lots 1--5, topics 21--22 lot 1, and topics 23--28 lots 1--5 are published.
 
 **Verified at:** 2026-10-12 (UTC)
 
