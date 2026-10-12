@@ -90,12 +90,30 @@ EXPECTATIONS = {
 }
 
 
+LOT_EXPECTATIONS = {
+    (20, 2): {
+        1:("B","The model"),2:("B","The model"),3:("A","The model"),4:("D","Migrations Overview"),5:("B","Grouping configuration"),6:("C","Use fluent API to configure a model"),7:("A","Use data annotations to configure a model"),8:("B","Built-in conventions"),9:("B","Including types in the model"),10:("C","Excluding from migrations"),11:("A","Querying Data"),12:("B","Querying Data"),13:("A","Querying Data"),14:("C","Filtering"),15:("C","Tracking and custom projections"),16:("D","Tracking vs. No-Tracking Queries"),17:("B","Tracking queries"),18:("C","No-tracking queries"),19:("A","Identity resolution"),20:("D","Tracking vs. No-Tracking Queries")
+    },
+    (20, 3): {
+        1:("B","Change Tracking in EF Core"),2:("A","Entity states"),3:("A","How to track entities"),4:("D","How to track entities"),5:("A","How to track entities"),6:("B","How to track entities"),7:("C","Approach 1: change tracking and SaveChanges"),8:("D","Approach 2: ExecuteUpdate and ExecuteDelete (bulk update)"),9:("A","Approach 2: ExecuteUpdate and ExecuteDelete (bulk update)"),10:("B","Approach 2: ExecuteUpdate and ExecuteDelete (bulk update)"),11:("A","Introduction to relationships"),12:("B","Introduction to relationships"),13:("C","Introduction to relationships"),14:("B","Introduction to relationships"),15:("C","Introduction to relationships"),16:("B","Introduction to relationships"),17:("A","Introduction to relationships"),18:("A","Including types in the model"),19:("C","Evolving your model"),20:("B","Migrations Overview")
+    },
+    (20, 4): {
+        1:("A","Create your first migration"),2:("C","Create your database and schema"),3:("A","Migrations Overview"),4:("B","Entity Framework Core tools reference"),5:("B","Entity Framework Core tools reference"),6:("C","Entity Framework Core tools reference"),7:("A","Avoiding DbContext threading issues"),8:("B","Asynchronous operation pitfalls"),9:("C","DbContext in dependency injection for ASP.NET Core"),10:("A","Use a DbContext factory"),11:("A","Querying Data"),12:("B","Querying Data"),13:("C","No-tracking queries"),14:("B","Identity resolution"),15:("A","Tracking and custom projections"),16:("B","Evolving your model"),17:("C","Migrations Overview"),18:("D","Creating and Configuring a Model"),19:("A","Excluding from migrations"),20:("B","Migrations Overview")
+    },
+    (20, 5): {
+        1:("B","Creating and Configuring a Model"),2:("A","Creating and Configuring a Model"),3:("B","Creating and Configuring a Model"),4:("A","Entity Types"),5:("A","Table name; Table schema"),6:("A","View mapping"),7:("A","Including types in the model"),8:("B","Creating and Configuring a Model"),9:("A","Loading a single entity"),10:("A","Filtering"),11:("A","Tracking vs. No-Tracking Queries"),12:("A","Configuring the default tracking behavior"),13:("A","Tracking vs. No-Tracking Queries"),14:("A","Change Tracking in EF Core"),15:("A","The DbContext lifetime"),16:("A","Approach 2: ExecuteUpdate and ExecuteDelete (bulk update)"),17:("A","Evolving your model"),18:("A","Entity Framework Core tools reference"),19:("A","Avoiding DbContext threading issues"),20:("A","The DbContext lifetime; Asynchronous operation pitfalls; Approach 1: change tracking and SaveChanges")
+    },
+}
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("topic_num", type=int, choices=tuple(range(2, 21)))
+    parser.add_argument("topic_num", type=int, choices=tuple(range(2, 41)))
+    parser.add_argument("--lot-num", type=int, default=1, choices=tuple(range(1, 6)))
     args = parser.parse_args()
-    lot_path = ROOT / "docs/question-bank/lots" / f"topic-{args.topic_num:02d}-lot-01.json"
-    checkpoint_path = ROOT / "docs/question-bank/checkpoints" / f"topic-{args.topic_num:02d}-lot-01.jsonl"
+    stem = f"topic-{args.topic_num:02d}-lot-{args.lot_num:02d}"
+    lot_path = ROOT / "docs/question-bank/lots" / f"{stem}.json"
+    checkpoint_path = ROOT / "docs/question-bank/checkpoints" / f"{stem}.jsonl"
     payload = json.loads(lot_path.read_text(encoding="utf-8"))
     if payload["state"] != "candidates_written":
         raise RuntimeError("review requires candidate state")
@@ -105,7 +123,11 @@ def main() -> int:
     decisions = []
     for candidate in payload["questions"]:
         objective_num = int(candidate["learning_objective_id"].rsplit("-", 1)[1])
-        expected = EXPECTATIONS[args.topic_num][objective_num]
+        question_num = objective_num - (args.lot_num - 1) * 20
+        expectations = LOT_EXPECTATIONS.get((args.topic_num, args.lot_num), EXPECTATIONS.get(args.topic_num))
+        if expectations is None:
+            raise RuntimeError(f"no review expectations for topic {args.topic_num}, lot {args.lot_num}")
+        expected = expectations[question_num]
         source = sources[candidate["sources"][0]["source_id"]]
         if candidate["correct"] != expected[0] or candidate["sources"][0]["citation"] != expected[1]:
             raise RuntimeError(f"independent review disagreement for {candidate['learning_objective_id']}")
@@ -128,14 +150,14 @@ def main() -> int:
         accepted.append(reviewed)
         decisions.append({"objective_id":candidate["learning_objective_id"],"stable_id":candidate["stable_id"],"answer":expected[0],"citation":expected[1],"source_tier":candidate["sources"][0]["tier"],"decision":"accepted","reviewed_at":DATE})
 
-    review_path = ROOT / "docs/question-bank/reviews" / f"topic-{args.topic_num:02d}-lot-01.json"
+    review_path = ROOT / "docs/question-bank/reviews" / f"{stem}.json"
     review_path.parent.mkdir(parents=True, exist_ok=True)
-    review_path.write_text(json.dumps({"review_version":"1.0","lot":f"topic-{args.topic_num:02d}-lot-01","reviewer":f"independent-source-review-{DATE}","source_tier_counts":{"official_primary":sum(x["source_tier"]=="official_primary" for x in decisions),"secondary_reputable":sum(x["source_tier"]=="secondary_reputable" for x in decisions)},"decisions":decisions},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    accepted_path = ROOT / "docs/question-bank/accepted" / f"topic-{args.topic_num:02d}-lot-01.json"
+    review_path.write_text(json.dumps({"review_version":"1.0","lot":stem,"reviewer":f"independent-source-review-{DATE}","source_tier_counts":{"official_primary":sum(x["source_tier"]=="official_primary" for x in decisions),"secondary_reputable":sum(x["source_tier"]=="secondary_reputable" for x in decisions)},"decisions":decisions},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    accepted_path = ROOT / "docs/question-bank/accepted" / f"{stem}.json"
     accepted_path.parent.mkdir(parents=True, exist_ok=True)
-    accepted_payload = {"lot_version":payload["lot_version"],"state":"reviewed","topic_num":args.topic_num,"lot_num":1,"revision":payload["revision"],"reviewed_at":DATE,"source_register_sha256":payload["source_register_sha256"],"objective_manifest_sha256":payload["objective_manifest_sha256"],"syllabus_sha256":payload["syllabus_sha256"],"counts":{"candidates":20,"accepted":len(accepted),"rejected":0,"quarantined":0},"review_audit":str(review_path.relative_to(ROOT)),"questions":accepted}
+    accepted_payload = {"lot_version":payload["lot_version"],"state":"reviewed","topic_num":args.topic_num,"lot_num":args.lot_num,"revision":payload["revision"],"reviewed_at":DATE,"source_register_sha256":payload["source_register_sha256"],"objective_manifest_sha256":payload["objective_manifest_sha256"],"syllabus_sha256":payload["syllabus_sha256"],"counts":{"candidates":20,"accepted":len(accepted),"rejected":0,"quarantined":0},"review_audit":str(review_path.relative_to(ROOT)),"questions":accepted}
     accepted_path.write_text(json.dumps(accepted_payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    checkpoint = {"schema_version":"1.0","syllabus_hash":payload["syllabus_sha256"],"source_register_hash":payload["source_register_sha256"],"topic_num":args.topic_num,"lot_num":1,"revision":payload["revision"],"stage":"reviewed","objective_ids":[x["learning_objective_id"] for x in accepted],"stable_ids":[x["stable_id"] for x in accepted],"counts":accepted_payload["counts"],"input_hash":file_sha256(lot_path),"output_hash":file_sha256(accepted_path),"last_import":{"status":"not_started","transaction":None}}
+    checkpoint = {"schema_version":"1.0","syllabus_hash":payload["syllabus_sha256"],"source_register_hash":payload["source_register_sha256"],"topic_num":args.topic_num,"lot_num":args.lot_num,"revision":payload["revision"],"stage":"reviewed","objective_ids":[x["learning_objective_id"] for x in accepted],"stable_ids":[x["stable_id"] for x in accepted],"counts":accepted_payload["counts"],"input_hash":file_sha256(lot_path),"output_hash":file_sha256(accepted_path),"last_import":{"status":"not_started","transaction":None}}
     appended=append_checkpoint(checkpoint_path,checkpoint)
     print(f"topic {args.topic_num}: reviewed {len(accepted)} records; checkpoint {'appended' if appended else 'already present'}")
     return 0

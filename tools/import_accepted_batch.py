@@ -20,26 +20,30 @@ SEED_PATH = ROOT / "seed_data.py"
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("topic_num", type=int, choices=tuple(range(1, 21)))
+    parser.add_argument("topic_num", type=int, choices=tuple(range(1, 41)))
+    parser.add_argument("--lot-num", type=int, default=1, choices=tuple(range(1, 6)))
     args = parser.parse_args()
-    stem = f"topic-{args.topic_num:02d}-lot-01"
+    stem = f"topic-{args.topic_num:02d}-lot-{args.lot_num:02d}"
     accepted_path = ROOT / "docs/question-bank/accepted" / f"{stem}.json"
     checkpoint_path = ROOT / "docs/question-bank/checkpoints" / f"{stem}.jsonl"
     payload = json.loads(accepted_path.read_text(encoding="utf-8"))
-    if payload["state"] != "reviewed":
-        raise RuntimeError("only reviewed batches can be imported")
+    if payload["state"] != "reviewed" or payload["lot_num"] != args.lot_num:
+        raise RuntimeError("only the requested reviewed batch can be imported")
     records = payload["questions"]
     for record in records:
         errors = validate_record(record)
         if errors:
             raise RuntimeError(f"invalid accepted record {record['stable_id']}: {errors}")
-    marker = f"QUESTION_BANK_ACCEPTED_TOPIC_{args.topic_num:02d}_LOT_01"
+    marker = f"QUESTION_BANK_ACCEPTED_TOPIC_{args.topic_num:02d}_LOT_{args.lot_num:02d}"
     seed = SEED_PATH.read_text(encoding="utf-8")
     if marker in seed:
         raise RuntimeError(f"batch already imported: {marker}")
     for previous in range(1, args.topic_num):
         if f"QUESTION_BANK_ACCEPTED_TOPIC_{previous:02d}_LOT_01" not in seed:
             raise RuntimeError(f"sequential import requires topic {previous} first")
+    for previous_lot in range(1, args.lot_num):
+        if f"QUESTION_BANK_ACCEPTED_TOPIC_{args.topic_num:02d}_LOT_{previous_lot:02d}" not in seed:
+            raise RuntimeError(f"sequential import requires topic {args.topic_num} lot {previous_lot} first")
     native = [{
         "topic_num": record["topic_num"],
         "question": record["question"],
@@ -62,7 +66,7 @@ def main() -> int:
         "syllabus_hash": payload["syllabus_sha256"],
         "source_register_hash": payload["source_register_sha256"],
         "topic_num": args.topic_num,
-        "lot_num": 1,
+        "lot_num": args.lot_num,
         "revision": payload["revision"],
         "stage": "import_applied",
         "objective_ids": [record["learning_objective_id"] for record in records],
