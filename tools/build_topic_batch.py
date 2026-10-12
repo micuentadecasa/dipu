@@ -39,6 +39,7 @@ SPEC_PATHS = [
     ROOT / "docs/question-bank/research/questions/topics-20-lot-05.json",
     ROOT / "docs/question-bank/research/questions/topics-21-lot-01.json",
     ROOT / "docs/question-bank/research/questions/topics-22-lot-01.json",
+    ROOT / "docs/question-bank/research/questions/topics-23-lot-01.json",
 ]
 
 
