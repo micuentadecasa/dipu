@@ -7313,3 +7313,823 @@ SEED_QUESTIONS.extend([
     }
 ])
 # QUESTION_BANK_ACCEPTED_TOPIC_24_LOT_01_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_24_LOT_02_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 24,
+        "question": "En una Web API, ¿qué significa exactamente lo siguiente? Una acción pública de un controlador puede tratarse como acción MVC salvo que se excluya explícitamente.",
+        "option_a": "Una acción pública de un controlador puede tratarse como acción MVC salvo que se excluya explícitamente.",
+        "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "A",
+        "explanation": "Una acción pública de un controlador puede tratarse como acción MVC salvo que se excluya explícitamente."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Cuál es la consecuencia práctica de esta regla de ASP.NET Core? ControllerBase proporciona la base de las capacidades de controlador necesarias para APIs sin soporte de vistas.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "ControllerBase proporciona la base de las capacidades de controlador necesarias para APIs sin soporte de vistas.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "B",
+        "explanation": "ControllerBase proporciona la base de las capacidades de controlador necesarias para APIs sin soporte de vistas."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Cómo debe interpretarse esta afirmación al diseñar el endpoint? ApiController puede aplicarse a una clase de controlador o mediante una convención a varios controladores.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "ApiController puede aplicarse a una clase de controlador o mediante una convención a varios controladores.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "C",
+        "explanation": "ApiController puede aplicarse a una clase de controlador o mediante una convención a varios controladores."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué comportamiento describe esta observación de la documentación? El token [controller] de una ruta se sustituye por el nombre del controlador.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "option_d": "El token [controller] de una ruta se sustituye por el nombre del controlador.",
+        "correct": "D",
+        "explanation": "El token [controller] de una ruta se sustituye por el nombre del controlador."
+    },
+    {
+        "topic_num": 24,
+        "question": "Para diagnosticar una API, ¿qué hecho conviene recordar? HttpGet asocia una acción con solicitudes HTTP GET.",
+        "option_a": "HttpGet asocia una acción con solicitudes HTTP GET.",
+        "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "A",
+        "explanation": "HttpGet asocia una acción con solicitudes HTTP GET."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué opción explica correctamente este aspecto del Web API? HttpPost asocia una acción con solicitudes HTTP POST.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "HttpPost asocia una acción con solicitudes HTTP POST.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "B",
+        "explanation": "HttpPost asocia una acción con solicitudes HTTP POST."
+    },
+    {
+        "topic_num": 24,
+        "question": "En este escenario, ¿qué afirmación es la válida? HttpPut se utiliza para exponer una acción que procesa solicitudes HTTP PUT.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "HttpPut se utiliza para exponer una acción que procesa solicitudes HTTP PUT.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "C",
+        "explanation": "HttpPut se utiliza para exponer una acción que procesa solicitudes HTTP PUT."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué relación con el pipeline de API expresa este hecho? HttpDelete se utiliza para exponer una acción que procesa solicitudes HTTP DELETE.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "option_d": "HttpDelete se utiliza para exponer una acción que procesa solicitudes HTTP DELETE.",
+        "correct": "D",
+        "explanation": "HttpDelete se utiliza para exponer una acción que procesa solicitudes HTTP DELETE."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué debe comprobar un desarrollador según esta regla? Una restricción de ruta como {id:int} limita la coincidencia a valores enteros.",
+        "option_a": "Una restricción de ruta como {id:int} limita la coincidencia a valores enteros.",
+        "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "A",
+        "explanation": "Una restricción de ruta como {id:int} limita la coincidencia a valores enteros."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Cuál es la aplicación correcta de esta característica? Una plantilla [Route(\"api/[controller]\")] establece un prefijo de ruta para las acciones del controlador.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "Una plantilla [Route(\"api/[controller]\")] establece un prefijo de ruta para las acciones del controlador.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "B",
+        "explanation": "Una plantilla [Route(\"api/[controller]\")] establece un prefijo de ruta para las acciones del controlador."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué efecto tiene esta configuración sobre el endpoint? Una ruta de atributo en el controlador puede combinarse con la ruta de atributo de una acción.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "Una ruta de atributo en el controlador puede combinarse con la ruta de atributo de una acción.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "C",
+        "explanation": "Una ruta de atributo en el controlador puede combinarse con la ruta de atributo de una acción."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué resultado se espera cuando se aplica esta regla? Los valores de ruta pueden enlazarse a parámetros de acción que correspondan con sus nombres.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "option_d": "Los valores de ruta pueden enlazarse a parámetros de acción que correspondan con sus nombres.",
+        "correct": "D",
+        "explanation": "Los valores de ruta pueden enlazarse a parámetros de acción que correspondan con sus nombres."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Cómo se documenta o expone esta capacidad? Los controladores ApiController requieren attribute routing para sus acciones.",
+        "option_a": "Los controladores ApiController requieren attribute routing para sus acciones.",
+        "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "A",
+        "explanation": "Los controladores ApiController requieren attribute routing para sus acciones."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué diferencia práctica refleja este enunciado? RouteAttribute permite declarar una plantilla de ruta como metadato del controlador o de la acción.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "RouteAttribute permite declarar una plantilla de ruta como metadato del controlador o de la acción.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "B",
+        "explanation": "RouteAttribute permite declarar una plantilla de ruta como metadato del controlador o de la acción."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué asociación es correcta en una API de ASP.NET Core? Los atributos de verbo HTTP expresan qué método HTTP debe seleccionar una acción.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "Los atributos de verbo HTTP expresan qué método HTTP debe seleccionar una acción.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "C",
+        "explanation": "Los atributos de verbo HTTP expresan qué método HTTP debe seleccionar una acción."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Cómo se usa esta capacidad en un controlador API? ProducesResponseType documenta el tipo de respuesta y el código de estado que una acción puede producir.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "option_d": "ProducesResponseType documenta el tipo de respuesta y el código de estado que una acción puede producir.",
+        "correct": "D",
+        "explanation": "ProducesResponseType documenta el tipo de respuesta y el código de estado que una acción puede producir."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué problema resuelve esta característica? Produces puede restringir o describir los tipos de contenido que una acción devuelve.",
+        "option_a": "Produces puede restringir o describir los tipos de contenido que una acción devuelve.",
+        "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "A",
+        "explanation": "Produces puede restringir o describir los tipos de contenido que una acción devuelve."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué decisión de diseño se deriva de esta regla? Consumes puede declarar los tipos de contenido que una acción acepta.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "Consumes puede declarar los tipos de contenido que una acción acepta.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "B",
+        "explanation": "Consumes puede declarar los tipos de contenido que una acción acepta."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué respuesta identifica correctamente el comportamiento? Una acción puede ocultarse del explorador de API con la configuración de ApiExplorer correspondiente.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "Una acción puede ocultarse del explorador de API con la configuración de ApiExplorer correspondiente.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "C",
+        "explanation": "Una acción puede ocultarse del explorador de API con la configuración de ApiExplorer correspondiente."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué debe devolver o aceptar la API en este caso? El explorador de API proporciona metadatos que las herramientas OpenAPI pueden usar para describir endpoints.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "option_d": "El explorador de API proporciona metadatos que las herramientas OpenAPI pueden usar para describir endpoints.",
+        "correct": "D",
+        "explanation": "El explorador de API proporciona metadatos que las herramientas OpenAPI pueden usar para describir endpoints."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_24_LOT_02_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_24_LOT_03_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 24,
+        "question": "En una Web API, ¿qué significa exactamente lo siguiente? Un parámetro de tipo simple de un controlador ApiController puede inferirse desde la query string.",
+        "option_a": "Un parámetro de tipo simple de un controlador ApiController puede inferirse desde la query string.",
+        "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "A",
+        "explanation": "Un parámetro de tipo simple de un controlador ApiController puede inferirse desde la query string."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Cuál es la consecuencia práctica de esta regla de ASP.NET Core? Un parámetro complejo de una acción ApiController puede inferirse desde el cuerpo de la petición.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "Un parámetro complejo de una acción ApiController puede inferirse desde el cuerpo de la petición.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "B",
+        "explanation": "Un parámetro complejo de una acción ApiController puede inferirse desde el cuerpo de la petición."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Cómo debe interpretarse esta afirmación al diseñar el endpoint? Una acción no debe intentar inferir dos parámetros independientes desde el mismo cuerpo HTTP.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "Una acción no debe intentar inferir dos parámetros independientes desde el mismo cuerpo HTTP.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "C",
+        "explanation": "Una acción no debe intentar inferir dos parámetros independientes desde el mismo cuerpo HTTP."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué comportamiento describe esta observación de la documentación? FromQuery fuerza el binding de un parámetro desde la cadena de consulta.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "option_d": "FromQuery fuerza el binding de un parámetro desde la cadena de consulta.",
+        "correct": "D",
+        "explanation": "FromQuery fuerza el binding de un parámetro desde la cadena de consulta."
+    },
+    {
+        "topic_num": 24,
+        "question": "Para diagnosticar una API, ¿qué hecho conviene recordar? FromRoute fuerza el binding de un parámetro desde los valores de ruta.",
+        "option_a": "FromRoute fuerza el binding de un parámetro desde los valores de ruta.",
+        "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "A",
+        "explanation": "FromRoute fuerza el binding de un parámetro desde los valores de ruta."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué opción explica correctamente este aspecto del Web API? FromHeader fuerza el binding de un parámetro desde una cabecera HTTP.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "FromHeader fuerza el binding de un parámetro desde una cabecera HTTP.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "B",
+        "explanation": "FromHeader fuerza el binding de un parámetro desde una cabecera HTTP."
+    },
+    {
+        "topic_num": 24,
+        "question": "En este escenario, ¿qué afirmación es la válida? FromForm fuerza el binding de un parámetro desde datos de formulario.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "FromForm fuerza el binding de un parámetro desde datos de formulario.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "C",
+        "explanation": "FromForm fuerza el binding de un parámetro desde datos de formulario."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué relación con el pipeline de API expresa este hecho? FromServices obtiene un parámetro desde el contenedor de inyección de dependencias.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "option_d": "FromServices obtiene un parámetro desde el contenedor de inyección de dependencias.",
+        "correct": "D",
+        "explanation": "FromServices obtiene un parámetro desde el contenedor de inyección de dependencias."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué debe comprobar un desarrollador según esta regla? IFormFile es un tipo usado para recibir un archivo cargado por una petición HTTP.",
+        "option_a": "IFormFile es un tipo usado para recibir un archivo cargado por una petición HTTP.",
+        "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "A",
+        "explanation": "IFormFile es un tipo usado para recibir un archivo cargado por una petición HTTP."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Cuál es la aplicación correcta de esta característica? La carga de archivos de formulario utiliza normalmente multipart/form-data.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La carga de archivos de formulario utiliza normalmente multipart/form-data.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "B",
+        "explanation": "La carga de archivos de formulario utiliza normalmente multipart/form-data."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué efecto tiene esta configuración sobre el endpoint? Consumes puede declarar multipart/form-data para una acción que recibe formularios con archivos.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "Consumes puede declarar multipart/form-data para una acción que recibe formularios con archivos.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "C",
+        "explanation": "Consumes puede declarar multipart/form-data para una acción que recibe formularios con archivos."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué resultado se espera cuando se aplica esta regla? Los parámetros provenientes de fuentes distintas pueden combinarse, por ejemplo, ruta y query.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "option_d": "Los parámetros provenientes de fuentes distintas pueden combinarse, por ejemplo, ruta y query.",
+        "correct": "D",
+        "explanation": "Los parámetros provenientes de fuentes distintas pueden combinarse, por ejemplo, ruta y query."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Cómo se documenta o expone esta capacidad? El Content-Type de la petición ayuda a seleccionar el input formatter.",
+        "option_a": "El Content-Type de la petición ayuda a seleccionar el input formatter.",
+        "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "A",
+        "explanation": "El Content-Type de la petición ayuda a seleccionar el input formatter."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué diferencia práctica refleja este enunciado? El encabezado Accept ayuda a seleccionar el output formatter.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "El encabezado Accept ayuda a seleccionar el output formatter.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "B",
+        "explanation": "El encabezado Accept ayuda a seleccionar el output formatter."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué asociación es correcta en una API de ASP.NET Core? La ausencia de un input formatter compatible con el Content-Type puede producir 415 Unsupported Media Type.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "La ausencia de un input formatter compatible con el Content-Type puede producir 415 Unsupported Media Type.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "C",
+        "explanation": "La ausencia de un input formatter compatible con el Content-Type puede producir 415 Unsupported Media Type."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Cómo se usa esta capacidad en un controlador API? Una respuesta no aceptable puede expresarse con 406 cuando la negociación de contenido no encuentra una representación.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "option_d": "Una respuesta no aceptable puede expresarse con 406 cuando la negociación de contenido no encuentra una representación.",
+        "correct": "D",
+        "explanation": "Una respuesta no aceptable puede expresarse con 406 cuando la negociación de contenido no encuentra una representación."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué problema resuelve esta característica? System.Text.Json es el formatter JSON predeterminado de la configuración habitual de Web API.",
+        "option_a": "System.Text.Json es el formatter JSON predeterminado de la configuración habitual de Web API.",
+        "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "A",
+        "explanation": "System.Text.Json es el formatter JSON predeterminado de la configuración habitual de Web API."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué decisión de diseño se deriva de esta regla? El soporte XML requiere configurar el formatter XML correspondiente.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "El soporte XML requiere configurar el formatter XML correspondiente.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "B",
+        "explanation": "El soporte XML requiere configurar el formatter XML correspondiente."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué respuesta identifica correctamente el comportamiento? Una API puede registrar un formatter personalizado para admitir una representación adicional.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "Una API puede registrar un formatter personalizado para admitir una representación adicional.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "C",
+        "explanation": "Una API puede registrar un formatter personalizado para admitir una representación adicional."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué debe devolver o aceptar la API en este caso? La selección del output formatter ocurre después de que la acción produce su resultado.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "option_d": "La selección del output formatter ocurre después de que la acción produce su resultado.",
+        "correct": "D",
+        "explanation": "La selección del output formatter ocurre después de que la acción produce su resultado."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_24_LOT_03_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_24_LOT_04_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 24,
+        "question": "En una Web API, ¿qué significa exactamente lo siguiente? ProblemDetails ofrece un formato estructurado para comunicar errores HTTP de una API.",
+        "option_a": "ProblemDetails ofrece un formato estructurado para comunicar errores HTTP de una API.",
+        "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "A",
+        "explanation": "ProblemDetails ofrece un formato estructurado para comunicar errores HTTP de una API."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Cuál es la consecuencia práctica de esta regla de ASP.NET Core? ValidationProblemDetails representa detalles estructurados de errores de validación.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "ValidationProblemDetails representa detalles estructurados de errores de validación.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "B",
+        "explanation": "ValidationProblemDetails representa detalles estructurados de errores de validación."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Cómo debe interpretarse esta afirmación al diseñar el endpoint? Una respuesta de error de API debe incluir un código de estado coherente con el problema comunicado.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "Una respuesta de error de API debe incluir un código de estado coherente con el problema comunicado.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "C",
+        "explanation": "Una respuesta de error de API debe incluir un código de estado coherente con el problema comunicado."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué comportamiento describe esta observación de la documentación? ApiController transforma un ModelState inválido en una respuesta 400 automática por defecto.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "option_d": "ApiController transforma un ModelState inválido en una respuesta 400 automática por defecto.",
+        "correct": "D",
+        "explanation": "ApiController transforma un ModelState inválido en una respuesta 400 automática por defecto."
+    },
+    {
+        "topic_num": 24,
+        "question": "Para diagnosticar una API, ¿qué hecho conviene recordar? SuppressModelStateInvalidFilter permite desactivar el filtro automático de 400.",
+        "option_a": "SuppressModelStateInvalidFilter permite desactivar el filtro automático de 400.",
+        "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "A",
+        "explanation": "SuppressModelStateInvalidFilter permite desactivar el filtro automático de 400."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué opción explica correctamente este aspecto del Web API? InvalidModelStateResponseFactory permite personalizar la respuesta producida por ModelState inválido.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "InvalidModelStateResponseFactory permite personalizar la respuesta producida por ModelState inválido.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "B",
+        "explanation": "InvalidModelStateResponseFactory permite personalizar la respuesta producida por ModelState inválido."
+    },
+    {
+        "topic_num": 24,
+        "question": "En este escenario, ¿qué afirmación es la válida? Las opciones de comportamiento de API permiten personalizar el tratamiento de errores de cliente.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "Las opciones de comportamiento de API permiten personalizar el tratamiento de errores de cliente.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "C",
+        "explanation": "Las opciones de comportamiento de API permiten personalizar el tratamiento de errores de cliente."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué relación con el pipeline de API expresa este hecho? Un error de conversión durante el binding se incorpora a ModelState.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "option_d": "Un error de conversión durante el binding se incorpora a ModelState.",
+        "correct": "D",
+        "explanation": "Un error de conversión durante el binding se incorpora a ModelState."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué debe comprobar un desarrollador según esta regla? Las reglas de validación del modelo pueden aportar errores que desencadenan la respuesta automática de API.",
+        "option_a": "Las reglas de validación del modelo pueden aportar errores que desencadenan la respuesta automática de API.",
+        "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "A",
+        "explanation": "Las reglas de validación del modelo pueden aportar errores que desencadenan la respuesta automática de API."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Cuál es la aplicación correcta de esta característica? ActionResult<T> permite expresar un resultado exitoso tipado y resultados HTTP alternativos.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "ActionResult<T> permite expresar un resultado exitoso tipado y resultados HTTP alternativos.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "B",
+        "explanation": "ActionResult<T> permite expresar un resultado exitoso tipado y resultados HTTP alternativos."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué efecto tiene esta configuración sobre el endpoint? IActionResult es apropiado cuando la acción puede devolver distintos tipos de resultado HTTP.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "IActionResult es apropiado cuando la acción puede devolver distintos tipos de resultado HTTP.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "C",
+        "explanation": "IActionResult es apropiado cuando la acción puede devolver distintos tipos de resultado HTTP."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué resultado se espera cuando se aplica esta regla? Un tipo concreto de retorno es útil cuando la acción siempre devuelve la misma representación exitosa.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "option_d": "Un tipo concreto de retorno es útil cuando la acción siempre devuelve la misma representación exitosa.",
+        "correct": "D",
+        "explanation": "Un tipo concreto de retorno es útil cuando la acción siempre devuelve la misma representación exitosa."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Cómo se documenta o expone esta capacidad? ActionResult<T> admite conversiones implícitas desde el valor T y desde ActionResult.",
+        "option_a": "ActionResult<T> admite conversiones implícitas desde el valor T y desde ActionResult.",
+        "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "A",
+        "explanation": "ActionResult<T> admite conversiones implícitas desde el valor T y desde ActionResult."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué diferencia práctica refleja este enunciado? Ok devuelve normalmente un resultado 200 con el valor proporcionado.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "Ok devuelve normalmente un resultado 200 con el valor proporcionado.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "B",
+        "explanation": "Ok devuelve normalmente un resultado 200 con el valor proporcionado."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué asociación es correcta en una API de ASP.NET Core? BadRequest comunica normalmente que la petición no es válida y corresponde a 400.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "BadRequest comunica normalmente que la petición no es válida y corresponde a 400.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "C",
+        "explanation": "BadRequest comunica normalmente que la petición no es válida y corresponde a 400."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Cómo se usa esta capacidad en un controlador API? NoContent representa normalmente una respuesta exitosa sin cuerpo, 204.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "option_d": "NoContent representa normalmente una respuesta exitosa sin cuerpo, 204.",
+        "correct": "D",
+        "explanation": "NoContent representa normalmente una respuesta exitosa sin cuerpo, 204."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué problema resuelve esta característica? NotFound representa normalmente que el recurso solicitado no existe, 404.",
+        "option_a": "NotFound representa normalmente que el recurso solicitado no existe, 404.",
+        "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "A",
+        "explanation": "NotFound representa normalmente que el recurso solicitado no existe, 404."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué decisión de diseño se deriva de esta regla? CreatedAtAction puede generar una respuesta 201 y una ubicación basada en otra acción.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "CreatedAtAction puede generar una respuesta 201 y una ubicación basada en otra acción.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "B",
+        "explanation": "CreatedAtAction puede generar una respuesta 201 y una ubicación basada en otra acción."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué respuesta identifica correctamente el comportamiento? CreatedAtRoute puede generar una respuesta de creación usando una ruta con nombre.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "CreatedAtRoute puede generar una respuesta de creación usando una ruta con nombre.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "C",
+        "explanation": "CreatedAtRoute puede generar una respuesta de creación usando una ruta con nombre."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué debe devolver o aceptar la API en este caso? Una respuesta de creación puede incluir la ubicación del nuevo recurso en la cabecera Location.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "option_d": "Una respuesta de creación puede incluir la ubicación del nuevo recurso en la cabecera Location.",
+        "correct": "D",
+        "explanation": "Una respuesta de creación puede incluir la ubicación del nuevo recurso en la cabecera Location."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_24_LOT_04_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_24_LOT_05_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 24,
+        "question": "En una Web API, ¿qué significa exactamente lo siguiente? El estado HTTP 201 indica que se creó un recurso.",
+        "option_a": "El estado HTTP 201 indica que se creó un recurso.",
+        "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "A",
+        "explanation": "El estado HTTP 201 indica que se creó un recurso."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Cuál es la consecuencia práctica de esta regla de ASP.NET Core? El estado HTTP 204 indica éxito sin contenido de respuesta.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "El estado HTTP 204 indica éxito sin contenido de respuesta.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "B",
+        "explanation": "El estado HTTP 204 indica éxito sin contenido de respuesta."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Cómo debe interpretarse esta afirmación al diseñar el endpoint? El estado HTTP 404 representa que no se encontró el recurso solicitado.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "El estado HTTP 404 representa que no se encontró el recurso solicitado.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "C",
+        "explanation": "El estado HTTP 404 representa que no se encontró el recurso solicitado."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué comportamiento describe esta observación de la documentación? OpenAPI define una descripción agnóstica del lenguaje para el contrato de una API HTTP.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "option_d": "OpenAPI define una descripción agnóstica del lenguaje para el contrato de una API HTTP.",
+        "correct": "D",
+        "explanation": "OpenAPI define una descripción agnóstica del lenguaje para el contrato de una API HTTP."
+    },
+    {
+        "topic_num": 24,
+        "question": "Para diagnosticar una API, ¿qué hecho conviene recordar? Swagger UI proporciona una interfaz para explorar y probar operaciones descritas por OpenAPI.",
+        "option_a": "Swagger UI proporciona una interfaz para explorar y probar operaciones descritas por OpenAPI.",
+        "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "A",
+        "explanation": "Swagger UI proporciona una interfaz para explorar y probar operaciones descritas por OpenAPI."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué opción explica correctamente este aspecto del Web API? Los comentarios XML pueden incorporarse a la documentación OpenAPI cuando se configura esa integración.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "Los comentarios XML pueden incorporarse a la documentación OpenAPI cuando se configura esa integración.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "B",
+        "explanation": "Los comentarios XML pueden incorporarse a la documentación OpenAPI cuando se configura esa integración."
+    },
+    {
+        "topic_num": 24,
+        "question": "En este escenario, ¿qué afirmación es la válida? La descripción OpenAPI comunica rutas, operaciones, parámetros y respuestas de la API.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "La descripción OpenAPI comunica rutas, operaciones, parámetros y respuestas de la API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "C",
+        "explanation": "La descripción OpenAPI comunica rutas, operaciones, parámetros y respuestas de la API."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué relación con el pipeline de API expresa este hecho? Las herramientas basadas en OpenAPI pueden ayudar a generar clientes para una API documentada.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "option_d": "Las herramientas basadas en OpenAPI pueden ayudar a generar clientes para una API documentada.",
+        "correct": "D",
+        "explanation": "Las herramientas basadas en OpenAPI pueden ayudar a generar clientes para una API documentada."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué debe comprobar un desarrollador según esta regla? Un controlador API deriva normalmente de ControllerBase y no necesita heredar de Controller.",
+        "option_a": "Un controlador API deriva normalmente de ControllerBase y no necesita heredar de Controller.",
+        "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "A",
+        "explanation": "Un controlador API deriva normalmente de ControllerBase y no necesita heredar de Controller."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Cuál es la aplicación correcta de esta característica? Controller añade capacidades de vistas a ControllerBase, mientras ControllerBase es suficiente para una API.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "Controller añade capacidades de vistas a ControllerBase, mientras ControllerBase es suficiente para una API.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "B",
+        "explanation": "Controller añade capacidades de vistas a ControllerBase, mientras ControllerBase es suficiente para una API."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué efecto tiene esta configuración sobre el endpoint? ApiController activa convenciones de API aunque el controlador siga siendo una clase MVC.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "ApiController activa convenciones de API aunque el controlador siga siendo una clase MVC.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "C",
+        "explanation": "ApiController activa convenciones de API aunque el controlador siga siendo una clase MVC."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué resultado se espera cuando se aplica esta regla? La ruta por atributos permite diseñar URLs de API explícitas junto con los verbos HTTP.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "option_d": "La ruta por atributos permite diseñar URLs de API explícitas junto con los verbos HTTP.",
+        "correct": "D",
+        "explanation": "La ruta por atributos permite diseñar URLs de API explícitas junto con los verbos HTTP."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Cómo se documenta o expone esta capacidad? Una plantilla de ruta puede incluir segmentos literales y parámetros entre llaves.",
+        "option_a": "Una plantilla de ruta puede incluir segmentos literales y parámetros entre llaves.",
+        "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "A",
+        "explanation": "Una plantilla de ruta puede incluir segmentos literales y parámetros entre llaves."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué diferencia práctica refleja este enunciado? HttpGet, HttpPost, HttpPut y HttpDelete son atributos de verbo HTTP para acciones de controlador.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "HttpGet, HttpPost, HttpPut y HttpDelete son atributos de verbo HTTP para acciones de controlador.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "B",
+        "explanation": "HttpGet, HttpPost, HttpPut y HttpDelete son atributos de verbo HTTP para acciones de controlador."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué asociación es correcta en una API de ASP.NET Core? Un parámetro de ruta puede recibir restricciones para rechazar valores que no coincidan con el formato esperado.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "Un parámetro de ruta puede recibir restricciones para rechazar valores que no coincidan con el formato esperado.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "C",
+        "explanation": "Un parámetro de ruta puede recibir restricciones para rechazar valores que no coincidan con el formato esperado."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Cómo se usa esta capacidad en un controlador API? ProblemDetails es preferible a inventar una estructura distinta para cada error de una API.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "option_d": "ProblemDetails es preferible a inventar una estructura distinta para cada error de una API.",
+        "correct": "D",
+        "explanation": "ProblemDetails es preferible a inventar una estructura distinta para cada error de una API."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué problema resuelve esta característica? La negociación de contenido coordina las preferencias del cliente con las representaciones que puede producir la API.",
+        "option_a": "La negociación de contenido coordina las preferencias del cliente con las representaciones que puede producir la API.",
+        "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "A",
+        "explanation": "La negociación de contenido coordina las preferencias del cliente con las representaciones que puede producir la API."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué decisión de diseño se deriva de esta regla? Una operación POST de creación puede combinar binding, validación, persistencia y CreatedAtAction.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "Una operación POST de creación puede combinar binding, validación, persistencia y CreatedAtAction.",
+        "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "B",
+        "explanation": "Una operación POST de creación puede combinar binding, validación, persistencia y CreatedAtAction."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué respuesta identifica correctamente el comportamiento? Un endpoint documentado debe declarar de forma coherente sus códigos de éxito y error.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "Un endpoint documentado debe declarar de forma coherente sus códigos de éxito y error.",
+        "option_d": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "correct": "C",
+        "explanation": "Un endpoint documentado debe declarar de forma coherente sus códigos de éxito y error."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué debe devolver o aceptar la API en este caso? La respuesta de una acción debe corresponder al contrato HTTP que su documentación anuncia.",
+        "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
+        "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
+        "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
+        "option_d": "La respuesta de una acción debe corresponder al contrato HTTP que su documentación anuncia.",
+        "correct": "D",
+        "explanation": "La respuesta de una acción debe corresponder al contrato HTTP que su documentación anuncia."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_24_LOT_05_END
