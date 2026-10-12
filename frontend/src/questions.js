@@ -10552,7 +10552,7 @@ export const QUESTIONS = [
   {
     "id": 960,
     "topic_num": 24,
-    "question": "En una Web API, ¿qué significa exactamente lo siguiente? Una acción pública de un controlador puede tratarse como acción MVC salvo que se excluya explícitamente.",
+    "question": "Según la fuente oficial, en el ámbito «acción · pública · controlador · tratarse», ¿qué afirmación responde al objetivo t24-lo-021? (Referencia e5b79c44413e)",
     "option_a": "Una acción pública de un controlador puede tratarse como acción MVC salvo que se excluya explícitamente.",
     "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -10563,7 +10563,7 @@ export const QUESTIONS = [
   {
     "id": 961,
     "topic_num": 24,
-    "question": "¿Cuál es la consecuencia práctica de esta regla de ASP.NET Core? ControllerBase proporciona la base de las capacidades de controlador necesarias para APIs sin soporte de vistas.",
+    "question": "Según la fuente oficial, en el ámbito «ControllerBase · proporciona · base · capacidades», ¿qué afirmación responde al objetivo t24-lo-022? (Referencia 5aa64c97b3a0)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "ControllerBase proporciona la base de las capacidades de controlador necesarias para APIs sin soporte de vistas.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -10574,7 +10574,7 @@ export const QUESTIONS = [
   {
     "id": 962,
     "topic_num": 24,
-    "question": "¿Cómo debe interpretarse esta afirmación al diseñar el endpoint? ApiController puede aplicarse a una clase de controlador o mediante una convención a varios controladores.",
+    "question": "Según la fuente oficial, en el ámbito «ApiController · aplicarse · clase · controlador», ¿qué afirmación responde al objetivo t24-lo-023? (Referencia 2b981fff66da)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "ApiController puede aplicarse a una clase de controlador o mediante una convención a varios controladores.",
@@ -10585,7 +10585,7 @@ export const QUESTIONS = [
   {
     "id": 963,
     "topic_num": 24,
-    "question": "¿Qué comportamiento describe esta observación de la documentación? El token [controller] de una ruta se sustituye por el nombre del controlador.",
+    "question": "Según la fuente oficial, en el ámbito «token · controller · ruta · sustituye», ¿qué afirmación responde al objetivo t24-lo-024? (Referencia 364724890845)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
@@ -10596,7 +10596,7 @@ export const QUESTIONS = [
   {
     "id": 964,
     "topic_num": 24,
-    "question": "Para diagnosticar una API, ¿qué hecho conviene recordar? HttpGet asocia una acción con solicitudes HTTP GET.",
+    "question": "Según la fuente oficial, en el ámbito «HttpGet · asocia · acción · solicitudes», ¿qué afirmación responde al objetivo t24-lo-025? (Referencia f0cab2bcd59e)",
     "option_a": "HttpGet asocia una acción con solicitudes HTTP GET.",
     "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -10607,7 +10607,7 @@ export const QUESTIONS = [
   {
     "id": 965,
     "topic_num": 24,
-    "question": "¿Qué opción explica correctamente este aspecto del Web API? HttpPost asocia una acción con solicitudes HTTP POST.",
+    "question": "Según la fuente oficial, en el ámbito «HttpPost · asocia · acción · solicitudes», ¿qué afirmación responde al objetivo t24-lo-026? (Referencia be23856f8296)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "HttpPost asocia una acción con solicitudes HTTP POST.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -10618,7 +10618,7 @@ export const QUESTIONS = [
   {
     "id": 966,
     "topic_num": 24,
-    "question": "En este escenario, ¿qué afirmación es la válida? HttpPut se utiliza para exponer una acción que procesa solicitudes HTTP PUT.",
+    "question": "Según la fuente oficial, en el ámbito «HttpPut · utiliza · exponer · acción», ¿qué afirmación responde al objetivo t24-lo-027? (Referencia 025533caab8f)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "HttpPut se utiliza para exponer una acción que procesa solicitudes HTTP PUT.",
@@ -10629,7 +10629,7 @@ export const QUESTIONS = [
   {
     "id": 967,
     "topic_num": 24,
-    "question": "¿Qué relación con el pipeline de API expresa este hecho? HttpDelete se utiliza para exponer una acción que procesa solicitudes HTTP DELETE.",
+    "question": "Según la fuente oficial, en el ámbito «HttpDelete · utiliza · exponer · acción», ¿qué afirmación responde al objetivo t24-lo-028? (Referencia 3b203ffbfa05)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
@@ -10640,7 +10640,7 @@ export const QUESTIONS = [
   {
     "id": 968,
     "topic_num": 24,
-    "question": "¿Qué debe comprobar un desarrollador según esta regla? Una restricción de ruta como {id:int} limita la coincidencia a valores enteros.",
+    "question": "Según la fuente oficial, en el ámbito «restricción · ruta · limita · coincidencia», ¿qué afirmación responde al objetivo t24-lo-029? (Referencia 24398ec79045)",
     "option_a": "Una restricción de ruta como {id:int} limita la coincidencia a valores enteros.",
     "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -10651,7 +10651,7 @@ export const QUESTIONS = [
   {
     "id": 969,
     "topic_num": 24,
-    "question": "¿Cuál es la aplicación correcta de esta característica? Una plantilla [Route(\"api/[controller]\")] establece un prefijo de ruta para las acciones del controlador.",
+    "question": "Según la fuente oficial, en el ámbito «plantilla · Route · api/ · controller», ¿qué afirmación responde al objetivo t24-lo-030? (Referencia 2c8afead10f3)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "Una plantilla [Route(\"api/[controller]\")] establece un prefijo de ruta para las acciones del controlador.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -10662,7 +10662,7 @@ export const QUESTIONS = [
   {
     "id": 970,
     "topic_num": 24,
-    "question": "¿Qué efecto tiene esta configuración sobre el endpoint? Una ruta de atributo en el controlador puede combinarse con la ruta de atributo de una acción.",
+    "question": "Según la fuente oficial, en el ámbito «ruta · atributo · controlador · combinarse», ¿qué afirmación responde al objetivo t24-lo-031? (Referencia 4164f6eb9c6b)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "Una ruta de atributo en el controlador puede combinarse con la ruta de atributo de una acción.",
@@ -10673,7 +10673,7 @@ export const QUESTIONS = [
   {
     "id": 971,
     "topic_num": 24,
-    "question": "¿Qué resultado se espera cuando se aplica esta regla? Los valores de ruta pueden enlazarse a parámetros de acción que correspondan con sus nombres.",
+    "question": "Según la fuente oficial, en el ámbito «valores · ruta · pueden · enlazarse», ¿qué afirmación responde al objetivo t24-lo-032? (Referencia dbbd8744aa7a)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
@@ -10684,7 +10684,7 @@ export const QUESTIONS = [
   {
     "id": 972,
     "topic_num": 24,
-    "question": "¿Cómo se documenta o expone esta capacidad? Los controladores ApiController requieren attribute routing para sus acciones.",
+    "question": "Según la fuente oficial, en el ámbito «controladores · ApiController · requieren · attribute», ¿qué afirmación responde al objetivo t24-lo-033? (Referencia 4c63c9620587)",
     "option_a": "Los controladores ApiController requieren attribute routing para sus acciones.",
     "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -10695,7 +10695,7 @@ export const QUESTIONS = [
   {
     "id": 973,
     "topic_num": 24,
-    "question": "¿Qué diferencia práctica refleja este enunciado? RouteAttribute permite declarar una plantilla de ruta como metadato del controlador o de la acción.",
+    "question": "Según la fuente oficial, en el ámbito «RouteAttribute · permite · declarar · plantilla», ¿qué afirmación responde al objetivo t24-lo-034? (Referencia 3e115ee3f382)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "RouteAttribute permite declarar una plantilla de ruta como metadato del controlador o de la acción.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -10706,7 +10706,7 @@ export const QUESTIONS = [
   {
     "id": 974,
     "topic_num": 24,
-    "question": "¿Qué asociación es correcta en una API de ASP.NET Core? Los atributos de verbo HTTP expresan qué método HTTP debe seleccionar una acción.",
+    "question": "Según la fuente oficial, en el ámbito «atributos · verbo · HTTP · expresan», ¿qué afirmación responde al objetivo t24-lo-035? (Referencia a63e6ea2e842)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "Los atributos de verbo HTTP expresan qué método HTTP debe seleccionar una acción.",
@@ -10717,7 +10717,7 @@ export const QUESTIONS = [
   {
     "id": 975,
     "topic_num": 24,
-    "question": "¿Cómo se usa esta capacidad en un controlador API? ProducesResponseType documenta el tipo de respuesta y el código de estado que una acción puede producir.",
+    "question": "Según la fuente oficial, en el ámbito «ProducesResponseType · documenta · tipo · respuesta», ¿qué afirmación responde al objetivo t24-lo-036? (Referencia a8b3dbc426ed)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
@@ -10728,7 +10728,7 @@ export const QUESTIONS = [
   {
     "id": 976,
     "topic_num": 24,
-    "question": "¿Qué problema resuelve esta característica? Produces puede restringir o describir los tipos de contenido que una acción devuelve.",
+    "question": "Según la fuente oficial, en el ámbito «Produces · restringir · describir · tipos», ¿qué afirmación responde al objetivo t24-lo-037? (Referencia 56318e465d6c)",
     "option_a": "Produces puede restringir o describir los tipos de contenido que una acción devuelve.",
     "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -10739,7 +10739,7 @@ export const QUESTIONS = [
   {
     "id": 977,
     "topic_num": 24,
-    "question": "¿Qué decisión de diseño se deriva de esta regla? Consumes puede declarar los tipos de contenido que una acción acepta.",
+    "question": "Según la fuente oficial, en el ámbito «Consumes · declarar · tipos · contenido», ¿qué afirmación responde al objetivo t24-lo-038? (Referencia 72f5c8ee6da0)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "Consumes puede declarar los tipos de contenido que una acción acepta.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -10750,7 +10750,7 @@ export const QUESTIONS = [
   {
     "id": 978,
     "topic_num": 24,
-    "question": "¿Qué respuesta identifica correctamente el comportamiento? Una acción puede ocultarse del explorador de API con la configuración de ApiExplorer correspondiente.",
+    "question": "Según la fuente oficial, en el ámbito «acción · ocultarse · explorador · configuración», ¿qué afirmación responde al objetivo t24-lo-039? (Referencia 8de354066dc0)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "Una acción puede ocultarse del explorador de API con la configuración de ApiExplorer correspondiente.",
@@ -10761,7 +10761,7 @@ export const QUESTIONS = [
   {
     "id": 979,
     "topic_num": 24,
-    "question": "¿Qué debe devolver o aceptar la API en este caso? El explorador de API proporciona metadatos que las herramientas OpenAPI pueden usar para describir endpoints.",
+    "question": "Según la fuente oficial, en el ámbito «explorador · proporciona · metadatos · herramientas», ¿qué afirmación responde al objetivo t24-lo-040? (Referencia 29818e9611ee)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
@@ -10772,7 +10772,7 @@ export const QUESTIONS = [
   {
     "id": 980,
     "topic_num": 24,
-    "question": "En una Web API, ¿qué significa exactamente lo siguiente? Un parámetro de tipo simple de un controlador ApiController puede inferirse desde la query string.",
+    "question": "Según la fuente oficial, en el ámbito «parámetro · tipo · simple · controlador», ¿qué afirmación responde al objetivo t24-lo-041? (Referencia 43c0a92a9fcb)",
     "option_a": "Un parámetro de tipo simple de un controlador ApiController puede inferirse desde la query string.",
     "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -10783,7 +10783,7 @@ export const QUESTIONS = [
   {
     "id": 981,
     "topic_num": 24,
-    "question": "¿Cuál es la consecuencia práctica de esta regla de ASP.NET Core? Un parámetro complejo de una acción ApiController puede inferirse desde el cuerpo de la petición.",
+    "question": "Según la fuente oficial, en el ámbito «parámetro · complejo · acción · ApiController», ¿qué afirmación responde al objetivo t24-lo-042? (Referencia 83ea6429bfe5)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "Un parámetro complejo de una acción ApiController puede inferirse desde el cuerpo de la petición.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -10794,7 +10794,7 @@ export const QUESTIONS = [
   {
     "id": 982,
     "topic_num": 24,
-    "question": "¿Cómo debe interpretarse esta afirmación al diseñar el endpoint? Una acción no debe intentar inferir dos parámetros independientes desde el mismo cuerpo HTTP.",
+    "question": "Según la fuente oficial, en el ámbito «acción · debe · intentar · inferir», ¿qué afirmación responde al objetivo t24-lo-043? (Referencia 54d0c0b527a2)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "Una acción no debe intentar inferir dos parámetros independientes desde el mismo cuerpo HTTP.",
@@ -10805,7 +10805,7 @@ export const QUESTIONS = [
   {
     "id": 983,
     "topic_num": 24,
-    "question": "¿Qué comportamiento describe esta observación de la documentación? FromQuery fuerza el binding de un parámetro desde la cadena de consulta.",
+    "question": "Según la fuente oficial, en el ámbito «FromQuery · fuerza · binding · parámetro», ¿qué afirmación responde al objetivo t24-lo-044? (Referencia d931ccca8ca3)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
@@ -10816,7 +10816,7 @@ export const QUESTIONS = [
   {
     "id": 984,
     "topic_num": 24,
-    "question": "Para diagnosticar una API, ¿qué hecho conviene recordar? FromRoute fuerza el binding de un parámetro desde los valores de ruta.",
+    "question": "Según la fuente oficial, en el ámbito «FromRoute · fuerza · binding · parámetro», ¿qué afirmación responde al objetivo t24-lo-045? (Referencia a6556b7d8d72)",
     "option_a": "FromRoute fuerza el binding de un parámetro desde los valores de ruta.",
     "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -10827,7 +10827,7 @@ export const QUESTIONS = [
   {
     "id": 985,
     "topic_num": 24,
-    "question": "¿Qué opción explica correctamente este aspecto del Web API? FromHeader fuerza el binding de un parámetro desde una cabecera HTTP.",
+    "question": "Según la fuente oficial, en el ámbito «FromHeader · fuerza · binding · parámetro», ¿qué afirmación responde al objetivo t24-lo-046? (Referencia 1e8b1d01cdf0)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "FromHeader fuerza el binding de un parámetro desde una cabecera HTTP.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -10838,7 +10838,7 @@ export const QUESTIONS = [
   {
     "id": 986,
     "topic_num": 24,
-    "question": "En este escenario, ¿qué afirmación es la válida? FromForm fuerza el binding de un parámetro desde datos de formulario.",
+    "question": "Según la fuente oficial, en el ámbito «FromForm · fuerza · binding · parámetro», ¿qué afirmación responde al objetivo t24-lo-047? (Referencia bb4f86ee0ebe)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "FromForm fuerza el binding de un parámetro desde datos de formulario.",
@@ -10849,7 +10849,7 @@ export const QUESTIONS = [
   {
     "id": 987,
     "topic_num": 24,
-    "question": "¿Qué relación con el pipeline de API expresa este hecho? FromServices obtiene un parámetro desde el contenedor de inyección de dependencias.",
+    "question": "Según la fuente oficial, en el ámbito «FromServices · obtiene · parámetro · desde», ¿qué afirmación responde al objetivo t24-lo-048? (Referencia 813d5c544383)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
@@ -10860,7 +10860,7 @@ export const QUESTIONS = [
   {
     "id": 988,
     "topic_num": 24,
-    "question": "¿Qué debe comprobar un desarrollador según esta regla? IFormFile es un tipo usado para recibir un archivo cargado por una petición HTTP.",
+    "question": "Según la fuente oficial, en el ámbito «IFormFile · tipo · usado · recibir», ¿qué afirmación responde al objetivo t24-lo-049? (Referencia 4741a81fcc3d)",
     "option_a": "IFormFile es un tipo usado para recibir un archivo cargado por una petición HTTP.",
     "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -10871,7 +10871,7 @@ export const QUESTIONS = [
   {
     "id": 989,
     "topic_num": 24,
-    "question": "¿Cuál es la aplicación correcta de esta característica? La carga de archivos de formulario utiliza normalmente multipart/form-data.",
+    "question": "Según la fuente oficial, en el ámbito «carga · archivos · formulario · utiliza», ¿qué afirmación responde al objetivo t24-lo-050? (Referencia cebfc70c1279)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La carga de archivos de formulario utiliza normalmente multipart/form-data.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -10882,7 +10882,7 @@ export const QUESTIONS = [
   {
     "id": 990,
     "topic_num": 24,
-    "question": "¿Qué efecto tiene esta configuración sobre el endpoint? Consumes puede declarar multipart/form-data para una acción que recibe formularios con archivos.",
+    "question": "Según la fuente oficial, en el ámbito «Consumes · declarar · multipart/form · data», ¿qué afirmación responde al objetivo t24-lo-051? (Referencia d00c955933f5)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "Consumes puede declarar multipart/form-data para una acción que recibe formularios con archivos.",
@@ -10893,7 +10893,7 @@ export const QUESTIONS = [
   {
     "id": 991,
     "topic_num": 24,
-    "question": "¿Qué resultado se espera cuando se aplica esta regla? Los parámetros provenientes de fuentes distintas pueden combinarse, por ejemplo, ruta y query.",
+    "question": "Según la fuente oficial, en el ámbito «parámetros · provenientes · fuentes · distintas», ¿qué afirmación responde al objetivo t24-lo-052? (Referencia 3c6980f342cc)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
@@ -10904,7 +10904,7 @@ export const QUESTIONS = [
   {
     "id": 992,
     "topic_num": 24,
-    "question": "¿Cómo se documenta o expone esta capacidad? El Content-Type de la petición ayuda a seleccionar el input formatter.",
+    "question": "Según la fuente oficial, en el ámbito «Content · Type · petición · ayuda», ¿qué afirmación responde al objetivo t24-lo-053? (Referencia 783665d4971f)",
     "option_a": "El Content-Type de la petición ayuda a seleccionar el input formatter.",
     "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -10915,7 +10915,7 @@ export const QUESTIONS = [
   {
     "id": 993,
     "topic_num": 24,
-    "question": "¿Qué diferencia práctica refleja este enunciado? El encabezado Accept ayuda a seleccionar el output formatter.",
+    "question": "Según la fuente oficial, en el ámbito «encabezado · Accept · ayuda · seleccionar», ¿qué afirmación responde al objetivo t24-lo-054? (Referencia 058b3d7e6e73)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "El encabezado Accept ayuda a seleccionar el output formatter.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -10926,7 +10926,7 @@ export const QUESTIONS = [
   {
     "id": 994,
     "topic_num": 24,
-    "question": "¿Qué asociación es correcta en una API de ASP.NET Core? La ausencia de un input formatter compatible con el Content-Type puede producir 415 Unsupported Media Type.",
+    "question": "Según la fuente oficial, en el ámbito «ausencia · input · formatter · compatible», ¿qué afirmación responde al objetivo t24-lo-055? (Referencia 4bf8d5ef1094)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "La ausencia de un input formatter compatible con el Content-Type puede producir 415 Unsupported Media Type.",
@@ -10937,7 +10937,7 @@ export const QUESTIONS = [
   {
     "id": 995,
     "topic_num": 24,
-    "question": "¿Cómo se usa esta capacidad en un controlador API? Una respuesta no aceptable puede expresarse con 406 cuando la negociación de contenido no encuentra una representación.",
+    "question": "Según la fuente oficial, en el ámbito «respuesta · aceptable · expresarse · cuando», ¿qué afirmación responde al objetivo t24-lo-056? (Referencia f27cf36f1909)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
@@ -10948,7 +10948,7 @@ export const QUESTIONS = [
   {
     "id": 996,
     "topic_num": 24,
-    "question": "¿Qué problema resuelve esta característica? System.Text.Json es el formatter JSON predeterminado de la configuración habitual de Web API.",
+    "question": "Según la fuente oficial, en el ámbito «System.Text.Json · formatter · JSON · predeterminado», ¿qué afirmación responde al objetivo t24-lo-057? (Referencia 1a000e57e003)",
     "option_a": "System.Text.Json es el formatter JSON predeterminado de la configuración habitual de Web API.",
     "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -10959,7 +10959,7 @@ export const QUESTIONS = [
   {
     "id": 997,
     "topic_num": 24,
-    "question": "¿Qué decisión de diseño se deriva de esta regla? El soporte XML requiere configurar el formatter XML correspondiente.",
+    "question": "Según la fuente oficial, en el ámbito «soporte · requiere · configurar · formatter», ¿qué afirmación responde al objetivo t24-lo-058? (Referencia 4538a2051c6d)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "El soporte XML requiere configurar el formatter XML correspondiente.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -10970,7 +10970,7 @@ export const QUESTIONS = [
   {
     "id": 998,
     "topic_num": 24,
-    "question": "¿Qué respuesta identifica correctamente el comportamiento? Una API puede registrar un formatter personalizado para admitir una representación adicional.",
+    "question": "Según la fuente oficial, en el ámbito «registrar · formatter · personalizado · admitir», ¿qué afirmación responde al objetivo t24-lo-059? (Referencia c8525a293a64)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "Una API puede registrar un formatter personalizado para admitir una representación adicional.",
@@ -10981,7 +10981,7 @@ export const QUESTIONS = [
   {
     "id": 999,
     "topic_num": 24,
-    "question": "¿Qué debe devolver o aceptar la API en este caso? La selección del output formatter ocurre después de que la acción produce su resultado.",
+    "question": "Según la fuente oficial, en el ámbito «selección · output · formatter · ocurre», ¿qué afirmación responde al objetivo t24-lo-060? (Referencia a5af14757108)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
@@ -10992,7 +10992,7 @@ export const QUESTIONS = [
   {
     "id": 1000,
     "topic_num": 24,
-    "question": "En una Web API, ¿qué significa exactamente lo siguiente? ProblemDetails ofrece un formato estructurado para comunicar errores HTTP de una API.",
+    "question": "Según la fuente oficial, en el ámbito «ProblemDetails · ofrece · formato · estructurado», ¿qué afirmación responde al objetivo t24-lo-061? (Referencia bb46e88dc4c4)",
     "option_a": "ProblemDetails ofrece un formato estructurado para comunicar errores HTTP de una API.",
     "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -11003,7 +11003,7 @@ export const QUESTIONS = [
   {
     "id": 1001,
     "topic_num": 24,
-    "question": "¿Cuál es la consecuencia práctica de esta regla de ASP.NET Core? ValidationProblemDetails representa detalles estructurados de errores de validación.",
+    "question": "Según la fuente oficial, en el ámbito «ValidationProblemDetails · representa · detalles · estructurados», ¿qué afirmación responde al objetivo t24-lo-062? (Referencia e68e7fc161c9)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "ValidationProblemDetails representa detalles estructurados de errores de validación.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -11014,7 +11014,7 @@ export const QUESTIONS = [
   {
     "id": 1002,
     "topic_num": 24,
-    "question": "¿Cómo debe interpretarse esta afirmación al diseñar el endpoint? Una respuesta de error de API debe incluir un código de estado coherente con el problema comunicado.",
+    "question": "Según la fuente oficial, en el ámbito «respuesta · error · debe · incluir», ¿qué afirmación responde al objetivo t24-lo-063? (Referencia af3c9d904081)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "Una respuesta de error de API debe incluir un código de estado coherente con el problema comunicado.",
@@ -11025,7 +11025,7 @@ export const QUESTIONS = [
   {
     "id": 1003,
     "topic_num": 24,
-    "question": "¿Qué comportamiento describe esta observación de la documentación? ApiController transforma un ModelState inválido en una respuesta 400 automática por defecto.",
+    "question": "Según la fuente oficial, en el ámbito «ApiController · transforma · ModelState · inválido», ¿qué afirmación responde al objetivo t24-lo-064? (Referencia 2ec57ce177ff)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
@@ -11036,7 +11036,7 @@ export const QUESTIONS = [
   {
     "id": 1004,
     "topic_num": 24,
-    "question": "Para diagnosticar una API, ¿qué hecho conviene recordar? SuppressModelStateInvalidFilter permite desactivar el filtro automático de 400.",
+    "question": "Según la fuente oficial, en el ámbito «SuppressModelStateInvalidFilter · permite · desactivar · filtro», ¿qué afirmación responde al objetivo t24-lo-065? (Referencia 3783d7d35912)",
     "option_a": "SuppressModelStateInvalidFilter permite desactivar el filtro automático de 400.",
     "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -11047,7 +11047,7 @@ export const QUESTIONS = [
   {
     "id": 1005,
     "topic_num": 24,
-    "question": "¿Qué opción explica correctamente este aspecto del Web API? InvalidModelStateResponseFactory permite personalizar la respuesta producida por ModelState inválido.",
+    "question": "Según la fuente oficial, en el ámbito «InvalidModelStateResponseFactory · permite · personalizar · respuesta», ¿qué afirmación responde al objetivo t24-lo-066? (Referencia dc70fb6e40d8)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "InvalidModelStateResponseFactory permite personalizar la respuesta producida por ModelState inválido.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -11058,7 +11058,7 @@ export const QUESTIONS = [
   {
     "id": 1006,
     "topic_num": 24,
-    "question": "En este escenario, ¿qué afirmación es la válida? Las opciones de comportamiento de API permiten personalizar el tratamiento de errores de cliente.",
+    "question": "Según la fuente oficial, en el ámbito «opciones · comportamiento · permiten · personalizar», ¿qué afirmación responde al objetivo t24-lo-067? (Referencia e0fad9f30398)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "Las opciones de comportamiento de API permiten personalizar el tratamiento de errores de cliente.",
@@ -11069,7 +11069,7 @@ export const QUESTIONS = [
   {
     "id": 1007,
     "topic_num": 24,
-    "question": "¿Qué relación con el pipeline de API expresa este hecho? Un error de conversión durante el binding se incorpora a ModelState.",
+    "question": "Según la fuente oficial, en el ámbito «error · conversión · durante · binding», ¿qué afirmación responde al objetivo t24-lo-068? (Referencia 3fb34e3ae0eb)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
@@ -11080,7 +11080,7 @@ export const QUESTIONS = [
   {
     "id": 1008,
     "topic_num": 24,
-    "question": "¿Qué debe comprobar un desarrollador según esta regla? Las reglas de validación del modelo pueden aportar errores que desencadenan la respuesta automática de API.",
+    "question": "Según la fuente oficial, en el ámbito «reglas · validación · modelo · pueden», ¿qué afirmación responde al objetivo t24-lo-069? (Referencia 5ad7dd71a425)",
     "option_a": "Las reglas de validación del modelo pueden aportar errores que desencadenan la respuesta automática de API.",
     "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -11091,7 +11091,7 @@ export const QUESTIONS = [
   {
     "id": 1009,
     "topic_num": 24,
-    "question": "¿Cuál es la aplicación correcta de esta característica? ActionResult<T> permite expresar un resultado exitoso tipado y resultados HTTP alternativos.",
+    "question": "Según la fuente oficial, en el ámbito «ActionResult · permite · expresar · resultado», ¿qué afirmación responde al objetivo t24-lo-070? (Referencia e3a22d92b38a)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "ActionResult<T> permite expresar un resultado exitoso tipado y resultados HTTP alternativos.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -11102,7 +11102,7 @@ export const QUESTIONS = [
   {
     "id": 1010,
     "topic_num": 24,
-    "question": "¿Qué efecto tiene esta configuración sobre el endpoint? IActionResult es apropiado cuando la acción puede devolver distintos tipos de resultado HTTP.",
+    "question": "Según la fuente oficial, en el ámbito «IActionResult · apropiado · cuando · acción», ¿qué afirmación responde al objetivo t24-lo-071? (Referencia 06d4fcca509d)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "IActionResult es apropiado cuando la acción puede devolver distintos tipos de resultado HTTP.",
@@ -11113,7 +11113,7 @@ export const QUESTIONS = [
   {
     "id": 1011,
     "topic_num": 24,
-    "question": "¿Qué resultado se espera cuando se aplica esta regla? Un tipo concreto de retorno es útil cuando la acción siempre devuelve la misma representación exitosa.",
+    "question": "Según la fuente oficial, en el ámbito «tipo · concreto · retorno · útil», ¿qué afirmación responde al objetivo t24-lo-072? (Referencia 97f67d37dbc2)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
@@ -11124,7 +11124,7 @@ export const QUESTIONS = [
   {
     "id": 1012,
     "topic_num": 24,
-    "question": "¿Cómo se documenta o expone esta capacidad? ActionResult<T> admite conversiones implícitas desde el valor T y desde ActionResult.",
+    "question": "Según la fuente oficial, en el ámbito «ActionResult · admite · conversiones · implícitas», ¿qué afirmación responde al objetivo t24-lo-073? (Referencia 5b4e80ed0223)",
     "option_a": "ActionResult<T> admite conversiones implícitas desde el valor T y desde ActionResult.",
     "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -11135,7 +11135,7 @@ export const QUESTIONS = [
   {
     "id": 1013,
     "topic_num": 24,
-    "question": "¿Qué diferencia práctica refleja este enunciado? Ok devuelve normalmente un resultado 200 con el valor proporcionado.",
+    "question": "Según la fuente oficial, en el ámbito «devuelve · normalmente · resultado · valor», ¿qué afirmación responde al objetivo t24-lo-074? (Referencia 19fc09b26531)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "Ok devuelve normalmente un resultado 200 con el valor proporcionado.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -11146,7 +11146,7 @@ export const QUESTIONS = [
   {
     "id": 1014,
     "topic_num": 24,
-    "question": "¿Qué asociación es correcta en una API de ASP.NET Core? BadRequest comunica normalmente que la petición no es válida y corresponde a 400.",
+    "question": "Según la fuente oficial, en el ámbito «BadRequest · comunica · normalmente · petición», ¿qué afirmación responde al objetivo t24-lo-075? (Referencia 3756d61d4b64)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "BadRequest comunica normalmente que la petición no es válida y corresponde a 400.",
@@ -11157,7 +11157,7 @@ export const QUESTIONS = [
   {
     "id": 1015,
     "topic_num": 24,
-    "question": "¿Cómo se usa esta capacidad en un controlador API? NoContent representa normalmente una respuesta exitosa sin cuerpo, 204.",
+    "question": "Según la fuente oficial, en el ámbito «NoContent · representa · normalmente · respuesta», ¿qué afirmación responde al objetivo t24-lo-076? (Referencia a663350e8edf)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
@@ -11168,7 +11168,7 @@ export const QUESTIONS = [
   {
     "id": 1016,
     "topic_num": 24,
-    "question": "¿Qué problema resuelve esta característica? NotFound representa normalmente que el recurso solicitado no existe, 404.",
+    "question": "Según la fuente oficial, en el ámbito «NotFound · representa · normalmente · recurso», ¿qué afirmación responde al objetivo t24-lo-077? (Referencia 12feb7b7ae8c)",
     "option_a": "NotFound representa normalmente que el recurso solicitado no existe, 404.",
     "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -11179,7 +11179,7 @@ export const QUESTIONS = [
   {
     "id": 1017,
     "topic_num": 24,
-    "question": "¿Qué decisión de diseño se deriva de esta regla? CreatedAtAction puede generar una respuesta 201 y una ubicación basada en otra acción.",
+    "question": "Según la fuente oficial, en el ámbito «CreatedAtAction · generar · respuesta · ubicación», ¿qué afirmación responde al objetivo t24-lo-078? (Referencia 6fa2a1718833)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "CreatedAtAction puede generar una respuesta 201 y una ubicación basada en otra acción.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -11190,7 +11190,7 @@ export const QUESTIONS = [
   {
     "id": 1018,
     "topic_num": 24,
-    "question": "¿Qué respuesta identifica correctamente el comportamiento? CreatedAtRoute puede generar una respuesta de creación usando una ruta con nombre.",
+    "question": "Según la fuente oficial, en el ámbito «CreatedAtRoute · generar · respuesta · creación», ¿qué afirmación responde al objetivo t24-lo-079? (Referencia 86e152263d31)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "CreatedAtRoute puede generar una respuesta de creación usando una ruta con nombre.",
@@ -11201,7 +11201,7 @@ export const QUESTIONS = [
   {
     "id": 1019,
     "topic_num": 24,
-    "question": "¿Qué debe devolver o aceptar la API en este caso? Una respuesta de creación puede incluir la ubicación del nuevo recurso en la cabecera Location.",
+    "question": "Según la fuente oficial, en el ámbito «respuesta · creación · incluir · ubicación», ¿qué afirmación responde al objetivo t24-lo-080? (Referencia b7f352945162)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
@@ -11212,7 +11212,7 @@ export const QUESTIONS = [
   {
     "id": 1020,
     "topic_num": 24,
-    "question": "En una Web API, ¿qué significa exactamente lo siguiente? El estado HTTP 201 indica que se creó un recurso.",
+    "question": "Según la fuente oficial, en el ámbito «estado · HTTP · indica · creó», ¿qué afirmación responde al objetivo t24-lo-081? (Referencia 53889d5132f0)",
     "option_a": "El estado HTTP 201 indica que se creó un recurso.",
     "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -11223,7 +11223,7 @@ export const QUESTIONS = [
   {
     "id": 1021,
     "topic_num": 24,
-    "question": "¿Cuál es la consecuencia práctica de esta regla de ASP.NET Core? El estado HTTP 204 indica éxito sin contenido de respuesta.",
+    "question": "Según la fuente oficial, en el ámbito «estado · HTTP · indica · éxito», ¿qué afirmación responde al objetivo t24-lo-082? (Referencia 6d6d496bd814)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "El estado HTTP 204 indica éxito sin contenido de respuesta.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -11234,7 +11234,7 @@ export const QUESTIONS = [
   {
     "id": 1022,
     "topic_num": 24,
-    "question": "¿Cómo debe interpretarse esta afirmación al diseñar el endpoint? El estado HTTP 404 representa que no se encontró el recurso solicitado.",
+    "question": "Según la fuente oficial, en el ámbito «estado · HTTP · representa · encontró», ¿qué afirmación responde al objetivo t24-lo-083? (Referencia feb6f4443b6c)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "El estado HTTP 404 representa que no se encontró el recurso solicitado.",
@@ -11245,7 +11245,7 @@ export const QUESTIONS = [
   {
     "id": 1023,
     "topic_num": 24,
-    "question": "¿Qué comportamiento describe esta observación de la documentación? OpenAPI define una descripción agnóstica del lenguaje para el contrato de una API HTTP.",
+    "question": "Según la fuente oficial, en el ámbito «OpenAPI · define · descripción · agnóstica», ¿qué afirmación responde al objetivo t24-lo-084? (Referencia 3d4dabc616fe)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
@@ -11256,7 +11256,7 @@ export const QUESTIONS = [
   {
     "id": 1024,
     "topic_num": 24,
-    "question": "Para diagnosticar una API, ¿qué hecho conviene recordar? Swagger UI proporciona una interfaz para explorar y probar operaciones descritas por OpenAPI.",
+    "question": "Según la fuente oficial, en el ámbito «Swagger · proporciona · interfaz · explorar», ¿qué afirmación responde al objetivo t24-lo-085? (Referencia 9c876837e964)",
     "option_a": "Swagger UI proporciona una interfaz para explorar y probar operaciones descritas por OpenAPI.",
     "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -11267,7 +11267,7 @@ export const QUESTIONS = [
   {
     "id": 1025,
     "topic_num": 24,
-    "question": "¿Qué opción explica correctamente este aspecto del Web API? Los comentarios XML pueden incorporarse a la documentación OpenAPI cuando se configura esa integración.",
+    "question": "Según la fuente oficial, en el ámbito «comentarios · pueden · incorporarse · documentación», ¿qué afirmación responde al objetivo t24-lo-086? (Referencia dfd8ccac6b4c)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "Los comentarios XML pueden incorporarse a la documentación OpenAPI cuando se configura esa integración.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -11278,7 +11278,7 @@ export const QUESTIONS = [
   {
     "id": 1026,
     "topic_num": 24,
-    "question": "En este escenario, ¿qué afirmación es la válida? La descripción OpenAPI comunica rutas, operaciones, parámetros y respuestas de la API.",
+    "question": "Según la fuente oficial, en el ámbito «descripción · OpenAPI · comunica · rutas», ¿qué afirmación responde al objetivo t24-lo-087? (Referencia 8916d12a0107)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "La descripción OpenAPI comunica rutas, operaciones, parámetros y respuestas de la API.",
@@ -11289,7 +11289,7 @@ export const QUESTIONS = [
   {
     "id": 1027,
     "topic_num": 24,
-    "question": "¿Qué relación con el pipeline de API expresa este hecho? Las herramientas basadas en OpenAPI pueden ayudar a generar clientes para una API documentada.",
+    "question": "Según la fuente oficial, en el ámbito «herramientas · basadas · OpenAPI · pueden», ¿qué afirmación responde al objetivo t24-lo-088? (Referencia c480b41b1e60)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
@@ -11300,7 +11300,7 @@ export const QUESTIONS = [
   {
     "id": 1028,
     "topic_num": 24,
-    "question": "¿Qué debe comprobar un desarrollador según esta regla? Un controlador API deriva normalmente de ControllerBase y no necesita heredar de Controller.",
+    "question": "Según la fuente oficial, en el ámbito «controlador · deriva · normalmente · ControllerBase», ¿qué afirmación responde al objetivo t24-lo-089? (Referencia e9560d8a360a)",
     "option_a": "Un controlador API deriva normalmente de ControllerBase y no necesita heredar de Controller.",
     "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -11311,7 +11311,7 @@ export const QUESTIONS = [
   {
     "id": 1029,
     "topic_num": 24,
-    "question": "¿Cuál es la aplicación correcta de esta característica? Controller añade capacidades de vistas a ControllerBase, mientras ControllerBase es suficiente para una API.",
+    "question": "Según la fuente oficial, en el ámbito «Controller · añade · capacidades · vistas», ¿qué afirmación responde al objetivo t24-lo-090? (Referencia ba2281a0e95d)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "Controller añade capacidades de vistas a ControllerBase, mientras ControllerBase es suficiente para una API.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -11322,7 +11322,7 @@ export const QUESTIONS = [
   {
     "id": 1030,
     "topic_num": 24,
-    "question": "¿Qué efecto tiene esta configuración sobre el endpoint? ApiController activa convenciones de API aunque el controlador siga siendo una clase MVC.",
+    "question": "Según la fuente oficial, en el ámbito «ApiController · activa · convenciones · aunque», ¿qué afirmación responde al objetivo t24-lo-091? (Referencia d72deebc0b94)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "ApiController activa convenciones de API aunque el controlador siga siendo una clase MVC.",
@@ -11333,7 +11333,7 @@ export const QUESTIONS = [
   {
     "id": 1031,
     "topic_num": 24,
-    "question": "¿Qué resultado se espera cuando se aplica esta regla? La ruta por atributos permite diseñar URLs de API explícitas junto con los verbos HTTP.",
+    "question": "Según la fuente oficial, en el ámbito «ruta · atributos · permite · diseñar», ¿qué afirmación responde al objetivo t24-lo-092? (Referencia c66b2ca8b179)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
@@ -11344,7 +11344,7 @@ export const QUESTIONS = [
   {
     "id": 1032,
     "topic_num": 24,
-    "question": "¿Cómo se documenta o expone esta capacidad? Una plantilla de ruta puede incluir segmentos literales y parámetros entre llaves.",
+    "question": "Según la fuente oficial, en el ámbito «plantilla · ruta · incluir · segmentos», ¿qué afirmación responde al objetivo t24-lo-093? (Referencia 5f7fe5ed78d8)",
     "option_a": "Una plantilla de ruta puede incluir segmentos literales y parámetros entre llaves.",
     "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -11355,7 +11355,7 @@ export const QUESTIONS = [
   {
     "id": 1033,
     "topic_num": 24,
-    "question": "¿Qué diferencia práctica refleja este enunciado? HttpGet, HttpPost, HttpPut y HttpDelete son atributos de verbo HTTP para acciones de controlador.",
+    "question": "Según la fuente oficial, en el ámbito «HttpGet · HttpPost · HttpPut · HttpDelete», ¿qué afirmación responde al objetivo t24-lo-094? (Referencia af018242c2f7)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "HttpGet, HttpPost, HttpPut y HttpDelete son atributos de verbo HTTP para acciones de controlador.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -11366,7 +11366,7 @@ export const QUESTIONS = [
   {
     "id": 1034,
     "topic_num": 24,
-    "question": "¿Qué asociación es correcta en una API de ASP.NET Core? Un parámetro de ruta puede recibir restricciones para rechazar valores que no coincidan con el formato esperado.",
+    "question": "Según la fuente oficial, en el ámbito «parámetro · ruta · recibir · restricciones», ¿qué afirmación responde al objetivo t24-lo-095? (Referencia 9f82bd573299)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "Un parámetro de ruta puede recibir restricciones para rechazar valores que no coincidan con el formato esperado.",
@@ -11377,7 +11377,7 @@ export const QUESTIONS = [
   {
     "id": 1035,
     "topic_num": 24,
-    "question": "¿Cómo se usa esta capacidad en un controlador API? ProblemDetails es preferible a inventar una estructura distinta para cada error de una API.",
+    "question": "Según la fuente oficial, en el ámbito «ProblemDetails · preferible · inventar · estructura», ¿qué afirmación responde al objetivo t24-lo-096? (Referencia 19cfee772873)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
@@ -11388,7 +11388,7 @@ export const QUESTIONS = [
   {
     "id": 1036,
     "topic_num": 24,
-    "question": "¿Qué problema resuelve esta característica? La negociación de contenido coordina las preferencias del cliente con las representaciones que puede producir la API.",
+    "question": "Según la fuente oficial, en el ámbito «negociación · contenido · coordina · preferencias», ¿qué afirmación responde al objetivo t24-lo-097? (Referencia 30c3c9ba9270)",
     "option_a": "La negociación de contenido coordina las preferencias del cliente con las representaciones que puede producir la API.",
     "option_b": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -11399,7 +11399,7 @@ export const QUESTIONS = [
   {
     "id": 1037,
     "topic_num": 24,
-    "question": "¿Qué decisión de diseño se deriva de esta regla? Una operación POST de creación puede combinar binding, validación, persistencia y CreatedAtAction.",
+    "question": "Según la fuente oficial, en el ámbito «operación · POST · creación · combinar», ¿qué afirmación responde al objetivo t24-lo-098? (Referencia 025e8e00f187)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "Una operación POST de creación puede combinar binding, validación, persistencia y CreatedAtAction.",
     "option_c": "La afirmación solo se aplica a una vista Razor y no a una API.",
@@ -11410,7 +11410,7 @@ export const QUESTIONS = [
   {
     "id": 1038,
     "topic_num": 24,
-    "question": "¿Qué respuesta identifica correctamente el comportamiento? Un endpoint documentado debe declarar de forma coherente sus códigos de éxito y error.",
+    "question": "Según la fuente oficial, en el ámbito «endpoint · documentado · debe · declarar», ¿qué afirmación responde al objetivo t24-lo-099? (Referencia e24553aaf0a3)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "Un endpoint documentado debe declarar de forma coherente sus códigos de éxito y error.",
@@ -11421,7 +11421,7 @@ export const QUESTIONS = [
   {
     "id": 1039,
     "topic_num": 24,
-    "question": "¿Qué debe devolver o aceptar la API en este caso? La respuesta de una acción debe corresponder al contrato HTTP que su documentación anuncia.",
+    "question": "Según la fuente oficial, en el ámbito «respuesta · acción · debe · corresponder», ¿qué afirmación responde al objetivo t24-lo-100? (Referencia 208756555386)",
     "option_a": "La afirmación describe exclusivamente una migración de base de datos.",
     "option_b": "La afirmación solo se aplica a una vista Razor y no a una API.",
     "option_c": "La afirmación desactiva el enrutamiento y la negociación de contenido.",
@@ -11432,7 +11432,7 @@ export const QUESTIONS = [
   {
     "id": 1040,
     "topic_num": 23,
-    "question": "¿Cuál es la consecuencia práctica? Un esquema de autenticación con nombre identifica la configuración y el handler que se usará.",
+    "question": "Según la fuente oficial, en el ámbito «esquema · autenticación · nombre · identifica», ¿qué afirmación responde al objetivo t23-lo-021? (Referencia 92d843586049)",
     "option_a": "Un esquema de autenticación con nombre identifica la configuración y el handler que se usará.",
     "option_b": "Una migración de base de datos sin relación.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -11443,7 +11443,7 @@ export const QUESTIONS = [
   {
     "id": 1041,
     "topic_num": 23,
-    "question": "¿Cómo debe interpretarse este comportamiento? Challenge se usa cuando la solicitud necesita autenticación y aún no tiene un usuario autenticado.",
+    "question": "Según la fuente oficial, en el ámbito «Challenge · cuando · solicitud · necesita», ¿qué afirmación responde al objetivo t23-lo-022? (Referencia 4b434e7546f8)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Challenge se usa cuando la solicitud necesita autenticación y aún no tiene un usuario autenticado.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -11454,7 +11454,7 @@ export const QUESTIONS = [
   {
     "id": 1042,
     "topic_num": 23,
-    "question": "¿Qué describe correctamente la documentación? Forbid representa que el usuario autenticado no tiene permiso para el recurso.",
+    "question": "Según la fuente oficial, en el ámbito «Forbid · representa · usuario · autenticado», ¿qué afirmación responde al objetivo t23-lo-023? (Referencia 6a14464c1239)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "Forbid representa que el usuario autenticado no tiene permiso para el recurso.",
@@ -11465,7 +11465,7 @@ export const QUESTIONS = [
   {
     "id": 1043,
     "topic_num": 23,
-    "question": "¿Qué debe comprobar el desarrollador? AuthenticateAsync intenta construir la identidad del usuario usando el esquema indicado.",
+    "question": "Según la fuente oficial, en el ámbito «AuthenticateAsync · intenta · construir · identidad», ¿qué afirmación responde al objetivo t23-lo-024? (Referencia 1625c64d5dee)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "Una regla que desactiva toda autorización.",
@@ -11476,7 +11476,7 @@ export const QUESTIONS = [
   {
     "id": 1044,
     "topic_num": 23,
-    "question": "¿Qué opción es válida en este escenario? SignInAsync crea o establece la identidad mediante el handler de autenticación seleccionado.",
+    "question": "Según la fuente oficial, en el ámbito «SignInAsync · crea · establece · identidad», ¿qué afirmación responde al objetivo t23-lo-025? (Referencia 6260256259e1)",
     "option_a": "SignInAsync crea o establece la identidad mediante el handler de autenticación seleccionado.",
     "option_b": "Una migración de base de datos sin relación.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -11487,7 +11487,7 @@ export const QUESTIONS = [
   {
     "id": 1045,
     "topic_num": 23,
-    "question": "¿Qué relación expresa este enunciado? SignOutAsync solicita al handler que cierre la sesión o elimine su credencial.",
+    "question": "Según la fuente oficial, en el ámbito «SignOutAsync · solicita · handler · cierre», ¿qué afirmación responde al objetivo t23-lo-026? (Referencia e65249629f71)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "SignOutAsync solicita al handler que cierre la sesión o elimine su credencial.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -11498,7 +11498,7 @@ export const QUESTIONS = [
   {
     "id": 1046,
     "topic_num": 23,
-    "question": "¿Qué efecto tiene esta característica? UseAuthentication incorpora la autenticación al pipeline de solicitudes.",
+    "question": "Según la fuente oficial, en el ámbito «UseAuthentication · incorpora · autenticación · pipeline», ¿qué afirmación responde al objetivo t23-lo-027? (Referencia 8c633a91e09b)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "UseAuthentication incorpora la autenticación al pipeline de solicitudes.",
@@ -11509,7 +11509,7 @@ export const QUESTIONS = [
   {
     "id": 1047,
     "topic_num": 23,
-    "question": "¿Cómo se aplica esta regla? La autenticación por defecto se usa cuando no se especifica un esquema en una operación.",
+    "question": "Según la fuente oficial, en el ámbito «autenticación · defecto · cuando · especifica», ¿qué afirmación responde al objetivo t23-lo-028? (Referencia 156d98d949b0)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "Una regla que desactiva toda autorización.",
@@ -11520,7 +11520,7 @@ export const QUESTIONS = [
   {
     "id": 1048,
     "topic_num": 23,
-    "question": "¿Qué diagnóstico corresponde? Un handler de cookies y un handler bearer representan mecanismos de autenticación distintos.",
+    "question": "Según la fuente oficial, en el ámbito «handler · cookies · bearer · representan», ¿qué afirmación responde al objetivo t23-lo-029? (Referencia ebb74f50a97e)",
     "option_a": "Un handler de cookies y un handler bearer representan mecanismos de autenticación distintos.",
     "option_b": "Una migración de base de datos sin relación.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -11531,7 +11531,7 @@ export const QUESTIONS = [
   {
     "id": 1049,
     "topic_num": 23,
-    "question": "¿Qué significa esta regla de seguridad? El handler seleccionado por un esquema implementa las operaciones del mecanismo de autenticación.",
+    "question": "Según la fuente oficial, en el ámbito «handler · seleccionado · esquema · implementa», ¿qué afirmación responde al objetivo t23-lo-030? (Referencia aecbc896eae9)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "El handler seleccionado por un esquema implementa las operaciones del mecanismo de autenticación.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -11542,7 +11542,7 @@ export const QUESTIONS = [
   {
     "id": 1050,
     "topic_num": 23,
-    "question": "¿Cuál es la consecuencia práctica? ClaimsIdentity representa una identidad dentro del ClaimsPrincipal.",
+    "question": "Según la fuente oficial, en el ámbito «ClaimsIdentity · representa · identidad · dentro», ¿qué afirmación responde al objetivo t23-lo-031? (Referencia 8654fe18c615)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "ClaimsIdentity representa una identidad dentro del ClaimsPrincipal.",
@@ -11553,7 +11553,7 @@ export const QUESTIONS = [
   {
     "id": 1051,
     "topic_num": 23,
-    "question": "¿Cómo debe interpretarse este comportamiento? IsAuthenticated indica si una identidad ha sido autenticada.",
+    "question": "Según la fuente oficial, en el ámbito «IsAuthenticated · indica · identidad · sido», ¿qué afirmación responde al objetivo t23-lo-032? (Referencia 58f4f2198fd6)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "Una regla que desactiva toda autorización.",
@@ -11564,7 +11564,7 @@ export const QUESTIONS = [
   {
     "id": 1052,
     "topic_num": 23,
-    "question": "¿Qué describe correctamente la documentación? NameClaimType indica qué tipo de claim se usa para obtener el nombre de la identidad.",
+    "question": "Según la fuente oficial, en el ámbito «NameClaimType · indica · tipo · claim», ¿qué afirmación responde al objetivo t23-lo-033? (Referencia 4e021d4b7535)",
     "option_a": "NameClaimType indica qué tipo de claim se usa para obtener el nombre de la identidad.",
     "option_b": "Una migración de base de datos sin relación.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -11575,7 +11575,7 @@ export const QUESTIONS = [
   {
     "id": 1053,
     "topic_num": 23,
-    "question": "¿Qué debe comprobar el desarrollador? RoleClaimType indica qué tipo de claim representa la pertenencia a roles.",
+    "question": "Según la fuente oficial, en el ámbito «RoleClaimType · indica · tipo · claim», ¿qué afirmación responde al objetivo t23-lo-034? (Referencia 0b79dc15dc19)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "RoleClaimType indica qué tipo de claim representa la pertenencia a roles.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -11586,7 +11586,7 @@ export const QUESTIONS = [
   {
     "id": 1054,
     "topic_num": 23,
-    "question": "¿Qué opción es válida en este escenario? ClaimsPrincipal puede contener más de una ClaimsIdentity.",
+    "question": "Según la fuente oficial, en el ámbito «ClaimsPrincipal · contener · ClaimsIdentity.», ¿qué afirmación responde al objetivo t23-lo-035? (Referencia ba1b56d50591)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "ClaimsPrincipal puede contener más de una ClaimsIdentity.",
@@ -11597,7 +11597,7 @@ export const QUESTIONS = [
   {
     "id": 1055,
     "topic_num": 23,
-    "question": "¿Qué relación expresa este enunciado? Una transformación de claims puede enriquecer la identidad antes de las comprobaciones de autorización.",
+    "question": "Según la fuente oficial, en el ámbito «transformación · claims · enriquecer · identidad», ¿qué afirmación responde al objetivo t23-lo-036? (Referencia ff80db03ca9d)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "Una regla que desactiva toda autorización.",
@@ -11608,7 +11608,7 @@ export const QUESTIONS = [
   {
     "id": 1056,
     "topic_num": 23,
-    "question": "¿Qué efecto tiene esta característica? HttpContext.User proporciona el principal asociado a la solicitud actual.",
+    "question": "Según la fuente oficial, en el ámbito «HttpContext.User · proporciona · principal · asociado», ¿qué afirmación responde al objetivo t23-lo-037? (Referencia 755cd5532650)",
     "option_a": "HttpContext.User proporciona el principal asociado a la solicitud actual.",
     "option_b": "Una migración de base de datos sin relación.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -11619,7 +11619,7 @@ export const QUESTIONS = [
   {
     "id": 1057,
     "topic_num": 23,
-    "question": "¿Cómo se aplica esta regla? Un claim aporta información sobre el sujeto que una política puede evaluar.",
+    "question": "Según la fuente oficial, en el ámbito «claim · aporta · información · sobre», ¿qué afirmación responde al objetivo t23-lo-038? (Referencia 0e1b94e798e4)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Un claim aporta información sobre el sujeto que una política puede evaluar.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -11630,7 +11630,7 @@ export const QUESTIONS = [
   {
     "id": 1058,
     "topic_num": 23,
-    "question": "¿Qué diagnóstico corresponde? Un esquema de autenticación puede actuar como selector entre varios mecanismos.",
+    "question": "Según la fuente oficial, en el ámbito «esquema · autenticación · actuar · selector», ¿qué afirmación responde al objetivo t23-lo-039? (Referencia 51a79d89a71c)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "Un esquema de autenticación puede actuar como selector entre varios mecanismos.",
@@ -11641,7 +11641,7 @@ export const QUESTIONS = [
   {
     "id": 1059,
     "topic_num": 23,
-    "question": "¿Qué significa esta regla de seguridad? La autenticación y la autorización son etapas distintas aunque cooperen en una solicitud.",
+    "question": "Según la fuente oficial, en el ámbito «autenticación · autorización · etapas · distintas», ¿qué afirmación responde al objetivo t23-lo-040? (Referencia ce29f1b4adfe)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "Una regla que desactiva toda autorización.",
@@ -11652,7 +11652,7 @@ export const QUESTIONS = [
   {
     "id": 1060,
     "topic_num": 23,
-    "question": "¿Cuál es la consecuencia práctica? Una política nombrada agrupa requisitos que se aplican mediante su nombre.",
+    "question": "Según la fuente oficial, en el ámbito «política · nombrada · agrupa · requisitos», ¿qué afirmación responde al objetivo t23-lo-041? (Referencia 1afd9573c087)",
     "option_a": "Una política nombrada agrupa requisitos que se aplican mediante su nombre.",
     "option_b": "Una migración de base de datos sin relación.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -11663,7 +11663,7 @@ export const QUESTIONS = [
   {
     "id": 1061,
     "topic_num": 23,
-    "question": "¿Cómo debe interpretarse este comportamiento? RequireAuthenticatedUser añade a una política el requisito de identidad autenticada.",
+    "question": "Según la fuente oficial, en el ámbito «RequireAuthenticatedUser · añade · política · requisito», ¿qué afirmación responde al objetivo t23-lo-042? (Referencia 327f14793345)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "RequireAuthenticatedUser añade a una política el requisito de identidad autenticada.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -11674,7 +11674,7 @@ export const QUESTIONS = [
   {
     "id": 1062,
     "topic_num": 23,
-    "question": "¿Qué describe correctamente la documentación? RequireClaim añade a una política un requisito basado en la presencia de un claim.",
+    "question": "Según la fuente oficial, en el ámbito «RequireClaim · añade · política · requisito», ¿qué afirmación responde al objetivo t23-lo-043? (Referencia 5c78b841bfe0)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "RequireClaim añade a una política un requisito basado en la presencia de un claim.",
@@ -11685,7 +11685,7 @@ export const QUESTIONS = [
   {
     "id": 1063,
     "topic_num": 23,
-    "question": "¿Qué debe comprobar el desarrollador? Una política con varios requisitos debe satisfacer los requisitos que la componen.",
+    "question": "Según la fuente oficial, en el ámbito «política · varios · requisitos · debe», ¿qué afirmación responde al objetivo t23-lo-044? (Referencia a55495d3f9d8)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "Una regla que desactiva toda autorización.",
@@ -11696,7 +11696,7 @@ export const QUESTIONS = [
   {
     "id": 1064,
     "topic_num": 23,
-    "question": "¿Qué opción es válida en este escenario? Un authorization handler evalúa uno o varios requisitos de una política.",
+    "question": "Según la fuente oficial, en el ámbito «authorization · handler · evalúa · varios», ¿qué afirmación responde al objetivo t23-lo-045? (Referencia 1234622b3dff)",
     "option_a": "Un authorization handler evalúa uno o varios requisitos de una política.",
     "option_b": "Una migración de base de datos sin relación.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -11707,7 +11707,7 @@ export const QUESTIONS = [
   {
     "id": 1065,
     "topic_num": 23,
-    "question": "¿Qué relación expresa este enunciado? AuthorizationHandlerContext aporta al handler el usuario, el recurso y los requisitos.",
+    "question": "Según la fuente oficial, en el ámbito «AuthorizationHandlerContext · aporta · handler · usuario», ¿qué afirmación responde al objetivo t23-lo-046? (Referencia 6e51165a59cc)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "AuthorizationHandlerContext aporta al handler el usuario, el recurso y los requisitos.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -11718,7 +11718,7 @@ export const QUESTIONS = [
   {
     "id": 1066,
     "topic_num": 23,
-    "question": "¿Qué efecto tiene esta característica? Succeed marca un requisito como satisfecho durante la evaluación del handler.",
+    "question": "Según la fuente oficial, en el ámbito «Succeed · marca · requisito · satisfecho», ¿qué afirmación responde al objetivo t23-lo-047? (Referencia f2d31d601fa2)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "Succeed marca un requisito como satisfecho durante la evaluación del handler.",
@@ -11729,7 +11729,7 @@ export const QUESTIONS = [
   {
     "id": 1067,
     "topic_num": 23,
-    "question": "¿Cómo se aplica esta regla? Fail permite indicar que la evaluación de autorización ha fallado.",
+    "question": "Según la fuente oficial, en el ámbito «Fail · permite · indicar · evaluación», ¿qué afirmación responde al objetivo t23-lo-048? (Referencia e2b9f4359fd2)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "Una regla que desactiva toda autorización.",
@@ -11740,7 +11740,7 @@ export const QUESTIONS = [
   {
     "id": 1068,
     "topic_num": 23,
-    "question": "¿Qué diagnóstico corresponde? La autorización basada en recursos recibe el recurso como parte de la evaluación.",
+    "question": "Según la fuente oficial, en el ámbito «autorización · basada · recursos · recibe», ¿qué afirmación responde al objetivo t23-lo-049? (Referencia 4ad25e4f2fda)",
     "option_a": "La autorización basada en recursos recibe el recurso como parte de la evaluación.",
     "option_b": "Una migración de base de datos sin relación.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -11751,7 +11751,7 @@ export const QUESTIONS = [
   {
     "id": 1069,
     "topic_num": 23,
-    "question": "¿Qué significa esta regla de seguridad? IAuthorizationService ofrece una API para comprobar autorización imperativa.",
+    "question": "Según la fuente oficial, en el ámbito «IAuthorizationService · ofrece · comprobar · autorización», ¿qué afirmación responde al objetivo t23-lo-050? (Referencia 0c86f2e5512c)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "IAuthorizationService ofrece una API para comprobar autorización imperativa.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -11762,7 +11762,7 @@ export const QUESTIONS = [
   {
     "id": 1070,
     "topic_num": 23,
-    "question": "¿Cuál es la consecuencia práctica? AuthorizeAsync puede evaluar una política para un usuario y, opcionalmente, un recurso.",
+    "question": "Según la fuente oficial, en el ámbito «AuthorizeAsync · evaluar · política · usuario», ¿qué afirmación responde al objetivo t23-lo-051? (Referencia 42af8a83a040)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "AuthorizeAsync puede evaluar una política para un usuario y, opcionalmente, un recurso.",
@@ -11773,7 +11773,7 @@ export const QUESTIONS = [
   {
     "id": 1071,
     "topic_num": 23,
-    "question": "¿Cómo debe interpretarse este comportamiento? La autorización imperativa es útil cuando el recurso se ha cargado antes de decidir el acceso.",
+    "question": "Según la fuente oficial, en el ámbito «autorización · imperativa · útil · cuando», ¿qué afirmación responde al objetivo t23-lo-052? (Referencia 855677831f25)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "Una regla que desactiva toda autorización.",
@@ -11784,7 +11784,7 @@ export const QUESTIONS = [
   {
     "id": 1072,
     "topic_num": 23,
-    "question": "¿Qué describe correctamente la documentación? Una fallback policy puede aplicarse cuando un endpoint no declara otra política.",
+    "question": "Según la fuente oficial, en el ámbito «fallback · policy · aplicarse · cuando», ¿qué afirmación responde al objetivo t23-lo-053? (Referencia 6339ee826104)",
     "option_a": "Una fallback policy puede aplicarse cuando un endpoint no declara otra política.",
     "option_b": "Una migración de base de datos sin relación.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -11795,7 +11795,7 @@ export const QUESTIONS = [
   {
     "id": 1073,
     "topic_num": 23,
-    "question": "¿Qué debe comprobar el desarrollador? La default policy es la política usada por Authorize sin nombre de política explícito.",
+    "question": "Según la fuente oficial, en el ámbito «default · policy · política · usada», ¿qué afirmación responde al objetivo t23-lo-054? (Referencia 718d9ff47b33)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "La default policy es la política usada por Authorize sin nombre de política explícito.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -11806,7 +11806,7 @@ export const QUESTIONS = [
   {
     "id": 1074,
     "topic_num": 23,
-    "question": "¿Qué opción es válida en este escenario? Un policy provider puede resolver políticas nombradas para el sistema de autorización.",
+    "question": "Según la fuente oficial, en el ámbito «policy · provider · resolver · políticas», ¿qué afirmación responde al objetivo t23-lo-055? (Referencia 78bf7c932d0b)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "Un policy provider puede resolver políticas nombradas para el sistema de autorización.",
@@ -11817,7 +11817,7 @@ export const QUESTIONS = [
   {
     "id": 1075,
     "topic_num": 23,
-    "question": "¿Qué relación expresa este enunciado? RequireRole añade a una política un requisito de pertenencia a roles.",
+    "question": "Según la fuente oficial, en el ámbito «RequireRole · añade · política · requisito», ¿qué afirmación responde al objetivo t23-lo-056? (Referencia 2a4f7b281bfb)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "Una regla que desactiva toda autorización.",
@@ -11828,7 +11828,7 @@ export const QUESTIONS = [
   {
     "id": 1076,
     "topic_num": 23,
-    "question": "¿Qué efecto tiene esta característica? La comprobación de roles depende del RoleClaimType configurado para la identidad.",
+    "question": "Según la fuente oficial, en el ámbito «comprobación · roles · depende · RoleClaimType», ¿qué afirmación responde al objetivo t23-lo-057? (Referencia d1ce311aeee1)",
     "option_a": "La comprobación de roles depende del RoleClaimType configurado para la identidad.",
     "option_b": "Una migración de base de datos sin relación.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -11839,7 +11839,7 @@ export const QUESTIONS = [
   {
     "id": 1077,
     "topic_num": 23,
-    "question": "¿Cómo se aplica esta regla? La pertenencia a roles puede proceder de claims emitidos por el sistema de identidad.",
+    "question": "Según la fuente oficial, en el ámbito «pertenencia · roles · proceder · claims», ¿qué afirmación responde al objetivo t23-lo-058? (Referencia 00c813a5ec9a)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "La pertenencia a roles puede proceder de claims emitidos por el sistema de identidad.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -11850,7 +11850,7 @@ export const QUESTIONS = [
   {
     "id": 1078,
     "topic_num": 23,
-    "question": "¿Qué diagnóstico corresponde? Roles alternativos en un mismo atributo permiten satisfacer la condición con cualquiera de ellos.",
+    "question": "Según la fuente oficial, en el ámbito «Roles · alternativos · mismo · atributo», ¿qué afirmación responde al objetivo t23-lo-059? (Referencia d983227ae781)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "Roles alternativos en un mismo atributo permiten satisfacer la condición con cualquiera de ellos.",
@@ -11861,7 +11861,7 @@ export const QUESTIONS = [
   {
     "id": 1079,
     "topic_num": 23,
-    "question": "¿Qué significa esta regla de seguridad? Atributos de roles separados expresan requisitos acumulativos.",
+    "question": "Según la fuente oficial, en el ámbito «Atributos · roles · separados · expresan», ¿qué afirmación responde al objetivo t23-lo-060? (Referencia 236f1b490ea2)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "Una regla que desactiva toda autorización.",
@@ -11872,7 +11872,7 @@ export const QUESTIONS = [
   {
     "id": 1080,
     "topic_num": 23,
-    "question": "¿Cuál es la consecuencia práctica? El pipeline de filtros MVC ejecuta filtros en etapas alrededor de la acción.",
+    "question": "Según la fuente oficial, en el ámbito «pipeline · filtros · ejecuta · etapas», ¿qué afirmación responde al objetivo t23-lo-061? (Referencia 49c4531419e8)",
     "option_a": "El pipeline de filtros MVC ejecuta filtros en etapas alrededor de la acción.",
     "option_b": "Una migración de base de datos sin relación.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -11883,7 +11883,7 @@ export const QUESTIONS = [
   {
     "id": 1081,
     "topic_num": 23,
-    "question": "¿Cómo debe interpretarse este comportamiento? Los filtros de recursos se ejecutan cerca del comienzo del pipeline MVC.",
+    "question": "Según la fuente oficial, en el ámbito «filtros · recursos · ejecutan · cerca», ¿qué afirmación responde al objetivo t23-lo-062? (Referencia 9d682c4e47d8)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Los filtros de recursos se ejecutan cerca del comienzo del pipeline MVC.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -11894,7 +11894,7 @@ export const QUESTIONS = [
   {
     "id": 1082,
     "topic_num": 23,
-    "question": "¿Qué describe correctamente la documentación? Los filtros de autorización se ejecutan primero entre los filtros MVC.",
+    "question": "Según la fuente oficial, en el ámbito «filtros · autorización · ejecutan · primero», ¿qué afirmación responde al objetivo t23-lo-063? (Referencia a71049526fc8)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "Los filtros de autorización se ejecutan primero entre los filtros MVC.",
@@ -11905,7 +11905,7 @@ export const QUESTIONS = [
   {
     "id": 1083,
     "topic_num": 23,
-    "question": "¿Qué debe comprobar el desarrollador? Los filtros de acción se ejecutan alrededor de la invocación de la acción.",
+    "question": "Según la fuente oficial, en el ámbito «filtros · acción · ejecutan · alrededor», ¿qué afirmación responde al objetivo t23-lo-064? (Referencia 6f9ed4742369)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "Una regla que desactiva toda autorización.",
@@ -11916,7 +11916,7 @@ export const QUESTIONS = [
   {
     "id": 1084,
     "topic_num": 23,
-    "question": "¿Qué opción es válida en este escenario? Los filtros de excepción se ocupan de excepciones producidas durante partes del pipeline MVC.",
+    "question": "Según la fuente oficial, en el ámbito «filtros · excepción · ocupan · excepciones», ¿qué afirmación responde al objetivo t23-lo-065? (Referencia db81b244a890)",
     "option_a": "Los filtros de excepción se ocupan de excepciones producidas durante partes del pipeline MVC.",
     "option_b": "Una migración de base de datos sin relación.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -11927,7 +11927,7 @@ export const QUESTIONS = [
   {
     "id": 1085,
     "topic_num": 23,
-    "question": "¿Qué relación expresa este enunciado? Los filtros de resultado se ejecutan alrededor de la ejecución del resultado de la acción.",
+    "question": "Según la fuente oficial, en el ámbito «filtros · resultado · ejecutan · alrededor», ¿qué afirmación responde al objetivo t23-lo-066? (Referencia 7c6459e7f890)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Los filtros de resultado se ejecutan alrededor de la ejecución del resultado de la acción.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -11938,7 +11938,7 @@ export const QUESTIONS = [
   {
     "id": 1086,
     "topic_num": 23,
-    "question": "¿Qué efecto tiene esta característica? IAsyncActionFilter permite envolver de forma asíncrona la ejecución de una acción.",
+    "question": "Según la fuente oficial, en el ámbito «IAsyncActionFilter · permite · envolver · forma», ¿qué afirmación responde al objetivo t23-lo-067? (Referencia 6d1ce374d9d5)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "IAsyncActionFilter permite envolver de forma asíncrona la ejecución de una acción.",
@@ -11949,7 +11949,7 @@ export const QUESTIONS = [
   {
     "id": 1087,
     "topic_num": 23,
-    "question": "¿Cómo se aplica esta regla? El orden de filtros depende de su alcance y del orden configurado.",
+    "question": "Según la fuente oficial, en el ámbito «orden · filtros · depende · alcance», ¿qué afirmación responde al objetivo t23-lo-068? (Referencia 4265f3695402)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "Una regla que desactiva toda autorización.",
@@ -11960,7 +11960,7 @@ export const QUESTIONS = [
   {
     "id": 1088,
     "topic_num": 23,
-    "question": "¿Qué diagnóstico corresponde? Un filtro global puede aplicarse a todas las acciones MVC del alcance de la colección.",
+    "question": "Según la fuente oficial, en el ámbito «filtro · global · aplicarse · todas», ¿qué afirmación responde al objetivo t23-lo-069? (Referencia 8a3c1da445c9)",
     "option_a": "Un filtro global puede aplicarse a todas las acciones MVC del alcance de la colección.",
     "option_b": "Una migración de base de datos sin relación.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -11971,7 +11971,7 @@ export const QUESTIONS = [
   {
     "id": 1089,
     "topic_num": 23,
-    "question": "¿Qué significa esta regla de seguridad? TypeFilterAttribute permite crear un filtro y resolver sus dependencias desde servicios.",
+    "question": "Según la fuente oficial, en el ámbito «TypeFilterAttribute · permite · crear · filtro», ¿qué afirmación responde al objetivo t23-lo-070? (Referencia 293b2b28a43f)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "TypeFilterAttribute permite crear un filtro y resolver sus dependencias desde servicios.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -11982,7 +11982,7 @@ export const QUESTIONS = [
   {
     "id": 1090,
     "topic_num": 23,
-    "question": "¿Cuál es la consecuencia práctica? ServiceFilterAttribute obtiene una instancia de filtro desde el contenedor de servicios.",
+    "question": "Según la fuente oficial, en el ámbito «ServiceFilterAttribute · obtiene · instancia · filtro», ¿qué afirmación responde al objetivo t23-lo-071? (Referencia 417d8f06a333)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "ServiceFilterAttribute obtiene una instancia de filtro desde el contenedor de servicios.",
@@ -11993,7 +11993,7 @@ export const QUESTIONS = [
   {
     "id": 1091,
     "topic_num": 23,
-    "question": "¿Cómo debe interpretarse este comportamiento? AllowAnonymous evita que la autorización se aplique a un endpoint marcado como anónimo.",
+    "question": "Según la fuente oficial, en el ámbito «AllowAnonymous · evita · autorización · aplique», ¿qué afirmación responde al objetivo t23-lo-072? (Referencia 27a3caee80c6)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "Una regla que desactiva toda autorización.",
@@ -12004,7 +12004,7 @@ export const QUESTIONS = [
   {
     "id": 1092,
     "topic_num": 23,
-    "question": "¿Qué describe correctamente la documentación? Un filtro de autorización puede cortocircuitar el pipeline cuando el acceso falla.",
+    "question": "Según la fuente oficial, en el ámbito «filtro · autorización · cortocircuitar · pipeline», ¿qué afirmación responde al objetivo t23-lo-073? (Referencia 8e451232174d)",
     "option_a": "Un filtro de autorización puede cortocircuitar el pipeline cuando el acceso falla.",
     "option_b": "Una migración de base de datos sin relación.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -12015,7 +12015,7 @@ export const QUESTIONS = [
   {
     "id": 1093,
     "topic_num": 23,
-    "question": "¿Qué debe comprobar el desarrollador? La autorización de endpoints y los filtros MVC son mecanismos relacionados pero situados en capas distintas.",
+    "question": "Según la fuente oficial, en el ámbito «autorización · endpoints · filtros · mecanismos», ¿qué afirmación responde al objetivo t23-lo-074? (Referencia 3b21b9d51399)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "La autorización de endpoints y los filtros MVC son mecanismos relacionados pero situados en capas distintas.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -12026,7 +12026,7 @@ export const QUESTIONS = [
   {
     "id": 1094,
     "topic_num": 23,
-    "question": "¿Qué opción es válida en este escenario? Los filtros pueden declararse como atributos en un controlador o una acción.",
+    "question": "Según la fuente oficial, en el ámbito «filtros · pueden · declararse · atributos», ¿qué afirmación responde al objetivo t23-lo-075? (Referencia ed56c3fafd3a)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "Los filtros pueden declararse como atributos en un controlador o una acción.",
@@ -12037,7 +12037,7 @@ export const QUESTIONS = [
   {
     "id": 1095,
     "topic_num": 23,
-    "question": "¿Qué relación expresa este enunciado? Un filtro puede registrarse globalmente en MVC o aplicarse a un controlador concreto.",
+    "question": "Según la fuente oficial, en el ámbito «filtro · registrarse · globalmente · aplicarse», ¿qué afirmación responde al objetivo t23-lo-076? (Referencia 87e7d64f5271)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "Una regla que desactiva toda autorización.",
@@ -12048,7 +12048,7 @@ export const QUESTIONS = [
   {
     "id": 1096,
     "topic_num": 23,
-    "question": "¿Qué efecto tiene esta característica? La ejecución del resultado tiene una fase previa y otra posterior representadas por contextos de resultado.",
+    "question": "Según la fuente oficial, en el ámbito «ejecución · resultado · tiene · fase», ¿qué afirmación responde al objetivo t23-lo-077? (Referencia 6dfd35d4fa0c)",
     "option_a": "La ejecución del resultado tiene una fase previa y otra posterior representadas por contextos de resultado.",
     "option_b": "Una migración de base de datos sin relación.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -12059,7 +12059,7 @@ export const QUESTIONS = [
   {
     "id": 1097,
     "topic_num": 23,
-    "question": "¿Cómo se aplica esta regla? Los filtros de recursos pueden evitar que se ejecute el resto del pipeline MVC.",
+    "question": "Según la fuente oficial, en el ámbito «filtros · recursos · pueden · evitar», ¿qué afirmación responde al objetivo t23-lo-078? (Referencia 86c4e110599d)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Los filtros de recursos pueden evitar que se ejecute el resto del pipeline MVC.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -12070,7 +12070,7 @@ export const QUESTIONS = [
   {
     "id": 1098,
     "topic_num": 23,
-    "question": "¿Qué diagnóstico corresponde? Un filtro de autorización no debe sustituir la autenticación que establece el usuario.",
+    "question": "Según la fuente oficial, en el ámbito «filtro · autorización · debe · sustituir», ¿qué afirmación responde al objetivo t23-lo-079? (Referencia 3cf818d1b111)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "Un filtro de autorización no debe sustituir la autenticación que establece el usuario.",
@@ -12081,7 +12081,7 @@ export const QUESTIONS = [
   {
     "id": 1099,
     "topic_num": 23,
-    "question": "¿Qué significa esta regla de seguridad? La autorización basada en políticas permite combinar claims, roles y requisitos personalizados.",
+    "question": "Según la fuente oficial, en el ámbito «autorización · basada · políticas · permite», ¿qué afirmación responde al objetivo t23-lo-080? (Referencia 1a28ae5c2004)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "Una regla que desactiva toda autorización.",
@@ -12092,7 +12092,7 @@ export const QUESTIONS = [
   {
     "id": 1100,
     "topic_num": 23,
-    "question": "¿Cuál es la consecuencia práctica? Un requisito de autorización es una unidad de datos que un handler debe evaluar.",
+    "question": "Según la fuente oficial, en el ámbito «requisito · autorización · unidad · datos», ¿qué afirmación responde al objetivo t23-lo-081? (Referencia c8c572481c74)",
     "option_a": "Un requisito de autorización es una unidad de datos que un handler debe evaluar.",
     "option_b": "Una migración de base de datos sin relación.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -12103,7 +12103,7 @@ export const QUESTIONS = [
   {
     "id": 1101,
     "topic_num": 23,
-    "question": "¿Cómo debe interpretarse este comportamiento? Un handler puede gestionar varios requisitos relacionados.",
+    "question": "Según la fuente oficial, en el ámbito «handler · gestionar · varios · requisitos», ¿qué afirmación responde al objetivo t23-lo-082? (Referencia 2a360ed517cb)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Un handler puede gestionar varios requisitos relacionados.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -12114,7 +12114,7 @@ export const QUESTIONS = [
   {
     "id": 1102,
     "topic_num": 23,
-    "question": "¿Qué describe correctamente la documentación? Una política puede exigir un claim con un valor concreto.",
+    "question": "Según la fuente oficial, en el ámbito «política · exigir · claim · valor», ¿qué afirmación responde al objetivo t23-lo-083? (Referencia 336a4f55989d)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "Una política puede exigir un claim con un valor concreto.",
@@ -12125,7 +12125,7 @@ export const QUESTIONS = [
   {
     "id": 1103,
     "topic_num": 23,
-    "question": "¿Qué debe comprobar el desarrollador? Una política puede expresar una regla que no se reduce a un único rol.",
+    "question": "Según la fuente oficial, en el ámbito «política · expresar · regla · reduce», ¿qué afirmación responde al objetivo t23-lo-084? (Referencia 1e7ba67b6c09)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "Una regla que desactiva toda autorización.",
@@ -12136,7 +12136,7 @@ export const QUESTIONS = [
   {
     "id": 1104,
     "topic_num": 23,
-    "question": "¿Qué opción es válida en este escenario? La autorización basada en recursos permite decidir después de obtener el objeto protegido.",
+    "question": "Según la fuente oficial, en el ámbito «autorización · basada · recursos · permite», ¿qué afirmación responde al objetivo t23-lo-085? (Referencia 286848b74277)",
     "option_a": "La autorización basada en recursos permite decidir después de obtener el objeto protegido.",
     "option_b": "Una migración de base de datos sin relación.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -12147,7 +12147,7 @@ export const QUESTIONS = [
   {
     "id": 1105,
     "topic_num": 23,
-    "question": "¿Qué relación expresa este enunciado? El recurso enviado a AuthorizeAsync puede ser un objeto de dominio.",
+    "question": "Según la fuente oficial, en el ámbito «recurso · enviado · AuthorizeAsync · objeto», ¿qué afirmación responde al objetivo t23-lo-086? (Referencia d4d081f1559f)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "El recurso enviado a AuthorizeAsync puede ser un objeto de dominio.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -12158,7 +12158,7 @@ export const QUESTIONS = [
   {
     "id": 1106,
     "topic_num": 23,
-    "question": "¿Qué efecto tiene esta característica? El resultado de autorización permite distinguir éxito de challenge y forbid.",
+    "question": "Según la fuente oficial, en el ámbito «resultado · autorización · permite · distinguir», ¿qué afirmación responde al objetivo t23-lo-087? (Referencia 19919f22d9d1)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "El resultado de autorización permite distinguir éxito de challenge y forbid.",
@@ -12169,7 +12169,7 @@ export const QUESTIONS = [
   {
     "id": 1107,
     "topic_num": 23,
-    "question": "¿Cómo se aplica esta regla? Una solicitud sin identidad suele provocar challenge en vez de forbid.",
+    "question": "Según la fuente oficial, en el ámbito «solicitud · identidad · suele · provocar», ¿qué afirmación responde al objetivo t23-lo-088? (Referencia bead409a13a2)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "Una regla que desactiva toda autorización.",
@@ -12180,7 +12180,7 @@ export const QUESTIONS = [
   {
     "id": 1108,
     "topic_num": 23,
-    "question": "¿Qué diagnóstico corresponde? Una identidad válida sin el requisito de política suele provocar forbid.",
+    "question": "Según la fuente oficial, en el ámbito «identidad · válida · requisito · política», ¿qué afirmación responde al objetivo t23-lo-089? (Referencia 5de3bc854516)",
     "option_a": "Una identidad válida sin el requisito de política suele provocar forbid.",
     "option_b": "Una migración de base de datos sin relación.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -12191,7 +12191,7 @@ export const QUESTIONS = [
   {
     "id": 1109,
     "topic_num": 23,
-    "question": "¿Qué significa esta regla de seguridad? OnActionExecuting permite ejecutar lógica antes de invocar la acción.",
+    "question": "Según la fuente oficial, en el ámbito «OnActionExecuting · permite · ejecutar · lógica», ¿qué afirmación responde al objetivo t23-lo-090? (Referencia 561b97b83da8)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "OnActionExecuting permite ejecutar lógica antes de invocar la acción.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -12202,7 +12202,7 @@ export const QUESTIONS = [
   {
     "id": 1110,
     "topic_num": 23,
-    "question": "¿Cuál es la consecuencia práctica? OnActionExecuted permite ejecutar lógica después de la acción.",
+    "question": "Según la fuente oficial, en el ámbito «OnActionExecuted · permite · ejecutar · lógica», ¿qué afirmación responde al objetivo t23-lo-091? (Referencia 190059c7d5e6)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "OnActionExecuted permite ejecutar lógica después de la acción.",
@@ -12213,7 +12213,7 @@ export const QUESTIONS = [
   {
     "id": 1111,
     "topic_num": 23,
-    "question": "¿Cómo debe interpretarse este comportamiento? OnResultExecuting permite ejecutar lógica antes de ejecutar el resultado.",
+    "question": "Según la fuente oficial, en el ámbito «OnResultExecuting · permite · ejecutar · lógica», ¿qué afirmación responde al objetivo t23-lo-092? (Referencia 8722f166f9a3)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "Una regla que desactiva toda autorización.",
@@ -12224,7 +12224,7 @@ export const QUESTIONS = [
   {
     "id": 1112,
     "topic_num": 23,
-    "question": "¿Qué describe correctamente la documentación? OnResultExecuted permite ejecutar lógica después de ejecutar el resultado.",
+    "question": "Según la fuente oficial, en el ámbito «OnResultExecuted · permite · ejecutar · lógica», ¿qué afirmación responde al objetivo t23-lo-093? (Referencia 2e9cacaa7137)",
     "option_a": "OnResultExecuted permite ejecutar lógica después de ejecutar el resultado.",
     "option_b": "Una migración de base de datos sin relación.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -12235,7 +12235,7 @@ export const QUESTIONS = [
   {
     "id": 1113,
     "topic_num": 23,
-    "question": "¿Qué debe comprobar el desarrollador? Un filtro de acción puede establecer un resultado para cortocircuitar la acción.",
+    "question": "Según la fuente oficial, en el ámbito «filtro · acción · establecer · resultado», ¿qué afirmación responde al objetivo t23-lo-094? (Referencia 8ed3e5bd0ca5)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Un filtro de acción puede establecer un resultado para cortocircuitar la acción.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -12246,7 +12246,7 @@ export const QUESTIONS = [
   {
     "id": 1114,
     "topic_num": 23,
-    "question": "¿Qué opción es válida en este escenario? Los filtros síncronos y asíncronos ofrecen variantes de la misma preocupación de pipeline.",
+    "question": "Según la fuente oficial, en el ámbito «filtros · síncronos · asíncronos · ofrecen», ¿qué afirmación responde al objetivo t23-lo-095? (Referencia a9b39b3ef031)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "Los filtros síncronos y asíncronos ofrecen variantes de la misma preocupación de pipeline.",
@@ -12257,7 +12257,7 @@ export const QUESTIONS = [
   {
     "id": 1115,
     "topic_num": 23,
-    "question": "¿Qué relación expresa este enunciado? El alcance global, de controlador y de acción forma parte del orden de ejecución de filtros.",
+    "question": "Según la fuente oficial, en el ámbito «alcance · global · controlador · acción», ¿qué afirmación responde al objetivo t23-lo-096? (Referencia 90dc82b7911f)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "Una regla que desactiva toda autorización.",
@@ -12268,7 +12268,7 @@ export const QUESTIONS = [
   {
     "id": 1116,
     "topic_num": 23,
-    "question": "¿Qué efecto tiene esta característica? Un filtro registrado como servicio puede recibir dependencias mediante inyección.",
+    "question": "Según la fuente oficial, en el ámbito «filtro · registrado · servicio · recibir», ¿qué afirmación responde al objetivo t23-lo-097? (Referencia e6ddb694e0d1)",
     "option_a": "Un filtro registrado como servicio puede recibir dependencias mediante inyección.",
     "option_b": "Una migración de base de datos sin relación.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -12279,7 +12279,7 @@ export const QUESTIONS = [
   {
     "id": 1117,
     "topic_num": 23,
-    "question": "¿Cómo se aplica esta regla? La documentación distingue filtros de autorización, recurso, acción, excepción y resultado.",
+    "question": "Según la fuente oficial, en el ámbito «documentación · distingue · filtros · autorización», ¿qué afirmación responde al objetivo t23-lo-098? (Referencia bf4eca528918)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "La documentación distingue filtros de autorización, recurso, acción, excepción y resultado.",
     "option_c": "Una vista Razor que nunca participa en una API.",
@@ -12290,7 +12290,7 @@ export const QUESTIONS = [
   {
     "id": 1118,
     "topic_num": 23,
-    "question": "¿Qué diagnóstico corresponde? La política aplicada por Authorize puede ser evaluada por middleware o por integración MVC.",
+    "question": "Según la fuente oficial, en el ámbito «política · aplicada · Authorize · evaluada», ¿qué afirmación responde al objetivo t23-lo-099? (Referencia eb37aee019f4)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "La política aplicada por Authorize puede ser evaluada por middleware o por integración MVC.",
@@ -12301,7 +12301,7 @@ export const QUESTIONS = [
   {
     "id": 1119,
     "topic_num": 23,
-    "question": "¿Qué significa esta regla de seguridad? El nombre de una política en Authorize debe coincidir con la política registrada.",
+    "question": "Según la fuente oficial, en el ámbito «nombre · política · Authorize · debe», ¿qué afirmación responde al objetivo t23-lo-100? (Referencia 1e61ddb53e7a)",
     "option_a": "Una migración de base de datos sin relación.",
     "option_b": "Una vista Razor que nunca participa en una API.",
     "option_c": "Una regla que desactiva toda autorización.",
@@ -12312,7 +12312,7 @@ export const QUESTIONS = [
   {
     "id": 1120,
     "topic_num": 25,
-    "question": "¿Qué afirmación es correcta? OData expone datos mediante un modelo conceptual y un protocolo basado en recursos HTTP.",
+    "question": "Según la fuente oficial, en el ámbito «OData · expone · datos · mediante», ¿qué afirmación responde al objetivo t25-lo-001? (Referencia 09dc715fa719)",
     "option_a": "OData expone datos mediante un modelo conceptual y un protocolo basado en recursos HTTP.",
     "option_b": "Una operación SQL local sin relación con HTTP.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -12323,7 +12323,7 @@ export const QUESTIONS = [
   {
     "id": 1121,
     "topic_num": 25,
-    "question": "¿Cómo debe interpretarse esta regla? El documento de metadatos describe el modelo de entidad expuesto por el servicio.",
+    "question": "Según la fuente oficial, en el ámbito «documento · metadatos · describe · modelo», ¿qué afirmación responde al objetivo t25-lo-002? (Referencia 312facfd5362)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "El documento de metadatos describe el modelo de entidad expuesto por el servicio.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -12334,7 +12334,7 @@ export const QUESTIONS = [
   {
     "id": 1122,
     "topic_num": 25,
-    "question": "¿Qué efecto tiene esta característica? La URL raíz del servicio identifica el punto de entrada del servicio OData.",
+    "question": "Según la fuente oficial, en el ámbito «raíz · servicio · identifica · punto», ¿qué afirmación responde al objetivo t25-lo-003? (Referencia e0bdeeacd65c)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "La URL raíz del servicio identifica el punto de entrada del servicio OData.",
@@ -12345,7 +12345,7 @@ export const QUESTIONS = [
   {
     "id": 1123,
     "topic_num": 25,
-    "question": "¿Qué debe saber el cliente OData? La ruta $metadata solicita el documento de metadatos del servicio.",
+    "question": "Según la fuente oficial, en el ámbito «ruta · metadata · solicita · documento», ¿qué afirmación responde al objetivo t25-lo-004? (Referencia dab691b31f40)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Una regla que desactiva el modelo y sus metadatos.",
@@ -12356,7 +12356,7 @@ export const QUESTIONS = [
   {
     "id": 1124,
     "topic_num": 25,
-    "question": "¿Cuál es la aplicación práctica? Un entity type define la estructura de una entidad mediante propiedades y navegación.",
+    "question": "Según la fuente oficial, en el ámbito «entity · type · define · estructura», ¿qué afirmación responde al objetivo t25-lo-005? (Referencia e07e41a4f143)",
     "option_a": "Un entity type define la estructura de una entidad mediante propiedades y navegación.",
     "option_b": "Una operación SQL local sin relación con HTTP.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -12367,7 +12367,7 @@ export const QUESTIONS = [
   {
     "id": 1125,
     "topic_num": 25,
-    "question": "¿Qué comportamiento describe el estándar? Un entity set es una colección de entidades del mismo tipo o de tipos derivados.",
+    "question": "Según la fuente oficial, en el ámbito «entity · colección · entidades · mismo», ¿qué afirmación responde al objetivo t25-lo-006? (Referencia f1be4068509c)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Un entity set es una colección de entidades del mismo tipo o de tipos derivados.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -12378,7 +12378,7 @@ export const QUESTIONS = [
   {
     "id": 1126,
     "topic_num": 25,
-    "question": "¿Qué opción explica correctamente el caso? Un singleton identifica una entidad única en el contenedor del servicio.",
+    "question": "Según la fuente oficial, en el ámbito «singleton · identifica · entidad · única», ¿qué afirmación responde al objetivo t25-lo-007? (Referencia 61b8e3456924)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Un singleton identifica una entidad única en el contenedor del servicio.",
@@ -12389,7 +12389,7 @@ export const QUESTIONS = [
   {
     "id": 1127,
     "topic_num": 25,
-    "question": "¿Qué relación es válida? Un complex type agrupa propiedades sin tener identidad propia como una entidad.",
+    "question": "Según la fuente oficial, en el ámbito «complex · type · agrupa · propiedades», ¿qué afirmación responde al objetivo t25-lo-008? (Referencia 834fe917c944)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Una regla que desactiva el modelo y sus metadatos.",
@@ -12400,7 +12400,7 @@ export const QUESTIONS = [
   {
     "id": 1128,
     "topic_num": 25,
-    "question": "¿Cómo se diseña correctamente este endpoint? Una propiedad de navegación representa una relación con otras entidades.",
+    "question": "Según la fuente oficial, en el ámbito «propiedad · navegación · representa · relación», ¿qué afirmación responde al objetivo t25-lo-009? (Referencia a519260aa22d)",
     "option_a": "Una propiedad de navegación representa una relación con otras entidades.",
     "option_b": "Una operación SQL local sin relación con HTTP.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -12411,7 +12411,7 @@ export const QUESTIONS = [
   {
     "id": 1129,
     "topic_num": 25,
-    "question": "¿Qué diagnóstico corresponde? La clave de una entidad permite identificarla dentro de su entity set.",
+    "question": "Según la fuente oficial, en el ámbito «clave · entidad · permite · identificarla», ¿qué afirmación responde al objetivo t25-lo-010? (Referencia ca3a8ae3cd09)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "La clave de una entidad permite identificarla dentro de su entity set.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -12422,7 +12422,7 @@ export const QUESTIONS = [
   {
     "id": 1130,
     "topic_num": 25,
-    "question": "¿Qué afirmación es correcta? El contenedor de entidades agrupa entity sets, singletons y operaciones expuestas.",
+    "question": "Según la fuente oficial, en el ámbito «contenedor · entidades · agrupa · entity», ¿qué afirmación responde al objetivo t25-lo-011? (Referencia 0b8d9ecc0fa5)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "El contenedor de entidades agrupa entity sets, singletons y operaciones expuestas.",
@@ -12433,7 +12433,7 @@ export const QUESTIONS = [
   {
     "id": 1131,
     "topic_num": 25,
-    "question": "¿Cómo debe interpretarse esta regla? Una propiedad primitiva contiene un valor de un tipo primitivo del modelo.",
+    "question": "Según la fuente oficial, en el ámbito «propiedad · primitiva · contiene · valor», ¿qué afirmación responde al objetivo t25-lo-012? (Referencia 56e13588c61a)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Una regla que desactiva el modelo y sus metadatos.",
@@ -12444,7 +12444,7 @@ export const QUESTIONS = [
   {
     "id": 1132,
     "topic_num": 25,
-    "question": "¿Qué efecto tiene esta característica? Una propiedad de colección contiene cero o más valores del tipo declarado.",
+    "question": "Según la fuente oficial, en el ámbito «propiedad · colección · contiene · cero», ¿qué afirmación responde al objetivo t25-lo-013? (Referencia 52e604c22d84)",
     "option_a": "Una propiedad de colección contiene cero o más valores del tipo declarado.",
     "option_b": "Una operación SQL local sin relación con HTTP.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -12455,7 +12455,7 @@ export const QUESTIONS = [
   {
     "id": 1133,
     "topic_num": 25,
-    "question": "¿Qué debe saber el cliente OData? Un modelo OData puede declarar tipos derivados mediante herencia de entity types.",
+    "question": "Según la fuente oficial, en el ámbito «modelo · OData · declarar · tipos», ¿qué afirmación responde al objetivo t25-lo-014? (Referencia b30a6167f501)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Un modelo OData puede declarar tipos derivados mediante herencia de entity types.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -12466,7 +12466,7 @@ export const QUESTIONS = [
   {
     "id": 1134,
     "topic_num": 25,
-    "question": "¿Cuál es la aplicación práctica? Una asociación de navegación puede ser de uno a uno, uno a muchos o muchos a muchos.",
+    "question": "Según la fuente oficial, en el ámbito «asociación · navegación · muchos · muchos.», ¿qué afirmación responde al objetivo t25-lo-015? (Referencia 303413d7a1ad)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Una asociación de navegación puede ser de uno a uno, uno a muchos o muchos a muchos.",
@@ -12477,7 +12477,7 @@ export const QUESTIONS = [
   {
     "id": 1135,
     "topic_num": 25,
-    "question": "¿Qué comportamiento describe el estándar? La ruta de recursos identifica el recurso solicitado después de la raíz del servicio.",
+    "question": "Según la fuente oficial, en el ámbito «ruta · recursos · identifica · recurso», ¿qué afirmación responde al objetivo t25-lo-016? (Referencia d5f5fe1882c4)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Una regla que desactiva el modelo y sus metadatos.",
@@ -12488,7 +12488,7 @@ export const QUESTIONS = [
   {
     "id": 1136,
     "topic_num": 25,
-    "question": "¿Qué opción explica correctamente el caso? Una clave entre paréntesis identifica una entidad concreta de un entity set.",
+    "question": "Según la fuente oficial, en el ámbito «clave · entre · paréntesis · identifica», ¿qué afirmación responde al objetivo t25-lo-017? (Referencia 436b63f8529e)",
     "option_a": "Una clave entre paréntesis identifica una entidad concreta de un entity set.",
     "option_b": "Una operación SQL local sin relación con HTTP.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -12499,7 +12499,7 @@ export const QUESTIONS = [
   {
     "id": 1137,
     "topic_num": 25,
-    "question": "¿Qué relación es válida? Una ruta de navegación permite recorrer una propiedad de navegación desde una entidad.",
+    "question": "Según la fuente oficial, en el ámbito «ruta · navegación · permite · recorrer», ¿qué afirmación responde al objetivo t25-lo-018? (Referencia 9fac82ba676b)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una ruta de navegación permite recorrer una propiedad de navegación desde una entidad.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -12510,7 +12510,7 @@ export const QUESTIONS = [
   {
     "id": 1138,
     "topic_num": 25,
-    "question": "¿Cómo se diseña correctamente este endpoint? Una ruta puede terminar en una propiedad para solicitar ese valor en lugar de toda la entidad.",
+    "question": "Según la fuente oficial, en el ámbito «ruta · terminar · propiedad · solicitar», ¿qué afirmación responde al objetivo t25-lo-019? (Referencia 48e289a63218)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Una ruta puede terminar en una propiedad para solicitar ese valor en lugar de toda la entidad.",
@@ -12521,7 +12521,7 @@ export const QUESTIONS = [
   {
     "id": 1139,
     "topic_num": 25,
-    "question": "¿Qué diagnóstico corresponde? Una ruta de colección puede dirigirse a un elemento concreto mediante un índice o clave según el recurso.",
+    "question": "Según la fuente oficial, en el ámbito «ruta · colección · dirigirse · elemento», ¿qué afirmación responde al objetivo t25-lo-020? (Referencia 53c06d763b54)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Una regla que desactiva el modelo y sus metadatos.",
@@ -12532,7 +12532,7 @@ export const QUESTIONS = [
   {
     "id": 1140,
     "topic_num": 25,
-    "question": "¿Qué afirmación es correcta? Los query options modifican la representación o el conjunto de recursos solicitado.",
+    "question": "Según la fuente oficial, en el ámbito «query · options · modifican · representación», ¿qué afirmación responde al objetivo t25-lo-021? (Referencia b16e80cecb55)",
     "option_a": "Los query options modifican la representación o el conjunto de recursos solicitado.",
     "option_b": "Una operación SQL local sin relación con HTTP.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -12543,7 +12543,7 @@ export const QUESTIONS = [
   {
     "id": 1141,
     "topic_num": 25,
-    "question": "¿Cómo debe interpretarse esta regla? $filter restringe los recursos según una expresión booleana.",
+    "question": "Según la fuente oficial, en el ámbito «filter · restringe · recursos · según», ¿qué afirmación responde al objetivo t25-lo-022? (Referencia d27889f16eb9)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "$filter restringe los recursos según una expresión booleana.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -12554,7 +12554,7 @@ export const QUESTIONS = [
   {
     "id": 1142,
     "topic_num": 25,
-    "question": "¿Qué efecto tiene esta característica? $select limita las propiedades incluidas en la respuesta.",
+    "question": "Según la fuente oficial, en el ámbito «select · limita · propiedades · incluidas», ¿qué afirmación responde al objetivo t25-lo-023? (Referencia b641a09ca31d)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "$select limita las propiedades incluidas en la respuesta.",
@@ -12565,7 +12565,7 @@ export const QUESTIONS = [
   {
     "id": 1143,
     "topic_num": 25,
-    "question": "¿Qué debe saber el cliente OData? $expand incluye recursos relacionados mediante propiedades de navegación.",
+    "question": "Según la fuente oficial, en el ámbito «expand · incluye · recursos · relacionados», ¿qué afirmación responde al objetivo t25-lo-024? (Referencia 486e3ffccd5a)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Una regla que desactiva el modelo y sus metadatos.",
@@ -12576,7 +12576,7 @@ export const QUESTIONS = [
   {
     "id": 1144,
     "topic_num": 25,
-    "question": "¿Cuál es la aplicación práctica? $orderby establece el orden de los recursos de una colección.",
+    "question": "Según la fuente oficial, en el ámbito «orderby · establece · orden · recursos», ¿qué afirmación responde al objetivo t25-lo-025? (Referencia ffd5486ed3d1)",
     "option_a": "$orderby establece el orden de los recursos de una colección.",
     "option_b": "Una operación SQL local sin relación con HTTP.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -12587,7 +12587,7 @@ export const QUESTIONS = [
   {
     "id": 1145,
     "topic_num": 25,
-    "question": "¿Qué comportamiento describe el estándar? $top limita el número máximo de recursos devueltos.",
+    "question": "Según la fuente oficial, en el ámbito «limita · número · máximo · recursos», ¿qué afirmación responde al objetivo t25-lo-026? (Referencia 85b5558c9c5f)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "$top limita el número máximo de recursos devueltos.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -12598,7 +12598,7 @@ export const QUESTIONS = [
   {
     "id": 1146,
     "topic_num": 25,
-    "question": "¿Qué opción explica correctamente el caso? $skip omite un número de recursos al principio de una colección.",
+    "question": "Según la fuente oficial, en el ámbito «skip · omite · número · recursos», ¿qué afirmación responde al objetivo t25-lo-027? (Referencia cda71c12bc10)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "$skip omite un número de recursos al principio de una colección.",
@@ -12609,7 +12609,7 @@ export const QUESTIONS = [
   {
     "id": 1147,
     "topic_num": 25,
-    "question": "¿Qué relación es válida? $count=true solicita información sobre el número de elementos de la colección.",
+    "question": "Según la fuente oficial, en el ámbito «count · true · solicita · información», ¿qué afirmación responde al objetivo t25-lo-028? (Referencia 91ab97bb00df)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Una regla que desactiva el modelo y sus metadatos.",
@@ -12620,7 +12620,7 @@ export const QUESTIONS = [
   {
     "id": 1148,
     "topic_num": 25,
-    "question": "¿Cómo se diseña correctamente este endpoint? $search restringe los resultados mediante una expresión de búsqueda textual.",
+    "question": "Según la fuente oficial, en el ámbito «search · restringe · resultados · mediante», ¿qué afirmación responde al objetivo t25-lo-029? (Referencia 9e3ce9a94139)",
     "option_a": "$search restringe los resultados mediante una expresión de búsqueda textual.",
     "option_b": "Una operación SQL local sin relación con HTTP.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -12631,7 +12631,7 @@ export const QUESTIONS = [
   {
     "id": 1149,
     "topic_num": 25,
-    "question": "¿Qué diagnóstico corresponde? $format solicita una representación concreta del resultado.",
+    "question": "Según la fuente oficial, en el ámbito «format · solicita · representación · concreta», ¿qué afirmación responde al objetivo t25-lo-030? (Referencia 44d0a6554c46)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "$format solicita una representación concreta del resultado.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -12642,7 +12642,7 @@ export const QUESTIONS = [
   {
     "id": 1150,
     "topic_num": 25,
-    "question": "¿Qué afirmación es correcta? Las opciones de consulta pueden combinarse cuando sus restricciones sean compatibles.",
+    "question": "Según la fuente oficial, en el ámbito «opciones · consulta · pueden · combinarse», ¿qué afirmación responde al objetivo t25-lo-031? (Referencia 497ee076e10d)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Las opciones de consulta pueden combinarse cuando sus restricciones sean compatibles.",
@@ -12653,7 +12653,7 @@ export const QUESTIONS = [
   {
     "id": 1151,
     "topic_num": 25,
-    "question": "¿Cómo debe interpretarse esta regla? El operador eq compara un valor con otro en una expresión $filter.",
+    "question": "Según la fuente oficial, en el ámbito «operador · compara · valor · otro», ¿qué afirmación responde al objetivo t25-lo-032? (Referencia f863b1ded5fc)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Una regla que desactiva el modelo y sus metadatos.",
@@ -12664,7 +12664,7 @@ export const QUESTIONS = [
   {
     "id": 1152,
     "topic_num": 25,
-    "question": "¿Qué efecto tiene esta característica? Los operadores gt, ge, lt y le permiten comparar valores ordenables.",
+    "question": "Según la fuente oficial, en el ámbito «operadores · permiten · comparar · valores», ¿qué afirmación responde al objetivo t25-lo-033? (Referencia b03328018cac)",
     "option_a": "Los operadores gt, ge, lt y le permiten comparar valores ordenables.",
     "option_b": "Una operación SQL local sin relación con HTTP.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -12675,7 +12675,7 @@ export const QUESTIONS = [
   {
     "id": 1153,
     "topic_num": 25,
-    "question": "¿Qué debe saber el cliente OData? Una expresión $filter puede combinar condiciones con operadores lógicos.",
+    "question": "Según la fuente oficial, en el ámbito «expresión · filter · combinar · condiciones», ¿qué afirmación responde al objetivo t25-lo-034? (Referencia 8de98d4001b5)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una expresión $filter puede combinar condiciones con operadores lógicos.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -12686,7 +12686,7 @@ export const QUESTIONS = [
   {
     "id": 1154,
     "topic_num": 25,
-    "question": "¿Cuál es la aplicación práctica? Una expresión $orderby puede especificar asc o desc para la dirección del orden.",
+    "question": "Según la fuente oficial, en el ámbito «expresión · orderby · especificar · desc», ¿qué afirmación responde al objetivo t25-lo-035? (Referencia c9c5da383ecc)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Una expresión $orderby puede especificar asc o desc para la dirección del orden.",
@@ -12697,7 +12697,7 @@ export const QUESTIONS = [
   {
     "id": 1155,
     "topic_num": 25,
-    "question": "¿Qué comportamiento describe el estándar? El orden de aplicación de $skip y $top afecta al subconjunto resultante.",
+    "question": "Según la fuente oficial, en el ámbito «orden · aplicación · skip · afecta», ¿qué afirmación responde al objetivo t25-lo-036? (Referencia ebada442f3b3)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Una regla que desactiva el modelo y sus metadatos.",
@@ -12708,7 +12708,7 @@ export const QUESTIONS = [
   {
     "id": 1156,
     "topic_num": 25,
-    "question": "¿Qué opción explica correctamente el caso? Un $expand puede contener opciones de consulta anidadas para la navegación expandida.",
+    "question": "Según la fuente oficial, en el ámbito «expand · contener · opciones · consulta», ¿qué afirmación responde al objetivo t25-lo-037? (Referencia 390a7b05fd57)",
     "option_a": "Un $expand puede contener opciones de consulta anidadas para la navegación expandida.",
     "option_b": "Una operación SQL local sin relación con HTTP.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -12719,7 +12719,7 @@ export const QUESTIONS = [
   {
     "id": 1157,
     "topic_num": 25,
-    "question": "¿Qué relación es válida? $select y $expand pueden usarse juntos para controlar propiedades y relaciones.",
+    "question": "Según la fuente oficial, en el ámbito «select · expand · pueden · usarse», ¿qué afirmación responde al objetivo t25-lo-038? (Referencia 1ec59cd32424)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "$select y $expand pueden usarse juntos para controlar propiedades y relaciones.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -12730,7 +12730,7 @@ export const QUESTIONS = [
   {
     "id": 1158,
     "topic_num": 25,
-    "question": "¿Cómo se diseña correctamente este endpoint? El servidor puede rechazar una query option que no soporte.",
+    "question": "Según la fuente oficial, en el ámbito «servidor · rechazar · query · option», ¿qué afirmación responde al objetivo t25-lo-039? (Referencia 5bd29da21d13)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "El servidor puede rechazar una query option que no soporte.",
@@ -12741,7 +12741,7 @@ export const QUESTIONS = [
   {
     "id": 1159,
     "topic_num": 25,
-    "question": "¿Qué diagnóstico corresponde? El servidor puede imponer límites de complejidad o tamaño a las consultas OData.",
+    "question": "Según la fuente oficial, en el ámbito «servidor · imponer · límites · complejidad», ¿qué afirmación responde al objetivo t25-lo-040? (Referencia 22a7eb13447e)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Una regla que desactiva el modelo y sus metadatos.",
@@ -12752,7 +12752,7 @@ export const QUESTIONS = [
   {
     "id": 1160,
     "topic_num": 25,
-    "question": "¿Qué afirmación es correcta? GET solicita una representación de un recurso sin modificarlo.",
+    "question": "Según la fuente oficial, en el ámbito «solicita · representación · recurso · modificarlo.», ¿qué afirmación responde al objetivo t25-lo-041? (Referencia 1eed4f54642c)",
     "option_a": "GET solicita una representación de un recurso sin modificarlo.",
     "option_b": "Una operación SQL local sin relación con HTTP.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -12763,7 +12763,7 @@ export const QUESTIONS = [
   {
     "id": 1161,
     "topic_num": 25,
-    "question": "¿Cómo debe interpretarse esta regla? POST puede crear una nueva entidad en un entity set.",
+    "question": "Según la fuente oficial, en el ámbito «POST · crear · nueva · entidad», ¿qué afirmación responde al objetivo t25-lo-042? (Referencia 7c6fc97a78b2)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "POST puede crear una nueva entidad en un entity set.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -12774,7 +12774,7 @@ export const QUESTIONS = [
   {
     "id": 1162,
     "topic_num": 25,
-    "question": "¿Qué efecto tiene esta característica? PUT reemplaza la representación de un recurso identificado.",
+    "question": "Según la fuente oficial, en el ámbito «reemplaza · representación · recurso · identificado.», ¿qué afirmación responde al objetivo t25-lo-043? (Referencia 1e773aa28b50)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "PUT reemplaza la representación de un recurso identificado.",
@@ -12785,7 +12785,7 @@ export const QUESTIONS = [
   {
     "id": 1163,
     "topic_num": 25,
-    "question": "¿Qué debe saber el cliente OData? PATCH modifica parcialmente una entidad existente.",
+    "question": "Según la fuente oficial, en el ámbito «PATCH · modifica · parcialmente · entidad», ¿qué afirmación responde al objetivo t25-lo-044? (Referencia 091fb1d8be8e)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Una regla que desactiva el modelo y sus metadatos.",
@@ -12796,7 +12796,7 @@ export const QUESTIONS = [
   {
     "id": 1164,
     "topic_num": 25,
-    "question": "¿Cuál es la aplicación práctica? DELETE elimina la entidad identificada por la URL de recurso.",
+    "question": "Según la fuente oficial, en el ámbito «DELETE · elimina · entidad · identificada», ¿qué afirmación responde al objetivo t25-lo-045? (Referencia 02a37179add7)",
     "option_a": "DELETE elimina la entidad identificada por la URL de recurso.",
     "option_b": "Una operación SQL local sin relación con HTTP.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -12807,7 +12807,7 @@ export const QUESTIONS = [
   {
     "id": 1165,
     "topic_num": 25,
-    "question": "¿Qué comportamiento describe el estándar? Una creación correcta puede devolver 201 Created.",
+    "question": "Según la fuente oficial, en el ámbito «creación · correcta · devolver · Created.», ¿qué afirmación responde al objetivo t25-lo-046? (Referencia 489cf75174c0)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una creación correcta puede devolver 201 Created.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -12818,7 +12818,7 @@ export const QUESTIONS = [
   {
     "id": 1166,
     "topic_num": 25,
-    "question": "¿Qué opción explica correctamente el caso? Una actualización correcta puede devolver 204 No Content cuando no se devuelve representación.",
+    "question": "Según la fuente oficial, en el ámbito «actualización · correcta · devolver · Content», ¿qué afirmación responde al objetivo t25-lo-047? (Referencia 19750652db22)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Una actualización correcta puede devolver 204 No Content cuando no se devuelve representación.",
@@ -12829,7 +12829,7 @@ export const QUESTIONS = [
   {
     "id": 1167,
     "topic_num": 25,
-    "question": "¿Qué relación es válida? Una eliminación correcta puede devolver 204 No Content.",
+    "question": "Según la fuente oficial, en el ámbito «eliminación · correcta · devolver · Content.», ¿qué afirmación responde al objetivo t25-lo-048? (Referencia e5c0edcd35b6)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Una regla que desactiva el modelo y sus metadatos.",
@@ -12840,7 +12840,7 @@ export const QUESTIONS = [
   {
     "id": 1168,
     "topic_num": 25,
-    "question": "¿Cómo se diseña correctamente este endpoint? Una petición a una entidad inexistente puede devolver 404 Not Found.",
+    "question": "Según la fuente oficial, en el ámbito «petición · entidad · inexistente · devolver», ¿qué afirmación responde al objetivo t25-lo-049? (Referencia 20b216d872e2)",
     "option_a": "Una petición a una entidad inexistente puede devolver 404 Not Found.",
     "option_b": "Una operación SQL local sin relación con HTTP.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -12851,7 +12851,7 @@ export const QUESTIONS = [
   {
     "id": 1169,
     "topic_num": 25,
-    "question": "¿Qué diagnóstico corresponde? El encabezado Location puede identificar el recurso recién creado.",
+    "question": "Según la fuente oficial, en el ámbito «encabezado · Location · identificar · recurso», ¿qué afirmación responde al objetivo t25-lo-050? (Referencia 3a0ee5befbce)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "El encabezado Location puede identificar el recurso recién creado.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -12862,7 +12862,7 @@ export const QUESTIONS = [
   {
     "id": 1170,
     "topic_num": 25,
-    "question": "¿Qué afirmación es correcta? ETag identifica una versión de la representación de un recurso.",
+    "question": "Según la fuente oficial, en el ámbito «ETag · identifica · versión · representación», ¿qué afirmación responde al objetivo t25-lo-051? (Referencia ddb1a45da154)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "ETag identifica una versión de la representación de un recurso.",
@@ -12873,7 +12873,7 @@ export const QUESTIONS = [
   {
     "id": 1171,
     "topic_num": 25,
-    "question": "¿Cómo debe interpretarse esta regla? If-Match permite exigir que la versión actual coincida con una ETag esperada.",
+    "question": "Según la fuente oficial, en el ámbito «Match · permite · exigir · versión», ¿qué afirmación responde al objetivo t25-lo-052? (Referencia 6012e694d95a)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Una regla que desactiva el modelo y sus metadatos.",
@@ -12884,7 +12884,7 @@ export const QUESTIONS = [
   {
     "id": 1172,
     "topic_num": 25,
-    "question": "¿Qué efecto tiene esta característica? If-None-Match permite condicionar una petición a que no coincida una ETag.",
+    "question": "Según la fuente oficial, en el ámbito «None · Match · permite · condicionar», ¿qué afirmación responde al objetivo t25-lo-053? (Referencia 22221ca2aca0)",
     "option_a": "If-None-Match permite condicionar una petición a que no coincida una ETag.",
     "option_b": "Una operación SQL local sin relación con HTTP.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -12895,7 +12895,7 @@ export const QUESTIONS = [
   {
     "id": 1173,
     "topic_num": 25,
-    "question": "¿Qué debe saber el cliente OData? Una condición de ETag fallida puede producir 412 Precondition Failed.",
+    "question": "Según la fuente oficial, en el ámbito «condición · ETag · fallida · producir», ¿qué afirmación responde al objetivo t25-lo-054? (Referencia b7f7f9fdbeae)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una condición de ETag fallida puede producir 412 Precondition Failed.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -12906,7 +12906,7 @@ export const QUESTIONS = [
   {
     "id": 1174,
     "topic_num": 25,
-    "question": "¿Cuál es la aplicación práctica? La concurrencia optimista evita sobrescribir silenciosamente una versión modificada.",
+    "question": "Según la fuente oficial, en el ámbito «concurrencia · optimista · evita · sobrescribir», ¿qué afirmación responde al objetivo t25-lo-055? (Referencia c9a5af369f86)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "La concurrencia optimista evita sobrescribir silenciosamente una versión modificada.",
@@ -12917,7 +12917,7 @@ export const QUESTIONS = [
   {
     "id": 1175,
     "topic_num": 25,
-    "question": "¿Qué comportamiento describe el estándar? El servicio puede proporcionar paginación controlada por el servidor.",
+    "question": "Según la fuente oficial, en el ámbito «servicio · proporcionar · paginación · controlada», ¿qué afirmación responde al objetivo t25-lo-056? (Referencia ab43150e7ce1)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Una regla que desactiva el modelo y sus metadatos.",
@@ -12928,7 +12928,7 @@ export const QUESTIONS = [
   {
     "id": 1176,
     "topic_num": 25,
-    "question": "¿Qué opción explica correctamente el caso? Una respuesta paginada puede incluir nextLink para obtener la página siguiente.",
+    "question": "Según la fuente oficial, en el ámbito «respuesta · paginada · incluir · nextLink», ¿qué afirmación responde al objetivo t25-lo-057? (Referencia 7a3fc7ad73e8)",
     "option_a": "Una respuesta paginada puede incluir nextLink para obtener la página siguiente.",
     "option_b": "Una operación SQL local sin relación con HTTP.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -12939,7 +12939,7 @@ export const QUESTIONS = [
   {
     "id": 1177,
     "topic_num": 25,
-    "question": "¿Qué relación es válida? nextLink debe tratarse como la URL proporcionada por el servicio para continuar la iteración.",
+    "question": "Según la fuente oficial, en el ámbito «nextLink · debe · tratarse · proporcionada», ¿qué afirmación responde al objetivo t25-lo-058? (Referencia 878ca13b528e)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "nextLink debe tratarse como la URL proporcionada por el servicio para continuar la iteración.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -12950,7 +12950,7 @@ export const QUESTIONS = [
   {
     "id": 1178,
     "topic_num": 25,
-    "question": "¿Cómo se diseña correctamente este endpoint? El cliente no debe reconstruir arbitrariamente una nextLink sustituyéndola por otra query.",
+    "question": "Según la fuente oficial, en el ámbito «cliente · debe · reconstruir · arbitrariamente», ¿qué afirmación responde al objetivo t25-lo-059? (Referencia 7e8a70caf7c2)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "El cliente no debe reconstruir arbitrariamente una nextLink sustituyéndola por otra query.",
@@ -12961,7 +12961,7 @@ export const QUESTIONS = [
   {
     "id": 1179,
     "topic_num": 25,
-    "question": "¿Qué diagnóstico corresponde? Una delta link permite solicitar cambios posteriores a una consulta delta.",
+    "question": "Según la fuente oficial, en el ámbito «delta · link · permite · solicitar», ¿qué afirmación responde al objetivo t25-lo-060? (Referencia 9181dab570b0)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Una regla que desactiva el modelo y sus metadatos.",
@@ -12972,7 +12972,7 @@ export const QUESTIONS = [
   {
     "id": 1180,
     "topic_num": 25,
-    "question": "¿Qué afirmación es correcta? Una respuesta delta puede contener entidades añadidas, modificadas o eliminadas.",
+    "question": "Según la fuente oficial, en el ámbito «respuesta · delta · contener · entidades», ¿qué afirmación responde al objetivo t25-lo-061? (Referencia 9d08706502de)",
     "option_a": "Una respuesta delta puede contener entidades añadidas, modificadas o eliminadas.",
     "option_b": "Una operación SQL local sin relación con HTTP.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -12983,7 +12983,7 @@ export const QUESTIONS = [
   {
     "id": 1181,
     "topic_num": 25,
-    "question": "¿Cómo debe interpretarse esta regla? La operación $batch agrupa varias peticiones en una petición multipart.",
+    "question": "Según la fuente oficial, en el ámbito «operación · batch · agrupa · varias», ¿qué afirmación responde al objetivo t25-lo-062? (Referencia b9e16b8a6942)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "La operación $batch agrupa varias peticiones en una petición multipart.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -12994,7 +12994,7 @@ export const QUESTIONS = [
   {
     "id": 1182,
     "topic_num": 25,
-    "question": "¿Qué efecto tiene esta característica? Las peticiones de cambio de un batch pueden organizarse en un change set.",
+    "question": "Según la fuente oficial, en el ámbito «peticiones · cambio · batch · pueden», ¿qué afirmación responde al objetivo t25-lo-063? (Referencia 8512092642bc)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Las peticiones de cambio de un batch pueden organizarse en un change set.",
@@ -13005,7 +13005,7 @@ export const QUESTIONS = [
   {
     "id": 1183,
     "topic_num": 25,
-    "question": "¿Qué debe saber el cliente OData? Un change set proporciona semántica atómica para un conjunto de operaciones de cambio.",
+    "question": "Según la fuente oficial, en el ámbito «change · proporciona · semántica · atómica», ¿qué afirmación responde al objetivo t25-lo-064? (Referencia c8970302e034)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Una regla que desactiva el modelo y sus metadatos.",
@@ -13016,7 +13016,7 @@ export const QUESTIONS = [
   {
     "id": 1184,
     "topic_num": 25,
-    "question": "¿Cuál es la aplicación práctica? Las partes de una petición batch tienen sus propios métodos, URLs y cabeceras HTTP.",
+    "question": "Según la fuente oficial, en el ámbito «partes · petición · batch · tienen», ¿qué afirmación responde al objetivo t25-lo-065? (Referencia 796f661c493f)",
     "option_a": "Las partes de una petición batch tienen sus propios métodos, URLs y cabeceras HTTP.",
     "option_b": "Una operación SQL local sin relación con HTTP.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -13027,7 +13027,7 @@ export const QUESTIONS = [
   {
     "id": 1185,
     "topic_num": 25,
-    "question": "¿Qué comportamiento describe el estándar? Una función OData representa una operación sin efectos secundarios según el modelo de operaciones.",
+    "question": "Según la fuente oficial, en el ámbito «función · OData · representa · operación», ¿qué afirmación responde al objetivo t25-lo-066? (Referencia 910f7c551aa2)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una función OData representa una operación sin efectos secundarios según el modelo de operaciones.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -13038,7 +13038,7 @@ export const QUESTIONS = [
   {
     "id": 1186,
     "topic_num": 25,
-    "question": "¿Qué opción explica correctamente el caso? Una acción OData representa una operación que puede tener efectos secundarios.",
+    "question": "Según la fuente oficial, en el ámbito «acción · OData · representa · operación», ¿qué afirmación responde al objetivo t25-lo-067? (Referencia 1f278efc4cd9)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Una acción OData representa una operación que puede tener efectos secundarios.",
@@ -13049,7 +13049,7 @@ export const QUESTIONS = [
   {
     "id": 1187,
     "topic_num": 25,
-    "question": "¿Qué relación es válida? Una función puede estar enlazada a una instancia o colección de un tipo.",
+    "question": "Según la fuente oficial, en el ámbito «función · estar · enlazada · instancia», ¿qué afirmación responde al objetivo t25-lo-068? (Referencia 659e6f530ddc)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Una regla que desactiva el modelo y sus metadatos.",
@@ -13060,7 +13060,7 @@ export const QUESTIONS = [
   {
     "id": 1188,
     "topic_num": 25,
-    "question": "¿Cómo se diseña correctamente este endpoint? Una acción puede estar enlazada a una instancia o colección de un tipo.",
+    "question": "Según la fuente oficial, en el ámbito «acción · estar · enlazada · instancia», ¿qué afirmación responde al objetivo t25-lo-069? (Referencia 8b570e7a32a3)",
     "option_a": "Una acción puede estar enlazada a una instancia o colección de un tipo.",
     "option_b": "Una operación SQL local sin relación con HTTP.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -13071,7 +13071,7 @@ export const QUESTIONS = [
   {
     "id": 1189,
     "topic_num": 25,
-    "question": "¿Qué diagnóstico corresponde? Una operación no enlazada se expone en el contenedor de entidades.",
+    "question": "Según la fuente oficial, en el ámbito «operación · enlazada · expone · contenedor», ¿qué afirmación responde al objetivo t25-lo-070? (Referencia 9dcc9f17ad32)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una operación no enlazada se expone en el contenedor de entidades.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -13082,7 +13082,7 @@ export const QUESTIONS = [
   {
     "id": 1190,
     "topic_num": 25,
-    "question": "¿Qué afirmación es correcta? Las funciones pueden aceptar parámetros que forman parte de la llamada de operación.",
+    "question": "Según la fuente oficial, en el ámbito «funciones · pueden · aceptar · parámetros», ¿qué afirmación responde al objetivo t25-lo-071? (Referencia 18dbcc6c7d5e)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Las funciones pueden aceptar parámetros que forman parte de la llamada de operación.",
@@ -13093,7 +13093,7 @@ export const QUESTIONS = [
   {
     "id": 1191,
     "topic_num": 25,
-    "question": "¿Cómo debe interpretarse esta regla? Una acción se invoca mediante una petición HTTP POST.",
+    "question": "Según la fuente oficial, en el ámbito «acción · invoca · mediante · petición», ¿qué afirmación responde al objetivo t25-lo-072? (Referencia 4ba6beac50fa)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Una regla que desactiva el modelo y sus metadatos.",
@@ -13104,7 +13104,7 @@ export const QUESTIONS = [
   {
     "id": 1192,
     "topic_num": 25,
-    "question": "¿Qué efecto tiene esta característica? La ruta de una función enlazada incluye el recurso al que se aplica.",
+    "question": "Según la fuente oficial, en el ámbito «ruta · función · enlazada · incluye», ¿qué afirmación responde al objetivo t25-lo-073? (Referencia 4f3de79f4357)",
     "option_a": "La ruta de una función enlazada incluye el recurso al que se aplica.",
     "option_b": "Una operación SQL local sin relación con HTTP.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -13115,7 +13115,7 @@ export const QUESTIONS = [
   {
     "id": 1193,
     "topic_num": 25,
-    "question": "¿Qué debe saber el cliente OData? Las operaciones se describen en el documento de metadatos.",
+    "question": "Según la fuente oficial, en el ámbito «operaciones · describen · documento · metadatos.», ¿qué afirmación responde al objetivo t25-lo-074? (Referencia adbddade232c)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Las operaciones se describen en el documento de metadatos.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -13126,7 +13126,7 @@ export const QUESTIONS = [
   {
     "id": 1194,
     "topic_num": 25,
-    "question": "¿Cuál es la aplicación práctica? Las anotaciones OData aportan información adicional al modelo o a sus elementos.",
+    "question": "Según la fuente oficial, en el ámbito «anotaciones · OData · aportan · información», ¿qué afirmación responde al objetivo t25-lo-075? (Referencia 468117eacf49)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Las anotaciones OData aportan información adicional al modelo o a sus elementos.",
@@ -13137,7 +13137,7 @@ export const QUESTIONS = [
   {
     "id": 1195,
     "topic_num": 25,
-    "question": "¿Qué comportamiento describe el estándar? Las capacidades de un servicio pueden describirse mediante vocabularios y anotaciones.",
+    "question": "Según la fuente oficial, en el ámbito «capacidades · servicio · pueden · describirse», ¿qué afirmación responde al objetivo t25-lo-076? (Referencia c8ae345251c8)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Una regla que desactiva el modelo y sus metadatos.",
@@ -13148,7 +13148,7 @@ export const QUESTIONS = [
   {
     "id": 1196,
     "topic_num": 25,
-    "question": "¿Qué opción explica correctamente el caso? El documento de metadatos permite a un cliente conocer tipos, conjuntos y relaciones expuestos.",
+    "question": "Según la fuente oficial, en el ámbito «documento · metadatos · permite · cliente», ¿qué afirmación responde al objetivo t25-lo-077? (Referencia 045f93f21413)",
     "option_a": "El documento de metadatos permite a un cliente conocer tipos, conjuntos y relaciones expuestos.",
     "option_b": "Una operación SQL local sin relación con HTTP.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -13159,7 +13159,7 @@ export const QUESTIONS = [
   {
     "id": 1197,
     "topic_num": 25,
-    "question": "¿Qué relación es válida? La versión del protocolo puede comunicarse mediante cabeceras OData.",
+    "question": "Según la fuente oficial, en el ámbito «versión · protocolo · comunicarse · mediante», ¿qué afirmación responde al objetivo t25-lo-078? (Referencia 3e16f1f4fb65)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "La versión del protocolo puede comunicarse mediante cabeceras OData.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -13170,7 +13170,7 @@ export const QUESTIONS = [
   {
     "id": 1198,
     "topic_num": 25,
-    "question": "¿Cómo se diseña correctamente este endpoint? El servicio debe documentar o rechazar las opciones y convenciones que no soporte.",
+    "question": "Según la fuente oficial, en el ámbito «servicio · debe · documentar · rechazar», ¿qué afirmación responde al objetivo t25-lo-079? (Referencia 74d7850b5b20)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "El servicio debe documentar o rechazar las opciones y convenciones que no soporte.",
@@ -13181,7 +13181,7 @@ export const QUESTIONS = [
   {
     "id": 1199,
     "topic_num": 25,
-    "question": "¿Qué diagnóstico corresponde? OData usa HTTP y sus métodos para transportar operaciones sobre recursos.",
+    "question": "Según la fuente oficial, en el ámbito «OData · HTTP · métodos · transportar», ¿qué afirmación responde al objetivo t25-lo-080? (Referencia de74e6f9049b)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Una regla que desactiva el modelo y sus metadatos.",
@@ -13192,7 +13192,7 @@ export const QUESTIONS = [
   {
     "id": 1200,
     "topic_num": 25,
-    "question": "¿Qué afirmación es correcta? La autenticación y autorización concretas suelen depender del servicio y del entorno de despliegue.",
+    "question": "Según la fuente oficial, en el ámbito «autenticación · autorización · concretas · suelen», ¿qué afirmación responde al objetivo t25-lo-081? (Referencia 8a32763425a2)",
     "option_a": "La autenticación y autorización concretas suelen depender del servicio y del entorno de despliegue.",
     "option_b": "Una operación SQL local sin relación con HTTP.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -13203,7 +13203,7 @@ export const QUESTIONS = [
   {
     "id": 1201,
     "topic_num": 25,
-    "question": "¿Cómo debe interpretarse esta regla? Exponer una query option no elimina la necesidad de aplicar autorización al recurso.",
+    "question": "Según la fuente oficial, en el ámbito «Exponer · query · option · elimina», ¿qué afirmación responde al objetivo t25-lo-082? (Referencia f6432a6e9671)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Exponer una query option no elimina la necesidad de aplicar autorización al recurso.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -13214,7 +13214,7 @@ export const QUESTIONS = [
   {
     "id": 1202,
     "topic_num": 25,
-    "question": "¿Qué efecto tiene esta característica? Un servicio puede limitar $top y otras opciones para proteger recursos.",
+    "question": "Según la fuente oficial, en el ámbito «servicio · limitar · otras · opciones», ¿qué afirmación responde al objetivo t25-lo-083? (Referencia 10110f988099)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Un servicio puede limitar $top y otras opciones para proteger recursos.",
@@ -13225,7 +13225,7 @@ export const QUESTIONS = [
   {
     "id": 1203,
     "topic_num": 25,
-    "question": "¿Qué debe saber el cliente OData? Un servicio debe evitar que las consultas habilitadas permitan un consumo ilimitado de recursos.",
+    "question": "Según la fuente oficial, en el ámbito «servicio · debe · evitar · consultas», ¿qué afirmación responde al objetivo t25-lo-084? (Referencia f438b0967bb8)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Una regla que desactiva el modelo y sus metadatos.",
@@ -13236,7 +13236,7 @@ export const QUESTIONS = [
   {
     "id": 1204,
     "topic_num": 25,
-    "question": "¿Cuál es la aplicación práctica? Los valores de URL deben codificarse conforme a las reglas de URL y percent-encoding.",
+    "question": "Según la fuente oficial, en el ámbito «valores · deben · codificarse · conforme», ¿qué afirmación responde al objetivo t25-lo-085? (Referencia 2902851a9e71)",
     "option_a": "Los valores de URL deben codificarse conforme a las reglas de URL y percent-encoding.",
     "option_b": "Una operación SQL local sin relación con HTTP.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -13247,7 +13247,7 @@ export const QUESTIONS = [
   {
     "id": 1205,
     "topic_num": 25,
-    "question": "¿Qué comportamiento describe el estándar? Un literal de cadena en una expresión OData se representa con la sintaxis definida por el protocolo.",
+    "question": "Según la fuente oficial, en el ámbito «literal · cadena · expresión · OData», ¿qué afirmación responde al objetivo t25-lo-086? (Referencia 07750e4e9e81)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Un literal de cadena en una expresión OData se representa con la sintaxis definida por el protocolo.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -13258,7 +13258,7 @@ export const QUESTIONS = [
   {
     "id": 1206,
     "topic_num": 25,
-    "question": "¿Qué opción explica correctamente el caso? Una clave compuesta identifica una entidad mediante más de una propiedad clave.",
+    "question": "Según la fuente oficial, en el ámbito «clave · compuesta · identifica · entidad», ¿qué afirmación responde al objetivo t25-lo-087? (Referencia 788e44c08078)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Una clave compuesta identifica una entidad mediante más de una propiedad clave.",
@@ -13269,7 +13269,7 @@ export const QUESTIONS = [
   {
     "id": 1207,
     "topic_num": 25,
-    "question": "¿Qué relación es válida? Una entidad puede incluir propiedades de navegación y propiedades primitivas en su representación.",
+    "question": "Según la fuente oficial, en el ámbito «entidad · incluir · propiedades · navegación», ¿qué afirmación responde al objetivo t25-lo-088? (Referencia f4cfe9d8c0b8)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Una regla que desactiva el modelo y sus metadatos.",
@@ -13280,7 +13280,7 @@ export const QUESTIONS = [
   {
     "id": 1208,
     "topic_num": 25,
-    "question": "¿Cómo se diseña correctamente este endpoint? Una consulta de una propiedad puede devolver el valor de esa propiedad en vez de una entidad completa.",
+    "question": "Según la fuente oficial, en el ámbito «consulta · propiedad · devolver · valor», ¿qué afirmación responde al objetivo t25-lo-089? (Referencia 23f2c459ca4c)",
     "option_a": "Una consulta de una propiedad puede devolver el valor de esa propiedad en vez de una entidad completa.",
     "option_b": "Una operación SQL local sin relación con HTTP.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -13291,7 +13291,7 @@ export const QUESTIONS = [
   {
     "id": 1209,
     "topic_num": 25,
-    "question": "¿Qué diagnóstico corresponde? El cliente debe respetar el tipo y la nulabilidad declarados por el modelo de metadatos.",
+    "question": "Según la fuente oficial, en el ámbito «cliente · debe · respetar · tipo», ¿qué afirmación responde al objetivo t25-lo-090? (Referencia 831d52710d48)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "El cliente debe respetar el tipo y la nulabilidad declarados por el modelo de metadatos.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -13302,7 +13302,7 @@ export const QUESTIONS = [
   {
     "id": 1210,
     "topic_num": 25,
-    "question": "¿Qué afirmación es correcta? El formato de respuesta debe corresponder a una representación soportada por el servicio.",
+    "question": "Según la fuente oficial, en el ámbito «formato · respuesta · debe · corresponder», ¿qué afirmación responde al objetivo t25-lo-091? (Referencia 3e86ef3de328)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "El formato de respuesta debe corresponder a una representación soportada por el servicio.",
@@ -13313,7 +13313,7 @@ export const QUESTIONS = [
   {
     "id": 1211,
     "topic_num": 25,
-    "question": "¿Cómo debe interpretarse esta regla? El diseño de un endpoint OData debe separar ruta de recurso y opciones de consulta.",
+    "question": "Según la fuente oficial, en el ámbito «diseño · endpoint · OData · debe», ¿qué afirmación responde al objetivo t25-lo-092? (Referencia 47c842591ff3)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Una regla que desactiva el modelo y sus metadatos.",
@@ -13324,7 +13324,7 @@ export const QUESTIONS = [
   {
     "id": 1212,
     "topic_num": 25,
-    "question": "¿Qué efecto tiene esta característica? Una consulta paginada debe seguir nextLink hasta completar la colección si necesita todos los datos.",
+    "question": "Según la fuente oficial, en el ámbito «consulta · paginada · debe · seguir», ¿qué afirmación responde al objetivo t25-lo-093? (Referencia 380c4e13e441)",
     "option_a": "Una consulta paginada debe seguir nextLink hasta completar la colección si necesita todos los datos.",
     "option_b": "Una operación SQL local sin relación con HTTP.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -13335,7 +13335,7 @@ export const QUESTIONS = [
   {
     "id": 1213,
     "topic_num": 25,
-    "question": "¿Qué debe saber el cliente OData? Una actualización condicional debe usar la ETag recibida para detectar conflictos de concurrencia.",
+    "question": "Según la fuente oficial, en el ámbito «actualización · condicional · debe · usar», ¿qué afirmación responde al objetivo t25-lo-094? (Referencia 43f896eb4b90)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una actualización condicional debe usar la ETag recibida para detectar conflictos de concurrencia.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -13346,7 +13346,7 @@ export const QUESTIONS = [
   {
     "id": 1214,
     "topic_num": 25,
-    "question": "¿Cuál es la aplicación práctica? Una política segura para OData limita opciones de consulta, aplica autorización y controla paginación.",
+    "question": "Según la fuente oficial, en el ámbito «política · segura · OData · limita», ¿qué afirmación responde al objetivo t25-lo-095? (Referencia 4d5d7e7cff23)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Una política segura para OData limita opciones de consulta, aplica autorización y controla paginación.",
@@ -13357,7 +13357,7 @@ export const QUESTIONS = [
   {
     "id": 1215,
     "topic_num": 25,
-    "question": "¿Qué comportamiento describe el estándar? Una respuesta de colección OData contiene los elementos según la representación definida por el formato elegido.",
+    "question": "Según la fuente oficial, en el ámbito «respuesta · colección · OData · contiene», ¿qué afirmación responde al objetivo t25-lo-096? (Referencia 68232534df1d)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Una regla que desactiva el modelo y sus metadatos.",
@@ -13368,7 +13368,7 @@ export const QUESTIONS = [
   {
     "id": 1216,
     "topic_num": 25,
-    "question": "¿Qué opción explica correctamente el caso? Una respuesta de entidad puede incluir enlaces de navegación según la representación OData usada.",
+    "question": "Según la fuente oficial, en el ámbito «respuesta · entidad · incluir · enlaces», ¿qué afirmación responde al objetivo t25-lo-097? (Referencia 17ed42b0f1bc)",
     "option_a": "Una respuesta de entidad puede incluir enlaces de navegación según la representación OData usada.",
     "option_b": "Una operación SQL local sin relación con HTTP.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -13379,7 +13379,7 @@ export const QUESTIONS = [
   {
     "id": 1217,
     "topic_num": 25,
-    "question": "¿Qué relación es válida? Una petición inválida debe producir un error HTTP y no una actualización parcial silenciosa.",
+    "question": "Según la fuente oficial, en el ámbito «petición · inválida · debe · producir», ¿qué afirmación responde al objetivo t25-lo-098? (Referencia f588f27fd77e)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una petición inválida debe producir un error HTTP y no una actualización parcial silenciosa.",
     "option_c": "Una vista Razor que no usa el protocolo OData.",
@@ -13390,7 +13390,7 @@ export const QUESTIONS = [
   {
     "id": 1218,
     "topic_num": 25,
-    "question": "¿Cómo se diseña correctamente este endpoint? El cliente debe interpretar los códigos de estado y cabeceras de la respuesta OData.",
+    "question": "Según la fuente oficial, en el ámbito «cliente · debe · interpretar · códigos», ¿qué afirmación responde al objetivo t25-lo-099? (Referencia a616c1c1c839)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "El cliente debe interpretar los códigos de estado y cabeceras de la respuesta OData.",
@@ -13401,7 +13401,7 @@ export const QUESTIONS = [
   {
     "id": 1219,
     "topic_num": 25,
-    "question": "¿Qué diagnóstico corresponde? El contrato de metadatos y las convenciones de URL deben mantenerse coherentes para los clientes.",
+    "question": "Según la fuente oficial, en el ámbito «contrato · metadatos · convenciones · deben», ¿qué afirmación responde al objetivo t25-lo-100? (Referencia 647e904a5def)",
     "option_a": "Una operación SQL local sin relación con HTTP.",
     "option_b": "Una vista Razor que no usa el protocolo OData.",
     "option_c": "Una regla que desactiva el modelo y sus metadatos.",
@@ -13412,7 +13412,7 @@ export const QUESTIONS = [
   {
     "id": 1220,
     "topic_num": 26,
-    "question": "¿Qué afirmación es correcta? Blazor es un framework web para construir componentes de interfaz Razor.",
+    "question": "Según la fuente oficial, en el ámbito «Blazor · framework · construir · componentes», ¿qué afirmación responde al objetivo t26-lo-001? (Referencia 75cdfda029c2)",
     "option_a": "Blazor es un framework web para construir componentes de interfaz Razor.",
     "option_b": "Una operación SQL local sin relación con componentes.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -13423,7 +13423,7 @@ export const QUESTIONS = [
   {
     "id": 1221,
     "topic_num": 26,
-    "question": "¿Cómo debe interpretarse esta regla? Los componentes Razor pueden ejecutarse en servidor, navegador o aplicaciones nativas según el modelo de alojamiento.",
+    "question": "Según la fuente oficial, en el ámbito «componentes · Razor · pueden · ejecutarse», ¿qué afirmación responde al objetivo t26-lo-002? (Referencia 7e7b36509737)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Los componentes Razor pueden ejecutarse en servidor, navegador o aplicaciones nativas según el modelo de alojamiento.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -13434,7 +13434,7 @@ export const QUESTIONS = [
   {
     "id": 1222,
     "topic_num": 26,
-    "question": "¿Qué efecto tiene esta característica? Blazor Server ejecuta los componentes en el servidor dentro de una aplicación ASP.NET Core.",
+    "question": "Según la fuente oficial, en el ámbito «Blazor · Server · ejecuta · componentes», ¿qué afirmación responde al objetivo t26-lo-003? (Referencia f00d61863bcf)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "Blazor Server ejecuta los componentes en el servidor dentro de una aplicación ASP.NET Core.",
@@ -13445,7 +13445,7 @@ export const QUESTIONS = [
   {
     "id": 1223,
     "topic_num": 26,
-    "question": "¿Qué debe saber el desarrollador? Blazor WebAssembly ejecuta los componentes en el navegador sobre un runtime .NET basado en WebAssembly.",
+    "question": "Según la fuente oficial, en el ámbito «Blazor · WebAssembly · ejecuta · componentes», ¿qué afirmación responde al objetivo t26-lo-004? (Referencia 762a55d92a40)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "Una configuración que desactiva todo renderizado.",
@@ -13456,7 +13456,7 @@ export const QUESTIONS = [
   {
     "id": 1224,
     "topic_num": 26,
-    "question": "¿Cuál es la aplicación práctica? Blazor Hybrid ejecuta componentes Razor en aplicaciones móviles o de escritorio mediante un Web View embebido.",
+    "question": "Según la fuente oficial, en el ámbito «Blazor · Hybrid · ejecuta · componentes», ¿qué afirmación responde al objetivo t26-lo-005? (Referencia 04c714c4e010)",
     "option_a": "Blazor Hybrid ejecuta componentes Razor en aplicaciones móviles o de escritorio mediante un Web View embebido.",
     "option_b": "Una operación SQL local sin relación con componentes.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -13467,7 +13467,7 @@ export const QUESTIONS = [
   {
     "id": 1225,
     "topic_num": 26,
-    "question": "¿Qué comportamiento describe la documentación? La forma de construir componentes Razor es la misma entre los modelos de alojamiento.",
+    "question": "Según la fuente oficial, en el ámbito «forma · construir · componentes · Razor», ¿qué afirmación responde al objetivo t26-lo-006? (Referencia 1b358f330230)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "La forma de construir componentes Razor es la misma entre los modelos de alojamiento.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -13478,7 +13478,7 @@ export const QUESTIONS = [
   {
     "id": 1226,
     "topic_num": 26,
-    "question": "¿Qué opción explica correctamente el caso? En Blazor Server, las actualizaciones de UI y eventos viajan por una conexión SignalR.",
+    "question": "Según la fuente oficial, en el ámbito «Blazor · Server · actualizaciones · eventos», ¿qué afirmación responde al objetivo t26-lo-007? (Referencia caa3b6177740)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "En Blazor Server, las actualizaciones de UI y eventos viajan por una conexión SignalR.",
@@ -13489,7 +13489,7 @@ export const QUESTIONS = [
   {
     "id": 1227,
     "topic_num": 26,
-    "question": "¿Qué relación es válida? El circuito mantiene en servidor el estado asociado a un cliente conectado de Blazor Server.",
+    "question": "Según la fuente oficial, en el ámbito «circuito · mantiene · servidor · estado», ¿qué afirmación responde al objetivo t26-lo-008? (Referencia 0fe5e8237a19)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "Una configuración que desactiva todo renderizado.",
@@ -13500,7 +13500,7 @@ export const QUESTIONS = [
   {
     "id": 1228,
     "topic_num": 26,
-    "question": "¿Cómo se diseña correctamente esta solución? Un circuito Blazor Server puede tolerar interrupciones temporales y reconexiones.",
+    "question": "Según la fuente oficial, en el ámbito «circuito · Blazor · Server · tolerar», ¿qué afirmación responde al objetivo t26-lo-009? (Referencia cb1e64a6e89f)",
     "option_a": "Un circuito Blazor Server puede tolerar interrupciones temporales y reconexiones.",
     "option_b": "Una operación SQL local sin relación con componentes.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -13511,7 +13511,7 @@ export const QUESTIONS = [
   {
     "id": 1229,
     "topic_num": 26,
-    "question": "¿Qué diagnóstico corresponde? Cada pestaña del navegador requiere un circuito separado en Blazor Server.",
+    "question": "Según la fuente oficial, en el ámbito «Cada · pestaña · navegador · requiere», ¿qué afirmación responde al objetivo t26-lo-010? (Referencia 6cbee568f3f5)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Cada pestaña del navegador requiere un circuito separado en Blazor Server.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -13522,7 +13522,7 @@ export const QUESTIONS = [
   {
     "id": 1230,
     "topic_num": 26,
-    "question": "¿Qué afirmación es correcta? Blazor Server suele tener una descarga inicial menor que Blazor WebAssembly.",
+    "question": "Según la fuente oficial, en el ámbito «Blazor · Server · suele · tener», ¿qué afirmación responde al objetivo t26-lo-011? (Referencia 165ae1864127)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "Blazor Server suele tener una descarga inicial menor que Blazor WebAssembly.",
@@ -13533,7 +13533,7 @@ export const QUESTIONS = [
   {
     "id": 1231,
     "topic_num": 26,
-    "question": "¿Cómo debe interpretarse esta regla? Blazor Server puede usar las API .NET disponibles en el servidor.",
+    "question": "Según la fuente oficial, en el ámbito «Blazor · Server · usar · .NET», ¿qué afirmación responde al objetivo t26-lo-012? (Referencia fb8f2e0daac4)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "Una configuración que desactiva todo renderizado.",
@@ -13544,7 +13544,7 @@ export const QUESTIONS = [
   {
     "id": 1232,
     "topic_num": 26,
-    "question": "¿Qué efecto tiene esta característica? Escalar Blazor Server exige recursos para conexiones y estado de los clientes.",
+    "question": "Según la fuente oficial, en el ámbito «Escalar · Blazor · Server · exige», ¿qué afirmación responde al objetivo t26-lo-013? (Referencia 2ab3e1a98c67)",
     "option_a": "Escalar Blazor Server exige recursos para conexiones y estado de los clientes.",
     "option_b": "Una operación SQL local sin relación con componentes.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -13555,7 +13555,7 @@ export const QUESTIONS = [
   {
     "id": 1233,
     "topic_num": 26,
-    "question": "¿Qué debe saber el desarrollador? Blazor Server requiere un servidor ASP.NET Core y no es un escenario de despliegue exclusivamente CDN.",
+    "question": "Según la fuente oficial, en el ámbito «Blazor · Server · requiere · servidor», ¿qué afirmación responde al objetivo t26-lo-014? (Referencia d831e6afa554)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Blazor Server requiere un servidor ASP.NET Core y no es un escenario de despliegue exclusivamente CDN.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -13566,7 +13566,7 @@ export const QUESTIONS = [
   {
     "id": 1234,
     "topic_num": 26,
-    "question": "¿Cuál es la aplicación práctica? Azure SignalR Service puede ayudar a escalar conexiones de una aplicación Blazor Server.",
+    "question": "Según la fuente oficial, en el ámbito «Azure · SignalR · Service · ayudar», ¿qué afirmación responde al objetivo t26-lo-015? (Referencia 4a74abe7c924)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "Azure SignalR Service puede ayudar a escalar conexiones de una aplicación Blazor Server.",
@@ -13577,7 +13577,7 @@ export const QUESTIONS = [
   {
     "id": 1235,
     "topic_num": 26,
-    "question": "¿Qué comportamiento describe la documentación? En WebAssembly se descargan al navegador componentes, dependencias y runtime .NET.",
+    "question": "Según la fuente oficial, en el ámbito «WebAssembly · descargan · navegador · componentes», ¿qué afirmación responde al objetivo t26-lo-016? (Referencia 48865158f1b5)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "Una configuración que desactiva todo renderizado.",
@@ -13588,7 +13588,7 @@ export const QUESTIONS = [
   {
     "id": 1236,
     "topic_num": 26,
-    "question": "¿Qué opción explica correctamente el caso? Los componentes WebAssembly se ejecutan en el hilo de UI del navegador.",
+    "question": "Según la fuente oficial, en el ámbito «componentes · WebAssembly · ejecutan · hilo», ¿qué afirmación responde al objetivo t26-lo-017? (Referencia 3bde39372c53)",
     "option_a": "Los componentes WebAssembly se ejecutan en el hilo de UI del navegador.",
     "option_b": "Una operación SQL local sin relación con componentes.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -13599,7 +13599,7 @@ export const QUESTIONS = [
   {
     "id": 1237,
     "topic_num": 26,
-    "question": "¿Qué relación es válida? Una aplicación WebAssembly puede desplegar sus assets como archivos estáticos.",
+    "question": "Según la fuente oficial, en el ámbito «aplicación · WebAssembly · desplegar · assets», ¿qué afirmación responde al objetivo t26-lo-018? (Referencia a5d3397568b9)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una aplicación WebAssembly puede desplegar sus assets como archivos estáticos.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -13610,7 +13610,7 @@ export const QUESTIONS = [
   {
     "id": 1238,
     "topic_num": 26,
-    "question": "¿Cómo se diseña correctamente esta solución? Una aplicación Blazor WebAssembly standalone no necesita una aplicación ASP.NET Core backend para servir sus archivos.",
+    "question": "Según la fuente oficial, en el ámbito «aplicación · Blazor · WebAssembly · standalone», ¿qué afirmación responde al objetivo t26-lo-019? (Referencia 70e981c961f8)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "Una aplicación Blazor WebAssembly standalone no necesita una aplicación ASP.NET Core backend para servir sus archivos.",
@@ -13621,7 +13621,7 @@ export const QUESTIONS = [
   {
     "id": 1239,
     "topic_num": 26,
-    "question": "¿Qué diagnóstico corresponde? Una aplicación WebAssembly hosted usa una aplicación ASP.NET Core para servir sus archivos.",
+    "question": "Según la fuente oficial, en el ámbito «aplicación · WebAssembly · hosted · aplicación», ¿qué afirmación responde al objetivo t26-lo-020? (Referencia 64cc9b2f9726)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "Una configuración que desactiva todo renderizado.",
@@ -13632,7 +13632,7 @@ export const QUESTIONS = [
   {
     "id": 1240,
     "topic_num": 26,
-    "question": "¿Qué afirmación es correcta? El modelo hosted permite compartir código entre aplicaciones cliente y servidor.",
+    "question": "Según la fuente oficial, en el ámbito «modelo · hosted · permite · compartir», ¿qué afirmación responde al objetivo t26-lo-021? (Referencia 6fdb117e2b9f)",
     "option_a": "El modelo hosted permite compartir código entre aplicaciones cliente y servidor.",
     "option_b": "Una operación SQL local sin relación con componentes.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -13643,7 +13643,7 @@ export const QUESTIONS = [
   {
     "id": 1241,
     "topic_num": 26,
-    "question": "¿Cómo debe interpretarse esta regla? El modelo hosted puede integrarse con MVC y Razor Pages.",
+    "question": "Según la fuente oficial, en el ámbito «modelo · hosted · integrarse · Razor», ¿qué afirmación responde al objetivo t26-lo-022? (Referencia 8ddf25fa9e68)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "El modelo hosted puede integrarse con MVC y Razor Pages.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -13654,7 +13654,7 @@ export const QUESTIONS = [
   {
     "id": 1242,
     "topic_num": 26,
-    "question": "¿Qué efecto tiene esta característica? Un cliente WebAssembly hosted puede comunicarse con el backend mediante una Web API.",
+    "question": "Según la fuente oficial, en el ámbito «cliente · WebAssembly · hosted · comunicarse», ¿qué afirmación responde al objetivo t26-lo-023? (Referencia 9e6c53d6111f)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "Un cliente WebAssembly hosted puede comunicarse con el backend mediante una Web API.",
@@ -13665,7 +13665,7 @@ export const QUESTIONS = [
   {
     "id": 1243,
     "topic_num": 26,
-    "question": "¿Qué debe saber el desarrollador? Una PWA Blazor WebAssembly puede usar APIs del navegador para capacidades offline.",
+    "question": "Según la fuente oficial, en el ámbito «Blazor · WebAssembly · usar · APIs», ¿qué afirmación responde al objetivo t26-lo-024? (Referencia 3610a2927beb)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "Una configuración que desactiva todo renderizado.",
@@ -13676,7 +13676,7 @@ export const QUESTIONS = [
   {
     "id": 1244,
     "topic_num": 26,
-    "question": "¿Cuál es la aplicación práctica? El payload publicado es un factor importante del rendimiento de una aplicación WebAssembly.",
+    "question": "Según la fuente oficial, en el ámbito «payload · publicado · factor · importante», ¿qué afirmación responde al objetivo t26-lo-025? (Referencia f8c102bdf5d5)",
     "option_a": "El payload publicado es un factor importante del rendimiento de una aplicación WebAssembly.",
     "option_b": "Una operación SQL local sin relación con componentes.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -13687,7 +13687,7 @@ export const QUESTIONS = [
   {
     "id": 1245,
     "topic_num": 26,
-    "question": "¿Qué comportamiento describe la documentación? Blazor Hybrid aprovecha controles Web View de plataformas móviles o de escritorio.",
+    "question": "Según la fuente oficial, en el ámbito «Blazor · Hybrid · aprovecha · controles», ¿qué afirmación responde al objetivo t26-lo-026? (Referencia 26435924a0d5)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Blazor Hybrid aprovecha controles Web View de plataformas móviles o de escritorio.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -13698,7 +13698,7 @@ export const QUESTIONS = [
   {
     "id": 1246,
     "topic_num": 26,
-    "question": "¿Qué opción explica correctamente el caso? En .NET 8 y posterior es útil distinguir los modelos por cómo se renderizan los componentes.",
+    "question": "Según la fuente oficial, en el ámbito «.NET · posterior · útil · distinguir», ¿qué afirmación responde al objetivo t26-lo-027? (Referencia 42cc3622183e)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "En .NET 8 y posterior es útil distinguir los modelos por cómo se renderizan los componentes.",
@@ -13709,7 +13709,7 @@ export const QUESTIONS = [
   {
     "id": 1247,
     "topic_num": 26,
-    "question": "¿Qué relación es válida? Un render mode determina cómo y dónde se renderiza e interactúa con un componente.",
+    "question": "Según la fuente oficial, en el ámbito «render · mode · determina · dónde», ¿qué afirmación responde al objetivo t26-lo-028? (Referencia 0063c531171d)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "Una configuración que desactiva todo renderizado.",
@@ -13720,7 +13720,7 @@ export const QUESTIONS = [
   {
     "id": 1248,
     "topic_num": 26,
-    "question": "¿Cómo se diseña correctamente esta solución? Static se usa para renderizado estático sin interactividad de componente.",
+    "question": "Según la fuente oficial, en el ámbito «Static · renderizado · estático · interactividad», ¿qué afirmación responde al objetivo t26-lo-029? (Referencia c3ebfbcabb5b)",
     "option_a": "Static se usa para renderizado estático sin interactividad de componente.",
     "option_b": "Una operación SQL local sin relación con componentes.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -13731,7 +13731,7 @@ export const QUESTIONS = [
   {
     "id": 1249,
     "topic_num": 26,
-    "question": "¿Qué diagnóstico corresponde? InteractiveServer habilita interactividad usando una conexión al servidor.",
+    "question": "Según la fuente oficial, en el ámbito «InteractiveServer · habilita · interactividad · usando», ¿qué afirmación responde al objetivo t26-lo-030? (Referencia d58ed4993937)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "InteractiveServer habilita interactividad usando una conexión al servidor.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -13742,7 +13742,7 @@ export const QUESTIONS = [
   {
     "id": 1250,
     "topic_num": 26,
-    "question": "¿Qué afirmación es correcta? InteractiveWebAssembly habilita interactividad ejecutando el componente en WebAssembly.",
+    "question": "Según la fuente oficial, en el ámbito «InteractiveWebAssembly · habilita · interactividad · ejecutando», ¿qué afirmación responde al objetivo t26-lo-031? (Referencia b58a4be08362)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "InteractiveWebAssembly habilita interactividad ejecutando el componente en WebAssembly.",
@@ -13753,7 +13753,7 @@ export const QUESTIONS = [
   {
     "id": 1251,
     "topic_num": 26,
-    "question": "¿Cómo debe interpretarse esta regla? InteractiveAuto usa inicialmente servidor y puede cambiar a WebAssembly cuando está disponible.",
+    "question": "Según la fuente oficial, en el ámbito «InteractiveAuto · inicialmente · servidor · cambiar», ¿qué afirmación responde al objetivo t26-lo-032? (Referencia 6eff9cb427a2)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "Una configuración que desactiva todo renderizado.",
@@ -13764,7 +13764,7 @@ export const QUESTIONS = [
   {
     "id": 1252,
     "topic_num": 26,
-    "question": "¿Qué efecto tiene esta característica? Un componente puede declarar un render mode mediante la directiva @rendermode.",
+    "question": "Según la fuente oficial, en el ámbito «componente · declarar · render · mode», ¿qué afirmación responde al objetivo t26-lo-033? (Referencia 12b13a3e484e)",
     "option_a": "Un componente puede declarar un render mode mediante la directiva @rendermode.",
     "option_b": "Una operación SQL local sin relación con componentes.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -13775,7 +13775,7 @@ export const QUESTIONS = [
   {
     "id": 1253,
     "topic_num": 26,
-    "question": "¿Qué debe saber el desarrollador? Un render mode puede aplicarse en la raíz para que se herede a componentes descendientes.",
+    "question": "Según la fuente oficial, en el ámbito «render · mode · aplicarse · raíz», ¿qué afirmación responde al objetivo t26-lo-034? (Referencia 6cb15a313ba0)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Un render mode puede aplicarse en la raíz para que se herede a componentes descendientes.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -13786,7 +13786,7 @@ export const QUESTIONS = [
   {
     "id": 1254,
     "topic_num": 26,
-    "question": "¿Cuál es la aplicación práctica? El prerendering genera HTML inicial antes de que se active la interactividad.",
+    "question": "Según la fuente oficial, en el ámbito «prerendering · genera · HTML · inicial», ¿qué afirmación responde al objetivo t26-lo-035? (Referencia 8a0c6beb3168)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "El prerendering genera HTML inicial antes de que se active la interactividad.",
@@ -13797,7 +13797,7 @@ export const QUESTIONS = [
   {
     "id": 1255,
     "topic_num": 26,
-    "question": "¿Qué comportamiento describe la documentación? Los modos interactivos suelen prerenderizar por defecto cuando la aplicación está configurada para ello.",
+    "question": "Según la fuente oficial, en el ámbito «modos · interactivos · suelen · prerenderizar», ¿qué afirmación responde al objetivo t26-lo-036? (Referencia 4fc31e386c14)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "Una configuración que desactiva todo renderizado.",
@@ -13808,7 +13808,7 @@ export const QUESTIONS = [
   {
     "id": 1256,
     "topic_num": 26,
-    "question": "¿Qué opción explica correctamente el caso? Desactivar prerendering es distinto de desactivar la interactividad.",
+    "question": "Según la fuente oficial, en el ámbito «Desactivar · prerendering · distinto · desactivar», ¿qué afirmación responde al objetivo t26-lo-037? (Referencia 9d24c09af2d2)",
     "option_a": "Desactivar prerendering es distinto de desactivar la interactividad.",
     "option_b": "Una operación SQL local sin relación con componentes.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -13819,7 +13819,7 @@ export const QUESTIONS = [
   {
     "id": 1257,
     "topic_num": 26,
-    "question": "¿Qué relación es válida? La interactividad WebAssembly requiere que el cliente descargue los recursos necesarios.",
+    "question": "Según la fuente oficial, en el ámbito «interactividad · WebAssembly · requiere · cliente», ¿qué afirmación responde al objetivo t26-lo-038? (Referencia 36784d915d2c)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "La interactividad WebAssembly requiere que el cliente descargue los recursos necesarios.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -13830,7 +13830,7 @@ export const QUESTIONS = [
   {
     "id": 1258,
     "topic_num": 26,
-    "question": "¿Cómo se diseña correctamente esta solución? El modo InteractiveServer conserva la ejecución del componente en el servidor.",
+    "question": "Según la fuente oficial, en el ámbito «modo · InteractiveServer · conserva · ejecución», ¿qué afirmación responde al objetivo t26-lo-039? (Referencia dbb34066ee1c)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "El modo InteractiveServer conserva la ejecución del componente en el servidor.",
@@ -13841,7 +13841,7 @@ export const QUESTIONS = [
   {
     "id": 1259,
     "topic_num": 26,
-    "question": "¿Qué diagnóstico corresponde? El modo InteractiveWebAssembly requiere un proyecto o recursos cliente WebAssembly configurados.",
+    "question": "Según la fuente oficial, en el ámbito «modo · InteractiveWebAssembly · requiere · proyecto», ¿qué afirmación responde al objetivo t26-lo-040? (Referencia 33fd1c231fc4)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "Una configuración que desactiva todo renderizado.",
@@ -13852,7 +13852,7 @@ export const QUESTIONS = [
   {
     "id": 1260,
     "topic_num": 26,
-    "question": "¿Qué afirmación es correcta? El render mode elegido afecta a dónde se ejecuta el código del componente.",
+    "question": "Según la fuente oficial, en el ámbito «render · mode · elegido · afecta», ¿qué afirmación responde al objetivo t26-lo-041? (Referencia 27b392a71863)",
     "option_a": "El render mode elegido afecta a dónde se ejecuta el código del componente.",
     "option_b": "Una operación SQL local sin relación con componentes.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -13863,7 +13863,7 @@ export const QUESTIONS = [
   {
     "id": 1261,
     "topic_num": 26,
-    "question": "¿Cómo debe interpretarse esta regla? La plantilla de Blazor Web App permite combinar renderizado estático e interactivo.",
+    "question": "Según la fuente oficial, en el ámbito «plantilla · Blazor · permite · combinar», ¿qué afirmación responde al objetivo t26-lo-042? (Referencia 209bb2180ab4)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "La plantilla de Blazor Web App permite combinar renderizado estático e interactivo.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -13874,7 +13874,7 @@ export const QUESTIONS = [
   {
     "id": 1262,
     "topic_num": 26,
-    "question": "¿Qué efecto tiene esta característica? Los componentes pueden adoptar un modo interactivo individual aunque la aplicación use varios modos.",
+    "question": "Según la fuente oficial, en el ámbito «componentes · pueden · adoptar · modo», ¿qué afirmación responde al objetivo t26-lo-043? (Referencia 238c0c1b5fda)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "Los componentes pueden adoptar un modo interactivo individual aunque la aplicación use varios modos.",
@@ -13885,7 +13885,7 @@ export const QUESTIONS = [
   {
     "id": 1263,
     "topic_num": 26,
-    "question": "¿Qué debe saber el desarrollador? El modo de renderizado no cambia la sintaxis básica de un componente Razor.",
+    "question": "Según la fuente oficial, en el ámbito «modo · renderizado · cambia · sintaxis», ¿qué afirmación responde al objetivo t26-lo-044? (Referencia 4ae4e5fedfc6)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "Una configuración que desactiva todo renderizado.",
@@ -13896,7 +13896,7 @@ export const QUESTIONS = [
   {
     "id": 1264,
     "topic_num": 26,
-    "question": "¿Cuál es la aplicación práctica? Una solución Blazor Web App contiene un proyecto que aloja componentes y configuración ASP.NET Core.",
+    "question": "Según la fuente oficial, en el ámbito «solución · Blazor · contiene · proyecto», ¿qué afirmación responde al objetivo t26-lo-045? (Referencia fac287b41bc3)",
     "option_a": "Una solución Blazor Web App contiene un proyecto que aloja componentes y configuración ASP.NET Core.",
     "option_b": "Una operación SQL local sin relación con componentes.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -13907,7 +13907,7 @@ export const QUESTIONS = [
   {
     "id": 1265,
     "topic_num": 26,
-    "question": "¿Qué comportamiento describe la documentación? El archivo Program.cs configura servicios y el pipeline de una aplicación Blazor.",
+    "question": "Según la fuente oficial, en el ámbito «archivo · Program.cs · configura · servicios», ¿qué afirmación responde al objetivo t26-lo-046? (Referencia ce486b5bc52a)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "El archivo Program.cs configura servicios y el pipeline de una aplicación Blazor.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -13918,7 +13918,7 @@ export const QUESTIONS = [
   {
     "id": 1266,
     "topic_num": 26,
-    "question": "¿Qué opción explica correctamente el caso? El componente App.razor representa la raíz de la aplicación de componentes.",
+    "question": "Según la fuente oficial, en el ámbito «componente · App.razor · representa · raíz», ¿qué afirmación responde al objetivo t26-lo-047? (Referencia c1fa80497918)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "El componente App.razor representa la raíz de la aplicación de componentes.",
@@ -13929,7 +13929,7 @@ export const QUESTIONS = [
   {
     "id": 1267,
     "topic_num": 26,
-    "question": "¿Qué relación es válida? El componente Routes.razor participa en la definición del enrutamiento de páginas.",
+    "question": "Según la fuente oficial, en el ámbito «componente · Routes.razor · participa · definición», ¿qué afirmación responde al objetivo t26-lo-048? (Referencia 9c2068c6ee12)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "Una configuración que desactiva todo renderizado.",
@@ -13940,7 +13940,7 @@ export const QUESTIONS = [
   {
     "id": 1268,
     "topic_num": 26,
-    "question": "¿Cómo se diseña correctamente esta solución? La carpeta Components contiene componentes Razor de la aplicación.",
+    "question": "Según la fuente oficial, en el ámbito «carpeta · Components · contiene · componentes», ¿qué afirmación responde al objetivo t26-lo-049? (Referencia 498cd509479d)",
     "option_a": "La carpeta Components contiene componentes Razor de la aplicación.",
     "option_b": "Una operación SQL local sin relación con componentes.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -13951,7 +13951,7 @@ export const QUESTIONS = [
   {
     "id": 1269,
     "topic_num": 26,
-    "question": "¿Qué diagnóstico corresponde? La carpeta wwwroot contiene assets estáticos de la aplicación.",
+    "question": "Según la fuente oficial, en el ámbito «carpeta · wwwroot · contiene · assets», ¿qué afirmación responde al objetivo t26-lo-050? (Referencia bb0eae4c4d5d)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "La carpeta wwwroot contiene assets estáticos de la aplicación.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -13962,7 +13962,7 @@ export const QUESTIONS = [
   {
     "id": 1270,
     "topic_num": 26,
-    "question": "¿Qué afirmación es correcta? El archivo _Imports.razor permite centralizar directivas e imports Razor.",
+    "question": "Según la fuente oficial, en el ámbito «archivo · Imports.razor · permite · centralizar», ¿qué afirmación responde al objetivo t26-lo-051? (Referencia 5c47350b4a63)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "El archivo _Imports.razor permite centralizar directivas e imports Razor.",
@@ -13973,7 +13973,7 @@ export const QUESTIONS = [
   {
     "id": 1271,
     "topic_num": 26,
-    "question": "¿Cómo debe interpretarse esta regla? Los layouts proporcionan una estructura visual común para páginas.",
+    "question": "Según la fuente oficial, en el ámbito «layouts · proporcionan · estructura · visual», ¿qué afirmación responde al objetivo t26-lo-052? (Referencia ad4a9754371c)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "Una configuración que desactiva todo renderizado.",
@@ -13984,7 +13984,7 @@ export const QUESTIONS = [
   {
     "id": 1272,
     "topic_num": 26,
-    "question": "¿Qué efecto tiene esta característica? Una página enrutable se identifica mediante una directiva @page.",
+    "question": "Según la fuente oficial, en el ámbito «página · enrutable · identifica · mediante», ¿qué afirmación responde al objetivo t26-lo-053? (Referencia a7515768667b)",
     "option_a": "Una página enrutable se identifica mediante una directiva @page.",
     "option_b": "Una operación SQL local sin relación con componentes.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -13995,7 +13995,7 @@ export const QUESTIONS = [
   {
     "id": 1273,
     "topic_num": 26,
-    "question": "¿Qué debe saber el desarrollador? El proyecto de servidor configura endpoints y servicios necesarios para la aplicación.",
+    "question": "Según la fuente oficial, en el ámbito «proyecto · servidor · configura · endpoints», ¿qué afirmación responde al objetivo t26-lo-054? (Referencia 75d923841505)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "El proyecto de servidor configura endpoints y servicios necesarios para la aplicación.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -14006,7 +14006,7 @@ export const QUESTIONS = [
   {
     "id": 1274,
     "topic_num": 26,
-    "question": "¿Cuál es la aplicación práctica? El proyecto cliente WebAssembly contiene recursos que se descargan y ejecutan en el navegador.",
+    "question": "Según la fuente oficial, en el ámbito «proyecto · cliente · WebAssembly · contiene», ¿qué afirmación responde al objetivo t26-lo-055? (Referencia 705637d79370)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "El proyecto cliente WebAssembly contiene recursos que se descargan y ejecutan en el navegador.",
@@ -14017,7 +14017,7 @@ export const QUESTIONS = [
   {
     "id": 1275,
     "topic_num": 26,
-    "question": "¿Qué comportamiento describe la documentación? Una solución puede separar cliente, servidor y librerías compartidas.",
+    "question": "Según la fuente oficial, en el ámbito «solución · separar · cliente · servidor», ¿qué afirmación responde al objetivo t26-lo-056? (Referencia 65f42b86b292)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "Una configuración que desactiva todo renderizado.",
@@ -14028,7 +14028,7 @@ export const QUESTIONS = [
   {
     "id": 1276,
     "topic_num": 26,
-    "question": "¿Qué opción explica correctamente el caso? Una librería de clases compartida puede contener componentes o modelos usados por varios proyectos.",
+    "question": "Según la fuente oficial, en el ámbito «librería · clases · compartida · contener», ¿qué afirmación responde al objetivo t26-lo-057? (Referencia c18dc1785571)",
     "option_a": "Una librería de clases compartida puede contener componentes o modelos usados por varios proyectos.",
     "option_b": "Una operación SQL local sin relación con componentes.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -14039,7 +14039,7 @@ export const QUESTIONS = [
   {
     "id": 1277,
     "topic_num": 26,
-    "question": "¿Qué relación es válida? La configuración de render modes se registra durante la configuración de servicios de componentes.",
+    "question": "Según la fuente oficial, en el ámbito «configuración · render · modes · registra», ¿qué afirmación responde al objetivo t26-lo-058? (Referencia 3e4c561618ae)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "La configuración de render modes se registra durante la configuración de servicios de componentes.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -14050,7 +14050,7 @@ export const QUESTIONS = [
   {
     "id": 1278,
     "topic_num": 26,
-    "question": "¿Cómo se diseña correctamente esta solución? El pipeline debe mapear los endpoints necesarios para una Blazor Web App.",
+    "question": "Según la fuente oficial, en el ámbito «pipeline · debe · mapear · endpoints», ¿qué afirmación responde al objetivo t26-lo-059? (Referencia bbe3eb23f281)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "El pipeline debe mapear los endpoints necesarios para una Blazor Web App.",
@@ -14061,7 +14061,7 @@ export const QUESTIONS = [
   {
     "id": 1279,
     "topic_num": 26,
-    "question": "¿Qué diagnóstico corresponde? Los assets estáticos deben publicarse junto con la aplicación o en el servicio estático elegido.",
+    "question": "Según la fuente oficial, en el ámbito «assets · estáticos · deben · publicarse», ¿qué afirmación responde al objetivo t26-lo-060? (Referencia e6da1c8346ea)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "Una configuración que desactiva todo renderizado.",
@@ -14072,7 +14072,7 @@ export const QUESTIONS = [
   {
     "id": 1280,
     "topic_num": 26,
-    "question": "¿Qué afirmación es correcta? Una aplicación standalone WebAssembly puede alojarse en un servidor de archivos estáticos.",
+    "question": "Según la fuente oficial, en el ámbito «aplicación · standalone · WebAssembly · alojarse», ¿qué afirmación responde al objetivo t26-lo-061? (Referencia 85387a77d9e1)",
     "option_a": "Una aplicación standalone WebAssembly puede alojarse en un servidor de archivos estáticos.",
     "option_b": "Una operación SQL local sin relación con componentes.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -14083,7 +14083,7 @@ export const QUESTIONS = [
   {
     "id": 1281,
     "topic_num": 26,
-    "question": "¿Cómo debe interpretarse esta regla? Una aplicación hosted necesita el backend para servir el cliente y proporcionar sus APIs.",
+    "question": "Según la fuente oficial, en el ámbito «aplicación · hosted · necesita · backend», ¿qué afirmación responde al objetivo t26-lo-062? (Referencia bde472d74b1c)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una aplicación hosted necesita el backend para servir el cliente y proporcionar sus APIs.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -14094,7 +14094,7 @@ export const QUESTIONS = [
   {
     "id": 1282,
     "topic_num": 26,
-    "question": "¿Qué efecto tiene esta característica? El despliegue WebAssembly debe considerar el tamaño del runtime y las dependencias descargadas.",
+    "question": "Según la fuente oficial, en el ámbito «despliegue · WebAssembly · debe · considerar», ¿qué afirmación responde al objetivo t26-lo-063? (Referencia 2bae03f1f6f3)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "El despliegue WebAssembly debe considerar el tamaño del runtime y las dependencias descargadas.",
@@ -14105,7 +14105,7 @@ export const QUESTIONS = [
   {
     "id": 1283,
     "topic_num": 26,
-    "question": "¿Qué debe saber el desarrollador? La compresión de assets puede reducir el coste de descarga de una aplicación WebAssembly.",
+    "question": "Según la fuente oficial, en el ámbito «compresión · assets · reducir · coste», ¿qué afirmación responde al objetivo t26-lo-064? (Referencia 2770f419b5a8)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "Una configuración que desactiva todo renderizado.",
@@ -14116,7 +14116,7 @@ export const QUESTIONS = [
   {
     "id": 1284,
     "topic_num": 26,
-    "question": "¿Cuál es la aplicación práctica? El fingerprinting de assets permite identificar versiones publicadas de recursos estáticos.",
+    "question": "Según la fuente oficial, en el ámbito «fingerprinting · assets · permite · identificar», ¿qué afirmación responde al objetivo t26-lo-065? (Referencia c8ed3c2dec8c)",
     "option_a": "El fingerprinting de assets permite identificar versiones publicadas de recursos estáticos.",
     "option_b": "Una operación SQL local sin relación con componentes.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -14127,7 +14127,7 @@ export const QUESTIONS = [
   {
     "id": 1285,
     "topic_num": 26,
-    "question": "¿Qué comportamiento describe la documentación? Blazor Server puede conservar circuitos desconectados durante un intervalo configurable.",
+    "question": "Según la fuente oficial, en el ámbito «Blazor · Server · conservar · circuitos», ¿qué afirmación responde al objetivo t26-lo-066? (Referencia 059409fe895c)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Blazor Server puede conservar circuitos desconectados durante un intervalo configurable.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -14138,7 +14138,7 @@ export const QUESTIONS = [
   {
     "id": 1286,
     "topic_num": 26,
-    "question": "¿Qué opción explica correctamente el caso? Cerrar una pestaña es una terminación normal del circuito Blazor Server.",
+    "question": "Según la fuente oficial, en el ámbito «Cerrar · pestaña · terminación · normal», ¿qué afirmación responde al objetivo t26-lo-067? (Referencia eb13f31eedf5)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "Cerrar una pestaña es una terminación normal del circuito Blazor Server.",
@@ -14149,7 +14149,7 @@ export const QUESTIONS = [
   {
     "id": 1287,
     "topic_num": 26,
-    "question": "¿Qué relación es válida? Una desconexión de red puede ser no normal y permitir una reconexión posterior.",
+    "question": "Según la fuente oficial, en el ámbito «desconexión · normal · permitir · reconexión», ¿qué afirmación responde al objetivo t26-lo-068? (Referencia b5119bb73073)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "Una configuración que desactiva todo renderizado.",
@@ -14160,7 +14160,7 @@ export const QUESTIONS = [
   {
     "id": 1288,
     "topic_num": 26,
-    "question": "¿Cómo se diseña correctamente esta solución? Cada circuito contiene instancias de estado administrado para esa sesión de cliente.",
+    "question": "Según la fuente oficial, en el ámbito «Cada · circuito · contiene · instancias», ¿qué afirmación responde al objetivo t26-lo-069? (Referencia 239b14bdec07)",
     "option_a": "Cada circuito contiene instancias de estado administrado para esa sesión de cliente.",
     "option_b": "Una operación SQL local sin relación con componentes.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -14171,7 +14171,7 @@ export const QUESTIONS = [
   {
     "id": 1289,
     "topic_num": 26,
-    "question": "¿Qué diagnóstico corresponde? El estado de circuito aumenta el consumo de servidor por cliente en Blazor Server.",
+    "question": "Según la fuente oficial, en el ámbito «estado · circuito · aumenta · consumo», ¿qué afirmación responde al objetivo t26-lo-070? (Referencia 505c8742d268)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "El estado de circuito aumenta el consumo de servidor por cliente en Blazor Server.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -14182,7 +14182,7 @@ export const QUESTIONS = [
   {
     "id": 1290,
     "topic_num": 26,
-    "question": "¿Qué afirmación es correcta? La elección de Server puede ser adecuada cuando se necesita mantener lógica y recursos en el servidor.",
+    "question": "Según la fuente oficial, en el ámbito «elección · Server · adecuada · cuando», ¿qué afirmación responde al objetivo t26-lo-071? (Referencia 4915454986c9)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "La elección de Server puede ser adecuada cuando se necesita mantener lógica y recursos en el servidor.",
@@ -14193,7 +14193,7 @@ export const QUESTIONS = [
   {
     "id": 1291,
     "topic_num": 26,
-    "question": "¿Cómo debe interpretarse esta regla? La elección de WebAssembly puede ser adecuada cuando se busca ejecución cliente y despliegue estático.",
+    "question": "Según la fuente oficial, en el ámbito «elección · WebAssembly · adecuada · cuando», ¿qué afirmación responde al objetivo t26-lo-072? (Referencia 34c590f8a15d)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "Una configuración que desactiva todo renderizado.",
@@ -14204,7 +14204,7 @@ export const QUESTIONS = [
   {
     "id": 1292,
     "topic_num": 26,
-    "question": "¿Qué efecto tiene esta característica? La elección Hybrid puede integrar UI Razor con capacidades nativas del dispositivo.",
+    "question": "Según la fuente oficial, en el ámbito «elección · Hybrid · integrar · Razor», ¿qué afirmación responde al objetivo t26-lo-073? (Referencia ca9b1036ba6b)",
     "option_a": "La elección Hybrid puede integrar UI Razor con capacidades nativas del dispositivo.",
     "option_b": "Una operación SQL local sin relación con componentes.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -14215,7 +14215,7 @@ export const QUESTIONS = [
   {
     "id": 1293,
     "topic_num": 26,
-    "question": "¿Qué debe saber el desarrollador? El modelo de hosting no obliga a cambiar los componentes Razor que no dependan de APIs específicas.",
+    "question": "Según la fuente oficial, en el ámbito «modelo · hosting · obliga · cambiar», ¿qué afirmación responde al objetivo t26-lo-074? (Referencia 147100acd0ef)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "El modelo de hosting no obliga a cambiar los componentes Razor que no dependan de APIs específicas.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -14226,7 +14226,7 @@ export const QUESTIONS = [
   {
     "id": 1294,
     "topic_num": 26,
-    "question": "¿Cuál es la aplicación práctica? Un componente interactivo no debe asumirse interactivo si solo se ha prerenderizado estáticamente.",
+    "question": "Según la fuente oficial, en el ámbito «componente · interactivo · debe · asumirse», ¿qué afirmación responde al objetivo t26-lo-075? (Referencia 224aaaf6b4c1)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "Un componente interactivo no debe asumirse interactivo si solo se ha prerenderizado estáticamente.",
@@ -14237,7 +14237,7 @@ export const QUESTIONS = [
   {
     "id": 1295,
     "topic_num": 26,
-    "question": "¿Qué comportamiento describe la documentación? Durante prerendering no están disponibles todas las capacidades que requieren un circuito activo.",
+    "question": "Según la fuente oficial, en el ámbito «Durante · prerendering · están · disponibles», ¿qué afirmación responde al objetivo t26-lo-076? (Referencia 626ae5bf91e7)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "Una configuración que desactiva todo renderizado.",
@@ -14248,7 +14248,7 @@ export const QUESTIONS = [
   {
     "id": 1296,
     "topic_num": 26,
-    "question": "¿Qué opción explica correctamente el caso? Un componente puede requerir un render mode interactivo para responder a eventos de usuario.",
+    "question": "Según la fuente oficial, en el ámbito «componente · requerir · render · mode», ¿qué afirmación responde al objetivo t26-lo-077? (Referencia 79fa561bb886)",
     "option_a": "Un componente puede requerir un render mode interactivo para responder a eventos de usuario.",
     "option_b": "Una operación SQL local sin relación con componentes.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -14259,7 +14259,7 @@ export const QUESTIONS = [
   {
     "id": 1297,
     "topic_num": 26,
-    "question": "¿Qué relación es válida? Los modos de renderizado pueden configurarse por componente, página o aplicación.",
+    "question": "Según la fuente oficial, en el ámbito «modos · renderizado · pueden · configurarse», ¿qué afirmación responde al objetivo t26-lo-078? (Referencia 468e8217e93b)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Los modos de renderizado pueden configurarse por componente, página o aplicación.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -14270,7 +14270,7 @@ export const QUESTIONS = [
   {
     "id": 1298,
     "topic_num": 26,
-    "question": "¿Cómo se diseña correctamente esta solución? La selección de InteractiveServer implica dependencia de la conexión cliente-servidor para eventos.",
+    "question": "Según la fuente oficial, en el ámbito «selección · InteractiveServer · implica · dependencia», ¿qué afirmación responde al objetivo t26-lo-079? (Referencia 6e6da049d335)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "La selección de InteractiveServer implica dependencia de la conexión cliente-servidor para eventos.",
@@ -14281,7 +14281,7 @@ export const QUESTIONS = [
   {
     "id": 1299,
     "topic_num": 26,
-    "question": "¿Qué diagnóstico corresponde? La selección de InteractiveWebAssembly implica entregar al navegador el código cliente necesario.",
+    "question": "Según la fuente oficial, en el ámbito «selección · InteractiveWebAssembly · implica · entregar», ¿qué afirmación responde al objetivo t26-lo-080? (Referencia 7929483ea90c)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "Una configuración que desactiva todo renderizado.",
@@ -14292,7 +14292,7 @@ export const QUESTIONS = [
   {
     "id": 1300,
     "topic_num": 26,
-    "question": "¿Qué afirmación es correcta? InteractiveAuto intenta combinar la carga inicial server-side con la posterior ejecución WebAssembly.",
+    "question": "Según la fuente oficial, en el ámbito «InteractiveAuto · intenta · combinar · carga», ¿qué afirmación responde al objetivo t26-lo-081? (Referencia 3e98bfe46ec5)",
     "option_a": "InteractiveAuto intenta combinar la carga inicial server-side con la posterior ejecución WebAssembly.",
     "option_b": "Una operación SQL local sin relación con componentes.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -14303,7 +14303,7 @@ export const QUESTIONS = [
   {
     "id": 1301,
     "topic_num": 26,
-    "question": "¿Cómo debe interpretarse esta regla? El render mode se propaga a componentes descendientes según dónde se aplique.",
+    "question": "Según la fuente oficial, en el ámbito «render · mode · propaga · componentes», ¿qué afirmación responde al objetivo t26-lo-082? (Referencia be441c7204fb)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "El render mode se propaga a componentes descendientes según dónde se aplique.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -14314,7 +14314,7 @@ export const QUESTIONS = [
   {
     "id": 1302,
     "topic_num": 26,
-    "question": "¿Qué efecto tiene esta característica? Una solución debe registrar los servicios correspondientes al modelo de componentes que utiliza.",
+    "question": "Según la fuente oficial, en el ámbito «solución · debe · registrar · servicios», ¿qué afirmación responde al objetivo t26-lo-083? (Referencia 5680b240f612)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "Una solución debe registrar los servicios correspondientes al modelo de componentes que utiliza.",
@@ -14325,7 +14325,7 @@ export const QUESTIONS = [
   {
     "id": 1303,
     "topic_num": 26,
-    "question": "¿Qué debe saber el desarrollador? El archivo de configuración del proyecto determina el SDK y referencias usadas por Blazor.",
+    "question": "Según la fuente oficial, en el ámbito «archivo · configuración · proyecto · determina», ¿qué afirmación responde al objetivo t26-lo-084? (Referencia 4754ddac3c30)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "Una configuración que desactiva todo renderizado.",
@@ -14336,7 +14336,7 @@ export const QUESTIONS = [
   {
     "id": 1304,
     "topic_num": 26,
-    "question": "¿Cuál es la aplicación práctica? Una aplicación Blazor puede consumir una Web API usando el modelo de hosting elegido.",
+    "question": "Según la fuente oficial, en el ámbito «aplicación · Blazor · consumir · usando», ¿qué afirmación responde al objetivo t26-lo-085? (Referencia ff1fbc969319)",
     "option_a": "Una aplicación Blazor puede consumir una Web API usando el modelo de hosting elegido.",
     "option_b": "Una operación SQL local sin relación con componentes.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -14347,7 +14347,7 @@ export const QUESTIONS = [
   {
     "id": 1305,
     "topic_num": 26,
-    "question": "¿Qué comportamiento describe la documentación? La lógica que accede directamente a recursos del servidor no puede trasladarse sin cambios al WebAssembly cliente.",
+    "question": "Según la fuente oficial, en el ámbito «lógica · accede · directamente · recursos», ¿qué afirmación responde al objetivo t26-lo-086? (Referencia 8fc6b10336e0)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "La lógica que accede directamente a recursos del servidor no puede trasladarse sin cambios al WebAssembly cliente.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -14358,7 +14358,7 @@ export const QUESTIONS = [
   {
     "id": 1306,
     "topic_num": 26,
-    "question": "¿Qué opción explica correctamente el caso? Los componentes y dependencias se comparten solo cuando sus APIs son compatibles con el entorno de ejecución.",
+    "question": "Según la fuente oficial, en el ámbito «componentes · dependencias · comparten · solo», ¿qué afirmación responde al objetivo t26-lo-087? (Referencia 3a0afa86730e)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "Los componentes y dependencias se comparten solo cuando sus APIs son compatibles con el entorno de ejecución.",
@@ -14369,7 +14369,7 @@ export const QUESTIONS = [
   {
     "id": 1307,
     "topic_num": 26,
-    "question": "¿Qué relación es válida? La seguridad de operaciones servidor debe mantenerse en el backend aunque exista UI WebAssembly.",
+    "question": "Según la fuente oficial, en el ámbito «seguridad · operaciones · servidor · debe», ¿qué afirmación responde al objetivo t26-lo-088? (Referencia 95d769b4fa17)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "Una configuración que desactiva todo renderizado.",
@@ -14380,7 +14380,7 @@ export const QUESTIONS = [
   {
     "id": 1308,
     "topic_num": 26,
-    "question": "¿Cómo se diseña correctamente esta solución? El despliegue de una Blazor Web App debe incluir la configuración de endpoints y assets requerida por su modo.",
+    "question": "Según la fuente oficial, en el ámbito «despliegue · Blazor · debe · incluir», ¿qué afirmación responde al objetivo t26-lo-089? (Referencia a7d38fef9c7a)",
     "option_a": "El despliegue de una Blazor Web App debe incluir la configuración de endpoints y assets requerida por su modo.",
     "option_b": "Una operación SQL local sin relación con componentes.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -14391,7 +14391,7 @@ export const QUESTIONS = [
   {
     "id": 1309,
     "topic_num": 26,
-    "question": "¿Qué diagnóstico corresponde? El tamaño del payload debe evaluarse al elegir WebAssembly para conexiones lentas.",
+    "question": "Según la fuente oficial, en el ámbito «tamaño · payload · debe · evaluarse», ¿qué afirmación responde al objetivo t26-lo-090? (Referencia 2e7728d93d93)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "El tamaño del payload debe evaluarse al elegir WebAssembly para conexiones lentas.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -14402,7 +14402,7 @@ export const QUESTIONS = [
   {
     "id": 1310,
     "topic_num": 26,
-    "question": "¿Qué afirmación es correcta? La disponibilidad de WebAssembly en el navegador es una consideración del modelo cliente.",
+    "question": "Según la fuente oficial, en el ámbito «disponibilidad · WebAssembly · navegador · consideración», ¿qué afirmación responde al objetivo t26-lo-091? (Referencia b95525a69630)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "La disponibilidad de WebAssembly en el navegador es una consideración del modelo cliente.",
@@ -14413,7 +14413,7 @@ export const QUESTIONS = [
   {
     "id": 1311,
     "topic_num": 26,
-    "question": "¿Cómo debe interpretarse esta regla? Un entorno sin soporte WebAssembly puede favorecer Blazor Server.",
+    "question": "Según la fuente oficial, en el ámbito «entorno · soporte · WebAssembly · favorecer», ¿qué afirmación responde al objetivo t26-lo-092? (Referencia 50f7d5ab4a50)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "Una configuración que desactiva todo renderizado.",
@@ -14424,7 +14424,7 @@ export const QUESTIONS = [
   {
     "id": 1312,
     "topic_num": 26,
-    "question": "¿Qué efecto tiene esta característica? La escala de conexiones simultáneas es una consideración del modelo Blazor Server.",
+    "question": "Según la fuente oficial, en el ámbito «escala · conexiones · simultáneas · consideración», ¿qué afirmación responde al objetivo t26-lo-093? (Referencia 1f34c0ad440c)",
     "option_a": "La escala de conexiones simultáneas es una consideración del modelo Blazor Server.",
     "option_b": "Una operación SQL local sin relación con componentes.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -14435,7 +14435,7 @@ export const QUESTIONS = [
   {
     "id": 1313,
     "topic_num": 26,
-    "question": "¿Qué debe saber el desarrollador? Un diseño de Blazor Web App debe decidir explícitamente qué partes son estáticas o interactivas.",
+    "question": "Según la fuente oficial, en el ámbito «diseño · Blazor · debe · decidir», ¿qué afirmación responde al objetivo t26-lo-094? (Referencia 3cc169252f19)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Un diseño de Blazor Web App debe decidir explícitamente qué partes son estáticas o interactivas.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -14446,7 +14446,7 @@ export const QUESTIONS = [
   {
     "id": 1314,
     "topic_num": 26,
-    "question": "¿Cuál es la aplicación práctica? Una solución de Blazor debe elegir hosting, render mode y despliegue de forma coherente.",
+    "question": "Según la fuente oficial, en el ámbito «solución · Blazor · debe · elegir», ¿qué afirmación responde al objetivo t26-lo-095? (Referencia 6e5ef26020d6)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "Una solución de Blazor debe elegir hosting, render mode y despliegue de forma coherente.",
@@ -14457,7 +14457,7 @@ export const QUESTIONS = [
   {
     "id": 1315,
     "topic_num": 26,
-    "question": "¿Qué comportamiento describe la documentación? Una aplicación debe publicar los recursos estáticos que necesita el modelo de hosting elegido.",
+    "question": "Según la fuente oficial, en el ámbito «aplicación · debe · publicar · recursos», ¿qué afirmación responde al objetivo t26-lo-096? (Referencia 2be436377224)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "Una configuración que desactiva todo renderizado.",
@@ -14468,7 +14468,7 @@ export const QUESTIONS = [
   {
     "id": 1316,
     "topic_num": 26,
-    "question": "¿Qué opción explica correctamente el caso? La configuración de producción debe preservar las rutas y endpoints usados por la aplicación Blazor.",
+    "question": "Según la fuente oficial, en el ámbito «configuración · producción · debe · preservar», ¿qué afirmación responde al objetivo t26-lo-097? (Referencia 2bfb4e5d8143)",
     "option_a": "La configuración de producción debe preservar las rutas y endpoints usados por la aplicación Blazor.",
     "option_b": "Una operación SQL local sin relación con componentes.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -14479,7 +14479,7 @@ export const QUESTIONS = [
   {
     "id": 1317,
     "topic_num": 26,
-    "question": "¿Qué relación es válida? El modelo de hosting elegido es una decisión de arquitectura y no solo una opción visual.",
+    "question": "Según la fuente oficial, en el ámbito «modelo · hosting · elegido · decisión», ¿qué afirmación responde al objetivo t26-lo-098? (Referencia 2ca02bcc4a0a)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "El modelo de hosting elegido es una decisión de arquitectura y no solo una opción visual.",
     "option_c": "Una vista MVC que no participa en Blazor.",
@@ -14490,7 +14490,7 @@ export const QUESTIONS = [
   {
     "id": 1318,
     "topic_num": 26,
-    "question": "¿Cómo se diseña correctamente esta solución? El modo de renderizado debe probarse en el entorno de despliegue real.",
+    "question": "Según la fuente oficial, en el ámbito «modo · renderizado · debe · probarse», ¿qué afirmación responde al objetivo t26-lo-099? (Referencia 953e88dc591f)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "El modo de renderizado debe probarse en el entorno de despliegue real.",
@@ -14501,12 +14501,1112 @@ export const QUESTIONS = [
   {
     "id": 1319,
     "topic_num": 26,
-    "question": "¿Qué diagnóstico corresponde? La solución debe documentar si el estado de la UI vive en servidor, cliente o ambos.",
+    "question": "Según la fuente oficial, en el ámbito «solución · debe · documentar · estado», ¿qué afirmación responde al objetivo t26-lo-100? (Referencia 548042ad9d51)",
     "option_a": "Una operación SQL local sin relación con componentes.",
     "option_b": "Una vista MVC que no participa en Blazor.",
     "option_c": "Una configuración que desactiva todo renderizado.",
     "option_d": "La solución debe documentar si el estado de la UI vive en servidor, cliente o ambos.",
     "correct": "D",
     "explanation": "La solución debe documentar si el estado de la UI vive en servidor, cliente o ambos."
+  },
+  {
+    "id": 1320,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «componente · Razor · unidad · reutilizable», ¿qué afirmación responde al objetivo t27-lo-001? (Referencia ae62cfc70fc7)",
+    "option_a": "Un componente Razor es una unidad reutilizable de UI que se define normalmente en un archivo .razor.",
+    "option_b": "Una operación SQL local sin relación con componentes.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "A",
+    "explanation": "Un componente Razor es una unidad reutilizable de UI que se define normalmente en un archivo .razor."
+  },
+  {
+    "id": 1321,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «componente · combinar · marcado · Razor», ¿qué afirmación responde al objetivo t27-lo-002? (Referencia 1d98296f3e80)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Un componente puede combinar marcado Razor y lógica C#.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "B",
+    "explanation": "Un componente puede combinar marcado Razor y lógica C#."
+  },
+  {
+    "id": 1322,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «directiva · @code · contiene · miembros», ¿qué afirmación responde al objetivo t27-lo-003? (Referencia 454140b60790)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "La directiva @code contiene miembros C# del componente.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "C",
+    "explanation": "La directiva @code contiene miembros C# del componente."
+  },
+  {
+    "id": 1323,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «componente · renderiza · árbol · renderizado.», ¿qué afirmación responde al objetivo t27-lo-004? (Referencia 6f35b42af79e)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Una configuración que desactiva todo binding.",
+    "option_d": "Un componente se renderiza como un árbol de renderizado.",
+    "correct": "D",
+    "explanation": "Un componente se renderiza como un árbol de renderizado."
+  },
+  {
+    "id": 1324,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «componente · padre · incluir · hijo», ¿qué afirmación responde al objetivo t27-lo-005? (Referencia 080cf9119a19)",
+    "option_a": "Un componente padre puede incluir un componente hijo mediante su elemento Razor.",
+    "option_b": "Una operación SQL local sin relación con componentes.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "A",
+    "explanation": "Un componente padre puede incluir un componente hijo mediante su elemento Razor."
+  },
+  {
+    "id": 1325,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «ParameterAttribute · marca · propiedad · pública», ¿qué afirmación responde al objetivo t27-lo-006? (Referencia 4b810ac053ea)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "ParameterAttribute marca una propiedad pública como parámetro de componente.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "B",
+    "explanation": "ParameterAttribute marca una propiedad pública como parámetro de componente."
+  },
+  {
+    "id": 1326,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «parámetro · componente · recibe · valor», ¿qué afirmación responde al objetivo t27-lo-007? (Referencia 2fa54ff1406c)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Un parámetro de componente recibe un valor desde el marcado del componente padre.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "C",
+    "explanation": "Un parámetro de componente recibe un valor desde el marcado del componente padre."
+  },
+  {
+    "id": 1327,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «parámetros · deben · tener · nombres», ¿qué afirmación responde al objetivo t27-lo-008? (Referencia d50254c83500)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Una configuración que desactiva todo binding.",
+    "option_d": "Los parámetros deben tener nombres que coincidan con los atributos usados por el padre.",
+    "correct": "D",
+    "explanation": "Los parámetros deben tener nombres que coincidan con los atributos usados por el padre."
+  },
+  {
+    "id": 1328,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «componente · recibir · fragmento · contenido», ¿qué afirmación responde al objetivo t27-lo-009? (Referencia 39230a9a60e5)",
+    "option_a": "Un componente puede recibir un fragmento de contenido como parámetro RenderFragment.",
+    "option_b": "Una operación SQL local sin relación con componentes.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "A",
+    "explanation": "Un componente puede recibir un fragmento de contenido como parámetro RenderFragment."
+  },
+  {
+    "id": 1329,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «parámetro · ChildContent · convención · habitual», ¿qué afirmación responde al objetivo t27-lo-010? (Referencia 9d71c0c0df5c)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "El parámetro ChildContent es la convención habitual para contenido hijo implícito.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "B",
+    "explanation": "El parámetro ChildContent es la convención habitual para contenido hijo implícito."
+  },
+  {
+    "id": 1330,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «OnInitialized · ejecuta · durante · inicialización», ¿qué afirmación responde al objetivo t27-lo-011? (Referencia 6545c71264a9)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "OnInitialized se ejecuta durante la inicialización del componente.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "C",
+    "explanation": "OnInitialized se ejecuta durante la inicialización del componente."
+  },
+  {
+    "id": 1331,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «OnInitializedAsync · permite · realizar · inicialización», ¿qué afirmación responde al objetivo t27-lo-012? (Referencia 112ccc9dc8c2)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Una configuración que desactiva todo binding.",
+    "option_d": "OnInitializedAsync permite realizar inicialización asíncrona.",
+    "correct": "D",
+    "explanation": "OnInitializedAsync permite realizar inicialización asíncrona."
+  },
+  {
+    "id": 1332,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «OnParametersSet · ejecuta · cuando · componente», ¿qué afirmación responde al objetivo t27-lo-013? (Referencia b06e7b901ee0)",
+    "option_a": "OnParametersSet se ejecuta cuando el componente recibe parámetros.",
+    "option_b": "Una operación SQL local sin relación con componentes.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "A",
+    "explanation": "OnParametersSet se ejecuta cuando el componente recibe parámetros."
+  },
+  {
+    "id": 1333,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «OnParametersSetAsync · permite · reaccionar · asíncronamente», ¿qué afirmación responde al objetivo t27-lo-014? (Referencia f2c82fbea0ac)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "OnParametersSetAsync permite reaccionar asíncronamente a nuevos parámetros.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "B",
+    "explanation": "OnParametersSetAsync permite reaccionar asíncronamente a nuevos parámetros."
+  },
+  {
+    "id": 1334,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «OnAfterRender · ejecuta · después · componente», ¿qué afirmación responde al objetivo t27-lo-015? (Referencia 426716465753)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "OnAfterRender se ejecuta después de que el componente haya renderizado.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "C",
+    "explanation": "OnAfterRender se ejecuta después de que el componente haya renderizado."
+  },
+  {
+    "id": 1335,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «OnAfterRenderAsync · permite · realizar · trabajo», ¿qué afirmación responde al objetivo t27-lo-016? (Referencia 1b0f7488b48b)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Una configuración que desactiva todo binding.",
+    "option_d": "OnAfterRenderAsync permite realizar trabajo asíncrono posterior al renderizado.",
+    "correct": "D",
+    "explanation": "OnAfterRenderAsync permite realizar trabajo asíncrono posterior al renderizado."
+  },
+  {
+    "id": 1336,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «parámetro · firstRender · OnAfterRender · distingue», ¿qué afirmación responde al objetivo t27-lo-017? (Referencia 53f3bb882dde)",
+    "option_a": "El parámetro firstRender de OnAfterRender distingue el primer renderizado.",
+    "option_b": "Una operación SQL local sin relación con componentes.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "A",
+    "explanation": "El parámetro firstRender de OnAfterRender distingue el primer renderizado."
+  },
+  {
+    "id": 1337,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «ShouldRender · controlar · produce · renderizado», ¿qué afirmación responde al objetivo t27-lo-018? (Referencia 71c71e15c874)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "ShouldRender puede controlar si se produce un renderizado posterior.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "B",
+    "explanation": "ShouldRender puede controlar si se produce un renderizado posterior."
+  },
+  {
+    "id": 1338,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «StateHasChanged · solicita · componente · vuelva», ¿qué afirmación responde al objetivo t27-lo-019? (Referencia 96fc9f1a13f6)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "StateHasChanged solicita que el componente se vuelva a renderizar.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "C",
+    "explanation": "StateHasChanged solicita que el componente se vuelva a renderizar."
+  },
+  {
+    "id": 1339,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «evento · normalmente · provoca · componente», ¿qué afirmación responde al objetivo t27-lo-020? (Referencia 334f04252f63)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Una configuración que desactiva todo binding.",
+    "option_d": "Un evento de UI normalmente provoca que el componente vuelva a renderizarse.",
+    "correct": "D",
+    "explanation": "Un evento de UI normalmente provoca que el componente vuelva a renderizarse."
+  },
+  {
+    "id": 1340,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «directiva · @onclick · enlaza · evento», ¿qué afirmación responde al objetivo t27-lo-021? (Referencia a6b276acb145)",
+    "option_a": "La directiva @onclick enlaza un evento de clic con un método o expresión.",
+    "option_b": "Una operación SQL local sin relación con componentes.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "A",
+    "explanation": "La directiva @onclick enlaza un evento de clic con un método o expresión."
+  },
+  {
+    "id": 1341,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «EventCallback · representa · callback · evento», ¿qué afirmación responde al objetivo t27-lo-022? (Referencia 2be49c491568)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "EventCallback representa un callback de evento entre componentes.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "B",
+    "explanation": "EventCallback representa un callback de evento entre componentes."
+  },
+  {
+    "id": 1342,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «EventCallback · TValue · proporciona · callback», ¿qué afirmación responde al objetivo t27-lo-023? (Referencia 8bf83f8adea3)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "EventCallback<TValue> proporciona un callback de evento con argumento tipado.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "C",
+    "explanation": "EventCallback<TValue> proporciona un callback de evento con argumento tipado."
+  },
+  {
+    "id": 1343,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «componente · hijo · notificar · padre», ¿qué afirmación responde al objetivo t27-lo-024? (Referencia 217b8ef4eb66)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Una configuración que desactiva todo binding.",
+    "option_d": "Un componente hijo puede notificar al padre invocando un EventCallback.",
+    "correct": "D",
+    "explanation": "Un componente hijo puede notificar al padre invocando un EventCallback."
+  },
+  {
+    "id": 1344,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «InvokeAsync · forma · habitual · invocar», ¿qué afirmación responde al objetivo t27-lo-025? (Referencia 2435f95c108f)",
+    "option_a": "InvokeAsync es la forma habitual de invocar un EventCallback.",
+    "option_b": "Una operación SQL local sin relación con componentes.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "A",
+    "explanation": "InvokeAsync es la forma habitual de invocar un EventCallback."
+  },
+  {
+    "id": 1345,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «manejadores · eventos · pueden · síncronos», ¿qué afirmación responde al objetivo t27-lo-026? (Referencia 64424295ab8f)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Los manejadores de eventos pueden ser síncronos o asíncronos.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "B",
+    "explanation": "Los manejadores de eventos pueden ser síncronos o asíncronos."
+  },
+  {
+    "id": 1346,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «manejador · asíncrono · eventos · devolver», ¿qué afirmación responde al objetivo t27-lo-027? (Referencia b3d2509e41aa)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Un manejador asíncrono de eventos puede devolver Task.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "C",
+    "explanation": "Un manejador asíncrono de eventos puede devolver Task."
+  },
+  {
+    "id": 1347,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «directiva · @bind · proporciona · enlace», ¿qué afirmación responde al objetivo t27-lo-028? (Referencia dc2154111887)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Una configuración que desactiva todo binding.",
+    "option_d": "La directiva @bind proporciona enlace bidireccional en controles compatibles.",
+    "correct": "D",
+    "explanation": "La directiva @bind proporciona enlace bidireccional en controles compatibles."
+  },
+  {
+    "id": 1348,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «@bind · value · enlaza · valor», ¿qué afirmación responde al objetivo t27-lo-029? (Referencia fa7aa73a24e8)",
+    "option_a": "@bind-value enlaza el valor de un elemento con una propiedad del componente.",
+    "option_b": "Una operación SQL local sin relación con componentes.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "A",
+    "explanation": "@bind-value enlaza el valor de un elemento con una propiedad del componente."
+  },
+  {
+    "id": 1349,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «@bind · event · permite · elegir», ¿qué afirmación responde al objetivo t27-lo-030? (Referencia 88c44bbf9120)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "@bind:event permite elegir el evento que actualiza un valor enlazado.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "B",
+    "explanation": "@bind:event permite elegir el evento que actualiza un valor enlazado."
+  },
+  {
+    "id": 1350,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «enlace · input · texto · actualizarse», ¿qué afirmación responde al objetivo t27-lo-031? (Referencia 0d12e3918d88)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Un enlace a un input de texto puede actualizarse en cada evento configurado.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "C",
+    "explanation": "Un enlace a un input de texto puede actualizarse en cada evento configurado."
+  },
+  {
+    "id": 1351,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «binding · componentes · parámetros · parámetro», ¿qué afirmación responde al objetivo t27-lo-032? (Referencia 4e05a2436fea)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Una configuración que desactiva todo binding.",
+    "option_d": "El binding de componentes usa parámetros y un parámetro de cambio con el patrón correspondiente.",
+    "correct": "D",
+    "explanation": "El binding de componentes usa parámetros y un parámetro de cambio con el patrón correspondiente."
+  },
+  {
+    "id": 1352,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «patrón · Value · ValueChanged · permite», ¿qué afirmación responde al objetivo t27-lo-033? (Referencia 40c96d6f9fd7)",
+    "option_a": "El patrón Value y ValueChanged permite implementar binding de componente.",
+    "option_b": "Una operación SQL local sin relación con componentes.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "A",
+    "explanation": "El patrón Value y ValueChanged permite implementar binding de componente."
+  },
+  {
+    "id": 1353,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «modificador · @bind · after · permite», ¿qué afirmación responde al objetivo t27-lo-034? (Referencia b9a8adf1f91e)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "El modificador @bind:after permite ejecutar lógica después de una actualización de binding.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "B",
+    "explanation": "El modificador @bind:after permite ejecutar lógica después de una actualización de binding."
+  },
+  {
+    "id": 1354,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «binding · checkbox · valor · booleano.», ¿qué afirmación responde al objetivo t27-lo-035? (Referencia b730a2c2eada)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "El binding de un checkbox usa un valor booleano.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "C",
+    "explanation": "El binding de un checkbox usa un valor booleano."
+  },
+  {
+    "id": 1355,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «binding · select · representar · valor», ¿qué afirmación responde al objetivo t27-lo-036? (Referencia 0441f35b9630)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Una configuración que desactiva todo binding.",
+    "option_d": "El binding de un select puede representar el valor seleccionado.",
+    "correct": "D",
+    "explanation": "El binding de un select puede representar el valor seleccionado."
+  },
+  {
+    "id": 1356,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «tipos · datos · enlazados · deben», ¿qué afirmación responde al objetivo t27-lo-037? (Referencia 53346fe13b64)",
+    "option_a": "Los tipos de datos enlazados deben ser compatibles con la conversión del componente.",
+    "option_b": "Una operación SQL local sin relación con componentes.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "A",
+    "explanation": "Los tipos de datos enlazados deben ser compatibles con la conversión del componente."
+  },
+  {
+    "id": 1357,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «componente · aceptar · expresión · valor», ¿qué afirmación responde al objetivo t27-lo-038? (Referencia 58d6344d2112)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Un componente puede aceptar una expresión o valor mediante un parámetro normal.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "B",
+    "explanation": "Un componente puede aceptar una expresión o valor mediante un parámetro normal."
+  },
+  {
+    "id": 1358,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «CascadingValue · proporciona · valor · componentes», ¿qué afirmación responde al objetivo t27-lo-039? (Referencia 687b95b124db)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "CascadingValue proporciona un valor a componentes descendientes.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "C",
+    "explanation": "CascadingValue proporciona un valor a componentes descendientes."
+  },
+  {
+    "id": 1359,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «CascadingParameter · recibe · valor · proporcionado», ¿qué afirmación responde al objetivo t27-lo-040? (Referencia 0e70618597fb)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Una configuración que desactiva todo binding.",
+    "option_d": "CascadingParameter recibe un valor proporcionado por un ancestro.",
+    "correct": "D",
+    "explanation": "CascadingParameter recibe un valor proporcionado por un ancestro."
+  },
+  {
+    "id": 1360,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «valor · cascada · evita · pasar», ¿qué afirmación responde al objetivo t27-lo-041? (Referencia afdae5421fa5)",
+    "option_a": "Un valor en cascada evita pasar explícitamente el mismo valor por cada componente intermedio.",
+    "option_b": "Una operación SQL local sin relación con componentes.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "A",
+    "explanation": "Un valor en cascada evita pasar explícitamente el mismo valor por cada componente intermedio."
+  },
+  {
+    "id": 1361,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «coincidencia · cascading · parameter · basarse», ¿qué afirmación responde al objetivo t27-lo-042? (Referencia b379a84f0d37)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "La coincidencia de un cascading parameter puede basarse en el tipo.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "B",
+    "explanation": "La coincidencia de un cascading parameter puede basarse en el tipo."
+  },
+  {
+    "id": 1362,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «valores · cascada · pueden · nombrarse», ¿qué afirmación responde al objetivo t27-lo-043? (Referencia b36a878f11d1)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Los valores en cascada pueden nombrarse para distinguir valores del mismo tipo.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "C",
+    "explanation": "Los valores en cascada pueden nombrarse para distinguir valores del mismo tipo."
+  },
+  {
+    "id": 1363,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «nombre · valor · cascada · debe», ¿qué afirmación responde al objetivo t27-lo-044? (Referencia 21d061a200f4)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Una configuración que desactiva todo binding.",
+    "option_d": "El nombre de un valor en cascada debe coincidir con el nombre esperado por el receptor.",
+    "correct": "D",
+    "explanation": "El nombre de un valor en cascada debe coincidir con el nombre esperado por el receptor."
+  },
+  {
+    "id": 1364,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «IsFixed · indica · valor · cascada», ¿qué afirmación responde al objetivo t27-lo-045? (Referencia 898caca9dc95)",
+    "option_a": "IsFixed indica que un valor en cascada no cambia y evita suscripciones innecesarias.",
+    "option_b": "Una operación SQL local sin relación con componentes.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "A",
+    "explanation": "IsFixed indica que un valor en cascada no cambia y evita suscripciones innecesarias."
+  },
+  {
+    "id": 1365,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «cambios · valor · cascada · pueden», ¿qué afirmación responde al objetivo t27-lo-046? (Referencia 8098becf470d)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Los cambios de un valor en cascada pueden provocar el renderizado de descendientes.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "B",
+    "explanation": "Los cambios de un valor en cascada pueden provocar el renderizado de descendientes."
+  },
+  {
+    "id": 1366,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «valor · mutable · cascada · debe», ¿qué afirmación responde al objetivo t27-lo-047? (Referencia 038e22fdfc54)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Un valor mutable en cascada debe usarse con cuidado porque afecta a varios descendientes.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "C",
+    "explanation": "Un valor mutable en cascada debe usarse con cuidado porque afecta a varios descendientes."
+  },
+  {
+    "id": 1367,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «valores · cascada · sustituyen · automáticamente», ¿qué afirmación responde al objetivo t27-lo-048? (Referencia deeac4516a40)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Una configuración que desactiva todo binding.",
+    "option_d": "Los valores en cascada no sustituyen automáticamente a la inyección de dependencias.",
+    "correct": "D",
+    "explanation": "Los valores en cascada no sustituyen automáticamente a la inyección de dependencias."
+  },
+  {
+    "id": 1368,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «RenderFragment · representa · contenido · renderizarse», ¿qué afirmación responde al objetivo t27-lo-049? (Referencia 053c56f074a9)",
+    "option_a": "Un RenderFragment representa contenido de UI que puede renderizarse posteriormente.",
+    "option_b": "Una operación SQL local sin relación con componentes.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "A",
+    "explanation": "Un RenderFragment representa contenido de UI que puede renderizarse posteriormente."
+  },
+  {
+    "id": 1369,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «RenderFragment · TValue · representa · contenido», ¿qué afirmación responde al objetivo t27-lo-050? (Referencia 3cb3b4896bcc)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "RenderFragment<TValue> representa contenido templado que recibe un contexto.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "B",
+    "explanation": "RenderFragment<TValue> representa contenido templado que recibe un contexto."
+  },
+  {
+    "id": 1370,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «componente · templated · recibir · plantilla», ¿qué afirmación responde al objetivo t27-lo-051? (Referencia 553c3f1c641f)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Un componente templated puede recibir una plantilla para cada elemento de una colección.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "C",
+    "explanation": "Un componente templated puede recibir una plantilla para cada elemento de una colección."
+  },
+  {
+    "id": 1371,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «parámetro · plantilla · debe · declararse», ¿qué afirmación responde al objetivo t27-lo-052? (Referencia a8bd8666314d)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Una configuración que desactiva todo binding.",
+    "option_d": "El parámetro de plantilla debe declararse como RenderFragment<TValue>.",
+    "correct": "D",
+    "explanation": "El parámetro de plantilla debe declararse como RenderFragment<TValue>."
+  },
+  {
+    "id": 1372,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «contexto · plantilla · nombrarse · Context.», ¿qué afirmación responde al objetivo t27-lo-053? (Referencia 429749bfb4d0)",
+    "option_a": "El contexto de una plantilla puede nombrarse con Context.",
+    "option_b": "Una operación SQL local sin relación con componentes.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "A",
+    "explanation": "El contexto de una plantilla puede nombrarse con Context."
+  },
+  {
+    "id": 1373,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «contenido · ChildContent · incluir · marcado», ¿qué afirmación responde al objetivo t27-lo-054? (Referencia 29091fb88e04)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "El contenido ChildContent puede incluir marcado y componentes hijos.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "B",
+    "explanation": "El contenido ChildContent puede incluir marcado y componentes hijos."
+  },
+  {
+    "id": 1374,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «componente · exponer · varias · plantillas», ¿qué afirmación responde al objetivo t27-lo-055? (Referencia 3f264a38cbcf)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Un componente puede exponer varias plantillas mediante parámetros RenderFragment distintos.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "C",
+    "explanation": "Un componente puede exponer varias plantillas mediante parámetros RenderFragment distintos."
+  },
+  {
+    "id": 1375,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «plantilla · permite · separar · estructura», ¿qué afirmación responde al objetivo t27-lo-056? (Referencia 2c43b8c014a9)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Una configuración que desactiva todo binding.",
+    "option_d": "La plantilla permite separar la estructura de iteración de la representación visual.",
+    "correct": "D",
+    "explanation": "La plantilla permite separar la estructura de iteración de la representación visual."
+  },
+  {
+    "id": 1376,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «atributo · @key · ayuda · conservar», ¿qué afirmación responde al objetivo t27-lo-057? (Referencia 91af5a78972c)",
+    "option_a": "El atributo @key ayuda a conservar la identidad de elementos o componentes en una lista.",
+    "option_b": "Una operación SQL local sin relación con componentes.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "A",
+    "explanation": "El atributo @key ayuda a conservar la identidad de elementos o componentes en una lista."
+  },
+  {
+    "id": 1377,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «Cambiar · hacer · Blazor · descarte», ¿qué afirmación responde al objetivo t27-lo-058? (Referencia 73266e5c1960)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Cambiar una key puede hacer que Blazor descarte y cree una instancia diferente.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "B",
+    "explanation": "Cambiar una key puede hacer que Blazor descarte y cree una instancia diferente."
+  },
+  {
+    "id": 1378,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «ElementReference · representa · referencia · elemento», ¿qué afirmación responde al objetivo t27-lo-059? (Referencia c083419ea4ed)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "ElementReference representa una referencia a un elemento DOM.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "C",
+    "explanation": "ElementReference representa una referencia a un elemento DOM."
+  },
+  {
+    "id": 1379,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «@ref · captura · referencia · componente», ¿qué afirmación responde al objetivo t27-lo-060? (Referencia bb60cbdb3b5d)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Una configuración que desactiva todo binding.",
+    "option_d": "@ref captura una referencia a un componente o elemento después del renderizado.",
+    "correct": "D",
+    "explanation": "@ref captura una referencia a un componente o elemento después del renderizado."
+  },
+  {
+    "id": 1380,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «referencia · ElementReference · solo · debe», ¿qué afirmación responde al objetivo t27-lo-061? (Referencia 1619bd4e2a1b)",
+    "option_a": "Una referencia ElementReference solo debe usarse cuando el elemento ya se ha renderizado.",
+    "option_b": "Una operación SQL local sin relación con componentes.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "A",
+    "explanation": "Una referencia ElementReference solo debe usarse cuando el elemento ya se ha renderizado."
+  },
+  {
+    "id": 1381,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «operaciones · suelen · realizarse · mediante», ¿qué afirmación responde al objetivo t27-lo-062? (Referencia 3a2da446102b)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Las operaciones DOM suelen realizarse mediante interoperabilidad JavaScript.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "B",
+    "explanation": "Las operaciones DOM suelen realizarse mediante interoperabilidad JavaScript."
+  },
+  {
+    "id": 1382,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «modificadores · event · preventDefault · evitan», ¿qué afirmación responde al objetivo t27-lo-063? (Referencia 8383ca6202c2)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Los modificadores @on{event}:preventDefault evitan la acción predeterminada del navegador.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "C",
+    "explanation": "Los modificadores @on{event}:preventDefault evitan la acción predeterminada del navegador."
+  },
+  {
+    "id": 1383,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «modificador · stopPropagation · limita · propagación», ¿qué afirmación responde al objetivo t27-lo-064? (Referencia 76fa73b06ce8)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Una configuración que desactiva todo binding.",
+    "option_d": "El modificador stopPropagation limita la propagación de un evento.",
+    "correct": "D",
+    "explanation": "El modificador stopPropagation limita la propagación de un evento."
+  },
+  {
+    "id": 1384,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «argumentos · evento · pueden · recibirse», ¿qué afirmación responde al objetivo t27-lo-065? (Referencia 2ee96d0bb828)",
+    "option_a": "Los argumentos de evento pueden recibirse mediante tipos de evento específicos.",
+    "option_b": "Una operación SQL local sin relación con componentes.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "A",
+    "explanation": "Los argumentos de evento pueden recibirse mediante tipos de evento específicos."
+  },
+  {
+    "id": 1385,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «método · evento · recibir · MouseEventArgs», ¿qué afirmación responde al objetivo t27-lo-066? (Referencia 0bfce3e581c8)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Un método de evento puede recibir MouseEventArgs para un evento de ratón.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "B",
+    "explanation": "Un método de evento puede recibir MouseEventArgs para un evento de ratón."
+  },
+  {
+    "id": 1386,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «método · evento · recibir · ChangeEventArgs», ¿qué afirmación responde al objetivo t27-lo-067? (Referencia a08661c11f05)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Un método de evento puede recibir ChangeEventArgs para un cambio de formulario.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "C",
+    "explanation": "Un método de evento puede recibir ChangeEventArgs para un cambio de formulario."
+  },
+  {
+    "id": 1387,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «lambdas · permiten · pasar · datos», ¿qué afirmación responde al objetivo t27-lo-068? (Referencia 72654bd10abb)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Una configuración que desactiva todo binding.",
+    "option_d": "Los lambdas permiten pasar datos adicionales a un manejador de evento.",
+    "correct": "D",
+    "explanation": "Los lambdas permiten pasar datos adicionales a un manejador de evento."
+  },
+  {
+    "id": 1388,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «manejadores · eventos · deben · bloquear», ¿qué afirmación responde al objetivo t27-lo-069? (Referencia 1be88422def7)",
+    "option_a": "Los manejadores de eventos no deben bloquear innecesariamente el hilo de UI.",
+    "option_b": "Una operación SQL local sin relación con componentes.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "A",
+    "explanation": "Los manejadores de eventos no deben bloquear innecesariamente el hilo de UI."
+  },
+  {
+    "id": 1389,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «método · Dispose · permite · liberar», ¿qué afirmación responde al objetivo t27-lo-070? (Referencia fc28f0ef2699)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "El método Dispose permite liberar recursos de un componente.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "B",
+    "explanation": "El método Dispose permite liberar recursos de un componente."
+  },
+  {
+    "id": 1390,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «IAsyncDisposable · permite · liberar · recursos», ¿qué afirmación responde al objetivo t27-lo-071? (Referencia 20fbe1f0a8aa)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "IAsyncDisposable permite liberar recursos asíncronamente desde un componente.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "C",
+    "explanation": "IAsyncDisposable permite liberar recursos asíncronamente desde un componente."
+  },
+  {
+    "id": 1391,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «componente · suscribe · eventos · debe», ¿qué afirmación responde al objetivo t27-lo-072? (Referencia 2df8be9720f8)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Una configuración que desactiva todo binding.",
+    "option_d": "Un componente que se suscribe a eventos debe cancelar sus suscripciones al destruirse.",
+    "correct": "D",
+    "explanation": "Un componente que se suscribe a eventos debe cancelar sus suscripciones al destruirse."
+  },
+  {
+    "id": 1392,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «inicialización · asíncrona · debe · dejar», ¿qué afirmación responde al objetivo t27-lo-073? (Referencia d1ca49c03016)",
+    "option_a": "La inicialización asíncrona debe dejar el componente en un estado renderizable.",
+    "option_b": "Una operación SQL local sin relación con componentes.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "A",
+    "explanation": "La inicialización asíncrona debe dejar el componente en un estado renderizable."
+  },
+  {
+    "id": 1393,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «OnParametersSet · ejecutarse · durante · vida», ¿qué afirmación responde al objetivo t27-lo-074? (Referencia 9658fe4facd4)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "OnParametersSet puede ejecutarse más de una vez durante la vida del componente.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "B",
+    "explanation": "OnParametersSet puede ejecutarse más de una vez durante la vida del componente."
+  },
+  {
+    "id": 1394,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «OnInitialized · ejecuta · instancia · componente.», ¿qué afirmación responde al objetivo t27-lo-075? (Referencia 1a3eb823b1e8)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "OnInitialized se ejecuta una vez por instancia del componente.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "C",
+    "explanation": "OnInitialized se ejecuta una vez por instancia del componente."
+  },
+  {
+    "id": 1395,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «OnAfterRender · adecuado · interactuar · elementos», ¿qué afirmación responde al objetivo t27-lo-076? (Referencia ac8477c59fb7)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Una configuración que desactiva todo binding.",
+    "option_d": "OnAfterRender es adecuado para interactuar con elementos DOM ya creados.",
+    "correct": "D",
+    "explanation": "OnAfterRender es adecuado para interactuar con elementos DOM ya creados."
+  },
+  {
+    "id": 1396,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «debe · asumirse · JavaScript · está», ¿qué afirmación responde al objetivo t27-lo-077? (Referencia 24e0785419eb)",
+    "option_a": "No debe asumirse que JavaScript DOM está disponible durante el prerenderizado.",
+    "option_b": "Una operación SQL local sin relación con componentes.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "A",
+    "explanation": "No debe asumirse que JavaScript DOM está disponible durante el prerenderizado."
+  },
+  {
+    "id": 1397,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «cambio · estado · interno · debe», ¿qué afirmación responde al objetivo t27-lo-078? (Referencia dfeaab234115)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Un cambio de estado interno debe notificar a Blazor si ocurre fuera de un evento normal.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "B",
+    "explanation": "Un cambio de estado interno debe notificar a Blazor si ocurre fuera de un evento normal."
+  },
+  {
+    "id": 1398,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «StateHasChanged · debe · usarse · cuidado», ¿qué afirmación responde al objetivo t27-lo-079? (Referencia a7452d8c9405)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "StateHasChanged debe usarse con cuidado para evitar ciclos de renderizado.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "C",
+    "explanation": "StateHasChanged debe usarse con cuidado para evitar ciclos de renderizado."
+  },
+  {
+    "id": 1399,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «ShouldRender · impide · primer · renderizado», ¿qué afirmación responde al objetivo t27-lo-080? (Referencia eb5aa3251cc3)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Una configuración que desactiva todo binding.",
+    "option_d": "ShouldRender no impide el primer renderizado del componente.",
+    "correct": "D",
+    "explanation": "ShouldRender no impide el primer renderizado del componente."
+  },
+  {
+    "id": 1400,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «renderizado · padre · actualizar · parámetros», ¿qué afirmación responde al objetivo t27-lo-081? (Referencia 5a28c4abed43)",
+    "option_a": "El renderizado de un padre puede actualizar los parámetros del hijo.",
+    "option_b": "Una operación SQL local sin relación con componentes.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "A",
+    "explanation": "El renderizado de un padre puede actualizar los parámetros del hijo."
+  },
+  {
+    "id": 1401,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «componente · hijo · debe · mutar», ¿qué afirmación responde al objetivo t27-lo-082? (Referencia 882acae0438a)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Un componente hijo no debe mutar directamente el parámetro recibido del padre como estado compartido.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "B",
+    "explanation": "Un componente hijo no debe mutar directamente el parámetro recibido del padre como estado compartido."
+  },
+  {
+    "id": 1402,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «patrón · EventCallback · permite · padre», ¿qué afirmación responde al objetivo t27-lo-083? (Referencia 75b54a4bfdcc)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "El patrón EventCallback permite que el padre conserve la propiedad enlazada.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "C",
+    "explanation": "El patrón EventCallback permite que el padre conserve la propiedad enlazada."
+  },
+  {
+    "id": 1403,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «parámetro · componente · requerido · mediante», ¿qué afirmación responde al objetivo t27-lo-084? (Referencia c5e26323b590)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Una configuración que desactiva todo binding.",
+    "option_d": "Un parámetro de componente puede ser requerido mediante la metadata correspondiente.",
+    "correct": "D",
+    "explanation": "Un parámetro de componente puede ser requerido mediante la metadata correspondiente."
+  },
+  {
+    "id": 1404,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «parámetros · captura · atributos · permiten», ¿qué afirmación responde al objetivo t27-lo-085? (Referencia d1cd4e495bb2)",
+    "option_a": "Los parámetros de captura de atributos permiten recibir atributos no declarados explícitamente.",
+    "option_b": "Una operación SQL local sin relación con componentes.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "A",
+    "explanation": "Los parámetros de captura de atributos permiten recibir atributos no declarados explícitamente."
+  },
+  {
+    "id": 1405,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «captura · atributos · normalmente · propiedad», ¿qué afirmación responde al objetivo t27-lo-086? (Referencia 76dda8625ddf)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "La captura de atributos usa normalmente una propiedad Dictionary<string, object>.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "B",
+    "explanation": "La captura de atributos usa normalmente una propiedad Dictionary<string, object>."
+  },
+  {
+    "id": 1406,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «atributos · capturados · pueden · reenviarse», ¿qué afirmación responde al objetivo t27-lo-087? (Referencia fbdee0e229b8)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Los atributos capturados pueden reenviarse a un elemento HTML.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "C",
+    "explanation": "Los atributos capturados pueden reenviarse a un elemento HTML."
+  },
+  {
+    "id": 1407,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «composición · componentes · permite · construir», ¿qué afirmación responde al objetivo t27-lo-088? (Referencia e38a4ea021de)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Una configuración que desactiva todo binding.",
+    "option_d": "La composición de componentes permite construir UI sin herencia de controles.",
+    "correct": "D",
+    "explanation": "La composición de componentes permite construir UI sin herencia de controles."
+  },
+  {
+    "id": 1408,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «ciclo · vida · debe · elegirse», ¿qué afirmación responde al objetivo t27-lo-089? (Referencia dbd30acb387a)",
+    "option_a": "El ciclo de vida debe elegirse según si el trabajo depende de parámetros o del DOM.",
+    "option_b": "Una operación SQL local sin relación con componentes.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "A",
+    "explanation": "El ciclo de vida debe elegirse según si el trabajo depende de parámetros o del DOM."
+  },
+  {
+    "id": 1409,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «valor · cascada · representar · servicio», ¿qué afirmación responde al objetivo t27-lo-090? (Referencia 8bbf3cdbe2a9)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Un valor en cascada puede representar un servicio o contexto compartido.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "B",
+    "explanation": "Un valor en cascada puede representar un servicio o contexto compartido."
+  },
+  {
+    "id": 1410,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «valores · cascada · tipos · genéricos», ¿qué afirmación responde al objetivo t27-lo-091? (Referencia 9f9487cb8a65)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Los valores en cascada con tipos genéricos deben coincidir con el tipo esperado.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "C",
+    "explanation": "Los valores en cascada con tipos genéricos deben coincidir con el tipo esperado."
+  },
+  {
+    "id": 1411,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «plantilla · componente · encapsular · estrategia», ¿qué afirmación responde al objetivo t27-lo-092? (Referencia b297cfa3f10f)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Una configuración que desactiva todo binding.",
+    "option_d": "Una plantilla de componente puede encapsular una estrategia de renderizado reutilizable.",
+    "correct": "D",
+    "explanation": "Una plantilla de componente puede encapsular una estrategia de renderizado reutilizable."
+  },
+  {
+    "id": 1412,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «binding · componentes · debe · exponer», ¿qué afirmación responde al objetivo t27-lo-093? (Referencia 3bdc6e9648a9)",
+    "option_a": "El binding de componentes debe exponer el callback de cambio para propagar actualizaciones.",
+    "option_b": "Una operación SQL local sin relación con componentes.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "A",
+    "explanation": "El binding de componentes debe exponer el callback de cambio para propagar actualizaciones."
+  },
+  {
+    "id": 1413,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «evento · hijo · debe · usar», ¿qué afirmación responde al objetivo t27-lo-094? (Referencia 3a6fd5735f18)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Un evento de hijo debe usar EventCallback en lugar de invocar directamente lógica privada del padre.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "B",
+    "explanation": "Un evento de hijo debe usar EventCallback en lugar de invocar directamente lógica privada del padre."
+  },
+  {
+    "id": 1414,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «lista · dinámica · debe · usar», ¿qué afirmación responde al objetivo t27-lo-095? (Referencia 88d66cd4686f)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Una lista dinámica debe usar una key estable cuando la identidad de sus elementos importa.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "C",
+    "explanation": "Una lista dinámica debe usar una key estable cuando la identidad de sus elementos importa."
+  },
+  {
+    "id": 1415,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «diseño · componentes · debe · distinguir», ¿qué afirmación responde al objetivo t27-lo-096? (Referencia 47e8a8399409)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Una configuración que desactiva todo binding.",
+    "option_d": "Un diseño de componentes debe distinguir parámetros, estado local y valores en cascada.",
+    "correct": "D",
+    "explanation": "Un diseño de componentes debe distinguir parámetros, estado local y valores en cascada."
+  },
+  {
+    "id": 1416,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «combinación · parámetros · eventos · binding», ¿qué afirmación responde al objetivo t27-lo-097? (Referencia 24ab62e71362)",
+    "option_a": "La combinación de parámetros, eventos y binding define el flujo de datos entre componentes.",
+    "option_b": "Una operación SQL local sin relación con componentes.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "A",
+    "explanation": "La combinación de parámetros, eventos y binding define el flujo de datos entre componentes."
+  },
+  {
+    "id": 1417,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «solución · componentes · debe · evitar», ¿qué afirmación responde al objetivo t27-lo-098? (Referencia bb3f06c9fea9)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una solución de componentes debe evitar referencias DOM antes de OnAfterRender.",
+    "option_c": "Una vista MVC que no participa en Blazor.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "B",
+    "explanation": "Una solución de componentes debe evitar referencias DOM antes de OnAfterRender."
+  },
+  {
+    "id": 1418,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «componente · avanzado · combinar · plantilla», ¿qué afirmación responde al objetivo t27-lo-099? (Referencia c7f07ddbfbdb)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Un componente avanzado puede combinar plantilla, valores en cascada y callbacks tipados.",
+    "option_d": "Una configuración que desactiva todo binding.",
+    "correct": "C",
+    "explanation": "Un componente avanzado puede combinar plantilla, valores en cascada y callbacks tipados."
+  },
+  {
+    "id": 1419,
+    "topic_num": 27,
+    "question": "Según la fuente oficial, en el ámbito «ciclo · completo · componente · coordina», ¿qué afirmación responde al objetivo t27-lo-100? (Referencia 6ffc568d635f)",
+    "option_a": "Una operación SQL local sin relación con componentes.",
+    "option_b": "Una vista MVC que no participa en Blazor.",
+    "option_c": "Una configuración que desactiva todo binding.",
+    "option_d": "El ciclo completo de un componente coordina parámetros, renderizado, eventos y disposición.",
+    "correct": "D",
+    "explanation": "El ciclo completo de un componente coordina parámetros, renderizado, eventos y disposición."
   }
 ]
