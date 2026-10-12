@@ -1,7 +1,7 @@
 # Question-bank quality report — checkpoint 1
 
 **As of:** 2026-10-12 UTC
-**Scope:** topics 1--15 lot 1 are published; topic 16 lot 1 is reviewed and import-validated, ready for deployment.
+**Scope:** topics 1--16 lot 1 are reviewed, imported and published; later topics remain source-gated for subsequent work.
 
 ## Current counts
 
@@ -15,11 +15,11 @@
 | Deterministic duplicate matches | 0 | Exact, lexical and near-lexical checks against legacy/topic-lot records |
 | Semantic/concept decisions | 320 unique | Independently reviewed against the objective and proposition |
 | Native import/export | 320 | Accepted topics 1--16 are imported through `seed_data.py`; `frontend/src/questions.js` contains 1,520 records |
-| Published batches | 15 | Topics 1--15 are live at `https://micuentadecasa.github.io/dipu/`; topic 16 is deployment-ready |
+| Published batches | 16 | Topics 1--16 are live at `https://micuentadecasa.github.io/dipu/` |
 
 ## Lot 1 distributions
 
-Topics 1--16 lot 1 each use 4 basic, 10 intermediate and 6 advanced records. Topics 1--12 use documented official sources; topics 13--16 use the official PostgreSQL 18 documentation source. All sixteen independent review passes accepted 320 official-primary records after answer, explanation, semantic and concept checks. Topics 1--15 are live at `https://micuentadecasa.github.io/dipu/`; topic 16 is ready for deployment.
+Topics 1--16 lot 1 each use 4 basic, 10 intermediate and 6 advanced records. Topics 1--12 use documented official sources; topics 13--16 use the official PostgreSQL 18 documentation source. All sixteen independent review passes accepted 320 official-primary records after answer, explanation, semantic and concept checks. Topics 1--16 are live at `https://micuentadecasa.github.io/dipu/`.
 
 Candidate, reviewed, audit and checkpoint artifacts are recorded under `lots/`, `accepted/`, `reviews/` and `checkpoints/` for topics 1--15. Re-running the lot/review/import stages is idempotent.
 
@@ -42,4 +42,4 @@ Candidate, reviewed, audit and checkpoint artifacts are recorded under `lots/`, 
 - `cd frontend && npm run lint`: passed.
 - `cd frontend && npm run build`: passed; the build uses the unchanged runtime artifact.
 
-The reviewed artifacts pass answer, explanation, five-level duplicate review and source checks. Publication milestone: topics 1--15, lot 1, 20 accepted records each, remain live at `https://micuentadecasa.github.io/dipu/`; topic 16 has 20 accepted official-primary records and is ready for deployment. Workflow run `38258226538` completed successfully for the prior published commit `7f32586`. Topics 13--16 use the PostgreSQL 18 documentation source; AutoFirma facts remain limited to the official entry point and no version-sensitive claim. No secondary or provisional records are in these batches.
+The reviewed artifacts pass answer, explanation, five-level duplicate review and source checks. Publication milestone: topics 1--16, lot 1, 20 accepted records each, are live at `https://micuentadecasa.github.io/dipu/`; workflow run `38263620661` completed successfully for commit `64a5e9e`. Topics 13--16 use the PostgreSQL 18 documentation source; AutoFirma facts remain limited to the official entry point and no version-sensitive claim. No secondary or provisional records are in these batches.
