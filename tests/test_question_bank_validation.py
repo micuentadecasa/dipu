@@ -3,14 +3,24 @@ from __future__ import annotations
 import copy
 import json
 import tempfile
+import unicodedata
 import unittest
 from pathlib import Path
 
 from question_bank.checkpoints import CheckpointError, append_checkpoint, load_checkpoints
 from question_bank.validation import screen_duplicates, stable_id_for, validate_record
+from seed_data import SEED_QUESTIONS
 
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def prompt_key(question: str) -> str:
+    return " ".join(unicodedata.normalize("NFKC", question).casefold().split())
+
+
+def fingerprint(record: dict) -> tuple:
+    return tuple(record[field] for field in ("topic_num", "question", "option_a", "option_b", "option_c", "option_d"))
 
 
 def valid_record() -> dict:
@@ -96,6 +106,19 @@ class QuestionRecordTests(unittest.TestCase):
         screen = screen_duplicates(candidate, existing, checked_at="2026-10-12")
         self.assertEqual(screen.near_lexical.status, "duplicate")
         self.assertGreaterEqual(screen.near_lexical.score, 0.92)
+
+
+class RuntimeQuestionBankTests(unittest.TestCase):
+    def test_runtime_bank_has_unique_prompts_and_fingerprints(self):
+        artifact = (ROOT / "frontend/src/questions.js").read_text(encoding="utf-8")
+        runtime = json.loads(artifact[artifact.index("["):])
+
+        self.assertEqual(len(runtime), len(SEED_QUESTIONS))
+        self.assertEqual([question["id"] for question in runtime], list(range(1, len(runtime) + 1)))
+        self.assertEqual(len({prompt_key(question["question"]) for question in SEED_QUESTIONS}), len(SEED_QUESTIONS))
+        self.assertEqual(len({fingerprint(question) for question in SEED_QUESTIONS}), len(SEED_QUESTIONS))
+        self.assertEqual(len({prompt_key(question["question"]) for question in runtime}), len(runtime))
+        self.assertEqual(len({fingerprint(question) for question in runtime}), len(runtime))
 
 
 class CheckpointTests(unittest.TestCase):

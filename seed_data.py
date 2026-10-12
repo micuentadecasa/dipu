@@ -1,4 +1,4 @@
-"""Question bank: 2 questions per topic (80 total). No LLM dependency."""
+"""Question-bank authoring input with duplicate prompts excluded from runtime."""
 
 SEED_QUESTIONS = [
     # =====================================================================
@@ -1537,14 +1537,22 @@ _DIRECT_POOLS = {
 def _make_direct_filler_questions(target_per_topic=30):
     questions = []
     current_counts = {n: 0 for n in _TOPIC_SHORT_TITLES}
+    seen_prompts = set()
     for q in SEED_QUESTIONS:
         current_counts[q["topic_num"]] = current_counts.get(q["topic_num"], 0) + 1
+        seen_prompts.add(" ".join(q["question"].casefold().split()))
 
     for topic_num in sorted(_TOPIC_SHORT_TITLES):
         pool = _DIRECT_POOLS[topic_num]
         needed = max(0, target_per_topic - current_counts.get(topic_num, 0))
-        for idx in range(needed):
-            question, answer, distractors, explanation = pool[idx % len(pool)]
+        # Never cycle a short pool to pad a topic: that republishes the same
+        # prompt and makes the random round visibly repeat questions.
+        for idx, (question, answer, distractors, explanation) in enumerate(pool):
+            if needed <= 0:
+                break
+            prompt_key = " ".join(question.casefold().split())
+            if prompt_key in seen_prompts:
+                continue
             options = [answer] + list(distractors)
             shift = (topic_num + idx) % 4
             options = options[shift:] + options[:shift]
@@ -1559,6 +1567,8 @@ def _make_direct_filler_questions(target_per_topic=30):
                 "correct": correct,
                 "explanation": explanation,
             })
+            seen_prompts.add(prompt_key)
+            needed -= 1
     return questions
 
 
