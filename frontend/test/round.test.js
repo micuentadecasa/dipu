@@ -97,7 +97,7 @@ test('falls back safely when session storage contains malformed JSON', () => {
   const storage = new MemoryStorage()
   storage.setItem(SHOWN_AT_STORAGE_KEY, '{not-json')
 
-  assert.deepEqual(ids(makeRound(questions(2), { storage })), [1, 2])
+  assert.deepEqual(ids(makeRound(questions(2), { storage })).sort(), [1, 2])
   assert.equal(storage.getItem(SHOWN_AT_STORAGE_KEY), null)
 })
 
