@@ -87,6 +87,9 @@ EXPECTATIONS = {
     20: {
         1:("B","Entity Framework Core"),2:("C","The model"),3:("A","The DbContext lifetime"),4:("D","Migrations Overview"),5:("B","Creating and Configuring a Model"),6:("C","Including types in the model"),7:("A","Querying Data"),8:("B","Tracking queries"),9:("C","No-tracking queries"),10:("B","Approach 1: change tracking and SaveChanges"),11:("A","Entity states"),12:("D","How to track entities"),13:("B","DbContext in dependency injection for ASP.NET Core"),14:("C","Avoiding DbContext threading issues"),15:("A","Evolving your model"),16:("D","Approach 2: ExecuteUpdate and ExecuteDelete (bulk update)"),17:("B","Introduction to relationships"),18:("C","Identity resolution"),19:("A","Entity Framework Core tools reference"),20:("B","Asynchronous operation pitfalls")
     },
+    21: {
+        1:("B","Standard query operators overview"),2:("C","Standard query operators overview"),3:("A","Projection operations"),4:("D","Filtering Data in C# with LINQ"),5:("B","Standard query operators overview"),6:("C","Standard query operators overview"),7:("A","Standard query operators overview"),8:("D","Grouping Data (C#)"),9:("B","Join operations in LINQ"),10:("C","Join operations in LINQ"),11:("A","Set operations (C#)"),12:("D","Quantifier operations in LINQ (C#)"),13:("B","Quantifier operations in LINQ (C#)"),14:("C","Partitioning data (C#)"),15:("A","Projection operations (C#)"),16:("D","Join operations in LINQ"),17:("B","Standard query operators overview"),18:("C","Standard query operators overview"),19:("A","Grouping Data (C#)"),20:("D","Standard query operators overview")
+    },
 }
 
 
