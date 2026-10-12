@@ -1,28 +1,610 @@
 {
   "topic_num": 23,
-  "source_ids": ["ASPNET-SECURITY-10"],
+  "source_ids": [
+    "ASPNET-SECURITY-10"
+  ],
   "researched_at": "2026-10-12",
   "research_status": "primary_source_checked_pending_independent_review",
   "objectives": [
-    {"objective_id":"t23-lo-001","statement":"Distinguish authentication, which establishes a user's identity, from authorization, which determines access to resources.","citation":"Overview of ASP.NET Core Authentication; Introduction to authorization in ASP.NET Core","source_id":"ASPNET-SECURITY-10"},
-    {"objective_id":"t23-lo-002","statement":"Identify ClaimsPrincipal and its identities and claims as the representation of the authenticated subject available to authorization checks.","citation":"Claim-based authorization in ASP.NET Core","source_id":"ASPNET-SECURITY-10"},
-    {"objective_id":"t23-lo-003","statement":"Explain an ASP.NET Core authentication scheme as the named configuration that selects an authentication handler and its behavior.","citation":"Overview of ASP.NET Core Authentication","source_id":"ASPNET-SECURITY-10"},
-    {"objective_id":"t23-lo-004","statement":"Identify the Authorize attribute as a way to require an authenticated or otherwise authorized user for a controller, action, page or resource.","citation":"Introduction to authorization in ASP.NET Core","source_id":"ASPNET-SECURITY-10"},
-    {"objective_id":"t23-lo-005","statement":"Relate UseAuthentication and UseAuthorization middleware to the request pipeline, with authentication establishing the user before authorization evaluates access.","citation":"Claim-based authorization in ASP.NET Core","source_id":"ASPNET-SECURITY-10"},
-    {"objective_id":"t23-lo-006","statement":"Explain a claim as a name-value pair describing what a subject is rather than directly describing what the subject can do.","citation":"Claim-based authorization in ASP.NET Core","source_id":"ASPNET-SECURITY-10"},
-    {"objective_id":"t23-lo-007","statement":"Explain a claim-based policy that requires the presence of a claim and apply it through an Authorize policy name.","citation":"Claim-based authorization in ASP.NET Core","source_id":"ASPNET-SECURITY-10"},
-    {"objective_id":"t23-lo-008","statement":"Identify policies, requirements and handlers as the extensible pieces used to express and evaluate authorization rules.","citation":"Policy-based authorization in ASP.NET Core","source_id":"ASPNET-SECURITY-10"},
-    {"objective_id":"t23-lo-009","statement":"Explain role-based authorization as requiring a user to belong to one or more named roles, commonly through Authorize Roles.","citation":"Role-based authorization in ASP.NET Core","source_id":"ASPNET-SECURITY-10"},
-    {"objective_id":"t23-lo-010","statement":"Distinguish comma-separated roles in one Authorize attribute as alternative roles where membership in any listed role can satisfy the role condition.","citation":"Role-based authorization in ASP.NET Core","source_id":"ASPNET-SECURITY-10"},
-    {"objective_id":"t23-lo-011","statement":"Explain that applying multiple Authorize role attributes requires membership in all of the roles specified by those attributes.","citation":"Role-based authorization in ASP.NET Core","source_id":"ASPNET-SECURITY-10"},
-    {"objective_id":"t23-lo-012","statement":"Relate role requirements expressed in an authorization policy to RequireRole during policy registration.","citation":"Role-based authorization in ASP.NET Core","source_id":"ASPNET-SECURITY-10"},
-    {"objective_id":"t23-lo-013","statement":"Identify MVC filters as components that run before or after particular stages of the MVC action pipeline.","citation":"Filters in ASP.NET Core","source_id":"ASPNET-SECURITY-10"},
-    {"objective_id":"t23-lo-014","statement":"Explain authorization filters as the filters that run first in the MVC filter pipeline and can short-circuit the request when authorization fails.","citation":"Filters in ASP.NET Core","source_id":"ASPNET-SECURITY-10"},
-    {"objective_id":"t23-lo-015","statement":"Distinguish resource, authorization, action, exception and result filters by the stage or concern of the MVC pipeline they address.","citation":"Filters in ASP.NET Core","source_id":"ASPNET-SECURITY-10"},
-    {"objective_id":"t23-lo-016","statement":"Explain that filters can be registered globally or applied to a controller or action, with scope affecting where they run in the pipeline.","citation":"Filters in ASP.NET Core","source_id":"ASPNET-SECURITY-10"},
-    {"objective_id":"t23-lo-017","statement":"Identify AllowAnonymous as an exception that bypasses authorization checks for an action or endpoint otherwise covered by authorization metadata.","citation":"Introduction to authorization in ASP.NET Core","source_id":"ASPNET-SECURITY-10"},
-    {"objective_id":"t23-lo-018","statement":"Distinguish an authentication challenge for an unauthenticated request from a forbid result for an authenticated request that lacks permission.","citation":"Introduction to authorization in ASP.NET Core","source_id":"ASPNET-SECURITY-10"},
-    {"objective_id":"t23-lo-019","statement":"Diagnose authorization middleware placed before authentication as an invalid pipeline arrangement because authorization needs the established user context.","citation":"Claim-based authorization in ASP.NET Core","source_id":"ASPNET-SECURITY-10"},
-    {"objective_id":"t23-lo-020","statement":"Apply policy-based authorization when access depends on claims or requirements that are more precise than a simple role membership check.","citation":"Policy-based authorization in ASP.NET Core","source_id":"ASPNET-SECURITY-10"}
+    {
+      "objective_id": "t23-lo-001",
+      "statement": "Distinguish authentication, which establishes a user's identity, from authorization, which determines access to resources.",
+      "citation": "Overview of ASP.NET Core Authentication; Introduction to authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-002",
+      "statement": "Identify ClaimsPrincipal and its identities and claims as the representation of the authenticated subject available to authorization checks.",
+      "citation": "Claim-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-003",
+      "statement": "Explain an ASP.NET Core authentication scheme as the named configuration that selects an authentication handler and its behavior.",
+      "citation": "Overview of ASP.NET Core Authentication",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-004",
+      "statement": "Identify the Authorize attribute as a way to require an authenticated or otherwise authorized user for a controller, action, page or resource.",
+      "citation": "Introduction to authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-005",
+      "statement": "Relate UseAuthentication and UseAuthorization middleware to the request pipeline, with authentication establishing the user before authorization evaluates access.",
+      "citation": "Claim-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-006",
+      "statement": "Explain a claim as a name-value pair describing what a subject is rather than directly describing what the subject can do.",
+      "citation": "Claim-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-007",
+      "statement": "Explain a claim-based policy that requires the presence of a claim and apply it through an Authorize policy name.",
+      "citation": "Claim-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-008",
+      "statement": "Identify policies, requirements and handlers as the extensible pieces used to express and evaluate authorization rules.",
+      "citation": "Policy-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-009",
+      "statement": "Explain role-based authorization as requiring a user to belong to one or more named roles, commonly through Authorize Roles.",
+      "citation": "Role-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-010",
+      "statement": "Distinguish comma-separated roles in one Authorize attribute as alternative roles where membership in any listed role can satisfy the role condition.",
+      "citation": "Role-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-011",
+      "statement": "Explain that applying multiple Authorize role attributes requires membership in all of the roles specified by those attributes.",
+      "citation": "Role-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-012",
+      "statement": "Relate role requirements expressed in an authorization policy to RequireRole during policy registration.",
+      "citation": "Role-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-013",
+      "statement": "Identify MVC filters as components that run before or after particular stages of the MVC action pipeline.",
+      "citation": "Filters in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-014",
+      "statement": "Explain authorization filters as the filters that run first in the MVC filter pipeline and can short-circuit the request when authorization fails.",
+      "citation": "Filters in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-015",
+      "statement": "Distinguish resource, authorization, action, exception and result filters by the stage or concern of the MVC pipeline they address.",
+      "citation": "Filters in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-016",
+      "statement": "Explain that filters can be registered globally or applied to a controller or action, with scope affecting where they run in the pipeline.",
+      "citation": "Filters in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-017",
+      "statement": "Identify AllowAnonymous as an exception that bypasses authorization checks for an action or endpoint otherwise covered by authorization metadata.",
+      "citation": "Introduction to authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-018",
+      "statement": "Distinguish an authentication challenge for an unauthenticated request from a forbid result for an authenticated request that lacks permission.",
+      "citation": "Introduction to authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-019",
+      "statement": "Diagnose authorization middleware placed before authentication as an invalid pipeline arrangement because authorization needs the established user context.",
+      "citation": "Claim-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-020",
+      "statement": "Apply policy-based authorization when access depends on claims or requirements that are more precise than a simple role membership check.",
+      "citation": "Policy-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-021",
+      "statement": "Un esquema de autenticación con nombre identifica la configuración y el handler que se usará.",
+      "citation": "Overview of ASP.NET Core Authentication",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-022",
+      "statement": "Challenge se usa cuando la solicitud necesita autenticación y aún no tiene un usuario autenticado.",
+      "citation": "Introduction to authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-023",
+      "statement": "Forbid representa que el usuario autenticado no tiene permiso para el recurso.",
+      "citation": "Introduction to authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-024",
+      "statement": "AuthenticateAsync intenta construir la identidad del usuario usando el esquema indicado.",
+      "citation": "Overview of ASP.NET Core Authentication",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-025",
+      "statement": "SignInAsync crea o establece la identidad mediante el handler de autenticación seleccionado.",
+      "citation": "Overview of ASP.NET Core Authentication",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-026",
+      "statement": "SignOutAsync solicita al handler que cierre la sesión o elimine su credencial.",
+      "citation": "Overview of ASP.NET Core Authentication",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-027",
+      "statement": "UseAuthentication incorpora la autenticación al pipeline de solicitudes.",
+      "citation": "Overview of ASP.NET Core Authentication",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-028",
+      "statement": "La autenticación por defecto se usa cuando no se especifica un esquema en una operación.",
+      "citation": "Overview of ASP.NET Core Authentication",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-029",
+      "statement": "Un handler de cookies y un handler bearer representan mecanismos de autenticación distintos.",
+      "citation": "Overview of ASP.NET Core Authentication",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-030",
+      "statement": "El handler seleccionado por un esquema implementa las operaciones del mecanismo de autenticación.",
+      "citation": "Overview of ASP.NET Core Authentication",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-031",
+      "statement": "ClaimsIdentity representa una identidad dentro del ClaimsPrincipal.",
+      "citation": "Claim-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-032",
+      "statement": "IsAuthenticated indica si una identidad ha sido autenticada.",
+      "citation": "Claim-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-033",
+      "statement": "NameClaimType indica qué tipo de claim se usa para obtener el nombre de la identidad.",
+      "citation": "Claim-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-034",
+      "statement": "RoleClaimType indica qué tipo de claim representa la pertenencia a roles.",
+      "citation": "Role-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-035",
+      "statement": "ClaimsPrincipal puede contener más de una ClaimsIdentity.",
+      "citation": "Claim-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-036",
+      "statement": "Una transformación de claims puede enriquecer la identidad antes de las comprobaciones de autorización.",
+      "citation": "Claim-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-037",
+      "statement": "HttpContext.User proporciona el principal asociado a la solicitud actual.",
+      "citation": "Claim-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-038",
+      "statement": "Un claim aporta información sobre el sujeto que una política puede evaluar.",
+      "citation": "Claim-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-039",
+      "statement": "Un esquema de autenticación puede actuar como selector entre varios mecanismos.",
+      "citation": "Overview of ASP.NET Core Authentication",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-040",
+      "statement": "La autenticación y la autorización son etapas distintas aunque cooperen en una solicitud.",
+      "citation": "Introduction to authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-041",
+      "statement": "Una política nombrada agrupa requisitos que se aplican mediante su nombre.",
+      "citation": "Policy-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-042",
+      "statement": "RequireAuthenticatedUser añade a una política el requisito de identidad autenticada.",
+      "citation": "Policy-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-043",
+      "statement": "RequireClaim añade a una política un requisito basado en la presencia de un claim.",
+      "citation": "Claim-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-044",
+      "statement": "Una política con varios requisitos debe satisfacer los requisitos que la componen.",
+      "citation": "Policy-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-045",
+      "statement": "Un authorization handler evalúa uno o varios requisitos de una política.",
+      "citation": "Policy-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-046",
+      "statement": "AuthorizationHandlerContext aporta al handler el usuario, el recurso y los requisitos.",
+      "citation": "Policy-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-047",
+      "statement": "Succeed marca un requisito como satisfecho durante la evaluación del handler.",
+      "citation": "Policy-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-048",
+      "statement": "Fail permite indicar que la evaluación de autorización ha fallado.",
+      "citation": "Policy-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-049",
+      "statement": "La autorización basada en recursos recibe el recurso como parte de la evaluación.",
+      "citation": "Resource-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-050",
+      "statement": "IAuthorizationService ofrece una API para comprobar autorización imperativa.",
+      "citation": "Resource-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-051",
+      "statement": "AuthorizeAsync puede evaluar una política para un usuario y, opcionalmente, un recurso.",
+      "citation": "Resource-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-052",
+      "statement": "La autorización imperativa es útil cuando el recurso se ha cargado antes de decidir el acceso.",
+      "citation": "Resource-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-053",
+      "statement": "Una fallback policy puede aplicarse cuando un endpoint no declara otra política.",
+      "citation": "Introduction to authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-054",
+      "statement": "La default policy es la política usada por Authorize sin nombre de política explícito.",
+      "citation": "Introduction to authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-055",
+      "statement": "Un policy provider puede resolver políticas nombradas para el sistema de autorización.",
+      "citation": "Policy-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-056",
+      "statement": "RequireRole añade a una política un requisito de pertenencia a roles.",
+      "citation": "Role-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-057",
+      "statement": "La comprobación de roles depende del RoleClaimType configurado para la identidad.",
+      "citation": "Role-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-058",
+      "statement": "La pertenencia a roles puede proceder de claims emitidos por el sistema de identidad.",
+      "citation": "Role-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-059",
+      "statement": "Roles alternativos en un mismo atributo permiten satisfacer la condición con cualquiera de ellos.",
+      "citation": "Role-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-060",
+      "statement": "Atributos de roles separados expresan requisitos acumulativos.",
+      "citation": "Role-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-061",
+      "statement": "El pipeline de filtros MVC ejecuta filtros en etapas alrededor de la acción.",
+      "citation": "Filters in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-062",
+      "statement": "Los filtros de recursos se ejecutan cerca del comienzo del pipeline MVC.",
+      "citation": "Filters in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-063",
+      "statement": "Los filtros de autorización se ejecutan primero entre los filtros MVC.",
+      "citation": "Filters in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-064",
+      "statement": "Los filtros de acción se ejecutan alrededor de la invocación de la acción.",
+      "citation": "Filters in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-065",
+      "statement": "Los filtros de excepción se ocupan de excepciones producidas durante partes del pipeline MVC.",
+      "citation": "Filters in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-066",
+      "statement": "Los filtros de resultado se ejecutan alrededor de la ejecución del resultado de la acción.",
+      "citation": "Filters in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-067",
+      "statement": "IAsyncActionFilter permite envolver de forma asíncrona la ejecución de una acción.",
+      "citation": "Filters in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-068",
+      "statement": "El orden de filtros depende de su alcance y del orden configurado.",
+      "citation": "Filters in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-069",
+      "statement": "Un filtro global puede aplicarse a todas las acciones MVC del alcance de la colección.",
+      "citation": "Filters in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-070",
+      "statement": "TypeFilterAttribute permite crear un filtro y resolver sus dependencias desde servicios.",
+      "citation": "Dependency injection in ASP.NET Core filters",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-071",
+      "statement": "ServiceFilterAttribute obtiene una instancia de filtro desde el contenedor de servicios.",
+      "citation": "Dependency injection in ASP.NET Core filters",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-072",
+      "statement": "AllowAnonymous evita que la autorización se aplique a un endpoint marcado como anónimo.",
+      "citation": "Introduction to authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-073",
+      "statement": "Un filtro de autorización puede cortocircuitar el pipeline cuando el acceso falla.",
+      "citation": "Filters in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-074",
+      "statement": "La autorización de endpoints y los filtros MVC son mecanismos relacionados pero situados en capas distintas.",
+      "citation": "Filters in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-075",
+      "statement": "Los filtros pueden declararse como atributos en un controlador o una acción.",
+      "citation": "Filters in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-076",
+      "statement": "Un filtro puede registrarse globalmente en MVC o aplicarse a un controlador concreto.",
+      "citation": "Filters in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-077",
+      "statement": "La ejecución del resultado tiene una fase previa y otra posterior representadas por contextos de resultado.",
+      "citation": "Filters in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-078",
+      "statement": "Los filtros de recursos pueden evitar que se ejecute el resto del pipeline MVC.",
+      "citation": "Filters in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-079",
+      "statement": "Un filtro de autorización no debe sustituir la autenticación que establece el usuario.",
+      "citation": "Filters in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-080",
+      "statement": "La autorización basada en políticas permite combinar claims, roles y requisitos personalizados.",
+      "citation": "Policy-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-081",
+      "statement": "Un requisito de autorización es una unidad de datos que un handler debe evaluar.",
+      "citation": "Policy-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-082",
+      "statement": "Un handler puede gestionar varios requisitos relacionados.",
+      "citation": "Policy-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-083",
+      "statement": "Una política puede exigir un claim con un valor concreto.",
+      "citation": "Claim-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-084",
+      "statement": "Una política puede expresar una regla que no se reduce a un único rol.",
+      "citation": "Policy-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-085",
+      "statement": "La autorización basada en recursos permite decidir después de obtener el objeto protegido.",
+      "citation": "Resource-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-086",
+      "statement": "El recurso enviado a AuthorizeAsync puede ser un objeto de dominio.",
+      "citation": "Resource-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-087",
+      "statement": "El resultado de autorización permite distinguir éxito de challenge y forbid.",
+      "citation": "Introduction to authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-088",
+      "statement": "Una solicitud sin identidad suele provocar challenge en vez de forbid.",
+      "citation": "Introduction to authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-089",
+      "statement": "Una identidad válida sin el requisito de política suele provocar forbid.",
+      "citation": "Introduction to authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-090",
+      "statement": "OnActionExecuting permite ejecutar lógica antes de invocar la acción.",
+      "citation": "Filters in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-091",
+      "statement": "OnActionExecuted permite ejecutar lógica después de la acción.",
+      "citation": "Filters in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-092",
+      "statement": "OnResultExecuting permite ejecutar lógica antes de ejecutar el resultado.",
+      "citation": "Filters in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-093",
+      "statement": "OnResultExecuted permite ejecutar lógica después de ejecutar el resultado.",
+      "citation": "Filters in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-094",
+      "statement": "Un filtro de acción puede establecer un resultado para cortocircuitar la acción.",
+      "citation": "Filters in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-095",
+      "statement": "Los filtros síncronos y asíncronos ofrecen variantes de la misma preocupación de pipeline.",
+      "citation": "Filters in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-096",
+      "statement": "El alcance global, de controlador y de acción forma parte del orden de ejecución de filtros.",
+      "citation": "Filters in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-097",
+      "statement": "Un filtro registrado como servicio puede recibir dependencias mediante inyección.",
+      "citation": "Dependency injection in ASP.NET Core filters",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-098",
+      "statement": "La documentación distingue filtros de autorización, recurso, acción, excepción y resultado.",
+      "citation": "Filters in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-099",
+      "statement": "La política aplicada por Authorize puede ser evaluada por middleware o por integración MVC.",
+      "citation": "Introduction to authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    },
+    {
+      "objective_id": "t23-lo-100",
+      "statement": "El nombre de una política en Authorize debe coincidir con la política registrada.",
+      "citation": "Policy-based authorization in ASP.NET Core",
+      "source_id": "ASPNET-SECURITY-10"
+    }
   ]
 }
