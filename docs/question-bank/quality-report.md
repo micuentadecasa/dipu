@@ -1,33 +1,33 @@
 # Question-bank quality report — checkpoint 1
 
 **As of:** 2026-10-12 UTC
-**Scope:** topics 1--19 lot 1 are published with duplicate-free runtime data.
+**Scope:** topics 1--19 lot 1 are published with duplicate-free runtime data; topic 20 lot 1 is reviewed and import-validated, ready for deployment.
 
 ## Current counts
 
 | Measure | Count | Interpretation |
 |---|---:|---|
 | Legacy runtime records | 399 | One normalized prompt retained from the pre-cleanup 1,200-record baseline; removed duplicate history remains in Git |
-| Objective slots | 8,000 | 200 per topic; 380 topic-1-to-19 statements researched, 7,620 slots pending |
-| Topics 1--19 lot 1 candidates | 380 | Generated only after source verification |
-| Reviewed accepted artifacts | 380 | Topics 1--19 records passed independent review matrices |
-| Quarantined candidate audits | 380 | Original candidate lots remain unchanged as audit trails |
+| Objective slots | 8,000 | 200 per topic; 400 topic-1-to-20 statements researched, 7,600 slots pending |
+| Topics 1--20 lot 1 candidates | 400 | Generated only after source verification |
+| Reviewed accepted artifacts | 400 | Topics 1--20 records passed independent review matrices |
+| Quarantined candidate audits | 400 | Original candidate lots remain unchanged as audit trails |
 | Deterministic duplicate matches | 0 | Exact, lexical and near-lexical checks against legacy/topic-lot records |
-| Semantic/concept decisions | 380 unique | Independently reviewed against the objective and proposition |
-| Native import/export | 380 | Accepted topics 1--19 are imported through `seed_data.py`; duplicate-free `frontend/src/questions.js` contains 779 records |
-| Published batches | 19 | Topics 1--19 are live at `https://micuentadecasa.github.io/dipu/` |
+| Semantic/concept decisions | 400 unique | Independently reviewed against the objective and proposition |
+| Native import/export | 400 | Accepted topics 1--20 are imported through `seed_data.py`; duplicate-free `frontend/src/questions.js` contains 799 records |
+| Published batches | 19 | Topics 1--19 are live at `https://micuentadecasa.github.io/dipu/`; topic 20 is deployment-ready |
 
 ## Lot 1 distributions
 
-Topics 1--19 lot 1 each use 4 basic, 10 intermediate and 6 advanced records. Topics 1--12 use documented official sources; topics 13--17 use the official PostgreSQL 18 documentation source, topic 18 uses the official Microsoft C# documentation source, and topic 19 uses official Microsoft ASP.NET Core MVC and Bootstrap 5.3 documentation. All nineteen independent review passes accepted 380 official-primary records after answer, explanation, semantic and concept checks. Topics 1--19 are live at `https://micuentadecasa.github.io/dipu/`.
+Topics 1--20 lot 1 each use 4 basic, 10 intermediate and 6 advanced records. Topics 1--12 use documented official sources; topics 13--17 use the official PostgreSQL 18 documentation source, topic 18 uses the official Microsoft C# documentation source, topic 19 uses official Microsoft ASP.NET Core MVC and Bootstrap 5.3 documentation, and topic 20 uses official Microsoft EF Core 10 documentation. All twenty independent review passes accepted 400 official-primary records after answer, explanation, semantic and concept checks. Topics 1--19 are live at `https://micuentadecasa.github.io/dipu/`; topic 20 is ready for deployment.
 
-Candidate, reviewed, audit and checkpoint artifacts are recorded under `lots/`, `accepted/`, `reviews/` and `checkpoints/` for topics 1--19. Re-running the lot/review/import stages is idempotent.
+Candidate, reviewed, audit and checkpoint artifacts are recorded under `lots/`, `accepted/`, `reviews/` and `checkpoints/` for topics 1--20. Re-running the lot/review/import stages is idempotent.
 
 ## Source and scope status
 
 - The official call and `temario.md` match exactly on topics 1–40.
 - BOE, IETF, W3C, PostgreSQL, Microsoft, OASIS, Git and the resolved DOCM/EU CELEX sources are recorded with retrieval/verification dates in [`source-register.json`](./source-register.json).
-- The reviewed batches contain 380 `official_primary` records and 0 `secondary_reputable` records; every question source carries an explicit tier in the record schema.
+- The reviewed batches contain 400 `official_primary` records and 0 `secondary_reputable` records; every question source carries an explicit tier in the record schema.
 - Topics 37–39 remain source-gated. The exact attempted URLs, HTTP/WAF observations and dispositions are in `source_blocker_log` in the source register. No questions were generated for those topics.
 - SedipuAlba has public manuals for several modules, but Segra and AdminSedeElectrónica lack public authoritative specifications; claims about them remain quarantined.
 - Topic 40 remains gated for the exact EN 301 549 edition. Other accessibility sources do not authorize silently substituting an unverified edition.
@@ -36,8 +36,8 @@ Candidate, reviewed, audit and checkpoint artifacts are recorded under `lots/`, 
 
 - `python3 -m unittest discover -s tests -v`: 11 passed.
 - `python3 tools/validate_question_bank.py docs/question-bank/lots/topic-01-lot-01.json`: passed for 20 candidates.
-- `python3 tools/validate_question_bank.py` passed for all nineteen accepted artifacts (380 records).
-- Topic 1--19 import validation passed; the pre-cleanup 1,200-record legacy snapshot remains recoverable in Git, while the current runtime retains 399 unique legacy records and 380 accepted records.
+- `python3 tools/validate_question_bank.py` passed for all twenty accepted artifacts (400 records).
+- Topic 1--20 import validation passed; the pre-cleanup 1,200-record legacy snapshot remains recoverable in Git, while the current runtime retains 399 unique legacy records and 400 accepted records.
 - JSON parsing, Python compilation and `git diff --check`: passed.
 - `cd frontend && npm run lint`: passed.
 - `cd frontend && npm run build`: passed after regenerating the duplicate-free runtime artifact.

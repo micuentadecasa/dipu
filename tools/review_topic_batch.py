@@ -84,12 +84,15 @@ EXPECTATIONS = {
     19: {
         1:("B","MVC pattern"),2:("C","What is a Controller?"),3:("A","Razor syntax"),4:("D","Grid system"),5:("B","MVC pattern"),6:("C","Defining Actions"),7:("A","Views in ASP.NET Core MVC"),8:("D","Grid system"),9:("A","Conventional routing; Attribute routing for REST APIs"),10:("C","What is a Layout"),11:("B","Razor syntax"),12:("D","How they work"),13:("A","Route templates"),14:("C","What is a Controller?"),15:("B","@model"),16:("D","Core concepts"),17:("A","Partial views"),18:("C","Specifying a Layout"),19:("B","Implicit Razor expressions"),20:("D","How it works")
     },
+    20: {
+        1:("B","Entity Framework Core"),2:("C","The model"),3:("A","The DbContext lifetime"),4:("D","Migrations Overview"),5:("B","Creating and Configuring a Model"),6:("C","Including types in the model"),7:("A","Querying Data"),8:("B","Tracking queries"),9:("C","No-tracking queries"),10:("B","Approach 1: change tracking and SaveChanges"),11:("A","Entity states"),12:("D","How to track entities"),13:("B","DbContext in dependency injection for ASP.NET Core"),14:("C","Avoiding DbContext threading issues"),15:("A","Evolving your model"),16:("D","Approach 2: ExecuteUpdate and ExecuteDelete (bulk update)"),17:("B","Introduction to relationships"),18:("C","Identity resolution"),19:("A","Entity Framework Core tools reference"),20:("B","Asynchronous operation pitfalls")
+    },
 }
 
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("topic_num", type=int, choices=tuple(range(2, 20)))
+    parser.add_argument("topic_num", type=int, choices=tuple(range(2, 21)))
     args = parser.parse_args()
     lot_path = ROOT / "docs/question-bank/lots" / f"topic-{args.topic_num:02d}-lot-01.json"
     checkpoint_path = ROOT / "docs/question-bank/checkpoints" / f"topic-{args.topic_num:02d}-lot-01.jsonl"
