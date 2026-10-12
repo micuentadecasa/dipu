@@ -25,12 +25,21 @@ DATE = "2026-10-12"
 REGISTER_PATH = ROOT / "docs/question-bank/source-register.json"
 OBJECTIVE_PATH = ROOT / "docs/question-bank/objective-manifest.json"
 SYLLABUS_PATH = ROOT / "temario.md"
-SPEC_PATH = ROOT / "docs/question-bank/research/questions/topics-02-05-lot-01.json"
+SPEC_PATHS = [
+    ROOT / "docs/question-bank/research/questions/topics-02-05-lot-01.json",
+    ROOT / "docs/question-bank/research/questions/topics-06-15-lot-01.json",
+]
 
 
 def load_batch(topic_num: int) -> dict:
-    payload = json.loads(SPEC_PATH.read_text(encoding="utf-8"))
-    return next(batch for batch in payload["batches"] if batch["topic_num"] == topic_num)
+    for spec_path in SPEC_PATHS:
+        if not spec_path.exists():
+            continue
+        payload = json.loads(spec_path.read_text(encoding="utf-8"))
+        for batch in payload.get("batches", []):
+            if batch["topic_num"] == topic_num:
+                return batch
+    raise RuntimeError(f"no question specification for topic {topic_num}")
 
 
 def make_record(spec: dict, source: dict, numeric_id: int) -> dict:
@@ -74,7 +83,7 @@ def make_record(spec: dict, source: dict, numeric_id: int) -> dict:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("topic_num", type=int, choices=(2, 3, 4, 5))
+    parser.add_argument("topic_num", type=int, choices=tuple(range(2, 16)))
     args = parser.parse_args()
     batch = load_batch(args.topic_num)
     register = json.loads(REGISTER_PATH.read_text(encoding="utf-8"))
@@ -88,7 +97,7 @@ def main() -> int:
         if not objective or not objective["statement"]:
             raise RuntimeError(f"objective is not researched: {spec['objective_id']}")
         source = sources[spec["source_id"]]
-        if source["status"] not in {"verified", "verified_with_correction_review", "verified_official_eli_entry"}:
+        if source["status"] not in {"verified", "verified_with_correction_review", "verified_official_eli_entry", "verified_official_celex_fallback", "verified_entry_point", "verified_current_stable_reference"}:
             raise RuntimeError(f"source is not verified for generation: {spec['source_id']}")
         record = make_record({**spec, "topic_num": args.topic_num}, source, index)
         screen = screen_duplicates(record, existing + records, checked_at=DATE)

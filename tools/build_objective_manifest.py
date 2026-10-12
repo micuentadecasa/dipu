@@ -83,9 +83,14 @@ def main() -> int:
     args = parser.parse_args()
     register = json.loads(args.register.read_text(encoding="utf-8"))
     research_by_id = {}
-    for research_path in sorted(args.research_dir.glob("topic-*.json")):
+    for research_path in sorted(args.research_dir.glob("*.json")):
         research = json.loads(research_path.read_text(encoding="utf-8"))
-        for objective in research["objectives"]:
+        entries = research.get("objectives", [])
+        if "topics" in research:
+            entries = []
+            for topic_entries in research["topics"].values():
+                entries.extend({"objective_id": row[0], "statement": row[1], "citation": row[2], "source_id": row[3]} for row in topic_entries["objectives"])
+        for objective in entries:
             objective_id = objective["objective_id"]
             if objective_id in research_by_id:
                 raise ValueError(f"duplicate researched objective: {objective_id}")
