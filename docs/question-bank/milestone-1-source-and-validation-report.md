@@ -1,6 +1,6 @@
 # Question-bank milestone 1: source coverage and validation seam
 
-**Status:** source-boundary comparison and validation seam completed; topics 1--4 each have 20 independently reviewed, import-validated records published through the native static path at `https://micuentadecasa.github.io/dipu/`. Topic 5 is the next sequential scope.
+**Status:** source-boundary comparison and validation seam completed; topics 1--4 are published and topic 5 has 20 independently reviewed, import-validated records in the native static artifact, ready for the next Pages deployment.
 
 **Verified at:** 2026-10-12 (UTC)
 
@@ -42,4 +42,4 @@
 - The objective target is 200 distinct objectives per topic, not 200 objectives reused across lots. The slot manifest is complete, but every statement still needs source research and independent review.
 - The official DOCM ELI URLs and Publications Office CELEX fallbacks are now recorded; verify current legal vigency/article amendments before acceptance. Administración Electrónica service pages remain WAF-blocked, and public SedipuAlba evidence remains incomplete for Segra and AdminSedeElectrónica. Missing or unverifiable claims remain quarantined.
 
-Topics 1--4, lot 1, are published at `https://micuentadecasa.github.io/dipu/` after successful workflow run `38252913616` for commit `ba00627`; each added 20 reviewed official-primary records, with topic 4 including the documented official correction-review source. Continue topic 5 after the next publication milestone; secondary sources remain permitted only with explicit tier, URL/date/provenance and material-uncertainty reporting. The 8,000 count remains a target, never a padding requirement.
+Topics 1--4, lot 1, are published at `https://micuentadecasa.github.io/dipu/` after successful workflow run `38253064691` for commit `f0d370d`; topic 5 has passed the same review/import gates with the official Ley 39/2015 source. Publish topic 5 next; secondary sources remain permitted only with explicit tier, URL/date/provenance and material-uncertainty reporting. The 8,000 count remains a target, never a padding requirement.

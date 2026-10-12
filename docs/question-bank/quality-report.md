@@ -1,7 +1,7 @@
 # Question-bank quality report — checkpoint 1
 
 **As of:** 2026-10-12 UTC
-**Scope:** topics 1--4 lot 1 are reviewed, imported and published incrementally; topic 5 is the next sequential batch.
+**Scope:** topics 1--4 lot 1 are published; topic 5 lot 1 is reviewed and import-validated, ready for deployment.
 
 ## Current counts
 
@@ -9,17 +9,17 @@
 |---|---:|---|
 | Legacy runtime records | 1,200 | Preserved baseline; not validated or counted toward the target |
 | Objective slots | 8,000 | 200 per topic; 100 topic-1-to-5 statements researched, 7,900 slots pending |
-| Topics 1--4 lot 1 candidates | 80 | Generated only after official-source verification |
-| Reviewed accepted artifacts | 80 | Topics 1--4 records passed independent review matrices |
-| Quarantined candidate audits | 80 | Original candidate lots remain unchanged as audit trails |
+| Topics 1--5 lot 1 candidates | 100 | Generated only after official-source verification |
+| Reviewed accepted artifacts | 100 | Topics 1--5 records passed independent review matrices |
+| Quarantined candidate audits | 100 | Original candidate lots remain unchanged as audit trails |
 | Deterministic duplicate matches | 0 | Exact, lexical and near-lexical checks against legacy/topic-lot records |
 | Semantic/concept decisions | 20 unique | Independently reviewed against the objective and proposition |
-| Native import/export | 80 | Accepted topics 1--4 are imported through `seed_data.py`; `frontend/src/questions.js` contains 1,280 records |
-| Published batches | 4 | Topics 1--4 are live at `https://micuentadecasa.github.io/dipu/` |
+| Native import/export | 100 | Accepted topics 1--5 are imported through `seed_data.py`; `frontend/src/questions.js` contains 1,300 records |
+| Published batches | 4 | Topics 1--4 are live at `https://micuentadecasa.github.io/dipu/`; topic 5 is deployment-ready |
 
 ## Lot 1 distributions
 
-Topics 1--4 lot 1 each use 4 basic, 10 intermediate and 6 advanced records. Topics 1--3 use verified BOE sources; topic 4 uses BOE RDL 781/1986 plus the official RD 2568/1986 text with its recorded correction notice. All four independent review passes accepted 80 official-primary records after answer, explanation, semantic and concept checks. All four batches are live at `https://micuentadecasa.github.io/dipu/`; the deployed JavaScript returned HTTP 200 and contains representative questions from topics 1--4.
+Topics 1--5 lot 1 each use 4 basic, 10 intermediate and 6 advanced records. Topics 1--4 use the documented official BOE sources; topic 5 uses the official consolidated Ley 39/2015 source. All five independent review passes accepted 100 official-primary records after answer, explanation, semantic and concept checks. Topics 1--4 are live at `https://micuentadecasa.github.io/dipu/`; topic 5 is ready for the next deployment.
 
 Candidate, reviewed, audit and checkpoint artifacts are recorded under `lots/`, `accepted/`, `reviews/` and `checkpoints/` for both topics. Re-running the lot/review/import stages is idempotent.
 
@@ -42,4 +42,4 @@ Candidate, reviewed, audit and checkpoint artifacts are recorded under `lots/`, 
 - `cd frontend && npm run lint`: passed.
 - `cd frontend && npm run build`: passed; the build uses the unchanged runtime artifact.
 
-The reviewed artifact passes answer, explanation, five-level duplicate review and source checks. Publication milestone: topics 1--4, lot 1, 20 accepted records each, are live at `https://micuentadecasa.github.io/dipu/`; workflow run `38252913616` completed successfully for commit `ba00627`. Topic 4 includes the documented RD 2568/1986 correction-review source. No secondary or provisional records are in these batches. Continue topic 5 sequentially.
+The reviewed artifact passes answer, explanation, five-level duplicate review and source checks. Publication milestone: topics 1--4, lot 1, 20 accepted records each, are live at `https://micuentadecasa.github.io/dipu/`; workflow run `38253064691` completed successfully for commit `f0d370d`. Topic 5 has 20 accepted official-primary records and is ready to publish. Topic 4 includes the documented RD 2568/1986 correction-review source; no secondary or provisional records are in these batches.
