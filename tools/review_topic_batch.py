@@ -72,12 +72,15 @@ EXPECTATIONS = {
     15: {
         1:("A","PostgreSQL 18, gestión de transacciones"),2:("A","PostgreSQL 18, gestión de transacciones"),3:("A","PostgreSQL 18, gestión de transacciones"),4:("A","PostgreSQL 18, gestión de transacciones"),5:("A","PostgreSQL 18, sección 13.2"),6:("A","PostgreSQL 18, sección 13.2.1"),7:("A","PostgreSQL 18, secciones 13.2.2 y 13.2.3"),8:("A","PostgreSQL 18, sección 13.3"),9:("A","PostgreSQL 18, sección 13.3.2"),10:("A","PostgreSQL 18, sección 13.3.4"),11:("A","PostgreSQL 18, sección 13.2"),12:("A","PostgreSQL 18, DDL transaccional"),13:("A","PostgreSQL 18, gestión de transacciones"),14:("A","PostgreSQL 18, sección 13.2"),15:("A","PostgreSQL 18, sección 13.3.4"),16:("A","PostgreSQL 18, sección 24.1"),17:("A","PostgreSQL 18, sección 19.5.1"),18:("A","PostgreSQL 18, gestión de transacciones"),19:("A","PostgreSQL 18, sección 13.2.3"),20:("A","PostgreSQL 18, capítulos 13 y 28")
     },
+    16: {
+        1:("A","psql, Description"),2:("A","pg_dump, Description"),3:("A","SQL COPY, Description"),4:("A","SQL COPY, Notes"),5:("A","pg_restore, Description"),6:("A","SQL Dump; pg_dump, Description"),7:("A","SQL COPY, Notes; psql, Meta-Commands"),8:("A","SQL COPY, Parameters"),9:("A","psql, Options, -f/--file"),10:("A","pg_dump, Description"),11:("A","pg_dump, Description, Output Formats"),12:("A","pg_restore, Description"),13:("A","SQL COPY, Notes"),14:("A","SQL COPY, Description"),15:("A","SQL COPY, Binary Format"),16:("A","pg_dump, Description"),17:("A","pg_restore, Warning"),18:("A","SQL COPY, Notes"),19:("A","SQL Dump, Restoring the Dump"),20:("A","pg_restore, Options, -l/--list and -L/--use-list")
+    },
 }
 
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("topic_num", type=int, choices=tuple(range(2, 16)))
+    parser.add_argument("topic_num", type=int, choices=tuple(range(2, 17)))
     args = parser.parse_args()
     lot_path = ROOT / "docs/question-bank/lots" / f"topic-{args.topic_num:02d}-lot-01.json"
     checkpoint_path = ROOT / "docs/question-bank/checkpoints" / f"topic-{args.topic_num:02d}-lot-01.jsonl"
