@@ -55,7 +55,8 @@ If you want to test the exact production build that GitHub Pages will use:
 
 ## Qué hace
 
-- Al entrar crea una ronda de **30 preguntas aleatorias**.
+- Al entrar crea una ronda de hasta **30 preguntas aleatorias**.
+- Una pregunta mostrada no vuelve a seleccionarse durante **14 horas**; el cooldown se conserva al actualizar el navegador en la misma sesión.
 - Puedes responder pregunta por pregunta.
 - La corrección es inmediata:
   - respuesta correcta: verde;
@@ -160,6 +161,7 @@ y subir el contenido de `frontend/dist/` a la rama/configuración que uses para 
 | Archivo | Función |
 | --- | --- |
 | `frontend/src/App.jsx` | App de test estática |
+| `frontend/src/round.js` | Selección aleatoria, cooldown de 14 horas y persistencia de sesión |
 | `frontend/src/App.css` | UI nueva |
 | `frontend/src/questions.js` | Banco de preguntas usado por GitHub Pages |
 | `seed_data.py` | Fuente original de preguntas |
