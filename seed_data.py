@@ -1973,3 +1973,208 @@ SEED_QUESTIONS.extend([
     }
 ])
 # QUESTION_BANK_ACCEPTED_TOPIC_02_LOT_01_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_03_LOT_01_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 3,
+        "question": "¿Qué es el municipio según la Ley 7/1985?",
+        "option_a": "La entidad local básica de la organización territorial del Estado",
+        "option_b": "Un órgano desconcentrado de la provincia",
+        "option_c": "Una unidad administrativa sin personalidad jurídica",
+        "option_d": "Una asociación privada de vecinos",
+        "correct": "A",
+        "explanation": "El artículo 11 define el municipio como la entidad local básica de la organización territorial del Estado, con personalidad jurídica y plena capacidad para el cumplimiento de sus fines."
+    },
+    {
+        "topic_num": 3,
+        "question": "¿Cuáles son los elementos del municipio?",
+        "option_a": "El territorio, la población y la organización",
+        "option_b": "El presupuesto, la provincia y el Gobierno",
+        "option_c": "El padrón, el Pleno y el Senado",
+        "option_d": "El territorio, el Parlamento y la Administración estatal",
+        "correct": "A",
+        "explanation": "El artículo 11.2 identifica como elementos del municipio el territorio, la población y la organización."
+    },
+    {
+        "topic_num": 3,
+        "question": "¿Qué regla territorial establece la Ley 7/1985 para los municipios?",
+        "option_a": "Cada municipio pertenece a una sola provincia",
+        "option_b": "Un municipio puede pertenecer simultáneamente a varias provincias",
+        "option_c": "Todos los municipios deben formar una comarca",
+        "option_d": "La pertenencia provincial depende del padrón anual",
+        "correct": "A",
+        "explanation": "El artículo 12.2 establece que cada municipio pertenecerá a una sola provincia."
+    },
+    {
+        "topic_num": 3,
+        "question": "¿Qué instrumento acredita la residencia y el domicilio habitual en un municipio?",
+        "option_a": "El padrón municipal",
+        "option_b": "El registro de intereses de los concejales",
+        "option_c": "El presupuesto municipal",
+        "option_d": "El plan provincial de cooperación",
+        "correct": "A",
+        "explanation": "El padrón municipal es el registro administrativo donde constan los vecinos del municipio y sus datos constituyen prueba de la residencia y del domicilio habitual en él."
+    },
+    {
+        "topic_num": 3,
+        "question": "¿Qué órganos existen en todos los Ayuntamientos?",
+        "option_a": "Alcalde, Tenientes de Alcalde y Pleno",
+        "option_b": "Solo Alcalde y Junta de Gobierno Local",
+        "option_c": "Presidente provincial y Pleno autonómico",
+        "option_d": "Alcalde, Senado y Consejo de Estado",
+        "correct": "A",
+        "explanation": "El artículo 20.1.a dispone que el Alcalde, los Tenientes de Alcalde y el Pleno existen en todos los Ayuntamientos."
+    },
+    {
+        "topic_num": 3,
+        "question": "¿Cuándo existe la Junta de Gobierno Local conforme a la regla general del artículo 20.1.b?",
+        "option_a": "En municipios con población superior a 5.000 habitantes y en los de menos cuando lo disponga el reglamento orgánico o lo acuerde el Pleno",
+        "option_b": "Solo en municipios capitales de provincia",
+        "option_c": "En todos los municipios sin excepción",
+        "option_d": "Solo cuando lo ordene la Diputación",
+        "correct": "A",
+        "explanation": "La Junta de Gobierno Local existe en todos los municipios con población superior a 5.000 habitantes y en los de menos cuando concurra alguno de los supuestos legales indicados."
+    },
+    {
+        "topic_num": 3,
+        "question": "¿Qué función corresponde al Alcalde como órgano municipal?",
+        "option_a": "Dirigir el gobierno y la administración municipal y representar al Ayuntamiento",
+        "option_b": "Controlar la constitucionalidad de las leyes",
+        "option_c": "Aprobar los Estatutos de Autonomía",
+        "option_d": "Nombrar a los jueces del partido judicial",
+        "correct": "A",
+        "explanation": "El artículo 21.1 atribuye al Alcalde la dirección del gobierno y la administración municipal y la representación del Ayuntamiento, entre otras funciones."
+    },
+    {
+        "topic_num": 3,
+        "question": "¿Qué función tiene el Pleno respecto del gobierno municipal?",
+        "option_a": "El control y la fiscalización de los órganos de gobierno",
+        "option_b": "La dirección ordinaria de todos los servicios estatales",
+        "option_c": "La elección de los diputados provinciales por sufragio directo",
+        "option_d": "La aprobación de sentencias",
+        "correct": "A",
+        "explanation": "El artículo 22.2.a atribuye al Pleno el control y la fiscalización de los órganos de gobierno."
+    },
+    {
+        "topic_num": 3,
+        "question": "¿Cuál de estas materias corresponde al Pleno municipal?",
+        "option_a": "La aprobación del reglamento orgánico y de las ordenanzas",
+        "option_b": "La representación legal ordinaria del municipio",
+        "option_c": "La jefatura superior de todo el personal por delegación automática",
+        "option_d": "La convocatoria de todas las sesiones de la Junta de Gobierno Local",
+        "correct": "A",
+        "explanation": "El artículo 22.2.d atribuye al Pleno la aprobación del reglamento orgánico y de las ordenanzas, sin perjuicio de otras competencias enumeradas."
+    },
+    {
+        "topic_num": 3,
+        "question": "¿Cuál es la función propia de la Junta de Gobierno Local?",
+        "option_a": "Asistir al Alcalde en el ejercicio de sus atribuciones y ejercer las atribuciones que le deleguen o atribuyan las leyes",
+        "option_b": "Sustituir siempre al Pleno en sus funciones de control",
+        "option_c": "Aprobar leyes estatales",
+        "option_d": "Resolver recursos de inconstitucionalidad",
+        "correct": "A",
+        "explanation": "El artículo 23.2 establece que la Junta de Gobierno Local asiste al Alcalde y ejerce las atribuciones que el Alcalde u otro órgano le delegue o le atribuyan las leyes."
+    },
+    {
+        "topic_num": 3,
+        "question": "¿Cómo define la Ley 7/1985 a la provincia?",
+        "option_a": "Entidad local determinada por la agrupación de municipios, con personalidad jurídica propia, y división territorial para actividades del Estado",
+        "option_b": "Órgano sin personalidad jurídica de la Comunidad Autónoma",
+        "option_c": "Agrupación de concejales de un municipio",
+        "option_d": "Unidad administrativa creada por cada Ayuntamiento",
+        "correct": "A",
+        "explanation": "El artículo 31 define la provincia en esos términos y reconoce su autonomía para la gestión de sus intereses."
+    },
+    {
+        "topic_num": 3,
+        "question": "¿Qué órganos son necesarios en todas las Diputaciones?",
+        "option_a": "Presidente, Vicepresidentes, Junta de Gobierno y Pleno",
+        "option_b": "Solo Presidente y Pleno",
+        "option_c": "Alcalde, Senado y Junta Electoral",
+        "option_d": "Delegado del Gobierno y Consejo de Ministros",
+        "correct": "A",
+        "explanation": "El artículo 32.1 establece como órganos necesarios de la Diputación el Presidente, los Vicepresidentes, la Junta de Gobierno y el Pleno."
+    },
+    {
+        "topic_num": 3,
+        "question": "¿Qué función corresponde al Presidente de la Diputación?",
+        "option_a": "Dirigir el gobierno y la administración de la provincia y representar a la Diputación",
+        "option_b": "Aprobar unilateralmente leyes orgánicas",
+        "option_c": "Designar a los Alcaldes de todos los municipios",
+        "option_d": "Resolver los recursos contencioso-administrativos",
+        "correct": "A",
+        "explanation": "El artículo 34.1 atribuye al Presidente la dirección del gobierno y la administración de la provincia y la representación de la Diputación, entre otras competencias."
+    },
+    {
+        "topic_num": 3,
+        "question": "¿Qué función de control corresponde al Pleno de la Diputación?",
+        "option_a": "El control y la fiscalización de los órganos de gobierno",
+        "option_b": "La aprobación de sentencias provinciales",
+        "option_c": "La dirección de la Administración General del Estado",
+        "option_d": "La elección directa de todos los concejales",
+        "correct": "A",
+        "explanation": "El artículo 33.2.a atribuye al Pleno provincial el control y la fiscalización de los órganos de gobierno."
+    },
+    {
+        "topic_num": 3,
+        "question": "¿Qué asistencia debe prestar la Diputación a los municipios?",
+        "option_a": "Asistencia y cooperación jurídica, económica y técnica, especialmente a los municipios de menor capacidad económica y de gestión",
+        "option_b": "Solo asistencia protocolaria a los municipios capitales",
+        "option_c": "Únicamente financiación de obras estatales",
+        "option_d": "Asistencia exclusiva en materia electoral",
+        "correct": "A",
+        "explanation": "El artículo 36.1.b atribuye a la Diputación la asistencia y cooperación jurídica, económica y técnica a los municipios, especialmente a los de menor capacidad."
+    },
+    {
+        "topic_num": 3,
+        "question": "¿Qué competencia provincial se refiere a los servicios municipales entre sí?",
+        "option_a": "La coordinación de los servicios municipales para garantizar una prestación integral y adecuada",
+        "option_b": "La aprobación de los planes urbanísticos estatales",
+        "option_c": "La dirección de los órganos judiciales",
+        "option_d": "La imposición de sanciones penales",
+        "correct": "A",
+        "explanation": "El artículo 36.1.a atribuye a la Diputación la coordinación de los servicios municipales entre sí para garantizar la prestación integral y adecuada."
+    },
+    {
+        "topic_num": 3,
+        "question": "¿Qué tipo de servicios puede prestar la Diputación conforme al artículo 36.1.c?",
+        "option_a": "Servicios públicos de carácter supramunicipal y, en su caso, supracomarcal",
+        "option_b": "Solo servicios internos de la Diputación",
+        "option_c": "Exclusivamente servicios de competencia estatal",
+        "option_d": "Servicios privados sin relación con los municipios",
+        "correct": "A",
+        "explanation": "El artículo 36.1.c incluye la prestación de servicios públicos de carácter supramunicipal y, en su caso, supracomarcal, además del fomento o coordinación de prestación unificada."
+    },
+    {
+        "topic_num": 3,
+        "question": "¿Qué instrumento provincial debe aprobarse anualmente para cooperar en obras y servicios municipales?",
+        "option_a": "Un plan provincial de cooperación a las obras y servicios de competencia municipal",
+        "option_b": "Un reglamento estatal de personal",
+        "option_c": "Un Estatuto de Autonomía provincial",
+        "option_d": "Un decreto judicial de servicios",
+        "correct": "A",
+        "explanation": "El artículo 36.2.a prevé la aprobación anual de un plan provincial de cooperación, elaborado con participación de los municipios."
+    },
+    {
+        "topic_num": 3,
+        "question": "¿Qué finalidad tiene la asistencia provincial respecto de los servicios mínimos municipales?",
+        "option_a": "Asegurar el acceso de la población al conjunto de los servicios mínimos y la mayor eficacia y economía en su prestación",
+        "option_b": "Sustituir siempre a los Ayuntamientos en toda competencia",
+        "option_c": "Eliminar la autonomía municipal",
+        "option_d": "Financiar exclusivamente actividades privadas",
+        "correct": "A",
+        "explanation": "El artículo 36.2.b encomienda a la Diputación asegurar el acceso de la población provincial al conjunto de los servicios mínimos de competencia municipal y la mayor eficacia y economía en su prestación."
+    },
+    {
+        "topic_num": 3,
+        "question": "¿Qué relación describe correctamente la organización municipal y provincial?",
+        "option_a": "Ambas son entidades locales con órganos propios y autonomía para gestionar sus intereses, dentro del marco legal",
+        "option_b": "La provincia dirige jerárquicamente a todos los Ayuntamientos",
+        "option_c": "El municipio carece de personalidad jurídica propia",
+        "option_d": "La Diputación es un órgano del Gobierno de la Nación",
+        "correct": "A",
+        "explanation": "La Ley 7/1985 reconoce personalidad y autonomía a municipios y provincias, y regula sus órganos y competencias sin convertir la provincia en superior jerárquico general de los Ayuntamientos."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_03_LOT_01_END
