@@ -493,6 +493,45 @@ LOT_EXPECTATIONS.update({
     }
 })
 
+# Topic 32 expectations are pinned independently of candidate generation.
+LOT_EXPECTATIONS.update({
+    (32, 1): {
+        1:('A','Route templates'), 2:('B','Route templates'), 3:('C','Route parameters'), 4:('D','Route parameters'),
+        5:('A','Route constraints'), 6:('B','Route constraints'), 7:('C','Route templates'), 8:('D','Route templates'),
+        9:('A','Route templates'), 10:('B','Route templates'), 11:('C','Route templates'), 12:('D','Route templates'),
+        13:('A','Route constraints'), 14:('B','Route constraints'), 15:('C','Route parameters'), 16:('D','Route constraints'),
+        17:('A','Route templates'), 18:('B','Route constraints'), 19:('C','Router'), 20:('D','Route templates')
+    },
+    (32, 2): {
+        1:('A','Router'), 2:('B','Router'), 3:('C','Router'), 4:('D','Router'),
+        5:('A','Router'), 6:('B','RouteView'), 7:('C','RouteView'), 8:('D','AuthorizeRouteView'),
+        9:('A','AuthorizeRouteView'), 10:('B','AuthorizeRouteView'), 11:('C','FocusOnNavigate'), 12:('D','RouteView'),
+        13:('A','RouteView'), 14:('B','RouteView'), 15:('C','Router'), 16:('D','Router'),
+        17:('A','AuthorizeRouteView'), 18:('B','FocusOnNavigate'), 19:('C','RouteView'), 20:('D','Router')
+    },
+    (32, 3): {
+        1:('A','NavigationManager'), 2:('B','NavigationManager'), 3:('C','NavigationManager'), 4:('D','NavigationManager'),
+        5:('A','NavigationManager'), 6:('B','NavigationManager'), 7:('C','NavigationManager'), 8:('D','NavigationManager'),
+        9:('A','NavigationManager'), 10:('B','NavigationManager'), 11:('C','NavigationManager'), 12:('D','NavigationManager'),
+        13:('A','NavigationManager'), 14:('B','NavigationManager'), 15:('C','NavigationManager'), 16:('D','NavigationManager'),
+        17:('A','NavigationManager'), 18:('B','NavigationManager'), 19:('C','NavigationManager'), 20:('D','NavigationManager')
+    },
+    (32, 4): {
+        1:('A','NavLink'), 2:('B','NavLink'), 3:('C','NavLink'), 4:('D','NavLink'),
+        5:('A','NavLink'), 6:('B','Query-string parameters'), 7:('C','Query-string parameters'), 8:('D','Query-string parameters'),
+        9:('A','Query-string parameters'), 10:('B','Query-string parameters'), 11:('C','Query-string parameters'), 12:('D','Query-string parameters'),
+        13:('A','Query-string parameters'), 14:('B','Query-string parameters'), 15:('C','NavLink'), 16:('D','NavigationManager'),
+        17:('A','Query-string parameters'), 18:('B','NavLink'), 19:('C','Query-string parameters'), 20:('D','NavigationManager')
+    },
+    (32, 5): {
+        1:('A','NavigationLock'), 2:('B','NavigationLock'), 3:('C','NavigationLock'), 4:('D','NavigationLock'),
+        5:('A','NavigationLock'), 6:('B','Enhanced navigation'), 7:('C','Enhanced navigation'), 8:('D','Enhanced navigation'),
+        9:('A','NavigationManager'), 10:('B','NavigationLock'), 11:('C','NavigationManager'), 12:('D','Enhanced navigation'),
+        13:('A','NavigationLock'), 14:('B','NavigationManager'), 15:('C','NavigationManager'), 16:('D','Enhanced navigation'),
+        17:('A','AuthorizeRouteView'), 18:('B','NavigationManager'), 19:('C','FocusOnNavigate'), 20:('D','State management recommendations')
+    }
+})
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("topic_num", type=int, choices=tuple(range(2, 41)))

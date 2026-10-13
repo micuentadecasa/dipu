@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-32-blazor-navigation-routing.md",
+  "batches": [
+    {
+      "topic_num": 32,
+      "lot_num": 4,
+      "source_ids": [
+        "BLAZOR-NAV-10"
+      ],
+      "questions": [
+        {
+          "objective_id": "t32-lo-061",
+          "difficulty": "basic",
+          "type": "definition",
+          "question": "¿Qué componente representa un enlace de navegación que puede conocer si su destino está activo?",
+          "options": [
+            "NavLink",
+            "RouteView",
+            "FocusOnNavigate",
+            "NavigationLock"
+          ],
+          "correct": "A",
+          "explanation": "NavLink renderiza un enlace y aplica una clase activa según la URI actual.",
+          "citation": "NavLink",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-062",
+          "difficulty": "basic",
+          "type": "comparison",
+          "question": "¿Qué valor de NavLinkMatch hace que un enlace coincida con la ruta actual completa?",
+          "options": [
+            "Prefix",
+            "All",
+            "ExactOnly",
+            "FullPathOnly"
+          ],
+          "correct": "B",
+          "explanation": "NavLinkMatch.All exige coincidencia completa de la ruta según la lógica del componente.",
+          "citation": "NavLink",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-063",
+          "difficulty": "basic",
+          "type": "comparison",
+          "question": "¿Qué valor de NavLinkMatch permite que el enlace siga activo para rutas descendientes?",
+          "options": [
+            "All",
+            "ChildOnly",
+            "Prefix",
+            "DescendantExact"
+          ],
+          "correct": "C",
+          "explanation": "NavLinkMatch.Prefix considera activa la ruta cuyo prefijo coincide, incluyendo descendientes.",
+          "citation": "NavLink",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-064",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué propiedad permite elegir una clase CSS adicional cuando NavLink está activo?",
+          "options": [
+            "CurrentClassName",
+            "SelectedRoute",
+            "CssWhenFound",
+            "ActiveClass"
+          ],
+          "correct": "D",
+          "explanation": "ActiveClass especifica la clase que se aplica al enlace activo.",
+          "citation": "NavLink",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-065",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué atributo HTML proporciona el destino principal de un NavLink?",
+          "options": [
+            "href",
+            "route",
+            "navigate-to",
+            "target-route"
+          ],
+          "correct": "A",
+          "explanation": "NavLink genera un enlace HTML cuyo destino se expresa mediante href.",
+          "citation": "NavLink",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-066",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué atributo enlaza un parámetro de consulta con una propiedad de un componente Blazor?",
+          "options": [
+            "[SupplyParameterFromRoute]",
+            "[SupplyParameterFromQuery]",
+            "[QueryBinding]",
+            "[FromNavigation]"
+          ],
+          "correct": "B",
+          "explanation": "SupplyParameterFromQuery permite recibir valores de la query en propiedades compatibles.",
+          "citation": "Query-string parameters",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-067",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Qué diferencia existe entre SupplyParameterFromQuery y un parámetro de ruta?",
+          "options": [
+            "Ambos leen solo localStorage",
+            "El primero autoriza la página",
+            "El primero lee la query; el segundo captura un segmento de la plantilla",
+            "El segundo requiere NavigationManager siempre"
+          ],
+          "correct": "C",
+          "explanation": "Son mecanismos distintos: la query aparece después de ? y la ruta se define en @page.",
+          "citation": "Query-string parameters",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-068",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "Una propiedad recibe un valor entero de la query. ¿Qué tipo debe declarar normalmente?",
+          "options": [
+            "RenderFragment",
+            "IServiceProvider",
+            "RouteData",
+            "RouteData"
+          ],
+          "correct": "D",
+          "explanation": "El binding de query convierte el valor al tipo de la propiedad, que puede ser anulable cuando falta.",
+          "citation": "Query-string parameters",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-069",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "Una query puede repetir una clave y el componente necesita recibir todos sus valores. ¿Qué forma es apropiada?",
+          "options": [
+            "Una colección o matriz compatible",
+            "Un singleton global",
+            "Un único bool siempre",
+            "Un layout predeterminado"
+          ],
+          "correct": "A",
+          "explanation": "El binding de query admite colecciones para representar valores repetidos según el tipo declarado.",
+          "citation": "Query-string parameters",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-070",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué parte de una URI procesa SupplyParameterFromQuery?",
+          "options": [
+            "El ensamblado de la página",
+            "La cadena de consulta",
+            "El fragmento de documento",
+            "El certificado TLS"
+          ],
+          "correct": "B",
+          "explanation": "El atributo obtiene valores de la parte query de la URI, no del ensamblado ni del contenido HTML.",
+          "citation": "Query-string parameters",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-071",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué API crea una URI con un parámetro de consulta de tipo específico?",
+          "options": [
+            "GetRouteWithType",
+            "MakeQueryFromComponent",
+            "GetUriWithQueryParameter",
+            "AddTypedRoute"
+          ],
+          "correct": "C",
+          "explanation": "La API tipada recibe el nombre y valor y devuelve una URI con el parámetro codificado.",
+          "citation": "Query-string parameters",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-072",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "Una propiedad de query no tiene valor en la URI. ¿Qué diseño permite representar esa ausencia?",
+          "options": [
+            "Un int no anulable siempre",
+            "Un componente Router",
+            "Una clase CSS",
+            "Un tipo anulable cuando procede"
+          ],
+          "correct": "D",
+          "explanation": "Los tipos anulables permiten distinguir ausencia de un valor numérico o booleano.",
+          "citation": "Query-string parameters",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-073",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Por qué los parámetros de consulta no deben usarse como sustituto automático de autorización?",
+          "options": [
+            "Son datos de navegación controlables por el cliente",
+            "Siempre están cifrados",
+            "Solo existen en servidor",
+            "El Router los firma siempre"
+          ],
+          "correct": "A",
+          "explanation": "La query es entrada del cliente y debe validarse; autorización debe resolverse mediante la seguridad de la aplicación.",
+          "citation": "Query-string parameters",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-074",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué propiedad debe incluir una clase de componente para recibir un valor de query con el atributo correspondiente?",
+          "options": [
+            "Un método privado sin setter",
+            "Una propiedad pública compatible",
+            "Una tabla SQL",
+            "Una ruta adicional obligatoria"
+          ],
+          "correct": "B",
+          "explanation": "El parámetro de consulta se enlaza a una propiedad de componente que cumple el contrato del atributo.",
+          "citation": "Query-string parameters",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-075",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Un enlace NavLink apunta a /products?category=books. ¿Qué debe tener en cuenta la coincidencia activa?",
+          "options": [
+            "Que toda query se convierta en una ruta",
+            "Que NavLink autoriza al usuario",
+            "La configuración de coincidencia de ruta y el tratamiento de la query",
+            "Que la query se guarda en CSS"
+          ],
+          "correct": "C",
+          "explanation": "NavLink evalúa el destino según su lógica de coincidencia; los parámetros de consulta son parte distinta del segmento de ruta.",
+          "citation": "NavLink",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-076",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué ventaja proporciona una API de construcción de query frente a concatenar `?key=value` manualmente?",
+          "options": [
+            "Convierte el enlace en singleton",
+            "Evita toda autorización",
+            "Elimina el Router",
+            "Codifica y actualiza los valores correctamente"
+          ],
+          "correct": "D",
+          "explanation": "Las APIs de NavigationManager gestionan la codificación, reemplazo y eliminación de parámetros.",
+          "citation": "NavigationManager",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-077",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Un parámetro de query puede contener espacios y caracteres reservados. ¿Qué debe evitarse?",
+          "options": [
+            "Insertarlo sin codificación en la cadena de URL",
+            "Usar GetUriWithQueryParameter",
+            "Declarar un tipo compatible",
+            "Validar el valor"
+          ],
+          "correct": "A",
+          "explanation": "La concatenación sin codificar puede cambiar la estructura de la URI o producir valores inválidos.",
+          "citation": "Query-string parameters",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-078",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Qué diferencia hay entre Match.All y Match.Prefix cuando se navega a una ruta hija?",
+          "options": [
+            "All siempre coincide con hijos",
+            "Prefix puede seguir activo; All exige coincidencia completa",
+            "Prefix nunca coincide",
+            "Ambos son autorización"
+          ],
+          "correct": "B",
+          "explanation": "La selección determina si la actividad incluye rutas descendientes.",
+          "citation": "NavLink",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-079",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Qué combinación permite una página leer una query y reaccionar cuando cambia mediante navegación?",
+          "options": [
+            "Solo @page sin propiedad",
+            "Solo ActiveClass",
+            "SupplyParameterFromQuery y el ciclo de parámetros/renderizado",
+            "Solo DefaultLayout"
+          ],
+          "correct": "C",
+          "explanation": "El componente recibe el valor de query y el framework actualiza sus parámetros cuando cambia la URI.",
+          "citation": "Query-string parameters",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-080",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Una aplicación construye una URI quitando un filtro opcional. ¿Qué operación expresa mejor la eliminación?",
+          "options": [
+            "Pasar una clase CSS",
+            "Usar NotFound",
+            "Cambiar AppAssembly",
+            "Pasar null al parámetro de query"
+          ],
+          "correct": "D",
+          "explanation": "La API de query interpreta null como ausencia y elimina el parámetro correspondiente.",
+          "citation": "NavigationManager",
+          "source_id": "BLAZOR-NAV-10"
+        }
+      ]
+    }
+  ]
+}
