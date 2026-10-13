@@ -13,6 +13,8 @@
 - `SEDIPUALBA-SECA`: public manual for contractual information, minor contracts, PLACSP, accounting/interoperability and invoice requests.
 - `SEDIPUALBA-SECOIN`: public manual for internal control, intervention reports, checklists, areas, proceedings, actions and objections.
 
+The expansion lots also use verified sections on SEGEX roles, requirements, payments, fiscalisation, ENI export and operations; SERES registration states, destinations, annex metadata, dispatch, search and batch operations; SEFYCU document composition, signers, notification mechanisms, SIR/SENIA, biometric and pseudonymous signatures; SECOIN configuration and reporting; and SECA contractual integration, PLACSP, SCSP, invoices and Tribunal de Cuentas exports.
+
 ## Verified propositions
 
 - `t37-lo-001` — El manual define SEGEX como el tramitador de expedientes de la plataforma pública SEDIPUALB@. *(citation: SEGEX — Conceptos Generales; source: SEDIPUALBA-SEGEX)*
@@ -115,6 +117,8 @@
 - `t37-lo-098` — SECA documenta el envío de contratos menores a PLACSP. *(citation: SECA — Cumplimiento de publicidad y concurrencia; PLACSP; source: SEDIPUALBA-SECA)*
 - `t37-lo-099` — El manual explica que la petición de factura queda asociada a un código CCF que vincula la factura con la petición y expediente. *(citation: SECA — Contratos NO Menores; Integración contable; source: SEDIPUALBA-SECA)*
 - `t37-lo-100` — La búsqueda avanzada permite exportar información en formatos exigidos por el Tribunal de Cuentas y el Registro Público de Contratos. *(citation: SECA — Búsqueda de contratos y envío al Tribunal de Cuentas; source: SEDIPUALBA-SECA)*
+
+The expansion adds 100 independently reviewed statements (`t37-lo-101` through `t37-lo-200`) from the same five official manuals. They remain bounded to visible manual behavior; SEFACE, Segra-specific private configuration and other unrecovered module claims remain excluded.
 
 ## Quarantine boundary
 
