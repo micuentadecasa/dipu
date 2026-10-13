@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-28-blazor-advanced-styles.md",
+  "batches": [
+    {
+      "topic_num": 28,
+      "lot_num": 10,
+      "source_ids": [
+        "BLAZOR-10"
+      ],
+      "questions": [
+        {
+          "objective_id": "t28-lo-181",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué permite DynamicComponent?",
+          "options": [
+            "Seleccionar y renderizar un tipo de componente en tiempo de ejecución",
+            "Crear CSS global",
+            "Validar un modelo",
+            "Registrar un servicio"
+          ],
+          "correct": "A",
+          "explanation": "DynamicComponent renderiza componentes seleccionados dinámicamente.",
+          "citation": "Razor components — dynamic rendering context",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-182",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué debe proporcionar un componente dinámico para su configuración?",
+          "options": [
+            "El tipo y los parámetros apropiados",
+            "Solo una URL",
+            "Solo un CSS class",
+            "Un EditContext obligatorio"
+          ],
+          "correct": "A",
+          "explanation": "El componente dinámico necesita tipo y parámetros compatibles.",
+          "citation": "Razor components — dynamic rendering context",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-183",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué riesgo tiene elegir tipos dinámicos desde entrada no confiable?",
+          "options": [
+            "Permitir renderizar componentes no previstos",
+            "Mejorar validación",
+            "Evitar errores",
+            "Aislar CSS"
+          ],
+          "correct": "A",
+          "explanation": "La selección debe estar controlada por la aplicación.",
+          "citation": "Razor components — dynamic rendering context",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-184",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué componente ayuda a delimitar errores de renderizado?",
+          "options": [
+            "ErrorBoundary",
+            "RenderErrorRoute",
+            "ExceptionComponentOnly",
+            "BoundaryProvider"
+          ],
+          "correct": "A",
+          "explanation": "ErrorBoundary captura errores del subárbol soportado.",
+          "citation": "Lifecycle — error handling",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-185",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué efecto tiene un error no controlado en un componente?",
+          "options": [
+            "Puede hacer fallar el circuito o dejar la UI en estado de error según hosting",
+            "Siempre se ignora",
+            "Se vuelve CSS",
+            "Se convierte en parámetro"
+          ],
+          "correct": "A",
+          "explanation": "Los errores de componentes requieren manejo adecuado.",
+          "citation": "Lifecycle — error handling",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-186",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué debe hacer una ErrorBoundary tras capturar un error si procede?",
+          "options": [
+            "Mostrar estado de error y permitir recuperación/reintento según diseño",
+            "Persistir el secreto",
+            "Cambiar el assembly",
+            "Crear una ruta externa"
+          ],
+          "correct": "A",
+          "explanation": "La frontera puede representar y recuperar el error.",
+          "citation": "Lifecycle — error handling",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-187",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Un callback externo cambia una lista pero no se ve en pantalla. ¿Qué revisar?",
+          "options": [
+            "Notificación StateHasChanged mediante el contexto apropiado",
+            "CSS isolation",
+            "@typeparam",
+            "Dispose"
+          ],
+          "correct": "A",
+          "explanation": "Los cambios externos necesitan notificación.",
+          "citation": "Rendering — external callbacks",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-188",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Un componente llama StateHasChanged dentro de cada OnAfterRenderAsync y genera actividad continua. ¿Qué revisar?",
+          "options": [
+            "Controlar firstRender y evitar el ciclo de actualización",
+            "El nombre del componente",
+            "El modelo de datos",
+            "El CSS global"
+          ],
+          "correct": "A",
+          "explanation": "La actualización after-render puede repetirse indefinidamente.",
+          "citation": "Lifecycle — after-render callbacks",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-189",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Una lista genérica necesita renderizar una fila distinta por consumidor. ¿Qué API usar?",
+          "options": [
+            "RenderFragment<TItem>",
+            "RenderFragment sin tipo siempre",
+            "DynamicComponent sin parámetros",
+            "Raw HTML"
+          ],
+          "correct": "A",
+          "explanation": "La plantilla tipada recibe cada elemento.",
+          "citation": "Templated components — RenderFragment<TValue>",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-190",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Una regla .razor.css no afecta el contenido interno de un hijo. ¿Cuál es la explicación?",
+          "options": [
+            "CSS isolation no cruza automáticamente el límite del hijo",
+            "El hijo no tiene parámetros",
+            "RenderFragment siempre elimina estilos",
+            "Se requiere EditContext"
+          ],
+          "correct": "A",
+          "explanation": "El aislamiento limita el alcance.",
+          "citation": "CSS isolation — child component boundaries",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-191",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Una aplicación debe aplicar estilo al markup descendiente del hijo de forma documentada. ¿Qué revisar?",
+          "options": [
+            "Uso correcto de ::deep y el elemento antecesor requerido",
+            "Cambiar a singleton",
+            "Añadir @ref",
+            "Usar OnSubmit"
+          ],
+          "correct": "A",
+          "explanation": "::deep es la herramienta documentada para ese cruce.",
+          "citation": "CSS isolation — ::deep",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-192",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Un componente debe inicializar una librería JS solo tras estar en DOM interactivo. ¿Dónde encaja?",
+          "options": [
+            "OnAfterRenderAsync condicionado a firstRender",
+            "OnInitialized siempre",
+            "Constructor",
+            "OnParametersSet antes del render"
+          ],
+          "correct": "A",
+          "explanation": "After-render permite que el DOM exista.",
+          "citation": "Lifecycle — after-render callbacks; prerendering",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-193",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "El mismo componente se inicializa durante prerender y después interactivo. ¿Qué diseño es prudente?",
+          "options": [
+            "Hacer idempotente la inicialización y distinguir firstRender/entorno",
+            "Asumir una sola ejecución",
+            "Leer siempre APIs browser en prerender",
+            "Crear singleton"
+          ],
+          "correct": "A",
+          "explanation": "Prerender puede producir fases distintas.",
+          "citation": "Lifecycle — prerendering",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-194",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Un componente se suscribe a un observable y luego se navega fuera. ¿Qué debe hacer?",
+          "options": [
+            "Liberar la suscripción en Dispose/DisposeAsync",
+            "Mantenerla global",
+            "Suscribirse otra vez en cada render",
+            "Moverla a CSS"
+          ],
+          "correct": "A",
+          "explanation": "La limpieza evita callbacks a una instancia destruida.",
+          "citation": "Lifecycle — disposal",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-195",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "Un DynamicComponent recibe un tipo fuera de una lista permitida. ¿Qué control falta?",
+          "options": [
+            "Validar/limitar la selección de tipos dinámicos",
+            "Añadir Required",
+            "Cambiar CSS",
+            "Usar OnValidSubmit"
+          ],
+          "correct": "A",
+          "explanation": "El tipo dinámico debe pertenecer a una selección confiable.",
+          "citation": "Razor components — dynamic rendering context",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-196",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "Una página tiene una tarjeta de error para solo un widget. ¿Qué diseño ayuda?",
+          "options": [
+            "Colocar ErrorBoundary alrededor del subárbol del widget",
+            "Capturar todas las excepciones globales en CSS",
+            "Usar RenderFragment sin error",
+            "Disponer el Router"
+          ],
+          "correct": "A",
+          "explanation": "La frontera limita el área afectada.",
+          "citation": "Lifecycle — error handling",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-197",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "Un parámetro se transforma en OnParametersSetAsync pero la UI muestra el anterior durante el proceso. ¿Qué debe considerar?",
+          "options": [
+            "Estado de carga y renderizado tras completar la operación",
+            "Cambiar CSS isolation",
+            "Crear un DynamicComponent",
+            "Usar raw HTML"
+          ],
+          "correct": "A",
+          "explanation": "El trabajo asíncrono necesita estado intermedio y actualización.",
+          "citation": "Lifecycle — parameter-set callbacks",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-198",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "Un componente usa @ref durante OnInitialized y obtiene null. ¿Qué explica el resultado?",
+          "options": [
+            "La referencia se asigna durante/después del render, no en inicialización",
+            "@ref solo sirve para CSS",
+            "El componente debe ser singleton",
+            "Falta EditContext"
+          ],
+          "correct": "A",
+          "explanation": "La referencia no está disponible antes de renderizar.",
+          "citation": "Razor components — component references",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-199",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué combinación favorece un componente avanzado mantenible?",
+          "options": [
+            "Parámetros/callbacks explícitos, templates tipados, CSS aislado y lifecycle/disposición correctos",
+            "Estado oculto, HTML raw y renders infinitos",
+            "Referencias globales y CSS universal",
+            "DynamicComponent sin control"
+          ],
+          "correct": "A",
+          "explanation": "Estas APIs separan composición, estilo y ciclo de vida.",
+          "citation": "Razor components; CSS isolation; templated components; lifecycle",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-200",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué permite un componente recibir contenido alternativo sin duplicar su estructura?",
+          "options": [
+            "Un RenderFragment proporcionado por el consumidor",
+            "Un CSS global",
+            "Un servicio estático",
+            "Una ruta fija"
+          ],
+          "correct": "A",
+          "explanation": "El contenido hijo parametriza la estructura reutilizable.",
+          "citation": "Razor components — child content",
+          "source_id": "BLAZOR-10"
+        }
+      ]
+    }
+  ]
+}

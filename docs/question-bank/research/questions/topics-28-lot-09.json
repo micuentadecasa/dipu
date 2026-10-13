@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-28-blazor-advanced-styles.md",
+  "batches": [
+    {
+      "topic_num": 28,
+      "lot_num": 9,
+      "source_ids": [
+        "BLAZOR-10"
+      ],
+      "questions": [
+        {
+          "objective_id": "t28-lo-161",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué ocurre antes de que el componente use sus parámetros?",
+          "options": [
+            "El framework los asigna desde el padre",
+            "Se dispone el componente",
+            "Se genera CSS global",
+            "Se crea una ruta"
+          ],
+          "correct": "A",
+          "explanation": "Los parámetros se asignan durante el ciclo.",
+          "citation": "Lifecycle — parameter assignment",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-162",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué callback se usa para inicialización síncrona?",
+          "options": [
+            "OnInitialized",
+            "OnInitializedAsync",
+            "OnParametersSetOnly",
+            "OnAfterRenderOnly"
+          ],
+          "correct": "A",
+          "explanation": "OnInitialized se ejecuta en inicialización síncrona.",
+          "citation": "Lifecycle — initialization",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-163",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué método del ciclo de vida permite inicialización asíncrona?",
+          "options": [
+            "OnInitializedAsync",
+            "OnInitializeTaskOnly",
+            "OnAsyncRender",
+            "OnAfterParameter"
+          ],
+          "correct": "A",
+          "explanation": "OnInitializedAsync permite trabajo asíncrono inicial.",
+          "citation": "Lifecycle — initialization",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-164",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué callback se ejecuta después de asignar parámetros?",
+          "options": [
+            "OnParametersSet",
+            "OnParametersAssignedOnly",
+            "OnChildContentSet",
+            "OnRenderStart"
+          ],
+          "correct": "A",
+          "explanation": "OnParametersSet responde a asignación de parámetros.",
+          "citation": "Lifecycle — parameter-set callbacks",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-165",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué variante permite trabajo asíncrono tras parámetros?",
+          "options": [
+            "OnParametersSetAsync",
+            "OnParametersAsyncOnly",
+            "OnSetAwaited",
+            "OnParameterTask"
+          ],
+          "correct": "A",
+          "explanation": "OnParametersSetAsync permite operaciones asíncronas.",
+          "citation": "Lifecycle — parameter-set callbacks",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-166",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué callback se ejecuta después del render?",
+          "options": [
+            "OnAfterRender",
+            "OnAfterRenderAsync",
+            "OnRenderCompleteOnly",
+            "OnMarkupDone"
+          ],
+          "correct": "A",
+          "explanation": "Los callbacks after-render ocurren después de renderizar.",
+          "citation": "Lifecycle — after-render callbacks",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-167",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué parámetro indica si es el primer render en after-render?",
+          "options": [
+            "firstRender",
+            "initialRenderOnly",
+            "isNewComponent",
+            "renderNumber"
+          ],
+          "correct": "A",
+          "explanation": "firstRender distingue la primera ejecución.",
+          "citation": "Lifecycle — after-render callbacks",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-168",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Por qué es útil firstRender?",
+          "options": [
+            "Evita repetir inicialización que solo debe hacerse una vez",
+            "Convierte el componente en singleton",
+            "Crea un parámetro",
+            "Aísla CSS"
+          ],
+          "correct": "A",
+          "explanation": "Permite limitar trabajo de primer render.",
+          "citation": "Lifecycle — firstRender",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-169",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué interfaz permite liberar recursos al destruirse?",
+          "options": [
+            "IDisposable",
+            "IRenderDisposableOnly",
+            "IComponentCleanup",
+            "IReleaseContext"
+          ],
+          "correct": "A",
+          "explanation": "IDisposable define liberación síncrona.",
+          "citation": "Lifecycle — disposal",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-170",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué interfaz permite liberación asíncrona?",
+          "options": [
+            "IAsyncDisposable",
+            "IAsyncComponentCleanup",
+            "IReleaseTaskOnly",
+            "IAsyncRender"
+          ],
+          "correct": "A",
+          "explanation": "IAsyncDisposable define limpieza asíncrona.",
+          "citation": "Lifecycle — disposal",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-171",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué recursos suelen requerir disposición?",
+          "options": [
+            "Suscripciones, timers y recursos externos",
+            "Parámetros simples",
+            "Clases CSS",
+            "Texto estático"
+          ],
+          "correct": "A",
+          "explanation": "Esos recursos pueden sobrevivir si no se liberan.",
+          "citation": "Lifecycle — disposal",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-172",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué debe hacer un componente que suscribe un evento externo?",
+          "options": [
+            "Desuscribirse durante la disposición",
+            "Suscribirse en cada render",
+            "Ignorar el evento",
+            "Convertirlo en CSS"
+          ],
+          "correct": "A",
+          "explanation": "Desuscribirse evita referencias y callbacks posteriores.",
+          "citation": "Lifecycle — disposal",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-173",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué riesgo hay al iniciar un timer en OnInitialized y no disponerlo?",
+          "options": [
+            "El timer puede seguir invocando al componente destruido",
+            "Mejora el render",
+            "Se valida el modelo",
+            "Se aísla el CSS"
+          ],
+          "correct": "A",
+          "explanation": "El timer mantiene trabajo/referencias.",
+          "citation": "Lifecycle — disposal",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-174",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué puede ocurrir con un componente prerenderizado y lifecycle?",
+          "options": [
+            "Algunos callbacks pueden ejecutarse durante prerender y luego durante interacción",
+            "Solo se ejecuta un constructor",
+            "Nunca se llama OnInitialized",
+            "CSS controla el ciclo"
+          ],
+          "correct": "A",
+          "explanation": "Prerendering tiene un ciclo que debe tenerse en cuenta.",
+          "citation": "Lifecycle — prerendering",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-175",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué trabajo no debe asumirse disponible durante prerender?",
+          "options": [
+            "Acceso a APIs de navegador/interactividad que requieren cliente",
+            "Cálculo puro",
+            "Asignación de parámetros",
+            "Markup estático"
+          ],
+          "correct": "A",
+          "explanation": "Prerender puede ocurrir sin APIs browser.",
+          "citation": "Lifecycle — prerendering",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-176",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué lugar es adecuado para lógica que necesita DOM/interactividad tras render?",
+          "options": [
+            "OnAfterRenderAsync con control de firstRender",
+            "Constructor siempre",
+            "OnParametersSet antes de render",
+            "CSS isolation"
+          ],
+          "correct": "A",
+          "explanation": "After-render es el momento documentado para ese trabajo.",
+          "citation": "Lifecycle — after-render callbacks",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-177",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué diferencia OnInitialized y OnParametersSet?",
+          "options": [
+            "El primero inicializa; el segundo puede ejecutarse tras nuevas asignaciones de parámetros",
+            "Son idénticos",
+            "El segundo dispone recursos",
+            "El primero solo cambia CSS"
+          ],
+          "correct": "A",
+          "explanation": "Sus momentos y propósitos difieren.",
+          "citation": "Lifecycle — initialization; parameter-set callbacks",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-178",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué debe hacer una operación asíncrona de lifecycle con estado actualizado?",
+          "options": [
+            "Permitir que el flujo del componente renderice el resultado y manejar cancelación/errores según corresponda",
+            "Cambiar DOM manualmente siempre",
+            "Crear un Router",
+            "Ignorar la tarea"
+          ],
+          "correct": "A",
+          "explanation": "El resultado asíncrono debe integrarse al ciclo.",
+          "citation": "Lifecycle — async lifecycle",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-179",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué callback es apropiado para reaccionar a parámetros nuevos?",
+          "options": [
+            "OnParametersSetAsync",
+            "OnAfterRender solo",
+            "Dispose",
+            "ShouldRender únicamente"
+          ],
+          "correct": "A",
+          "explanation": "Ese callback responde a nuevos parámetros.",
+          "citation": "Lifecycle — parameter-set callbacks",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-180",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué debe evitarse en OnAfterRenderAsync sin firstRender?",
+          "options": [
+            "Repetir una actualización que provoca un bucle de renders",
+            "Leer un elemento una vez",
+            "Inicializar una librería una vez",
+            "Comprobar estado"
+          ],
+          "correct": "A",
+          "explanation": "Actualizar en cada after-render puede crear ciclos.",
+          "citation": "Lifecycle — after-render callbacks",
+          "source_id": "BLAZOR-10"
+        }
+      ]
+    }
+  ]
+}
