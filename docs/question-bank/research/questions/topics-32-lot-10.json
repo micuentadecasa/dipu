@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-32-blazor-navigation-routing.md",
+  "batches": [
+    {
+      "topic_num": 32,
+      "lot_num": 10,
+      "source_ids": [
+        "BLAZOR-NAV-10"
+      ],
+      "questions": [
+        {
+          "objective_id": "t32-lo-181",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "Un componente debe responder a `/products/42` solo si 42 es entero. ¿Qué declara?",
+          "options": [
+            "Una ruta con parámetro y restricción int",
+            "Una query sin ruta",
+            "Un NavLink Prefix",
+            "Un NotFound"
+          ],
+          "correct": "A",
+          "explanation": "La restricción int limita la coincidencia.",
+          "citation": "Route constraints — int",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-182",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "Una página necesita filtrar resultados sin crear rutas distintas. ¿Qué mecanismo encaja?",
+          "options": [
+            "Parámetros query",
+            "Parámetros catch-all obligatorios",
+            "AdditionalAssemblies",
+            "DefaultLayout"
+          ],
+          "correct": "A",
+          "explanation": "La query aporta estado adicional a la ruta.",
+          "citation": "Query string parameters",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-183",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "Una aplicación debe mostrar “no encontrado” para URLs sin componente. ¿Qué configura?",
+          "options": [
+            "El bloque NotFound del Router",
+            "ActiveClass de NavLink",
+            "BaseUri",
+            "NavigationLock"
+          ],
+          "correct": "A",
+          "explanation": "NotFound trata la ausencia de coincidencia.",
+          "citation": "Router — NotFound content",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-184",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "Una página protegida debe renderizar contenido alternativo si el usuario no está autorizado. ¿Qué usa?",
+          "options": [
+            "AuthorizeRouteView",
+            "RouteView sin autorización",
+            "NavLink Prefix",
+            "NavigationManager.Uri"
+          ],
+          "correct": "A",
+          "explanation": "AuthorizeRouteView ofrece contenido autorizado/no autorizado.",
+          "citation": "AuthorizeRouteView — NotAuthorized",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-185",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Una ruta vive en una librería distinta del assembly principal. ¿Qué configura?",
+          "options": [
+            "AdditionalAssemblies en Router",
+            "Una query llamada assembly",
+            "Un catch-all",
+            "Un nuevo BaseUri"
+          ],
+          "correct": "A",
+          "explanation": "AdditionalAssemblies permite descubrir rutas externas.",
+          "citation": "Router — AdditionalAssemblies",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-186",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Un botón debe navegar a una URI y provocar carga completa. ¿Qué opción usa?",
+          "options": [
+            "NavigateTo con forceLoad=true",
+            "NavLink con Match=All",
+            "RouteView con DefaultLayout",
+            "Router con Found"
+          ],
+          "correct": "A",
+          "explanation": "forceLoad fuerza la carga completa.",
+          "citation": "NavigationManager — NavigateTo forceLoad",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-187",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Una redirección no debe dejar una entrada adicional en historial. ¿Qué opción usa?",
+          "options": [
+            "replaceHistoryEntry=true",
+            "forceLoad=false solamente",
+            "Match=Prefix",
+            "data-enhance-nav=true"
+          ],
+          "correct": "A",
+          "explanation": "replaceHistoryEntry reemplaza la entrada actual.",
+          "citation": "NavigationManager — NavigateTo replaceHistoryEntry",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-188",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Un menú debe marcar activo `/docs` y sus subrutas. ¿Qué criterio elige?",
+          "options": [
+            "NavLinkMatch.Prefix",
+            "NavLinkMatch.All siempre",
+            "NotFound",
+            "RouteData"
+          ],
+          "correct": "A",
+          "explanation": "Prefix cubre la ruta y sus descendientes.",
+          "citation": "NavLink — Match",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-189",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Un menú debe marcar activo solo cuando la URL coincide exactamente. ¿Qué criterio elige?",
+          "options": [
+            "NavLinkMatch.All",
+            "NavLinkMatch.Prefix",
+            "LocationChanging",
+            "BaseUri"
+          ],
+          "correct": "A",
+          "explanation": "All exige coincidencia exacta.",
+          "citation": "NavLink — Match",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-190",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Un componente debe reaccionar después de completar una navegación. ¿Qué escucha?",
+          "options": [
+            "LocationChanged",
+            "LocationChanging solamente",
+            "Found",
+            "SupplyParameterFromQuery"
+          ],
+          "correct": "A",
+          "explanation": "LocationChanged notifica el cambio completado.",
+          "citation": "NavigationManager — LocationChanged",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-191",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Un formulario debe advertir al salir con datos no guardados. ¿Qué mecanismo es apropiado?",
+          "options": [
+            "NavigationLock",
+            "NavLink ActiveClass",
+            "RouteView",
+            "AdditionalAssemblies"
+          ],
+          "correct": "A",
+          "explanation": "NavigationLock controla o confirma salidas.",
+          "citation": "NavigationLock",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-192",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Un handler debe decidir antes de completar una navegación interna. ¿Qué API se usa?",
+          "options": [
+            "LocationChanging handler",
+            "LocationChanged después",
+            "BaseUri",
+            "NotFound"
+          ],
+          "correct": "A",
+          "explanation": "Los handlers location-changing intervienen antes.",
+          "citation": "NavigationLock — location changing",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-193",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Un enlace debe aprovechar navegación mejorada, salvo que se desactive explícitamente. ¿Qué atributo se relaciona?",
+          "options": [
+            "data-enhance-nav",
+            "data-route-template",
+            "data-query-bind",
+            "data-layout-only"
+          ],
+          "correct": "A",
+          "explanation": "Ese atributo controla enhanced navigation.",
+          "citation": "Enhanced navigation — data-enhance-nav",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-194",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Una página necesita conservar foco tras la navegación mejorada. ¿Qué característica se documenta?",
+          "options": [
+            "Restauración de foco",
+            "Cambio de BaseUri",
+            "Restricción int",
+            "NotFound"
+          ],
+          "correct": "A",
+          "explanation": "La navegación mejorada contempla restauración de foco.",
+          "citation": "Enhanced navigation — focus",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-195",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué cadena representa una query con dos valores?",
+          "options": [
+            "`?page=2&sort=name`",
+            "`/page=2/sort=name`",
+            "`#page=2?sort=name`",
+            "`@page=2@sort=name`"
+          ],
+          "correct": "A",
+          "explanation": "La query empieza con ? y separa pares con &.",
+          "citation": "Query string syntax",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-196",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué componente conecta RouteData con un layout?",
+          "options": [
+            "RouteView",
+            "NavigationLock",
+            "NavLink",
+            "LocationChanged"
+          ],
+          "correct": "A",
+          "explanation": "RouteView renderiza la vista y layout.",
+          "citation": "RouteView",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-197",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué combinación pertenece a la resolución, no a la navegación imperativa?",
+          "options": [
+            "Router, Found y RouteView",
+            "NavigateTo, Uri y LocationChanged",
+            "NavLink, ActiveClass y Match",
+            "NavigationLock y forceLoad"
+          ],
+          "correct": "A",
+          "explanation": "Son piezas de resolución y renderizado de rutas.",
+          "citation": "Router; Found; RouteView",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-198",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué combinación pertenece a navegación imperativa?",
+          "options": [
+            "NavigationManager, NavigateTo y Uri",
+            "Router, NotFound y RouteData",
+            "@page, int y catch-all",
+            "DefaultLayout, Found y Authorizing"
+          ],
+          "correct": "A",
+          "explanation": "Son APIs/propiedades para navegar desde código.",
+          "citation": "NavigationManager — NavigateTo; Uri",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-199",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué combinación diferencia ruta, query y bloqueo?",
+          "options": [
+            "@page, SupplyParameterFromQuery y NavigationLock",
+            "NavLink, RouteView y BaseUri",
+            "Found, Uri y ActiveClass",
+            "Layout, assembly y NotFound"
+          ],
+          "correct": "A",
+          "explanation": "Cada elemento cubre una función distinta de navegación.",
+          "citation": "Route templates; query string parameters; NavigationLock",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-200",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué mecanismo permite que una propiedad reciba valores desde la query de la URL?",
+          "options": [
+            "SupplyParameterFromQuery",
+            "DefaultLayout",
+            "ActiveClass",
+            "AdditionalAssemblies"
+          ],
+          "correct": "A",
+          "explanation": "La directiva suministra valores de la query al componente.",
+          "citation": "Query string parameters — SupplyParameterFromQuery",
+          "source_id": "BLAZOR-NAV-10"
+        }
+      ]
+    }
+  ]
+}

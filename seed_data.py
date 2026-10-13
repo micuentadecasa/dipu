@@ -33523,3 +33523,1028 @@ SEED_QUESTIONS.extend([
     }
 ])
 # QUESTION_BANK_ACCEPTED_TOPIC_33_LOT_10_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_32_LOT_06_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 32,
+        "question": "¿Qué directiva declara normalmente una plantilla de ruta en un componente Razor?",
+        "option_a": "@page",
+        "option_b": "@route",
+        "option_c": "@path",
+        "option_d": "@template",
+        "correct": "A",
+        "explanation": "@page declara la plantilla de ruta del componente."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué representa un segmento literal en una plantilla de ruta?",
+        "option_a": "Texto fijo que debe coincidir en la URL",
+        "option_b": "Cualquier valor de consulta",
+        "option_c": "Un parámetro opcional siempre",
+        "option_d": "Un nombre de layout",
+        "correct": "A",
+        "explanation": "Los segmentos literales forman parte fija de la coincidencia."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué representa un parámetro de ruta entre llaves?",
+        "option_a": "Un valor extraído de un segmento de la URL",
+        "option_b": "Un parámetro de configuración global",
+        "option_c": "Un nombre de assembly",
+        "option_d": "Un fragmento CSS",
+        "correct": "A",
+        "explanation": "El parámetro se enlaza con un segmento de la URL."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué ventaja aporta una restricción de ruta?",
+        "option_a": "Limitar los valores que pueden coincidir con el parámetro",
+        "option_b": "Cambiar el layout global",
+        "option_c": "Convertir query en hash",
+        "option_d": "Forzar una recarga completa",
+        "correct": "A",
+        "explanation": "La restricción controla la coincidencia del parámetro."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué diferencia esencial hay entre una ruta y una query string?",
+        "option_a": "La ruta participa en la selección del componente y la query aporta estado adicional",
+        "option_b": "La query selecciona siempre el layout",
+        "option_c": "La ruta solo guarda cookies",
+        "option_d": "No hay diferencia",
+        "correct": "A",
+        "explanation": "Son mecanismos distintos de datos de navegación."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué puede expresar un parámetro opcional de ruta?",
+        "option_a": "Que la URL coincida con o sin ese segmento",
+        "option_b": "Que el componente nunca coincida",
+        "option_c": "Que la query sea obligatoria",
+        "option_d": "Que se omita el path completo",
+        "correct": "A",
+        "explanation": "El segmento opcional puede estar ausente."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué finalidad tiene un segmento catch-all?",
+        "option_a": "Capturar el resto de la ruta como un valor",
+        "option_b": "Capturar solo el dominio",
+        "option_c": "Capturar únicamente una query",
+        "option_d": "Seleccionar cualquier layout",
+        "correct": "A",
+        "explanation": "El parámetro catch-all recoge segmentos restantes."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué debe tenerse en cuenta al colocar valores especiales en una URL?",
+        "option_a": "La codificación URL",
+        "option_b": "El nombre del assembly",
+        "option_c": "El estado de autenticación únicamente",
+        "option_d": "El color del enlace",
+        "correct": "A",
+        "explanation": "Los valores deben representarse conforme a la codificación URL."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué puede impedir que una plantilla coincida con una URL?",
+        "option_a": "Que un valor no satisfaga su restricción",
+        "option_b": "Que exista un layout",
+        "option_c": "Que haya un NavLink",
+        "option_d": "Que el componente tenga CSS",
+        "correct": "A",
+        "explanation": "Una restricción no satisfecha excluye la coincidencia."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué ocurre con dos componentes que declaran plantillas compatibles?",
+        "option_a": "El Router aplica las reglas de selección de rutas",
+        "option_b": "Ambos se renderizan siempre juntos",
+        "option_c": "Se elige por orden alfabético de CSS",
+        "option_d": "Se ignora la URL",
+        "correct": "A",
+        "explanation": "Router resuelve qué componente corresponde a la navegación."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué tipo de valor es adecuado para una restricción int?",
+        "option_a": "Un segmento convertible a entero",
+        "option_b": "Cualquier texto con espacios",
+        "option_c": "Solo un parámetro query",
+        "option_d": "Un layout",
+        "correct": "A",
+        "explanation": "La restricción int limita el segmento a valores enteros."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué tipo de valor acepta una restricción bool?",
+        "option_a": "Una representación convertible a booleano",
+        "option_b": "Cualquier archivo estático",
+        "option_c": "Solo una fecha",
+        "option_d": "Solo un GUID",
+        "correct": "A",
+        "explanation": "La restricción bool valida valores booleanos."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué aporta una restricción de longitud?",
+        "option_a": "Limitar el número de caracteres del segmento",
+        "option_b": "Limitar el número de layouts",
+        "option_c": "Forzar una navegación externa",
+        "option_d": "Modificar el historial",
+        "correct": "A",
+        "explanation": "La longitud restringe caracteres del valor de ruta."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué problema evita codificar correctamente un valor de ruta?",
+        "option_a": "Interpretaciones incorrectas de caracteres reservados",
+        "option_b": "La falta de un assembly",
+        "option_c": "La ausencia de un Router",
+        "option_d": "La pérdida del título",
+        "correct": "A",
+        "explanation": "La codificación representa de forma segura caracteres especiales."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué fuente de datos se usa para un parámetro de ruta?",
+        "option_a": "El path de la URL",
+        "option_b": "El fragmento CSS",
+        "option_c": "El nombre del usuario",
+        "option_d": "El contenido del layout",
+        "correct": "A",
+        "explanation": "El valor se obtiene del segmento de URL."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué fuente de datos se usa para un parámetro query?",
+        "option_a": "La query string de la URL",
+        "option_b": "El nombre de la rama",
+        "option_c": "El assembly del componente",
+        "option_d": "El título de la página",
+        "correct": "A",
+        "explanation": "El binding de query lee los parámetros de consulta."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué debe distinguir un componente al declarar varios parámetros?",
+        "option_a": "Los valores procedentes de ruta y query según su mecanismo de binding",
+        "option_b": "Solo el nombre del layout",
+        "option_c": "El idioma del navegador",
+        "option_d": "La URL base del servidor",
+        "correct": "A",
+        "explanation": "Ruta y query tienen mecanismos de enlace diferentes."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué representa `/orders/15` si la plantilla es `/orders/{id:int}`?",
+        "option_a": "Una coincidencia con id igual a 15",
+        "option_b": "Una coincidencia con id texto vacío",
+        "option_c": "Una query llamada id",
+        "option_d": "Una ruta no válida siempre",
+        "correct": "A",
+        "explanation": "15 satisface la restricción entera."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué representa `/orders/abc` con `/orders/{id:int}`?",
+        "option_a": "No satisface la plantilla restringida",
+        "option_b": "id igual a cero",
+        "option_c": "Una coincidencia automática con query",
+        "option_d": "Una coincidencia del layout",
+        "correct": "A",
+        "explanation": "abc no es un entero válido."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué opción es apropiada para conservar una ruta arbitraria bajo un prefijo?",
+        "option_a": "Un parámetro catch-all",
+        "option_b": "Una restricción int",
+        "option_c": "Un parámetro query obligatorio",
+        "option_d": "Un NavLink",
+        "correct": "A",
+        "explanation": "Catch-all captura el resto de segmentos."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_32_LOT_06_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_32_LOT_07_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 32,
+        "question": "¿Qué componente coordina la resolución de rutas en una aplicación Blazor?",
+        "option_a": "Router",
+        "option_b": "NavLink",
+        "option_c": "NavigationLock",
+        "option_d": "LayoutView",
+        "correct": "A",
+        "explanation": "Router localiza el componente para la URL."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué bloque del Router se usa cuando se encuentra una ruta?",
+        "option_a": "Found",
+        "option_b": "NotFound",
+        "option_c": "LoadingOnly",
+        "option_d": "MatchedQuery",
+        "correct": "A",
+        "explanation": "Found representa el contenido de una ruta encontrada."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué bloque del Router se usa cuando no hay coincidencia?",
+        "option_a": "NotFound",
+        "option_b": "Found",
+        "option_c": "RouteViewOnly",
+        "option_d": "AuthorizeFound",
+        "correct": "A",
+        "explanation": "NotFound permite mostrar contenido para rutas desconocidas."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué componente representa el contenido encontrado con un layout?",
+        "option_a": "RouteView",
+        "option_b": "NavLink",
+        "option_c": "NavigationManager",
+        "option_d": "RouterData",
+        "correct": "A",
+        "explanation": "RouteView renderiza el componente de ruta con layout."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué información utiliza RouteView para renderizar una ruta encontrada?",
+        "option_a": "RouteData",
+        "option_b": "La URL de un remoto",
+        "option_c": "El estado de un formulario",
+        "option_d": "Un certificado",
+        "correct": "A",
+        "explanation": "RouteData contiene el componente y datos de ruta."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué permite especificar DefaultLayout en el Router?",
+        "option_a": "El layout predeterminado de las rutas",
+        "option_b": "La ruta base del servidor",
+        "option_c": "La query por defecto",
+        "option_d": "La política de caché",
+        "correct": "A",
+        "explanation": "DefaultLayout determina el layout por defecto."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué puede hacer RouteView si el componente define otro layout?",
+        "option_a": "Usar el layout declarado por el componente",
+        "option_b": "Ignorar siempre el layout",
+        "option_c": "Convertirlo en NotFound",
+        "option_d": "Hacer una recarga completa",
+        "correct": "A",
+        "explanation": "El layout del componente puede prevalecer según la configuración."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué componente combina resolución de ruta y autorización?",
+        "option_a": "AuthorizeRouteView",
+        "option_b": "RouteViewOnly",
+        "option_c": "AuthorizeNavLink",
+        "option_d": "NavigationAuthorize",
+        "correct": "A",
+        "explanation": "AuthorizeRouteView integra autorización en la vista de ruta."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué ocurre si una ruta no cumple la autorización en AuthorizeRouteView?",
+        "option_a": "Se muestra el contenido no autorizado configurado",
+        "option_b": "Se renderiza siempre el contenido protegido",
+        "option_c": "Se ignora la autorización",
+        "option_d": "Se cambia el layout global",
+        "correct": "A",
+        "explanation": "La vista ofrece contenido para no autorizados."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué permite el contenido Authorizing de una vista autorizada?",
+        "option_a": "Mostrar un estado mientras se determina la autorización",
+        "option_b": "Cambiar la URL base",
+        "option_c": "Añadir un parámetro de ruta",
+        "option_d": "Crear un assembly",
+        "correct": "A",
+        "explanation": "Authorizing representa el estado de comprobación."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué resuelve Router cuando la URL no coincide?",
+        "option_a": "El contenido NotFound configurado",
+        "option_b": "El primer componente del assembly",
+        "option_c": "El último NavLink",
+        "option_d": "El layout principal siempre",
+        "correct": "A",
+        "explanation": "La rama NotFound trata rutas no encontradas."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué papel tienen assemblies adicionales en el Router?",
+        "option_a": "Permitir descubrir componentes enrutable en assemblies indicados",
+        "option_b": "Cambiar el historial del navegador",
+        "option_c": "Guardar query strings",
+        "option_d": "Crear certificados",
+        "correct": "A",
+        "explanation": "AdditionalAssemblies amplía el descubrimiento de componentes."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué problema resuelve AdditionalAssemblies?",
+        "option_a": "Rutas cuyos componentes no están en el assembly principal esperado",
+        "option_b": "La falta de un servidor HTTP",
+        "option_c": "La ausencia de un índice Git",
+        "option_d": "La firma de formularios",
+        "correct": "A",
+        "explanation": "Permite localizar componentes de otros assemblies."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué relación existe entre Router y RouteView?",
+        "option_a": "Router encuentra RouteData y RouteView representa el componente y layout",
+        "option_b": "RouteView cambia el navegador y Router guarda query",
+        "option_c": "Ambos son enlaces",
+        "option_d": "Router solo valida certificados",
+        "correct": "A",
+        "explanation": "Cumplen funciones complementarias de resolución y renderizado."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué relación existe entre AuthorizeRouteView y RouteView?",
+        "option_a": "La primera añade la evaluación de autorización a la vista de ruta",
+        "option_b": "La primera solo crea NavLinks",
+        "option_c": "La segunda siempre autoriza",
+        "option_d": "No tienen relación",
+        "correct": "A",
+        "explanation": "AuthorizeRouteView es la vista de ruta con autorización."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué puede proporcionar un layout a una ruta?",
+        "option_a": "Estructura visual compartida",
+        "option_b": "Un nuevo valor de query automáticamente",
+        "option_c": "Una credencial",
+        "option_d": "Una restricción int",
+        "correct": "A",
+        "explanation": "El layout aporta estructura compartida."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué debe configurar una aplicación para una ruta desconocida amigable?",
+        "option_a": "Contenido NotFound en el Router",
+        "option_b": "Un segundo NavigationManager",
+        "option_c": "Un parámetro catch-all siempre",
+        "option_d": "Un nuevo certificado",
+        "correct": "A",
+        "explanation": "NotFound permite personalizar el caso sin coincidencia."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué componente debe elegirse para una ruta que necesita autorización?",
+        "option_a": "AuthorizeRouteView",
+        "option_b": "NavLink",
+        "option_c": "RouteView sin autorización",
+        "option_d": "NavigationManager",
+        "correct": "A",
+        "explanation": "Es la vista de ruta orientada a autorización."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué bloque representa el proceso de autorización aún no terminado?",
+        "option_a": "Authorizing",
+        "option_b": "Found",
+        "option_c": "NotFound",
+        "option_d": "NavigatingDone",
+        "correct": "A",
+        "explanation": "Authorizing representa la comprobación en curso."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué dato conecta la coincidencia del Router con RouteView?",
+        "option_a": "RouteData",
+        "option_b": "BaseUri",
+        "option_c": "ActiveClass",
+        "option_d": "LocationChanged",
+        "correct": "A",
+        "explanation": "RouteData comunica la ruta encontrada a la vista."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_32_LOT_07_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_32_LOT_08_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 32,
+        "question": "¿Qué servicio proporciona APIs de navegación en Blazor?",
+        "option_a": "NavigationManager",
+        "option_b": "RouteView",
+        "option_c": "RouterState",
+        "option_d": "NavServiceOnly",
+        "correct": "A",
+        "explanation": "NavigationManager proporciona navegación y URI actual."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué método inicia navegación a una URI?",
+        "option_a": "NavigateTo",
+        "option_b": "GoRoute",
+        "option_c": "PushUri",
+        "option_d": "RouteTo",
+        "correct": "A",
+        "explanation": "NavigateTo solicita navegación."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué propiedad representa la URI absoluta actual?",
+        "option_a": "Uri",
+        "option_b": "BaseUri",
+        "option_c": "CurrentRouteTemplate",
+        "option_d": "AbsolutePathOnly",
+        "correct": "A",
+        "explanation": "Uri es la URI actual."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué propiedad representa la URI base de la aplicación?",
+        "option_a": "BaseUri",
+        "option_b": "Uri",
+        "option_c": "RootRoute",
+        "option_d": "ApplicationPathOnly",
+        "correct": "A",
+        "explanation": "BaseUri identifica la base de la aplicación."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué comportamiento activa la opción forceLoad de NavigateTo?",
+        "option_a": "Fuerza una carga completa desde el servidor o navegador",
+        "option_b": "Evita toda navegación",
+        "option_c": "Solo cambia query sin evento",
+        "option_d": "Activa siempre enhanced navigation",
+        "correct": "A",
+        "explanation": "forceLoad fuerza la carga normal completa."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué efecto tiene replaceHistoryEntry?",
+        "option_a": "Sustituir la entrada actual del historial",
+        "option_b": "Crear siempre una entrada adicional",
+        "option_c": "Borrar todos los historiales",
+        "option_d": "Desactivar la URL",
+        "correct": "A",
+        "explanation": "La opción reemplaza la entrada del historial."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué evento comunica un cambio de ubicación?",
+        "option_a": "LocationChanged",
+        "option_b": "NavigationStarted",
+        "option_c": "UriChangedOnly",
+        "option_d": "RouteFound",
+        "correct": "A",
+        "explanation": "LocationChanged notifica el cambio de ubicación."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué debe hacer un suscriptor a LocationChanged cuando ya no necesita escuchar?",
+        "option_a": "Desuscribirse del evento",
+        "option_b": "Cambiar BaseUri",
+        "option_c": "Forzar un reload",
+        "option_d": "Crear una ruta",
+        "correct": "A",
+        "explanation": "La suscripción debe gestionarse durante el ciclo de vida."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué representa una NavLink?",
+        "option_a": "Un enlace que puede marcarse activo según la URI",
+        "option_b": "Un componente de autorización",
+        "option_c": "Un layout de ruta",
+        "option_d": "Un bloque NotFound",
+        "correct": "A",
+        "explanation": "NavLink representa navegación enlazada con estado activo."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué clase aplica NavLink cuando coincide con la ubicación?",
+        "option_a": "La clase activa configurada",
+        "option_b": "La clase NotFound",
+        "option_c": "La clase RouteView",
+        "option_d": "La clase BaseUri",
+        "correct": "A",
+        "explanation": "NavLink aplica ActiveClass al enlace activo."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué controla Match en NavLink?",
+        "option_a": "La forma de determinar si el enlace está activo",
+        "option_b": "La carga del servidor",
+        "option_c": "La autorización del usuario",
+        "option_d": "El tipo de query",
+        "correct": "A",
+        "explanation": "Match determina el criterio de coincidencia."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué criterio puede hacer activo un enlace por prefijo?",
+        "option_a": "NavLinkMatch.Prefix",
+        "option_b": "RouteMatch.ExactOnly",
+        "option_c": "QueryMatch.All",
+        "option_d": "UriMatch.Base",
+        "correct": "A",
+        "explanation": "Prefix considera la coincidencia de prefijo."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué criterio exige coincidencia exacta?",
+        "option_a": "NavLinkMatch.All",
+        "option_b": "NavLinkMatch.PrefixOnly",
+        "option_c": "RouteMatch.Query",
+        "option_d": "ActiveExactUrlOnly",
+        "correct": "A",
+        "explanation": "All requiere coincidencia completa según la API."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué puede construir NavigationManager para una navegación?",
+        "option_a": "Una URI basada en la base y los valores indicados",
+        "option_b": "Un componente RouteView automáticamente",
+        "option_c": "Un objeto de autorización",
+        "option_d": "Un fichero estático",
+        "correct": "A",
+        "explanation": "La API construye o acepta URI de navegación."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué debe considerar al construir una URI con valores query?",
+        "option_a": "La codificación de los valores",
+        "option_b": "El layout de la ruta",
+        "option_c": "El assembly del Router siempre",
+        "option_d": "La clase activa",
+        "correct": "A",
+        "explanation": "Los valores deben codificarse para URI."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué diferencia hay entre Uri y BaseUri?",
+        "option_a": "Uri es la ubicación actual y BaseUri la raíz de la aplicación",
+        "option_b": "Uri es siempre relativa y BaseUri es una query",
+        "option_c": "Ambas son la misma propiedad",
+        "option_d": "BaseUri contiene el componente actual",
+        "correct": "A",
+        "explanation": "Representan ubicaciones distintas."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué combinación navega y reemplaza la entrada actual?",
+        "option_a": "NavigateTo con replaceHistoryEntry=true",
+        "option_b": "NavLink con Match=All",
+        "option_c": "Router con NotFound",
+        "option_d": "RouteView con DefaultLayout",
+        "correct": "A",
+        "explanation": "La opción de reemplazo modifica el historial."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué combinación navega mediante carga completa?",
+        "option_a": "NavigateTo con forceLoad=true",
+        "option_b": "NavLink con ActiveClass",
+        "option_c": "RouteView con RouteData",
+        "option_d": "Router con AdditionalAssemblies",
+        "correct": "A",
+        "explanation": "forceLoad fuerza la carga completa."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué elemento visual permite indicar al usuario dónde está?",
+        "option_a": "NavLink con clase activa",
+        "option_b": "NavigationLock sin URI",
+        "option_c": "RouteView sin layout",
+        "option_d": "Query string sin componente",
+        "correct": "A",
+        "explanation": "NavLink puede reflejar la ubicación activa."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué API permite reaccionar a cambios de URI después de navegar?",
+        "option_a": "LocationChanged",
+        "option_b": "DefaultLayout",
+        "option_c": "RouteData",
+        "option_d": "NotFound",
+        "correct": "A",
+        "explanation": "El evento notifica cambios de ubicación."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_32_LOT_08_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_32_LOT_09_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 32,
+        "question": "¿Qué directiva enlaza una propiedad de componente con un parámetro query?",
+        "option_a": "[SupplyParameterFromQuery]",
+        "option_b": "[SupplyParameterFromRoute] solamente",
+        "option_c": "[BindFromUri]",
+        "option_d": "[QueryRouteOnly]",
+        "correct": "A",
+        "explanation": "La directiva suministra valores de query."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Dónde aparece un parámetro query en la URL?",
+        "option_a": "Después del signo ?",
+        "option_b": "Como segmento antes del dominio",
+        "option_c": "Dentro del nombre del assembly",
+        "option_d": "En el layout",
+        "correct": "A",
+        "explanation": "La query sigue al signo de interrogación."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué separa varios parámetros query?",
+        "option_a": "El carácter &",
+        "option_b": "El carácter @",
+        "option_c": "Un nuevo dominio",
+        "option_d": "El nombre del layout",
+        "correct": "A",
+        "explanation": "La sintaxis query separa pares con ampersand."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué debe ocurrir con un valor query que contiene caracteres reservados?",
+        "option_a": "Debe codificarse para URI",
+        "option_b": "Debe convertirse en layout",
+        "option_c": "Debe eliminarse siempre",
+        "option_d": "Debe ir a RouteData",
+        "correct": "A",
+        "explanation": "La codificación evita interpretar mal los caracteres."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué tipos pueden enlazarse desde query según la documentación?",
+        "option_a": "Tipos soportados, incluidos valores tipados documentados",
+        "option_b": "Solo objetos complejos arbitrarios",
+        "option_c": "Solo layouts",
+        "option_d": "Solo componentes Razor",
+        "correct": "A",
+        "explanation": "El binding soporta tipos indicados por la documentación."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué ocurre normalmente si falta un parámetro query opcional?",
+        "option_a": "La propiedad recibe su valor predeterminado",
+        "option_b": "La ruta se vuelve NotFound siempre",
+        "option_c": "Se crea una excepción de servidor siempre",
+        "option_d": "Se cambia BaseUri",
+        "correct": "A",
+        "explanation": "Un parámetro ausente puede usar el valor predeterminado."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué diferencia un parámetro query de uno de ruta?",
+        "option_a": "La query no determina por sí sola qué componente enrutable coincide",
+        "option_b": "La ruta nunca selecciona componentes",
+        "option_c": "La query siempre es obligatoria",
+        "option_d": "No hay diferencia",
+        "correct": "A",
+        "explanation": "La ruta participa en la selección y la query aporta estado."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué componente coordina bloqueos de navegación?",
+        "option_a": "NavigationLock",
+        "option_b": "NavLink",
+        "option_c": "RouteView",
+        "option_d": "RouterData",
+        "correct": "A",
+        "explanation": "NavigationLock permite controlar navegación potencialmente peligrosa."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué puede hacer NavigationLock ante navegación externa?",
+        "option_a": "Solicitar confirmación al usuario mediante el mecanismo documentado",
+        "option_b": "Cambiar el layout automáticamente",
+        "option_c": "Convertir URL en query",
+        "option_d": "Crear un commit",
+        "correct": "A",
+        "explanation": "Puede confirmar navegación externa."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué API trata los cambios de ubicación antes de completarlos?",
+        "option_a": "LocationChanging handlers",
+        "option_b": "LocationChanged únicamente",
+        "option_c": "RouteView parameters",
+        "option_d": "NavLink ActiveClass",
+        "correct": "A",
+        "explanation": "Los handlers de cambio permiten intervenir antes de navegar."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué diferencia LocationChanging de LocationChanged?",
+        "option_a": "El primero permite intervenir antes y el segundo informa después del cambio",
+        "option_b": "Ambos solo muestran NotFound",
+        "option_c": "LocationChanged bloquea siempre",
+        "option_d": "No hay diferencia",
+        "correct": "A",
+        "explanation": "Son fases distintas del ciclo de navegación."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué atributo habilita navegación mejorada en un enlace?",
+        "option_a": "data-enhance-nav",
+        "option_b": "data-route-lock",
+        "option_c": "enhance-route-only",
+        "option_d": "blazor-full-load",
+        "correct": "A",
+        "explanation": "El atributo documentado habilita enhanced navigation."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué busca la navegación mejorada en una aplicación Blazor?",
+        "option_a": "Actualizar la navegación sin una recarga completa tradicional cuando procede",
+        "option_b": "Desactivar todas las rutas",
+        "option_c": "Forzar siempre el servidor",
+        "option_d": "Eliminar el historial",
+        "correct": "A",
+        "explanation": "Enhanced navigation optimiza la transición de página."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué puede restaurar Blazor después de una navegación mejorada?",
+        "option_a": "El foco del documento",
+        "option_b": "El valor de user.email",
+        "option_c": "La rama actual",
+        "option_d": "El contenido de un stash",
+        "correct": "A",
+        "explanation": "La documentación trata la restauración del foco."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué atributo puede desactivar la navegación mejorada para un enlace?",
+        "option_a": "data-enhance-nav=false",
+        "option_b": "data-force-route=false",
+        "option_c": "disable-router=true",
+        "option_d": "no-enhanced-only",
+        "correct": "A",
+        "explanation": "El valor false desactiva la mejora para el elemento."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué problema protege NavigationLock especialmente?",
+        "option_a": "Pérdida accidental de cambios no guardados al abandonar una página",
+        "option_b": "La ausencia de un assembly",
+        "option_c": "El color de NavLink",
+        "option_d": "La falta de un parámetro int",
+        "correct": "A",
+        "explanation": "Su uso protege frente a navegación con trabajo pendiente."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué estado puede decidir cancelar un handler de cambio de ubicación?",
+        "option_a": "Una navegación que no debe completarse",
+        "option_b": "La clase activa de un enlace",
+        "option_c": "La URI base de la aplicación",
+        "option_d": "La carga de un layout",
+        "correct": "A",
+        "explanation": "El handler puede intervenir en la navegación."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué combinación distingue estado de URL y datos de ruta?",
+        "option_a": "Query string aporta estado y route template selecciona componente",
+        "option_b": "Query selecciona siempre componente y route solo CSS",
+        "option_c": "Ambos son layouts",
+        "option_d": "Route solo funciona con cookies",
+        "correct": "A",
+        "explanation": "Son usos distintos de la URL."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué ventaja proporciona un parámetro query tipado?",
+        "option_a": "Conversión a un tipo soportado para la propiedad del componente",
+        "option_b": "Elimina la necesidad de Router",
+        "option_c": "Fuerza carga completa",
+        "option_d": "Cambia el assembly",
+        "correct": "A",
+        "explanation": "El binding puede suministrar valores tipados."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué debe hacer una página con formulario sin guardar antes de navegación?",
+        "option_a": "Usar un mecanismo de bloqueo/confirmación apropiado",
+        "option_b": "Cambiar solo ActiveClass",
+        "option_c": "Eliminar RouteData",
+        "option_d": "Activar NotFound",
+        "correct": "A",
+        "explanation": "NavigationLock se usa para advertir o controlar abandono."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_32_LOT_09_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_32_LOT_10_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 32,
+        "question": "Un componente debe responder a `/products/42` solo si 42 es entero. ¿Qué declara?",
+        "option_a": "Una ruta con parámetro y restricción int",
+        "option_b": "Una query sin ruta",
+        "option_c": "Un NavLink Prefix",
+        "option_d": "Un NotFound",
+        "correct": "A",
+        "explanation": "La restricción int limita la coincidencia."
+    },
+    {
+        "topic_num": 32,
+        "question": "Una página necesita filtrar resultados sin crear rutas distintas. ¿Qué mecanismo encaja?",
+        "option_a": "Parámetros query",
+        "option_b": "Parámetros catch-all obligatorios",
+        "option_c": "AdditionalAssemblies",
+        "option_d": "DefaultLayout",
+        "correct": "A",
+        "explanation": "La query aporta estado adicional a la ruta."
+    },
+    {
+        "topic_num": 32,
+        "question": "Una aplicación debe mostrar “no encontrado” para URLs sin componente. ¿Qué configura?",
+        "option_a": "El bloque NotFound del Router",
+        "option_b": "ActiveClass de NavLink",
+        "option_c": "BaseUri",
+        "option_d": "NavigationLock",
+        "correct": "A",
+        "explanation": "NotFound trata la ausencia de coincidencia."
+    },
+    {
+        "topic_num": 32,
+        "question": "Una página protegida debe renderizar contenido alternativo si el usuario no está autorizado. ¿Qué usa?",
+        "option_a": "AuthorizeRouteView",
+        "option_b": "RouteView sin autorización",
+        "option_c": "NavLink Prefix",
+        "option_d": "NavigationManager.Uri",
+        "correct": "A",
+        "explanation": "AuthorizeRouteView ofrece contenido autorizado/no autorizado."
+    },
+    {
+        "topic_num": 32,
+        "question": "Una ruta vive en una librería distinta del assembly principal. ¿Qué configura?",
+        "option_a": "AdditionalAssemblies en Router",
+        "option_b": "Una query llamada assembly",
+        "option_c": "Un catch-all",
+        "option_d": "Un nuevo BaseUri",
+        "correct": "A",
+        "explanation": "AdditionalAssemblies permite descubrir rutas externas."
+    },
+    {
+        "topic_num": 32,
+        "question": "Un botón debe navegar a una URI y provocar carga completa. ¿Qué opción usa?",
+        "option_a": "NavigateTo con forceLoad=true",
+        "option_b": "NavLink con Match=All",
+        "option_c": "RouteView con DefaultLayout",
+        "option_d": "Router con Found",
+        "correct": "A",
+        "explanation": "forceLoad fuerza la carga completa."
+    },
+    {
+        "topic_num": 32,
+        "question": "Una redirección no debe dejar una entrada adicional en historial. ¿Qué opción usa?",
+        "option_a": "replaceHistoryEntry=true",
+        "option_b": "forceLoad=false solamente",
+        "option_c": "Match=Prefix",
+        "option_d": "data-enhance-nav=true",
+        "correct": "A",
+        "explanation": "replaceHistoryEntry reemplaza la entrada actual."
+    },
+    {
+        "topic_num": 32,
+        "question": "Un menú debe marcar activo `/docs` y sus subrutas. ¿Qué criterio elige?",
+        "option_a": "NavLinkMatch.Prefix",
+        "option_b": "NavLinkMatch.All siempre",
+        "option_c": "NotFound",
+        "option_d": "RouteData",
+        "correct": "A",
+        "explanation": "Prefix cubre la ruta y sus descendientes."
+    },
+    {
+        "topic_num": 32,
+        "question": "Un menú debe marcar activo solo cuando la URL coincide exactamente. ¿Qué criterio elige?",
+        "option_a": "NavLinkMatch.All",
+        "option_b": "NavLinkMatch.Prefix",
+        "option_c": "LocationChanging",
+        "option_d": "BaseUri",
+        "correct": "A",
+        "explanation": "All exige coincidencia exacta."
+    },
+    {
+        "topic_num": 32,
+        "question": "Un componente debe reaccionar después de completar una navegación. ¿Qué escucha?",
+        "option_a": "LocationChanged",
+        "option_b": "LocationChanging solamente",
+        "option_c": "Found",
+        "option_d": "SupplyParameterFromQuery",
+        "correct": "A",
+        "explanation": "LocationChanged notifica el cambio completado."
+    },
+    {
+        "topic_num": 32,
+        "question": "Un formulario debe advertir al salir con datos no guardados. ¿Qué mecanismo es apropiado?",
+        "option_a": "NavigationLock",
+        "option_b": "NavLink ActiveClass",
+        "option_c": "RouteView",
+        "option_d": "AdditionalAssemblies",
+        "correct": "A",
+        "explanation": "NavigationLock controla o confirma salidas."
+    },
+    {
+        "topic_num": 32,
+        "question": "Un handler debe decidir antes de completar una navegación interna. ¿Qué API se usa?",
+        "option_a": "LocationChanging handler",
+        "option_b": "LocationChanged después",
+        "option_c": "BaseUri",
+        "option_d": "NotFound",
+        "correct": "A",
+        "explanation": "Los handlers location-changing intervienen antes."
+    },
+    {
+        "topic_num": 32,
+        "question": "Un enlace debe aprovechar navegación mejorada, salvo que se desactive explícitamente. ¿Qué atributo se relaciona?",
+        "option_a": "data-enhance-nav",
+        "option_b": "data-route-template",
+        "option_c": "data-query-bind",
+        "option_d": "data-layout-only",
+        "correct": "A",
+        "explanation": "Ese atributo controla enhanced navigation."
+    },
+    {
+        "topic_num": 32,
+        "question": "Una página necesita conservar foco tras la navegación mejorada. ¿Qué característica se documenta?",
+        "option_a": "Restauración de foco",
+        "option_b": "Cambio de BaseUri",
+        "option_c": "Restricción int",
+        "option_d": "NotFound",
+        "correct": "A",
+        "explanation": "La navegación mejorada contempla restauración de foco."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué cadena representa una query con dos valores?",
+        "option_a": "`?page=2&sort=name`",
+        "option_b": "`/page=2/sort=name`",
+        "option_c": "`#page=2?sort=name`",
+        "option_d": "`@page=2@sort=name`",
+        "correct": "A",
+        "explanation": "La query empieza con ? y separa pares con &."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué componente conecta RouteData con un layout?",
+        "option_a": "RouteView",
+        "option_b": "NavigationLock",
+        "option_c": "NavLink",
+        "option_d": "LocationChanged",
+        "correct": "A",
+        "explanation": "RouteView renderiza la vista y layout."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué combinación pertenece a la resolución, no a la navegación imperativa?",
+        "option_a": "Router, Found y RouteView",
+        "option_b": "NavigateTo, Uri y LocationChanged",
+        "option_c": "NavLink, ActiveClass y Match",
+        "option_d": "NavigationLock y forceLoad",
+        "correct": "A",
+        "explanation": "Son piezas de resolución y renderizado de rutas."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué combinación pertenece a navegación imperativa?",
+        "option_a": "NavigationManager, NavigateTo y Uri",
+        "option_b": "Router, NotFound y RouteData",
+        "option_c": "@page, int y catch-all",
+        "option_d": "DefaultLayout, Found y Authorizing",
+        "correct": "A",
+        "explanation": "Son APIs/propiedades para navegar desde código."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué combinación diferencia ruta, query y bloqueo?",
+        "option_a": "@page, SupplyParameterFromQuery y NavigationLock",
+        "option_b": "NavLink, RouteView y BaseUri",
+        "option_c": "Found, Uri y ActiveClass",
+        "option_d": "Layout, assembly y NotFound",
+        "correct": "A",
+        "explanation": "Cada elemento cubre una función distinta de navegación."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué mecanismo permite que una propiedad reciba valores desde la query de la URL?",
+        "option_a": "SupplyParameterFromQuery",
+        "option_b": "DefaultLayout",
+        "option_c": "ActiveClass",
+        "option_d": "AdditionalAssemblies",
+        "correct": "A",
+        "explanation": "La directiva suministra valores de la query al componente."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_32_LOT_10_END

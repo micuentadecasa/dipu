@@ -16,4 +16,4 @@ The source register pins the ASP.NET Core 10.0 view and records retrieval and ve
 - **Links and query state:** `NavLink`, active matching, query-string binding, typed query values, and query parameter construction.
 - **Interception and enhanced navigation:** `NavigationLock`, location-changing handlers, external navigation confirmation, enhanced navigation attributes, and focus restoration.
 
-The 100 statements map to these subtopics and are distributed across the five lots. The remaining 100 objective slots for topic 32 remain planning-only and are not counted as validated questions.
+The initial 100 statements map to these subtopics and are distributed across the five lots. Expansion lots 06–10 add 100 independently reviewed scenarios across route resolution, navigation APIs, query state, navigation interception and enhanced navigation. All records remain restricted to the pinned ASP.NET Core 10.0 Microsoft Learn source; no unsupported framework behavior is inferred.
