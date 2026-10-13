@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-34-git-branches-rebase-merge-stash.md",
+  "batches": [
+    {
+      "topic_num": 34,
+      "lot_num": 10,
+      "source_ids": [
+        "GIT-2.50"
+      ],
+      "questions": [
+        {
+          "objective_id": "t34-lo-181",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "Una rama de experimento debe conservar su referencia original y crear otra en el mismo punto. ¿Qué operación corresponde?",
+          "options": [
+            "git branch --copy",
+            "git branch --move",
+            "git branch --delete",
+            "git branch --force"
+          ],
+          "correct": "A",
+          "explanation": "copy crea una referencia nueva y conserva la original.",
+          "citation": "git-branch — -c/--copy",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-182",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "Se necesita renombrar la rama actual sin cambiar sus commits. ¿Qué opción se ajusta?",
+          "options": [
+            "git branch --move",
+            "git branch --copy",
+            "git merge --no-ff",
+            "git rebase --onto"
+          ],
+          "correct": "A",
+          "explanation": "move renombra la referencia.",
+          "citation": "git-branch — -m/--move",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-183",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "La rama actual puede avanzar directamente hasta la otra punta. ¿Qué resultado produce merge?",
+          "options": [
+            "Un fast-forward sin merge commit",
+            "Un commit con tres padres",
+            "Un stash automático",
+            "Un rebase interactivo"
+          ],
+          "correct": "A",
+          "explanation": "La referencia se mueve directamente.",
+          "citation": "git-merge — FAST-FORWARD MERGE",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-184",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "El equipo quiere que incluso una integración lineal quede visible como rama integrada. ¿Qué usa?",
+          "options": [
+            "merge --no-ff",
+            "merge --ff-only",
+            "rebase --keep-base",
+            "stash --index"
+          ],
+          "correct": "A",
+          "explanation": "no-ff conserva un commit de integración.",
+          "citation": "git-merge — --ff/--no-ff",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-185",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Durante un merge hay dos rutas no fusionadas. ¿Cuál es el orden correcto?",
+          "options": [
+            "Resolver, hacer git add y continuar o abortar",
+            "Hacer push forzado y borrar la rama",
+            "Crear un tag y ejecutar stash clear",
+            "Renombrar HEAD y hacer clone"
+          ],
+          "correct": "A",
+          "explanation": "La resolución se registra y después se decide continuar o abandonar.",
+          "citation": "git-merge — HOW CONFLICTS ARE PRESENTED; --continue; --abort",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-186",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Una rama local contiene commits privados que deben reaplicarse sobre otra base. ¿Qué operación describe esa intención?",
+          "options": [
+            "rebase",
+            "stash clear",
+            "branch --list",
+            "merge --quit"
+          ],
+          "correct": "A",
+          "explanation": "rebase reaplica commits sobre una nueva base.",
+          "citation": "git-rebase — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-187",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "La secuencia de rebase tiene un commit que no debe conservarse. ¿Qué opción lo omite?",
+          "options": [
+            "--skip",
+            "--continue",
+            "--keep-base",
+            "--exec"
+          ],
+          "correct": "A",
+          "explanation": "skip descarta el commit conflictivo de la secuencia.",
+          "citation": "git-rebase — --skip",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-188",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Se desea detener un rebase y regresar al estado anterior. ¿Qué opción se utiliza?",
+          "options": [
+            "--abort",
+            "--quit",
+            "--skip",
+            "--empty=keep"
+          ],
+          "correct": "A",
+          "explanation": "abort procura devolver la rama y HEAD al estado previo.",
+          "citation": "git-rebase — --abort",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-189",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Se necesita conservar merges durante una reescritura. ¿Qué opción encaja?",
+          "options": [
+            "--rebase-merges",
+            "--autosquash",
+            "--fork-point",
+            "--empty=drop"
+          ],
+          "correct": "A",
+          "explanation": "La opción reconstruye la topología de merges.",
+          "citation": "git-rebase — --rebase-merges",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-190",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Hay cambios locales sin terminar y se necesita cambiar de contexto temporalmente. ¿Qué herramienta encaja?",
+          "options": [
+            "git stash",
+            "git merge --no-ff",
+            "git branch --delete",
+            "git reflog expire"
+          ],
+          "correct": "A",
+          "explanation": "stash aparta temporalmente trabajo local.",
+          "citation": "git-stash — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-191",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Se necesita recuperar un stash sin perderlo de la pila para otra aplicación. ¿Qué orden corresponde?",
+          "options": [
+            "git stash apply",
+            "git stash pop",
+            "git stash clear",
+            "git stash drop"
+          ],
+          "correct": "A",
+          "explanation": "apply restaura y conserva la entrada.",
+          "citation": "git-stash — apply; pop",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-192",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Se desea aplicar un stash y quitarlo cuando termina correctamente. ¿Qué operación se aproxima?",
+          "options": [
+            "git stash pop",
+            "git stash list",
+            "git stash show",
+            "git stash branch"
+          ],
+          "correct": "A",
+          "explanation": "pop combina aplicación y eliminación, salvo conservación ante conflictos.",
+          "citation": "git-stash — pop",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-193",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Una entrada incluye archivos no seguidos y archivos ignorados. ¿Qué opción debe cubrir ambos?",
+          "options": [
+            "git stash --all",
+            "git stash --index",
+            "git stash --keep-index",
+            "git stash --message"
+          ],
+          "correct": "A",
+          "explanation": "all incluye no seguidos e ignorados.",
+          "citation": "git-stash — -a/--all",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-194",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Se quiere dejar staged intacto y guardar solo el resto del trabajo. ¿Qué opción se considera?",
+          "options": [
+            "--keep-index",
+            "--include-untracked",
+            "--all",
+            "--message"
+          ],
+          "correct": "A",
+          "explanation": "keep-index conserva el estado preparado.",
+          "citation": "git-stash — --keep-index",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-195",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "Se ha borrado una rama por error y se busca su posición anterior local. ¿Qué se consulta?",
+          "options": [
+            "El reflog",
+            "El Tablón de anuncios",
+            "El stash message",
+            "El merge strategy"
+          ],
+          "correct": "A",
+          "explanation": "El reflog puede conservar la posición anterior.",
+          "citation": "git-reflog — DESCRIPTION; git-branch — -d/--delete",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-196",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué relación entre branch y switch es correcta?",
+          "options": [
+            "branch manipula/lista referencias y switch cambia el contexto de trabajo",
+            "Ambos solo crean tags",
+            "switch borra refs y branch hace push",
+            "No tienen relación con HEAD"
+          ],
+          "correct": "A",
+          "explanation": "Las órdenes tienen responsabilidades distintas.",
+          "citation": "git-branch — DESCRIPTION; git-switch — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-197",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué diferencia entre quit y abort debe recordar un operador?",
+          "options": [
+            "quit deja el estado operativo y abort intenta restaurar el estado anterior",
+            "quit siempre crea commit y abort siempre hace push",
+            "Ambos eliminan objetos",
+            "Abort solo edita mensajes"
+          ],
+          "correct": "A",
+          "explanation": "Quit y abort tienen efectos de recuperación distintos.",
+          "citation": "git-merge — --quit; --abort; git-rebase — --quit; --abort",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-198",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué combinación describe una integración conservando topología frente a una historia lineal recreada?",
+          "options": [
+            "merge --no-ff frente a rebase",
+            "stash --all frente a branch --list",
+            "reflog frente a status",
+            "switch frente a add"
+          ],
+          "correct": "A",
+          "explanation": "merge registra integración; rebase recrea commits.",
+          "citation": "git-merge — --no-ff; git-rebase — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-199",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué decisión evita reescribir trabajo que ya comparten colaboradores?",
+          "options": [
+            "Preferir merge o coordinar explícitamente antes de rebase",
+            "Usar siempre rebase --force",
+            "Borrar el reflog",
+            "Hacer stash clear"
+          ],
+          "correct": "A",
+          "explanation": "La reescritura de historia publicada requiere coordinación.",
+          "citation": "git-merge — DESCRIPTION; git-rebase — RECOVERING FROM UPSTREAM REBASE",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-200",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué principio resume la recuperación de conflictos?",
+          "options": [
+            "Registrar la versión elegida en el índice antes de continuar",
+            "Continuar antes de resolver",
+            "Eliminar la rama conflictiva",
+            "Crear tags para cada marcador"
+          ],
+          "correct": "A",
+          "explanation": "add comunica que la ruta está resuelta.",
+          "citation": "git-add — DESCRIPTION; git-merge — HOW CONFLICTS ARE PRESENTED; git-rebase — CONFLICTS",
+          "source_id": "GIT-2.50"
+        }
+      ]
+    }
+  ]
+}

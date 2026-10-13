@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-34-git-branches-rebase-merge-stash.md",
+  "batches": [
+    {
+      "topic_num": 34,
+      "lot_num": 6,
+      "source_ids": [
+        "GIT-2.50"
+      ],
+      "questions": [
+        {
+          "objective_id": "t34-lo-101",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué opción permite crear una rama y cambiar a ella con git switch?",
+          "options": [
+            "-c o --create",
+            "-d o --delete",
+            "-m o --move",
+            "-l o --list"
+          ],
+          "correct": "A",
+          "explanation": "La opción crea la rama y cambia a ella.",
+          "citation": "git-switch — -c/--create",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-102",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué opción de git branch renombra una referencia?",
+          "options": [
+            "-m o --move",
+            "-c o --copy",
+            "-f o --force",
+            "-r o --remotes"
+          ],
+          "correct": "A",
+          "explanation": "move renombra la referencia.",
+          "citation": "git-branch — -m/--move",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-103",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué diferencia esencial hay entre branch -m y branch -c?",
+          "options": [
+            "La primera mueve/renombra y la segunda copia la referencia",
+            "La primera fusiona y la segunda rebasea",
+            "La primera borra y la segunda publica",
+            "No hay diferencia"
+          ],
+          "correct": "A",
+          "explanation": "move cambia el nombre; copy crea otra referencia y conserva la original.",
+          "citation": "git-branch — -m/--move; -c/--copy",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-104",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué riesgo evita branch -d frente a branch -D?",
+          "options": [
+            "Borrar accidentalmente una rama cuya historia no está integrada",
+            "Crear un commit de merge",
+            "Cambiar el working tree",
+            "Actualizar HEAD simbólico"
+          ],
+          "correct": "A",
+          "explanation": "El borrado normal comprueba condiciones de integración.",
+          "citation": "git-branch — -d/--delete; -D",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-105",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué muestra branch --contains <commit>?",
+          "options": [
+            "Ramas cuya punta alcanza el commit indicado",
+            "Ramas que nunca contienen el commit",
+            "Solo tags anotados",
+            "Solo ramas remotas"
+          ],
+          "correct": "A",
+          "explanation": "contains selecciona ramas cuya punta contiene el commit.",
+          "citation": "git-branch — --contains",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-106",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué pregunta responde branch --no-merged?",
+          "options": [
+            "Qué ramas aún no están integradas en el punto consultado",
+            "Qué ramas tienen el commit raíz",
+            "Qué ramas están renombradas",
+            "Qué ramas tienen stashes"
+          ],
+          "correct": "A",
+          "explanation": "no-merged invierte la selección de merged.",
+          "citation": "git-branch — --no-merged",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-107",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué estado describe switch --detach <commit>?",
+          "options": [
+            "HEAD apunta directamente al commit sin quedar en una rama que avance",
+            "HEAD apunta a todas las ramas",
+            "Se crea automáticamente un tag",
+            "Se borra la rama anterior"
+          ],
+          "correct": "A",
+          "explanation": "El modo detached separa HEAD de una referencia de rama.",
+          "citation": "git-switch — --detach; gitglossary — detached HEAD",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-108",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué protege Git al cambiar de rama?",
+          "options": [
+            "Modificaciones locales incompatibles con el estado destino",
+            "Todos los commits remotos",
+            "La configuración de aliases",
+            "Los tags de otro repositorio"
+          ],
+          "correct": "A",
+          "explanation": "Git evita perder cambios locales incompatibles.",
+          "citation": "git-switch — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-109",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué informa branch --show-current?",
+          "options": [
+            "El nombre de la rama asociada con HEAD",
+            "Todo el historial de commits",
+            "Las URL de remotos",
+            "Los archivos ignorados"
+          ],
+          "correct": "A",
+          "explanation": "La opción muestra la rama actual.",
+          "citation": "git-branch — --show-current",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-110",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué alcance tiene branch --list sin patrón?",
+          "options": [
+            "Enumera las ramas",
+            "Enumera todos los objetos",
+            "Enumera solo tags",
+            "Enumera solo conflictos"
+          ],
+          "correct": "A",
+          "explanation": "Sin patrón muestra todas las ramas.",
+          "citation": "git-branch — --list",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-111",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué mueve branch -f <name> <start-point>?",
+          "options": [
+            "La referencia nombrada al punto inicial especificado",
+            "El working tree a otro repositorio",
+            "Todos los commits de la rama",
+            "El nombre de HEAD"
+          ],
+          "correct": "A",
+          "explanation": "La forma forzada mueve la ref al start-point.",
+          "citation": "git-branch — -f/--force",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-112",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué conserva branch --copy además de crear la nueva referencia?",
+          "options": [
+            "La referencia original",
+            "Solo el mensaje del commit",
+            "El conflicto sin resolver",
+            "El stash más reciente"
+          ],
+          "correct": "A",
+          "explanation": "copy mantiene intacta la referencia existente.",
+          "citation": "git-branch — -c/--copy",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-113",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué implica que HEAD sea simbólico en el estado normal?",
+          "options": [
+            "Nombra la rama comprobada y la rama apunta a la punta del historial",
+            "Apunta siempre a un objeto sin rama",
+            "Apunta a todos los tags",
+            "Señala solo el índice"
+          ],
+          "correct": "A",
+          "explanation": "HEAD normalmente referencia simbólicamente a la rama actual.",
+          "citation": "gitrepository-layout — HEAD; git-symbolic-ref",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-114",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué registra un reflog de HEAD?",
+          "options": [
+            "Actualizaciones locales de HEAD y posiciones anteriores durante su retención",
+            "Todos los cambios de cualquier remoto",
+            "Solo commits firmados",
+            "Solo archivos del working tree"
+          ],
+          "correct": "A",
+          "explanation": "El reflog registra actualizaciones locales de refs y HEAD.",
+          "citation": "git-reflog — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-115",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué efecto tiene un fast-forward merge?",
+          "options": [
+            "Mueve la referencia actual a la otra punta sin crear merge commit",
+            "Crea siempre dos padres nuevos",
+            "Reescribe todos los commits",
+            "Guarda cambios en stash"
+          ],
+          "correct": "A",
+          "explanation": "El avance rápido solo mueve la referencia.",
+          "citation": "git-merge — FAST-FORWARD MERGE",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-116",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué opción fuerza a conservar un commit de integración aunque haya fast-forward posible?",
+          "options": [
+            "--no-ff",
+            "--ff-only",
+            "--no-commit",
+            "--edit"
+          ],
+          "correct": "A",
+          "explanation": "no-ff fuerza el merge commit.",
+          "citation": "git-merge — --ff/--no-ff",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-117",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué hace merge --ff-only si las historias divergen?",
+          "options": [
+            "Aborta la operación",
+            "Crea un merge commit automáticamente",
+            "Rebasea la rama",
+            "Guarda las diferencias"
+          ],
+          "correct": "A",
+          "explanation": "La opción solo acepta un avance rápido.",
+          "citation": "git-merge — --ff-only",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-118",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué papel tiene el merge base?",
+          "options": [
+            "Ancestro común usado para comparar las dos puntas",
+            "Nombre de la rama destino",
+            "Mensaje del merge commit",
+            "Índice de stashes"
+          ],
+          "correct": "A",
+          "explanation": "El merge base sirve de ancestro común en la integración.",
+          "citation": "git-merge-base — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-119",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué operación compara dos puntas con un ancestro común?",
+          "options": [
+            "Merge de tres vías",
+            "Borrado forzado",
+            "Stash apply",
+            "Branch rename"
+          ],
+          "correct": "A",
+          "explanation": "La fusión de tres vías usa ambas puntas y el ancestro.",
+          "citation": "git-merge — DESCRIPTION; git-merge-base — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-120",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué indica una ruta no fusionada durante un merge?",
+          "options": [
+            "Que la combinación automática no ha elegido una versión final",
+            "Que la rama ya se integró",
+            "Que el commit es fast-forward",
+            "Que no existe un índice"
+          ],
+          "correct": "A",
+          "explanation": "Una ruta no fusionada requiere resolución.",
+          "citation": "git-merge — HOW CONFLICTS ARE PRESENTED",
+          "source_id": "GIT-2.50"
+        }
+      ]
+    }
+  ]
+}
