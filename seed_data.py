@@ -25323,3 +25323,1028 @@ SEED_QUESTIONS.extend([
     }
 ])
 # QUESTION_BANK_ACCEPTED_TOPIC_40_LOT_05_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_40_LOT_06_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 40,
+        "question": "¿Qué exige Audio-only and Video-only (Prerecorded), criterio 1.2.1?",
+        "option_a": "Para contenido solo audio o solo vídeo pregrabado, una alternativa equivalente o descripción adecuada según el caso",
+        "option_b": "Subtítulos en directo para todo contenido",
+        "option_c": "Un título de página único",
+        "option_d": "Un mecanismo de reclamación",
+        "correct": "A",
+        "explanation": "El criterio 1.2.1 exige alternativas para contenido solo audio o solo vídeo pregrabado."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué contempla Audio Description or Media Alternative (Prerecorded), 1.2.3?",
+        "option_a": "Una descripción de audio o una alternativa multimedia para contenido pregrabado",
+        "option_b": "La ampliación del texto al 200%",
+        "option_c": "La navegación por teclado",
+        "option_d": "La identificación del idioma",
+        "correct": "A",
+        "explanation": "El criterio 1.2.3 ofrece esas alternativas para contenido multimedia pregrabado."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué nivel tiene Captions (Live), criterio 1.2.4?",
+        "option_a": "A",
+        "option_b": "AA",
+        "option_c": "AAA",
+        "option_d": "No tiene nivel",
+        "correct": "B",
+        "explanation": "Captions (Live) está clasificado en nivel AA."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué exige Audio Description (Prerecorded), 1.2.5?",
+        "option_a": "Descripción de audio para el contenido de vídeo pregrabado, salvo las excepciones del criterio",
+        "option_b": "Una transcripción solo para audio",
+        "option_c": "Una declaración anual",
+        "option_d": "Un tamaño mínimo de botón",
+        "correct": "A",
+        "explanation": "El criterio 1.2.5 exige descripción de audio para vídeo pregrabado."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué protege Meaningful Sequence, criterio 1.3.2?",
+        "option_a": "Que el orden de la información y relaciones sea correcto cuando el orden afecta al significado",
+        "option_b": "Que todos los textos tengan el mismo color",
+        "option_c": "Que el foco sea siempre visible",
+        "option_d": "Que toda imagen tenga subtítulos",
+        "correct": "A",
+        "explanation": "El criterio exige que una secuencia significativa pueda determinarse programáticamente."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué prohíbe Sensory Characteristics, 1.3.3?",
+        "option_a": "Depender exclusivamente de características sensoriales como forma, tamaño, ubicación u orientación para dar instrucciones",
+        "option_b": "Usar texto alternativo",
+        "option_c": "Usar encabezados",
+        "option_d": "Usar teclado",
+        "correct": "A",
+        "explanation": "Las instrucciones no deben depender únicamente de características sensoriales."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué exige Use of Color, 1.4.1?",
+        "option_a": "Que el color no sea el único medio visual para transmitir información, indicar una acción, pedir una respuesta o distinguir un elemento",
+        "option_b": "Que no se use ningún color",
+        "option_c": "Que todo color tenga contraste AAA",
+        "option_d": "Que los enlaces sean rojos",
+        "correct": "A",
+        "explanation": "El color no puede ser el único medio para transmitir la información indicada."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué regula Audio Control, 1.4.2?",
+        "option_a": "El control del audio que se reproduce automáticamente durante más de tres segundos",
+        "option_b": "La descripción de audio de vídeos",
+        "option_c": "El volumen de un lector de pantalla externo",
+        "option_d": "El nombre de un botón",
+        "correct": "A",
+        "explanation": "El criterio exige un mecanismo para pausar o controlar el audio automático de más de tres segundos."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué nivel tiene Resize Text, 1.4.4?",
+        "option_a": "A",
+        "option_b": "AA",
+        "option_c": "AAA",
+        "option_d": "No aplica",
+        "correct": "B",
+        "explanation": "Resize Text es un criterio de nivel AA."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué nivel tiene Images of Text, 1.4.5?",
+        "option_a": "A",
+        "option_b": "AA",
+        "option_c": "AAA",
+        "option_d": "No aplica",
+        "correct": "B",
+        "explanation": "Images of Text está clasificado como criterio AA."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué nivel tiene Contrast (Enhanced), 1.4.6?",
+        "option_a": "A",
+        "option_b": "AA",
+        "option_c": "AAA",
+        "option_d": "No aplica",
+        "correct": "C",
+        "explanation": "Contrast (Enhanced) es un criterio AAA."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué aborda Low or No Background Audio, 1.4.7?",
+        "option_a": "La dificultad que puede producir el audio de fondo para comprender el primer plano",
+        "option_b": "El contraste de texto grande",
+        "option_c": "El orden de foco",
+        "option_d": "La declaración de accesibilidad",
+        "correct": "A",
+        "explanation": "El criterio limita o controla el audio de fondo cuando interfiere con el primer plano."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué nivel tiene Visual Presentation, 1.4.8?",
+        "option_a": "A",
+        "option_b": "AA",
+        "option_c": "AAA",
+        "option_d": "No aplica",
+        "correct": "C",
+        "explanation": "Visual Presentation está clasificado en nivel AAA."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué distingue Images of Text (No Exception), 1.4.9?",
+        "option_a": "Es un criterio AAA sobre evitar imágenes de texto, salvo las excepciones previstas",
+        "option_b": "Es un criterio A sobre subtítulos",
+        "option_c": "Es un criterio AA sobre teclado",
+        "option_d": "Es un criterio de formularios",
+        "correct": "A",
+        "explanation": "El criterio 1.4.9 trata las imágenes de texto sin la excepción general del criterio 1.4.5, con sus excepciones específicas."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué nivel tiene Non-text Content, 1.1.1?",
+        "option_a": "A",
+        "option_b": "AA",
+        "option_c": "AAA",
+        "option_d": "No aplica",
+        "correct": "A",
+        "explanation": "Non-text Content es un criterio de nivel A."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué debe proporcionar una alternativa multimedia para contenido pregrabado?",
+        "option_a": "La información equivalente necesaria para que el contenido pueda comprenderse sin depender del formato original",
+        "option_b": "Solo el nombre del archivo",
+        "option_c": "Solo el tamaño del vídeo",
+        "option_d": "Una contraseña",
+        "correct": "A",
+        "explanation": "La alternativa debe ofrecer la información equivalente exigida por el criterio."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué relación existe entre 1.2.4 y 1.2.5?",
+        "option_a": "El primero trata subtítulos para contenido en directo y el segundo descripción de audio para vídeo pregrabado",
+        "option_b": "Ambos tratan solo contraste",
+        "option_c": "El primero es AAA y el segundo no tiene nivel",
+        "option_d": "Ambos tratan el idioma de la página",
+        "correct": "A",
+        "explanation": "Sus nombres y niveles distinguen subtítulos en directo de descripción de audio pregrabada."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué nivel tiene Meaningful Sequence, 1.3.2?",
+        "option_a": "A",
+        "option_b": "AA",
+        "option_c": "AAA",
+        "option_d": "No aplica",
+        "correct": "A",
+        "explanation": "Meaningful Sequence es un criterio de nivel A."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué nivel tiene Use of Color, 1.4.1?",
+        "option_a": "A",
+        "option_b": "AA",
+        "option_c": "AAA",
+        "option_d": "No aplica",
+        "correct": "A",
+        "explanation": "Use of Color está clasificado en nivel A."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué resultado busca el criterio 1.4.4 Resize Text?",
+        "option_a": "Que el texto pueda ampliarse hasta el 200 por ciento sin pérdida de contenido o funcionalidad, salvo excepciones",
+        "option_b": "Que el texto se convierta en imagen",
+        "option_c": "Que el usuario no pueda cambiar el tamaño",
+        "option_d": "Que todas las páginas usen el mismo tipo de letra",
+        "correct": "A",
+        "explanation": "El criterio establece la ampliación del texto hasta 200 por ciento con sus excepciones."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_40_LOT_06_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_40_LOT_07_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 40,
+        "question": "¿Qué exige Keyboard (No Exception), 2.1.3?",
+        "option_a": "Que toda funcionalidad sea operable mediante teclado sin excepción",
+        "option_b": "Que solo se use teclado",
+        "option_c": "Que exista una aplicación móvil",
+        "option_d": "Que la navegación sea automática",
+        "correct": "A",
+        "explanation": "El criterio 2.1.3 exige operación mediante teclado sin excepciones."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué aborda No Timing, 2.2.3?",
+        "option_a": "Que la actividad no dependa de un límite de tiempo, salvo las excepciones previstas",
+        "option_b": "Que todos los contenidos tengan una cuenta atrás",
+        "option_c": "Que se detenga todo audio",
+        "option_d": "Que se oculte el foco",
+        "correct": "A",
+        "explanation": "No Timing trata la ausencia de límites temporales para la actividad."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué nivel tiene Interruptions, 2.2.4?",
+        "option_a": "A",
+        "option_b": "AA",
+        "option_c": "AAA",
+        "option_d": "No aplica",
+        "correct": "C",
+        "explanation": "Interruptions está clasificado como criterio AAA."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué protege Re-authenticating, 2.2.5?",
+        "option_a": "La continuidad de la información introducida cuando una sesión expira y se requiere volver a autenticarse",
+        "option_b": "El contraste de los controles",
+        "option_c": "La descripción de imágenes",
+        "option_d": "El idioma de la página",
+        "correct": "A",
+        "explanation": "El criterio permite continuar sin perder datos tras la reautenticación, según sus condiciones."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué nivel tiene Three Flashes, 2.3.2?",
+        "option_a": "A",
+        "option_b": "AA",
+        "option_c": "AAA",
+        "option_d": "No aplica",
+        "correct": "C",
+        "explanation": "Three Flashes está clasificado como criterio AAA."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué exige Page Titled, 2.4.2?",
+        "option_a": "Que las páginas web tengan títulos que describan el tema o propósito",
+        "option_b": "Que todas se titulen igual",
+        "option_c": "Que el título sea una imagen",
+        "option_d": "Que no exista elemento title",
+        "correct": "A",
+        "explanation": "El criterio exige títulos descriptivos para las páginas."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué nivel tiene Multiple Ways, 2.4.5?",
+        "option_a": "A",
+        "option_b": "AA",
+        "option_c": "AAA",
+        "option_d": "No aplica",
+        "correct": "B",
+        "explanation": "Multiple Ways es un criterio de nivel AA."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué aporta Location, 2.4.8?",
+        "option_a": "Información para que el usuario sepa dónde se encuentra dentro de un conjunto de páginas",
+        "option_b": "Un mapa geográfico obligatorio",
+        "option_c": "Una dirección postal",
+        "option_d": "Un certificado de sede",
+        "correct": "A",
+        "explanation": "El criterio AAA exige información sobre la ubicación dentro de un conjunto de páginas."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué nivel tiene Link Purpose (Link Only), 2.4.9?",
+        "option_a": "A",
+        "option_b": "AA",
+        "option_c": "AAA",
+        "option_d": "No aplica",
+        "correct": "C",
+        "explanation": "Link Purpose (Link Only) es un criterio AAA."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué exige Section Headings, 2.4.10?",
+        "option_a": "Que se usen encabezados de sección para organizar el contenido cuando proceda",
+        "option_b": "Que solo exista un encabezado",
+        "option_c": "Que todos los encabezados sean enlaces",
+        "option_d": "Que se eliminen las secciones",
+        "correct": "A",
+        "explanation": "El criterio exige utilizar encabezados para organizar secciones, salvo las excepciones."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué exige Unusual Words, 3.1.3?",
+        "option_a": "Un mecanismo para identificar definiciones de palabras o frases usadas de manera inusual o restringida",
+        "option_b": "Que se eliminen los términos técnicos",
+        "option_c": "Que todo texto esté en mayúsculas",
+        "option_d": "Que se traduzca automáticamente",
+        "correct": "A",
+        "explanation": "El criterio AAA contempla un mecanismo para identificar definiciones de términos inusuales."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué nivel tiene Abbreviations, 3.1.4?",
+        "option_a": "A",
+        "option_b": "AA",
+        "option_c": "AAA",
+        "option_d": "No aplica",
+        "correct": "C",
+        "explanation": "Abbreviations está clasificado como criterio AAA."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué busca Reading Level, 3.1.5?",
+        "option_a": "Que exista una versión adicional comprensible para un nivel de educación inferior cuando el texto requiera una capacidad lectora avanzada",
+        "option_b": "Que todos los textos sean jurídicos",
+        "option_c": "Que no haya párrafos",
+        "option_d": "Que se use audio obligatoriamente",
+        "correct": "A",
+        "explanation": "El criterio AAA contempla una versión adicional más comprensible en esos casos."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué aborda Pronunciation, 3.1.6?",
+        "option_a": "Un mecanismo para identificar la pronunciación específica de palabras cuando su significado depende de ella",
+        "option_b": "La pronunciación del lector de pantalla",
+        "option_c": "El idioma del dominio",
+        "option_d": "El contraste de los caracteres",
+        "correct": "A",
+        "explanation": "El criterio AAA exige un mecanismo de pronunciación cuando sea necesario para comprender."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué nivel tiene Change on Request, 3.2.5?",
+        "option_a": "A",
+        "option_b": "AA",
+        "option_c": "AAA",
+        "option_d": "No aplica",
+        "correct": "C",
+        "explanation": "Change on Request está clasificado como criterio AAA."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué exige Help, 3.3.5?",
+        "option_a": "Ayuda contextual cuando pueda facilitar la cumplimentación o corrección de formularios",
+        "option_b": "Que no existan formularios",
+        "option_c": "Que toda ayuda sea audio",
+        "option_d": "Que el usuario conozca el código fuente",
+        "correct": "A",
+        "explanation": "El criterio AAA exige ayuda contextual cuando está disponible."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué nivel tiene Error Prevention (All), 3.3.6?",
+        "option_a": "A",
+        "option_b": "AA",
+        "option_c": "AAA",
+        "option_d": "No aplica",
+        "correct": "C",
+        "explanation": "Error Prevention (All) está clasificado como criterio AAA."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué nivel tiene Timeouts, 2.2.6?",
+        "option_a": "A",
+        "option_b": "AA",
+        "option_c": "AAA",
+        "option_d": "No aplica",
+        "correct": "C",
+        "explanation": "Timeouts es un criterio nuevo de nivel AAA."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué distingue 2.4.5 Multiple Ways de 2.4.9 Link Purpose (Link Only)?",
+        "option_a": "2.4.5 trata localizar páginas por más de una vía y 2.4.9 trata determinar el propósito de enlaces por el texto del enlace",
+        "option_b": "Ambos tratan subtítulos",
+        "option_c": "El primero es AAA y el segundo A",
+        "option_d": "No existe diferencia",
+        "correct": "A",
+        "explanation": "Sus nombres y criterios separan navegación múltiple de propósito de enlace con texto aislado."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué nivel tiene Contrast (Minimum), 1.4.3, frente a Contrast (Enhanced), 1.4.6?",
+        "option_a": "1.4.3 es AA y 1.4.6 es AAA",
+        "option_b": "Ambos son A",
+        "option_c": "1.4.3 es AAA y 1.4.6 es AA",
+        "option_d": "Ambos son AA",
+        "correct": "A",
+        "explanation": "WCAG clasifica el contraste mínimo como AA y el contraste mejorado como AAA."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_40_LOT_07_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_40_LOT_08_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 40,
+        "question": "¿Qué deben adoptar los organismos obligados para aumentar la concienciación?",
+        "option_a": "Medidas de sensibilización y divulgación sobre accesibilidad y sus beneficios",
+        "option_b": "Solo medidas de seguridad",
+        "option_c": "Solo campañas comerciales",
+        "option_d": "Ninguna medida",
+        "correct": "A",
+        "explanation": "El artículo 8.1 exige sensibilización y divulgación."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿A quién debe alcanzar específicamente la concienciación en accesibilidad?",
+        "option_a": "A todo el personal y especialmente a unidades de desarrollo y edición de contenidos",
+        "option_b": "Solo a los usuarios externos",
+        "option_c": "Solo a las empresas contratistas",
+        "option_d": "Solo a los órganos judiciales",
+        "correct": "A",
+        "explanation": "El artículo 8.2 destaca todo el personal y las unidades técnicas y editoriales."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué deben fomentar las entidades obligadas en materia de formación?",
+        "option_a": "Programas internos con conocimientos actualizados sobre creación, gestión y actualización accesibles",
+        "option_b": "Cursos únicamente financieros",
+        "option_c": "Formación solo cuando exista una reclamación",
+        "option_d": "Ninguna formación",
+        "correct": "A",
+        "explanation": "El artículo 8.3 exige fomentar y facilitar programas de formación internos."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué pueden incluir los planes de formación de los organismos competentes de Función Pública?",
+        "option_a": "Actividades sobre accesibilidad de sitios web, contenidos y aplicaciones móviles",
+        "option_b": "Solo cursos de contratación",
+        "option_c": "Solo cursos de idiomas",
+        "option_d": "Solo formación en archivos",
+        "correct": "A",
+        "explanation": "El artículo 8.3.a incorpora la accesibilidad a esos planes de formación."
+    },
+    {
+        "topic_num": 40,
+        "question": "Según el artículo 9, ¿qué deben definir las Administraciones para facilitar la participación en accesibilidad?",
+        "option_a": "Mecanismos de participación de personas interesadas y usuarias",
+        "option_b": "Solo un buzón interno",
+        "option_c": "Únicamente una auditoría",
+        "option_d": "Solo un teléfono de emergencias",
+        "correct": "A",
+        "explanation": "El artículo 9 exige mecanismos de participación."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué organización debe tenerse especialmente en cuenta al establecer la participación?",
+        "option_a": "Las organizaciones representativas de personas con discapacidad y mayores, y sus familias",
+        "option_b": "Solo asociaciones empresariales",
+        "option_c": "Solo proveedores de software",
+        "option_d": "Solo órganos de control financiero",
+        "correct": "A",
+        "explanation": "El artículo 9 exige tenerlas especialmente en cuenta."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué puede comunicar cualquier persona mediante el mecanismo del artículo 10?",
+        "option_a": "Sugerencias, quejas, posibles incumplimientos y solicitudes de información excluida",
+        "option_b": "Solo una petición de contratación",
+        "option_c": "Solo una factura",
+        "option_d": "Solo un cambio de contraseña",
+        "correct": "A",
+        "explanation": "El artículo 10.1 enumera esas posibilidades."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué permite la modalidad de comunicaciones sobre requisitos de accesibilidad?",
+        "option_a": "Informar de posibles incumplimientos, dificultades de acceso y sugerencias de mejora",
+        "option_b": "Presentar recursos administrativos solamente",
+        "option_c": "Solicitar una subvención",
+        "option_d": "Modificar una declaración ya publicada",
+        "correct": "A",
+        "explanation": "El artículo 10.2.a describe esas comunicaciones."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué permite la modalidad de solicitudes de información accesible y quejas?",
+        "option_a": "Formular quejas y solicitar información sobre contenidos excluidos o exceptuados por carga desproporcionada",
+        "option_b": "Solo informar de un error tipográfico",
+        "option_c": "Solo consultar contratos",
+        "option_d": "Solo solicitar una cita presencial",
+        "correct": "A",
+        "explanation": "El artículo 10.2.b delimita esa modalidad."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Cómo pueden presentarse las comunicaciones sobre requisitos de accesibilidad?",
+        "option_a": "Por medios electrónicos mediante correo específico o formulario telemático",
+        "option_b": "Solo por teléfono",
+        "option_c": "Solo en papel",
+        "option_d": "Solo mediante una app privada",
+        "correct": "A",
+        "explanation": "El artículo 11 admite correo electrónico específico o formulario telemático."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué canal adicional al electrónico debe existir como mínimo?",
+        "option_a": "Un teléfono o una oficina física de atención",
+        "option_b": "Otro formulario obligatorio",
+        "option_c": "Un canal de pago",
+        "option_d": "Una red social",
+        "correct": "A",
+        "explanation": "El artículo 11 exige al menos teléfono u oficina física adicional."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Cómo deben presentarse y registrarse las solicitudes de información accesible y quejas?",
+        "option_a": "Conforme a los requisitos de la Ley 39/2015",
+        "option_b": "Solo mediante correo sin registro",
+        "option_c": "Conforme a la normativa de contratación",
+        "option_d": "Mediante una factura",
+        "correct": "A",
+        "explanation": "El artículo 12.1 remite a la Ley 39/2015."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué debe concretar la persona interesada en una solicitud de información accesible?",
+        "option_a": "Hechos, razones y petición para constatar que es razonable y legítima",
+        "option_b": "Solo su número de teléfono",
+        "option_c": "Solo la URL",
+        "option_d": "Solo el órgano destinatario",
+        "correct": "A",
+        "explanation": "El artículo 12.2 exige concretar esos elementos."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué información debe incluir la respuesta a una solicitud o queja?",
+        "option_a": "La unidad que responde y la decisión adoptada, además de la información o plazos que procedan",
+        "option_b": "Solo un enlace genérico",
+        "option_c": "Solo la fecha de registro",
+        "option_d": "Solo la identidad del usuario",
+        "correct": "A",
+        "explanation": "El artículo 12.5 enumera el contenido mínimo de la respuesta."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué ocurre si para tramitar una solicitud se necesitan aclaraciones y no se presentan en diez días hábiles?",
+        "option_a": "Se continúa la tramitación conforme al artículo 12",
+        "option_b": "Se acepta automáticamente",
+        "option_c": "Se convierte en reclamación",
+        "option_d": "Se crea una unidad responsable",
+        "correct": "A",
+        "explanation": "El artículo 12.4 prevé continuar la tramitación si no se aclara oportunamente."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué recursos pueden interponerse contra la resolución de una reclamación?",
+        "option_a": "Los recursos administrativos que procedan conforme al artículo 112 de la Ley 39/2015",
+        "option_b": "Solo un recurso contractual",
+        "option_c": "Ninguno",
+        "option_d": "Una factura rectificativa",
+        "correct": "A",
+        "explanation": "El artículo 14 remite a los recursos administrativos procedentes y al artículo 112 de la Ley 39/2015."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué debe incluir la declaración sobre el mecanismo de comunicación?",
+        "option_a": "Un enlace y una descripción del mecanismo de comunicación",
+        "option_b": "Solo el nombre del dominio",
+        "option_c": "Solo un número de expediente",
+        "option_d": "Solo el texto WCAG",
+        "correct": "A",
+        "explanation": "El artículo 15.2.b exige enlace y descripción del mecanismo."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué debe incluir la declaración sobre el procedimiento de reclamación?",
+        "option_a": "Un enlace al procedimiento del artículo 13",
+        "option_b": "Solo la dirección postal",
+        "option_c": "Solo la fecha de revisión",
+        "option_d": "Ninguna información",
+        "correct": "A",
+        "explanation": "El artículo 15.2.c exige ese enlace."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿En qué formato debe proporcionarse la declaración de accesibilidad?",
+        "option_a": "En un formato accesible",
+        "option_b": "Solo en imagen escaneada",
+        "option_c": "Solo en papel",
+        "option_d": "En un formato inaccesible",
+        "correct": "A",
+        "explanation": "El artículo 15.1 exige que la declaración se proporcione en formato accesible."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué consecuencia tiene que una solicitud de información accesible sea desestimada o no respondida en plazo?",
+        "option_a": "La persona interesada puede iniciar una reclamación",
+        "option_b": "Debe presentar una factura",
+        "option_c": "Debe crear otra página web",
+        "option_d": "Pierde cualquier derecho",
+        "correct": "A",
+        "explanation": "El artículo 13.1 habilita la reclamación en esos supuestos."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_40_LOT_08_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_40_LOT_09_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 40,
+        "question": "¿Qué características debe tener la declaración de accesibilidad?",
+        "option_a": "Detallada, exhaustiva y clara",
+        "option_b": "Secreta, breve y técnica",
+        "option_c": "Solo verbal",
+        "option_d": "Solo económica",
+        "correct": "A",
+        "explanation": "El artículo 15.1 exige una declaración detallada, exhaustiva y clara."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Dónde se publica la declaración de un sitio web?",
+        "option_a": "En el sitio web correspondiente, accesible desde todas sus páginas",
+        "option_b": "Solo en el BOE",
+        "option_c": "Solo en una oficina física",
+        "option_d": "Solo en el registro contable",
+        "correct": "A",
+        "explanation": "El artículo 15.1 establece la publicación en el propio sitio con acceso desde todas sus páginas."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Dónde se facilita la declaración de una aplicación móvil?",
+        "option_a": "En el sitio de la entidad junto al enlace de descarga o con la información de la plataforma de distribución",
+        "option_b": "Solo en el código fuente",
+        "option_c": "Solo por correo postal",
+        "option_d": "No se facilita",
+        "correct": "A",
+        "explanation": "El artículo 15.1 regula esas alternativas."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué debe describir la declaración sobre el contenido no accesible?",
+        "option_a": "Las partes no accesibles, las razones y las alternativas accesibles si existen",
+        "option_b": "Solo el nombre de la aplicación",
+        "option_c": "Solo el nivel WCAG",
+        "option_d": "Solo el órgano responsable",
+        "correct": "A",
+        "explanation": "Es el contenido mínimo del artículo 15.2.a."
+    },
+    {
+        "topic_num": 40,
+        "question": "Para cumplir el artículo 16, ¿qué responsable organizativo debe nombrar cada entidad obligada?",
+        "option_a": "La Unidad responsable de accesibilidad de su ámbito competencial",
+        "option_b": "Una unidad de contratación",
+        "option_c": "Una unidad tributaria",
+        "option_d": "Una unidad externa sin competencia",
+        "correct": "A",
+        "explanation": "El artículo 16.1 exige designar esa unidad."
+    },
+    {
+        "topic_num": 40,
+        "question": "En la Administración General del Estado, ¿en qué ámbito se designan las unidades responsables?",
+        "option_a": "En las Subsecretarías de cada Departamento, considerando organismos y entidades dependientes",
+        "option_b": "Solo en los ayuntamientos",
+        "option_c": "Solo en la Comisión Europea",
+        "option_d": "Solo en universidades",
+        "correct": "A",
+        "explanation": "El artículo 16.1 establece ese ámbito estatal."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué puede definir la Unidad responsable sobre su funcionamiento?",
+        "option_a": "Un modelo directo para todo el ámbito o un esquema de responsables delegados",
+        "option_b": "Solo un horario de atención",
+        "option_c": "Solo una política de contraseñas",
+        "option_d": "Solo un contrato de mantenimiento",
+        "correct": "A",
+        "explanation": "El artículo 16.2 permite ambas formas organizativas."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué función tiene la Unidad responsable respecto de las reclamaciones?",
+        "option_a": "Atenderlas y responderlas cuando se dirijan a ella conforme al artículo 13",
+        "option_b": "Adjudicar contratos",
+        "option_c": "Emitir facturas",
+        "option_d": "Crear estándares europeos",
+        "correct": "A",
+        "explanation": "El artículo 16.3.b atribuye esa función."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué función tiene respecto de las evaluaciones por carga desproporcionada?",
+        "option_a": "Revisarlas",
+        "option_b": "Aprobarlas siempre",
+        "option_c": "Publicarlas como contratos",
+        "option_d": "Eliminar toda excepción",
+        "correct": "A",
+        "explanation": "El artículo 16.3.c asigna la revisión de esas evaluaciones."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué debe coordinar la Unidad responsable con las unidades TIC cuando proceda?",
+        "option_a": "Las revisiones periódicas de accesibilidad",
+        "option_b": "Los pagos presupuestarios",
+        "option_c": "Las licitaciones europeas",
+        "option_d": "Las notificaciones tributarias",
+        "correct": "A",
+        "explanation": "El artículo 16.3.d regula la coordinación de revisiones periódicas."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué debe notificarse al órgano de seguimiento respecto de las unidades responsables?",
+        "option_a": "Sus designaciones, modificaciones o bajas",
+        "option_b": "Sus contraseñas",
+        "option_c": "Sus facturas",
+        "option_d": "Sus informes financieros completos",
+        "correct": "A",
+        "explanation": "El artículo 16.4 exige notificar esos cambios."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Cuándo se revisa la accesibilidad además de antes de poner en funcionamiento?",
+        "option_a": "Periódicamente durante la vida del sitio o aplicación",
+        "option_b": "Solo al crear el dominio",
+        "option_c": "Solo si cambia la legislación",
+        "option_d": "Nunca",
+        "correct": "A",
+        "explanation": "El artículo 17.2 exige revisiones periódicas después de la puesta en funcionamiento."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué contenidos deben tenerse especialmente en cuenta en las revisiones periódicas?",
+        "option_a": "Los contenidos añadidos o modificados y las actualizaciones tecnológicas",
+        "option_b": "Solo los contenidos antiguos",
+        "option_c": "Solo los textos legales",
+        "option_d": "Solo las páginas de error",
+        "correct": "A",
+        "explanation": "El artículo 17.2 destaca esos contenidos y actualizaciones."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué debe abarcar una revisión de accesibilidad?",
+        "option_a": "Todos los requisitos exigidos",
+        "option_b": "Solo los criterios de color",
+        "option_c": "Solo los formularios",
+        "option_d": "Solo el rendimiento",
+        "correct": "A",
+        "explanation": "El artículo 17.3 exige abarcar todos los requisitos."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué documento recoge el resultado de la revisión?",
+        "option_a": "Un informe de revisión de la accesibilidad",
+        "option_b": "Una factura",
+        "option_c": "Un contrato",
+        "option_d": "Una declaración tributaria",
+        "correct": "A",
+        "explanation": "El artículo 17.3 exige recoger el resultado en un informe."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Puede certificarse el cumplimiento por una entidad de certificación?",
+        "option_a": "Sí, si su competencia técnica ha sido reconocida formalmente por ENAC u organismo nacional conforme al marco aplicable",
+        "option_b": "No en ningún caso",
+        "option_c": "Solo por cualquier proveedor",
+        "option_d": "Solo mediante una autoevaluación no documentada",
+        "correct": "A",
+        "explanation": "El artículo 17.5 contempla esa certificación con reconocimiento formal de competencia técnica."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué plazo inicial fija el artículo 17.6 para la primera revisión de sitios web?",
+        "option_a": "Antes de dos años desde la entrada en vigor del real decreto",
+        "option_b": "Antes de dos meses",
+        "option_c": "Antes de diez años",
+        "option_d": "No fija plazo",
+        "correct": "A",
+        "explanation": "El artículo 17.6 establece dos años para sitios web."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué plazo inicial fija el artículo 17.6 para aplicaciones móviles?",
+        "option_a": "Antes de tres años desde la entrada en vigor del real decreto",
+        "option_b": "Antes de tres meses",
+        "option_c": "Antes de diez años",
+        "option_d": "No fija plazo",
+        "correct": "A",
+        "explanation": "El artículo 17.6 establece tres años para aplicaciones móviles."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué dos modalidades de revisión deben combinarse cuando proceda?",
+        "option_a": "Revisión automática y revisión manual experta",
+        "option_b": "Solo revisión automática",
+        "option_c": "Solo revisión de usuarios",
+        "option_d": "Solo revisión jurídica",
+        "correct": "A",
+        "explanation": "El artículo 17.3 exige considerar aspectos automáticos y manuales expertos."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué colaboración puede prestar una entidad de certificación?",
+        "option_a": "Certificar el cumplimiento de requisitos de accesibilidad",
+        "option_b": "Sustituir a la Unidad responsable",
+        "option_c": "Aprobar el real decreto",
+        "option_d": "Crear el informe ministerial",
+        "correct": "A",
+        "explanation": "El artículo 17.5 permite certificar el cumplimiento en las condiciones indicadas."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_40_LOT_09_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_40_LOT_10_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 40,
+        "question": "¿Qué ministerio realiza el seguimiento y presenta informes ante la Comisión Europea según el artículo 18?",
+        "option_a": "El Ministerio de Política Territorial y Función Pública",
+        "option_b": "El Ministerio de Justicia",
+        "option_c": "El Ministerio de Hacienda exclusivamente",
+        "option_d": "Un organismo internacional",
+        "correct": "A",
+        "explanation": "El artículo 18.1 atribuye esa función a ese ministerio."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿En qué puede basarse el órgano de seguimiento para comprobar la conformidad?",
+        "option_a": "En la metodología de seguimiento prevista por la Directiva 2016/2102 y los actos de ejecución de la Comisión",
+        "option_b": "Solo en encuestas privadas",
+        "option_c": "Solo en el número de visitas",
+        "option_d": "Solo en contratos",
+        "correct": "A",
+        "explanation": "El artículo 18.2 remite a esa metodología y actos de ejecución."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué verificaciones adicionales puede realizar el órgano de seguimiento?",
+        "option_a": "Comprobaciones sobre muestras aleatorias de la exactitud de informes de revisión",
+        "option_b": "Solo comprobaciones de pagos",
+        "option_c": "Solo comprobaciones de identidad",
+        "option_d": "Ninguna",
+        "correct": "A",
+        "explanation": "El artículo 18.2 permite verificar muestras aleatorias de informes."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿En qué formato debe hacerse público el informe de seguimiento?",
+        "option_a": "En formato accesible",
+        "option_b": "Solo en papel",
+        "option_c": "Solo en una base privada",
+        "option_d": "En formato no reutilizable",
+        "correct": "A",
+        "explanation": "El artículo 18.3 exige que el informe público sea accesible."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué debe incluir el informe de seguimiento además de los datos de mediciones?",
+        "option_a": "Información sobre el uso del procedimiento de reclamación y cambios significativos respecto del informe anterior",
+        "option_b": "Solo el listado de dominios",
+        "option_c": "Solo el presupuesto",
+        "option_d": "Solo nombres de empleados",
+        "correct": "A",
+        "explanation": "El artículo 18.4 incluye esos elementos junto con los datos de mediciones."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Cuántos informes anuales prepara cada Unidad responsable según el artículo 19?",
+        "option_a": "Tres",
+        "option_b": "Uno",
+        "option_c": "Dos",
+        "option_d": "Cinco",
+        "correct": "A",
+        "explanation": "El artículo 19.1 exige tres informes anuales por ámbito."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Antes de qué fecha deben estar disponibles esos informes anuales a partir de 2020?",
+        "option_a": "Antes del 1 de octubre de cada año",
+        "option_b": "Antes del 1 de enero",
+        "option_c": "Antes del 23 de diciembre",
+        "option_d": "Antes del 31 de diciembre",
+        "correct": "A",
+        "explanation": "El artículo 19.1 fija el 1 de octubre."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué informe trata la atención de quejas y reclamaciones?",
+        "option_a": "El informe sobre atención de quejas y reclamaciones",
+        "option_b": "El informe de seguimiento técnico solamente",
+        "option_c": "El informe de formación solamente",
+        "option_d": "El informe presupuestario",
+        "correct": "A",
+        "explanation": "Es el informe previsto en el artículo 19.1.a."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué incluye el informe de seguimiento sobre cumplimiento?",
+        "option_a": "Las medidas de revisión coordinadas y todos los informes de revisión de accesibilidad realizados",
+        "option_b": "Solo las quejas",
+        "option_c": "Solo la formación",
+        "option_d": "Solo el listado de unidades",
+        "correct": "A",
+        "explanation": "El artículo 19.1.b incluye medidas y todos los informes de revisión."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué trata el tercer informe anual?",
+        "option_a": "Promoción, concienciación y formación y las medidas y resultados correspondientes",
+        "option_b": "Solo contratos",
+        "option_c": "Solo reclamaciones",
+        "option_d": "Solo mapas",
+        "correct": "A",
+        "explanation": "El artículo 19.1.c trata promoción, concienciación y formación."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué red se crea para asistir al Ministerio?",
+        "option_a": "La Red de Contactos de Accesibilidad Digital de las Administraciones Públicas",
+        "option_b": "La Red de Contratación Electrónica",
+        "option_c": "La Red de Facturae",
+        "option_d": "La Red de Sedes Privadas",
+        "correct": "A",
+        "explanation": "El artículo 20.1 crea esa red como grupo de trabajo."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Quién integra la red en el ámbito estatal?",
+        "option_a": "Las personas titulares de las Unidades responsables de accesibilidad de la AGE",
+        "option_b": "Solo proveedores",
+        "option_c": "Solo universidades",
+        "option_d": "Solo órganos judiciales",
+        "correct": "A",
+        "explanation": "El artículo 20.2.a incluye esas unidades estatales."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué punto de contacto provincial prevé la red?",
+        "option_a": "Al menos uno que agrupe a las entidades locales de la provincia",
+        "option_b": "Uno por cada web privada",
+        "option_c": "Solo uno estatal",
+        "option_d": "Ninguno",
+        "correct": "A",
+        "explanation": "El artículo 20.2.c prevé al menos un punto de contacto provincial."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué función cumplen las personas integrantes de la red respecto de la información?",
+        "option_a": "Actúan como difusoras y agregadoras de la información de las entidades que representan o agrupan",
+        "option_b": "La eliminan",
+        "option_c": "La sustituyen por información comercial",
+        "option_d": "La convierten en facturas",
+        "correct": "A",
+        "explanation": "El artículo 20.3 atribuye esa función de difusión y agregación."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué sitios y aplicaciones deben aplicar criterios de accesibilidad cuando reciben financiación pública?",
+        "option_a": "Los que reciben financiación pública para su diseño o mantenimiento",
+        "option_b": "Solo los que no reciben fondos",
+        "option_c": "Solo los de empresas extranjeras",
+        "option_d": "Ninguno",
+        "correct": "A",
+        "explanation": "La disposición adicional primera.a incluye los financiados públicamente."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué ocurre con webs y aplicaciones vinculadas a servicios públicos gestionados por concesión?",
+        "option_a": "Deben aplicar los criterios de accesibilidad del real decreto",
+        "option_b": "Quedan siempre excluidas",
+        "option_c": "Solo deben cumplir si son gratuitas",
+        "option_d": "Solo deben publicar un teléfono",
+        "correct": "A",
+        "explanation": "La disposición adicional primera.b incluye esas entidades y empresas gestoras."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué prevé la disposición final tercera?",
+        "option_a": "La incorporación al ordenamiento de la Directiva (UE) 2016/2102",
+        "option_b": "La derogación de WCAG 2.1",
+        "option_c": "La creación de un registro contable",
+        "option_d": "La entrada en vigor de una ley local",
+        "correct": "A",
+        "explanation": "La disposición final tercera declara la incorporación de esa directiva."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Cuándo son aplicables todas las disposiciones relativas a aplicaciones móviles según la disposición final quinta?",
+        "option_a": "Desde el 23 de junio de 2021",
+        "option_b": "Desde el día de publicación para todas",
+        "option_c": "A los diez años",
+        "option_d": "Solo tras una reclamación",
+        "correct": "A",
+        "explanation": "La disposición final quinta fija esa fecha para las aplicaciones móviles."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué funciones se asignan a las unidades responsables en la AGE según la disposición adicional cuarta?",
+        "option_a": "A unidades ya existentes, sin incremento de dotaciones, retribuciones u otros gastos de personal",
+        "option_b": "A una unidad nueva con incremento obligatorio",
+        "option_c": "A la Comisión Europea",
+        "option_d": "A empresas privadas exclusivamente",
+        "correct": "A",
+        "explanation": "La disposición adicional cuarta establece esa asignación sin incremento de gastos de personal."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué modelo se aplica transitoriamente mientras no se publique el modelo de declaración?",
+        "option_a": "El modelo de declaración de accesibilidad que establezca la Comisión Europea mediante los actos de ejecución previstos en la directiva",
+        "option_b": "Cualquier modelo privado",
+        "option_c": "Ningún modelo",
+        "option_d": "El modelo de factura electrónica",
+        "correct": "A",
+        "explanation": "La disposición transitoria única establece ese modelo por defecto."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_40_LOT_10_END
