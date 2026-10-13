@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-34-git-branches-rebase-merge-stash.md",
+  "batches": [
+    {
+      "topic_num": 34,
+      "lot_num": 2,
+      "source_ids": [
+        "GIT-2.50"
+      ],
+      "questions": [
+        {
+          "objective_id": "t34-lo-021",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué operación integra los cambios alcanzables desde otra rama en la rama actual?",
+          "options": [
+            "git merge nombre",
+            "git branch --copy nombre",
+            "git switch --detach nombre",
+            "git stash show nombre"
+          ],
+          "correct": "A",
+          "explanation": "git merge incorpora en la rama actual la historia de uno o más commits nombrados.",
+          "citation": "git-merge — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-022",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué describe una integración fast-forward?",
+          "options": [
+            "Se crean dos commits nuevos por cada padre",
+            "La referencia actual avanza hasta una descendiente sin crear un commit de merge",
+            "Se guardan cambios no committeados en un stash",
+            "Se reescriben todos los commits de la rama integrada"
+          ],
+          "correct": "B",
+          "explanation": "Si la punta actual es ancestro de la otra, Git puede mover la referencia directamente y no necesita un commit de integración.",
+          "citation": "git-merge — FAST-FORWARD MERGE",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-023",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué solicita la opción --no-ff al fusionar una rama?",
+          "options": [
+            "Rechazar toda fusión rápida",
+            "Borrar la rama fusionada",
+            "Crear un commit de merge incluso cuando sería posible avanzar directamente",
+            "Convertir la fusión en rebase interactivo"
+          ],
+          "correct": "C",
+          "explanation": "--no-ff fuerza un commit de merge, lo que conserva explícitamente la existencia de la rama integrada en la topología.",
+          "citation": "git-merge — --ff/--no-ff",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-024",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué política aplica --ff-only durante una fusión?",
+          "options": [
+            "Fuerza siempre un merge commit",
+            "Resuelve conflictos eligiendo ours",
+            "Guarda el índice en un stash",
+            "Permite únicamente un avance rápido y falla si se necesita un merge commit"
+          ],
+          "correct": "D",
+          "explanation": "--ff-only aborta si la integración no puede representarse como fast-forward.",
+          "citation": "git-merge — --ff-only",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-025",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué representa el merge base entre dos líneas de desarrollo?",
+          "options": [
+            "Un commit común adecuado para calcular la integración de ambas historias",
+            "El último stash creado",
+            "La rama remota predeterminada",
+            "El índice antes de ejecutar add"
+          ],
+          "correct": "A",
+          "explanation": "El merge base es un ancestro común usado por los algoritmos de integración, especialmente en una fusión de tres vías.",
+          "citation": "git-merge-base — DESCRIPTION; git-merge — MERGE STRATEGIES",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-026",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Cuándo necesita Git una fusión de tres vías?",
+          "options": [
+            "Siempre que exista una sola rama",
+            "Cuando ninguna punta es ancestro directo de la otra y debe combinar dos cambios desde una base común",
+            "Solo al crear un stash",
+            "Únicamente para tags anotados"
+          ],
+          "correct": "B",
+          "explanation": "La fusión de tres vías compara las dos puntas con un ancestro común cuando no basta mover una referencia.",
+          "citation": "git-merge — DESCRIPTION; git-merge-base — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-027",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué situación produce normalmente un conflicto de fusión?",
+          "options": [
+            "Una rama que está completamente contenida en otra",
+            "Una referencia que no tiene nombre",
+            "Cambios incompatibles en una misma región que el algoritmo no puede combinar con seguridad",
+            "Un working tree sin archivos ignorados"
+          ],
+          "correct": "C",
+          "explanation": "Un conflicto indica que la combinación automática no puede elegir una interpretación única para cambios solapados o estructuralmente incompatibles.",
+          "citation": "git-merge — TRUE MERGE; git-merge — HOW CONFLICTS ARE PRESENTED",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-028",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué debe hacer una persona con un archivo marcado en conflicto antes de continuar una fusión?",
+          "options": [
+            "Borrar siempre el archivo y recrearlo",
+            "Ejecutar reset --hard sin revisar nada",
+            "Crear una segunda rama remota",
+            "Editar el contenido, elegir una solución y marcar el archivo como resuelto"
+          ],
+          "correct": "D",
+          "explanation": "Tras resolver manualmente las marcas, git add registra la versión resuelta en el índice para que la fusión pueda continuar.",
+          "citation": "git-merge — HOW CONFLICTS ARE PRESENTED; git-add — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-029",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué indica la existencia de MERGE_HEAD durante una fusión?",
+          "options": [
+            "Que Git conserva la punta o puntas que se están integrando mientras la operación está pendiente",
+            "Que el repositorio no tiene HEAD",
+            "Que se ha creado un stash vacío",
+            "Que solo queda por cambiar la configuración global"
+          ],
+          "correct": "A",
+          "explanation": "MERGE_HEAD permite a Git saber qué commit o commits se están fusionando al completar el merge.",
+          "citation": "git-merge — TRUE MERGE; gitrepository-layout — MERGE_HEAD",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-030",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué inspección ayuda a localizar archivos no resueltos durante una fusión?",
+          "options": [
+            "Listar únicamente los tags anotados",
+            "Consultar el estado del repositorio, que enumera rutas en conflicto",
+            "Consultar user.email",
+            "Mostrar el reflog de un remoto"
+          ],
+          "correct": "B",
+          "explanation": "git status muestra las rutas no fusionadas y orienta sobre las acciones de resolución pendientes.",
+          "citation": "git-status — DESCRIPTION; git-merge — HOW CONFLICTS ARE PRESENTED",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-031",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué efecto tiene añadir al índice un archivo cuyo conflicto ya se resolvió?",
+          "options": [
+            "Crea automáticamente una nueva rama",
+            "Reinicia la fusión desde el merge base",
+            "Registra la versión elegida como resolución de esa ruta",
+            "Elimina todos los conflictos del repositorio"
+          ],
+          "correct": "C",
+          "explanation": "git add sustituye las entradas de conflicto de la ruta por la versión resuelta preparada para el commit de merge.",
+          "citation": "git-add — DESCRIPTION; git-merge — HOW CONFLICTS ARE PRESENTED",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-032",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué paso completa una fusión después de que todas las rutas conflictivas estén resueltas y preparadas?",
+          "options": [
+            "Aplicar el stash más antiguo",
+            "Desacoplar HEAD",
+            "Borrar la rama integrada obligatoriamente",
+            "Continuar la operación de merge y crear el resultado correspondiente"
+          ],
+          "correct": "D",
+          "explanation": "La continuación usa el índice resuelto y permite finalizar la fusión conforme al mensaje y opciones pendientes.",
+          "citation": "git-merge — --continue",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-033",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué intenta hacer la cancelación de una fusión en curso?",
+          "options": [
+            "Volver al estado anterior a la fusión en la medida permitida por el estado inicial",
+            "Conservar el merge commit y borrar sus padres",
+            "Convertir el conflicto en un rebase",
+            "Eliminar todas las ramas locales"
+          ],
+          "correct": "A",
+          "explanation": "--abort intenta reconstruir el estado previo a la operación de merge y abandona la integración pendiente.",
+          "citation": "git-merge — --abort",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-034",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué diferencia expresa salir de una fusión sin abortarla?",
+          "options": [
+            "Resuelve todos los conflictos escogiendo theirs",
+            "Abandona la operación pendiente sin restaurar necesariamente el estado previo de los archivos",
+            "Borra el commit de base",
+            "Crea un commit fast-forward"
+          ],
+          "correct": "B",
+          "explanation": "--quit olvida la operación de merge en curso, pero deja el índice y el working tree tal como están.",
+          "citation": "git-merge — --quit",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-035",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "En un conflicto de fusión, ¿qué significan normalmente ours y theirs?",
+          "options": [
+            "La versión del sistema y la global",
+            "El índice y el reflog",
+            "La versión de la rama actual y la versión de la rama que se integra, respectivamente",
+            "El commit raíz y el tag"
+          ],
+          "correct": "C",
+          "explanation": "La terminología distingue el lado checkout de la rama que se está integrando, aunque el significado contextual debe comprobarse en la operación concreta.",
+          "citation": "git-merge — HOW CONFLICTS ARE PRESENTED",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-036",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué caracteriza una fusión que combina varias cabezas en una sola operación?",
+          "options": [
+            "Siempre es un fast-forward sin commit",
+            "Solo opera sobre archivos ignorados",
+            "Es equivalente a guardar un stash",
+            "Puede producir un merge commit con más de dos padres cuando la estrategia lo permite"
+          ],
+          "correct": "D",
+          "explanation": "Una fusión de múltiples heads puede crear un commit que registra más de dos padres y la integración conjunta.",
+          "citation": "git-merge — MERGING MULTIPLE HEADS",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-037",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Qué opción permite seleccionar explícitamente una estrategia de fusión?",
+          "options": [
+            "La opción -s/--strategy seguida del nombre de estrategia",
+            "La opción --index del stash",
+            "La opción -m de branch",
+            "La opción --show-current de switch"
+          ],
+          "correct": "A",
+          "explanation": "git merge admite -s o --strategy para escoger el algoritmo de integración, además de sus opciones de estrategia.",
+          "citation": "git-merge — -s/--strategy",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-038",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "¿Por qué --no-commit por sí sola no detiene una fusión que puede ser fast-forward?",
+          "options": [
+            "Porque siempre activa un rebase",
+            "Porque un fast-forward no crea un commit donde insertar una pausa",
+            "Porque solo modifica tags",
+            "Porque el índice no existe durante una fusión rápida"
+          ],
+          "correct": "B",
+          "explanation": "Para impedir también el avance rápido y asegurar una pausa previa al commit de merge debe combinarse con --no-ff.",
+          "citation": "git-merge — --no-commit",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-039",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Qué finalidad tiene permitir la edición del mensaje generado para un commit de fusión?",
+          "options": [
+            "Cambiar el merge base sin reescribir commits",
+            "Marcar conflictos como resueltos automáticamente",
+            "Ajustar el mensaje del merge antes de registrarlo",
+            "Crear una rama a partir del índice"
+          ],
+          "correct": "C",
+          "explanation": "La edición afecta al mensaje del commit de integración, no al algoritmo que calcula sus árboles.",
+          "citation": "git-merge — --edit",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-040",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Si una fusión se detiene por conflicto, ¿qué secuencia representa la recuperación normal?",
+          "options": [
+            "Cambiar user.name y volver a ejecutar init",
+            "Borrar MERGE_HEAD manualmente y forzar push",
+            "Crear un tag ligero y eliminar HEAD",
+            "Resolver rutas, añadirlas al índice y continuar o abortar según la decisión"
+          ],
+          "correct": "D",
+          "explanation": "El flujo documentado separa la resolución y su registro en el índice de la decisión final de continuar o abandonar.",
+          "citation": "git-merge — HOW CONFLICTS ARE PRESENTED; git-merge — --continue; --abort",
+          "source_id": "GIT-2.50"
+        }
+      ]
+    }
+  ]
+}

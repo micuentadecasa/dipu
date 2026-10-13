@@ -18178,3 +18178,1028 @@ SEED_QUESTIONS.extend([
     }
 ])
 # QUESTION_BANK_ACCEPTED_TOPIC_33_LOT_05_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_34_LOT_01_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 34,
+        "question": "¿Qué es principalmente una rama local de Git?",
+        "option_a": "Una referencia móvil que suele señalar un commit",
+        "option_b": "Un archivo que contiene todos los blobs",
+        "option_c": "Un segundo índice de configuración",
+        "option_d": "Un almacén independiente de objetos",
+        "correct": "A",
+        "explanation": "Una rama es una referencia que puede avanzar cuando se crean commits, mientras comparte la base de objetos del repositorio."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué operación crea una rama llamada feature situada en el commit actual?",
+        "option_a": "git branch --delete feature",
+        "option_b": "git branch feature",
+        "option_c": "git switch --detach feature",
+        "option_d": "git branch --show-current feature",
+        "correct": "B",
+        "explanation": "La forma simple de git branch crea una referencia nueva en el punto indicado, que por defecto es HEAD."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué opción de cambio de rama crea una nueva rama y la deja activa?",
+        "option_a": "git switch --discard nombre",
+        "option_b": "git switch --detach nombre",
+        "option_c": "git switch --create nombre",
+        "option_d": "git switch --guess nombre",
+        "correct": "C",
+        "explanation": "--create (o -c) crea la rama y cambia a ella en una sola operación."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué información se obtiene al consultar cuál es la rama activa?",
+        "option_a": "El hash de todos los objetos",
+        "option_b": "La lista de conflictos resueltos",
+        "option_c": "El contenido de la configuración global",
+        "option_d": "La rama actualmente comprobada, si HEAD está unido a una rama",
+        "correct": "D",
+        "explanation": "La consulta de la rama actual identifica el nombre de la rama asociada a HEAD y no enumera todo el historial."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué operación permite cambiar el nombre de una rama local?",
+        "option_a": "git branch --move antiguo nuevo",
+        "option_b": "git branch --copy antiguo nuevo",
+        "option_c": "git branch --contains antiguo nuevo",
+        "option_d": "git branch --merged antiguo nuevo",
+        "correct": "A",
+        "explanation": "La opción de movimiento renombra la referencia y actualiza la configuración asociada cuando corresponde."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué condición protege el borrado normal de una rama local?",
+        "option_a": "Que la rama tenga un remoto",
+        "option_b": "Que su punta esté completamente contenida en la rama actual",
+        "option_c": "Que la rama no tenga ningún commit",
+        "option_d": "Que exista un stash con el mismo nombre",
+        "correct": "B",
+        "explanation": "El borrado normal con -d exige que la rama esté fusionada de forma alcanzable desde la rama actual u otra condición segura documentada."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué diferencia práctica tiene el borrado forzado de una rama?",
+        "option_a": "Convierte la rama en tag anotado",
+        "option_b": "Conserva siempre una copia de trabajo separada",
+        "option_c": "Puede eliminar la referencia aunque Git no la considere fusionada",
+        "option_d": "Solo elimina ramas remotas",
+        "correct": "C",
+        "explanation": "-D combina el borrado con la fuerza y permite quitar una rama cuya punta no está fusionada según la comprobación normal."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué resultado busca cambiar desde la rama actual a una rama local existente?",
+        "option_a": "Actualizar el índice de configuración",
+        "option_b": "Borrar la rama de origen",
+        "option_c": "Crear un commit de integración",
+        "option_d": "Comprobar la otra rama y ajustar HEAD a ella",
+        "correct": "D",
+        "explanation": "El cambio de rama actualiza HEAD y normalmente el índice y el working tree para reflejar la rama destino."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué comando sirve para enumerar referencias de rama con sus nombres?",
+        "option_a": "git branch --list",
+        "option_b": "git branch --delete",
+        "option_c": "git branch --unset-upstream",
+        "option_d": "git branch --edit-description",
+        "correct": "A",
+        "explanation": "--list muestra las ramas que coinciden con el patrón indicado o todas si no se da patrón."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué pregunta responde la comprobación de ramas que contienen un commit?",
+        "option_a": "Qué archivos están ignorados",
+        "option_b": "Qué ramas alcanzan el commit indicado desde su historia",
+        "option_c": "Qué ramas tienen conflictos sin resolver",
+        "option_d": "Qué ramas pertenecen a otro repositorio",
+        "correct": "B",
+        "explanation": "La opción --contains selecciona las ramas cuya punta alcanza el commit especificado."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Para qué sirve identificar ramas ya fusionadas?",
+        "option_a": "Cambiar todos sus commits de autor",
+        "option_b": "Crear una rama huérfana",
+        "option_c": "Localizar ramas que pueden ser candidatas al borrado seguro",
+        "option_d": "Aplicar un stash a cada una",
+        "correct": "C",
+        "explanation": "--merged muestra referencias alcanzables desde el punto indicado y ayuda a distinguir ramas integradas."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué expresa la consulta de ramas no fusionadas?",
+        "option_a": "Ramas sin working tree",
+        "option_b": "Ramas que solo contienen tags ligeros",
+        "option_c": "Ramas sin configuración local",
+        "option_d": "Ramas cuya punta no es alcanzable desde el commit de referencia",
+        "correct": "D",
+        "explanation": "--no-merged invierte la selección de --merged y muestra las ramas aún no integradas en el punto consultado."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué efecto tiene copiar una rama local?",
+        "option_a": "Crea otra referencia con la misma punta sin mover la original",
+        "option_b": "Duplica físicamente todos los objetos del repositorio",
+        "option_c": "Convierte la rama en un remoto",
+        "option_d": "Fusiona automáticamente sus cambios",
+        "correct": "A",
+        "explanation": "--copy crea una nueva referencia de rama basada en la existente y mantiene intacta la referencia original."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué permite hacer la actualización forzada de una rama con un punto de inicio?",
+        "option_a": "Guardar archivos sin seguimiento en un stash",
+        "option_b": "Mover su referencia a otro commit sin cambiar necesariamente la rama activa",
+        "option_c": "Resolver cualquier conflicto automáticamente",
+        "option_d": "Convertir un merge en rebase",
+        "correct": "B",
+        "explanation": "La forma de git branch -f mueve la referencia nombrada al start-point especificado, sujeta a las restricciones documentadas."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué estado se obtiene al comprobar directamente un commit en vez de una rama?",
+        "option_a": "Se crea automáticamente un merge commit",
+        "option_b": "El índice pasa a ser un remoto",
+        "option_c": "HEAD queda desacoplado de una rama móvil",
+        "option_d": "El commit se elimina de la historia",
+        "correct": "C",
+        "explanation": "Al comprobar un commit directamente, HEAD apunta al commit y no a una referencia de rama que avance con nuevos commits."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué relación hay entre crear una rama con checkout -b y la operación moderna equivalente?",
+        "option_a": "La primera solo consulta refs y la segunda borra archivos",
+        "option_b": "La primera crea un stash y la segunda un tag",
+        "option_c": "No hay relación funcional",
+        "option_d": "Ambas crean una rama y cambian a ella",
+        "correct": "D",
+        "explanation": "checkout -b combina creación y cambio; switch -c expresa la misma intención con la interfaz dedicada a ramas."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué mantiene normalmente HEAD cuando se está trabajando sobre una rama local?",
+        "option_a": "Una referencia simbólica al nombre de la rama activa",
+        "option_b": "Una copia de cada archivo ignorado",
+        "option_c": "El último stash aplicado",
+        "option_d": "La configuración del servidor remoto",
+        "correct": "A",
+        "explanation": "En el estado normal HEAD es simbólico y nombra la rama comprobada, cuya ref señala la punta del historial."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué ocurre con los objetos al crear una rama local dentro del mismo repositorio?",
+        "option_a": "Se descargan todos los objetos desde un remoto",
+        "option_b": "Se crea principalmente otra referencia al commit, no una copia completa de objetos",
+        "option_c": "Se elimina la referencia a HEAD",
+        "option_d": "Se transforma cada commit en un blob",
+        "correct": "B",
+        "explanation": "Las ramas son referencias ligeras dentro del repositorio y comparten la base de objetos alcanzable."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Por qué puede rechazar Git un cambio de rama aunque la rama destino exista?",
+        "option_a": "Porque toda rama debe tener un tag",
+        "option_b": "Porque cambiar de rama siempre requiere una fusión",
+        "option_c": "Porque cambios locales podrían sobrescribirse al actualizar el working tree",
+        "option_d": "Porque HEAD nunca puede cambiar dos veces",
+        "correct": "C",
+        "explanation": "Git evita perder modificaciones locales incompatibles con el estado que tendría la rama destino."
+    },
+    {
+        "topic_num": 34,
+        "question": "Tras borrar una rama local por error, ¿qué recurso local puede ayudar a localizar su antigua punta?",
+        "option_a": "El archivo .gitignore",
+        "option_b": "La salida de git status de otro clon",
+        "option_c": "El índice de configuración global",
+        "option_d": "El reflog de la referencia o de HEAD, mientras conserve la entrada",
+        "correct": "D",
+        "explanation": "El reflog registra actualizaciones locales de referencias y HEAD, por lo que puede revelar la posición anterior durante su retención."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_34_LOT_01_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_34_LOT_02_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 34,
+        "question": "¿Qué operación integra los cambios alcanzables desde otra rama en la rama actual?",
+        "option_a": "git merge nombre",
+        "option_b": "git branch --copy nombre",
+        "option_c": "git switch --detach nombre",
+        "option_d": "git stash show nombre",
+        "correct": "A",
+        "explanation": "git merge incorpora en la rama actual la historia de uno o más commits nombrados."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué describe una integración fast-forward?",
+        "option_a": "Se crean dos commits nuevos por cada padre",
+        "option_b": "La referencia actual avanza hasta una descendiente sin crear un commit de merge",
+        "option_c": "Se guardan cambios no committeados en un stash",
+        "option_d": "Se reescriben todos los commits de la rama integrada",
+        "correct": "B",
+        "explanation": "Si la punta actual es ancestro de la otra, Git puede mover la referencia directamente y no necesita un commit de integración."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué solicita la opción --no-ff al fusionar una rama?",
+        "option_a": "Rechazar toda fusión rápida",
+        "option_b": "Borrar la rama fusionada",
+        "option_c": "Crear un commit de merge incluso cuando sería posible avanzar directamente",
+        "option_d": "Convertir la fusión en rebase interactivo",
+        "correct": "C",
+        "explanation": "--no-ff fuerza un commit de merge, lo que conserva explícitamente la existencia de la rama integrada en la topología."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué política aplica --ff-only durante una fusión?",
+        "option_a": "Fuerza siempre un merge commit",
+        "option_b": "Resuelve conflictos eligiendo ours",
+        "option_c": "Guarda el índice en un stash",
+        "option_d": "Permite únicamente un avance rápido y falla si se necesita un merge commit",
+        "correct": "D",
+        "explanation": "--ff-only aborta si la integración no puede representarse como fast-forward."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué representa el merge base entre dos líneas de desarrollo?",
+        "option_a": "Un commit común adecuado para calcular la integración de ambas historias",
+        "option_b": "El último stash creado",
+        "option_c": "La rama remota predeterminada",
+        "option_d": "El índice antes de ejecutar add",
+        "correct": "A",
+        "explanation": "El merge base es un ancestro común usado por los algoritmos de integración, especialmente en una fusión de tres vías."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Cuándo necesita Git una fusión de tres vías?",
+        "option_a": "Siempre que exista una sola rama",
+        "option_b": "Cuando ninguna punta es ancestro directo de la otra y debe combinar dos cambios desde una base común",
+        "option_c": "Solo al crear un stash",
+        "option_d": "Únicamente para tags anotados",
+        "correct": "B",
+        "explanation": "La fusión de tres vías compara las dos puntas con un ancestro común cuando no basta mover una referencia."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué situación produce normalmente un conflicto de fusión?",
+        "option_a": "Una rama que está completamente contenida en otra",
+        "option_b": "Una referencia que no tiene nombre",
+        "option_c": "Cambios incompatibles en una misma región que el algoritmo no puede combinar con seguridad",
+        "option_d": "Un working tree sin archivos ignorados",
+        "correct": "C",
+        "explanation": "Un conflicto indica que la combinación automática no puede elegir una interpretación única para cambios solapados o estructuralmente incompatibles."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué debe hacer una persona con un archivo marcado en conflicto antes de continuar una fusión?",
+        "option_a": "Borrar siempre el archivo y recrearlo",
+        "option_b": "Ejecutar reset --hard sin revisar nada",
+        "option_c": "Crear una segunda rama remota",
+        "option_d": "Editar el contenido, elegir una solución y marcar el archivo como resuelto",
+        "correct": "D",
+        "explanation": "Tras resolver manualmente las marcas, git add registra la versión resuelta en el índice para que la fusión pueda continuar."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué indica la existencia de MERGE_HEAD durante una fusión?",
+        "option_a": "Que Git conserva la punta o puntas que se están integrando mientras la operación está pendiente",
+        "option_b": "Que el repositorio no tiene HEAD",
+        "option_c": "Que se ha creado un stash vacío",
+        "option_d": "Que solo queda por cambiar la configuración global",
+        "correct": "A",
+        "explanation": "MERGE_HEAD permite a Git saber qué commit o commits se están fusionando al completar el merge."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué inspección ayuda a localizar archivos no resueltos durante una fusión?",
+        "option_a": "Listar únicamente los tags anotados",
+        "option_b": "Consultar el estado del repositorio, que enumera rutas en conflicto",
+        "option_c": "Consultar user.email",
+        "option_d": "Mostrar el reflog de un remoto",
+        "correct": "B",
+        "explanation": "git status muestra las rutas no fusionadas y orienta sobre las acciones de resolución pendientes."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué efecto tiene añadir al índice un archivo cuyo conflicto ya se resolvió?",
+        "option_a": "Crea automáticamente una nueva rama",
+        "option_b": "Reinicia la fusión desde el merge base",
+        "option_c": "Registra la versión elegida como resolución de esa ruta",
+        "option_d": "Elimina todos los conflictos del repositorio",
+        "correct": "C",
+        "explanation": "git add sustituye las entradas de conflicto de la ruta por la versión resuelta preparada para el commit de merge."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué paso completa una fusión después de que todas las rutas conflictivas estén resueltas y preparadas?",
+        "option_a": "Aplicar el stash más antiguo",
+        "option_b": "Desacoplar HEAD",
+        "option_c": "Borrar la rama integrada obligatoriamente",
+        "option_d": "Continuar la operación de merge y crear el resultado correspondiente",
+        "correct": "D",
+        "explanation": "La continuación usa el índice resuelto y permite finalizar la fusión conforme al mensaje y opciones pendientes."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué intenta hacer la cancelación de una fusión en curso?",
+        "option_a": "Volver al estado anterior a la fusión en la medida permitida por el estado inicial",
+        "option_b": "Conservar el merge commit y borrar sus padres",
+        "option_c": "Convertir el conflicto en un rebase",
+        "option_d": "Eliminar todas las ramas locales",
+        "correct": "A",
+        "explanation": "--abort intenta reconstruir el estado previo a la operación de merge y abandona la integración pendiente."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué diferencia expresa salir de una fusión sin abortarla?",
+        "option_a": "Resuelve todos los conflictos escogiendo theirs",
+        "option_b": "Abandona la operación pendiente sin restaurar necesariamente el estado previo de los archivos",
+        "option_c": "Borra el commit de base",
+        "option_d": "Crea un commit fast-forward",
+        "correct": "B",
+        "explanation": "--quit olvida la operación de merge en curso, pero deja el índice y el working tree tal como están."
+    },
+    {
+        "topic_num": 34,
+        "question": "En un conflicto de fusión, ¿qué significan normalmente ours y theirs?",
+        "option_a": "La versión del sistema y la global",
+        "option_b": "El índice y el reflog",
+        "option_c": "La versión de la rama actual y la versión de la rama que se integra, respectivamente",
+        "option_d": "El commit raíz y el tag",
+        "correct": "C",
+        "explanation": "La terminología distingue el lado checkout de la rama que se está integrando, aunque el significado contextual debe comprobarse en la operación concreta."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué caracteriza una fusión que combina varias cabezas en una sola operación?",
+        "option_a": "Siempre es un fast-forward sin commit",
+        "option_b": "Solo opera sobre archivos ignorados",
+        "option_c": "Es equivalente a guardar un stash",
+        "option_d": "Puede producir un merge commit con más de dos padres cuando la estrategia lo permite",
+        "correct": "D",
+        "explanation": "Una fusión de múltiples heads puede crear un commit que registra más de dos padres y la integración conjunta."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué opción permite seleccionar explícitamente una estrategia de fusión?",
+        "option_a": "La opción -s/--strategy seguida del nombre de estrategia",
+        "option_b": "La opción --index del stash",
+        "option_c": "La opción -m de branch",
+        "option_d": "La opción --show-current de switch",
+        "correct": "A",
+        "explanation": "git merge admite -s o --strategy para escoger el algoritmo de integración, además de sus opciones de estrategia."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Por qué --no-commit por sí sola no detiene una fusión que puede ser fast-forward?",
+        "option_a": "Porque siempre activa un rebase",
+        "option_b": "Porque un fast-forward no crea un commit donde insertar una pausa",
+        "option_c": "Porque solo modifica tags",
+        "option_d": "Porque el índice no existe durante una fusión rápida",
+        "correct": "B",
+        "explanation": "Para impedir también el avance rápido y asegurar una pausa previa al commit de merge debe combinarse con --no-ff."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué finalidad tiene permitir la edición del mensaje generado para un commit de fusión?",
+        "option_a": "Cambiar el merge base sin reescribir commits",
+        "option_b": "Marcar conflictos como resueltos automáticamente",
+        "option_c": "Ajustar el mensaje del merge antes de registrarlo",
+        "option_d": "Crear una rama a partir del índice",
+        "correct": "C",
+        "explanation": "La edición afecta al mensaje del commit de integración, no al algoritmo que calcula sus árboles."
+    },
+    {
+        "topic_num": 34,
+        "question": "Si una fusión se detiene por conflicto, ¿qué secuencia representa la recuperación normal?",
+        "option_a": "Cambiar user.name y volver a ejecutar init",
+        "option_b": "Borrar MERGE_HEAD manualmente y forzar push",
+        "option_c": "Crear un tag ligero y eliminar HEAD",
+        "option_d": "Resolver rutas, añadirlas al índice y continuar o abortar según la decisión",
+        "correct": "D",
+        "explanation": "El flujo documentado separa la resolución y su registro en el índice de la decisión final de continuar o abandonar."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_34_LOT_02_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_34_LOT_03_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 34,
+        "question": "¿Cuál es el propósito general de rebase?",
+        "option_a": "Reaplicar commits de una línea sobre otra base para cambiar su punto de partida",
+        "option_b": "Guardar temporalmente cambios no committeados",
+        "option_c": "Crear una referencia remota",
+        "option_d": "Mostrar únicamente los objetos blob",
+        "correct": "A",
+        "explanation": "Rebase toma commits seleccionados y los vuelve a aplicar sobre una base distinta, generando una historia reescrita."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué expresa ejecutar git rebase upstream desde una rama de trabajo?",
+        "option_a": "Fusionar siempre creando un commit de dos padres",
+        "option_b": "Reaplicar los commits propios sobre la punta de upstream",
+        "option_c": "Guardar el working tree como stash",
+        "option_d": "Eliminar la rama upstream",
+        "correct": "B",
+        "explanation": "La forma básica usa upstream como nueva base y aplica sobre ella los commits que están en la rama actual y no en upstream."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué permite especificar la opción --onto durante un rebase?",
+        "option_a": "La lista de archivos ignorados",
+        "option_b": "El mensaje del primer commit",
+        "option_c": "Una nueva base explícita diferente del upstream usado para delimitar commits",
+        "option_d": "La referencia del stash activo",
+        "correct": "C",
+        "explanation": "--onto separa la nueva base de la referencia que determina qué commits se reaplican."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué consecuencia tienen normalmente los commits reaplicados por rebase?",
+        "option_a": "Se convierten en objetos blob",
+        "option_b": "Mantienen necesariamente el mismo hash",
+        "option_c": "Desaparecen del object database de inmediato",
+        "option_d": "Reciben nuevos identificadores porque cambia su padre o contenido contextual",
+        "correct": "D",
+        "explanation": "El cambio de padre altera la identidad criptográfica de los commits recreados."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Por qué requiere cautela reescribir una rama que otras personas ya usan?",
+        "option_a": "Porque los commits reemplazados dejan de coincidir con los identificadores que otros ya conocen",
+        "option_b": "Porque rebase solo funciona sin working tree",
+        "option_c": "Porque impide crear ramas nuevas",
+        "option_d": "Porque transforma todos los tags en remotos",
+        "correct": "A",
+        "explanation": "La reescritura puede obligar a reconciliar historias divergentes y complica la colaboración sobre commits publicados."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué papel puede desempeñar --fork-point al calcular desde dónde reaplicar commits?",
+        "option_a": "Forzar una fusión octopus",
+        "option_b": "Usar reflogs de la referencia para encontrar un punto de bifurcación más adecuado cuando procede",
+        "option_c": "Guardar el índice en un objeto tag",
+        "option_d": "Seleccionar archivos sin seguimiento",
+        "correct": "B",
+        "explanation": "La opción puede emplear el reflog de upstream para evitar reaplicar commits que ya fueron descartados de su historia visible."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué ocurre si rebase encuentra un conflicto durante la reaplicación?",
+        "option_a": "Git crea siempre un merge commit automáticamente",
+        "option_b": "La rama actual se elimina",
+        "option_c": "La operación se pausa y requiere resolver el conflicto antes de continuar, saltar o abortar",
+        "option_d": "El stash se aplica sin confirmación",
+        "correct": "C",
+        "explanation": "Rebase detiene la secuencia para que se resuelva el parche que no aplica limpiamente."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué comando se usa para seguir una reaplicación después de resolver y preparar el conflicto?",
+        "option_a": "git rebase --show-current",
+        "option_b": "git rebase --merged",
+        "option_c": "git rebase --list",
+        "option_d": "git rebase --continue",
+        "correct": "D",
+        "explanation": "--continue retoma la secuencia usando la solución registrada en el índice."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué opción omite el commit que está causando el conflicto durante un rebase?",
+        "option_a": "git rebase --skip",
+        "option_b": "git rebase --quit",
+        "option_c": "git rebase --edit",
+        "option_d": "git rebase --contains",
+        "correct": "A",
+        "explanation": "--skip descarta el commit conflictivo de la secuencia y pasa al siguiente."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué efecto pretende la cancelación de un rebase en curso?",
+        "option_a": "Crear una copia de todos los commits reaplicados",
+        "option_b": "Restaurar la rama a su estado anterior al comienzo del rebase",
+        "option_c": "Convertir el rebase en stash",
+        "option_d": "Cambiar únicamente el mensaje del commit",
+        "correct": "B",
+        "explanation": "--abort detiene la operación y procura devolver HEAD y la rama al estado previo."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué diferencia expresa salir de un rebase sin restaurarlo?",
+        "option_a": "Borra toda la rama original",
+        "option_b": "Resuelve automáticamente el siguiente commit",
+        "option_c": "Deja de gestionar la operación, conservando el estado actual del working tree y HEAD",
+        "option_d": "Fuerza un fast-forward",
+        "correct": "C",
+        "explanation": "--quit termina el seguimiento de la operación sin restablecer HEAD, índice ni working tree."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué habilita el modo interactivo de rebase?",
+        "option_a": "Cambiar la configuración global del usuario",
+        "option_b": "Aplicar un stash sin tocar la rama",
+        "option_c": "Mostrar solo ramas fusionadas",
+        "option_d": "Editar la secuencia de commits y sus acciones antes de reaplicarlos",
+        "correct": "D",
+        "explanation": "-i o --interactive abre una lista de tareas en la que pueden reordenarse, combinarse o editarse commits."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué acción del todo interactivo combina un commit con el anterior y permite ajustar el mensaje?",
+        "option_a": "squash",
+        "option_b": "pick",
+        "option_c": "drop",
+        "option_d": "exec",
+        "correct": "A",
+        "explanation": "squash une el cambio con el commit anterior y solicita editar el mensaje combinado."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué automatiza --autosquash en un rebase interactivo?",
+        "option_a": "Aplica todos los stashes al final",
+        "option_b": "Reordena commits fixup!/squash! junto a sus objetivos y ajusta sus acciones",
+        "option_c": "Fuerza que cada commit tenga dos padres",
+        "option_d": "Elimina todas las ramas fusionadas",
+        "correct": "B",
+        "explanation": "--autosquash reconoce los prefijos de commits auxiliares y prepara el todo para combinarlos con su commit objetivo."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Para qué sirve --exec en un rebase interactivo?",
+        "option_a": "Elegir la rama upstream automáticamente",
+        "option_b": "Guardar archivos ignorados",
+        "option_c": "Añadir un comando que se ejecutará después de cada commit reaplicado",
+        "option_d": "Mostrar la reflog de cada rama",
+        "correct": "C",
+        "explanation": "--exec añade líneas exec al todo para ejecutar una orden después de cada commit creado durante la secuencia."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué intenta conservar --rebase-merges frente a un rebase lineal simple?",
+        "option_a": "Los números de línea del working tree",
+        "option_b": "Los stashes borrados",
+        "option_c": "La configuración del sistema",
+        "option_d": "La estructura de ramas y commits de merge de la historia seleccionada",
+        "correct": "D",
+        "explanation": "--rebase-merges reconstruye commits de merge para preservar la topología en vez de aplanarla completamente."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué busca preservar --keep-base cuando se usa al reaplicar cambios?",
+        "option_a": "La base de bifurcación original mientras incorpora cambios de la referencia upstream mediante la forma documentada",
+        "option_b": "El mismo hash de todos los commits",
+        "option_c": "Los archivos ignorados dentro del commit",
+        "option_d": "La referencia del stash como rama",
+        "correct": "A",
+        "explanation": "--keep-base selecciona la base de fork original como punto de reaplicación y evita moverla simplemente a la punta upstream."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué decisión representa configurar el tratamiento de commits vacíos durante rebase?",
+        "option_a": "Si el repositorio debe convertirse en bare",
+        "option_b": "Si un commit que queda sin cambios tras aplicar debe descartarse, conservarse o detener la operación",
+        "option_c": "Si se borran tags remotos",
+        "option_d": "Si el índice debe ser global",
+        "correct": "B",
+        "explanation": "Las opciones de commits vacíos controlan la política cuando una reaplicación no introduce diferencias nuevas."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Cuál es una diferencia de topología entre merge y rebase?",
+        "option_a": "Merge siempre borra la rama y rebase nunca cambia hashes",
+        "option_b": "Ambos producen siempre exactamente la misma historia",
+        "option_c": "Merge añade una integración con padres existentes; rebase recrea commits sobre otra base",
+        "option_d": "Rebase solo modifica archivos ignorados",
+        "correct": "C",
+        "explanation": "La fusión conserva las líneas y añade una relación de integración, mientras rebase cambia los padres de commits recreados."
+    },
+    {
+        "topic_num": 34,
+        "question": "Tras resolver un conflicto de rebase, ¿qué riesgo existe si se continúa sin preparar la ruta?",
+        "option_a": "Se crea automáticamente un tag firmado",
+        "option_b": "Se cambia el remoto por defecto",
+        "option_c": "Se borra el merge base",
+        "option_d": "La solución no queda registrada para el commit y la operación no puede avanzar correctamente",
+        "correct": "D",
+        "explanation": "La resolución debe reflejarse en el índice, normalmente mediante git add, antes de continuar la secuencia."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_34_LOT_03_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_34_LOT_04_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 34,
+        "question": "¿Qué guarda principalmente una entrada de stash?",
+        "option_a": "Cambios locales del working tree y, según las opciones, del índice para recuperarlos después",
+        "option_b": "Solo commits ya publicados en un remoto",
+        "option_c": "La configuración completa del sistema",
+        "option_d": "Todas las ramas del repositorio",
+        "correct": "A",
+        "explanation": "Stash crea objetos y una referencia para apartar modificaciones locales y dejar limpio el estado de trabajo."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué operación crea una entrada temporal con las modificaciones actuales?",
+        "option_a": "git stash drop",
+        "option_b": "git stash push",
+        "option_c": "git stash clear",
+        "option_d": "git stash branch",
+        "correct": "B",
+        "explanation": "stash push guarda el estado sucio del working tree y devuelve el árbol de trabajo al estado de la base, según las opciones."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué muestra la enumeración de stashes?",
+        "option_a": "Las ramas que contienen un commit",
+        "option_b": "Los conflictos de una fusión futura",
+        "option_c": "Las entradas guardadas y sus nombres relativos como stash@{0}",
+        "option_d": "Los valores de user.name",
+        "correct": "C",
+        "explanation": "stash list presenta las entradas de la pila y sus mensajes resumidos."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué sirve para inspeccionar el cambio representado por una entrada de stash?",
+        "option_a": "git stash clear",
+        "option_b": "git stash create --drop",
+        "option_c": "git branch --stash-only",
+        "option_d": "git stash show",
+        "correct": "D",
+        "explanation": "stash show muestra por defecto un resumen de las diferencias y puede recibir opciones para más detalle."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué hace recuperar una entrada guardada sin retirarla de la pila?",
+        "option_a": "Aplica sus cambios al working tree y conserva la entrada",
+        "option_b": "Elimina la entrada después de aplicarla",
+        "option_c": "Crea un merge commit firmado",
+        "option_d": "Mueve HEAD a la base del stash",
+        "correct": "A",
+        "explanation": "stash apply restaura cambios sin eliminar la referencia de stash, a diferencia del comportamiento adicional de pop."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué diferencia principal tiene recuperar una entrada y retirarla de la pila?",
+        "option_a": "La variante pop siempre crea una rama remota",
+        "option_b": "La variante pop intenta aplicar y después elimina la entrada si la aplicación termina correctamente",
+        "option_c": "La variante apply borra el índice",
+        "option_d": "No existe diferencia",
+        "correct": "B",
+        "explanation": "pop combina aplicación y eliminación, aunque si hay conflictos la entrada puede conservarse para permitir otro intento."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué solicita la opción --index al aplicar un stash?",
+        "option_a": "Incluir siempre archivos ignorados",
+        "option_b": "Mostrar el hash del stash",
+        "option_c": "Intentar restaurar también el estado que estaba preparado en el índice",
+        "option_d": "Convertirlo en un commit de merge",
+        "correct": "C",
+        "explanation": "--index intenta recuperar el estado staged además de las modificaciones del working tree."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué opción incluye archivos sin seguimiento al guardar cambios en stash?",
+        "option_a": "-p/--patch-only",
+        "option_b": "-q/--quiet",
+        "option_c": "-m/--message-only",
+        "option_d": "-u/--include-untracked",
+        "correct": "D",
+        "explanation": "--include-untracked añade archivos no seguidos al contenido guardado, además de los cambios seguidos."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué opción incluye también archivos ignorados en una entrada de stash?",
+        "option_a": "-a/--all",
+        "option_b": "-u/--untracked-only",
+        "option_c": "-n/--number",
+        "option_d": "-l/--local",
+        "correct": "A",
+        "explanation": "--all incluye archivos sin seguimiento e ignorados en el stash, con las precauciones correspondientes."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué opción asigna un mensaje descriptivo al guardar cambios?",
+        "option_a": "-b/--branch",
+        "option_b": "-m/--message",
+        "option_c": "-r/--rebase",
+        "option_d": "-x/--exec",
+        "correct": "B",
+        "explanation": "-m permite asociar un texto al stash para identificar su propósito en la lista."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué utilidad tiene crear una rama nueva desde una entrada de stash?",
+        "option_a": "Borra todos los objetos del stash",
+        "option_b": "Fuerza una integración octopus",
+        "option_c": "Permite continuar el trabajo guardado sobre una rama basada en el commit donde se creó",
+        "option_d": "Cambia la configuración global",
+        "correct": "C",
+        "explanation": "stash branch crea una rama desde el commit donde se realizó el stash y aplica allí los cambios guardados."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué elimina una entrada concreta de la pila?",
+        "option_a": "git stash show",
+        "option_b": "git stash push",
+        "option_c": "git stash branch",
+        "option_d": "git stash drop",
+        "correct": "D",
+        "explanation": "stash drop retira de la referencia de stash la entrada indicada."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué alcance tiene limpiar la pila completa de stashes?",
+        "option_a": "Elimina todas las entradas guardadas y no es una operación fácilmente reversible por la referencia stash",
+        "option_b": "Solo oculta la entrada más reciente",
+        "option_c": "Convierte cada entrada en una rama",
+        "option_d": "Borra las ramas locales fusionadas",
+        "correct": "A",
+        "explanation": "stash clear elimina todas las entradas de la colección de stashes; debe usarse con cuidado."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Cómo se identifica normalmente la entrada más reciente de la pila?",
+        "option_a": "Con refs/heads/HEAD",
+        "option_b": "Con la notación stash@{0}",
+        "option_c": "Con MERGE_HEAD",
+        "option_d": "Con refs/blobs/latest",
+        "correct": "B",
+        "explanation": "Las entradas se nombran mediante la referencia especial stash y sus índices reflog, donde {0} es la más reciente."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué ocurre por defecto con un archivo sin seguimiento al ejecutar stash sin opciones de inclusión?",
+        "option_a": "Se convierte automáticamente en un commit",
+        "option_b": "Se añade siempre como archivo ignorado",
+        "option_c": "Normalmente no se guarda y permanece fuera del contenido de la entrada",
+        "option_d": "Se mueve a la rama actual",
+        "correct": "C",
+        "explanation": "La inclusión de no seguidos requiere --include-untracked o --all; el comportamiento predeterminado se centra en cambios seguidos."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué permite especificar una lista de rutas al guardar un stash?",
+        "option_a": "Seleccionar el merge base de una rama",
+        "option_b": "Firmar todos los commits futuros",
+        "option_c": "Cambiar el nombre de HEAD",
+        "option_d": "Limitar la operación a las rutas indicadas mediante el separador y el pathspec",
+        "correct": "D",
+        "explanation": "El pathspec permite elegir qué partes del working tree se guardan en la operación."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué propósito tiene conservar el índice al apartar solo parte del trabajo?",
+        "option_a": "Mantener preparados los cambios staged mientras se apartan otros cambios del working tree",
+        "option_b": "Crear dos padres para la rama",
+        "option_c": "Borrar archivos ignorados de forma segura",
+        "option_d": "Desactivar el reflog",
+        "correct": "A",
+        "explanation": "Opciones como --keep-index permiten dejar intacto el estado preparado mientras se guarda el resto."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Cuál es la diferencia entre incluir no seguidos y usar la inclusión total al crear stash?",
+        "option_a": "La primera borra no seguidos y la segunda solo los lista",
+        "option_b": "La primera añade no seguidos; la segunda añade además los ignorados",
+        "option_c": "Ambas operaciones son idénticas",
+        "option_d": "La primera crea una rama y la segunda un merge",
+        "correct": "B",
+        "explanation": "--include-untracked y --all tienen alcances distintos y el segundo incluye también las rutas ignoradas."
+    },
+    {
+        "topic_num": 34,
+        "question": "Si stash pop provoca conflictos, ¿qué sucede normalmente con la entrada?",
+        "option_a": "Se elimina antes de mostrar el conflicto",
+        "option_b": "Se convierte en una rama remota",
+        "option_c": "Puede conservarse para que los cambios se puedan intentar aplicar o resolver de nuevo",
+        "option_d": "Se rebasea automáticamente",
+        "correct": "C",
+        "explanation": "Cuando la aplicación no termina limpiamente, Git no elimina de forma normal la entrada para evitar perder el estado guardado."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué recurso puede ayudar a recuperar una entrada de stash eliminada recientemente?",
+        "option_a": "La lista de ramas fusionadas únicamente",
+        "option_b": "La configuración de merge.conflictStyle",
+        "option_c": "El archivo .gitignore",
+        "option_d": "El reflog y los objetos aún no recolectados, si se localiza su referencia a tiempo",
+        "correct": "D",
+        "explanation": "Los stashes usan referencias y objetos locales; tras borrarlos, el reflog o la recuperación de objetos puede ser una oportunidad temporal."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_34_LOT_04_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_34_LOT_05_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 34,
+        "question": "¿Qué relación describe mejor merge frente a rebase?",
+        "option_a": "Merge conserva las líneas y añade una integración; rebase recrea commits sobre una base",
+        "option_b": "Merge siempre aplana y rebase siempre crea dos padres",
+        "option_c": "Ambos eliminan la rama integrada",
+        "option_d": "Ambos solo afectan al índice",
+        "correct": "A",
+        "explanation": "La fusión conserva la topología y el rebase cambia los padres de los commits reaplicados."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué diferencia hay entre mover una rama y crear una nueva referencia desde su punta?",
+        "option_a": "Ambas operaciones eliminan la punta anterior",
+        "option_b": "Mover cambia la referencia existente; crear otra deja además disponible el nombre original",
+        "option_c": "Mover siempre hace rebase",
+        "option_d": "Crear otra referencia exige un remoto",
+        "correct": "B",
+        "explanation": "Las operaciones de branch sobre refs deben distinguir cambiar un nombre o puntero existente de copiarlo."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué estrategia suele ser más conservadora para una rama cuya historia ya fue compartida?",
+        "option_a": "Rebasear siempre con --onto el commit raíz",
+        "option_b": "Borrar y recrear la rama",
+        "option_c": "Integrar con merge para evitar reescribir los commits que otras personas conocen",
+        "option_d": "Guardar todo en stash y abandonar el historial",
+        "correct": "C",
+        "explanation": "Rebase cambia identificadores y puede romper referencias de colaboradores; merge añade integración sin reemplazar esos commits."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Cuándo suele ser apropiado un rebase local antes de compartir una rama?",
+        "option_a": "Cuando se debe conservar literalmente cada hash compartido",
+        "option_b": "Cuando hay un conflicto que no se quiere resolver",
+        "option_c": "Cuando se necesita incluir archivos ignorados",
+        "option_d": "Cuando se desea reorganizar commits propios y todavía no se ha publicado esa historia",
+        "correct": "D",
+        "explanation": "Rebase es más seguro antes de publicar porque los commits recreados aún no son referencias compartidas por otros."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué comprobación ayuda a seleccionar ramas integradas antes de limpiarlas?",
+        "option_a": "Comparar las ramas fusionadas con la referencia actual y revisar sus puntas",
+        "option_b": "Aplicar todos los stashes indiscriminadamente",
+        "option_c": "Mostrar solo user.email",
+        "option_d": "Desactivar los reflogs",
+        "correct": "A",
+        "explanation": "La consulta de ramas fusionadas ofrece una señal de alcanzabilidad, pero la eliminación debe seguir una revisión explícita."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué efecto tiene renombrar la rama activa con la operación de movimiento?",
+        "option_a": "Crea un merge commit con la rama anterior",
+        "option_b": "Actualiza el nombre de la referencia activa y mantiene su punta de commits",
+        "option_c": "Borra el working tree",
+        "option_d": "Convierte HEAD en un tag",
+        "correct": "B",
+        "explanation": "Renombrar una rama cambia el nombre de la ref, no la secuencia de commits que señala."
+    },
+    {
+        "topic_num": 34,
+        "question": "Durante un merge conflictivo, ¿qué representa una ruta aún no preparada en el índice?",
+        "option_a": "Que ya fue fusionada y solo falta el mensaje",
+        "option_b": "Que pertenece a un remoto inexistente",
+        "option_c": "Que su resolución no está registrada como versión final para continuar",
+        "option_d": "Que es necesariamente un archivo ignorado",
+        "correct": "C",
+        "explanation": "La entrada no fusionada indica que aún debe elegirse y añadir una versión resolviendo el conflicto."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Cómo se distinguen las acciones de abortar merge y abortar rebase?",
+        "option_a": "Ambas aplican el stash más reciente",
+        "option_b": "Merge abort borra ramas y rebase abort borra tags",
+        "option_c": "No hay estado previo en ninguna",
+        "option_d": "Cada una intenta restaurar el estado previo de su operación correspondiente",
+        "correct": "D",
+        "explanation": "Las operaciones mantienen metadatos y secuencias distintas, por lo que sus comandos de abortar actúan sobre su propia operación pendiente."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué opción protege cambios locales antes de cambiar de contexto de rama sin crear todavía un commit?",
+        "option_a": "Apartarlos temporalmente en un stash y recuperarlos después",
+        "option_b": "Forzar reset --hard sin revisar el contenido",
+        "option_c": "Borrar HEAD y volver a init",
+        "option_d": "Crear siempre un merge commit vacío",
+        "correct": "A",
+        "explanation": "Stash permite limpiar el working tree temporalmente y luego aplicar o extraer el trabajo en el contexto adecuado."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué es una rama en relación con el sistema de archivos del working tree?",
+        "option_a": "Un subdirectorio obligatorio bajo src",
+        "option_b": "Una referencia lógica de Git, no un directorio independiente con una copia completa",
+        "option_c": "Un archivo que contiene todos los cambios no seguidos",
+        "option_d": "Un remoto montado como carpeta",
+        "correct": "B",
+        "explanation": "La rama nombra una posición de historial; el checkout o switch actualiza un único working tree para reflejarla."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué caracteriza al commit creado por una integración no fast-forward?",
+        "option_a": "No tiene ningún padre",
+        "option_b": "Solo contiene el índice sin árbol",
+        "option_c": "Tiene como padres la punta de la línea actual y la punta integrada",
+        "option_d": "Es siempre un objeto tag",
+        "correct": "C",
+        "explanation": "Un merge commit registra la relación entre las líneas integradas mediante múltiples padres."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué relación parental cambia cuando se rebasea una serie de commits?",
+        "option_a": "Se elimina el árbol de cada commit",
+        "option_b": "Todos pasan a tener dos padres",
+        "option_c": "Solo cambia el nombre de la rama",
+        "option_d": "Los commits recreados pasan a tener como antecedente la nueva base o la serie reaplicada",
+        "correct": "D",
+        "explanation": "Rebase genera commits equivalentes con padres distintos, por eso sus identificadores cambian."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué rastro deja una integración fast-forward en la historia?",
+        "option_a": "No crea un merge commit; la referencia avanza hasta la punta descendiente",
+        "option_b": "Crea siempre un commit con dos padres",
+        "option_c": "Guarda automáticamente un stash",
+        "option_d": "Reordena los commits mediante todo interactivo",
+        "correct": "A",
+        "explanation": "Un avance rápido actualiza la referencia y deja la secuencia existente sin un nuevo commit de merge."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué combinación asegura que una integración lineal deje un commit explícito?",
+        "option_a": "Usar solo --ff-only",
+        "option_b": "Usar --no-ff, con --no-commit si también se necesita revisar antes de escribirlo",
+        "option_c": "Usar stash clear antes de fusionar",
+        "option_d": "Usar rebase --skip",
+        "correct": "B",
+        "explanation": "--no-ff impide el fast-forward; --no-commit puede añadir una pausa antes de crear el merge commit."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Por qué no basta con editar las marcas de conflicto para completar un merge?",
+        "option_a": "Porque el mensaje de commit se escribe en .gitignore",
+        "option_b": "Porque hay que crear un remoto nuevo",
+        "option_c": "Porque la versión resuelta debe registrarse en el índice antes de continuar",
+        "option_d": "Porque todo conflicto exige un rebase",
+        "correct": "C",
+        "explanation": "La edición cambia el working tree, pero git add comunica a Git que la ruta ya tiene una resolución preparada."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué diferencia conceptual hay entre stash y commit?",
+        "option_a": "Stash siempre es remoto; commit siempre es ignorado",
+        "option_b": "Ambos son exactamente la misma referencia",
+        "option_c": "Commit solo guarda archivos sin seguimiento",
+        "option_d": "Stash aparta temporalmente trabajo local; commit registra una instantánea en la historia de una rama",
+        "correct": "D",
+        "explanation": "El stash está pensado para posponer cambios locales, mientras el commit forma parte del historial nombrado por una rama o tag."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Por qué puede ser recuperable una punta tras borrar una rama?",
+        "option_a": "El reflog puede conservar el movimiento de la ref aunque el nombre de la rama ya no exista",
+        "option_b": "Porque cada rama se copia automáticamente a un remoto",
+        "option_c": "Porque merge siempre recrea la rama",
+        "option_d": "Porque .gitignore la restaura",
+        "correct": "A",
+        "explanation": "La eliminación de la ref no implica de inmediato la desaparición de los objetos y el reflog puede conservar la posición anterior."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué diferencia de seguridad existe entre borrar una rama con -d y con -D?",
+        "option_a": "-d borra remoto y -D solo lista local",
+        "option_b": "-d exige una condición de integración; -D omite esa protección y puede perder la única referencia nominal",
+        "option_c": "-d crea un tag y -D un stash",
+        "option_d": "No hay diferencia",
+        "correct": "B",
+        "explanation": "La opción normal comprueba la alcanzabilidad; la forzada permite borrar incluso una rama no fusionada."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué diferencia práctica hay entre aplicar un stash y extraerlo con pop cuando no hay conflictos?",
+        "option_a": "Apply elimina la entrada y pop la conserva",
+        "option_b": "Apply crea una rama y pop un merge commit",
+        "option_c": "Apply conserva la entrada; pop intenta eliminarla después de aplicar",
+        "option_d": "Ambos eliminan siempre todas las entradas",
+        "correct": "C",
+        "explanation": "La operación pop combina aplicación y eliminación, mientras apply deja la entrada disponible para reutilizarla."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué precaución documenta Git al abortar un merge iniciado con cambios locales no confirmados?",
+        "option_a": "Abortar siempre crea un commit de seguridad",
+        "option_b": "Los cambios no confirmados se publican en un remoto",
+        "option_c": "El merge base se convierte en stash automáticamente",
+        "option_d": "La reconstrucción del estado previo puede no recuperar fielmente esos cambios y debe evitarse confiar ciegamente en abort",
+        "correct": "D",
+        "explanation": "La documentación advierte que iniciar un merge con modificaciones locales puede hacer imposible reconstruir exactamente el estado anterior."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_34_LOT_05_END

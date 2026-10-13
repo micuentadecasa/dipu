@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-34-git-branches-rebase-merge-stash.md",
+  "batches": [
+    {
+      "topic_num": 34,
+      "lot_num": 5,
+      "source_ids": [
+        "GIT-2.50"
+      ],
+      "questions": [
+        {
+          "objective_id": "t34-lo-081",
+          "difficulty": "basic",
+          "type": "comparison",
+          "question": "¿Qué relación describe mejor merge frente a rebase?",
+          "options": [
+            "Merge conserva las líneas y añade una integración; rebase recrea commits sobre una base",
+            "Merge siempre aplana y rebase siempre crea dos padres",
+            "Ambos eliminan la rama integrada",
+            "Ambos solo afectan al índice"
+          ],
+          "correct": "A",
+          "explanation": "La fusión conserva la topología y el rebase cambia los padres de los commits reaplicados.",
+          "citation": "git-merge — DESCRIPTION; git-rebase — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-082",
+          "difficulty": "basic",
+          "type": "comparison",
+          "question": "¿Qué diferencia hay entre mover una rama y crear una nueva referencia desde su punta?",
+          "options": [
+            "Ambas operaciones eliminan la punta anterior",
+            "Mover cambia la referencia existente; crear otra deja además disponible el nombre original",
+            "Mover siempre hace rebase",
+            "Crear otra referencia exige un remoto"
+          ],
+          "correct": "B",
+          "explanation": "Las operaciones de branch sobre refs deben distinguir cambiar un nombre o puntero existente de copiarlo.",
+          "citation": "git-branch — -m/--move; git-branch — -c/--copy",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-083",
+          "difficulty": "basic",
+          "type": "scenario",
+          "question": "¿Qué estrategia suele ser más conservadora para una rama cuya historia ya fue compartida?",
+          "options": [
+            "Rebasear siempre con --onto el commit raíz",
+            "Borrar y recrear la rama",
+            "Integrar con merge para evitar reescribir los commits que otras personas conocen",
+            "Guardar todo en stash y abandonar el historial"
+          ],
+          "correct": "C",
+          "explanation": "Rebase cambia identificadores y puede romper referencias de colaboradores; merge añade integración sin reemplazar esos commits.",
+          "citation": "git-merge — DESCRIPTION; git-rebase — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-084",
+          "difficulty": "basic",
+          "type": "scenario",
+          "question": "¿Cuándo suele ser apropiado un rebase local antes de compartir una rama?",
+          "options": [
+            "Cuando se debe conservar literalmente cada hash compartido",
+            "Cuando hay un conflicto que no se quiere resolver",
+            "Cuando se necesita incluir archivos ignorados",
+            "Cuando se desea reorganizar commits propios y todavía no se ha publicado esa historia"
+          ],
+          "correct": "D",
+          "explanation": "Rebase es más seguro antes de publicar porque los commits recreados aún no son referencias compartidas por otros.",
+          "citation": "git-rebase — DESCRIPTION; git-rebase — RECOVERING FROM UPSTREAM REBASE",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-085",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué comprobación ayuda a seleccionar ramas integradas antes de limpiarlas?",
+          "options": [
+            "Comparar las ramas fusionadas con la referencia actual y revisar sus puntas",
+            "Aplicar todos los stashes indiscriminadamente",
+            "Mostrar solo user.email",
+            "Desactivar los reflogs"
+          ],
+          "correct": "A",
+          "explanation": "La consulta de ramas fusionadas ofrece una señal de alcanzabilidad, pero la eliminación debe seguir una revisión explícita.",
+          "citation": "git-branch — --merged; git-branch — -d/--delete",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-086",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué efecto tiene renombrar la rama activa con la operación de movimiento?",
+          "options": [
+            "Crea un merge commit con la rama anterior",
+            "Actualiza el nombre de la referencia activa y mantiene su punta de commits",
+            "Borra el working tree",
+            "Convierte HEAD en un tag"
+          ],
+          "correct": "B",
+          "explanation": "Renombrar una rama cambia el nombre de la ref, no la secuencia de commits que señala.",
+          "citation": "git-branch — -m/--move; gitrepository-layout — HEAD",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-087",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "Durante un merge conflictivo, ¿qué representa una ruta aún no preparada en el índice?",
+          "options": [
+            "Que ya fue fusionada y solo falta el mensaje",
+            "Que pertenece a un remoto inexistente",
+            "Que su resolución no está registrada como versión final para continuar",
+            "Que es necesariamente un archivo ignorado"
+          ],
+          "correct": "C",
+          "explanation": "La entrada no fusionada indica que aún debe elegirse y añadir una versión resolviendo el conflicto.",
+          "citation": "git-merge — HOW CONFLICTS ARE PRESENTED; git-add — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-088",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Cómo se distinguen las acciones de abortar merge y abortar rebase?",
+          "options": [
+            "Ambas aplican el stash más reciente",
+            "Merge abort borra ramas y rebase abort borra tags",
+            "No hay estado previo en ninguna",
+            "Cada una intenta restaurar el estado previo de su operación correspondiente"
+          ],
+          "correct": "D",
+          "explanation": "Las operaciones mantienen metadatos y secuencias distintas, por lo que sus comandos de abortar actúan sobre su propia operación pendiente.",
+          "citation": "git-merge — --abort; git-rebase — --abort",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-089",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "¿Qué opción protege cambios locales antes de cambiar de contexto de rama sin crear todavía un commit?",
+          "options": [
+            "Apartarlos temporalmente en un stash y recuperarlos después",
+            "Forzar reset --hard sin revisar el contenido",
+            "Borrar HEAD y volver a init",
+            "Crear siempre un merge commit vacío"
+          ],
+          "correct": "A",
+          "explanation": "Stash permite limpiar el working tree temporalmente y luego aplicar o extraer el trabajo en el contexto adecuado.",
+          "citation": "git-stash — DESCRIPTION; git-switch — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-090",
+          "difficulty": "intermediate",
+          "type": "definition",
+          "question": "¿Qué es una rama en relación con el sistema de archivos del working tree?",
+          "options": [
+            "Un subdirectorio obligatorio bajo src",
+            "Una referencia lógica de Git, no un directorio independiente con una copia completa",
+            "Un archivo que contiene todos los cambios no seguidos",
+            "Un remoto montado como carpeta"
+          ],
+          "correct": "B",
+          "explanation": "La rama nombra una posición de historial; el checkout o switch actualiza un único working tree para reflejarla.",
+          "citation": "gitglossary — branch; git-switch — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-091",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué caracteriza al commit creado por una integración no fast-forward?",
+          "options": [
+            "No tiene ningún padre",
+            "Solo contiene el índice sin árbol",
+            "Tiene como padres la punta de la línea actual y la punta integrada",
+            "Es siempre un objeto tag"
+          ],
+          "correct": "C",
+          "explanation": "Un merge commit registra la relación entre las líneas integradas mediante múltiples padres.",
+          "citation": "git-merge — TRUE MERGE; gitglossary — commit object",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-092",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué relación parental cambia cuando se rebasea una serie de commits?",
+          "options": [
+            "Se elimina el árbol de cada commit",
+            "Todos pasan a tener dos padres",
+            "Solo cambia el nombre de la rama",
+            "Los commits recreados pasan a tener como antecedente la nueva base o la serie reaplicada"
+          ],
+          "correct": "D",
+          "explanation": "Rebase genera commits equivalentes con padres distintos, por eso sus identificadores cambian.",
+          "citation": "git-rebase — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-093",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Qué rastro deja una integración fast-forward en la historia?",
+          "options": [
+            "No crea un merge commit; la referencia avanza hasta la punta descendiente",
+            "Crea siempre un commit con dos padres",
+            "Guarda automáticamente un stash",
+            "Reordena los commits mediante todo interactivo"
+          ],
+          "correct": "A",
+          "explanation": "Un avance rápido actualiza la referencia y deja la secuencia existente sin un nuevo commit de merge.",
+          "citation": "git-merge — FAST-FORWARD MERGE",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-094",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué combinación asegura que una integración lineal deje un commit explícito?",
+          "options": [
+            "Usar solo --ff-only",
+            "Usar --no-ff, con --no-commit si también se necesita revisar antes de escribirlo",
+            "Usar stash clear antes de fusionar",
+            "Usar rebase --skip"
+          ],
+          "correct": "B",
+          "explanation": "--no-ff impide el fast-forward; --no-commit puede añadir una pausa antes de crear el merge commit.",
+          "citation": "git-merge — --ff/--no-ff; git-merge — --no-commit",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-095",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "¿Por qué no basta con editar las marcas de conflicto para completar un merge?",
+          "options": [
+            "Porque el mensaje de commit se escribe en .gitignore",
+            "Porque hay que crear un remoto nuevo",
+            "Porque la versión resuelta debe registrarse en el índice antes de continuar",
+            "Porque todo conflicto exige un rebase"
+          ],
+          "correct": "C",
+          "explanation": "La edición cambia el working tree, pero git add comunica a Git que la ruta ya tiene una resolución preparada.",
+          "citation": "git-merge — HOW CONFLICTS ARE PRESENTED; git-add — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-096",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Qué diferencia conceptual hay entre stash y commit?",
+          "options": [
+            "Stash siempre es remoto; commit siempre es ignorado",
+            "Ambos son exactamente la misma referencia",
+            "Commit solo guarda archivos sin seguimiento",
+            "Stash aparta temporalmente trabajo local; commit registra una instantánea en la historia de una rama"
+          ],
+          "correct": "D",
+          "explanation": "El stash está pensado para posponer cambios locales, mientras el commit forma parte del historial nombrado por una rama o tag.",
+          "citation": "git-stash — DESCRIPTION; gitglossary — commit object",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-097",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "¿Por qué puede ser recuperable una punta tras borrar una rama?",
+          "options": [
+            "El reflog puede conservar el movimiento de la ref aunque el nombre de la rama ya no exista",
+            "Porque cada rama se copia automáticamente a un remoto",
+            "Porque merge siempre recrea la rama",
+            "Porque .gitignore la restaura"
+          ],
+          "correct": "A",
+          "explanation": "La eliminación de la ref no implica de inmediato la desaparición de los objetos y el reflog puede conservar la posición anterior.",
+          "citation": "git-branch — -d/--delete; git-reflog — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-098",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Qué diferencia de seguridad existe entre borrar una rama con -d y con -D?",
+          "options": [
+            "-d borra remoto y -D solo lista local",
+            "-d exige una condición de integración; -D omite esa protección y puede perder la única referencia nominal",
+            "-d crea un tag y -D un stash",
+            "No hay diferencia"
+          ],
+          "correct": "B",
+          "explanation": "La opción normal comprueba la alcanzabilidad; la forzada permite borrar incluso una rama no fusionada.",
+          "citation": "git-branch — -d/--delete; git-branch — -D",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-099",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Qué diferencia práctica hay entre aplicar un stash y extraerlo con pop cuando no hay conflictos?",
+          "options": [
+            "Apply elimina la entrada y pop la conserva",
+            "Apply crea una rama y pop un merge commit",
+            "Apply conserva la entrada; pop intenta eliminarla después de aplicar",
+            "Ambos eliminan siempre todas las entradas"
+          ],
+          "correct": "C",
+          "explanation": "La operación pop combina aplicación y eliminación, mientras apply deja la entrada disponible para reutilizarla.",
+          "citation": "git-stash — apply; git-stash — pop",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-100",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "¿Qué precaución documenta Git al abortar un merge iniciado con cambios locales no confirmados?",
+          "options": [
+            "Abortar siempre crea un commit de seguridad",
+            "Los cambios no confirmados se publican en un remoto",
+            "El merge base se convierte en stash automáticamente",
+            "La reconstrucción del estado previo puede no recuperar fielmente esos cambios y debe evitarse confiar ciegamente en abort"
+          ],
+          "correct": "D",
+          "explanation": "La documentación advierte que iniciar un merge con modificaciones locales puede hacer imposible reconstruir exactamente el estado anterior.",
+          "citation": "git-merge — --abort",
+          "source_id": "GIT-2.50"
+        }
+      ]
+    }
+  ]
+}

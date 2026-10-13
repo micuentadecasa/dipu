@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-34-git-branches-rebase-merge-stash.md",
+  "batches": [
+    {
+      "topic_num": 34,
+      "lot_num": 4,
+      "source_ids": [
+        "GIT-2.50"
+      ],
+      "questions": [
+        {
+          "objective_id": "t34-lo-061",
+          "difficulty": "basic",
+          "type": "definition",
+          "question": "¿Qué guarda principalmente una entrada de stash?",
+          "options": [
+            "Cambios locales del working tree y, según las opciones, del índice para recuperarlos después",
+            "Solo commits ya publicados en un remoto",
+            "La configuración completa del sistema",
+            "Todas las ramas del repositorio"
+          ],
+          "correct": "A",
+          "explanation": "Stash crea objetos y una referencia para apartar modificaciones locales y dejar limpio el estado de trabajo.",
+          "citation": "git-stash — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-062",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué operación crea una entrada temporal con las modificaciones actuales?",
+          "options": [
+            "git stash drop",
+            "git stash push",
+            "git stash clear",
+            "git stash branch"
+          ],
+          "correct": "B",
+          "explanation": "stash push guarda el estado sucio del working tree y devuelve el árbol de trabajo al estado de la base, según las opciones.",
+          "citation": "git-stash — push",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-063",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué muestra la enumeración de stashes?",
+          "options": [
+            "Las ramas que contienen un commit",
+            "Los conflictos de una fusión futura",
+            "Las entradas guardadas y sus nombres relativos como stash@{0}",
+            "Los valores de user.name"
+          ],
+          "correct": "C",
+          "explanation": "stash list presenta las entradas de la pila y sus mensajes resumidos.",
+          "citation": "git-stash — list",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-064",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué sirve para inspeccionar el cambio representado por una entrada de stash?",
+          "options": [
+            "git stash clear",
+            "git stash create --drop",
+            "git branch --stash-only",
+            "git stash show"
+          ],
+          "correct": "D",
+          "explanation": "stash show muestra por defecto un resumen de las diferencias y puede recibir opciones para más detalle.",
+          "citation": "git-stash — show",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-065",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué hace recuperar una entrada guardada sin retirarla de la pila?",
+          "options": [
+            "Aplica sus cambios al working tree y conserva la entrada",
+            "Elimina la entrada después de aplicarla",
+            "Crea un merge commit firmado",
+            "Mueve HEAD a la base del stash"
+          ],
+          "correct": "A",
+          "explanation": "stash apply restaura cambios sin eliminar la referencia de stash, a diferencia del comportamiento adicional de pop.",
+          "citation": "git-stash — apply",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-066",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué diferencia principal tiene recuperar una entrada y retirarla de la pila?",
+          "options": [
+            "La variante pop siempre crea una rama remota",
+            "La variante pop intenta aplicar y después elimina la entrada si la aplicación termina correctamente",
+            "La variante apply borra el índice",
+            "No existe diferencia"
+          ],
+          "correct": "B",
+          "explanation": "pop combina aplicación y eliminación, aunque si hay conflictos la entrada puede conservarse para permitir otro intento.",
+          "citation": "git-stash — pop",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-067",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué solicita la opción --index al aplicar un stash?",
+          "options": [
+            "Incluir siempre archivos ignorados",
+            "Mostrar el hash del stash",
+            "Intentar restaurar también el estado que estaba preparado en el índice",
+            "Convertirlo en un commit de merge"
+          ],
+          "correct": "C",
+          "explanation": "--index intenta recuperar el estado staged además de las modificaciones del working tree.",
+          "citation": "git-stash — --index",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-068",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué opción incluye archivos sin seguimiento al guardar cambios en stash?",
+          "options": [
+            "-p/--patch-only",
+            "-q/--quiet",
+            "-m/--message-only",
+            "-u/--include-untracked"
+          ],
+          "correct": "D",
+          "explanation": "--include-untracked añade archivos no seguidos al contenido guardado, además de los cambios seguidos.",
+          "citation": "git-stash — -u/--include-untracked",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-069",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué opción incluye también archivos ignorados en una entrada de stash?",
+          "options": [
+            "-a/--all",
+            "-u/--untracked-only",
+            "-n/--number",
+            "-l/--local"
+          ],
+          "correct": "A",
+          "explanation": "--all incluye archivos sin seguimiento e ignorados en el stash, con las precauciones correspondientes.",
+          "citation": "git-stash — -a/--all",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-070",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué opción asigna un mensaje descriptivo al guardar cambios?",
+          "options": [
+            "-b/--branch",
+            "-m/--message",
+            "-r/--rebase",
+            "-x/--exec"
+          ],
+          "correct": "B",
+          "explanation": "-m permite asociar un texto al stash para identificar su propósito en la lista.",
+          "citation": "git-stash — -m/--message",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-071",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué utilidad tiene crear una rama nueva desde una entrada de stash?",
+          "options": [
+            "Borra todos los objetos del stash",
+            "Fuerza una integración octopus",
+            "Permite continuar el trabajo guardado sobre una rama basada en el commit donde se creó",
+            "Cambia la configuración global"
+          ],
+          "correct": "C",
+          "explanation": "stash branch crea una rama desde el commit donde se realizó el stash y aplica allí los cambios guardados.",
+          "citation": "git-stash — branch",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-072",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué elimina una entrada concreta de la pila?",
+          "options": [
+            "git stash show",
+            "git stash push",
+            "git stash branch",
+            "git stash drop"
+          ],
+          "correct": "D",
+          "explanation": "stash drop retira de la referencia de stash la entrada indicada.",
+          "citation": "git-stash — drop",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-073",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué alcance tiene limpiar la pila completa de stashes?",
+          "options": [
+            "Elimina todas las entradas guardadas y no es una operación fácilmente reversible por la referencia stash",
+            "Solo oculta la entrada más reciente",
+            "Convierte cada entrada en una rama",
+            "Borra las ramas locales fusionadas"
+          ],
+          "correct": "A",
+          "explanation": "stash clear elimina todas las entradas de la colección de stashes; debe usarse con cuidado.",
+          "citation": "git-stash — clear",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-074",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Cómo se identifica normalmente la entrada más reciente de la pila?",
+          "options": [
+            "Con refs/heads/HEAD",
+            "Con la notación stash@{0}",
+            "Con MERGE_HEAD",
+            "Con refs/blobs/latest"
+          ],
+          "correct": "B",
+          "explanation": "Las entradas se nombran mediante la referencia especial stash y sus índices reflog, donde {0} es la más reciente.",
+          "citation": "git-stash — DESCRIPTION; gitrevisions — reflog selectors",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-075",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Qué ocurre por defecto con un archivo sin seguimiento al ejecutar stash sin opciones de inclusión?",
+          "options": [
+            "Se convierte automáticamente en un commit",
+            "Se añade siempre como archivo ignorado",
+            "Normalmente no se guarda y permanece fuera del contenido de la entrada",
+            "Se mueve a la rama actual"
+          ],
+          "correct": "C",
+          "explanation": "La inclusión de no seguidos requiere --include-untracked o --all; el comportamiento predeterminado se centra en cambios seguidos.",
+          "citation": "git-stash — DESCRIPTION; git-stash — -u/--include-untracked",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-076",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Qué permite especificar una lista de rutas al guardar un stash?",
+          "options": [
+            "Seleccionar el merge base de una rama",
+            "Firmar todos los commits futuros",
+            "Cambiar el nombre de HEAD",
+            "Limitar la operación a las rutas indicadas mediante el separador y el pathspec"
+          ],
+          "correct": "D",
+          "explanation": "El pathspec permite elegir qué partes del working tree se guardan en la operación.",
+          "citation": "git-stash — push; gitglossary — pathspec",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-077",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "¿Qué propósito tiene conservar el índice al apartar solo parte del trabajo?",
+          "options": [
+            "Mantener preparados los cambios staged mientras se apartan otros cambios del working tree",
+            "Crear dos padres para la rama",
+            "Borrar archivos ignorados de forma segura",
+            "Desactivar el reflog"
+          ],
+          "correct": "A",
+          "explanation": "Opciones como --keep-index permiten dejar intacto el estado preparado mientras se guarda el resto.",
+          "citation": "git-stash — --keep-index",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-078",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Cuál es la diferencia entre incluir no seguidos y usar la inclusión total al crear stash?",
+          "options": [
+            "La primera borra no seguidos y la segunda solo los lista",
+            "La primera añade no seguidos; la segunda añade además los ignorados",
+            "Ambas operaciones son idénticas",
+            "La primera crea una rama y la segunda un merge"
+          ],
+          "correct": "B",
+          "explanation": "--include-untracked y --all tienen alcances distintos y el segundo incluye también las rutas ignoradas.",
+          "citation": "git-stash — -u/--include-untracked; -a/--all",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-079",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Si stash pop provoca conflictos, ¿qué sucede normalmente con la entrada?",
+          "options": [
+            "Se elimina antes de mostrar el conflicto",
+            "Se convierte en una rama remota",
+            "Puede conservarse para que los cambios se puedan intentar aplicar o resolver de nuevo",
+            "Se rebasea automáticamente"
+          ],
+          "correct": "C",
+          "explanation": "Cuando la aplicación no termina limpiamente, Git no elimina de forma normal la entrada para evitar perder el estado guardado.",
+          "citation": "git-stash — pop",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-080",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "¿Qué recurso puede ayudar a recuperar una entrada de stash eliminada recientemente?",
+          "options": [
+            "La lista de ramas fusionadas únicamente",
+            "La configuración de merge.conflictStyle",
+            "El archivo .gitignore",
+            "El reflog y los objetos aún no recolectados, si se localiza su referencia a tiempo"
+          ],
+          "correct": "D",
+          "explanation": "Los stashes usan referencias y objetos locales; tras borrarlos, el reflog o la recuperación de objetos puede ser una oportunidad temporal.",
+          "citation": "git-stash — DESCRIPTION; git-reflog — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        }
+      ]
+    }
+  ]
+}

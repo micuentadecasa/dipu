@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-34-git-branches-rebase-merge-stash.md",
+  "batches": [
+    {
+      "topic_num": 34,
+      "lot_num": 3,
+      "source_ids": [
+        "GIT-2.50"
+      ],
+      "questions": [
+        {
+          "objective_id": "t34-lo-041",
+          "difficulty": "basic",
+          "type": "definition",
+          "question": "¿Cuál es el propósito general de rebase?",
+          "options": [
+            "Reaplicar commits de una línea sobre otra base para cambiar su punto de partida",
+            "Guardar temporalmente cambios no committeados",
+            "Crear una referencia remota",
+            "Mostrar únicamente los objetos blob"
+          ],
+          "correct": "A",
+          "explanation": "Rebase toma commits seleccionados y los vuelve a aplicar sobre una base distinta, generando una historia reescrita.",
+          "citation": "git-rebase — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-042",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué expresa ejecutar git rebase upstream desde una rama de trabajo?",
+          "options": [
+            "Fusionar siempre creando un commit de dos padres",
+            "Reaplicar los commits propios sobre la punta de upstream",
+            "Guardar el working tree como stash",
+            "Eliminar la rama upstream"
+          ],
+          "correct": "B",
+          "explanation": "La forma básica usa upstream como nueva base y aplica sobre ella los commits que están en la rama actual y no en upstream.",
+          "citation": "git-rebase — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-043",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué permite especificar la opción --onto durante un rebase?",
+          "options": [
+            "La lista de archivos ignorados",
+            "El mensaje del primer commit",
+            "Una nueva base explícita diferente del upstream usado para delimitar commits",
+            "La referencia del stash activo"
+          ],
+          "correct": "C",
+          "explanation": "--onto separa la nueva base de la referencia que determina qué commits se reaplican.",
+          "citation": "git-rebase — --onto",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-044",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué consecuencia tienen normalmente los commits reaplicados por rebase?",
+          "options": [
+            "Se convierten en objetos blob",
+            "Mantienen necesariamente el mismo hash",
+            "Desaparecen del object database de inmediato",
+            "Reciben nuevos identificadores porque cambia su padre o contenido contextual"
+          ],
+          "correct": "D",
+          "explanation": "El cambio de padre altera la identidad criptográfica de los commits recreados.",
+          "citation": "git-rebase — DESCRIPTION; gitrevisions — commit object",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-045",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Por qué requiere cautela reescribir una rama que otras personas ya usan?",
+          "options": [
+            "Porque los commits reemplazados dejan de coincidir con los identificadores que otros ya conocen",
+            "Porque rebase solo funciona sin working tree",
+            "Porque impide crear ramas nuevas",
+            "Porque transforma todos los tags en remotos"
+          ],
+          "correct": "A",
+          "explanation": "La reescritura puede obligar a reconciliar historias divergentes y complica la colaboración sobre commits publicados.",
+          "citation": "git-rebase — DESCRIPTION; git-rebase — RECOVERING FROM UPSTREAM REBASE",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-046",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué papel puede desempeñar --fork-point al calcular desde dónde reaplicar commits?",
+          "options": [
+            "Forzar una fusión octopus",
+            "Usar reflogs de la referencia para encontrar un punto de bifurcación más adecuado cuando procede",
+            "Guardar el índice en un objeto tag",
+            "Seleccionar archivos sin seguimiento"
+          ],
+          "correct": "B",
+          "explanation": "La opción puede emplear el reflog de upstream para evitar reaplicar commits que ya fueron descartados de su historia visible.",
+          "citation": "git-rebase — --fork-point",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-047",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "¿Qué ocurre si rebase encuentra un conflicto durante la reaplicación?",
+          "options": [
+            "Git crea siempre un merge commit automáticamente",
+            "La rama actual se elimina",
+            "La operación se pausa y requiere resolver el conflicto antes de continuar, saltar o abortar",
+            "El stash se aplica sin confirmación"
+          ],
+          "correct": "C",
+          "explanation": "Rebase detiene la secuencia para que se resuelva el parche que no aplica limpiamente.",
+          "citation": "git-rebase — DESCRIPTION; git-rebase — CONFLICTS",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-048",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué comando se usa para seguir una reaplicación después de resolver y preparar el conflicto?",
+          "options": [
+            "git rebase --show-current",
+            "git rebase --merged",
+            "git rebase --list",
+            "git rebase --continue"
+          ],
+          "correct": "D",
+          "explanation": "--continue retoma la secuencia usando la solución registrada en el índice.",
+          "citation": "git-rebase — --continue",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-049",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué opción omite el commit que está causando el conflicto durante un rebase?",
+          "options": [
+            "git rebase --skip",
+            "git rebase --quit",
+            "git rebase --edit",
+            "git rebase --contains"
+          ],
+          "correct": "A",
+          "explanation": "--skip descarta el commit conflictivo de la secuencia y pasa al siguiente.",
+          "citation": "git-rebase — --skip",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-050",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué efecto pretende la cancelación de un rebase en curso?",
+          "options": [
+            "Crear una copia de todos los commits reaplicados",
+            "Restaurar la rama a su estado anterior al comienzo del rebase",
+            "Convertir el rebase en stash",
+            "Cambiar únicamente el mensaje del commit"
+          ],
+          "correct": "B",
+          "explanation": "--abort detiene la operación y procura devolver HEAD y la rama al estado previo.",
+          "citation": "git-rebase — --abort",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-051",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué diferencia expresa salir de un rebase sin restaurarlo?",
+          "options": [
+            "Borra toda la rama original",
+            "Resuelve automáticamente el siguiente commit",
+            "Deja de gestionar la operación, conservando el estado actual del working tree y HEAD",
+            "Fuerza un fast-forward"
+          ],
+          "correct": "C",
+          "explanation": "--quit termina el seguimiento de la operación sin restablecer HEAD, índice ni working tree.",
+          "citation": "git-rebase — --quit",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-052",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué habilita el modo interactivo de rebase?",
+          "options": [
+            "Cambiar la configuración global del usuario",
+            "Aplicar un stash sin tocar la rama",
+            "Mostrar solo ramas fusionadas",
+            "Editar la secuencia de commits y sus acciones antes de reaplicarlos"
+          ],
+          "correct": "D",
+          "explanation": "-i o --interactive abre una lista de tareas en la que pueden reordenarse, combinarse o editarse commits.",
+          "citation": "git-rebase — -i/--interactive",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-053",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué acción del todo interactivo combina un commit con el anterior y permite ajustar el mensaje?",
+          "options": [
+            "squash",
+            "pick",
+            "drop",
+            "exec"
+          ],
+          "correct": "A",
+          "explanation": "squash une el cambio con el commit anterior y solicita editar el mensaje combinado.",
+          "citation": "git-rebase — INTERACTIVE MODE",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-054",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué automatiza --autosquash en un rebase interactivo?",
+          "options": [
+            "Aplica todos los stashes al final",
+            "Reordena commits fixup!/squash! junto a sus objetivos y ajusta sus acciones",
+            "Fuerza que cada commit tenga dos padres",
+            "Elimina todas las ramas fusionadas"
+          ],
+          "correct": "B",
+          "explanation": "--autosquash reconoce los prefijos de commits auxiliares y prepara el todo para combinarlos con su commit objetivo.",
+          "citation": "git-rebase — --autosquash",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-055",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Para qué sirve --exec en un rebase interactivo?",
+          "options": [
+            "Elegir la rama upstream automáticamente",
+            "Guardar archivos ignorados",
+            "Añadir un comando que se ejecutará después de cada commit reaplicado",
+            "Mostrar la reflog de cada rama"
+          ],
+          "correct": "C",
+          "explanation": "--exec añade líneas exec al todo para ejecutar una orden después de cada commit creado durante la secuencia.",
+          "citation": "git-rebase — --exec",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-056",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Qué intenta conservar --rebase-merges frente a un rebase lineal simple?",
+          "options": [
+            "Los números de línea del working tree",
+            "Los stashes borrados",
+            "La configuración del sistema",
+            "La estructura de ramas y commits de merge de la historia seleccionada"
+          ],
+          "correct": "D",
+          "explanation": "--rebase-merges reconstruye commits de merge para preservar la topología en vez de aplanarla completamente.",
+          "citation": "git-rebase — --rebase-merges",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-057",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "¿Qué busca preservar --keep-base cuando se usa al reaplicar cambios?",
+          "options": [
+            "La base de bifurcación original mientras incorpora cambios de la referencia upstream mediante la forma documentada",
+            "El mismo hash de todos los commits",
+            "Los archivos ignorados dentro del commit",
+            "La referencia del stash como rama"
+          ],
+          "correct": "A",
+          "explanation": "--keep-base selecciona la base de fork original como punto de reaplicación y evita moverla simplemente a la punta upstream.",
+          "citation": "git-rebase — --keep-base",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-058",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué decisión representa configurar el tratamiento de commits vacíos durante rebase?",
+          "options": [
+            "Si el repositorio debe convertirse en bare",
+            "Si un commit que queda sin cambios tras aplicar debe descartarse, conservarse o detener la operación",
+            "Si se borran tags remotos",
+            "Si el índice debe ser global"
+          ],
+          "correct": "B",
+          "explanation": "Las opciones de commits vacíos controlan la política cuando una reaplicación no introduce diferencias nuevas.",
+          "citation": "git-rebase — --empty",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-059",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Cuál es una diferencia de topología entre merge y rebase?",
+          "options": [
+            "Merge siempre borra la rama y rebase nunca cambia hashes",
+            "Ambos producen siempre exactamente la misma historia",
+            "Merge añade una integración con padres existentes; rebase recrea commits sobre otra base",
+            "Rebase solo modifica archivos ignorados"
+          ],
+          "correct": "C",
+          "explanation": "La fusión conserva las líneas y añade una relación de integración, mientras rebase cambia los padres de commits recreados.",
+          "citation": "git-merge — DESCRIPTION; git-rebase — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-060",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Tras resolver un conflicto de rebase, ¿qué riesgo existe si se continúa sin preparar la ruta?",
+          "options": [
+            "Se crea automáticamente un tag firmado",
+            "Se cambia el remoto por defecto",
+            "Se borra el merge base",
+            "La solución no queda registrada para el commit y la operación no puede avanzar correctamente"
+          ],
+          "correct": "D",
+          "explanation": "La resolución debe reflejarse en el índice, normalmente mediante git add, antes de continuar la secuencia.",
+          "citation": "git-rebase — CONFLICTS; git-add — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        }
+      ]
+    }
+  ]
+}

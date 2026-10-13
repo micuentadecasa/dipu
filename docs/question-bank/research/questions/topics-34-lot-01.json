@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-34-git-branches-rebase-merge-stash.md",
+  "batches": [
+    {
+      "topic_num": 34,
+      "lot_num": 1,
+      "source_ids": [
+        "GIT-2.50"
+      ],
+      "questions": [
+        {
+          "objective_id": "t34-lo-001",
+          "difficulty": "basic",
+          "type": "definition",
+          "question": "¿Qué es principalmente una rama local de Git?",
+          "options": [
+            "Una referencia móvil que suele señalar un commit",
+            "Un archivo que contiene todos los blobs",
+            "Un segundo índice de configuración",
+            "Un almacén independiente de objetos"
+          ],
+          "correct": "A",
+          "explanation": "Una rama es una referencia que puede avanzar cuando se crean commits, mientras comparte la base de objetos del repositorio.",
+          "citation": "gitglossary — branch; ref",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-002",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué operación crea una rama llamada feature situada en el commit actual?",
+          "options": [
+            "git branch --delete feature",
+            "git branch feature",
+            "git switch --detach feature",
+            "git branch --show-current feature"
+          ],
+          "correct": "B",
+          "explanation": "La forma simple de git branch crea una referencia nueva en el punto indicado, que por defecto es HEAD.",
+          "citation": "git-branch — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-003",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué opción de cambio de rama crea una nueva rama y la deja activa?",
+          "options": [
+            "git switch --discard nombre",
+            "git switch --detach nombre",
+            "git switch --create nombre",
+            "git switch --guess nombre"
+          ],
+          "correct": "C",
+          "explanation": "--create (o -c) crea la rama y cambia a ella en una sola operación.",
+          "citation": "git-switch — -c/--create",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-004",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué información se obtiene al consultar cuál es la rama activa?",
+          "options": [
+            "El hash de todos los objetos",
+            "La lista de conflictos resueltos",
+            "El contenido de la configuración global",
+            "La rama actualmente comprobada, si HEAD está unido a una rama"
+          ],
+          "correct": "D",
+          "explanation": "La consulta de la rama actual identifica el nombre de la rama asociada a HEAD y no enumera todo el historial.",
+          "citation": "git-branch — --show-current",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-005",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué operación permite cambiar el nombre de una rama local?",
+          "options": [
+            "git branch --move antiguo nuevo",
+            "git branch --copy antiguo nuevo",
+            "git branch --contains antiguo nuevo",
+            "git branch --merged antiguo nuevo"
+          ],
+          "correct": "A",
+          "explanation": "La opción de movimiento renombra la referencia y actualiza la configuración asociada cuando corresponde.",
+          "citation": "git-branch — -m/--move",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-006",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué condición protege el borrado normal de una rama local?",
+          "options": [
+            "Que la rama tenga un remoto",
+            "Que su punta esté completamente contenida en la rama actual",
+            "Que la rama no tenga ningún commit",
+            "Que exista un stash con el mismo nombre"
+          ],
+          "correct": "B",
+          "explanation": "El borrado normal con -d exige que la rama esté fusionada de forma alcanzable desde la rama actual u otra condición segura documentada.",
+          "citation": "git-branch — -d/--delete",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-007",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué diferencia práctica tiene el borrado forzado de una rama?",
+          "options": [
+            "Convierte la rama en tag anotado",
+            "Conserva siempre una copia de trabajo separada",
+            "Puede eliminar la referencia aunque Git no la considere fusionada",
+            "Solo elimina ramas remotas"
+          ],
+          "correct": "C",
+          "explanation": "-D combina el borrado con la fuerza y permite quitar una rama cuya punta no está fusionada según la comprobación normal.",
+          "citation": "git-branch — -D",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-008",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué resultado busca cambiar desde la rama actual a una rama local existente?",
+          "options": [
+            "Actualizar el índice de configuración",
+            "Borrar la rama de origen",
+            "Crear un commit de integración",
+            "Comprobar la otra rama y ajustar HEAD a ella"
+          ],
+          "correct": "D",
+          "explanation": "El cambio de rama actualiza HEAD y normalmente el índice y el working tree para reflejar la rama destino.",
+          "citation": "git-switch — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-009",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué comando sirve para enumerar referencias de rama con sus nombres?",
+          "options": [
+            "git branch --list",
+            "git branch --delete",
+            "git branch --unset-upstream",
+            "git branch --edit-description"
+          ],
+          "correct": "A",
+          "explanation": "--list muestra las ramas que coinciden con el patrón indicado o todas si no se da patrón.",
+          "citation": "git-branch — --list",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-010",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué pregunta responde la comprobación de ramas que contienen un commit?",
+          "options": [
+            "Qué archivos están ignorados",
+            "Qué ramas alcanzan el commit indicado desde su historia",
+            "Qué ramas tienen conflictos sin resolver",
+            "Qué ramas pertenecen a otro repositorio"
+          ],
+          "correct": "B",
+          "explanation": "La opción --contains selecciona las ramas cuya punta alcanza el commit especificado.",
+          "citation": "git-branch — --contains",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-011",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Para qué sirve identificar ramas ya fusionadas?",
+          "options": [
+            "Cambiar todos sus commits de autor",
+            "Crear una rama huérfana",
+            "Localizar ramas que pueden ser candidatas al borrado seguro",
+            "Aplicar un stash a cada una"
+          ],
+          "correct": "C",
+          "explanation": "--merged muestra referencias alcanzables desde el punto indicado y ayuda a distinguir ramas integradas.",
+          "citation": "git-branch — --merged",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-012",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué expresa la consulta de ramas no fusionadas?",
+          "options": [
+            "Ramas sin working tree",
+            "Ramas que solo contienen tags ligeros",
+            "Ramas sin configuración local",
+            "Ramas cuya punta no es alcanzable desde el commit de referencia"
+          ],
+          "correct": "D",
+          "explanation": "--no-merged invierte la selección de --merged y muestra las ramas aún no integradas en el punto consultado.",
+          "citation": "git-branch — --no-merged",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-013",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Qué efecto tiene copiar una rama local?",
+          "options": [
+            "Crea otra referencia con la misma punta sin mover la original",
+            "Duplica físicamente todos los objetos del repositorio",
+            "Convierte la rama en un remoto",
+            "Fusiona automáticamente sus cambios"
+          ],
+          "correct": "A",
+          "explanation": "--copy crea una nueva referencia de rama basada en la existente y mantiene intacta la referencia original.",
+          "citation": "git-branch — -c/--copy",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-014",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué permite hacer la actualización forzada de una rama con un punto de inicio?",
+          "options": [
+            "Guardar archivos sin seguimiento en un stash",
+            "Mover su referencia a otro commit sin cambiar necesariamente la rama activa",
+            "Resolver cualquier conflicto automáticamente",
+            "Convertir un merge en rebase"
+          ],
+          "correct": "B",
+          "explanation": "La forma de git branch -f mueve la referencia nombrada al start-point especificado, sujeta a las restricciones documentadas.",
+          "citation": "git-branch — -f/--force",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-015",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Qué estado se obtiene al comprobar directamente un commit en vez de una rama?",
+          "options": [
+            "Se crea automáticamente un merge commit",
+            "El índice pasa a ser un remoto",
+            "HEAD queda desacoplado de una rama móvil",
+            "El commit se elimina de la historia"
+          ],
+          "correct": "C",
+          "explanation": "Al comprobar un commit directamente, HEAD apunta al commit y no a una referencia de rama que avance con nuevos commits.",
+          "citation": "git-switch — --detach; gitglossary — detached HEAD",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-016",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Qué relación hay entre crear una rama con checkout -b y la operación moderna equivalente?",
+          "options": [
+            "La primera solo consulta refs y la segunda borra archivos",
+            "La primera crea un stash y la segunda un tag",
+            "No hay relación funcional",
+            "Ambas crean una rama y cambian a ella"
+          ],
+          "correct": "D",
+          "explanation": "checkout -b combina creación y cambio; switch -c expresa la misma intención con la interfaz dedicada a ramas.",
+          "citation": "git-checkout — -b; git-switch — -c/--create",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-017",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué mantiene normalmente HEAD cuando se está trabajando sobre una rama local?",
+          "options": [
+            "Una referencia simbólica al nombre de la rama activa",
+            "Una copia de cada archivo ignorado",
+            "El último stash aplicado",
+            "La configuración del servidor remoto"
+          ],
+          "correct": "A",
+          "explanation": "En el estado normal HEAD es simbólico y nombra la rama comprobada, cuya ref señala la punta del historial.",
+          "citation": "gitrepository-layout — HEAD; git-symbolic-ref",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-018",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Qué ocurre con los objetos al crear una rama local dentro del mismo repositorio?",
+          "options": [
+            "Se descargan todos los objetos desde un remoto",
+            "Se crea principalmente otra referencia al commit, no una copia completa de objetos",
+            "Se elimina la referencia a HEAD",
+            "Se transforma cada commit en un blob"
+          ],
+          "correct": "B",
+          "explanation": "Las ramas son referencias ligeras dentro del repositorio y comparten la base de objetos alcanzable.",
+          "citation": "gitglossary — branch; gitrepository-layout — refs",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-019",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "¿Por qué puede rechazar Git un cambio de rama aunque la rama destino exista?",
+          "options": [
+            "Porque toda rama debe tener un tag",
+            "Porque cambiar de rama siempre requiere una fusión",
+            "Porque cambios locales podrían sobrescribirse al actualizar el working tree",
+            "Porque HEAD nunca puede cambiar dos veces"
+          ],
+          "correct": "C",
+          "explanation": "Git evita perder modificaciones locales incompatibles con el estado que tendría la rama destino.",
+          "citation": "git-switch — DESCRIPTION; git-checkout — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-020",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Tras borrar una rama local por error, ¿qué recurso local puede ayudar a localizar su antigua punta?",
+          "options": [
+            "El archivo .gitignore",
+            "La salida de git status de otro clon",
+            "El índice de configuración global",
+            "El reflog de la referencia o de HEAD, mientras conserve la entrada"
+          ],
+          "correct": "D",
+          "explanation": "El reflog registra actualizaciones locales de referencias y HEAD, por lo que puede revelar la posición anterior durante su retención.",
+          "citation": "git-reflog — DESCRIPTION; git-branch — -d/--delete",
+          "source_id": "GIT-2.50"
+        }
+      ]
+    }
+  ]
+}
