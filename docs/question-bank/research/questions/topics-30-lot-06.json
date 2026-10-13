@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-30-blazor-di-configuration.md",
+  "batches": [
+    {
+      "topic_num": 30,
+      "lot_num": 6,
+      "source_ids": [
+        "ASPNET-DI-10"
+      ],
+      "questions": [
+        {
+          "objective_id": "t30-lo-101",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué interfaz representa la colección usada para registrar servicios en ASP.NET Core?",
+          "options": [
+            "IServiceCollection",
+            "IServiceProviderFactoryOnly",
+            "IConfigurationRoot",
+            "IOptionsBuilder"
+          ],
+          "correct": "A",
+          "explanation": "IServiceCollection contiene las descripciones de servicios registradas.",
+          "citation": "Service registration — IServiceCollection",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-102",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué interfaz resuelve instancias desde el contenedor?",
+          "options": [
+            "IServiceProvider",
+            "IServiceCollection",
+            "IConfigurationSection",
+            "IOptionsMonitor"
+          ],
+          "correct": "A",
+          "explanation": "IServiceProvider resuelve servicios registrados.",
+          "citation": "Service resolution — IServiceProvider",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-103",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué forma de inyección recibe dependencias al crear una clase?",
+          "options": [
+            "Inyección por constructor",
+            "Inyección por nombre de archivo",
+            "Inyección por configuración JSON",
+            "Inyección por URL"
+          ],
+          "correct": "A",
+          "explanation": "El constructor declara las dependencias necesarias.",
+          "citation": "Dependency injection — constructor injection",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-104",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué método registra normalmente una implementación transitoria?",
+          "options": [
+            "AddTransient",
+            "AddConfigurationOnly",
+            "AddRoute",
+            "AddSingletonScopeOnly"
+          ],
+          "correct": "A",
+          "explanation": "AddTransient registra una instancia transitoria por resolución.",
+          "citation": "Service lifetimes — AddTransient",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-105",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué método registra normalmente una implementación singleton?",
+          "options": [
+            "AddSingleton",
+            "AddTransientOnly",
+            "AddScopedGlobal",
+            "AddProvider"
+          ],
+          "correct": "A",
+          "explanation": "AddSingleton registra una instancia compartida según el contenedor.",
+          "citation": "Service lifetimes — AddSingleton",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-106",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué método registra normalmente una implementación scoped?",
+          "options": [
+            "AddScoped",
+            "AddSingletonPerProcess",
+            "AddTransientScope",
+            "AddProvider"
+          ],
+          "correct": "A",
+          "explanation": "AddScoped registra el servicio con alcance.",
+          "citation": "Service lifetimes — AddScoped",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-107",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué efecto tiene registrar una interfaz con una implementación?",
+          "options": [
+            "Permitir que el proveedor resuelva la interfaz usando esa implementación",
+            "Convertirla en configuración",
+            "Crear una ruta Blazor",
+            "Publicarla al cliente siempre"
+          ],
+          "correct": "A",
+          "explanation": "El descriptor relaciona servicio y implementación.",
+          "citation": "Service registration — service descriptors",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-108",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué ventaja ofrece inyectar una abstracción en vez de construir una clase concreta?",
+          "options": [
+            "Reducir acoplamiento y facilitar sustitución",
+            "Forzar singleton",
+            "Eliminar el proveedor",
+            "Evitar toda disposición"
+          ],
+          "correct": "A",
+          "explanation": "La abstracción desacopla consumidores de implementaciones.",
+          "citation": "Dependency injection — design guidelines",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-109",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué permite una fábrica de servicios registrada en DI?",
+          "options": [
+            "Crear la instancia con lógica de construcción controlada",
+            "Cambiar el entorno del proceso",
+            "Definir una ruta de componente",
+            "Leer siempre localStorage"
+          ],
+          "correct": "A",
+          "explanation": "La fábrica controla la creación de la instancia.",
+          "citation": "Service registration — factory-based registration",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-110",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué implica registrar una instancia existente?",
+          "options": [
+            "El contenedor usa la instancia proporcionada",
+            "Crea una instancia por cada resolución",
+            "La convierte en options monitor",
+            "La serializa al navegador"
+          ],
+          "correct": "A",
+          "explanation": "La instancia registrada es la que resuelve el contenedor.",
+          "citation": "Service registration — instance registration",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-111",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué son los open generics en DI?",
+          "options": [
+            "Registros genéricos que permiten resolver tipos construidos",
+            "Servicios sin interfaz",
+            "Configuración sin provider",
+            "Rutas sin parámetros"
+          ],
+          "correct": "A",
+          "explanation": "Un registro genérico abierto puede cerrar tipos al resolverlos.",
+          "citation": "Service registration — open generics",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-112",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué objetivo tiene TryAdd?",
+          "options": [
+            "Evitar añadir un registro si ya existe uno compatible",
+            "Forzar siempre la última implementación",
+            "Eliminar todos los servicios",
+            "Crear un scope de circuito"
+          ],
+          "correct": "A",
+          "explanation": "TryAdd conserva el registro existente en el caso previsto.",
+          "citation": "Service registration — TryAdd",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-113",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué hace la resolución de un servicio no registrado normalmente?",
+          "options": [
+            "Falla porque el contenedor no conoce cómo crearlo",
+            "Crea siempre una instancia reflexiva",
+            "Lo obtiene de IConfiguration",
+            "Lo convierte en singleton"
+          ],
+          "correct": "A",
+          "explanation": "El servicio debe estar registrado o ser resoluble por el contenedor.",
+          "citation": "Service resolution — unregistered services",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-114",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué representan los servicios keyed?",
+          "options": [
+            "Registros seleccionables mediante una clave",
+            "Servicios almacenados solo en JSON",
+            "Servicios sin lifetime",
+            "Servicios de una sola ruta"
+          ],
+          "correct": "A",
+          "explanation": "Los servicios keyed se distinguen mediante una clave.",
+          "citation": "Keyed services",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-115",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué debe aportar el consumidor al resolver un servicio keyed?",
+          "options": [
+            "La clave correspondiente",
+            "El nombre del assembly",
+            "El valor de BaseUri",
+            "El nombre del entorno únicamente"
+          ],
+          "correct": "A",
+          "explanation": "La clave selecciona el registro deseado.",
+          "citation": "Keyed services",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-116",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué es una dependencia de una clase?",
+          "options": [
+            "Otro servicio que necesita para realizar su función",
+            "Cualquier archivo CSS",
+            "Un parámetro de URL",
+            "Una rama del repositorio"
+          ],
+          "correct": "A",
+          "explanation": "La dependencia es un colaborador requerido por la clase.",
+          "citation": "Dependency injection — fundamentals",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-117",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué composición permite probar una clase con un colaborador falso?",
+          "options": [
+            "Inyectar la abstracción y registrar/suministrar un doble",
+            "Construir siempre la implementación real",
+            "Usar un singleton global",
+            "Leer un secreto de configuración"
+          ],
+          "correct": "A",
+          "explanation": "La inyección facilita sustitución en pruebas.",
+          "citation": "Dependency injection — design guidelines",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-118",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué problema evita centralizar el registro en Program?",
+          "options": [
+            "Registros dispersos y composición incoherente",
+            "La necesidad de opciones",
+            "La serialización JSON",
+            "El uso de constructores"
+          ],
+          "correct": "A",
+          "explanation": "La composición de servicios se realiza al iniciar la aplicación.",
+          "citation": "Service registration — app startup",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-119",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué ocurre al registrar varias implementaciones para el mismo servicio?",
+          "options": [
+            "El contenedor puede resolver la colección de implementaciones; la resolución individual sigue reglas de registro",
+            "Todas se fusionan en una clase",
+            "Ninguna puede resolverse",
+            "Siempre gana la configuración"
+          ],
+          "correct": "A",
+          "explanation": "DI admite múltiples registros y resolución de colecciones.",
+          "citation": "Service registration — multiple registrations",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-120",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué principio guía la composición de dependencias?",
+          "options": [
+            "Registrar explícitamente los servicios que la aplicación necesita",
+            "Crear servicios dentro de cada método",
+            "Usar variables globales para todo",
+            "Ocultar todas las dependencias"
+          ],
+          "correct": "A",
+          "explanation": "La composición explícita hace visible el grafo de dependencias.",
+          "citation": "Dependency injection — guidelines",
+          "source_id": "ASPNET-DI-10"
+        }
+      ]
+    }
+  ]
+}

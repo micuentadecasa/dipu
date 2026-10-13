@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-30-blazor-di-configuration.md",
+  "batches": [
+    {
+      "topic_num": 30,
+      "lot_num": 7,
+      "source_ids": [
+        "ASPNET-DI-10"
+      ],
+      "questions": [
+        {
+          "objective_id": "t30-lo-121",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué duración caracteriza a un servicio transient?",
+          "options": [
+            "Se crea una nueva instancia cada vez que se solicita",
+            "Una instancia por proceso siempre",
+            "Una instancia por circuito siempre",
+            "Una instancia por aplicación cliente"
+          ],
+          "correct": "A",
+          "explanation": "Transient produce instancias por resolución.",
+          "citation": "Service lifetimes — transient",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-122",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué duración caracteriza a un singleton?",
+          "options": [
+            "Una instancia compartida por el contenedor",
+            "Una nueva instancia por resolución",
+            "Una instancia por cada componente",
+            "Una instancia por cada query"
+          ],
+          "correct": "A",
+          "explanation": "Singleton comparte la instancia en el alcance del contenedor.",
+          "citation": "Service lifetimes — singleton",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-123",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué significa scoped en la aplicación general ASP.NET Core?",
+          "options": [
+            "Una instancia por scope",
+            "Una instancia global siempre",
+            "Una instancia por propiedad",
+            "Una instancia por archivo"
+          ],
+          "correct": "A",
+          "explanation": "Scoped crea una instancia dentro de cada scope.",
+          "citation": "Service lifetimes — scoped",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-124",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué riesgo presenta inyectar un scoped en un singleton?",
+          "options": [
+            "Captive dependency: la dependencia vive más de lo previsto",
+            "Se convierte en transient",
+            "Se borra al iniciar",
+            "Se vuelve configuración"
+          ],
+          "correct": "A",
+          "explanation": "El singleton puede capturar una dependencia de menor duración.",
+          "citation": "DI guidelines — captive dependencies",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-125",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué comprueba la validación de scopes?",
+          "options": [
+            "Problemas de consumir scoped desde singleton en configuraciones compatibles",
+            "El formato de una URL",
+            "La validez de JSON público",
+            "La existencia de una ruta"
+          ],
+          "correct": "A",
+          "explanation": "La validación detecta relaciones de lifetime problemáticas.",
+          "citation": "DI guidelines — scope validation",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-126",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué debe hacer un background service para usar scoped services?",
+          "options": [
+            "Crear un scope explícito para el trabajo",
+            "Inyectar scoped directamente como singleton",
+            "Usar solo static",
+            "Convertir todo en transient"
+          ],
+          "correct": "A",
+          "explanation": "Un background service necesita crear un scope para dependencias scoped.",
+          "citation": "DI guidelines — scoped services in background services",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-127",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué ocurre con un servicio IDisposable gestionado por DI?",
+          "options": [
+            "El contenedor puede disponerlo cuando termina su alcance",
+            "Nunca se dispone",
+            "Se serializa al cliente",
+            "Se convierte en singleton"
+          ],
+          "correct": "A",
+          "explanation": "El contenedor gestiona disposición de instancias que posee.",
+          "citation": "DI guidelines — disposal",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-128",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué debe evitar una aplicación respecto de una instancia externa registrada?",
+          "options": [
+            "Disponerla manualmente si el contenedor no es su propietario",
+            "Usarla mediante interfaz",
+            "Registrarla como servicio",
+            "Inyectarla por constructor"
+          ],
+          "correct": "A",
+          "explanation": "La propiedad de la instancia determina quién la dispone.",
+          "citation": "DI guidelines — disposal",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-129",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué consideración existe para un singleton con estado mutable?",
+          "options": [
+            "Debe ser seguro para concurrencia y apropiado para compartir",
+            "Debe guardar datos de un único usuario",
+            "No requiere sincronización nunca",
+            "Debe ser transient"
+          ],
+          "correct": "A",
+          "explanation": "Un singleton puede ser accedido concurrentemente.",
+          "citation": "DI guidelines — thread safety",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-130",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué lifetime suele ser apropiado para un servicio stateless ligero?",
+          "options": [
+            "Transient",
+            "Singleton siempre",
+            "Scoped por usuario obligatorio",
+            "Solo keyed"
+          ],
+          "correct": "A",
+          "explanation": "Transient es adecuado cuando no se requiere estado compartido.",
+          "citation": "Service lifetimes — transient",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-131",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué debe hacer una aplicación al crear un scope manual?",
+          "options": [
+            "Disponerlo cuando termina el trabajo",
+            "Mantenerlo para siempre",
+            "Registrarlo en configuration",
+            "Publicarlo en Blazor WASM"
+          ],
+          "correct": "A",
+          "explanation": "El scope debe liberar sus recursos.",
+          "citation": "DI guidelines — scopes and disposal",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-132",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué diferencia hay entre scope y singleton?",
+          "options": [
+            "El scope limita la vida a un ámbito; singleton comparte en el contenedor",
+            "Ambos crean siempre una instancia por resolución",
+            "Singleton es más corto que scope",
+            "No hay diferencia"
+          ],
+          "correct": "A",
+          "explanation": "Sus duraciones y compartición son distintas.",
+          "citation": "Service lifetimes",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-133",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué puede provocar un singleton que retiene una referencia a un componente?",
+          "options": [
+            "Vida excesiva y fuga de recursos",
+            "Mejor prerender",
+            "Un route match",
+            "Un options reload"
+          ],
+          "correct": "A",
+          "explanation": "El singleton puede prolongar la vida de objetos de menor alcance.",
+          "citation": "DI guidelines — disposal and design",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-134",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué debe decidirse antes de elegir lifetime?",
+          "options": [
+            "Si el estado debe compartirse y cuánto debe vivir",
+            "El nombre del assembly",
+            "La clase CSS",
+            "El puerto HTTP únicamente"
+          ],
+          "correct": "A",
+          "explanation": "La duración y compartición guían la elección.",
+          "citation": "Service lifetimes — choosing a lifetime",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-135",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué servicio es candidato a singleton?",
+          "options": [
+            "Un componente stateless thread-safe compartido",
+            "Un contexto de usuario mutable",
+            "Un objeto de request",
+            "Un componente visual"
+          ],
+          "correct": "A",
+          "explanation": "Singleton requiere seguridad y estado apropiados.",
+          "citation": "DI guidelines — singleton services",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-136",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué servicio es candidato a scoped?",
+          "options": [
+            "Una unidad de trabajo limitada a un scope",
+            "Un valor global de configuración inmutable únicamente",
+            "Un helper puro sin estado",
+            "Un archivo estático"
+          ],
+          "correct": "A",
+          "explanation": "Scoped limita la instancia a un ámbito.",
+          "citation": "Service lifetimes — scoped",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-137",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué servicio es candidato a transient?",
+          "options": [
+            "Una operación ligera sin estado retenido",
+            "Un cache global",
+            "Un contexto de circuito",
+            "Un registro de usuario"
+          ],
+          "correct": "A",
+          "explanation": "Transient evita compartir estado entre resoluciones.",
+          "citation": "Service lifetimes — transient",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-138",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué implica resolver varias veces un singleton en el mismo proveedor?",
+          "options": [
+            "Se obtiene la misma instancia",
+            "Se obtiene una nueva siempre",
+            "Falla por duplicidad",
+            "Se crea un scope nuevo"
+          ],
+          "correct": "A",
+          "explanation": "El singleton mantiene una instancia compartida.",
+          "citation": "Service lifetimes — singleton",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-139",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué problema puede detectar ValidateScopes en desarrollo?",
+          "options": [
+            "Un singleton que depende de un scoped",
+            "Un JSON mal indentado",
+            "Una ruta no encontrada",
+            "Una query vacía"
+          ],
+          "correct": "A",
+          "explanation": "La validación revisa relaciones de alcance.",
+          "citation": "DI guidelines — scope validation",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-140",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué práctica evita problemas de disposición?",
+          "options": [
+            "Dejar que el propietario de la instancia gestione su ciclo de vida",
+            "Disponer cualquier objeto inyectado al salir del método",
+            "Guardar todos los servicios estáticos",
+            "No crear scopes"
+          ],
+          "correct": "A",
+          "explanation": "La disposición corresponde al propietario del recurso.",
+          "citation": "DI guidelines — disposal",
+          "source_id": "ASPNET-DI-10"
+        }
+      ]
+    }
+  ]
+}

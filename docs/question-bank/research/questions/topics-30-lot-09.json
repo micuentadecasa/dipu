@@ -1,0 +1,336 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-30-blazor-di-configuration.md",
+  "batches": [
+    {
+      "topic_num": 30,
+      "lot_num": 9,
+      "source_ids": [
+        "BLAZOR-CONFIG-10",
+        "DOTNET-CONFIG-10"
+      ],
+      "questions": [
+        {
+          "objective_id": "t30-lo-161",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué patrón agrupa configuración relacionada en una clase?",
+          "options": [
+            "Options pattern",
+            "Route pattern",
+            "Circuit pattern",
+            "Layout pattern"
+          ],
+          "correct": "A",
+          "explanation": "Options agrupa valores relacionados en tipos.",
+          "citation": "Options pattern",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-162",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué método enlaza una sección con una clase de opciones?",
+          "options": [
+            "Bind",
+            "NavigateTo",
+            "AddScopedOnly",
+            "RenderSection"
+          ],
+          "correct": "A",
+          "explanation": "Bind copia valores de configuración a una instancia.",
+          "citation": "Options binding — Bind",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-163",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué interfaz representa opciones evaluadas una vez?",
+          "options": [
+            "IOptions<T>",
+            "IOptionsSnapshotOnly<T>",
+            "IConfigurationProvider<T>",
+            "IKeyedOptions<T>"
+          ],
+          "correct": "A",
+          "explanation": "IOptions proporciona el valor según su semántica.",
+          "citation": "Options — IOptions<T>",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-164",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué interfaz permite observar cambios de opciones?",
+          "options": [
+            "IOptionsMonitor<T>",
+            "IOptionsStatic<T>",
+            "IConfigurationRootOnly<T>",
+            "ITransientValue<T>"
+          ],
+          "correct": "A",
+          "explanation": "IOptionsMonitor permite acceder a cambios.",
+          "citation": "Options — IOptionsMonitor<T>",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-165",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué interfaz ofrece opciones por scope/request?",
+          "options": [
+            "IOptionsSnapshot<T>",
+            "IOptionsGlobal<T>",
+            "IOptionsBrowser<T>",
+            "IOptionsRoute<T>"
+          ],
+          "correct": "A",
+          "explanation": "Snapshot proporciona una instantánea dentro del alcance.",
+          "citation": "Options — IOptionsSnapshot<T>",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-166",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué permite una opción nombrada?",
+          "options": [
+            "Varias configuraciones del mismo tipo identificadas por nombre",
+            "Una sola clave global",
+            "Una ruta sin componente",
+            "Un servicio sin lifetime"
+          ],
+          "correct": "A",
+          "explanation": "Named options distinguen configuraciones del mismo tipo.",
+          "citation": "Options — named options",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-167",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué ventaja tiene validar options al arrancar?",
+          "options": [
+            "Fallar pronto si la configuración requerida es inválida",
+            "Evitar todo binding",
+            "Crear un circuito",
+            "Ocultar errores de producción"
+          ],
+          "correct": "A",
+          "explanation": "Startup validation detecta configuración inválida temprano.",
+          "citation": "Options validation",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-168",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué atributo puede expresar reglas declarativas de validación de options?",
+          "options": [
+            "Atributos de validación como DataAnnotations",
+            "RouteAttribute solamente",
+            "InjectAttribute solamente",
+            "LayoutAttribute"
+          ],
+          "correct": "A",
+          "explanation": "Las opciones pueden validarse mediante anotaciones.",
+          "citation": "Options validation — DataAnnotations",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-169",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué aporta ValidateOnStart?",
+          "options": [
+            "Ejecutar validación durante el inicio",
+            "Recargar cada evento UI",
+            "Crear una instancia transient",
+            "Cambiar BaseUri"
+          ],
+          "correct": "A",
+          "explanation": "La validación se ejecuta al iniciar la aplicación.",
+          "citation": "Options validation — ValidateOnStart",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-170",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué diferencia IOptionsMonitor de IOptionsSnapshot?",
+          "options": [
+            "Monitor puede observar cambios; Snapshot representa valores por scope",
+            "Snapshot observa siempre y Monitor nunca",
+            "Ambas solo funcionan en browser",
+            "No hay diferencia"
+          ],
+          "correct": "A",
+          "explanation": "Sus semánticas de actualización/alcance difieren.",
+          "citation": "Options — monitor and snapshot",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-171",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué valor debe evitarse poner directamente en un tipo options público de Blazor WebAssembly?",
+          "options": [
+            "Un secreto que el cliente no debe conocer",
+            "Una URL pública",
+            "Un nombre de feature",
+            "Un límite de paginación"
+          ],
+          "correct": "A",
+          "explanation": "La configuración WASM accesible al cliente no es secreta.",
+          "citation": "Blazor configuration — public configuration",
+          "source_id": "BLAZOR-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-172",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué significa que la configuración de Blazor WebAssembly sea pública?",
+          "options": [
+            "El usuario puede recibirla y examinarla en el cliente",
+            "Solo el servidor la ve",
+            "Se cifra automáticamente",
+            "Solo existe durante prerender"
+          ],
+          "correct": "A",
+          "explanation": "Los valores enviados al cliente son visibles.",
+          "citation": "Blazor configuration — public configuration",
+          "source_id": "BLAZOR-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-173",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué debe hacer una aplicación con secretos necesarios en operaciones servidor?",
+          "options": [
+            "Mantenerlos en el servidor y no exponerlos en configuración pública",
+            "Enviarlos a appsettings del cliente",
+            "Guardarlos en URL",
+            "Serializarlos en el componente"
+          ],
+          "correct": "A",
+          "explanation": "Los secretos deben permanecer fuera del cliente.",
+          "citation": "Blazor configuration — public configuration",
+          "source_id": "BLAZOR-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-174",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué permite configurar IOptionsMonitor al cambiar una fuente?",
+          "options": [
+            "Reaccionar o leer el valor actualizado según el patrón",
+            "Cambiar siempre el lifetime",
+            "Crear una ruta nueva",
+            "Persistirlo en browser storage"
+          ],
+          "correct": "A",
+          "explanation": "Monitor está diseñado para cambios de opciones.",
+          "citation": "Options — IOptionsMonitor",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-175",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué representa una snapshot de options?",
+          "options": [
+            "Los valores de configuración capturados para un alcance",
+            "Todos los valores históricos",
+            "Un commit de Git",
+            "Una copia del working tree"
+          ],
+          "correct": "A",
+          "explanation": "Snapshot representa valores dentro de su scope.",
+          "citation": "Options — IOptionsSnapshot",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-176",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué debe coincidir para que Bind produzca opciones útiles?",
+          "options": [
+            "Los nombres/estructura de las claves y propiedades",
+            "El nombre del layout",
+            "El BaseUri",
+            "El nombre del circuito"
+          ],
+          "correct": "A",
+          "explanation": "El binding relaciona estructura de configuración y propiedades.",
+          "citation": "Options binding — Bind",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-177",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué ventaja ofrece una clase options frente a leer cadenas dispersas?",
+          "options": [
+            "Tipado y agrupación de configuración relacionada",
+            "Oculta todos los secretos",
+            "Elimina providers",
+            "Crea servicios automáticamente"
+          ],
+          "correct": "A",
+          "explanation": "El patrón centraliza valores tipados.",
+          "citation": "Options pattern",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-178",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué puede hacer una validación de options cuando falta un valor requerido?",
+          "options": [
+            "Rechazar la configuración",
+            "Crear un valor seguro siempre",
+            "Cambiar a singleton",
+            "Ignorar el error sin decisión"
+          ],
+          "correct": "A",
+          "explanation": "La validación puede impedir usar configuración incompleta.",
+          "citation": "Options validation",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-179",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué relación existe entre IConfiguration y options?",
+          "options": [
+            "IConfiguration es fuente/acceso y options es una representación tipada vinculada",
+            "Options reemplaza todos los providers",
+            "IConfiguration solo sirve para rutas",
+            "No se relacionan"
+          ],
+          "correct": "A",
+          "explanation": "Options se construye desde configuración.",
+          "citation": "Configuration; Options pattern",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-180",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué debe decidirse al usar monitor de options?",
+          "options": [
+            "Cómo reaccionará el consumidor a cambios y qué recursos debe liberar",
+            "Qué rama Git publicar",
+            "Qué layout usar",
+            "Qué ruta catch-all declarar"
+          ],
+          "correct": "A",
+          "explanation": "Los cambios requieren una política de consumo adecuada.",
+          "citation": "Options — IOptionsMonitor",
+          "source_id": "DOTNET-CONFIG-10"
+        }
+      ]
+    }
+  ]
+}
