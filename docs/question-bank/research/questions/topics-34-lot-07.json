@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-34-git-branches-rebase-merge-stash.md",
+  "batches": [
+    {
+      "topic_num": 34,
+      "lot_num": 7,
+      "source_ids": [
+        "GIT-2.50"
+      ],
+      "questions": [
+        {
+          "objective_id": "t34-lo-121",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "Tras resolver manualmente un conflicto de merge, ¿qué registra la resolución?",
+          "options": [
+            "git add en el índice",
+            "git branch --list",
+            "git reflog expire",
+            "git stash clear"
+          ],
+          "correct": "A",
+          "explanation": "add reemplaza las entradas conflictivas por la versión resuelta.",
+          "citation": "git-merge — HOW CONFLICTS ARE PRESENTED; git-add — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-122",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué información ayuda a identificar un merge pendiente?",
+          "options": [
+            "MERGE_HEAD",
+            "ORIG_HEAD únicamente",
+            "STASH_HEAD",
+            "BRANCH_HEAD"
+          ],
+          "correct": "A",
+          "explanation": "MERGE_HEAD registra el commit o commits que se fusionan.",
+          "citation": "gitrepository-layout — MERGE_HEAD; git-merge — TRUE MERGE",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-123",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué muestra status durante un conflicto de merge?",
+          "options": [
+            "Rutas no fusionadas y acciones pendientes",
+            "Solo remotos configurados",
+            "Solo tags",
+            "El reflog completo"
+          ],
+          "correct": "A",
+          "explanation": "status orienta sobre las rutas no fusionadas.",
+          "citation": "git-status — DESCRIPTION; git-merge — HOW CONFLICTS ARE PRESENTED",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-124",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué hace merge --continue después de registrar resoluciones?",
+          "options": [
+            "Permite finalizar la fusión pendiente",
+            "Elimina todos los conflictos sin revisar",
+            "Crea un stash",
+            "Cambia de rama"
+          ],
+          "correct": "A",
+          "explanation": "continue usa el índice resuelto para completar la operación.",
+          "citation": "git-merge — --continue",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-125",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué diferencia hay entre merge --abort y merge --quit?",
+          "options": [
+            "abort intenta volver al estado previo; quit olvida la operación y conserva el estado actual",
+            "quit restaura siempre y abort solo muestra estado",
+            "Ambos borran la rama",
+            "Ambos crean un commit"
+          ],
+          "correct": "A",
+          "explanation": "Las opciones tienen esos efectos distintos.",
+          "citation": "git-merge — --abort; --quit",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-126",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué opción impide el avance rápido y permite editar antes del commit?",
+          "options": [
+            "--no-ff junto con --no-commit",
+            "--ff-only junto con --edit",
+            "--quit junto con --abort",
+            "--squash junto con --prune"
+          ],
+          "correct": "A",
+          "explanation": "no-ff asegura commit y no-commit pausa antes de crearlo.",
+          "citation": "git-merge — --ff/--no-ff; --no-commit",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-127",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué representa un merge de múltiples heads?",
+          "options": [
+            "Un commit de integración con más de dos padres",
+            "Un commit sin padres",
+            "Un stash con varias entradas",
+            "Una rama sin nombre"
+          ],
+          "correct": "A",
+          "explanation": "La integración de múltiples heads puede crear varios padres.",
+          "citation": "git-merge — MERGING MULTIPLE HEADS",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-128",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué selecciona merge -s?",
+          "options": [
+            "El algoritmo de estrategia de integración",
+            "El mensaje del commit",
+            "La rama actual",
+            "El stash a aplicar"
+          ],
+          "correct": "A",
+          "explanation": "La opción selecciona la estrategia.",
+          "citation": "git-merge — -s/--strategy",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-129",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué modifica merge --edit?",
+          "options": [
+            "El mensaje del commit de integración",
+            "El algoritmo de comparación",
+            "La URL del repositorio",
+            "El contenido del reflog"
+          ],
+          "correct": "A",
+          "explanation": "edit afecta al mensaje, no al algoritmo.",
+          "citation": "git-merge — --edit",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-130",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué hace rebase con los commits seleccionados?",
+          "options": [
+            "Los reaplica sobre otra base y recrea la historia",
+            "Los convierte en tags sin cambios",
+            "Los borra sin posibilidad de conflicto",
+            "Los guarda siempre en stash"
+          ],
+          "correct": "A",
+          "explanation": "rebase reaplica commits sobre una base diferente.",
+          "citation": "git-rebase — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-131",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué determina upstream en un rebase básico?",
+          "options": [
+            "La nueva base y el conjunto de commits que quedan fuera de ella",
+            "Solo el mensaje de commit",
+            "La lista de stashes",
+            "El nombre del remoto"
+          ],
+          "correct": "A",
+          "explanation": "upstream participa en base y selección de commits.",
+          "citation": "git-rebase — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-132",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué separa --onto respecto del upstream?",
+          "options": [
+            "La nueva base de la referencia que determina qué commits se reaplican",
+            "El índice del working tree",
+            "El mensaje y el autor",
+            "La rama local y el tag"
+          ],
+          "correct": "A",
+          "explanation": "onto permite separar esas dos funciones.",
+          "citation": "git-rebase — --onto",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-133",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Por qué cambian los identificadores de commits tras rebase?",
+          "options": [
+            "Porque se recrean con padres distintos",
+            "Porque se renombran las ramas",
+            "Porque se borran los tags",
+            "Porque cambia el working tree"
+          ],
+          "correct": "A",
+          "explanation": "El cambio de padres cambia la identidad criptográfica.",
+          "citation": "git-rebase — DESCRIPTION; gitrevisions — commit object",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-134",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué riesgo colaborativo tiene reescribir commits publicados?",
+          "options": [
+            "Puede obligar a reconciliar historias divergentes de colaboradores",
+            "Solo cambia el color del diff",
+            "Nunca afecta referencias compartidas",
+            "Solo elimina stashes locales"
+          ],
+          "correct": "A",
+          "explanation": "La historia publicada requiere coordinación al reescribirse.",
+          "citation": "git-rebase — RECOVERING FROM UPSTREAM REBASE",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-135",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué hace rebase --fork-point?",
+          "options": [
+            "Puede usar el reflog del upstream para elegir un punto de fork adecuado",
+            "Fuerza siempre la rama raíz",
+            "Borra el reflog",
+            "Crea un merge commit"
+          ],
+          "correct": "A",
+          "explanation": "La opción usa información del reflog de upstream.",
+          "citation": "git-rebase — --fork-point",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-136",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué ocurre cuando un parche de rebase no aplica limpiamente?",
+          "options": [
+            "La secuencia se detiene para resolverlo",
+            "Se crea siempre un merge commit",
+            "Se descarta toda la rama",
+            "Se publica automáticamente"
+          ],
+          "correct": "A",
+          "explanation": "rebase pausa para resolución.",
+          "citation": "git-rebase — DESCRIPTION; CONFLICTS",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-137",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué comando retoma un rebase después de resolver y hacer add?",
+          "options": [
+            "git rebase --continue",
+            "git rebase --merge-now",
+            "git merge --finish",
+            "git branch --resume"
+          ],
+          "correct": "A",
+          "explanation": "continue prosigue con la solución del índice.",
+          "citation": "git-rebase — --continue",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-138",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué decide rebase --skip?",
+          "options": [
+            "Descartar el commit conflictivo y pasar al siguiente",
+            "Guardar el commit en stash",
+            "Crear un tag del conflicto",
+            "Abortar y restaurar siempre"
+          ],
+          "correct": "A",
+          "explanation": "skip omite ese commit en la secuencia.",
+          "citation": "git-rebase — --skip",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-139",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué intenta hacer rebase --abort?",
+          "options": [
+            "Devolver HEAD y la rama al estado anterior a la operación",
+            "Eliminar solo el mensaje",
+            "Continuar con el siguiente commit",
+            "Convertir el rebase en merge"
+          ],
+          "correct": "A",
+          "explanation": "abort detiene y procura restaurar el estado previo.",
+          "citation": "git-rebase — --abort",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-140",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué diferencia hay entre rebase --quit y rebase --abort?",
+          "options": [
+            "quit deja estado y referencias sin restablecer; abort intenta restaurarlos",
+            "quit crea merge y abort crea stash",
+            "Ambos tienen el mismo efecto",
+            "abort deja siempre el rebase activo"
+          ],
+          "correct": "A",
+          "explanation": "Son operaciones de salida con efectos distintos.",
+          "citation": "git-rebase — --quit; --abort",
+          "source_id": "GIT-2.50"
+        }
+      ]
+    }
+  ]
+}

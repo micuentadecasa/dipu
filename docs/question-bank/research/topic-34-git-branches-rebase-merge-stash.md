@@ -16,7 +16,7 @@
 
 ## Verified propositions and objective map
 
-The 100 objective statements below were checked against the cited section of the official Git reference on the research date. Candidate questions are split into five sequential lots of 20; independent review checks the answer and citation before import.
+The initial 100 objective statements below were checked against the cited section of the official Git reference on the research date. Candidate questions are split into five sequential lots of 20; independent review checks the answer and citation before import. Expansion lots 06–10 add 100 independently reviewed scenario and comparison statements covering branch/merge recovery, rebase modes, stash scope and local-history recovery.
 
 - `t34-lo-001` — Una rama es una referencia que puede avanzar cuando se crean commits, mientras comparte la base de objetos del repositorio. *(citation: gitglossary — branch; ref)*
 - `t34-lo-002` — La forma simple de git branch crea una referencia nueva en el punto indicado, que por defecto es HEAD. *(citation: git-branch — DESCRIPTION)*
@@ -125,3 +125,4 @@ The 100 objective statements below were checked against the cited section of the
 - The first 80 objectives cover definitions, mechanisms and recovery procedures; objectives 81–100 explicitly compare merge/rebase/branch/stash choices and recovery implications.
 - No remote operation, pull request, or GitFlow/trunk-based claim is used here; those are reserved for topic 35.
 - `GIT-2.50` is the only source ID used. Its version/as-of, URL, retrieval date and verification date remain attached to every imported record through the native additive schema.
+- Expansion records stay within local branch, merge, rebase and stash behavior; remote transport, pull requests and named branch strategies remain reserved for Topic 35.

@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-34-git-branches-rebase-merge-stash.md",
+  "batches": [
+    {
+      "topic_num": 34,
+      "lot_num": 9,
+      "source_ids": [
+        "GIT-2.50"
+      ],
+      "questions": [
+        {
+          "objective_id": "t34-lo-161",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué índice de stash designa normalmente la entrada más reciente?",
+          "options": [
+            "stash@{0}",
+            "stash@{last}",
+            "HEAD@{0}",
+            "refs/stash@{oldest}"
+          ],
+          "correct": "A",
+          "explanation": "El índice cero es la entrada más reciente.",
+          "citation": "git-stash — DESCRIPTION; gitrevisions — reflog selectors",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-162",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué opción permite limitar el stash a rutas elegidas?",
+          "options": [
+            "Un pathspec",
+            "--all-remotes",
+            "--branch-only",
+            "--merge-base"
+          ],
+          "correct": "A",
+          "explanation": "El pathspec selecciona partes del working tree.",
+          "citation": "git-stash — push; gitglossary — pathspec",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-163",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué busca mantener stash --keep-index?",
+          "options": [
+            "El estado preparado mientras guarda el resto",
+            "Todos los archivos ignorados",
+            "El remoto origin",
+            "El merge base"
+          ],
+          "correct": "A",
+          "explanation": "keep-index deja intacto lo staged.",
+          "citation": "git-stash — --keep-index",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-164",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué combinación incluye ignorados y no seguidos?",
+          "options": [
+            "stash --all",
+            "stash --index",
+            "stash --keep-index",
+            "stash --message"
+          ],
+          "correct": "A",
+          "explanation": "all incluye ambas categorías.",
+          "citation": "git-stash — -a/--all",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-165",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué diferencia fundamental hay entre un stash y un commit de rama?",
+          "options": [
+            "El stash aparta temporalmente trabajo y el commit forma historial nombrado",
+            "El stash siempre se publica y el commit no",
+            "El commit no tiene objeto",
+            "No hay diferencia"
+          ],
+          "correct": "A",
+          "explanation": "El stash es trabajo temporal; el commit integra historial.",
+          "citation": "git-stash — DESCRIPTION; gitglossary — commit object",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-166",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué ventaja tiene aplicar en vez de hacer pop cuando se quiere conservar una copia?",
+          "options": [
+            "apply deja disponible la entrada",
+            "apply elimina la entrada",
+            "pop deja siempre dos copias",
+            "No hay ventaja"
+          ],
+          "correct": "A",
+          "explanation": "apply no retira el stash.",
+          "citation": "git-stash — apply; pop",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-167",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué diferencia hay entre -d y -D al borrar una rama?",
+          "options": [
+            "-d comprueba integración y -D fuerza el borrado",
+            "-d publica y -D descarga",
+            "-d renombra y -D copia",
+            "Ambos solo listan"
+          ],
+          "correct": "A",
+          "explanation": "La opción forzada omite la comprobación normal.",
+          "citation": "git-branch — -d/--delete; -D",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-168",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué diferencia topológica distingue merge commit y fast-forward?",
+          "options": [
+            "El primero registra relación con padres múltiples y el segundo solo mueve una ref",
+            "Fast-forward crea dos padres y merge ninguno",
+            "Ambos siempre recrean commits",
+            "No hay diferencia"
+          ],
+          "correct": "A",
+          "explanation": "Son resultados topológicos distintos.",
+          "citation": "git-merge — TRUE MERGE; FAST-FORWARD MERGE",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-169",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué cambia rebase que merge normalmente no cambia?",
+          "options": [
+            "Los padres e identificadores de commits reaplicados",
+            "El nombre del repositorio",
+            "La configuración del editor",
+            "Los archivos ignorados"
+          ],
+          "correct": "A",
+          "explanation": "rebase recrea commits con otros padres.",
+          "citation": "git-rebase — DESCRIPTION; git-merge — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-170",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Por qué suele preferirse rebase antes de publicar una rama?",
+          "options": [
+            "Porque los commits recreados aún no son referencias compartidas por colaboradores",
+            "Porque nunca puede tener conflictos",
+            "Porque crea un tag remoto",
+            "Porque elimina el working tree"
+          ],
+          "correct": "A",
+          "explanation": "La advertencia sobre historia publicada hace relevante el momento.",
+          "citation": "git-rebase — RECOVERING FROM UPSTREAM REBASE",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-171",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué señal aporta branch --merged antes de borrar?",
+          "options": [
+            "Alcanzabilidad desde el punto consultado",
+            "Que la rama tiene stashes",
+            "Que el remoto existe",
+            "Que el commit está firmado"
+          ],
+          "correct": "A",
+          "explanation": "merged ayuda a distinguir referencias integradas.",
+          "citation": "git-branch — --merged; -d/--delete",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-172",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué hace renombrar una rama respecto a sus commits?",
+          "options": [
+            "Cambia el nombre de la ref, no la secuencia señalada",
+            "Recrea todos los commits",
+            "Los fusiona automáticamente",
+            "Los guarda en stash"
+          ],
+          "correct": "A",
+          "explanation": "rename cambia la referencia.",
+          "citation": "git-branch — -m/--move; gitrepository-layout — HEAD",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-173",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué orden se usa normalmente para comunicar que una ruta en conflicto está resuelta?",
+          "options": [
+            "git add",
+            "git branch --copy",
+            "git stash list",
+            "git reflog expire"
+          ],
+          "correct": "A",
+          "explanation": "add registra la versión elegida en el índice.",
+          "citation": "git-add — DESCRIPTION; git-merge — HOW CONFLICTS ARE PRESENTED",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-174",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué diferencia hay entre abortar merge y abortar rebase?",
+          "options": [
+            "Cada abort actúa sobre su propia operación pendiente y procura restaurar su estado previo",
+            "Ambos publican cambios",
+            "Merge abort borra ramas y rebase aborta tags",
+            "No hay operación pendiente"
+          ],
+          "correct": "A",
+          "explanation": "Los comandos corresponden a secuencias distintas.",
+          "citation": "git-merge — --abort; git-rebase — --abort",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-175",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué recurso puede revelar una posición anterior tras mover o borrar una ref?",
+          "options": [
+            "El reflog mientras se conserve",
+            "La lista de tags remotos",
+            "El archivo de configuración de aliases",
+            "El mensaje del working tree"
+          ],
+          "correct": "A",
+          "explanation": "El reflog conserva actualizaciones locales durante su retención.",
+          "citation": "git-reflog — DESCRIPTION; git-branch — -d/--delete",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-176",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué puede ocurrir con objetos tras borrar una referencia?",
+          "options": [
+            "No desaparecen necesariamente de inmediato",
+            "Se publican automáticamente",
+            "Se convierten en stashes",
+            "Se reescriben siempre"
+          ],
+          "correct": "A",
+          "explanation": "Borrar la ref no implica desaparición inmediata de objetos.",
+          "citation": "git-branch — -d/--delete; git-reflog — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-177",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué estado debe preparar add antes de continuar un rebase?",
+          "options": [
+            "El índice con la resolución del conflicto",
+            "El remoto con un push",
+            "El stash con --all",
+            "La rama con --copy"
+          ],
+          "correct": "A",
+          "explanation": "continue usa la resolución registrada en el índice.",
+          "citation": "git-rebase — CONFLICTS; git-add — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-178",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué opción de merge crea una pausa sin por sí sola impedir fast-forward?",
+          "options": [
+            "--no-commit",
+            "--no-ff",
+            "--ff-only",
+            "--strategy"
+          ],
+          "correct": "A",
+          "explanation": "no-commit pausa antes del commit cuando hay uno que crear; no-ff controla fast-forward.",
+          "citation": "git-merge — --no-commit; --ff/--no-ff",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-179",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué combinación evita fast-forward y permite revisar antes del commit?",
+          "options": [
+            "--no-ff --no-commit",
+            "--ff-only --quit",
+            "--edit --abort",
+            "--strategy --skip"
+          ],
+          "correct": "A",
+          "explanation": "Las dos opciones cumplen esas partes del flujo.",
+          "citation": "git-merge — --ff/--no-ff; --no-commit",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t34-lo-180",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué acción conserva un stash para reutilizarlo en más de un contexto?",
+          "options": [
+            "Aplicarlo con apply",
+            "Eliminarlo con clear",
+            "Hacer pop siempre",
+            "Usar drop"
+          ],
+          "correct": "A",
+          "explanation": "apply deja disponible la entrada.",
+          "citation": "git-stash — apply",
+          "source_id": "GIT-2.50"
+        }
+      ]
+    }
+  ]
+}
