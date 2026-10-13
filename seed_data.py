@@ -38648,3 +38648,1028 @@ SEED_QUESTIONS.extend([
     }
 ])
 # QUESTION_BANK_ACCEPTED_TOPIC_28_LOT_10_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_27_LOT_06_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 27,
+        "question": "¿Qué mecanismo proporciona un valor desde un ancestro a sus descendientes?",
+        "option_a": "CascadingValue",
+        "option_b": "RouteValue",
+        "option_c": "InheritedServiceOnly",
+        "option_d": "ChildParameterTree",
+        "correct": "A",
+        "explanation": "CascadingValue hace disponible un valor a componentes descendientes."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué atributo recibe un valor proporcionado en cascada?",
+        "option_a": "CascadingParameter",
+        "option_b": "InheritedParameterOnly",
+        "option_c": "ReceiveCascade",
+        "option_d": "AncestorValue",
+        "correct": "A",
+        "explanation": "CascadingParameter marca la propiedad receptora."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué problema resuelve principalmente un valor en cascada?",
+        "option_a": "Evita pasar explícitamente el mismo dato por componentes intermedios",
+        "option_b": "Crea un endpoint",
+        "option_c": "Aísla CSS",
+        "option_d": "Convierte un input en formulario",
+        "correct": "A",
+        "explanation": "El valor puede atravesar descendientes sin parámetros intermedios."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Cómo se distinguen dos valores en cascada del mismo tipo?",
+        "option_a": "Con un nombre de cascada",
+        "option_b": "Con el nombre del assembly",
+        "option_c": "Con una ruta URL",
+        "option_d": "Con un CSS class solamente",
+        "correct": "A",
+        "explanation": "Los nombres permiten distinguir valores del mismo tipo."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué debe coincidir para recibir una cascada nombrada?",
+        "option_a": "El nombre proporcionado y el nombre esperado",
+        "option_b": "El puerto HTTP",
+        "option_c": "El nombre del layout",
+        "option_d": "El nombre de la base de datos",
+        "correct": "A",
+        "explanation": "La coincidencia de nombre selecciona el valor."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué implica IsFixed en un valor en cascada?",
+        "option_a": "Indica que el valor no cambia y evita suscripciones innecesarias",
+        "option_b": "Fuerza render en cada evento",
+        "option_c": "Crea un singleton DI",
+        "option_d": "Oculta el valor",
+        "correct": "A",
+        "explanation": "IsFixed es apropiado cuando la cascada no cambia."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué puede provocar que cambie un valor en cascada?",
+        "option_a": "Actualizaciones o renderizados en componentes descendientes",
+        "option_b": "Una nueva ruta siempre",
+        "option_c": "Un error de CSS",
+        "option_d": "La eliminación del padre",
+        "correct": "A",
+        "explanation": "Los descendientes pueden reaccionar al cambio."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Por qué debe cuidarse una cascada mutable?",
+        "option_a": "Puede afectar a muchos descendientes y causar renders adicionales",
+        "option_b": "Porque nunca puede cambiar",
+        "option_c": "Porque solo existe en CSS",
+        "option_d": "Porque reemplaza todos los servicios",
+        "correct": "A",
+        "explanation": "Su alcance amplio hace importante controlar mutaciones."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué no hace automáticamente CascadingValue?",
+        "option_a": "Sustituir el registro y las reglas de ciclo de vida de DI",
+        "option_b": "Pasar datos a descendientes",
+        "option_c": "Permitir un nombre",
+        "option_d": "Notificar cambios según el caso",
+        "correct": "A",
+        "explanation": "Cascada y DI tienen propósitos distintos."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué permite la composición de componentes?",
+        "option_a": "Construir una UI combinando componentes sin heredar controles",
+        "option_b": "Crear únicamente CSS global",
+        "option_c": "Evitar todos los parámetros",
+        "option_d": "Ejecutar SQL",
+        "correct": "A",
+        "explanation": "La composición organiza UI mediante componentes."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué debe distinguir un componente bien diseñado?",
+        "option_a": "Parámetros recibidos, estado local y contexto compartido",
+        "option_b": "Solo nombres de clases",
+        "option_c": "Solo rutas",
+        "option_d": "Solo servicios globales",
+        "correct": "A",
+        "explanation": "Separar estas fuentes clarifica el flujo de datos."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué puede representar un valor en cascada?",
+        "option_a": "Un contexto o dato compartido por un subárbol",
+        "option_b": "Solo un evento DOM",
+        "option_c": "Solo un archivo CSS",
+        "option_d": "Una consulta SQL obligatoria",
+        "correct": "A",
+        "explanation": "La cascada comparte valores en un subárbol."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué riesgo existe al usar cascadas para todo el estado?",
+        "option_a": "Dependencias implícitas y actualizaciones difíciles de rastrear",
+        "option_b": "Que no haya ningún render",
+        "option_c": "Que se eliminen parámetros",
+        "option_d": "Que CSS no compile",
+        "correct": "A",
+        "explanation": "El alcance implícito puede dificultar el mantenimiento."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué mecanismo es más explícito para una dependencia directa padre-hijo?",
+        "option_a": "Un parámetro de componente",
+        "option_b": "Una cascada global siempre",
+        "option_c": "Una referencia DOM",
+        "option_d": "Una ruta",
+        "correct": "A",
+        "explanation": "El parámetro documenta la relación directa."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué papel tiene el componente padre en la composición?",
+        "option_a": "Proporcionar parámetros, contenido y callbacks al hijo",
+        "option_b": "Disponer siempre al hijo manualmente",
+        "option_c": "Cambiar el assembly",
+        "option_d": "Controlar el CSS global",
+        "correct": "A",
+        "explanation": "El padre compone al hijo mediante su API."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué debe hacer un componente consumidor si no encuentra una cascada requerida?",
+        "option_a": "Diseñar un valor predeterminado o fallar de forma clara según el contrato",
+        "option_b": "Crear un servicio aleatorio",
+        "option_c": "Ignorar siempre la ausencia",
+        "option_d": "Cambiar la URL",
+        "correct": "A",
+        "explanation": "El contrato debe tratar una cascada ausente explícitamente."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué puede limitar el efecto de una cascada?",
+        "option_a": "El subárbol bajo el proveedor",
+        "option_b": "El nombre del archivo CSS",
+        "option_c": "La rama Git",
+        "option_d": "El método HTTP",
+        "correct": "A",
+        "explanation": "La cascada se aplica al árbol descendiente."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué ventaja tiene nombrar cascadas cuando hay tipos iguales?",
+        "option_a": "Evita ambigüedad entre valores",
+        "option_b": "Elimina el renderizado",
+        "option_c": "Convierte el valor en constante C#",
+        "option_d": "Añade validación de formulario",
+        "correct": "A",
+        "explanation": "El nombre selecciona la cascada correcta."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué combinación expresa flujo descendente y ascendente?",
+        "option_a": "CascadingParameter para contexto y EventCallback para notificación",
+        "option_b": "Solo CSS",
+        "option_c": "Solo RenderFragment",
+        "option_d": "Solo @ref",
+        "correct": "A",
+        "explanation": "Los mecanismos cubren dirección descendente y ascendente."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué principio evita un componente demasiado acoplado?",
+        "option_a": "Exponer una API de parámetros/callbacks en vez de conocer detalles del padre",
+        "option_b": "Usar referencias privadas del padre",
+        "option_c": "Mutar cualquier cascada",
+        "option_d": "Leer el DOM antes de render",
+        "correct": "A",
+        "explanation": "Una API explícita reduce acoplamiento."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_27_LOT_06_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_27_LOT_07_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 27,
+        "question": "¿Qué directiva enlaza un evento de clic en Blazor?",
+        "option_a": "@onclick",
+        "option_b": "@clickRoute",
+        "option_c": "@event-click-only",
+        "option_d": "@onbutton",
+        "correct": "A",
+        "explanation": "@onclick enlaza el evento click."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué tipo representa argumentos de un evento de ratón?",
+        "option_a": "MouseEventArgs",
+        "option_b": "ClickRouteArgs",
+        "option_c": "PointerParameterOnly",
+        "option_d": "MouseContext",
+        "correct": "A",
+        "explanation": "MouseEventArgs contiene datos del evento de ratón."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué tipo representa argumentos de cambio de un control?",
+        "option_a": "ChangeEventArgs",
+        "option_b": "InputRouteArgs",
+        "option_c": "ChangeContextOnly",
+        "option_d": "ValueEventArgsOnly",
+        "correct": "A",
+        "explanation": "ChangeEventArgs representa cambios de entrada."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué permite un lambda en un manejador de eventos?",
+        "option_a": "Capturar y pasar datos adicionales",
+        "option_b": "Desactivar todos los renders",
+        "option_c": "Crear un servicio",
+        "option_d": "Aislar CSS",
+        "correct": "A",
+        "explanation": "El lambda puede cerrar sobre datos del contexto."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué representa EventCallback?",
+        "option_a": "Un callback de evento diseñado para comunicación entre componentes",
+        "option_b": "Un endpoint HTTP",
+        "option_c": "Un estilo CSS",
+        "option_d": "Un modelo de configuración",
+        "correct": "A",
+        "explanation": "EventCallback comunica eventos entre componentes."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué ventaja tiene EventCallback<TValue>?",
+        "option_a": "El argumento del callback tiene tipo explícito",
+        "option_b": "El evento no puede ser asíncrono",
+        "option_c": "El componente no renderiza",
+        "option_d": "El padre no recibe nada",
+        "correct": "A",
+        "explanation": "El tipo genérico ofrece seguridad de tipos."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Cómo invoca normalmente un hijo un EventCallback?",
+        "option_a": "Con InvokeAsync",
+        "option_b": "Con NavigateTo",
+        "option_c": "Con StateOnly",
+        "option_d": "Con RenderNow",
+        "correct": "A",
+        "explanation": "InvokeAsync es la API de invocación."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué debe hacer un hijo para notificar al padre de un cambio?",
+        "option_a": "Invocar el callback expuesto por el padre",
+        "option_b": "Modificar una propiedad privada del padre",
+        "option_c": "Editar su CSS",
+        "option_d": "Crear una ruta",
+        "correct": "A",
+        "explanation": "El callback mantiene la comunicación desacoplada."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué devolución es adecuada para un handler asíncrono?",
+        "option_a": "Task",
+        "option_b": "void siempre",
+        "option_c": "RenderFragment",
+        "option_d": "IConfiguration",
+        "correct": "A",
+        "explanation": "Los handlers asíncronos devuelven Task."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué debe evitar un handler de evento?",
+        "option_a": "Bloquear innecesariamente el hilo de UI",
+        "option_b": "Actualizar estado",
+        "option_c": "Usar argumentos tipados",
+        "option_d": "Invocar un callback",
+        "correct": "A",
+        "explanation": "El trabajo bloqueante perjudica la interfaz."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué hace preventDefault en un evento?",
+        "option_a": "Evita la acción predeterminada del navegador",
+        "option_b": "Detiene todos los renders",
+        "option_c": "Crea un parámetro",
+        "option_d": "Valida un modelo",
+        "correct": "A",
+        "explanation": "El modificador evita la acción predeterminada."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué hace stopPropagation?",
+        "option_a": "Limita la propagación del evento",
+        "option_b": "Cancela el circuito",
+        "option_c": "Aísla los estilos",
+        "option_d": "Convierte el evento en async",
+        "correct": "A",
+        "explanation": "El modificador limita la propagación."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué directiva representa un modificador de preventDefault?",
+        "option_a": "@on{event}:preventDefault",
+        "option_b": "@prevent:{event}",
+        "option_c": "@event:cancelDefaultOnly",
+        "option_d": "@browser-default",
+        "correct": "A",
+        "explanation": "La sintaxis documentada usa el modificador del evento."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué directiva representa un modificador de propagación?",
+        "option_a": "@on{event}:stopPropagation",
+        "option_b": "@stop-event-only",
+        "option_c": "@propagation:false",
+        "option_d": "@event:bubbleOff",
+        "correct": "A",
+        "explanation": "La sintaxis documentada usa stopPropagation."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué sucede normalmente después de un evento de UI gestionado?",
+        "option_a": "El componente puede volver a renderizarse",
+        "option_b": "El componente siempre se dispone",
+        "option_c": "Se elimina la ruta",
+        "option_d": "Se convierte en cascada",
+        "correct": "A",
+        "explanation": "Los eventos participan en el ciclo de render."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué debe hacer un handler que cambia estado externo al componente?",
+        "option_a": "Notificar el render mediante la API apropiada",
+        "option_b": "Cambiar HTML raw",
+        "option_c": "Crear un CSS bundle",
+        "option_d": "Ignorar el cambio",
+        "correct": "A",
+        "explanation": "Los cambios fuera del flujo normal requieren notificación."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué puede capturar un lambda de evento?",
+        "option_a": "El elemento de datos actual de una iteración",
+        "option_b": "Solo una URL",
+        "option_c": "Solo un servicio singleton",
+        "option_d": "Solo CSS",
+        "correct": "A",
+        "explanation": "El cierre puede conservar el dato de la fila."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué es preferible para comunicar datos tipados al padre?",
+        "option_a": "EventCallback<TValue>",
+        "option_b": "Un campo global",
+        "option_c": "HTML raw",
+        "option_d": "Un valor CSS",
+        "correct": "A",
+        "explanation": "El callback tipado documenta el contrato."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué debe hacer un handler si realiza trabajo asíncrono?",
+        "option_a": "Esperar/devolver la Task y actualizar estado de forma segura",
+        "option_b": "Bloquear con una espera síncrona",
+        "option_c": "Crear un nuevo componente",
+        "option_d": "Desactivar eventos",
+        "correct": "A",
+        "explanation": "La Task integra el trabajo con el flujo del framework."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué diseño de evento mantiene el hijo reutilizable?",
+        "option_a": "Un callback público con argumento definido",
+        "option_b": "Una llamada directa a un método privado del padre",
+        "option_c": "Una referencia global",
+        "option_d": "Un selector CSS",
+        "correct": "A",
+        "explanation": "El contrato de callback evita acoplamiento."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_27_LOT_07_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_27_LOT_08_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 27,
+        "question": "¿Qué directiva ofrece enlace bidireccional en controles compatibles?",
+        "option_a": "@bind",
+        "option_b": "@twoWayOnly",
+        "option_c": "@syncValue",
+        "option_d": "@modelRoute",
+        "correct": "A",
+        "explanation": "@bind conecta lectura y actualización del valor."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué forma enlaza una propiedad con el valor de un elemento?",
+        "option_a": "@bind-value",
+        "option_b": "@value-link-only",
+        "option_c": "@bind-property-route",
+        "option_d": "@model-value",
+        "correct": "A",
+        "explanation": "@bind-value enlaza el valor del elemento."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué permite @bind:event?",
+        "option_a": "Elegir el evento que actualiza el valor",
+        "option_b": "Crear un evento nuevo en el servidor",
+        "option_c": "Desactivar validación",
+        "option_d": "Cambiar el tipo de componente",
+        "correct": "A",
+        "explanation": "El modificador elige el evento de actualización."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué patrón implementa binding de un componente propio?",
+        "option_a": "Value y ValueChanged",
+        "option_b": "Model y ModelRoute",
+        "option_c": "BindOnly y BindRoute",
+        "option_d": "Input and Output CSS",
+        "correct": "A",
+        "explanation": "El patrón expone valor y callback de cambio."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué aporta el callback ValueChanged?",
+        "option_a": "Propaga al consumidor que cambió el valor",
+        "option_b": "Crea un valor por defecto",
+        "option_c": "Renderiza CSS",
+        "option_d": "Valida antiforgery",
+        "correct": "A",
+        "explanation": "El callback notifica la actualización."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué permite @bind:after?",
+        "option_a": "Ejecutar lógica después de actualizar el binding",
+        "option_b": "Cancelar el evento predeterminado",
+        "option_c": "Cambiar la URL",
+        "option_d": "Definir un parámetro requerido",
+        "correct": "A",
+        "explanation": "El modificador ejecuta lógica posterior al update."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué tipo suele representar el binding de un checkbox?",
+        "option_a": "bool",
+        "option_b": "RenderFragment",
+        "option_c": "UriOnly",
+        "option_d": "MouseEventArgs",
+        "correct": "A",
+        "explanation": "Un checkbox representa normalmente un valor booleano."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué representa el binding de un select?",
+        "option_a": "El valor de la opción seleccionada",
+        "option_b": "El nombre del formulario exclusivamente",
+        "option_c": "Un objeto CSS",
+        "option_d": "Una referencia DOM siempre",
+        "correct": "A",
+        "explanation": "El select enlaza la selección."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué debe ocurrir con el tipo enlazado?",
+        "option_a": "Ser compatible con la conversión del control",
+        "option_b": "Ser siempre string",
+        "option_c": "Ser siempre RenderFragment",
+        "option_d": "No tener tipo",
+        "correct": "A",
+        "explanation": "El control necesita convertir al tipo de destino."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué actualización puede configurar un input de texto?",
+        "option_a": "Actualizar en el evento especificado, como input o change",
+        "option_b": "Actualizar solo al compilar",
+        "option_c": "Actualizar el CSS",
+        "option_d": "Actualizar una ruta",
+        "correct": "A",
+        "explanation": "El evento configura cuándo se propaga el valor."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué debe hacer un componente con un binding propio?",
+        "option_a": "Notificar ValueChanged cuando cambia internamente",
+        "option_b": "Mutar el parámetro sin callback",
+        "option_c": "Crear otro Router",
+        "option_d": "Usar HTML raw",
+        "correct": "A",
+        "explanation": "El callback completa el contrato de binding."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué ocurre si un componente omite el callback esperado?",
+        "option_a": "El binding bidireccional no puede propagar correctamente el cambio",
+        "option_b": "Se crea siempre una cascada",
+        "option_c": "La aplicación se vuelve singleton",
+        "option_d": "CSS lo corrige",
+        "correct": "A",
+        "explanation": "La propagación requiere el callback."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué diferencia hay entre un parámetro de valor y un binding?",
+        "option_a": "El binding añade un canal de cambio además del valor",
+        "option_b": "Son idénticos siempre",
+        "option_c": "El valor solo sirve para CSS",
+        "option_d": "El binding solo sirve para rutas",
+        "correct": "A",
+        "explanation": "El binding es una convención de ida y vuelta."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué permite enlazar un valor a una expresión compatible?",
+        "option_a": "Leer y asignar mediante la forma de binding admitida",
+        "option_b": "Ejecutar SQL",
+        "option_c": "Crear un evento DOM sin control",
+        "option_d": "Cambiar el assembly",
+        "correct": "A",
+        "explanation": "La expresión participa en lectura y escritura."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué debe considerar un binding asíncrono posterior?",
+        "option_a": "Que la lógica posterior no confunda el orden de actualización",
+        "option_b": "Que se elimine el componente",
+        "option_c": "Que CSS sea global",
+        "option_d": "Que el parámetro sea route",
+        "correct": "A",
+        "explanation": "La lógica debe ejecutarse después del cambio esperado."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué representa ChangeEventArgs en un binding?",
+        "option_a": "Los datos del cambio de un elemento",
+        "option_b": "El valor CSS",
+        "option_c": "El estado DI",
+        "option_d": "La ruta actual",
+        "correct": "A",
+        "explanation": "Es el argumento específico del cambio."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué práctica evita un ciclo de binding?",
+        "option_a": "No reasignar continuamente el mismo valor desde la notificación",
+        "option_b": "Llamar StateHasChanged sin límite",
+        "option_c": "Usar dos callbacks circulares",
+        "option_d": "Mutar el DOM siempre",
+        "correct": "A",
+        "explanation": "La actualización debe tener una dirección y condición claras."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué debe hacer un checkbox enlazado cuando cambia?",
+        "option_a": "Actualizar el bool asociado y renderizar el estado resultante",
+        "option_b": "Crear un RenderFragment",
+        "option_c": "Cambiar la navegación",
+        "option_d": "Disponer el componente",
+        "correct": "A",
+        "explanation": "El binding refleja la selección booleana."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué beneficio tiene un binding tipado?",
+        "option_a": "Detectar incompatibilidades de valores antes de runtime cuando sea posible",
+        "option_b": "Eliminar la necesidad de eventos",
+        "option_c": "Evitar todo render",
+        "option_d": "Publicar secretos",
+        "correct": "A",
+        "explanation": "El tipo documenta y valida el contrato."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué combinación define un componente enlazable?",
+        "option_a": "[Parameter] Value y EventCallback<T> ValueChanged",
+        "option_b": "Solo @ref",
+        "option_c": "Solo ChildContent",
+        "option_d": "Solo CascadingValue",
+        "correct": "A",
+        "explanation": "Es el patrón estándar de binding de componente."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_27_LOT_08_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_27_LOT_09_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 27,
+        "question": "¿Qué problema resuelve @key en una lista?",
+        "option_a": "Conservar la identidad de elementos o componentes al cambiar la colección",
+        "option_b": "Validar valores",
+        "option_c": "Crear estilos",
+        "option_d": "Pasar servicios",
+        "correct": "A",
+        "explanation": "@key ayuda al framework a asociar identidad."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué puede ocurrir si cambia el valor de @key?",
+        "option_a": "Blazor puede descartar y crear otra instancia",
+        "option_b": "El valor se ignora siempre",
+        "option_c": "Se crea una ruta",
+        "option_d": "Se cambia el tipo C#",
+        "correct": "A",
+        "explanation": "Una key nueva representa otra identidad."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Cuándo es importante una key estable?",
+        "option_a": "Cuando importa preservar estado o foco de elementos de una lista",
+        "option_b": "Solo en CSS global",
+        "option_c": "Solo en configuración",
+        "option_d": "Nunca",
+        "correct": "A",
+        "explanation": "La identidad estable conserva asociaciones."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué representa ElementReference?",
+        "option_a": "Una referencia a un elemento DOM renderizado",
+        "option_b": "Un servicio de navegación",
+        "option_c": "Un valor cascada",
+        "option_d": "Una opción tipada",
+        "correct": "A",
+        "explanation": "ElementReference representa un elemento del DOM."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Cómo se captura habitualmente una referencia?",
+        "option_a": "Con @ref",
+        "option_b": "Con @bind:ref",
+        "option_c": "Con @route-ref",
+        "option_d": "Con @capture-element-only",
+        "correct": "A",
+        "explanation": "@ref captura la referencia."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Cuándo debe usarse una ElementReference?",
+        "option_a": "Después de que el elemento se haya renderizado",
+        "option_b": "Durante el constructor",
+        "option_c": "Antes de asignar parámetros",
+        "option_d": "En el archivo de opciones",
+        "correct": "A",
+        "explanation": "La referencia requiere markup renderizado."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Cómo se realizan normalmente operaciones DOM imperativas?",
+        "option_a": "Mediante interoperabilidad JavaScript",
+        "option_b": "Mediante CSS isolation",
+        "option_c": "Mediante EditContext",
+        "option_d": "Mediante EventCallback solamente",
+        "correct": "A",
+        "explanation": "JS interop permite operaciones DOM."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Por qué no debe manipularse DOM arbitrariamente desde el componente?",
+        "option_a": "Puede entrar en conflicto con el renderizado declarativo",
+        "option_b": "Porque @ref no existe",
+        "option_c": "Porque todos los elementos son servicios",
+        "option_d": "Porque CSS lo impide",
+        "correct": "A",
+        "explanation": "El framework mantiene el árbol de render."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué callback es adecuado para usar una ElementReference?",
+        "option_a": "OnAfterRenderAsync",
+        "option_b": "OnInitialized",
+        "option_c": "OnParametersSet antes del render",
+        "option_d": "Dispose antes del render",
+        "correct": "A",
+        "explanation": "After-render garantiza que el elemento exista."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué permite IDisposable en un componente?",
+        "option_a": "Liberar suscripciones y recursos síncronos",
+        "option_b": "Crear parámetros",
+        "option_c": "Renderizar CSS",
+        "option_d": "Capturar atributos",
+        "correct": "A",
+        "explanation": "Dispose libera recursos."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué permite IAsyncDisposable?",
+        "option_a": "Liberar recursos que requieren una operación asíncrona",
+        "option_b": "Definir un RenderFragment",
+        "option_c": "Seleccionar una key",
+        "option_d": "Cambiar un input",
+        "correct": "A",
+        "explanation": "DisposeAsync permite limpieza asíncrona."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué debe hacer un componente suscrito a un evento externo?",
+        "option_a": "Cancelar la suscripción al destruirse",
+        "option_b": "Suscribirse en cada render",
+        "option_c": "Guardar el evento en CSS",
+        "option_d": "Ignorar la disposición",
+        "correct": "A",
+        "explanation": "La desuscripción evita callbacks a objetos muertos."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué riesgo crea un timer no dispuesto?",
+        "option_a": "Trabajo posterior y referencias a un componente destruido",
+        "option_b": "Un valor cascada fijo",
+        "option_c": "Un binding tipado",
+        "option_d": "Un parámetro requerido",
+        "correct": "A",
+        "explanation": "El timer puede mantener actividad y referencias."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué significa que OnParametersSet pueda repetirse?",
+        "option_a": "La lógica debe tolerar nuevas asignaciones de parámetros",
+        "option_b": "Solo se ejecuta una vez",
+        "option_c": "Dispone el componente",
+        "option_d": "Cambia CSS global",
+        "correct": "A",
+        "explanation": "El padre puede actualizar parámetros varias veces."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué callback ocurre una vez por instancia para inicialización?",
+        "option_a": "OnInitialized",
+        "option_b": "OnParametersSet siempre",
+        "option_c": "OnAfterRender cada vez",
+        "option_d": "StateHasChanged",
+        "correct": "A",
+        "explanation": "OnInitialized se ejecuta una vez por instancia."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué trabajo depende del DOM y no solo de parámetros?",
+        "option_a": "Inicializar una biblioteca que necesita un elemento ya renderizado",
+        "option_b": "Calcular una propiedad pura",
+        "option_c": "Asignar un parámetro",
+        "option_d": "Definir una plantilla",
+        "correct": "A",
+        "explanation": "El DOM requiere esperar al after-render."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué debe asumir un componente durante prerender?",
+        "option_a": "Que APIs DOM/JavaScript pueden no estar disponibles",
+        "option_b": "Que todo JS funciona",
+        "option_c": "Que solo se ejecuta Dispose",
+        "option_d": "Que no hay parámetros",
+        "correct": "A",
+        "explanation": "Prerender no implica interactividad browser."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué debe hacer una inicialización asíncrona con la UI?",
+        "option_a": "Mantener un estado renderizable mientras espera",
+        "option_b": "Bloquear el hilo",
+        "option_c": "Manipular DOM antes de render",
+        "option_d": "Eliminar el componente",
+        "correct": "A",
+        "explanation": "La UI debe poder representar carga o resultado."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué objetivo tiene evitar ciclos de StateHasChanged?",
+        "option_a": "Prevenir renders repetidos e innecesarios",
+        "option_b": "Evitar parámetros",
+        "option_c": "Eliminar eventos",
+        "option_d": "Desactivar binding",
+        "correct": "A",
+        "explanation": "Las notificaciones deben ser controladas."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué decisión integra identidad y ciclo de vida en una lista?",
+        "option_a": "Usar @key estable y disponer recursos asociados al componente",
+        "option_b": "Usar HTML raw y ninguna key",
+        "option_c": "Cambiar key en cada render",
+        "option_d": "Compartir un timer global",
+        "correct": "A",
+        "explanation": "La identidad y limpieza deben ser coherentes."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_27_LOT_09_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_27_LOT_10_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 27,
+        "question": "Un componente recibe el mismo tipo de dos cascadas distintas. ¿Qué debe añadir para seleccionar una?",
+        "option_a": "Un nombre de cascada coincidente",
+        "option_b": "Una ruta",
+        "option_c": "Un CSS class",
+        "option_d": "Un EventCallback sin tipo",
+        "correct": "A",
+        "explanation": "El nombre resuelve la ambigüedad."
+    },
+    {
+        "topic_num": 27,
+        "question": "Un contexto cascado nunca cambia pero muchos hijos se suscriben. ¿Qué opción revisar?",
+        "option_a": "IsFixed=true",
+        "option_b": "StateHasChanged en cada hijo",
+        "option_c": "Una nueva key cada render",
+        "option_d": "Un binding after",
+        "correct": "A",
+        "explanation": "IsFixed evita suscripciones innecesarias."
+    },
+    {
+        "topic_num": 27,
+        "question": "Un hijo debe informar al padre de una selección. ¿Qué API expresa mejor el contrato?",
+        "option_a": "EventCallback<TValue>",
+        "option_b": "Mutación directa del padre",
+        "option_c": "ElementReference",
+        "option_d": "CascadingValue mutable",
+        "correct": "A",
+        "explanation": "El callback tipado comunica la selección."
+    },
+    {
+        "topic_num": 27,
+        "question": "Un input propio cambia internamente pero el padre no recibe el nuevo valor. ¿Qué falta?",
+        "option_a": "Invocar ValueChanged con el nuevo valor",
+        "option_b": "Añadir CSS isolation",
+        "option_c": "Usar @ref en el padre",
+        "option_d": "Cambiar la key",
+        "correct": "A",
+        "explanation": "El callback propaga el cambio."
+    },
+    {
+        "topic_num": 27,
+        "question": "Un binding actualiza demasiado tarde para el caso de uso. ¿Qué revisar?",
+        "option_a": "@bind:event y el evento deseado",
+        "option_b": "El nombre del layout",
+        "option_c": "CascadingParameter",
+        "option_d": "Dispose",
+        "correct": "A",
+        "explanation": "El evento configura cuándo actualizar."
+    },
+    {
+        "topic_num": 27,
+        "question": "Una lista reordena elementos y pierde el foco/estado. ¿Qué revisar?",
+        "option_a": "Una @key estable basada en identidad del elemento",
+        "option_b": "Un nuevo singleton",
+        "option_c": "Raw HTML",
+        "option_d": "OnSubmit",
+        "correct": "A",
+        "explanation": "La key conserva identidad durante cambios."
+    },
+    {
+        "topic_num": 27,
+        "question": "Un componente llama una biblioteca DOM en OnInitialized y falla durante prerender. ¿Qué corregir?",
+        "option_a": "Moverlo a after-render y contemplar prerender",
+        "option_b": "Moverlo a Dispose",
+        "option_c": "Usar @bind",
+        "option_d": "Cambiar el nombre de cascada",
+        "correct": "A",
+        "explanation": "DOM/JS requiere un elemento interactivo renderizado."
+    },
+    {
+        "topic_num": 27,
+        "question": "Un componente sigue recibiendo eventos tras navegar fuera. ¿Qué revisar?",
+        "option_a": "Dispose/DisposeAsync y la cancelación de suscripciones",
+        "option_b": "El color de CSS",
+        "option_c": "La plantilla",
+        "option_d": "La key solamente",
+        "correct": "A",
+        "explanation": "La limpieza evita callbacks posteriores."
+    },
+    {
+        "topic_num": 27,
+        "question": "Un handler de evento necesita el elemento de una fila. ¿Qué técnica permite conservar el dato?",
+        "option_a": "Un lambda que captura el elemento",
+        "option_b": "Cambiar la ruta",
+        "option_c": "Usar solo StateHasChanged",
+        "option_d": "Crear un valor cascada global",
+        "correct": "A",
+        "explanation": "El lambda puede cerrar sobre el elemento."
+    },
+    {
+        "topic_num": 27,
+        "question": "Un padre comparte un contexto por cinco niveles y la API queda repetitiva. ¿Qué mecanismo ayuda?",
+        "option_a": "CascadingValue/CascadingParameter",
+        "option_b": "Cinco servicios singleton",
+        "option_c": "HTML raw",
+        "option_d": "Una key dinámica",
+        "correct": "A",
+        "explanation": "La cascada evita pasar el contexto por cada nivel."
+    },
+    {
+        "topic_num": 27,
+        "question": "Una cascada mutable provoca renders inesperados en muchos hijos. ¿Qué revisar?",
+        "option_a": "El diseño del estado compartido y cuándo se notifica el cambio",
+        "option_b": "El nombre del assembly",
+        "option_c": "El tipo de CSS",
+        "option_d": "El evento click solamente",
+        "correct": "A",
+        "explanation": "Los cambios amplios deben controlarse."
+    },
+    {
+        "topic_num": 27,
+        "question": "Un componente enlazable expone Value pero no ValueChanged. ¿Qué resultado esperar?",
+        "option_a": "No ofrece binding bidireccional completo",
+        "option_b": "Se convierte en formulario",
+        "option_c": "Se crea automáticamente el callback",
+        "option_d": "El DOM queda disponible",
+        "correct": "A",
+        "explanation": "Falta el canal de cambio."
+    },
+    {
+        "topic_num": 27,
+        "question": "Un componente intenta acceder a @ref en OnParametersSet y recibe un estado no listo. ¿Qué revisar?",
+        "option_a": "Esperar a OnAfterRender",
+        "option_b": "Cambiar a OnInitialized",
+        "option_c": "Usar CascadingValue",
+        "option_d": "Añadir Required",
+        "correct": "A",
+        "explanation": "La referencia se asigna después del render."
+    },
+    {
+        "topic_num": 27,
+        "question": "Un componente hace trabajo asíncrono bloqueante en un click. ¿Qué mejorar?",
+        "option_a": "Usar un handler async que devuelva Task",
+        "option_b": "Cambiar la key",
+        "option_c": "Usar CSS isolation",
+        "option_d": "Crear un singleton",
+        "correct": "A",
+        "explanation": "Task integra el trabajo sin bloquear innecesariamente."
+    },
+    {
+        "topic_num": 27,
+        "question": "Una acción de enlace debe impedir que el navegador siga el comportamiento por defecto. ¿Qué usar?",
+        "option_a": "preventDefault",
+        "option_b": "stopPropagation únicamente",
+        "option_c": "@key",
+        "option_d": "CascadingParameter",
+        "correct": "A",
+        "explanation": "preventDefault controla la acción predeterminada."
+    },
+    {
+        "topic_num": 27,
+        "question": "Un evento no debe alcanzar handlers ascendientes. ¿Qué usar?",
+        "option_a": "stopPropagation",
+        "option_b": "preventDefault únicamente",
+        "option_c": "ValueChanged",
+        "option_d": "OnAfterRender",
+        "correct": "A",
+        "explanation": "stopPropagation limita la propagación."
+    },
+    {
+        "topic_num": 27,
+        "question": "Una UI debe renderizar diferentes tarjetas para cada consumidor de una lista. ¿Qué exponer?",
+        "option_a": "RenderFragment<TItem>",
+        "option_b": "Solo ElementReference",
+        "option_c": "Solo CascadingParameter",
+        "option_d": "Una key aleatoria",
+        "correct": "A",
+        "explanation": "La plantilla tipada permite presentación personalizada."
+    },
+    {
+        "topic_num": 27,
+        "question": "Un padre cambia parámetros del hijo y el hijo conserva estado incompatible. ¿Qué revisar?",
+        "option_a": "OnParametersSet y la separación entre parámetros y estado local",
+        "option_b": "CSS global",
+        "option_c": "preventDefault",
+        "option_d": "La configuración JSON",
+        "correct": "A",
+        "explanation": "Los nuevos parámetros pueden requerir reconciliar estado."
+    },
+    {
+        "topic_num": 27,
+        "question": "Un componente cambia estado desde una suscripción externa y no se actualiza. ¿Qué falta?",
+        "option_a": "Notificar StateHasChanged mediante el contexto adecuado",
+        "option_b": "Usar @typeparam",
+        "option_c": "Cambiar la key",
+        "option_d": "Añadir Required",
+        "correct": "A",
+        "explanation": "El cambio externo debe entrar al flujo de render."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué diseño reúne una API de componente mantenible?",
+        "option_a": "Parámetros explícitos, callbacks tipados, binding Value/ValueChanged, cascadas controladas y disposición",
+        "option_b": "Mutaciones directas y timers sin Dispose",
+        "option_c": "DOM manual antes del render",
+        "option_d": "Cascadas globales para todo",
+        "correct": "A",
+        "explanation": "El diseño separa contratos, estado y ciclo de vida."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_27_LOT_10_END
