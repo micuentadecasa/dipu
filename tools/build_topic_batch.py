@@ -109,6 +109,11 @@ SPEC_PATHS = [
     ROOT / "docs/question-bank/research/questions/topics-36-lot-03.json",
     ROOT / "docs/question-bank/research/questions/topics-36-lot-04.json",
     ROOT / "docs/question-bank/research/questions/topics-36-lot-05.json",
+    ROOT / "docs/question-bank/research/questions/topics-37-lot-01.json",
+    ROOT / "docs/question-bank/research/questions/topics-37-lot-02.json",
+    ROOT / "docs/question-bank/research/questions/topics-37-lot-03.json",
+    ROOT / "docs/question-bank/research/questions/topics-37-lot-04.json",
+    ROOT / "docs/question-bank/research/questions/topics-37-lot-05.json",
 ]
 
 
@@ -192,7 +197,7 @@ def main() -> int:
         if not objective or not objective["statement"]:
             raise RuntimeError(f"objective is not researched: {spec['objective_id']}")
         source = sources[spec["source_id"]]
-        if source["status"] not in {"verified", "verified_with_correction_review", "verified_official_eli_entry", "verified_official_celex_fallback", "verified_entry_point", "verified_current_stable_reference"}:
+        if source["status"] not in {"verified", "verified_with_correction_review", "verified_official_eli_entry", "verified_official_celex_fallback", "verified_entry_point", "verified_current_stable_reference", "verified_public_manual"}:
             raise RuntimeError(f"source is not verified for generation: {spec['source_id']}")
         record = make_record({**spec, "topic_num": args.topic_num}, source, index)
         screen = screen_duplicates(record, existing + records, checked_at=DATE)
