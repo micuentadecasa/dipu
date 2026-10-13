@@ -1,0 +1,338 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-35-git-remotes-workflows-strategies.md",
+  "batches": [
+    {
+      "topic_num": 35,
+      "lot_num": 3,
+      "source_ids": [
+        "GIT-2.50",
+        "GITHUB-PULL-REQUESTS",
+        "GITHUB-FLOW",
+        "ATLASSIAN-GIT-FLOW"
+      ],
+      "questions": [
+        {
+          "objective_id": "t35-lo-041",
+          "difficulty": "basic",
+          "type": "definition",
+          "question": "¿Qué hace principalmente push?",
+          "options": [
+            "Publica objetos y actualiza referencias del repositorio remoto según los refspecs solicitados",
+            "Descarga refs y actualiza origin/main",
+            "Crea un stash local",
+            "Solo muestra la configuración del remoto"
+          ],
+          "correct": "A",
+          "explanation": "push transfiere objetos necesarios y propone actualizar refs en el repositorio receptor.",
+          "citation": "git-push — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-042",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué comando publica la rama local main en origin?",
+          "options": [
+            "git fetch origin main",
+            "git push origin main",
+            "git remote show origin main",
+            "git pull origin main --only"
+          ],
+          "correct": "B",
+          "explanation": "El refspec simple main pide actualizar la rama homónima del remoto origin con la rama local.",
+          "citation": "git-push — <repository> <refspec>",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-043",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué añade la opción -u al publicar una rama por primera vez?",
+          "options": [
+            "Obliga a usar un merge commit",
+            "Desactiva la comprobación fast-forward",
+            "Establece la rama remota como upstream para la rama local",
+            "Incluye todos los tags ignorados"
+          ],
+          "correct": "C",
+          "explanation": "--set-upstream registra la relación de seguimiento para que futuras operaciones puedan omitir referencias explícitas.",
+          "citation": "git-push — -u/--set-upstream",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-044",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Por qué puede rechazar el servidor un push sin force?",
+          "options": [
+            "Porque push siempre requiere un tag",
+            "Porque el repositorio local no tiene índice",
+            "Porque fetch ya integró todos los commits",
+            "Porque actualizar la referencia no sería un avance rápido y podría descartar historia remota"
+          ],
+          "correct": "D",
+          "explanation": "La comprobación non-fast-forward protege la historia remota frente a actualizar una ref con una línea no descendiente.",
+          "citation": "git-push — NOTE ABOUT FAST-FORWARDS",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-045",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué protección ofrece force-with-lease frente a force?",
+          "options": [
+            "Comprueba una expectativa sobre la punta remota antes de sobrescribirla",
+            "Convierte el push en una operación de solo lectura",
+            "Garantiza que nunca se reescriba historia",
+            "Publica automáticamente todos los remotos"
+          ],
+          "correct": "A",
+          "explanation": "force-with-lease limita la sobrescritura a un estado remoto esperado y reduce el riesgo de borrar trabajo ajeno no observado.",
+          "citation": "git-push — --force-with-lease",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-046",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Qué riesgo adicional introduce un push forzado simple?",
+          "options": [
+            "Solo cambia una URL sin tocar refs",
+            "Puede reemplazar una historia remota que contiene commits que el emisor no tiene localmente",
+            "Nunca modifica la referencia remota",
+            "Solo se aplica a tags ligeros"
+          ],
+          "correct": "B",
+          "explanation": "--force permite ignorar comprobaciones de avance y puede hacer inalcanzables commits publicados por otros.",
+          "citation": "git-push — --force",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-047",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Cómo se solicita borrar una rama del remoto?",
+          "options": [
+            "git branch --delete origin/feature",
+            "git remote remove origin/feature",
+            "git push origin --delete feature",
+            "git fetch origin --delete feature"
+          ],
+          "correct": "C",
+          "explanation": "La refspec de borrado envía una petición para eliminar la referencia feature en origin.",
+          "citation": "git-push — --delete",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-048",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué alcance tiene publicar todos los tags locales con push?",
+          "options": [
+            "La opción --tags solo muestra tags remotos",
+            "La opción --tags elimina tags sin commits",
+            "La opción --tags convierte cada tag ligero en rama",
+            "La opción --tags incluye los tags que no se hayan incluido ya por otros refspecs"
+          ],
+          "correct": "D",
+          "explanation": "--tags pide enviar todas las refs bajo refs/tags, independientemente de que apunten a commits alcanzables por ramas.",
+          "citation": "git-push — --tags",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-049",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Qué diferencia expresa --follow-tags?",
+          "options": [
+            "Publica tags anotados relacionados con los commits enviados, no todos los tags locales",
+            "Publica únicamente tags ligeros",
+            "Borra tags que no tengan upstream",
+            "Descarga tags desde todos los remotos"
+          ],
+          "correct": "A",
+          "explanation": "--follow-tags limita la publicación automática a tags anotados alcanzables relacionados con las refs que se envían.",
+          "citation": "git-push — --follow-tags",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-050",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué controla push.default?",
+          "options": [
+            "El algoritmo de resolución de conflictos",
+            "La selección predeterminada de referencias cuando push no recibe un refspec explícito",
+            "La profundidad de fetch",
+            "El nombre del remoto creado por clone"
+          ],
+          "correct": "B",
+          "explanation": "push.default configura qué ramas o referencias se consideran destino implícito en un push sencillo.",
+          "citation": "git-config — push.default; git-push — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-051",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué efecto tiene enviar HEAD:main a origin?",
+          "options": [
+            "Descarga main y cambia HEAD a ella",
+            "Borra la rama main remota",
+            "Publica la punta de HEAD local en la referencia main del remoto",
+            "Crea un tag llamado HEAD"
+          ],
+          "correct": "C",
+          "explanation": "La refspec HEAD:main usa la revisión actual como origen y main como destino remoto.",
+          "citation": "git-push — REFSPEC",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-052",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué permite comprobar --dry-run antes de publicar?",
+          "options": [
+            "Descargar todos los objetos faltantes",
+            "Forzar el push sin comprobaciones",
+            "Crear un commit local de prueba",
+            "Simular la operación y mostrar qué referencias se actualizarían sin escribir en el remoto"
+          ],
+          "correct": "D",
+          "explanation": "--dry-run informa del resultado previsto sin realizar las actualizaciones remotas.",
+          "citation": "git-push — --dry-run",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-053",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué propiedad intenta garantizar push --atomic?",
+          "options": [
+            "Que todas las actualizaciones de refs se acepten juntas o ninguna se aplique",
+            "Que todos los commits tengan una firma GPG",
+            "Que el servidor sea bare",
+            "Que el push se convierta en fetch"
+          ],
+          "correct": "A",
+          "explanation": "--atomic solicita una actualización transaccional del conjunto de refs, si el servidor la admite.",
+          "citation": "git-push — --atomic",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-054",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué ventaja tiene publicar una rama con un upstream configurado?",
+          "options": [
+            "Hace que la rama local sea inmutable",
+            "Permite que operaciones posteriores infieran el repositorio y la rama de comparación o envío",
+            "Impide todos los merges futuros",
+            "Convierte la rama en tag remoto"
+          ],
+          "correct": "B",
+          "explanation": "La relación upstream aporta el destino predeterminado y la referencia de comparación para el flujo normal.",
+          "citation": "git-push — -u/--set-upstream; gitglossary — upstream branch",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-055",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Qué opción puede solicitar que el transporte firme la actualización de referencias?",
+          "options": [
+            "--annotated-only",
+            "--commit-signature",
+            "--signed",
+            "--gpg-tags"
+          ],
+          "correct": "C",
+          "explanation": "--signed pide una transacción firmada cuando el servidor y el transporte soportan esa capacidad.",
+          "citation": "git-push — --signed",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-056",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Qué transporta una opción de push enviada al servidor receptor?",
+          "options": [
+            "Un nuevo archivo al working tree local",
+            "Una regla de .gitignore",
+            "Un cambio de user.email",
+            "Una opción adicional para hooks o lógica de recepción que el servidor haya configurado para aceptar"
+          ],
+          "correct": "D",
+          "explanation": "--push-option transmite opciones de proceso al lado receptor, sujeto a su configuración y hooks.",
+          "citation": "git-push — --push-option",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-057",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "¿Qué debe revisar un equipo antes de usar force-with-lease sobre una rama compartida?",
+          "options": [
+            "Que la expectativa local de la punta remota sea fiable y que reescribir la historia esté autorizado",
+            "Que exista un stash vacío",
+            "Que la rama tenga un tag ligero",
+            "Que fetch nunca se haya ejecutado"
+          ],
+          "correct": "A",
+          "explanation": "La protección depende de la expectativa remota conocida y no sustituye la coordinación sobre reescrituras.",
+          "citation": "git-push — --force-with-lease",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-058",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Qué orden publica feature y configura su seguimiento en una sola operación?",
+          "options": [
+            "git fetch --set-upstream origin feature",
+            "git push --set-upstream origin feature",
+            "git remote add --upstream origin feature",
+            "git branch --push-upstream origin feature"
+          ],
+          "correct": "B",
+          "explanation": "--set-upstream registra origin/feature como upstream de la rama local feature al publicar.",
+          "citation": "git-push — -u/--set-upstream",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-059",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Qué diferencia hay entre borrar una rama local y solicitar borrar la rama remota?",
+          "options": [
+            "Ambas siempre eliminan los objetos de todos los clones",
+            "La primera requiere force y la segunda no usa red",
+            "La primera cambia refs locales; la segunda usa push para pedir al servidor que elimine su referencia",
+            "No existe diferencia"
+          ],
+          "correct": "C",
+          "explanation": "Una ref local y una ref en otro repositorio tienen operaciones y efectos distintos.",
+          "citation": "git-branch — -d/--delete; git-push — --delete",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-060",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "¿Qué práctica reduce el riesgo al reemplazar intencionadamente una rama remota?",
+          "options": [
+            "Usar siempre force sin fetch",
+            "Borrar el remoto local antes de publicar",
+            "Crear un stash y omitir la revisión",
+            "Usar force-with-lease tras actualizar la información y comunicar la reescritura"
+          ],
+          "correct": "D",
+          "explanation": "Actualizar la expectativa y usar una fuerza condicionada evita sobrescribir silenciosamente cambios remotos desconocidos.",
+          "citation": "git-push — --force-with-lease",
+          "source_id": "GIT-2.50"
+        }
+      ]
+    }
+  ]
+}

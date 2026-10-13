@@ -1,0 +1,338 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-35-git-remotes-workflows-strategies.md",
+  "batches": [
+    {
+      "topic_num": 35,
+      "lot_num": 4,
+      "source_ids": [
+        "GIT-2.50",
+        "GITHUB-PULL-REQUESTS",
+        "GITHUB-FLOW",
+        "ATLASSIAN-GIT-FLOW"
+      ],
+      "questions": [
+        {
+          "objective_id": "t35-lo-061",
+          "difficulty": "basic",
+          "type": "definition",
+          "question": "¿Qué es una pull request en una plataforma de colaboración Git?",
+          "options": [
+            "Una propuesta para revisar y combinar cambios de una rama de origen en una rama base",
+            "Una referencia Git que existe en todo repositorio bare",
+            "Un comando obligatorio de git push",
+            "Un stash compartido entre clones"
+          ],
+          "correct": "A",
+          "explanation": "La pull request es una unidad de colaboración de la plataforma para discutir, revisar y proponer integración.",
+          "citation": "Pull request overview — about pull requests",
+          "source_id": "GITHUB-PULL-REQUESTS"
+        },
+        {
+          "objective_id": "t35-lo-062",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Por qué una pull request no es equivalente a una rama Git local?",
+          "options": [
+            "La pull request almacena todos los blobs en otro índice",
+            "La pull request añade conversación, revisiones y comprobaciones alrededor de una comparación de ramas",
+            "La rama local solo existe en GitHub",
+            "Ambas son exactamente la misma referencia"
+          ],
+          "correct": "B",
+          "explanation": "La plataforma superpone el flujo de revisión al intercambio de referencias que Git por sí solo proporciona.",
+          "citation": "About pull requests — differences from Git commands",
+          "source_id": "GITHUB-PULL-REQUESTS"
+        },
+        {
+          "objective_id": "t35-lo-063",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "En una pull request, ¿qué papel cumple la rama base?",
+          "options": [
+            "Es siempre la rama donde se ejecuta el editor",
+            "Es la rama que contiene solo tags",
+            "Es la rama destino contra la que se propone comparar y eventualmente integrar",
+            "Es la rama que Git borra al abrir la propuesta"
+          ],
+          "correct": "C",
+          "explanation": "La base define el contexto de destino de los cambios propuestos.",
+          "citation": "About pull requests — base and head branches",
+          "source_id": "GITHUB-PULL-REQUESTS"
+        },
+        {
+          "objective_id": "t35-lo-064",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué papel cumple la rama head de una pull request?",
+          "options": [
+            "Contiene exclusivamente los checks del servidor",
+            "Es siempre refs/remotes/origin/HEAD",
+            "Es un índice temporal del revisor",
+            "Aporta los commits y cambios que se proponen para revisión"
+          ],
+          "correct": "D",
+          "explanation": "La rama head es la fuente cuyos cambios se comparan con la base.",
+          "citation": "About pull requests — base and head branches",
+          "source_id": "GITHUB-PULL-REQUESTS"
+        },
+        {
+          "objective_id": "t35-lo-065",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Cómo suele actualizarse una pull request abierta con nuevos cambios?",
+          "options": [
+            "Publicando nuevos commits en la rama head asociada",
+            "Creando otra pull request con el mismo título obligatoriamente",
+            "Editando el archivo .gitignore del servidor",
+            "Aplicando un stash desde la interfaz"
+          ],
+          "correct": "A",
+          "explanation": "Los nuevos pushes a la rama de origen actualizan la propuesta y sus comprobaciones.",
+          "citation": "Updating a pull request — push to the head branch",
+          "source_id": "GITHUB-PULL-REQUESTS"
+        },
+        {
+          "objective_id": "t35-lo-066",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué aporta una revisión de código en una pull request?",
+          "options": [
+            "Un cambio automático del remoto origin",
+            "Comentarios y una decisión de revisión sobre los cambios comparados con la base",
+            "La eliminación del historial de la rama head",
+            "Una modificación del índice local del autor"
+          ],
+          "correct": "B",
+          "explanation": "La revisión permite comentar líneas y aprobar, solicitar cambios o comentar la propuesta.",
+          "citation": "Reviewing proposed changes in a pull request",
+          "source_id": "GITHUB-PULL-REQUESTS"
+        },
+        {
+          "objective_id": "t35-lo-067",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué función tienen las comprobaciones requeridas antes de integrar una pull request?",
+          "options": [
+            "Convertir todos los commits en tags",
+            "Descargar ramas sin seguimiento",
+            "Impedir o condicionar la integración hasta que se cumplan controles como pruebas o revisiones",
+            "Cambiar el nombre de la rama base"
+          ],
+          "correct": "C",
+          "explanation": "Las reglas de protección pueden exigir checks y revisiones antes de permitir la combinación.",
+          "citation": "About protected branches — required status checks and reviews",
+          "source_id": "GITHUB-PULL-REQUESTS"
+        },
+        {
+          "objective_id": "t35-lo-068",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Qué opciones de integración puede ofrecer una plataforma al aceptar una pull request?",
+          "options": [
+            "Solo un cambio de user.name",
+            "Únicamente un stash temporal",
+            "Siempre un fast-forward sin posibilidad de elección",
+            "Merge commit, squash de commits o rebase/fast-forward según la configuración"
+          ],
+          "correct": "D",
+          "explanation": "Las plataformas pueden exponer distintas estrategias, cada una con efectos de topología e identificadores.",
+          "citation": "Merging a pull request — merge methods",
+          "source_id": "GITHUB-PULL-REQUESTS"
+        },
+        {
+          "objective_id": "t35-lo-069",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué efecto tiene cerrar una pull request sin fusionarla?",
+          "options": [
+            "Finaliza la propuesta sin integrar sus cambios en la rama base",
+            "Borra siempre los commits de la rama head",
+            "Elimina el repositorio remoto",
+            "Convierte la propuesta en un tag firmado"
+          ],
+          "correct": "A",
+          "explanation": "Cerrar la propuesta cambia su estado de colaboración, no equivale a integrar ni necesariamente a borrar la rama.",
+          "citation": "Closing a pull request",
+          "source_id": "GITHUB-PULL-REQUESTS"
+        },
+        {
+          "objective_id": "t35-lo-070",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué caracteriza a una pull request en borrador?",
+          "options": [
+            "Fuerza todos los checks a pasar",
+            "Indica que aún no está lista para la revisión o integración final",
+            "Bloquea cualquier push a la rama head",
+            "Es idéntica a una pull request fusionada"
+          ],
+          "correct": "B",
+          "explanation": "El estado draft comunica que el trabajo está en preparación y evita tratarlo como propuesta lista.",
+          "citation": "Changing the status of a pull request — draft",
+          "source_id": "GITHUB-PULL-REQUESTS"
+        },
+        {
+          "objective_id": "t35-lo-071",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué acción asigna personas para revisar una pull request?",
+          "options": [
+            "Crear un remoto llamado reviewer",
+            "Renombrar la rama base",
+            "Solicitar revisores desde la interfaz de la propuesta",
+            "Ejecutar git stash pop en el servidor"
+          ],
+          "correct": "C",
+          "explanation": "La plataforma mantiene revisores y sus solicitudes como parte de la colaboración de la propuesta.",
+          "citation": "Requesting a pull request review",
+          "source_id": "GITHUB-PULL-REQUESTS"
+        },
+        {
+          "objective_id": "t35-lo-072",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué protege una regla de rama protegida?",
+          "options": [
+            "El contenido de todos los stashes locales",
+            "La configuración de cada clon",
+            "Los hashes frente a cualquier operación local",
+            "Condiciones sobre quién puede actualizar o integrar la rama y qué controles son obligatorios"
+          ],
+          "correct": "D",
+          "explanation": "La protección limita actualizaciones directas y puede requerir revisiones, checks o historial lineal.",
+          "citation": "About protected branches",
+          "source_id": "GITHUB-PULL-REQUESTS"
+        },
+        {
+          "objective_id": "t35-lo-073",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "¿Por qué se ejecutan checks automatizados sobre una pull request?",
+          "options": [
+            "Para aportar evidencia sobre compilación, pruebas u otras condiciones antes de integrar",
+            "Para convertir la propuesta en un remoto local",
+            "Para elegir el autor del commit",
+            "Para actualizar automáticamente todos los tags"
+          ],
+          "correct": "A",
+          "explanation": "Los checks proporcionan señales automatizadas que las políticas de integración pueden requerir.",
+          "citation": "About status checks",
+          "source_id": "GITHUB-PULL-REQUESTS"
+        },
+        {
+          "objective_id": "t35-lo-074",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Qué permite comparar la vista de una pull request?",
+          "options": [
+            "La configuración global de los dos autores",
+            "Los cambios de la rama head respecto de la base, incluidos commits y diferencias de archivos",
+            "Los objetos no alcanzables de todos los clones",
+            "Solo los nombres de los remotos"
+          ],
+          "correct": "B",
+          "explanation": "La comparación delimita exactamente el conjunto de cambios propuestos para revisión.",
+          "citation": "About pull requests — comparing changes",
+          "source_id": "GITHUB-PULL-REQUESTS"
+        },
+        {
+          "objective_id": "t35-lo-075",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "¿Qué política reduce cambios directos no revisados sobre la rama principal?",
+          "options": [
+            "Permitir force push a cualquier colaborador",
+            "Borrar la rama base después de cada merge",
+            "Proteger la rama y exigir pull requests con revisiones y checks",
+            "Desactivar todas las comprobaciones"
+          ],
+          "correct": "C",
+          "explanation": "La protección de rama desplaza la integración hacia una propuesta revisable y controlada.",
+          "citation": "About protected branches",
+          "source_id": "GITHUB-PULL-REQUESTS"
+        },
+        {
+          "objective_id": "t35-lo-076",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué ocurre con la conversación asociada a una pull request al revisarla?",
+          "options": [
+            "Se almacena como un blob en el índice del autor",
+            "Solo puede contener el mensaje del merge",
+            "No puede cambiar cuando llegan nuevos commits",
+            "Permite discutir la propuesta y mantener comentarios vinculados a sus cambios"
+          ],
+          "correct": "D",
+          "explanation": "La conversación y las revisiones son metadatos colaborativos que acompañan a la comparación.",
+          "citation": "Reviewing proposed changes in a pull request",
+          "source_id": "GITHUB-PULL-REQUESTS"
+        },
+        {
+          "objective_id": "t35-lo-077",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Qué acción permite pedir cambios concretos antes de aceptar una pull request?",
+          "options": [
+            "Emitir una revisión que solicite cambios y esperar a que la rama head se actualice",
+            "Eliminar el remote-tracking branch del revisor",
+            "Hacer push --force a la rama base",
+            "Crear un tag con el mensaje del comentario"
+          ],
+          "correct": "A",
+          "explanation": "Una revisión puede bloquear la aceptación hasta que el autor corrija y publique nuevos cambios.",
+          "citation": "Submitting a pull request review",
+          "source_id": "GITHUB-PULL-REQUESTS"
+        },
+        {
+          "objective_id": "t35-lo-078",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Qué operación describe revertir una pull request ya integrada?",
+          "options": [
+            "Eliminar la rama base y recrear el merge",
+            "Crear cambios inversos mediante un commit o acción de revert, sin borrar la historia integrada",
+            "Borrar todos los comentarios",
+            "Ejecutar fetch --prune en cada clon"
+          ],
+          "correct": "B",
+          "explanation": "Revertir conserva el historial y añade una corrección que deshace los cambios integrados.",
+          "citation": "Reverting a pull request",
+          "source_id": "GITHUB-PULL-REQUESTS"
+        },
+        {
+          "objective_id": "t35-lo-079",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "¿Qué significa que una pull request tenga conflictos de merge?",
+          "options": [
+            "Que la rama head no tiene ningún commit",
+            "Que todos los checks han pasado",
+            "La base y la rama head no se pueden integrar automáticamente con una resolución única",
+            "Que el remoto no acepta objetos"
+          ],
+          "correct": "C",
+          "explanation": "La propuesta necesita actualizar o resolver cambios solapados antes de poder integrarse.",
+          "citation": "About merge conflicts in pull requests",
+          "source_id": "GITHUB-PULL-REQUESTS"
+        },
+        {
+          "objective_id": "t35-lo-080",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "¿Qué enfoque suele actualizar una rama head conflictiva antes de pedir otra revisión?",
+          "options": [
+            "Borrar la base y crear una rama sin historial",
+            "Aplicar un stash en el repositorio del servidor",
+            "Forzar la rama base sin revisar",
+            "Obtener la base, integrar sus cambios en la rama head, resolver, probar y publicar la actualización"
+          ],
+          "correct": "D",
+          "explanation": "Actualizar la rama de trabajo y enviar la resolución permite recalcular checks y la comparación de la propuesta.",
+          "citation": "Updating a pull request branch",
+          "source_id": "GITHUB-PULL-REQUESTS"
+        }
+      ]
+    }
+  ]
+}

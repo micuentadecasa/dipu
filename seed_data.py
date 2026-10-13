@@ -19203,3 +19203,1028 @@ SEED_QUESTIONS.extend([
     }
 ])
 # QUESTION_BANK_ACCEPTED_TOPIC_34_LOT_05_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_35_LOT_01_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 35,
+        "question": "¿Qué representa normalmente un remoto en Git?",
+        "option_a": "Un nombre que agrupa URLs y configuración para otro repositorio",
+        "option_b": "Una copia del índice local",
+        "option_c": "Un commit que nunca puede cambiar",
+        "option_d": "Un archivo ignorado por el working tree",
+        "correct": "A",
+        "explanation": "Un remoto es un nombre local asociado a una o más URLs y a reglas de seguimiento para intercambiar objetos y referencias."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué información se obtiene al mostrar los remotos con detalle?",
+        "option_a": "Los conflictos del último merge",
+        "option_b": "Sus nombres y las URLs usadas para obtener y enviar cambios",
+        "option_c": "Los archivos staged del índice",
+        "option_d": "Los commits que aún no tienen autor",
+        "correct": "B",
+        "explanation": "La forma detallada de git remote muestra los nombres y las URLs fetch/push configuradas."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué operación registra un repositorio como remoto con un nombre local?",
+        "option_a": "git remote remove nombre URL",
+        "option_b": "git remote show nombre URL",
+        "option_c": "git remote add nombre URL",
+        "option_d": "git remote prune nombre URL",
+        "correct": "C",
+        "explanation": "remote add crea la configuración que vincula el nombre del remoto con la URL indicada."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué operación cambia el nombre local de un remoto?",
+        "option_a": "git remote move-url antiguo nuevo",
+        "option_b": "git remote branch antiguo nuevo",
+        "option_c": "git remote reset-name antiguo nuevo",
+        "option_d": "git remote rename antiguo nuevo",
+        "correct": "D",
+        "explanation": "rename actualiza el nombre del remoto y las referencias de seguimiento relacionadas."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué elimina la configuración local de un remoto llamado backup?",
+        "option_a": "git remote remove backup",
+        "option_b": "git remote show backup",
+        "option_c": "git remote prune backup",
+        "option_d": "git remote get-url backup",
+        "correct": "A",
+        "explanation": "remove quita el remoto de la configuración local; no equivale a borrar el repositorio remoto."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué consulta permite obtener la URL configurada de un remoto?",
+        "option_a": "git remote url origin --delete",
+        "option_b": "git remote get-url origin",
+        "option_c": "git remote show-url origin --prune",
+        "option_d": "git remote inspect-url origin --fetch-only",
+        "correct": "B",
+        "explanation": "get-url devuelve la URL asociada al remoto y admite opciones para consultar sus variantes."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué operación ofrece un resumen de las ramas seguidas y su estado respecto al remoto?",
+        "option_a": "git remote add origin",
+        "option_b": "git remote clear origin",
+        "option_c": "git remote show origin",
+        "option_d": "git remote tag origin",
+        "correct": "C",
+        "explanation": "remote show presenta información de seguimiento, ramas locales y referencias remotas conocidas."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué operación sustituye la URL de obtención de un remoto?",
+        "option_a": "git remote replace-origin origin nueva-URL",
+        "option_b": "git remote update-url origin nueva-URL",
+        "option_c": "git remote edit-fetch origin nueva-URL",
+        "option_d": "git remote set-url origin nueva-URL",
+        "correct": "D",
+        "explanation": "set-url modifica la URL configurada para el remoto, con modos específicos para fetch o push."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Dónde se sitúan normalmente las referencias de seguimiento remoto de un repositorio?",
+        "option_a": "Bajo refs/remotes, separadas de las ramas locales bajo refs/heads",
+        "option_b": "Bajo refs/blobs junto con el contenido de archivos",
+        "option_c": "En el índice global del usuario",
+        "option_d": "Dentro de cada archivo del working tree",
+        "correct": "A",
+        "explanation": "Las remote-tracking refs se organizan bajo refs/remotes y reflejan el estado conocido de otros repositorios."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué describe una rama de seguimiento remoto?",
+        "option_a": "Una rama que puede actualizarse escribiendo directamente en el servidor",
+        "option_b": "Una referencia local que registra la última posición conocida de una rama en otro repositorio",
+        "option_c": "Un stash compartido por todos los clones",
+        "option_d": "Un tag que siempre tiene firma",
+        "correct": "B",
+        "explanation": "Una remote-tracking branch se actualiza mediante operaciones de red y sirve como referencia local, no como canal directo de escritura."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué nombre asigna normalmente clone al repositorio del que obtiene una copia?",
+        "option_a": "upstream-only",
+        "option_b": "default-remote",
+        "option_c": "origin",
+        "option_d": "source-head",
+        "correct": "C",
+        "explanation": "clone usa origin como nombre remoto predeterminado salvo que se indique otro con sus opciones."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué permite consultar todas las URLs de obtención configuradas para un remoto?",
+        "option_a": "La opción --merged de git branch",
+        "option_b": "La opción --cached de git diff",
+        "option_c": "La opción --staged de git fetch",
+        "option_d": "La opción --all de git remote get-url",
+        "correct": "D",
+        "explanation": "get-url --all enumera las URLs configuradas en lugar de limitarse a la primera."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué operación establece la referencia simbólica que identifica la rama principal de un remoto?",
+        "option_a": "git remote set-head origin rama",
+        "option_b": "git remote set-main origin rama",
+        "option_c": "git remote branch-head origin rama",
+        "option_d": "git remote mark-default origin rama",
+        "correct": "A",
+        "explanation": "set-head permite configurar o consultar la rama simbólica HEAD asociada a un remoto."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué hace podar referencias de seguimiento remoto que ya no existen en el servidor?",
+        "option_a": "Borra las ramas locales no fusionadas",
+        "option_b": "Elimina las remote-tracking refs obsoletas del espacio local",
+        "option_c": "Reescribe todos los commits del repositorio",
+        "option_d": "Convierte cada ref en un tag anotado",
+        "correct": "B",
+        "explanation": "remote prune elimina referencias de seguimiento que ya no aparecen en el remoto, sin borrar por ello las ramas locales."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué inspección consulta referencias publicadas sin actualizar el repositorio local?",
+        "option_a": "git remote prune URL",
+        "option_b": "git show-remote --working-tree URL",
+        "option_c": "git ls-remote URL",
+        "option_d": "git branch --remote-update URL",
+        "correct": "C",
+        "explanation": "ls-remote lista referencias y object IDs disponibles en otro repositorio sin crear ni actualizar remote-tracking refs."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué alcance tiene actualizar los remotos configurados mediante remote update?",
+        "option_a": "Solo cambia el nombre del remoto activo",
+        "option_b": "Solo limpia archivos ignorados",
+        "option_c": "Siempre envía commits a todos los remotos",
+        "option_d": "Puede obtener referencias de uno o de todos los grupos de remotos configurados",
+        "correct": "D",
+        "explanation": "remote update ejecuta operaciones de obtención para los remotos o grupos definidos en la configuración."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué distingue a un repositorio bare usado habitualmente como servidor?",
+        "option_a": "No tiene working tree comprobado y su directorio principal contiene directamente la base Git",
+        "option_b": "Solo puede contener una rama local",
+        "option_c": "No puede recibir pushes",
+        "option_d": "Guarda únicamente archivos sin seguimiento",
+        "correct": "A",
+        "explanation": "Un repositorio bare omite el working tree y está pensado para intercambio, por ejemplo como destino central."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué diferencia hay entre quitar un remoto y borrar el repositorio que representa?",
+        "option_a": "Ambas operaciones destruyen los objetos del servidor",
+        "option_b": "Quitar el remoto solo elimina referencias/configuración local; el repositorio externo permanece",
+        "option_c": "Quitar el remoto publica todos los commits pendientes",
+        "option_d": "Borrar el repositorio externo solo cambia HEAD local",
+        "correct": "B",
+        "explanation": "La configuración de un remoto es local al clon; remove no realiza una operación destructiva en el servidor."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué relación existe entre una URL de fetch y una URL de push de un remoto?",
+        "option_a": "Siempre deben usar protocolos distintos",
+        "option_b": "La URL de push solo apunta al índice",
+        "option_c": "Pueden ser iguales o distintas, porque obtener y enviar pueden dirigirse a destinos diferentes",
+        "option_d": "La URL de fetch siempre es una rama local",
+        "correct": "C",
+        "explanation": "Git permite configurar por separado la URL usada para obtener y las URLs usadas para enviar."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué enfoque registra un servidor principal sin modificar todavía ninguna rama local?",
+        "option_a": "Ejecutar reset --hard sobre HEAD",
+        "option_b": "Crear un merge commit vacío",
+        "option_c": "Borrar refs/remotes antes de conocer la URL",
+        "option_d": "Añadirlo con git remote add y revisar su configuración antes de fetch o push",
+        "correct": "D",
+        "explanation": "remote add solo registra la relación local; el intercambio de objetos se hace con fetch o push de forma explícita."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_35_LOT_01_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_35_LOT_02_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 35,
+        "question": "¿Qué hace principalmente fetch respecto al repositorio local?",
+        "option_a": "Obtiene objetos y referencias de otro repositorio sin integrar automáticamente sus cambios en la rama actual",
+        "option_b": "Crea siempre un merge commit",
+        "option_c": "Borra el working tree antes de descargar",
+        "option_d": "Envía los commits locales al servidor",
+        "correct": "A",
+        "explanation": "fetch actualiza la información local sobre otro repositorio, pero deja separada la decisión de integrar sus cambios."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué comando obtiene las actualizaciones conocidas del remoto origin?",
+        "option_a": "git pull origin --only-fetch-disabled",
+        "option_b": "git fetch origin",
+        "option_c": "git remote update --send origin",
+        "option_d": "git branch --fetch origin",
+        "correct": "B",
+        "explanation": "fetch origin descarga y actualiza las referencias de seguimiento según la configuración y refspec aplicables."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué opción elimina durante fetch las referencias remotas locales que ya no existen?",
+        "option_a": "--detach",
+        "option_b": "--rebase-only",
+        "option_c": "--prune",
+        "option_d": "--commit",
+        "correct": "C",
+        "explanation": "--prune limpia las remote-tracking refs que dejaron de existir en el remoto consultado."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué solicita la opción --tags durante una obtención?",
+        "option_a": "Enviar todos los tags al remoto",
+        "option_b": "Borrar tags que no apunten a ramas",
+        "option_c": "Convertir tags ligeros en anotados",
+        "option_d": "Obtener tags del remoto, además de las referencias que la configuración normal alcance",
+        "correct": "D",
+        "explanation": "--tags incorpora tags desde el remoto; no significa publicar los tags locales."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué limita una opción depth al obtener un repositorio?",
+        "option_a": "La profundidad de la historia que se descarga, produciendo un clon u obtención superficial",
+        "option_b": "El número de remotos que pueden configurarse",
+        "option_c": "La cantidad de ramas que pueden fusionarse",
+        "option_d": "El número de tags que pueden firmarse",
+        "correct": "A",
+        "explanation": "--depth limita los commits obtenidos y puede crear o ampliar un repositorio shallow."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué combinación describe mejor pull?",
+        "option_a": "Solo listar URLs de un remoto",
+        "option_b": "Obtener cambios y después integrarlos en la rama actual mediante merge o rebase según la configuración",
+        "option_c": "Crear una rama remota sin descargar objetos",
+        "option_d": "Borrar la rama de seguimiento antes de fusionar",
+        "correct": "B",
+        "explanation": "pull ejecuta una obtención y luego integra los cambios en la rama actual conforme a sus opciones."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué política selecciona pull --rebase?",
+        "option_a": "Rechazar todo cambio remoto",
+        "option_b": "Enviar primero los commits locales",
+        "option_c": "Reaplicar los commits locales sobre la historia obtenida en lugar de crear el merge habitual",
+        "option_d": "Eliminar la rama de seguimiento remoto",
+        "correct": "C",
+        "explanation": "--rebase pide usar rebase para integrar la historia obtenida, con las advertencias normales de reescritura."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué exige pull --ff-only?",
+        "option_a": "Que siempre se cree un merge commit",
+        "option_b": "Que se haga un rebase interactivo",
+        "option_c": "Que se borren los commits locales",
+        "option_d": "Que la integración pueda resolverse como fast-forward; de lo contrario falla",
+        "correct": "D",
+        "explanation": "--ff-only permite actualizar solo si la punta actual es ancestro de la historia obtenida."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué indica pull --no-rebase?",
+        "option_a": "Usar merge para integrar la historia obtenida, salvo otras opciones incompatibles",
+        "option_b": "No descargar ninguna referencia",
+        "option_c": "Forzar el envío al remoto",
+        "option_d": "Eliminar los conflictos sin intervención",
+        "correct": "A",
+        "explanation": "--no-rebase selecciona la integración mediante merge en el flujo de pull."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué define un refspec de fetch?",
+        "option_a": "El mensaje de un commit de merge",
+        "option_b": "La correspondencia entre referencias del repositorio remoto y referencias locales que se actualizarán",
+        "option_c": "El nombre del editor global",
+        "option_d": "La política de expiración del reflog",
+        "correct": "B",
+        "explanation": "Un refspec describe qué refs se obtienen y dónde se almacenan o mapean localmente."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué significa consultar origin/main después de un fetch?",
+        "option_a": "Leer directamente el working tree del servidor",
+        "option_b": "Crear automáticamente una rama local main",
+        "option_c": "Consultar la referencia local de seguimiento que refleja la última posición conocida de main en origin",
+        "option_d": "Mostrar siempre el último commit enviado por cualquier remoto",
+        "correct": "C",
+        "explanation": "origin/main es una remote-tracking ref local y solo representa el estado conocido tras las actualizaciones realizadas."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué actualiza normalmente fetch al recibir nuevos commits de origin?",
+        "option_a": "La configuración de user.name",
+        "option_b": "Todos los archivos staged de la rama actual",
+        "option_c": "La rama local actual aunque no se haya pedido integrar",
+        "option_d": "Las referencias de seguimiento remoto y los objetos necesarios, no la rama local actual",
+        "correct": "D",
+        "explanation": "fetch actualiza refs/remotes y el almacén de objetos; la rama checkout queda sin fusionar."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué fuente identifica el resultado de la última operación fetch?",
+        "option_a": "FETCH_HEAD, que registra las cabezas obtenidas para operaciones posteriores",
+        "option_b": "MERGE_HEAD, que siempre representa un remoto",
+        "option_c": "HEAD remoto, que sustituye al HEAD local",
+        "option_d": "STASH_HEAD, que guarda cambios sin seguimiento",
+        "correct": "A",
+        "explanation": "FETCH_HEAD registra las refs obtenidas por fetch y puede ser usado por comandos de integración."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué permite fetch --all?",
+        "option_a": "Descargar solo todos los tags y ningún commit",
+        "option_b": "Obtener de todos los remotos configurados, en vez de limitarse a uno nombrado",
+        "option_c": "Enviar todas las ramas al primer remoto",
+        "option_d": "Integrar automáticamente todas las historias",
+        "correct": "B",
+        "explanation": "--all selecciona todos los remotos configurados para la operación de obtención."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué diferencia hay entre fetch y pull en cuanto a integración?",
+        "option_a": "Fetch siempre hace rebase y pull solo lista refs",
+        "option_b": "Fetch elimina conflictos y pull los crea",
+        "option_c": "Fetch actualiza referencias sin integrar; pull añade una integración posterior en la rama actual",
+        "option_d": "No hay diferencia operacional",
+        "correct": "C",
+        "explanation": "pull combina fetch con una integración, mientras fetch deja el análisis y la integración para una orden posterior."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué precaución acompaña a la poda de tags mediante las opciones de fetch?",
+        "option_a": "Siempre crea una copia de seguridad remota",
+        "option_b": "Solo cambia el mensaje del último commit",
+        "option_c": "No afecta nunca a referencias locales",
+        "option_d": "Debe combinarse con la política de poda indicada porque puede eliminar tags locales que ya no estén en el remoto",
+        "correct": "D",
+        "explanation": "Las opciones de poda de tags amplían el alcance de --prune y deben usarse entendiendo qué refs locales eliminarán."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué solicita pull --autostash cuando hay cambios locales compatibles?",
+        "option_a": "Guardar temporalmente cambios locales, realizar la integración y tratar de reaplicarlos al final",
+        "option_b": "Enviar el stash al remoto como una rama",
+        "option_c": "Convertir los cambios en un merge commit firmado",
+        "option_d": "Borrar el working tree antes de fetch",
+        "correct": "A",
+        "explanation": "--autostash usa un stash temporal para permitir la operación y lo intenta aplicar después."
+    },
+    {
+        "topic_num": 35,
+        "question": "Tras fetch, ¿por qué comparar origin/main antes de integrar?",
+        "option_a": "Porque fetch ya cambió necesariamente la rama actual",
+        "option_b": "Porque permite revisar la historia obtenida y elegir merge, rebase u otra acción de forma explícita",
+        "option_c": "Porque origin/main siempre es un tag anotado",
+        "option_d": "Porque la comparación borra los objetos no usados",
+        "correct": "B",
+        "explanation": "Separar obtención e integración permite inspeccionar la referencia de seguimiento antes de modificar la rama checkout."
+    },
+    {
+        "topic_num": 35,
+        "question": "Si pull --ff-only falla por divergencia, ¿qué significa?",
+        "option_a": "Que el remoto no tiene objetos",
+        "option_b": "Que no se obtuvo ninguna referencia",
+        "option_c": "Que la integración no puede resolverse moviendo la rama directamente y requiere otra decisión",
+        "option_d": "Que el working tree es bare",
+        "correct": "C",
+        "explanation": "La política fast-forward-only rechaza la divergencia para evitar que pull elija automáticamente merge o rebase."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Por qué un equipo puede preferir fetch separado de merge o rebase?",
+        "option_a": "Porque fetch cifra los commits y merge no",
+        "option_b": "Porque pull no usa objetos Git",
+        "option_c": "Porque fetch solo funciona en repositorios bare",
+        "option_d": "Porque permite inspeccionar cambios remotos y decidir cómo integrarlos antes de modificar la rama de trabajo",
+        "correct": "D",
+        "explanation": "La separación mejora el control sobre la revisión, la resolución de conflictos y la estrategia de integración."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_35_LOT_02_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_35_LOT_03_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 35,
+        "question": "¿Qué hace principalmente push?",
+        "option_a": "Publica objetos y actualiza referencias del repositorio remoto según los refspecs solicitados",
+        "option_b": "Descarga refs y actualiza origin/main",
+        "option_c": "Crea un stash local",
+        "option_d": "Solo muestra la configuración del remoto",
+        "correct": "A",
+        "explanation": "push transfiere objetos necesarios y propone actualizar refs en el repositorio receptor."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué comando publica la rama local main en origin?",
+        "option_a": "git fetch origin main",
+        "option_b": "git push origin main",
+        "option_c": "git remote show origin main",
+        "option_d": "git pull origin main --only",
+        "correct": "B",
+        "explanation": "El refspec simple main pide actualizar la rama homónima del remoto origin con la rama local."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué añade la opción -u al publicar una rama por primera vez?",
+        "option_a": "Obliga a usar un merge commit",
+        "option_b": "Desactiva la comprobación fast-forward",
+        "option_c": "Establece la rama remota como upstream para la rama local",
+        "option_d": "Incluye todos los tags ignorados",
+        "correct": "C",
+        "explanation": "--set-upstream registra la relación de seguimiento para que futuras operaciones puedan omitir referencias explícitas."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Por qué puede rechazar el servidor un push sin force?",
+        "option_a": "Porque push siempre requiere un tag",
+        "option_b": "Porque el repositorio local no tiene índice",
+        "option_c": "Porque fetch ya integró todos los commits",
+        "option_d": "Porque actualizar la referencia no sería un avance rápido y podría descartar historia remota",
+        "correct": "D",
+        "explanation": "La comprobación non-fast-forward protege la historia remota frente a actualizar una ref con una línea no descendiente."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué protección ofrece force-with-lease frente a force?",
+        "option_a": "Comprueba una expectativa sobre la punta remota antes de sobrescribirla",
+        "option_b": "Convierte el push en una operación de solo lectura",
+        "option_c": "Garantiza que nunca se reescriba historia",
+        "option_d": "Publica automáticamente todos los remotos",
+        "correct": "A",
+        "explanation": "force-with-lease limita la sobrescritura a un estado remoto esperado y reduce el riesgo de borrar trabajo ajeno no observado."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué riesgo adicional introduce un push forzado simple?",
+        "option_a": "Solo cambia una URL sin tocar refs",
+        "option_b": "Puede reemplazar una historia remota que contiene commits que el emisor no tiene localmente",
+        "option_c": "Nunca modifica la referencia remota",
+        "option_d": "Solo se aplica a tags ligeros",
+        "correct": "B",
+        "explanation": "--force permite ignorar comprobaciones de avance y puede hacer inalcanzables commits publicados por otros."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Cómo se solicita borrar una rama del remoto?",
+        "option_a": "git branch --delete origin/feature",
+        "option_b": "git remote remove origin/feature",
+        "option_c": "git push origin --delete feature",
+        "option_d": "git fetch origin --delete feature",
+        "correct": "C",
+        "explanation": "La refspec de borrado envía una petición para eliminar la referencia feature en origin."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué alcance tiene publicar todos los tags locales con push?",
+        "option_a": "La opción --tags solo muestra tags remotos",
+        "option_b": "La opción --tags elimina tags sin commits",
+        "option_c": "La opción --tags convierte cada tag ligero en rama",
+        "option_d": "La opción --tags incluye los tags que no se hayan incluido ya por otros refspecs",
+        "correct": "D",
+        "explanation": "--tags pide enviar todas las refs bajo refs/tags, independientemente de que apunten a commits alcanzables por ramas."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué diferencia expresa --follow-tags?",
+        "option_a": "Publica tags anotados relacionados con los commits enviados, no todos los tags locales",
+        "option_b": "Publica únicamente tags ligeros",
+        "option_c": "Borra tags que no tengan upstream",
+        "option_d": "Descarga tags desde todos los remotos",
+        "correct": "A",
+        "explanation": "--follow-tags limita la publicación automática a tags anotados alcanzables relacionados con las refs que se envían."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué controla push.default?",
+        "option_a": "El algoritmo de resolución de conflictos",
+        "option_b": "La selección predeterminada de referencias cuando push no recibe un refspec explícito",
+        "option_c": "La profundidad de fetch",
+        "option_d": "El nombre del remoto creado por clone",
+        "correct": "B",
+        "explanation": "push.default configura qué ramas o referencias se consideran destino implícito en un push sencillo."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué efecto tiene enviar HEAD:main a origin?",
+        "option_a": "Descarga main y cambia HEAD a ella",
+        "option_b": "Borra la rama main remota",
+        "option_c": "Publica la punta de HEAD local en la referencia main del remoto",
+        "option_d": "Crea un tag llamado HEAD",
+        "correct": "C",
+        "explanation": "La refspec HEAD:main usa la revisión actual como origen y main como destino remoto."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué permite comprobar --dry-run antes de publicar?",
+        "option_a": "Descargar todos los objetos faltantes",
+        "option_b": "Forzar el push sin comprobaciones",
+        "option_c": "Crear un commit local de prueba",
+        "option_d": "Simular la operación y mostrar qué referencias se actualizarían sin escribir en el remoto",
+        "correct": "D",
+        "explanation": "--dry-run informa del resultado previsto sin realizar las actualizaciones remotas."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué propiedad intenta garantizar push --atomic?",
+        "option_a": "Que todas las actualizaciones de refs se acepten juntas o ninguna se aplique",
+        "option_b": "Que todos los commits tengan una firma GPG",
+        "option_c": "Que el servidor sea bare",
+        "option_d": "Que el push se convierta en fetch",
+        "correct": "A",
+        "explanation": "--atomic solicita una actualización transaccional del conjunto de refs, si el servidor la admite."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué ventaja tiene publicar una rama con un upstream configurado?",
+        "option_a": "Hace que la rama local sea inmutable",
+        "option_b": "Permite que operaciones posteriores infieran el repositorio y la rama de comparación o envío",
+        "option_c": "Impide todos los merges futuros",
+        "option_d": "Convierte la rama en tag remoto",
+        "correct": "B",
+        "explanation": "La relación upstream aporta el destino predeterminado y la referencia de comparación para el flujo normal."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué opción puede solicitar que el transporte firme la actualización de referencias?",
+        "option_a": "--annotated-only",
+        "option_b": "--commit-signature",
+        "option_c": "--signed",
+        "option_d": "--gpg-tags",
+        "correct": "C",
+        "explanation": "--signed pide una transacción firmada cuando el servidor y el transporte soportan esa capacidad."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué transporta una opción de push enviada al servidor receptor?",
+        "option_a": "Un nuevo archivo al working tree local",
+        "option_b": "Una regla de .gitignore",
+        "option_c": "Un cambio de user.email",
+        "option_d": "Una opción adicional para hooks o lógica de recepción que el servidor haya configurado para aceptar",
+        "correct": "D",
+        "explanation": "--push-option transmite opciones de proceso al lado receptor, sujeto a su configuración y hooks."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué debe revisar un equipo antes de usar force-with-lease sobre una rama compartida?",
+        "option_a": "Que la expectativa local de la punta remota sea fiable y que reescribir la historia esté autorizado",
+        "option_b": "Que exista un stash vacío",
+        "option_c": "Que la rama tenga un tag ligero",
+        "option_d": "Que fetch nunca se haya ejecutado",
+        "correct": "A",
+        "explanation": "La protección depende de la expectativa remota conocida y no sustituye la coordinación sobre reescrituras."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué orden publica feature y configura su seguimiento en una sola operación?",
+        "option_a": "git fetch --set-upstream origin feature",
+        "option_b": "git push --set-upstream origin feature",
+        "option_c": "git remote add --upstream origin feature",
+        "option_d": "git branch --push-upstream origin feature",
+        "correct": "B",
+        "explanation": "--set-upstream registra origin/feature como upstream de la rama local feature al publicar."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué diferencia hay entre borrar una rama local y solicitar borrar la rama remota?",
+        "option_a": "Ambas siempre eliminan los objetos de todos los clones",
+        "option_b": "La primera requiere force y la segunda no usa red",
+        "option_c": "La primera cambia refs locales; la segunda usa push para pedir al servidor que elimine su referencia",
+        "option_d": "No existe diferencia",
+        "correct": "C",
+        "explanation": "Una ref local y una ref en otro repositorio tienen operaciones y efectos distintos."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué práctica reduce el riesgo al reemplazar intencionadamente una rama remota?",
+        "option_a": "Usar siempre force sin fetch",
+        "option_b": "Borrar el remoto local antes de publicar",
+        "option_c": "Crear un stash y omitir la revisión",
+        "option_d": "Usar force-with-lease tras actualizar la información y comunicar la reescritura",
+        "correct": "D",
+        "explanation": "Actualizar la expectativa y usar una fuerza condicionada evita sobrescribir silenciosamente cambios remotos desconocidos."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_35_LOT_03_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_35_LOT_04_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 35,
+        "question": "¿Qué es una pull request en una plataforma de colaboración Git?",
+        "option_a": "Una propuesta para revisar y combinar cambios de una rama de origen en una rama base",
+        "option_b": "Una referencia Git que existe en todo repositorio bare",
+        "option_c": "Un comando obligatorio de git push",
+        "option_d": "Un stash compartido entre clones",
+        "correct": "A",
+        "explanation": "La pull request es una unidad de colaboración de la plataforma para discutir, revisar y proponer integración."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Por qué una pull request no es equivalente a una rama Git local?",
+        "option_a": "La pull request almacena todos los blobs en otro índice",
+        "option_b": "La pull request añade conversación, revisiones y comprobaciones alrededor de una comparación de ramas",
+        "option_c": "La rama local solo existe en GitHub",
+        "option_d": "Ambas son exactamente la misma referencia",
+        "correct": "B",
+        "explanation": "La plataforma superpone el flujo de revisión al intercambio de referencias que Git por sí solo proporciona."
+    },
+    {
+        "topic_num": 35,
+        "question": "En una pull request, ¿qué papel cumple la rama base?",
+        "option_a": "Es siempre la rama donde se ejecuta el editor",
+        "option_b": "Es la rama que contiene solo tags",
+        "option_c": "Es la rama destino contra la que se propone comparar y eventualmente integrar",
+        "option_d": "Es la rama que Git borra al abrir la propuesta",
+        "correct": "C",
+        "explanation": "La base define el contexto de destino de los cambios propuestos."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué papel cumple la rama head de una pull request?",
+        "option_a": "Contiene exclusivamente los checks del servidor",
+        "option_b": "Es siempre refs/remotes/origin/HEAD",
+        "option_c": "Es un índice temporal del revisor",
+        "option_d": "Aporta los commits y cambios que se proponen para revisión",
+        "correct": "D",
+        "explanation": "La rama head es la fuente cuyos cambios se comparan con la base."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Cómo suele actualizarse una pull request abierta con nuevos cambios?",
+        "option_a": "Publicando nuevos commits en la rama head asociada",
+        "option_b": "Creando otra pull request con el mismo título obligatoriamente",
+        "option_c": "Editando el archivo .gitignore del servidor",
+        "option_d": "Aplicando un stash desde la interfaz",
+        "correct": "A",
+        "explanation": "Los nuevos pushes a la rama de origen actualizan la propuesta y sus comprobaciones."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué aporta una revisión de código en una pull request?",
+        "option_a": "Un cambio automático del remoto origin",
+        "option_b": "Comentarios y una decisión de revisión sobre los cambios comparados con la base",
+        "option_c": "La eliminación del historial de la rama head",
+        "option_d": "Una modificación del índice local del autor",
+        "correct": "B",
+        "explanation": "La revisión permite comentar líneas y aprobar, solicitar cambios o comentar la propuesta."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué función tienen las comprobaciones requeridas antes de integrar una pull request?",
+        "option_a": "Convertir todos los commits en tags",
+        "option_b": "Descargar ramas sin seguimiento",
+        "option_c": "Impedir o condicionar la integración hasta que se cumplan controles como pruebas o revisiones",
+        "option_d": "Cambiar el nombre de la rama base",
+        "correct": "C",
+        "explanation": "Las reglas de protección pueden exigir checks y revisiones antes de permitir la combinación."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué opciones de integración puede ofrecer una plataforma al aceptar una pull request?",
+        "option_a": "Solo un cambio de user.name",
+        "option_b": "Únicamente un stash temporal",
+        "option_c": "Siempre un fast-forward sin posibilidad de elección",
+        "option_d": "Merge commit, squash de commits o rebase/fast-forward según la configuración",
+        "correct": "D",
+        "explanation": "Las plataformas pueden exponer distintas estrategias, cada una con efectos de topología e identificadores."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué efecto tiene cerrar una pull request sin fusionarla?",
+        "option_a": "Finaliza la propuesta sin integrar sus cambios en la rama base",
+        "option_b": "Borra siempre los commits de la rama head",
+        "option_c": "Elimina el repositorio remoto",
+        "option_d": "Convierte la propuesta en un tag firmado",
+        "correct": "A",
+        "explanation": "Cerrar la propuesta cambia su estado de colaboración, no equivale a integrar ni necesariamente a borrar la rama."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué caracteriza a una pull request en borrador?",
+        "option_a": "Fuerza todos los checks a pasar",
+        "option_b": "Indica que aún no está lista para la revisión o integración final",
+        "option_c": "Bloquea cualquier push a la rama head",
+        "option_d": "Es idéntica a una pull request fusionada",
+        "correct": "B",
+        "explanation": "El estado draft comunica que el trabajo está en preparación y evita tratarlo como propuesta lista."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué acción asigna personas para revisar una pull request?",
+        "option_a": "Crear un remoto llamado reviewer",
+        "option_b": "Renombrar la rama base",
+        "option_c": "Solicitar revisores desde la interfaz de la propuesta",
+        "option_d": "Ejecutar git stash pop en el servidor",
+        "correct": "C",
+        "explanation": "La plataforma mantiene revisores y sus solicitudes como parte de la colaboración de la propuesta."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué protege una regla de rama protegida?",
+        "option_a": "El contenido de todos los stashes locales",
+        "option_b": "La configuración de cada clon",
+        "option_c": "Los hashes frente a cualquier operación local",
+        "option_d": "Condiciones sobre quién puede actualizar o integrar la rama y qué controles son obligatorios",
+        "correct": "D",
+        "explanation": "La protección limita actualizaciones directas y puede requerir revisiones, checks o historial lineal."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Por qué se ejecutan checks automatizados sobre una pull request?",
+        "option_a": "Para aportar evidencia sobre compilación, pruebas u otras condiciones antes de integrar",
+        "option_b": "Para convertir la propuesta en un remoto local",
+        "option_c": "Para elegir el autor del commit",
+        "option_d": "Para actualizar automáticamente todos los tags",
+        "correct": "A",
+        "explanation": "Los checks proporcionan señales automatizadas que las políticas de integración pueden requerir."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué permite comparar la vista de una pull request?",
+        "option_a": "La configuración global de los dos autores",
+        "option_b": "Los cambios de la rama head respecto de la base, incluidos commits y diferencias de archivos",
+        "option_c": "Los objetos no alcanzables de todos los clones",
+        "option_d": "Solo los nombres de los remotos",
+        "correct": "B",
+        "explanation": "La comparación delimita exactamente el conjunto de cambios propuestos para revisión."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué política reduce cambios directos no revisados sobre la rama principal?",
+        "option_a": "Permitir force push a cualquier colaborador",
+        "option_b": "Borrar la rama base después de cada merge",
+        "option_c": "Proteger la rama y exigir pull requests con revisiones y checks",
+        "option_d": "Desactivar todas las comprobaciones",
+        "correct": "C",
+        "explanation": "La protección de rama desplaza la integración hacia una propuesta revisable y controlada."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué ocurre con la conversación asociada a una pull request al revisarla?",
+        "option_a": "Se almacena como un blob en el índice del autor",
+        "option_b": "Solo puede contener el mensaje del merge",
+        "option_c": "No puede cambiar cuando llegan nuevos commits",
+        "option_d": "Permite discutir la propuesta y mantener comentarios vinculados a sus cambios",
+        "correct": "D",
+        "explanation": "La conversación y las revisiones son metadatos colaborativos que acompañan a la comparación."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué acción permite pedir cambios concretos antes de aceptar una pull request?",
+        "option_a": "Emitir una revisión que solicite cambios y esperar a que la rama head se actualice",
+        "option_b": "Eliminar el remote-tracking branch del revisor",
+        "option_c": "Hacer push --force a la rama base",
+        "option_d": "Crear un tag con el mensaje del comentario",
+        "correct": "A",
+        "explanation": "Una revisión puede bloquear la aceptación hasta que el autor corrija y publique nuevos cambios."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué operación describe revertir una pull request ya integrada?",
+        "option_a": "Eliminar la rama base y recrear el merge",
+        "option_b": "Crear cambios inversos mediante un commit o acción de revert, sin borrar la historia integrada",
+        "option_c": "Borrar todos los comentarios",
+        "option_d": "Ejecutar fetch --prune en cada clon",
+        "correct": "B",
+        "explanation": "Revertir conserva el historial y añade una corrección que deshace los cambios integrados."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué significa que una pull request tenga conflictos de merge?",
+        "option_a": "Que la rama head no tiene ningún commit",
+        "option_b": "Que todos los checks han pasado",
+        "option_c": "La base y la rama head no se pueden integrar automáticamente con una resolución única",
+        "option_d": "Que el remoto no acepta objetos",
+        "correct": "C",
+        "explanation": "La propuesta necesita actualizar o resolver cambios solapados antes de poder integrarse."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué enfoque suele actualizar una rama head conflictiva antes de pedir otra revisión?",
+        "option_a": "Borrar la base y crear una rama sin historial",
+        "option_b": "Aplicar un stash en el repositorio del servidor",
+        "option_c": "Forzar la rama base sin revisar",
+        "option_d": "Obtener la base, integrar sus cambios en la rama head, resolver, probar y publicar la actualización",
+        "correct": "D",
+        "explanation": "Actualizar la rama de trabajo y enviar la resolución permite recalcular checks y la comparación de la propuesta."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_35_LOT_04_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_35_LOT_05_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 35,
+        "question": "¿Qué es una rama de tema (topic branch) en un flujo Git?",
+        "option_a": "Una rama temporal centrada en una funcionalidad o corrección concreta",
+        "option_b": "Una rama que solo contiene tags",
+        "option_c": "Una referencia que nunca puede fusionarse",
+        "option_d": "Una copia obligatoria de todos los remotos",
+        "correct": "A",
+        "explanation": "Una topic branch aísla una línea de trabajo enfocada hasta que se integra en una rama de desarrollo o estable."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué describe el flujo de trabajo documentado para un proyecto con rama de integración?",
+        "option_a": "Cada desarrollador escribe directamente en la rama estable",
+        "option_b": "Las contribuciones llegan a una rama de integración y se prueban antes de avanzar a una rama estable",
+        "option_c": "Todos los cambios se guardan como stashes",
+        "option_d": "Los remotos se sustituyen por tags",
+        "correct": "B",
+        "explanation": "Gitworkflows separa integración y estabilidad para ordenar la incorporación de contribuciones."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué ventaja aporta mantener una rama estable separada de una rama de integración?",
+        "option_a": "Obliga a reescribir todos los commits públicos",
+        "option_b": "Elimina la necesidad de remotos",
+        "option_c": "Permite probar o revisar cambios antes de exponerlos como historia estable",
+        "option_d": "Impide crear ramas de tema",
+        "correct": "C",
+        "explanation": "La separación proporciona una frontera de calidad entre trabajo en integración y código estable."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué caracteriza un flujo distribuido de Git?",
+        "option_a": "Solo existe un servidor que controla todos los commits",
+        "option_b": "No puede haber ramas de tema",
+        "option_c": "Las pull requests dejan de ser posibles",
+        "option_d": "Cada participante puede intercambiar contribuciones entre repositorios y un integrador puede seleccionar qué incorporar",
+        "correct": "D",
+        "explanation": "Git distribuido permite múltiples repositorios y roles de integración mediante fetch, push y selección de refs."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Por qué conviene no reescribir una rama pública que ya sirve de base a otros?",
+        "option_a": "Porque obliga a los demás a reconciliar identificadores y puede invalidar referencias de trabajo",
+        "option_b": "Porque Git no permite crear tags después",
+        "option_c": "Porque fetch borra la rama local",
+        "option_d": "Porque una rama pública no puede fusionarse",
+        "correct": "A",
+        "explanation": "La estabilidad de referencias compartidas reduce el coste de coordinación y evita divergencias artificiales."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué caracteriza al enfoque GitHub flow?",
+        "option_a": "Mantener ramas release y hotfix durante años",
+        "option_b": "Usar ramas de trabajo cortas, cambios revisables mediante pull request y una integración frecuente",
+        "option_c": "Enviar siempre directamente a main con force",
+        "option_d": "No ejecutar comprobaciones antes de integrar",
+        "correct": "B",
+        "explanation": "GitHub flow documenta un flujo ligero basado en rama, commit, pull request, revisión y despliegue."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué paso pertenece al flujo GitHub flow después de crear una rama de trabajo?",
+        "option_a": "Borrar main antes de probar",
+        "option_b": "Crear obligatoriamente una rama develop",
+        "option_c": "Realizar commits y abrir una pull request para proponer los cambios",
+        "option_d": "Publicar tags de cada archivo",
+        "correct": "C",
+        "explanation": "La pull request convierte la rama corta en una propuesta revisable contra la rama base."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué diferencia general hay entre un flujo ligero de ramas y Gitflow?",
+        "option_a": "El flujo ligero no usa Git y Gitflow solo usa stashes",
+        "option_b": "Ambos requieren exactamente las mismas ramas",
+        "option_c": "Gitflow prohíbe cualquier integración",
+        "option_d": "El primero suele integrar ramas cortas hacia una línea principal; Gitflow define ramas de desarrollo, release y hotfix con roles más formales",
+        "correct": "D",
+        "explanation": "Las guías distinguen la simplicidad de ramas cortas de la estructura explícita de Gitflow."
+    },
+    {
+        "topic_num": 35,
+        "question": "En Gitflow, ¿qué papel cumple normalmente develop?",
+        "option_a": "Servir como rama de integración del trabajo que se prepara para una futura versión",
+        "option_b": "Contener únicamente correcciones urgentes de producción",
+        "option_c": "Ser la rama de cada pull request cerrada",
+        "option_d": "Reemplazar todos los tags de versión",
+        "correct": "A",
+        "explanation": "Gitflow usa develop como línea donde se integran funcionalidades antes de preparar una release."
+    },
+    {
+        "topic_num": 35,
+        "question": "En Gitflow, ¿para qué se usa una rama release?",
+        "option_a": "Guardar archivos ignorados de una release anterior",
+        "option_b": "Preparar una versión concreta y estabilizarla antes de incorporarla a las ramas de producción e integración",
+        "option_c": "Sustituir el repositorio remoto",
+        "option_d": "Evitar cualquier prueba automatizada",
+        "correct": "B",
+        "explanation": "La rama release aísla la estabilización de una versión mientras el desarrollo futuro puede continuar."
+    },
+    {
+        "topic_num": 35,
+        "question": "En Gitflow, ¿qué finalidad tiene una rama hotfix?",
+        "option_a": "Desarrollar una funcionalidad experimental sin revisión",
+        "option_b": "Almacenar las URLs de remotos",
+        "option_c": "Corregir urgentemente una versión de producción y propagar la corrección a las ramas correspondientes",
+        "option_d": "Reemplazar la rama de integración permanentemente",
+        "correct": "C",
+        "explanation": "Hotfix se reserva para correcciones urgentes sobre la línea de producción y después se integra donde corresponda."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué suele ocurrir al finalizar una rama release en Gitflow?",
+        "option_a": "Se elimina sin merge ni tag",
+        "option_b": "Se convierte en remote-tracking branch",
+        "option_c": "Se aplica como stash a todos los clones",
+        "option_d": "Se integra en la rama de producción, se marca la versión y se devuelve el cambio a la rama de desarrollo",
+        "correct": "D",
+        "explanation": "El cierre de una release conserva la versión en producción y sincroniza la línea de desarrollo."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué coste puede tener Gitflow frente a un flujo de ramas cortas?",
+        "option_a": "Mantiene más ramas de larga duración y exige más coordinación de integración",
+        "option_b": "No permite etiquetar versiones",
+        "option_c": "No puede usar remotos",
+        "option_d": "Tiene menos estados y menos decisiones siempre",
+        "correct": "A",
+        "explanation": "La estructura formal de Gitflow ofrece roles claros, pero aumenta la coordinación y la divergencia potencial."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué práctica es coherente con trunk-based development?",
+        "option_a": "Mantener cada funcionalidad en una rama permanente hasta fin de año",
+        "option_b": "Integrar cambios pequeños y frecuentes en una línea principal, usando ramas muy cortas cuando se necesiten",
+        "option_c": "Separar siempre develop y release aunque no haya versiones",
+        "option_d": "Reescribir main después de cada integración",
+        "correct": "B",
+        "explanation": "Trunk-based development reduce el tiempo de vida de ramas y favorece la integración frecuente sobre el tronco."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué relación existe entre GitHub flow y trunk-based development?",
+        "option_a": "Uno exige Gitflow y el otro prohíbe main",
+        "option_b": "Ambos requieren ramas release y hotfix",
+        "option_c": "Ambos favorecen ramas cortas e integración frecuente, aunque GitHub flow concreta el uso de pull requests y despliegue",
+        "option_d": "No comparten ninguna práctica",
+        "correct": "C",
+        "explanation": "El flujo de GitHub es una realización ligera compatible con la idea de mantener corta la divergencia respecto al tronco."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué criterio ayuda a elegir entre una rama release formal y una integración continua sobre trunk?",
+        "option_a": "El nombre del remoto origin",
+        "option_b": "La existencia de archivos ignorados",
+        "option_c": "El número de tags ligeros locales",
+        "option_d": "La necesidad real de estabilizar versiones separadas frente a la capacidad de integrar cambios pequeños con controles automatizados",
+        "correct": "D",
+        "explanation": "La estrategia debe responder al ritmo de entrega, controles y necesidades de mantenimiento, no a una receta universal."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué secuencia es coherente con una contribución revisable y de bajo riesgo?",
+        "option_a": "Crear rama corta, obtener la base actual, hacer commits enfocados, abrir pull request, pasar checks y fusionar",
+        "option_b": "Forzar directamente main y borrar el reflog",
+        "option_c": "Crear una rama permanente por cada archivo",
+        "option_d": "Publicar sin revisar y resolver después en todos los clones",
+        "correct": "A",
+        "explanation": "La secuencia limita la divergencia, conserva la revisión y usa checks antes de modificar la línea principal."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué debe conservar una estrategia de ramas bien definida además de los nombres de ramas?",
+        "option_a": "Solo una lista de URLs",
+        "option_b": "Reglas claras de integración, revisión, pruebas, publicación y tratamiento de historia compartida",
+        "option_c": "Un stash por desarrollador",
+        "option_d": "Un merge commit vacío en cada push",
+        "correct": "B",
+        "explanation": "Una estrategia es un proceso de colaboración y calidad, no solo una nomenclatura de refs."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué decisión protege mejor una rama principal en un equipo con pull requests?",
+        "option_a": "Permitir force push anónimo y saltar checks",
+        "option_b": "Eliminar la rama principal tras cada release",
+        "option_c": "Requerir revisiones y checks, impedir pushes directos no autorizados y publicar cambios desde ramas de trabajo",
+        "option_d": "Aceptar cualquier actualización de una remote-tracking ref",
+        "correct": "C",
+        "explanation": "Las protecciones combinan control de acceso y señales de calidad antes de integrar cambios."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué principio común une los flujos remotos, las pull requests y las estrategias de ramas?",
+        "option_a": "Evitar siempre los remotos y usar solo stashes",
+        "option_b": "Reescribir toda rama pública antes de cada push",
+        "option_c": "Tratar una pull request como un objeto blob local",
+        "option_d": "Separar trabajo, revisión e integración de forma explícita y preservar la historia compartida salvo decisión coordinada",
+        "correct": "D",
+        "explanation": "La colaboración segura hace visibles los límites entre trabajo local, referencias compartidas, revisión e integración."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_35_LOT_05_END
