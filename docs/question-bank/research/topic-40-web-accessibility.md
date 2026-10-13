@@ -5,7 +5,7 @@
 
 ## Evidence boundary
 
-The syllabus names WCAG principles and success criteria, EN 301 549, accessibility declarations and public-sector obligations. The ETSI standards index returned a robots/WAF-blocked response and did not establish a current edition. Consequently, no question claims that the blocked ETSI index is the current harmonised edition. The accepted 100 questions use the stable W3C WCAG 2.1 Recommendation (5 June 2018) for principles, guidelines, success criteria and conformance, and the consolidated BOE text of Real Decreto 1112/2018 for Spanish public-sector scope, accessibility duties, communications, declarations, responsible units, review and monitoring. Article 6.3's explicit legal reference to EN 301 549 V1.1.2 (2015-04) is cited as a provision of the BOE text, not as a claim that it is the current ETSI edition.
+The syllabus names WCAG principles and success criteria, EN 301 549, accessibility declarations and public-sector obligations. The ETSI standards index returned a robots/WAF-blocked response and did not establish a current edition. Consequently, no question claims that the blocked ETSI index is the current harmonised edition. The accepted 200 questions use the stable W3C WCAG 2.1 Recommendation (5 June 2018) for principles, guidelines, success criteria and conformance, and the consolidated BOE text of Real Decreto 1112/2018 for Spanish public-sector scope, accessibility duties, communications, declarations, responsible units, review and monitoring. Article 6.3's explicit legal reference to EN 301 549 V1.1.2 (2015-04) is cited as a provision of the BOE text, not as a claim that it is the current ETSI edition.
 
 ## Official sources
 
@@ -20,5 +20,10 @@ The syllabus names WCAG principles and success criteria, EN 301 549, accessibili
 - Lot 03: WCAG language, input/error handling, status messages, new criteria and conformance.
 - Lot 04: Real Decreto 1112/2018 scope, definitions, accessibility requirements and burden exceptions.
 - Lot 05: Real Decreto 1112/2018 participation, communications, complaints, declarations, review and monitoring.
+- Lot 06: additional WCAG 2.1 perceivable criteria.
+- Lot 07: additional WCAG 2.1 operable and understandable criteria.
+- Lot 08: Real Decreto 1112/2018 awareness, participation, communications and complaints.
+- Lot 09: Real Decreto 1112/2018 declarations, responsible units and reviews.
+- Lot 10: Real Decreto 1112/2018 monitoring, reporting, network and final provisions.
 
-The remaining 100 objective slots stay source-gated until the current EN 301 549 edition is recovered from an authoritative, verifiable source.
+The current EN 301 549 edition remains source-gated; no question claims an unverified current edition.

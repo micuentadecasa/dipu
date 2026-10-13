@@ -129,6 +129,11 @@ SPEC_PATHS = [
     ROOT / "docs/question-bank/research/questions/topics-40-lot-03.json",
     ROOT / "docs/question-bank/research/questions/topics-40-lot-04.json",
     ROOT / "docs/question-bank/research/questions/topics-40-lot-05.json",
+    ROOT / "docs/question-bank/research/questions/topics-40-lot-06.json",
+    ROOT / "docs/question-bank/research/questions/topics-40-lot-07.json",
+    ROOT / "docs/question-bank/research/questions/topics-40-lot-08.json",
+    ROOT / "docs/question-bank/research/questions/topics-40-lot-09.json",
+    ROOT / "docs/question-bank/research/questions/topics-40-lot-10.json",
 ]
 
 
@@ -197,7 +202,7 @@ def make_record(spec: dict, source: dict, numeric_id: int) -> dict:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("topic_num", type=int, choices=tuple(range(2, 41)))
-    parser.add_argument("--lot-num", type=int, default=1, choices=tuple(range(1, 6)))
+    parser.add_argument("--lot-num", type=int, default=1, choices=tuple(range(1, 11)))
     args = parser.parse_args()
     batch = load_batch(args.topic_num, args.lot_num)
     register = json.loads(REGISTER_PATH.read_text(encoding="utf-8"))
