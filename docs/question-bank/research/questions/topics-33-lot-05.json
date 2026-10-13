@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-33-git-theory-installation-local.md",
+  "batches": [
+    {
+      "topic_num": 33,
+      "lot_num": 5,
+      "source_ids": [
+        "GIT-2.50"
+      ],
+      "questions": [
+        {
+          "objective_id": "t33-lo-081",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué comando crea un tag ligero llamado v1?",
+          "options": [
+            "git tag v1",
+            "git tag --annotated-only v1",
+            "git ref new-tag v1",
+            "git commit --tag-object v1"
+          ],
+          "correct": "A",
+          "explanation": "Sin opciones de anotación, git tag crea una referencia ligera al objeto actual.",
+          "citation": "git-tag — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-082",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué opción crea un tag anotado con mensaje?",
+          "options": [
+            "git tag --lightweight-message v1",
+            "git tag -a v1 -m \"release\"",
+            "git annotate-commit v1",
+            "git ref --message v1"
+          ],
+          "correct": "B",
+          "explanation": "-a crea un objeto tag anotado y -m proporciona su mensaje.",
+          "citation": "git-tag — -a/--annotate; -m/--message",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-083",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué comando elimina un tag local llamado v1?",
+          "options": [
+            "git delete-ref --remote v1",
+            "git rm-tag --object v1",
+            "git tag -d v1",
+            "git tag --prune-all v1"
+          ],
+          "correct": "C",
+          "explanation": "-d elimina la ref local del tag; no borra por ello automáticamente todos los objetos alcanzables.",
+          "citation": "git-tag — -d/--delete",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-084",
+          "difficulty": "basic",
+          "type": "comparison",
+          "question": "¿Qué diferencia hay entre un tag ligero y uno anotado?",
+          "options": [
+            "El ligero siempre es remoto",
+            "El anotado no apunta a objetos",
+            "Son exactamente el mismo objeto",
+            "El ligero es una ref directa; el anotado crea un objeto tag con metadatos"
+          ],
+          "correct": "D",
+          "explanation": "El tag anotado permite mensaje, identidad y otros metadatos mediante un objeto propio.",
+          "citation": "git-tag — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-085",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué modo de reset mueve HEAD y la rama actual, pero conserva el índice y working tree?",
+          "options": [
+            "--soft",
+            "--keep-index-only",
+            "--ref-only-softest",
+            "--stage"
+          ],
+          "correct": "A",
+          "explanation": "--soft actualiza la referencia sin tocar el índice ni el working tree.",
+          "citation": "git-reset — --soft",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-086",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué modo de reset es el predeterminado y actualiza el índice sin reescribir normalmente el working tree?",
+          "options": [
+            "--soft",
+            "--mixed",
+            "--index-only",
+            "--preserve-head"
+          ],
+          "correct": "B",
+          "explanation": "--mixed mueve HEAD y hace que el índice coincida con el commit, manteniendo los cambios de trabajo.",
+          "citation": "git-reset — --mixed",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-087",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué modo de reset puede hacer coincidir HEAD, índice y working tree con el commit objetivo?",
+          "options": [
+            "--tree-safe",
+            "--worktree-only",
+            "--hard",
+            "--commit-only"
+          ],
+          "correct": "C",
+          "explanation": "--hard descarta cambios locales en índice y working tree que no estén en el commit objetivo.",
+          "citation": "git-reset — --hard",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-088",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "¿Qué precaución exige `git reset --hard`?",
+          "options": [
+            "Solo cambia el mensaje de commit",
+            "Nunca toca archivos",
+            "Solo afecta tags remotos",
+            "Puede descartar cambios locales no committeados"
+          ],
+          "correct": "D",
+          "explanation": "El modo hard reescribe el índice y archivos de trabajo, por lo que puede destruir cambios no guardados.",
+          "citation": "git-reset — --hard",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-089",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué comando muestra el commit al que apunta una revisión sin presentar su diff?",
+          "options": [
+            "git rev-parse revisión",
+            "git show --no-object revisión",
+            "git resolve --tree revisión",
+            "git log --pointer-only revisión"
+          ],
+          "correct": "A",
+          "explanation": "rev-parse resuelve la revisión y escribe su object ID.",
+          "citation": "git-rev-parse — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-090",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué comando muestra un tag y el objeto al que apunta?",
+          "options": [
+            "git tag --display-object v1",
+            "git show v1",
+            "git ref-show-only v1",
+            "git log --tag-pointer v1"
+          ],
+          "correct": "B",
+          "explanation": "git show puede presentar el objeto tag anotado y el objeto objetivo, o el commit de un tag ligero.",
+          "citation": "git-show — DESCRIPTION; git-tag",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-091",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "Se necesita mover la rama actual a un commit manteniendo preparados los cambios del índice. ¿Qué reset encaja?",
+          "options": [
+            "git reset --hard objetivo",
+            "git reset --mixed objetivo",
+            "git reset --soft objetivo",
+            "git tag objetivo"
+          ],
+          "correct": "C",
+          "explanation": "soft mueve la referencia y conserva índice y working tree.",
+          "citation": "git-reset — --soft",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-092",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Qué diferencia hay entre reset de una ruta y reset con un commit objetivo?",
+          "options": [
+            "Ambos borran siempre el working tree",
+            "El primero crea un tag",
+            "El segundo solo consulta configuración",
+            "El primero opera sobre entradas del índice; el segundo puede mover HEAD y la ref actual"
+          ],
+          "correct": "D",
+          "explanation": "La forma con path no mueve HEAD, mientras la forma con commit aplica un modo de reset a la referencia y áreas.",
+          "citation": "git-reset — DESCRIPTION; Resetting a single file",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-093",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué herramienta permite inspeccionar el movimiento anterior de HEAD después de un reset?",
+          "options": [
+            "git reflog",
+            "git status --history-only",
+            "git show --lost-head",
+            "git config --head-log"
+          ],
+          "correct": "A",
+          "explanation": "El reflog de HEAD conserva entradas de actualizaciones locales para localizar estados anteriores.",
+          "citation": "git-reflog — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-094",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué significa que un tag anotado sea firmado?",
+          "options": [
+            "Que cifra todos los blobs",
+            "Que su objeto tag incluye una firma verificable asociada al tagger",
+            "Que impide mover una rama",
+            "Que convierte el tag en remoto"
+          ],
+          "correct": "B",
+          "explanation": "La firma pertenece a los metadatos del objeto tag y puede verificarse según la configuración criptográfica.",
+          "citation": "git-tag — SIGNING TAGS",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-095",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Qué comando actualiza directamente una referencia de bajo nivel?",
+          "options": [
+            "git ref-write-tree-only",
+            "git branch --raw-object",
+            "git update-ref",
+            "git move-head-direct"
+          ],
+          "correct": "C",
+          "explanation": "update-ref modifica una ref de forma explícita y se usa para operaciones internas o automatizadas.",
+          "citation": "git-update-ref — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-096",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Después de un reset, el commit anterior no aparece en la rama actual. ¿Qué explicación es correcta?",
+          "options": [
+            "El commit se convirtió automáticamente en una configuración",
+            "HEAD nunca puede moverse",
+            "El object database se borra siempre",
+            "La rama se movió, pero el commit puede seguir localmente alcanzable mediante el reflog durante su retención"
+          ],
+          "correct": "D",
+          "explanation": "Mover una ref cambia la alcanzabilidad por nombres de rama, mientras el reflog puede conservar la ruta local al estado anterior.",
+          "citation": "git-reset — DESCRIPTION; git-reflog",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-097",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Qué diferencia hay entre `git tag -d v1` y `git reset --hard v1`?",
+          "options": [
+            "El primero elimina una ref de tag; el segundo mueve HEAD y puede reescribir áreas de trabajo",
+            "Ambos eliminan el objeto tag y archivos",
+            "El primero mueve la rama actual",
+            "El segundo solo lista refs"
+          ],
+          "correct": "A",
+          "explanation": "Son operaciones distintas sobre una referencia de tag frente al estado checkout y sus áreas.",
+          "citation": "git-tag — -d; git-reset — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-098",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Qué comando permite comprobar el tipo de un objeto Git antes de interpretarlo?",
+          "options": [
+            "git object-type --working-tree objeto",
+            "git cat-file -t objeto",
+            "git show --type-name objeto",
+            "git inspect-type-ref objeto"
+          ],
+          "correct": "B",
+          "explanation": "cat-file -t devuelve el tipo de objeto, como blob, tree, commit o tag.",
+          "citation": "git-cat-file — -t",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-099",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Un usuario quiere revisar exactamente qué entrará en el próximo commit sin crear el commit. ¿Qué comparación es más directa?",
+          "options": [
+            "git diff --no-index /dev/null file",
+            "git log --pending",
+            "git diff --cached",
+            "git show HEAD^"
+          ],
+          "correct": "C",
+          "explanation": "La diferencia del índice contra HEAD representa el contenido preparado para el próximo commit.",
+          "citation": "git-diff — --cached",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-100",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Qué conjunto representa mejor el flujo local básico de Git?",
+          "options": [
+            "Editar refs, borrar object database y hacer push",
+            "Configurar remoto, hacer pull y abrir PR",
+            "Crear solo tags sin índice",
+            "Editar working tree, preparar en índice y registrar con commit"
+          ],
+          "correct": "D",
+          "explanation": "El flujo local separa edición, staging y registro de la instantánea en el historial.",
+          "citation": "gittutorial — The Git index; git-add; git-commit",
+          "source_id": "GIT-2.50"
+        }
+      ]
+    }
+  ]
+}

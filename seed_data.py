@@ -17153,3 +17153,1028 @@ SEED_QUESTIONS.extend([
     }
 ])
 # QUESTION_BANK_ACCEPTED_TOPIC_32_LOT_05_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_33_LOT_01_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 33,
+        "question": "¿Qué modelo describe mejor a Git?",
+        "option_a": "Un sistema distribuido de control de versiones",
+        "option_b": "Un servidor central de archivos",
+        "option_c": "Un compilador de C",
+        "option_d": "Un gestor de bases de datos",
+        "correct": "A",
+        "explanation": "Git permite que cada clon tenga el historial y los objetos necesarios para trabajar localmente."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué representa principalmente un objeto blob en Git?",
+        "option_a": "La lista de padres de un commit",
+        "option_b": "El contenido de un archivo",
+        "option_c": "El nombre de una rama",
+        "option_d": "La configuración global",
+        "correct": "B",
+        "explanation": "Un blob almacena contenido de archivo sin representar por sí mismo su nombre o ubicación."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué objeto describe un directorio y sus entradas en Git?",
+        "option_a": "Un reflog",
+        "option_b": "Un commit hook",
+        "option_c": "Un tree",
+        "option_d": "Un índice de configuración",
+        "correct": "C",
+        "explanation": "Un tree relaciona nombres y modos con blobs u otros trees para formar un árbol de directorios."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué objeto registra una instantánea y sus padres?",
+        "option_a": "Un blob",
+        "option_b": "Un tag ligero",
+        "option_c": "Un pathspec",
+        "option_d": "Un commit",
+        "correct": "D",
+        "explanation": "Un commit identifica una instantánea y enlaza con uno o varios commits padre."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué caracteriza a un tag anotado?",
+        "option_a": "Es un objeto con mensaje y metadatos que apunta a otro objeto",
+        "option_b": "Es siempre una copia del working tree",
+        "option_c": "Es solo una línea de .gitignore",
+        "option_d": "Es una entrada temporal del índice",
+        "correct": "A",
+        "explanation": "El tag anotado puede contener nombre, mensaje, identidad y firma, y apunta a un objeto."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué almacena el object database de un repositorio Git?",
+        "option_a": "Solo archivos sin seguimiento",
+        "option_b": "Objetos como blobs, trees, commits y tags",
+        "option_c": "Solo ramas remotas",
+        "option_d": "Solo mensajes de commit",
+        "correct": "B",
+        "explanation": "La base de objetos conserva las unidades direccionadas por contenido que forman el historial."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué función cumplen las referencias (refs) en Git?",
+        "option_a": "Comprimir cada archivo del working tree",
+        "option_b": "Configurar el editor del sistema",
+        "option_c": "Nombrar posiciones de commits u otros objetos",
+        "option_d": "Validar la sintaxis de C#",
+        "correct": "C",
+        "explanation": "Las refs son nombres que permiten alcanzar objetos, como una rama o un tag."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué suele indicar HEAD?",
+        "option_a": "El contenido del último blob",
+        "option_b": "El nivel global de configuración",
+        "option_c": "El patrón de ignore activo",
+        "option_d": "La referencia o commit actualmente comprobado",
+        "correct": "D",
+        "explanation": "HEAD identifica el punto actualmente checkout y puede apuntar a una ref o directamente a un commit."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué es el índice de Git?",
+        "option_a": "La propuesta de la siguiente instantánea, también llamada staging area",
+        "option_b": "El historial de todos los remotos",
+        "option_c": "El directorio de objetos sin comprimir",
+        "option_d": "El fichero de configuración global",
+        "correct": "A",
+        "explanation": "El índice contiene el estado preparado para el próximo commit."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué es el working tree?",
+        "option_a": "La lista de refs empaquetadas",
+        "option_b": "El conjunto de archivos extraídos para trabajar en el checkout",
+        "option_c": "El reflog de HEAD",
+        "option_d": "El contenido de un tag anotado",
+        "correct": "B",
+        "explanation": "El working tree es la copia de archivos con la que trabaja el usuario."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué directorio contiene normalmente los metadatos de un repositorio no bare?",
+        "option_a": ".gitignore",
+        "option_b": "src/.repo",
+        "option_c": ".git",
+        "option_d": "config.d",
+        "correct": "C",
+        "explanation": "En un repositorio normal, .git contiene el object database, refs, configuración e índice."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué relación existe entre un commit y un tree?",
+        "option_a": "El tree apunta al editor configurado",
+        "option_b": "El commit es solo un nombre de archivo",
+        "option_c": "No existe relación entre ambos",
+        "option_d": "El commit apunta a un tree que representa la instantánea raíz",
+        "correct": "D",
+        "explanation": "El commit registra el tree de la instantánea junto con metadatos y padres."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Por qué dos archivos con el mismo contenido pueden compartir un blob?",
+        "option_a": "Porque el blob identifica el contenido y no el nombre de la ruta",
+        "option_b": "Porque Git guarda solo la primera ruta",
+        "option_c": "Porque los blobs contienen siempre nombres",
+        "option_d": "Porque el índice impide duplicados",
+        "correct": "A",
+        "explanation": "El nombre y modo de la ruta se registran en el tree, mientras el blob representa el contenido."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué diferencia principal hay entre una rama local y un commit?",
+        "option_a": "La rama es un blob y el commit un tree",
+        "option_b": "La rama es una ref móvil que nombra un commit; el commit es un objeto de historial",
+        "option_c": "La rama siempre es remota",
+        "option_d": "El commit solo existe en el índice",
+        "correct": "B",
+        "explanation": "Una rama es un nombre de referencia que normalmente avanza al crear commits."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué información añade un commit además de la instantánea?",
+        "option_a": "La configuración de todos los usuarios",
+        "option_b": "Los archivos ignorados únicamente",
+        "option_c": "Metadatos de autor/committer, mensaje y padres",
+        "option_d": "El contenido de la caché HTTP",
+        "correct": "C",
+        "explanation": "Los commits contienen identidad, marcas temporales, mensaje, tree y padres."
+    },
+    {
+        "topic_num": 33,
+        "question": "Si HEAD apunta directamente a un commit y no a una rama, ¿cómo se describe el estado?",
+        "option_a": "Índice vacío",
+        "option_b": "Working tree bare",
+        "option_c": "Tag no anotado",
+        "option_d": "HEAD desacoplado (detached HEAD)",
+        "correct": "D",
+        "explanation": "En detached HEAD no hay una rama local que avance automáticamente con nuevos commits."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Dónde se encuentran normalmente las ramas locales dentro de la jerarquía de refs?",
+        "option_a": "refs/heads/",
+        "option_b": "refs/blobs/",
+        "option_c": "refs/index/",
+        "option_d": "refs/worktree/",
+        "correct": "A",
+        "explanation": "Las ramas locales se almacenan bajo refs/heads, aunque Git también puede empaquetar referencias."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué puede apuntar un tag anotado?",
+        "option_a": "Solo a una carpeta del sistema",
+        "option_b": "A un objeto de Git, como un commit, tree o blob",
+        "option_c": "Solo al índice",
+        "option_d": "Solo a HEAD simbólico",
+        "correct": "B",
+        "explanation": "Un tag object tiene un objeto objetivo y metadatos del tag."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué diferencia hay entre el índice y el working tree?",
+        "option_a": "El índice es remoto y el working tree global",
+        "option_b": "El índice contiene solo tags",
+        "option_c": "El índice prepara el próximo commit y el working tree contiene los archivos editables",
+        "option_d": "No hay diferencia operativa",
+        "correct": "C",
+        "explanation": "Git compara esas dos áreas para saber qué está staged y qué sigue modificado."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué significa que Git use objetos direccionados por contenido?",
+        "option_a": "Que todos los objetos se guardan como texto plano",
+        "option_b": "Que las ramas no pueden moverse",
+        "option_c": "Que solo se versionan nombres",
+        "option_d": "La identidad del objeto deriva de su contenido y metadatos relevantes",
+        "correct": "D",
+        "explanation": "La identidad criptográfica permite referenciar el mismo contenido de forma estable."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_33_LOT_01_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_33_LOT_02_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 33,
+        "question": "¿Qué comando muestra la versión instalada de Git?",
+        "option_a": "git --version",
+        "option_b": "git version-show",
+        "option_c": "git info --install",
+        "option_d": "git config --version",
+        "correct": "A",
+        "explanation": "git --version imprime la versión del ejecutable disponible."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué comando crea un repositorio Git en el directorio actual?",
+        "option_a": "git create-repository",
+        "option_b": "git init",
+        "option_c": "git start --repo",
+        "option_d": "git make .git",
+        "correct": "B",
+        "explanation": "git init crea el subdirectorio de metadatos y la estructura inicial del repositorio."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué comando obtiene una copia local de un repositorio existente?",
+        "option_a": "git copy-objects",
+        "option_b": "git fetch-only",
+        "option_c": "git clone",
+        "option_d": "git checkout-repository",
+        "correct": "C",
+        "explanation": "git clone crea un nuevo repositorio local a partir de otro y configura su checkout inicial."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué comando escribe una configuración global para el usuario actual?",
+        "option_a": "git settings --user",
+        "option_b": "git config --system-only",
+        "option_c": "git user --global",
+        "option_d": "git config --global",
+        "correct": "D",
+        "explanation": "La opción --global dirige la operación a la configuración global del usuario."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué configuración identifica el nombre mostrado en los commits?",
+        "option_a": "user.name",
+        "option_b": "commit.author.name",
+        "option_c": "core.identity",
+        "option_d": "author.display",
+        "correct": "A",
+        "explanation": "user.name forma parte de la identidad usada al crear commits."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué configuración identifica la dirección de correo de los commits?",
+        "option_a": "commit.mailbox",
+        "option_b": "user.email",
+        "option_c": "core.email",
+        "option_d": "author.address",
+        "correct": "B",
+        "explanation": "user.email proporciona el correo de la identidad de commit."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué opción limita `git config` a la configuración del repositorio actual?",
+        "option_a": "--repo-only",
+        "option_b": "--worktree-global",
+        "option_c": "--local",
+        "option_d": "--current-user",
+        "correct": "C",
+        "explanation": "--local escribe o consulta la configuración propia del repositorio."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué comando lista las variables de configuración que Git puede leer?",
+        "option_a": "git config --show-files-only",
+        "option_b": "git settings --all-keys",
+        "option_c": "git list-config-files",
+        "option_d": "git config --list",
+        "correct": "D",
+        "explanation": "--list muestra las entradas de configuración, normalmente junto con sus valores."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué nivel suele tener prioridad sobre la configuración global para un repositorio concreto?",
+        "option_a": "La configuración local del repositorio",
+        "option_b": "La configuración del sistema siempre",
+        "option_c": "El archivo .gitignore",
+        "option_d": "El reflog",
+        "correct": "A",
+        "explanation": "La configuración local es más específica y normalmente prevalece sobre la global para la misma clave."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué comando establece el nombre local del repositorio?",
+        "option_a": "git identity --repo Ana",
+        "option_b": "git config --local user.name \"Ana\"",
+        "option_c": "git config --name local Ana",
+        "option_d": "git user.name --local Ana",
+        "correct": "B",
+        "explanation": "La forma indicada establece user.name en la configuración local del repositorio."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué opción elimina una variable de configuración concreta?",
+        "option_a": "--remove-key-only",
+        "option_b": "--delete-value-all",
+        "option_c": "--unset",
+        "option_d": "--clear-scope",
+        "correct": "C",
+        "explanation": "--unset elimina una instancia de la clave seleccionada en el ámbito indicado."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué comando selecciona la rama inicial por defecto al crear repositorios nuevos mediante configuración?",
+        "option_a": "git init --branch-global main",
+        "option_b": "git branch --config main",
+        "option_c": "git config core.initial main",
+        "option_d": "git config --global init.defaultBranch main",
+        "correct": "D",
+        "explanation": "init.defaultBranch es la clave que define el nombre inicial usado por git init cuando no se indica otro."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué diferencia hay entre --system y --global en `git config`?",
+        "option_a": "--system afecta la instalación; --global afecta al usuario",
+        "option_b": "--system afecta solo el índice; --global solo HEAD",
+        "option_c": "--system es remoto; --global es local",
+        "option_d": "No tienen ámbitos distintos",
+        "correct": "A",
+        "explanation": "Git separa configuración del sistema y del usuario mediante esos niveles."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué comando muestra el valor efectivo de una clave junto con su origen?",
+        "option_a": "git config --trace-value user.name",
+        "option_b": "git config --show-origin --get user.name",
+        "option_c": "git show-config-source user.name",
+        "option_d": "git config --origin-only user.name",
+        "correct": "B",
+        "explanation": "--show-origin añade el archivo o fuente de cada valor consultado."
+    },
+    {
+        "topic_num": 33,
+        "question": "En un repositorio recién creado, `git config --local user.email` no devuelve valor. ¿Qué implica?",
+        "option_a": "El repositorio no tiene object database",
+        "option_b": "El correo se ha borrado de todos los ámbitos",
+        "option_c": "No hay un valor local para esa clave, aunque otro ámbito podría proporcionarlo",
+        "option_d": "HEAD está desacoplado",
+        "correct": "C",
+        "explanation": "Una consulta explícita al ámbito local no encuentra la clave; la configuración efectiva puede venir de otro nivel."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué diferencia conceptual existe entre configurar user.email y autenticarse ante un servidor?",
+        "option_a": "Ambas configuran la misma credencial",
+        "option_b": "user.email cifra el repositorio",
+        "option_c": "La autenticación la realiza siempre git config",
+        "option_d": "La primera registra metadatos de commit; la segunda pertenece al acceso a servicios externos",
+        "correct": "D",
+        "explanation": "La identidad de commit no es por sí sola una credencial de transporte o autorización."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué opción permite consultar todos los valores de una clave multivaluada?",
+        "option_a": "git config --get-all",
+        "option_b": "git config --one-value",
+        "option_c": "git config --all-only-first",
+        "option_d": "git config --values-last",
+        "correct": "A",
+        "explanation": "--get-all devuelve todos los valores asociados a la clave consultada."
+    },
+    {
+        "topic_num": 33,
+        "question": "Un repositorio debe usar un editor distinto sin modificar la configuración global. ¿Qué enfoque es coherente?",
+        "option_a": "Editar .gitignore",
+        "option_b": "Establecer core.editor con `--local`",
+        "option_c": "Usar git reflog",
+        "option_d": "Cambiar refs/heads",
+        "correct": "B",
+        "explanation": "La clave core.editor puede definirse en el nivel local para afectar solo al repositorio."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué efecto tiene `git init` cuando se ejecuta sobre un repositorio ya inicializado?",
+        "option_a": "Borra siempre todos los commits",
+        "option_b": "Clona automáticamente un remoto",
+        "option_c": "Reinicializa la estructura sin convertirlo en otro tipo de repositorio",
+        "option_d": "Convierte el índice en un blob",
+        "correct": "C",
+        "explanation": "git init puede reinitializar un repositorio existente y conserva su historial salvo operaciones explícitas distintas."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué diferencia local importante hay entre clone e init?",
+        "option_a": "init siempre descarga refs",
+        "option_b": "clone nunca crea un working tree",
+        "option_c": "No hay diferencia",
+        "option_d": "clone obtiene una historia existente; init crea una estructura sin esa historia externa",
+        "correct": "D",
+        "explanation": "clone configura una copia a partir de un repositorio existente, mientras init inicia uno nuevo."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_33_LOT_02_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_33_LOT_03_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 33,
+        "question": "¿Qué comando resume el estado entre HEAD, índice y working tree?",
+        "option_a": "git status",
+        "option_b": "git inspect-tree",
+        "option_c": "git state-summary-only",
+        "option_d": "git diff-status-object",
+        "correct": "A",
+        "explanation": "git status muestra cambios staged, no staged y archivos sin seguimiento."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué es un archivo untracked?",
+        "option_a": "Un archivo staged para el próximo commit",
+        "option_b": "Un archivo del working tree que Git no está siguiendo todavía",
+        "option_c": "Un commit sin padre",
+        "option_d": "Un valor de configuración global",
+        "correct": "B",
+        "explanation": "Untracked describe un path que no está en el índice ni registrado en el historial actual."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué hace `git add informe.txt`?",
+        "option_a": "Crea un tag anotado",
+        "option_b": "Publica el archivo en un remoto",
+        "option_c": "Actualiza el índice con el contenido actual de informe.txt",
+        "option_d": "Elimina el archivo del working tree",
+        "correct": "C",
+        "explanation": "git add copia al índice el contenido que se quiere incluir en el próximo commit."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué compara por defecto `git diff`?",
+        "option_a": "HEAD frente a un remoto",
+        "option_b": "Dos ramas remotas",
+        "option_c": "El object database frente al reflog",
+        "option_d": "El working tree frente al índice",
+        "correct": "D",
+        "explanation": "Sin opciones, git diff muestra cambios no staged entre working tree e índice."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué compara `git diff --cached`?",
+        "option_a": "El índice frente a HEAD",
+        "option_b": "El working tree frente al índice",
+        "option_c": "Dos blobs sin nombre",
+        "option_d": "El reflog frente a una rama remota",
+        "correct": "A",
+        "explanation": "--cached, equivalente a --staged, muestra lo preparado respecto del último commit."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué efecto tiene `git add -A` desde la raíz del repositorio?",
+        "option_a": "Solo añade archivos con extensión .A",
+        "option_b": "Actualiza el índice para todas las rutas relevantes, incluidas adiciones y eliminaciones",
+        "option_c": "Solo muestra el estado",
+        "option_d": "Crea un commit automático",
+        "correct": "B",
+        "explanation": "La opción -A actualiza el índice de forma global para reflejar adiciones, modificaciones y eliminaciones."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué hace `git add -p`?",
+        "option_a": "Publica cada fragmento como commit",
+        "option_b": "Borra todos los fragmentos no elegidos",
+        "option_c": "Permite seleccionar interactivamente fragmentos para preparar",
+        "option_d": "Muestra solo los tags",
+        "correct": "C",
+        "explanation": "El modo patch permite decidir qué hunks entran en el índice."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué restaura `git restore archivo.txt` por defecto?",
+        "option_a": "El índice desde un remoto",
+        "option_b": "La rama desde su reflog",
+        "option_c": "El mensaje del último commit",
+        "option_d": "El archivo del working tree desde el índice",
+        "correct": "D",
+        "explanation": "Sin --staged, restore opera sobre el working tree usando el índice como origen por defecto."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué hace `git restore --staged archivo.txt`?",
+        "option_a": "Quita el archivo del índice sin cambiar por defecto su contenido de trabajo",
+        "option_b": "Borra el archivo definitivamente",
+        "option_c": "Crea un commit vacío",
+        "option_d": "Cambia el nombre de la rama",
+        "correct": "A",
+        "explanation": "--staged restaura la entrada del índice desde HEAD, dejando normalmente el working tree intacto."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué diferencia hay entre `git restore --staged` y `git rm --cached`?",
+        "option_a": "Ambas borran siempre el archivo",
+        "option_b": "La primera restaura el índice; la segunda quita la ruta del índice conservando el archivo de trabajo",
+        "option_c": "La primera crea una rama",
+        "option_d": "La segunda edita el commit anterior",
+        "correct": "B",
+        "explanation": "Aunque pueden coincidir en algunos resultados, expresan operaciones distintas y rm --cached conserva el archivo no seguido."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué efecto tiene `git reset HEAD archivo.txt` en el flujo clásico de deshacer staging?",
+        "option_a": "Borra HEAD",
+        "option_b": "Elimina todos los commits",
+        "option_c": "Mueve la entrada del índice hacia HEAD sin cambiar normalmente el working tree",
+        "option_d": "Convierte el archivo en tag",
+        "correct": "C",
+        "explanation": "El reset de una ruta desapila el contenido del índice respecto de HEAD, manteniendo los cambios de trabajo."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué comando deja un archivo en el working tree pero deja de seguirlo?",
+        "option_a": "git rm --keep-index archivo.txt",
+        "option_b": "git untrack --worktree archivo.txt",
+        "option_c": "git restore --delete-index archivo.txt",
+        "option_d": "git rm --cached archivo.txt",
+        "correct": "D",
+        "explanation": "--cached retira la ruta del índice y conserva la copia de trabajo."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué comando registra el renombrado o movimiento de un archivo en el índice?",
+        "option_a": "git mv viejo.txt nuevo.txt",
+        "option_b": "git rename --ref viejo.txt nuevo.txt",
+        "option_c": "git move --object viejo.txt nuevo.txt",
+        "option_d": "git path --mv viejo.txt nuevo.txt",
+        "correct": "A",
+        "explanation": "git mv mueve el archivo y actualiza el índice para el nuevo path."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué efecto tiene una regla de .gitignore sobre un archivo ya tracked?",
+        "option_a": "Lo convierte en tag",
+        "option_b": "No lo deja de seguir por sí sola",
+        "option_c": "Lo borra del object database",
+        "option_d": "Cambia su autor",
+        "correct": "B",
+        "explanation": "Las reglas de ignore afectan principalmente la detección de paths no seguidos; un tracked file necesita otra operación para salir del índice."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué comando ayuda a saber por qué una ruta está siendo ignorada?",
+        "option_a": "git ignore-explain --tree ruta",
+        "option_b": "git status --why-ignored ruta",
+        "option_c": "git check-ignore -v ruta",
+        "option_d": "git diff --ignored-source ruta",
+        "correct": "C",
+        "explanation": "-v muestra la regla y el origen que hacen que la ruta sea ignorada."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué función cumplen los patrones de negación en .gitignore?",
+        "option_a": "Eliminan todos los ignores globales",
+        "option_b": "Crean una rama especial",
+        "option_c": "Cambian el hash del repositorio",
+        "option_d": "Pueden volver a incluir una ruta que coincidía con un patrón anterior, sujeto a las reglas de directorio",
+        "correct": "D",
+        "explanation": "Un patrón con ! invierte una coincidencia previa cuando el path puede alcanzarse según la jerarquía."
+    },
+    {
+        "topic_num": 33,
+        "question": "Se modifica un archivo después de ejecutar git add y antes de commit. ¿Qué queda staged?",
+        "option_a": "La versión que estaba en el índice cuando se ejecutó git add",
+        "option_b": "Siempre la última versión del working tree",
+        "option_c": "Ninguna versión",
+        "option_d": "La versión del remoto",
+        "correct": "A",
+        "explanation": "El índice es una instantánea separada del working tree y no se actualiza solo por editar el archivo."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué diferencia aporta `git diff HEAD` frente a `git diff`?",
+        "option_a": "La primera solo muestra tags",
+        "option_b": "La primera compara el working tree completo con HEAD; la segunda compara working tree con índice",
+        "option_c": "La segunda compara con un remoto",
+        "option_d": "No hay diferencia",
+        "correct": "B",
+        "explanation": "Comparar contra HEAD incluye tanto cambios staged como no staged en la diferencia total."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué comando deshace el staging de todas las rutas sin descartar por defecto sus cambios de trabajo?",
+        "option_a": "git clean -fd",
+        "option_b": "git reset --hard HEAD",
+        "option_c": "git restore --staged .",
+        "option_d": "git rm -r .",
+        "correct": "C",
+        "explanation": "restore --staged actualiza el índice desde HEAD y no reescribe normalmente el working tree."
+    },
+    {
+        "topic_num": 33,
+        "question": "Un path aparece como ignored y se necesita identificar el archivo de reglas que lo excluye. ¿Qué opción es adecuada?",
+        "option_a": "git status --porcelain path",
+        "option_b": "git diff --cached path",
+        "option_c": "git log --ignored path",
+        "option_d": "git check-ignore --verbose path",
+        "correct": "D",
+        "explanation": "La salida verbose de check-ignore incluye la fuente de la regla de exclusión."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_33_LOT_03_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_33_LOT_04_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 33,
+        "question": "¿Qué comando crea un commit con el contenido actualmente preparado?",
+        "option_a": "git commit",
+        "option_b": "git snapshot --index-only",
+        "option_c": "git save-working-tree",
+        "option_d": "git record-ref-only",
+        "correct": "A",
+        "explanation": "git commit registra el estado del índice como una nueva instantánea del historial."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué opción proporciona directamente el mensaje de commit?",
+        "option_a": "-msg-only",
+        "option_b": "-m",
+        "option_c": "--title-as-ref",
+        "option_d": "--message-file-name",
+        "correct": "B",
+        "explanation": "-m permite especificar el mensaje sin abrir el editor para ese commit."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué muestra `git log`?",
+        "option_a": "Solo el índice actual",
+        "option_b": "Las reglas de .gitignore",
+        "option_c": "El historial de commits alcanzable desde la referencia indicada",
+        "option_d": "La configuración del sistema",
+        "correct": "C",
+        "explanation": "git log recorre y muestra commits del historial según la revisión y opciones elegidas."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué inspecciona `git show` cuando se le proporciona un commit?",
+        "option_a": "Solo la versión de Git instalada",
+        "option_b": "La configuración global completa",
+        "option_c": "El contenido de todos los remotos",
+        "option_d": "El commit y su diferencia o contenido asociado",
+        "correct": "D",
+        "explanation": "git show presenta objetos y, para commits, sus metadatos y cambios asociados."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué opción produce una representación compacta de commits en git log?",
+        "option_a": "--oneline",
+        "option_b": "--single-commit-text",
+        "option_c": "--compact-tree-only",
+        "option_d": "--short-object-store",
+        "correct": "A",
+        "explanation": "--oneline combina una forma abreviada del objeto y el asunto del commit."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué hace `git commit --amend`?",
+        "option_a": "Añade siempre un hijo independiente",
+        "option_b": "Reemplaza el commit más reciente con un commit corregido",
+        "option_c": "Solo edita .gitignore",
+        "option_d": "Mueve todas las ramas remotas",
+        "correct": "B",
+        "explanation": "Amend reconstruye la punta actual combinando el commit anterior con el estado y mensaje corregidos."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué diferencia hay entre el autor y el committer de un commit?",
+        "option_a": "El autor es siempre una rama",
+        "option_b": "El committer es siempre el remoto",
+        "option_c": "El autor escribió el cambio y el committer registró el commit",
+        "option_d": "Son siempre dos objetos blob",
+        "correct": "C",
+        "explanation": "Git conserva ambos roles en los metadatos y pueden ser personas distintas."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué expresión suele designar el primer padre del commit actual?",
+        "option_a": "HEAD@{1}",
+        "option_b": "HEAD~0",
+        "option_c": "refs/parent/HEAD",
+        "option_d": "HEAD^",
+        "correct": "D",
+        "explanation": "La notación ^ selecciona un padre; sin número, el primero."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué expresión suele designar el commit anterior siguiendo el primer padre?",
+        "option_a": "HEAD~1",
+        "option_b": "HEAD^0",
+        "option_c": "HEAD@{now}",
+        "option_d": "HEAD+1",
+        "correct": "A",
+        "explanation": "~1 sigue el primer padre una vez, equivalente a HEAD^ para un commit normal."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué comando obtiene el nombre completo de la referencia o commit de HEAD?",
+        "option_a": "git resolve-head --pretty",
+        "option_b": "git rev-parse HEAD",
+        "option_c": "git name-rev --object-only HEAD",
+        "option_d": "git show-head --full-ref",
+        "correct": "B",
+        "explanation": "rev-parse interpreta revisiones y puede imprimir el identificador resuelto de HEAD."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué registran los reflogs?",
+        "option_a": "Todos los cambios de cualquier clon",
+        "option_b": "Solo objetos borrados del remoto",
+        "option_c": "Actualizaciones locales de refs y HEAD",
+        "option_d": "La configuración global",
+        "correct": "C",
+        "explanation": "Los reflogs permiten inspeccionar movimientos locales de referencias, incluido HEAD."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué comando muestra las referencias existentes y sus objetos apuntados?",
+        "option_a": "git refs --objects-only",
+        "option_b": "git list-heads --all",
+        "option_c": "git cat-refs --working-tree",
+        "option_d": "git show-ref",
+        "correct": "D",
+        "explanation": "show-ref lista referencias disponibles y los object IDs asociados."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué ocurre al crear un commit normal en una rama checkout?",
+        "option_a": "La ref de la rama avanza al nuevo commit y HEAD sigue nombrándola",
+        "option_b": "HEAD se borra",
+        "option_c": "El índice se convierte en remoto",
+        "option_d": "El commit no tiene padre",
+        "correct": "A",
+        "explanation": "La rama actual se actualiza para apuntar al nuevo commit."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué opción permite crear un commit sin cambios de contenido?",
+        "option_a": "--permit-no-tree",
+        "option_b": "--allow-empty",
+        "option_c": "--empty-index-only",
+        "option_d": "--no-snapshot",
+        "correct": "B",
+        "explanation": "--allow-empty autoriza un commit cuyo tree puede ser igual al de su padre."
+    },
+    {
+        "topic_num": 33,
+        "question": "Se ejecuta amend tras haber creado un commit local que aún no se comparte. ¿Qué riesgo conceptual debe considerarse?",
+        "option_a": "Convierte el commit en un blob sin historial",
+        "option_b": "No cambia nada",
+        "option_c": "Cambia la identidad del commit y puede invalidar referencias al commit anterior",
+        "option_d": "Solo cambia el nombre del working tree",
+        "correct": "C",
+        "explanation": "Amend crea un nuevo commit con otro ID, por lo que referencias al anterior quedan desactualizadas."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué diferencia hay entre HEAD@{1} y HEAD~1?",
+        "option_a": "Ambas siempre designan el mismo commit",
+        "option_b": "La primera es una rama remota",
+        "option_c": "La segunda depende del reflog",
+        "option_d": "La primera usa el reflog temporal; la segunda sigue el primer padre del historial",
+        "correct": "D",
+        "explanation": "Son dos recorridos distintos: movimiento local de HEAD frente a ascendencia de commits."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué comando inspecciona el contenido de un objeto con su tipo y tamaño?",
+        "option_a": "git cat-file -p objeto",
+        "option_b": "git inspect-object --tree objeto",
+        "option_c": "git object-show --size-only objeto",
+        "option_d": "git read-object-name objeto",
+        "correct": "A",
+        "explanation": "cat-file permite consultar información y contenido de objetos del repositorio."
+    },
+    {
+        "topic_num": 33,
+        "question": "Un commit se alcanza desde HEAD pero no desde la rama que el usuario esperaba. ¿Qué debe inspeccionarse primero?",
+        "option_a": "El archivo .gitignore",
+        "option_b": "Las refs y el valor de HEAD",
+        "option_c": "Solo user.email",
+        "option_d": "El CSS del working tree",
+        "correct": "B",
+        "explanation": "HEAD y las refs determinan qué commits son alcanzables por cada nombre local."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué opción limita `git log` a cambios de una ruta concreta?",
+        "option_a": "Usar `--path-only` antes de la revisión",
+        "option_b": "Pasar la ruta a git config",
+        "option_c": "Indicar `--` seguido de la ruta",
+        "option_d": "Usar `--index`",
+        "correct": "C",
+        "explanation": "El separador -- distingue revisiones de paths y permite limitar el historial a la ruta posterior."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Por qué un reflog no debe tratarse como historial compartido del repositorio?",
+        "option_a": "Porque contiene solo blobs",
+        "option_b": "Porque siempre es público",
+        "option_c": "Porque reemplaza a las ramas",
+        "option_d": "Porque registra movimientos locales y no se transporta como parte normal de la historia compartida",
+        "correct": "D",
+        "explanation": "Los reflogs son datos locales de referencia y su retención y disponibilidad dependen del repositorio local."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_33_LOT_04_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_33_LOT_05_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 33,
+        "question": "¿Qué comando crea un tag ligero llamado v1?",
+        "option_a": "git tag v1",
+        "option_b": "git tag --annotated-only v1",
+        "option_c": "git ref new-tag v1",
+        "option_d": "git commit --tag-object v1",
+        "correct": "A",
+        "explanation": "Sin opciones de anotación, git tag crea una referencia ligera al objeto actual."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué opción crea un tag anotado con mensaje?",
+        "option_a": "git tag --lightweight-message v1",
+        "option_b": "git tag -a v1 -m \"release\"",
+        "option_c": "git annotate-commit v1",
+        "option_d": "git ref --message v1",
+        "correct": "B",
+        "explanation": "-a crea un objeto tag anotado y -m proporciona su mensaje."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué comando elimina un tag local llamado v1?",
+        "option_a": "git delete-ref --remote v1",
+        "option_b": "git rm-tag --object v1",
+        "option_c": "git tag -d v1",
+        "option_d": "git tag --prune-all v1",
+        "correct": "C",
+        "explanation": "-d elimina la ref local del tag; no borra por ello automáticamente todos los objetos alcanzables."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué diferencia hay entre un tag ligero y uno anotado?",
+        "option_a": "El ligero siempre es remoto",
+        "option_b": "El anotado no apunta a objetos",
+        "option_c": "Son exactamente el mismo objeto",
+        "option_d": "El ligero es una ref directa; el anotado crea un objeto tag con metadatos",
+        "correct": "D",
+        "explanation": "El tag anotado permite mensaje, identidad y otros metadatos mediante un objeto propio."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué modo de reset mueve HEAD y la rama actual, pero conserva el índice y working tree?",
+        "option_a": "--soft",
+        "option_b": "--keep-index-only",
+        "option_c": "--ref-only-softest",
+        "option_d": "--stage",
+        "correct": "A",
+        "explanation": "--soft actualiza la referencia sin tocar el índice ni el working tree."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué modo de reset es el predeterminado y actualiza el índice sin reescribir normalmente el working tree?",
+        "option_a": "--soft",
+        "option_b": "--mixed",
+        "option_c": "--index-only",
+        "option_d": "--preserve-head",
+        "correct": "B",
+        "explanation": "--mixed mueve HEAD y hace que el índice coincida con el commit, manteniendo los cambios de trabajo."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué modo de reset puede hacer coincidir HEAD, índice y working tree con el commit objetivo?",
+        "option_a": "--tree-safe",
+        "option_b": "--worktree-only",
+        "option_c": "--hard",
+        "option_d": "--commit-only",
+        "correct": "C",
+        "explanation": "--hard descarta cambios locales en índice y working tree que no estén en el commit objetivo."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué precaución exige `git reset --hard`?",
+        "option_a": "Solo cambia el mensaje de commit",
+        "option_b": "Nunca toca archivos",
+        "option_c": "Solo afecta tags remotos",
+        "option_d": "Puede descartar cambios locales no committeados",
+        "correct": "D",
+        "explanation": "El modo hard reescribe el índice y archivos de trabajo, por lo que puede destruir cambios no guardados."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué comando muestra el commit al que apunta una revisión sin presentar su diff?",
+        "option_a": "git rev-parse revisión",
+        "option_b": "git show --no-object revisión",
+        "option_c": "git resolve --tree revisión",
+        "option_d": "git log --pointer-only revisión",
+        "correct": "A",
+        "explanation": "rev-parse resuelve la revisión y escribe su object ID."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué comando muestra un tag y el objeto al que apunta?",
+        "option_a": "git tag --display-object v1",
+        "option_b": "git show v1",
+        "option_c": "git ref-show-only v1",
+        "option_d": "git log --tag-pointer v1",
+        "correct": "B",
+        "explanation": "git show puede presentar el objeto tag anotado y el objeto objetivo, o el commit de un tag ligero."
+    },
+    {
+        "topic_num": 33,
+        "question": "Se necesita mover la rama actual a un commit manteniendo preparados los cambios del índice. ¿Qué reset encaja?",
+        "option_a": "git reset --hard objetivo",
+        "option_b": "git reset --mixed objetivo",
+        "option_c": "git reset --soft objetivo",
+        "option_d": "git tag objetivo",
+        "correct": "C",
+        "explanation": "soft mueve la referencia y conserva índice y working tree."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué diferencia hay entre reset de una ruta y reset con un commit objetivo?",
+        "option_a": "Ambos borran siempre el working tree",
+        "option_b": "El primero crea un tag",
+        "option_c": "El segundo solo consulta configuración",
+        "option_d": "El primero opera sobre entradas del índice; el segundo puede mover HEAD y la ref actual",
+        "correct": "D",
+        "explanation": "La forma con path no mueve HEAD, mientras la forma con commit aplica un modo de reset a la referencia y áreas."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué herramienta permite inspeccionar el movimiento anterior de HEAD después de un reset?",
+        "option_a": "git reflog",
+        "option_b": "git status --history-only",
+        "option_c": "git show --lost-head",
+        "option_d": "git config --head-log",
+        "correct": "A",
+        "explanation": "El reflog de HEAD conserva entradas de actualizaciones locales para localizar estados anteriores."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué significa que un tag anotado sea firmado?",
+        "option_a": "Que cifra todos los blobs",
+        "option_b": "Que su objeto tag incluye una firma verificable asociada al tagger",
+        "option_c": "Que impide mover una rama",
+        "option_d": "Que convierte el tag en remoto",
+        "correct": "B",
+        "explanation": "La firma pertenece a los metadatos del objeto tag y puede verificarse según la configuración criptográfica."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué comando actualiza directamente una referencia de bajo nivel?",
+        "option_a": "git ref-write-tree-only",
+        "option_b": "git branch --raw-object",
+        "option_c": "git update-ref",
+        "option_d": "git move-head-direct",
+        "correct": "C",
+        "explanation": "update-ref modifica una ref de forma explícita y se usa para operaciones internas o automatizadas."
+    },
+    {
+        "topic_num": 33,
+        "question": "Después de un reset, el commit anterior no aparece en la rama actual. ¿Qué explicación es correcta?",
+        "option_a": "El commit se convirtió automáticamente en una configuración",
+        "option_b": "HEAD nunca puede moverse",
+        "option_c": "El object database se borra siempre",
+        "option_d": "La rama se movió, pero el commit puede seguir localmente alcanzable mediante el reflog durante su retención",
+        "correct": "D",
+        "explanation": "Mover una ref cambia la alcanzabilidad por nombres de rama, mientras el reflog puede conservar la ruta local al estado anterior."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué diferencia hay entre `git tag -d v1` y `git reset --hard v1`?",
+        "option_a": "El primero elimina una ref de tag; el segundo mueve HEAD y puede reescribir áreas de trabajo",
+        "option_b": "Ambos eliminan el objeto tag y archivos",
+        "option_c": "El primero mueve la rama actual",
+        "option_d": "El segundo solo lista refs",
+        "correct": "A",
+        "explanation": "Son operaciones distintas sobre una referencia de tag frente al estado checkout y sus áreas."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué comando permite comprobar el tipo de un objeto Git antes de interpretarlo?",
+        "option_a": "git object-type --working-tree objeto",
+        "option_b": "git cat-file -t objeto",
+        "option_c": "git show --type-name objeto",
+        "option_d": "git inspect-type-ref objeto",
+        "correct": "B",
+        "explanation": "cat-file -t devuelve el tipo de objeto, como blob, tree, commit o tag."
+    },
+    {
+        "topic_num": 33,
+        "question": "Un usuario quiere revisar exactamente qué entrará en el próximo commit sin crear el commit. ¿Qué comparación es más directa?",
+        "option_a": "git diff --no-index /dev/null file",
+        "option_b": "git log --pending",
+        "option_c": "git diff --cached",
+        "option_d": "git show HEAD^",
+        "correct": "C",
+        "explanation": "La diferencia del índice contra HEAD representa el contenido preparado para el próximo commit."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué conjunto representa mejor el flujo local básico de Git?",
+        "option_a": "Editar refs, borrar object database y hacer push",
+        "option_b": "Configurar remoto, hacer pull y abrir PR",
+        "option_c": "Crear solo tags sin índice",
+        "option_d": "Editar working tree, preparar en índice y registrar con commit",
+        "correct": "D",
+        "explanation": "El flujo local separa edición, staging y registro de la instantánea en el historial."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_33_LOT_05_END

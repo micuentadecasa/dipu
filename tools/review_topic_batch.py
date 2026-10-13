@@ -532,6 +532,45 @@ LOT_EXPECTATIONS.update({
     }
 })
 
+# Topic 33 expectations are pinned independently of candidate generation.
+LOT_EXPECTATIONS.update({
+    (33, 1): {
+        1:('A','gittutorial — Getting Started'), 2:('B','gitglossary — blob object'), 3:('C','gitglossary — tree object'), 4:('D','gitglossary — commit object'),
+        5:('A','gitglossary — tag object; git-tag'), 6:('B','gitrepository-layout — objects'), 7:('C','gitglossary — ref; gitrepository-layout — refs'), 8:('D','gitglossary — HEAD'),
+        9:('A','gitglossary — index; gittutorial — The Git index'), 10:('B','gitglossary — working tree'), 11:('C','gitrepository-layout — The .git directory'), 12:('D','gitglossary — commit object; tree object'),
+        13:('A','gitglossary — blob object; tree object'), 14:('B','gitglossary — branch; ref'), 15:('C','gitglossary — commit object; git-commit'), 16:('D','gitglossary — detached HEAD'),
+        17:('A','gitrepository-layout — refs'), 18:('B','gitglossary — tag object; git-tag'), 19:('C','gittutorial — The Git index'), 20:('D','gitglossary — object; gitrepository-layout — objects')
+    },
+    (33, 2): {
+        1:('A','git — --version'), 2:('B','git-init — DESCRIPTION'), 3:('C','git-clone — DESCRIPTION'), 4:('D','git-config — CONFIGURATION LEVELS'),
+        5:('A','git-config — user.name'), 6:('B','git-config — user.email'), 7:('C','git-config — CONFIGURATION LEVELS'), 8:('D','git-config — --list'),
+        9:('A','git-config — SCOPES'), 10:('B','git-config — --local; user.name'), 11:('C','git-config — --unset'), 12:('D','git-config — init.defaultBranch; git-init — INITIAL BRANCH NAME'),
+        13:('A','git-config — CONFIGURATION LEVELS'), 14:('B','git-config — --show-origin; --get'), 15:('C','git-config — CONFIGURATION LEVELS'), 16:('D','git-config — user.email; gittutorial — Making Changes'),
+        17:('A','git-config — --get-all'), 18:('B','git-config — core.editor; CONFIGURATION LEVELS'), 19:('C','git-init — DESCRIPTION'), 20:('D','git-clone — DESCRIPTION; git-init — DESCRIPTION')
+    },
+    (33, 3): {
+        1:('A','git-status — DESCRIPTION'), 2:('B','git-status — DESCRIPTION'), 3:('C','git-add — DESCRIPTION'), 4:('D','git-diff — DESCRIPTION'),
+        5:('A','git-diff — --cached'), 6:('B','git-add — -A/--all'), 7:('C','git-add — -p/--patch'), 8:('D','git-restore — DESCRIPTION'),
+        9:('A','git-restore — --staged'), 10:('B','git-restore — --staged; git-rm — --cached'), 11:('C','git-reset — Resetting a single file'), 12:('D','git-rm — --cached'),
+        13:('A','git-mv — DESCRIPTION'), 14:('B','gitignore — DESCRIPTION'), 15:('C','git-check-ignore — -v/--verbose'), 16:('D','gitignore — Pattern Format'),
+        17:('A','git-add — DESCRIPTION; gittutorial — The Git index'), 18:('B','git-diff — COMMIT and --cached'), 19:('C','git-restore — --staged'), 20:('D','git-check-ignore — --verbose')
+    },
+    (33, 4): {
+        1:('A','git-commit — DESCRIPTION'), 2:('B','git-commit — -m/--message'), 3:('C','git-log — DESCRIPTION'), 4:('D','git-show — DESCRIPTION'),
+        5:('A','git-log — --oneline'), 6:('B','git-commit — --amend'), 7:('C','git-commit — COMMIT INFORMATION'), 8:('D','gitrevisions — SPECIFYING REVISIONS'),
+        9:('A','gitrevisions — Ancestry References'), 10:('B','git-rev-parse — DESCRIPTION'), 11:('C','git-reflog — DESCRIPTION'), 12:('D','git-show-ref — DESCRIPTION'),
+        13:('A','gitglossary — branch; git-commit — DESCRIPTION'), 14:('B','git-commit — --allow-empty'), 15:('C','git-commit — --amend'), 16:('D','gitrevisions — Reflog Identifiers; Ancestry References'),
+        17:('A','git-cat-file — DESCRIPTION'), 18:('B','git-show-ref; gitglossary — HEAD/ref'), 19:('C','git-log — Limiting Commit History'), 20:('D','git-reflog — DESCRIPTION')
+    },
+    (33, 5): {
+        1:('A','git-tag — DESCRIPTION'), 2:('B','git-tag — -a/--annotate; -m/--message'), 3:('C','git-tag — -d/--delete'), 4:('D','git-tag — DESCRIPTION'),
+        5:('A','git-reset — --soft'), 6:('B','git-reset — --mixed'), 7:('C','git-reset — --hard'), 8:('D','git-reset — --hard'),
+        9:('A','git-rev-parse — DESCRIPTION'), 10:('B','git-show — DESCRIPTION; git-tag'), 11:('C','git-reset — --soft'), 12:('D','git-reset — DESCRIPTION; Resetting a single file'),
+        13:('A','git-reflog — DESCRIPTION'), 14:('B','git-tag — SIGNING TAGS'), 15:('C','git-update-ref — DESCRIPTION'), 16:('D','git-reset — DESCRIPTION; git-reflog'),
+        17:('A','git-tag — -d; git-reset — DESCRIPTION'), 18:('B','git-cat-file — -t'), 19:('C','git-diff — --cached'), 20:('D','gittutorial — The Git index; git-add; git-commit')
+    }
+})
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("topic_num", type=int, choices=tuple(range(2, 41)))

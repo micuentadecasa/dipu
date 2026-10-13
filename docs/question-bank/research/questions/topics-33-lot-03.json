@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-33-git-theory-installation-local.md",
+  "batches": [
+    {
+      "topic_num": 33,
+      "lot_num": 3,
+      "source_ids": [
+        "GIT-2.50"
+      ],
+      "questions": [
+        {
+          "objective_id": "t33-lo-041",
+          "difficulty": "basic",
+          "type": "definition",
+          "question": "¿Qué comando resume el estado entre HEAD, índice y working tree?",
+          "options": [
+            "git status",
+            "git inspect-tree",
+            "git state-summary-only",
+            "git diff-status-object"
+          ],
+          "correct": "A",
+          "explanation": "git status muestra cambios staged, no staged y archivos sin seguimiento.",
+          "citation": "git-status — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-042",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué es un archivo untracked?",
+          "options": [
+            "Un archivo staged para el próximo commit",
+            "Un archivo del working tree que Git no está siguiendo todavía",
+            "Un commit sin padre",
+            "Un valor de configuración global"
+          ],
+          "correct": "B",
+          "explanation": "Untracked describe un path que no está en el índice ni registrado en el historial actual.",
+          "citation": "git-status — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-043",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué hace `git add informe.txt`?",
+          "options": [
+            "Crea un tag anotado",
+            "Publica el archivo en un remoto",
+            "Actualiza el índice con el contenido actual de informe.txt",
+            "Elimina el archivo del working tree"
+          ],
+          "correct": "C",
+          "explanation": "git add copia al índice el contenido que se quiere incluir en el próximo commit.",
+          "citation": "git-add — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-044",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué compara por defecto `git diff`?",
+          "options": [
+            "HEAD frente a un remoto",
+            "Dos ramas remotas",
+            "El object database frente al reflog",
+            "El working tree frente al índice"
+          ],
+          "correct": "D",
+          "explanation": "Sin opciones, git diff muestra cambios no staged entre working tree e índice.",
+          "citation": "git-diff — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-045",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué compara `git diff --cached`?",
+          "options": [
+            "El índice frente a HEAD",
+            "El working tree frente al índice",
+            "Dos blobs sin nombre",
+            "El reflog frente a una rama remota"
+          ],
+          "correct": "A",
+          "explanation": "--cached, equivalente a --staged, muestra lo preparado respecto del último commit.",
+          "citation": "git-diff — --cached",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-046",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué efecto tiene `git add -A` desde la raíz del repositorio?",
+          "options": [
+            "Solo añade archivos con extensión .A",
+            "Actualiza el índice para todas las rutas relevantes, incluidas adiciones y eliminaciones",
+            "Solo muestra el estado",
+            "Crea un commit automático"
+          ],
+          "correct": "B",
+          "explanation": "La opción -A actualiza el índice de forma global para reflejar adiciones, modificaciones y eliminaciones.",
+          "citation": "git-add — -A/--all",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-047",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué hace `git add -p`?",
+          "options": [
+            "Publica cada fragmento como commit",
+            "Borra todos los fragmentos no elegidos",
+            "Permite seleccionar interactivamente fragmentos para preparar",
+            "Muestra solo los tags"
+          ],
+          "correct": "C",
+          "explanation": "El modo patch permite decidir qué hunks entran en el índice.",
+          "citation": "git-add — -p/--patch",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-048",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué restaura `git restore archivo.txt` por defecto?",
+          "options": [
+            "El índice desde un remoto",
+            "La rama desde su reflog",
+            "El mensaje del último commit",
+            "El archivo del working tree desde el índice"
+          ],
+          "correct": "D",
+          "explanation": "Sin --staged, restore opera sobre el working tree usando el índice como origen por defecto.",
+          "citation": "git-restore — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-049",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué hace `git restore --staged archivo.txt`?",
+          "options": [
+            "Quita el archivo del índice sin cambiar por defecto su contenido de trabajo",
+            "Borra el archivo definitivamente",
+            "Crea un commit vacío",
+            "Cambia el nombre de la rama"
+          ],
+          "correct": "A",
+          "explanation": "--staged restaura la entrada del índice desde HEAD, dejando normalmente el working tree intacto.",
+          "citation": "git-restore — --staged",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-050",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Qué diferencia hay entre `git restore --staged` y `git rm --cached`?",
+          "options": [
+            "Ambas borran siempre el archivo",
+            "La primera restaura el índice; la segunda quita la ruta del índice conservando el archivo de trabajo",
+            "La primera crea una rama",
+            "La segunda edita el commit anterior"
+          ],
+          "correct": "B",
+          "explanation": "Aunque pueden coincidir en algunos resultados, expresan operaciones distintas y rm --cached conserva el archivo no seguido.",
+          "citation": "git-restore — --staged; git-rm — --cached",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-051",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué efecto tiene `git reset HEAD archivo.txt` en el flujo clásico de deshacer staging?",
+          "options": [
+            "Borra HEAD",
+            "Elimina todos los commits",
+            "Mueve la entrada del índice hacia HEAD sin cambiar normalmente el working tree",
+            "Convierte el archivo en tag"
+          ],
+          "correct": "C",
+          "explanation": "El reset de una ruta desapila el contenido del índice respecto de HEAD, manteniendo los cambios de trabajo.",
+          "citation": "git-reset — Resetting a single file",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-052",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué comando deja un archivo en el working tree pero deja de seguirlo?",
+          "options": [
+            "git rm --keep-index archivo.txt",
+            "git untrack --worktree archivo.txt",
+            "git restore --delete-index archivo.txt",
+            "git rm --cached archivo.txt"
+          ],
+          "correct": "D",
+          "explanation": "--cached retira la ruta del índice y conserva la copia de trabajo.",
+          "citation": "git-rm — --cached",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-053",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué comando registra el renombrado o movimiento de un archivo en el índice?",
+          "options": [
+            "git mv viejo.txt nuevo.txt",
+            "git rename --ref viejo.txt nuevo.txt",
+            "git move --object viejo.txt nuevo.txt",
+            "git path --mv viejo.txt nuevo.txt"
+          ],
+          "correct": "A",
+          "explanation": "git mv mueve el archivo y actualiza el índice para el nuevo path.",
+          "citation": "git-mv — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-054",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué efecto tiene una regla de .gitignore sobre un archivo ya tracked?",
+          "options": [
+            "Lo convierte en tag",
+            "No lo deja de seguir por sí sola",
+            "Lo borra del object database",
+            "Cambia su autor"
+          ],
+          "correct": "B",
+          "explanation": "Las reglas de ignore afectan principalmente la detección de paths no seguidos; un tracked file necesita otra operación para salir del índice.",
+          "citation": "gitignore — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-055",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Qué comando ayuda a saber por qué una ruta está siendo ignorada?",
+          "options": [
+            "git ignore-explain --tree ruta",
+            "git status --why-ignored ruta",
+            "git check-ignore -v ruta",
+            "git diff --ignored-source ruta"
+          ],
+          "correct": "C",
+          "explanation": "-v muestra la regla y el origen que hacen que la ruta sea ignorada.",
+          "citation": "git-check-ignore — -v/--verbose",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-056",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué función cumplen los patrones de negación en .gitignore?",
+          "options": [
+            "Eliminan todos los ignores globales",
+            "Crean una rama especial",
+            "Cambian el hash del repositorio",
+            "Pueden volver a incluir una ruta que coincidía con un patrón anterior, sujeto a las reglas de directorio"
+          ],
+          "correct": "D",
+          "explanation": "Un patrón con ! invierte una coincidencia previa cuando el path puede alcanzarse según la jerarquía.",
+          "citation": "gitignore — Pattern Format",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-057",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Se modifica un archivo después de ejecutar git add y antes de commit. ¿Qué queda staged?",
+          "options": [
+            "La versión que estaba en el índice cuando se ejecutó git add",
+            "Siempre la última versión del working tree",
+            "Ninguna versión",
+            "La versión del remoto"
+          ],
+          "correct": "A",
+          "explanation": "El índice es una instantánea separada del working tree y no se actualiza solo por editar el archivo.",
+          "citation": "git-add — DESCRIPTION; gittutorial — The Git index",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-058",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Qué diferencia aporta `git diff HEAD` frente a `git diff`?",
+          "options": [
+            "La primera solo muestra tags",
+            "La primera compara el working tree completo con HEAD; la segunda compara working tree con índice",
+            "La segunda compara con un remoto",
+            "No hay diferencia"
+          ],
+          "correct": "B",
+          "explanation": "Comparar contra HEAD incluye tanto cambios staged como no staged en la diferencia total.",
+          "citation": "git-diff — COMMIT and --cached",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-059",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Qué comando deshace el staging de todas las rutas sin descartar por defecto sus cambios de trabajo?",
+          "options": [
+            "git clean -fd",
+            "git reset --hard HEAD",
+            "git restore --staged .",
+            "git rm -r ."
+          ],
+          "correct": "C",
+          "explanation": "restore --staged actualiza el índice desde HEAD y no reescribe normalmente el working tree.",
+          "citation": "git-restore — --staged",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-060",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Un path aparece como ignored y se necesita identificar el archivo de reglas que lo excluye. ¿Qué opción es adecuada?",
+          "options": [
+            "git status --porcelain path",
+            "git diff --cached path",
+            "git log --ignored path",
+            "git check-ignore --verbose path"
+          ],
+          "correct": "D",
+          "explanation": "La salida verbose de check-ignore incluye la fuente de la regla de exclusión.",
+          "citation": "git-check-ignore — --verbose",
+          "source_id": "GIT-2.50"
+        }
+      ]
+    }
+  ]
+}
