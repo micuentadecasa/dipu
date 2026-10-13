@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-31-blazor-state-management.md",
+  "batches": [
+    {
+      "topic_num": 31,
+      "lot_num": 9,
+      "source_ids": [
+        "BLAZOR-STATE-10"
+      ],
+      "questions": [
+        {
+          "objective_id": "t31-lo-161",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué limitación puede existir durante prerendering?",
+          "options": [
+            "No están disponibles ciertas APIs interactivas del navegador",
+            "El componente siempre tiene un circuito interactivo",
+            "localStorage se consulta en servidor automáticamente",
+            "La ruta no puede declararse"
+          ],
+          "correct": "A",
+          "explanation": "Durante prerender no se dispone de APIs browser interactivas.",
+          "citation": "Prerendering and state — state unavailable during prerender",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-162",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué puede causar inicializar estado no determinista durante prerender y luego interacción?",
+          "options": [
+            "Contenido diferente o trabajo duplicado al hidratar",
+            "Un nuevo assembly siempre",
+            "Un merge commit",
+            "Una query inválida"
+          ],
+          "correct": "A",
+          "explanation": "El estado debe coordinarse entre fases.",
+          "citation": "Prerendering and state — persistence/hydration",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-163",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué mecanismo ayuda a trasladar estado desde prerender a interacción?",
+          "options": [
+            "Persistent component state",
+            "NavLink ActiveClass",
+            "RouteView DefaultLayout",
+            "Un parámetro catch-all"
+          ],
+          "correct": "A",
+          "explanation": "El mecanismo conserva datos para la hidratación.",
+          "citation": "Prerendering and state — persistent component state",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-164",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué significa hidratar un componente prerenderizado?",
+          "options": [
+            "Conectarlo con la ejecución interactiva posterior",
+            "Serializarlo como un tag",
+            "Cambiar su ruta a NotFound",
+            "Crear un singleton global"
+          ],
+          "correct": "A",
+          "explanation": "La hidratación continúa la experiencia con interactividad.",
+          "citation": "Prerendering and state — hydration",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-165",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué representa un circuit en Blazor Server?",
+          "options": [
+            "El contexto de conexión y estado interactivo de un usuario",
+            "Una base de datos global",
+            "Una ruta estática",
+            "Una clase de CSS"
+          ],
+          "correct": "A",
+          "explanation": "El circuito mantiene interacción y estado asociado.",
+          "citation": "Circuits — circuit lifetime",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-166",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué puede ocurrir si termina un circuito?",
+          "options": [
+            "El estado transitorio en memoria del circuito puede perderse",
+            "localStorage se borra siempre",
+            "La base de datos se elimina",
+            "Todos los usuarios comparten el estado"
+          ],
+          "correct": "A",
+          "explanation": "El estado en memoria depende de la vida del circuito.",
+          "citation": "Circuits — circuit lifetime",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-167",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué debe hacer una aplicación si necesita recuperar estado tras reconexión?",
+          "options": [
+            "Persistir o reconstruir el estado necesario",
+            "Confiar en un campo privado sin más",
+            "Usar un singleton global",
+            "Ignorar la reconexión"
+          ],
+          "correct": "A",
+          "explanation": "El estado transitorio puede necesitar reconstrucción.",
+          "citation": "Circuits — reconnection and transient state",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-168",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué tipo de dato es candidato a PersistentComponentState?",
+          "options": [
+            "Datos necesarios para evitar repetir carga entre prerender e interacción",
+            "Una contraseña del cliente",
+            "Toda la base de datos",
+            "Un layout global"
+          ],
+          "correct": "A",
+          "explanation": "El mecanismo sirve para persistir estado de componente durante fases.",
+          "citation": "Persistent component state",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-169",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué problema evita persistir datos prerenderizados?",
+          "options": [
+            "Repetir una operación costosa al iniciar la fase interactiva",
+            "Que NavLink tenga clase activa",
+            "Que Router encuentre una ruta",
+            "Que query tenga &"
+          ],
+          "correct": "A",
+          "explanation": "Permite reutilizar el resultado inicial.",
+          "citation": "Prerendering and state — persistent component state",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-170",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué debe considerarse al serializar estado para hidratación?",
+          "options": [
+            "Tamaño, seguridad y compatibilidad de los datos",
+            "Solo el color del componente",
+            "Solo la ruta del layout",
+            "El nombre del usuario únicamente"
+          ],
+          "correct": "A",
+          "explanation": "El estado transferido debe ser mínimo y seguro.",
+          "citation": "Design and safety — minimizing serialized state",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-171",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué relación existe entre prerender y browser storage?",
+          "options": [
+            "El código que requiere navegador puede tener que esperar a la fase interactiva",
+            "Siempre se accede desde el servidor",
+            "Storage reemplaza el circuito",
+            "No existe relación"
+          ],
+          "correct": "A",
+          "explanation": "Las APIs del navegador no están disponibles durante prerender puro.",
+          "citation": "Prerendering — browser APIs",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-172",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué estado puede reconstruirse tras reconexión desde una fuente durable?",
+          "options": [
+            "Un filtro o selección derivable de preferencias persistidas",
+            "El objeto de UI que nunca se guardó",
+            "Una variable perdida sin fuente",
+            "Un callback eliminado"
+          ],
+          "correct": "A",
+          "explanation": "El estado se reconstruye desde una fuente disponible.",
+          "citation": "Circuits — reconstructing transient state",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-173",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué ocurre si se confunde estado de circuito con almacenamiento durable?",
+          "options": [
+            "Se puede perder información al terminar la conexión",
+            "Se obtiene persistencia automática",
+            "Se comparten datos de forma segura",
+            "Se elimina el prerender"
+          ],
+          "correct": "A",
+          "explanation": "El estado de circuito es transitorio.",
+          "citation": "Circuits — circuit lifetime",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-174",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué objetivo tiene evitar doble carga entre prerender e interacción?",
+          "options": [
+            "Aprovechar estado persistido del componente",
+            "Crear más renders",
+            "Eliminar todos los parámetros",
+            "Forzar navegación externa"
+          ],
+          "correct": "A",
+          "explanation": "El estado persistido evita trabajo repetido.",
+          "citation": "Persistent component state",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-175",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué decisión es adecuada para datos sensibles durante persistencia prerender?",
+          "options": [
+            "No serializarlos al cliente sin garantías apropiadas",
+            "Serializarlos siempre en HTML",
+            "Guardarlos en query pública",
+            "Duplicarlos en todos los componentes"
+          ],
+          "correct": "A",
+          "explanation": "Los datos serializados pueden ser visibles.",
+          "citation": "Design and safety — client-visible data",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-176",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué debe hacer una aplicación con un estado temporal no recuperable al reconectar?",
+          "options": [
+            "Mostrar un estado válido o reconstruirlo, en vez de asumir que permanece",
+            "Exponer datos de otro usuario",
+            "Usar un singleton de proceso",
+            "Crear una ruta aleatoria"
+          ],
+          "correct": "A",
+          "explanation": "La reconexión requiere tratar la pérdida de estado.",
+          "citation": "Circuits — reconnection and transient state",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-177",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué fase puede ejecutar lógica sin interactividad del navegador?",
+          "options": [
+            "Prerendering",
+            "Solo después de hidratar",
+            "Solo una navegación interna",
+            "Solo un evento de botón"
+          ],
+          "correct": "A",
+          "explanation": "Prerendering ocurre antes de la interacción browser.",
+          "citation": "Prerendering and state",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-178",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué debe coincidir para evitar diferencias de interfaz entre prerender e hidratación?",
+          "options": [
+            "Los datos iniciales y la representación esperada",
+            "El nombre del assembly solamente",
+            "La clase CSS activa del NavLink",
+            "El número de circuitos"
+          ],
+          "correct": "A",
+          "explanation": "La continuidad requiere estado coherente.",
+          "citation": "Prerendering and state — hydration",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-179",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué almacenamiento puede sobrevivir al circuito pero pertenecer al cliente?",
+          "options": [
+            "Browser storage",
+            "Un campo privado de circuito",
+            "Una variable estática de servidor",
+            "Un callback de componente"
+          ],
+          "correct": "A",
+          "explanation": "El browser storage tiene vida independiente del circuito.",
+          "citation": "Browser storage; Circuits",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-180",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué principio combina persistencia e hidratación?",
+          "options": [
+            "Transferir solo el estado necesario y validarlo en la fase receptora",
+            "Enviar todo el servicio singleton",
+            "Confiar en cualquier JSON",
+            "Persistir secretos"
+          ],
+          "correct": "A",
+          "explanation": "La transferencia debe ser mínima y segura.",
+          "citation": "Persistent component state; Design and safety",
+          "source_id": "BLAZOR-STATE-10"
+        }
+      ]
+    }
+  ]
+}

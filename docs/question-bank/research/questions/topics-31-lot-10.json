@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-31-blazor-state-management.md",
+  "batches": [
+    {
+      "topic_num": 31,
+      "lot_num": 10,
+      "source_ids": [
+        "BLAZOR-STATE-10"
+      ],
+      "questions": [
+        {
+          "objective_id": "t31-lo-181",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué estado debe permanecer normalmente local al componente?",
+          "options": [
+            "Visibilidad temporal de un panel",
+            "Datos de facturación de todos los usuarios",
+            "Configuración durable de la organización",
+            "Historial persistente"
+          ],
+          "correct": "A",
+          "explanation": "La visibilidad de UI es efímera y local.",
+          "citation": "Design and safety — ephemeral UI state",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-182",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué estado justifica un contenedor compartido?",
+          "options": [
+            "Una selección que deben observar varios componentes",
+            "El color de una sola etiqueta",
+            "Una variable privada no consumida",
+            "Un secreto del servidor"
+          ],
+          "correct": "A",
+          "explanation": "El contenedor sirve para consumidores múltiples.",
+          "citation": "State containers — shared state",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-183",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué estado justifica almacenamiento durable externo al componente?",
+          "options": [
+            "Datos que deben sobrevivir a reinicios o sesiones",
+            "El hover de un botón",
+            "La animación actual",
+            "La clase CSS activa"
+          ],
+          "correct": "A",
+          "explanation": "Los datos durables necesitan persistencia apropiada.",
+          "citation": "State management guidance — durable application data",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-184",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué práctica evita fuga de estado entre usuarios en Server?",
+          "options": [
+            "Usar alcance por circuito/usuario y no un singleton compartido",
+            "Guardar datos sensibles en singleton",
+            "Usar campos static",
+            "Serializar todo al HTML"
+          ],
+          "correct": "A",
+          "explanation": "El alcance debe aislar usuarios.",
+          "citation": "State containers — scoped versus singleton in Blazor Server",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-185",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué práctica reduce la superficie de exposición al cliente?",
+          "options": [
+            "Minimizar el estado serializado",
+            "Serializar el servicio completo",
+            "Guardar secretos en localStorage",
+            "Duplicar datos en query"
+          ],
+          "correct": "A",
+          "explanation": "Menos estado client-visible reduce exposición.",
+          "citation": "Design and safety — minimizing serialized state",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-186",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué práctica hace más predecible un estado compartido?",
+          "options": [
+            "Usar snapshots inmutables o APIs controladas",
+            "Exponer una colección mutable global",
+            "Modificarla desde cualquier vista",
+            "Usar eventos sin desuscripción"
+          ],
+          "correct": "A",
+          "explanation": "La inmutabilidad y ownership claro reducen efectos laterales.",
+          "citation": "Design and safety — immutable snapshots; state ownership",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-187",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué debe hacer un componente que escucha un contenedor?",
+          "options": [
+            "Actualizar su UI cuando cambia y limpiar la suscripción al destruirse",
+            "Guardar siempre el contenedor en sessionStorage",
+            "Crear un segundo singleton",
+            "Ignorar notificaciones"
+          ],
+          "correct": "A",
+          "explanation": "Debe responder y liberar la suscripción.",
+          "citation": "State containers — notification and lifecycle",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-188",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué mecanismo se combina con InvokeAsync para notificación externa?",
+          "options": [
+            "StateHasChanged",
+            "NavigateTo",
+            "BaseUri",
+            "RouteData"
+          ],
+          "correct": "A",
+          "explanation": "InvokeAsync coordina y StateHasChanged solicita render.",
+          "citation": "Component state — external notifications",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-189",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué diferencia hay entre UI efímera y datos de negocio?",
+          "options": [
+            "La primera puede desaparecer; los segundos requieren fuente durable si deben sobrevivir",
+            "Ambos deben ser singleton",
+            "La UI siempre va en base de datos",
+            "Los datos de negocio solo viven en campos privados"
+          ],
+          "correct": "A",
+          "explanation": "La duración y responsabilidad son distintas.",
+          "citation": "State management guidance — ephemeral versus durable state",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-190",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué decisión evita usar browser storage como base de datos de secretos?",
+          "options": [
+            "Mantener secretos en un mecanismo de servidor apropiado",
+            "Serializar secretos con JSON",
+            "Usar localStorage con un nombre oculto",
+            "Codificar la clave en query"
+          ],
+          "correct": "A",
+          "explanation": "El cliente puede inspeccionar browser storage.",
+          "citation": "Design and safety — client-visible data",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-191",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué debe considerar una aplicación al deserializar estado antiguo?",
+          "options": [
+            "Compatibilidad de versión y valores por defecto",
+            "Solo el nombre del componente",
+            "La URL del assembly",
+            "El color del layout"
+          ],
+          "correct": "A",
+          "explanation": "El estado persistido puede requerir migración/validación.",
+          "citation": "Browser storage — persistence",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-192",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué diseño reduce el acoplamiento entre componentes consumidores y mutación?",
+          "options": [
+            "Un contenedor con métodos de intención y notificación",
+            "Una variable pública global",
+            "Acceso directo a todos los campos",
+            "Un singleton sin API"
+          ],
+          "correct": "A",
+          "explanation": "La API del contenedor encapsula reglas.",
+          "citation": "State containers — state ownership",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-193",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué fuente puede restaurar una preferencia tras reconectar?",
+          "options": [
+            "Estado persistido en browser storage o fuente durable",
+            "Un campo de circuito perdido",
+            "Un callback antiguo",
+            "Un render anterior sin datos"
+          ],
+          "correct": "A",
+          "explanation": "La reconstrucción necesita una fuente que sobreviva.",
+          "citation": "Circuits — reconstructing transient state; Browser storage",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-194",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué debe hacer una aplicación si browser storage no está disponible durante prerender?",
+          "options": [
+            "Retrasar esa lectura hasta que exista interactividad",
+            "Asumir que devuelve datos del servidor",
+            "Usar cualquier secreto del circuito",
+            "Forzar un singleton"
+          ],
+          "correct": "A",
+          "explanation": "La API del navegador requiere fase interactiva.",
+          "citation": "Prerendering — browser APIs",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-195",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué combinación separa correctamente responsabilidades?",
+          "options": [
+            "Componente para UI efímera, container para compartir, storage/base durable para supervivencia",
+            "Singleton para todo",
+            "Storage para secretos y campo para facturas",
+            "Router para persistencia"
+          ],
+          "correct": "A",
+          "explanation": "Cada mecanismo tiene un alcance y propósito distinto.",
+          "citation": "State management guidance — design",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-196",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué problema causa notificar después de destruir un componente?",
+          "options": [
+            "Trabajo o acceso sobre una instancia que ya no debe actualizarse",
+            "Persistencia automática",
+            "Mejor aislamiento",
+            "Una ruta más rápida"
+          ],
+          "correct": "A",
+          "explanation": "La desuscripción evita callbacks inválidos.",
+          "citation": "State containers — subscription lifecycle",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-197",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué criterio ayuda a elegir singleton frente a scoped?",
+          "options": [
+            "Si el estado debe ser global al proceso o aislado por usuario/circuito",
+            "Si el botón es azul",
+            "Si hay una query string",
+            "Si existe un layout"
+          ],
+          "correct": "A",
+          "explanation": "El alcance deseado guía la elección.",
+          "citation": "State containers — service lifetimes",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-198",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué representa un snapshot inmutable?",
+          "options": [
+            "Una versión de estado que consumidores pueden observar sin mutaciones inesperadas",
+            "Un singleton mutable",
+            "Un storage secreto",
+            "Un circuito nuevo"
+          ],
+          "correct": "A",
+          "explanation": "Los snapshots reducen cambios laterales.",
+          "citation": "Design and safety — immutable snapshots",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-199",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué principio final resume la gestión segura de estado?",
+          "options": [
+            "Definir ownership, lifetime, persistencia y exposición explícitamente",
+            "Guardar todo globalmente",
+            "No notificar nunca",
+            "Usar browser storage para todo"
+          ],
+          "correct": "A",
+          "explanation": "La gestión correcta hace explícitas esas decisiones.",
+          "citation": "State management guidance — design and safety",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-200",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué debe limitarse al transferir estado durante la hidratación?",
+          "options": [
+            "La cantidad de datos serializados",
+            "El número de layouts",
+            "La cantidad de rutas",
+            "El nombre del circuito"
+          ],
+          "correct": "A",
+          "explanation": "Transferir solo lo necesario reduce coste y exposición.",
+          "citation": "Design and safety — minimizing serialized state",
+          "source_id": "BLAZOR-STATE-10"
+        }
+      ]
+    }
+  ]
+}

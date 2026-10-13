@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-31-blazor-state-management.md",
+  "batches": [
+    {
+      "topic_num": 31,
+      "lot_num": 6,
+      "source_ids": [
+        "BLAZOR-STATE-10"
+      ],
+      "questions": [
+        {
+          "objective_id": "t31-lo-101",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué representa el estado de un componente Blazor?",
+          "options": [
+            "Datos que determinan su representación y comportamiento",
+            "Solo la URL del servidor",
+            "Las credenciales del usuario",
+            "El contenido del assembly"
+          ],
+          "correct": "A",
+          "explanation": "Los campos y propiedades del componente participan en su estado.",
+          "citation": "Component state — component fields and properties",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-102",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué método solicita normalmente una nueva renderización del componente?",
+          "options": [
+            "StateHasChanged",
+            "RenderNowOnly",
+            "NotifyRoute",
+            "RefreshUri"
+          ],
+          "correct": "A",
+          "explanation": "StateHasChanged solicita que el componente vuelva a renderizarse.",
+          "citation": "Component state — StateHasChanged",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-103",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué problema resuelve InvokeAsync al notificar cambios externos?",
+          "options": [
+            "Programar el trabajo en el contexto de sincronización del componente",
+            "Serializar automáticamente el estado",
+            "Guardar datos en localStorage",
+            "Crear un circuito nuevo"
+          ],
+          "correct": "A",
+          "explanation": "InvokeAsync permite volver al contexto adecuado antes de actualizar estado.",
+          "citation": "Component state — external notifications",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-104",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué decide ShouldRender?",
+          "options": [
+            "Si el componente debe renderizarse de nuevo",
+            "Si se crea un circuito",
+            "Si se usa sessionStorage",
+            "Si se serializa JSON"
+          ],
+          "correct": "A",
+          "explanation": "ShouldRender controla la decisión de renderizado.",
+          "citation": "Component state — ShouldRender",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-105",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué ocurre cuando un campo usado por la vista cambia sin notificación?",
+          "options": [
+            "La vista puede no actualizarse hasta que se solicite renderizado",
+            "Se guarda siempre en localStorage",
+            "Se crea un nuevo usuario",
+            "Se cambia la ruta"
+          ],
+          "correct": "A",
+          "explanation": "El cambio debe llegar al ciclo de renderizado.",
+          "citation": "Component state — StateHasChanged",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-106",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué evento de UI suele provocar una renderización automática?",
+          "options": [
+            "Una interacción de evento gestionada por el componente",
+            "La lectura de un archivo .gitignore",
+            "La configuración del servidor",
+            "La creación de un assembly"
+          ],
+          "correct": "A",
+          "explanation": "Los eventos de componente participan en el ciclo de renderizado.",
+          "citation": "Component state — component rendering",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-107",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué debe hacer un callback externo que cambia estado?",
+          "options": [
+            "Actualizar el estado y solicitar renderizado en el contexto apropiado",
+            "Modificar el DOM directamente siempre",
+            "Crear un singleton global",
+            "Borrar el componente"
+          ],
+          "correct": "A",
+          "explanation": "Las notificaciones externas requieren coordinar actualización y renderizado.",
+          "citation": "Component state — external notifications",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-108",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué finalidad tiene ShouldRender al optimizar una vista?",
+          "options": [
+            "Evitar renders innecesarios cuando no procede actualizarla",
+            "Persistir datos de negocio",
+            "Proteger secretos",
+            "Crear una ruta"
+          ],
+          "correct": "A",
+          "explanation": "La decisión permite controlar renders innecesarios.",
+          "citation": "Component state — ShouldRender",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-109",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué diferencia hay entre estado local y estado compartido?",
+          "options": [
+            "El local pertenece a un componente y el compartido puede observarse desde varios",
+            "El local siempre se persiste",
+            "El compartido solo vive en la URL",
+            "No hay diferencia"
+          ],
+          "correct": "A",
+          "explanation": "La propiedad distingue alcance y ownership.",
+          "citation": "State management guidance — component state",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-110",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué debe ocurrir antes de llamar a StateHasChanged desde una notificación externa?",
+          "options": [
+            "La actualización debe ejecutarse de forma segura en el contexto del componente",
+            "Debe navegar a otra página",
+            "Debe borrar el circuito",
+            "Debe escribir en sessionStorage"
+          ],
+          "correct": "A",
+          "explanation": "InvokeAsync es el mecanismo habitual para el contexto correcto.",
+          "citation": "Component state — external notifications",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-111",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué puede contener un campo de estado de UI?",
+          "options": [
+            "La selección o visibilidad de un control",
+            "La contraseña del servidor siempre",
+            "El código del assembly",
+            "La política de cookies del navegador"
+          ],
+          "correct": "A",
+          "explanation": "El estado efímero de UI puede vivir en campos del componente.",
+          "citation": "Component state — component fields and properties",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-112",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué decisión reduce una renderización causada por cambios irrelevantes?",
+          "options": [
+            "Implementar una condición adecuada en ShouldRender",
+            "Usar localStorage para todo",
+            "Convertir el estado en singleton",
+            "Forzar recarga completa"
+          ],
+          "correct": "A",
+          "explanation": "ShouldRender puede controlar renders que no aportan cambios.",
+          "citation": "Component state — ShouldRender",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-113",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué relación hay entre StateHasChanged y ShouldRender?",
+          "options": [
+            "El primero solicita render y el segundo puede decidir si se realiza",
+            "Ambos persisten estado",
+            "ShouldRender navega y StateHasChanged serializa",
+            "No se relacionan"
+          ],
+          "correct": "A",
+          "explanation": "Cumplen funciones complementarias.",
+          "citation": "Component state — StateHasChanged; ShouldRender",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-114",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué puede pasar si se conserva estado mutable en una referencia compartida sin control?",
+          "options": [
+            "Cambios inesperados entre componentes consumidores",
+            "Persistencia automática segura",
+            "Aislamiento por usuario garantizado",
+            "Eliminación del circuito"
+          ],
+          "correct": "A",
+          "explanation": "El ownership explícito evita efectos laterales.",
+          "citation": "State management guidance — state ownership",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-115",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué enfoque es apropiado para comunicar un cambio de un servicio a un componente?",
+          "options": [
+            "Notificación del servicio y actualización mediante InvokeAsync/StateHasChanged",
+            "Modificar el HTML fuera de Blazor",
+            "Cambiar BaseUri",
+            "Crear otro Router"
+          ],
+          "correct": "A",
+          "explanation": "La documentación describe notificar y solicitar renderizado.",
+          "citation": "Component state — external notifications",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-116",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué estado suele ser efímero?",
+          "options": [
+            "El texto actual de un campo de búsqueda",
+            "La cuenta persistida del usuario",
+            "La configuración durable de una organización",
+            "Una factura almacenada"
+          ],
+          "correct": "A",
+          "explanation": "El texto temporal de UI es efímero.",
+          "citation": "State management guidance — ephemeral UI state",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-117",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué estado suele requerir una fuente durable?",
+          "options": [
+            "Datos de negocio que deben sobrevivir a una sesión",
+            "La visibilidad momentánea de un menú",
+            "El foco de un botón",
+            "Una animación"
+          ],
+          "correct": "A",
+          "explanation": "Los datos duraderos deben vivir fuera del estado efímero.",
+          "citation": "State management guidance — durable application data",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-118",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué hace un componente cuando recibe nuevos parámetros?",
+          "options": [
+            "Puede actualizar su estado y volver a renderizar conforme al ciclo de vida",
+            "Se convierte en singleton siempre",
+            "Se persiste en browser storage automáticamente",
+            "Pierde su circuito"
+          ],
+          "correct": "A",
+          "explanation": "Los parámetros participan en la actualización del componente.",
+          "citation": "Component state — component parameters and rendering",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-119",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué principio ayuda a evitar renderizaciones innecesarias?",
+          "options": [
+            "Mantener claros los límites de estado y comparar cambios relevantes",
+            "Persistir cada campo en storage",
+            "Usar una variable global para todo",
+            "Forzar siempre StateHasChanged"
+          ],
+          "correct": "A",
+          "explanation": "Los límites claros reducen renders y efectos laterales.",
+          "citation": "State management guidance — rendering and state ownership",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-120",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué mecanismo no es por sí mismo una base durable de datos de negocio?",
+          "options": [
+            "Un campo privado de un componente",
+            "Una base de datos de aplicación",
+            "Un servicio de persistencia",
+            "Un registro durable"
+          ],
+          "correct": "A",
+          "explanation": "El campo de componente es estado efímero.",
+          "citation": "State management guidance — ephemeral versus durable state",
+          "source_id": "BLAZOR-STATE-10"
+        }
+      ]
+    }
+  ]
+}

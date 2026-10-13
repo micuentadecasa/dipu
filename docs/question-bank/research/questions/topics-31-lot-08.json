@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-31-blazor-state-management.md",
+  "batches": [
+    {
+      "topic_num": 31,
+      "lot_num": 8,
+      "source_ids": [
+        "BLAZOR-STATE-10"
+      ],
+      "questions": [
+        {
+          "objective_id": "t31-lo-141",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué diferencia principal existe entre localStorage y sessionStorage?",
+          "options": [
+            "localStorage sobrevive a sesiones del navegador y sessionStorage se limita a la sesión",
+            "sessionStorage siempre es servidor",
+            "localStorage solo vive en un evento",
+            "No hay diferencia"
+          ],
+          "correct": "A",
+          "explanation": "Tienen duraciones de persistencia distintas.",
+          "citation": "Browser storage — localStorage and sessionStorage",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-142",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Dónde vive browser storage en una aplicación Blazor?",
+          "options": [
+            "En el navegador del cliente",
+            "Solo en el servidor",
+            "En el Router",
+            "En el assembly de componentes"
+          ],
+          "correct": "A",
+          "explanation": "El storage del navegador es client-side.",
+          "citation": "Browser storage — browser storage",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-143",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué frontera usa Blazor normalmente para acceder al storage del navegador?",
+          "options": [
+            "JavaScript interop",
+            "RouteView",
+            "StateHasChanged solamente",
+            "Un merge commit"
+          ],
+          "correct": "A",
+          "explanation": "El acceso al navegador se realiza mediante interop.",
+          "citation": "Browser storage — JavaScript interop",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-144",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué debe hacerse con un objeto complejo antes de guardarlo como valor de storage?",
+          "options": [
+            "Serializarlo a una representación compatible",
+            "Convertirlo en layout",
+            "Añadirlo a RouteData",
+            "Crear un circuito nuevo"
+          ],
+          "correct": "A",
+          "explanation": "Los objetos se serializan para persistirlos.",
+          "citation": "Browser storage — serialization",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-145",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué debe hacerse al recuperar un objeto serializado?",
+          "options": [
+            "Deserializarlo y validar su forma",
+            "Aplicarlo como CSS",
+            "Convertirlo en una ruta",
+            "Ignorar siempre los errores"
+          ],
+          "correct": "A",
+          "explanation": "La lectura reconstruye el estado desde la representación.",
+          "citation": "Browser storage — serialization",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-146",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué visibilidad tiene normalmente un dato en browser storage?",
+          "options": [
+            "Es accesible al cliente y no debe tratarse como secreto por defecto",
+            "Solo lo ve el servidor",
+            "Nunca puede inspeccionarse",
+            "Está cifrado automáticamente"
+          ],
+          "correct": "A",
+          "explanation": "El almacenamiento del navegador es visible para el cliente.",
+          "citation": "Design and safety — client-visible data",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-147",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué dato no debería guardarse sin protección en localStorage?",
+          "options": [
+            "Un secreto de autenticación",
+            "Una preferencia de tema no sensible",
+            "Un filtro de lista",
+            "Una preferencia de idioma"
+          ],
+          "correct": "A",
+          "explanation": "Los secretos no deben exponerse en storage visible.",
+          "citation": "Design and safety — client-visible data",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-148",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué ocurre si el estado persistido no coincide con el esquema actual?",
+          "options": [
+            "Debe manejarse compatibilidad, migración o descarte seguro",
+            "Se corrige mágicamente siempre",
+            "Se convierte en ruta",
+            "Se comparte con todos los usuarios"
+          ],
+          "correct": "A",
+          "explanation": "La persistencia requiere considerar versiones.",
+          "citation": "Browser storage — persistence guidance",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-149",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué ventaja tiene persistir una preferencia de usuario?",
+          "options": [
+            "Puede restaurarse en una visita posterior",
+            "Crea autorización automáticamente",
+            "Elimina el circuito",
+            "Cambia el assembly"
+          ],
+          "correct": "A",
+          "explanation": "La persistencia conserva valores entre visitas según el storage.",
+          "citation": "Browser storage — persistence",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-150",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué limita sessionStorage frente a localStorage?",
+          "options": [
+            "Su disponibilidad se vincula a la sesión del navegador",
+            "No permite strings",
+            "Solo existe en servidor",
+            "No admite serialización"
+          ],
+          "correct": "A",
+          "explanation": "sessionStorage tiene alcance temporal de sesión.",
+          "citation": "Browser storage — localStorage and sessionStorage",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-151",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué responsabilidad tiene la aplicación al guardar datos client-side?",
+          "options": [
+            "Decidir qué datos son seguros y necesarios para persistir",
+            "Guardar todo el estado automáticamente",
+            "Persistir credenciales siempre",
+            "Ignorar capacidad del storage"
+          ],
+          "correct": "A",
+          "explanation": "La aplicación debe minimizar y proteger lo que serializa.",
+          "citation": "Design and safety — minimize serialized state",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-152",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué estrategia reduce el coste y exposición de browser storage?",
+          "options": [
+            "Persistir solo el estado necesario",
+            "Serializar todo el circuito",
+            "Guardar respuestas completas siempre",
+            "Duplicar cada contenedor"
+          ],
+          "correct": "A",
+          "explanation": "Minimizar estado reduce tamaño y riesgo.",
+          "citation": "Design and safety — minimizing serialized state",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-153",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué puede provocar una serialización de estado demasiado grande?",
+          "options": [
+            "Coste de almacenamiento y transferencia y mayor exposición",
+            "Aislamiento automático",
+            "Mejor autorización",
+            "Menos datos client-side"
+          ],
+          "correct": "A",
+          "explanation": "Más estado serializado aumenta coste y superficie.",
+          "citation": "Design and safety — minimizing serialized state",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-154",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué debe validar la aplicación tras leer storage?",
+          "options": [
+            "Que la versión y los valores sean utilizables",
+            "Que el usuario sea un layout",
+            "Que la ruta sea una rama Git",
+            "Que el Router tenga dos NotFound"
+          ],
+          "correct": "A",
+          "explanation": "Los datos externos deben validarse.",
+          "citation": "Browser storage — persistence",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-155",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué representa una preferencia de idioma en browser storage?",
+          "options": [
+            "Estado durable pequeño y no sensible",
+            "Un secreto de sesión",
+            "El circuito completo",
+            "Una política de autorización"
+          ],
+          "correct": "A",
+          "explanation": "Es un ejemplo apropiado de preferencia persistible.",
+          "citation": "Browser storage — persistence guidance",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-156",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué mecanismo no convierte storage en secreto?",
+          "options": [
+            "La mera serialización JSON",
+            "Un control de layout",
+            "Un NavLink",
+            "Una ruta opcional"
+          ],
+          "correct": "A",
+          "explanation": "Serializar no protege contra inspección del cliente.",
+          "citation": "Design and safety — client-visible data",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-157",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué debe ocurrir si la lectura de storage falla?",
+          "options": [
+            "La aplicación debe manejar el error y usar un valor seguro o predeterminado",
+            "Debe exponer el error con secretos",
+            "Debe compartir el dato",
+            "Debe borrar el circuito siempre"
+          ],
+          "correct": "A",
+          "explanation": "La lectura debe tolerar fallos.",
+          "citation": "Browser storage — persistence",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-158",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué decisión separa mejor preferencias de datos de negocio?",
+          "options": [
+            "Guardar preferencia ligera en browser storage y datos de negocio en almacenamiento durable",
+            "Guardar la base completa en localStorage",
+            "Usar sessionStorage como base de datos",
+            "No distinguirlos"
+          ],
+          "correct": "A",
+          "explanation": "Las responsabilidades de persistencia difieren.",
+          "citation": "Design and safety — ephemeral versus durable data",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-159",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué canal permite invocar APIs del navegador desde .NET?",
+          "options": [
+            "JavaScript interop",
+            "StateHasChanged",
+            "RouteData",
+            "DefaultLayout"
+          ],
+          "correct": "A",
+          "explanation": "Interop conecta código .NET con APIs browser.",
+          "citation": "Browser storage — JavaScript interop",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-160",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué riesgo existe al asumir que storage client-side es compartido por todos los usuarios?",
+          "options": [
+            "Se confunde un almacén del cliente con estado global del servidor",
+            "Se pierde el layout",
+            "Se desactiva el Router",
+            "Se crea una ruta catch-all"
+          ],
+          "correct": "A",
+          "explanation": "Cada cliente tiene su propio almacenamiento.",
+          "citation": "Design and safety — cross-user leakage",
+          "source_id": "BLAZOR-STATE-10"
+        }
+      ]
+    }
+  ]
+}

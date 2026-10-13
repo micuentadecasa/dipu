@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-31-blazor-state-management.md",
+  "batches": [
+    {
+      "topic_num": 31,
+      "lot_num": 7,
+      "source_ids": [
+        "BLAZOR-STATE-10"
+      ],
+      "questions": [
+        {
+          "objective_id": "t31-lo-121",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué patrón permite compartir estado entre componentes?",
+          "options": [
+            "Un servicio contenedor de estado",
+            "Un parámetro CSS",
+            "Un layout sin datos",
+            "Una ruta catch-all"
+          ],
+          "correct": "A",
+          "explanation": "Un state container encapsula estado compartido.",
+          "citation": "State containers",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-122",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué puede exponer un state container además del valor?",
+          "options": [
+            "Métodos y notificaciones de cambio",
+            "Solo una URL",
+            "Solo un certificado",
+            "Solo una plantilla de ruta"
+          ],
+          "correct": "A",
+          "explanation": "El contenedor puede centralizar mutación y notificación.",
+          "citation": "State containers — notification",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-123",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué debe hacer un componente al suscribirse a cambios de un contenedor?",
+          "options": [
+            "Desuscribirse cuando deja de existir",
+            "Persistir la suscripción en localStorage",
+            "Crear otro contenedor",
+            "Cambiar el circuito manualmente"
+          ],
+          "correct": "A",
+          "explanation": "La suscripción debe liberar recursos.",
+          "citation": "State containers — subscription lifecycle",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-124",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué riesgo tiene olvidar desuscribir un componente?",
+          "options": [
+            "Notificaciones a instancias que ya no deberían recibirlas",
+            "La URL se codifica mal",
+            "El navegador crea una base de datos",
+            "El componente se convierte en layout"
+          ],
+          "correct": "A",
+          "explanation": "La suscripción prolongada puede causar fugas o trabajo innecesario.",
+          "citation": "State containers — subscription lifecycle",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-125",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué alcance es importante elegir al registrar un contenedor?",
+          "options": [
+            "Scoped, singleton u otro alcance coherente con el modelo de hosting",
+            "Solo el color del componente",
+            "Solo la ruta base",
+            "Solo el nombre del assembly"
+          ],
+          "correct": "A",
+          "explanation": "El lifetime determina quién comparte la instancia.",
+          "citation": "State containers — service lifetimes",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-126",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Por qué un singleton puede ser peligroso en Blazor Server para estado de usuario?",
+          "options": [
+            "Puede compartir datos entre circuitos/usuarios",
+            "Porque nunca puede notificar",
+            "Porque solo existe durante un evento",
+            "Porque no se puede inyectar"
+          ],
+          "correct": "A",
+          "explanation": "El singleton tiene alcance global al proceso y puede mezclar usuarios.",
+          "citation": "State containers — scoped versus singleton in Blazor Server",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-127",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué alcance suele aislar mejor el estado por circuito en Blazor Server?",
+          "options": [
+            "Scoped",
+            "Singleton global",
+            "Static de proceso",
+            "Transient de navegador siempre"
+          ],
+          "correct": "A",
+          "explanation": "Scoped se asocia al circuito en el modelo descrito.",
+          "citation": "State containers — scoped services and circuits",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-128",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué consideración existe para scoped en Blazor WebAssembly?",
+          "options": [
+            "Puede comportarse como una instancia compartida durante la vida de la aplicación",
+            "Siempre crea una instancia por HTTP request",
+            "Es global a todos los usuarios del servidor",
+            "Solo existe durante prerender"
+          ],
+          "correct": "A",
+          "explanation": "El lifetime tiene semántica distinta en WebAssembly.",
+          "citation": "State containers — service lifetimes in Blazor WebAssembly",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-129",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué debe poseer el código que cambia un estado compartido?",
+          "options": [
+            "Una responsabilidad clara y una API controlada",
+            "Cualquier componente sin reglas",
+            "Solo el layout",
+            "El navegador externo"
+          ],
+          "correct": "A",
+          "explanation": "El ownership explícito evita mutaciones arbitrarias.",
+          "citation": "State management guidance — state ownership",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-130",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué evento puede emitir un state container?",
+          "options": [
+            "Un cambio de estado para que los consumidores actualicen su UI",
+            "Una navegación externa obligatoria",
+            "Una nueva base de datos",
+            "Un certificado digital"
+          ],
+          "correct": "A",
+          "explanation": "La notificación informa a consumidores.",
+          "citation": "State containers — notification",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-131",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué suele hacer el consumidor tras recibir la notificación?",
+          "options": [
+            "Actualizar su vista mediante el ciclo de renderizado",
+            "Modificar directamente otro componente",
+            "Cambiar el lifetime",
+            "Borrar el servicio"
+          ],
+          "correct": "A",
+          "explanation": "El consumidor actualiza su estado/render.",
+          "citation": "State containers — notification",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-132",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué diferencia un container de estado de una base de datos?",
+          "options": [
+            "El container mantiene estado de ejecución; la base ofrece persistencia durable",
+            "El container siempre es durable",
+            "La base solo existe en memoria",
+            "No hay diferencia"
+          ],
+          "correct": "A",
+          "explanation": "Cumplen responsabilidades distintas.",
+          "citation": "State management guidance — ephemeral versus durable state",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-133",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué puede encapsular un state container para reducir acoplamiento?",
+          "options": [
+            "Reglas de actualización y notificación",
+            "Las credenciales del navegador",
+            "El Router global",
+            "El HTML final"
+          ],
+          "correct": "A",
+          "explanation": "Encapsular comportamiento centraliza el estado.",
+          "citation": "State containers",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-134",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué debe considerar un servicio compartido en una aplicación multiusuario?",
+          "options": [
+            "Aislamiento de datos entre usuarios y circuitos",
+            "Solo el nombre de la clase",
+            "El número de layouts",
+            "El color de los botones"
+          ],
+          "correct": "A",
+          "explanation": "El lifetime debe respetar el aislamiento.",
+          "citation": "State containers — scoped versus singleton",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-135",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué diseño evita que cualquier consumidor modifique libremente el estado?",
+          "options": [
+            "Exponer operaciones controladas en vez del campo mutable directamente",
+            "Publicar la referencia mutable global",
+            "Usar un singleton estático",
+            "Guardar todo en URL"
+          ],
+          "correct": "A",
+          "explanation": "Una API controlada protege invariantes.",
+          "citation": "State management guidance — state ownership",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-136",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué debe hacer una suscripción en un componente que se elimina?",
+          "options": [
+            "Liberar el handler o recurso asociado",
+            "Navegar a NotFound",
+            "Crear otro circuito",
+            "Persistir el callback"
+          ],
+          "correct": "A",
+          "explanation": "La limpieza evita notificaciones a instancias eliminadas.",
+          "citation": "State containers — subscription lifecycle",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-137",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué modelo puede provocar fuga entre usuarios en Server?",
+          "options": [
+            "Un estado de usuario en singleton",
+            "Un estado scoped por circuito",
+            "Un campo privado del componente",
+            "Un parámetro del componente"
+          ],
+          "correct": "A",
+          "explanation": "Singleton comparte por proceso.",
+          "citation": "State containers — scoped versus singleton in Blazor Server",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-138",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué relación tiene un state container con StateHasChanged?",
+          "options": [
+            "El container notifica y el componente solicita/renderiza el cambio en su contexto",
+            "El container reemplaza el Router",
+            "StateHasChanged persiste automáticamente",
+            "No tienen relación"
+          ],
+          "correct": "A",
+          "explanation": "La notificación necesita una actualización de UI coordinada.",
+          "citation": "State containers — notification; component state",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-139",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué servicio debe evitar almacenar sin protección?",
+          "options": [
+            "Datos sensibles de un usuario en una instancia global compartida",
+            "Un contador local del componente",
+            "Una clase de presentación",
+            "Un parámetro efímero"
+          ],
+          "correct": "A",
+          "explanation": "Los datos sensibles no deben cruzar límites de usuario.",
+          "citation": "State management guidance — avoid cross-user leakage",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-140",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué criterio guía la elección de lifetime del contenedor?",
+          "options": [
+            "Quién debe compartir el estado y durante cuánto tiempo",
+            "El número de rutas únicamente",
+            "La clase CSS activa",
+            "El orden de assemblies"
+          ],
+          "correct": "A",
+          "explanation": "La elección responde al alcance deseado.",
+          "citation": "State containers — service lifetimes",
+          "source_id": "BLAZOR-STATE-10"
+        }
+      ]
+    }
+  ]
+}
