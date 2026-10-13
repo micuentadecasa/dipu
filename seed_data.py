@@ -36598,3 +36598,1028 @@ SEED_QUESTIONS.extend([
     }
 ])
 # QUESTION_BANK_ACCEPTED_TOPIC_30_LOT_10_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_29_LOT_06_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 29,
+        "question": "¿Qué componente representa un formulario de edición en Blazor?",
+        "option_a": "EditForm",
+        "option_b": "EditContextView",
+        "option_c": "InputFormOnly",
+        "option_d": "ValidationHost",
+        "correct": "A",
+        "explanation": "EditForm conecta el formulario con un modelo o EditContext."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué objeto mantiene el estado de edición y validación?",
+        "option_a": "EditContext",
+        "option_b": "EditFormState",
+        "option_c": "FormProvider",
+        "option_d": "ValidationContextOnly",
+        "correct": "A",
+        "explanation": "EditContext mantiene el estado y notifica cambios."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué puede recibir EditForm para identificar el contexto de edición?",
+        "option_a": "Un Model o un EditContext",
+        "option_b": "Solo una URL",
+        "option_c": "Solo un CSS class",
+        "option_d": "Solo un EventCallback",
+        "correct": "A",
+        "explanation": "EditForm puede trabajar con modelo o contexto explícito."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué familia de componentes enlaza entradas con un modelo?",
+        "option_a": "InputText, InputNumber y otros componentes Input",
+        "option_b": "RouteView y Router",
+        "option_c": "LayoutView y NavLink",
+        "option_d": "CascadingValue únicamente",
+        "correct": "A",
+        "explanation": "Los componentes Input gestionan enlace y estado de edición."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué evento se usa habitualmente cuando un EditForm es válido?",
+        "option_a": "OnValidSubmit",
+        "option_b": "OnRouteMatch",
+        "option_c": "OnInputOnly",
+        "option_d": "OnModelCreate",
+        "correct": "A",
+        "explanation": "OnValidSubmit se ejecuta tras validación válida."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué evento permite manejar un envío inválido?",
+        "option_a": "OnInvalidSubmit",
+        "option_b": "OnInvalidRoute",
+        "option_c": "OnValidationOnly",
+        "option_d": "OnModelReject",
+        "correct": "A",
+        "explanation": "OnInvalidSubmit maneja el caso de validación fallida."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué evento recibe cualquier envío del formulario?",
+        "option_a": "OnSubmit",
+        "option_b": "OnAnyRoute",
+        "option_c": "OnFormLoad",
+        "option_d": "OnEditContextCreate",
+        "correct": "A",
+        "explanation": "OnSubmit permite controlar directamente el envío."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué relación debe tener EditForm con un formulario HTML?",
+        "option_a": "Encapsula la lógica Blazor de edición y envío",
+        "option_b": "Solo cambia el color del formulario",
+        "option_c": "Reemplaza el modelo por una ruta",
+        "option_d": "Impide usar inputs",
+        "correct": "A",
+        "explanation": "EditForm integra el formulario con el sistema de edición."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué componente sirve para una entrada de texto enlazada?",
+        "option_a": "InputText",
+        "option_b": "TextRoute",
+        "option_c": "StringEditorOnly",
+        "option_d": "EditTextContext",
+        "correct": "A",
+        "explanation": "InputText es el componente de entrada de texto."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué componente sirve para un valor numérico enlazado?",
+        "option_a": "InputNumber<TValue>",
+        "option_b": "NumberRoute",
+        "option_c": "NumericEditFormOnly",
+        "option_d": "ValueInputContext",
+        "correct": "A",
+        "explanation": "InputNumber representa valores numéricos tipados."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué componente representa un valor booleano?",
+        "option_a": "InputCheckbox",
+        "option_b": "BooleanFormRoute",
+        "option_c": "CheckEditContextOnly",
+        "option_d": "BoolProvider",
+        "correct": "A",
+        "explanation": "InputCheckbox representa una entrada booleana."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué componente representa una selección?",
+        "option_a": "InputSelect<TValue>",
+        "option_b": "SelectContextOnly",
+        "option_c": "ChoiceRoute",
+        "option_d": "OptionFormHost",
+        "correct": "A",
+        "explanation": "InputSelect enlaza una opción seleccionada."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué componente muestra un mensaje para una propiedad?",
+        "option_a": "ValidationMessage<TValue>",
+        "option_b": "PropertyErrorRoute",
+        "option_c": "MessageEditOnly",
+        "option_d": "ValidationTextContext",
+        "correct": "A",
+        "explanation": "ValidationMessage muestra mensajes asociados a una expresión."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué componente muestra el resumen de validación?",
+        "option_a": "ValidationSummary",
+        "option_b": "ValidationListRoute",
+        "option_c": "SummaryEditContext",
+        "option_d": "ErrorFormOnly",
+        "correct": "A",
+        "explanation": "ValidationSummary muestra los mensajes del contexto."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué debe expresarse para asociar un input a una propiedad?",
+        "option_a": "Una expresión de valor del modelo",
+        "option_b": "Un nombre de ruta",
+        "option_c": "Un servicio singleton",
+        "option_d": "Un layout",
+        "correct": "A",
+        "explanation": "El binding identifica la propiedad editada."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué hace el enlace de valor de un input?",
+        "option_a": "Actualiza el valor del modelo y el estado del contexto",
+        "option_b": "Crea un endpoint",
+        "option_c": "Desactiva validación",
+        "option_d": "Serializa el componente siempre",
+        "correct": "A",
+        "explanation": "El input participa en la edición del modelo."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué diferencia básica hay entre Model y EditContext?",
+        "option_a": "Model es el objeto editado; EditContext encapsula estado y eventos de edición",
+        "option_b": "Model es un evento y EditContext una ruta",
+        "option_c": "Son dos CSS classes",
+        "option_d": "No hay diferencia",
+        "correct": "A",
+        "explanation": "El contexto añade seguimiento y notificaciones al modelo."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué puede hacer un formulario con EditContext explícito?",
+        "option_a": "Configurar y observar el contexto de edición directamente",
+        "option_b": "Evitar todo input",
+        "option_c": "Cambiar la URL del navegador",
+        "option_d": "Registrar servicios DI",
+        "correct": "A",
+        "explanation": "El contexto explícito permite control adicional."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué debe evitarse al reutilizar un EditContext?",
+        "option_a": "Mantenerlo con un ciclo de vida inadecuado para el modelo editado",
+        "option_b": "Usar un ValidationMessage",
+        "option_c": "Definir un OnSubmit",
+        "option_d": "Enlazar InputText",
+        "correct": "A",
+        "explanation": "El contexto debe corresponder al modelo y vida de la edición."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué resultado busca un input de formulario correctamente enlazado?",
+        "option_a": "Reflejar y cambiar una propiedad del modelo",
+        "option_b": "Crear una nueva página",
+        "option_c": "Resolver un servicio",
+        "option_d": "Añadir un endpoint",
+        "correct": "A",
+        "explanation": "El objetivo del input es editar el modelo."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_29_LOT_06_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_29_LOT_07_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 29,
+        "question": "¿Qué mecanismo valida atributos como Required en un modelo?",
+        "option_a": "DataAnnotationsValidator",
+        "option_b": "RouteAnnotationsOnly",
+        "option_c": "FormAttributeRouter",
+        "option_d": "ModelCssValidator",
+        "correct": "A",
+        "explanation": "DataAnnotationsValidator conecta atributos de anotación con el formulario."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué atributo indica que una propiedad es obligatoria?",
+        "option_a": "Required",
+        "option_b": "BindRequiredOnly",
+        "option_c": "ValidateRoute",
+        "option_d": "FormRequiredCss",
+        "correct": "A",
+        "explanation": "Required expresa que debe existir un valor."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué atributo valida un intervalo numérico?",
+        "option_a": "Range",
+        "option_b": "NumberRoute",
+        "option_c": "IntervalFormOnly",
+        "option_d": "BetweenCss",
+        "correct": "A",
+        "explanation": "Range comprueba límites definidos."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué atributo valida una longitud?",
+        "option_a": "StringLength",
+        "option_b": "TextLengthRoute",
+        "option_c": "LengthFormOnly",
+        "option_d": "SizeInputContext",
+        "correct": "A",
+        "explanation": "StringLength aplica reglas de longitud."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué atributo valida un patrón?",
+        "option_a": "RegularExpression",
+        "option_b": "PatternRouteOnly",
+        "option_c": "RegexFormHost",
+        "option_d": "MatchCss",
+        "correct": "A",
+        "explanation": "RegularExpression valida con una expresión regular."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué requiere la validación de un objeto anidado?",
+        "option_a": "Configurar validación para el grafo de objetos y sus propiedades",
+        "option_b": "Solo validar el nombre de la clase raíz",
+        "option_c": "Usar una ruta hija",
+        "option_d": "Eliminar EditContext",
+        "correct": "A",
+        "explanation": "Los grafos anidados requieren soporte explícito de validación."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué ocurre si solo se valida el objeto raíz sin soporte del grafo?",
+        "option_a": "Las propiedades anidadas pueden no validarse como se espera",
+        "option_b": "Todo el formulario se vuelve válido",
+        "option_c": "Se crea un endpoint",
+        "option_d": "Se valida CSS",
+        "correct": "A",
+        "explanation": "La validación debe recorrer los objetos pertinentes."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué es una regla de validación personalizada?",
+        "option_a": "Lógica de validación definida por la aplicación",
+        "option_b": "Un componente de navegación",
+        "option_c": "Un provider JSON",
+        "option_d": "Un lifetime DI",
+        "correct": "A",
+        "explanation": "Las reglas personalizadas cubren requisitos no expresados por atributos."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Dónde pueden agregarse mensajes de validación personalizados?",
+        "option_a": "Al EditContext mediante el mecanismo de mensajes",
+        "option_b": "Solo al Router",
+        "option_c": "Solo al layout",
+        "option_d": "A la URL",
+        "correct": "A",
+        "explanation": "El contexto admite mensajes asociados a campos o modelo."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué representa un ValidationMessageStore?",
+        "option_a": "Un almacenamiento de mensajes para un EditContext",
+        "option_b": "Un registro DI",
+        "option_c": "Una lista de rutas",
+        "option_d": "Una clase CSS",
+        "correct": "A",
+        "explanation": "El store administra mensajes personalizados."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué debe hacer una validación personalizada antes de agregar nuevos mensajes?",
+        "option_a": "Limpiar los mensajes anteriores que ya no aplican",
+        "option_b": "Crear un nuevo Router",
+        "option_c": "Cambiar el modelo siempre",
+        "option_d": "Deshabilitar inputs",
+        "correct": "A",
+        "explanation": "Limpiar evita conservar errores obsoletos."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué evento permite reaccionar a la validación?",
+        "option_a": "OnValidationRequested",
+        "option_b": "OnRouteRequested",
+        "option_c": "OnModelRendered",
+        "option_d": "OnInputDisposed",
+        "correct": "A",
+        "explanation": "El evento notifica una solicitud de validación."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué evento permite reaccionar a cambios en el estado de validación?",
+        "option_a": "OnValidationStateChanged",
+        "option_b": "OnStateRouteChanged",
+        "option_c": "OnCssOnlyChanged",
+        "option_d": "OnFormNavigated",
+        "correct": "A",
+        "explanation": "El evento notifica cambios en mensajes/estado."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué puede hacer una regla personalizada con un error entre dos propiedades?",
+        "option_a": "Añadir un mensaje asociado al modelo o al campo apropiado",
+        "option_b": "Crear dos rutas",
+        "option_c": "Cambiar el lifetime",
+        "option_d": "Borrar el EditContext",
+        "correct": "A",
+        "explanation": "Las reglas pueden expresar relaciones no locales."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué diferencia hay entre validación de anotaciones y personalizada?",
+        "option_a": "Anotaciones declaran reglas en el modelo; personalizada implementa lógica adicional",
+        "option_b": "Anotaciones son CSS y personalizada navegación",
+        "option_c": "Son idénticas",
+        "option_d": "Personalizada solo valida URL",
+        "correct": "A",
+        "explanation": "Son mecanismos complementarios."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué debe hacer una aplicación con un modelo inválido al enviar?",
+        "option_a": "No procesar como válido y mostrar mensajes",
+        "option_b": "Persistirlo siempre",
+        "option_c": "Ignorar todos los errores",
+        "option_d": "Navegar automáticamente",
+        "correct": "A",
+        "explanation": "El flujo debe distinguir envíos inválidos."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué beneficio tiene validar temprano en la UI?",
+        "option_a": "Dar feedback al usuario antes de procesar datos inválidos",
+        "option_b": "Eliminar la validación del servidor",
+        "option_c": "Convertir datos en secretos",
+        "option_d": "Crear un endpoint",
+        "correct": "A",
+        "explanation": "La UI puede informar pronto, aunque no sustituye controles de confianza."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué límite tiene la validación en el cliente?",
+        "option_a": "No debe ser la única defensa para datos no confiables",
+        "option_b": "Siempre es suficiente para autorización",
+        "option_c": "Protege secretos automáticamente",
+        "option_d": "Impide peticiones maliciosas",
+        "correct": "A",
+        "explanation": "El servidor debe validar datos que recibe."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué relación existe entre DataAnnotationsValidator y EditContext?",
+        "option_a": "Valida el modelo asociado al contexto",
+        "option_b": "Crea un contexto nuevo por campo",
+        "option_c": "Solo cambia CSS",
+        "option_d": "Resuelve navegación",
+        "correct": "A",
+        "explanation": "El validador usa el contexto de edición."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué debe considerar una clase de modelo con objetos hijos?",
+        "option_a": "Que sus reglas y mensajes se representen en el grafo editado",
+        "option_b": "Que solo se dibuje el objeto raíz",
+        "option_c": "Que use una ruta por propiedad",
+        "option_d": "Que omita inputs hijos",
+        "correct": "A",
+        "explanation": "La UI debe representar correctamente la validación anidada."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_29_LOT_07_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_29_LOT_08_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 29,
+        "question": "¿Qué permite un formulario con nombre en Blazor?",
+        "option_a": "Distinguir formularios en escenarios de publicación y manejo",
+        "option_b": "Crear un nuevo assembly",
+        "option_c": "Cambiar el lifetime",
+        "option_d": "Ocultar el modelo",
+        "correct": "A",
+        "explanation": "Los nombres identifican formularios en escenarios compatibles."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Por qué es útil nombrar formularios cuando hay varios?",
+        "option_a": "Evita ambigüedad sobre qué formulario se procesa",
+        "option_b": "Desactiva validación",
+        "option_c": "Evita todos los eventos",
+        "option_d": "Convierte inputs en rutas",
+        "correct": "A",
+        "explanation": "El nombre distingue formularios concurrentes."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué protección se relaciona con formularios que publican datos?",
+        "option_a": "Antiforgery",
+        "option_b": "RouteForgeryOnly",
+        "option_c": "CssProtection",
+        "option_d": "ModelSingleton",
+        "correct": "A",
+        "explanation": "La protección antiforgery ayuda frente a solicitudes forjadas."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué debe hacer una aplicación respecto al token antiforgery?",
+        "option_a": "Configurar y conservar el flujo que exige el modelo de hosting",
+        "option_b": "Ponerlo en una etiqueta arbitraria",
+        "option_c": "Desactivarlo siempre",
+        "option_d": "Usarlo como contraseña",
+        "correct": "A",
+        "explanation": "El formulario debe respetar el mecanismo antiforgery aplicable."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué es overposting?",
+        "option_a": "Aceptar o enlazar propiedades que el usuario no debía modificar",
+        "option_b": "Publicar dos formularios con nombre",
+        "option_c": "Validar una fecha",
+        "option_d": "Mostrar un mensaje CSS",
+        "correct": "A",
+        "explanation": "Overposting expone propiedades a una actualización no deseada."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué práctica reduce el riesgo de overposting?",
+        "option_a": "Usar un modelo de entrada limitado a propiedades editables",
+        "option_b": "Enlazar la entidad completa siempre",
+        "option_c": "Desactivar validación",
+        "option_d": "Aceptar todos los campos",
+        "correct": "A",
+        "explanation": "Un modelo de entrada restringe la superficie editable."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué debe hacer el servidor con datos de un formulario?",
+        "option_a": "Validarlos y autorizar los cambios antes de persistir",
+        "option_b": "Confiar en el navegador",
+        "option_c": "Persistir cualquier propiedad",
+        "option_d": "Usar solo CSS",
+        "correct": "A",
+        "explanation": "La confianza debe estar en controles del servidor."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué caracteriza al enhanced form handling?",
+        "option_a": "Mejora la navegación/envío sin requerir una recarga completa en escenarios compatibles",
+        "option_b": "Elimina EditContext",
+        "option_c": "Convierte todo en WebAssembly",
+        "option_d": "Desactiva antiforgery",
+        "correct": "A",
+        "explanation": "El manejo mejorado optimiza el flujo del formulario."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué debe comprobarse al usar enhanced form handling?",
+        "option_a": "Que el componente y el endpoint soporten el escenario de hosting",
+        "option_b": "Solo el color del botón",
+        "option_c": "El nombre del assembly",
+        "option_d": "Que no haya modelo",
+        "correct": "A",
+        "explanation": "La mejora depende del escenario soportado."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué efecto busca la mejora progresiva de un formulario?",
+        "option_a": "Mantener un flujo funcional y mejorar la experiencia cuando hay interactividad",
+        "option_b": "Quitar toda validación",
+        "option_c": "Hacer público el secreto",
+        "option_d": "Crear un scope DI",
+        "correct": "A",
+        "explanation": "La mejora no debe romper el flujo base."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué evento es preferible si se delega la validación normal de EditForm?",
+        "option_a": "OnValidSubmit para lógica solo cuando es válido",
+        "option_b": "OnSubmit siempre sin validar",
+        "option_c": "OnRouteMatch",
+        "option_d": "OnModelRender",
+        "correct": "A",
+        "explanation": "OnValidSubmit separa el caso válido."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué implica manejar OnSubmit directamente?",
+        "option_a": "La aplicación controla el envío y debe encargarse de la validación apropiada",
+        "option_b": "Blazor valida y persiste siempre",
+        "option_c": "Se desactiva el modelo",
+        "option_d": "Se crea un endpoint",
+        "correct": "A",
+        "explanation": "El handler directo da control explícito."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué puede hacer un handler de envío después de una validación válida?",
+        "option_a": "Procesar o enviar el modelo permitido",
+        "option_b": "Cambiar las reglas de CSS solamente",
+        "option_c": "Registrar un Router",
+        "option_d": "Recrear todo el árbol",
+        "correct": "A",
+        "explanation": "El handler recibe un modelo listo para el flujo posterior."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué debe evitarse en un handler válido?",
+        "option_a": "Persistir sin autorización ni validación de servidor",
+        "option_b": "Llamar a un servicio de aplicación",
+        "option_c": "Mostrar confirmación",
+        "option_d": "Usar un modelo de entrada",
+        "correct": "A",
+        "explanation": "La validez de UI no sustituye autorización."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué distingue antiforgery de validación de campos?",
+        "option_a": "Antiforgery protege el origen de la solicitud; validación comprueba datos",
+        "option_b": "Son el mismo mecanismo",
+        "option_c": "Antiforgery valida rangos",
+        "option_d": "Validación crea tokens",
+        "correct": "A",
+        "explanation": "Protegen propiedades distintas del flujo."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué identifica el nombre de un formulario?",
+        "option_a": "El formulario concreto dentro del contexto de publicación",
+        "option_b": "La clase CSS",
+        "option_c": "El lifetime del componente",
+        "option_d": "La entidad de base de datos",
+        "correct": "A",
+        "explanation": "El nombre sirve para distinguirlo."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué debe considerar una aplicación con múltiples formularios en una página?",
+        "option_a": "Nombres y handlers que no confundan sus modelos",
+        "option_b": "Usar siempre el mismo modelo",
+        "option_c": "Eliminar validación",
+        "option_d": "Compartir todos los EditContext",
+        "correct": "A",
+        "explanation": "Cada formulario debe tener identidad y estado adecuados."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué aporta el soporte enhanced a la navegación tras envío?",
+        "option_a": "Puede evitar una recarga completa cuando el escenario lo admite",
+        "option_b": "Convierte una POST en GET siempre",
+        "option_c": "Omite antiforgery",
+        "option_d": "Elimina el servidor",
+        "correct": "A",
+        "explanation": "El framework puede mejorar la transición."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué debe tratarse como no confiable en un formulario?",
+        "option_a": "Todo dato procedente del cliente",
+        "option_b": "Solo los campos con Required",
+        "option_c": "Solo el botón",
+        "option_d": "Solo el nombre del formulario",
+        "correct": "A",
+        "explanation": "El cliente puede modificar sus valores."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué combinación es segura para edición?",
+        "option_a": "Modelo de entrada restringido, antiforgery, validación y autorización",
+        "option_b": "Entidad completa sin validación",
+        "option_c": "Solo validación CSS",
+        "option_d": "Nombre de formulario como autorización",
+        "correct": "A",
+        "explanation": "Las defensas cubren riesgos complementarios."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_29_LOT_08_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_29_LOT_09_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 29,
+        "question": "¿Qué clase CSS indica normalmente un campo válido o inválido?",
+        "option_a": "Las clases de estado proporcionadas por el sistema de edición",
+        "option_b": "Route-valid siempre",
+        "option_c": "Only-valid-form",
+        "option_d": "Input-static",
+        "correct": "A",
+        "explanation": "Blazor puede aplicar clases según estado de validación."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué función cumple FieldCssClassProvider?",
+        "option_a": "Personalizar las clases CSS según el estado del campo",
+        "option_b": "Crear un modelo",
+        "option_c": "Registrar servicios",
+        "option_d": "Publicar un formulario",
+        "correct": "A",
+        "explanation": "El proveedor permite personalizar apariencia de campos."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué debe usar una personalización de CSS?",
+        "option_a": "El estado del campo del EditContext",
+        "option_b": "La URL del componente",
+        "option_c": "El nombre del assembly",
+        "option_d": "Una conexión SQL",
+        "correct": "A",
+        "explanation": "La apariencia se deriva del estado de edición/validación."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué muestra ValidationSummary?",
+        "option_a": "Mensajes de validación del modelo/contexto",
+        "option_b": "Solo el último valor",
+        "option_c": "Todas las rutas",
+        "option_d": "El contenido de appsettings",
+        "correct": "A",
+        "explanation": "El resumen agrega mensajes disponibles."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué muestra ValidationMessage para una propiedad?",
+        "option_a": "Mensajes asociados a esa expresión de campo",
+        "option_b": "Todos los mensajes de la aplicación",
+        "option_c": "El modelo serializado",
+        "option_d": "Una ruta hija",
+        "correct": "A",
+        "explanation": "El componente se asocia a una propiedad."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Cuándo puede ejecutarse validación al cambiar una entrada?",
+        "option_a": "Según la configuración y eventos del formulario/validador",
+        "option_b": "Solo al navegar a otra página",
+        "option_c": "Nunca antes del submit",
+        "option_d": "Al compilar",
+        "correct": "A",
+        "explanation": "La validación puede responder a cambios y envíos."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué diferencia hay entre validación al cambio y al envío?",
+        "option_a": "Una da feedback durante edición; la otra comprueba el intento de submit",
+        "option_b": "Son idénticas siempre",
+        "option_c": "Cambio valida autorización",
+        "option_d": "Envío solo aplica CSS",
+        "correct": "A",
+        "explanation": "Son momentos diferentes del ciclo de edición."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué debe evitar una UI con validación inmediata?",
+        "option_a": "Feedback confuso o mensajes que no corresponden al campo editado",
+        "option_b": "Mostrar mensajes asociados",
+        "option_c": "Usar InputText",
+        "option_d": "Usar un formulario",
+        "correct": "A",
+        "explanation": "La experiencia debe mantener mensajes coherentes."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué puede escuchar un componente para actualizar una vista tras validación?",
+        "option_a": "OnValidationStateChanged",
+        "option_b": "OnRouteChangedOnly",
+        "option_c": "OnDIChanged",
+        "option_d": "OnModelDisposed",
+        "correct": "A",
+        "explanation": "El evento avisa de cambios de estado."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué debe hacer un handler suscrito a EditContext?",
+        "option_a": "Desuscribirse cuando corresponda para evitar referencias persistentes",
+        "option_b": "Crear un singleton",
+        "option_c": "Cambiar todas las rutas",
+        "option_d": "Ignorar disposición",
+        "correct": "A",
+        "explanation": "Las suscripciones deben respetar el ciclo de vida."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué ocurre si un mensaje personalizado no se limpia?",
+        "option_a": "Puede quedar visible aunque la condición ya no exista",
+        "option_b": "Se convierte en CSS válido",
+        "option_c": "El modelo se elimina",
+        "option_d": "Se valida automáticamente",
+        "correct": "A",
+        "explanation": "Los mensajes antiguos deben retirarse."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué representa el estado modified de un campo?",
+        "option_a": "Que el usuario o código cambió el valor respecto del estado inicial",
+        "option_b": "Que el campo es válido siempre",
+        "option_c": "Que el formulario fue publicado",
+        "option_d": "Que es una ruta",
+        "correct": "A",
+        "explanation": "EditContext rastrea estado de campos."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué objetivo tiene mostrar un mensaje junto al campo?",
+        "option_a": "Asociar el error con la corrección que el usuario debe realizar",
+        "option_b": "Ocultar el resumen",
+        "option_c": "Crear un endpoint",
+        "option_d": "Cambiar el modelo",
+        "correct": "A",
+        "explanation": "La asociación facilita corregir el campo."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué objetivo tiene un resumen de validación?",
+        "option_a": "Ofrecer una visión agregada de errores del formulario",
+        "option_b": "Reemplazar autorización",
+        "option_c": "Evitar todo input",
+        "option_d": "Crear un EditContext",
+        "correct": "A",
+        "explanation": "El resumen agrega los mensajes del formulario."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué puede personalizarse con CSS?",
+        "option_a": "La apariencia de campos válidos, inválidos o modificados",
+        "option_b": "La semántica de Required",
+        "option_c": "La seguridad antiforgery",
+        "option_d": "El lifetime DI",
+        "correct": "A",
+        "explanation": "CSS cambia presentación, no las reglas de validación."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué no debe hacer CSS de validación?",
+        "option_a": "Pretender proteger datos o sustituir la validación",
+        "option_b": "Mostrar un borde",
+        "option_c": "Usar una clase",
+        "option_d": "Indicar estado",
+        "correct": "A",
+        "explanation": "La apariencia no es una defensa de datos."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué relación tiene EditContext con los eventos?",
+        "option_a": "Publica eventos de cambio de campo y validación",
+        "option_b": "Solo almacena CSS",
+        "option_c": "Solo crea rutas",
+        "option_d": "No expone estado",
+        "correct": "A",
+        "explanation": "EditContext coordina el estado y notificaciones."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué puede iniciar OnValidationRequested?",
+        "option_a": "Una validación del contexto",
+        "option_b": "Una navegación externa",
+        "option_c": "Un registro DI",
+        "option_d": "Una recarga de CSS",
+        "correct": "A",
+        "explanation": "El evento se produce cuando se solicita validar."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué debe reflejar una clase CSS personalizada?",
+        "option_a": "La validez/edición real del campo, no una suposición fija",
+        "option_b": "Siempre rojo",
+        "option_c": "Siempre verde",
+        "option_d": "El nombre del formulario",
+        "correct": "A",
+        "explanation": "La clase debe corresponder al estado."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué práctica mejora accesibilidad de mensajes?",
+        "option_a": "Mantenerlos asociados de forma clara a los campos y al resumen",
+        "option_b": "Ocultarlos solo con color",
+        "option_c": "Usar texto ambiguo",
+        "option_d": "Eliminar etiquetas",
+        "correct": "A",
+        "explanation": "La asociación clara ayuda a comprender errores."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_29_LOT_09_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_29_LOT_10_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 29,
+        "question": "Un formulario usa OnValidSubmit pero el modelo tiene Required vacío. ¿Qué ocurre?",
+        "option_a": "No se ejecuta el handler válido y se muestran errores",
+        "option_b": "Se persiste siempre",
+        "option_c": "Se ignora Required",
+        "option_d": "Se navega a la ruta raíz",
+        "correct": "A",
+        "explanation": "El handler válido requiere un contexto sin errores."
+    },
+    {
+        "topic_num": 29,
+        "question": "Un formulario necesita reglas entre StartDate y EndDate. ¿Qué enfoque es adecuado?",
+        "option_a": "Regla de validación personalizada que compare ambas propiedades",
+        "option_b": "Solo InputText",
+        "option_c": "Cambiar CSS sin regla",
+        "option_d": "Usar un singleton",
+        "correct": "A",
+        "explanation": "La relación entre propiedades requiere lógica adicional."
+    },
+    {
+        "topic_num": 29,
+        "question": "Una edición incluye Address como objeto hijo y sus campos no muestran errores. ¿Qué revisar?",
+        "option_a": "Soporte/configuración de validación del grafo anidado",
+        "option_b": "El nombre del layout",
+        "option_c": "La ruta del Router",
+        "option_d": "El color CSS solamente",
+        "correct": "A",
+        "explanation": "Los objetos anidados requieren validación del grafo."
+    },
+    {
+        "topic_num": 29,
+        "question": "Una página tiene dos formularios que publican modelos distintos. ¿Qué conviene?",
+        "option_a": "Darles nombres y contextos/handlers claramente separados",
+        "option_b": "Compartir un único nombre sin más",
+        "option_c": "Eliminar EditContext",
+        "option_d": "Usar el mismo modelo siempre",
+        "correct": "A",
+        "explanation": "Los nombres y estados separan formularios."
+    },
+    {
+        "topic_num": 29,
+        "question": "Un cliente envía una propiedad IsAdmin que no aparece en la UI. ¿Qué riesgo existe?",
+        "option_a": "Overposting si se enlaza/persiste la entidad sin limitar propiedades",
+        "option_b": "Solo un error CSS",
+        "option_c": "Ningún riesgo",
+        "option_d": "Un cambio de ruta",
+        "correct": "A",
+        "explanation": "El cliente puede intentar modificar propiedades no autorizadas."
+    },
+    {
+        "topic_num": 29,
+        "question": "Un equipo confía solo en Required del navegador para proteger una actualización. ¿Qué falta?",
+        "option_a": "Validación y autorización del lado servidor",
+        "option_b": "Un segundo layout",
+        "option_c": "Un nombre de clase",
+        "option_d": "Un Router",
+        "correct": "A",
+        "explanation": "La defensa debe estar en el servidor."
+    },
+    {
+        "topic_num": 29,
+        "question": "Una regla personalizada agrega errores en cada validación y nunca limpia el store. ¿Cuál es el defecto?",
+        "option_a": "Acumula mensajes obsoletos o duplicados",
+        "option_b": "Convierte el formulario en válido",
+        "option_c": "Desactiva OnSubmit",
+        "option_d": "Crea un scope",
+        "correct": "A",
+        "explanation": "El store debe sincronizarse con el estado actual."
+    },
+    {
+        "topic_num": 29,
+        "question": "Un componente cambia clases CSS pero el campo siempre aparece válido. ¿Qué revisar?",
+        "option_a": "El FieldCssClassProvider y el estado del EditContext",
+        "option_b": "El endpoint de datos únicamente",
+        "option_c": "La ruta del navegador",
+        "option_d": "El nombre del assembly",
+        "correct": "A",
+        "explanation": "La personalización debe consultar el estado correcto."
+    },
+    {
+        "topic_num": 29,
+        "question": "Un handler usa OnSubmit y llama a guardar sin comprobar el resultado de validación. ¿Qué riesgo hay?",
+        "option_a": "Procesar datos inválidos",
+        "option_b": "Crear un formulario nombrado",
+        "option_c": "Mejorar antiforgery",
+        "option_d": "Evitar overposting",
+        "correct": "A",
+        "explanation": "OnSubmit requiere control explícito del flujo."
+    },
+    {
+        "topic_num": 29,
+        "question": "Un formulario interactivo necesita una transición sin recarga completa. ¿Qué característica puede ayudar?",
+        "option_a": "Enhanced form handling si el escenario lo soporta",
+        "option_b": "ValidationSummary",
+        "option_c": "Required",
+        "option_d": "InputNumber",
+        "correct": "A",
+        "explanation": "Enhanced forms optimizan la navegación/envío compatible."
+    },
+    {
+        "topic_num": 29,
+        "question": "Un mensaje de campo aparece en el resumen pero no junto al input. ¿Qué revisar?",
+        "option_a": "Que exista ValidationMessage asociado a la expresión correcta",
+        "option_b": "El lifetime del Router",
+        "option_c": "El nombre del CSS global",
+        "option_d": "La URL base",
+        "correct": "A",
+        "explanation": "El mensaje de campo necesita expresión asociada."
+    },
+    {
+        "topic_num": 29,
+        "question": "Un formulario válido muestra un error antiguo tras corregirlo. ¿Qué causa es probable?",
+        "option_a": "No se limpiaron mensajes personalizados al reevaluar",
+        "option_b": "EditForm siempre conserva errores",
+        "option_c": "InputText no enlaza",
+        "option_d": "El nombre del formulario",
+        "correct": "A",
+        "explanation": "Los mensajes manuales pueden quedar obsoletos."
+    },
+    {
+        "topic_num": 29,
+        "question": "Un componente suscrito a OnValidationStateChanged sigue reaccionando tras ser destruido. ¿Qué revisar?",
+        "option_a": "Desuscripción del evento durante la disposición",
+        "option_b": "El atributo Required",
+        "option_c": "El nombre del input",
+        "option_d": "El resumen",
+        "correct": "A",
+        "explanation": "Las suscripciones deben retirarse."
+    },
+    {
+        "topic_num": 29,
+        "question": "Un formulario necesita mostrar todos los errores arriba y uno debajo de cada campo. ¿Qué componentes combina?",
+        "option_a": "ValidationSummary y ValidationMessage",
+        "option_b": "Dos Routers",
+        "option_c": "Dos EditForms sin modelo",
+        "option_d": "InputCheckbox y LayoutView",
+        "correct": "A",
+        "explanation": "Cada componente cubre un nivel de mensajes."
+    },
+    {
+        "topic_num": 29,
+        "question": "Un modelo permite texto vacío aunque tiene Required. ¿Qué revisar primero?",
+        "option_a": "Que DataAnnotationsValidator esté incluido en el EditForm",
+        "option_b": "El color de la etiqueta",
+        "option_c": "El nombre de la ruta",
+        "option_d": "El Router",
+        "correct": "A",
+        "explanation": "El validador conecta las anotaciones."
+    },
+    {
+        "topic_num": 29,
+        "question": "Una entrada numérica inválida no se convierte al modelo. ¿Qué componente ayuda a representar el valor tipado?",
+        "option_a": "InputNumber<TValue>",
+        "option_b": "InputText siempre",
+        "option_c": "ValidationSummary",
+        "option_d": "EditContextView",
+        "correct": "A",
+        "explanation": "InputNumber gestiona la entrada numérica tipada."
+    },
+    {
+        "topic_num": 29,
+        "question": "Un equipo quiere publicar un formulario pero no configura protección antiforgery. ¿Qué debe evaluar?",
+        "option_a": "El mecanismo antiforgery requerido por el modelo de formulario/hosting",
+        "option_b": "Solo CSS",
+        "option_c": "El nombre del campo",
+        "option_d": "Un singleton",
+        "correct": "A",
+        "explanation": "Los formularios publicados deben respetar antiforgery."
+    },
+    {
+        "topic_num": 29,
+        "question": "Una regla personalizada debe mostrar un error general del formulario. ¿Qué puede usar?",
+        "option_a": "Mensaje del modelo en el ValidationMessageStore",
+        "option_b": "Solo InputText",
+        "option_c": "Una ruta catch-all",
+        "option_d": "Un nuevo DI scope",
+        "correct": "A",
+        "explanation": "El store admite mensajes de nivel de modelo."
+    },
+    {
+        "topic_num": 29,
+        "question": "Una validación se ejecuta al cambiar cada carácter y degrada la UX. ¿Qué decisión es razonable?",
+        "option_a": "Ajustar el momento de validación y el feedback al caso de uso",
+        "option_b": "Eliminar toda validación de servidor",
+        "option_c": "Persistir cada carácter",
+        "option_d": "Convertirlo en singleton",
+        "correct": "A",
+        "explanation": "El momento de feedback debe adaptarse al formulario."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué diseño combina correctamente los controles de un formulario confiable?",
+        "option_a": "EditForm/EditContext, validación, antiforgery, modelo limitado y autorización servidor",
+        "option_b": "Solo CSS y Required del navegador",
+        "option_c": "Entidad completa y OnSubmit sin comprobación",
+        "option_d": "Nombre del formulario como permiso",
+        "correct": "A",
+        "explanation": "Los controles cubren edición, integridad, exposición y autorización."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_29_LOT_10_END
