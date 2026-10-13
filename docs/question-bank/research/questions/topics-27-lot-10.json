@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/objectives/topic-27.json",
+  "batches": [
+    {
+      "topic_num": 27,
+      "lot_num": 10,
+      "source_ids": [
+        "BLAZOR-10"
+      ],
+      "questions": [
+        {
+          "objective_id": "t27-lo-181",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "Un componente recibe el mismo tipo de dos cascadas distintas. ¿Qué debe añadir para seleccionar una?",
+          "options": [
+            "Un nombre de cascada coincidente",
+            "Una ruta",
+            "Un CSS class",
+            "Un EventCallback sin tipo"
+          ],
+          "correct": "A",
+          "explanation": "El nombre resuelve la ambigüedad.",
+          "citation": "Cascading values and parameters — named cascades",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t27-lo-182",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "Un contexto cascado nunca cambia pero muchos hijos se suscriben. ¿Qué opción revisar?",
+          "options": [
+            "IsFixed=true",
+            "StateHasChanged en cada hijo",
+            "Una nueva key cada render",
+            "Un binding after"
+          ],
+          "correct": "A",
+          "explanation": "IsFixed evita suscripciones innecesarias.",
+          "citation": "Cascading values and parameters — IsFixed",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t27-lo-183",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "Un hijo debe informar al padre de una selección. ¿Qué API expresa mejor el contrato?",
+          "options": [
+            "EventCallback<TValue>",
+            "Mutación directa del padre",
+            "ElementReference",
+            "CascadingValue mutable"
+          ],
+          "correct": "A",
+          "explanation": "El callback tipado comunica la selección.",
+          "citation": "Event handling — EventCallback<TValue>",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t27-lo-184",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "Un input propio cambia internamente pero el padre no recibe el nuevo valor. ¿Qué falta?",
+          "options": [
+            "Invocar ValueChanged con el nuevo valor",
+            "Añadir CSS isolation",
+            "Usar @ref en el padre",
+            "Cambiar la key"
+          ],
+          "correct": "A",
+          "explanation": "El callback propaga el cambio.",
+          "citation": "Data binding — ValueChanged",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t27-lo-185",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Un binding actualiza demasiado tarde para el caso de uso. ¿Qué revisar?",
+          "options": [
+            "@bind:event y el evento deseado",
+            "El nombre del layout",
+            "CascadingParameter",
+            "Dispose"
+          ],
+          "correct": "A",
+          "explanation": "El evento configura cuándo actualizar.",
+          "citation": "Data binding — @bind:event",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t27-lo-186",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Una lista reordena elementos y pierde el foco/estado. ¿Qué revisar?",
+          "options": [
+            "Una @key estable basada en identidad del elemento",
+            "Un nuevo singleton",
+            "Raw HTML",
+            "OnSubmit"
+          ],
+          "correct": "A",
+          "explanation": "La key conserva identidad durante cambios.",
+          "citation": "Rendering — @key",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t27-lo-187",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Un componente llama una biblioteca DOM en OnInitialized y falla durante prerender. ¿Qué corregir?",
+          "options": [
+            "Moverlo a after-render y contemplar prerender",
+            "Moverlo a Dispose",
+            "Usar @bind",
+            "Cambiar el nombre de cascada"
+          ],
+          "correct": "A",
+          "explanation": "DOM/JS requiere un elemento interactivo renderizado.",
+          "citation": "Lifecycle — after-render callbacks; prerendering",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t27-lo-188",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Un componente sigue recibiendo eventos tras navegar fuera. ¿Qué revisar?",
+          "options": [
+            "Dispose/DisposeAsync y la cancelación de suscripciones",
+            "El color de CSS",
+            "La plantilla",
+            "La key solamente"
+          ],
+          "correct": "A",
+          "explanation": "La limpieza evita callbacks posteriores.",
+          "citation": "Lifecycle — disposal",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t27-lo-189",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Un handler de evento necesita el elemento de una fila. ¿Qué técnica permite conservar el dato?",
+          "options": [
+            "Un lambda que captura el elemento",
+            "Cambiar la ruta",
+            "Usar solo StateHasChanged",
+            "Crear un valor cascada global"
+          ],
+          "correct": "A",
+          "explanation": "El lambda puede cerrar sobre el elemento.",
+          "citation": "Event handling — lambda event handlers",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t27-lo-190",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Un padre comparte un contexto por cinco niveles y la API queda repetitiva. ¿Qué mecanismo ayuda?",
+          "options": [
+            "CascadingValue/CascadingParameter",
+            "Cinco servicios singleton",
+            "HTML raw",
+            "Una key dinámica"
+          ],
+          "correct": "A",
+          "explanation": "La cascada evita pasar el contexto por cada nivel.",
+          "citation": "Cascading values and parameters — cascading parameters",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t27-lo-191",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Una cascada mutable provoca renders inesperados en muchos hijos. ¿Qué revisar?",
+          "options": [
+            "El diseño del estado compartido y cuándo se notifica el cambio",
+            "El nombre del assembly",
+            "El tipo de CSS",
+            "El evento click solamente"
+          ],
+          "correct": "A",
+          "explanation": "Los cambios amplios deben controlarse.",
+          "citation": "Cascading values and parameters — cascading updates",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t27-lo-192",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Un componente enlazable expone Value pero no ValueChanged. ¿Qué resultado esperar?",
+          "options": [
+            "No ofrece binding bidireccional completo",
+            "Se convierte en formulario",
+            "Se crea automáticamente el callback",
+            "El DOM queda disponible"
+          ],
+          "correct": "A",
+          "explanation": "Falta el canal de cambio.",
+          "citation": "Data binding — component binding",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t27-lo-193",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Un componente intenta acceder a @ref en OnParametersSet y recibe un estado no listo. ¿Qué revisar?",
+          "options": [
+            "Esperar a OnAfterRender",
+            "Cambiar a OnInitialized",
+            "Usar CascadingValue",
+            "Añadir Required"
+          ],
+          "correct": "A",
+          "explanation": "La referencia se asigna después del render.",
+          "citation": "Components — @ref lifecycle",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t27-lo-194",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Un componente hace trabajo asíncrono bloqueante en un click. ¿Qué mejorar?",
+          "options": [
+            "Usar un handler async que devuelva Task",
+            "Cambiar la key",
+            "Usar CSS isolation",
+            "Crear un singleton"
+          ],
+          "correct": "A",
+          "explanation": "Task integra el trabajo sin bloquear innecesariamente.",
+          "citation": "Event handling — async handlers",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t27-lo-195",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "Una acción de enlace debe impedir que el navegador siga el comportamiento por defecto. ¿Qué usar?",
+          "options": [
+            "preventDefault",
+            "stopPropagation únicamente",
+            "@key",
+            "CascadingParameter"
+          ],
+          "correct": "A",
+          "explanation": "preventDefault controla la acción predeterminada.",
+          "citation": "Event handling — preventDefault",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t27-lo-196",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "Un evento no debe alcanzar handlers ascendientes. ¿Qué usar?",
+          "options": [
+            "stopPropagation",
+            "preventDefault únicamente",
+            "ValueChanged",
+            "OnAfterRender"
+          ],
+          "correct": "A",
+          "explanation": "stopPropagation limita la propagación.",
+          "citation": "Event handling — stopPropagation",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t27-lo-197",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "Una UI debe renderizar diferentes tarjetas para cada consumidor de una lista. ¿Qué exponer?",
+          "options": [
+            "RenderFragment<TItem>",
+            "Solo ElementReference",
+            "Solo CascadingParameter",
+            "Una key aleatoria"
+          ],
+          "correct": "A",
+          "explanation": "La plantilla tipada permite presentación personalizada.",
+          "citation": "Templated components — RenderFragment<TValue>",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t27-lo-198",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "Un padre cambia parámetros del hijo y el hijo conserva estado incompatible. ¿Qué revisar?",
+          "options": [
+            "OnParametersSet y la separación entre parámetros y estado local",
+            "CSS global",
+            "preventDefault",
+            "La configuración JSON"
+          ],
+          "correct": "A",
+          "explanation": "Los nuevos parámetros pueden requerir reconciliar estado.",
+          "citation": "Lifecycle — parameter-set callbacks",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t27-lo-199",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "Un componente cambia estado desde una suscripción externa y no se actualiza. ¿Qué falta?",
+          "options": [
+            "Notificar StateHasChanged mediante el contexto adecuado",
+            "Usar @typeparam",
+            "Cambiar la key",
+            "Añadir Required"
+          ],
+          "correct": "A",
+          "explanation": "El cambio externo debe entrar al flujo de render.",
+          "citation": "Rendering — external state changes",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t27-lo-200",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué diseño reúne una API de componente mantenible?",
+          "options": [
+            "Parámetros explícitos, callbacks tipados, binding Value/ValueChanged, cascadas controladas y disposición",
+            "Mutaciones directas y timers sin Dispose",
+            "DOM manual antes del render",
+            "Cascadas globales para todo"
+          ],
+          "correct": "A",
+          "explanation": "El diseño separa contratos, estado y ciclo de vida.",
+          "citation": "Components; data binding; lifecycle",
+          "source_id": "BLAZOR-10"
+        }
+      ]
+    }
+  ]
+}
