@@ -26348,3 +26348,1028 @@ SEED_QUESTIONS.extend([
     }
 ])
 # QUESTION_BANK_ACCEPTED_TOPIC_40_LOT_10_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_39_LOT_06_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 39,
+        "question": "¿Con qué criterio se seleccionan los sistemas de identificación del personal de la Administración General del Estado?",
+        "option_a": "Según el nivel de seguridad del trámite conforme al ENS",
+        "option_b": "Según el importe del expediente",
+        "option_c": "Según la provincia del empleado",
+        "option_d": "Según el número de documentos",
+        "correct": "A",
+        "explanation": "El artículo 24.1 vincula la elección al nivel de seguridad del trámite conforme al Esquema Nacional de Seguridad."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué certificados pueden usar específicamente los empleados públicos para firmar?",
+        "option_a": "Certificados electrónicos cualificados facilitados a sus empleados",
+        "option_b": "Certificados de factura electrónica de proveedores",
+        "option_c": "Contraseñas de acceso al portal",
+        "option_d": "Códigos postales de la oficina",
+        "correct": "A",
+        "explanation": "El artículo 24.2 contempla certificados cualificados facilitados específicamente al personal."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Para qué puede utilizarse un sistema de identificación basado en repositorios de empleados?",
+        "option_a": "Para relacionar al personal con servicios y aplicaciones necesarios para sus funciones",
+        "option_b": "Para sustituir el registro contable",
+        "option_c": "Para emitir facturas a terceros",
+        "option_d": "Para adjudicar contratos",
+        "correct": "A",
+        "explanation": "El repositorio puede relacionar empleados con servicios y aplicaciones necesarios para ejercer sus funciones y debe cumplir el ENS."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué pueden recoger los registros de personal de la Administración General del Estado?",
+        "option_a": "Datos para la identificación electrónica de empleados públicos",
+        "option_b": "Las claves privadas de los ciudadanos",
+        "option_c": "El contenido de todas las facturas",
+        "option_d": "Los expedientes de contratación completos",
+        "correct": "A",
+        "explanation": "El artículo 24.4 permite recoger y ceder datos identificativos a repositorios de identidades de empleados."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué efecto tienen los documentos transmitidos en un entorno cerrado de comunicaciones?",
+        "option_a": "Se consideran válidos para autenticar e identificar emisores y receptores en las condiciones reglamentarias",
+        "option_b": "Se consideran siempre contratos",
+        "option_c": "No producen ningún efecto",
+        "option_d": "Solo sirven como borradores",
+        "correct": "A",
+        "explanation": "El artículo 25.1 reconoce esa validez en las condiciones previstas."
+    },
+    {
+        "topic_num": 39,
+        "question": "Si los participantes de un entorno cerrado pertenecen a la misma Administración, ¿quién fija sus condiciones?",
+        "option_a": "La propia Administración",
+        "option_b": "El proveedor de certificados",
+        "option_c": "El registro mercantil",
+        "option_d": "La Comisión Europea",
+        "correct": "A",
+        "explanation": "La Administración participante fija las condiciones y garantías, incluida la relación de emisores y receptores autorizados."
+    },
+    {
+        "topic_num": 39,
+        "question": "Si los participantes de un entorno cerrado pertenecen a distintas Administraciones, ¿cómo se fijan las condiciones?",
+        "option_a": "Mediante un convenio entre ellas",
+        "option_b": "Mediante una factura electrónica",
+        "option_c": "Mediante una resolución del proveedor",
+        "option_d": "Mediante una comparecencia presencial",
+        "correct": "A",
+        "explanation": "El artículo 25.3 exige un convenio entre las Administraciones participantes."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué debe garantizar siempre un entorno cerrado de comunicaciones?",
+        "option_a": "Su seguridad y la protección de los datos transmitidos",
+        "option_b": "La gratuidad de todos los trámites",
+        "option_c": "La publicación de datos personales",
+        "option_d": "La eliminación de los registros",
+        "correct": "A",
+        "explanation": "El artículo 25.5 remite al ENS para seguridad del entorno y protección de datos."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué requisito previo permite a una persona interesada identificarse electrónicamente ante una Administración?",
+        "option_a": "Un registro previo como usuario que permita garantizar su identidad",
+        "option_b": "Una factura pagada",
+        "option_c": "Un contrato de suministro",
+        "option_d": "Una comparecencia anual",
+        "correct": "A",
+        "explanation": "El artículo 26.1 exige un registro previo como usuario que permita garantizar la identidad."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué sistema de identificación debe admitirse para todo procedimiento aunque también se admita otro sistema?",
+        "option_a": "Los sistemas basados en certificados cualificados de firma o sello indicados en el artículo 26.2",
+        "option_b": "Cualquier contraseña personal",
+        "option_c": "Solo el correo electrónico",
+        "option_d": "Solo la identificación presencial",
+        "correct": "A",
+        "explanation": "El último párrafo del artículo 26.2 garantiza esas opciones de certificados para todo procedimiento."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué lista deben integrar los prestadores de certificados cualificados admitidos para identificación?",
+        "option_a": "La Lista de confianza de prestadores cualificados de servicios de confianza",
+        "option_b": "El registro contable de facturas",
+        "option_c": "El directorio de oficinas",
+        "option_d": "La base de datos de subvenciones",
+        "correct": "A",
+        "explanation": "Los certificados admitidos deben ser expedidos por prestadores incluidos en la Lista de confianza."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué datos mínimos debe contener un certificado cualificado de firma para identificar a una persona física?",
+        "option_a": "Nombre, apellidos y un número identificativo inequívoco",
+        "option_b": "Solo una dirección de correo",
+        "option_c": "Solo el municipio",
+        "option_d": "Solo el número de expediente",
+        "correct": "A",
+        "explanation": "El artículo 27.1 enumera nombre, apellidos y DNI, NIE, NICC o NIF inequívoco."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué datos mínimos debe contener el certificado cualificado de representante de una persona jurídica?",
+        "option_a": "Denominación y NIF de la persona jurídica, además de datos identificativos del representante",
+        "option_b": "Solo el nombre comercial",
+        "option_c": "Solo el domicilio social",
+        "option_d": "Solo el código postal",
+        "correct": "A",
+        "explanation": "El artículo 27.2 exige datos de la entidad y del representante."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué datos mínimos contiene un certificado cualificado de sello de una persona jurídica?",
+        "option_a": "Denominación y NIF de la persona jurídica",
+        "option_b": "Nombre y apellidos de cualquier empleado",
+        "option_c": "Solo una URL",
+        "option_d": "Solo la fecha de emisión",
+        "correct": "A",
+        "explanation": "El artículo 27.3 exige la denominación y el NIF de la persona jurídica."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué marco deben respetar los sistemas de clave concertada para identificar a personas físicas?",
+        "option_a": "El Esquema Nacional de Seguridad",
+        "option_b": "El registro de facturas",
+        "option_c": "El perfil de contratante",
+        "option_d": "La normativa postal únicamente",
+        "correct": "A",
+        "explanation": "El artículo 28.1 exige el ajuste al ENS y determinados atributos mínimos."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Quién autoriza previamente los sistemas de clave concertada admitidos por las Administraciones?",
+        "option_a": "La Secretaría General de Administración Digital",
+        "option_b": "La oficina contable destinataria",
+        "option_c": "El proveedor de correo",
+        "option_d": "El registro mercantil",
+        "correct": "A",
+        "explanation": "El artículo 28.2 atribuye la autorización previa a la Secretaría General de Administración Digital."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué órgano puede aprobar en el ámbito estatal la creación de un nuevo sistema de identificación?",
+        "option_a": "El titular del ministerio o del organismo competente, según el ámbito material",
+        "option_b": "Cualquier empleado público",
+        "option_c": "El proveedor del sistema",
+        "option_d": "La persona interesada",
+        "correct": "A",
+        "explanation": "El artículo 28.3 establece la aprobación por orden o resolución del órgano competente, previa autorización."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué sistemas de firma de las personas interesadas son válidos con carácter general?",
+        "option_a": "Firma cualificada o avanzada basada en certificados cualificados, sello cualificado o avanzado y otros sistemas válidos registrados",
+        "option_b": "Solo una contraseña de correo",
+        "option_c": "Solo una firma manuscrita escaneada",
+        "option_d": "Solo una llamada telefónica",
+        "correct": "A",
+        "explanation": "El artículo 29.1 enumera esas categorías de sistemas de firma."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué debe permitir un sistema de firma de una persona interesada a la Administración?",
+        "option_a": "Verificar los datos de la firma y vincular la identidad con el acto de firma",
+        "option_b": "Modificar el documento sin registro",
+        "option_c": "Ocultar la identidad del firmante",
+        "option_d": "Evitar toda comprobación",
+        "correct": "A",
+        "explanation": "El artículo 29.3 exige que pueda verificarse la firma y vincularse con la identidad."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Cuándo puede una Administración admitir un sistema de identificación como sistema de firma?",
+        "option_a": "Cuando la norma aplicable lo disponga y el sistema acredite voluntad y consentimiento",
+        "option_b": "Cuando el usuario lo pida por correo",
+        "option_c": "Cuando exista una factura pendiente",
+        "option_d": "Cuando no pueda verificarse la identidad",
+        "correct": "A",
+        "explanation": "El artículo 29.5 permite esa admisión si la normativa lo dispone expresamente y se acredita autenticidad de voluntad y consentimiento."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_39_LOT_06_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_39_LOT_07_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 39,
+        "question": "¿Qué condición se exige a una persona interesada que carece de medios para que un funcionario habilitado firme por ella?",
+        "option_a": "Identificación ante el funcionario y consentimiento expreso",
+        "option_b": "Pago de una tasa",
+        "option_c": "Presentación de una factura",
+        "option_d": "Autorización del proveedor",
+        "correct": "A",
+        "explanation": "El artículo 30.1 exige identificación y consentimiento expreso, dejando constancia escrita."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué documentación entrega el funcionario habilitado tras realizar el trámite?",
+        "option_a": "La documentación acreditativa y copia del consentimiento expreso",
+        "option_b": "Solo un correo de confirmación",
+        "option_c": "Solo una tarjeta de visita",
+        "option_d": "El expediente de otra persona",
+        "correct": "A",
+        "explanation": "El funcionario debe entregar la documentación del trámite y copia del consentimiento firmado."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Dónde debe estar inscrito el funcionario habilitado en el ámbito estatal?",
+        "option_a": "En el Registro de Funcionarios Habilitados de la Administración General del Estado",
+        "option_b": "En el registro contable",
+        "option_c": "En el perfil de contratante",
+        "option_d": "En la BDNS",
+        "correct": "A",
+        "explanation": "El artículo 30.2 exige la inscripción estatal para esa actuación."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Dónde se mantiene la relación pública de trámites que pueden realizarse mediante funcionario habilitado?",
+        "option_a": "En el PAGe y en las sedes electrónicas correspondientes",
+        "option_b": "Solo en una oficina física",
+        "option_c": "Solo en el BOE",
+        "option_d": "Solo en el registro mercantil",
+        "correct": "A",
+        "explanation": "El artículo 30.2 exige publicar y mantener actualizada esa relación en los puntos indicados."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué tres grupos de personal pueden constar en el Registro de Funcionarios Habilitados?",
+        "option_a": "Quienes identifican o firman por interesados, expiden copias auténticas y atienden oficinas de registro",
+        "option_b": "Solo personal de contratación",
+        "option_c": "Solo personal de archivos",
+        "option_d": "Solo proveedores externos",
+        "correct": "A",
+        "explanation": "El artículo 31.1 enumera esos tres grupos de personal habilitado."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Quién gestiona el Registro de Funcionarios Habilitados estatal?",
+        "option_a": "La Secretaría de Estado de Política Territorial con colaboración de la Secretaría General de Administración Digital",
+        "option_b": "El registro mercantil",
+        "option_c": "El Ministerio de Justicia en solitario",
+        "option_d": "Cada proveedor de firma",
+        "correct": "A",
+        "explanation": "El artículo 31.2 establece esa gestión colaborativa."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Con qué registros debe ser plenamente interoperable el registro estatal de funcionarios habilitados?",
+        "option_a": "Con los registros o sistemas equivalentes de comunidades autónomas y entidades locales",
+        "option_b": "Solo con el registro contable",
+        "option_c": "Solo con el PAGe",
+        "option_d": "Con ningún registro externo",
+        "correct": "A",
+        "explanation": "El artículo 31.3 exige interoperabilidad para comprobar la validez de las habilitaciones."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Quién puede actuar como representante ante una Administración?",
+        "option_a": "Una persona física con capacidad de obrar o una persona jurídica cuando sus estatutos lo prevean",
+        "option_b": "Solo un funcionario",
+        "option_c": "Solo una entidad colaboradora",
+        "option_d": "Solo el titular de la sede",
+        "correct": "A",
+        "explanation": "El artículo 32.1 admite esas dos posibilidades de representación."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué medio de acreditación de representación menciona expresamente el artículo 32?",
+        "option_a": "Apoderamiento apud acta, inscripción registral, certificado cualificado o documento público",
+        "option_b": "Solo una llamada",
+        "option_c": "Solo una factura",
+        "option_d": "Solo un mensaje de texto",
+        "correct": "A",
+        "explanation": "El artículo 32.3 enumera esos medios válidos que dejan constancia fidedigna."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué obligación tiene el representante de una persona obligada a relacionarse electrónicamente?",
+        "option_a": "Relacionarse electrónicamente en el ejercicio de la representación",
+        "option_b": "Presentarse siempre en papel",
+        "option_c": "Usar solo correo postal",
+        "option_d": "Renunciar al expediente",
+        "correct": "A",
+        "explanation": "El artículo 32.2 extiende la obligación electrónica al representante."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué puede hacer una Administración con personas o entidades autorizadas para representar a interesados?",
+        "option_a": "Habilitarlas para determinadas transacciones electrónicas, con carácter general o específico",
+        "option_b": "Convertirlas en órganos judiciales",
+        "option_c": "Darles acceso a todos los expedientes",
+        "option_d": "Excluirlas de todo trámite",
+        "correct": "A",
+        "explanation": "La habilitación puede ser general o específica para determinadas transacciones."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué apoderamientos se inscriben en el registro estatal de apoderamientos?",
+        "option_a": "Los poderes generales, los de actuación ante la AGE y los limitados a trámites determinados en los términos legales",
+        "option_b": "Solo los poderes notariales extranjeros",
+        "option_c": "Solo las autorizaciones verbales",
+        "option_d": "Solo los contratos menores",
+        "correct": "A",
+        "explanation": "El artículo 33.1 describe esas categorías de poderes inscribibles."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Desde dónde es accesible el registro estatal de apoderamientos?",
+        "option_a": "Desde la sede electrónica del PAGe estatal y las sedes de la AGE y sus organismos",
+        "option_b": "Solo desde una oficina presencial",
+        "option_c": "Solo desde el perfil de contratante",
+        "option_d": "Solo desde FACe",
+        "correct": "A",
+        "explanation": "El artículo 33.2 establece esos puntos de acceso."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué carácter tienen los registros de apoderamientos respecto de su publicidad?",
+        "option_a": "No son públicos; cada interesado accede a los poderes en los que es poderdante o apoderado",
+        "option_b": "Son públicos sin limitación",
+        "option_c": "Solo son públicos para proveedores",
+        "option_d": "No permiten acceso a nadie",
+        "correct": "A",
+        "explanation": "El artículo 33.4 niega el carácter público general y limita el acceso a los interesados vinculados."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué alcance puede tener un certificado cualificado de representante de persona jurídica?",
+        "option_a": "General para cualquier actuación ante cualquier Administración, si cumple los requisitos exigidos",
+        "option_b": "Solo para una factura concreta",
+        "option_c": "Siempre limitado a una oficina",
+        "option_d": "Nunca sirve para representar",
+        "correct": "A",
+        "explanation": "El artículo 34.1 contempla el certificado de representante con poder general y alcance ante cualquier Administración."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué debe aportar quien alegue representación mediante documento notarial o certificación mercantil?",
+        "option_a": "La certificación registral electrónica o el código seguro u otro sistema de acceso y verificación",
+        "option_b": "Solo una copia sin referencia",
+        "option_c": "Solo un correo del notario",
+        "option_d": "Una factura electrónica",
+        "correct": "A",
+        "explanation": "El artículo 35.1 exige la certificación electrónica o un sistema que permita acceder y verificarla."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué deben hacer las Administraciones para comprobar la vigencia de una representación mercantil?",
+        "option_a": "Consultar electrónicamente y gratuitamente el Registro Mercantil",
+        "option_b": "Solicitar una factura al representante",
+        "option_c": "Publicar un anuncio en redes",
+        "option_d": "Pedir autorización a Cl@ve",
+        "correct": "A",
+        "explanation": "El artículo 35.3 exige consulta electrónica y gratuita del Registro Mercantil."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué debe especificar el convenio de habilitación de representantes de terceros?",
+        "option_a": "Procedimientos y trámites, condiciones y obligaciones, y presunción de validez de la representación",
+        "option_b": "Solo el nombre del proveedor",
+        "option_c": "Solo el precio del servicio",
+        "option_d": "Solo la duración de la contraseña",
+        "correct": "A",
+        "explanation": "El artículo 36.2 establece esos contenidos mínimos del convenio."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué poder no puede inscribirse en un registro particular de un organismo estatal?",
+        "option_a": "El poder general previsto en el artículo 6.4.a de la Ley 39/2015",
+        "option_b": "Un poder para un trámite concreto",
+        "option_c": "Un poder inscrito en el registro general",
+        "option_d": "Una representación apud acta electrónica",
+        "correct": "A",
+        "explanation": "El artículo 33.3 excluye de los registros particulares los poderes generales del artículo 6.4.a."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Dónde se publican los trámites que pueden realizar los representantes habilitados?",
+        "option_a": "En el PAGe estatal y en las sedes electrónicas competentes",
+        "option_b": "Solo en el registro contable",
+        "option_c": "Solo en un archivo interno",
+        "option_d": "No se publican",
+        "correct": "A",
+        "explanation": "El artículo 36.3 exige su publicación en las sedes indicadas."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_39_LOT_07_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_39_LOT_08_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 39,
+        "question": "¿Qué deben garantizar los registros electrónicos de las Administraciones?",
+        "option_a": "Interoperabilidad plena, compatibilidad informática e interconexión",
+        "option_b": "Exclusivamente atención presencial",
+        "option_c": "La publicación de todas las solicitudes",
+        "option_d": "El almacenamiento de contraseñas",
+        "correct": "A",
+        "explanation": "El artículo 37.1 exige interoperabilidad, compatibilidad e interconexión."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué documento debe asentarse en el Registro Electrónico General de cada Administración?",
+        "option_a": "Todo documento presentado o recibido en cualquiera de sus órganos y entidades dependientes",
+        "option_b": "Solo las facturas aprobadas",
+        "option_c": "Solo las resoluciones judiciales",
+        "option_d": "Solo los escritos en papel",
+        "correct": "A",
+        "explanation": "El artículo 37.2 atribuye al registro general el asiento de todo documento presentado o recibido."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué clase de documentos deben admitir los registros electrónicos?",
+        "option_a": "Documentos normalizados y cualquier solicitud, escrito o comunicación dirigido a una Administración",
+        "option_b": "Solo formularios normalizados",
+        "option_c": "Solo documentos firmados presencialmente",
+        "option_d": "Solo facturas",
+        "correct": "A",
+        "explanation": "El artículo 37.3 contempla documentos normalizados y solicitudes o comunicaciones no normalizadas."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué sucede con documentos cuyo régimen especial exige otra forma de presentación?",
+        "option_a": "No se tienen por presentados en ese registro y se informa al interesado de los requisitos aplicables",
+        "option_b": "Se aceptan sin condiciones",
+        "option_c": "Se convierten en facturas",
+        "option_d": "Se archivan sin aviso",
+        "correct": "A",
+        "explanation": "El artículo 37.4 remite al régimen especial y obliga a informar de sus requisitos."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Quién gestiona el Registro Electrónico General de la Administración General del Estado?",
+        "option_a": "El Ministerio de Política Territorial en colaboración con el Ministerio de Asuntos Económicos",
+        "option_b": "Cada oficina de registro por separado",
+        "option_c": "El registro mercantil",
+        "option_d": "La entidad colaboradora",
+        "correct": "A",
+        "explanation": "El artículo 38.1 establece esa gestión colaborativa."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué eficacia tienen las anotaciones del Registro General estatal?",
+        "option_a": "Plena eficacia y validez para todas las Administraciones Públicas",
+        "option_b": "Solo eficacia interna del ministerio",
+        "option_c": "Solo validez tributaria",
+        "option_d": "Ninguna eficacia jurídica",
+        "correct": "A",
+        "explanation": "El artículo 38.2 reconoce plena eficacia y validez para todas las Administraciones."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Con qué marco deben cumplir los formatos y estándares que se exijan para documentos registrales?",
+        "option_a": "Con el Esquema Nacional de Interoperabilidad y su normativa",
+        "option_b": "Con las reglas del proveedor privado",
+        "option_c": "Con la normativa postal",
+        "option_d": "Con el perfil de contratante",
+        "correct": "A",
+        "explanation": "El artículo 39.1 exige ajuste al ENI y normativa correspondiente."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué debe hacer el interesado si se detecta código malicioso en un documento ya registrado?",
+        "option_a": "Subsanarlo conforme al procedimiento aplicable",
+        "option_b": "Volver a presentar una factura",
+        "option_c": "Solicitar un certificado de sede",
+        "option_d": "Eliminar su expediente",
+        "correct": "A",
+        "explanation": "El artículo 39.2 prevé requerir la subsanación del documento afectado."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué valor tiene la digitalización normativa de un original en papel presentado en una oficina de asistencia?",
+        "option_a": "Genera una copia electrónica auténtica con la misma validez para su tramitación",
+        "option_b": "Solo genera una imagen sin valor",
+        "option_c": "Sustituye al expediente completo",
+        "option_d": "Impide devolver el original siempre",
+        "correct": "A",
+        "explanation": "El artículo 39.3 reconoce la copia electrónica auténtica con la misma validez para la tramitación."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué alternativa existe cuando los documentos superan la capacidad del Sistema de Interconexión de Registros?",
+        "option_a": "Ponerlos a disposición desde un repositorio de intercambio de ficheros",
+        "option_b": "Rechazarlos sin aviso",
+        "option_c": "Imprimirlos obligatoriamente",
+        "option_d": "Convertirlos en una factura",
+        "correct": "A",
+        "explanation": "El artículo 39.4 permite sustituir la remisión por la puesta a disposición desde un repositorio."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Quién archiva los documentos intercambiados por registro?",
+        "option_a": "El órgano competente para tramitar el procedimiento",
+        "option_b": "El proveedor de la sede",
+        "option_c": "El interesado siempre",
+        "option_d": "El registro mercantil",
+        "correct": "A",
+        "explanation": "El artículo 39.6 atribuye el archivo al órgano competente según su normativa."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué naturaleza tienen las Oficinas de asistencia en materia de registros?",
+        "option_a": "Naturaleza de órgano administrativo",
+        "option_b": "Naturaleza de empresa privada",
+        "option_c": "Naturaleza de registro mercantil",
+        "option_d": "Naturaleza de órgano judicial",
+        "correct": "A",
+        "explanation": "El artículo 40.1 les reconoce naturaleza de órgano administrativo."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué directorio debe tener la Administración General del Estado sobre esas oficinas?",
+        "option_a": "Un directorio geográfico gestionado por el Ministerio de Política Territorial",
+        "option_b": "Un directorio de contraseñas",
+        "option_c": "Un registro de facturas",
+        "option_d": "Un listado de licitadores",
+        "correct": "A",
+        "explanation": "El artículo 40.2 exige un directorio geográfico con actualización permanente."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué función realiza una oficina de asistencia con documentos en papel?",
+        "option_a": "Los digitaliza y los anota en el registro electrónico correspondiente",
+        "option_b": "Los destruye inmediatamente",
+        "option_c": "Los convierte en contratos",
+        "option_d": "Los remite solo por correo postal",
+        "correct": "A",
+        "explanation": "La digitalización y anotación registral es una función expresa de estas oficinas."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué información comunica la oficina sobre el destino de una solicitud?",
+        "option_a": "El código de identificación del órgano, organismo o entidad destinataria",
+        "option_b": "La contraseña del expediente",
+        "option_c": "El importe de la factura",
+        "option_d": "El nombre de otro interesado",
+        "correct": "A",
+        "explanation": "El artículo 40.3.h incluye comunicar el código de identificación del destinatario."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué recibo expiden esas oficinas?",
+        "option_a": "El que acredita la fecha y hora de presentación",
+        "option_b": "Un certificado de subvención",
+        "option_c": "Una factura electrónica",
+        "option_d": "Un certificado de sede",
+        "correct": "A",
+        "explanation": "El artículo 40.3.c atribuye la expedición del recibo de fecha y hora."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué copias pueden expedir las oficinas tras digitalizar documentos?",
+        "option_a": "Copias electrónicas auténticas de originales o copias auténticas presentadas",
+        "option_b": "Copias privadas sin valor",
+        "option_c": "Solo fotocopias en papel",
+        "option_d": "Solo certificados de firma",
+        "correct": "A",
+        "explanation": "Las oficinas pueden expedir copias electrónicas auténticas para incorporarlas al expediente."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué información pueden proporcionar sobre identificación y firma electrónica?",
+        "option_a": "Información para presentar solicitudes y comunicaciones en trámites habilitados",
+        "option_b": "Las claves privadas de usuarios",
+        "option_c": "La información de expedientes ajenos",
+        "option_d": "Solo horarios de contratación",
+        "correct": "A",
+        "explanation": "El artículo 40.3.e incluye esa función de información y asistencia."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Cuándo puede una oficina practicar una notificación personalmente?",
+        "option_a": "Cuando el interesado o representante comparece espontáneamente y solicita la comunicación o notificación",
+        "option_b": "Siempre que lo decida el proveedor",
+        "option_c": "Solo después de una factura",
+        "option_d": "Nunca",
+        "correct": "A",
+        "explanation": "El artículo 40.3.g prevé esa actuación ante comparecencia espontánea y solicitud."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué pueden iniciar presencialmente las oficinas de asistencia?",
+        "option_a": "La tramitación del apoderamiento apud acta",
+        "option_b": "La adjudicación de un contrato",
+        "option_c": "La creación de una subvención",
+        "option_d": "La emisión de un certificado cualificado",
+        "correct": "A",
+        "explanation": "El artículo 40.3.i les atribuye iniciar esa tramitación."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_39_LOT_08_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_39_LOT_09_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 39,
+        "question": "¿Qué fecha debe comunicarse electrónicamente tras presentar un documento en registro?",
+        "option_a": "La fecha y, en su caso, hora efectiva de inicio del cómputo de plazos",
+        "option_b": "La fecha de nacimiento del interesado",
+        "option_c": "La fecha de la última factura",
+        "option_d": "La fecha de creación de la sede",
+        "correct": "A",
+        "explanation": "El artículo 41.a exige comunicar el inicio efectivo del cómputo de plazos."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué información debe comunicarse sobre una solicitud recibida por el órgano competente?",
+        "option_a": "Fecha de recepción, plazo máximo para resolver y notificar, y efectos del silencio",
+        "option_b": "Solo el nombre del funcionario",
+        "option_c": "Solo el número de factura",
+        "option_d": "Solo la URL de la sede",
+        "correct": "A",
+        "explanation": "El artículo 41.b enumera esa información procedimental."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Cómo pueden practicarse las notificaciones electrónicas?",
+        "option_a": "Por comparecencia en sede, mediante la Dirección Electrónica Habilitada única o por ambos sistemas",
+        "option_b": "Solo por correo electrónico ordinario",
+        "option_c": "Solo mediante FACe",
+        "option_d": "Solo por teléfono",
+        "correct": "A",
+        "explanation": "El artículo 42.1 contempla sede, DEHú o ambos sistemas."
+    },
+    {
+        "topic_num": 39,
+        "question": "Si la notificación se pone a disposición en ambos sistemas, ¿qué momento se toma para los efectos jurídicos?",
+        "option_a": "El acceso o rechazo que ocurra primero, con sincronización entre sistemas",
+        "option_b": "El momento que elija el interesado después",
+        "option_c": "Siempre el último acceso",
+        "option_d": "La fecha de creación del expediente",
+        "correct": "A",
+        "explanation": "El artículo 42.1 establece tomar el primer acceso o rechazo y sincronizar el estado."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué efecto tiene la comparecencia voluntaria y acceso de una persona no obligada a relacionarse electrónicamente?",
+        "option_a": "Plenos efectos jurídicos",
+        "option_b": "Ningún efecto",
+        "option_c": "Solo efectos informativos",
+        "option_d": "Convierte el trámite en factura",
+        "correct": "A",
+        "explanation": "El artículo 42.2 reconoce plenos efectos a esa comparecencia y acceso o rechazo expreso."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué debe contener como mínimo el acuse de recibo de una notificación electrónica?",
+        "option_a": "Acto y destinatario, puesta a disposición y acceso o rechazo con fecha y hora",
+        "option_b": "Solo el nombre del portal",
+        "option_c": "Solo la dirección de correo",
+        "option_d": "Solo el número de registro",
+        "correct": "A",
+        "explanation": "El artículo 42.3 enumera esos elementos mínimos del acuse."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿En qué plazo debe comunicar la sucesión quien sucede al interesado?",
+        "option_a": "Quince días hábiles desde el hecho causante o inscripción de la defunción",
+        "option_b": "Diez días naturales desde cualquier aviso",
+        "option_c": "Un año desde la resolución",
+        "option_d": "No hay plazo",
+        "correct": "A",
+        "explanation": "El artículo 42.4 fija quince días hábiles para comunicar la sucesión."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Dónde se pone a disposición toda notificación cuyo emisor pertenezca al ámbito estatal?",
+        "option_a": "A través de la Dirección Electrónica Habilitada única",
+        "option_b": "Solo en la oficina de asistencia",
+        "option_c": "Solo en FACe",
+        "option_d": "Solo mediante correo postal",
+        "correct": "A",
+        "explanation": "El artículo 42.5 establece la puesta a disposición estatal a través de la DEHú."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué naturaleza tiene el aviso de puesta a disposición de una notificación?",
+        "option_a": "Es meramente informativo y su falta no invalida la notificación",
+        "option_b": "Es el acto administrativo principal",
+        "option_c": "Sustituye siempre a la notificación",
+        "option_d": "Es una factura",
+        "correct": "A",
+        "explanation": "El artículo 43.1 califica el aviso de informativo y mantiene la validez sin él."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿A qué dispositivo o dirección se envía el aviso de puesta a disposición?",
+        "option_a": "A los comunicados voluntariamente por el interesado, dispositivo, correo o ambos",
+        "option_b": "A cualquier teléfono encontrado",
+        "option_c": "Solo a una dirección postal",
+        "option_d": "Siempre a la del representante",
+        "correct": "A",
+        "explanation": "El aviso se envía a los medios de contacto electrónicos comunicados voluntariamente."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué debe hacer el interesado si deja de tener acceso al medio designado para avisos?",
+        "option_a": "Comunicar que no se realicen avisos en ese medio",
+        "option_b": "Esperar a la siguiente notificación",
+        "option_c": "Cambiar la resolución",
+        "option_d": "Presentar una factura",
+        "correct": "A",
+        "explanation": "El interesado debe comunicar la falta de operatividad o acceso al medio designado."
+    },
+    {
+        "topic_num": 39,
+        "question": "En un procedimiento iniciado de oficio, ¿qué puede ocurrir si un obligado no ha comunicado contacto electrónico?",
+        "option_a": "La primera notificación se realiza en papel y advierte del sistema posterior",
+        "option_b": "Se archiva el procedimiento",
+        "option_c": "Se notifica solo por Cl@ve Móvil",
+        "option_d": "Se anula el expediente",
+        "correct": "A",
+        "explanation": "El artículo 43.2 prevé esa primera notificación en papel con la advertencia correspondiente."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Quién gestiona la Dirección Electrónica Habilitada única?",
+        "option_a": "El Ministerio de Asuntos Económicos en colaboración con el Ministerio de Política Territorial",
+        "option_b": "Cada ayuntamiento por separado",
+        "option_c": "El proveedor de correo",
+        "option_d": "El registro mercantil",
+        "correct": "A",
+        "explanation": "El artículo 44.1 atribuye esa gestión colaborativa."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Dónde se aloja la Dirección Electrónica Habilitada única?",
+        "option_a": "En la sede electrónica del PAGe de la Administración General del Estado",
+        "option_b": "En el registro contable",
+        "option_c": "En cada oficina de asistencia",
+        "option_d": "En una plataforma privada",
+        "correct": "A",
+        "explanation": "El artículo 44.2 sitúa la DEHú en la sede electrónica del PAGe estatal."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué deben hacer las Administraciones para facilitar el acceso a todas las notificaciones mediante la DEHú?",
+        "option_a": "Colaborar para establecer sistemas interoperables",
+        "option_b": "Crear una factura por cada aviso",
+        "option_c": "Eliminar sus sedes",
+        "option_d": "Usar solo correo postal",
+        "correct": "A",
+        "explanation": "El artículo 44.3 exige colaboración para sistemas interoperables de acceso a notificaciones."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué plazo de puesta a disposición puede producir presunción de rechazo si no se accede?",
+        "option_a": "Diez días naturales",
+        "option_b": "Quince días hábiles",
+        "option_c": "Cinco meses",
+        "option_d": "Un año",
+        "correct": "A",
+        "explanation": "El artículo 44.5 remite a diez días naturales sin acceso para la presunción de rechazo."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué debe constar en la DEHú para que el trámite de notificación tenga efectos jurídicos?",
+        "option_a": "Fecha y hora de acceso, rechazo expreso o vencimiento del plazo",
+        "option_b": "Solo el nombre de la Administración",
+        "option_c": "Solo la dirección IP",
+        "option_d": "Solo el asunto del correo",
+        "correct": "A",
+        "explanation": "El artículo 44.6 exige constancia temporal del acceso, rechazo o vencimiento."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué debe ocurrir con el estado de una notificación publicada en DEHú y sede?",
+        "option_a": "Debe sincronizarse automáticamente",
+        "option_b": "Debe mantenerse distinto en cada sistema",
+        "option_c": "Debe borrarse de la sede",
+        "option_d": "Debe trasladarse al registro contable",
+        "correct": "A",
+        "explanation": "El reglamento exige sincronización automática de ambos estados."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué información recibe la persona antes de acceder a una notificación en sede?",
+        "option_a": "Que acceso, rechazo expreso o transcurso de diez días naturales produce el trámite de notificación",
+        "option_b": "Que debe pagar una tasa",
+        "option_c": "Que debe usar FACe",
+        "option_d": "Que la notificación no tiene efectos",
+        "correct": "A",
+        "explanation": "El artículo 45.1 exige informar previamente de esos efectos."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Cuándo se entiende cumplida la obligación de notificar en plazo?",
+        "option_a": "Con la puesta a disposición en la sede o en la Dirección Electrónica Habilitada única",
+        "option_b": "Solo cuando se imprime el documento",
+        "option_c": "Solo tras una llamada",
+        "option_d": "Cuando se paga la factura",
+        "correct": "A",
+        "explanation": "El artículo 45.3 considera cumplida la obligación con la puesta a disposición."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_39_LOT_09_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_39_LOT_10_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 39,
+        "question": "¿Qué es un documento administrativo electrónico?",
+        "option_a": "Información electrónica identificable y tratable, generada, recibida o incorporada por una Administración en sus funciones",
+        "option_b": "Cualquier correo privado",
+        "option_c": "Solo una factura",
+        "option_d": "Solo una copia escaneada sin metadatos",
+        "correct": "A",
+        "explanation": "El artículo 46.1 define el documento administrativo electrónico con esos elementos."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué puede sustituir la entrega de un ejemplar de documento administrativo electrónico?",
+        "option_a": "Los datos necesarios para acceder a él por medios electrónicos adecuados",
+        "option_b": "Una factura en papel",
+        "option_c": "Una llamada del funcionario",
+        "option_d": "Una copia sin identificación",
+        "correct": "A",
+        "explanation": "El artículo 46.2 permite entregar los datos de acceso adecuados."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué garantiza una copia auténtica de documento?",
+        "option_a": "La identidad del órgano que la realiza y la correspondencia de su contenido",
+        "option_b": "Solo el nombre del archivo",
+        "option_c": "Solo la fecha de descarga",
+        "option_d": "Solo la firma del interesado",
+        "correct": "A",
+        "explanation": "El artículo 47.1 exige garantizar identidad del órgano y contenido."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿De qué debe partir una copia auténtica?",
+        "option_a": "De un original o de otra copia auténtica",
+        "option_b": "De cualquier imagen de Internet",
+        "option_c": "De una factura no registrada",
+        "option_d": "De un documento destruido",
+        "correct": "A",
+        "explanation": "El artículo 47.2 exige partir de un original o copia auténtica."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué órganos estatales pueden expedir copias auténticas?",
+        "option_a": "Órganos emisores, custodios o archivadores, los previstos en sus normas y oficinas de asistencia",
+        "option_b": "Solo el proveedor de la sede",
+        "option_c": "Solo el registro mercantil",
+        "option_d": "Solo la persona interesada",
+        "correct": "A",
+        "explanation": "El artículo 48.1 enumera esos órganos competentes."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué valor tiene la copia electrónica generada al digitalizar un documento presentado en papel?",
+        "option_a": "El mismo valor que la copia presentada en papel",
+        "option_b": "Ningún valor",
+        "option_c": "Solo valor informativo",
+        "option_d": "Valor de factura",
+        "correct": "A",
+        "explanation": "El artículo 49 equipara su valor al de la copia en papel presentada."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué referencia temporal deben llevar los documentos administrativos electrónicos?",
+        "option_a": "Marca de tiempo o sello electrónico cualificado de tiempo, según proceda",
+        "option_b": "Solo una fecha escrita a mano",
+        "option_c": "Solo el número de expediente",
+        "option_d": "Ninguna referencia",
+        "correct": "A",
+        "explanation": "El artículo 50.1 establece esas modalidades de referencia temporal."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué se utiliza si la norma del procedimiento no exige sello electrónico cualificado de tiempo?",
+        "option_a": "La marca de tiempo",
+        "option_b": "La firma del proveedor",
+        "option_c": "El registro contable",
+        "option_d": "El correo ordinario",
+        "correct": "A",
+        "explanation": "El artículo 50.2 establece la marca de tiempo como regla en ausencia de exigencia de sello cualificado."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Cómo se folian los expedientes administrativos electrónicos?",
+        "option_a": "Mediante un índice electrónico autenticado",
+        "option_b": "Mediante una factura numerada",
+        "option_c": "Mediante documentos sin orden",
+        "option_d": "Mediante correo postal",
+        "correct": "A",
+        "explanation": "El artículo 51.1 exige un índice electrónico autenticado que garantice integridad y recuperación."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Puede un mismo documento electrónico formar parte de varios expedientes?",
+        "option_a": "Sí",
+        "option_b": "No, nunca",
+        "option_c": "Solo si está en papel",
+        "option_d": "Solo si se imprime",
+        "correct": "A",
+        "explanation": "El artículo 51.2 permite que un documento forme parte de distintos expedientes."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Cómo se satisface el derecho de acceso al expediente electrónico?",
+        "option_a": "Poniéndolo a disposición en el PAGe o sede y facilitando un localizador",
+        "option_b": "Enviando siempre una copia postal",
+        "option_c": "Publicándolo sin restricciones",
+        "option_d": "Remitiendo una factura",
+        "correct": "A",
+        "explanation": "El artículo 52 regula la puesta a disposición y el envío de la dirección o localizador."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Durante cuánto tiempo se conservan a disposición, como regla, documentos no devueltos tras su presentación?",
+        "option_a": "Seis meses",
+        "option_b": "Diez días naturales",
+        "option_c": "Dos años siempre",
+        "option_d": "Un día",
+        "correct": "A",
+        "explanation": "El artículo 53 fija seis meses, salvo que la Administración establezca un plazo mayor."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué deben conservar electrónicamente las Administraciones?",
+        "option_a": "Todos los documentos de expedientes y los documentos con valor probatorio creados fuera de un procedimiento",
+        "option_b": "Solo los contratos",
+        "option_c": "Solo las facturas pagadas",
+        "option_d": "Solo los documentos en papel",
+        "correct": "A",
+        "explanation": "El artículo 54.1 establece esa obligación de conservación electrónica."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué elementos mínimos debe comprender la conservación de documentos electrónicos?",
+        "option_a": "Identificación, contenido, metadatos, firma, estructura y formato",
+        "option_b": "Solo el título",
+        "option_c": "Solo la fecha",
+        "option_d": "Solo la firma manuscrita",
+        "correct": "A",
+        "explanation": "El artículo 54.3 enumera esos elementos mínimos."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué debe garantizar la preservación digital a largo plazo?",
+        "option_a": "Acceso y conservación de los documentos aunque se trasladen a otros formatos o soportes",
+        "option_b": "Solo la impresión de documentos",
+        "option_c": "La eliminación de metadatos",
+        "option_d": "La sustitución por facturas",
+        "correct": "A",
+        "explanation": "El artículo 54.4 permite migraciones que garanticen acceso y conservación y exige planificar preservación digital."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué es el archivo electrónico único de cada Administración?",
+        "option_a": "El conjunto de sistemas y servicios para gestionar, custodiar y recuperar documentos y expedientes finalizados",
+        "option_b": "Un registro de proveedores",
+        "option_c": "Una carpeta de facturas",
+        "option_d": "Un buzón de correo",
+        "correct": "A",
+        "explanation": "El artículo 55.1 define el archivo electrónico único con esas funciones."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿A través de qué sistema se realizan las interconexiones entre registros de Administraciones?",
+        "option_a": "El Sistema de Interconexión de Registros",
+        "option_b": "La Dirección Electrónica Habilitada única",
+        "option_c": "FACe",
+        "option_d": "La BDNS",
+        "correct": "A",
+        "explanation": "El artículo 60.2 exige utilizar el SIR para interconectar registros."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué deben permitir los sistemas estatales de registro respecto de las unidades de tramitación?",
+        "option_a": "Interoperabilidad con sus sistemas de gestión de expedientes",
+        "option_b": "Solo imprimir recibos",
+        "option_c": "Solo emitir facturas",
+        "option_d": "Solo recibir documentos en papel",
+        "correct": "A",
+        "explanation": "El artículo 60.3 exige esa interoperabilidad con los sistemas de gestión de expedientes."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué naturaleza tienen las transmisiones de datos realizadas mediante plataformas de intermediación?",
+        "option_a": "La de certificados administrativos necesarios para el procedimiento o actuación",
+        "option_b": "La de contratos menores",
+        "option_c": "La de facturas electrónicas",
+        "option_d": "La de avisos informativos",
+        "correct": "A",
+        "explanation": "El artículo 61.1 atribuye esa consideración a las transmisiones de datos previstas."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué garantizan las comunicaciones interadministrativas por medios electrónicos?",
+        "option_a": "La relación electrónica entre Administraciones y sus órganos, organismos y entidades vinculados",
+        "option_b": "La sustitución de la ley",
+        "option_c": "La eliminación del expediente",
+        "option_d": "La contratación automática",
+        "correct": "A",
+        "explanation": "El artículo 56 impone la relación electrónica interadministrativa en el ejercicio de competencias."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_39_LOT_10_END
