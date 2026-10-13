@@ -39673,3 +39673,1028 @@ SEED_QUESTIONS.extend([
     }
 ])
 # QUESTION_BANK_ACCEPTED_TOPIC_27_LOT_10_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_26_LOT_06_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 26,
+        "question": "¿Qué característica distingue el lugar de ejecución de Blazor Server?",
+        "option_a": "Los componentes se ejecutan en el servidor",
+        "option_b": "Los componentes solo se ejecutan en WebAssembly",
+        "option_c": "No existe servidor",
+        "option_d": "Se ejecutan en CSS",
+        "correct": "A",
+        "explanation": "Blazor Server ejecuta la lógica de componentes en el servidor."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué transporta normalmente un evento de UI en Blazor Server?",
+        "option_a": "La conexión entre navegador y servidor",
+        "option_b": "Un archivo CSS",
+        "option_c": "Una consulta local",
+        "option_d": "Una PWA cacheada",
+        "correct": "A",
+        "explanation": "Los eventos se envían mediante la conexión interactiva."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué mantiene el circuito de Blazor Server?",
+        "option_a": "Estado asociado a la conexión del cliente",
+        "option_b": "Los assets estáticos del CDN",
+        "option_c": "Solo el CSS global",
+        "option_d": "El código en el navegador",
+        "correct": "A",
+        "explanation": "El circuito conserva estado del cliente en servidor."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué implica una pestaña adicional en Blazor Server?",
+        "option_a": "Puede requerir su propio circuito",
+        "option_b": "Comparte siempre todo el estado de la primera",
+        "option_c": "No crea conexión",
+        "option_d": "Se convierte en PWA",
+        "correct": "A",
+        "explanation": "Cada pestaña representa una conexión/circuito independiente."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué ventaja inicial suele tener Blazor Server frente a WebAssembly?",
+        "option_a": "Menor descarga inicial de runtime y dependencias",
+        "option_b": "Cero necesidad de conexión",
+        "option_c": "Ejecución offline completa",
+        "option_d": "No necesita servidor",
+        "correct": "A",
+        "explanation": "El servidor evita descargar el runtime completo al navegador."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué dependencia operativa caracteriza a Blazor Server?",
+        "option_a": "Conectividad con el servidor para interacción",
+        "option_b": "Un navegador sin red",
+        "option_c": "Solo archivos locales",
+        "option_d": "Un Web View nativo obligatorio",
+        "correct": "A",
+        "explanation": "La interacción depende de la conexión al servidor."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué factor importa al escalar Blazor Server?",
+        "option_a": "Conexiones y estado de los clientes",
+        "option_b": "Solo tamaño de CSS",
+        "option_c": "El número de archivos README",
+        "option_d": "Solo el nombre de la ruta",
+        "correct": "A",
+        "explanation": "Cada cliente interactivo consume recursos asociados."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué servicio puede ayudar a escalar conexiones SignalR?",
+        "option_a": "Azure SignalR Service",
+        "option_b": "Azure Static CSS",
+        "option_c": "WebAssembly Runtime Service",
+        "option_d": "Razor Compiler CDN",
+        "correct": "A",
+        "explanation": "Azure SignalR Service puede distribuir la gestión de conexiones."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué ejecuta Blazor WebAssembly en el cliente?",
+        "option_a": "Los componentes sobre el runtime .NET basado en WebAssembly",
+        "option_b": "El servidor ASP.NET únicamente",
+        "option_c": "Un Web View nativo solamente",
+        "option_d": "CSS como código",
+        "correct": "A",
+        "explanation": "WebAssembly ejecuta la aplicación en el navegador."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué recursos debe descargar una aplicación WebAssembly?",
+        "option_a": "Runtime, dependencias y componentes publicados",
+        "option_b": "Solo una hoja CSS",
+        "option_c": "Solo el modelo de base de datos",
+        "option_d": "Un circuito server obligatorio",
+        "correct": "A",
+        "explanation": "La ejecución cliente requiere los recursos publicados."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué característica tiene un despliegue WebAssembly standalone?",
+        "option_a": "Puede servir assets como archivos estáticos",
+        "option_b": "Requiere circuito por pestaña",
+        "option_c": "Siempre ejecuta C# en servidor",
+        "option_d": "No puede usar HTTP",
+        "correct": "A",
+        "explanation": "La aplicación puede publicarse como assets estáticos."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué aporta el modelo WebAssembly hosted?",
+        "option_a": "Un backend ASP.NET Core que sirve el cliente y puede ofrecer API",
+        "option_b": "Eliminar el servidor por completo",
+        "option_c": "Ejecutar todo en CSS",
+        "option_d": "Impedir compartir código",
+        "correct": "A",
+        "explanation": "Hosted combina cliente WebAssembly y aplicación ASP.NET Core."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué permite compartir el modelo hosted?",
+        "option_a": "Código entre proyectos cliente y servidor cuando es compatible",
+        "option_b": "El circuito de todas las pestañas",
+        "option_c": "El DOM del navegador",
+        "option_d": "El CSS del CDN siempre",
+        "correct": "A",
+        "explanation": "El modelo puede incluir una biblioteca compartida."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Cómo puede comunicarse un cliente WebAssembly hosted con backend?",
+        "option_a": "Mediante una Web API",
+        "option_b": "Mediante el EditContext del servidor",
+        "option_c": "Mediante CSS isolation",
+        "option_d": "Mediante @key",
+        "correct": "A",
+        "explanation": "El cliente usa HTTP/API para comunicarse con el backend."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué significa que una PWA pueda tener capacidades offline?",
+        "option_a": "Puede usar APIs y almacenamiento del navegador según el modelo PWA",
+        "option_b": "El servidor nunca es necesario para todo",
+        "option_c": "El circuito se guarda en CSS",
+        "option_d": "Todo secreto queda protegido",
+        "correct": "A",
+        "explanation": "Las capacidades offline dependen de APIs del navegador y cache."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué factor influye especialmente en el arranque de WebAssembly?",
+        "option_a": "El tamaño del payload publicado",
+        "option_b": "El número de circuitos de servidor",
+        "option_c": "La cantidad de layouts Razor",
+        "option_d": "El nombre del assembly únicamente",
+        "correct": "A",
+        "explanation": "Más payload implica más descarga/arranque."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué ejecuta Blazor Hybrid?",
+        "option_a": "Componentes Razor dentro de una aplicación nativa con Web View",
+        "option_b": "Componentes solo en un CDN",
+        "option_c": "Código exclusivamente en SignalR",
+        "option_d": "Una PWA sin host",
+        "correct": "A",
+        "explanation": "Hybrid usa Web View de una app móvil/escritorio."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué comparten normalmente los modelos de hosting?",
+        "option_a": "La forma de construir componentes Razor",
+        "option_b": "Los mismos límites de ejecución y APIs",
+        "option_c": "El mismo payload",
+        "option_d": "El mismo circuito",
+        "correct": "A",
+        "explanation": "La sintaxis/composición de componentes es común aunque cambie el hosting."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué decisión es clave al comparar Server y WebAssembly?",
+        "option_a": "Dónde ejecutar lógica y cómo gestionar conexión/payload",
+        "option_b": "Solo el nombre del componente",
+        "option_c": "Solo el color de UI",
+        "option_d": "Solo la versión de CSS",
+        "correct": "A",
+        "explanation": "La comparación depende de ejecución, conectividad y descarga."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué escenario favorece assets estáticos?",
+        "option_a": "Una aplicación WebAssembly standalone publicada para servidor de archivos",
+        "option_b": "Una aplicación que necesita circuito server",
+        "option_c": "Un componente que solo usa SignalR",
+        "option_d": "Un Web View nativo obligatorio",
+        "correct": "A",
+        "explanation": "Standalone puede servirse como contenido estático."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_26_LOT_06_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_26_LOT_07_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 26,
+        "question": "¿Qué determina un render mode?",
+        "option_a": "Cómo y dónde se renderiza e interactúa con un componente",
+        "option_b": "El nombre del assembly",
+        "option_c": "La cadena de conexión",
+        "option_d": "La clase CSS",
+        "correct": "A",
+        "explanation": "El modo define ejecución y disponibilidad de interactividad."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué modo representa renderizado estático?",
+        "option_a": "Static",
+        "option_b": "InteractiveAlways",
+        "option_c": "ServerOnlyStatic",
+        "option_d": "WebAssemblyStaticInteractive",
+        "correct": "A",
+        "explanation": "Static produce HTML sin interactividad de componente."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué habilita InteractiveServer?",
+        "option_a": "Interactividad con ejecución y conexión al servidor",
+        "option_b": "Ejecución offline sin servidor",
+        "option_c": "Solo un Web View",
+        "option_d": "CSS dinámico",
+        "correct": "A",
+        "explanation": "InteractiveServer mantiene interacción mediante servidor."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué habilita InteractiveWebAssembly?",
+        "option_a": "Interactividad ejecutada en WebAssembly",
+        "option_b": "Una conexión SignalR obligatoria para cada evento",
+        "option_c": "Solo HTML estático",
+        "option_d": "Un Web View nativo",
+        "correct": "A",
+        "explanation": "El componente interactivo se ejecuta en WebAssembly."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué comportamiento ofrece InteractiveAuto?",
+        "option_a": "Puede comenzar en servidor y pasar a WebAssembly cuando está disponible",
+        "option_b": "Siempre es Static",
+        "option_c": "Solo funciona offline",
+        "option_d": "Desactiva prerendering siempre",
+        "correct": "A",
+        "explanation": "InteractiveAuto combina fases de servidor y cliente."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué directiva configura el modo de un componente?",
+        "option_a": "@rendermode",
+        "option_b": "@hostingmode",
+        "option_c": "@interactive",
+        "option_d": "@componentmodeonly",
+        "correct": "A",
+        "explanation": "@rendermode selecciona el modo."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Dónde puede aplicarse un render mode para cubrir un subárbol?",
+        "option_a": "En un componente raíz para heredarlo a descendientes",
+        "option_b": "Solo en una hoja CSS",
+        "option_c": "En appsettings exclusivamente",
+        "option_d": "En una query",
+        "correct": "A",
+        "explanation": "El modo puede propagarse desde el raíz."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué genera el prerendering?",
+        "option_a": "HTML inicial antes de activar interactividad",
+        "option_b": "Un runtime completo siempre",
+        "option_c": "Una API Web",
+        "option_d": "Un circuito persistente obligatorio",
+        "correct": "A",
+        "explanation": "Prerender genera markup inicial."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué diferencia hay entre prerendering e interactividad?",
+        "option_a": "Prerender produce HTML inicial; interactividad habilita eventos posteriores",
+        "option_b": "Son exactamente lo mismo",
+        "option_c": "Prerender solo ocurre en CSS",
+        "option_d": "Interactividad solo cambia URL",
+        "correct": "A",
+        "explanation": "Son fases/conceptos distintos."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué implica desactivar prerendering?",
+        "option_a": "Se omite HTML inicial de esa fase, pero no necesariamente la interactividad",
+        "option_b": "Se desactiva toda interacción siempre",
+        "option_c": "Se convierte en Static",
+        "option_d": "Se elimina el componente",
+        "correct": "A",
+        "explanation": "Prerender e interacción se configuran separadamente."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué necesita InteractiveWebAssembly para activarse?",
+        "option_a": "Recursos y configuración cliente WebAssembly disponibles",
+        "option_b": "Un circuito de servidor permanente",
+        "option_c": "Un Web View móvil",
+        "option_d": "Solo CSS",
+        "correct": "A",
+        "explanation": "El cliente debe poder descargar/ejecutar sus recursos."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué caracteriza a InteractiveServer frente a InteractiveWebAssembly?",
+        "option_a": "El primero ejecuta en servidor; el segundo en navegador",
+        "option_b": "Ambos ejecutan solo en CSS",
+        "option_c": "El primero es offline",
+        "option_d": "El segundo requiere SignalR siempre",
+        "correct": "A",
+        "explanation": "La ubicación de ejecución difiere."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué modo resulta apropiado para contenido sin eventos?",
+        "option_a": "Static",
+        "option_b": "InteractiveServer siempre",
+        "option_c": "InteractiveWebAssembly siempre",
+        "option_d": "InteractiveAuto obligatorio",
+        "correct": "A",
+        "explanation": "El contenido sin interacción puede ser estático."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué coste puede introducir InteractiveServer?",
+        "option_a": "Conexión y estado interactivo por cliente",
+        "option_b": "Descarga obligatoria de runtime completo",
+        "option_c": "Solo un archivo CSS",
+        "option_d": "Ningún servidor",
+        "correct": "A",
+        "explanation": "Server interaction requiere recursos de conexión."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué coste puede introducir InteractiveWebAssembly?",
+        "option_a": "Descarga inicial de runtime, dependencias y app",
+        "option_b": "Estado de circuito server por pestaña obligatorio",
+        "option_c": "Azure SignalR obligatorio",
+        "option_d": "Un Web View nativo",
+        "correct": "A",
+        "explanation": "El cliente debe descargar los recursos."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué debe comprobarse al elegir un modo?",
+        "option_a": "APIs disponibles, ubicación de ejecución, conexión y payload",
+        "option_b": "Solo la clase del botón",
+        "option_c": "Solo el idioma",
+        "option_d": "Solo la ruta",
+        "correct": "A",
+        "explanation": "La selección afecta estas dimensiones."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué permite mezclar modos en una Blazor Web App?",
+        "option_a": "Elegir interactividad para diferentes partes del árbol",
+        "option_b": "Usar dos bases de datos en CSS",
+        "option_c": "Evitar todo render",
+        "option_d": "Crear dos assemblies automáticamente",
+        "correct": "A",
+        "explanation": "La aplicación puede combinar renderizado estático e interactivo."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué puede ocurrir al prerenderizar un componente que usa browser APIs?",
+        "option_a": "La API puede no estar disponible durante la fase inicial",
+        "option_b": "Siempre funciona en servidor",
+        "option_c": "Se convierte en Web API",
+        "option_d": "Cambia a Static automáticamente",
+        "correct": "A",
+        "explanation": "Prerender puede ejecutarse sin APIs del navegador."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué describe mejor InteractiveAuto?",
+        "option_a": "Una estrategia que prioriza respuesta inicial y puede usar cliente después",
+        "option_b": "Un modo siempre estático",
+        "option_c": "Un modo exclusivamente nativo",
+        "option_d": "Un modo sin render",
+        "correct": "A",
+        "explanation": "Auto puede cambiar de servidor a WebAssembly."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué decisión no cambia por el render mode?",
+        "option_a": "La necesidad de diseñar componentes y estado coherentes",
+        "option_b": "Dónde ejecuta el código",
+        "option_c": "Qué recursos necesita el cliente",
+        "option_d": "Si hay conexión server",
+        "correct": "A",
+        "explanation": "El modo no elimina las responsabilidades de diseño."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_26_LOT_07_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_26_LOT_08_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 26,
+        "question": "Una aplicación necesita respuesta inicial y luego eventos sin enviar todo el runtime al principio. ¿Qué combinación valorar?",
+        "option_a": "Prerendering con un modo interactivo adecuado",
+        "option_b": "Static sin activar interacción",
+        "option_c": "Solo CSS isolation",
+        "option_d": "Un endpoint MVC sin componente",
+        "correct": "A",
+        "explanation": "Prerender y modo interactivo cubren ambas fases."
+    },
+    {
+        "topic_num": 26,
+        "question": "Un componente usa localStorage durante el primer render y falla. ¿Qué revisar?",
+        "option_a": "Si está prerenderizándose y mover acceso al momento cliente apropiado",
+        "option_b": "El nombre del layout",
+        "option_c": "Azure SignalR",
+        "option_d": "El payload de CSS",
+        "correct": "A",
+        "explanation": "Las APIs browser pueden no estar disponibles al prerender."
+    },
+    {
+        "topic_num": 26,
+        "question": "Un cliente WebAssembly no puede llamar al servidor directamente por lógica de dominio. ¿Qué arquitectura documentada ayuda?",
+        "option_a": "Backend Web API en el modelo hosted",
+        "option_b": "CascadingValue del navegador",
+        "option_c": "Render mode Static",
+        "option_d": "Un circuito local",
+        "correct": "A",
+        "explanation": "Hosted puede exponer una Web API para el cliente."
+    },
+    {
+        "topic_num": 26,
+        "question": "Un despliegue debe ser solo archivos estáticos y la app tiene lógica cliente. ¿Qué modelo encaja?",
+        "option_a": "WebAssembly standalone",
+        "option_b": "InteractiveServer",
+        "option_c": "Blazor Server",
+        "option_d": "Hybrid exclusivamente",
+        "correct": "A",
+        "explanation": "Standalone puede desplegarse como assets estáticos."
+    },
+    {
+        "topic_num": 26,
+        "question": "Una aplicación requiere acceso a APIs nativas móviles desde una UI Razor. ¿Qué modelo valorar?",
+        "option_a": "Blazor Hybrid",
+        "option_b": "WebAssembly standalone siempre",
+        "option_c": "Static",
+        "option_d": "InteractiveServer sin app nativa",
+        "correct": "A",
+        "explanation": "Hybrid integra Razor con plataforma nativa."
+    },
+    {
+        "topic_num": 26,
+        "question": "Los usuarios pierden conexión y el estado de UI vive en servidor. ¿Qué concepto es relevante?",
+        "option_a": "Circuito y reconexión de Blazor Server",
+        "option_b": "Payload WebAssembly únicamente",
+        "option_c": "CSS isolation",
+        "option_d": "PWA manifest solamente",
+        "correct": "A",
+        "explanation": "El circuito administra estado/conexión server."
+    },
+    {
+        "topic_num": 26,
+        "question": "Una gran cantidad de clientes interactivos aumenta recursos del servidor. ¿Qué análisis corresponde?",
+        "option_a": "Escalabilidad de conexiones y estado de Blazor Server",
+        "option_b": "Solo minificación CSS",
+        "option_c": "Cambio de @rendermode a Static siempre",
+        "option_d": "Eliminar componentes",
+        "correct": "A",
+        "explanation": "Server mantiene recursos por interacción."
+    },
+    {
+        "topic_num": 26,
+        "question": "Una app tarda en arrancar en navegador por dependencias grandes. ¿Qué factor revisar?",
+        "option_a": "Payload de WebAssembly",
+        "option_b": "Número de circuitos",
+        "option_c": "Nombre de CascadingValue",
+        "option_d": "HTML estático del servidor",
+        "correct": "A",
+        "explanation": "El tamaño descargado afecta arranque."
+    },
+    {
+        "topic_num": 26,
+        "question": "Un componente no necesita interacción y debe ser indexable. ¿Qué modo considerar?",
+        "option_a": "Static",
+        "option_b": "InteractiveAuto obligatorio",
+        "option_c": "InteractiveServer siempre",
+        "option_d": "InteractiveWebAssembly siempre",
+        "correct": "A",
+        "explanation": "Static genera contenido sin interacción."
+    },
+    {
+        "topic_num": 26,
+        "question": "Un componente necesita procesar clicks en servidor y acceso a APIs server. ¿Qué modo encaja?",
+        "option_a": "InteractiveServer",
+        "option_b": "Static",
+        "option_c": "InteractiveWebAssembly sin backend",
+        "option_d": "PWA offline solamente",
+        "correct": "A",
+        "explanation": "Server mode ejecuta lógica en el servidor."
+    },
+    {
+        "topic_num": 26,
+        "question": "Un componente debe ejecutar su lógica en navegador tras descargar recursos. ¿Qué modo encaja?",
+        "option_a": "InteractiveWebAssembly",
+        "option_b": "Static",
+        "option_c": "InteractiveServer",
+        "option_d": "ServerStaticOnly",
+        "correct": "A",
+        "explanation": "WebAssembly ejecuta el componente en cliente."
+    },
+    {
+        "topic_num": 26,
+        "question": "Una página declara @rendermode en su raíz y sus hijos heredan el comportamiento. ¿Qué se está usando?",
+        "option_a": "Herencia de render mode en el subárbol",
+        "option_b": "Un parámetro normal",
+        "option_c": "Un CSS scope",
+        "option_d": "Un circuito compartido entre pestañas",
+        "correct": "A",
+        "explanation": "El modo puede aplicarse desde el componente raíz."
+    },
+    {
+        "topic_num": 26,
+        "question": "Un equipo confunde prerendering con interactividad y elimina ambos para evitar un error. ¿Qué debe separar?",
+        "option_a": "HTML inicial y activación de eventos son decisiones diferentes",
+        "option_b": "Son siempre la misma cosa",
+        "option_c": "Prerender crea WebAssembly",
+        "option_d": "Interactividad solo sirve para CSS",
+        "correct": "A",
+        "explanation": "Las configuraciones tienen efectos distintos."
+    },
+    {
+        "topic_num": 26,
+        "question": "Una PWA necesita cierta capacidad offline. ¿Qué dependencia es esencial?",
+        "option_a": "APIs y mecanismos offline del navegador",
+        "option_b": "Un circuito server conectado",
+        "option_c": "Azure SignalR en cada usuario",
+        "option_d": "Un modelo Static sin assets",
+        "correct": "A",
+        "explanation": "Offline depende de capacidades del navegador."
+    },
+    {
+        "topic_num": 26,
+        "question": "Una biblioteca de componentes debe funcionar en varios hostings. ¿Qué debe separar?",
+        "option_a": "Código común de componente y APIs específicas del entorno",
+        "option_b": "Todos los componentes en un singleton",
+        "option_c": "CSS y lógica en una URL",
+        "option_d": "Solo el nombre del modo",
+        "correct": "A",
+        "explanation": "La forma de construir componentes es común, pero las APIs pueden variar."
+    },
+    {
+        "topic_num": 26,
+        "question": "Un modo InteractiveAuto empieza funcionando pero cambia tras descargar cliente. ¿Qué comportamiento es esperado?",
+        "option_a": "Transición de servidor a WebAssembly cuando está disponible",
+        "option_b": "Error obligatorio",
+        "option_c": "Conversión a Static permanente",
+        "option_d": "Creación de un Web View",
+        "correct": "A",
+        "explanation": "Auto puede cambiar de ubicación de ejecución."
+    },
+    {
+        "topic_num": 26,
+        "question": "Un desarrollador pone una operación sensible en un componente WebAssembly esperando ocultarla. ¿Qué debe recordar?",
+        "option_a": "El código cliente y sus recursos se descargan y no son secretos",
+        "option_b": "WebAssembly cifra todo automáticamente",
+        "option_c": "Static protege secretos",
+        "option_d": "PWA oculta assemblies",
+        "correct": "A",
+        "explanation": "Lo enviado al cliente puede inspeccionarse."
+    },
+    {
+        "topic_num": 26,
+        "question": "Un despliegue serverless solo sirve archivos y necesita interacción WebAssembly. ¿Qué debe proveer?",
+        "option_a": "Los assets/runtime cliente publicados y un backend separado si requiere API",
+        "option_b": "Un circuito server sin servidor",
+        "option_c": "Solo appsettings",
+        "option_d": "Un Web View",
+        "correct": "A",
+        "explanation": "El cliente necesita recursos; el backend es aparte si se usa."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué criterio resume una elección de hosting responsable?",
+        "option_a": "Equilibrar lugar de ejecución, conectividad, payload, escalado y APIs disponibles",
+        "option_b": "Elegir siempre Server",
+        "option_c": "Elegir siempre WebAssembly",
+        "option_d": "Elegir por nombre de CSS",
+        "correct": "A",
+        "explanation": "La elección depende de varias restricciones."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué combinación representa una aplicación híbrida de renderizado?",
+        "option_a": "Markup estático, prerender y componentes interactivos con modos adecuados",
+        "option_b": "Solo componentes Static",
+        "option_c": "Solo un modo para toda app obligatoriamente",
+        "option_d": "CSS y Web API sin UI",
+        "correct": "A",
+        "explanation": "Blazor Web App permite combinar enfoques."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_26_LOT_08_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_26_LOT_09_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 26,
+        "question": "¿Qué componente del entorno aloja una UI Blazor Hybrid?",
+        "option_a": "Un Web View dentro de la aplicación nativa",
+        "option_b": "Un CDN exclusivamente",
+        "option_c": "Un circuito SignalR remoto siempre",
+        "option_d": "Un archivo JSON",
+        "correct": "A",
+        "explanation": "Hybrid usa un Web View embebido."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué diferencia principal tiene Hybrid frente a WebAssembly standalone?",
+        "option_a": "Hybrid vive dentro de una app nativa; standalone se sirve como assets web",
+        "option_b": "Hybrid siempre usa SignalR",
+        "option_c": "Standalone siempre usa Web View",
+        "option_d": "No hay diferencia",
+        "correct": "A",
+        "explanation": "Los hosts y APIs disponibles son diferentes."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué tipo de aplicación puede usar Blazor Hybrid?",
+        "option_a": "Móvil o escritorio",
+        "option_b": "Solo CDN",
+        "option_c": "Solo servidor Linux sin UI",
+        "option_d": "Solo navegador sin host",
+        "correct": "A",
+        "explanation": "Hybrid se integra en apps móviles/escritorio."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué significa que los componentes tengan modelo de programación común?",
+        "option_a": "El markup y composición pueden reutilizarse entre hostings",
+        "option_b": "Las APIs browser y server son idénticas",
+        "option_c": "Todos comparten circuito",
+        "option_d": "El payload es igual",
+        "correct": "A",
+        "explanation": "La construcción común no elimina diferencias del host."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué debe hacer un componente que depende de una API específica del host?",
+        "option_a": "Aislar esa dependencia o comprobar el entorno disponible",
+        "option_b": "Suponer que existe en todos",
+        "option_c": "Moverla a CSS",
+        "option_d": "Cambiar el nombre de la ruta",
+        "correct": "A",
+        "explanation": "Los hostings ofrecen APIs distintas."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué significa descargar el runtime .NET en WebAssembly?",
+        "option_a": "El navegador recibe recursos para ejecutar la aplicación cliente",
+        "option_b": "El servidor crea un circuito",
+        "option_c": "Se instala .NET globalmente",
+        "option_d": "Se publica un secreto",
+        "correct": "A",
+        "explanation": "El runtime forma parte de los recursos cliente."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué ventaja puede ofrecer WebAssembly standalone?",
+        "option_a": "Despliegue de contenido cliente sin servidor ASP.NET Core para servirlo",
+        "option_b": "Acceso directo a base de datos privada",
+        "option_c": "Cero descarga",
+        "option_d": "Circuitos automáticos",
+        "correct": "A",
+        "explanation": "Standalone no necesita backend ASP.NET Core para servir sus archivos."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué ventaja ofrece Hosted frente a standalone para una solución completa?",
+        "option_a": "Incluye un servidor que puede servir cliente y exponer API",
+        "option_b": "No descarga recursos",
+        "option_c": "Elimina HTTP",
+        "option_d": "Solo ejecuta CSS",
+        "correct": "A",
+        "explanation": "Hosted añade backend ASP.NET Core."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué puede integrar una Blazor Web App además de componentes?",
+        "option_a": "MVC y Razor Pages en el modelo documentado",
+        "option_b": "Solo SQL",
+        "option_c": "Solo Web View",
+        "option_d": "Solo SignalR",
+        "correct": "A",
+        "explanation": "El modelo puede integrarse con MVC/Razor Pages."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué recurso permite escalar conexiones SignalR sin asumir una única instancia?",
+        "option_a": "Azure SignalR Service",
+        "option_b": "CSS bundle",
+        "option_c": "WebAssembly linker",
+        "option_d": "Razor compiler",
+        "correct": "A",
+        "explanation": "El servicio gestiona conexiones SignalR a escala."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué estado debe considerarse al distribuir una app Blazor Server?",
+        "option_a": "Estado de circuito y afinidad/gestión de conexión",
+        "option_b": "Solo estado CSS",
+        "option_c": "Solo payload estático",
+        "option_d": "Ningún estado",
+        "correct": "A",
+        "explanation": "El circuito contiene estado de UI del cliente."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué ocurre si una pestaña abre una segunda sesión Blazor Server?",
+        "option_a": "Se establece otro circuito asociado a esa pestaña",
+        "option_b": "Se reutiliza siempre el circuito original",
+        "option_c": "Se cambia a WebAssembly",
+        "option_d": "No puede renderizar",
+        "correct": "A",
+        "explanation": "Cada pestaña tiene su interacción/circuito."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué debe prever un diseño con conexión intermitente?",
+        "option_a": "Reconexión y comportamiento del circuito",
+        "option_b": "Solo minificación",
+        "option_c": "Solo @key",
+        "option_d": "Solo CSS isolation",
+        "correct": "A",
+        "explanation": "Los circuitos pueden tolerar interrupciones y reconectar."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué modo no habilita eventos interactivos de componente por sí mismo?",
+        "option_a": "Static",
+        "option_b": "InteractiveServer",
+        "option_c": "InteractiveWebAssembly",
+        "option_d": "InteractiveAuto",
+        "correct": "A",
+        "explanation": "Static no activa interactividad."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué orden describe mejor un componente prerenderizado interactivo?",
+        "option_a": "Generar HTML, descargar/activar recursos y procesar eventos",
+        "option_b": "Procesar eventos antes de HTML",
+        "option_c": "Descargar solo CSS y disponer",
+        "option_d": "Crear circuito en compilación",
+        "correct": "A",
+        "explanation": "La interactividad se activa después del markup inicial."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué no garantiza prerendering?",
+        "option_a": "Que las APIs de navegador estén disponibles durante la primera fase",
+        "option_b": "Que haya HTML inicial",
+        "option_c": "Que exista una fase interactiva posterior",
+        "option_d": "Que se renderice markup",
+        "correct": "A",
+        "explanation": "El prerender puede ejecutarse fuera del navegador interactivo."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué debe revisar una aplicación cuando un modo cliente no se activa?",
+        "option_a": "Recursos, configuración del proyecto y descarga WebAssembly",
+        "option_b": "Solo CSS",
+        "option_c": "El nombre de la base de datos",
+        "option_d": "El circuito de otra pestaña",
+        "correct": "A",
+        "explanation": "El cliente necesita configuración y assets."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué caracteriza un modo de render frente a una plantilla de componente?",
+        "option_a": "El modo decide ejecución/interactividad; la plantilla decide contenido UI",
+        "option_b": "Son el mismo mecanismo",
+        "option_c": "La plantilla decide conexiones",
+        "option_d": "El modo solo decide CSS",
+        "correct": "A",
+        "explanation": "Cumplen responsabilidades distintas."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué debe limitarse al enviar al cliente WebAssembly?",
+        "option_a": "Secretos y lógica que requiera confidencialidad",
+        "option_b": "Componentes públicos",
+        "option_c": "Assets estáticos",
+        "option_d": "Configuración pública",
+        "correct": "A",
+        "explanation": "Lo enviado al cliente puede analizarse."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué documentación debe consultar un equipo al elegir hosting?",
+        "option_a": "La página oficial de modelos de alojamiento y modos de renderizado",
+        "option_b": "Solo un blog no verificado",
+        "option_c": "Solo CSS reference",
+        "option_d": "Solo una ruta local",
+        "correct": "A",
+        "explanation": "La fuente oficial describe tradeoffs y configuración."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_26_LOT_09_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_26_LOT_10_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 26,
+        "question": "Una app con SEO y panel interactivo necesita ambos comportamientos. ¿Qué diseño valorar?",
+        "option_a": "Contenido Static/prerender y panel con modo interactivo",
+        "option_b": "Todo WebAssembly sin HTML inicial",
+        "option_c": "Todo Static sin panel",
+        "option_d": "Solo Hybrid",
+        "correct": "A",
+        "explanation": "Los modos permiten separar contenido y panel."
+    },
+    {
+        "topic_num": 26,
+        "question": "Una app de administración interna prioriza acceso server y bajo payload cliente. ¿Qué modo puede encajar?",
+        "option_a": "InteractiveServer",
+        "option_b": "Static únicamente",
+        "option_c": "WebAssembly standalone siempre",
+        "option_d": "PWA sin backend",
+        "correct": "A",
+        "explanation": "Server mantiene lógica y reduce descarga cliente."
+    },
+    {
+        "topic_num": 26,
+        "question": "Una app pública debe funcionar con CDN y API separada. ¿Qué modelo cliente valorar?",
+        "option_a": "WebAssembly standalone con backend API independiente",
+        "option_b": "Blazor Server sin servidor",
+        "option_c": "Hybrid obligatorio",
+        "option_d": "Static sin cliente",
+        "correct": "A",
+        "explanation": "Standalone se sirve como assets y puede llamar API separada."
+    },
+    {
+        "topic_num": 26,
+        "question": "Un equipo necesita compartir DTOs entre cliente y API. ¿Qué modelo facilita esa organización?",
+        "option_a": "WebAssembly hosted con biblioteca compartida",
+        "option_b": "Static sin backend",
+        "option_c": "CSS isolation",
+        "option_d": "InteractiveServer sin cliente",
+        "correct": "A",
+        "explanation": "Hosted permite compartir código cliente/servidor."
+    },
+    {
+        "topic_num": 26,
+        "question": "Una operación de servidor se llama desde WebAssembly. ¿Qué frontera debe existir?",
+        "option_a": "Una API o endpoint de backend",
+        "option_b": "Una cascada de UI",
+        "option_c": "Un RenderFragment",
+        "option_d": "Una key",
+        "correct": "A",
+        "explanation": "El cliente se comunica con servidor mediante API."
+    },
+    {
+        "topic_num": 26,
+        "question": "Un componente funciona en prerender pero falla al activar cliente por estado no serializable. ¿Qué revisar?",
+        "option_a": "Datos/parámetros compatibles con el límite entre fases",
+        "option_b": "El CSS global",
+        "option_c": "El nombre del proyecto",
+        "option_d": "Solo la key",
+        "correct": "A",
+        "explanation": "Las fases pueden requerir datos transferibles/compatibles."
+    },
+    {
+        "topic_num": 26,
+        "question": "Una organización no quiere conexión persistente para contenido estático. ¿Qué modo evita interactividad?",
+        "option_a": "Static",
+        "option_b": "InteractiveServer",
+        "option_c": "InteractiveAuto",
+        "option_d": "InteractiveWebAssembly",
+        "correct": "A",
+        "explanation": "Static no mantiene conexión interactiva."
+    },
+    {
+        "topic_num": 26,
+        "question": "Una aplicación necesita una API nativa en escritorio pero UI Razor compartida. ¿Qué elegir?",
+        "option_a": "Blazor Hybrid",
+        "option_b": "WebAssembly standalone",
+        "option_c": "InteractiveServer",
+        "option_d": "Static CDN",
+        "correct": "A",
+        "explanation": "Hybrid combina UI Razor y plataforma nativa."
+    },
+    {
+        "topic_num": 26,
+        "question": "Una aplicación server escala horizontalmente y mantiene circuitos. ¿Qué servicio puede apoyar la conectividad?",
+        "option_a": "Azure SignalR Service",
+        "option_b": "Static file server",
+        "option_c": "WebAssembly runtime",
+        "option_d": "CSS compiler",
+        "correct": "A",
+        "explanation": "Azure SignalR ayuda a gestionar conexiones."
+    },
+    {
+        "topic_num": 26,
+        "question": "Una UI tiene un botón pero usa Static. ¿Qué resultado esperar?",
+        "option_a": "El botón no tiene interactividad de componente activada por ese modo",
+        "option_b": "El botón siempre ejecuta en servidor",
+        "option_c": "El botón descarga runtime",
+        "option_d": "El botón crea circuito",
+        "correct": "A",
+        "explanation": "Static genera markup sin interacción."
+    },
+    {
+        "topic_num": 26,
+        "question": "Una UI usa InteractiveWebAssembly pero el payload es muy grande. ¿Qué optimización es relevante?",
+        "option_a": "Reducir dependencias y payload publicado",
+        "option_b": "Añadir circuitos",
+        "option_c": "Activar CSS global",
+        "option_d": "Cambiar a Hybrid sin evaluar",
+        "correct": "A",
+        "explanation": "El payload afecta rendimiento inicial."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué debe documentar un componente reusable multi-hosting?",
+        "option_a": "Qué APIs de host requiere y qué parte es lógica común",
+        "option_b": "Solo el nombre del archivo",
+        "option_c": "Solo el color",
+        "option_d": "Solo el número de parámetros",
+        "correct": "A",
+        "explanation": "Los contratos de host evitan supuestos incorrectos."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué relación existe entre @rendermode y circuito?",
+        "option_a": "Un modo server interactivo puede crear/usar circuito; Static no",
+        "option_b": "Todos los modos crean circuito",
+        "option_c": "@rendermode solo cambia CSS",
+        "option_d": "Circuito solo existe en Hybrid",
+        "correct": "A",
+        "explanation": "El circuito es propio de interacción server."
+    },
+    {
+        "topic_num": 26,
+        "question": "Una app quiere comenzar server y usar cliente cuando esté descargado. ¿Qué modo expresa la intención?",
+        "option_a": "InteractiveAuto",
+        "option_b": "Static",
+        "option_c": "InteractiveServer únicamente",
+        "option_d": "InteractiveWebAssembly sin fallback",
+        "correct": "A",
+        "explanation": "Auto permite la transición."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué debe evitarse en lógica ejecutada en WebAssembly?",
+        "option_a": "Asumir que secretos del servidor están protegidos",
+        "option_b": "Usar componentes Razor",
+        "option_c": "Usar binding",
+        "option_d": "Servir assets",
+        "correct": "A",
+        "explanation": "El cliente no es un lugar secreto."
+    },
+    {
+        "topic_num": 26,
+        "question": "Una página necesita HTML antes de que cargue el runtime cliente. ¿Qué técnica usar?",
+        "option_a": "Prerendering",
+        "option_b": "Solo InteractiveWebAssembly sin prerender",
+        "option_c": "Dispose",
+        "option_d": "@key",
+        "correct": "A",
+        "explanation": "Prerender produce HTML inicial."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué combinación minimiza un error de browser API durante prerender?",
+        "option_a": "Diferirla hasta una fase interactiva después del render",
+        "option_b": "Ejecutarla en constructor",
+        "option_c": "Ponerla en Static",
+        "option_d": "Usarla durante cualquier lifecycle",
+        "correct": "A",
+        "explanation": "Las APIs browser requieren disponibilidad cliente."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué arquitectura mantiene datos sensibles en servidor con UI cliente?",
+        "option_a": "WebAssembly cliente llamando API sin exponer secretos",
+        "option_b": "Enviar secretos en payload",
+        "option_c": "Guardar secretos en localStorage",
+        "option_d": "Publicar connection string",
+        "correct": "A",
+        "explanation": "El servidor protege datos y el cliente usa una API controlada."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué debe probarse al cambiar de InteractiveServer a WebAssembly?",
+        "option_a": "APIs disponibles, estado, serialización, payload y seguridad",
+        "option_b": "Solo el texto del botón",
+        "option_c": "Solo CSS",
+        "option_d": "Solo nombre de ruta",
+        "correct": "A",
+        "explanation": "Cambiar ubicación de ejecución cambia restricciones."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué resumen describe una decisión de hosting sólida?",
+        "option_a": "Seleccionar hosting y render mode según UX, conexión, escalado, payload y confidencialidad",
+        "option_b": "Elegir por defecto Server sin análisis",
+        "option_c": "Elegir WebAssembly para secretos",
+        "option_d": "Desactivar prerender siempre",
+        "correct": "A",
+        "explanation": "La decisión debe considerar los tradeoffs oficiales."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_26_LOT_10_END
