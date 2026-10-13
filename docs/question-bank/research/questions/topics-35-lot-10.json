@@ -1,0 +1,338 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-35-git-remotes-workflows-strategies.md",
+  "batches": [
+    {
+      "topic_num": 35,
+      "lot_num": 10,
+      "source_ids": [
+        "ATLASSIAN-GIT-FLOW",
+        "GIT-2.50",
+        "GITHUB-FLOW",
+        "GITHUB-PULL-REQUESTS"
+      ],
+      "questions": [
+        {
+          "objective_id": "t35-lo-181",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "Un equipo quiere revisar origin/main sin modificar su rama actual. ¿Qué operación encaja primero?",
+          "options": [
+            "git fetch origin",
+            "git pull --rebase",
+            "git push --force",
+            "git remote remove origin"
+          ],
+          "correct": "A",
+          "explanation": "fetch actualiza referencias sin integrar en la rama checkout.",
+          "citation": "git-fetch — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-182",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "Tras fetch, ¿qué referencia representa el estado conocido de main remoto?",
+          "options": [
+            "origin/main",
+            "HEAD:main",
+            "FETCH_HEAD como rama local permanente",
+            "main@server"
+          ],
+          "correct": "A",
+          "explanation": "origin/main es una remote-tracking ref local.",
+          "citation": "gitglossary — remote-tracking branch; git-fetch — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-183",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "Un equipo quiere evitar que pull cree merge o rebase automáticamente ante divergencia. ¿Qué opción usa?",
+          "options": [
+            "--ff-only",
+            "--tags",
+            "--autostash",
+            "--no-rebase"
+          ],
+          "correct": "A",
+          "explanation": "ff-only rechaza la divergencia en lugar de elegir integración.",
+          "citation": "git-pull — --ff-only",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-184",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "Se necesita sobrescribir una rama remota solo si sigue en el estado observado. ¿Qué opción es más adecuada?",
+          "options": [
+            "--force-with-lease",
+            "--force",
+            "--tags",
+            "--dry-run"
+          ],
+          "correct": "A",
+          "explanation": "La lease condiciona la fuerza a una expectativa remota.",
+          "citation": "git-push — --force-with-lease",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-185",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Se quiere comprobar un push sin actualizar refs. ¿Qué opción se añade?",
+          "options": [
+            "--dry-run",
+            "--atomic",
+            "--signed",
+            "--delete"
+          ],
+          "correct": "A",
+          "explanation": "dry-run informa sin ejecutar actualizaciones.",
+          "citation": "git-push — --dry-run",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-186",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Se desea enviar el commit actual a main remoto sin depender del nombre de la rama local. ¿Qué refspec sirve?",
+          "options": [
+            "HEAD:main",
+            "main:HEAD",
+            "origin/main:HEAD",
+            "FETCH_HEAD:origin"
+          ],
+          "correct": "A",
+          "explanation": "HEAD identifica la revisión actual y main el destino.",
+          "citation": "git-push — REFSPEC",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-187",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Una organización exige dos revisiones y checks antes de combinar en main. ¿Qué mecanismo documentado aplica?",
+          "options": [
+            "Protección de rama",
+            "git remote prune",
+            "Bare repository",
+            "git fetch --tags"
+          ],
+          "correct": "A",
+          "explanation": "Las reglas de protección pueden exigir revisiones y checks.",
+          "citation": "About protected branches — required status checks and reviews",
+          "source_id": "GITHUB-PULL-REQUESTS"
+        },
+        {
+          "objective_id": "t35-lo-188",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Una pull request recibe nuevos commits en su rama head. ¿Qué debe esperar el equipo?",
+          "options": [
+            "La propuesta y sus checks se actualizan",
+            "La base cambia automáticamente",
+            "La propuesta se cierra",
+            "El remoto se elimina"
+          ],
+          "correct": "A",
+          "explanation": "Los nuevos pushes actualizan la propuesta.",
+          "citation": "Updating a pull request — push to the head branch",
+          "source_id": "GITHUB-PULL-REQUESTS"
+        },
+        {
+          "objective_id": "t35-lo-189",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Una propuesta aún no está lista para revisión final. ¿Qué estado comunica esa situación?",
+          "options": [
+            "Draft",
+            "Merged",
+            "Reverted",
+            "Protected"
+          ],
+          "correct": "A",
+          "explanation": "Draft indica que está en preparación.",
+          "citation": "Changing the status of a pull request — draft",
+          "source_id": "GITHUB-PULL-REQUESTS"
+        },
+        {
+          "objective_id": "t35-lo-190",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Un conflicto de una pull request se resolvió en la rama de trabajo. ¿Qué paso permite recalcular la propuesta?",
+          "options": [
+            "Publicar la resolución en la rama head",
+            "Borrar la rama base",
+            "Forzar el servidor sin revisión",
+            "Crear un tag ligero"
+          ],
+          "correct": "A",
+          "explanation": "La actualización de head recalcula comparación y checks.",
+          "citation": "Updating a pull request branch",
+          "source_id": "GITHUB-PULL-REQUESTS"
+        },
+        {
+          "objective_id": "t35-lo-191",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Un proyecto entrega frecuentemente y prefiere ramas cortas. ¿Qué guía encaja mejor?",
+          "options": [
+            "GitHub flow",
+            "Gitflow con releases largas",
+            "Solo ramas hotfix",
+            "Solo bare repositories"
+          ],
+          "correct": "A",
+          "explanation": "GitHub flow documenta un flujo ligero de ramas cortas.",
+          "citation": "GitHub flow — Understanding the GitHub flow",
+          "source_id": "GITHUB-FLOW"
+        },
+        {
+          "objective_id": "t35-lo-192",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Un proyecto necesita una fase explícita de estabilización de versiones y correcciones urgentes. ¿Qué estrategia lo documenta?",
+          "options": [
+            "Gitflow",
+            "Solo fetch/pull",
+            "Solo GitHub flow sin ramas",
+            "Solo remote-tracking refs"
+          ],
+          "correct": "A",
+          "explanation": "Gitflow define release y hotfix con esos roles.",
+          "citation": "Gitflow workflow — release and hotfix branches",
+          "source_id": "ATLASSIAN-GIT-FLOW"
+        },
+        {
+          "objective_id": "t35-lo-193",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué combinación separa estado remoto conocido, colaboración y estrategia de ramas?",
+          "options": [
+            "origin/main, pull request y release branch",
+            "FETCH_HEAD, stash y tag ligero",
+            "Working tree, CSV y develop local",
+            "HEAD, reflog y correo"
+          ],
+          "correct": "A",
+          "explanation": "Cada elemento pertenece a una capa distinta del flujo.",
+          "citation": "gitglossary — remote-tracking branch; About pull requests; Gitflow workflow",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-194",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué combinación expresa obtención, integración y publicación?",
+          "options": [
+            "fetch, pull y push",
+            "remote remove, prune y clone",
+            "tag, stash y reset",
+            "draft, review y merge"
+          ],
+          "correct": "A",
+          "explanation": "Son las operaciones documentadas para esos tres momentos.",
+          "citation": "git-fetch — DESCRIPTION; git-pull — DESCRIPTION; git-push — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-195",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué combinación expresa controles de una propuesta en GitHub?",
+          "options": [
+            "Revisiones, checks y protección de rama",
+            "Tags, depth y bare",
+            "Fetch, prune y remote update",
+            "HEAD, FETCH_HEAD y refs/tags"
+          ],
+          "correct": "A",
+          "explanation": "Son controles colaborativos antes de integrar.",
+          "citation": "About protected branches; About status checks; Reviewing proposed changes",
+          "source_id": "GITHUB-PULL-REQUESTS"
+        },
+        {
+          "objective_id": "t35-lo-196",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué peligro comparten un force sin condición y una integración sin protección?",
+          "options": [
+            "Pueden sobrescribir o incorporar cambios sin control suficiente",
+            "Solo descargan menos objetos",
+            "Solo cambian nombres de remotos",
+            "Nunca afectan historia"
+          ],
+          "correct": "A",
+          "explanation": "La fuerza incondicionada y la ausencia de protección reducen salvaguardas.",
+          "citation": "git-push — --force; About protected branches",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-197",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué permite combinar un upstream con una operación cotidiana?",
+          "options": [
+            "Omitir referencias explícitas de destino cuando el seguimiento está configurado",
+            "Eliminar el remoto automáticamente",
+            "Crear siempre una pull request",
+            "Evitar todos los checks"
+          ],
+          "correct": "A",
+          "explanation": "El upstream aporta destino predeterminado y comparación.",
+          "citation": "git-push — -u/--set-upstream; gitglossary — upstream branch",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-198",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué capa añade GitHub sobre el intercambio de refs de Git?",
+          "options": [
+            "Discusión, revisión, checks y reglas de integración",
+            "Una segunda object database local",
+            "Un nuevo formato de commit",
+            "Un sustituto de las ramas"
+          ],
+          "correct": "A",
+          "explanation": "La plataforma añade colaboración y políticas al intercambio Git.",
+          "citation": "About pull requests — differences from Git commands",
+          "source_id": "GITHUB-PULL-REQUESTS"
+        },
+        {
+          "objective_id": "t35-lo-199",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué decisión es más coherente con una historia compartida protegida?",
+          "options": [
+            "Revisar mediante pull request y evitar sobrescritura incondicionada",
+            "Usar siempre --force",
+            "Borrar remote-tracking refs antes de cada push",
+            "No usar checks"
+          ],
+          "correct": "A",
+          "explanation": "La coordinación y protección reducen sobrescrituras peligrosas.",
+          "citation": "gitworkflows — Public history; About protected branches; git-push — --force-with-lease",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-200",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué principio resume la comparación de estrategias documentada?",
+          "options": [
+            "Elegir según ritmo de entrega, controles y mantenimiento",
+            "Usar Gitflow siempre",
+            "Usar GitHub flow siempre",
+            "Elegir por el nombre del remoto"
+          ],
+          "correct": "A",
+          "explanation": "No hay una receta universal: la estrategia depende del contexto.",
+          "citation": "Gitflow workflow — comparing workflows; GitHub flow — understanding the flow",
+          "source_id": "ATLASSIAN-GIT-FLOW"
+        }
+      ]
+    }
+  ]
+}
