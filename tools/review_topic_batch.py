@@ -19,6 +19,7 @@ from question_bank.validation import validate_record
 DATE = "2026-10-13"
 TOPIC34_KEY_PATH = ROOT / "docs/question-bank/reviews/topic-34-answer-key.json"
 TOPIC35_KEY_PATH = ROOT / "docs/question-bank/reviews/topic-35-answer-key.json"
+TOPIC36_KEY_PATH = ROOT / "docs/question-bank/reviews/topic-36-answer-key.json"
 EXPECTATIONS = {
     2: {
         1:("A","Artículo 97"),2:("A","Artículo 98.1"),3:("A","Artículo 98.2"),4:("A","Artículo 98.3"),5:("B","Artículo 100"),
@@ -598,6 +599,10 @@ def main() -> int:
             expected = (key_entry["correct"], key_entry["citation"])
         elif args.topic_num == 35:
             key = json.loads(TOPIC35_KEY_PATH.read_text(encoding="utf-8"))
+            key_entry = key["lots"][str(args.lot_num)][str(question_num)]
+            expected = (key_entry["correct"], key_entry["citation"])
+        elif args.topic_num == 36:
+            key = json.loads(TOPIC36_KEY_PATH.read_text(encoding="utf-8"))
             key_entry = key["lots"][str(args.lot_num)][str(question_num)]
             expected = (key_entry["correct"], key_entry["citation"])
         else:
