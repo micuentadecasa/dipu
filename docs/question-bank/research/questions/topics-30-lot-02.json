@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-12",
+  "research_artifact": "docs/question-bank/research/topic-30-blazor-di-configuration.md",
+  "batches": [
+    {
+      "topic_num": 30,
+      "lot_num": 2,
+      "source_ids": [
+        "DOTNET-CONFIG-10"
+      ],
+      "questions": [
+        {
+          "objective_id": "t30-lo-021",
+          "difficulty": "basic",
+          "type": "definition",
+          "question": "¿Qué abstracción permite leer valores jerárquicos procedentes de varios proveedores de configuración?",
+          "options": [
+            "IConfiguration",
+            "IServiceScope",
+            "IComponentActivator",
+            "IHostApplicationLifetime"
+          ],
+          "correct": "A",
+          "explanation": "IConfiguration presenta una vista unificada de las claves aportadas por los proveedores.",
+          "citation": "Configuration in ASP.NET Core",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-022",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué separador expresa normalmente una ruta jerárquica entre claves de configuración en .NET?",
+          "options": [
+            "Punto y coma (;)",
+            "Dos puntos (:)",
+            "Barra inclinada (/)",
+            "Signo de porcentaje (%)"
+          ],
+          "correct": "B",
+          "explanation": "Las claves jerárquicas se expresan con dos puntos, por ejemplo Logging:LogLevel:Default.",
+          "citation": "Configuration keys and values",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-023",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Cómo se representa en una variable de entorno una clave jerárquica que contiene dos puntos?",
+          "options": [
+            "Con un espacio",
+            "Con un punto final",
+            "Con doble guion bajo (__ )",
+            "Con una barra vertical"
+          ],
+          "correct": "C",
+          "explanation": "El proveedor de variables de entorno convierte el doble guion bajo en el separador jerárquico de configuración.",
+          "citation": "Environment variables",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-024",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué formato de archivo se usa normalmente para los valores base de configuración de una aplicación ASP.NET Core?",
+          "options": [
+            "CSV",
+            "XML de proyecto",
+            "Markdown",
+            "JSON"
+          ],
+          "correct": "D",
+          "explanation": "La configuración predeterminada carga appsettings.json como archivo JSON base.",
+          "citation": "JSON configuration provider",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-025",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Qué archivo puede aportar valores específicos para el entorno actual además del archivo base?",
+          "options": [
+            "appsettings.{Environment}.json",
+            "routes.{Environment}.xml",
+            "settings.{Environment}.md",
+            "host.{Environment}.csv"
+          ],
+          "correct": "A",
+          "explanation": "El archivo con el nombre del entorno permite sobrescribir valores del archivo JSON base para ese entorno.",
+          "citation": "Default configuration providers",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-026",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "Si dos proveedores aportan la misma clave, ¿qué regla general aplica la configuración predeterminada?",
+          "options": [
+            "Siempre gana el archivo JSON",
+            "El proveedor añadido posteriormente tiene prioridad",
+            "Siempre gana el valor más corto",
+            "Se combinan ambos valores en una lista"
+          ],
+          "correct": "B",
+          "explanation": "Los proveedores se consultan según su orden y el último valor para una clave sobrescribe el anterior.",
+          "citation": "Configuration providers",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-027",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué proveedor permite establecer valores de configuración al iniciar la aplicación con argumentos del proceso?",
+          "options": [
+            "Proveedor de cookies",
+            "Proveedor de Razor",
+            "Proveedor de línea de comandos",
+            "Proveedor de recursos estáticos"
+          ],
+          "correct": "C",
+          "explanation": "El proveedor de línea de comandos lee los argumentos del proceso y puede sobrescribir valores anteriores.",
+          "citation": "Command-line configuration provider",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-028",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "Una aplicación puede arrancar aunque falte su archivo JSON opcional de configuración. ¿Qué característica se está usando?",
+          "options": [
+            "Compilación anticipada",
+            "Cifrado de claves",
+            "Resolución de endpoints",
+            "Carga opcional"
+          ],
+          "correct": "D",
+          "explanation": "Un archivo marcado como opcional no impide el arranque cuando no existe.",
+          "citation": "JSON configuration provider",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-029",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "Tras modificar el archivo JSON en ejecución, la aplicación observa nuevos valores sin reiniciarse. ¿Qué capacidad lo permite?",
+          "options": [
+            "Recarga al cambiar",
+            "Compilación de vistas",
+            "Rotación de certificados",
+            "Caché de endpoints"
+          ],
+          "correct": "A",
+          "explanation": "El proveedor JSON puede observar cambios y recargar los valores cuando se habilita reloadOnChange.",
+          "citation": "JSON configuration provider",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-030",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué método obtiene una sección de configuración para trabajar con sus claves descendientes?",
+          "options": [
+            "GetRoute",
+            "GetSection",
+            "GetScope",
+            "GetEndpoint"
+          ],
+          "correct": "B",
+          "explanation": "GetSection devuelve una IConfigurationSection asociada a la ruta jerárquica indicada.",
+          "citation": "Bind hierarchical configuration",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-031",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué operación lee una clave y convierte su valor al tipo indicado proporcionando, si procede, un valor predeterminado?",
+          "options": [
+            "GetService<T>",
+            "GetPage<T>",
+            "GetValue<T>",
+            "GetRouteValue<T>"
+          ],
+          "correct": "C",
+          "explanation": "GetValue<T> convierte el valor de configuración al tipo solicitado y admite un valor por defecto.",
+          "citation": "GetValue",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-032",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué operación copia una sección de configuración a las propiedades de un objeto de opciones?",
+          "options": [
+            "Map",
+            "Render",
+            "Attach",
+            "Bind"
+          ],
+          "correct": "D",
+          "explanation": "Bind asigna los valores de una sección a las propiedades públicas del objeto destino.",
+          "citation": "Bind configuration",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-033",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué forma del patrón de opciones crea una instancia tipada a partir de una sección de configuración?",
+          "options": [
+            "Get<T>",
+            "Use<T>",
+            "Parse<T>",
+            "Resolve<T>"
+          ],
+          "correct": "A",
+          "explanation": "La extensión Get<T> enlaza la sección y devuelve una instancia tipada de T.",
+          "citation": "Bind configuration",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-034",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué método de IConfiguration busca una cadena bajo la sección convencional de conexiones?",
+          "options": [
+            "GetDatabaseString",
+            "GetConnectionString",
+            "ReadConnection",
+            "UseConnection"
+          ],
+          "correct": "B",
+          "explanation": "GetConnectionString busca el nombre indicado bajo ConnectionStrings.",
+          "citation": "GetConnectionString",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-035",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué patrón encapsula valores relacionados de configuración en una clase fuertemente tipada?",
+          "options": [
+            "Patrón de rutas",
+            "Patrón de filtros",
+            "Patrón de opciones",
+            "Patrón de plantillas"
+          ],
+          "correct": "C",
+          "explanation": "El patrón de opciones enlaza una sección con una clase y permite consumirla mediante interfaces de opciones.",
+          "citation": "Options pattern",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-036",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Qué característica de IOptions<T> es relevante al consumir opciones sin cambios dinámicos?",
+          "options": [
+            "Recrea el objeto en cada lectura",
+            "Solo funciona en WebAssembly",
+            "Solo acepta claves de entorno",
+            "Proporciona el valor configurado mediante Value"
+          ],
+          "correct": "D",
+          "explanation": "IOptions<T>.Value expone la instancia configurada para el consumo normal de opciones.",
+          "citation": "Options interfaces",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-037",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Qué interfaz está diseñada para obtener opciones asociadas al ámbito de una solicitud y permitir snapshots?",
+          "options": [
+            "IOptionsSnapshot<T>",
+            "IOptionsFactory<T>",
+            "IOptionsMonitorCache<T>",
+            "IConfigurationProvider"
+          ],
+          "correct": "A",
+          "explanation": "IOptionsSnapshot<T> ofrece una instantánea de opciones por ámbito y se utiliza habitualmente en solicitudes.",
+          "citation": "Options interfaces",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-038",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Qué interfaz permite observar cambios de configuración y obtener opciones actualizadas?",
+          "options": [
+            "IOptions<T>",
+            "IOptionsMonitor<T>",
+            "IValidateOptions<T>",
+            "IServiceScopeFactory"
+          ],
+          "correct": "B",
+          "explanation": "IOptionsMonitor<T> expone el valor actual y permite reaccionar a cambios mediante OnChange.",
+          "citation": "Options interfaces",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-039",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Qué mecanismo permite configurar valores distintos para nombres lógicos de una misma clase de opciones?",
+          "options": [
+            "Opciones anónimas",
+            "Secciones planas",
+            "Opciones con nombre",
+            "Claves binarias"
+          ],
+          "correct": "C",
+          "explanation": "Las opciones con nombre permiten registrar y solicitar configuraciones diferenciadas para una misma clase.",
+          "citation": "Named options",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-040",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Qué operación añade una regla explícita que debe cumplirse al validar una clase de opciones?",
+          "options": [
+            "CheckRoute",
+            "VerifyEndpoint",
+            "UsePolicy",
+            "Validate"
+          ],
+          "correct": "D",
+          "explanation": "Configure<T>.Validate añade una función de validación que puede rechazar una configuración inválida.",
+          "citation": "Options validation",
+          "source_id": "DOTNET-CONFIG-10"
+        }
+      ]
+    }
+  ]
+}

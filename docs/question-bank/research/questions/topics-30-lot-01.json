@@ -1,0 +1,336 @@
+{
+  "generated_at": "2026-10-12",
+  "research_artifact": "docs/question-bank/research/topic-30-blazor-di-configuration.md",
+  "batches": [
+    {
+      "topic_num": 30,
+      "lot_num": 1,
+      "source_ids": [
+        "ASPNET-DI-10",
+        "BLAZOR-DI-10"
+      ],
+      "questions": [
+        {
+          "objective_id": "t30-lo-001",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué responsabilidad principal tiene el contenedor integrado de ASP.NET Core?",
+          "options": [
+            "Crear y resolver servicios registrados",
+            "Renderizar HTML sin componentes",
+            "Compilar consultas SQL automáticamente",
+            "Gestionar ramas de Git"
+          ],
+          "correct": "A",
+          "explanation": "El contenedor mantiene los registros y construye las dependencias solicitadas.",
+          "citation": "Dependency injection in ASP.NET Core",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-002",
+          "difficulty": "basic",
+          "type": "definition",
+          "question": "¿Qué tipo representa la colección usada normalmente para registrar servicios durante la construcción del host?",
+          "options": [
+            "IConfigurationRoot",
+            "IServiceCollection",
+            "RenderFragment",
+            "DbConnection"
+          ],
+          "correct": "B",
+          "explanation": "IServiceCollection expone las operaciones de registro que se aplican antes de construir el proveedor.",
+          "citation": "Register services",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-003",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué interfaz representa el proveedor que obtiene una instancia a partir de un registro?",
+          "options": [
+            "IHostEnvironment",
+            "IOptionsMonitor<T>",
+            "IServiceProvider",
+            "IEndpointRouteBuilder"
+          ],
+          "correct": "C",
+          "explanation": "IServiceProvider ofrece la resolución de servicios del contenedor construido.",
+          "citation": "Service resolution",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-004",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Cuál es la forma recomendada de proporcionar una dependencia obligatoria a una clase de aplicación?",
+          "options": [
+            "Crearla con new en cada método",
+            "Guardarla en una variable global",
+            "Leerla de una cadena de configuración",
+            "Inyección por constructor"
+          ],
+          "correct": "D",
+          "explanation": "La inyección por constructor hace explícitas las dependencias obligatorias y permite que el contenedor las proporcione.",
+          "citation": "Constructor injection",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-005",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "En un componente Razor, ¿qué mecanismo permite declarar una propiedad que recibe un servicio del contenedor?",
+          "options": [
+            "La directiva @inject",
+            "La directiva @page",
+            "El atributo [Authorize]",
+            "La etiqueta <config>"
+          ],
+          "correct": "A",
+          "explanation": "@inject declara el tipo y el nombre de una propiedad que Blazor satisface mediante DI.",
+          "citation": "Inject services into components",
+          "source_id": "BLAZOR-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-006",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "En una clase de componente C#, ¿qué atributo marca una propiedad para recibir una dependencia?",
+          "options": [
+            "[Parameter]",
+            "[Inject]",
+            "[CascadingParameter]",
+            "[SupplyParameterFromForm]"
+          ],
+          "correct": "B",
+          "explanation": "La propiedad pública marcada con [Inject] puede ser satisfecha por el proveedor de Blazor.",
+          "citation": "Inject services into components",
+          "source_id": "BLAZOR-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-007",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Qué comportamiento corresponde al registro de vida útil transitoria?",
+          "options": [
+            "Compartir una instancia entre todos los usuarios",
+            "Crear una instancia por circuito exclusivamente",
+            "Crear una instancia nueva en cada resolución",
+            "Crear una instancia solo al arrancar el proceso"
+          ],
+          "correct": "C",
+          "explanation": "Una dependencia transitoria se crea cada vez que se solicita al proveedor.",
+          "citation": "Service lifetimes",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-008",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "En una aplicación web ASP.NET Core, ¿con qué ámbito se asocia normalmente una dependencia scoped?",
+          "options": [
+            "Toda la vida del proceso",
+            "Cada llamada a un método",
+            "Cada ensamblado cargado",
+            "La solicitud HTTP"
+          ],
+          "correct": "D",
+          "explanation": "En el servidor web, scoped suele significar una instancia por solicitud HTTP.",
+          "citation": "Service lifetimes",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-009",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Qué describe mejor una dependencia singleton registrada en el contenedor?",
+          "options": [
+            "Una instancia compartida durante la vida del proveedor",
+            "Una instancia nueva por método",
+            "Una instancia nueva por solicitud",
+            "Una instancia exclusiva de cada componente"
+          ],
+          "correct": "A",
+          "explanation": "Singleton reutiliza una misma instancia mientras vive el proveedor raíz.",
+          "citation": "Service lifetimes",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-010",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Cuando el contenedor crea un servicio que implementa IDisposable, ¿qué responsabilidad puede asumir al finalizar su ámbito?",
+          "options": [
+            "Serializarlo en JSON",
+            "Liberar el servicio cuando corresponde",
+            "Convertirlo en singleton",
+            "Copiarlo al archivo de configuración"
+          ],
+          "correct": "B",
+          "explanation": "El contenedor libera los servicios desechables que crea cuando finaliza el ámbito que los posee.",
+          "citation": "Disposal of services",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-011",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué registro expresa que una interfaz debe resolverse usando una implementación concreta?",
+          "options": [
+            "AddStatic<IClock>",
+            "MapGet<IClock>",
+            "AddSingleton<IClock, SystemClock>",
+            "UseMiddleware<IClock>"
+          ],
+          "correct": "C",
+          "explanation": "La sobrecarga genérica de AddSingleton asocia el servicio IClock con SystemClock.",
+          "citation": "Register services",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-012",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué registro crea una instancia de IClock por ámbito usando SystemClock como implementación?",
+          "options": [
+            "AddTransient<IClock, IClockFactory>",
+            "AddSingleton<SystemClock, IClock>",
+            "AddOptions<IClock>",
+            "AddScoped<IClock, SystemClock>"
+          ],
+          "correct": "D",
+          "explanation": "AddScoped con dos tipos registra la interfaz y su implementación con vida útil scoped.",
+          "citation": "Register services",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-013",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué forma de registro permite ejecutar una fábrica que recibe IServiceProvider para construir un servicio?",
+          "options": [
+            "Una sobrecarga de fábrica",
+            "Una directiva @page",
+            "Un archivo .razor.css",
+            "Un atributo de ruta"
+          ],
+          "correct": "A",
+          "explanation": "Las sobrecargas de registro con fábrica reciben el proveedor y devuelven la instancia del servicio.",
+          "citation": "Register services",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-014",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "Si ya existe una instancia configurada que debe devolver el contenedor, ¿qué modalidad de registro la conserva?",
+          "options": [
+            "Registro de un tipo abierto",
+            "Registro de una instancia",
+            "Registro de una ruta",
+            "Registro de un endpoint"
+          ],
+          "correct": "B",
+          "explanation": "El registro de instancia suministra al contenedor un objeto ya creado para devolverlo según su descriptor.",
+          "citation": "Register services",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-015",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "Hay tres implementaciones de IParser registradas. ¿Qué forma solicita todas las implementaciones?",
+          "options": [
+            "IParser[] sin resolución",
+            "IOptions<IParser>",
+            "IEnumerable<IParser>",
+            "IServiceScopeFactory<IParser>"
+          ],
+          "correct": "C",
+          "explanation": "El contenedor puede resolver IEnumerable<T> con las implementaciones registradas para T.",
+          "citation": "Register multiple implementations",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-016",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Con varias implementaciones del mismo servicio, una clase solicita una única instancia del tipo de servicio. ¿Qué registro suele resolver el proveedor por defecto?",
+          "options": [
+            "El primer registro siempre",
+            "Un registro aleatorio",
+            "Ningún registro en todos los casos",
+            "El último registro"
+          ],
+          "correct": "D",
+          "explanation": "Para una resolución singular, el contenedor usa normalmente la última implementación registrada; IEnumerable conserva todas.",
+          "citation": "Register multiple implementations",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-017",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Qué operación se usa para crear explícitamente un ámbito de resolución independiente?",
+          "options": [
+            "CreateScope()",
+            "Build()",
+            "Configure()",
+            "Reload()"
+          ],
+          "correct": "A",
+          "explanation": "IServiceScopeFactory.CreateScope crea un ámbito cuyo proveedor permite resolver servicios scoped.",
+          "citation": "Service scopes",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-018",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "¿Qué opción del proveedor ayuda a detectar durante desarrollo la resolución de scoped desde el proveedor raíz?",
+          "options": [
+            "ValidateRoutes",
+            "ValidateScopes",
+            "UseStaticFiles",
+            "EnableBuffering"
+          ],
+          "correct": "B",
+          "explanation": "ValidateScopes comprueba usos incompatibles de servicios scoped al validar el proveedor en escenarios de desarrollo.",
+          "citation": "Scope validation",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-019",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Un singleton conserva directamente un servicio scoped. ¿Qué problema describe la documentación de DI?",
+          "options": [
+            "Ciclo de renderizado",
+            "Clave jerárquica",
+            "Dependencia cautiva",
+            "Consulta diferida"
+          ],
+          "correct": "C",
+          "explanation": "El singleton puede retener el scoped más allá de su ámbito natural: es una dependencia cautiva.",
+          "citation": "Scope validation",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-020",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Qué práctica evita acoplar una clase a la creación manual de sus dependencias?",
+          "options": [
+            "Llamar siempre a new",
+            "Usar campos estáticos compartidos",
+            "Leer tipos desde nombres de clase",
+            "Recibir dependencias mediante DI"
+          ],
+          "correct": "D",
+          "explanation": "La inyección permite que la clase declare lo que necesita sin controlar la construcción concreta.",
+          "citation": "Dependency injection guidelines",
+          "source_id": "ASPNET-DI-10"
+        }
+      ]
+    }
+  ]
+}

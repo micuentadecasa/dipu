@@ -415,6 +415,45 @@ LOT_EXPECTATIONS.update({
     }
 })
 
+# Topic 30 expectations are pinned independently of candidate generation.
+LOT_EXPECTATIONS.update({
+    (30, 1): {
+        1:('A','Dependency injection in ASP.NET Core'), 2:('B','Register services'), 3:('C','Service resolution'), 4:('D','Constructor injection'),
+        5:('A','Inject services into components'), 6:('B','Inject services into components'), 7:('C','Service lifetimes'), 8:('D','Service lifetimes'),
+        9:('A','Service lifetimes'), 10:('B','Disposal of services'), 11:('C','Register services'), 12:('D','Register services'),
+        13:('A','Register services'), 14:('B','Register services'), 15:('C','Register multiple implementations'), 16:('D','Register multiple implementations'),
+        17:('A','Service scopes'), 18:('B','Scope validation'), 19:('C','Scope validation'), 20:('D','Dependency injection guidelines')
+    },
+    (30, 2): {
+        1:('A','Configuration in ASP.NET Core'), 2:('B','Configuration keys and values'), 3:('C','Environment variables'), 4:('D','JSON configuration provider'),
+        5:('A','Default configuration providers'), 6:('B','Configuration providers'), 7:('C','Command-line configuration provider'), 8:('D','JSON configuration provider'),
+        9:('A','JSON configuration provider'), 10:('B','Bind hierarchical configuration'), 11:('C','GetValue'), 12:('D','Bind configuration'),
+        13:('A','Bind configuration'), 14:('B','GetConnectionString'), 15:('C','Options pattern'), 16:('D','Options interfaces'),
+        17:('A','Options interfaces'), 18:('B','Options interfaces'), 19:('C','Named options'), 20:('D','Options validation')
+    },
+    (30, 3): {
+        1:('A','Options validation'), 2:('B','Options pattern'), 3:('C','Options pattern'), 4:('D','Options pattern'),
+        5:('A','Options interfaces'), 6:('B','Register services'), 7:('C','Configuration in ASP.NET Core'), 8:('D','Configuration in ASP.NET Core'),
+        9:('A','Environment variables'), 10:('B','Safe storage of secrets'), 11:('C','Environment variables'), 12:('D','Register services'),
+        13:('A','Inject services into components'), 14:('B','Register services'), 15:('C','Service lifetimes'), 16:('D','Service lifetimes'),
+        17:('A','Service lifetimes'), 18:('B','Prerendering'), 19:('C','Inject services into components'), 20:('D','Inject services into components')
+    },
+    (30, 4): {
+        1:('A','Register open generic services'), 2:('B','Keyed services'), 3:('C','Keyed services'), 4:('D','Keyed services'),
+        5:('A','Register groups of services with TryAdd'), 6:('B','Register groups of services with TryAdd'), 7:('C','Service resolution'), 8:('D','Service provider options'),
+        9:('A','Disposal of services'), 10:('B','Disposal of services'), 11:('C','DI guidelines'), 12:('D','Scope validation'),
+        13:('A','Options interfaces'), 14:('B','Options interfaces'), 15:('C','Register services'), 16:('D','Service resolution'),
+        17:('A','Service resolution'), 18:('B','Register multiple implementations'), 19:('C','Use scoped services within a BackgroundService'), 20:('D','Use scoped services within a BackgroundService')
+    },
+    (30, 5): {
+        1:('A','Configuration providers'), 2:('B','Configuration providers'), 3:('C','Environment variables'), 4:('D','Command-line configuration provider'),
+        5:('A','Configuration keys and values'), 6:('B','GetValue'), 7:('C','Options pattern'), 8:('D','Bind configuration'),
+        9:('A','Options pattern'), 10:('B','Options validation'), 11:('C','Options validation'), 12:('D','Named options'),
+        13:('A','Options interfaces'), 14:('B','Configuration in Blazor WebAssembly'), 15:('C','Configuration security'), 16:('D','Configuration in Blazor Server'),
+        17:('A','Configuration in Blazor WebAssembly'), 18:('B','Configuration in Blazor WebAssembly'), 19:('C','Configuration security'), 20:('D','Configuration in Blazor WebAssembly')
+    }
+})
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("topic_num", type=int, choices=tuple(range(2, 41)))
