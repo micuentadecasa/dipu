@@ -20,6 +20,7 @@ DATE = "2026-10-13"
 TOPIC34_KEY_PATH = ROOT / "docs/question-bank/reviews/topic-34-answer-key.json"
 TOPIC35_KEY_PATH = ROOT / "docs/question-bank/reviews/topic-35-answer-key.json"
 TOPIC36_KEY_PATH = ROOT / "docs/question-bank/reviews/topic-36-answer-key.json"
+TOPIC37_KEY_PATH = ROOT / "docs/question-bank/reviews/topic-37-answer-key.json"
 EXPECTATIONS = {
     2: {
         1:("A","Artículo 97"),2:("A","Artículo 98.1"),3:("A","Artículo 98.2"),4:("A","Artículo 98.3"),5:("B","Artículo 100"),
@@ -605,6 +606,10 @@ def main() -> int:
             key = json.loads(TOPIC36_KEY_PATH.read_text(encoding="utf-8"))
             key_entry = key["lots"][str(args.lot_num)][str(question_num)]
             expected = (key_entry["correct"], key_entry["citation"])
+        elif args.topic_num == 37:
+            key = json.loads(TOPIC37_KEY_PATH.read_text(encoding="utf-8"))
+            key_entry = key["lots"][str(args.lot_num)][str(question_num)]
+            expected = (key_entry["correct"], key_entry["citation"])
         else:
             if expectations is None:
                 raise RuntimeError(f"no review expectations for topic {args.topic_num}, lot {args.lot_num}")
@@ -614,7 +619,7 @@ def main() -> int:
             raise RuntimeError(f"independent review disagreement for {candidate['learning_objective_id']}")
         if candidate["sources"][0]["tier"] not in {"official_primary", "secondary_reputable"}:
             raise RuntimeError("missing source tier")
-        if source["status"] not in {"verified", "verified_with_correction_review", "verified_official_eli_entry", "verified_official_celex_fallback", "verified_entry_point", "verified_current_stable_reference"}:
+        if source["status"] not in {"verified", "verified_with_correction_review", "verified_official_eli_entry", "verified_official_celex_fallback", "verified_entry_point", "verified_current_stable_reference", "verified_public_manual"}:
             raise RuntimeError(f"source register status is not reviewable: {source['source_id']}")
         reviewed = copy.deepcopy(candidate)
         reviewer = f"independent-source-review-{DATE}"

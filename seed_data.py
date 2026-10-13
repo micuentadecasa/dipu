@@ -21253,3 +21253,1028 @@ SEED_QUESTIONS.extend([
     }
 ])
 # QUESTION_BANK_ACCEPTED_TOPIC_36_LOT_05_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_37_LOT_01_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 37,
+        "question": "¿Qué es SEGEX según su manual oficial?",
+        "option_a": "El tramitador de expedientes de la plataforma pública SEDIPUALB@",
+        "option_b": "Un sistema privado de correo",
+        "option_c": "Un visor de anuncios sin expedientes",
+        "option_d": "Un registro mercantil",
+        "correct": "A",
+        "explanation": "El manual define SEGEX como el tramitador de expedientes de la plataforma pública SEDIPUALB@."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué tipo de tramitador es SEGEX?",
+        "option_a": "Un tramitador exclusivo de contratación menor",
+        "option_b": "Un tramitador de propósito general",
+        "option_c": "Un visor solo de registros",
+        "option_d": "Un módulo únicamente contable",
+        "correct": "B",
+        "explanation": "El manual lo describe como un tramitador de propósito general, adaptable a entidades de distinto tamaño y complejidad."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Quién puede generar expedientes SEGEX según el manual?",
+        "option_a": "Solo el administrador de la Diputación",
+        "option_b": "Solo una persona externa sin cuenta",
+        "option_c": "Cualquier usuario registrado en alguna entidad SEDIPUALB@",
+        "option_d": "Únicamente un proveedor de certificados",
+        "correct": "C",
+        "explanation": "El manual indica que cualquier usuario registrado en alguna entidad SEDIPUALB@ puede generar expedientes SEGEX."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué dos formas de creación de expediente SEGEX se documentan?",
+        "option_a": "Solo por importación y por clonación",
+        "option_b": "Por pago y por notificación",
+        "option_c": "Por sorteo y por archivo",
+        "option_d": "De oficio y a instancia de parte",
+        "correct": "D",
+        "explanation": "Las dos formas descritas son de oficio y a instancia de parte."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Cómo puede originarse un expediente SEGEX a instancia de parte?",
+        "option_a": "A partir de una entrada de registro completada y asignada",
+        "option_b": "Solo mediante una factura electrónica",
+        "option_c": "A partir de un anuncio del tablón",
+        "option_d": "Únicamente desde un expediente clonado",
+        "correct": "A",
+        "explanation": "El manual explica que la creación a instancia de parte parte de una entrada de registro completada y asignada."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué paso se realiza después de generar un expediente SEGEX?",
+        "option_a": "Eliminar todos sus documentos",
+        "option_b": "Catalogarlo mediante el Catálogo de Procedimientos",
+        "option_c": "Publicarlo siempre en el tablón",
+        "option_d": "Convertirlo inmediatamente en ZIP ENI",
+        "correct": "B",
+        "explanation": "Tras generar el expediente se procede a su catalogación mediante el Catálogo de Procedimientos."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿En qué estado se encuentra un expediente SEGEX inmediatamente después de crearse?",
+        "option_a": "En estado archivado",
+        "option_b": "En estado enviado",
+        "option_c": "En estado borrador",
+        "option_d": "En estado finalizado",
+        "correct": "C",
+        "explanation": "El manual indica que el expediente recién creado queda en estado borrador hasta realizar una acción."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Cómo describe el manual un expediente respecto de sus documentos?",
+        "option_a": "Como un único fichero sin carpetas",
+        "option_b": "Como una lista externa de enlaces sin documentos",
+        "option_c": "Como un registro que no admite anexos",
+        "option_d": "Como una agrupación de documentos que puede organizarse en carpetas",
+        "correct": "D",
+        "explanation": "El expediente se define como una agrupación de documentos, que a su vez pueden agruparse en carpetas."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué control de acceso puede configurarse para documentos de un expediente?",
+        "option_a": "Seleccionar individualmente qué interesados acceden a cada documento",
+        "option_b": "Dar siempre acceso a todos los usuarios de Internet",
+        "option_c": "Impedir siempre el acceso a cualquier interesado",
+        "option_d": "Configurar acceso solo por tamaño del archivo",
+        "correct": "A",
+        "explanation": "El manual permite seleccionar individualmente los interesados con acceso a cada documento."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Cuál de estos tipos de documento admite un expediente SEGEX?",
+        "option_a": "Solo una imagen de perfil",
+        "option_b": "Fichero",
+        "option_c": "Únicamente un mensaje de chat",
+        "option_d": "Exclusivamente una hoja de cálculo local",
+        "correct": "B",
+        "explanation": "Fichero aparece entre los tipos de documento admitidos."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué representa un CSV entre los tipos de documento SEGEX?",
+        "option_a": "Un archivo comprimido de configuración",
+        "option_b": "Una cuenta de usuario externa",
+        "option_c": "El Código Seguro de Verificación generado en SEDIPUALB@",
+        "option_d": "Un certificado de servidor",
+        "correct": "C",
+        "explanation": "El manual identifica CSV como documentos generados en SEDIPUALB@ mediante su Código Seguro de Verificación."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué tipo de documento permite incorporar una URL válida?",
+        "option_a": "SEFYCU",
+        "option_b": "CSV",
+        "option_c": "SEGRA",
+        "option_d": "Hipervínculo",
+        "correct": "D",
+        "explanation": "Hipervínculos se describen como cualquier URL válida que aporte información de interés para el expediente."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué metadato identifica el tipo normalizado de un documento SEGEX?",
+        "option_a": "Tipo ENI",
+        "option_b": "Color del documento",
+        "option_c": "Tamaño de la pantalla",
+        "option_d": "Nombre del navegador",
+        "correct": "A",
+        "explanation": "El Tipo ENI aparece entre los metadatos mínimos de cada documento."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué valores de origen documental enumera el manual?",
+        "option_a": "Solo empresa o banco",
+        "option_b": "Administración o Ciudadanos",
+        "option_c": "Únicamente interno o externo técnico",
+        "option_d": "Público o privado comercial",
+        "correct": "B",
+        "explanation": "El origen del documento se expresa como Administración o Ciudadanos."
+    },
+    {
+        "topic_num": 37,
+        "question": "Si se inicia un expediente SEGEX a instancia de parte, ¿qué sucede con el remitente de la entrada?",
+        "option_a": "Se elimina del registro",
+        "option_b": "Se convierte siempre en tramitador",
+        "option_c": "Se añade automáticamente como interesado del expediente",
+        "option_d": "Se publica automáticamente como anuncio",
+        "correct": "C",
+        "explanation": "El remitente de la entrada se añade automáticamente como interesado cuando el expediente se inicia a instancia de parte."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué repositorio de interesados se utiliza en SEDIPUALB@?",
+        "option_a": "Un repositorio aislado para cada expediente",
+        "option_b": "Solo una libreta local del usuario",
+        "option_c": "Un repositorio externo sin mantenimiento",
+        "option_d": "Un repositorio único por entidad compartido por las aplicaciones",
+        "correct": "D",
+        "explanation": "El manual describe un repositorio único de interesados por entidad, compartido por las aplicaciones."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué significado tienen los tipos de interesado Solicitante y Afectado?",
+        "option_a": "Son una distinción meramente semántica sin implicaciones en la gestión",
+        "option_b": "Determinan dos niveles obligatorios de permisos",
+        "option_c": "Uno puede acceder y el otro nunca",
+        "option_d": "Definen dos tipos distintos de expediente",
+        "correct": "A",
+        "explanation": "El manual aclara que Solicitante y Afectado son una distinción meramente semántica."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué acceso tiene el representante seleccionado en un expediente?",
+        "option_a": "Acceso únicamente al tablón",
+        "option_b": "El mismo acceso al expediente que el representado",
+        "option_c": "Acceso solo a la configuración",
+        "option_d": "Ningún acceso al expediente",
+        "correct": "B",
+        "explanation": "El representante tendrá acceso al expediente de la misma forma que el representado."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué tipo de documento es SEFYCU en SEGEX?",
+        "option_a": "Un servicio de registro postal",
+        "option_b": "Un catálogo de procedimientos",
+        "option_c": "La herramienta de firma y custodia de documentación de SEDIPUALB@",
+        "option_d": "Un sistema de contabilidad",
+        "correct": "C",
+        "explanation": "El manual define SEFYCU como la herramienta de firma y custodia de documentación generada en SEDIPUALB@."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué herramienta se identifica como generadora de resoluciones administrativas o decretos?",
+        "option_a": "SERES",
+        "option_b": "SECOIN",
+        "option_c": "SECA",
+        "option_d": "SEGRA",
+        "correct": "D",
+        "explanation": "El manual identifica SEGRA como la herramienta de generación de resoluciones administrativas o decretos."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_37_LOT_01_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_37_LOT_02_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 37,
+        "question": "¿Qué grupos pueden recibir permisos sobre un expediente SEGEX?",
+        "option_a": "Servicios, usuarios internos, usuarios externos y todos",
+        "option_b": "Solo usuarios internos",
+        "option_c": "Únicamente personas con certificado",
+        "option_d": "Solo la unidad creadora",
+        "correct": "A",
+        "explanation": "El manual enumera como destinatarios servicios, usuarios internos, usuarios externos y Todos."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué caracteriza al acceso de usuario externo en SEGEX?",
+        "option_a": "Es permanente y siempre público",
+        "option_b": "Usa temporalmente una URL cifrada enviada por correo sin exigir certificado digital",
+        "option_c": "Solo funciona con certificado de servidor",
+        "option_d": "No puede limitarse temporalmente",
+        "correct": "B",
+        "explanation": "El acceso externo se envía por correo mediante una URL que codifica un acceso cifrado y se restringe temporalmente por seguridad."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Para qué puede usarse el destinatario Todos?",
+        "option_a": "Para impedir cualquier acceso",
+        "option_b": "Para asignar tareas solo al tramitador",
+        "option_c": "Para declarar público el expediente, por ejemplo en un Portal de Transparencia",
+        "option_d": "Para convertir documentos en facturas",
+        "correct": "C",
+        "explanation": "El manual indica que Todos declara público el expediente y puede servir para portales de transparencia."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué rol puede generar documentación y aportarla, pero no cambiar el estado del expediente?",
+        "option_a": "Tramitador",
+        "option_b": "Solo lectura",
+        "option_c": "Sólo Documentos",
+        "option_d": "Colaborador",
+        "correct": "D",
+        "explanation": "El Colaborador puede acceder a la información y generar/aportar documentación, pero no realiza labores reservadas al tramitador."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué puede hacer el rol Solo lectura?",
+        "option_a": "Visualizar todo el expediente sin modificar su contenido",
+        "option_b": "Añadir interesados y cambiar el procedimiento",
+        "option_c": "Acceder solo a un documento concreto",
+        "option_d": "Crear tareas y cambiar el estado",
+        "correct": "A",
+        "explanation": "Solo lectura permite visualizar todo el expediente sin realizar modificaciones."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Para qué sirve el rol Sólo Documentos?",
+        "option_a": "Hacer público todo el expediente",
+        "option_b": "Dar acceso individual a documentos específicos sin permitir acceso al resto del expediente",
+        "option_c": "Asignar cualquier tarea del expediente",
+        "option_d": "Cambiar la entidad propietaria",
+        "correct": "B",
+        "explanation": "Sólo Documentos permite conceder acceso a documentos individuales impidiendo el acceso al resto del expediente."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué ocurre cuando el nivel de acceso Colaborador incluye texto en Finalidad de acceso?",
+        "option_a": "Se cambia automáticamente el procedimiento",
+        "option_b": "Se archiva el expediente",
+        "option_c": "Cada línea puede convertirse en una tarea asignada al usuario o servicio",
+        "option_d": "Se crea un nuevo interesado",
+        "correct": "C",
+        "explanation": "El campo se convierte en Tareas y cada línea se transforma en una tarea asignada."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Cuál es el estado inicial de una tarea emitida por el tramitador?",
+        "option_a": "Aceptada",
+        "option_b": "Rechazada",
+        "option_c": "Completada",
+        "option_d": "Pendiente",
+        "correct": "D",
+        "explanation": "Pendiente significa que la tarea se ha emitido y espera aceptación."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué estado indica que el colaborador ha aceptado una tarea?",
+        "option_a": "Aceptada",
+        "option_b": "Pendiente",
+        "option_c": "Archivada",
+        "option_d": "Publicada",
+        "correct": "A",
+        "explanation": "El estado Aceptada indica que el colaborador ha aceptado la tarea."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué estado indica que el colaborador terminó una tarea?",
+        "option_a": "Borrador",
+        "option_b": "Completada",
+        "option_c": "Devuelta",
+        "option_d": "Incompleta",
+        "correct": "B",
+        "explanation": "Completada es el estado que representa la finalización por el colaborador."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué diferencia establece el manual entre avisos automáticos y manuales?",
+        "option_a": "Los automáticos los crea el usuario y los manuales el sistema",
+        "option_b": "Ambos se generan solo al archivar",
+        "option_c": "Los automáticos los genera la aplicación ante eventos; los manuales los crea el tramitador",
+        "option_d": "Los dos son tipos de documento",
+        "correct": "C",
+        "explanation": "El manual separa avisos generados por la aplicación y avisos creados manualmente por el tramitador."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Cómo puede aceptar un tramitador un aviso pendiente?",
+        "option_a": "Solo mediante firma biométrica",
+        "option_b": "Únicamente desde el tablón",
+        "option_c": "Solo después de archivarlo",
+        "option_d": "Individualmente o por servicio",
+        "correct": "D",
+        "explanation": "Los avisos pueden aceptarse individualmente o por servicio."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué queda auditado en el historial de SEGEX?",
+        "option_a": "Todas las acciones que modifican algún elemento del expediente",
+        "option_b": "Solo las consultas de lectura",
+        "option_c": "Únicamente los correos enviados",
+        "option_d": "Solo la creación de usuarios",
+        "correct": "A",
+        "explanation": "El apartado Historial audita las acciones que modifican elementos del expediente."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Cómo se organiza el catálogo de procedimientos de SEDIPUALB@ descrito en SEGEX?",
+        "option_a": "Solo por fecha de creación",
+        "option_b": "En materias, tipos y subtipos",
+        "option_c": "Únicamente por usuario",
+        "option_d": "Por tamaño del expediente",
+        "correct": "B",
+        "explanation": "El catálogo está dividido en materias, tipos y subtipos."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué magnitud aproxima el manual para el catálogo normalizado?",
+        "option_a": "Menos de 10 procedimientos",
+        "option_b": "Exactamente 20 procedimientos",
+        "option_c": "Más de 900 procedimientos administrativos",
+        "option_d": "Solo los procedimientos de contratación",
+        "correct": "C",
+        "explanation": "El manual señala que el catálogo supera actualmente los 900 procedimientos administrativos."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué función de SIA facilita SEDIPUALB@ para las entidades?",
+        "option_a": "Eliminar automáticamente todos los procedimientos",
+        "option_b": "Sustituir el catálogo por una lista privada",
+        "option_c": "Crear certificados digitales",
+        "option_d": "Generar el formato de intercambio para altas masivas y cargar códigos SIA",
+        "correct": "D",
+        "explanation": "El manual indica que SEDIPUALB@ facilita el formato de intercambio de altas masivas en SIA y carga sus códigos."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué ocurre con dos expedientes SEGEX relacionados respecto del acceso?",
+        "option_a": "Relacionarlos no concede automáticamente acceso de uno al otro",
+        "option_b": "Relacionarlos siempre hace públicos ambos",
+        "option_c": "El acceso al segundo se hereda siempre",
+        "option_d": "Solo el creador puede ver ambos automáticamente",
+        "correct": "A",
+        "explanation": "La relación entre expedientes no implica acceso automático; depende de los permisos de cada uno."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué requisito se indica para relacionar expedientes SEGEX?",
+        "option_a": "Ser solo lector del origen y no tener acceso al otro",
+        "option_b": "Ser tramitador del expediente origen y tener al menos acceso de lectura al otro",
+        "option_c": "Ser interesado en ambos sin más permisos",
+        "option_d": "Tener únicamente rol de colaborador",
+        "correct": "B",
+        "explanation": "El manual exige ser tramitador del expediente desde el que se establece la relación y tener acceso de lectura al expediente relacionado."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué permite el clonado en SEGEX?",
+        "option_a": "Eliminar el expediente original y sus documentos",
+        "option_b": "Compartir siempre los permisos entre ambos",
+        "option_c": "Crear un expediente nuevo con elementos del expediente actual seleccionados para copiar",
+        "option_d": "Convertir cualquier registro en una factura",
+        "correct": "C",
+        "explanation": "El clonado crea un expediente nuevo que puede incluir procedimiento, descripción, carpetas, interesados, permisos y relaciones."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué herramienta estatal se menciona para generar expedientes ENI compatibles?",
+        "option_a": "NOTIFIC@",
+        "option_b": "DIR3",
+        "option_c": "PLACSP",
+        "option_d": "INSIDE",
+        "correct": "D",
+        "explanation": "El manual indica que la generación ENI compatible utiliza los servicios de INSIDE."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_37_LOT_02_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_37_LOT_03_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 37,
+        "question": "¿Cómo se accede al Registro General Electrónico SERES desde la plataforma?",
+        "option_a": "Desde Catálogo de Trámites/Servicios relacionados con personal empleado/Registro General Electrónico (SERES)",
+        "option_b": "Desde el tablón de anuncios",
+        "option_c": "Solo desde SECOIN",
+        "option_d": "Desde el catálogo de contratos menores",
+        "correct": "A",
+        "explanation": "El manual proporciona esa ruta de acceso al Registro General Electrónico SERES."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué medios de identificación menciona SERES para acceder?",
+        "option_a": "Solo contraseña local",
+        "option_b": "Certificado digital o sistema Cl@ve",
+        "option_c": "Únicamente correo electrónico",
+        "option_d": "Solo firma biométrica",
+        "correct": "B",
+        "explanation": "La identificación puede realizarse mediante certificado digital o sistema Cl@ve."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Quién puede modificar los permisos de una persona en SERES?",
+        "option_a": "Cualquier remitente",
+        "option_b": "El destinatario de un registro",
+        "option_c": "El administrador designado por la entidad",
+        "option_d": "El ciudadano que consulta la sede",
+        "correct": "C",
+        "explanation": "El manual indica que los permisos solo puede modificarlos el administrador de la entidad."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué opción inicia el alta de un registro presencial?",
+        "option_a": "Historial / Nuevo expediente",
+        "option_b": "Catálogo / Crear procedimiento",
+        "option_c": "Avisos / Alta de tarea",
+        "option_d": "Registro de entrada / Alta de asiento",
+        "correct": "D",
+        "explanation": "Para un registro presencial el manual indica Registro de entrada / Alta de asiento."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué ocurre si un registro tiene unidad de destino informada?",
+        "option_a": "Queda marcado como completo al guardar",
+        "option_b": "Se elimina al guardar",
+        "option_c": "Se convierte en salida",
+        "option_d": "Queda siempre archivado",
+        "correct": "A",
+        "explanation": "El campo Completo queda marcado al guardar cuando el registro tiene unidad de destino."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Puede asignarse un mismo asiento a más de un destino?",
+        "option_a": "No, solo admite un destino siempre",
+        "option_b": "Sí, puede asignarse a más de un destino",
+        "option_c": "Solo si no tiene remitente",
+        "option_d": "Únicamente después de archivarlo",
+        "correct": "B",
+        "explanation": "El manual permite asignar un registro a más de un destino."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué permite la asignación a varios destinos en SERES?",
+        "option_a": "Que se elimine el asiento duplicado",
+        "option_b": "Que todos los registros sean públicos",
+        "option_c": "Que usuarios de esos servicios puedan ver el asiento e iniciar un expediente",
+        "option_d": "Que se convierta en notificación electrónica",
+        "correct": "C",
+        "explanation": "La asignación múltiple permite que los servicios accedan al asiento e inicien un expediente."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué condición tiene el campo Resumen de un registro?",
+        "option_a": "Es opcional y nunca editable",
+        "option_b": "Solo se completa después de archivar",
+        "option_c": "Solo sirve para documentos anexos",
+        "option_d": "Es obligatorio y puede modificarlo el usuario tras seleccionar el asunto",
+        "correct": "D",
+        "explanation": "El resumen es obligatorio; al seleccionar asunto se informa, pero puede modificarse."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué efecto puede tener el resumen cuando el registro inicia un expediente?",
+        "option_a": "Pasa a la descripción del expediente",
+        "option_b": "Se convierte en el número de registro",
+        "option_c": "Se usa como firma del sello",
+        "option_d": "Se elimina al crear el expediente",
+        "correct": "A",
+        "explanation": "El manual destaca que el resumen pasa a la descripción del expediente."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué preferencia del remitente puede mostrar SERES?",
+        "option_a": "Solo el tamaño del anexo",
+        "option_b": "Preferencia de idioma y de comunicación",
+        "option_c": "Únicamente el rol del tramitador",
+        "option_d": "La contraseña del ciudadano",
+        "correct": "B",
+        "explanation": "Al seleccionar al remitente se muestran sus preferencias de idioma y comunicación."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué expresa la oposición a la interoperabilidad del remitente?",
+        "option_a": "Que acepta cualquier consulta sin aportar documentos",
+        "option_b": "Que solicita archivar el registro",
+        "option_c": "Que se opone a que la Administración consulte o recabe datos y documentos de otras Administraciones",
+        "option_d": "Que cambia el destino del asiento",
+        "correct": "C",
+        "explanation": "La casilla registra la oposición expresa y obliga a aportar la documentación acreditativa correspondiente."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué información mínima de procedencia exige el registro?",
+        "option_a": "Solo el código postal del destino",
+        "option_b": "Únicamente el nombre del asunto",
+        "option_c": "El número de expediente futuro",
+        "option_d": "Municipio de procedencia o una descripción adicional",
+        "correct": "D",
+        "explanation": "La procedencia exige como mínimo municipio o descripción adicional."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué sucede si se completan los campos Expone y Solicita?",
+        "option_a": "El sistema encamina el registro al proceso de firma biométrica",
+        "option_b": "El registro se archiva sin justificante",
+        "option_c": "Se crea una factura",
+        "option_d": "Se elimina el anexo de instancia",
+        "correct": "A",
+        "explanation": "El manual indica que esos campos encaminan el proceso hacia la firma biométrica."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué operación permite cerrar un registro sin eliminarlo?",
+        "option_a": "Borrarlo definitivamente",
+        "option_b": "Archivarlo indicando fecha y causa",
+        "option_c": "Convertirlo en un aviso",
+        "option_d": "Cambiar su asunto a Global",
+        "correct": "B",
+        "explanation": "Los registros no se pueden eliminar, pero se pueden archivar con fecha y causa."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué condición de escaneo automatizado se documenta?",
+        "option_a": "Solo una cámara web sin software",
+        "option_b": "Únicamente un certificado digital",
+        "option_c": "Escáner TWAIN compatible y aplicación DIPUALBA instalada",
+        "option_d": "Un lector WACOM obligatorio",
+        "correct": "C",
+        "explanation": "La digitalización requiere configurar un escáner TWAIN compatible y tener instalada la aplicación DIPUALBA."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Cómo se puede adjuntar un documento previamente aportado?",
+        "option_a": "Solo volviendo a escanearlo en papel",
+        "option_b": "Únicamente creando un expediente nuevo",
+        "option_c": "Mediante el tablón de anuncios",
+        "option_d": "Mediante Añadir anexo antiguo o mediante su CSV",
+        "correct": "D",
+        "explanation": "SERES ofrece seleccionar documentos antiguos del remitente o añadirlos usando el CSV."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué información contiene el justificante de entrada firmado por sello de órgano?",
+        "option_a": "Número de registro y fecha y hora",
+        "option_b": "Solo el nombre del navegador",
+        "option_c": "Únicamente el tamaño de los anexos",
+        "option_d": "El rol del destinatario futuro",
+        "correct": "A",
+        "explanation": "El sello de órgano del justificante muestra número de registro y fecha y hora."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué diferencia hay entre Alta pendiente y Registrar?",
+        "option_a": "Alta pendiente archiva; Registrar elimina",
+        "option_b": "Alta pendiente guarda datos sin número; Registrar produce el asiento y asigna número",
+        "option_c": "Ambos asignan número inmediatamente",
+        "option_d": "Registrar solo guarda sin registrar",
+        "correct": "B",
+        "explanation": "Alta pendiente permite modificar sin número de registro; Registrar efectúa el registro, asigna número y genera justificante."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Cuándo se considera completado un asiento según el manual?",
+        "option_a": "Solo cuando tiene un número, aunque falte destino",
+        "option_b": "Cuando se guarda como alta pendiente",
+        "option_c": "Cuando tiene anexos correctos, interesado, destino, no está pendiente de firma y resumen",
+        "option_d": "En cuanto se crea el remitente",
+        "correct": "C",
+        "explanation": "El manual enumera esas condiciones para considerar completado el asiento."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Cuándo queda despachado un registro telemático sin destino?",
+        "option_a": "Cuando se descarga su justificante",
+        "option_b": "Cuando se archiva sin destino",
+        "option_c": "Cuando se añade cualquier anexo",
+        "option_d": "Cuando se le asigna al menos un nodo destino",
+        "correct": "D",
+        "explanation": "Los registros telemáticos pendientes de despachar quedan despachados al asignarles al menos un nodo destino."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_37_LOT_03_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_37_LOT_04_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 37,
+        "question": "¿Qué función principal atribuye el manual a SEFYCU?",
+        "option_a": "Posibilitar una gestión documental completa dentro de SEDIPUALB@",
+        "option_b": "Gestionar únicamente pagos bancarios",
+        "option_c": "Crear solo registros de entrada",
+        "option_d": "Administrar exclusivamente usuarios",
+        "correct": "A",
+        "explanation": "SEFYCU se presenta como la principal herramienta para una gestión documental completa dentro de SEDIPUALB@."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué estándares de firma electrónica menciona SEFYCU?",
+        "option_a": "SIR y SENIA",
+        "option_b": "PAdES y XAdES",
+        "option_c": "PLACSP y SCSP",
+        "option_d": "TWAIN y WACOM",
+        "correct": "B",
+        "explanation": "El manual menciona sistemas de firma electrónica PAdES y XAdES."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué otros sistemas de firma incorpora SEFYCU?",
+        "option_a": "Solo firma postal",
+        "option_b": "Firma exclusivamente bancaria",
+        "option_c": "Firma biométrica y firma bajo seudónimo",
+        "option_d": "Únicamente firma de servidor",
+        "correct": "C",
+        "explanation": "Además de firma electrónica, el manual describe firma biométrica y bajo seudónimo."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué cliente usa SEDIPUALB@ para la firma electrónica?",
+        "option_a": "DIPUALBA Scanner, basado en TWAIN",
+        "option_b": "SERES, basado en SIR",
+        "option_c": "SECOIN, basado en RCIL",
+        "option_d": "FirmaDipualba, basado en @FIRMA del Estado",
+        "correct": "D",
+        "explanation": "El cliente de firma es FirmaDipualba y está basado en la plataforma @FIRMA del Estado."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué tamaño máximo de documento indica el manual para FirmaDipualba?",
+        "option_a": "30 MB",
+        "option_b": "3 MB",
+        "option_c": "300 KB",
+        "option_d": "300 MB",
+        "correct": "A",
+        "explanation": "El manual indica que permite firmar documentos de hasta 30 MB."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué modalidad de firma permite firmar varios documentos sin confirmación individual?",
+        "option_a": "Firma por orden",
+        "option_b": "Firma masiva",
+        "option_c": "Firma bajo seudónimo",
+        "option_d": "Firma de sello de órgano",
+        "correct": "B",
+        "explanation": "FirmaDipualba incorpora firma masiva sin confirmación individual."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué dos clases de personas pueden firmar en SEFYCU?",
+        "option_a": "Solo usuarios internos",
+        "option_b": "Solo ciudadanos sin relación",
+        "option_c": "Usuarios internos y externos a la organización",
+        "option_d": "Únicamente administradores",
+        "correct": "C",
+        "explanation": "El manual permite firmar tanto a usuarios internos como externos."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué campo define el acceso al documento sin considerar su pertenencia a un expediente?",
+        "option_a": "Tipo ENI",
+        "option_b": "Descripción larga",
+        "option_c": "Firma por orden",
+        "option_d": "Nivel de acceso",
+        "correct": "D",
+        "explanation": "Nivel de acceso define el acceso al documento con independencia de su pertenencia a un expediente."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué indica Firma por orden?",
+        "option_a": "Que los firmantes deben seguir un orden de prelación estricto",
+        "option_b": "Que cualquiera firma sin orden",
+        "option_c": "Que el documento se archiva automáticamente",
+        "option_d": "Que solo firma el propietario",
+        "correct": "A",
+        "explanation": "Firma por orden establece un orden de prelación estricto entre firmantes."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué formato debe tener el documento matriz que se aporta a SEFYCU?",
+        "option_a": "ZIP con todos los anexos",
+        "option_b": "PDF sin cabeceras ni pies",
+        "option_c": "Cualquier imagen sin límite",
+        "option_d": "CSV sin contenido",
+        "correct": "B",
+        "explanation": "El manual indica que el documento matriz es PDF y no debe llevar cabeceras ni pies."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué dos formas principales de definir firmantes documenta SEFYCU?",
+        "option_a": "Por CSV y por SIR",
+        "option_b": "Por entidad y por factura",
+        "option_c": "Personalmente y por rol",
+        "option_d": "Por carpeta y por tablón",
+        "correct": "C",
+        "explanation": "Los firmantes se pueden definir personalmente o por rol."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué significa añadir firmantes por rol?",
+        "option_a": "Solo firma la persona que crea el documento",
+        "option_b": "Firma el primer interesado del expediente",
+        "option_c": "Firma automáticamente el sello de órgano",
+        "option_d": "Puede firmar cualquiera que ostente el rol organizativo indicado",
+        "correct": "D",
+        "explanation": "La firma por rol permite que firme cualquiera que ostente el rol seleccionado."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué mecanismo de aviso califica el manual como no fehaciente?",
+        "option_a": "Aviso Email",
+        "option_b": "Notificación Electrónica",
+        "option_c": "Edicto en Tablón",
+        "option_d": "SIR",
+        "correct": "A",
+        "explanation": "Aviso Email se describe como mecanismo de notificación no fehaciente."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué ocurre con una notificación SEFYCU cuando todos los firmantes han firmado?",
+        "option_a": "Se eliminan los anexos",
+        "option_b": "Se ejecutan automáticamente las notificaciones definidas",
+        "option_c": "Se cambia siempre a borrador",
+        "option_d": "Se archiva el expediente origen",
+        "correct": "B",
+        "explanation": "Las notificaciones definidas se realizan automáticamente cuando el documento está firmado por todos los firmantes."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Para qué se usa la notificación en papel en el manual?",
+        "option_a": "Para comunicaciones internas no fehacientes",
+        "option_b": "Para cualquier usuario con certificado",
+        "option_c": "Para notificaciones formales a personas físicas que no han aceptado la electrónica",
+        "option_d": "Para publicar un documento en SIR",
+        "correct": "C",
+        "explanation": "La notificación en papel se documenta para interesados personas físicas que no aceptaron la notificación electrónica."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué plataforma recibe también la notificación electrónica de SEFYCU además de la sede?",
+        "option_a": "La plataforma PLACSP mediante SECA",
+        "option_b": "El registro SERES mediante TWAIN",
+        "option_c": "El tablón interno de SECOIN",
+        "option_d": "La Carpeta Ciudadana del Estado mediante NOTIFIC@",
+        "correct": "D",
+        "explanation": "El manual indica que la notificación se coloca en la sede y en la Carpeta Ciudadana mediante NOTIFIC@."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué plazo de expiración indica el manual para la notificación electrónica?",
+        "option_a": "10 días naturales desde su envío",
+        "option_b": "10 días hábiles desde la firma",
+        "option_c": "30 días naturales desde el acceso",
+        "option_d": "Un año desde la publicación",
+        "correct": "A",
+        "explanation": "La notificación electrónica se entiende expirada a los 10 días naturales de su envío."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué diferencia señala el manual entre Comunicación Electrónica y Notificación Electrónica?",
+        "option_a": "La comunicación siempre exige papel",
+        "option_b": "La comunicación no expira a los 10 días de su envío",
+        "option_c": "La notificación no es fehaciente",
+        "option_d": "La comunicación solo sirve para SIR",
+        "correct": "B",
+        "explanation": "La Comunicación Electrónica se describe como fehaciente y no expira a los 10 días."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué es SENIA en el manual de SEFYCU?",
+        "option_a": "Un lector de firma biométrica",
+        "option_b": "Un tipo de documento ENI",
+        "option_c": "Un mecanismo fehaciente que registra salida en SERES de origen y entrada en SERES de destino",
+        "option_d": "Un sistema de pagos",
+        "correct": "C",
+        "explanation": "SENIA registra salida en el SERES de la entidad y entrada en el SERES de la entidad destino."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué dispositivo menciona el manual para la firma biométrica?",
+        "option_a": "Escáneres TWAIN",
+        "option_b": "Tarjetas DIR3",
+        "option_c": "Servidores INSIDE",
+        "option_d": "Lectores WACOM STU 430",
+        "correct": "D",
+        "explanation": "SEFYCU se integra con lectores de firma WACOM modelo STU 430."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_37_LOT_04_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_37_LOT_05_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 37,
+        "question": "¿Qué módulo se presenta como sistema electrónico de control interno?",
+        "option_a": "SECOIN",
+        "option_b": "SEFYCU",
+        "option_c": "SERES",
+        "option_d": "SECA",
+        "correct": "A",
+        "explanation": "SECOIN se identifica como Sistema electrónico de control interno."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Con qué módulo está vinculada SECOIN?",
+        "option_a": "SERES, el registro electrónico",
+        "option_b": "SEGEX, la gestión de expedientes",
+        "option_c": "SECA, la contratación",
+        "option_d": "SEFYCU, la firma",
+        "correct": "B",
+        "explanation": "El manual indica que SECOIN es una herramienta vinculada a SEGEX."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué norma cita el manual como base de las obligaciones de control interno que facilita SECOIN?",
+        "option_a": "Ley de Contratos del Sector Público",
+        "option_b": "Reglamento eIDAS",
+        "option_c": "Real Decreto 424/2017",
+        "option_d": "Real Decreto 311/2022",
+        "correct": "C",
+        "explanation": "La introducción cita el Real Decreto 424/2017, de 28 de abril."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿A qué servicios se dirige sectorialmente SECOIN?",
+        "option_a": "A los servicios de registro postal",
+        "option_b": "A las unidades de contratación privada",
+        "option_c": "A los servicios de archivo histórico",
+        "option_d": "A los Servicios de Intervención de las Entidades Locales",
+        "correct": "D",
+        "explanation": "El manual califica SECOIN como herramienta sectorial dirigida a los Servicios de Intervención locales."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué modalidad de control usa un sistema de checklist de requisitos básicos?",
+        "option_a": "Fiscalización previa limitada",
+        "option_b": "Fiscalización plena",
+        "option_c": "Relaciones entre expedientes",
+        "option_d": "Gestión de ofertas",
+        "correct": "A",
+        "explanation": "La fiscalización previa limitada se basa en requisitos básicos sujetos a checklist."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué diferencia documenta el manual entre fiscalización previa limitada y plena?",
+        "option_a": "La limitada cubre todo y la plena solo una factura",
+        "option_b": "La limitada usa requisitos básicos/checklist; la plena cubre todo el expediente sin checklist",
+        "option_c": "Ambas son idénticas",
+        "option_d": "La plena solo se aplica a registros de entrada",
+        "correct": "B",
+        "explanation": "El manual distingue la fiscalización previa limitada por checklist y la plena por revisar todo el expediente sin checklist."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué informes puede registrar y numerar SECOIN?",
+        "option_a": "Solo facturas y contratos",
+        "option_b": "Únicamente entradas de registro",
+        "option_c": "Informes de función interventora, reparos e informes de control financiero permanente",
+        "option_d": "Solo notificaciones electrónicas",
+        "correct": "C",
+        "explanation": "La introducción enumera informes de fiscalización, reparos y control financiero permanente."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Cómo se estructura la herramienta SECOIN?",
+        "option_a": "Materias, tipos y subtipos de registro",
+        "option_b": "Solo carpetas y documentos",
+        "option_c": "Usuarios, certificados y sellos",
+        "option_d": "Áreas, expedientes y actuaciones con formularios",
+        "correct": "D",
+        "explanation": "El manual estructura la aplicación en Áreas, Expedientes y Actuaciones con Formularios."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué representan los formularios o fichas de SECOIN?",
+        "option_a": "Requisitos a cumplimentar a modo de checklist para fiscalizar",
+        "option_b": "Documentos de firma masiva",
+        "option_c": "Anexos de un registro de entrada",
+        "option_d": "Contratos menores listos para PLACSP",
+        "correct": "A",
+        "explanation": "Los formularios recogen requisitos que deben verificarse como checklist."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué puede buscarse en el listado de formularios SECOIN?",
+        "option_a": "Solo el número de factura",
+        "option_b": "Área, expediente y estado",
+        "option_c": "Únicamente la fecha de firma",
+        "option_d": "El tipo de navegador",
+        "correct": "B",
+        "explanation": "El manual indica que el listado puede buscarse por Área, Expediente y Estado."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué elemento puede parametrizar cada entidad local en SECOIN?",
+        "option_a": "Solo el certificado del usuario",
+        "option_b": "Únicamente la fecha del registro",
+        "option_c": "Áreas, expedientes y requisitos dentro de una herramienta abierta",
+        "option_d": "La URL de la sede estatal",
+        "correct": "C",
+        "explanation": "El manual califica la herramienta como abierta y parametrizable para áreas, expedientes y requisitos."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué dato puede tener una actuación en SECOIN?",
+        "option_a": "Código CSV del remitente",
+        "option_b": "Número de registro de salida",
+        "option_c": "URL de PLACSP",
+        "option_d": "Declaración de Ausencia de Conflicto de Intereses (DACI)",
+        "correct": "D",
+        "explanation": "Las actuaciones pueden incluir DACI, especialmente en actuaciones financiadas con fondos europeos Next Generation."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué finalidad tiene un requisito básico en un formulario SECOIN?",
+        "option_a": "Verificar requisitos legales ligados a la legalidad presupuestaria",
+        "option_b": "Elegir el destinatario de un correo",
+        "option_c": "Definir el formato de un PDF",
+        "option_d": "Asignar un asunto de registro",
+        "correct": "A",
+        "explanation": "Los requisitos básicos son requisitos legales vinculados a la legalidad presupuestaria."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué resultado puede derivarse del incumplimiento de un requisito básico?",
+        "option_a": "La creación automática de un expediente ENI",
+        "option_b": "Un reparo suspensivo fundamentado en una norma legal",
+        "option_c": "Una notificación por email no fehaciente",
+        "option_d": "La publicación en el tablón",
+        "correct": "B",
+        "explanation": "El manual señala que el incumplimiento de un requisito básico debe fundamentarse y puede producir reparo suspensivo."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué finalidad tienen los informes anuales de control interno en SECOIN?",
+        "option_a": "Enviar contratos a PLACSP",
+        "option_b": "Generar registros telemáticos",
+        "option_c": "Explotar datos como expedientes fiscalizados, resultados y reparos",
+        "option_d": "Firmar documentos biométricos",
+        "correct": "C",
+        "explanation": "SECOIN permite explotar la información para obtener informes anuales de control interno y analizar resultados."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué habilita SECA cuando detecta un expediente de contratación?",
+        "option_a": "El módulo de notificación electrónica",
+        "option_b": "Una firma biométrica de oficio",
+        "option_c": "Un registro de salida SIR",
+        "option_d": "El modelo de información contractual SECA para los tramitadores",
+        "correct": "D",
+        "explanation": "El manual indica que al detectar un procedimiento de contratación se habilita el modelo SECA."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Dónde se gestionan directamente las ofertas de un contrato menor?",
+        "option_a": "Desde SEGEX, dentro del expediente de contratación",
+        "option_b": "Solo desde el tablón de anuncios",
+        "option_c": "En el módulo SECOIN",
+        "option_d": "En un registro de salida externo",
+        "correct": "A",
+        "explanation": "Las ofertas de contratos menores se gestionan directamente desde SEGEX en el propio expediente."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué plataforma recibe el envío de los contratos menores según el manual SECA?",
+        "option_a": "La Carpeta Ciudadana",
+        "option_b": "La Plataforma de Contratos del Sector Público (PLACSP)",
+        "option_c": "INSIDE",
+        "option_d": "SERES",
+        "correct": "B",
+        "explanation": "SECA documenta el envío de contratos menores a PLACSP."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué código vincula una petición de factura con un contrato y expediente?",
+        "option_a": "El código CSV del documento",
+        "option_b": "El código SIA del procedimiento",
+        "option_c": "El código de petición de factura (CCF)",
+        "option_d": "El código DIR3 del usuario",
+        "correct": "C",
+        "explanation": "El manual explica que la petición de factura queda asociada a un código CCF que vincula la factura con la petición y expediente."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué puede exportar la búsqueda avanzada de contratos SECA?",
+        "option_a": "Solo imágenes de los firmantes",
+        "option_b": "Únicamente avisos automáticos",
+        "option_c": "El listado de usuarios de SECOIN",
+        "option_d": "Información en formatos exigidos por el Tribunal de Cuentas y el Registro Público de Contratos",
+        "correct": "D",
+        "explanation": "La búsqueda avanzada permite exportar información en formatos exigidos por el Tribunal de Cuentas y el Registro Público de Contratos."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_37_LOT_05_END
