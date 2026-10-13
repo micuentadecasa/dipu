@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/objectives/topic-25.json",
+  "batches": [
+    {
+      "topic_num": 25,
+      "lot_num": 10,
+      "source_ids": [
+        "ODATA-4.01"
+      ],
+      "questions": [
+        {
+          "objective_id": "t25-lo-181",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué debe consultar un cliente antes de construir una navegación?",
+          "options": [
+            "El metadata para conocer el nombre de la propiedad y tipos",
+            "Solo `$format`",
+            "El header User-Agent",
+            "El recuento"
+          ],
+          "correct": "A",
+          "explanation": "Metadata permite descubrir relaciones.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Metadata Service",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-182",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué riesgo hay al permitir cualquier `$expand` sin control del servicio?",
+          "options": [
+            "Consultas costosas o datos relacionados no previstos",
+            "Que desaparezca la service root",
+            "Que cambie la clave del modelo",
+            "Que `$select` deje de existir"
+          ],
+          "correct": "A",
+          "explanation": "Expand debe respetar capacidades y políticas del servicio.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Expand System Query Option",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-183",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué riesgo hay al aceptar filtros sin validar capacidades?",
+          "options": [
+            "Expresiones no soportadas o consultas costosas",
+            "Que la entidad pierda identidad",
+            "Que metadata cambie",
+            "Que el cliente sea singleton"
+          ],
+          "correct": "A",
+          "explanation": "El servicio debe soportar la expresión.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Filter System Query Option",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-184",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué diseño ayuda a paginar una colección?",
+          "options": [
+            "Combinar `$orderby` estable con `$top` y `$skip` según el caso",
+            "Usar `$format` como offset",
+            "Usar `$metadata` como página",
+            "Usar `$expand` sin orden"
+          ],
+          "correct": "A",
+          "explanation": "Orden y límites coordinan paginación.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Top/Skip/OrderBy System Query Options",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-185",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué diferencia hay entre el modelo conceptual y la representación?",
+          "options": [
+            "El modelo describe entidades/relaciones; la representación serializa el resultado",
+            "Son idénticos",
+            "La representación define claves",
+            "El modelo solo define CSS"
+          ],
+          "correct": "A",
+          "explanation": "Son capas relacionadas pero distintas.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Entity Data Model",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-186",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué debe hacer un cliente ante un entity set desconocido?",
+          "options": [
+            "Consultar metadata y no asumir que existe",
+            "Crear uno localmente en la URL",
+            "Usar cualquier nombre",
+            "Cambiar `$format`"
+          ],
+          "correct": "A",
+          "explanation": "El servicio define los recursos expuestos.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Metadata Service",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-187",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué selección modela un valor reutilizable sin identidad?",
+          "options": [
+            "Complex type",
+            "Entity set",
+            "Singleton",
+            "Entity key"
+          ],
+          "correct": "A",
+          "explanation": "Complex type agrupa valores sin identidad.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Complex Types",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-188",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué selección modela una colección navegable de entidades?",
+          "options": [
+            "Entity set con navigation properties según el modelo",
+            "Primitive property",
+            "Complex type solamente",
+            "Service root"
+          ],
+          "correct": "A",
+          "explanation": "Entity set y navegación modelan recursos relacionados.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Entity Sets; Navigation Properties",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-189",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué aporta una clave en la resource path?",
+          "options": [
+            "Dirección inequívoca a una entidad concreta",
+            "Orden de resultados",
+            "Formato MIME",
+            "Búsqueda textual"
+          ],
+          "correct": "A",
+          "explanation": "La clave identifica la entidad.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Key Predicates",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-190",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué debe respetar una URL OData al combinar `$filter` y `$orderby`?",
+          "options": [
+            "La sintaxis y semántica definidas por el protocolo",
+            "Que `$filter` vaya siempre después de `$format`",
+            "Que no tenga raíz",
+            "Que convierta el set en singleton"
+          ],
+          "correct": "A",
+          "explanation": "La consulta debe ser protocolariamente válida.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, System Query Options",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-191",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué permite una consulta con `$select` y `$expand` bien formada?",
+          "options": [
+            "Controlar propiedades de la entidad y relaciones incluidas",
+            "Cambiar los tipos del metadata",
+            "Modificar datos siempre",
+            "Crear claves nuevas"
+          ],
+          "correct": "A",
+          "explanation": "Cada opción controla una dimensión.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Select/Expand System Query Options",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-192",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué debe verificar una aplicación que expone un OData service?",
+          "options": [
+            "Que el modelo, rutas y opciones permitidas coincidan con el contrato",
+            "Solo que compile CSS",
+            "Solo que exista un singleton",
+            "Solo que acepte cualquier query"
+          ],
+          "correct": "A",
+          "explanation": "El contrato expuesto debe ser coherente.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Service Model",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-193",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué diferencia `$count` de `$top`?",
+          "options": [
+            "Count informa cantidad; top limita recursos",
+            "Ambos limitan",
+            "Count ordena y top busca",
+            "Top informa metadata"
+          ],
+          "correct": "A",
+          "explanation": "Tienen efectos distintos.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Count/Top System Query Options",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-194",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué diferencia `$search` de `$filter`?",
+          "options": [
+            "Search busca texto; filter evalúa una expresión booleana",
+            "Search ordena; filter expande",
+            "Son idénticos",
+            "Filter cambia formato"
+          ],
+          "correct": "A",
+          "explanation": "Cada opción tiene semántica propia.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Search/Filter System Query Options",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-195",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué diferencia `$format` de `$select`?",
+          "options": [
+            "Format pide representación; select limita propiedades",
+            "Format filtra; select pagina",
+            "Son sinónimos",
+            "Select solicita metadata"
+          ],
+          "correct": "A",
+          "explanation": "Actúan sobre aspectos distintos.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Format/Select System Query Options",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-196",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué debe documentar un servicio sobre su entity model?",
+          "options": [
+            "Tipos, claves, sets, relaciones y recursos expuestos",
+            "Solo los colores UI",
+            "Solo la contraseña",
+            "Solo el orden"
+          ],
+          "correct": "A",
+          "explanation": "El modelo permite descubrir el contrato.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Metadata Service",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-197",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué debe hacer una consulta que quiere una entidad singleton?",
+          "options": [
+            "Usar el recurso singleton expuesto por el contenedor",
+            "Añadir una clave inventada al entity set",
+            "Usar `$top=1` siempre",
+            "Usar `$metadata`"
+          ],
+          "correct": "A",
+          "explanation": "Singleton tiene recurso propio.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Singletons",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-198",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué principio evita confundir propiedad y navegación?",
+          "options": [
+            "Usar metadata y la ruta/option apropiada para cada recurso",
+            "Usar `$format` para todo",
+            "Tratar todo como string",
+            "Omitir la clave"
+          ],
+          "correct": "A",
+          "explanation": "El modelo distingue recursos y relaciones.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Resource Path; Metadata Service",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-199",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué debe comprobarse antes de usar una comparación en `$filter`?",
+          "options": [
+            "Que el tipo de valor sea comparable y la expresión válida",
+            "Que sea una propiedad CSS",
+            "Que exista un singleton",
+            "Que `$format` sea JSON"
+          ],
+          "correct": "A",
+          "explanation": "Los operadores tienen operandos compatibles.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Filter System Query Option",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-200",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué resumen representa una consulta OData bien diseñada?",
+          "options": [
+            "Ruta basada en metadata y query options compatibles con la intención",
+            "URL con cualquier texto y cualquier opción",
+            "Solo `$metadata` para datos",
+            "Una entidad sin clave siempre"
+          ],
+          "correct": "A",
+          "explanation": "La consulta debe seguir modelo y protocolo.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Service Root/Resource Path/System Query Options",
+          "source_id": "ODATA-4.01"
+        }
+      ]
+    }
+  ]
+}

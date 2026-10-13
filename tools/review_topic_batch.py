@@ -17,6 +17,7 @@ from question_bank.checkpoints import append_checkpoint, file_sha256
 from question_bank.validation import validate_record
 
 DATE = "2026-10-13"
+TOPIC25_KEY_PATH = ROOT / "docs/question-bank/reviews/topic-25-answer-key.json"
 TOPIC26_KEY_PATH = ROOT / "docs/question-bank/reviews/topic-26-answer-key.json"
 TOPIC27_KEY_PATH = ROOT / "docs/question-bank/reviews/topic-27-answer-key.json"
 TOPIC28_KEY_PATH = ROOT / "docs/question-bank/reviews/topic-28-answer-key.json"
@@ -605,7 +606,11 @@ def main() -> int:
         objective_num = int(candidate["learning_objective_id"].rsplit("-", 1)[1])
         question_num = objective_num - (args.lot_num - 1) * 20
         expectations = LOT_EXPECTATIONS.get((args.topic_num, args.lot_num), EXPECTATIONS.get(args.topic_num))
-        if args.topic_num == 26:
+        if args.topic_num == 25:
+            key = json.loads(TOPIC25_KEY_PATH.read_text(encoding="utf-8"))
+            key_entry = key["lots"][str(args.lot_num)][str(question_num)]
+            expected = (key_entry["correct"], key_entry["citation"])
+        elif args.topic_num == 26:
             key = json.loads(TOPIC26_KEY_PATH.read_text(encoding="utf-8"))
             key_entry = key["lots"][str(args.lot_num)][str(question_num)]
             expected = (key_entry["correct"], key_entry["citation"])
