@@ -892,26 +892,6 @@ SEED_QUESTIONS = [
     # =====================================================================
     # TEMA 38 - Interoperabilidad estatal. SCSP. SARA
     # =====================================================================
-    {
-        "topic_num": 38,
-        "question": "La Red SARA (Sistema de Aplicaciones y Redes para las Administraciones) es:",
-        "option_a": "Una red social para funcionarios publicos",
-        "option_b": "La red de comunicaciones de las Administraciones Publicas espanolas que garantiza la interoperabilidad y seguridad",
-        "option_c": "Un buscador universal de tramites administrativos",
-        "option_d": "Un protocolo de transferencia de archivos FTP seguro",
-        "correct": "B",
-        "explanation": "La Red SARA es la red corporativa de comunicaciones del sector publico estatal, gestionada por el Ministerio de Asuntos Economicos y Transformacion Digital, que conecta las AAPP para el intercambio seguro de informacion."
-    },
-    {
-        "topic_num": 38,
-        "question": "El Protocolo SCSP (Sistema de Comunicaciones Seguras entre las Administraciones Publicas) permite:",
-        "option_a": "Solo el envio de correos electronicos cifrados",
-        "option_b": "El intercambio de datos y la verificacion de identidades entre administraciones de forma estandarizada y segura",
-        "option_c": "La videoconferencia entre oficinas de registro",
-        "option_d": "La impresion remota de documentos administrativos",
-        "correct": "B",
-        "explanation": "SCSP define especificaciones para el intercambio seguro de datos entre AAPP, incluyendo protocolos de verificacion de datos de identidad, residencia, etc., sobre la Red SARA."
-    },
 
     # =====================================================================
     # TEMA 39 - Servicios compartidos
@@ -1120,10 +1100,7 @@ _EXTRA_EXACT_SPECS = {
         ("En SedipuAlba, que modulo se asocia a la gestion de expedientes?", "Segex", ["Sefycu", "Segra", "Secoin"], "Segex es el modulo de gestion de expedientes de la plataforma."),
         ("En SedipuAlba, que modulo se asocia a la firma y custodia de documentos?", "Sefycu", ["Segex", "Segra", "Seres"], "Sefycu se relaciona con firma y custodia documental dentro de la plataforma."),
     ],
-    38: [
-        ("Que red conecta administraciones publicas espanolas para intercambio seguro de informacion?", "Red SARA", ["Red TOR", "Red CDN", "Red NAT privada"], "La Red SARA facilita comunicaciones seguras entre Administraciones Publicas."),
-        ("Que especificaciones permiten consultar datos de otras administraciones evitando pedir documentos al ciudadano?", "SCSP", ["OData", "PGP", "WCAG"], "SCSP estandariza servicios de verificacion y consulta de datos entre administraciones."),
-    ],
+    38: [],
     39: [
         ("Que sistema comun permite identificacion, autenticacion y firma para ciudadanos ante las AAPP?", "Cl@ve", ["Bootstrap", "pg_dump", "LINQ"], "Cl@ve es una plataforma comun de identificacion y autenticacion del sector publico."),
         ("Que servicio facilita la firma electronica centralizada en el sector publico?", "FIRe", ["SIR", "PID", "WCAG"], "FIRe facilita integracion de servicios de firma electronica en aplicaciones publicas."),
@@ -1507,14 +1484,7 @@ _DIRECT_POOLS = {
         ("Que modulo SedipuAlba se asocia a comunicaciones internas?", "Secoin", ["Sefycu", "Segex", "AutoFirma"], "Secoin se vincula a comunicaciones internas."),
         ("Que tipo de herramientas usa un tramitador para gestionar procedimientos en SedipuAlba?", "Modulos de tramitacion", ["Indices B-tree", "Componentes Razor genericos", "Comandos Git"], "Los tramitadores trabajan con modulos de la plataforma."),
     ],
-    38: [
-        ("Que red conecta administraciones publicas para intercambio seguro de informacion?", "Red SARA", ["Red TOR", "Red CDN", "Red NAT privada"], "Red SARA interconecta Administraciones Publicas."),
-        ("Que especificaciones permiten consultar datos de otras administraciones?", "SCSP", ["OData", "PGP", "WCAG"], "SCSP estandariza servicios de verificacion y consulta."),
-        ("Que principio evita pedir al ciudadano documentos que ya obran en poder de la Administracion?", "No aportar documentos", ["Aportar siempre originales", "Duplicar expedientes", "Imprimir certificados"], "La interoperabilidad evita cargas documentales innecesarias."),
-        ("Que plataforma facilita servicios de intermediacion de datos?", "PID", ["PGP", "DI", "MVC"], "PID se asocia a intermediacion y consulta de datos."),
-        ("Que actuacion comprueba informacion de otra administracion sin exigir certificado al ciudadano?", "Verificacion de datos", ["Renderizado CSS", "Rebase", "Vacuum"], "La verificacion consulta datos disponibles electronicamente."),
-        ("Que capacidad permite que sistemas de distintas administraciones intercambien informacion?", "Interoperabilidad", ["Polimorfismo", "Minificacion", "Indexacion"], "Interoperabilidad permite cooperacion e intercambio de datos."),
-    ],
+    38: [],
     39: [
         ("Que sistema comun permite identificacion y autenticacion ciudadana ante AAPP?", "Cl@ve", ["Bootstrap", "pg_dump", "LINQ"], "Cl@ve es plataforma comun de identificacion."),
         ("Que documento electronico de identidad permite autenticacion y firma?", "DNIe", ["CSV", "WAL", "CSS"], "DNIe incorpora certificados para identificacion y firma."),
@@ -22278,3 +22248,1028 @@ SEED_QUESTIONS.extend([
     }
 ])
 # QUESTION_BANK_ACCEPTED_TOPIC_37_LOT_05_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_38_LOT_01_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 38,
+        "question": "¿Cuál de estos es un principio específico del Esquema Nacional de Interoperabilidad?",
+        "option_a": "La interoperabilidad como cualidad integral",
+        "option_b": "La reserva de todos los formatos",
+        "option_c": "La descentralización de certificados",
+        "option_d": "La supresión de inventarios",
+        "correct": "A",
+        "explanation": "El artículo 4 enumera la interoperabilidad como cualidad integral, el carácter multidimensional y el enfoque de soluciones multilaterales."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué exige el principio de interoperabilidad como cualidad integral?",
+        "option_a": "Considerarla solo al publicar un servicio",
+        "option_b": "Tenerla presente desde la concepción y durante el ciclo de vida de servicios y sistemas",
+        "option_c": "Aplicarla únicamente a las redes",
+        "option_d": "Delegarla siempre en un nodo externo",
+        "correct": "B",
+        "explanation": "El artículo 5 exige tenerla presente desde la concepción y a lo largo del ciclo de vida."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué dimensiones contempla expresamente la interoperabilidad?",
+        "option_a": "Económica, territorial y presupuestaria",
+        "option_b": "Judicial, policial y tributaria",
+        "option_c": "Organizativa, semántica y técnica",
+        "option_d": "Hardware, software y licencias",
+        "correct": "C",
+        "explanation": "El artículo 6 identifica las dimensiones organizativa, semántica y técnica, sin olvidar la dimensión temporal."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué dimensión adicional debe garantizar el acceso a la información a lo largo del tiempo?",
+        "option_a": "La dimensión fiscal",
+        "option_b": "La dimensión contractual",
+        "option_c": "La dimensión geográfica",
+        "option_d": "La dimensión temporal",
+        "correct": "D",
+        "explanation": "El artículo 6 incorpora la dimensión temporal para garantizar el acceso a la información a lo largo del tiempo."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué favorece el enfoque de soluciones multilaterales?",
+        "option_a": "Las ventajas del escalado, la modularidad, las plataformas múltiples, compartir, reutilizar y colaborar",
+        "option_b": "El uso exclusivo de una plataforma",
+        "option_c": "La eliminación de estándares",
+        "option_d": "La sustitución de convenios por contratos privados",
+        "correct": "A",
+        "explanation": "El artículo 7 favorece esas ventajas mediante una aproximación multilateral."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿En qué fase del ciclo de vida debe tenerse presente la interoperabilidad?",
+        "option_a": "Solo en la explotación",
+        "option_b": "Desde la planificación, diseño, adquisición y construcción hasta la conservación y el acceso o interconexión",
+        "option_c": "Solo en la publicación",
+        "option_d": "Solo después de una auditoría",
+        "correct": "B",
+        "explanation": "El artículo 5 enumera la planificación, diseño, adquisición, construcción, despliegue, explotación, publicación, conservación y acceso o interconexión."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Cuál es una manifestación práctica de la cadena de interoperabilidad?",
+        "option_a": "La prohibición de reutilizar aplicaciones",
+        "option_b": "La desconexión de los inventarios",
+        "option_c": "Los acuerdos interadministrativos",
+        "option_d": "El uso de formatos secretos",
+        "correct": "C",
+        "explanation": "El artículo 6 incluye los acuerdos interadministrativos entre las manifestaciones prácticas de la cadena de interoperabilidad."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué finalidad tiene el enfoque multilateral según el artículo 7?",
+        "option_a": "Evitar toda arquitectura modular",
+        "option_b": "Impedir la cooperación entre Administraciones",
+        "option_c": "Sustituir los estándares por decisiones locales",
+        "option_d": "Obtener ventajas de compartir, reutilizar y colaborar, entre otras",
+        "correct": "D",
+        "explanation": "El artículo 7 vincula el enfoque multilateral con compartir, reutilizar, colaborar, escalar y usar arquitecturas modulares y multiplataforma."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué deben publicar las Administraciones sobre los servicios, datos y documentos electrónicos que ofrecen a otras Administraciones?",
+        "option_a": "Las condiciones de acceso y utilización, entre otros elementos",
+        "option_b": "Solo el nombre del órgano",
+        "option_c": "Únicamente el coste de mantenimiento",
+        "option_d": "Solo el código fuente",
+        "correct": "A",
+        "explanation": "El artículo 8.1 exige publicar las condiciones de acceso y utilización y especificar diversos elementos funcionales, técnicos y de seguridad."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Cuál de estos elementos debe especificarse en las condiciones de acceso a servicios interoperables?",
+        "option_a": "El domicilio particular de cada usuario",
+        "option_b": "Los perfiles de los participantes implicados",
+        "option_c": "La marca del ordenador del ciudadano",
+        "option_d": "La contraseña de cada empleado",
+        "correct": "B",
+        "explanation": "El artículo 8.1 incluye los perfiles de los participantes implicados en la utilización de los servicios."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué deben recoger las condiciones de acceso respecto de la seguridad?",
+        "option_a": "Solo el nombre del proveedor",
+        "option_b": "Una autorización judicial en todo caso",
+        "option_c": "Las condiciones de seguridad aplicables",
+        "option_d": "El código postal del solicitante",
+        "correct": "C",
+        "explanation": "El artículo 8.1 exige especificar las condiciones de seguridad aplicables."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué instrumento puede simplificar la complejidad organizativa entre Administraciones emisoras y receptoras?",
+        "option_a": "La eliminación de protocolos",
+        "option_b": "La prohibición de consultas",
+        "option_c": "La sustitución de redes por correo postal",
+        "option_d": "Los convenios, en particular con los nodos de interoperabilidad",
+        "correct": "D",
+        "explanation": "El artículo 8.1 potencia los convenios, especialmente con los nodos de interoperabilidad, sin menoscabar las garantías jurídicas."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué función pueden asumir los nodos de interoperabilidad?",
+        "option_a": "Gestionar apartados globales o parciales de la interoperabilidad organizativa, semántica o técnica",
+        "option_b": "Aprobar leyes orgánicas",
+        "option_c": "Emitir siempre certificados cualificados",
+        "option_d": "Sustituir a todos los órganos administrativos",
+        "correct": "A",
+        "explanation": "El artículo 8.3 define los nodos como entidades a las que se encomienda esa gestión global o parcial."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿A través de qué red deben publicar las Administraciones los servicios que ponen a disposición de otras Administraciones?",
+        "option_a": "Solo a través de una intranet local",
+        "option_b": "A través de la Red de comunicaciones de las Administraciones públicas españolas o una red equivalente o conectada",
+        "option_c": "Solo a través de una red social",
+        "option_d": "Exclusivamente mediante soporte papel",
+        "correct": "B",
+        "explanation": "El artículo 8.2 menciona la red de comunicaciones de las Administraciones públicas españolas o una red equivalente o conectada que garantice acceso seguro."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué debe incluir como mínimo el inventario de información administrativa de una Administración?",
+        "option_a": "Solo las cuentas bancarias",
+        "option_b": "Solo los contratos menores",
+        "option_c": "La relación clasificada y estructurada de procedimientos y servicios",
+        "option_d": "La lista de contraseñas internas",
+        "correct": "C",
+        "explanation": "El artículo 9.1.a exige la relación de procedimientos administrativos y servicios prestados, clasificada y estructurada."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Con qué sistema debe conectarse electrónicamente el inventario de procedimientos y servicios?",
+        "option_a": "Con el Registro Mercantil",
+        "option_b": "Con el catastro municipal",
+        "option_c": "Con el archivo histórico",
+        "option_d": "Con el Sistema de Información Administrativa",
+        "correct": "D",
+        "explanation": "El artículo 9.1.a ordena conectar esos inventarios con el Sistema de Información Administrativa."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué otro contenido mínimo contempla el inventario de información administrativa?",
+        "option_a": "La relación de órganos administrativos y oficinas orientadas al público y sus relaciones",
+        "option_b": "La relación de domicilios privados de empleados",
+        "option_c": "El inventario de equipos personales",
+        "option_d": "La lista de proveedores de telecomunicaciones",
+        "correct": "A",
+        "explanation": "El artículo 9.1.b incluye órganos, oficinas orientadas al público y sus relaciones."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué directorio provee una codificación unívoca para órganos y oficinas?",
+        "option_a": "El directorio de aplicaciones reutilizables",
+        "option_b": "El Directorio Común de Unidades Orgánicas y Oficinas",
+        "option_c": "El registro de certificados",
+        "option_d": "El catálogo de redes privadas",
+        "correct": "B",
+        "explanation": "El artículo 9.1.b atribuye esa función al Directorio Común de Unidades Orgánicas y Oficinas."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué son los modelos de datos de intercambio comunes?",
+        "option_a": "Modelos reservados a una sola oficina",
+        "option_b": "Modelos exclusivamente contables",
+        "option_c": "Modelos preferentes para los intercambios de información en las Administraciones públicas",
+        "option_d": "Modelos que sustituyen toda norma técnica",
+        "correct": "C",
+        "explanation": "El artículo 10.1 establece que los modelos comunes serán de preferente aplicación para los intercambios."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Quién debe establecer y publicar modelos de datos de intercambio obligatorios cuando tenga competencias sobre la materia?",
+        "option_a": "Cualquier empresa contratista",
+        "option_b": "Solo los ciudadanos",
+        "option_c": "Únicamente la Comisión Europea",
+        "option_d": "Los órganos de la Administración pública o entidades de Derecho Público titulares de esas competencias",
+        "correct": "D",
+        "explanation": "El artículo 10.2 atribuye esa responsabilidad a los órganos o entidades titulares de competencias en las materias sujetas a intercambio."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_38_LOT_01_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_38_LOT_02_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 38,
+        "question": "¿Dónde se publican los modelos de datos de intercambio con sus definiciones y codificaciones asociadas?",
+        "option_a": "A través del Centro de Interoperabilidad Semántica de la Administración",
+        "option_b": "En el registro de la propiedad",
+        "option_c": "En una red social",
+        "option_d": "En el archivo municipal",
+        "correct": "A",
+        "explanation": "El artículo 10.3 señala el Centro de Interoperabilidad Semántica de la Administración."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué tipo de estándares deben usar las Administraciones públicas?",
+        "option_a": "Solo estándares propietarios",
+        "option_b": "Estándares abiertos y, en su caso y de forma complementaria, estándares de uso generalizado por los ciudadanos",
+        "option_c": "Solo formatos internos",
+        "option_d": "Ningún estándar",
+        "correct": "B",
+        "explanation": "El artículo 11.1 establece esa regla de uso de estándares abiertos y complementarios de uso generalizado."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Cómo deben estar disponibles, como mínimo, los documentos y servicios de administración electrónica?",
+        "option_a": "Solo mediante un estándar no abierto",
+        "option_b": "Solo en papel",
+        "option_c": "Mediante estándares abiertos",
+        "option_d": "Solo mediante una aplicación de pago",
+        "correct": "C",
+        "explanation": "El artículo 11.1.a exige que estén disponibles como mínimo mediante estándares abiertos."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué deben permitir, según corresponda, los documentos, servicios y aplicaciones ofrecidos?",
+        "option_a": "Ser utilizables solo por una marca",
+        "option_b": "Impedir el acceso multiplataforma",
+        "option_c": "Excluir a usuarios por su elección tecnológica",
+        "option_d": "Ser visualizables, accesibles y funcionalmente operables en condiciones neutrales",
+        "correct": "D",
+        "explanation": "El artículo 11.1.b vincula esas cualidades con la neutralidad tecnológica y la no discriminación."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Cuándo puede usarse exclusivamente un estándar no abierto?",
+        "option_a": "Cuando no exista un estándar abierto que satisfaga la funcionalidad y solo mientras no esté disponible",
+        "option_b": "Siempre que lo prefiera el proveedor",
+        "option_c": "Solo cuando reduzca el presupuesto",
+        "option_d": "Nunca, incluso si no existe alternativa",
+        "correct": "A",
+        "explanation": "El artículo 11.2 limita el uso exclusivo de estándares no abiertos a esa circunstancia temporal."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué principio protege la posibilidad de elegir aplicaciones o sistemas para relacionarse con la Administración?",
+        "option_a": "La exclusividad del fabricante",
+        "option_b": "La neutralidad tecnológica mediante estándares abiertos o de uso generalizado",
+        "option_c": "La reserva de formatos",
+        "option_d": "La obligación de usar una única marca",
+        "correct": "B",
+        "explanation": "El artículo 11.5 permite elegir aplicaciones o sistemas siempre que utilicen los estándares admisibles."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Para qué sirve el catálogo de estándares?",
+        "option_a": "Para registrar sanciones",
+        "option_b": "Para sustituir el Esquema Nacional de Seguridad",
+        "option_c": "Para relacionar los estándares abiertos y, en su caso, complementarios aplicables",
+        "option_d": "Para almacenar expedientes",
+        "correct": "C",
+        "explanation": "El artículo 11.5 atribuye al catálogo esa función de facilitar la interoperabilidad."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué criterio de selección de estándares se refiere a la adecuación a las necesidades y funcionalidad requeridas?",
+        "option_a": "La obligación de usar siempre un formato propietario",
+        "option_b": "La eliminación de la documentación",
+        "option_c": "El criterio de domicilio del órgano",
+        "option_d": "Las consideraciones adicionales del artículo 11.3.e",
+        "correct": "D",
+        "explanation": "El artículo 11.3.e incluye adecuación, documentación, gobernanza, madurez, adopción, reutilización y aplicabilidad, entre otros aspectos."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué deben hacer las Administraciones con las infraestructuras y servicios que puedan implantar en su ámbito?",
+        "option_a": "Enlazarlos con las infraestructuras y servicios comunes de la Administración General del Estado",
+        "option_b": "Desconectarlos de toda infraestructura común",
+        "option_c": "Publicarlos solo en papel",
+        "option_d": "Sustituirlos por redes sociales",
+        "correct": "A",
+        "explanation": "El artículo 12 ordena enlazarlos para facilitar la interoperabilidad y la relación multilateral."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué red presta la Red de comunicaciones de las Administraciones públicas españolas?",
+        "option_a": "La red de telefonía privada de una Diputación",
+        "option_b": "La Red SARA",
+        "option_c": "La red postal",
+        "option_d": "Una red de una empresa sin conexión administrativa",
+        "correct": "B",
+        "explanation": "El artículo 13.1 dispone que la Red SARA prestará esa red de comunicaciones."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Cómo deben comunicarse preferentemente entre sí las Administraciones públicas?",
+        "option_a": "Usando únicamente correo postal",
+        "option_b": "Usando una red social",
+        "option_c": "Utilizando la Red de comunicaciones de las Administraciones públicas españolas",
+        "option_d": "Sin conectar sus redes ni nodos",
+        "correct": "C",
+        "explanation": "El artículo 13.1 establece el uso preferente de esa Red de comunicaciones."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué pueden conectar las Administraciones a la Red de comunicaciones para facilitar el intercambio?",
+        "option_a": "Solo sus archivos en papel",
+        "option_b": "Solo sus sedes físicas",
+        "option_c": "Únicamente sus dispositivos personales",
+        "option_d": "Sus respectivas redes o sus nodos de interoperabilidad",
+        "correct": "D",
+        "explanation": "El artículo 13.1 contempla conectar las respectivas redes o los nodos de interoperabilidad."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Con qué otras redes debe facilitarse la interconexión mediante la Red de comunicaciones?",
+        "option_a": "Con las redes de las instituciones de la Unión Europea y de otros Estados miembros",
+        "option_b": "Solo con redes domésticas",
+        "option_c": "Solo con redes sociales",
+        "option_d": "Con ninguna red externa",
+        "correct": "A",
+        "explanation": "El artículo 13.1 incluye las redes de las instituciones de la Unión Europea y de otros Estados miembros."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué instrumento se aplica para la interconexión a través de las redes de comunicaciones?",
+        "option_a": "El catálogo de procedimientos sancionadores",
+        "option_b": "El Plan de direccionamiento e interconexión de redes en la Administración",
+        "option_c": "El registro de apoderamientos",
+        "option_d": "El plan de archivo físico",
+        "correct": "B",
+        "explanation": "El artículo 14 remite al Plan de direccionamiento e interconexión de redes en la Administración."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Con qué debe sincronizarse un sistema que participa en un servicio público electrónico?",
+        "option_a": "Con la hora local del operador",
+        "option_b": "Con la hora de una red social",
+        "option_c": "Con la hora oficial, con precisión y desfase que garanticen la certidumbre de los plazos",
+        "option_d": "Con una hora elegida por el usuario",
+        "correct": "C",
+        "explanation": "El artículo 15.1 exige sincronización con la hora oficial para garantizar los plazos."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Con qué organismo se realiza la sincronización de fecha y hora?",
+        "option_a": "Con el Directorio Común de Oficinas",
+        "option_b": "Con el Registro Mercantil",
+        "option_c": "Con el Centro de Interoperabilidad Semántica",
+        "option_d": "Con el Real Instituto y Observatorio de la Armada",
+        "correct": "D",
+        "explanation": "El artículo 15.2 menciona al Real Instituto y Observatorio de la Armada."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué finalidad persiguen las condiciones de licenciamiento del artículo 16?",
+        "option_a": "El aprovechamiento y la reutilización de recursos públicos",
+        "option_b": "La apropiación exclusiva por terceros",
+        "option_c": "La eliminación de la documentación",
+        "option_d": "La prohibición de compartir aplicaciones",
+        "correct": "A",
+        "explanation": "El artículo 16.1.a fija como fin el aprovechamiento y reutilización de recursos públicos."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Cómo se realizará por defecto el licenciamiento de los activos reutilizables?",
+        "option_a": "Siempre mediante pago y convenio",
+        "option_b": "Sin contraprestación y sin necesidad de convenio, con excepciones tasadas para repercutir costes",
+        "option_c": "Solo mediante licencia propietaria",
+        "option_d": "Sin permitir ninguna adaptación",
+        "correct": "B",
+        "explanation": "El artículo 16.1.f establece el licenciamiento por defecto sin contraprestación y sin convenio, con supuestos de repercusión parcial."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué permite una licencia de fuentes abiertas conforme al artículo 16?",
+        "option_a": "Impedir el conocimiento del código",
+        "option_b": "Usar el programa solo una vez",
+        "option_c": "Ejecutar para cualquier propósito, conocer el código, modificarlo y redistribuirlo con las garantías exigidas",
+        "option_d": "Prohibir toda redistribución",
+        "correct": "C",
+        "explanation": "El artículo 16.2 enumera esas cuatro garantías para programas, datos o información de fuentes abiertas."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué entidad mantiene el Directorio general de aplicaciones para su libre reutilización?",
+        "option_a": "Una empresa privada sin relación administrativa",
+        "option_b": "Cada ciudadano individualmente",
+        "option_c": "Solo los registros municipales",
+        "option_d": "La Administración General del Estado, a través del Centro de Transferencia de Tecnología",
+        "correct": "D",
+        "explanation": "El artículo 17.1 identifica a la Administración General del Estado y al Centro de Transferencia de Tecnología."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_38_LOT_02_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_38_LOT_03_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 38,
+        "question": "¿Qué debe hacer una Administración que tenga un directorio propio de aplicaciones reutilizables?",
+        "option_a": "Garantizar que sus aplicaciones puedan consultarse también a través del Centro de Transferencia de Tecnología",
+        "option_b": "Mantenerlo aislado",
+        "option_c": "Eliminar su documentación",
+        "option_d": "Impedir consultas externas",
+        "correct": "A",
+        "explanation": "El artículo 17.1 exige esa posibilidad de consulta a través del Centro de Transferencia de Tecnología."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué deben hacer las Administraciones con sus directorios de aplicaciones reutilizables?",
+        "option_a": "Mantenerlos sin interconexión",
+        "option_b": "Conectarlos entre sí y con instrumentos equivalentes de la Unión Europea",
+        "option_c": "Convertirlos en registros de sanciones",
+        "option_d": "Publicarlos exclusivamente en papel",
+        "correct": "B",
+        "explanation": "El artículo 17.2 ordena conectar esos directorios entre sí y con instrumentos equivalentes de la Unión Europea."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Cuál es un contenido mínimo de una aplicación reutilizable publicada en modo producto?",
+        "option_a": "La contraseña del administrador",
+        "option_b": "Los datos personales de los usuarios",
+        "option_c": "El código fuente si ha sido declarada de fuentes abiertas",
+        "option_d": "La clave privada de firma",
+        "correct": "C",
+        "explanation": "El artículo 17.3.a exige el código fuente en ese supuesto."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Cuál es un contenido mínimo común para publicar una aplicación reutilizable?",
+        "option_a": "El historial de navegación de los usuarios",
+        "option_b": "La clave privada del servidor",
+        "option_c": "El expediente personal del desarrollador",
+        "option_d": "La documentación asociada",
+        "correct": "D",
+        "explanation": "El artículo 17.3.b incluye la documentación asociada."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué información se publica para una aplicación reutilizable en modo servicio?",
+        "option_a": "El nivel de servicio ofrecido",
+        "option_b": "La clave privada de firma",
+        "option_c": "Los datos de todos los usuarios",
+        "option_d": "El contenido de expedientes ajenos",
+        "correct": "A",
+        "explanation": "El artículo 17.3.c distingue las condiciones de licencia del producto y el nivel de servicio del modo servicio."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué debe procurar una Administración respecto de las modificaciones realizadas sobre una aplicación reutilizable?",
+        "option_a": "Borrarlas siempre",
+        "option_b": "Incorporarlas a la aplicación original",
+        "option_c": "Publicarlas como datos personales",
+        "option_d": "Impedir que sean documentadas",
+        "correct": "B",
+        "explanation": "El artículo 17.4 ordena procurar la incorporación a la aplicación original."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué función tiene la política de firma electrónica y certificados de la AGE?",
+        "option_a": "Sustituir todos los certificados privados",
+        "option_b": "Regular únicamente las redes físicas",
+        "option_c": "Servir de marco general de interoperabilidad para el reconocimiento mutuo de firmas basadas en certificados de documentos administrativos",
+        "option_d": "Eliminar la validación de firmas",
+        "correct": "C",
+        "explanation": "El artículo 18.1 la define como marco general de interoperabilidad para ese reconocimiento mutuo."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué Administraciones deben aplicar la política de firma electrónica y certificados de la AGE?",
+        "option_a": "Solo los ciudadanos",
+        "option_b": "Solo las empresas privadas",
+        "option_c": "Ningún organismo de la AGE",
+        "option_d": "Todos los organismos y entidades de Derecho Público de la AGE",
+        "correct": "D",
+        "explanation": "El artículo 18.1 impone su aplicación a esos organismos y entidades, salvo no aplicación justificada y autorizada."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué pueden hacer las restantes Administraciones públicas respecto de la política marco de firma?",
+        "option_a": "Acogerse a ella, sin perjuicio de aprobar otras políticas interoperables",
+        "option_b": "Ignorar toda política de firma",
+        "option_c": "Usarla solo para documentos en papel",
+        "option_d": "Prohibir políticas propias en todo caso",
+        "correct": "A",
+        "explanation": "El artículo 18.2 permite acogerse y el 18.3 permite otras políticas interoperables en sus ámbitos."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué requisito deben cumplir las políticas particulares de firma electrónica?",
+        "option_a": "Ser incompatibles con la política marco",
+        "option_b": "Ser interoperables con la política marco y partir de la norma técnica aplicable y estándares existentes",
+        "option_c": "Ocultar sus ficheros de implementación",
+        "option_d": "Usar únicamente formatos no abiertos",
+        "correct": "B",
+        "explanation": "El artículo 18.3 exige esa interoperabilidad y referencia técnica."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿A quién deben comunicarse las políticas de firma aprobadas por las Administraciones públicas?",
+        "option_a": "Al Registro Mercantil sin ficheros",
+        "option_b": "A cada ciudadano por correo postal",
+        "option_c": "A la Secretaría General de Administración Digital, junto con sus ficheros de implementación",
+        "option_d": "A ninguna autoridad",
+        "correct": "C",
+        "explanation": "El artículo 18.4 establece esa comunicación."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué deben permitir las Administraciones receptoras de documentos firmados cuando han admitido la política del emisor?",
+        "option_a": "Rechazar siempre el documento",
+        "option_b": "Validar solo en papel",
+        "option_c": "Cambiar la política sin comprobarla",
+        "option_d": "Validar las firmas según la política indicada en la firma",
+        "correct": "D",
+        "explanation": "El artículo 18.5 exige permitir la validación conforme a la política indicada cuando haya sido admitida."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué favorecen los perfiles comunes de los campos de los certificados?",
+        "option_a": "La interoperabilidad entre aplicaciones usuarias para reconocer identificación y firma",
+        "option_b": "La incompatibilidad entre aplicaciones",
+        "option_c": "La eliminación de certificados",
+        "option_d": "El uso exclusivo de una plataforma",
+        "correct": "A",
+        "explanation": "El artículo 18.6 vincula esos perfiles comunes con el reconocimiento entre aplicaciones de distintas Administraciones."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué proporcionan las plataformas de validación de certificados y firmas?",
+        "option_a": "Solo almacenamiento de documentos",
+        "option_b": "Servicios de confianza para validar certificados y firmas en diversos ámbitos administrativos",
+        "option_c": "Únicamente servicios postales",
+        "option_d": "La expedición de leyes",
+        "correct": "B",
+        "explanation": "El artículo 20.1 describe esos servicios de confianza y validación."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué significa que una plataforma de validación proporcione un único punto de llamada?",
+        "option_a": "Que solo admite una Administración",
+        "option_b": "Que elimina las listas de confianza",
+        "option_c": "Que integra los elementos de confianza e interoperabilidad necesarios para distintos certificados y firmas",
+        "option_d": "Que no valida firmas",
+        "correct": "C",
+        "explanation": "El artículo 20.2 explica que el punto de llamada integra elementos organizativos, semánticos y técnicos."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué deben potenciar las plataformas de validación?",
+        "option_a": "La diversidad incompatible de formatos",
+        "option_b": "La eliminación de políticas",
+        "option_c": "La desconexión de aplicaciones",
+        "option_d": "La armonización técnica y el uso común de formatos, estándares y políticas de firma y certificados",
+        "correct": "D",
+        "explanation": "El artículo 20.3 establece esa finalidad."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué listas incorporan las plataformas de validación?",
+        "option_a": "Las listas de confianza de certificados interoperables entre Administraciones nacionales y europeas",
+        "option_b": "Listas de sanciones penales",
+        "option_c": "Listas de usuarios sin certificado",
+        "option_d": "Listas de redes sociales",
+        "correct": "A",
+        "explanation": "El artículo 20.4 exige incorporar esas listas de confianza según el esquema operativo correspondiente."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué medida organizativa debe adoptarse para recuperar y conservar documentos electrónicos?",
+        "option_a": "Eliminar los metadatos",
+        "option_b": "Definir una política de gestión de documentos",
+        "option_c": "Desconectar los repositorios",
+        "option_d": "Usar solo copias en papel",
+        "correct": "B",
+        "explanation": "El artículo 21.1.a incluye la definición de una política de gestión de documentos."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué garantiza el índice electrónico firmado del expediente?",
+        "option_a": "La eliminación automática del expediente",
+        "option_b": "La sustitución de todos los metadatos",
+        "option_c": "La integridad del expediente y su recuperación",
+        "option_d": "La publicación de datos personales",
+        "correct": "C",
+        "explanation": "El artículo 21.1.b exige un índice firmado que garantice la integridad y permita la recuperación."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Cómo debe identificarse cada documento electrónico?",
+        "option_a": "Solo por el nombre del usuario",
+        "option_b": "Mediante un número que se repita",
+        "option_c": "Sin ningún identificador",
+        "option_d": "De forma única e inequívoca mediante convenciones adecuadas",
+        "correct": "D",
+        "explanation": "El artículo 21.1.c exige identificación única e inequívoca para clasificar, recuperar y referirse al documento."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_38_LOT_03_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_38_LOT_04_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 38,
+        "question": "¿Qué debe ocurrir con los metadatos del documento electrónico durante su ciclo de vida?",
+        "option_a": "Deben asociarse los metadatos mínimos obligatorios y, en su caso, complementarios",
+        "option_b": "Deben eliminarse al firmar",
+        "option_c": "Deben sustituirse por una contraseña",
+        "option_d": "No deben conservarse",
+        "correct": "A",
+        "explanation": "El artículo 21.1.d exige asociarlos a lo largo del ciclo de vida e incorporarlos al esquema de metadatos."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué debe permitir el acceso completo e inmediato a documentos durante su conservación?",
+        "option_a": "Solo consultar el título",
+        "option_b": "Visualización detallada, recuperación, copia o descarga en formato original e impresión cuando sea necesaria",
+        "option_c": "Únicamente descargar una imagen parcial",
+        "option_d": "Acceder solo una vez",
+        "correct": "B",
+        "explanation": "El artículo 21.1.g enumera esas posibilidades de consulta en línea."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué deben permitir los sistemas respecto de la firma y metadatos durante la conservación?",
+        "option_a": "Eliminar la firma después de un año",
+        "option_b": "Ocultar los metadatos",
+        "option_c": "Consultar al menos la firma electrónica, el sello de tiempo cuando proceda, y los metadatos asociados",
+        "option_d": "Cambiar el sello de tiempo",
+        "correct": "C",
+        "explanation": "El artículo 21.1.g exige esa consulta durante todo el período de conservación."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué pueden hacer los repositorios electrónicos complementarios respecto del ciclo de vida?",
+        "option_a": "Conservar solo documentos de un día",
+        "option_b": "Sustituir toda gestión documental por correo",
+        "option_c": "Impedir la recuperación",
+        "option_d": "Cubrir el conjunto del ciclo de vida de los documentos electrónicos",
+        "correct": "D",
+        "explanation": "El artículo 21.2 destina los repositorios electrónicos a cubrir el conjunto del ciclo de vida."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué esquema se aplica para asegurar la conservación de documentos electrónicos en materia de seguridad?",
+        "option_a": "El Esquema Nacional de Seguridad",
+        "option_b": "El Directorio Común de Oficinas",
+        "option_c": "El catálogo de datos comunes",
+        "option_d": "El plan de direccionamiento",
+        "correct": "A",
+        "explanation": "El artículo 22.1 remite al Esquema Nacional de Seguridad para principios y requisitos mínimos."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué propiedades deben garantizar las medidas de seguridad de los documentos electrónicos?",
+        "option_a": "Solo velocidad y diseño",
+        "option_b": "Integridad, autenticidad, confidencialidad, disponibilidad y trazabilidad, entre otras",
+        "option_c": "Solo anonimato del órgano",
+        "option_d": "Únicamente compresión",
+        "correct": "B",
+        "explanation": "El artículo 22.3 enumera esas y otras propiedades como calidad, protección, recuperación y conservación."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué ocurre cuando firma y certificados ya no garantizan la autenticidad y evidencia a lo largo del tiempo?",
+        "option_a": "Se elimina el documento",
+        "option_b": "Se cambia el contenido",
+        "option_c": "Pueden sostenerse mediante conservación, custodia y metadatos en repositorios y archivos electrónicos",
+        "option_d": "Se ignora la autenticidad",
+        "correct": "C",
+        "explanation": "El artículo 22.4 prevé conservación, custodia y metadatos de gestión como soporte de esa evidencia."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿En qué formato debe conservarse preferentemente un documento?",
+        "option_a": "Siempre en un formato propietario nuevo",
+        "option_b": "Solo como captura de pantalla",
+        "option_c": "En un formato elegido después sin conservar firma",
+        "option_d": "En el formato en que fue elaborado, enviado o recibido, preferentemente un estándar abierto",
+        "correct": "D",
+        "explanation": "El artículo 23.1 establece conservar el formato de elaboración, envío o recepción y preferir un estándar abierto."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué debe preservar preferentemente el formato abierto de conservación?",
+        "option_a": "La integridad del contenido, de la firma electrónica y de los metadatos",
+        "option_b": "Solo el nombre del archivo",
+        "option_c": "Únicamente la apariencia visual",
+        "option_d": "Solo la fecha de descarga",
+        "correct": "A",
+        "explanation": "El artículo 23.1 vincula la preferencia por formatos abiertos con esas tres garantías."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué debe facilitar cada Administración a las restantes respecto de los datos de los interesados que obren en su poder?",
+        "option_a": "El acceso sin condiciones ni garantías",
+        "option_b": "El acceso con condiciones, protocolos y criterios funcionales o técnicos y garantías de seguridad, integridad y disponibilidad",
+        "option_c": "Solo copias en papel",
+        "option_d": "Únicamente datos publicados en redes sociales",
+        "correct": "B",
+        "explanation": "El artículo 155.1 de la Ley 40/2015 exige facilitar el acceso bajo esas condiciones y garantías."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué normas de protección de datos cita expresamente el artículo 155.1?",
+        "option_a": "Solo la Ley de Contratos",
+        "option_b": "Solo el Código Civil",
+        "option_c": "El Reglamento (UE) 2016/679, la Ley Orgánica 3/2018 y su normativa de desarrollo",
+        "option_d": "Ninguna norma de protección de datos",
+        "correct": "C",
+        "explanation": "El artículo 155.1 remite al RGPD, a la Ley Orgánica 3/2018 y a su normativa de desarrollo."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué prohíbe el artículo 155.2 respecto del tratamiento ulterior?",
+        "option_a": "Todo tratamiento archivístico",
+        "option_b": "Toda investigación estadística",
+        "option_c": "La conservación de cualquier dato",
+        "option_d": "El tratamiento ulterior para fines incompatibles con la finalidad inicial de recogida",
+        "correct": "D",
+        "explanation": "El artículo 155.2 prohíbe tratamientos ulteriores incompatibles con el fin inicial, con las salvedades que recoge."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué tratamientos ulteriores no se consideran incompatibles con los fines iniciales según el artículo 155.2?",
+        "option_a": "Archivo en interés público, investigación científica e histórica y fines estadísticos",
+        "option_b": "Publicidad comercial y perfiles privados",
+        "option_c": "Cualquier finalidad lucrativa",
+        "option_d": "Solo la publicación en redes sociales",
+        "correct": "A",
+        "explanation": "El artículo 155.2 recoge esas finalidades como no incompatibles conforme al RGPD."
+    },
+    {
+        "topic_num": 38,
+        "question": "Si la Administración cesionaria pretende un tratamiento ulterior compatible no previsto en una ley, ¿qué debe hacer?",
+        "option_a": "Usar los datos inmediatamente sin comunicarlo",
+        "option_b": "Comunicarlo previamente a la Administración cedente",
+        "option_c": "Pedir permiso a cualquier ciudadano",
+        "option_d": "Eliminar los datos",
+        "correct": "B",
+        "explanation": "El artículo 155.3 exige comunicación previa a la cedente para que pueda comprobar la compatibilidad."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué plazo tiene la Administración cedente para oponerse motivadamente a ese tratamiento ulterior compatible?",
+        "option_a": "Veinticuatro horas",
+        "option_b": "Un mes siempre",
+        "option_c": "Diez días",
+        "option_d": "Un año",
+        "correct": "C",
+        "explanation": "El artículo 155.3 fija el plazo de diez días."
+    },
+    {
+        "topic_num": 38,
+        "question": "Mientras la Administración cedente no comunique su decisión sobre la nueva finalidad compatible, ¿qué puede hacer la cesionaria?",
+        "option_a": "Puede emplearlos sin límite",
+        "option_b": "Debe publicarlos",
+        "option_c": "Puede venderlos",
+        "option_d": "No puede emplear los datos para la nueva finalidad pretendida",
+        "correct": "D",
+        "explanation": "El artículo 155.3 impide emplearlos para la nueva finalidad hasta que se comunique la decisión."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué excepción contempla el artículo 155.3 a la comunicación previa por tratamiento para otra finalidad?",
+        "option_a": "Que ese tratamiento esté previsto en una norma con rango de ley conforme al RGPD",
+        "option_b": "Que lo autorice un proveedor privado",
+        "option_c": "Que los datos sean antiguos",
+        "option_d": "Que la cesionaria lo considere útil",
+        "correct": "A",
+        "explanation": "El artículo 155.3 exceptúa los supuestos previstos en una norma con rango de ley conforme al artículo 23.1 del RGPD."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué puede hacer excepcionalmente la AGE ante una transmisión por razones de seguridad nacional?",
+        "option_a": "Eliminar todos los datos de la cedente",
+        "option_b": "Suspenderla cautelarmente por el tiempo estrictamente indispensable para preservar la seguridad",
+        "option_c": "Publicarla íntegramente",
+        "option_d": "Delegarla en un particular",
+        "correct": "B",
+        "explanation": "El artículo 155.3 permite a la AGE suspender cautelarmente la transmisión de forma excepcional y motivada."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué comprende el Esquema Nacional de Interoperabilidad según la Ley 40/2015?",
+        "option_a": "Solo requisitos de contratación",
+        "option_b": "Solo medidas físicas de seguridad",
+        "option_c": "Criterios y recomendaciones sobre seguridad, conservación y normalización de información, formatos y aplicaciones",
+        "option_d": "Únicamente un catálogo de funcionarios",
+        "correct": "C",
+        "explanation": "El artículo 156.1 define el ENI con esos criterios y recomendaciones para decisiones tecnológicas interoperables."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué objeto tiene el Esquema Nacional de Seguridad según la Ley 40/2015?",
+        "option_a": "Definir modelos de datos de intercambio",
+        "option_b": "Mantener directorios de aplicaciones",
+        "option_c": "Regular el horario oficial",
+        "option_d": "Establecer la política de seguridad en el uso de medios electrónicos",
+        "correct": "D",
+        "explanation": "El artículo 156.2 atribuye al ENS ese objeto y lo vincula a principios básicos y requisitos mínimos."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_38_LOT_04_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_38_LOT_05_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 38,
+        "question": "¿Qué deben poner a disposición las Administraciones que sean titulares de aplicaciones desarrolladas o contratadas por ellas?",
+        "option_a": "Las aplicaciones a cualquier otra Administración que lo solicite, salvo especial protección normativa",
+        "option_b": "Solo aplicaciones de pago a ciudadanos",
+        "option_c": "Únicamente copias en papel",
+        "option_d": "Ninguna aplicación",
+        "correct": "A",
+        "explanation": "El artículo 157.1 establece esa puesta a disposición, con la excepción de información especialmente protegida."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué pueden acordar las Administraciones cedentes y cesionarias sobre una aplicación cedida?",
+        "option_a": "La eliminación de toda documentación",
+        "option_b": "La repercusión del coste de adquisición o fabricación",
+        "option_c": "La prohibición de reutilización",
+        "option_d": "La cesión de datos personales sin base legal",
+        "correct": "B",
+        "explanation": "El artículo 157.1 permite acordar la repercusión del coste de adquisición o fabricación."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Cuándo pueden declararse de fuentes abiertas las aplicaciones reutilizables?",
+        "option_a": "Siempre que sean privadas",
+        "option_b": "Solo si no tienen documentación",
+        "option_c": "Cuando ello aporte mayor transparencia o fomente la incorporación ciudadana a la sociedad de la información",
+        "option_d": "Nunca",
+        "correct": "C",
+        "explanation": "El artículo 157.2 vincula la declaración de fuentes abiertas a esas finalidades."
+    },
+    {
+        "topic_num": 38,
+        "question": "Antes de adquirir, desarrollar o mantener una aplicación durante su ciclo de vida, ¿qué deben consultar las Administraciones?",
+        "option_a": "Solo una red social",
+        "option_b": "Solo el registro de personal",
+        "option_c": "Ningún directorio",
+        "option_d": "El directorio general de aplicaciones para comprobar si existen soluciones reutilizables",
+        "correct": "D",
+        "explanation": "El artículo 157.3 exige consultar previamente el directorio general."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué debe hacer una Administración si existe una solución reutilizable que satisface total o parcialmente su necesidad?",
+        "option_a": "Usarla, salvo justificar la no reutilización en términos de eficiencia",
+        "option_b": "Ignorarla siempre",
+        "option_c": "Destruirla",
+        "option_d": "Usarla solo si es de una marca concreta",
+        "correct": "A",
+        "explanation": "El artículo 157.3 establece la obligación de uso salvo justificación de no reutilización en términos de eficiencia."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué deben garantizar los directorios de aplicaciones de las Administraciones?",
+        "option_a": "Permanecer aislados",
+        "option_b": "Ser plenamente interoperables con el directorio general de la AGE para compatibilidad e interconexión",
+        "option_c": "Usar solo papel",
+        "option_d": "Contener únicamente aplicaciones privadas",
+        "correct": "B",
+        "explanation": "El artículo 158.1 exige interoperabilidad plena con el directorio general."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué función atribuye el artículo 158.2 a la AGE?",
+        "option_a": "Gestionar todos los expedientes locales",
+        "option_b": "Prohibir estándares comunes",
+        "option_c": "Mantener el directorio general, apoyar la libre reutilización e impulsar aplicaciones, formatos y estándares comunes",
+        "option_d": "Eliminar directorios autonómicos",
+        "correct": "C",
+        "explanation": "El artículo 158.2 enumera esas funciones de la AGE."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué derecho reconoce la Ley 39/2015 sobre documentos que ya estén en poder de la Administración?",
+        "option_a": "El derecho de la Administración a exigirlos siempre",
+        "option_b": "El derecho a destruirlos",
+        "option_c": "El derecho a pedirlos solo en papel",
+        "option_d": "El derecho de los interesados a no aportarlos",
+        "correct": "D",
+        "explanation": "El artículo 28.2 reconoce el derecho a no aportar documentos ya en poder de la Administración o elaborados por otra Administración."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Puede la Administración actuante consultar documentos que ya estén en poder de otra Administración?",
+        "option_a": "Sí, salvo oposición del interesado, con la excepción de potestades sancionadoras o de inspección",
+        "option_b": "No, nunca",
+        "option_c": "Sí, pero solo mediante correo postal",
+        "option_d": "Solo si el interesado los vuelve a presentar",
+        "correct": "A",
+        "explanation": "El artículo 28.2 permite consultar o recabar salvo oposición, pero excluye la oposición en sanción o inspección."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Cómo deben recabarse electrónicamente los documentos que obren en otra Administración?",
+        "option_a": "Solo por correo postal",
+        "option_b": "A través de redes corporativas o mediante plataformas de intermediación de datos u otros sistemas habilitados",
+        "option_c": "Solo mediante una llamada telefónica",
+        "option_d": "Mediante una publicación en redes sociales",
+        "correct": "B",
+        "explanation": "El artículo 28.2 prescribe esas vías electrónicas."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Cuándo no cabe la oposición del interesado a la consulta de documentos?",
+        "option_a": "Cuando el documento es electrónico",
+        "option_b": "Cuando el órgano es local",
+        "option_c": "Cuando la aportación se exige en el ejercicio de potestades sancionadoras o de inspección",
+        "option_d": "Cuando se usa una plataforma",
+        "correct": "C",
+        "explanation": "El artículo 28.2 excluye la oposición en esos procedimientos."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué regla rige sobre la exigencia de documentos originales?",
+        "option_a": "Se exigirán siempre",
+        "option_b": "Solo se exigirán por teléfono",
+        "option_c": "Nunca pueden existir originales",
+        "option_d": "No se exigirán salvo que excepcionalmente la normativa aplicable lo establezca",
+        "correct": "D",
+        "explanation": "El artículo 28.3 prohíbe exigir originales salvo la excepción normativa que contempla."
+    },
+    {
+        "topic_num": 38,
+        "question": "Si una persona ya aportó un documento a cualquier Administración, ¿qué debe hacer la Administración actuante?",
+        "option_a": "Recabarlo electrónicamente indicando el interesado cuándo y ante qué órgano lo presentó, salvo las excepciones legales",
+        "option_b": "Exigirlo de nuevo siempre",
+        "option_c": "Rechazar la solicitud",
+        "option_d": "Publicarlo en el expediente de otra persona",
+        "correct": "A",
+        "explanation": "El artículo 28.3 establece esa regla y sus excepciones de oposición expresa o consentimiento legalmente exigido."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué puede hacer excepcionalmente la Administración si no puede recabar electrónicamente un documento?",
+        "option_a": "Destruir el expediente",
+        "option_b": "Solicitar nuevamente al interesado su aportación",
+        "option_c": "Resolver siempre a favor",
+        "option_d": "Publicar los datos",
+        "correct": "B",
+        "explanation": "El artículo 28.3 permite solicitarlo nuevamente de forma excepcional si no pudiera recabarse."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué debe indicar el interesado para que la Administración recabe un documento ya aportado?",
+        "option_a": "La contraseña del funcionario",
+        "option_b": "El fabricante del equipo",
+        "option_c": "En qué momento y ante qué órgano administrativo lo presentó",
+        "option_d": "El domicilio de todos los empleados",
+        "correct": "C",
+        "explanation": "El artículo 28.3 exige indicar el momento y órgano de presentación."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué responsabilidad tienen los interesados sobre los documentos que presentan?",
+        "option_a": "Garantizar la disponibilidad de la Red SARA",
+        "option_b": "Mantener el directorio de aplicaciones",
+        "option_c": "Aprobar las normas técnicas",
+        "option_d": "Responder de su veracidad",
+        "correct": "D",
+        "explanation": "El artículo 28.7 establece que los interesados se responsabilizan de la veracidad de los documentos presentados."
+    },
+    {
+        "topic_num": 38,
+        "question": "En un trámite ordinario, una unidad pide al ciudadano un certificado que ya está en poder de otra Administración y no justifica una excepción. ¿Qué actuación se ajusta mejor a la Ley 39/2015?",
+        "option_a": "Recabarlo electrónicamente por una red corporativa o plataforma habilitada",
+        "option_b": "Exigir siempre el original en papel",
+        "option_c": "Pedir al ciudadano que lo publique en internet",
+        "option_d": "No iniciar nunca el procedimiento",
+        "correct": "A",
+        "explanation": "El artículo 28.2 obliga a recabarlo electrónicamente, salvo las excepciones previstas."
+    },
+    {
+        "topic_num": 38,
+        "question": "Una Administración desea usar datos cedidos para una finalidad compatible distinta de la inicial. ¿Cuál es el orden correcto?",
+        "option_a": "Usar primero y comunicar después",
+        "option_b": "Comunicar previamente a la cedente, esperar su decisión y no usar mientras no la comunique",
+        "option_c": "Publicar primero y pedir autorización a un tercero",
+        "option_d": "Eliminar los datos y volver a pedirlos",
+        "correct": "B",
+        "explanation": "El artículo 155.3 establece comunicación previa, posible oposición motivada en diez días y prohibición de uso hasta la decisión comunicada."
+    },
+    {
+        "topic_num": 38,
+        "question": "Una entidad va a adquirir una aplicación y encuentra en el directorio general otra solución que satisface parcialmente la necesidad. ¿Qué exige la Ley 40/2015 como regla?",
+        "option_a": "Ignorar el directorio porque solo se consulta al final",
+        "option_b": "Comprar otra aplicación sin motivación",
+        "option_c": "Usar la solución reutilizable salvo justificar la no reutilización en términos de eficiencia",
+        "option_d": "Usarla solo si el proveedor autoriza una marca",
+        "correct": "C",
+        "explanation": "El artículo 157.3 obliga a usar una solución disponible total o parcialmente salvo justificación de eficiencia."
+    },
+    {
+        "topic_num": 38,
+        "question": "Una aplicación administrativa se ofrece como servicio reutilizable. ¿Qué debe indicar el directorio como mínimo?",
+        "option_a": "El código fuente en todo caso",
+        "option_b": "Las claves privadas del servicio",
+        "option_c": "Los datos personales de clientes",
+        "option_d": "El nivel de servicio ofrecido",
+        "correct": "D",
+        "explanation": "El artículo 17.3.c del RD 4/2010 exige indicar el nivel de servicio en el modo servicio."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_38_LOT_05_END
