@@ -1,0 +1,338 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-35-git-remotes-workflows-strategies.md",
+  "batches": [
+    {
+      "topic_num": 35,
+      "lot_num": 5,
+      "source_ids": [
+        "GIT-2.50",
+        "GITHUB-PULL-REQUESTS",
+        "GITHUB-FLOW",
+        "ATLASSIAN-GIT-FLOW"
+      ],
+      "questions": [
+        {
+          "objective_id": "t35-lo-081",
+          "difficulty": "basic",
+          "type": "definition",
+          "question": "¿Qué es una rama de tema (topic branch) en un flujo Git?",
+          "options": [
+            "Una rama temporal centrada en una funcionalidad o corrección concreta",
+            "Una rama que solo contiene tags",
+            "Una referencia que nunca puede fusionarse",
+            "Una copia obligatoria de todos los remotos"
+          ],
+          "correct": "A",
+          "explanation": "Una topic branch aísla una línea de trabajo enfocada hasta que se integra en una rama de desarrollo o estable.",
+          "citation": "gitworkflows — Topic branches",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-082",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué describe el flujo de trabajo documentado para un proyecto con rama de integración?",
+          "options": [
+            "Cada desarrollador escribe directamente en la rama estable",
+            "Las contribuciones llegan a una rama de integración y se prueban antes de avanzar a una rama estable",
+            "Todos los cambios se guardan como stashes",
+            "Los remotos se sustituyen por tags"
+          ],
+          "correct": "B",
+          "explanation": "Gitworkflows separa integración y estabilidad para ordenar la incorporación de contribuciones.",
+          "citation": "gitworkflows — Integration branches",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-083",
+          "difficulty": "basic",
+          "type": "comparison",
+          "question": "¿Qué ventaja aporta mantener una rama estable separada de una rama de integración?",
+          "options": [
+            "Obliga a reescribir todos los commits públicos",
+            "Elimina la necesidad de remotos",
+            "Permite probar o revisar cambios antes de exponerlos como historia estable",
+            "Impide crear ramas de tema"
+          ],
+          "correct": "C",
+          "explanation": "La separación proporciona una frontera de calidad entre trabajo en integración y código estable.",
+          "citation": "gitworkflows — Integration branches",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-084",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué caracteriza un flujo distribuido de Git?",
+          "options": [
+            "Solo existe un servidor que controla todos los commits",
+            "No puede haber ramas de tema",
+            "Las pull requests dejan de ser posibles",
+            "Cada participante puede intercambiar contribuciones entre repositorios y un integrador puede seleccionar qué incorporar"
+          ],
+          "correct": "D",
+          "explanation": "Git distribuido permite múltiples repositorios y roles de integración mediante fetch, push y selección de refs.",
+          "citation": "gitworkflows — Distributed workflows",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-085",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "¿Por qué conviene no reescribir una rama pública que ya sirve de base a otros?",
+          "options": [
+            "Porque obliga a los demás a reconciliar identificadores y puede invalidar referencias de trabajo",
+            "Porque Git no permite crear tags después",
+            "Porque fetch borra la rama local",
+            "Porque una rama pública no puede fusionarse"
+          ],
+          "correct": "A",
+          "explanation": "La estabilidad de referencias compartidas reduce el coste de coordinación y evita divergencias artificiales.",
+          "citation": "gitworkflows — Public history; git-rebase — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-086",
+          "difficulty": "intermediate",
+          "type": "definition",
+          "question": "¿Qué caracteriza al enfoque GitHub flow?",
+          "options": [
+            "Mantener ramas release y hotfix durante años",
+            "Usar ramas de trabajo cortas, cambios revisables mediante pull request y una integración frecuente",
+            "Enviar siempre directamente a main con force",
+            "No ejecutar comprobaciones antes de integrar"
+          ],
+          "correct": "B",
+          "explanation": "GitHub flow documenta un flujo ligero basado en rama, commit, pull request, revisión y despliegue.",
+          "citation": "GitHub flow — Understanding the GitHub flow",
+          "source_id": "GITHUB-FLOW"
+        },
+        {
+          "objective_id": "t35-lo-087",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué paso pertenece al flujo GitHub flow después de crear una rama de trabajo?",
+          "options": [
+            "Borrar main antes de probar",
+            "Crear obligatoriamente una rama develop",
+            "Realizar commits y abrir una pull request para proponer los cambios",
+            "Publicar tags de cada archivo"
+          ],
+          "correct": "C",
+          "explanation": "La pull request convierte la rama corta en una propuesta revisable contra la rama base.",
+          "citation": "GitHub flow — Creating a branch; opening a pull request",
+          "source_id": "GITHUB-FLOW"
+        },
+        {
+          "objective_id": "t35-lo-088",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Qué diferencia general hay entre un flujo ligero de ramas y Gitflow?",
+          "options": [
+            "El flujo ligero no usa Git y Gitflow solo usa stashes",
+            "Ambos requieren exactamente las mismas ramas",
+            "Gitflow prohíbe cualquier integración",
+            "El primero suele integrar ramas cortas hacia una línea principal; Gitflow define ramas de desarrollo, release y hotfix con roles más formales"
+          ],
+          "correct": "D",
+          "explanation": "Las guías distinguen la simplicidad de ramas cortas de la estructura explícita de Gitflow.",
+          "citation": "GitHub flow — Understanding the GitHub flow; Gitflow workflow — overview",
+          "source_id": "GITHUB-FLOW"
+        },
+        {
+          "objective_id": "t35-lo-089",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "En Gitflow, ¿qué papel cumple normalmente develop?",
+          "options": [
+            "Servir como rama de integración del trabajo que se prepara para una futura versión",
+            "Contener únicamente correcciones urgentes de producción",
+            "Ser la rama de cada pull request cerrada",
+            "Reemplazar todos los tags de versión"
+          ],
+          "correct": "A",
+          "explanation": "Gitflow usa develop como línea donde se integran funcionalidades antes de preparar una release.",
+          "citation": "Gitflow workflow — develop branch",
+          "source_id": "ATLASSIAN-GIT-FLOW"
+        },
+        {
+          "objective_id": "t35-lo-090",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "En Gitflow, ¿para qué se usa una rama release?",
+          "options": [
+            "Guardar archivos ignorados de una release anterior",
+            "Preparar una versión concreta y estabilizarla antes de incorporarla a las ramas de producción e integración",
+            "Sustituir el repositorio remoto",
+            "Evitar cualquier prueba automatizada"
+          ],
+          "correct": "B",
+          "explanation": "La rama release aísla la estabilización de una versión mientras el desarrollo futuro puede continuar.",
+          "citation": "Gitflow workflow — release branches",
+          "source_id": "ATLASSIAN-GIT-FLOW"
+        },
+        {
+          "objective_id": "t35-lo-091",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "En Gitflow, ¿qué finalidad tiene una rama hotfix?",
+          "options": [
+            "Desarrollar una funcionalidad experimental sin revisión",
+            "Almacenar las URLs de remotos",
+            "Corregir urgentemente una versión de producción y propagar la corrección a las ramas correspondientes",
+            "Reemplazar la rama de integración permanentemente"
+          ],
+          "correct": "C",
+          "explanation": "Hotfix se reserva para correcciones urgentes sobre la línea de producción y después se integra donde corresponda.",
+          "citation": "Gitflow workflow — hotfix branches",
+          "source_id": "ATLASSIAN-GIT-FLOW"
+        },
+        {
+          "objective_id": "t35-lo-092",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué suele ocurrir al finalizar una rama release en Gitflow?",
+          "options": [
+            "Se elimina sin merge ni tag",
+            "Se convierte en remote-tracking branch",
+            "Se aplica como stash a todos los clones",
+            "Se integra en la rama de producción, se marca la versión y se devuelve el cambio a la rama de desarrollo"
+          ],
+          "correct": "D",
+          "explanation": "El cierre de una release conserva la versión en producción y sincroniza la línea de desarrollo.",
+          "citation": "Gitflow workflow — release branches",
+          "source_id": "ATLASSIAN-GIT-FLOW"
+        },
+        {
+          "objective_id": "t35-lo-093",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Qué coste puede tener Gitflow frente a un flujo de ramas cortas?",
+          "options": [
+            "Mantiene más ramas de larga duración y exige más coordinación de integración",
+            "No permite etiquetar versiones",
+            "No puede usar remotos",
+            "Tiene menos estados y menos decisiones siempre"
+          ],
+          "correct": "A",
+          "explanation": "La estructura formal de Gitflow ofrece roles claros, pero aumenta la coordinación y la divergencia potencial.",
+          "citation": "Gitflow workflow — comparing workflows",
+          "source_id": "ATLASSIAN-GIT-FLOW"
+        },
+        {
+          "objective_id": "t35-lo-094",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "¿Qué práctica es coherente con trunk-based development?",
+          "options": [
+            "Mantener cada funcionalidad en una rama permanente hasta fin de año",
+            "Integrar cambios pequeños y frecuentes en una línea principal, usando ramas muy cortas cuando se necesiten",
+            "Separar siempre develop y release aunque no haya versiones",
+            "Reescribir main después de cada integración"
+          ],
+          "correct": "B",
+          "explanation": "Trunk-based development reduce el tiempo de vida de ramas y favorece la integración frecuente sobre el tronco.",
+          "citation": "GitHub flow — Understanding the GitHub flow",
+          "source_id": "GITHUB-FLOW"
+        },
+        {
+          "objective_id": "t35-lo-095",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Qué relación existe entre GitHub flow y trunk-based development?",
+          "options": [
+            "Uno exige Gitflow y el otro prohíbe main",
+            "Ambos requieren ramas release y hotfix",
+            "Ambos favorecen ramas cortas e integración frecuente, aunque GitHub flow concreta el uso de pull requests y despliegue",
+            "No comparten ninguna práctica"
+          ],
+          "correct": "C",
+          "explanation": "El flujo de GitHub es una realización ligera compatible con la idea de mantener corta la divergencia respecto al tronco.",
+          "citation": "GitHub flow — Understanding the GitHub flow",
+          "source_id": "GITHUB-FLOW"
+        },
+        {
+          "objective_id": "t35-lo-096",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "¿Qué criterio ayuda a elegir entre una rama release formal y una integración continua sobre trunk?",
+          "options": [
+            "El nombre del remoto origin",
+            "La existencia de archivos ignorados",
+            "El número de tags ligeros locales",
+            "La necesidad real de estabilizar versiones separadas frente a la capacidad de integrar cambios pequeños con controles automatizados"
+          ],
+          "correct": "D",
+          "explanation": "La estrategia debe responder al ritmo de entrega, controles y necesidades de mantenimiento, no a una receta universal.",
+          "citation": "Gitflow workflow — comparing workflows; GitHub flow — understanding the flow",
+          "source_id": "ATLASSIAN-GIT-FLOW"
+        },
+        {
+          "objective_id": "t35-lo-097",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "¿Qué secuencia es coherente con una contribución revisable y de bajo riesgo?",
+          "options": [
+            "Crear rama corta, obtener la base actual, hacer commits enfocados, abrir pull request, pasar checks y fusionar",
+            "Forzar directamente main y borrar el reflog",
+            "Crear una rama permanente por cada archivo",
+            "Publicar sin revisar y resolver después en todos los clones"
+          ],
+          "correct": "A",
+          "explanation": "La secuencia limita la divergencia, conserva la revisión y usa checks antes de modificar la línea principal.",
+          "citation": "GitHub flow — understanding the GitHub flow; git-fetch — DESCRIPTION",
+          "source_id": "GITHUB-FLOW"
+        },
+        {
+          "objective_id": "t35-lo-098",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Qué debe conservar una estrategia de ramas bien definida además de los nombres de ramas?",
+          "options": [
+            "Solo una lista de URLs",
+            "Reglas claras de integración, revisión, pruebas, publicación y tratamiento de historia compartida",
+            "Un stash por desarrollador",
+            "Un merge commit vacío en cada push"
+          ],
+          "correct": "B",
+          "explanation": "Una estrategia es un proceso de colaboración y calidad, no solo una nomenclatura de refs.",
+          "citation": "gitworkflows — Workflow; About protected branches",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-099",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "¿Qué decisión protege mejor una rama principal en un equipo con pull requests?",
+          "options": [
+            "Permitir force push anónimo y saltar checks",
+            "Eliminar la rama principal tras cada release",
+            "Requerir revisiones y checks, impedir pushes directos no autorizados y publicar cambios desde ramas de trabajo",
+            "Aceptar cualquier actualización de una remote-tracking ref"
+          ],
+          "correct": "C",
+          "explanation": "Las protecciones combinan control de acceso y señales de calidad antes de integrar cambios.",
+          "citation": "About protected branches; About status checks",
+          "source_id": "GITHUB-PULL-REQUESTS"
+        },
+        {
+          "objective_id": "t35-lo-100",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Qué principio común une los flujos remotos, las pull requests y las estrategias de ramas?",
+          "options": [
+            "Evitar siempre los remotos y usar solo stashes",
+            "Reescribir toda rama pública antes de cada push",
+            "Tratar una pull request como un objeto blob local",
+            "Separar trabajo, revisión e integración de forma explícita y preservar la historia compartida salvo decisión coordinada"
+          ],
+          "correct": "D",
+          "explanation": "La colaboración segura hace visibles los límites entre trabajo local, referencias compartidas, revisión e integración.",
+          "citation": "gitworkflows — Workflow; About pull requests; git-push — NOTE ABOUT FAST-FORWARDS",
+          "source_id": "GIT-2.50"
+        }
+      ]
+    }
+  ]
+}

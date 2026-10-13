@@ -1,0 +1,338 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-35-git-remotes-workflows-strategies.md",
+  "batches": [
+    {
+      "topic_num": 35,
+      "lot_num": 1,
+      "source_ids": [
+        "GIT-2.50",
+        "GITHUB-PULL-REQUESTS",
+        "GITHUB-FLOW",
+        "ATLASSIAN-GIT-FLOW"
+      ],
+      "questions": [
+        {
+          "objective_id": "t35-lo-001",
+          "difficulty": "basic",
+          "type": "definition",
+          "question": "¿Qué representa normalmente un remoto en Git?",
+          "options": [
+            "Un nombre que agrupa URLs y configuración para otro repositorio",
+            "Una copia del índice local",
+            "Un commit que nunca puede cambiar",
+            "Un archivo ignorado por el working tree"
+          ],
+          "correct": "A",
+          "explanation": "Un remoto es un nombre local asociado a una o más URLs y a reglas de seguimiento para intercambiar objetos y referencias.",
+          "citation": "git-remote — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-002",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué información se obtiene al mostrar los remotos con detalle?",
+          "options": [
+            "Los conflictos del último merge",
+            "Sus nombres y las URLs usadas para obtener y enviar cambios",
+            "Los archivos staged del índice",
+            "Los commits que aún no tienen autor"
+          ],
+          "correct": "B",
+          "explanation": "La forma detallada de git remote muestra los nombres y las URLs fetch/push configuradas.",
+          "citation": "git-remote — -v/--verbose",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-003",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué operación registra un repositorio como remoto con un nombre local?",
+          "options": [
+            "git remote remove nombre URL",
+            "git remote show nombre URL",
+            "git remote add nombre URL",
+            "git remote prune nombre URL"
+          ],
+          "correct": "C",
+          "explanation": "remote add crea la configuración que vincula el nombre del remoto con la URL indicada.",
+          "citation": "git-remote — add",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-004",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué operación cambia el nombre local de un remoto?",
+          "options": [
+            "git remote move-url antiguo nuevo",
+            "git remote branch antiguo nuevo",
+            "git remote reset-name antiguo nuevo",
+            "git remote rename antiguo nuevo"
+          ],
+          "correct": "D",
+          "explanation": "rename actualiza el nombre del remoto y las referencias de seguimiento relacionadas.",
+          "citation": "git-remote — rename",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-005",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué elimina la configuración local de un remoto llamado backup?",
+          "options": [
+            "git remote remove backup",
+            "git remote show backup",
+            "git remote prune backup",
+            "git remote get-url backup"
+          ],
+          "correct": "A",
+          "explanation": "remove quita el remoto de la configuración local; no equivale a borrar el repositorio remoto.",
+          "citation": "git-remote — remove",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-006",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué consulta permite obtener la URL configurada de un remoto?",
+          "options": [
+            "git remote url origin --delete",
+            "git remote get-url origin",
+            "git remote show-url origin --prune",
+            "git remote inspect-url origin --fetch-only"
+          ],
+          "correct": "B",
+          "explanation": "get-url devuelve la URL asociada al remoto y admite opciones para consultar sus variantes.",
+          "citation": "git-remote — get-url",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-007",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué operación ofrece un resumen de las ramas seguidas y su estado respecto al remoto?",
+          "options": [
+            "git remote add origin",
+            "git remote clear origin",
+            "git remote show origin",
+            "git remote tag origin"
+          ],
+          "correct": "C",
+          "explanation": "remote show presenta información de seguimiento, ramas locales y referencias remotas conocidas.",
+          "citation": "git-remote — show",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-008",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué operación sustituye la URL de obtención de un remoto?",
+          "options": [
+            "git remote replace-origin origin nueva-URL",
+            "git remote update-url origin nueva-URL",
+            "git remote edit-fetch origin nueva-URL",
+            "git remote set-url origin nueva-URL"
+          ],
+          "correct": "D",
+          "explanation": "set-url modifica la URL configurada para el remoto, con modos específicos para fetch o push.",
+          "citation": "git-remote — set-url",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-009",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Dónde se sitúan normalmente las referencias de seguimiento remoto de un repositorio?",
+          "options": [
+            "Bajo refs/remotes, separadas de las ramas locales bajo refs/heads",
+            "Bajo refs/blobs junto con el contenido de archivos",
+            "En el índice global del usuario",
+            "Dentro de cada archivo del working tree"
+          ],
+          "correct": "A",
+          "explanation": "Las remote-tracking refs se organizan bajo refs/remotes y reflejan el estado conocido de otros repositorios.",
+          "citation": "gitrepository-layout — refs; gitglossary — remote-tracking branch",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-010",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué describe una rama de seguimiento remoto?",
+          "options": [
+            "Una rama que puede actualizarse escribiendo directamente en el servidor",
+            "Una referencia local que registra la última posición conocida de una rama en otro repositorio",
+            "Un stash compartido por todos los clones",
+            "Un tag que siempre tiene firma"
+          ],
+          "correct": "B",
+          "explanation": "Una remote-tracking branch se actualiza mediante operaciones de red y sirve como referencia local, no como canal directo de escritura.",
+          "citation": "gitglossary — remote-tracking branch",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-011",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué nombre asigna normalmente clone al repositorio del que obtiene una copia?",
+          "options": [
+            "upstream-only",
+            "default-remote",
+            "origin",
+            "source-head"
+          ],
+          "correct": "C",
+          "explanation": "clone usa origin como nombre remoto predeterminado salvo que se indique otro con sus opciones.",
+          "citation": "git-clone — -o/--origin",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-012",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué permite consultar todas las URLs de obtención configuradas para un remoto?",
+          "options": [
+            "La opción --merged de git branch",
+            "La opción --cached de git diff",
+            "La opción --staged de git fetch",
+            "La opción --all de git remote get-url"
+          ],
+          "correct": "D",
+          "explanation": "get-url --all enumera las URLs configuradas en lugar de limitarse a la primera.",
+          "citation": "git-remote — get-url --all",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-013",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué operación establece la referencia simbólica que identifica la rama principal de un remoto?",
+          "options": [
+            "git remote set-head origin rama",
+            "git remote set-main origin rama",
+            "git remote branch-head origin rama",
+            "git remote mark-default origin rama"
+          ],
+          "correct": "A",
+          "explanation": "set-head permite configurar o consultar la rama simbólica HEAD asociada a un remoto.",
+          "citation": "git-remote — set-head",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-014",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué hace podar referencias de seguimiento remoto que ya no existen en el servidor?",
+          "options": [
+            "Borra las ramas locales no fusionadas",
+            "Elimina las remote-tracking refs obsoletas del espacio local",
+            "Reescribe todos los commits del repositorio",
+            "Convierte cada ref en un tag anotado"
+          ],
+          "correct": "B",
+          "explanation": "remote prune elimina referencias de seguimiento que ya no aparecen en el remoto, sin borrar por ello las ramas locales.",
+          "citation": "git-remote — prune",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-015",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Qué inspección consulta referencias publicadas sin actualizar el repositorio local?",
+          "options": [
+            "git remote prune URL",
+            "git show-remote --working-tree URL",
+            "git ls-remote URL",
+            "git branch --remote-update URL"
+          ],
+          "correct": "C",
+          "explanation": "ls-remote lista referencias y object IDs disponibles en otro repositorio sin crear ni actualizar remote-tracking refs.",
+          "citation": "git-ls-remote — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-016",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Qué alcance tiene actualizar los remotos configurados mediante remote update?",
+          "options": [
+            "Solo cambia el nombre del remoto activo",
+            "Solo limpia archivos ignorados",
+            "Siempre envía commits a todos los remotos",
+            "Puede obtener referencias de uno o de todos los grupos de remotos configurados"
+          ],
+          "correct": "D",
+          "explanation": "remote update ejecuta operaciones de obtención para los remotos o grupos definidos en la configuración.",
+          "citation": "git-remote — update",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-017",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué distingue a un repositorio bare usado habitualmente como servidor?",
+          "options": [
+            "No tiene working tree comprobado y su directorio principal contiene directamente la base Git",
+            "Solo puede contener una rama local",
+            "No puede recibir pushes",
+            "Guarda únicamente archivos sin seguimiento"
+          ],
+          "correct": "A",
+          "explanation": "Un repositorio bare omite el working tree y está pensado para intercambio, por ejemplo como destino central.",
+          "citation": "git-clone — --bare; gitrepository-layout — bare repository",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-018",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Qué diferencia hay entre quitar un remoto y borrar el repositorio que representa?",
+          "options": [
+            "Ambas operaciones destruyen los objetos del servidor",
+            "Quitar el remoto solo elimina referencias/configuración local; el repositorio externo permanece",
+            "Quitar el remoto publica todos los commits pendientes",
+            "Borrar el repositorio externo solo cambia HEAD local"
+          ],
+          "correct": "B",
+          "explanation": "La configuración de un remoto es local al clon; remove no realiza una operación destructiva en el servidor.",
+          "citation": "git-remote — remove",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-019",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué relación existe entre una URL de fetch y una URL de push de un remoto?",
+          "options": [
+            "Siempre deben usar protocolos distintos",
+            "La URL de push solo apunta al índice",
+            "Pueden ser iguales o distintas, porque obtener y enviar pueden dirigirse a destinos diferentes",
+            "La URL de fetch siempre es una rama local"
+          ],
+          "correct": "C",
+          "explanation": "Git permite configurar por separado la URL usada para obtener y las URLs usadas para enviar.",
+          "citation": "git-remote — get-url; git-remote — set-url",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-020",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "¿Qué enfoque registra un servidor principal sin modificar todavía ninguna rama local?",
+          "options": [
+            "Ejecutar reset --hard sobre HEAD",
+            "Crear un merge commit vacío",
+            "Borrar refs/remotes antes de conocer la URL",
+            "Añadirlo con git remote add y revisar su configuración antes de fetch o push"
+          ],
+          "correct": "D",
+          "explanation": "remote add solo registra la relación local; el intercambio de objetos se hace con fetch o push de forma explícita.",
+          "citation": "git-remote — add",
+          "source_id": "GIT-2.50"
+        }
+      ]
+    }
+  ]
+}

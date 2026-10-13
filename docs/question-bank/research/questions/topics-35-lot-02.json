@@ -1,0 +1,338 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-35-git-remotes-workflows-strategies.md",
+  "batches": [
+    {
+      "topic_num": 35,
+      "lot_num": 2,
+      "source_ids": [
+        "GIT-2.50",
+        "GITHUB-PULL-REQUESTS",
+        "GITHUB-FLOW",
+        "ATLASSIAN-GIT-FLOW"
+      ],
+      "questions": [
+        {
+          "objective_id": "t35-lo-021",
+          "difficulty": "basic",
+          "type": "definition",
+          "question": "¿Qué hace principalmente fetch respecto al repositorio local?",
+          "options": [
+            "Obtiene objetos y referencias de otro repositorio sin integrar automáticamente sus cambios en la rama actual",
+            "Crea siempre un merge commit",
+            "Borra el working tree antes de descargar",
+            "Envía los commits locales al servidor"
+          ],
+          "correct": "A",
+          "explanation": "fetch actualiza la información local sobre otro repositorio, pero deja separada la decisión de integrar sus cambios.",
+          "citation": "git-fetch — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-022",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué comando obtiene las actualizaciones conocidas del remoto origin?",
+          "options": [
+            "git pull origin --only-fetch-disabled",
+            "git fetch origin",
+            "git remote update --send origin",
+            "git branch --fetch origin"
+          ],
+          "correct": "B",
+          "explanation": "fetch origin descarga y actualiza las referencias de seguimiento según la configuración y refspec aplicables.",
+          "citation": "git-fetch — <repository>",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-023",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué opción elimina durante fetch las referencias remotas locales que ya no existen?",
+          "options": [
+            "--detach",
+            "--rebase-only",
+            "--prune",
+            "--commit"
+          ],
+          "correct": "C",
+          "explanation": "--prune limpia las remote-tracking refs que dejaron de existir en el remoto consultado.",
+          "citation": "git-fetch — --prune",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-024",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué solicita la opción --tags durante una obtención?",
+          "options": [
+            "Enviar todos los tags al remoto",
+            "Borrar tags que no apunten a ramas",
+            "Convertir tags ligeros en anotados",
+            "Obtener tags del remoto, además de las referencias que la configuración normal alcance"
+          ],
+          "correct": "D",
+          "explanation": "--tags incorpora tags desde el remoto; no significa publicar los tags locales.",
+          "citation": "git-fetch — --tags",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-025",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué limita una opción depth al obtener un repositorio?",
+          "options": [
+            "La profundidad de la historia que se descarga, produciendo un clon u obtención superficial",
+            "El número de remotos que pueden configurarse",
+            "La cantidad de ramas que pueden fusionarse",
+            "El número de tags que pueden firmarse"
+          ],
+          "correct": "A",
+          "explanation": "--depth limita los commits obtenidos y puede crear o ampliar un repositorio shallow.",
+          "citation": "git-fetch — --depth; git-clone — --depth",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-026",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué combinación describe mejor pull?",
+          "options": [
+            "Solo listar URLs de un remoto",
+            "Obtener cambios y después integrarlos en la rama actual mediante merge o rebase según la configuración",
+            "Crear una rama remota sin descargar objetos",
+            "Borrar la rama de seguimiento antes de fusionar"
+          ],
+          "correct": "B",
+          "explanation": "pull ejecuta una obtención y luego integra los cambios en la rama actual conforme a sus opciones.",
+          "citation": "git-pull — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-027",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué política selecciona pull --rebase?",
+          "options": [
+            "Rechazar todo cambio remoto",
+            "Enviar primero los commits locales",
+            "Reaplicar los commits locales sobre la historia obtenida en lugar de crear el merge habitual",
+            "Eliminar la rama de seguimiento remoto"
+          ],
+          "correct": "C",
+          "explanation": "--rebase pide usar rebase para integrar la historia obtenida, con las advertencias normales de reescritura.",
+          "citation": "git-pull — --rebase",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-028",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué exige pull --ff-only?",
+          "options": [
+            "Que siempre se cree un merge commit",
+            "Que se haga un rebase interactivo",
+            "Que se borren los commits locales",
+            "Que la integración pueda resolverse como fast-forward; de lo contrario falla"
+          ],
+          "correct": "D",
+          "explanation": "--ff-only permite actualizar solo si la punta actual es ancestro de la historia obtenida.",
+          "citation": "git-pull — --ff-only",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-029",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué indica pull --no-rebase?",
+          "options": [
+            "Usar merge para integrar la historia obtenida, salvo otras opciones incompatibles",
+            "No descargar ninguna referencia",
+            "Forzar el envío al remoto",
+            "Eliminar los conflictos sin intervención"
+          ],
+          "correct": "A",
+          "explanation": "--no-rebase selecciona la integración mediante merge en el flujo de pull.",
+          "citation": "git-pull — --no-rebase",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-030",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué define un refspec de fetch?",
+          "options": [
+            "El mensaje de un commit de merge",
+            "La correspondencia entre referencias del repositorio remoto y referencias locales que se actualizarán",
+            "El nombre del editor global",
+            "La política de expiración del reflog"
+          ],
+          "correct": "B",
+          "explanation": "Un refspec describe qué refs se obtienen y dónde se almacenan o mapean localmente.",
+          "citation": "git-fetch — REFSPEC; gitglossary — refspec",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-031",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué significa consultar origin/main después de un fetch?",
+          "options": [
+            "Leer directamente el working tree del servidor",
+            "Crear automáticamente una rama local main",
+            "Consultar la referencia local de seguimiento que refleja la última posición conocida de main en origin",
+            "Mostrar siempre el último commit enviado por cualquier remoto"
+          ],
+          "correct": "C",
+          "explanation": "origin/main es una remote-tracking ref local y solo representa el estado conocido tras las actualizaciones realizadas.",
+          "citation": "gitglossary — remote-tracking branch; git-fetch — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-032",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué actualiza normalmente fetch al recibir nuevos commits de origin?",
+          "options": [
+            "La configuración de user.name",
+            "Todos los archivos staged de la rama actual",
+            "La rama local actual aunque no se haya pedido integrar",
+            "Las referencias de seguimiento remoto y los objetos necesarios, no la rama local actual"
+          ],
+          "correct": "D",
+          "explanation": "fetch actualiza refs/remotes y el almacén de objetos; la rama checkout queda sin fusionar.",
+          "citation": "git-fetch — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-033",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué fuente identifica el resultado de la última operación fetch?",
+          "options": [
+            "FETCH_HEAD, que registra las cabezas obtenidas para operaciones posteriores",
+            "MERGE_HEAD, que siempre representa un remoto",
+            "HEAD remoto, que sustituye al HEAD local",
+            "STASH_HEAD, que guarda cambios sin seguimiento"
+          ],
+          "correct": "A",
+          "explanation": "FETCH_HEAD registra las refs obtenidas por fetch y puede ser usado por comandos de integración.",
+          "citation": "git-fetch — DESCRIPTION; gitrepository-layout — FETCH_HEAD",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-034",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué permite fetch --all?",
+          "options": [
+            "Descargar solo todos los tags y ningún commit",
+            "Obtener de todos los remotos configurados, en vez de limitarse a uno nombrado",
+            "Enviar todas las ramas al primer remoto",
+            "Integrar automáticamente todas las historias"
+          ],
+          "correct": "B",
+          "explanation": "--all selecciona todos los remotos configurados para la operación de obtención.",
+          "citation": "git-fetch — --all",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-035",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Qué diferencia hay entre fetch y pull en cuanto a integración?",
+          "options": [
+            "Fetch siempre hace rebase y pull solo lista refs",
+            "Fetch elimina conflictos y pull los crea",
+            "Fetch actualiza referencias sin integrar; pull añade una integración posterior en la rama actual",
+            "No hay diferencia operacional"
+          ],
+          "correct": "C",
+          "explanation": "pull combina fetch con una integración, mientras fetch deja el análisis y la integración para una orden posterior.",
+          "citation": "git-fetch — DESCRIPTION; git-pull — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-036",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Qué precaución acompaña a la poda de tags mediante las opciones de fetch?",
+          "options": [
+            "Siempre crea una copia de seguridad remota",
+            "Solo cambia el mensaje del último commit",
+            "No afecta nunca a referencias locales",
+            "Debe combinarse con la política de poda indicada porque puede eliminar tags locales que ya no estén en el remoto"
+          ],
+          "correct": "D",
+          "explanation": "Las opciones de poda de tags amplían el alcance de --prune y deben usarse entendiendo qué refs locales eliminarán.",
+          "citation": "git-fetch — --prune-tags",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-037",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Qué solicita pull --autostash cuando hay cambios locales compatibles?",
+          "options": [
+            "Guardar temporalmente cambios locales, realizar la integración y tratar de reaplicarlos al final",
+            "Enviar el stash al remoto como una rama",
+            "Convertir los cambios en un merge commit firmado",
+            "Borrar el working tree antes de fetch"
+          ],
+          "correct": "A",
+          "explanation": "--autostash usa un stash temporal para permitir la operación y lo intenta aplicar después.",
+          "citation": "git-pull — --autostash",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-038",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Tras fetch, ¿por qué comparar origin/main antes de integrar?",
+          "options": [
+            "Porque fetch ya cambió necesariamente la rama actual",
+            "Porque permite revisar la historia obtenida y elegir merge, rebase u otra acción de forma explícita",
+            "Porque origin/main siempre es un tag anotado",
+            "Porque la comparación borra los objetos no usados"
+          ],
+          "correct": "B",
+          "explanation": "Separar obtención e integración permite inspeccionar la referencia de seguimiento antes de modificar la rama checkout.",
+          "citation": "git-fetch — DESCRIPTION; git-pull — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-039",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Si pull --ff-only falla por divergencia, ¿qué significa?",
+          "options": [
+            "Que el remoto no tiene objetos",
+            "Que no se obtuvo ninguna referencia",
+            "Que la integración no puede resolverse moviendo la rama directamente y requiere otra decisión",
+            "Que el working tree es bare"
+          ],
+          "correct": "C",
+          "explanation": "La política fast-forward-only rechaza la divergencia para evitar que pull elija automáticamente merge o rebase.",
+          "citation": "git-pull — --ff-only",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-040",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Por qué un equipo puede preferir fetch separado de merge o rebase?",
+          "options": [
+            "Porque fetch cifra los commits y merge no",
+            "Porque pull no usa objetos Git",
+            "Porque fetch solo funciona en repositorios bare",
+            "Porque permite inspeccionar cambios remotos y decidir cómo integrarlos antes de modificar la rama de trabajo"
+          ],
+          "correct": "D",
+          "explanation": "La separación mejora el control sobre la revisión, la resolución de conflictos y la estrategia de integración.",
+          "citation": "git-fetch — DESCRIPTION; git-merge — DESCRIPTION; git-rebase — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        }
+      ]
+    }
+  ]
+}
