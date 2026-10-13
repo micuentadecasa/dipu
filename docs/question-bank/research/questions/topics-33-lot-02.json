@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-33-git-theory-installation-local.md",
+  "batches": [
+    {
+      "topic_num": 33,
+      "lot_num": 2,
+      "source_ids": [
+        "GIT-2.50"
+      ],
+      "questions": [
+        {
+          "objective_id": "t33-lo-021",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué comando muestra la versión instalada de Git?",
+          "options": [
+            "git --version",
+            "git version-show",
+            "git info --install",
+            "git config --version"
+          ],
+          "correct": "A",
+          "explanation": "git --version imprime la versión del ejecutable disponible.",
+          "citation": "git — --version",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-022",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué comando crea un repositorio Git en el directorio actual?",
+          "options": [
+            "git create-repository",
+            "git init",
+            "git start --repo",
+            "git make .git"
+          ],
+          "correct": "B",
+          "explanation": "git init crea el subdirectorio de metadatos y la estructura inicial del repositorio.",
+          "citation": "git-init — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-023",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué comando obtiene una copia local de un repositorio existente?",
+          "options": [
+            "git copy-objects",
+            "git fetch-only",
+            "git clone",
+            "git checkout-repository"
+          ],
+          "correct": "C",
+          "explanation": "git clone crea un nuevo repositorio local a partir de otro y configura su checkout inicial.",
+          "citation": "git-clone — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-024",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué comando escribe una configuración global para el usuario actual?",
+          "options": [
+            "git settings --user",
+            "git config --system-only",
+            "git user --global",
+            "git config --global"
+          ],
+          "correct": "D",
+          "explanation": "La opción --global dirige la operación a la configuración global del usuario.",
+          "citation": "git-config — CONFIGURATION LEVELS",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-025",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué configuración identifica el nombre mostrado en los commits?",
+          "options": [
+            "user.name",
+            "commit.author.name",
+            "core.identity",
+            "author.display"
+          ],
+          "correct": "A",
+          "explanation": "user.name forma parte de la identidad usada al crear commits.",
+          "citation": "git-config — user.name",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-026",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué configuración identifica la dirección de correo de los commits?",
+          "options": [
+            "commit.mailbox",
+            "user.email",
+            "core.email",
+            "author.address"
+          ],
+          "correct": "B",
+          "explanation": "user.email proporciona el correo de la identidad de commit.",
+          "citation": "git-config — user.email",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-027",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué opción limita `git config` a la configuración del repositorio actual?",
+          "options": [
+            "--repo-only",
+            "--worktree-global",
+            "--local",
+            "--current-user"
+          ],
+          "correct": "C",
+          "explanation": "--local escribe o consulta la configuración propia del repositorio.",
+          "citation": "git-config — CONFIGURATION LEVELS",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-028",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué comando lista las variables de configuración que Git puede leer?",
+          "options": [
+            "git config --show-files-only",
+            "git settings --all-keys",
+            "git list-config-files",
+            "git config --list"
+          ],
+          "correct": "D",
+          "explanation": "--list muestra las entradas de configuración, normalmente junto con sus valores.",
+          "citation": "git-config — --list",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-029",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Qué nivel suele tener prioridad sobre la configuración global para un repositorio concreto?",
+          "options": [
+            "La configuración local del repositorio",
+            "La configuración del sistema siempre",
+            "El archivo .gitignore",
+            "El reflog"
+          ],
+          "correct": "A",
+          "explanation": "La configuración local es más específica y normalmente prevalece sobre la global para la misma clave.",
+          "citation": "git-config — SCOPES",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-030",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué comando establece el nombre local del repositorio?",
+          "options": [
+            "git identity --repo Ana",
+            "git config --local user.name \"Ana\"",
+            "git config --name local Ana",
+            "git user.name --local Ana"
+          ],
+          "correct": "B",
+          "explanation": "La forma indicada establece user.name en la configuración local del repositorio.",
+          "citation": "git-config — --local; user.name",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-031",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué opción elimina una variable de configuración concreta?",
+          "options": [
+            "--remove-key-only",
+            "--delete-value-all",
+            "--unset",
+            "--clear-scope"
+          ],
+          "correct": "C",
+          "explanation": "--unset elimina una instancia de la clave seleccionada en el ámbito indicado.",
+          "citation": "git-config — --unset",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-032",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué comando selecciona la rama inicial por defecto al crear repositorios nuevos mediante configuración?",
+          "options": [
+            "git init --branch-global main",
+            "git branch --config main",
+            "git config core.initial main",
+            "git config --global init.defaultBranch main"
+          ],
+          "correct": "D",
+          "explanation": "init.defaultBranch es la clave que define el nombre inicial usado por git init cuando no se indica otro.",
+          "citation": "git-config — init.defaultBranch; git-init — INITIAL BRANCH NAME",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-033",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué diferencia hay entre --system y --global en `git config`?",
+          "options": [
+            "--system afecta la instalación; --global afecta al usuario",
+            "--system afecta solo el índice; --global solo HEAD",
+            "--system es remoto; --global es local",
+            "No tienen ámbitos distintos"
+          ],
+          "correct": "A",
+          "explanation": "Git separa configuración del sistema y del usuario mediante esos niveles.",
+          "citation": "git-config — CONFIGURATION LEVELS",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-034",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué comando muestra el valor efectivo de una clave junto con su origen?",
+          "options": [
+            "git config --trace-value user.name",
+            "git config --show-origin --get user.name",
+            "git show-config-source user.name",
+            "git config --origin-only user.name"
+          ],
+          "correct": "B",
+          "explanation": "--show-origin añade el archivo o fuente de cada valor consultado.",
+          "citation": "git-config — --show-origin; --get",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-035",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "En un repositorio recién creado, `git config --local user.email` no devuelve valor. ¿Qué implica?",
+          "options": [
+            "El repositorio no tiene object database",
+            "El correo se ha borrado de todos los ámbitos",
+            "No hay un valor local para esa clave, aunque otro ámbito podría proporcionarlo",
+            "HEAD está desacoplado"
+          ],
+          "correct": "C",
+          "explanation": "Una consulta explícita al ámbito local no encuentra la clave; la configuración efectiva puede venir de otro nivel.",
+          "citation": "git-config — CONFIGURATION LEVELS",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-036",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Qué diferencia conceptual existe entre configurar user.email y autenticarse ante un servidor?",
+          "options": [
+            "Ambas configuran la misma credencial",
+            "user.email cifra el repositorio",
+            "La autenticación la realiza siempre git config",
+            "La primera registra metadatos de commit; la segunda pertenece al acceso a servicios externos"
+          ],
+          "correct": "D",
+          "explanation": "La identidad de commit no es por sí sola una credencial de transporte o autorización.",
+          "citation": "git-config — user.email; gittutorial — Making Changes",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-037",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Qué opción permite consultar todos los valores de una clave multivaluada?",
+          "options": [
+            "git config --get-all",
+            "git config --one-value",
+            "git config --all-only-first",
+            "git config --values-last"
+          ],
+          "correct": "A",
+          "explanation": "--get-all devuelve todos los valores asociados a la clave consultada.",
+          "citation": "git-config — --get-all",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-038",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Un repositorio debe usar un editor distinto sin modificar la configuración global. ¿Qué enfoque es coherente?",
+          "options": [
+            "Editar .gitignore",
+            "Establecer core.editor con `--local`",
+            "Usar git reflog",
+            "Cambiar refs/heads"
+          ],
+          "correct": "B",
+          "explanation": "La clave core.editor puede definirse en el nivel local para afectar solo al repositorio.",
+          "citation": "git-config — core.editor; CONFIGURATION LEVELS",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-039",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Qué efecto tiene `git init` cuando se ejecuta sobre un repositorio ya inicializado?",
+          "options": [
+            "Borra siempre todos los commits",
+            "Clona automáticamente un remoto",
+            "Reinicializa la estructura sin convertirlo en otro tipo de repositorio",
+            "Convierte el índice en un blob"
+          ],
+          "correct": "C",
+          "explanation": "git init puede reinitializar un repositorio existente y conserva su historial salvo operaciones explícitas distintas.",
+          "citation": "git-init — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-040",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Qué diferencia local importante hay entre clone e init?",
+          "options": [
+            "init siempre descarga refs",
+            "clone nunca crea un working tree",
+            "No hay diferencia",
+            "clone obtiene una historia existente; init crea una estructura sin esa historia externa"
+          ],
+          "correct": "D",
+          "explanation": "clone configura una copia a partir de un repositorio existente, mientras init inicia uno nuevo.",
+          "citation": "git-clone — DESCRIPTION; git-init — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        }
+      ]
+    }
+  ]
+}

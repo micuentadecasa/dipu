@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-33-git-theory-installation-local.md",
+  "batches": [
+    {
+      "topic_num": 33,
+      "lot_num": 4,
+      "source_ids": [
+        "GIT-2.50"
+      ],
+      "questions": [
+        {
+          "objective_id": "t33-lo-061",
+          "difficulty": "basic",
+          "type": "definition",
+          "question": "¿Qué comando crea un commit con el contenido actualmente preparado?",
+          "options": [
+            "git commit",
+            "git snapshot --index-only",
+            "git save-working-tree",
+            "git record-ref-only"
+          ],
+          "correct": "A",
+          "explanation": "git commit registra el estado del índice como una nueva instantánea del historial.",
+          "citation": "git-commit — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-062",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué opción proporciona directamente el mensaje de commit?",
+          "options": [
+            "-msg-only",
+            "-m",
+            "--title-as-ref",
+            "--message-file-name"
+          ],
+          "correct": "B",
+          "explanation": "-m permite especificar el mensaje sin abrir el editor para ese commit.",
+          "citation": "git-commit — -m/--message",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-063",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué muestra `git log`?",
+          "options": [
+            "Solo el índice actual",
+            "Las reglas de .gitignore",
+            "El historial de commits alcanzable desde la referencia indicada",
+            "La configuración del sistema"
+          ],
+          "correct": "C",
+          "explanation": "git log recorre y muestra commits del historial según la revisión y opciones elegidas.",
+          "citation": "git-log — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-064",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué inspecciona `git show` cuando se le proporciona un commit?",
+          "options": [
+            "Solo la versión de Git instalada",
+            "La configuración global completa",
+            "El contenido de todos los remotos",
+            "El commit y su diferencia o contenido asociado"
+          ],
+          "correct": "D",
+          "explanation": "git show presenta objetos y, para commits, sus metadatos y cambios asociados.",
+          "citation": "git-show — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-065",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué opción produce una representación compacta de commits en git log?",
+          "options": [
+            "--oneline",
+            "--single-commit-text",
+            "--compact-tree-only",
+            "--short-object-store"
+          ],
+          "correct": "A",
+          "explanation": "--oneline combina una forma abreviada del objeto y el asunto del commit.",
+          "citation": "git-log — --oneline",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-066",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué hace `git commit --amend`?",
+          "options": [
+            "Añade siempre un hijo independiente",
+            "Reemplaza el commit más reciente con un commit corregido",
+            "Solo edita .gitignore",
+            "Mueve todas las ramas remotas"
+          ],
+          "correct": "B",
+          "explanation": "Amend reconstruye la punta actual combinando el commit anterior con el estado y mensaje corregidos.",
+          "citation": "git-commit — --amend",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-067",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Qué diferencia hay entre el autor y el committer de un commit?",
+          "options": [
+            "El autor es siempre una rama",
+            "El committer es siempre el remoto",
+            "El autor escribió el cambio y el committer registró el commit",
+            "Son siempre dos objetos blob"
+          ],
+          "correct": "C",
+          "explanation": "Git conserva ambos roles en los metadatos y pueden ser personas distintas.",
+          "citation": "git-commit — COMMIT INFORMATION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-068",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué expresión suele designar el primer padre del commit actual?",
+          "options": [
+            "HEAD@{1}",
+            "HEAD~0",
+            "refs/parent/HEAD",
+            "HEAD^"
+          ],
+          "correct": "D",
+          "explanation": "La notación ^ selecciona un padre; sin número, el primero.",
+          "citation": "gitrevisions — SPECIFYING REVISIONS",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-069",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué expresión suele designar el commit anterior siguiendo el primer padre?",
+          "options": [
+            "HEAD~1",
+            "HEAD^0",
+            "HEAD@{now}",
+            "HEAD+1"
+          ],
+          "correct": "A",
+          "explanation": "~1 sigue el primer padre una vez, equivalente a HEAD^ para un commit normal.",
+          "citation": "gitrevisions — Ancestry References",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-070",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué comando obtiene el nombre completo de la referencia o commit de HEAD?",
+          "options": [
+            "git resolve-head --pretty",
+            "git rev-parse HEAD",
+            "git name-rev --object-only HEAD",
+            "git show-head --full-ref"
+          ],
+          "correct": "B",
+          "explanation": "rev-parse interpreta revisiones y puede imprimir el identificador resuelto de HEAD.",
+          "citation": "git-rev-parse — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-071",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué registran los reflogs?",
+          "options": [
+            "Todos los cambios de cualquier clon",
+            "Solo objetos borrados del remoto",
+            "Actualizaciones locales de refs y HEAD",
+            "La configuración global"
+          ],
+          "correct": "C",
+          "explanation": "Los reflogs permiten inspeccionar movimientos locales de referencias, incluido HEAD.",
+          "citation": "git-reflog — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-072",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué comando muestra las referencias existentes y sus objetos apuntados?",
+          "options": [
+            "git refs --objects-only",
+            "git list-heads --all",
+            "git cat-refs --working-tree",
+            "git show-ref"
+          ],
+          "correct": "D",
+          "explanation": "show-ref lista referencias disponibles y los object IDs asociados.",
+          "citation": "git-show-ref — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-073",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué ocurre al crear un commit normal en una rama checkout?",
+          "options": [
+            "La ref de la rama avanza al nuevo commit y HEAD sigue nombrándola",
+            "HEAD se borra",
+            "El índice se convierte en remoto",
+            "El commit no tiene padre"
+          ],
+          "correct": "A",
+          "explanation": "La rama actual se actualiza para apuntar al nuevo commit.",
+          "citation": "gitglossary — branch; git-commit — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-074",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué opción permite crear un commit sin cambios de contenido?",
+          "options": [
+            "--permit-no-tree",
+            "--allow-empty",
+            "--empty-index-only",
+            "--no-snapshot"
+          ],
+          "correct": "B",
+          "explanation": "--allow-empty autoriza un commit cuyo tree puede ser igual al de su padre.",
+          "citation": "git-commit — --allow-empty",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-075",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Se ejecuta amend tras haber creado un commit local que aún no se comparte. ¿Qué riesgo conceptual debe considerarse?",
+          "options": [
+            "Convierte el commit en un blob sin historial",
+            "No cambia nada",
+            "Cambia la identidad del commit y puede invalidar referencias al commit anterior",
+            "Solo cambia el nombre del working tree"
+          ],
+          "correct": "C",
+          "explanation": "Amend crea un nuevo commit con otro ID, por lo que referencias al anterior quedan desactualizadas.",
+          "citation": "git-commit — --amend",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-076",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Qué diferencia hay entre HEAD@{1} y HEAD~1?",
+          "options": [
+            "Ambas siempre designan el mismo commit",
+            "La primera es una rama remota",
+            "La segunda depende del reflog",
+            "La primera usa el reflog temporal; la segunda sigue el primer padre del historial"
+          ],
+          "correct": "D",
+          "explanation": "Son dos recorridos distintos: movimiento local de HEAD frente a ascendencia de commits.",
+          "citation": "gitrevisions — Reflog Identifiers; Ancestry References",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-077",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Qué comando inspecciona el contenido de un objeto con su tipo y tamaño?",
+          "options": [
+            "git cat-file -p objeto",
+            "git inspect-object --tree objeto",
+            "git object-show --size-only objeto",
+            "git read-object-name objeto"
+          ],
+          "correct": "A",
+          "explanation": "cat-file permite consultar información y contenido de objetos del repositorio.",
+          "citation": "git-cat-file — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-078",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Un commit se alcanza desde HEAD pero no desde la rama que el usuario esperaba. ¿Qué debe inspeccionarse primero?",
+          "options": [
+            "El archivo .gitignore",
+            "Las refs y el valor de HEAD",
+            "Solo user.email",
+            "El CSS del working tree"
+          ],
+          "correct": "B",
+          "explanation": "HEAD y las refs determinan qué commits son alcanzables por cada nombre local.",
+          "citation": "git-show-ref; gitglossary — HEAD/ref",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-079",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Qué opción limita `git log` a cambios de una ruta concreta?",
+          "options": [
+            "Usar `--path-only` antes de la revisión",
+            "Pasar la ruta a git config",
+            "Indicar `--` seguido de la ruta",
+            "Usar `--index`"
+          ],
+          "correct": "C",
+          "explanation": "El separador -- distingue revisiones de paths y permite limitar el historial a la ruta posterior.",
+          "citation": "git-log — Limiting Commit History",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-080",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Por qué un reflog no debe tratarse como historial compartido del repositorio?",
+          "options": [
+            "Porque contiene solo blobs",
+            "Porque siempre es público",
+            "Porque reemplaza a las ramas",
+            "Porque registra movimientos locales y no se transporta como parte normal de la historia compartida"
+          ],
+          "correct": "D",
+          "explanation": "Los reflogs son datos locales de referencia y su retención y disponibilidad dependen del repositorio local.",
+          "citation": "git-reflog — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        }
+      ]
+    }
+  ]
+}
