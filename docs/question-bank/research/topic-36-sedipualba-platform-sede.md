@@ -13,7 +13,7 @@
 
 ## Verified propositions and objective map
 
-The 100 objective statements below were checked against the cited official page or catalogue entry on the research date. Five sequential lots contain 20 records each; the independent review key checks answer position and citation before native import.
+The initial 100 objective statements below were checked against the cited official page or catalogue entry on the research date. Five sequential lots contain 20 records each; the independent review key checks answer position and citation before native import. Expansion lots 06–10 add 100 independently reviewed statements from the same three official sources, covering platform characteristics and audience, documentation-catalogue resources, electronic-office procedures, validation, certificates, regulations and source-scope distinctions.
 
 - `t36-lo-001` — El portal la identifica como una plataforma pública de Administración Electrónica. *(citation: Inicio — La plataforma pública de Administración Electrónica; source: SEDIPUALBA-HOME)*
 - `t36-lo-002` — El portal presenta la reutilización de servicios digitales como una alternativa pública frente a la cautividad tecnológica. *(citation: Inicio — Reutilización de Servicios Digitales; source: SEDIPUALBA-HOME)*
@@ -119,5 +119,6 @@ The 100 objective statements below were checked against the cited official page 
 ## Coverage and verification boundary
 
 - Lots use balanced A/B/C/D positions and the established 4 basic / 10 intermediate / 6 advanced shape.
+- The expansion remains limited to publicly visible portal, catalogue and Diputación-sede facts; it does not infer undocumented internal modules or private tenant configuration.
 - The platform portal, documentation index and Diputación sede are cited separately to avoid conflating product description with actual public-office procedures.
 - No claims are made about the internal operation of Segex, Segra, AdminSedeElectrónica or private tenant data; those remain source-gated in later topics.

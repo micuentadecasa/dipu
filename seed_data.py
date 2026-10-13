@@ -29423,3 +29423,1028 @@ SEED_QUESTIONS.extend([
     }
 ])
 # QUESTION_BANK_ACCEPTED_TOPIC_37_LOT_10_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_36_LOT_06_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 36,
+        "question": "¿Qué tipo de proyecto declara ser SedipuAlba en su página de inicio?",
+        "option_a": "Totalmente público",
+        "option_b": "Exclusivamente privado",
+        "option_c": "Solo académico",
+        "option_d": "Una red social",
+        "correct": "A",
+        "explanation": "El portal presenta SedipuAlba como un proyecto totalmente público."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué significa “Pública” en las características del portal?",
+        "option_a": "Que la desarrolla una Administración Pública y está disponible para cualquier administración",
+        "option_b": "Que solo la usa una diputación",
+        "option_c": "Que no tiene documentación",
+        "option_d": "Que exige contratación privada",
+        "correct": "A",
+        "explanation": "La definición del portal combina desarrollo público y disponibilidad para cualquier administración."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué permite la característica “Abierta” de SedipuAlba?",
+        "option_a": "Integrarla con aplicativos existentes mediante interfaces abiertas",
+        "option_b": "Usarla solo sin conexión",
+        "option_c": "Cerrar todos sus servicios",
+        "option_d": "Limitarla a un único proveedor",
+        "correct": "A",
+        "explanation": "La apertura se vincula con integración e interfaces Web Services."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué tecnología enumera el portal como interfaz abierta de integración?",
+        "option_a": "Web Services",
+        "option_b": "Solo correo electrónico",
+        "option_c": "Código postal",
+        "option_d": "Registro en papel",
+        "correct": "A",
+        "explanation": "El portal enumera Web Services como interfaces abiertas."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué característica de diseño web aparece en la lista innovadora?",
+        "option_a": "Responsive Web Design",
+        "option_b": "Solo diseño de escritorio",
+        "option_c": "Diseño sin accesibilidad",
+        "option_d": "Diseño exclusivamente móvil",
+        "correct": "A",
+        "explanation": "Responsive Web Design aparece entre las características innovadoras."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué prestación de firma se presenta como innovadora además de la biométrica?",
+        "option_a": "Firma bajo seudónimo",
+        "option_b": "Firma postal",
+        "option_c": "Firma contable",
+        "option_d": "Firma por fax",
+        "correct": "A",
+        "explanation": "El portal enumera también la firma bajo seudónimo."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué gestión económica enumera el portal entre las características innovadoras?",
+        "option_a": "Gestión de tasas asociadas a trámite",
+        "option_b": "Gestión de nóminas privadas",
+        "option_c": "Gestión de acciones bursátiles",
+        "option_d": "Gestión de aduanas",
+        "correct": "A",
+        "explanation": "La gestión de tasas asociadas a trámite figura en la lista."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Con qué soluciones se relaciona la característica “Integrada”?",
+        "option_a": "Soluciones de la Administración General del Estado",
+        "option_b": "Solo aplicaciones de una entidad",
+        "option_c": "Solo redes sociales",
+        "option_d": "Sistemas de ocio",
+        "correct": "A",
+        "explanation": "El portal explica la integración con soluciones de la AGE."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Cuál de estas soluciones figura expresamente en la integración declarada?",
+        "option_a": "SIR",
+        "option_b": "Un sistema bancario privado",
+        "option_c": "Un editor de vídeo",
+        "option_d": "Un catálogo comercial",
+        "correct": "A",
+        "explanation": "SIR aparece en la relación de soluciones integradas."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Cuál es una pareja de soluciones AGE enumerada en la página de inicio?",
+        "option_a": "SIA y NOTIFIC@",
+        "option_b": "Excel y Word",
+        "option_c": "Sede y padrón privado",
+        "option_d": "Correo y calendario",
+        "correct": "A",
+        "explanation": "La lista incluye SIA y NOTIFIC@."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué solución de identificación aparece en la lista de integraciones?",
+        "option_a": "CL@VE",
+        "option_b": "LDAP privado de una empresa",
+        "option_c": "DNI escaneado por correo",
+        "option_d": "Firma manuscrita postal",
+        "correct": "A",
+        "explanation": "CL@VE se enumera entre las soluciones AGE."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué conjunto aparece junto a otras integraciones de la AGE?",
+        "option_a": "@FIRMA, TS@ e INSIDE",
+        "option_b": "Solo SIR y correo",
+        "option_c": "Solo CSV y Excel",
+        "option_d": "Solo Cl@ve y un banco",
+        "correct": "A",
+        "explanation": "El portal cita @FIRMA, TS@ e INSIDE."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué servicio de intermediación identifica el portal como integración?",
+        "option_a": "SCSP",
+        "option_b": "Un servicio de mensajería",
+        "option_c": "Un gestor de nóminas",
+        "option_d": "Un archivo privado",
+        "correct": "A",
+        "explanation": "SCSP aparece junto a la intermediación en la lista."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué dos elementos completan la lista de integraciones indicada en la página?",
+        "option_a": "PLACSP y REA",
+        "option_b": "Word y PDF",
+        "option_c": "DNI-e y correo",
+        "option_d": "Sede y tablón físico",
+        "correct": "A",
+        "explanation": "El portal termina la relación con PLACSP y REA."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿A quién dirige el portal SedipuAlba?",
+        "option_a": "A Administraciones Públicas que necesiten un servicio de gestión electrónica",
+        "option_b": "Solo a empresas de software",
+        "option_c": "Solo a personas físicas",
+        "option_d": "Solo a universidades privadas",
+        "correct": "A",
+        "explanation": "La página identifica como destinatarias a las Administraciones Públicas."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Con qué marco normativo vincula el portal el servicio para sus destinatarios?",
+        "option_a": "Procedimiento administrativo común y leyes 39 y 40",
+        "option_b": "Solo normativa mercantil",
+        "option_c": "Solo normativa deportiva",
+        "option_d": "Ningún marco normativo",
+        "correct": "A",
+        "explanation": "La descripción menciona el procedimiento administrativo común y las leyes 39/2015 y 40/2015."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué efecto ciudadano-administración atribuye el portal a la plataforma?",
+        "option_a": "Facilitar y agilizar las gestiones",
+        "option_b": "Eliminar toda gestión electrónica",
+        "option_c": "Limitar la atención presencial",
+        "option_d": "Sustituir los procedimientos por encuestas",
+        "correct": "A",
+        "explanation": "El portal afirma que facilita y agiliza las gestiones."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué tipo de entidad figura en la lista de adheridas?",
+        "option_a": "Ayuntamientos",
+        "option_b": "Solo empresas cotizadas",
+        "option_c": "Solo ministerios extranjeros",
+        "option_d": "Solo asociaciones deportivas",
+        "correct": "A",
+        "explanation": "Los ayuntamientos aparecen expresamente."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué otro tipo de entidad territorial enumera la lista?",
+        "option_a": "Diputaciones",
+        "option_b": "Solo comunidades de vecinos",
+        "option_c": "Solo bancos",
+        "option_d": "Solo notarías privadas",
+        "correct": "A",
+        "explanation": "Las Diputaciones figuran entre las entidades adheridas."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué modelo económico declara el portal?",
+        "option_a": "Compartición de costes sin ánimo de lucro",
+        "option_b": "Venta de licencias con ánimo de lucro",
+        "option_c": "Publicidad comercial",
+        "option_d": "Pago por cada consulta ciudadana",
+        "correct": "A",
+        "explanation": "El portal describe un modelo de compartición de costes sin ánimo de lucro."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_36_LOT_06_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_36_LOT_07_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 36,
+        "question": "¿Qué acceso ofrece el apartado Documentos del portal?",
+        "option_a": "La entrada al catálogo de documentación Sedipualb@",
+        "option_b": "Solo un formulario de quejas",
+        "option_c": "La validación de certificados",
+        "option_d": "El registro de salida",
+        "correct": "A",
+        "explanation": "Documentos funciona como entrada al catálogo público."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Cómo se titula el recurso de definiciones del catálogo?",
+        "option_a": "Definiciones y conceptos SEDIPUALB@",
+        "option_b": "Manual de facturación privada",
+        "option_c": "Registro de certificados",
+        "option_d": "Guía de contratos menores",
+        "correct": "A",
+        "explanation": "Ese es el título publicado en el índice."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué documento ayuda a planificar una implantación?",
+        "option_a": "Hoja de ruta de implantación",
+        "option_b": "Lista de sanciones",
+        "option_c": "Libro de decretos",
+        "option_d": "Registro de incidencias privadas",
+        "correct": "A",
+        "explanation": "El catálogo incluye la Hoja de ruta de implantación."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué manual de administración aparece en el catálogo?",
+        "option_a": "Manual SEDIPUALB@ Panel de Administración",
+        "option_b": "Manual de oficina postal",
+        "option_c": "Manual de banca electrónica",
+        "option_d": "Manual de diseño gráfico",
+        "correct": "A",
+        "explanation": "El título aparece expresamente en la documentación pública."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué recurso aborda la conexión de aplicaciones?",
+        "option_a": "Documento de integración de aplicaciones con SEDIPUALB@",
+        "option_b": "Manual de tablón físico",
+        "option_c": "Política de vacaciones",
+        "option_d": "Guía de pagos bancarios",
+        "correct": "A",
+        "explanation": "El índice publica un documento específico de integración."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué sistema documenta el recurso sobre Directorio?",
+        "option_a": "El sistema de Directorio y Roles",
+        "option_b": "El sistema de nóminas",
+        "option_c": "El sistema de anuncios",
+        "option_d": "El sistema de contratación privada",
+        "correct": "A",
+        "explanation": "El catálogo identifica ese sistema y sus roles."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué tipo de sistema describe el recurso de firma?",
+        "option_a": "El sistema de firma electrónica de SedipuAlba",
+        "option_b": "Un sistema de firma postal",
+        "option_c": "Un sistema de firma mercantil",
+        "option_d": "Un sistema de firma contable",
+        "correct": "A",
+        "explanation": "La documentación incluye esa descripción."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué documento trata la gestión documental de la Diputación?",
+        "option_a": "La Política de Gestión Documental",
+        "option_b": "El catálogo de certificados privados",
+        "option_c": "El manual de registro mercantil",
+        "option_d": "La política de publicidad",
+        "correct": "A",
+        "explanation": "Ese recurso figura en el índice documental."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué recurso se ocupa de trasladar información al entorno?",
+        "option_a": "Guía de migración de información a entorno SEDIPUALB@",
+        "option_b": "Guía de compras",
+        "option_c": "Guía de notificación postal",
+        "option_d": "Guía de diseño web",
+        "correct": "A",
+        "explanation": "El catálogo publica una guía de migración."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué sistema de avisos tiene una descripción específica en el catálogo?",
+        "option_a": "Avisos SEGEX",
+        "option_b": "Avisos bancarios",
+        "option_c": "Avisos de bolsa",
+        "option_d": "Avisos postales",
+        "correct": "A",
+        "explanation": "La documentación incluye la descripción del sistema de Avisos SEGEX."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué módulo documental tiene instrucciones de configuración?",
+        "option_a": "El módulo de series documentales",
+        "option_b": "El módulo de nóminas",
+        "option_c": "El módulo de publicidad comercial",
+        "option_d": "El módulo de transporte",
+        "correct": "A",
+        "explanation": "El índice ofrece instrucciones para ese módulo."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué diferencia hay entre una hoja de ruta y una guía de migración del catálogo?",
+        "option_a": "La primera trata la implantación y la segunda el traslado de información",
+        "option_b": "Ambas son manuales de firma",
+        "option_c": "La primera trata certificados y la segunda anuncios",
+        "option_d": "No hay diferencia",
+        "correct": "A",
+        "explanation": "El catálogo publica ambos recursos con finalidades distintas."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué pareja representa recursos documentales de integración y estructura de usuarios?",
+        "option_a": "Integración de aplicaciones y Directorio y Roles",
+        "option_b": "Tablón y CSV",
+        "option_c": "Transparencia y días inhábiles",
+        "option_d": "BTT 2026 y BTT 2027",
+        "correct": "A",
+        "explanation": "El índice diferencia ambos recursos."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué documento del catálogo está vinculado a la Diputación de Albacete?",
+        "option_a": "La Política de Gestión Documental",
+        "option_b": "El manual de registro bancario",
+        "option_c": "La política de redes sociales",
+        "option_d": "La guía de venta de licencias",
+        "correct": "A",
+        "explanation": "El título identifica a la Diputación."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué recurso ayuda a conocer los conceptos propios de la plataforma?",
+        "option_a": "Definiciones y conceptos SEDIPUALB@",
+        "option_b": "Solo el catálogo de trámites de la sede",
+        "option_c": "El tablón de anuncios",
+        "option_d": "La lista de certificados",
+        "correct": "A",
+        "explanation": "Ese recurso se dedica a definiciones y conceptos."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué fuente oficial debe consultarse para un hecho sobre documentación de la plataforma?",
+        "option_a": "El índice Documentos",
+        "option_b": "El tablón de la sede",
+        "option_c": "El bloque de certificados",
+        "option_d": "El trámite BTT",
+        "correct": "A",
+        "explanation": "El índice es la fuente del catálogo documental."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué recurso del índice se relaciona con la implantación?",
+        "option_a": "Hoja de ruta de implantación",
+        "option_b": "Descripción de firma electrónica",
+        "option_c": "Código CSV",
+        "option_d": "Notificación electrónica",
+        "correct": "A",
+        "explanation": "El propio título identifica su objeto de implantación."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué recurso se relaciona directamente con los roles?",
+        "option_a": "Descripción del sistema de Directorio y Roles",
+        "option_b": "Política de Gestión Documental",
+        "option_c": "Guía de migración",
+        "option_d": "Hoja de ruta",
+        "correct": "A",
+        "explanation": "El recurso documenta Directorio y Roles."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué recurso se relaciona directamente con la firma electrónica?",
+        "option_a": "Descripción del sistema de firma electrónica de SedipuAlba",
+        "option_b": "Descripción de Avisos SEGEX",
+        "option_c": "Guía de migración",
+        "option_d": "Hoja de ruta",
+        "correct": "A",
+        "explanation": "El catálogo lo identifica por ese título."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué recurso se relaciona directamente con las series documentales?",
+        "option_a": "Instrucciones de configuración del módulo de series documentales",
+        "option_b": "Manual del Panel de Administración",
+        "option_c": "Guía de migración",
+        "option_d": "Definiciones y conceptos",
+        "correct": "A",
+        "explanation": "El índice asocia esas instrucciones al módulo de series."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_36_LOT_07_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_36_LOT_08_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 36,
+        "question": "¿Qué institución identifica la sede electrónica analizada?",
+        "option_a": "La Diputación de Albacete",
+        "option_b": "Un ayuntamiento extranjero",
+        "option_c": "Una empresa privada",
+        "option_d": "Una universidad privada",
+        "correct": "A",
+        "explanation": "La página se identifica como Sede Electrónica de la Diputación de Albacete."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué consulta permite el apartado de información general de la sede?",
+        "option_a": "Consulta de sus trámites",
+        "option_b": "Consulta de acciones bursátiles",
+        "option_c": "Consulta de nóminas privadas",
+        "option_d": "Consulta de publicidad",
+        "correct": "A",
+        "explanation": "La sede ofrece esa consulta."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué espacio publica información de procedimientos disponibles?",
+        "option_a": "Catálogo de trámites",
+        "option_b": "Registro mercantil",
+        "option_c": "Panel de anuncios privados",
+        "option_d": "Directorio bancario",
+        "correct": "A",
+        "explanation": "El catálogo de trámites es la entrada de procedimientos."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué espacio de la sede sirve para anuncios electrónicos?",
+        "option_a": "Tablón de anuncios",
+        "option_b": "Directorio y Roles",
+        "option_c": "Hoja de ruta",
+        "option_d": "Validación de certificados",
+        "correct": "A",
+        "explanation": "La sede incluye un Tablón de anuncios."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué apartado ofrece información sobre problemas del servicio?",
+        "option_a": "Incidencias",
+        "option_b": "Transparencia",
+        "option_c": "BTT",
+        "option_d": "Otras sedes",
+        "correct": "A",
+        "explanation": "Incidencias aparece entre las entradas de información general."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué enlace permite localizar otras oficinas electrónicas?",
+        "option_a": "Otras sedes electrónicas",
+        "option_b": "Todos los trámites",
+        "option_c": "Código CSV",
+        "option_d": "Normativa ENS",
+        "correct": "A",
+        "explanation": "La sede incluye esa opción."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué trámite destacado sirve para una instancia general?",
+        "option_a": "Registro Electrónico/Presentación Instancia General",
+        "option_b": "Alta de cuenta bancaria",
+        "option_c": "Canal de Denuncias",
+        "option_d": "Comunicación Mecanismo de Aviso",
+        "correct": "A",
+        "explanation": "La portada lo muestra como trámite destacado para la instancia general."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué trámite destacado se relaciona con los datos bancarios de terceros?",
+        "option_a": "Alta de cuenta bancaria (Ficha de Tercero)",
+        "option_b": "Notificación Electrónica",
+        "option_c": "Canal de Denuncias",
+        "option_d": "Todos los trámites",
+        "correct": "A",
+        "explanation": "La ficha de tercero aparece con ese nombre."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué procedimiento aparece con finalidad de denuncias?",
+        "option_a": "Canal de Denuncias",
+        "option_b": "Instancia General",
+        "option_c": "Ficha de Tercero",
+        "option_d": "Otras sedes",
+        "correct": "A",
+        "explanation": "Canal de Denuncias figura entre los destacados."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué comunicación aparece como trámite destacado?",
+        "option_a": "Comunicación Mecanismo de Aviso",
+        "option_b": "Comunicación bancaria",
+        "option_c": "Comunicación de contratos privados",
+        "option_d": "Comunicación postal",
+        "correct": "A",
+        "explanation": "La portada publica ese trámite."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué procedimiento destacado permite acceder a avisos formales?",
+        "option_a": "Notificación Electrónica",
+        "option_b": "Circuito BTT",
+        "option_c": "Ficha de Tercero",
+        "option_d": "Catálogo de trámites",
+        "correct": "A",
+        "explanation": "La notificación electrónica aparece en los destacados."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Cómo deben presentarse las reclamaciones, quejas y sugerencias?",
+        "option_a": "Mediante el procedimiento que lleva ese nombre",
+        "option_b": "Por el tablón de anuncios",
+        "option_c": "Por la validación CSV",
+        "option_d": "Por el trámite BTT",
+        "correct": "A",
+        "explanation": "La sede indica utilizar el procedimiento correspondiente."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué solicitud de plataforma aparece en la portada?",
+        "option_a": "Solicitud de utilización de la plataforma de Administración Electrónica SEDIPUALB@",
+        "option_b": "Solicitud de certificado privado",
+        "option_c": "Solicitud de alta bursátil",
+        "option_d": "Solicitud de tablón físico",
+        "correct": "A",
+        "explanation": "La portada ofrece esa solicitud."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué enlace agrupa el conjunto de procedimientos?",
+        "option_a": "Todos los trámites",
+        "option_b": "Otras sedes electrónicas",
+        "option_c": "Incidencias",
+        "option_d": "Validación",
+        "correct": "A",
+        "explanation": "La portada ofrece el acceso Todos los trámites."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué evento aparece con referencia al año 2026?",
+        "option_a": "Organización del evento Circuito BTT año 2026",
+        "option_b": "Organización de una feria privada",
+        "option_c": "Una auditoría contable",
+        "option_d": "Una notificación electrónica",
+        "correct": "A",
+        "explanation": "La portada muestra el procedimiento de organización del Circuito BTT 2026."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué años aparecen en las solicitudes del Circuito BTT?",
+        "option_a": "2026 y 2027",
+        "option_b": "2020 y 2021",
+        "option_c": "2022 y 2023",
+        "option_d": "2030 y 2031",
+        "correct": "A",
+        "explanation": "La portada enumera solicitudes para 2026 y 2027."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué opción del tablón permite consultar la lista completa?",
+        "option_a": "Ver todos los anuncios",
+        "option_b": "Todos los trámites",
+        "option_c": "Consulta de sus trámites",
+        "option_d": "Validación CSV",
+        "correct": "A",
+        "explanation": "El tablón ofrece el enlace Ver todos los anuncios."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué información temporal ofrece la portada?",
+        "option_a": "Días inhábiles y hora de la sede",
+        "option_b": "Solo la fecha de creación",
+        "option_c": "Solo el año del BTT",
+        "option_d": "La hora de los registros privados",
+        "correct": "A",
+        "explanation": "Ese bloque aparece en la portada."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué función institucional tiene el trámite de presentación de instancia?",
+        "option_a": "Servir de entrada oficial para una instancia general",
+        "option_b": "Validar certificados digitales",
+        "option_c": "Publicar anuncios",
+        "option_d": "Solicitar formación",
+        "correct": "A",
+        "explanation": "El trámite destacado es la vía de presentación de una instancia general."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué dos espacios no deben confundirse en la sede?",
+        "option_a": "Catálogo de trámites y Tablón de anuncios",
+        "option_b": "CSV y certificados",
+        "option_c": "BTT 2026 y BTT 2027",
+        "option_d": "Incidencias y quejas",
+        "correct": "A",
+        "explanation": "La sede ofrece catálogo para trámites y tablón para anuncios."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_36_LOT_08_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_36_LOT_09_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 36,
+        "question": "¿Qué dato solicita el bloque Validación de la sede?",
+        "option_a": "El Código CSV",
+        "option_b": "El número de cuenta",
+        "option_c": "El número de BTT",
+        "option_d": "El nombre del proveedor",
+        "correct": "A",
+        "explanation": "La validación solicita el Código Seguro de Verificación."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué se comprueba mediante el código introducido en Validación?",
+        "option_a": "La autenticidad documental",
+        "option_b": "La disponibilidad de una cuenta",
+        "option_c": "La inscripción en un curso",
+        "option_d": "La pertenencia a un consorcio",
+        "correct": "A",
+        "explanation": "La sede relaciona el CSV con la autenticidad del documento."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Cómo denomina la sede el código que se introduce?",
+        "option_a": "Código Seguro de Verificación",
+        "option_b": "Código de acceso bancario",
+        "option_c": "Código de trámite general",
+        "option_d": "Código de usuario interno",
+        "correct": "A",
+        "explanation": "La instrucción usa esa denominación."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué recurso normativo enlaza la sede sobre CSV?",
+        "option_a": "Regulación del Código Seguro de Verificación",
+        "option_b": "Política de vacaciones",
+        "option_c": "Norma de contratación privada",
+        "option_d": "Guía de BTT",
+        "correct": "A",
+        "explanation": "La portada enlaza la regulación del CSV."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué ordenanza aparece en el bloque Normativa?",
+        "option_a": "Ordenanza Administración Electrónica",
+        "option_b": "Ordenanza de mercados bursátiles",
+        "option_c": "Ordenanza de transporte",
+        "option_d": "Ordenanza de publicidad privada",
+        "correct": "A",
+        "explanation": "La sede incluye esa ordenanza."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué publicación institucional enlaza la sede?",
+        "option_a": "La creación de la Sede Electrónica",
+        "option_b": "La creación de una empresa",
+        "option_c": "La creación de un contrato menor",
+        "option_d": "La creación de un tablón físico",
+        "correct": "A",
+        "explanation": "La portada enlaza la publicación de creación de la sede."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué normativa específica de firma aparece en la portada?",
+        "option_a": "Normativa reguladora de la firma biométrica",
+        "option_b": "Normativa de firma postal",
+        "option_c": "Normativa bancaria",
+        "option_d": "Normativa de firma mercantil",
+        "correct": "A",
+        "explanation": "La firma biométrica tiene un enlace normativo."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué declaración de seguridad enlaza la sede?",
+        "option_a": "Declaración de conformidad con el ENS",
+        "option_b": "Declaración de conformidad comercial",
+        "option_c": "Declaración de saldo contable",
+        "option_d": "Declaración de licencia privada",
+        "correct": "A",
+        "explanation": "La sede enlaza la declaración de conformidad con el ENS."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué finalidad atribuye la sede al Portal de transparencia?",
+        "option_a": "Permitir ejercer el derecho de acceso a la información pública",
+        "option_b": "Permitir comprar certificados",
+        "option_c": "Permitir crear expedientes privados",
+        "option_d": "Permitir registrar una cuenta bancaria",
+        "correct": "A",
+        "explanation": "La descripción del portal indica esa finalidad."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué tipo de prestadores menciona la sede al explicar los certificados admitidos?",
+        "option_a": "Prestadores cualificados según el Ministerio competente",
+        "option_b": "Cualquier proveedor no identificado",
+        "option_c": "Solo bancos",
+        "option_d": "Solo empresas locales",
+        "correct": "A",
+        "explanation": "La sede vincula la admisión con prestadores cualificados reconocidos por el Ministerio."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué autoridad ministerial aparece en esa referencia?",
+        "option_a": "Ministerio para la Transformación Digital y de la Función Pública",
+        "option_b": "Ministerio de Agricultura únicamente",
+        "option_c": "Una autoridad extranjera",
+        "option_d": "El Registro Mercantil",
+        "correct": "A",
+        "explanation": "Ese es el ministerio citado por la sede."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué prestador de certificados figura en la lista?",
+        "option_a": "CERES-FNMT",
+        "option_b": "Un banco comercial",
+        "option_c": "Un proveedor sin nombre",
+        "option_d": "Un ayuntamiento",
+        "correct": "A",
+        "explanation": "CERES-FNMT aparece entre los prestadores admitidos."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué documento de identidad electrónica enumera la sede?",
+        "option_a": "DNI-e",
+        "option_b": "Pasaporte sin certificado",
+        "option_c": "Tarjeta sanitaria privada",
+        "option_d": "Carné de biblioteca",
+        "correct": "A",
+        "explanation": "La lista publicada incluye DNI-e."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué conjunto pertenece a la lista de certificados admitidos?",
+        "option_a": "ACCV, Camerfirma y Firmaprofesional",
+        "option_b": "SIA, SIR y SCSP",
+        "option_c": "PLACSP, REA e INSIDE",
+        "option_d": "BTT, CSV y ENS",
+        "correct": "A",
+        "explanation": "La sede enumera esos tres prestadores."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué diferencia expresa la sede entre Validación y certificados?",
+        "option_a": "Validación comprueba documentos con CSV y certificados identifican prestadores admitidos",
+        "option_b": "Ambos son el mismo trámite",
+        "option_c": "Validación solo publica anuncios",
+        "option_d": "Los certificados solo sirven para el tablón",
+        "correct": "A",
+        "explanation": "La sede presenta ambos como bloques con finalidades distintas."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué bloque agrupa la ordenanza, la creación de sede, la firma biométrica y el ENS?",
+        "option_a": "Normativa",
+        "option_b": "Trámites destacados",
+        "option_c": "Transparencia",
+        "option_d": "Incidencias",
+        "correct": "A",
+        "explanation": "La sede presenta esos enlaces dentro del bloque Normativa."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué elemento de la sede publica anuncios y cuál valida documentos?",
+        "option_a": "El tablón publica anuncios y Validación usa CSV",
+        "option_b": "Validación publica anuncios y el tablón usa CSV",
+        "option_c": "Ambos solo tramitan BTT",
+        "option_d": "Ninguno tiene esas funciones",
+        "correct": "A",
+        "explanation": "Son funciones separadas de la sede."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué relación tiene el ENS con la portada de la sede?",
+        "option_a": "Aparece como declaración de conformidad dentro de Normativa",
+        "option_b": "Aparece como trámite bancario",
+        "option_c": "Aparece como certificado de proveedor",
+        "option_d": "No aparece",
+        "correct": "A",
+        "explanation": "La portada enlaza una declaración de conformidad con el ENS."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué relación tiene la transparencia con la información pública?",
+        "option_a": "El portal facilita el ejercicio del derecho de acceso",
+        "option_b": "La transparencia solo sirve para firmar",
+        "option_c": "La transparencia elimina el catálogo",
+        "option_d": "No tiene relación declarada",
+        "correct": "A",
+        "explanation": "La descripción relaciona el portal con el derecho de acceso."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué función específica se atribuye al CSV en la sede?",
+        "option_a": "Comprobar la autenticidad de documentos",
+        "option_b": "Elegir un certificado admitido",
+        "option_c": "Crear un trámite BTT",
+        "option_d": "Publicar una queja",
+        "correct": "A",
+        "explanation": "El CSV se usa en Validación para esa comprobación."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_36_LOT_09_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_36_LOT_10_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 36,
+        "question": "¿Qué fuente es más adecuada para verificar una definición pública de la plataforma?",
+        "option_a": "El portal SedipuAlba",
+        "option_b": "El Tablón de la sede",
+        "option_c": "El trámite BTT",
+        "option_d": "El bloque de certificados",
+        "correct": "A",
+        "explanation": "El portal describe la plataforma y sus características."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué fuente es más adecuada para localizar un manual de integración?",
+        "option_a": "El catálogo Documentos",
+        "option_b": "La portada de trámites",
+        "option_c": "El Tablón de anuncios",
+        "option_d": "El bloque de días inhábiles",
+        "correct": "A",
+        "explanation": "El catálogo Documentos publica el recurso de integración."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué fuente es más adecuada para presentar una instancia general?",
+        "option_a": "La Sede Electrónica",
+        "option_b": "El portal de documentación",
+        "option_c": "La página de gobernanza",
+        "option_d": "El catálogo de definiciones",
+        "correct": "A",
+        "explanation": "La sede ofrece el trámite de presentación."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué fuente es más adecuada para validar un documento con CSV?",
+        "option_a": "El bloque Validación de la sede",
+        "option_b": "El catálogo Documentos",
+        "option_c": "La lista de entidades adheridas",
+        "option_d": "La sección Formación",
+        "correct": "A",
+        "explanation": "La sede permite introducir el CSV para comprobar autenticidad."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué fuente es más adecuada para consultar anuncios electrónicos?",
+        "option_a": "El Tablón de anuncios de la sede",
+        "option_b": "La Hoja de ruta",
+        "option_c": "La lista de integraciones",
+        "option_d": "El recurso de migración",
+        "correct": "A",
+        "explanation": "La sede ofrece el tablón y todos sus anuncios."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué fuente es más adecuada para consultar certificados admitidos?",
+        "option_a": "El apartado Certificados digitales admitidos de la sede",
+        "option_b": "El portal de costes",
+        "option_c": "El recurso de series documentales",
+        "option_d": "El trámite de quejas",
+        "correct": "A",
+        "explanation": "La información se publica en ese apartado."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué diferencia hay entre el portal SedipuAlba y la sede de la Diputación?",
+        "option_a": "El portal describe la plataforma y la sede ofrece trámites de la Diputación",
+        "option_b": "Ambos son solo tablones",
+        "option_c": "El portal solo valida CSV y la sede solo documenta",
+        "option_d": "No tienen alcances distintos",
+        "correct": "A",
+        "explanation": "Las fuentes tienen funciones públicas complementarias."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué pareja distingue integración de plataforma y procedimiento ciudadano?",
+        "option_a": "Documentos de integración y Registro Electrónico de la sede",
+        "option_b": "Tablón y hoja de ruta",
+        "option_c": "CSV y gobernanza",
+        "option_d": "Formación y certificados",
+        "correct": "A",
+        "explanation": "El primer recurso trata integración y el segundo presentación de instancia."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué recurso enlaza la documentación sobre firma electrónica y cuál la regulación de firma biométrica?",
+        "option_a": "Documentos publica la descripción del sistema y la sede publica la normativa",
+        "option_b": "Ambos solo están en el tablón",
+        "option_c": "La sede publica el manual y Documentos el trámite",
+        "option_d": "Ninguna fuente trata firma",
+        "correct": "A",
+        "explanation": "Cada fuente publica el recurso indicado."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué combinación contiene solo recursos del catálogo Documentos?",
+        "option_a": "Hoja de ruta, Directorio y Roles y Guía de migración",
+        "option_b": "Catálogo de trámites, CSV y Tablón",
+        "option_c": "BTT, certificados y ENS",
+        "option_d": "Instancia general, quejas y transparencia",
+        "correct": "A",
+        "explanation": "Los tres son recursos del índice documental."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué combinación contiene solo bloques de la sede?",
+        "option_a": "Validación, Normativa y Transparencia",
+        "option_b": "Web Services, SCSP y PLACSP",
+        "option_c": "Hoja de ruta, series y migración",
+        "option_d": "Gobernanza, Miembros y Formación",
+        "correct": "A",
+        "explanation": "Son bloques visibles de la sede electrónica."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué combinación contiene características del portal?",
+        "option_a": "Pública, Abierta e Integrada",
+        "option_b": "CSV, Tablón y BTT",
+        "option_c": "Quejas, Incidencias y Certificados",
+        "option_d": "SIA, instancia y días inhábiles",
+        "correct": "A",
+        "explanation": "Son características enumeradas en la página de inicio."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué combinación contiene tipos de entidades adheridas mencionados por el portal?",
+        "option_a": "Ayuntamientos, Diputaciones y Mancomunidades",
+        "option_b": "CERES, DNI-e y ACCV",
+        "option_c": "SIR, SIA y NOTIFIC@",
+        "option_d": "BTT 2026, 2027 y quejas",
+        "correct": "A",
+        "explanation": "El portal incluye esos tipos de entidades en su relación."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué combinación contiene integraciones AGE del portal?",
+        "option_a": "CL@VE, @FIRMA e INSIDE",
+        "option_b": "CSV, ENS y BTT",
+        "option_c": "Camerfirma, ACCV y DNI-e",
+        "option_d": "Tablón, transparencia y quejas",
+        "correct": "A",
+        "explanation": "La lista de integraciones incluye esas soluciones."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué combinación pertenece al bloque Normativa de la sede?",
+        "option_a": "Ordenanza electrónica, creación de sede y ENS",
+        "option_b": "Catálogo, incidencias y otras sedes",
+        "option_c": "CSV, certificados y transparencia",
+        "option_d": "BTT, instancia y ficha de tercero",
+        "correct": "A",
+        "explanation": "Los tres enlaces se agrupan en Normativa."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué combinación pertenece a trámites destacados?",
+        "option_a": "Instancia general, Ficha de Tercero y Notificación Electrónica",
+        "option_b": "Hoja de ruta, integración y Directorio",
+        "option_c": "CSV, ENS y transparencia",
+        "option_d": "Gobernanza, Miembros y Noticias",
+        "correct": "A",
+        "explanation": "Los tres aparecen en la portada como destacados."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué combinación representa recursos de gestión documental del catálogo?",
+        "option_a": "Política de Gestión Documental y series documentales",
+        "option_b": "Tablón y certificados",
+        "option_c": "BTT y cuenta bancaria",
+        "option_d": "CSV y quejas",
+        "correct": "A",
+        "explanation": "Ambos recursos se publican en el índice documental."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué afirmación respeta la separación de fuentes oficiales?",
+        "option_a": "El portal se usa para características y la sede para trámites y validación",
+        "option_b": "La sede se usa para afirmar integraciones del portal",
+        "option_c": "El catálogo Documentos sustituye a todos los trámites",
+        "option_d": "El tablón define el modelo de costes",
+        "correct": "A",
+        "explanation": "Cada fuente debe usarse para el alcance que documenta."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué afirmación sobre el modelo de costes está respaldada por el portal, no por la sede?",
+        "option_a": "Que comparte costes entre administraciones usuarias sin ánimo de lucro",
+        "option_b": "Que la sede ofrece días inhábiles",
+        "option_c": "Que el CSV valida documentos",
+        "option_d": "Que el tablón publica anuncios",
+        "correct": "A",
+        "explanation": "El modelo de costes es un hecho del portal SedipuAlba."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué afirmación sobre los trámites está respaldada directamente por la sede?",
+        "option_a": "Que ofrece un acceso a Todos los trámites",
+        "option_b": "Que integra PLACSP",
+        "option_c": "Que publica una guía de migración",
+        "option_d": "Que comparte costes",
+        "correct": "A",
+        "explanation": "La sede ofrece ese acceso de procedimientos."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_36_LOT_10_END
