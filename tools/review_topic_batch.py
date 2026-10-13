@@ -22,6 +22,7 @@ TOPIC35_KEY_PATH = ROOT / "docs/question-bank/reviews/topic-35-answer-key.json"
 TOPIC36_KEY_PATH = ROOT / "docs/question-bank/reviews/topic-36-answer-key.json"
 TOPIC37_KEY_PATH = ROOT / "docs/question-bank/reviews/topic-37-answer-key.json"
 TOPIC38_KEY_PATH = ROOT / "docs/question-bank/reviews/topic-38-answer-key.json"
+TOPIC39_KEY_PATH = ROOT / "docs/question-bank/reviews/topic-39-answer-key.json"
 EXPECTATIONS = {
     2: {
         1:("A","Artículo 97"),2:("A","Artículo 98.1"),3:("A","Artículo 98.2"),4:("A","Artículo 98.3"),5:("B","Artículo 100"),
@@ -613,6 +614,10 @@ def main() -> int:
             expected = (key_entry["correct"], key_entry["citation"])
         elif args.topic_num == 38:
             key = json.loads(TOPIC38_KEY_PATH.read_text(encoding="utf-8"))
+            key_entry = key["lots"][str(args.lot_num)][str(question_num)]
+            expected = (key_entry["correct"], key_entry["citation"])
+        elif args.topic_num == 39:
+            key = json.loads(TOPIC39_KEY_PATH.read_text(encoding="utf-8"))
             key_entry = key["lots"][str(args.lot_num)][str(question_num)]
             expected = (key_entry["correct"], key_entry["citation"])
         else:
