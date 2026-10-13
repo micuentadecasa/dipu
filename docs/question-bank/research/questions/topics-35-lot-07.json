@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-35-git-remotes-workflows-strategies.md",
+  "batches": [
+    {
+      "topic_num": 35,
+      "lot_num": 7,
+      "source_ids": [
+        "GIT-2.50"
+      ],
+      "questions": [
+        {
+          "objective_id": "t35-lo-121",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué secuencia conceptual ejecuta git pull?",
+          "options": [
+            "Obtener cambios y después integrarlos en la rama actual",
+            "Borrar refs y clonar de nuevo",
+            "Publicar y después descargar",
+            "Crear un bare repository"
+          ],
+          "correct": "A",
+          "explanation": "pull combina obtención e integración.",
+          "citation": "git-pull — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-122",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué integración solicita git pull --rebase?",
+          "options": [
+            "Rebase",
+            "Merge siempre",
+            "Fast-forward siempre",
+            "Solo fetch"
+          ],
+          "correct": "A",
+          "explanation": "La opción selecciona rebase para integrar la historia obtenida.",
+          "citation": "git-pull — --rebase",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-123",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué condición exige --ff-only?",
+          "options": [
+            "Que la punta actual sea ancestro de la historia obtenida",
+            "Que existan conflictos",
+            "Que haya dos remotos",
+            "Que todos los tags estén publicados"
+          ],
+          "correct": "A",
+          "explanation": "Solo permite actualizar cuando la historia puede avanzar sin crear divergencia.",
+          "citation": "git-pull — --ff-only",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-124",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué integración selecciona git pull --no-rebase?",
+          "options": [
+            "Merge",
+            "Rebase interactivo",
+            "Solo fetch",
+            "Push forzado"
+          ],
+          "correct": "A",
+          "explanation": "--no-rebase selecciona merge en el flujo de pull.",
+          "citation": "git-pull — --no-rebase",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-125",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué efecto tiene pull --autostash sobre cambios locales?",
+          "options": [
+            "Usa un stash temporal y trata de aplicarlo después",
+            "Los descarta siempre",
+            "Los publica antes del fetch",
+            "Los convierte en tags"
+          ],
+          "correct": "A",
+          "explanation": "La opción crea un stash temporal para facilitar la operación.",
+          "citation": "git-pull — --autostash",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-126",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué transporta push al repositorio receptor?",
+          "options": [
+            "Objetos necesarios y una propuesta de actualización de refs",
+            "Solo el working tree",
+            "Solo la configuración local",
+            "Solo los comentarios de una revisión"
+          ],
+          "correct": "A",
+          "explanation": "push transfiere objetos y propone actualizar referencias.",
+          "citation": "git-push — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-127",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué destino expresa origin main en un push simple?",
+          "options": [
+            "La rama main del remoto origin",
+            "El tag main local",
+            "El working tree remoto",
+            "La rama HEAD de cualquier remoto"
+          ],
+          "correct": "A",
+          "explanation": "El refspec identifica repositorio y rama destino.",
+          "citation": "git-push — <repository> <refspec>",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-128",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué registra -u durante un push?",
+          "options": [
+            "La relación de seguimiento de la rama publicada",
+            "Un tag anotado",
+            "Una copia del working tree",
+            "Una revisión de pull request"
+          ],
+          "correct": "A",
+          "explanation": "--set-upstream registra la relación upstream.",
+          "citation": "git-push — -u/--set-upstream",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-129",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué protege la comprobación non-fast-forward?",
+          "options": [
+            "La historia remota frente a una actualización no descendiente",
+            "Los nombres de los tags locales",
+            "La configuración del editor",
+            "La existencia del working tree"
+          ],
+          "correct": "A",
+          "explanation": "La comprobación rechaza actualizaciones que no son avance rápido.",
+          "citation": "git-push — NOTE ABOUT FAST-FORWARDS",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-130",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué expectativa usa force-with-lease?",
+          "options": [
+            "El estado remoto esperado por el emisor",
+            "El número de archivos modificados",
+            "El nombre del usuario",
+            "La fecha del último fetch únicamente"
+          ],
+          "correct": "A",
+          "explanation": "La fuerza condicionada limita la sobrescritura a un estado esperado.",
+          "citation": "git-push — --force-with-lease",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-131",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Cuál es el riesgo característico de --force?",
+          "options": [
+            "Puede hacer inalcanzables commits publicados por otras personas",
+            "Solo cambia la URL fetch",
+            "Nunca modifica el remoto",
+            "Solo actualiza tags"
+          ],
+          "correct": "A",
+          "explanation": "La opción puede sobrescribir historia remota y dejar commits inalcanzables.",
+          "citation": "git-push — --force",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-132",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué solicita git push --delete origin feature?",
+          "options": [
+            "Eliminar la referencia feature en origin",
+            "Eliminar la rama local feature",
+            "Borrar el repositorio origin",
+            "Deshacer el último commit"
+          ],
+          "correct": "A",
+          "explanation": "La refspec de borrado solicita eliminar la referencia remota.",
+          "citation": "git-push — --delete",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-133",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué conjunto de refs envía --tags?",
+          "options": [
+            "Las refs bajo refs/tags",
+            "Solo tags alcanzables desde main",
+            "Solo tags anotados nuevos",
+            "Todas las remote-tracking refs"
+          ],
+          "correct": "A",
+          "explanation": "--tags envía todas las refs bajo refs/tags.",
+          "citation": "git-push — --tags",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-134",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué limita --follow-tags?",
+          "options": [
+            "La publicación automática a tags anotados alcanzables relacionados con las refs enviadas",
+            "El fetch a una sola rama",
+            "El push al working tree",
+            "La creación de tags ligeros"
+          ],
+          "correct": "A",
+          "explanation": "La opción tiene ese alcance selectivo.",
+          "citation": "git-push — --follow-tags",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-135",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué configuración determina el destino implícito de un push sencillo?",
+          "options": [
+            "Las ramas o referencias implícitas en un push sencillo",
+            "La profundidad de fetch",
+            "La rama simbólica HEAD",
+            "La política de revisión de GitHub"
+          ],
+          "correct": "A",
+          "explanation": "push.default define el destino implícito del flujo de push.",
+          "citation": "git-config — push.default; git-push — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-136",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué interpreta la refspec HEAD:main?",
+          "options": [
+            "La revisión actual como origen y main como destino remoto",
+            "main local como origen y HEAD remoto como destino",
+            "Un tag llamado HEAD",
+            "Una orden de fetch"
+          ],
+          "correct": "A",
+          "explanation": "La parte izquierda es origen y la derecha destino.",
+          "citation": "git-push — REFSPEC",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-137",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué hace --dry-run en push?",
+          "options": [
+            "Informa del resultado previsto sin actualizar el remoto",
+            "Publica solo tags",
+            "Borra refs no alcanzables",
+            "Crea una pull request"
+          ],
+          "correct": "A",
+          "explanation": "La simulación no realiza actualizaciones.",
+          "citation": "git-push — --dry-run",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-138",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué solicita --atomic?",
+          "options": [
+            "Actualizar el conjunto de refs de forma transaccional si el servidor lo admite",
+            "Forzar todos los cambios",
+            "Firmar todos los commits",
+            "Descargar todos los objetos"
+          ],
+          "correct": "A",
+          "explanation": "--atomic solicita una actualización transaccional.",
+          "citation": "git-push — --atomic",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-139",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué solicita --signed?",
+          "options": [
+            "Una transacción de push firmada si el soporte existe",
+            "Firmar el working tree",
+            "Crear un tag firmado siempre",
+            "Firmar la URL remota"
+          ],
+          "correct": "A",
+          "explanation": "La opción pide una transacción firmada cuando se admite.",
+          "citation": "git-push — --signed",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-140",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué transmite --push-option al receptor?",
+          "options": [
+            "Opciones de proceso sujetas a configuración y hooks",
+            "Objetos de otro repositorio",
+            "Claves privadas",
+            "Mensajes de commit antiguos"
+          ],
+          "correct": "A",
+          "explanation": "Las push options se transmiten al lado receptor.",
+          "citation": "git-push — --push-option",
+          "source_id": "GIT-2.50"
+        }
+      ]
+    }
+  ]
+}

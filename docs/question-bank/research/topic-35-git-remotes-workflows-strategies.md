@@ -15,7 +15,7 @@
 
 ## Verified propositions and objective map
 
-The 100 objective statements below were checked against the cited official documentation on the research date. Five sequential lots contain 20 records each; the independent review key checks both the answer position and the cited source before native import.
+The initial 100 objective statements below were checked against the cited official documentation on the research date. Five sequential lots contain 20 records each; the independent review key checks both the answer position and the cited source before native import. Expansion lots 06–10 add 100 independently reviewed statements from the same official Git, GitHub and Atlassian documentation, covering remote/fetch/pull/push scenarios, pull-request controls, workflow roles and strategy comparisons.
 
 - `t35-lo-001` — Un remoto es un nombre local asociado a una o más URLs y a reglas de seguimiento para intercambiar objetos y referencias. *(citation: git-remote — DESCRIPTION; source: GIT-2.50)*
 - `t35-lo-002` — La forma detallada de git remote muestra los nombres y las URLs fetch/push configuradas. *(citation: git-remote — -v/--verbose; source: GIT-2.50)*
@@ -123,3 +123,4 @@ The 100 objective statements below were checked against the cited official docum
 - Lots use balanced A/B/C/D positions and the established 4 basic / 10 intermediate / 6 advanced shape.
 - GitHub and Atlassian documentation are used only for platform workflow and named strategy claims; Git command behavior remains sourced to the official Git project documentation.
 - No claims about Diputación-specific remotes, hosting credentials or an unverified server policy are introduced.
+- Expansion questions remain bounded to documented Git 2.50.1 behavior and the named official GitHub/Atlassian workflow guidance; no provider-specific inference is added.

@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-35-git-remotes-workflows-strategies.md",
+  "batches": [
+    {
+      "topic_num": 35,
+      "lot_num": 6,
+      "source_ids": [
+        "GIT-2.50"
+      ],
+      "questions": [
+        {
+          "objective_id": "t35-lo-101",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué muestra git remote -v frente a git remote sin opciones?",
+          "options": [
+            "Los nombres junto con las URL fetch y push",
+            "Solo las ramas locales",
+            "Solo los commits recientes",
+            "Las credenciales del servidor"
+          ],
+          "correct": "A",
+          "explanation": "La opción verbose muestra nombres y URL configuradas.",
+          "citation": "git-remote — -v/--verbose",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-102",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué operación local modifica el nombre de un remoto ya configurado?",
+          "options": [
+            "git remote rename",
+            "git remote move-server",
+            "git remote retitle",
+            "git rename-remote"
+          ],
+          "correct": "A",
+          "explanation": "rename actualiza el nombre local del remoto y sus referencias de seguimiento.",
+          "citation": "git-remote — rename",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-103",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué no borra git remote remove?",
+          "options": [
+            "El repositorio situado en el servidor",
+            "La configuración local",
+            "Las referencias locales del remoto",
+            "La entrada del remoto"
+          ],
+          "correct": "A",
+          "explanation": "remove elimina la configuración local; no ejecuta una operación destructiva en el servidor.",
+          "citation": "git-remote — remove",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-104",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué consulta permite recuperar todas las URL configuradas para un remoto?",
+          "options": [
+            "git remote get-url --all",
+            "git remote list-all-objects",
+            "git fetch --urls-only",
+            "git remote show --tags"
+          ],
+          "correct": "A",
+          "explanation": "--all enumera las URL configuradas.",
+          "citation": "git-remote — get-url --all",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-105",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué cambia git remote set-url --push?",
+          "options": [
+            "La URL de envío del remoto",
+            "La rama actual",
+            "El nombre del repositorio local",
+            "El último commit"
+          ],
+          "correct": "A",
+          "explanation": "set-url tiene modos diferenciados para fetch y push.",
+          "citation": "git-remote — set-url",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-106",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué información configura git remote set-head?",
+          "options": [
+            "La rama simbólica HEAD asociada al remoto",
+            "El mensaje del último commit",
+            "La URL del servidor DNS",
+            "El upstream de todos los tags"
+          ],
+          "correct": "A",
+          "explanation": "set-head configura o consulta la rama simbólica HEAD del remoto.",
+          "citation": "git-remote — set-head",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-107",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué elimina git remote prune origin?",
+          "options": [
+            "Referencias de seguimiento obsoletas del remoto",
+            "Ramas locales activas",
+            "Commits no publicados del working tree",
+            "El remoto del archivo config"
+          ],
+          "correct": "A",
+          "explanation": "prune elimina referencias de seguimiento que ya no existen en el remoto.",
+          "citation": "git-remote — prune",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-108",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué diferencia principal tiene git ls-remote respecto de git fetch?",
+          "options": [
+            "Consulta refs del otro repositorio sin actualizar las refs de seguimiento locales",
+            "Integra siempre los cambios",
+            "Borra tags obsoletos",
+            "Crea un working tree nuevo"
+          ],
+          "correct": "A",
+          "explanation": "ls-remote lista refs y object IDs sin crear ni actualizar remote-tracking refs.",
+          "citation": "git-ls-remote — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-109",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué puede seleccionar git remote update?",
+          "options": [
+            "Remotos o grupos definidos en la configuración",
+            "Solo la rama checkout",
+            "Solo el repositorio bare",
+            "Solo tags anotados"
+          ],
+          "correct": "A",
+          "explanation": "update ejecuta operaciones de obtención para remotos o grupos configurados.",
+          "citation": "git-remote — update",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-110",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué nombre remoto usa clone por defecto si no se indica otro?",
+          "options": [
+            "origin",
+            "upstream",
+            "default",
+            "remote"
+          ],
+          "correct": "A",
+          "explanation": "origin es el nombre remoto predeterminado.",
+          "citation": "git-clone — -o/--origin",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-111",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué parte no posee un repositorio bare?",
+          "options": [
+            "Working tree",
+            "Object database",
+            "References",
+            "Configuration"
+          ],
+          "correct": "A",
+          "explanation": "Un bare repository omite el árbol de trabajo.",
+          "citation": "git-clone — --bare; gitrepository-layout — bare repository",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-112",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué representa refs/remotes/origin/main?",
+          "options": [
+            "Una referencia local al estado conocido de una rama del remoto",
+            "Una conexión de escritura directa",
+            "Una rama local checkout",
+            "Una etiqueta anotada"
+          ],
+          "correct": "A",
+          "explanation": "Las remote-tracking refs son referencias locales bajo refs/remotes.",
+          "citation": "gitrepository-layout — refs; gitglossary — remote-tracking branch",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-113",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué actualiza normalmente una operación de red respecto de una remote-tracking branch?",
+          "options": [
+            "La copia local de lo conocido del remoto",
+            "La rama local actual automáticamente",
+            "Todos los archivos del working tree siempre",
+            "La configuración de credenciales"
+          ],
+          "correct": "A",
+          "explanation": "La referencia de seguimiento se actualiza por operaciones de red.",
+          "citation": "gitglossary — remote-tracking branch",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-114",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué efecto tiene git fetch --prune sobre una rama local no relacionada?",
+          "options": [
+            "Ninguno; poda referencias de seguimiento obsoletas",
+            "La elimina siempre",
+            "La fusiona con origin",
+            "La convierte en tag"
+          ],
+          "correct": "A",
+          "explanation": "La poda afecta a remote-tracking refs que dejaron de existir.",
+          "citation": "git-fetch — --prune",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-115",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué hace --tags en git fetch?",
+          "options": [
+            "Incorpora tags desde el remoto",
+            "Publica todos los tags locales",
+            "Borra tags remotos",
+            "Convierte ramas en tags"
+          ],
+          "correct": "A",
+          "explanation": "La opción incorpora tags; no significa publicar los locales.",
+          "citation": "git-fetch — --tags",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-116",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué consecuencia tiene usar --depth en fetch?",
+          "options": [
+            "Limita los commits obtenidos y puede ampliar un repositorio shallow",
+            "Obliga a obtener toda la historia",
+            "Borra todos los objetos",
+            "Solo descarga tags"
+          ],
+          "correct": "A",
+          "explanation": "--depth limita la historia obtenida.",
+          "citation": "git-fetch — --depth",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-117",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué archivo registra las refs obtenidas por fetch para posteriores comandos?",
+          "options": [
+            "FETCH_HEAD",
+            "REMOTE_HEAD",
+            "FETCH_LOG",
+            "ORIGIN_HEAD"
+          ],
+          "correct": "A",
+          "explanation": "FETCH_HEAD registra las refs obtenidas por fetch.",
+          "citation": "git-fetch — DESCRIPTION; gitrepository-layout — FETCH_HEAD",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-118",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué selecciona git fetch --all?",
+          "options": [
+            "Todos los remotos configurados",
+            "Todos los tags locales",
+            "Todas las ramas checkout",
+            "Todos los submódulos"
+          ],
+          "correct": "A",
+          "explanation": "--all selecciona todos los remotos configurados.",
+          "citation": "git-fetch — --all",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-119",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué mantiene separado git fetch respecto de la integración?",
+          "options": [
+            "La decisión de modificar la rama checkout",
+            "La descarga de objetos",
+            "La actualización de referencias",
+            "La conexión al repositorio"
+          ],
+          "correct": "A",
+          "explanation": "fetch actualiza información local pero deja separada la integración.",
+          "citation": "git-fetch — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t35-lo-120",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué permite inspeccionar antes de integrar la separación fetch/merge?",
+          "options": [
+            "La referencia de seguimiento actualizada",
+            "Las credenciales privadas",
+            "El contenido del servidor sin refs",
+            "Solo los hooks remotos"
+          ],
+          "correct": "A",
+          "explanation": "Permite revisar la referencia antes de modificar la rama checkout.",
+          "citation": "git-fetch — DESCRIPTION; git-pull — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        }
+      ]
+    }
+  ]
+}
