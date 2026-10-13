@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-32-blazor-navigation-routing.md",
+  "batches": [
+    {
+      "topic_num": 32,
+      "lot_num": 5,
+      "source_ids": [
+        "BLAZOR-NAV-10"
+      ],
+      "questions": [
+        {
+          "objective_id": "t32-lo-081",
+          "difficulty": "basic",
+          "type": "definition",
+          "question": "¿Qué componente permite controlar o confirmar una navegación cuando hay cambios sin guardar?",
+          "options": [
+            "NavigationLock",
+            "NavigationGuardOnly",
+            "RouteLockView",
+            "UnsavedRouter"
+          ],
+          "correct": "A",
+          "explanation": "NavigationLock ayuda a interceptar navegaciones y a confirmar salidas según el estado del componente.",
+          "citation": "NavigationLock",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-082",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué callback de NavigationLock permite reaccionar a una navegación interna antes de completarla?",
+          "options": [
+            "OnAfterRouteOnly",
+            "OnBeforeInternalNavigation",
+            "BeforeRenderRoute",
+            "OnQueryChanged"
+          ],
+          "correct": "B",
+          "explanation": "OnBeforeInternalNavigation recibe la oportunidad de permitir o prevenir una navegación interna.",
+          "citation": "NavigationLock",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-083",
+          "difficulty": "basic",
+          "type": "comparison",
+          "question": "¿Qué propiedad solicita confirmación al salir hacia una navegación externa?",
+          "options": [
+            "ConfirmInternalOnly",
+            "ExternalRouteMode",
+            "ConfirmExternalNavigation",
+            "PromptOnQuery"
+          ],
+          "correct": "C",
+          "explanation": "ConfirmExternalNavigation habilita la confirmación del navegador para salidas externas cuando procede.",
+          "citation": "NavigationLock",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-084",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué método del contexto de cambio impide que una navegación continúe?",
+          "options": [
+            "CancelRouteBuild()",
+            "StopRouter()",
+            "BlockUri()",
+            "PreventNavigation()"
+          ],
+          "correct": "D",
+          "explanation": "El contexto de cambio permite llamar a PreventNavigation para cancelar la navegación prevista.",
+          "citation": "NavigationLock",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-085",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "Un formulario tiene cambios sin guardar y el usuario pulsa un enlace interno. ¿Qué puede hacer el componente?",
+          "options": [
+            "Prevenir la navegación y pedir confirmación propia",
+            "Forzar siempre una carga completa",
+            "Borrar el formulario",
+            "Cambiar el ensamblado de rutas"
+          ],
+          "correct": "A",
+          "explanation": "NavigationLock y su callback permiten decidir si la navegación interna debe continuar.",
+          "citation": "NavigationLock",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-086",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué atributo desactiva la navegación mejorada para un enlace o elemento concreto?",
+          "options": [
+            "data-router=\"off\"",
+            "data-enhance-nav=\"false\"",
+            "disable-blazor-route",
+            "no-enhance-route"
+          ],
+          "correct": "B",
+          "explanation": "El atributo data-enhance-nav con false indica que ese enlace no debe usar enhanced navigation.",
+          "citation": "Enhanced navigation",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-087",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué beneficio busca la navegación mejorada en una Blazor Web App?",
+          "options": [
+            "Desactivar todos los layouts",
+            "Compartir secretos con el cliente",
+            "Actualizar el contenido de la página sin una recarga completa del documento",
+            "Convertir rutas en APIs"
+          ],
+          "correct": "C",
+          "explanation": "Enhanced navigation reutiliza la navegación interna para evitar cargar de nuevo todo el documento.",
+          "citation": "Enhanced navigation",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-088",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué atributo puede conservar un elemento del DOM durante una actualización de navegación mejorada?",
+          "options": [
+            "data-keep-route",
+            "preserve-component-only",
+            "dom-static",
+            "data-permanent"
+          ],
+          "correct": "D",
+          "explanation": "data-permanent marca contenido que el framework debe conservar durante una actualización mejorada.",
+          "citation": "Enhanced navigation",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-089",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "Un enlace externo no debe ser tratado como navegación interna mejorada. ¿Qué opción garantiza una carga completa?",
+          "options": [
+            "forceLoad: true",
+            "Match.All",
+            "DefaultLayout",
+            "SupplyParameterFromQuery"
+          ],
+          "correct": "A",
+          "explanation": "forceLoad hace que el navegador cargue la URL en lugar de resolverla solo con el Router.",
+          "citation": "NavigationManager",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-090",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Qué diferencia hay entre prevenir una navegación interna y confirmar una externa?",
+          "options": [
+            "Ambas solo cambian el layout",
+            "La primera usa lógica de cambio interna; la segunda puede usar confirmación del navegador",
+            "La externa usa RouteView",
+            "La interna siempre recarga el documento"
+          ],
+          "correct": "B",
+          "explanation": "NavigationLock distingue el control de navegación interna de la confirmación de salida externa.",
+          "citation": "NavigationLock",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-091",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué debe hacer una suscripción a cambios de ubicación creada por una clase de larga vida?",
+          "options": [
+            "Persistirse en query",
+            "Convertirse en NavLink",
+            "Liberarse cuando ya no necesita recibir eventos",
+            "Forzar una recarga"
+          ],
+          "correct": "C",
+          "explanation": "El manejador de LocationChanged debe retirarse para evitar fugas y callbacks obsoletos.",
+          "citation": "NavigationManager",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-092",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "Una navegación mejorada necesita ejecutar código después de que el DOM se actualiza. ¿Qué evento del ciclo mejorado puede observar?",
+          "options": [
+            "RouteFoundOnly",
+            "AfterQueryParsed",
+            "NavLinkActive",
+            "enhancednavigationend"
+          ],
+          "correct": "D",
+          "explanation": "La navegación mejorada expone eventos de ciclo en el documento para reaccionar tras la actualización.",
+          "citation": "Enhanced navigation",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-093",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Qué riesgo existe si un manejador de navegación bloquea siempre sin ofrecer una salida?",
+          "options": [
+            "La aplicación puede impedir al usuario abandonar la página",
+            "El Router descubre más rutas",
+            "La query se cifra",
+            "NavLink pierde href"
+          ],
+          "correct": "A",
+          "explanation": "La lógica de bloqueo debe ser condicional y permitir una decisión clara para no dejar al usuario atrapado.",
+          "citation": "NavigationLock",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-094",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué operación permite registrar un manejador global para decidir sobre cambios de ubicación antes de navegar?",
+          "options": [
+            "RegisterRouteFound",
+            "RegisterLocationChangingHandler",
+            "ObserveUriOnly",
+            "AddNavigationLink"
+          ],
+          "correct": "B",
+          "explanation": "NavigationManager puede registrar un manejador de cambios de ubicación para prevenir o permitir navegación.",
+          "citation": "NavigationManager",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-095",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Un manejador de cambios de ubicación ya no es necesario. ¿Qué debe conservar la aplicación para retirarlo?",
+          "options": [
+            "La RouteData",
+            "El AppAssembly",
+            "La devolución IDisposable del registro",
+            "El valor de BaseUri"
+          ],
+          "correct": "C",
+          "explanation": "El registro devuelve un IDisposable que debe conservarse para quitar el manejador.",
+          "citation": "NavigationManager",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-096",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué atributo permite optar por enhanced navigation en un formulario compatible?",
+          "options": [
+            "data-form-route",
+            "enhance-submit-only",
+            "use-router-form",
+            "data-enhance"
+          ],
+          "correct": "D",
+          "explanation": "data-enhance habilita el tratamiento mejorado en elementos de formulario compatibles.",
+          "citation": "Enhanced navigation",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-097",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Una página protegida necesita mostrar un componente de autorización mientras se resuelve el usuario. ¿Qué combinación es adecuada?",
+          "options": [
+            "AuthorizeRouteView con Authorizing y NotAuthorized",
+            "NavLink con ActiveClass",
+            "RouteView con query",
+            "NavigationLock con DefaultLayout"
+          ],
+          "correct": "A",
+          "explanation": "AuthorizeRouteView ofrece estados diferenciados para autorización en curso y no autorizada.",
+          "citation": "AuthorizeRouteView",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-098",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Qué diferencia hay entre una navegación interna interceptada y forceLoad?",
+          "options": [
+            "Ambas evitan siempre el navegador",
+            "La primera puede resolverse con Router; la segunda solicita carga completa",
+            "forceLoad solo cambia CSS",
+            "La interceptada siempre es externa"
+          ],
+          "correct": "B",
+          "explanation": "La navegación interna aprovecha el Router, mientras forceLoad abandona ese flujo y carga el documento.",
+          "citation": "NavigationManager",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-099",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Qué enfoque es adecuado para un menú accesible tras cambiar de página?",
+          "options": [
+            "Ocultar el foco",
+            "Desactivar NavLink",
+            "Usar FocusOnNavigate y una estructura de encabezados clara",
+            "Usar solo color para indicar activo"
+          ],
+          "correct": "C",
+          "explanation": "FocusOnNavigate y una jerarquía de contenido ayudan a comunicar el cambio a usuarios de teclado y asistencia.",
+          "citation": "FocusOnNavigate",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-100",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Una aplicación necesita rutas tipadas, enlaces activos, query opcional y confirmación de cambios sin guardar. ¿Qué conjunto es coherente?",
+          "options": [
+            "Solo Router sin páginas",
+            "Solo localStorage y CSS",
+            "Un controlador MVC y DbContext",
+            "@page con constraints, NavLink, SupplyParameterFromQuery y NavigationLock"
+          ],
+          "correct": "D",
+          "explanation": "Cada mecanismo resuelve una parte: coincidencia, enlace activo, query y prevención/confirmación.",
+          "citation": "State management recommendations",
+          "source_id": "BLAZOR-NAV-10"
+        }
+      ]
+    }
+  ]
+}

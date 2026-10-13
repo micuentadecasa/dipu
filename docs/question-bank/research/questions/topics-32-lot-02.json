@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-32-blazor-navigation-routing.md",
+  "batches": [
+    {
+      "topic_num": 32,
+      "lot_num": 2,
+      "source_ids": [
+        "BLAZOR-NAV-10"
+      ],
+      "questions": [
+        {
+          "objective_id": "t32-lo-021",
+          "difficulty": "basic",
+          "type": "definition",
+          "question": "¿Cuál es la responsabilidad principal del componente Router?",
+          "options": [
+            "Seleccionar y renderizar el componente que coincide con la URI",
+            "Guardar datos en localStorage",
+            "Validar formularios",
+            "Crear servicios DI"
+          ],
+          "correct": "A",
+          "explanation": "Router busca la ruta correspondiente y renderiza el contenido encontrado o no encontrado.",
+          "citation": "Router",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-022",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué propiedad del Router indica el ensamblado que contiene los componentes enrutables principales?",
+          "options": [
+            "AppConfiguration",
+            "AppAssembly",
+            "MainLayout",
+            "RouteBase"
+          ],
+          "correct": "B",
+          "explanation": "AppAssembly proporciona el ensamblado donde el Router busca páginas y rutas.",
+          "citation": "Router",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-023",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué propiedad permite al Router buscar páginas en ensamblados adicionales?",
+          "options": [
+            "ExtraLayouts",
+            "RouteProviders",
+            "AdditionalAssemblies",
+            "AssembliesForDI"
+          ],
+          "correct": "C",
+          "explanation": "AdditionalAssemblies amplía los ensamblados inspeccionados para descubrir componentes enrutables.",
+          "citation": "Router",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-024",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "En el Router, ¿qué representa el fragmento Found?",
+          "options": [
+            "El formulario de error del servidor",
+            "La configuración de DI",
+            "La cadena de consulta completa",
+            "El contenido que se muestra cuando existe una coincidencia"
+          ],
+          "correct": "D",
+          "explanation": "Found recibe RouteData y permite renderizar la vista correspondiente a la ruta encontrada.",
+          "citation": "Router",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-025",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué representa el fragmento NotFound del Router?",
+          "options": [
+            "El contenido para una URI sin coincidencia",
+            "El layout predeterminado",
+            "La página de login siempre",
+            "El contenido del navegador"
+          ],
+          "correct": "A",
+          "explanation": "NotFound se renderiza cuando no se encuentra ningún componente para la URI.",
+          "citation": "Router",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-026",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué componente representa el contenido encontrado junto con sus datos de ruta?",
+          "options": [
+            "RouteDataViewOnly",
+            "RouteView",
+            "RouterOutlet",
+            "PageRenderer"
+          ],
+          "correct": "B",
+          "explanation": "RouteView recibe RouteData y renderiza el componente asociado, aplicando su layout.",
+          "citation": "RouteView",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-027",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué parámetro de RouteView establece un layout alternativo cuando la página no declara otro?",
+          "options": [
+            "FallbackRoute",
+            "BaseUri",
+            "DefaultLayout",
+            "DefaultAssembly"
+          ],
+          "correct": "C",
+          "explanation": "DefaultLayout proporciona el layout de reserva para la vista de ruta.",
+          "citation": "RouteView",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-028",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Qué componente incorpora autorización al tratamiento de una ruta encontrada?",
+          "options": [
+            "AuthorizeViewOnly",
+            "SecureRouterLink",
+            "AuthenticationRoute",
+            "AuthorizeRouteView"
+          ],
+          "correct": "D",
+          "explanation": "AuthorizeRouteView combina la vista de ruta con el estado de autorización del usuario.",
+          "citation": "AuthorizeRouteView",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-029",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "¿Qué contenido puede definir AuthorizeRouteView para un usuario que no está autorizado?",
+          "options": [
+            "NotAuthorized",
+            "NotFoundOnly",
+            "UnauthorizedRouteData",
+            "RejectNavigation"
+          ],
+          "correct": "A",
+          "explanation": "NotAuthorized permite mostrar contenido específico cuando la ruta existe pero el usuario no puede acceder.",
+          "citation": "AuthorizeRouteView",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-030",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "¿Qué estado puede mostrar AuthorizeRouteView mientras se determina la autorización?",
+          "options": [
+            "LoadingRouteOnly",
+            "Authorizing",
+            "CheckingUri",
+            "WaitingForDI"
+          ],
+          "correct": "B",
+          "explanation": "Authorizing permite representar contenido mientras se resuelve el estado de autorización.",
+          "citation": "AuthorizeRouteView",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-031",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué componente ayuda a devolver el foco a un elemento al cambiar de página?",
+          "options": [
+            "FocusRouter",
+            "RouteFocusProvider",
+            "FocusOnNavigate",
+            "AutoFocusRoute"
+          ],
+          "correct": "C",
+          "explanation": "FocusOnNavigate mejora la accesibilidad colocando el foco en el elemento configurado tras la navegación.",
+          "citation": "FocusOnNavigate",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-032",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué información reúne RouteData para una vista de ruta?",
+          "options": [
+            "La configuración JSON y el circuito",
+            "El historial completo del navegador",
+            "La lista de servicios registrados",
+            "El tipo de componente y los valores de ruta"
+          ],
+          "correct": "D",
+          "explanation": "RouteData representa el componente seleccionado y los valores capturados por la plantilla.",
+          "citation": "RouteView",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-033",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué directiva permite asignar un layout concreto a una página o componente?",
+          "options": [
+            "@layout",
+            "@routeLayout",
+            "@template",
+            "@view"
+          ],
+          "correct": "A",
+          "explanation": "@layout establece el layout que usará el componente, salvo una configuración más específica.",
+          "citation": "RouteView",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-034",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "Una página no declara @layout, pero RouteView recibe DefaultLayout. ¿Qué se muestra?",
+          "options": [
+            "Ningún layout nunca",
+            "El layout predeterminado de RouteView",
+            "El primer layout del ensamblado",
+            "El layout de la URL anterior"
+          ],
+          "correct": "B",
+          "explanation": "DefaultLayout cubre páginas que no tienen un layout propio.",
+          "citation": "RouteView",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-035",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "Una biblioteca contiene páginas Razor que el Router no encuentra. ¿Qué configuración debe revisarse?",
+          "options": [
+            "OnlyAppAssembly",
+            "DefaultLayout",
+            "AdditionalAssemblies",
+            "NotFound"
+          ],
+          "correct": "C",
+          "explanation": "El Router debe conocer el ensamblado adicional para descubrir sus componentes enrutables.",
+          "citation": "Router",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-036",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Qué diferencia hay entre NotFound y NotAuthorized?",
+          "options": [
+            "Ambas significan que falta la página",
+            "La primera valida permisos",
+            "La segunda se usa solo para CSS",
+            "La primera indica ausencia de ruta; la segunda deniega una ruta existente"
+          ],
+          "correct": "D",
+          "explanation": "NotFound y NotAuthorized representan fallos distintos: coincidencia de ruta frente a autorización.",
+          "citation": "Router",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-037",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Una ruta existe pero su componente requiere autorización y el usuario no tiene permiso. ¿Qué contenido debe evitarse?",
+          "options": [
+            "El contenido normal de la página protegida",
+            "NotAuthorized",
+            "Un mensaje de acceso",
+            "Una redirección diseñada"
+          ],
+          "correct": "A",
+          "explanation": "La vista protegida no debe mostrarse; AuthorizeRouteView elige el contenido no autorizado.",
+          "citation": "AuthorizeRouteView",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-038",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué ventaja de accesibilidad aporta FocusOnNavigate después de cambiar de ruta?",
+          "options": [
+            "Oculta la URI",
+            "Sitúa el foco en un encabezado o elemento de la nueva página",
+            "Desactiva el teclado",
+            "Elimina el historial"
+          ],
+          "correct": "B",
+          "explanation": "El foco visible ayuda a usuarios de teclado y tecnologías de asistencia a identificar el contenido nuevo.",
+          "citation": "FocusOnNavigate",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-039",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Qué elemento debe envolver normalmente el contenido de una ruta encontrada para aplicar el layout de la página?",
+          "options": [
+            "NotFound",
+            "NavLink",
+            "RouteView",
+            "NavigationLock"
+          ],
+          "correct": "C",
+          "explanation": "RouteView consume RouteData y compone el componente de página con su layout.",
+          "citation": "RouteView",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-040",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "El Router se configura sin ensamblado principal ni ensamblados adicionales que contengan páginas. ¿Qué efecto es esperable?",
+          "options": [
+            "Las descubrirá por localStorage",
+            "Las convertirá en endpoints API",
+            "Las autorizará automáticamente",
+            "No descubrirá las rutas de esas páginas"
+          ],
+          "correct": "D",
+          "explanation": "La búsqueda de rutas depende de los ensamblados que se proporcionan al Router.",
+          "citation": "Router",
+          "source_id": "BLAZOR-NAV-10"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-32-blazor-navigation-routing.md",
+  "batches": [
+    {
+      "topic_num": 32,
+      "lot_num": 3,
+      "source_ids": [
+        "BLAZOR-NAV-10"
+      ],
+      "questions": [
+        {
+          "objective_id": "t32-lo-041",
+          "difficulty": "basic",
+          "type": "definition",
+          "question": "¿Qué servicio proporciona la URI actual y navegación programática en Blazor?",
+          "options": [
+            "NavigationManager",
+            "RouteManager",
+            "UriProviderOnly",
+            "BrowserRouterService"
+          ],
+          "correct": "A",
+          "explanation": "NavigationManager expone la URI actual y métodos para navegar a otras URI.",
+          "citation": "NavigationManager",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-042",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué propiedad de NavigationManager contiene la URI absoluta actual?",
+          "options": [
+            "BaseUri",
+            "Uri",
+            "CurrentRouteData",
+            "AbsolutePathOnly"
+          ],
+          "correct": "B",
+          "explanation": "Uri representa la dirección completa que está mostrando la aplicación.",
+          "citation": "NavigationManager",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-043",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué propiedad indica la URI base absoluta de la aplicación?",
+          "options": [
+            "RootRoute",
+            "ApplicationPath",
+            "BaseUri",
+            "OriginOnly"
+          ],
+          "correct": "C",
+          "explanation": "BaseUri permite construir o interpretar rutas relativas respecto a la base de la aplicación.",
+          "citation": "NavigationManager",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-044",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué método navega programáticamente a una URI?",
+          "options": [
+            "GoToRoute",
+            "OpenUri",
+            "MoveTo",
+            "NavigateTo"
+          ],
+          "correct": "D",
+          "explanation": "NavigateTo cambia la ubicación lógica o del navegador según las opciones indicadas.",
+          "citation": "NavigationManager",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-045",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Qué efecto tiene forceLoad=true en NavigateTo?",
+          "options": [
+            "Fuerza una carga completa del navegador",
+            "Solo cambia una clase CSS",
+            "Desactiva el Router permanentemente",
+            "Guarda la ruta en SQL"
+          ],
+          "correct": "A",
+          "explanation": "forceLoad ordena al navegador realizar una carga completa en lugar de usar únicamente el enrutado interno.",
+          "citation": "NavigationManager",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-046",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué opción evita añadir una nueva entrada al historial al navegar?",
+          "options": [
+            "forceLoad: true",
+            "replace: true",
+            "match: All",
+            "preventDefault: true"
+          ],
+          "correct": "B",
+          "explanation": "La opción replace reemplaza la entrada actual del historial en vez de añadir otra.",
+          "citation": "NavigationManager",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-047",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué evento notifica que la ubicación de navegación ha cambiado?",
+          "options": [
+            "RouteFound",
+            "UriUpdatedOnly",
+            "LocationChanged",
+            "NavigationReady"
+          ],
+          "correct": "C",
+          "explanation": "NavigationManager expone LocationChanged para reaccionar a cambios de ubicación.",
+          "citation": "NavigationManager",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-048",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué debe hacer una clase que se suscribe a LocationChanged y deja de vivir?",
+          "options": [
+            "Persistir el manejador",
+            "Crear otro Router",
+            "Llamar a forceLoad",
+            "Desuscribirse del evento"
+          ],
+          "correct": "D",
+          "explanation": "La baja evita retener la instancia y recibir notificaciones después de su ciclo de vida.",
+          "citation": "NavigationManager",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-049",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué método convierte una URI relativa a una Uri absoluta usando la base de navegación?",
+          "options": [
+            "ToAbsoluteUri",
+            "ToRouteData",
+            "GetAbsoluteRoute",
+            "ResolveComponent"
+          ],
+          "correct": "A",
+          "explanation": "ToAbsoluteUri combina la base con la URI relativa y devuelve una Uri absoluta.",
+          "citation": "NavigationManager",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-050",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué método obtiene la parte relativa a la base a partir de una URI absoluta?",
+          "options": [
+            "ToRelativeRoute",
+            "ToBaseRelativePath",
+            "StripOrigin",
+            "GetRouteTemplate"
+          ],
+          "correct": "B",
+          "explanation": "ToBaseRelativePath elimina la base de la aplicación y devuelve la parte relativa.",
+          "citation": "NavigationManager",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-051",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué valor indica si una navegación fue interceptada por el sistema de navegación de Blazor?",
+          "options": [
+            "WasRouted",
+            "IsInternalOnly",
+            "IsNavigationIntercepted",
+            "NavigationWasForced"
+          ],
+          "correct": "C",
+          "explanation": "La información del cambio de ubicación permite distinguir navegación interceptada de otras fuentes.",
+          "citation": "NavigationManager",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-052",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué método añade o actualiza un parámetro de consulta en una URI tipada?",
+          "options": [
+            "AddQueryStringToRoute",
+            "SetQueryValue",
+            "AppendParameterOnly",
+            "GetUriWithQueryParameter"
+          ],
+          "correct": "D",
+          "explanation": "GetUriWithQueryParameter crea una URI con el parámetro codificado y actualizado.",
+          "citation": "NavigationManager",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-053",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué método permite aplicar varios parámetros de consulta a una URI de una vez?",
+          "options": [
+            "GetUriWithQueryParameters",
+            "GetManyRouteValues",
+            "SetQueryBatchOnly",
+            "AppendQueriesToDom"
+          ],
+          "correct": "A",
+          "explanation": "GetUriWithQueryParameters construye una URI aplicando una colección de nombres y valores.",
+          "citation": "NavigationManager",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-054",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "Una aplicación quiere eliminar un parámetro de consulta mediante la API de construcción de URI. ¿Qué valor expresa esa eliminación?",
+          "options": [
+            "false siempre",
+            "null",
+            "Una cadena vacía siempre",
+            "El nombre de la ruta"
+          ],
+          "correct": "B",
+          "explanation": "La API puede eliminar el parámetro cuando el valor proporcionado es null.",
+          "citation": "NavigationManager",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-055",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Qué diferencia hay entre NavigateTo y cambiar directamente window.location?",
+          "options": [
+            "NavigateTo solo sirve para CSS",
+            "window.location siempre conserva el circuito",
+            "NavigateTo permite usar el enrutado y las opciones de navegación de Blazor",
+            "No existe diferencia"
+          ],
+          "correct": "C",
+          "explanation": "NavigationManager integra la navegación con Blazor y permite decidir cuándo forzar una carga completa.",
+          "citation": "NavigationManager",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-056",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Un enlace apunta a una URL externa al origen de la aplicación. ¿Qué debe hacer la aplicación?",
+          "options": [
+            "Tratarla como una página local siempre",
+            "Pasarla al RouteView",
+            "Crear una @page dinámica",
+            "Permitir una navegación del navegador a la URL externa"
+          ],
+          "correct": "D",
+          "explanation": "Una URL externa no pertenece a las rutas internas y requiere navegación normal del navegador.",
+          "citation": "NavigationManager",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-057",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué opción permite conservar un estado de entrada asociado a la entrada del historial?",
+          "options": [
+            "HistoryEntryState",
+            "RouteStateOnly",
+            "BrowserPayload",
+            "UriStateParameter"
+          ],
+          "correct": "A",
+          "explanation": "HistoryEntryState permite asociar estado a la entrada de historial en la navegación.",
+          "citation": "NavigationManager",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-058",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Qué práctica evita que un manejador de LocationChanged produzca una fuga de memoria?",
+          "options": [
+            "Registrar el evento en cada render",
+            "Retirar el manejador en Dispose",
+            "Usar un singleton para el componente",
+            "Ignorar el circuito"
+          ],
+          "correct": "B",
+          "explanation": "El componente debe desuscribirse cuando se dispone para liberar la referencia del evento.",
+          "citation": "NavigationManager",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-059",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Una navegación programática debe actualizar la URL pero sustituir la entrada actual. ¿Qué combinación es adecuada?",
+          "options": [
+            "NavigateTo(uri, forceLoad: true) siempre",
+            "NavLink con Match.All",
+            "NavigateTo(uri, replace: true)",
+            "Router con NotFound"
+          ],
+          "correct": "C",
+          "explanation": "replace true evita añadir una entrada adicional al historial.",
+          "citation": "NavigationManager",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-060",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Qué debe usar una aplicación para construir una query codificada en lugar de concatenar valores sin escapar?",
+          "options": [
+            "Concatenación manual de strings",
+            "Un selector CSS",
+            "Un campo de sesión",
+            "Las APIs GetUriWithQueryParameter(s)"
+          ],
+          "correct": "D",
+          "explanation": "Las APIs de NavigationManager gestionan la construcción y codificación de parámetros de consulta.",
+          "citation": "NavigationManager",
+          "source_id": "BLAZOR-NAV-10"
+        }
+      ]
+    }
+  ]
+}

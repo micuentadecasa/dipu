@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-32-blazor-navigation-routing.md",
+  "batches": [
+    {
+      "topic_num": 32,
+      "lot_num": 1,
+      "source_ids": [
+        "BLAZOR-NAV-10"
+      ],
+      "questions": [
+        {
+          "objective_id": "t32-lo-001",
+          "difficulty": "basic",
+          "type": "definition",
+          "question": "¿Qué directiva convierte un componente Razor en una página asociada a una plantilla de URL?",
+          "options": [
+            "@page",
+            "@code",
+            "@bind",
+            "@typeparam"
+          ],
+          "correct": "A",
+          "explanation": "@page declara una plantilla de ruta que permite al enrutador activar el componente.",
+          "citation": "Route templates",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-002",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "En una plantilla de ruta, ¿qué representa un segmento literal como «products»?",
+          "options": [
+            "Un parámetro opcional",
+            "Una parte fija de la URL",
+            "Una consulta SQL",
+            "Una clase de CSS"
+          ],
+          "correct": "B",
+          "explanation": "El segmento literal debe aparecer en la ruta para que la plantilla coincida.",
+          "citation": "Route templates",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-003",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué elemento de una plantilla captura un valor variable incluido en la URL?",
+          "options": [
+            "Un proveedor de configuración",
+            "Un evento de circuito",
+            "Un parámetro de ruta",
+            "Un fragmento de renderizado"
+          ],
+          "correct": "C",
+          "explanation": "Un parámetro de ruta, como {id}, captura el segmento y lo proporciona al componente.",
+          "citation": "Route parameters",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-004",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué requisito debe cumplir una propiedad para recibir el valor de un parámetro de ruta en un componente?",
+          "options": [
+            "Ser siempre singleton",
+            "Estar en appsettings.json",
+            "Implementar IDisposable",
+            "Tener el nombre y tipo de parámetro esperados"
+          ],
+          "correct": "D",
+          "explanation": "El valor se enlaza con el parámetro de componente correspondiente al nombre de la plantilla.",
+          "citation": "Route parameters",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-005",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué restricción expresa que un parámetro de ruta debe analizarse como entero?",
+          "options": [
+            "{id:int}",
+            "{id:json}",
+            "{id:route}",
+            "{id:html}"
+          ],
+          "correct": "A",
+          "explanation": "La restricción int limita la coincidencia a valores que se pueden analizar como entero.",
+          "citation": "Route constraints",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-006",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué restricción es adecuada para exigir que un valor tenga formato GUID?",
+          "options": [
+            "uuid-text",
+            "guid",
+            "identifier",
+            "token"
+          ],
+          "correct": "B",
+          "explanation": "La restricción guid limita el parámetro a un valor con formato Guid reconocible.",
+          "citation": "Route constraints",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-007",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué sintaxis indica normalmente que un parámetro de ruta es opcional?",
+          "options": [
+            "Un asterisco inicial",
+            "Dos puntos finales",
+            "Un signo de interrogación tras el parámetro",
+            "Una almohadilla"
+          ],
+          "correct": "C",
+          "explanation": "La notación opcional permite que el segmento pueda omitirse según la plantilla admitida.",
+          "citation": "Route templates",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-008",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué notación captura varios segmentos restantes de una ruta como un valor de tipo catch-all?",
+          "options": [
+            "{path:int}",
+            "{path?}",
+            "[path]",
+            "{*path}"
+          ],
+          "correct": "D",
+          "explanation": "El asterisco identifica un parámetro catch-all que puede abarcar varios segmentos.",
+          "citation": "Route templates",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-009",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Qué efecto tiene declarar dos directivas @page con plantillas distintas en un mismo componente?",
+          "options": [
+            "Permite que el componente responda a ambas rutas",
+            "Obliga a crear dos ensamblados",
+            "Desactiva el Router",
+            "Convierte una ruta en consulta"
+          ],
+          "correct": "A",
+          "explanation": "Varias plantillas @page pueden asociarse al mismo componente para aceptar distintas URLs.",
+          "citation": "Route templates",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-010",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué diferencia principal existe entre un parámetro de ruta y un parámetro de consulta?",
+          "options": [
+            "El primero solo existe en SQL",
+            "El primero forma parte de la plantilla; el segundo va después de ?",
+            "El segundo siempre es un GUID",
+            "No hay diferencia en una URI"
+          ],
+          "correct": "B",
+          "explanation": "La plantilla define segmentos de ruta y la cadena de consulta aporta pares de nombre y valor después de ?.",
+          "citation": "Route templates",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-011",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "Una URL contiene /orders/42?filter=open. ¿Qué parte corresponde a la cadena de consulta?",
+          "options": [
+            "orders",
+            "42",
+            "filter=open",
+            "/orders/42"
+          ],
+          "correct": "C",
+          "explanation": "La cadena de consulta comienza después de ? y contiene el par filter=open.",
+          "citation": "Route templates",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-012",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué debe hacer el enrutado con caracteres reservados que forman parte de un valor?",
+          "options": [
+            "Eliminar siempre el valor",
+            "Convertirlo en código C#",
+            "Guardarlo en localStorage",
+            "Usar la codificación de URL adecuada"
+          ],
+          "correct": "D",
+          "explanation": "Los valores deben codificarse para que los caracteres reservados no se interpreten como separadores de ruta.",
+          "citation": "Route templates",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-013",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "Una ruta con restricción int recibe /items/abc. ¿Qué resultado es coherente?",
+          "options": [
+            "La plantilla no coincide y puede mostrarse NotFound",
+            "Se convierte abc en cero",
+            "Se crea una ruta nueva",
+            "Se ignora la restricción"
+          ],
+          "correct": "A",
+          "explanation": "Una restricción que no puede satisfacerse impide que la plantilla coincida.",
+          "citation": "Route constraints",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-014",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Qué ventaja aporta una restricción de ruta frente a validar el texto solo dentro del componente?",
+          "options": [
+            "Persiste automáticamente el valor",
+            "Evita activar la ruta para valores que ya son incompatibles",
+            "Autoriza al usuario",
+            "Crea un índice de URL"
+          ],
+          "correct": "B",
+          "explanation": "La restricción filtra la coincidencia antes de activar la página y deja el componente con un tipo esperado.",
+          "citation": "Route constraints",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-015",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Qué componente debe recibir un parámetro de ruta para usarlo en el contenido de la página?",
+          "options": [
+            "Un campo de CSS aislado",
+            "Un servicio singleton",
+            "Una propiedad de componente enlazable",
+            "Una migración EF"
+          ],
+          "correct": "C",
+          "explanation": "El Router proporciona el valor capturado a la propiedad compatible del componente.",
+          "citation": "Route parameters",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-016",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Dos plantillas tienen el mismo segmento literal pero restricciones diferentes. ¿Qué criterio ayuda a seleccionar la ruta correcta?",
+          "options": [
+            "El orden alfabético del componente",
+            "El tamaño del ensamblado",
+            "El valor de localStorage",
+            "La plantilla cuya restricción también coincide"
+          ],
+          "correct": "D",
+          "explanation": "Las restricciones participan en la coincidencia y descartan valores que no satisfacen el contrato.",
+          "citation": "Route constraints",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-017",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué representa el parámetro catch-all cuando la URL contiene varios segmentos restantes?",
+          "options": [
+            "Una cadena que incluye esos segmentos",
+            "Una lista de componentes ya renderizados",
+            "Un token de autenticación",
+            "Una opción de configuración"
+          ],
+          "correct": "A",
+          "explanation": "El catch-all captura la parte restante de la ruta como un único valor de ruta.",
+          "citation": "Route templates",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-018",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Una página necesita aceptar una ruta con una fecha tipada. ¿Qué debe cuidar el diseño?",
+          "options": [
+            "Usar siempre sessionStorage",
+            "La plantilla y el formato admitido por el tipo",
+            "Desactivar el Router",
+            "Cambiar el layout global"
+          ],
+          "correct": "B",
+          "explanation": "Los parámetros tipados necesitan una plantilla y una representación que el sistema pueda analizar.",
+          "citation": "Route constraints",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-019",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Qué ocurre si ninguna plantilla de ruta coincide con la URI actual?",
+          "options": [
+            "Se resuelve siempre la primera página",
+            "Se invoca HttpClient",
+            "El Router puede renderizar su contenido NotFound",
+            "Se cambia el entorno"
+          ],
+          "correct": "C",
+          "explanation": "El contenido NotFound del Router se usa cuando no hay una coincidencia.",
+          "citation": "Router",
+          "source_id": "BLAZOR-NAV-10"
+        },
+        {
+          "objective_id": "t32-lo-020",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Qué forma de ruta suele representar la página raíz de una aplicación Blazor?",
+          "options": [
+            "@page \"root\"",
+            "@route \"/\"",
+            "@root \"/\"",
+            "@page \"/\""
+          ],
+          "correct": "D",
+          "explanation": "La plantilla / representa la URI base de la aplicación.",
+          "citation": "Route templates",
+          "source_id": "BLAZOR-NAV-10"
+        }
+      ]
+    }
+  ]
+}
