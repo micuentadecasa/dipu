@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-31-blazor-state-management.md",
+  "batches": [
+    {
+      "topic_num": 31,
+      "lot_num": 5,
+      "source_ids": [
+        "BLAZOR-STATE-10"
+      ],
+      "questions": [
+        {
+          "objective_id": "t31-lo-081",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué clase de estado es principalmente responsabilidad de la UI y puede reconstruirse?",
+          "options": [
+            "El estado efímero de presentación",
+            "El saldo autorizado de una cuenta",
+            "La identidad del usuario en el servidor",
+            "La auditoría legal"
+          ],
+          "correct": "A",
+          "explanation": "El estado de presentación, como un panel abierto, puede reconstruirse y no es la fuente autoritativa.",
+          "citation": "State management recommendations",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-082",
+          "difficulty": "basic",
+          "type": "comparison",
+          "question": "¿Qué afirmación describe el estado de sesión frente al estado global de la aplicación?",
+          "options": [
+            "El estado global siempre es privado",
+            "El estado de sesión pertenece a un usuario o circuito",
+            "La sesión se comparte entre todos",
+            "Ambos son necesariamente persistentes"
+          ],
+          "correct": "B",
+          "explanation": "La sesión debe aislarse por usuario o circuito, mientras el estado global puede tener otro alcance deliberado.",
+          "citation": "State management recommendations",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-083",
+          "difficulty": "basic",
+          "type": "scenario",
+          "question": "Una aplicación coloca el rol actual de cada usuario en un singleton Server. ¿Qué problema de seguridad aparece?",
+          "options": [
+            "Duplicación de rutas",
+            "Pérdida del CSS aislado",
+            "Contaminación de estado entre usuarios",
+            "Menor tamaño del payload"
+          ],
+          "correct": "C",
+          "explanation": "Un singleton compartido puede entregar el rol de un usuario a otro si almacena estado mutable por usuario.",
+          "citation": "State management recommendations",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-084",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué decisión separa correctamente una preferencia de interfaz y un dato que debe autorizar el servidor?",
+          "options": [
+            "Persistir ambos en localStorage",
+            "Confiar en ambos valores del cliente",
+            "Guardar ambos en un campo estático",
+            "Persistir la preferencia en cliente y validar el dato en servidor"
+          ],
+          "correct": "D",
+          "explanation": "Las preferencias no sensibles pueden vivir en el cliente; las decisiones de negocio deben validarse en el servidor.",
+          "citation": "State management recommendations",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-085",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué beneficio aporta encapsular el estado compartido detrás de una interfaz?",
+          "options": [
+            "Permite sustituirlo y probar consumidores con mayor facilidad",
+            "Obliga a usar almacenamiento web",
+            "Elimina los ámbitos",
+            "Hace todos los servicios singleton"
+          ],
+          "correct": "A",
+          "explanation": "Una abstracción reduce el acoplamiento y facilita probar un consumidor con un estado simulado.",
+          "citation": "State containers",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-086",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "Un evento de estado se dispara desde varios hilos o callbacks concurrentes. ¿Qué debe garantizar el contenedor?",
+          "options": [
+            "Que el último hilo siempre gane sin reglas",
+            "Actualizaciones coherentes y acceso seguro",
+            "Que cada callback cree un circuito",
+            "Que el estado sea público"
+          ],
+          "correct": "B",
+          "explanation": "El contenedor debe definir cómo coordina las mutaciones y cómo notifica sin exponer estados parciales.",
+          "citation": "State containers",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-087",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué debe hacer un consumidor cuando recibe una notificación de cambio para reflejarla?",
+          "options": [
+            "Modificar el DOM con una cadena",
+            "Cambiar el proveedor de configuración",
+            "Actualizar su vista mediante la cola de renderizado de Blazor",
+            "Reiniciar el navegador"
+          ],
+          "correct": "C",
+          "explanation": "El consumidor usa InvokeAsync y StateHasChanged cuando la notificación llega fuera de un evento normal.",
+          "citation": "Notify components of state changes",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-088",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Qué riesgo introduce conservar una referencia mutable al estado interno y exponerla a todos los componentes?",
+          "options": [
+            "Menor acoplamiento",
+            "Persistencia automática",
+            "Aislamiento entre circuitos",
+            "Mutaciones no controladas e invariantes rotas"
+          ],
+          "correct": "D",
+          "explanation": "Exponer la colección permite cambios sin validación ni notificación centralizada.",
+          "citation": "State containers",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-089",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "Un componente ya no debe recibir actualizaciones, pero su callback sigue registrado. ¿Qué señal indica una fuga?",
+          "options": [
+            "El componente se mantiene alcanzable desde el publisher",
+            "El navegador cambia de origen",
+            "El estado se vuelve inmutable",
+            "La ruta deja de coincidir"
+          ],
+          "correct": "A",
+          "explanation": "La referencia del publisher al callback puede mantener vivo al subscriber y producir notificaciones fuera de tiempo.",
+          "citation": "State containers",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-090",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué práctica mantiene una restauración de estado robusta ante datos corruptos del cliente?",
+          "options": [
+            "Confiar en toda cadena JSON",
+            "Validar y rechazar valores que no cumplen el contrato",
+            "Ejecutar el contenido como código",
+            "Usar la cadena como identidad"
+          ],
+          "correct": "B",
+          "explanation": "El cliente puede modificar o corromper los datos; la restauración debe validar forma y valores.",
+          "citation": "State management recommendations",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-091",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué principio limita el contenido que se persiste o se comparte entre componentes?",
+          "options": [
+            "Conservar cada objeto disponible",
+            "Persistir recursos abiertos",
+            "Conservar solo el estado necesario",
+            "Compartir secretos para ahorrar llamadas"
+          ],
+          "correct": "C",
+          "explanation": "La minimización reduce coste, exposición y acoplamiento entre componentes.",
+          "citation": "State management recommendations",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-092",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "Una pantalla usa localStorage como única fuente del permiso de acceso a un recurso. ¿Qué defecto existe?",
+          "options": [
+            "Usa demasiados componentes",
+            "No usa CSS aislado",
+            "Tiene una ruta demasiado corta",
+            "Confía en una fuente controlable por el cliente"
+          ],
+          "correct": "D",
+          "explanation": "El servidor debe comprobar autorización; el almacenamiento del cliente no es una fuente de confianza.",
+          "citation": "State management recommendations",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-093",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Qué opción es preferible para datos de negocio que deben sobrevivir a reinicios y compartirse con servicios?",
+          "options": [
+            "Persistencia en un backend autorizado",
+            "Un campo privado del componente",
+            "sessionStorage",
+            "Un evento de UI"
+          ],
+          "correct": "A",
+          "explanation": "El backend proporciona durabilidad y autoridad para datos de negocio que la UI no puede garantizar.",
+          "citation": "State management recommendations",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-094",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué secuencia reduce notificaciones innecesarias al aplicar una transición compleja de estado?",
+          "options": [
+            "Notificar después de cada campo",
+            "Calcular, aplicar la transición y notificar una vez",
+            "Renderizar antes de cambiar",
+            "Notificar en un bucle sin fin"
+          ],
+          "correct": "B",
+          "explanation": "Una transición agrupada mantiene consistencia y evita renders intermedios.",
+          "citation": "State containers",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-095",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Un contenedor scoped recibe una notificación de una tarea después de terminar el circuito. ¿Qué debe hacer?",
+          "options": [
+            "Crear un singleton para conservarlo",
+            "Escribir el estado en todos los circuitos",
+            "Cancelar la tarea o ignorar el callback si el ámbito ya terminó",
+            "Renderizar sin comprobar"
+          ],
+          "correct": "C",
+          "explanation": "Las tareas deben respetar el ciclo de vida del circuito y no actualizar ámbitos que ya no existen.",
+          "citation": "Blazor Server circuits",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-096",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué propiedad debe documentar un diseño de estado para poder restaurarlo de forma fiable?",
+          "options": [
+            "Solo el nombre de la variable",
+            "El color del componente",
+            "La cantidad de rutas",
+            "Su contrato, versión y alcance"
+          ],
+          "correct": "D",
+          "explanation": "La restauración exige saber qué forma tiene el estado, qué versión usa y a quién pertenece.",
+          "citation": "State management recommendations",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-097",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Un componente guarda una lista grande en estado persistido para evitar una consulta pequeña. ¿Qué revisión es recomendable?",
+          "options": [
+            "Comparar el coste del payload con el coste de recargar",
+            "Persistir siempre la lista completa",
+            "Moverla a un singleton global",
+            "Duplicarla en cada componente"
+          ],
+          "correct": "A",
+          "explanation": "La persistencia debe equilibrar tamaño de transferencia, latencia y coste de reconstrucción.",
+          "citation": "State management recommendations",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-098",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Qué diferencia hay entre restaurar estado de UI y reconstruir un recurso de infraestructura?",
+          "options": [
+            "Ambos deben guardarse como JSON",
+            "La UI puede serializarse; el recurso debe resolverse o abrirse de nuevo",
+            "El recurso siempre se guarda en sessionStorage",
+            "La UI solo puede vivir en SQL"
+          ],
+          "correct": "B",
+          "explanation": "Conexiones, servicios y referencias vivas no son estado serializable; deben reconstruirse mediante DI o una fábrica.",
+          "citation": "State management recommendations",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-099",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Qué prueba verifica mejor que un contenedor no filtra el estado de un usuario entre circuitos?",
+          "options": [
+            "Usar un único usuario",
+            "Comprobar solo el CSS",
+            "Ejecutar dos circuitos con datos distintos y comprobar aislamiento",
+            "Leer una clave global del navegador"
+          ],
+          "correct": "C",
+          "explanation": "Una prueba con ámbitos separados detecta referencias estáticas o singleton que mezclan datos.",
+          "citation": "State containers",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-100",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Una aplicación necesita conservar una preferencia no sensible, recuperar datos iniciales tras prerender y autorizar cambios de negocio. ¿Qué combinación es coherente?",
+          "options": [
+            "Singleton global para todo",
+            "Solo campos locales",
+            "localStorage como autoridad de negocio",
+            "Almacenamiento de cliente, estado persistido mínimo y validación en servidor"
+          ],
+          "correct": "D",
+          "explanation": "Cada problema tiene un mecanismo distinto: preferencia cliente, transferencia mínima de prerender y backend autoritativo.",
+          "citation": "State management recommendations",
+          "source_id": "BLAZOR-STATE-10"
+        }
+      ]
+    }
+  ]
+}

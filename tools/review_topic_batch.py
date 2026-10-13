@@ -415,6 +415,84 @@ LOT_EXPECTATIONS.update({
     }
 })
 
+# Topic 30 expectations are pinned independently of candidate generation.
+LOT_EXPECTATIONS.update({
+    (30, 1): {
+        1:('A','Dependency injection in ASP.NET Core'), 2:('B','Register services'), 3:('C','Service resolution'), 4:('D','Constructor injection'),
+        5:('A','Inject services into components'), 6:('B','Inject services into components'), 7:('C','Service lifetimes'), 8:('D','Service lifetimes'),
+        9:('A','Service lifetimes'), 10:('B','Disposal of services'), 11:('C','Register services'), 12:('D','Register services'),
+        13:('A','Register services'), 14:('B','Register services'), 15:('C','Register multiple implementations'), 16:('D','Register multiple implementations'),
+        17:('A','Service scopes'), 18:('B','Scope validation'), 19:('C','Scope validation'), 20:('D','Dependency injection guidelines')
+    },
+    (30, 2): {
+        1:('A','Configuration in ASP.NET Core'), 2:('B','Configuration keys and values'), 3:('C','Environment variables'), 4:('D','JSON configuration provider'),
+        5:('A','Default configuration providers'), 6:('B','Configuration providers'), 7:('C','Command-line configuration provider'), 8:('D','JSON configuration provider'),
+        9:('A','JSON configuration provider'), 10:('B','Bind hierarchical configuration'), 11:('C','GetValue'), 12:('D','Bind configuration'),
+        13:('A','Bind configuration'), 14:('B','GetConnectionString'), 15:('C','Options pattern'), 16:('D','Options interfaces'),
+        17:('A','Options interfaces'), 18:('B','Options interfaces'), 19:('C','Named options'), 20:('D','Options validation')
+    },
+    (30, 3): {
+        1:('A','Options validation'), 2:('B','Options pattern'), 3:('C','Options pattern'), 4:('D','Options pattern'),
+        5:('A','Options interfaces'), 6:('B','Register services'), 7:('C','Configuration in ASP.NET Core'), 8:('D','Configuration in ASP.NET Core'),
+        9:('A','Environment variables'), 10:('B','Safe storage of secrets'), 11:('C','Environment variables'), 12:('D','Register services'),
+        13:('A','Inject services into components'), 14:('B','Register services'), 15:('C','Service lifetimes'), 16:('D','Service lifetimes'),
+        17:('A','Service lifetimes'), 18:('B','Prerendering'), 19:('C','Inject services into components'), 20:('D','Inject services into components')
+    },
+    (30, 4): {
+        1:('A','Register open generic services'), 2:('B','Keyed services'), 3:('C','Keyed services'), 4:('D','Keyed services'),
+        5:('A','Register groups of services with TryAdd'), 6:('B','Register groups of services with TryAdd'), 7:('C','Service resolution'), 8:('D','Service provider options'),
+        9:('A','Disposal of services'), 10:('B','Disposal of services'), 11:('C','DI guidelines'), 12:('D','Scope validation'),
+        13:('A','Options interfaces'), 14:('B','Options interfaces'), 15:('C','Register services'), 16:('D','Service resolution'),
+        17:('A','Service resolution'), 18:('B','Register multiple implementations'), 19:('C','Use scoped services within a BackgroundService'), 20:('D','Use scoped services within a BackgroundService')
+    },
+    (30, 5): {
+        1:('A','Configuration providers'), 2:('B','Configuration providers'), 3:('C','Environment variables'), 4:('D','Command-line configuration provider'),
+        5:('A','Configuration keys and values'), 6:('B','GetValue'), 7:('C','Options pattern'), 8:('D','Bind configuration'),
+        9:('A','Options pattern'), 10:('B','Options validation'), 11:('C','Options validation'), 12:('D','Named options'),
+        13:('A','Options interfaces'), 14:('B','Configuration in Blazor WebAssembly'), 15:('C','Configuration security'), 16:('D','Configuration in Blazor Server'),
+        17:('A','Configuration in Blazor WebAssembly'), 18:('B','Configuration in Blazor WebAssembly'), 19:('C','Configuration security'), 20:('D','Configuration in Blazor WebAssembly')
+    }
+})
+
+# Topic 31 expectations are pinned independently of candidate generation.
+LOT_EXPECTATIONS.update({
+    (31, 1): {
+        1:('A','Component state'), 2:('B','Component state'), 3:('C','Component state'), 4:('D','Notify components of state changes'),
+        5:('A','Notify components of state changes'), 6:('B','Component state'), 7:('C','Component state'), 8:('D','Component state'),
+        9:('A','Component state'), 10:('B','Component state'), 11:('C','State management recommendations'), 12:('D','Notify components of state changes'),
+        13:('A','State containers'), 14:('B','Notify components of state changes'), 15:('C','State management recommendations'), 16:('D','Component state'),
+        17:('A','Component state'), 18:('B','State containers'), 19:('C','State containers'), 20:('D','State management recommendations')
+    },
+    (31, 2): {
+        1:('A','State containers'), 2:('B','Notify components of state changes'), 3:('C','State containers'), 4:('D','State containers'),
+        5:('A','State containers'), 6:('B','Notify components of state changes'), 7:('C','State containers'), 8:('D','State containers'),
+        9:('A','Notify components of state changes'), 10:('B','Component state'), 11:('C','State management recommendations'), 12:('D','State containers'),
+        13:('A','State containers'), 14:('B','State management recommendations'), 15:('C','Blazor Server circuits'), 16:('D','State containers'),
+        17:('A','State containers'), 18:('B','State containers'), 19:('C','Browser storage'), 20:('D','State containers')
+    },
+    (31, 3): {
+        1:('A','Browser storage'), 2:('B','Browser storage'), 3:('C','Browser storage'), 4:('D','Browser storage'),
+        5:('A','Browser storage'), 6:('B','Prerendering'), 7:('C','Browser storage'), 8:('D','Browser storage'),
+        9:('A','Browser storage'), 10:('B','Browser storage'), 11:('C','Browser storage'), 12:('D','Browser storage'),
+        13:('A','Browser storage'), 14:('B','Browser storage'), 15:('C','State management recommendations'), 16:('D','Browser storage'),
+        17:('A','Browser storage'), 18:('B','Browser storage'), 19:('C','Browser storage'), 20:('D','State management recommendations')
+    },
+    (31, 4): {
+        1:('A','Prerendering'), 2:('B','Prerendering'), 3:('C','PersistentComponentState'), 4:('D','Persist prerendered state'),
+        5:('A','PersistentComponentState'), 6:('B','PersistentComponentState'), 7:('C','PersistentComponentState'), 8:('D','PersistentComponentState'),
+        9:('A','PersistentComponentState'), 10:('B','State management recommendations'), 11:('C','Prerendering'), 12:('D','Persist prerendered state'),
+        13:('A','PersistentComponentState'), 14:('B','State management recommendations'), 15:('C','PersistentComponentState'), 16:('D','PersistentComponentState'),
+        17:('A','Prerendering'), 18:('B','PersistentComponentState'), 19:('C','PersistentComponentState'), 20:('D','PersistentComponentState')
+    },
+    (31, 5): {
+        1:('A','State management recommendations'), 2:('B','State management recommendations'), 3:('C','State management recommendations'), 4:('D','State management recommendations'),
+        5:('A','State containers'), 6:('B','State containers'), 7:('C','Notify components of state changes'), 8:('D','State containers'),
+        9:('A','State containers'), 10:('B','State management recommendations'), 11:('C','State management recommendations'), 12:('D','State management recommendations'),
+        13:('A','State management recommendations'), 14:('B','State containers'), 15:('C','Blazor Server circuits'), 16:('D','State management recommendations'),
+        17:('A','State management recommendations'), 18:('B','State management recommendations'), 19:('C','State containers'), 20:('D','State management recommendations')
+    }
+})
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("topic_num", type=int, choices=tuple(range(2, 41)))

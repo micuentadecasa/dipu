@@ -1,0 +1,337 @@
+{
+  "generated_at": "2026-10-12",
+  "research_artifact": "docs/question-bank/research/topic-30-blazor-di-configuration.md",
+  "batches": [
+    {
+      "topic_num": 30,
+      "lot_num": 3,
+      "source_ids": [
+        "ASPNET-DI-10",
+        "BLAZOR-DI-10",
+        "DOTNET-CONFIG-10"
+      ],
+      "questions": [
+        {
+          "objective_id": "t30-lo-041",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué extensión hace que la validación de opciones se ejecute al construir el host?",
+          "options": [
+            "ValidateOnStart",
+            "ValidateOnRequest",
+            "ValidateOnRender",
+            "ValidateOnRoute"
+          ],
+          "correct": "A",
+          "explanation": "ValidateOnStart solicita que las opciones se validen durante el arranque, no en el primer uso.",
+          "citation": "Options validation",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-042",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué método registra una acción que configura una clase de opciones a partir de IConfiguration?",
+          "options": [
+            "BindService<T>",
+            "Configure<T>",
+            "AddRoute<T>",
+            "UseSettings<T>"
+          ],
+          "correct": "B",
+          "explanation": "Configure<T> conecta una acción o sección con la configuración de la clase de opciones.",
+          "citation": "Options pattern",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-043",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué extensión aplica ajustes posteriores a la configuración normal de una clase de opciones?",
+          "options": [
+            "AfterConfigureRoute<T>",
+            "FinalizeOptions<T>",
+            "PostConfigure<T>",
+            "LateBind<T>"
+          ],
+          "correct": "C",
+          "explanation": "PostConfigure<T> permite ejecutar una configuración después de las acciones Configure registradas.",
+          "citation": "Options pattern",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-044",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué operación aplica una configuración a todas las instancias nombradas de una clase de opciones?",
+          "options": [
+            "ConfigureDefaultOnly<T>",
+            "ConfigureRoutes<T>",
+            "ConfigureEveryService<T>",
+            "ConfigureAll<T>"
+          ],
+          "correct": "D",
+          "explanation": "ConfigureAll establece valores comunes para todas las opciones nombradas de ese tipo.",
+          "citation": "Options pattern",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-045",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué devuelve normalmente OnChange al suscribirse a cambios de IOptionsMonitor<T>?",
+          "options": [
+            "Un IDisposable para cancelar la suscripción",
+            "Una instancia de DbContext",
+            "Una ruta de navegación",
+            "Una tarea de renderizado"
+          ],
+          "correct": "A",
+          "explanation": "La suscripción de OnChange debe conservarse y eliminarse mediante el IDisposable devuelto.",
+          "citation": "Options interfaces",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-046",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿En qué momento deben registrarse los servicios para que el proveedor construido los conozca?",
+          "options": [
+            "Después de Run()",
+            "Antes de Build()",
+            "Después de Dispose()",
+            "Durante una consulta LINQ"
+          ],
+          "correct": "B",
+          "explanation": "Los descriptores deben añadirse a IServiceCollection antes de construir el proveedor o el host.",
+          "citation": "Register services",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-047",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "En el modelo de hosting habitual, ¿qué propiedad del builder representa la configuración de la aplicación?",
+          "options": [
+            "builder.Services",
+            "builder.HostedServices",
+            "builder.Configuration",
+            "builder.Components"
+          ],
+          "correct": "C",
+          "explanation": "builder.Configuration expone la configuración que el builder ha cargado para la aplicación.",
+          "citation": "Configuration in ASP.NET Core",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-048",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Qué relación describe correctamente la configuración de host y la configuración de aplicación?",
+          "options": [
+            "Son dos nombres para el mismo servicio",
+            "La de aplicación solo existe en Blazor WebAssembly",
+            "La de host se crea después de ejecutar la aplicación",
+            "Son fases distintas con fuentes y prioridades propias"
+          ],
+          "correct": "D",
+          "explanation": "El host usa su propia configuración inicial y la aplicación añade sus fuentes y valores según el modelo de hosting.",
+          "citation": "Configuration in ASP.NET Core",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-049",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "¿Qué valor suele seleccionar el entorno de ejecución cuando ASPNETCORE_ENVIRONMENT no está establecido?",
+          "options": [
+            "Production",
+            "Development",
+            "Testing",
+            "LocalOnly"
+          ],
+          "correct": "A",
+          "explanation": "ASP.NET Core usa Production como entorno predeterminado cuando no se proporciona otro valor.",
+          "citation": "Environment variables",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-050",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "¿Dónde debe mantenerse una contraseña de producción que no debe viajar al repositorio?",
+          "options": [
+            "appsettings.json versionado",
+            "Un almacén seguro de secretos",
+            "El nombre del ensamblado",
+            "Una clase estática pública"
+          ],
+          "correct": "B",
+          "explanation": "La documentación recomienda no guardar secretos en archivos de configuración versionados y usar un almacenamiento seguro.",
+          "citation": "Safe storage of secrets",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-051",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué propiedad permite conocer el nombre del entorno activo para seleccionar comportamiento de aplicación?",
+          "options": [
+            "IServiceProvider.ServiceType",
+            "IConfiguration.ReloadToken",
+            "IHostEnvironment.EnvironmentName",
+            "IOptions<T>.ValueName"
+          ],
+          "correct": "C",
+          "explanation": "EnvironmentName identifica el entorno actual, como Development o Production.",
+          "citation": "Environment variables",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-052",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "En una aplicación Blazor WebAssembly, ¿qué registro se usa habitualmente para proporcionar un HttpClient con la dirección base?",
+          "options": [
+            "AddDbContext",
+            "AddRazorPages",
+            "AddHostedService",
+            "AddHttpClient"
+          ],
+          "correct": "D",
+          "explanation": "El proyecto registra HttpClient mediante AddHttpClient o una configuración equivalente del host WebAssembly.",
+          "citation": "Register services",
+          "source_id": "BLAZOR-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-053",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué declara un componente para recibir el HttpClient registrado sin construirlo manualmente?",
+          "options": [
+            "@inject HttpClient",
+            "@bind HttpClient",
+            "@route HttpClient",
+            "@config HttpClient"
+          ],
+          "correct": "A",
+          "explanation": "@inject solicita que Blazor asigne al componente la instancia de HttpClient disponible.",
+          "citation": "Inject services into components",
+          "source_id": "BLAZOR-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-054",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿En qué lugar del arranque de una aplicación Blazor se registran normalmente sus servicios?",
+          "options": [
+            "Un archivo .razor.css",
+            "Program.cs",
+            "El manifiesto PWA únicamente",
+            "La vista de resultados"
+          ],
+          "correct": "B",
+          "explanation": "Program.cs configura IServiceCollection antes de construir el host de Blazor.",
+          "citation": "Register services",
+          "source_id": "BLAZOR-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-055",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "En Blazor WebAssembly, ¿qué interpretación práctica tiene normalmente el ámbito scoped?",
+          "options": [
+            "Una instancia por solicitud HTTP del servidor",
+            "Una instancia global entre navegadores",
+            "Una instancia dentro del alcance de la aplicación cliente",
+            "Una instancia nueva por cada carácter escrito"
+          ],
+          "correct": "C",
+          "explanation": "En WebAssembly no existe el ciclo de solicitudes del servidor; el scoped suele vivir en el alcance de la aplicación cliente.",
+          "citation": "Service lifetimes",
+          "source_id": "BLAZOR-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-056",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "En Blazor Server, ¿a qué unidad se asocia normalmente una dependencia scoped?",
+          "options": [
+            "Todos los circuitos de la aplicación",
+            "Cada ensamblado",
+            "Cada archivo Razor",
+            "El circuito del usuario"
+          ],
+          "correct": "D",
+          "explanation": "En Blazor Server, el ámbito scoped se mantiene normalmente durante el circuito del usuario.",
+          "citation": "Service lifetimes",
+          "source_id": "BLAZOR-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-057",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "¿Por qué debe evitarse guardar estado específico de un usuario en un singleton de Blazor Server?",
+          "options": [
+            "Porque puede compartirse entre circuitos",
+            "Porque un singleton no puede tener métodos",
+            "Porque solo funciona con JSON",
+            "Porque se elimina al cambiar de componente"
+          ],
+          "correct": "A",
+          "explanation": "El singleton vive más allá de un circuito y puede exponer o mezclar estado entre usuarios.",
+          "citation": "Service lifetimes",
+          "source_id": "BLAZOR-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-058",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Durante el prerenderizado de un componente Blazor, ¿qué precaución aplica al usar servicios con estado?",
+          "options": [
+            "Convertir todos los servicios en transient",
+            "No asumir que el estado se conserva sin una estrategia de persistencia",
+            "Desactivar siempre DI",
+            "Guardar secretos en el HTML"
+          ],
+          "correct": "B",
+          "explanation": "El prerenderizado y la interacción posterior pueden usar fases o ámbitos distintos; el estado debe persistirse o reconstruirse explícitamente.",
+          "citation": "Prerendering",
+          "source_id": "BLAZOR-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-059",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Puede un layout de Blazor recibir un servicio mediante inyección de dependencias?",
+          "options": [
+            "Solo si usa Entity Framework",
+            "Solo durante una migración",
+            "Sí, como cualquier componente",
+            "No, los layouts no son componentes"
+          ],
+          "correct": "C",
+          "explanation": "Los layouts son componentes Razor y pueden declarar servicios con @inject o [Inject].",
+          "citation": "Inject services into components",
+          "source_id": "BLAZOR-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-060",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué requisito debe cumplir un servicio para que Blazor pueda inyectarlo en un componente?",
+          "options": [
+            "Tener una ruta @page",
+            "Ser siempre singleton",
+            "Implementar IComponent",
+            "Estar registrado en el proveedor disponible para ese componente"
+          ],
+          "correct": "D",
+          "explanation": "La inyección solo puede resolver servicios que estén registrados y disponibles en el ámbito del componente.",
+          "citation": "Inject services into components",
+          "source_id": "BLAZOR-DI-10"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,336 @@
+{
+  "generated_at": "2026-10-12",
+  "research_artifact": "docs/question-bank/research/topic-30-blazor-di-configuration.md",
+  "batches": [
+    {
+      "topic_num": 30,
+      "lot_num": 5,
+      "source_ids": [
+        "BLAZOR-CONFIG-10",
+        "DOTNET-CONFIG-10"
+      ],
+      "questions": [
+        {
+          "objective_id": "t30-lo-081",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué factor decide cuál de dos valores iguales termina visible en IConfiguration?",
+          "options": [
+            "El orden de los proveedores",
+            "El tamaño del archivo",
+            "El nombre del ensamblado",
+            "La cantidad de componentes"
+          ],
+          "correct": "A",
+          "explanation": "El proveedor con mayor prioridad según el orden de configuración determina el valor final de la clave.",
+          "citation": "Configuration providers",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-082",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué propiedad de IConfigurationRoot permite inspeccionar los proveedores cargados?",
+          "options": [
+            "Services",
+            "Providers",
+            "Routes",
+            "Components"
+          ],
+          "correct": "B",
+          "explanation": "IConfigurationRoot expone Providers para enumerar los proveedores que participan en la configuración.",
+          "citation": "Configuration providers",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-083",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "Al leer una variable de entorno con niveles anidados, ¿qué transformación aplica el proveedor?",
+          "options": [
+            "Sustituir __ por un punto",
+            "Sustituir __ por una barra",
+            "Sustituir __ por :",
+            "Eliminar los niveles"
+          ],
+          "correct": "C",
+          "explanation": "El doble guion bajo se transforma en dos puntos y conserva la jerarquía de tres niveles.",
+          "citation": "Environment variables",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-084",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué entrada de configuración permite seleccionar un valor con el argumento --urls al iniciar una aplicación?",
+          "options": [
+            "Proveedor de cookies",
+            "Proveedor de formularios",
+            "Proveedor de estilos",
+            "Proveedor de línea de comandos"
+          ],
+          "correct": "D",
+          "explanation": "El proveedor de línea de comandos convierte los argumentos en claves y valores de configuración.",
+          "citation": "Command-line configuration provider",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-085",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Cómo se representan normalmente elementos de una colección al enlazar configuración jerárquica?",
+          "options": [
+            "Con índices numéricos consecutivos",
+            "Con claves de tipo GUID obligatorias",
+            "Con una clave única global",
+            "Con nombres de métodos"
+          ],
+          "correct": "A",
+          "explanation": "El binder puede enlazar secciones cuyos hijos usan índices numéricos para formar una colección.",
+          "citation": "Configuration keys and values",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-086",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué comportamiento permite GetValue<T> cuando una clave no existe y se proporciona un valor alternativo?",
+          "options": [
+            "Lanza siempre una excepción de red",
+            "Devuelve el valor predeterminado indicado",
+            "Crea una clave en el archivo JSON",
+            "Devuelve una sección vacía"
+          ],
+          "correct": "B",
+          "explanation": "GetValue<T> admite un valor por defecto que se devuelve cuando no hay un valor utilizable.",
+          "citation": "GetValue",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-087",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Al enlazar una clase de opciones convencional, ¿qué propiedades se consideran normalmente por el binder?",
+          "options": [
+            "Campos privados solamente",
+            "Métodos estáticos",
+            "Propiedades públicas con acceso de escritura",
+            "Constantes del ensamblado"
+          ],
+          "correct": "C",
+          "explanation": "El binder de configuración trabaja normalmente con propiedades públicas que puede establecer.",
+          "citation": "Options pattern",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-088",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué operación resulta apropiada para enlazar una sección sin crear automáticamente una clase nueva?",
+          "options": [
+            "GetSection sin destino",
+            "AddSingleton sin tipo",
+            "Build sobre IConfiguration",
+            "Bind sobre una instancia existente"
+          ],
+          "correct": "D",
+          "explanation": "Bind aplica los valores a una instancia que ya ha sido creada por la aplicación.",
+          "citation": "Bind configuration",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-089",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué ventaja principal aporta una clase POCO para representar opciones?",
+          "options": [
+            "Ofrecer un contrato tipado para valores relacionados",
+            "Ocultar todos los valores al proceso",
+            "Sustituir el proveedor de configuración",
+            "Impedir cualquier validación"
+          ],
+          "correct": "A",
+          "explanation": "Una clase de opciones da nombres y tipos a un grupo de valores de configuración.",
+          "citation": "Options pattern",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-090",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué extensión aplica atributos de validación de DataAnnotations a una clase de opciones?",
+          "options": [
+            "ValidateJsonOnly",
+            "ValidateDataAnnotations",
+            "UseAnnotationsRoute",
+            "BindAttributesOnly"
+          ],
+          "correct": "B",
+          "explanation": "ValidateDataAnnotations registra la validación de los atributos de anotaciones de datos de la clase de opciones.",
+          "citation": "Options validation",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-091",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "Una aplicación debe fallar durante el arranque si una opción obligatoria no es válida. ¿Qué combinación resulta adecuada?",
+          "options": [
+            "Solo leer IConfiguration al final",
+            "Usar un comentario en appsettings",
+            "Validación de opciones y ValidateOnStart",
+            "Registrar el POCO como endpoint"
+          ],
+          "correct": "C",
+          "explanation": "La regla de validación comprueba el valor y ValidateOnStart adelanta la comprobación al arranque.",
+          "citation": "Options validation",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-092",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Qué interfaz permite observar cambios para una opción nombrada especificando el nombre al acceder al valor?",
+          "options": [
+            "IOptions<T> sin nombre",
+            "IConfigurationProvider",
+            "IServiceScopeFactory",
+            "IOptionsMonitor<T>"
+          ],
+          "correct": "D",
+          "explanation": "IOptionsMonitor<T> permite obtener el valor actual de una opción nombrada mediante el nombre correspondiente.",
+          "citation": "Named options",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-093",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "Un archivo JSON cambia y las opciones configuradas con monitor reflejan el nuevo valor. ¿Qué dos capacidades cooperan?",
+          "options": [
+            "Recarga del proveedor y notificación del monitor",
+            "Compilación Razor y rutas",
+            "Singleton y cookies",
+            "OpenAPI y antiforgery"
+          ],
+          "correct": "A",
+          "explanation": "El proveedor recarga la clave y el monitor notifica o expone el valor actualizado.",
+          "citation": "Options interfaces",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-094",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "En Blazor WebAssembly, ¿qué archivo público puede contener valores de configuración que el cliente descarga?",
+          "options": [
+            "appsettings.secrets.bin fuera de wwwroot",
+            "wwwroot/appsettings.json",
+            "El almacén seguro del servidor",
+            "Una tabla SQLite privada del host"
+          ],
+          "correct": "B",
+          "explanation": "La configuración de WebAssembly se sirve como recurso público y puede incluir wwwroot/appsettings.json.",
+          "citation": "Configuration in Blazor WebAssembly",
+          "source_id": "BLAZOR-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-095",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "¿Qué regla de seguridad se aplica a un valor incluido en la configuración de Blazor WebAssembly?",
+          "options": [
+            "Se cifra automáticamente en el navegador",
+            "Solo lo ve el servidor",
+            "No debe considerarse secreto",
+            "Se elimina antes de descargarlo"
+          ],
+          "correct": "C",
+          "explanation": "Todo lo que se envía a WebAssembly puede inspeccionarse en el cliente y no debe contener secretos.",
+          "citation": "Configuration security",
+          "source_id": "BLAZOR-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-096",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "En Blazor Server, ¿qué mecanismo usa normalmente un componente para recibir configuración del servidor?",
+          "options": [
+            "Descargar siempre un JSON público",
+            "Leer localStorage del navegador",
+            "Usar una variable de entorno del cliente",
+            "Inyección de IConfiguration"
+          ],
+          "correct": "D",
+          "explanation": "La aplicación Server puede inyectar IConfiguration porque la configuración permanece en el proceso del servidor.",
+          "citation": "Configuration in Blazor Server",
+          "source_id": "BLAZOR-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-097",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Qué propiedad del builder de Blazor WebAssembly permite leer o ampliar la configuración del host cliente?",
+          "options": [
+            "builder.Configuration",
+            "builder.ServicesOnly",
+            "builder.Routes",
+            "builder.ServerSecrets"
+          ],
+          "correct": "A",
+          "explanation": "WebAssemblyHostBuilder expone Configuration para leer y añadir fuentes disponibles al cliente.",
+          "citation": "Configuration in Blazor WebAssembly",
+          "source_id": "BLAZOR-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-098",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Se añade una fuente de configuración al builder de Blazor antes de construir el host. ¿Qué condición debe cumplir para estar disponible al resolver opciones?",
+          "options": [
+            "Añadirse después de Run()",
+            "Añadirse antes de Build()",
+            "Añadirse al CSS aislado",
+            "Añadirse a una ruta del Router"
+          ],
+          "correct": "B",
+          "explanation": "Las fuentes deben configurarse antes de construir el host para que la configuración resultante esté disponible.",
+          "citation": "Configuration in Blazor WebAssembly",
+          "source_id": "BLAZOR-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-099",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Qué diferencia de exposición debe considerar un equipo al mover una clave de configuración del servidor a WebAssembly?",
+          "options": [
+            "La versión WebAssembly se vuelve privada",
+            "La versión Server se descarga siempre",
+            "La versión WebAssembly queda accesible al cliente",
+            "No existe diferencia de seguridad"
+          ],
+          "correct": "C",
+          "explanation": "La configuración que acompaña al cliente puede inspeccionarse, mientras que la del servidor permanece en el proceso.",
+          "citation": "Configuration security",
+          "source_id": "BLAZOR-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-100",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Una aplicación Blazor WebAssembly necesita cambiar una URL pública entre entornos. ¿Qué estrategia documentada evita compilar un secreto en el cliente?",
+          "options": [
+            "Poner la clave privada en appsettings.json",
+            "Usar un singleton secreto en el navegador",
+            "Guardar la URL en una cookie HttpOnly del servidor",
+            "Usar archivos de configuración públicos por entorno"
+          ],
+          "correct": "D",
+          "explanation": "Las URLs públicas pueden variar mediante archivos de configuración servidos por entorno, pero los secretos no deben viajar al cliente.",
+          "citation": "Configuration in Blazor WebAssembly",
+          "source_id": "BLAZOR-CONFIG-10"
+        }
+      ]
+    }
+  ]
+}

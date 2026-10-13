@@ -1,0 +1,336 @@
+{
+  "generated_at": "2026-10-12",
+  "research_artifact": "docs/question-bank/research/topic-30-blazor-di-configuration.md",
+  "batches": [
+    {
+      "topic_num": 30,
+      "lot_num": 4,
+      "source_ids": [
+        "ASPNET-DI-10",
+        "DOTNET-CONFIG-10"
+      ],
+      "questions": [
+        {
+          "objective_id": "t30-lo-061",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué registro permite asociar una implementación genérica para múltiples construcciones cerradas del mismo contrato?",
+          "options": [
+            "Un registro de genérico abierto",
+            "Un registro de endpoint",
+            "Una opción nombrada",
+            "Un proveedor JSON"
+          ],
+          "correct": "A",
+          "explanation": "El registro de genérico abierto permite que el contenedor construya versiones cerradas del servicio genérico.",
+          "citation": "Register open generic services",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-062",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué característica de .NET permite registrar dos servicios del mismo tipo distinguiéndolos por una clave?",
+          "options": [
+            "Servicios anónimos",
+            "Servicios con clave",
+            "Rutas con nombre",
+            "Opciones sin tipo"
+          ],
+          "correct": "B",
+          "explanation": "Los keyed services asocian una clave con cada registro para resolver implementaciones diferenciadas.",
+          "citation": "Keyed services",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-063",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué atributo puede indicar la clave de un servicio que se inyecta en un constructor?",
+          "options": [
+            "[FromRoute]",
+            "[FromBody]",
+            "[FromKeyedServices]",
+            "[FromQuery]"
+          ],
+          "correct": "C",
+          "explanation": "[FromKeyedServices] comunica al contenedor la clave con la que debe resolver el servicio.",
+          "citation": "Keyed services",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-064",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué familia de operaciones del proveedor se usa para pedir un servicio identificado por una clave?",
+          "options": [
+            "GetRouteValue y GetEndpoint",
+            "GetSection y GetValue",
+            "GetPage y GetComponent",
+            "GetKeyedService y GetRequiredKeyedService"
+          ],
+          "correct": "D",
+          "explanation": "El proveedor ofrece métodos keyed para resolución opcional o requerida mediante una clave.",
+          "citation": "Keyed services",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-065",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Qué objetivo tiene TryAdd frente a registrar siempre un descriptor nuevo?",
+          "options": [
+            "Evitar registrar el servicio si ya existe",
+            "Reemplazar todas las implementaciones",
+            "Crear una configuración JSON",
+            "Validar una ruta HTTP"
+          ],
+          "correct": "A",
+          "explanation": "TryAdd añade el descriptor solo cuando todavía no hay una implementación del servicio.",
+          "citation": "Register groups of services with TryAdd",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-066",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué operación de TryAdd sirve para añadir una implementación a la colección enumerable solo si no está ya registrada?",
+          "options": [
+            "TryAddSingletonOnly",
+            "TryAddEnumerable",
+            "TryAddRoute",
+            "TryAddConfiguration"
+          ],
+          "correct": "B",
+          "explanation": "TryAddEnumerable evita duplicar el mismo descriptor de implementación en una colección de múltiples servicios.",
+          "citation": "Register groups of services with TryAdd",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-067",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué interfaz permite consultar si un tipo puede resolverse sin crear necesariamente una instancia del servicio?",
+          "options": [
+            "IServiceProviderFactory",
+            "IServiceScopeFactory",
+            "IServiceProviderIsService",
+            "IOptionsChangeTokenSource<T>"
+          ],
+          "correct": "C",
+          "explanation": "IServiceProviderIsService permite preguntar por la disponibilidad de un tipo en el proveedor.",
+          "citation": "Service resolution",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-068",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué opción de ServiceProviderOptions valida que todas las dependencias puedan construirse al crear el proveedor?",
+          "options": [
+            "ValidateOnResolve",
+            "BuildOnRequest",
+            "CheckOnRender",
+            "ValidateOnBuild"
+          ],
+          "correct": "D",
+          "explanation": "ValidateOnBuild solicita comprobar la construcción de los servicios durante BuildServiceProvider.",
+          "citation": "Service provider options",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-069",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "Un servicio async disposable se resuelve dentro de un ámbito. ¿Qué acción protege su liberación correcta?",
+          "options": [
+            "Desechar el ámbito de forma asíncrona",
+            "Convertirlo en singleton",
+            "Llamar a Build() otra vez",
+            "Copiarlo a IConfiguration"
+          ],
+          "correct": "A",
+          "explanation": "La disposición asíncrona del ámbito permite liberar correctamente dependencias que implementan IAsyncDisposable.",
+          "citation": "Disposal of services",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-070",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "Una fábrica registra un IDisposable transient y el contenedor lo crea. ¿Qué regla general debe considerar quien diseña el servicio?",
+          "options": [
+            "Los transient nunca se liberan",
+            "La creación y disposición deben tener un propietario claro",
+            "Todo transient se vuelve singleton",
+            "La configuración lo serializa automáticamente"
+          ],
+          "correct": "B",
+          "explanation": "La documentación de DI recomienda entender quién posee y libera cada disposable para evitar fugas o retenciones.",
+          "citation": "Disposal of services",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-071",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "¿Qué propiedad debe garantizar un servicio singleton que pueda ser utilizado concurrentemente por varias solicitudes?",
+          "options": [
+            "Un estado distinto por componente",
+            "Una ruta propia",
+            "Seguridad frente a acceso concurrente",
+            "Una configuración mutable por usuario"
+          ],
+          "correct": "C",
+          "explanation": "Un singleton se comparte y debe diseñarse para acceso concurrente y para no mezclar estado específico de usuarios.",
+          "citation": "DI guidelines",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-072",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "Al validar ámbitos, un singleton depende directamente de un servicio scoped. ¿Qué debe hacerse?",
+          "options": [
+            "Ignorar la advertencia en producción",
+            "Registrar el scoped como endpoint",
+            "Mover la dependencia a un archivo JSON",
+            "Cambiar el diseño para respetar los límites de ámbito"
+          ],
+          "correct": "D",
+          "explanation": "Un singleton no debe capturar directamente un scoped; hay que rediseñar la dependencia o crear un ámbito explícito cuando sea apropiado.",
+          "citation": "Scope validation",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-073",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Qué interfaz de opciones es adecuada para que un servicio de larga vida observe cambios sin capturar una instantánea scoped?",
+          "options": [
+            "IOptionsMonitor<T>",
+            "IOptionsSnapshot<T>",
+            "IConfigurationSection<T>",
+            "IOptionsBuilder<T>"
+          ],
+          "correct": "A",
+          "explanation": "IOptionsMonitor<T> está diseñada para consumidores de larga vida que necesitan el valor actual y notificaciones.",
+          "citation": "Options interfaces",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-074",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "Un singleton intenta inyectar IOptionsSnapshot<T>. ¿Cuál es el diagnóstico habitual?",
+          "options": [
+            "La configuración JSON está cifrada",
+            "La dependencia tiene un ámbito incompatible",
+            "El servicio pasa a ser transient",
+            "El snapshot se convierte en monitor"
+          ],
+          "correct": "B",
+          "explanation": "IOptionsSnapshot<T> es scoped; inyectarlo directamente en un singleton produce una incompatibilidad de ámbitos.",
+          "citation": "Options interfaces",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-075",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "Una fábrica necesita otra dependencia para crear su resultado. ¿Qué parámetro de la sobrecarga de fábrica permite obtenerla?",
+          "options": [
+            "IConfigurationKey",
+            "RenderFragment",
+            "IServiceProvider",
+            "RouteData únicamente"
+          ],
+          "correct": "C",
+          "explanation": "La fábrica recibe IServiceProvider y puede resolver de forma controlada las dependencias necesarias para crear el servicio.",
+          "citation": "Register services",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-076",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Dos servicios se requieren mutuamente por constructor y el proveedor intenta construirlos. ¿Qué error de diseño aparece?",
+          "options": [
+            "Cascading value",
+            "Clave duplicada de configuración",
+            "Recarga de archivo",
+            "Dependencia circular"
+          ],
+          "correct": "D",
+          "explanation": "El contenedor no puede completar una cadena de constructores que vuelve al servicio original: es una dependencia circular.",
+          "citation": "Service resolution",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-077",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Una clase solicita un servicio no registrado mediante constructor. ¿Qué resultado debe prever el equipo?",
+          "options": [
+            "Fallo de resolución al construir la clase",
+            "Creación automática del tipo siempre",
+            "Conversión a opciones nombradas",
+            "Ignorar el parámetro"
+          ],
+          "correct": "A",
+          "explanation": "Si no existe un descriptor resoluble, el proveedor no puede construir la clase y comunica el fallo de resolución.",
+          "citation": "Service resolution",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-078",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Qué orden suele conservar IEnumerable<T> al devolver varias implementaciones registradas?",
+          "options": [
+            "Orden alfabético del tipo",
+            "El orden de registro",
+            "Orden aleatorio por solicitud",
+            "Orden del ensamblado"
+          ],
+          "correct": "B",
+          "explanation": "La colección enumerable se devuelve siguiendo el orden en que se añadieron las implementaciones.",
+          "citation": "Register multiple implementations",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-079",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "Un BackgroundService necesita un repositorio scoped. ¿Qué patrón recomienda ASP.NET Core?",
+          "options": [
+            "Inyectar el repositorio en un singleton sin más",
+            "Usar una variable estática",
+            "Crear un ámbito con IServiceScopeFactory",
+            "Resolverlo desde IConfiguration"
+          ],
+          "correct": "C",
+          "explanation": "Un servicio hospedado es singleton por defecto y debe crear un ámbito para consumir dependencias scoped.",
+          "citation": "Use scoped services within a BackgroundService",
+          "source_id": "ASPNET-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-080",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Tras usar un ámbito creado manualmente en un trabajo hospedado, ¿qué acción completa el ciclo de vida?",
+          "options": [
+            "Registrar otra copia del repositorio",
+            "Llamar a Reload()",
+            "Convertir el ámbito en singleton",
+            "Desechar el ámbito"
+          ],
+          "correct": "D",
+          "explanation": "El ámbito manual debe desecharse al terminar el trabajo para liberar sus dependencias.",
+          "citation": "Use scoped services within a BackgroundService",
+          "source_id": "ASPNET-DI-10"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-31-blazor-state-management.md",
+  "batches": [
+    {
+      "topic_num": 31,
+      "lot_num": 4,
+      "source_ids": [
+        "BLAZOR-STATE-10"
+      ],
+      "questions": [
+        {
+          "objective_id": "t31-lo-061",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué ocurre normalmente con un componente de una Blazor Web App que se prerenderiza?",
+          "options": [
+            "Se genera HTML antes de la interacción interactiva",
+            "Se ejecuta solo en el navegador",
+            "Se persiste automáticamente en SQL",
+            "Se convierte en singleton"
+          ],
+          "correct": "A",
+          "explanation": "El prerenderizado produce una representación inicial antes de que el componente sea interactivo.",
+          "citation": "Prerendering",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-062",
+          "difficulty": "basic",
+          "type": "comparison",
+          "question": "¿Por qué una inicialización aleatoria o una llamada de datos puede repetirse con prerendering?",
+          "options": [
+            "Porque localStorage ejecuta dos veces",
+            "Porque puede haber una fase prerender y otra interactiva",
+            "Porque StateHasChanged duplica todos los campos",
+            "Porque el CSS se compila dos veces"
+          ],
+          "correct": "B",
+          "explanation": "El componente puede ejecutarse durante prerender y volver a inicializarse al activarse interactivamente.",
+          "citation": "Prerendering",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-063",
+          "difficulty": "basic",
+          "type": "procedure",
+          "question": "¿Qué servicio representa la API de estado persistente de componentes durante prerender e hidratación?",
+          "options": [
+            "IServiceScopeFactory",
+            "NavigationManager",
+            "PersistentComponentState",
+            "EditContext"
+          ],
+          "correct": "C",
+          "explanation": "PersistentComponentState permite registrar y recuperar datos destinados a cruzar la transición de prerender a interacción.",
+          "citation": "PersistentComponentState",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-064",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué objetivo tiene persistir el resultado de una carga durante prerender?",
+          "options": [
+            "Forzar un singleton",
+            "Desactivar la serialización",
+            "Compartir secretos con el navegador",
+            "Evitar repetir la carga al activar la fase interactiva"
+          ],
+          "correct": "D",
+          "explanation": "El estado persistido permite reutilizar el resultado inicial en lugar de ejecutar de nuevo la carga.",
+          "citation": "Persist prerendered state",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-065",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué método registra una devolución que se ejecutará cuando el estado del componente vaya a persistirse?",
+          "options": [
+            "RegisterOnPersisting",
+            "RegisterOnRender",
+            "OnCircuitStarted",
+            "PersistOnNavigate"
+          ],
+          "correct": "A",
+          "explanation": "RegisterOnPersisting permite registrar la lógica que guarda valores justo antes de la persistencia.",
+          "citation": "PersistentComponentState",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-066",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué operación guarda un valor JSON bajo una clave en PersistentComponentState?",
+          "options": [
+            "SaveAsSql",
+            "PersistAsJson",
+            "StoreInCircuit",
+            "WriteToDom"
+          ],
+          "correct": "B",
+          "explanation": "PersistAsJson serializa y registra el valor con una clave para recuperarlo después.",
+          "citation": "PersistentComponentState",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-067",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué operación intenta recuperar y consumir un valor JSON persistido?",
+          "options": [
+            "TryGetFromRoute<T>",
+            "ReadLocalOnly<T>",
+            "TryTakeFromJson<T>",
+            "TakeFromDb<T>"
+          ],
+          "correct": "C",
+          "explanation": "TryTakeFromJson<T> intenta obtener el valor persistido y lo consume para la fase interactiva.",
+          "citation": "PersistentComponentState",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-068",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "Una aplicación persiste el resultado de una consulta y luego lo recupera en la fase interactiva. ¿Qué debe comprobar antes de volver a consultar?",
+          "options": [
+            "Si el CSS está aislado",
+            "Si el circuito es singleton",
+            "Si la ruta tiene un fragmento",
+            "Si el estado persistido se recuperó correctamente"
+          ],
+          "correct": "D",
+          "explanation": "Comprobar la recuperación evita repetir la consulta cuando el prerender ya dejó un resultado válido.",
+          "citation": "PersistentComponentState",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-069",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Qué tipo de valor es adecuado para PersistAsJson?",
+          "options": [
+            "Un objeto serializable con datos necesarios",
+            "Un delegado con referencias a componentes",
+            "Un socket abierto",
+            "Un objeto que contiene un circuito"
+          ],
+          "correct": "A",
+          "explanation": "La persistencia JSON necesita valores que puedan serializarse y reconstruirse sin recursos vivos.",
+          "citation": "PersistentComponentState",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-070",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "¿Qué riesgo tiene persistir más datos de los necesarios durante prerender?",
+          "options": [
+            "Garantizar siempre más rendimiento",
+            "Aumentar el payload y exponer información innecesaria",
+            "Convertir la app en offline",
+            "Eliminar la necesidad de autorización"
+          ],
+          "correct": "B",
+          "explanation": "La persistencia debe ser mínima: más datos elevan coste y superficie de exposición.",
+          "citation": "State management recommendations",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-071",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué sucede con una API de navegador durante el prerenderizado en servidor?",
+          "options": [
+            "Se ejecuta mediante SQL",
+            "Se resuelve como singleton",
+            "No está disponible hasta que existe un entorno interactivo de navegador",
+            "Se reemplaza por localStorage del servidor"
+          ],
+          "correct": "C",
+          "explanation": "El servidor no tiene las APIs de navegador; la interop debe diferirse a un momento interactivo.",
+          "citation": "Prerendering",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-072",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué enfoque evita una carga repetida cuando el componente puede prerenderizarse?",
+          "options": [
+            "Llamar siempre desde OnAfterRender",
+            "Usar un campo estático global",
+            "Borrar el estado antes de renderizar",
+            "Restaurar estado persistido y cargar solo si falta"
+          ],
+          "correct": "D",
+          "explanation": "La lógica puede recuperar el resultado persistido y ejecutar la carga únicamente si no existe.",
+          "citation": "Persist prerendered state",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-073",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "Un callback de persistencia se registra demasiado pronto durante el apagado de la aplicación. ¿Qué precaución documenta la guía?",
+          "options": [
+            "Registrar la persistencia cerca del final de la inicialización",
+            "Registrar cientos de callbacks en cada render",
+            "Persistir directamente en el DOM",
+            "Desactivar todos los circuitos"
+          ],
+          "correct": "A",
+          "explanation": "La documentación recomienda registrar el callback en un momento que evite condiciones de carrera durante el cierre.",
+          "citation": "PersistentComponentState",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-074",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Qué diferencia existe entre PersistentComponentState y una base de datos?",
+          "options": [
+            "El primero es siempre global",
+            "El primero cruza una transición de componente; la segunda ofrece durabilidad de aplicación",
+            "La base de datos solo vive durante prerender",
+            "Ambos comparten el mismo ciclo"
+          ],
+          "correct": "B",
+          "explanation": "PersistentComponentState sirve para la transición de renderizado y no sustituye el almacenamiento durable.",
+          "citation": "State management recommendations",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-075",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Una propiedad persistida contiene una conexión abierta. ¿Qué debe hacer el equipo?",
+          "options": [
+            "Serializar el objeto completo",
+            "Guardar la conexión en localStorage",
+            "Persistir solo datos serializables y reconstruir la conexión",
+            "Compartirla entre circuitos"
+          ],
+          "correct": "C",
+          "explanation": "Los recursos vivos no deben serializarse; se persisten datos y se recrea el recurso en la fase correspondiente.",
+          "citation": "PersistentComponentState",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-076",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Qué estrategia hace segura una restauración de estado de una versión anterior?",
+          "options": [
+            "Usar el JSON sin comprobar",
+            "Ignorar errores de deserialización",
+            "Usar siempre el valor más antiguo",
+            "Validar la versión y migrar o descartar datos incompatibles"
+          ],
+          "correct": "D",
+          "explanation": "El estado persistido puede cambiar de forma y necesita comprobación de versión y una ruta de migración o descarte.",
+          "citation": "PersistentComponentState",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-077",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué significa que un componente sea idempotente respecto a su inicialización de datos?",
+          "options": [
+            "Repetir la inicialización no produce efectos incorrectos",
+            "Que nunca puede inicializarse",
+            "Que siempre usa singleton",
+            "Que no admite persistencia"
+          ],
+          "correct": "A",
+          "explanation": "La idempotencia es útil porque prerender y activación pueden provocar más de una ejecución.",
+          "citation": "Prerendering",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-078",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Un componente carga un dato en prerender y modifica el resultado antes de la fase interactiva. ¿Qué diseño debe priorizar?",
+          "options": [
+            "Persistir todas las referencias",
+            "Definir claramente qué estado cruza la transición",
+            "Usar una variable estática",
+            "Ocultar el dato en CSS"
+          ],
+          "correct": "B",
+          "explanation": "Solo debe cruzar la transición el estado necesario y válido para la fase interactiva.",
+          "citation": "PersistentComponentState",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-079",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Qué estado es más apropiado para recuperar una lista inicial tras prerender?",
+          "options": [
+            "Un servicio scoped completo",
+            "Un manejador de evento",
+            "Datos serializables de la carga inicial",
+            "Una referencia a un componente"
+          ],
+          "correct": "C",
+          "explanation": "La lista de datos puede serializarse; los servicios y referencias vivos deben resolverse de nuevo.",
+          "citation": "PersistentComponentState",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-080",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "¿Qué debe hacer un componente si TryTakeFromJson<T> no encuentra el valor esperado?",
+          "options": [
+            "Asumir que T nunca puede ser nulo",
+            "Leer una base de datos del navegador sin interop",
+            "Renderizar un valor secreto",
+            "Ejecutar la carga normal y establecer un valor válido"
+          ],
+          "correct": "D",
+          "explanation": "La ausencia es un camino normal cuando no hubo prerender o el estado expiró y debe tener una alternativa.",
+          "citation": "PersistentComponentState",
+          "source_id": "BLAZOR-STATE-10"
+        }
+      ]
+    }
+  ]
+}

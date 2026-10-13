@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-31-blazor-state-management.md",
+  "batches": [
+    {
+      "topic_num": 31,
+      "lot_num": 1,
+      "source_ids": [
+        "BLAZOR-STATE-10"
+      ],
+      "questions": [
+        {
+          "objective_id": "t31-lo-001",
+          "difficulty": "basic",
+          "type": "definition",
+          "question": "¿Qué describe mejor el estado de un componente Blazor?",
+          "options": [
+            "Los valores que determinan su representación y comportamiento",
+            "La configuración global del servidor",
+            "El esquema de una tabla SQL",
+            "La lista de rutas HTTP"
+          ],
+          "correct": "A",
+          "explanation": "El estado local reúne los valores que el componente usa durante su vida para renderizar e interactuar.",
+          "citation": "Component state",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-002",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué método marca normalmente un componente para que se evalúe un nuevo renderizado?",
+          "options": [
+            "RefreshComponent()",
+            "StateHasChanged()",
+            "RenderNow()",
+            "NotifyRender()"
+          ],
+          "correct": "B",
+          "explanation": "StateHasChanged solicita al framework que vuelva a evaluar el componente.",
+          "citation": "Component state",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-003",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "Después de un evento de UI manejado por Blazor, ¿qué comportamiento es habitual?",
+          "options": [
+            "El circuito se cierra siempre",
+            "El estado se guarda en SQL",
+            "El componente se vuelve a renderizar automáticamente",
+            "La aplicación reinicia el host"
+          ],
+          "correct": "C",
+          "explanation": "Los manejadores de eventos de Blazor provocan la notificación de renderizado al finalizar.",
+          "citation": "Component state",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-004",
+          "difficulty": "basic",
+          "type": "scenario",
+          "question": "Un temporizador cambia un campo fuera de un evento de UI. ¿Qué debe hacer el componente para reflejar el cambio?",
+          "options": [
+            "Esperar una navegación",
+            "Cambiar el archivo .razor.css",
+            "Registrar otra ruta",
+            "Solicitar StateHasChanged"
+          ],
+          "correct": "D",
+          "explanation": "Los cambios producidos por una fuente externa no reciben automáticamente la notificación del renderizado.",
+          "citation": "Notify components of state changes",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-005",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué método ayuda a volver al contexto de sincronización de Blazor antes de actualizar la UI desde una tarea externa?",
+          "options": [
+            "InvokeAsync",
+            "ConfigureAwait(false) siempre",
+            "Task.Run únicamente",
+            "BuildRenderTree manual"
+          ],
+          "correct": "A",
+          "explanation": "InvokeAsync programa la operación en el contexto apropiado del componente antes de notificar el renderizado.",
+          "citation": "Notify components of state changes",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-006",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué método permite decidir si una actualización debe producir un renderizado?",
+          "options": [
+            "ShouldPersist()",
+            "ShouldRender()",
+            "CanNavigate()",
+            "IsInteractive()"
+          ],
+          "correct": "B",
+          "explanation": "ShouldRender devuelve la decisión del componente sobre renderizados posteriores.",
+          "citation": "Component state",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-007",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Cuál es el valor predeterminado esperado de ShouldRender en un componente?",
+          "options": [
+            "false",
+            "null",
+            "true",
+            "El valor de RenderMode"
+          ],
+          "correct": "C",
+          "explanation": "La implementación predeterminada permite renderizar; el componente puede sobrescribir la decisión.",
+          "citation": "Component state",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-008",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "Un componente sobrescribe ShouldRender y devuelve false después de cambiar un campo. ¿Qué efecto busca?",
+          "options": [
+            "Borrar el campo automáticamente",
+            "Persistir el campo en el navegador",
+            "Crear un circuito nuevo",
+            "Evitar ese renderizado"
+          ],
+          "correct": "D",
+          "explanation": "ShouldRender puede impedir que una actualización provoque el renderizado normal del componente.",
+          "citation": "Component state",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-009",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Dónde debe mantenerse normalmente un valor efímero que solo usa una instancia de componente?",
+          "options": [
+            "En un campo o propiedad del componente",
+            "En un singleton global",
+            "En el archivo de rutas",
+            "En una tabla de metadatos"
+          ],
+          "correct": "A",
+          "explanation": "El estado que no se comparte debe permanecer local al componente para limitar su alcance.",
+          "citation": "Component state",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-010",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "Si una instancia de componente se destruye y se crea otra, ¿qué ocurre normalmente con sus campos privados?",
+          "options": [
+            "Se comparten automáticamente",
+            "Se inicializan de nuevo",
+            "Se escriben en localStorage siempre",
+            "Se convierten en parámetros"
+          ],
+          "correct": "B",
+          "explanation": "Los campos pertenecen a la instancia y no son persistencia automática entre instancias.",
+          "citation": "Component state",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-011",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Qué diferencia separa el estado local de la persistencia duradera?",
+          "options": [
+            "El estado local siempre viaja al servidor",
+            "La persistencia nunca se serializa",
+            "El estado local puede perderse al destruir la instancia",
+            "La persistencia solo existe en CSS"
+          ],
+          "correct": "C",
+          "explanation": "El estado local sirve a la interacción actual, mientras la persistencia conserva datos mediante un almacenamiento o backend.",
+          "citation": "State management recommendations",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-012",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "Una operación asíncrona actualiza el estado desde un callback de servicio. ¿Qué secuencia es adecuada?",
+          "options": [
+            "Cambiar el DOM directamente",
+            "Llamar a BuildRenderTree",
+            "Recrear el componente con new",
+            "Usar InvokeAsync, cambiar el estado y llamar a StateHasChanged"
+          ],
+          "correct": "D",
+          "explanation": "La secuencia entra en el contexto de Blazor, aplica el cambio y solicita la representación actualizada.",
+          "citation": "Notify components of state changes",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-013",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "Un componente se suscribe a un evento de un servicio de estado y luego deja de mostrarse. ¿Qué debe hacer?",
+          "options": [
+            "Cancelar la suscripción al disponerlo",
+            "Mantener el evento indefinidamente",
+            "Convertir el servicio en estático",
+            "Forzar una navegación"
+          ],
+          "correct": "A",
+          "explanation": "La baja evita que el servicio mantenga una referencia al componente y que se notifiquen instancias muertas.",
+          "citation": "State containers",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-014",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "Un servicio notifica a componentes mediante un evento .NET y el manejador recibe una llamada fuera del contexto de UI. ¿Qué debe usar el componente?",
+          "options": [
+            "Thread.Sleep",
+            "InvokeAsync para cambiar y notificar la UI",
+            "Una consulta LINQ",
+            "Un nuevo HttpClient por llamada"
+          ],
+          "correct": "B",
+          "explanation": "InvokeAsync permite ejecutar la actualización en el contexto de sincronización del componente.",
+          "citation": "Notify components of state changes",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-015",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Qué ventaja ofrece mantener el estado de UI mínimo?",
+          "options": [
+            "Obliga a usar singleton",
+            "Impide probar componentes",
+            "Reduce renders, sincronización y datos que deben restaurarse",
+            "Elimina la necesidad de validación"
+          ],
+          "correct": "C",
+          "explanation": "Un estado pequeño reduce complejidad y el coste de renderizar, serializar o restaurar.",
+          "citation": "State management recommendations",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-016",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Un método de componente cambia una propiedad durante un renderizado sin una condición de salida. ¿Qué riesgo debe evitar?",
+          "options": [
+            "Una migración SQL",
+            "Una clave de configuración",
+            "Un cambio de certificado",
+            "Un ciclo de renderizados o actualizaciones repetidas"
+          ],
+          "correct": "D",
+          "explanation": "Cambiar estado durante el renderizado puede provocar actualizaciones repetidas o resultados no deterministas.",
+          "citation": "Component state",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-017",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué representa StateHasChanged respecto a la persistencia del estado?",
+          "options": [
+            "Solo solicita renderizado; no guarda datos duraderamente",
+            "Serializa automáticamente todos los campos",
+            "Escribe siempre en localStorage",
+            "Guarda el circuito en la base de datos"
+          ],
+          "correct": "A",
+          "explanation": "StateHasChanged afecta al ciclo de renderizado y no constituye un mecanismo de almacenamiento.",
+          "citation": "Component state",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-018",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Un componente recibe una actualización desde un evento de servicio mientras ya está siendo dispuesto. ¿Qué diseño reduce el riesgo?",
+          "options": [
+            "Ignorar toda excepción de red",
+            "Desuscribirse y comprobar la vida del componente",
+            "Convertir el evento en ruta",
+            "Persistir el objeto sin serializar"
+          ],
+          "correct": "B",
+          "explanation": "La suscripción debe terminar con la vida del componente y las notificaciones deben ignorarse cuando ya no es válido.",
+          "citation": "State containers",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-019",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Qué enfoque es preferible para que un estado compartido comunique cambios sin exponer sus campos mutables?",
+          "options": [
+            "Campos públicos modificables desde cualquier componente",
+            "Variables globales",
+            "Métodos de operación y una notificación controlada",
+            "Copiar el estado en el DOM"
+          ],
+          "correct": "C",
+          "explanation": "Un contenedor puede encapsular cambios y notificar de forma explícita a sus consumidores.",
+          "citation": "State containers",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-020",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Qué afirmación diferencia el renderizado del almacenamiento del navegador?",
+          "options": [
+            "Renderizar siempre cruza la red",
+            "Almacenar siempre actualiza el DOM",
+            "Ambos son el mismo mecanismo",
+            "Renderizar actualiza la UI; almacenar conserva datos fuera de la instancia"
+          ],
+          "correct": "D",
+          "explanation": "El renderizado y la persistencia tienen propósitos y ciclos de vida distintos.",
+          "citation": "State management recommendations",
+          "source_id": "BLAZOR-STATE-10"
+        }
+      ]
+    }
+  ]
+}
