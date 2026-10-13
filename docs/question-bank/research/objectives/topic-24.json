@@ -1,0 +1,610 @@
+{
+  "topic_num": 24,
+  "source_ids": [
+    "ASPNET-WEBAPI-10"
+  ],
+  "researched_at": "2026-10-12",
+  "research_status": "primary_source_checked_pending_independent_review",
+  "objectives": [
+    {
+      "objective_id": "t24-lo-001",
+      "statement": "Distinguish controller-based Web API endpoints from view-oriented MVC controllers and identify ControllerBase as the usual base for API controllers.",
+      "citation": "Create web APIs with ASP.NET Core",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-002",
+      "statement": "Explain the role of the ApiController attribute in enabling API-specific conventions and behaviors.",
+      "citation": "Create web APIs with ASP.NET Core",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-003",
+      "statement": "Identify attribute routing as required for controllers marked with ApiController.",
+      "citation": "Create web APIs with ASP.NET Core — Attribute routing requirement",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-004",
+      "statement": "Explain automatic HTTP 400 responses for invalid model state in ApiController controllers.",
+      "citation": "Create web APIs with ASP.NET Core — Automatic HTTP 400 responses",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-005",
+      "statement": "Identify the binding-source attributes FromBody, FromRoute, FromQuery, FromHeader, FromForm and FromServices.",
+      "citation": "Create web APIs with ASP.NET Core — Binding source parameter inference",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-006",
+      "statement": "Explain that ApiController can infer binding sources for action parameters according to API-controller conventions.",
+      "citation": "Create web APIs with ASP.NET Core — Binding source parameter inference",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-007",
+      "statement": "Distinguish body binding from route and query binding when an API action receives input from an HTTP request.",
+      "citation": "Create web APIs with ASP.NET Core — Binding source parameter inference",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-008",
+      "statement": "Explain input and output formatters as the components that deserialize request bodies and serialize response values.",
+      "citation": "Create web APIs with ASP.NET Core — Formatters",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-009",
+      "statement": "Relate request Content-Type to input formatter selection and the Accept header to output formatter selection.",
+      "citation": "Create web APIs with ASP.NET Core — Content negotiation",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-010",
+      "statement": "Identify JSON as the default representation used by the standard ASP.NET Core Web API configuration.",
+      "citation": "Create web APIs with ASP.NET Core — Formatters",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-011",
+      "statement": "Choose ControllerBase action helpers such as Ok, BadRequest, NotFound and CreatedAtAction for common HTTP results.",
+      "citation": "Create web APIs with ASP.NET Core — Controller action return types",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-012",
+      "statement": "Explain CreatedAtAction as a way to return a created response together with a location for the newly created resource.",
+      "citation": "Create web APIs with ASP.NET Core — Controller action return types",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-013",
+      "statement": "Distinguish IActionResult, ActionResult<T> and a concrete type as API action return-type choices.",
+      "citation": "Controller action return types in ASP.NET Core web API",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-014",
+      "statement": "Explain ProblemDetails and ValidationProblemDetails as structured representations for API errors and validation errors.",
+      "citation": "Create web APIs with ASP.NET Core — Automatic HTTP 400 responses",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-015",
+      "statement": "Apply route templates and HTTP method attributes to expose controller actions as resource-oriented API operations.",
+      "citation": "Routing to controller actions in ASP.NET Core",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-016",
+      "statement": "Explain the purpose of OpenAPI and Swagger tooling in documenting and exploring an ASP.NET Core Web API.",
+      "citation": "ASP.NET Core web API documentation with Swagger / OpenAPI",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-017",
+      "statement": "Diagnose a missing or unsupported request media type as a formatter/content-type mismatch rather than a route mismatch.",
+      "citation": "Create web APIs with ASP.NET Core — Formatters",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-018",
+      "statement": "Select ActionResult<T> when an API action normally returns a typed resource but may also return HTTP error results.",
+      "citation": "Controller action return types in ASP.NET Core web API",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-019",
+      "statement": "Diagnose an API controller accepting a body parameter and a route identifier by matching each parameter to its binding source.",
+      "citation": "Create web APIs with ASP.NET Core — Binding source parameter inference",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-020",
+      "statement": "Design a Web API create operation that validates input, returns a structured client error when invalid, and returns a created response with a resource location when successful.",
+      "citation": "Create web APIs with ASP.NET Core — Automatic HTTP 400 responses; Controller action return types",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-021",
+      "statement": "Una acción pública de un controlador puede tratarse como acción MVC salvo que se excluya explícitamente.",
+      "citation": "Create web APIs with ASP.NET Core — Controller action return types",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-022",
+      "statement": "ControllerBase proporciona la base de las capacidades de controlador necesarias para APIs sin soporte de vistas.",
+      "citation": "Create web APIs with ASP.NET Core",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-023",
+      "statement": "ApiController puede aplicarse a una clase de controlador o mediante una convención a varios controladores.",
+      "citation": "Create web APIs with ASP.NET Core",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-024",
+      "statement": "El token [controller] de una ruta se sustituye por el nombre del controlador.",
+      "citation": "Routing to controller actions in ASP.NET Core",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-025",
+      "statement": "HttpGet asocia una acción con solicitudes HTTP GET.",
+      "citation": "Routing to controller actions in ASP.NET Core",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-026",
+      "statement": "HttpPost asocia una acción con solicitudes HTTP POST.",
+      "citation": "Routing to controller actions in ASP.NET Core",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-027",
+      "statement": "HttpPut se utiliza para exponer una acción que procesa solicitudes HTTP PUT.",
+      "citation": "Routing to controller actions in ASP.NET Core",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-028",
+      "statement": "HttpDelete se utiliza para exponer una acción que procesa solicitudes HTTP DELETE.",
+      "citation": "Routing to controller actions in ASP.NET Core",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-029",
+      "statement": "Una restricción de ruta como {id:int} limita la coincidencia a valores enteros.",
+      "citation": "Routing to controller actions in ASP.NET Core",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-030",
+      "statement": "Una plantilla [Route(\"api/[controller]\")] establece un prefijo de ruta para las acciones del controlador.",
+      "citation": "Routing to controller actions in ASP.NET Core",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-031",
+      "statement": "Una ruta de atributo en el controlador puede combinarse con la ruta de atributo de una acción.",
+      "citation": "Routing to controller actions in ASP.NET Core",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-032",
+      "statement": "Los valores de ruta pueden enlazarse a parámetros de acción que correspondan con sus nombres.",
+      "citation": "Create web APIs with ASP.NET Core — Binding source parameter inference",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-033",
+      "statement": "Los controladores ApiController requieren attribute routing para sus acciones.",
+      "citation": "Create web APIs with ASP.NET Core — Attribute routing requirement",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-034",
+      "statement": "RouteAttribute permite declarar una plantilla de ruta como metadato del controlador o de la acción.",
+      "citation": "Routing to controller actions in ASP.NET Core",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-035",
+      "statement": "Los atributos de verbo HTTP expresan qué método HTTP debe seleccionar una acción.",
+      "citation": "Routing to controller actions in ASP.NET Core",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-036",
+      "statement": "ProducesResponseType documenta el tipo de respuesta y el código de estado que una acción puede producir.",
+      "citation": "Create web APIs with ASP.NET Core — Controller action return types",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-037",
+      "statement": "Produces puede restringir o describir los tipos de contenido que una acción devuelve.",
+      "citation": "Create web APIs with ASP.NET Core — Formatters",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-038",
+      "statement": "Consumes puede declarar los tipos de contenido que una acción acepta.",
+      "citation": "Create web APIs with ASP.NET Core — Formatters",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-039",
+      "statement": "Una acción puede ocultarse del explorador de API con la configuración de ApiExplorer correspondiente.",
+      "citation": "ASP.NET Core web API documentation with Swagger / OpenAPI",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-040",
+      "statement": "El explorador de API proporciona metadatos que las herramientas OpenAPI pueden usar para describir endpoints.",
+      "citation": "ASP.NET Core web API documentation with Swagger / OpenAPI",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-041",
+      "statement": "Un parámetro de tipo simple de un controlador ApiController puede inferirse desde la query string.",
+      "citation": "Create web APIs with ASP.NET Core — Binding source parameter inference",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-042",
+      "statement": "Un parámetro complejo de una acción ApiController puede inferirse desde el cuerpo de la petición.",
+      "citation": "Create web APIs with ASP.NET Core — Binding source parameter inference",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-043",
+      "statement": "Una acción no debe intentar inferir dos parámetros independientes desde el mismo cuerpo HTTP.",
+      "citation": "Create web APIs with ASP.NET Core — Binding source parameter inference",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-044",
+      "statement": "FromQuery fuerza el binding de un parámetro desde la cadena de consulta.",
+      "citation": "Create web APIs with ASP.NET Core — Binding source parameter inference",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-045",
+      "statement": "FromRoute fuerza el binding de un parámetro desde los valores de ruta.",
+      "citation": "Create web APIs with ASP.NET Core — Binding source parameter inference",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-046",
+      "statement": "FromHeader fuerza el binding de un parámetro desde una cabecera HTTP.",
+      "citation": "Create web APIs with ASP.NET Core — Binding source parameter inference",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-047",
+      "statement": "FromForm fuerza el binding de un parámetro desde datos de formulario.",
+      "citation": "Create web APIs with ASP.NET Core — Binding source parameter inference",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-048",
+      "statement": "FromServices obtiene un parámetro desde el contenedor de inyección de dependencias.",
+      "citation": "Create web APIs with ASP.NET Core — Binding source parameter inference",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-049",
+      "statement": "IFormFile es un tipo usado para recibir un archivo cargado por una petición HTTP.",
+      "citation": "Create web APIs with ASP.NET Core — Binding source parameter inference",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-050",
+      "statement": "La carga de archivos de formulario utiliza normalmente multipart/form-data.",
+      "citation": "Create web APIs with ASP.NET Core — Binding source parameter inference",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-051",
+      "statement": "Consumes puede declarar multipart/form-data para una acción que recibe formularios con archivos.",
+      "citation": "Create web APIs with ASP.NET Core — Formatters",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-052",
+      "statement": "Los parámetros provenientes de fuentes distintas pueden combinarse, por ejemplo, ruta y query.",
+      "citation": "Create web APIs with ASP.NET Core — Binding source parameter inference",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-053",
+      "statement": "El Content-Type de la petición ayuda a seleccionar el input formatter.",
+      "citation": "Create web APIs with ASP.NET Core — Content negotiation",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-054",
+      "statement": "El encabezado Accept ayuda a seleccionar el output formatter.",
+      "citation": "Create web APIs with ASP.NET Core — Content negotiation",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-055",
+      "statement": "La ausencia de un input formatter compatible con el Content-Type puede producir 415 Unsupported Media Type.",
+      "citation": "Create web APIs with ASP.NET Core — Formatters",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-056",
+      "statement": "Una respuesta no aceptable puede expresarse con 406 cuando la negociación de contenido no encuentra una representación.",
+      "citation": "Create web APIs with ASP.NET Core — Content negotiation",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-057",
+      "statement": "System.Text.Json es el formatter JSON predeterminado de la configuración habitual de Web API.",
+      "citation": "Create web APIs with ASP.NET Core — Formatters",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-058",
+      "statement": "El soporte XML requiere configurar el formatter XML correspondiente.",
+      "citation": "Create web APIs with ASP.NET Core — Formatters",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-059",
+      "statement": "Una API puede registrar un formatter personalizado para admitir una representación adicional.",
+      "citation": "Custom formatters in ASP.NET Core Web API",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-060",
+      "statement": "La selección del output formatter ocurre después de que la acción produce su resultado.",
+      "citation": "Format response data in ASP.NET Core Web API",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-061",
+      "statement": "ProblemDetails ofrece un formato estructurado para comunicar errores HTTP de una API.",
+      "citation": "Create web APIs with ASP.NET Core — Automatic HTTP 400 responses",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-062",
+      "statement": "ValidationProblemDetails representa detalles estructurados de errores de validación.",
+      "citation": "Create web APIs with ASP.NET Core — Automatic HTTP 400 responses",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-063",
+      "statement": "Una respuesta de error de API debe incluir un código de estado coherente con el problema comunicado.",
+      "citation": "Handle errors in ASP.NET Core APIs",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-064",
+      "statement": "ApiController transforma un ModelState inválido en una respuesta 400 automática por defecto.",
+      "citation": "Create web APIs with ASP.NET Core — Automatic HTTP 400 responses",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-065",
+      "statement": "SuppressModelStateInvalidFilter permite desactivar el filtro automático de 400.",
+      "citation": "Create web APIs with ASP.NET Core — Automatic HTTP 400 responses",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-066",
+      "statement": "InvalidModelStateResponseFactory permite personalizar la respuesta producida por ModelState inválido.",
+      "citation": "Create web APIs with ASP.NET Core — Automatic HTTP 400 responses",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-067",
+      "statement": "Las opciones de comportamiento de API permiten personalizar el tratamiento de errores de cliente.",
+      "citation": "Create web APIs with ASP.NET Core — Automatic HTTP 400 responses",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-068",
+      "statement": "Un error de conversión durante el binding se incorpora a ModelState.",
+      "citation": "Create web APIs with ASP.NET Core — Binding source parameter inference",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-069",
+      "statement": "Las reglas de validación del modelo pueden aportar errores que desencadenan la respuesta automática de API.",
+      "citation": "Create web APIs with ASP.NET Core — Automatic HTTP 400 responses",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-070",
+      "statement": "ActionResult<T> permite expresar un resultado exitoso tipado y resultados HTTP alternativos.",
+      "citation": "Controller action return types in ASP.NET Core web API",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-071",
+      "statement": "IActionResult es apropiado cuando la acción puede devolver distintos tipos de resultado HTTP.",
+      "citation": "Controller action return types in ASP.NET Core web API",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-072",
+      "statement": "Un tipo concreto de retorno es útil cuando la acción siempre devuelve la misma representación exitosa.",
+      "citation": "Controller action return types in ASP.NET Core web API",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-073",
+      "statement": "ActionResult<T> admite conversiones implícitas desde el valor T y desde ActionResult.",
+      "citation": "Controller action return types in ASP.NET Core web API",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-074",
+      "statement": "Ok devuelve normalmente un resultado 200 con el valor proporcionado.",
+      "citation": "Create web APIs with ASP.NET Core — Controller action return types",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-075",
+      "statement": "BadRequest comunica normalmente que la petición no es válida y corresponde a 400.",
+      "citation": "Create web APIs with ASP.NET Core — Controller action return types",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-076",
+      "statement": "NoContent representa normalmente una respuesta exitosa sin cuerpo, 204.",
+      "citation": "Create web APIs with ASP.NET Core — Controller action return types",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-077",
+      "statement": "NotFound representa normalmente que el recurso solicitado no existe, 404.",
+      "citation": "Create web APIs with ASP.NET Core — Controller action return types",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-078",
+      "statement": "CreatedAtAction puede generar una respuesta 201 y una ubicación basada en otra acción.",
+      "citation": "Create web APIs with ASP.NET Core — Controller action return types",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-079",
+      "statement": "CreatedAtRoute puede generar una respuesta de creación usando una ruta con nombre.",
+      "citation": "Create web APIs with ASP.NET Core — Controller action return types",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-080",
+      "statement": "Una respuesta de creación puede incluir la ubicación del nuevo recurso en la cabecera Location.",
+      "citation": "Create web APIs with ASP.NET Core — Controller action return types",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-081",
+      "statement": "El estado HTTP 201 indica que se creó un recurso.",
+      "citation": "Create web APIs with ASP.NET Core — Controller action return types",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-082",
+      "statement": "El estado HTTP 204 indica éxito sin contenido de respuesta.",
+      "citation": "Create web APIs with ASP.NET Core — Controller action return types",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-083",
+      "statement": "El estado HTTP 404 representa que no se encontró el recurso solicitado.",
+      "citation": "Create web APIs with ASP.NET Core — Controller action return types",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-084",
+      "statement": "OpenAPI define una descripción agnóstica del lenguaje para el contrato de una API HTTP.",
+      "citation": "ASP.NET Core web API documentation with Swagger / OpenAPI",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-085",
+      "statement": "Swagger UI proporciona una interfaz para explorar y probar operaciones descritas por OpenAPI.",
+      "citation": "ASP.NET Core web API documentation with Swagger / OpenAPI",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-086",
+      "statement": "Los comentarios XML pueden incorporarse a la documentación OpenAPI cuando se configura esa integración.",
+      "citation": "ASP.NET Core web API documentation with Swagger / OpenAPI",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-087",
+      "statement": "La descripción OpenAPI comunica rutas, operaciones, parámetros y respuestas de la API.",
+      "citation": "ASP.NET Core web API documentation with Swagger / OpenAPI",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-088",
+      "statement": "Las herramientas basadas en OpenAPI pueden ayudar a generar clientes para una API documentada.",
+      "citation": "ASP.NET Core web API documentation with Swagger / OpenAPI",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-089",
+      "statement": "Un controlador API deriva normalmente de ControllerBase y no necesita heredar de Controller.",
+      "citation": "Create web APIs with ASP.NET Core",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-090",
+      "statement": "Controller añade capacidades de vistas a ControllerBase, mientras ControllerBase es suficiente para una API.",
+      "citation": "Create web APIs with ASP.NET Core",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-091",
+      "statement": "ApiController activa convenciones de API aunque el controlador siga siendo una clase MVC.",
+      "citation": "Create web APIs with ASP.NET Core",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-092",
+      "statement": "La ruta por atributos permite diseñar URLs de API explícitas junto con los verbos HTTP.",
+      "citation": "Create web APIs with ASP.NET Core — Attribute routing requirement",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-093",
+      "statement": "Una plantilla de ruta puede incluir segmentos literales y parámetros entre llaves.",
+      "citation": "Routing to controller actions in ASP.NET Core",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-094",
+      "statement": "HttpGet, HttpPost, HttpPut y HttpDelete son atributos de verbo HTTP para acciones de controlador.",
+      "citation": "Routing to controller actions in ASP.NET Core",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-095",
+      "statement": "Un parámetro de ruta puede recibir restricciones para rechazar valores que no coincidan con el formato esperado.",
+      "citation": "Routing to controller actions in ASP.NET Core",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-096",
+      "statement": "ProblemDetails es preferible a inventar una estructura distinta para cada error de una API.",
+      "citation": "Handle errors in ASP.NET Core APIs",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-097",
+      "statement": "La negociación de contenido coordina las preferencias del cliente con las representaciones que puede producir la API.",
+      "citation": "Create web APIs with ASP.NET Core — Content negotiation",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-098",
+      "statement": "Una operación POST de creación puede combinar binding, validación, persistencia y CreatedAtAction.",
+      "citation": "Create web APIs with ASP.NET Core — Controller action return types",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-099",
+      "statement": "Un endpoint documentado debe declarar de forma coherente sus códigos de éxito y error.",
+      "citation": "ASP.NET Core web API documentation with Swagger / OpenAPI",
+      "source_id": "ASPNET-WEBAPI-10"
+    },
+    {
+      "objective_id": "t24-lo-100",
+      "statement": "La respuesta de una acción debe corresponder al contrato HTTP que su documentación anuncia.",
+      "citation": "Controller action return types in ASP.NET Core web API",
+      "source_id": "ASPNET-WEBAPI-10"
+    }
+  ]
+}

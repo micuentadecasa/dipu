@@ -8,7 +8,7 @@ import unittest
 from pathlib import Path
 
 from question_bank.checkpoints import CheckpointError, append_checkpoint, load_checkpoints
-from question_bank.validation import screen_duplicates, stable_id_for, validate_record
+from question_bank.validation import answer_leakage_errors, screen_duplicates, stable_id_for, validate_record
 from seed_data import SEED_QUESTIONS
 
 
@@ -79,6 +79,18 @@ class QuestionRecordTests(unittest.TestCase):
         self.assertEqual(validate_record(record), [])
         self.assertIn("topic_title", record)
         self.assertIn("group_name", record)
+
+    def test_answer_text_leakage_is_rejected(self):
+        record = valid_record()
+        record["question"] = "¿Qué representa un certificado digital?"
+        self.assertTrue(answer_leakage_errors(record))
+        self.assertTrue(any("answer leakage" in error for error in validate_record(record)))
+
+    def test_near_verbatim_answer_leakage_is_rejected(self):
+        record = valid_record()
+        record["option_a"] = "La autoridad certificadora emite un certificado digital para vincular la identidad"
+        record["question"] = "La autoridad certificadora emite el certificado digital para vincular la identidad."
+        self.assertTrue(any("near-verbatim" in error for error in answer_leakage_errors(record)))
 
     def test_duplicate_options_and_wrong_identity_are_rejected(self):
         record = valid_record()
@@ -168,7 +180,7 @@ class SourceRegisterTests(unittest.TestCase):
         manifest = json.loads((ROOT / "docs/question-bank/objective-manifest.json").read_text(encoding="utf-8"))
         self.assertEqual(manifest["objective_count"], 8000)
         self.assertEqual(manifest["objectives_per_topic"], 200)
-        self.assertEqual(manifest["researched_objective_count"], 360)
+        self.assertEqual(manifest["researched_objective_count"], 1220)
         topic_counts = {}
         researched_count = 0
         for objective in manifest["objectives"]:
@@ -180,7 +192,7 @@ class SourceRegisterTests(unittest.TestCase):
                 self.assertEqual(objective["coverage_state"], "researched_pending_independent_review")
                 self.assertTrue(objective["citation"])
             self.assertEqual(objective["reviewer_decision"], "not_reviewed")
-        self.assertEqual(researched_count, 360)
+        self.assertEqual(researched_count, 1220)
         self.assertEqual(topic_counts, {topic: 200 for topic in range(1, 41)})
 
     def test_topic_one_lot_is_candidate_only_and_blockers_are_recorded(self):

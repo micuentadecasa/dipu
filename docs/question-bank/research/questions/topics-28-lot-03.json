@@ -1,0 +1,334 @@
+{
+  "generated_at": "2026-10-12",
+  "batches": [
+    {
+      "topic_num": 28,
+      "lot_num": 3,
+      "source_ids": [
+        "BLAZOR-10"
+      ],
+      "questions": [
+        {
+          "objective_id": "t28-lo-041",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "La guía oficial analiza «la primera evaluación de renderizado». ¿Cuál es la interpretación correcta para el componente? (objetivo t28-lo-041)",
+          "options": [
+            "El primer renderizado ocurre aunque ShouldRender devuelva false.",
+            "Una consulta SQL local.",
+            "Una hoja de estilos sin componente.",
+            "Una configuración de hosting."
+          ],
+          "correct": "A",
+          "explanation": "ShouldRender puede impedir un renderizado posterior, pero no evita el primer renderizado del componente.",
+          "citation": "Control the rendering flow",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-042",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "Al resolver el caso «solicitar una actualización», ¿qué conclusión coincide con la documentación de Blazor? — t28-lo-042",
+          "options": [
+            "Una consulta SQL local.",
+            "Llamar a StateHasChanged.",
+            "Una hoja de estilos sin componente.",
+            "Una configuración de hosting."
+          ],
+          "correct": "B",
+          "explanation": "StateHasChanged solicita que Blazor programe una actualización del componente.",
+          "citation": "Control the rendering flow",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-043",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "En el diseño avanzado de componentes, «llamadas repetidas de actualización» plantea esta pregunta: ¿qué regla se aplica? (t28-lo-043)",
+          "options": [
+            "Una consulta SQL local.",
+            "Una hoja de estilos sin componente.",
+            "Agrupar las actualizaciones pendientes.",
+            "Una configuración de hosting."
+          ],
+          "correct": "C",
+          "explanation": "Varias llamadas a StateHasChanged pendientes se agrupan para evitar trabajo redundante.",
+          "citation": "Control the rendering flow",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-044",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "Respecto a «un callback externo», selecciona el comportamiento respaldado por Microsoft Learn. Referencia t28-lo-044",
+          "options": [
+            "Una migración de datos.",
+            "Una ruta HTTP aislada.",
+            "Una regla CSS global.",
+            "Usar InvokeAsync antes de actualizar el estado."
+          ],
+          "correct": "D",
+          "explanation": "Un callback externo al sistema de eventos de Blazor debe usar InvokeAsync para volver al contexto del componente.",
+          "citation": "Receiving a call from something external to the Blazor rendering and event handling system",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-045",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Un revisor encuentra el asunto «la interfaz de manejo de eventos». ¿Qué debe concluir según la guía oficial? [ t28-lo-045 ]",
+          "options": [
+            "Implementar IHandleEvent.",
+            "Una consulta SQL local.",
+            "Una hoja de estilos sin componente.",
+            "Una configuración de hosting."
+          ],
+          "correct": "A",
+          "explanation": "La implementación de IHandleEvent permite personalizar cómo el componente procesa callbacks de eventos.",
+          "citation": "Control the rendering flow",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-046",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "La guía oficial analiza «el contrato posterior al renderizado». ¿Cuál es la interpretación correcta para el componente? (objetivo t28-lo-046)",
+          "options": [
+            "Una ruta de navegación sin DOM.",
+            "Implementar IHandleAfterRender.",
+            "Una migración de base de datos.",
+            "Una política de autorización."
+          ],
+          "correct": "B",
+          "explanation": "IHandleAfterRender permite participar en el procesamiento posterior al renderizado.",
+          "citation": "After component render",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-047",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Al resolver el caso «prerenderizado y ciclo interactivo», ¿qué conclusión coincide con la documentación de Blazor? — t28-lo-047",
+          "options": [
+            "Una ruta de navegación sin DOM.",
+            "Una migración de base de datos.",
+            "No se ejecutan durante el prerenderizado estático.",
+            "Una política de autorización."
+          ],
+          "correct": "C",
+          "explanation": "OnAfterRender y OnAfterRenderAsync no se ejecutan durante el prerenderizado estático.",
+          "citation": "After component render",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-048",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "En el diseño avanzado de componentes, «la primera llamada interactiva» plantea esta pregunta: ¿qué regla se aplica? (t28-lo-048)",
+          "options": [
+            "Una ruta de navegación sin DOM.",
+            "Una migración de base de datos.",
+            "Una política de autorización.",
+            "Comprobar firstRender."
+          ],
+          "correct": "D",
+          "explanation": "firstRender es true en la primera llamada posterior al renderizado interactivo del componente.",
+          "citation": "After component render",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-049",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Respecto a «una tarea de ciclo incompleta», selecciona el comportamiento respaldado por Microsoft Learn. Referencia t28-lo-049",
+          "options": [
+            "Volver a renderizar al completarse la tarea.",
+            "Una migración.",
+            "Una hoja CSS.",
+            "Una ruta HTTP."
+          ],
+          "correct": "A",
+          "explanation": "Cuando un método de ciclo de vida asíncrono devuelve una tarea incompleta, Blazor vuelve a renderizar al completarse.",
+          "citation": "An asynchronous handler involves multiple asynchronous phases",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-050",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Un revisor encuentra el asunto «el final de trabajo posterior». ¿Qué debe concluir según la guía oficial? [ t28-lo-050 ]",
+          "options": [
+            "Una ruta de navegación sin DOM.",
+            "Solicitar explícitamente el renderizado si resulta necesario.",
+            "Una migración de base de datos.",
+            "Una política de autorización."
+          ],
+          "correct": "B",
+          "explanation": "OnAfterRenderAsync no provoca automáticamente otro renderizado cuando termina su tarea.",
+          "citation": "After component render",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-051",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "La guía oficial analiza «la entrada de parámetros». ¿Cuál es la interpretación correcta para el componente? (objetivo t28-lo-051)",
+          "options": [
+            "Una regla CSS aislada.",
+            "Una operación SQL de mantenimiento.",
+            "Recibir un ParameterView en SetParametersAsync.",
+            "Una ruta de navegación."
+          ],
+          "correct": "C",
+          "explanation": "SetParametersAsync recibe un ParameterView con los parámetros suministrados al componente.",
+          "citation": "Base class lifecycle methods",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-052",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Al resolver el caso «la aplicación de parámetros», ¿qué conclusión coincide con la documentación de Blazor? — t28-lo-052",
+          "options": [
+            "Una regla CSS aislada.",
+            "Una operación SQL de mantenimiento.",
+            "Una ruta de navegación.",
+            "Usar SetParameterProperties."
+          ],
+          "correct": "D",
+          "explanation": "ParameterView.SetParameterProperties aplica los valores recibidos a las propiedades de parámetros.",
+          "citation": "Base class lifecycle methods",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-053",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "En el diseño avanzado de componentes, «asignación personalizada de parámetros» plantea esta pregunta: ¿qué regla se aplica? (t28-lo-053)",
+          "options": [
+            "Sobrescribir SetParametersAsync.",
+            "Una regla CSS aislada.",
+            "Una operación SQL de mantenimiento.",
+            "Una ruta de navegación."
+          ],
+          "correct": "A",
+          "explanation": "Una implementación personalizada de SetParametersAsync puede controlar cómo se asignan los parámetros.",
+          "citation": "Base class lifecycle methods",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-054",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Respecto a «la asignación normal», selecciona el comportamiento respaldado por Microsoft Learn. Referencia t28-lo-054",
+          "options": [
+            "Una regla CSS aislada.",
+            "Delegar en la implementación base cuando corresponda.",
+            "Una operación SQL de mantenimiento.",
+            "Una ruta de navegación."
+          ],
+          "correct": "B",
+          "explanation": "La implementación base de SetParametersAsync participa en la asignación normal de parámetros del componente.",
+          "citation": "Base class lifecycle methods",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-055",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "Un revisor encuentra el asunto «el orden de parámetros». ¿Qué debe concluir según la guía oficial? [ t28-lo-055 ]",
+          "options": [
+            "Una migración de base de datos.",
+            "Una hoja CSS global.",
+            "Ejecutarse después de la inicialización y al recibir parámetros.",
+            "Una operación de hosting."
+          ],
+          "correct": "C",
+          "explanation": "OnParametersSet se ejecuta después de la inicialización y cuando el componente recibe parámetros del padre.",
+          "citation": "After parameters are set (OnParametersSet{Async})",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-056",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "La guía oficial analiza «parámetros de tipo complejo». ¿Cuál es la interpretación correcta para el componente? (objetivo t28-lo-056)",
+          "options": [
+            "Una migración de base de datos.",
+            "Una hoja CSS global.",
+            "Una operación de hosting.",
+            "Procesarlos de nuevo en la renderización del padre."
+          ],
+          "correct": "D",
+          "explanation": "Los parámetros complejos pueden hacer que el componente considere que debe procesar parámetros en una nueva renderización.",
+          "citation": "After parameters are set (OnParametersSet{Async})",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-057",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "Al resolver el caso «liberación síncrona de recursos», ¿qué conclusión coincide con la documentación de Blazor? — t28-lo-057",
+          "options": [
+            "Implementar IDisposable.",
+            "Una ruta de navegación.",
+            "Una regla de CSS aislado.",
+            "Una consulta SQL de lectura."
+          ],
+          "correct": "A",
+          "explanation": "Un componente que libera recursos administrados puede implementar IDisposable.",
+          "citation": "Dispose pattern",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-058",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "En el diseño avanzado de componentes, «un contrato de liberación» plantea esta pregunta: ¿qué regla se aplica? (t28-lo-058)",
+          "options": [
+            "Una ruta de navegación.",
+            "Usar @implements IDisposable.",
+            "Una regla de CSS aislado.",
+            "Una consulta SQL de lectura."
+          ],
+          "correct": "B",
+          "explanation": "La directiva @implements IDisposable declara que el componente implementa ese contrato.",
+          "citation": "Dispose pattern",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-059",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "Respecto a «un error en un descendiente», selecciona el comportamiento respaldado por Microsoft Learn. Referencia t28-lo-059",
+          "options": [
+            "Una hoja de estilos global.",
+            "Una operación de base de datos.",
+            "Usar ErrorBoundary para mostrar el estado de error.",
+            "Una ruta de componente."
+          ],
+          "correct": "C",
+          "explanation": "ErrorBoundary muestra su estado de error cuando un descendiente produce una excepción capturable.",
+          "citation": "Handle errors",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-060",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "Un revisor encuentra el asunto «recuperar tras un error». ¿Qué debe concluir según la guía oficial? [ t28-lo-060 ]",
+          "options": [
+            "Una hoja de estilos global.",
+            "Una operación de base de datos.",
+            "Una ruta de componente.",
+            "Llamar a Recover."
+          ],
+          "correct": "D",
+          "explanation": "ErrorBoundary.Recover restablece el estado de error para intentar renderizar de nuevo.",
+          "citation": "Handle errors",
+          "source_id": "BLAZOR-10"
+        }
+      ]
+    }
+  ]
+}

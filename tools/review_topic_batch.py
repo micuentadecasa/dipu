@@ -81,15 +81,348 @@ EXPECTATIONS = {
     18: {
         1:("A","C# type system overview"),2:("A","C# type system: value types and reference types"),3:("A","Implicitly typed local variables"),4:("A","Generics in .NET"),5:("A","Selection statements"),6:("A","Methods, overview"),7:("A","Classes and objects"),8:("A","Generics in .NET"),9:("A","Iteration statements"),10:("A","Parameter passing"),11:("A","Inheritance in C#"),12:("A","Generics in .NET"),13:("A","Jump statements"),14:("A","Exception handling statements"),15:("A","Access modifiers"),16:("A","LINQ overview"),17:("A","Pattern matching overview"),18:("A","Exception handling statements"),19:("A","Methods and polymorphism"),20:("A","Generic constraints")
     },
+    19: {
+        1:("B","MVC pattern"),2:("C","What is a Controller?"),3:("A","Razor syntax"),4:("D","Grid system"),5:("B","MVC pattern"),6:("C","Defining Actions"),7:("A","Views in ASP.NET Core MVC"),8:("D","Grid system"),9:("A","Conventional routing; Attribute routing for REST APIs"),10:("C","What is a Layout"),11:("B","Razor syntax"),12:("D","How they work"),13:("A","Route templates"),14:("C","What is a Controller?"),15:("B","@model"),16:("D","Core concepts"),17:("A","Partial views"),18:("C","Specifying a Layout"),19:("B","Implicit Razor expressions"),20:("D","How it works")
+    },
+    20: {
+        1:("B","Entity Framework Core"),2:("C","The model"),3:("A","The DbContext lifetime"),4:("D","Migrations Overview"),5:("B","Creating and Configuring a Model"),6:("C","Including types in the model"),7:("A","Querying Data"),8:("B","Tracking queries"),9:("C","No-tracking queries"),10:("B","Approach 1: change tracking and SaveChanges"),11:("A","Entity states"),12:("D","How to track entities"),13:("B","DbContext in dependency injection for ASP.NET Core"),14:("C","Avoiding DbContext threading issues"),15:("A","Evolving your model"),16:("D","Approach 2: ExecuteUpdate and ExecuteDelete (bulk update)"),17:("B","Introduction to relationships"),18:("C","Identity resolution"),19:("A","Entity Framework Core tools reference"),20:("B","Asynchronous operation pitfalls")
+    },
+    21: {
+        1:("B","Standard query operators overview"),2:("C","Standard query operators overview"),3:("A","Projection operations"),4:("D","Filtering Data in C# with LINQ"),5:("B","Standard query operators overview"),6:("C","Standard query operators overview"),7:("A","Standard query operators overview"),8:("D","Grouping Data (C#)"),9:("B","Join operations in LINQ"),10:("C","Join operations in LINQ"),11:("A","Set operations (C#)"),12:("D","Quantifier operations in LINQ (C#)"),13:("B","Quantifier operations in LINQ (C#)"),14:("C","Partitioning data (C#)"),15:("A","Projection operations (C#)"),16:("D","Join operations in LINQ"),17:("B","Standard query operators overview"),18:("C","Standard query operators overview"),19:("A","Grouping Data (C#)"),20:("D","Standard query operators overview")
+    },
+    22: {
+        1:("B","Model Binding in ASP.NET Core"),2:("B","Model Binding in ASP.NET Core"),3:("C","Model Binding in ASP.NET Core"),4:("A","Model Binding in ASP.NET Core"),5:("B","Model Binding in ASP.NET Core"),6:("C","Model validation in ASP.NET Core MVC and Razor Pages"),7:("A","Model validation in ASP.NET Core MVC and Razor Pages"),8:("D","Model validation in ASP.NET Core MVC and Razor Pages"),9:("A","Model validation in ASP.NET Core MVC and Razor Pages"),10:("B","Model validation in ASP.NET Core MVC and Razor Pages"),11:("A","Understand entity states"),12:("C","Understand entity states"),13:("A","Use recommended HttpPost Edit code: Read and update"),14:("B","Protect against overposting"),15:("B","Handle transactions"),16:("A","Asynchronous Programming - EF Core"),17:("B","Asynchronous Programming - EF Core"),18:("B","Asynchronous Programming - EF Core"),19:("B","Model state"),20:("A","Protect against overposting")
+    },
+    23: {
+        1:("A","Overview of ASP.NET Core Authentication; Introduction to authorization in ASP.NET Core"),2:("B","Claim-based authorization in ASP.NET Core"),3:("C","Overview of ASP.NET Core Authentication"),4:("B","Introduction to authorization in ASP.NET Core"),5:("C","Claim-based authorization in ASP.NET Core"),6:("A","Claim-based authorization in ASP.NET Core"),7:("A","Claim-based authorization in ASP.NET Core"),8:("B","Policy-based authorization in ASP.NET Core"),9:("A","Role-based authorization in ASP.NET Core"),10:("B","Role-based authorization in ASP.NET Core"),11:("A","Role-based authorization in ASP.NET Core"),12:("B","Role-based authorization in ASP.NET Core"),13:("A","Filters in ASP.NET Core"),14:("B","Filters in ASP.NET Core"),15:("A","Filters in ASP.NET Core"),16:("A","Filters in ASP.NET Core"),17:("B","Introduction to authorization in ASP.NET Core"),18:("A","Introduction to authorization in ASP.NET Core"),19:("B","Claim-based authorization in ASP.NET Core"),20:("A","Policy-based authorization in ASP.NET Core")
+    },
+    24: {
+        1:("A","Create web APIs with ASP.NET Core"),2:("B","Create web APIs with ASP.NET Core"),3:("B","Create web APIs with ASP.NET Core — Attribute routing requirement"),4:("A","Create web APIs with ASP.NET Core — Automatic HTTP 400 responses"),5:("A","Create web APIs with ASP.NET Core — Binding source parameter inference"),6:("A","Create web APIs with ASP.NET Core — Binding source parameter inference"),7:("A","Create web APIs with ASP.NET Core — Binding source parameter inference"),8:("A","Create web APIs with ASP.NET Core — Formatters"),9:("A","Create web APIs with ASP.NET Core — Content negotiation"),10:("A","Create web APIs with ASP.NET Core — Formatters"),11:("A","Create web APIs with ASP.NET Core — Controller action return types"),12:("A","Create web APIs with ASP.NET Core — Controller action return types"),13:("A","Controller action return types in ASP.NET Core web API"),14:("A","Create web APIs with ASP.NET Core — Automatic HTTP 400 responses"),15:("A","Routing to controller actions in ASP.NET Core"),16:("A","ASP.NET Core web API documentation with Swagger / OpenAPI"),17:("A","Create web APIs with ASP.NET Core — Formatters"),18:("A","Controller action return types in ASP.NET Core web API"),19:("A","Create web APIs with ASP.NET Core — Binding source parameter inference"),20:("A","Create web APIs with ASP.NET Core — Automatic HTTP 400 responses; Controller action return types")
+    },
 }
 
 
+LOT_EXPECTATIONS = {
+    (20, 2): {
+        1:("B","The model"),2:("B","The model"),3:("A","The model"),4:("D","Migrations Overview"),5:("B","Grouping configuration"),6:("C","Use fluent API to configure a model"),7:("A","Use data annotations to configure a model"),8:("B","Built-in conventions"),9:("B","Including types in the model"),10:("C","Excluding from migrations"),11:("A","Querying Data"),12:("B","Querying Data"),13:("A","Querying Data"),14:("C","Filtering"),15:("C","Tracking and custom projections"),16:("D","Tracking vs. No-Tracking Queries"),17:("B","Tracking queries"),18:("C","No-tracking queries"),19:("A","Identity resolution"),20:("D","Tracking vs. No-Tracking Queries")
+    },
+    (20, 3): {
+        1:("B","Change Tracking in EF Core"),2:("A","Entity states"),3:("A","How to track entities"),4:("D","How to track entities"),5:("A","How to track entities"),6:("B","How to track entities"),7:("C","Approach 1: change tracking and SaveChanges"),8:("D","Approach 2: ExecuteUpdate and ExecuteDelete (bulk update)"),9:("A","Approach 2: ExecuteUpdate and ExecuteDelete (bulk update)"),10:("B","Approach 2: ExecuteUpdate and ExecuteDelete (bulk update)"),11:("A","Introduction to relationships"),12:("B","Introduction to relationships"),13:("C","Introduction to relationships"),14:("B","Introduction to relationships"),15:("C","Introduction to relationships"),16:("B","Introduction to relationships"),17:("A","Introduction to relationships"),18:("A","Including types in the model"),19:("C","Evolving your model"),20:("B","Migrations Overview")
+    },
+    (20, 4): {
+        1:("A","Create your first migration"),2:("C","Create your database and schema"),3:("A","Migrations Overview"),4:("B","Entity Framework Core tools reference"),5:("B","Entity Framework Core tools reference"),6:("C","Entity Framework Core tools reference"),7:("A","Avoiding DbContext threading issues"),8:("B","Asynchronous operation pitfalls"),9:("C","DbContext in dependency injection for ASP.NET Core"),10:("A","Use a DbContext factory"),11:("A","Querying Data"),12:("B","Querying Data"),13:("C","No-tracking queries"),14:("B","Identity resolution"),15:("A","Tracking and custom projections"),16:("B","Evolving your model"),17:("C","Migrations Overview"),18:("D","Creating and Configuring a Model"),19:("A","Excluding from migrations"),20:("B","Migrations Overview")
+    },
+    (20, 5): {
+        1:("B","Creating and Configuring a Model"),2:("A","Creating and Configuring a Model"),3:("B","Creating and Configuring a Model"),4:("A","Entity Types"),5:("A","Table name; Table schema"),6:("A","View mapping"),7:("A","Including types in the model"),8:("B","Creating and Configuring a Model"),9:("A","Loading a single entity"),10:("A","Filtering"),11:("A","Tracking vs. No-Tracking Queries"),12:("A","Configuring the default tracking behavior"),13:("A","Tracking vs. No-Tracking Queries"),14:("A","Change Tracking in EF Core"),15:("A","The DbContext lifetime"),16:("A","Approach 2: ExecuteUpdate and ExecuteDelete (bulk update)"),17:("A","Evolving your model"),18:("A","Entity Framework Core tools reference"),19:("A","Avoiding DbContext threading issues"),20:("A","The DbContext lifetime; Asynchronous operation pitfalls; Approach 1: change tracking and SaveChanges")
+    },
+    (24, 2): {
+        1:("A","Create web APIs with ASP.NET Core — Controller action return types"),2:("B","Create web APIs with ASP.NET Core"),3:("C","Create web APIs with ASP.NET Core"),4:("D","Routing to controller actions in ASP.NET Core"),5:("A","Routing to controller actions in ASP.NET Core"),6:("B","Routing to controller actions in ASP.NET Core"),7:("C","Routing to controller actions in ASP.NET Core"),8:("D","Routing to controller actions in ASP.NET Core"),9:("A","Routing to controller actions in ASP.NET Core"),10:("B","Routing to controller actions in ASP.NET Core"),11:("C","Routing to controller actions in ASP.NET Core"),12:("D","Create web APIs with ASP.NET Core — Binding source parameter inference"),13:("A","Create web APIs with ASP.NET Core — Attribute routing requirement"),14:("B","Routing to controller actions in ASP.NET Core"),15:("C","Routing to controller actions in ASP.NET Core"),16:("D","Create web APIs with ASP.NET Core — Controller action return types"),17:("A","Create web APIs with ASP.NET Core — Formatters"),18:("B","Create web APIs with ASP.NET Core — Formatters"),19:("C","ASP.NET Core web API documentation with Swagger / OpenAPI"),20:("D","ASP.NET Core web API documentation with Swagger / OpenAPI")
+    },
+    (24, 3): {
+        1:("A","Create web APIs with ASP.NET Core — Binding source parameter inference"),2:("B","Create web APIs with ASP.NET Core — Binding source parameter inference"),3:("C","Create web APIs with ASP.NET Core — Binding source parameter inference"),4:("D","Create web APIs with ASP.NET Core — Binding source parameter inference"),5:("A","Create web APIs with ASP.NET Core — Binding source parameter inference"),6:("B","Create web APIs with ASP.NET Core — Binding source parameter inference"),7:("C","Create web APIs with ASP.NET Core — Binding source parameter inference"),8:("D","Create web APIs with ASP.NET Core — Binding source parameter inference"),9:("A","Create web APIs with ASP.NET Core — Binding source parameter inference"),10:("B","Create web APIs with ASP.NET Core — Binding source parameter inference"),11:("C","Create web APIs with ASP.NET Core — Formatters"),12:("D","Create web APIs with ASP.NET Core — Binding source parameter inference"),13:("A","Create web APIs with ASP.NET Core — Content negotiation"),14:("B","Create web APIs with ASP.NET Core — Content negotiation"),15:("C","Create web APIs with ASP.NET Core — Formatters"),16:("D","Create web APIs with ASP.NET Core — Content negotiation"),17:("A","Create web APIs with ASP.NET Core — Formatters"),18:("B","Create web APIs with ASP.NET Core — Formatters"),19:("C","Custom formatters in ASP.NET Core Web API"),20:("D","Format response data in ASP.NET Core Web API")
+    },
+    (24, 4): {
+        1:("A","Create web APIs with ASP.NET Core — Automatic HTTP 400 responses"),2:("B","Create web APIs with ASP.NET Core — Automatic HTTP 400 responses"),3:("C","Handle errors in ASP.NET Core APIs"),4:("D","Create web APIs with ASP.NET Core — Automatic HTTP 400 responses"),5:("A","Create web APIs with ASP.NET Core — Automatic HTTP 400 responses"),6:("B","Create web APIs with ASP.NET Core — Automatic HTTP 400 responses"),7:("C","Create web APIs with ASP.NET Core — Automatic HTTP 400 responses"),8:("D","Create web APIs with ASP.NET Core — Binding source parameter inference"),9:("A","Create web APIs with ASP.NET Core — Automatic HTTP 400 responses"),10:("B","Controller action return types in ASP.NET Core web API"),11:("C","Controller action return types in ASP.NET Core web API"),12:("D","Controller action return types in ASP.NET Core web API"),13:("A","Controller action return types in ASP.NET Core web API"),14:("B","Create web APIs with ASP.NET Core — Controller action return types"),15:("C","Create web APIs with ASP.NET Core — Controller action return types"),16:("D","Create web APIs with ASP.NET Core — Controller action return types"),17:("A","Create web APIs with ASP.NET Core — Controller action return types"),18:("B","Create web APIs with ASP.NET Core — Controller action return types"),19:("C","Create web APIs with ASP.NET Core — Controller action return types"),20:("D","Create web APIs with ASP.NET Core — Controller action return types")
+    },
+    (24, 5): {
+        1:("A","Create web APIs with ASP.NET Core — Controller action return types"),2:("B","Create web APIs with ASP.NET Core — Controller action return types"),3:("C","Create web APIs with ASP.NET Core — Controller action return types"),4:("D","ASP.NET Core web API documentation with Swagger / OpenAPI"),5:("A","ASP.NET Core web API documentation with Swagger / OpenAPI"),6:("B","ASP.NET Core web API documentation with Swagger / OpenAPI"),7:("C","ASP.NET Core web API documentation with Swagger / OpenAPI"),8:("D","ASP.NET Core web API documentation with Swagger / OpenAPI"),9:("A","Create web APIs with ASP.NET Core"),10:("B","Create web APIs with ASP.NET Core"),11:("C","Create web APIs with ASP.NET Core"),12:("D","Create web APIs with ASP.NET Core — Attribute routing requirement"),13:("A","Routing to controller actions in ASP.NET Core"),14:("B","Routing to controller actions in ASP.NET Core"),15:("C","Routing to controller actions in ASP.NET Core"),16:("D","Handle errors in ASP.NET Core APIs"),17:("A","Create web APIs with ASP.NET Core — Content negotiation"),18:("B","Create web APIs with ASP.NET Core — Controller action return types"),19:("C","ASP.NET Core web API documentation with Swagger / OpenAPI"),20:("D","Controller action return types in ASP.NET Core web API")
+    },
+    (23, 2): {
+        1:("A","Overview of ASP.NET Core Authentication"),2:("B","Introduction to authorization in ASP.NET Core"),3:("C","Introduction to authorization in ASP.NET Core"),4:("D","Overview of ASP.NET Core Authentication"),5:("A","Overview of ASP.NET Core Authentication"),6:("B","Overview of ASP.NET Core Authentication"),7:("C","Overview of ASP.NET Core Authentication"),8:("D","Overview of ASP.NET Core Authentication"),9:("A","Overview of ASP.NET Core Authentication"),10:("B","Overview of ASP.NET Core Authentication"),11:("C","Claim-based authorization in ASP.NET Core"),12:("D","Claim-based authorization in ASP.NET Core"),13:("A","Claim-based authorization in ASP.NET Core"),14:("B","Role-based authorization in ASP.NET Core"),15:("C","Claim-based authorization in ASP.NET Core"),16:("D","Claim-based authorization in ASP.NET Core"),17:("A","Claim-based authorization in ASP.NET Core"),18:("B","Claim-based authorization in ASP.NET Core"),19:("C","Overview of ASP.NET Core Authentication"),20:("D","Introduction to authorization in ASP.NET Core")
+    },
+    (23, 3): {
+        1:("A","Policy-based authorization in ASP.NET Core"),2:("B","Policy-based authorization in ASP.NET Core"),3:("C","Claim-based authorization in ASP.NET Core"),4:("D","Policy-based authorization in ASP.NET Core"),5:("A","Policy-based authorization in ASP.NET Core"),6:("B","Policy-based authorization in ASP.NET Core"),7:("C","Policy-based authorization in ASP.NET Core"),8:("D","Policy-based authorization in ASP.NET Core"),9:("A","Resource-based authorization in ASP.NET Core"),10:("B","Resource-based authorization in ASP.NET Core"),11:("C","Resource-based authorization in ASP.NET Core"),12:("D","Resource-based authorization in ASP.NET Core"),13:("A","Introduction to authorization in ASP.NET Core"),14:("B","Introduction to authorization in ASP.NET Core"),15:("C","Policy-based authorization in ASP.NET Core"),16:("D","Role-based authorization in ASP.NET Core"),17:("A","Role-based authorization in ASP.NET Core"),18:("B","Role-based authorization in ASP.NET Core"),19:("C","Role-based authorization in ASP.NET Core"),20:("D","Role-based authorization in ASP.NET Core")
+    },
+    (23, 4): {
+        1:("A","Filters in ASP.NET Core"),2:("B","Filters in ASP.NET Core"),3:("C","Filters in ASP.NET Core"),4:("D","Filters in ASP.NET Core"),5:("A","Filters in ASP.NET Core"),6:("B","Filters in ASP.NET Core"),7:("C","Filters in ASP.NET Core"),8:("D","Filters in ASP.NET Core"),9:("A","Filters in ASP.NET Core"),10:("B","Dependency injection in ASP.NET Core filters"),11:("C","Dependency injection in ASP.NET Core filters"),12:("D","Introduction to authorization in ASP.NET Core"),13:("A","Filters in ASP.NET Core"),14:("B","Filters in ASP.NET Core"),15:("C","Filters in ASP.NET Core"),16:("D","Filters in ASP.NET Core"),17:("A","Filters in ASP.NET Core"),18:("B","Filters in ASP.NET Core"),19:("C","Filters in ASP.NET Core"),20:("D","Policy-based authorization in ASP.NET Core")
+    },
+    (23, 5): {
+        1:("A","Policy-based authorization in ASP.NET Core"),2:("B","Policy-based authorization in ASP.NET Core"),3:("C","Claim-based authorization in ASP.NET Core"),4:("D","Policy-based authorization in ASP.NET Core"),5:("A","Resource-based authorization in ASP.NET Core"),6:("B","Resource-based authorization in ASP.NET Core"),7:("C","Introduction to authorization in ASP.NET Core"),8:("D","Introduction to authorization in ASP.NET Core"),9:("A","Introduction to authorization in ASP.NET Core"),10:("B","Filters in ASP.NET Core"),11:("C","Filters in ASP.NET Core"),12:("D","Filters in ASP.NET Core"),13:("A","Filters in ASP.NET Core"),14:("B","Filters in ASP.NET Core"),15:("C","Filters in ASP.NET Core"),16:("D","Filters in ASP.NET Core"),17:("A","Dependency injection in ASP.NET Core filters"),18:("B","Filters in ASP.NET Core"),19:("C","Introduction to authorization in ASP.NET Core"),20:("D","Policy-based authorization in ASP.NET Core")
+    },
+    (25, 1): {
+        1:("A","OData Version 4.01 — Part 1: Protocol, Introduction"),2:("B","OData Version 4.01 — Part 1: Protocol, Metadata Service"),3:("C","OData Version 4.01 — Part 1: Protocol, Service Root URL"),4:("D","OData Version 4.01 — Part 1: Protocol, Metadata Service"),5:("A","OData Version 4.01 — Part 1: Protocol, Entity Data Model"),6:("B","OData Version 4.01 — Part 1: Protocol, Entity Sets"),7:("C","OData Version 4.01 — Part 1: Protocol, Singletons"),8:("D","OData Version 4.01 — Part 1: Protocol, Complex Types"),9:("A","OData Version 4.01 — Part 1: Protocol, Navigation Properties"),10:("B","OData Version 4.01 — Part 1: Protocol, Entity Keys"),11:("C","OData Version 4.01 — Part 1: Protocol, Entity Container"),12:("D","OData Version 4.01 — Part 1: Protocol, Primitive Properties"),13:("A","OData Version 4.01 — Part 1: Protocol, Collection-Valued Properties"),14:("B","OData Version 4.01 — Part 1: Protocol, Entity Type Inheritance"),15:("C","OData Version 4.01 — Part 1: Protocol, Navigation Properties"),16:("D","OData Version 4.01 — Part 1: Protocol, Resource Path"),17:("A","OData Version 4.01 — Part 1: Protocol, Key Predicates"),18:("B","OData Version 4.01 — Part 1: Protocol, Resource Path"),19:("C","OData Version 4.01 — Part 1: Protocol, Resource Path"),20:("D","OData Version 4.01 — Part 1: Protocol, Resource Path")
+    },
+    (25, 2): {
+        1:("A","OData Version 4.01 — Part 1: Protocol, System Query Options"),2:("B","OData Version 4.01 — Part 1: Protocol, Filter System Query Option"),3:("C","OData Version 4.01 — Part 1: Protocol, Select System Query Option"),4:("D","OData Version 4.01 — Part 1: Protocol, Expand System Query Option"),5:("A","OData Version 4.01 — Part 1: Protocol, OrderBy System Query Option"),6:("B","OData Version 4.01 — Part 1: Protocol, Top System Query Option"),7:("C","OData Version 4.01 — Part 1: Protocol, Skip System Query Option"),8:("D","OData Version 4.01 — Part 1: Protocol, Count System Query Option"),9:("A","OData Version 4.01 — Part 1: Protocol, Search System Query Option"),10:("B","OData Version 4.01 — Part 1: Protocol, Format System Query Option"),11:("C","OData Version 4.01 — Part 1: Protocol, System Query Options"),12:("D","OData Version 4.01 — Part 1: Protocol, Filter System Query Option"),13:("A","OData Version 4.01 — Part 1: Protocol, Filter System Query Option"),14:("B","OData Version 4.01 — Part 1: Protocol, Filter System Query Option"),15:("C","OData Version 4.01 — Part 1: Protocol, OrderBy System Query Option"),16:("D","OData Version 4.01 — Part 1: Protocol, Top and Skip System Query Options"),17:("A","OData Version 4.01 — Part 1: Protocol, Expand System Query Option"),18:("B","OData Version 4.01 — Part 1: Protocol, Select and Expand System Query Options"),19:("C","OData Version 4.01 — Part 1: Protocol, System Query Options"),20:("D","OData Version 4.01 — Part 1: Protocol, Protocol Versioning and Conformance")
+    },
+    (25, 3): {
+        1:("A","OData Version 4.01 — Part 1: Protocol, GET"),2:("B","OData Version 4.01 — Part 1: Protocol, Create a New Entity"),3:("C","OData Version 4.01 — Part 1: Protocol, Update an Entity"),4:("D","OData Version 4.01 — Part 1: Protocol, Update an Entity"),5:("A","OData Version 4.01 — Part 1: Protocol, Delete an Entity"),6:("B","OData Version 4.01 — Part 1: Protocol, Create a New Entity"),7:("C","OData Version 4.01 — Part 1: Protocol, Update an Entity"),8:("D","OData Version 4.01 — Part 1: Protocol, Delete an Entity"),9:("A","OData Version 4.01 — Part 1: Protocol, Requesting an Individual Entity"),10:("B","OData Version 4.01 — Part 1: Protocol, Create a New Entity"),11:("C","OData Version 4.01 — Part 1: Protocol, Optimistic Concurrency"),12:("D","OData Version 4.01 — Part 1: Protocol, Optimistic Concurrency"),13:("A","OData Version 4.01 — Part 1: Protocol, Optimistic Concurrency"),14:("B","OData Version 4.01 — Part 1: Protocol, Optimistic Concurrency"),15:("C","OData Version 4.01 — Part 1: Protocol, Optimistic Concurrency"),16:("D","OData Version 4.01 — Part 1: Protocol, Server-Driven Paging"),17:("A","OData Version 4.01 — Part 1: Protocol, Server-Driven Paging"),18:("B","OData Version 4.01 — Part 1: Protocol, Server-Driven Paging"),19:("C","OData Version 4.01 — Part 1: Protocol, Server-Driven Paging"),20:("D","OData Version 4.01 — Part 1: Protocol, Delta Responses")
+    },
+    (25, 4): {
+        1:("A","OData Version 4.01 — Part 1: Protocol, Delta Responses"),2:("B","OData Version 4.01 — Part 1: Protocol, Batch Requests"),3:("C","OData Version 4.01 — Part 1: Protocol, Change Sets"),4:("D","OData Version 4.01 — Part 1: Protocol, Change Sets"),5:("A","OData Version 4.01 — Part 1: Protocol, Batch Requests"),6:("B","OData Version 4.01 — Part 1: Protocol, Functions"),7:("C","OData Version 4.01 — Part 1: Protocol, Actions"),8:("D","OData Version 4.01 — Part 1: Protocol, Bound Functions"),9:("A","OData Version 4.01 — Part 1: Protocol, Bound Actions"),10:("B","OData Version 4.01 — Part 1: Protocol, Unbound Operations"),11:("C","OData Version 4.01 — Part 1: Protocol, Function Parameters"),12:("D","OData Version 4.01 — Part 1: Protocol, Actions"),13:("A","OData Version 4.01 — Part 1: Protocol, Bound Functions"),14:("B","OData Version 4.01 — Part 1: Protocol, Metadata Service"),15:("C","OData Version 4.01 — Part 1: Protocol, Annotations"),16:("D","OData Version 4.01 — Part 1: Protocol, Capabilities"),17:("A","OData Version 4.01 — Part 1: Protocol, Metadata Service"),18:("B","OData Version 4.01 — Part 1: Protocol, Versioning"),19:("C","OData Version 4.01 — Part 1: Protocol, Protocol Versioning and Conformance"),20:("D","OData Version 4.01 — Part 1: Protocol, HTTP Methods")
+    },
+    (25, 5): {
+        1:("A","OData Version 4.01 — Part 1: Protocol, Security Considerations"),2:("B","OData Version 4.01 — Part 1: Protocol, Security Considerations"),3:("C","OData Version 4.01 — Part 1: Protocol, Protocol Versioning and Conformance"),4:("D","OData Version 4.01 — Part 1: Protocol, Security Considerations"),5:("A","OData Version 4.01 — Part 1: Protocol, URL Conventions"),6:("B","OData Version 4.01 — Part 1: Protocol, URL Conventions"),7:("C","OData Version 4.01 — Part 1: Protocol, Key Predicates"),8:("D","OData Version 4.01 — Part 1: Protocol, Entity Data Model"),9:("A","OData Version 4.01 — Part 1: Protocol, Resource Path"),10:("B","OData Version 4.01 — Part 1: Protocol, Entity Data Model"),11:("C","OData Version 4.01 — Part 1: Protocol, Format System Query Option"),12:("D","OData Version 4.01 — Part 1: Protocol, URL Conventions"),13:("A","OData Version 4.01 — Part 1: Protocol, Server-Driven Paging"),14:("B","OData Version 4.01 — Part 1: Protocol, Optimistic Concurrency"),15:("C","OData Version 4.01 — Part 1: Protocol, Security Considerations"),16:("D","OData Version 4.01 — Part 1: Protocol, Response Payloads"),17:("A","OData Version 4.01 — Part 1: Protocol, Response Payloads"),18:("B","OData Version 4.01 — Part 1: Protocol, Error Handling"),19:("C","OData Version 4.01 — Part 1: Protocol, Error Handling"),20:("D","OData Version 4.01 — Part 1: Protocol, Metadata Service")
+    },
+    (26, 1): {
+        1:("A","ASP.NET Core Blazor hosting models"),2:("B","ASP.NET Core Blazor hosting models"),3:("C","ASP.NET Core Blazor hosting models"),4:("D","ASP.NET Core Blazor hosting models"),5:("A","ASP.NET Core Blazor hosting models"),6:("B","ASP.NET Core Blazor hosting models"),7:("C","ASP.NET Core Blazor hosting models"),8:("D","ASP.NET Core Blazor hosting models"),9:("A","ASP.NET Core Blazor hosting models"),10:("B","ASP.NET Core Blazor hosting models"),11:("C","ASP.NET Core Blazor hosting models"),12:("D","ASP.NET Core Blazor hosting models"),13:("A","ASP.NET Core Blazor hosting models"),14:("B","ASP.NET Core Blazor hosting models"),15:("C","ASP.NET Core Blazor hosting models"),16:("D","ASP.NET Core Blazor hosting models"),17:("A","ASP.NET Core Blazor hosting models"),18:("B","ASP.NET Core Blazor hosting models"),19:("C","ASP.NET Core Blazor hosting models"),20:("D","ASP.NET Core Blazor hosting models")
+    },
+    (26, 2): {
+        1:("A","ASP.NET Core Blazor hosting models"),2:("B","ASP.NET Core Blazor hosting models"),3:("C","ASP.NET Core Blazor hosting models"),4:("D","ASP.NET Core Blazor hosting models"),5:("A","ASP.NET Core Blazor hosting models"),6:("B","ASP.NET Core Blazor hosting models"),7:("C","ASP.NET Core Blazor hosting models"),8:("D","ASP.NET Core Blazor render modes"),9:("A","ASP.NET Core Blazor render modes"),10:("B","ASP.NET Core Blazor render modes"),11:("C","ASP.NET Core Blazor render modes"),12:("D","ASP.NET Core Blazor render modes"),13:("A","ASP.NET Core Blazor render modes"),14:("B","ASP.NET Core Blazor render modes"),15:("C","ASP.NET Core Blazor render modes"),16:("D","ASP.NET Core Blazor render modes"),17:("A","ASP.NET Core Blazor render modes"),18:("B","ASP.NET Core Blazor render modes"),19:("C","ASP.NET Core Blazor render modes"),20:("D","ASP.NET Core Blazor render modes")
+    },
+    (26, 3): {
+        1:("A","ASP.NET Core Blazor render modes"),2:("B","ASP.NET Core Blazor fundamentals overview"),3:("C","ASP.NET Core Blazor render modes"),4:("D","ASP.NET Core Blazor render modes"),5:("A","ASP.NET Core Blazor project structure"),6:("B","ASP.NET Core Blazor project structure"),7:("C","ASP.NET Core Blazor project structure"),8:("D","ASP.NET Core Blazor project structure"),9:("A","ASP.NET Core Blazor project structure"),10:("B","ASP.NET Core Blazor project structure"),11:("C","ASP.NET Core Blazor project structure"),12:("D","ASP.NET Core Blazor project structure"),13:("A","ASP.NET Core Blazor routing"),14:("B","ASP.NET Core Blazor project structure"),15:("C","ASP.NET Core Blazor project structure"),16:("D","ASP.NET Core Blazor project structure"),17:("A","ASP.NET Core Blazor project structure"),18:("B","ASP.NET Core Blazor render modes"),19:("C","ASP.NET Core Blazor fundamentals overview"),20:("D","ASP.NET Core Blazor deployment")
+    },
+    (26, 4): {
+        1:("A","ASP.NET Core Blazor hosting models"),2:("B","ASP.NET Core Blazor hosting models"),3:("C","ASP.NET Core Blazor deployment"),4:("D","ASP.NET Core Blazor deployment"),5:("A","ASP.NET Core Blazor hosting models"),6:("B","ASP.NET Core Blazor hosting models"),7:("C","ASP.NET Core Blazor hosting models"),8:("D","ASP.NET Core Blazor hosting models"),9:("A","ASP.NET Core Blazor hosting models"),10:("B","ASP.NET Core Blazor hosting models"),11:("C","ASP.NET Core Blazor hosting models"),12:("D","ASP.NET Core Blazor hosting models"),13:("A","ASP.NET Core Blazor hosting models"),14:("B","ASP.NET Core Blazor hosting models"),15:("C","ASP.NET Core Blazor render modes"),16:("D","ASP.NET Core Blazor render modes"),17:("A","ASP.NET Core Blazor render modes"),18:("B","ASP.NET Core Blazor render modes"),19:("C","ASP.NET Core Blazor render modes"),20:("D","ASP.NET Core Blazor render modes")
+    },
+    (26, 5): {
+        1:("A","ASP.NET Core Blazor render modes"),2:("B","ASP.NET Core Blazor render modes"),3:("C","ASP.NET Core Blazor fundamentals overview"),4:("D","ASP.NET Core Blazor project structure"),5:("A","ASP.NET Core Blazor hosting models"),6:("B","ASP.NET Core Blazor hosting models"),7:("C","ASP.NET Core Blazor hosting models"),8:("D","ASP.NET Core Blazor hosting models"),9:("A","ASP.NET Core Blazor deployment"),10:("B","ASP.NET Core Blazor deployment"),11:("C","ASP.NET Core Blazor hosting models"),12:("D","ASP.NET Core Blazor hosting models"),13:("A","ASP.NET Core Blazor hosting models"),14:("B","ASP.NET Core Blazor render modes"),15:("C","ASP.NET Core Blazor fundamentals overview"),16:("D","ASP.NET Core Blazor deployment"),17:("A","ASP.NET Core Blazor deployment"),18:("B","ASP.NET Core Blazor hosting models"),19:("C","ASP.NET Core Blazor render modes"),20:("D","ASP.NET Core Blazor hosting models")
+    },
+    (27, 1): {
+        1:("A","ASP.NET Core Blazor components"),2:("B","ASP.NET Core Blazor components"),3:("C","ASP.NET Core Blazor components"),4:("D","ASP.NET Core Blazor rendering"),5:("A","ASP.NET Core Blazor components"),6:("B","ASP.NET Core Blazor components"),7:("C","ASP.NET Core Blazor components"),8:("D","ASP.NET Core Blazor components"),9:("A","ASP.NET Core Blazor templated components"),10:("B","ASP.NET Core Blazor templated components"),11:("C","ASP.NET Core Razor component lifecycle"),12:("D","ASP.NET Core Razor component lifecycle"),13:("A","ASP.NET Core Razor component lifecycle"),14:("B","ASP.NET Core Razor component lifecycle"),15:("C","ASP.NET Core Razor component lifecycle"),16:("D","ASP.NET Core Razor component lifecycle"),17:("A","ASP.NET Core Razor component lifecycle"),18:("B","ASP.NET Core Razor component lifecycle"),19:("C","ASP.NET Core Blazor rendering"),20:("D","ASP.NET Core Blazor event handling")
+    },
+    (27, 2): {
+        1:("A","ASP.NET Core Blazor event handling"),2:("B","ASP.NET Core Blazor event handling"),3:("C","ASP.NET Core Blazor event handling"),4:("D","ASP.NET Core Blazor event handling"),5:("A","ASP.NET Core Blazor event handling"),6:("B","ASP.NET Core Blazor event handling"),7:("C","ASP.NET Core Blazor event handling"),8:("D","ASP.NET Core Blazor data binding"),9:("A","ASP.NET Core Blazor data binding"),10:("B","ASP.NET Core Blazor data binding"),11:("C","ASP.NET Core Blazor data binding"),12:("D","ASP.NET Core Blazor data binding"),13:("A","ASP.NET Core Blazor data binding"),14:("B","ASP.NET Core Blazor data binding"),15:("C","ASP.NET Core Blazor data binding"),16:("D","ASP.NET Core Blazor data binding"),17:("A","ASP.NET Core Blazor data binding"),18:("B","ASP.NET Core Blazor data binding"),19:("C","ASP.NET Core Blazor cascading values and parameters"),20:("D","ASP.NET Core Blazor cascading values and parameters")
+    },
+    (27, 3): {
+        1:("A","ASP.NET Core Blazor cascading values and parameters"),2:("B","ASP.NET Core Blazor cascading values and parameters"),3:("C","ASP.NET Core Blazor cascading values and parameters"),4:("D","ASP.NET Core Blazor cascading values and parameters"),5:("A","ASP.NET Core Blazor cascading values and parameters"),6:("B","ASP.NET Core Blazor cascading values and parameters"),7:("C","ASP.NET Core Blazor cascading values and parameters"),8:("D","ASP.NET Core Blazor cascading values and parameters"),9:("A","ASP.NET Core Blazor templated components"),10:("B","ASP.NET Core Blazor templated components"),11:("C","ASP.NET Core Blazor templated components"),12:("D","ASP.NET Core Blazor templated components"),13:("A","ASP.NET Core Blazor templated components"),14:("B","ASP.NET Core Blazor templated components"),15:("C","ASP.NET Core Blazor templated components"),16:("D","ASP.NET Core Blazor templated components"),17:("A","ASP.NET Core Blazor event handling"),18:("B","ASP.NET Core Blazor event handling"),19:("C","ASP.NET Core Blazor components"),20:("D","ASP.NET Core Blazor components")
+    },
+    (27, 4): {
+        1:("A","ASP.NET Core Blazor components"),2:("B","ASP.NET Core Blazor JavaScript interoperability"),3:("C","ASP.NET Core Blazor event handling"),4:("D","ASP.NET Core Blazor event handling"),5:("A","ASP.NET Core Blazor event handling"),6:("B","ASP.NET Core Blazor event handling"),7:("C","ASP.NET Core Blazor event handling"),8:("D","ASP.NET Core Blazor event handling"),9:("A","ASP.NET Core Blazor event handling"),10:("B","ASP.NET Core Razor component lifecycle"),11:("C","ASP.NET Core Razor component lifecycle"),12:("D","ASP.NET Core Razor component lifecycle"),13:("A","ASP.NET Core Razor component lifecycle"),14:("B","ASP.NET Core Razor component lifecycle"),15:("C","ASP.NET Core Razor component lifecycle"),16:("D","ASP.NET Core Razor component lifecycle"),17:("A","ASP.NET Core Razor component lifecycle"),18:("B","ASP.NET Core Blazor rendering"),19:("C","ASP.NET Core Blazor rendering"),20:("D","ASP.NET Core Blazor rendering")
+    },
+    (27, 5): {
+        1:("A","ASP.NET Core Blazor rendering"),2:("B","ASP.NET Core Blazor components"),3:("C","ASP.NET Core Blazor data binding"),4:("D","ASP.NET Core Blazor components"),5:("A","ASP.NET Core Blazor components"),6:("B","ASP.NET Core Blazor components"),7:("C","ASP.NET Core Blazor components"),8:("D","ASP.NET Core Blazor components"),9:("A","ASP.NET Core Razor component lifecycle"),10:("B","ASP.NET Core Blazor cascading values and parameters"),11:("C","ASP.NET Core Blazor cascading values and parameters"),12:("D","ASP.NET Core Blazor templated components"),13:("A","ASP.NET Core Blazor data binding"),14:("B","ASP.NET Core Blazor event handling"),15:("C","ASP.NET Core Blazor rendering"),16:("D","ASP.NET Core Blazor components"),17:("A","ASP.NET Core Blazor data binding"),18:("B","ASP.NET Core Razor component lifecycle"),19:("C","ASP.NET Core Blazor components"),20:("D","ASP.NET Core Razor component lifecycle")
+    },
+}
+
+
+# Topic 28 expectations are maintained independently of candidate generation.
+LOT_EXPECTATIONS.update({
+    (28, 1): {
+        1:('A','CSS isolation'),
+        2:('B','CSS isolation'),
+        3:('C','Child component support'),
+        4:('D','Child component support'),
+        5:('A','CSS isolation bundling'),
+        6:('B','Razor class library (RCL) support'),
+        7:('C','CSS preprocessor support'),
+        8:('D','Customize scope identifier format'),
+        9:('A','Disable automatic bundling'),
+        10:('B','CSS isolation'),
+        11:('C','Component classes'),
+        12:('D','Specify a base class'),
+        13:('A','Templated components'),
+        14:('B','Apply an attribute'),
+        15:('C','Capture references to components'),
+        16:('D','Rendering conventions for Blazor'),
+        17:('A','Capture unmatched attributes'),
+        18:('B','Capture unmatched attributes'),
+        19:('C','Raw HTML'),
+        20:('D','Conditional HTML element attributes and DOM properties')
+    },
+    (28, 2): {
+        1:('A','Render fragments for reusable rendering logic'),
+        2:('B','Templated components'),
+        3:('C','Templated components'),
+        4:('D','Templated components'),
+        5:('A','Templated components'),
+        6:('B','Child content render fragments'),
+        7:('C','Child content render fragments'),
+        8:('D','Render fragments for reusable rendering logic'),
+        9:('A','Loop variables with component parameters and child content'),
+        10:('B','Templated components'),
+        11:('C','Razor components'),
+        12:('D','Razor components'),
+        13:('A','Razor components'),
+        14:('B','Razor components'),
+        15:('C','Capture references to components'),
+        16:('D','Capture references to components'),
+        17:('A','After component render'),
+        18:('B','Rendering conventions for Blazor'),
+        19:('C','Rendering conventions for Blazor'),
+        20:('D','Rendering conventions for Blazor')
+    },
+    (28, 3): {
+        1:('A','Control the rendering flow'),
+        2:('B','Control the rendering flow'),
+        3:('C','Control the rendering flow'),
+        4:('D','Receiving a call from something external to the Blazor rendering and event handling system'),
+        5:('A','Control the rendering flow'),
+        6:('B','After component render'),
+        7:('C','After component render'),
+        8:('D','After component render'),
+        9:('A','An asynchronous handler involves multiple asynchronous phases'),
+        10:('B','After component render'),
+        11:('C','Base class lifecycle methods'),
+        12:('D','Base class lifecycle methods'),
+        13:('A','Base class lifecycle methods'),
+        14:('B','Base class lifecycle methods'),
+        15:('C','After parameters are set (OnParametersSet{Async})'),
+        16:('D','After parameters are set (OnParametersSet{Async})'),
+        17:('A','Dispose pattern'),
+        18:('B','Dispose pattern'),
+        19:('C','Handle errors'),
+        20:('D','Handle errors')
+    },
+    (28, 4): {
+        1:('A','CSS isolation bundling'),
+        2:('B','CSS isolation bundling'),
+        3:('C','Child component support'),
+        4:('D','Child component support'),
+        5:('A','Child component support'),
+        6:('B','Child component support'),
+        7:('C','CSS isolation bundling'),
+        8:('D','CSS isolation bundling'),
+        9:('A','Razor class library (RCL) support'),
+        10:('B','CSS isolation configuration'),
+        11:('C','Customize scope identifier format'),
+        12:('D','Disable automatic bundling'),
+        13:('A','CSS preprocessor support'),
+        14:('B','Disable CSS isolation'),
+        15:('C','Enable CSS isolation'),
+        16:('D','Razor class library (RCL) support'),
+        17:('A','CSS isolation bundling'),
+        18:('B','CSS isolation'),
+        19:('C','CSS isolation bundling'),
+        20:('D','Base class lifecycle methods')
+    },
+    (28, 5): {
+        1:('A','Specify a base class'),
+        2:('B','Control the rendering flow'),
+        3:('C','After component render'),
+        4:('D','Dispose pattern'),
+        5:('A','Templated components'),
+        6:('B','Templated components'),
+        7:('C','Razor components'),
+        8:('D','Capture references to components'),
+        9:('A','Capture references to components'),
+        10:('B','Lifecycle events'),
+        11:('C','Component initialization'),
+        12:('D','After parameters are set (OnParametersSet{Async})'),
+        13:('A','After component render'),
+        14:('B','After component render'),
+        15:('C','Receiving a call from something external to the Blazor rendering and event handling system'),
+        16:('D','Handle errors'),
+        17:('A','Rendering conventions for Blazor'),
+        18:('B','Capture unmatched attributes'),
+        19:('C','CSS isolation configuration'),
+        20:('D','Handle errors')
+    }
+})
+
+# Topic 29 expectations are maintained independently of candidate generation.
+LOT_EXPECTATIONS.update({
+    (29, 1): {
+        1:('A','Input components and forms'),
+        2:('B','Input components and forms'),
+        3:('C','Input components and forms'),
+        4:('D','Handle form submission'),
+        5:('A','Handle form submission'),
+        6:('B','Handle form submission'),
+        7:('C','Handle form submission'),
+        8:('D','Input components and forms'),
+        9:('A','Input components and forms'),
+        10:('B','Input components and forms'),
+        11:('C','Input components and forms'),
+        12:('D','Input components and forms'),
+        13:('A','Input components and forms'),
+        14:('B','Input components and forms'),
+        15:('C','Input components and forms'),
+        16:('D','Input components and forms'),
+        17:('A','Input components and forms'),
+        18:('B','Handle form submission'),
+        19:('C','Input components and forms'),
+        20:('D','Clear a form or field')
+    },
+    (29, 2): {
+        1:('A','Input components and forms'),
+        2:('B','Control form submission'),
+        3:('C','Respond to validation state'),
+        4:('D','Respond to validation state'),
+        5:('A','Respond to validation state'),
+        6:('B','Respond to validation state'),
+        7:('C','Write model-based custom rules'),
+        8:('D','Write model-based custom rules'),
+        9:('A','Write model-based custom rules'),
+        10:('B','Respond to validation state'),
+        11:('C','Respond to validation state'),
+        12:('D','Respond to validation state'),
+        13:('A','Respond to validation state'),
+        14:('B','Display validation messages'),
+        15:('C','Display validation messages'),
+        16:('D','Respond to validation state'),
+        17:('A','When validation runs'),
+        18:('B','Respond to validation state'),
+        19:('C','Display validation messages'),
+        20:('D','Input components and forms')
+    },
+    (29, 3): {
+        1:('A','Validate with data annotations'),
+        2:('B','Validate with data annotations'),
+        3:('C','Validate with data annotations'),
+        4:('D','Validate with data annotations'),
+        5:('A','Validate with data annotations'),
+        6:('B','Validate with data annotations'),
+        7:('C','When validation runs'),
+        8:('D','Configure data annotations validation'),
+        9:('A','Validate nested object graphs'),
+        10:('B','Validate nested object graphs'),
+        11:('C','Write model-based custom rules'),
+        12:('D','Write model-based custom rules'),
+        13:('A','Write model-based custom rules'),
+        14:('B','Write model-based custom rules'),
+        15:('C','Write model-based custom rules'),
+        16:('D','Write model-based custom rules'),
+        17:('A','Write model-based custom rules'),
+        18:('B','Validate nested object graphs'),
+        19:('C','Control form submission'),
+        20:('D','Configure data annotations validation')
+    },
+    (29, 4): {
+        1:('A','Display validation messages'),
+        2:('B','Display validation messages'),
+        3:('C','Display validation messages'),
+        4:('D','Display validation messages'),
+        5:('A','Customize validation appearance'),
+        6:('B','Customize validation appearance'),
+        7:('C','Customize validation appearance'),
+        8:('D','Customize validation appearance'),
+        9:('A','Respond to validation state'),
+        10:('B','Display validation messages'),
+        11:('C','Display validation messages'),
+        12:('D','Display validation messages'),
+        13:('A','Customize validation appearance'),
+        14:('B','Customize validation appearance'),
+        15:('C','Respond to validation state'),
+        16:('D','Display validation messages'),
+        17:('A','Customize validation appearance'),
+        18:('B','Display validation messages'),
+        19:('C','Respond to validation state'),
+        20:('D','Control form submission')
+    },
+    (29, 5): {
+        1:('A','Antiforgery support'),
+        2:('B','Antiforgery support'),
+        3:('C','Antiforgery support'),
+        4:('D','Handle form submission'),
+        5:('A','Handle form submission'),
+        6:('B','Mitigate overposting attacks'),
+        7:('C','Mitigate overposting attacks'),
+        8:('D','Handle form submission'),
+        9:('A','Enhanced form handling'),
+        10:('B','Enhanced form handling'),
+        11:('C','Enhanced form handling'),
+        12:('D','Client-side validation requires a circuit'),
+        13:('A','Client-side validation in static SSR forms'),
+        14:('B','Unsupported validation features'),
+        15:('C','Enhanced form handling'),
+        16:('D','Antiforgery support'),
+        17:('A','Control form submission'),
+        18:('B','Mitigate overposting attacks'),
+        19:('C','Handle form submission'),
+        20:('D','Mitigate overposting attacks')
+    }
+})
+
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("topic_num", type=int, choices=tuple(range(2, 19)))
+    parser.add_argument("topic_num", type=int, choices=tuple(range(2, 41)))
+    parser.add_argument("--lot-num", type=int, default=1, choices=tuple(range(1, 6)))
     args = parser.parse_args()
-    lot_path = ROOT / "docs/question-bank/lots" / f"topic-{args.topic_num:02d}-lot-01.json"
-    checkpoint_path = ROOT / "docs/question-bank/checkpoints" / f"topic-{args.topic_num:02d}-lot-01.jsonl"
+    stem = f"topic-{args.topic_num:02d}-lot-{args.lot_num:02d}"
+    lot_path = ROOT / "docs/question-bank/lots" / f"{stem}.json"
+    checkpoint_path = ROOT / "docs/question-bank/checkpoints" / f"{stem}.jsonl"
     payload = json.loads(lot_path.read_text(encoding="utf-8"))
     if payload["state"] != "candidates_written":
         raise RuntimeError("review requires candidate state")
@@ -99,7 +432,11 @@ def main() -> int:
     decisions = []
     for candidate in payload["questions"]:
         objective_num = int(candidate["learning_objective_id"].rsplit("-", 1)[1])
-        expected = EXPECTATIONS[args.topic_num][objective_num]
+        question_num = objective_num - (args.lot_num - 1) * 20
+        expectations = LOT_EXPECTATIONS.get((args.topic_num, args.lot_num), EXPECTATIONS.get(args.topic_num))
+        if expectations is None:
+            raise RuntimeError(f"no review expectations for topic {args.topic_num}, lot {args.lot_num}")
+        expected = expectations[question_num]
         source = sources[candidate["sources"][0]["source_id"]]
         if candidate["correct"] != expected[0] or candidate["sources"][0]["citation"] != expected[1]:
             raise RuntimeError(f"independent review disagreement for {candidate['learning_objective_id']}")
@@ -122,14 +459,14 @@ def main() -> int:
         accepted.append(reviewed)
         decisions.append({"objective_id":candidate["learning_objective_id"],"stable_id":candidate["stable_id"],"answer":expected[0],"citation":expected[1],"source_tier":candidate["sources"][0]["tier"],"decision":"accepted","reviewed_at":DATE})
 
-    review_path = ROOT / "docs/question-bank/reviews" / f"topic-{args.topic_num:02d}-lot-01.json"
+    review_path = ROOT / "docs/question-bank/reviews" / f"{stem}.json"
     review_path.parent.mkdir(parents=True, exist_ok=True)
-    review_path.write_text(json.dumps({"review_version":"1.0","lot":f"topic-{args.topic_num:02d}-lot-01","reviewer":f"independent-source-review-{DATE}","source_tier_counts":{"official_primary":sum(x["source_tier"]=="official_primary" for x in decisions),"secondary_reputable":sum(x["source_tier"]=="secondary_reputable" for x in decisions)},"decisions":decisions},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    accepted_path = ROOT / "docs/question-bank/accepted" / f"topic-{args.topic_num:02d}-lot-01.json"
+    review_path.write_text(json.dumps({"review_version":"1.0","lot":stem,"reviewer":f"independent-source-review-{DATE}","source_tier_counts":{"official_primary":sum(x["source_tier"]=="official_primary" for x in decisions),"secondary_reputable":sum(x["source_tier"]=="secondary_reputable" for x in decisions)},"decisions":decisions},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    accepted_path = ROOT / "docs/question-bank/accepted" / f"{stem}.json"
     accepted_path.parent.mkdir(parents=True, exist_ok=True)
-    accepted_payload = {"lot_version":payload["lot_version"],"state":"reviewed","topic_num":args.topic_num,"lot_num":1,"revision":payload["revision"],"reviewed_at":DATE,"source_register_sha256":payload["source_register_sha256"],"objective_manifest_sha256":payload["objective_manifest_sha256"],"syllabus_sha256":payload["syllabus_sha256"],"counts":{"candidates":20,"accepted":len(accepted),"rejected":0,"quarantined":0},"review_audit":str(review_path.relative_to(ROOT)),"questions":accepted}
+    accepted_payload = {"lot_version":payload["lot_version"],"state":"reviewed","topic_num":args.topic_num,"lot_num":args.lot_num,"revision":payload["revision"],"reviewed_at":DATE,"source_register_sha256":payload["source_register_sha256"],"objective_manifest_sha256":payload["objective_manifest_sha256"],"syllabus_sha256":payload["syllabus_sha256"],"counts":{"candidates":20,"accepted":len(accepted),"rejected":0,"quarantined":0},"review_audit":str(review_path.relative_to(ROOT)),"questions":accepted}
     accepted_path.write_text(json.dumps(accepted_payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    checkpoint = {"schema_version":"1.0","syllabus_hash":payload["syllabus_sha256"],"source_register_hash":payload["source_register_sha256"],"topic_num":args.topic_num,"lot_num":1,"revision":payload["revision"],"stage":"reviewed","objective_ids":[x["learning_objective_id"] for x in accepted],"stable_ids":[x["stable_id"] for x in accepted],"counts":accepted_payload["counts"],"input_hash":file_sha256(lot_path),"output_hash":file_sha256(accepted_path),"last_import":{"status":"not_started","transaction":None}}
+    checkpoint = {"schema_version":"1.0","syllabus_hash":payload["syllabus_sha256"],"source_register_hash":payload["source_register_sha256"],"topic_num":args.topic_num,"lot_num":args.lot_num,"revision":payload["revision"],"stage":"reviewed","objective_ids":[x["learning_objective_id"] for x in accepted],"stable_ids":[x["stable_id"] for x in accepted],"counts":accepted_payload["counts"],"input_hash":file_sha256(lot_path),"output_hash":file_sha256(accepted_path),"last_import":{"status":"not_started","transaction":None}}
     appended=append_checkpoint(checkpoint_path,checkpoint)
     print(f"topic {args.topic_num}: reviewed {len(accepted)} records; checkpoint {'appended' if appended else 'already present'}")
     return 0

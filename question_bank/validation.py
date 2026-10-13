@@ -45,6 +45,48 @@ def lexical_key(value: str) -> str:
     return re.sub(r"[^a-z0-9]+", "", without_marks)
 
 
+def _word_tokens(value: str) -> list[str]:
+    decomposed = unicodedata.normalize("NFKD", canonical_text(value))
+    without_marks = "".join(c for c in decomposed if not unicodedata.combining(c))
+    return re.findall(r"[a-z0-9]+", without_marks)
+
+
+def answer_leakage_errors(record: dict[str, Any]) -> list[str]:
+    """Reject stems that disclose an option verbatim or near-verbatim.
+
+    Short tokens such as ``JSON`` or ``GET`` are intentionally ignored: they
+    are domain vocabulary, not answer text. Longer option phrases must not be
+    repeated in the question, including after accent/punctuation folding.
+    """
+    question = canonical_text(record.get("question", ""))
+    question_lexical = lexical_key(question)
+    errors = []
+    for name in _OPTIONS:
+        option = canonical_text(record.get(name, ""))
+        option_lexical = lexical_key(option)
+        if len(option_lexical) < 12:
+            continue
+        if option in question or option_lexical in question_lexical:
+            errors.append(f"answer leakage: {name} is repeated in the question")
+            continue
+        similarity = difflib.SequenceMatcher(None, option_lexical, question_lexical).ratio()
+        option_words = _word_tokens(option)
+        question_words = _word_tokens(question)
+        longest_window_match = max(
+            (
+                difflib.SequenceMatcher(None, option_words, question_words[start : start + size]).find_longest_match(
+                    0, len(option_words), 0, min(size, len(question_words[start : start + size]))
+                ).size
+                for size in range(max(1, len(option_words) - 2), len(option_words) + 3)
+                for start in range(max(1, len(question_words) - size + 1))
+            ),
+            default=0,
+        )
+        if (len(option_lexical) >= 18 and similarity >= 0.86) or (len(option_words) >= 5 and longest_window_match / len(option_words) >= 0.9):
+            errors.append(f"answer leakage: {name} is near-verbatim in the question")
+    return errors
+
+
 def _content_payload(record: dict[str, Any]) -> dict[str, Any]:
     return {
         field: record[field] if field == "topic_num" else canonical_text(record[field])
@@ -83,6 +125,8 @@ def validate_record(record: dict[str, Any], schema_path: Path = SCHEMA_PATH) -> 
     errors = _schema_errors(record, schema_path)
     if errors:
         return errors
+
+    errors.extend(answer_leakage_errors(record))
 
     option_values = [canonical_text(record[name]) for name in _OPTIONS]
     if len(set(option_values)) != len(option_values):

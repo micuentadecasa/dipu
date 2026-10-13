@@ -31,18 +31,73 @@ SPEC_PATHS = [
     ROOT / "docs/question-bank/research/questions/topics-16-lot-01.json",
     ROOT / "docs/question-bank/research/questions/topics-17-lot-01.json",
     ROOT / "docs/question-bank/research/questions/topics-18-lot-01.json",
+    ROOT / "docs/question-bank/research/questions/topics-19-lot-01.json",
+    ROOT / "docs/question-bank/research/questions/topics-20-lot-01.json",
+    ROOT / "docs/question-bank/research/questions/topics-20-lot-02.json",
+    ROOT / "docs/question-bank/research/questions/topics-20-lot-03.json",
+    ROOT / "docs/question-bank/research/questions/topics-20-lot-04.json",
+    ROOT / "docs/question-bank/research/questions/topics-20-lot-05.json",
+    ROOT / "docs/question-bank/research/questions/topics-21-lot-01.json",
+    ROOT / "docs/question-bank/research/questions/topics-22-lot-01.json",
+    ROOT / "docs/question-bank/research/questions/topics-23-lot-01.json",
+    ROOT / "docs/question-bank/research/questions/topics-24-lot-01.json",
+    ROOT / "docs/question-bank/research/questions/topics-24-lot-02.json",
+    ROOT / "docs/question-bank/research/questions/topics-24-lot-03.json",
+    ROOT / "docs/question-bank/research/questions/topics-24-lot-04.json",
+    ROOT / "docs/question-bank/research/questions/topics-24-lot-05.json",
+    ROOT / "docs/question-bank/research/questions/topics-23-lot-02.json",
+    ROOT / "docs/question-bank/research/questions/topics-23-lot-03.json",
+    ROOT / "docs/question-bank/research/questions/topics-23-lot-04.json",
+    ROOT / "docs/question-bank/research/questions/topics-23-lot-05.json",
+    ROOT / "docs/question-bank/research/questions/topics-25-lot-01.json",
+    ROOT / "docs/question-bank/research/questions/topics-25-lot-02.json",
+    ROOT / "docs/question-bank/research/questions/topics-25-lot-03.json",
+    ROOT / "docs/question-bank/research/questions/topics-25-lot-04.json",
+    ROOT / "docs/question-bank/research/questions/topics-25-lot-05.json",
+    ROOT / "docs/question-bank/research/questions/topics-26-lot-01.json",
+    ROOT / "docs/question-bank/research/questions/topics-26-lot-02.json",
+    ROOT / "docs/question-bank/research/questions/topics-26-lot-03.json",
+    ROOT / "docs/question-bank/research/questions/topics-26-lot-04.json",
+    ROOT / "docs/question-bank/research/questions/topics-26-lot-05.json",
+    ROOT / "docs/question-bank/research/questions/topics-27-lot-01.json",
+    ROOT / "docs/question-bank/research/questions/topics-27-lot-02.json",
+    ROOT / "docs/question-bank/research/questions/topics-27-lot-03.json",
+    ROOT / "docs/question-bank/research/questions/topics-27-lot-04.json",
+    ROOT / "docs/question-bank/research/questions/topics-27-lot-05.json",
+    ROOT / "docs/question-bank/research/questions/topics-28-lot-01.json",
+    ROOT / "docs/question-bank/research/questions/topics-28-lot-02.json",
+    ROOT / "docs/question-bank/research/questions/topics-28-lot-03.json",
+    ROOT / "docs/question-bank/research/questions/topics-28-lot-04.json",
+    ROOT / "docs/question-bank/research/questions/topics-28-lot-05.json",
+    ROOT / "docs/question-bank/research/questions/topics-29-lot-01.json",
+    ROOT / "docs/question-bank/research/questions/topics-29-lot-02.json",
+    ROOT / "docs/question-bank/research/questions/topics-29-lot-03.json",
+    ROOT / "docs/question-bank/research/questions/topics-29-lot-04.json",
+    ROOT / "docs/question-bank/research/questions/topics-29-lot-05.json",
 ]
 
 
-def load_batch(topic_num: int) -> dict:
+def load_batch(topic_num: int, lot_num: int) -> dict:
     for spec_path in SPEC_PATHS:
         if not spec_path.exists():
             continue
         payload = json.loads(spec_path.read_text(encoding="utf-8"))
         for batch in payload.get("batches", []):
-            if batch["topic_num"] == topic_num:
+            if batch["topic_num"] == topic_num and batch.get("lot_num", 1) == lot_num:
                 return batch
-    raise RuntimeError(f"no question specification for topic {topic_num}")
+    raise RuntimeError(f"no question specification for topic {topic_num}, lot {lot_num}")
+
+
+def next_numeric_id(topic_num: int, lot_num: int) -> int:
+    # Preserve established IDs for first lots through topic 20. New lots and
+    # later topics continue after the highest accepted artifact ID.
+    if topic_num <= 20 and lot_num == 1:
+        return 1200 + (topic_num - 1) * 20 + 1
+    ids = []
+    for path in (ROOT / "docs/question-bank/accepted").glob("topic-*-lot-*.json"):
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        ids.extend(record["id"] for record in payload.get("questions", []))
+    return max([1200, *ids]) + 1
 
 
 def make_record(spec: dict, source: dict, numeric_id: int) -> dict:
@@ -86,16 +141,18 @@ def make_record(spec: dict, source: dict, numeric_id: int) -> dict:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("topic_num", type=int, choices=tuple(range(2, 19)))
+    parser.add_argument("topic_num", type=int, choices=tuple(range(2, 41)))
+    parser.add_argument("--lot-num", type=int, default=1, choices=tuple(range(1, 6)))
     args = parser.parse_args()
-    batch = load_batch(args.topic_num)
+    batch = load_batch(args.topic_num, args.lot_num)
     register = json.loads(REGISTER_PATH.read_text(encoding="utf-8"))
     sources = {source["source_id"]: source for source in register["source_records"]}
     manifest = json.loads(OBJECTIVE_PATH.read_text(encoding="utf-8"))
     objectives = {objective["objective_id"]: objective for objective in manifest["objectives"]}
     records = []
     existing = list(SEED_QUESTIONS)
-    for index, spec in enumerate(batch["questions"], start=1200 + (args.topic_num - 1) * 20 + 1):
+    start_id = next_numeric_id(args.topic_num, args.lot_num)
+    for index, spec in enumerate(batch["questions"], start=start_id):
         objective = objectives.get(spec["objective_id"])
         if not objective or not objective["statement"]:
             raise RuntimeError(f"objective is not researched: {spec['objective_id']}")
@@ -112,13 +169,14 @@ def main() -> int:
 
     lot_dir = ROOT / "docs/question-bank/lots"
     lot_dir.mkdir(parents=True, exist_ok=True)
-    lot_path = lot_dir / f"topic-{args.topic_num:02d}-lot-01.json"
-    checkpoint_path = ROOT / "docs/question-bank/checkpoints" / f"topic-{args.topic_num:02d}-lot-01.jsonl"
+    stem = f"topic-{args.topic_num:02d}-lot-{args.lot_num:02d}"
+    lot_path = lot_dir / f"{stem}.json"
+    checkpoint_path = ROOT / "docs/question-bank/checkpoints" / f"{stem}.jsonl"
     payload = {
         "lot_version": "1.0",
         "state": "candidates_written",
         "topic_num": args.topic_num,
-        "lot_num": 1,
+        "lot_num": args.lot_num,
         "revision": 1,
         "generated_at": DATE,
         "source_register_sha256": file_sha256(REGISTER_PATH),
@@ -134,7 +192,7 @@ def main() -> int:
         "syllabus_hash": payload["syllabus_sha256"],
         "source_register_hash": payload["source_register_sha256"],
         "topic_num": args.topic_num,
-        "lot_num": 1,
+        "lot_num": args.lot_num,
         "revision": 1,
         "stage": "candidates_written",
         "objective_ids": [record["learning_objective_id"] for record in records],

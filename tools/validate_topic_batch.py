@@ -19,14 +19,15 @@ from seed_data import SEED_QUESTIONS
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("topic_num", type=int, choices=tuple(range(2, 19)))
+    parser.add_argument("topic_num", type=int, choices=tuple(range(2, 41)))
+    parser.add_argument("--lot-num", type=int, default=1, choices=tuple(range(1, 6)))
     args = parser.parse_args()
-    stem = f"topic-{args.topic_num:02d}-lot-01"
+    stem = f"topic-{args.topic_num:02d}-lot-{args.lot_num:02d}"
     accepted_path = ROOT / "docs/question-bank/accepted" / f"{stem}.json"
     checkpoint_path = ROOT / "docs/question-bank/checkpoints" / f"{stem}.jsonl"
     payload = json.loads(accepted_path.read_text(encoding="utf-8"))
-    if payload["state"] != "reviewed":
-        raise RuntimeError("import validation requires reviewed state")
+    if payload["state"] != "reviewed" or payload["lot_num"] != args.lot_num:
+        raise RuntimeError("import validation requires the requested reviewed lot")
     records = payload["questions"]
     errors = [(record["stable_id"], error) for record in records for error in validate_record(record)]
     if errors:
@@ -35,7 +36,13 @@ def main() -> int:
     numeric_ids = [record["id"] for record in records]
     if len(set(stable_ids)) != len(stable_ids) or len(set(numeric_ids)) != len(numeric_ids):
         raise RuntimeError("accepted batch contains an ID collision")
-    runtime_before_batch = 1200 + 20 * (args.topic_num - 1)
+    prior_accepted = 0
+    for prior_path in (ROOT / "docs/question-bank/accepted").glob("topic-*-lot-*.json"):
+        if prior_path.name == accepted_path.name:
+            continue
+        prior_payload = json.loads(prior_path.read_text(encoding="utf-8"))
+        prior_accepted += len(prior_payload.get("questions", []))
+    runtime_before_batch = 399 + prior_accepted
     if any(record["id"] <= 1200 for record in records):
         raise RuntimeError("accepted numeric ID collides with legacy snapshot")
     if any(record["id"] <= 1200 + 20 * (args.topic_num - 1) for record in records):
@@ -48,7 +55,7 @@ def main() -> int:
     report_path = ROOT / "docs/question-bank/imports" / f"{stem}-dry-run.json"
     report_path.parent.mkdir(parents=True, exist_ok=True)
     report_path.write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    checkpoint = {"schema_version":"1.0","syllabus_hash":payload["syllabus_sha256"],"source_register_hash":payload["source_register_sha256"],"topic_num":args.topic_num,"lot_num":1,"revision":payload["revision"],"stage":"import_validated","objective_ids":[x["learning_objective_id"] for x in records],"stable_ids":stable_ids,"counts":{"candidates":20,"accepted":len(records),"rejected":0,"quarantined":0},"input_hash":file_sha256(accepted_path),"output_hash":file_sha256(report_path),"last_import":{"status":"dry_run_passed","transaction":"not_written"}}
+    checkpoint = {"schema_version":"1.0","syllabus_hash":payload["syllabus_sha256"],"source_register_hash":payload["source_register_sha256"],"topic_num":args.topic_num,"lot_num":args.lot_num,"revision":payload["revision"],"stage":"import_validated","objective_ids":[x["learning_objective_id"] for x in records],"stable_ids":stable_ids,"counts":{"candidates":20,"accepted":len(records),"rejected":0,"quarantined":0},"input_hash":file_sha256(accepted_path),"output_hash":file_sha256(report_path),"last_import":{"status":"dry_run_passed","transaction":"not_written"}}
     appended=append_checkpoint(checkpoint_path,checkpoint)
     print(f"topic {args.topic_num}: import dry-run passed for {len(records)} records; checkpoint {'appended' if appended else 'already present'}")
     return 0
