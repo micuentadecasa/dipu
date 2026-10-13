@@ -34548,3 +34548,1028 @@ SEED_QUESTIONS.extend([
     }
 ])
 # QUESTION_BANK_ACCEPTED_TOPIC_32_LOT_10_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_31_LOT_06_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 31,
+        "question": "¿Qué representa el estado de un componente Blazor?",
+        "option_a": "Datos que determinan su representación y comportamiento",
+        "option_b": "Solo la URL del servidor",
+        "option_c": "Las credenciales del usuario",
+        "option_d": "El contenido del assembly",
+        "correct": "A",
+        "explanation": "Los campos y propiedades del componente participan en su estado."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué método solicita normalmente una nueva renderización del componente?",
+        "option_a": "StateHasChanged",
+        "option_b": "RenderNowOnly",
+        "option_c": "NotifyRoute",
+        "option_d": "RefreshUri",
+        "correct": "A",
+        "explanation": "StateHasChanged solicita que el componente vuelva a renderizarse."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué problema resuelve InvokeAsync al notificar cambios externos?",
+        "option_a": "Programar el trabajo en el contexto de sincronización del componente",
+        "option_b": "Serializar automáticamente el estado",
+        "option_c": "Guardar datos en localStorage",
+        "option_d": "Crear un circuito nuevo",
+        "correct": "A",
+        "explanation": "InvokeAsync permite volver al contexto adecuado antes de actualizar estado."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué decide ShouldRender?",
+        "option_a": "Si el componente debe renderizarse de nuevo",
+        "option_b": "Si se crea un circuito",
+        "option_c": "Si se usa sessionStorage",
+        "option_d": "Si se serializa JSON",
+        "correct": "A",
+        "explanation": "ShouldRender controla la decisión de renderizado."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué ocurre cuando un campo usado por la vista cambia sin notificación?",
+        "option_a": "La vista puede no actualizarse hasta que se solicite renderizado",
+        "option_b": "Se guarda siempre en localStorage",
+        "option_c": "Se crea un nuevo usuario",
+        "option_d": "Se cambia la ruta",
+        "correct": "A",
+        "explanation": "El cambio debe llegar al ciclo de renderizado."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué evento de UI suele provocar una renderización automática?",
+        "option_a": "Una interacción de evento gestionada por el componente",
+        "option_b": "La lectura de un archivo .gitignore",
+        "option_c": "La configuración del servidor",
+        "option_d": "La creación de un assembly",
+        "correct": "A",
+        "explanation": "Los eventos de componente participan en el ciclo de renderizado."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué debe hacer un callback externo que cambia estado?",
+        "option_a": "Actualizar el estado y solicitar renderizado en el contexto apropiado",
+        "option_b": "Modificar el DOM directamente siempre",
+        "option_c": "Crear un singleton global",
+        "option_d": "Borrar el componente",
+        "correct": "A",
+        "explanation": "Las notificaciones externas requieren coordinar actualización y renderizado."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué finalidad tiene ShouldRender al optimizar una vista?",
+        "option_a": "Evitar renders innecesarios cuando no procede actualizarla",
+        "option_b": "Persistir datos de negocio",
+        "option_c": "Proteger secretos",
+        "option_d": "Crear una ruta",
+        "correct": "A",
+        "explanation": "La decisión permite controlar renders innecesarios."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué diferencia hay entre estado local y estado compartido?",
+        "option_a": "El local pertenece a un componente y el compartido puede observarse desde varios",
+        "option_b": "El local siempre se persiste",
+        "option_c": "El compartido solo vive en la URL",
+        "option_d": "No hay diferencia",
+        "correct": "A",
+        "explanation": "La propiedad distingue alcance y ownership."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué debe ocurrir antes de llamar a StateHasChanged desde una notificación externa?",
+        "option_a": "La actualización debe ejecutarse de forma segura en el contexto del componente",
+        "option_b": "Debe navegar a otra página",
+        "option_c": "Debe borrar el circuito",
+        "option_d": "Debe escribir en sessionStorage",
+        "correct": "A",
+        "explanation": "InvokeAsync es el mecanismo habitual para el contexto correcto."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué puede contener un campo de estado de UI?",
+        "option_a": "La selección o visibilidad de un control",
+        "option_b": "La contraseña del servidor siempre",
+        "option_c": "El código del assembly",
+        "option_d": "La política de cookies del navegador",
+        "correct": "A",
+        "explanation": "El estado efímero de UI puede vivir en campos del componente."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué decisión reduce una renderización causada por cambios irrelevantes?",
+        "option_a": "Implementar una condición adecuada en ShouldRender",
+        "option_b": "Usar localStorage para todo",
+        "option_c": "Convertir el estado en singleton",
+        "option_d": "Forzar recarga completa",
+        "correct": "A",
+        "explanation": "ShouldRender puede controlar renders que no aportan cambios."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué relación hay entre StateHasChanged y ShouldRender?",
+        "option_a": "El primero solicita render y el segundo puede decidir si se realiza",
+        "option_b": "Ambos persisten estado",
+        "option_c": "ShouldRender navega y StateHasChanged serializa",
+        "option_d": "No se relacionan",
+        "correct": "A",
+        "explanation": "Cumplen funciones complementarias."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué puede pasar si se conserva estado mutable en una referencia compartida sin control?",
+        "option_a": "Cambios inesperados entre componentes consumidores",
+        "option_b": "Persistencia automática segura",
+        "option_c": "Aislamiento por usuario garantizado",
+        "option_d": "Eliminación del circuito",
+        "correct": "A",
+        "explanation": "El ownership explícito evita efectos laterales."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué enfoque es apropiado para comunicar un cambio de un servicio a un componente?",
+        "option_a": "Notificación del servicio y actualización mediante InvokeAsync/StateHasChanged",
+        "option_b": "Modificar el HTML fuera de Blazor",
+        "option_c": "Cambiar BaseUri",
+        "option_d": "Crear otro Router",
+        "correct": "A",
+        "explanation": "La documentación describe notificar y solicitar renderizado."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué estado suele ser efímero?",
+        "option_a": "El texto actual de un campo de búsqueda",
+        "option_b": "La cuenta persistida del usuario",
+        "option_c": "La configuración durable de una organización",
+        "option_d": "Una factura almacenada",
+        "correct": "A",
+        "explanation": "El texto temporal de UI es efímero."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué estado suele requerir una fuente durable?",
+        "option_a": "Datos de negocio que deben sobrevivir a una sesión",
+        "option_b": "La visibilidad momentánea de un menú",
+        "option_c": "El foco de un botón",
+        "option_d": "Una animación",
+        "correct": "A",
+        "explanation": "Los datos duraderos deben vivir fuera del estado efímero."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué hace un componente cuando recibe nuevos parámetros?",
+        "option_a": "Puede actualizar su estado y volver a renderizar conforme al ciclo de vida",
+        "option_b": "Se convierte en singleton siempre",
+        "option_c": "Se persiste en browser storage automáticamente",
+        "option_d": "Pierde su circuito",
+        "correct": "A",
+        "explanation": "Los parámetros participan en la actualización del componente."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué principio ayuda a evitar renderizaciones innecesarias?",
+        "option_a": "Mantener claros los límites de estado y comparar cambios relevantes",
+        "option_b": "Persistir cada campo en storage",
+        "option_c": "Usar una variable global para todo",
+        "option_d": "Forzar siempre StateHasChanged",
+        "correct": "A",
+        "explanation": "Los límites claros reducen renders y efectos laterales."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué mecanismo no es por sí mismo una base durable de datos de negocio?",
+        "option_a": "Un campo privado de un componente",
+        "option_b": "Una base de datos de aplicación",
+        "option_c": "Un servicio de persistencia",
+        "option_d": "Un registro durable",
+        "correct": "A",
+        "explanation": "El campo de componente es estado efímero."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_31_LOT_06_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_31_LOT_07_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 31,
+        "question": "¿Qué patrón permite compartir estado entre componentes?",
+        "option_a": "Un servicio contenedor de estado",
+        "option_b": "Un parámetro CSS",
+        "option_c": "Un layout sin datos",
+        "option_d": "Una ruta catch-all",
+        "correct": "A",
+        "explanation": "Un state container encapsula estado compartido."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué puede exponer un state container además del valor?",
+        "option_a": "Métodos y notificaciones de cambio",
+        "option_b": "Solo una URL",
+        "option_c": "Solo un certificado",
+        "option_d": "Solo una plantilla de ruta",
+        "correct": "A",
+        "explanation": "El contenedor puede centralizar mutación y notificación."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué debe hacer un componente al suscribirse a cambios de un contenedor?",
+        "option_a": "Desuscribirse cuando deja de existir",
+        "option_b": "Persistir la suscripción en localStorage",
+        "option_c": "Crear otro contenedor",
+        "option_d": "Cambiar el circuito manualmente",
+        "correct": "A",
+        "explanation": "La suscripción debe liberar recursos."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué riesgo tiene olvidar desuscribir un componente?",
+        "option_a": "Notificaciones a instancias que ya no deberían recibirlas",
+        "option_b": "La URL se codifica mal",
+        "option_c": "El navegador crea una base de datos",
+        "option_d": "El componente se convierte en layout",
+        "correct": "A",
+        "explanation": "La suscripción prolongada puede causar fugas o trabajo innecesario."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué alcance es importante elegir al registrar un contenedor?",
+        "option_a": "Scoped, singleton u otro alcance coherente con el modelo de hosting",
+        "option_b": "Solo el color del componente",
+        "option_c": "Solo la ruta base",
+        "option_d": "Solo el nombre del assembly",
+        "correct": "A",
+        "explanation": "El lifetime determina quién comparte la instancia."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Por qué un singleton puede ser peligroso en Blazor Server para estado de usuario?",
+        "option_a": "Puede compartir datos entre circuitos/usuarios",
+        "option_b": "Porque nunca puede notificar",
+        "option_c": "Porque solo existe durante un evento",
+        "option_d": "Porque no se puede inyectar",
+        "correct": "A",
+        "explanation": "El singleton tiene alcance global al proceso y puede mezclar usuarios."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué alcance suele aislar mejor el estado por circuito en Blazor Server?",
+        "option_a": "Scoped",
+        "option_b": "Singleton global",
+        "option_c": "Static de proceso",
+        "option_d": "Transient de navegador siempre",
+        "correct": "A",
+        "explanation": "Scoped se asocia al circuito en el modelo descrito."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué consideración existe para scoped en Blazor WebAssembly?",
+        "option_a": "Puede comportarse como una instancia compartida durante la vida de la aplicación",
+        "option_b": "Siempre crea una instancia por HTTP request",
+        "option_c": "Es global a todos los usuarios del servidor",
+        "option_d": "Solo existe durante prerender",
+        "correct": "A",
+        "explanation": "El lifetime tiene semántica distinta en WebAssembly."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué debe poseer el código que cambia un estado compartido?",
+        "option_a": "Una responsabilidad clara y una API controlada",
+        "option_b": "Cualquier componente sin reglas",
+        "option_c": "Solo el layout",
+        "option_d": "El navegador externo",
+        "correct": "A",
+        "explanation": "El ownership explícito evita mutaciones arbitrarias."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué evento puede emitir un state container?",
+        "option_a": "Un cambio de estado para que los consumidores actualicen su UI",
+        "option_b": "Una navegación externa obligatoria",
+        "option_c": "Una nueva base de datos",
+        "option_d": "Un certificado digital",
+        "correct": "A",
+        "explanation": "La notificación informa a consumidores."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué suele hacer el consumidor tras recibir la notificación?",
+        "option_a": "Actualizar su vista mediante el ciclo de renderizado",
+        "option_b": "Modificar directamente otro componente",
+        "option_c": "Cambiar el lifetime",
+        "option_d": "Borrar el servicio",
+        "correct": "A",
+        "explanation": "El consumidor actualiza su estado/render."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué diferencia un container de estado de una base de datos?",
+        "option_a": "El container mantiene estado de ejecución; la base ofrece persistencia durable",
+        "option_b": "El container siempre es durable",
+        "option_c": "La base solo existe en memoria",
+        "option_d": "No hay diferencia",
+        "correct": "A",
+        "explanation": "Cumplen responsabilidades distintas."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué puede encapsular un state container para reducir acoplamiento?",
+        "option_a": "Reglas de actualización y notificación",
+        "option_b": "Las credenciales del navegador",
+        "option_c": "El Router global",
+        "option_d": "El HTML final",
+        "correct": "A",
+        "explanation": "Encapsular comportamiento centraliza el estado."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué debe considerar un servicio compartido en una aplicación multiusuario?",
+        "option_a": "Aislamiento de datos entre usuarios y circuitos",
+        "option_b": "Solo el nombre de la clase",
+        "option_c": "El número de layouts",
+        "option_d": "El color de los botones",
+        "correct": "A",
+        "explanation": "El lifetime debe respetar el aislamiento."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué diseño evita que cualquier consumidor modifique libremente el estado?",
+        "option_a": "Exponer operaciones controladas en vez del campo mutable directamente",
+        "option_b": "Publicar la referencia mutable global",
+        "option_c": "Usar un singleton estático",
+        "option_d": "Guardar todo en URL",
+        "correct": "A",
+        "explanation": "Una API controlada protege invariantes."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué debe hacer una suscripción en un componente que se elimina?",
+        "option_a": "Liberar el handler o recurso asociado",
+        "option_b": "Navegar a NotFound",
+        "option_c": "Crear otro circuito",
+        "option_d": "Persistir el callback",
+        "correct": "A",
+        "explanation": "La limpieza evita notificaciones a instancias eliminadas."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué modelo puede provocar fuga entre usuarios en Server?",
+        "option_a": "Un estado de usuario en singleton",
+        "option_b": "Un estado scoped por circuito",
+        "option_c": "Un campo privado del componente",
+        "option_d": "Un parámetro del componente",
+        "correct": "A",
+        "explanation": "Singleton comparte por proceso."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué relación tiene un state container con StateHasChanged?",
+        "option_a": "El container notifica y el componente solicita/renderiza el cambio en su contexto",
+        "option_b": "El container reemplaza el Router",
+        "option_c": "StateHasChanged persiste automáticamente",
+        "option_d": "No tienen relación",
+        "correct": "A",
+        "explanation": "La notificación necesita una actualización de UI coordinada."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué servicio debe evitar almacenar sin protección?",
+        "option_a": "Datos sensibles de un usuario en una instancia global compartida",
+        "option_b": "Un contador local del componente",
+        "option_c": "Una clase de presentación",
+        "option_d": "Un parámetro efímero",
+        "correct": "A",
+        "explanation": "Los datos sensibles no deben cruzar límites de usuario."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué criterio guía la elección de lifetime del contenedor?",
+        "option_a": "Quién debe compartir el estado y durante cuánto tiempo",
+        "option_b": "El número de rutas únicamente",
+        "option_c": "La clase CSS activa",
+        "option_d": "El orden de assemblies",
+        "correct": "A",
+        "explanation": "La elección responde al alcance deseado."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_31_LOT_07_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_31_LOT_08_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 31,
+        "question": "¿Qué diferencia principal existe entre localStorage y sessionStorage?",
+        "option_a": "localStorage sobrevive a sesiones del navegador y sessionStorage se limita a la sesión",
+        "option_b": "sessionStorage siempre es servidor",
+        "option_c": "localStorage solo vive en un evento",
+        "option_d": "No hay diferencia",
+        "correct": "A",
+        "explanation": "Tienen duraciones de persistencia distintas."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Dónde vive browser storage en una aplicación Blazor?",
+        "option_a": "En el navegador del cliente",
+        "option_b": "Solo en el servidor",
+        "option_c": "En el Router",
+        "option_d": "En el assembly de componentes",
+        "correct": "A",
+        "explanation": "El storage del navegador es client-side."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué frontera usa Blazor normalmente para acceder al storage del navegador?",
+        "option_a": "JavaScript interop",
+        "option_b": "RouteView",
+        "option_c": "StateHasChanged solamente",
+        "option_d": "Un merge commit",
+        "correct": "A",
+        "explanation": "El acceso al navegador se realiza mediante interop."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué debe hacerse con un objeto complejo antes de guardarlo como valor de storage?",
+        "option_a": "Serializarlo a una representación compatible",
+        "option_b": "Convertirlo en layout",
+        "option_c": "Añadirlo a RouteData",
+        "option_d": "Crear un circuito nuevo",
+        "correct": "A",
+        "explanation": "Los objetos se serializan para persistirlos."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué debe hacerse al recuperar un objeto serializado?",
+        "option_a": "Deserializarlo y validar su forma",
+        "option_b": "Aplicarlo como CSS",
+        "option_c": "Convertirlo en una ruta",
+        "option_d": "Ignorar siempre los errores",
+        "correct": "A",
+        "explanation": "La lectura reconstruye el estado desde la representación."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué visibilidad tiene normalmente un dato en browser storage?",
+        "option_a": "Es accesible al cliente y no debe tratarse como secreto por defecto",
+        "option_b": "Solo lo ve el servidor",
+        "option_c": "Nunca puede inspeccionarse",
+        "option_d": "Está cifrado automáticamente",
+        "correct": "A",
+        "explanation": "El almacenamiento del navegador es visible para el cliente."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué dato no debería guardarse sin protección en localStorage?",
+        "option_a": "Un secreto de autenticación",
+        "option_b": "Una preferencia de tema no sensible",
+        "option_c": "Un filtro de lista",
+        "option_d": "Una preferencia de idioma",
+        "correct": "A",
+        "explanation": "Los secretos no deben exponerse en storage visible."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué ocurre si el estado persistido no coincide con el esquema actual?",
+        "option_a": "Debe manejarse compatibilidad, migración o descarte seguro",
+        "option_b": "Se corrige mágicamente siempre",
+        "option_c": "Se convierte en ruta",
+        "option_d": "Se comparte con todos los usuarios",
+        "correct": "A",
+        "explanation": "La persistencia requiere considerar versiones."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué ventaja tiene persistir una preferencia de usuario?",
+        "option_a": "Puede restaurarse en una visita posterior",
+        "option_b": "Crea autorización automáticamente",
+        "option_c": "Elimina el circuito",
+        "option_d": "Cambia el assembly",
+        "correct": "A",
+        "explanation": "La persistencia conserva valores entre visitas según el storage."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué limita sessionStorage frente a localStorage?",
+        "option_a": "Su disponibilidad se vincula a la sesión del navegador",
+        "option_b": "No permite strings",
+        "option_c": "Solo existe en servidor",
+        "option_d": "No admite serialización",
+        "correct": "A",
+        "explanation": "sessionStorage tiene alcance temporal de sesión."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué responsabilidad tiene la aplicación al guardar datos client-side?",
+        "option_a": "Decidir qué datos son seguros y necesarios para persistir",
+        "option_b": "Guardar todo el estado automáticamente",
+        "option_c": "Persistir credenciales siempre",
+        "option_d": "Ignorar capacidad del storage",
+        "correct": "A",
+        "explanation": "La aplicación debe minimizar y proteger lo que serializa."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué estrategia reduce el coste y exposición de browser storage?",
+        "option_a": "Persistir solo el estado necesario",
+        "option_b": "Serializar todo el circuito",
+        "option_c": "Guardar respuestas completas siempre",
+        "option_d": "Duplicar cada contenedor",
+        "correct": "A",
+        "explanation": "Minimizar estado reduce tamaño y riesgo."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué puede provocar una serialización de estado demasiado grande?",
+        "option_a": "Coste de almacenamiento y transferencia y mayor exposición",
+        "option_b": "Aislamiento automático",
+        "option_c": "Mejor autorización",
+        "option_d": "Menos datos client-side",
+        "correct": "A",
+        "explanation": "Más estado serializado aumenta coste y superficie."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué debe validar la aplicación tras leer storage?",
+        "option_a": "Que la versión y los valores sean utilizables",
+        "option_b": "Que el usuario sea un layout",
+        "option_c": "Que la ruta sea una rama Git",
+        "option_d": "Que el Router tenga dos NotFound",
+        "correct": "A",
+        "explanation": "Los datos externos deben validarse."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué representa una preferencia de idioma en browser storage?",
+        "option_a": "Estado durable pequeño y no sensible",
+        "option_b": "Un secreto de sesión",
+        "option_c": "El circuito completo",
+        "option_d": "Una política de autorización",
+        "correct": "A",
+        "explanation": "Es un ejemplo apropiado de preferencia persistible."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué mecanismo no convierte storage en secreto?",
+        "option_a": "La mera serialización JSON",
+        "option_b": "Un control de layout",
+        "option_c": "Un NavLink",
+        "option_d": "Una ruta opcional",
+        "correct": "A",
+        "explanation": "Serializar no protege contra inspección del cliente."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué debe ocurrir si la lectura de storage falla?",
+        "option_a": "La aplicación debe manejar el error y usar un valor seguro o predeterminado",
+        "option_b": "Debe exponer el error con secretos",
+        "option_c": "Debe compartir el dato",
+        "option_d": "Debe borrar el circuito siempre",
+        "correct": "A",
+        "explanation": "La lectura debe tolerar fallos."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué decisión separa mejor preferencias de datos de negocio?",
+        "option_a": "Guardar preferencia ligera en browser storage y datos de negocio en almacenamiento durable",
+        "option_b": "Guardar la base completa en localStorage",
+        "option_c": "Usar sessionStorage como base de datos",
+        "option_d": "No distinguirlos",
+        "correct": "A",
+        "explanation": "Las responsabilidades de persistencia difieren."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué canal permite invocar APIs del navegador desde .NET?",
+        "option_a": "JavaScript interop",
+        "option_b": "StateHasChanged",
+        "option_c": "RouteData",
+        "option_d": "DefaultLayout",
+        "correct": "A",
+        "explanation": "Interop conecta código .NET con APIs browser."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué riesgo existe al asumir que storage client-side es compartido por todos los usuarios?",
+        "option_a": "Se confunde un almacén del cliente con estado global del servidor",
+        "option_b": "Se pierde el layout",
+        "option_c": "Se desactiva el Router",
+        "option_d": "Se crea una ruta catch-all",
+        "correct": "A",
+        "explanation": "Cada cliente tiene su propio almacenamiento."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_31_LOT_08_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_31_LOT_09_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 31,
+        "question": "¿Qué limitación puede existir durante prerendering?",
+        "option_a": "No están disponibles ciertas APIs interactivas del navegador",
+        "option_b": "El componente siempre tiene un circuito interactivo",
+        "option_c": "localStorage se consulta en servidor automáticamente",
+        "option_d": "La ruta no puede declararse",
+        "correct": "A",
+        "explanation": "Durante prerender no se dispone de APIs browser interactivas."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué puede causar inicializar estado no determinista durante prerender y luego interacción?",
+        "option_a": "Contenido diferente o trabajo duplicado al hidratar",
+        "option_b": "Un nuevo assembly siempre",
+        "option_c": "Un merge commit",
+        "option_d": "Una query inválida",
+        "correct": "A",
+        "explanation": "El estado debe coordinarse entre fases."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué mecanismo ayuda a trasladar estado desde prerender a interacción?",
+        "option_a": "Persistent component state",
+        "option_b": "NavLink ActiveClass",
+        "option_c": "RouteView DefaultLayout",
+        "option_d": "Un parámetro catch-all",
+        "correct": "A",
+        "explanation": "El mecanismo conserva datos para la hidratación."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué significa hidratar un componente prerenderizado?",
+        "option_a": "Conectarlo con la ejecución interactiva posterior",
+        "option_b": "Serializarlo como un tag",
+        "option_c": "Cambiar su ruta a NotFound",
+        "option_d": "Crear un singleton global",
+        "correct": "A",
+        "explanation": "La hidratación continúa la experiencia con interactividad."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué representa un circuit en Blazor Server?",
+        "option_a": "El contexto de conexión y estado interactivo de un usuario",
+        "option_b": "Una base de datos global",
+        "option_c": "Una ruta estática",
+        "option_d": "Una clase de CSS",
+        "correct": "A",
+        "explanation": "El circuito mantiene interacción y estado asociado."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué puede ocurrir si termina un circuito?",
+        "option_a": "El estado transitorio en memoria del circuito puede perderse",
+        "option_b": "localStorage se borra siempre",
+        "option_c": "La base de datos se elimina",
+        "option_d": "Todos los usuarios comparten el estado",
+        "correct": "A",
+        "explanation": "El estado en memoria depende de la vida del circuito."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué debe hacer una aplicación si necesita recuperar estado tras reconexión?",
+        "option_a": "Persistir o reconstruir el estado necesario",
+        "option_b": "Confiar en un campo privado sin más",
+        "option_c": "Usar un singleton global",
+        "option_d": "Ignorar la reconexión",
+        "correct": "A",
+        "explanation": "El estado transitorio puede necesitar reconstrucción."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué tipo de dato es candidato a PersistentComponentState?",
+        "option_a": "Datos necesarios para evitar repetir carga entre prerender e interacción",
+        "option_b": "Una contraseña del cliente",
+        "option_c": "Toda la base de datos",
+        "option_d": "Un layout global",
+        "correct": "A",
+        "explanation": "El mecanismo sirve para persistir estado de componente durante fases."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué problema evita persistir datos prerenderizados?",
+        "option_a": "Repetir una operación costosa al iniciar la fase interactiva",
+        "option_b": "Que NavLink tenga clase activa",
+        "option_c": "Que Router encuentre una ruta",
+        "option_d": "Que query tenga &",
+        "correct": "A",
+        "explanation": "Permite reutilizar el resultado inicial."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué debe considerarse al serializar estado para hidratación?",
+        "option_a": "Tamaño, seguridad y compatibilidad de los datos",
+        "option_b": "Solo el color del componente",
+        "option_c": "Solo la ruta del layout",
+        "option_d": "El nombre del usuario únicamente",
+        "correct": "A",
+        "explanation": "El estado transferido debe ser mínimo y seguro."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué relación existe entre prerender y browser storage?",
+        "option_a": "El código que requiere navegador puede tener que esperar a la fase interactiva",
+        "option_b": "Siempre se accede desde el servidor",
+        "option_c": "Storage reemplaza el circuito",
+        "option_d": "No existe relación",
+        "correct": "A",
+        "explanation": "Las APIs del navegador no están disponibles durante prerender puro."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué estado puede reconstruirse tras reconexión desde una fuente durable?",
+        "option_a": "Un filtro o selección derivable de preferencias persistidas",
+        "option_b": "El objeto de UI que nunca se guardó",
+        "option_c": "Una variable perdida sin fuente",
+        "option_d": "Un callback eliminado",
+        "correct": "A",
+        "explanation": "El estado se reconstruye desde una fuente disponible."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué ocurre si se confunde estado de circuito con almacenamiento durable?",
+        "option_a": "Se puede perder información al terminar la conexión",
+        "option_b": "Se obtiene persistencia automática",
+        "option_c": "Se comparten datos de forma segura",
+        "option_d": "Se elimina el prerender",
+        "correct": "A",
+        "explanation": "El estado de circuito es transitorio."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué objetivo tiene evitar doble carga entre prerender e interacción?",
+        "option_a": "Aprovechar estado persistido del componente",
+        "option_b": "Crear más renders",
+        "option_c": "Eliminar todos los parámetros",
+        "option_d": "Forzar navegación externa",
+        "correct": "A",
+        "explanation": "El estado persistido evita trabajo repetido."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué decisión es adecuada para datos sensibles durante persistencia prerender?",
+        "option_a": "No serializarlos al cliente sin garantías apropiadas",
+        "option_b": "Serializarlos siempre en HTML",
+        "option_c": "Guardarlos en query pública",
+        "option_d": "Duplicarlos en todos los componentes",
+        "correct": "A",
+        "explanation": "Los datos serializados pueden ser visibles."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué debe hacer una aplicación con un estado temporal no recuperable al reconectar?",
+        "option_a": "Mostrar un estado válido o reconstruirlo, en vez de asumir que permanece",
+        "option_b": "Exponer datos de otro usuario",
+        "option_c": "Usar un singleton de proceso",
+        "option_d": "Crear una ruta aleatoria",
+        "correct": "A",
+        "explanation": "La reconexión requiere tratar la pérdida de estado."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué fase puede ejecutar lógica sin interactividad del navegador?",
+        "option_a": "Prerendering",
+        "option_b": "Solo después de hidratar",
+        "option_c": "Solo una navegación interna",
+        "option_d": "Solo un evento de botón",
+        "correct": "A",
+        "explanation": "Prerendering ocurre antes de la interacción browser."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué debe coincidir para evitar diferencias de interfaz entre prerender e hidratación?",
+        "option_a": "Los datos iniciales y la representación esperada",
+        "option_b": "El nombre del assembly solamente",
+        "option_c": "La clase CSS activa del NavLink",
+        "option_d": "El número de circuitos",
+        "correct": "A",
+        "explanation": "La continuidad requiere estado coherente."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué almacenamiento puede sobrevivir al circuito pero pertenecer al cliente?",
+        "option_a": "Browser storage",
+        "option_b": "Un campo privado de circuito",
+        "option_c": "Una variable estática de servidor",
+        "option_d": "Un callback de componente",
+        "correct": "A",
+        "explanation": "El browser storage tiene vida independiente del circuito."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué principio combina persistencia e hidratación?",
+        "option_a": "Transferir solo el estado necesario y validarlo en la fase receptora",
+        "option_b": "Enviar todo el servicio singleton",
+        "option_c": "Confiar en cualquier JSON",
+        "option_d": "Persistir secretos",
+        "correct": "A",
+        "explanation": "La transferencia debe ser mínima y segura."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_31_LOT_09_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_31_LOT_10_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 31,
+        "question": "¿Qué estado debe permanecer normalmente local al componente?",
+        "option_a": "Visibilidad temporal de un panel",
+        "option_b": "Datos de facturación de todos los usuarios",
+        "option_c": "Configuración durable de la organización",
+        "option_d": "Historial persistente",
+        "correct": "A",
+        "explanation": "La visibilidad de UI es efímera y local."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué estado justifica un contenedor compartido?",
+        "option_a": "Una selección que deben observar varios componentes",
+        "option_b": "El color de una sola etiqueta",
+        "option_c": "Una variable privada no consumida",
+        "option_d": "Un secreto del servidor",
+        "correct": "A",
+        "explanation": "El contenedor sirve para consumidores múltiples."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué estado justifica almacenamiento durable externo al componente?",
+        "option_a": "Datos que deben sobrevivir a reinicios o sesiones",
+        "option_b": "El hover de un botón",
+        "option_c": "La animación actual",
+        "option_d": "La clase CSS activa",
+        "correct": "A",
+        "explanation": "Los datos durables necesitan persistencia apropiada."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué práctica evita fuga de estado entre usuarios en Server?",
+        "option_a": "Usar alcance por circuito/usuario y no un singleton compartido",
+        "option_b": "Guardar datos sensibles en singleton",
+        "option_c": "Usar campos static",
+        "option_d": "Serializar todo al HTML",
+        "correct": "A",
+        "explanation": "El alcance debe aislar usuarios."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué práctica reduce la superficie de exposición al cliente?",
+        "option_a": "Minimizar el estado serializado",
+        "option_b": "Serializar el servicio completo",
+        "option_c": "Guardar secretos en localStorage",
+        "option_d": "Duplicar datos en query",
+        "correct": "A",
+        "explanation": "Menos estado client-visible reduce exposición."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué práctica hace más predecible un estado compartido?",
+        "option_a": "Usar snapshots inmutables o APIs controladas",
+        "option_b": "Exponer una colección mutable global",
+        "option_c": "Modificarla desde cualquier vista",
+        "option_d": "Usar eventos sin desuscripción",
+        "correct": "A",
+        "explanation": "La inmutabilidad y ownership claro reducen efectos laterales."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué debe hacer un componente que escucha un contenedor?",
+        "option_a": "Actualizar su UI cuando cambia y limpiar la suscripción al destruirse",
+        "option_b": "Guardar siempre el contenedor en sessionStorage",
+        "option_c": "Crear un segundo singleton",
+        "option_d": "Ignorar notificaciones",
+        "correct": "A",
+        "explanation": "Debe responder y liberar la suscripción."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué mecanismo se combina con InvokeAsync para notificación externa?",
+        "option_a": "StateHasChanged",
+        "option_b": "NavigateTo",
+        "option_c": "BaseUri",
+        "option_d": "RouteData",
+        "correct": "A",
+        "explanation": "InvokeAsync coordina y StateHasChanged solicita render."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué diferencia hay entre UI efímera y datos de negocio?",
+        "option_a": "La primera puede desaparecer; los segundos requieren fuente durable si deben sobrevivir",
+        "option_b": "Ambos deben ser singleton",
+        "option_c": "La UI siempre va en base de datos",
+        "option_d": "Los datos de negocio solo viven en campos privados",
+        "correct": "A",
+        "explanation": "La duración y responsabilidad son distintas."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué decisión evita usar browser storage como base de datos de secretos?",
+        "option_a": "Mantener secretos en un mecanismo de servidor apropiado",
+        "option_b": "Serializar secretos con JSON",
+        "option_c": "Usar localStorage con un nombre oculto",
+        "option_d": "Codificar la clave en query",
+        "correct": "A",
+        "explanation": "El cliente puede inspeccionar browser storage."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué debe considerar una aplicación al deserializar estado antiguo?",
+        "option_a": "Compatibilidad de versión y valores por defecto",
+        "option_b": "Solo el nombre del componente",
+        "option_c": "La URL del assembly",
+        "option_d": "El color del layout",
+        "correct": "A",
+        "explanation": "El estado persistido puede requerir migración/validación."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué diseño reduce el acoplamiento entre componentes consumidores y mutación?",
+        "option_a": "Un contenedor con métodos de intención y notificación",
+        "option_b": "Una variable pública global",
+        "option_c": "Acceso directo a todos los campos",
+        "option_d": "Un singleton sin API",
+        "correct": "A",
+        "explanation": "La API del contenedor encapsula reglas."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué fuente puede restaurar una preferencia tras reconectar?",
+        "option_a": "Estado persistido en browser storage o fuente durable",
+        "option_b": "Un campo de circuito perdido",
+        "option_c": "Un callback antiguo",
+        "option_d": "Un render anterior sin datos",
+        "correct": "A",
+        "explanation": "La reconstrucción necesita una fuente que sobreviva."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué debe hacer una aplicación si browser storage no está disponible durante prerender?",
+        "option_a": "Retrasar esa lectura hasta que exista interactividad",
+        "option_b": "Asumir que devuelve datos del servidor",
+        "option_c": "Usar cualquier secreto del circuito",
+        "option_d": "Forzar un singleton",
+        "correct": "A",
+        "explanation": "La API del navegador requiere fase interactiva."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué combinación separa correctamente responsabilidades?",
+        "option_a": "Componente para UI efímera, container para compartir, storage/base durable para supervivencia",
+        "option_b": "Singleton para todo",
+        "option_c": "Storage para secretos y campo para facturas",
+        "option_d": "Router para persistencia",
+        "correct": "A",
+        "explanation": "Cada mecanismo tiene un alcance y propósito distinto."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué problema causa notificar después de destruir un componente?",
+        "option_a": "Trabajo o acceso sobre una instancia que ya no debe actualizarse",
+        "option_b": "Persistencia automática",
+        "option_c": "Mejor aislamiento",
+        "option_d": "Una ruta más rápida",
+        "correct": "A",
+        "explanation": "La desuscripción evita callbacks inválidos."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué criterio ayuda a elegir singleton frente a scoped?",
+        "option_a": "Si el estado debe ser global al proceso o aislado por usuario/circuito",
+        "option_b": "Si el botón es azul",
+        "option_c": "Si hay una query string",
+        "option_d": "Si existe un layout",
+        "correct": "A",
+        "explanation": "El alcance deseado guía la elección."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué representa un snapshot inmutable?",
+        "option_a": "Una versión de estado que consumidores pueden observar sin mutaciones inesperadas",
+        "option_b": "Un singleton mutable",
+        "option_c": "Un storage secreto",
+        "option_d": "Un circuito nuevo",
+        "correct": "A",
+        "explanation": "Los snapshots reducen cambios laterales."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué principio final resume la gestión segura de estado?",
+        "option_a": "Definir ownership, lifetime, persistencia y exposición explícitamente",
+        "option_b": "Guardar todo globalmente",
+        "option_c": "No notificar nunca",
+        "option_d": "Usar browser storage para todo",
+        "correct": "A",
+        "explanation": "La gestión correcta hace explícitas esas decisiones."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué debe limitarse al transferir estado durante la hidratación?",
+        "option_a": "La cantidad de datos serializados",
+        "option_b": "El número de layouts",
+        "option_c": "La cantidad de rutas",
+        "option_d": "El nombre del circuito",
+        "correct": "A",
+        "explanation": "Transferir solo lo necesario reduce coste y exposición."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_31_LOT_10_END

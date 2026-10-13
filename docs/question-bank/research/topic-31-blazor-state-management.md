@@ -16,4 +16,4 @@ The source register pins the ASP.NET Core 10.0 view and records retrieval and ve
 - **Prerendering and reconnection:** state unavailable during prerender-only execution, persistent component state, hydration, circuit lifetime, and reconstructing transient state.
 - **Design and safety:** ephemeral UI state versus durable application data, avoiding cross-user leakage, immutable snapshots, and minimizing serialized state.
 
-The 100 statements map to these subtopics and are distributed across the five lots. The remaining 100 objective slots for topic 31 remain planning-only and are not counted as validated questions.
+The initial 100 statements map to these subtopics and are distributed across the five lots. Expansion lots 06–10 add 100 independently reviewed scenarios across component rendering, shared containers, browser persistence, prerendering/circuits and state-safety design. All records remain restricted to the pinned ASP.NET Core 10.0 Microsoft Learn source; no unsupported framework behavior is inferred.
