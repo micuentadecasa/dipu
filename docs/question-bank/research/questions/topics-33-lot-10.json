@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-33-git-theory-installation-local.md",
+  "batches": [
+    {
+      "topic_num": 33,
+      "lot_num": 10,
+      "source_ids": [
+        "GIT-2.50"
+      ],
+      "questions": [
+        {
+          "objective_id": "t33-lo-181",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "Se modifica un archivo y se quiere revisar solo lo que aún no está staged. ¿Qué se usa?",
+          "options": [
+            "git diff",
+            "git diff --cached",
+            "git log",
+            "git show HEAD"
+          ],
+          "correct": "A",
+          "explanation": "diff por defecto compara working tree e índice.",
+          "citation": "git-diff — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-182",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "Se quiere revisar exactamente lo preparado frente a la última punta. ¿Qué se usa?",
+          "options": [
+            "git diff --cached",
+            "git diff --working-tree",
+            "git status --objects",
+            "git check-ignore"
+          ],
+          "correct": "A",
+          "explanation": "cached compara índice y HEAD.",
+          "citation": "git-diff — --cached",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-183",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "Se quiere guardar el cambio en el siguiente snapshot. ¿Qué secuencia local es adecuada?",
+          "options": [
+            "git add y luego git commit",
+            "git log y luego git show",
+            "git ignore y luego git init",
+            "git reflog y luego git clone"
+          ],
+          "correct": "A",
+          "explanation": "add actualiza índice y commit registra ese índice.",
+          "citation": "git-add — DESCRIPTION; git-commit — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-184",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "Un archivo nuevo no aparece en status porque un patrón lo excluye. ¿Qué permite investigarlo?",
+          "options": [
+            "git check-ignore con información de fuente",
+            "git commit --amend",
+            "git show --cached",
+            "git init --force"
+          ],
+          "correct": "A",
+          "explanation": "check-ignore diagnostica el patrón aplicable.",
+          "citation": "git-check-ignore — OPTIONS",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-185",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Un archivo tracked se añade a .gitignore pero sigue en el repositorio. ¿Por qué?",
+          "options": [
+            "Los patrones ignore no eliminan archivos ya tracked",
+            "Porque status nunca muestra tracked",
+            "Porque HEAD es detached",
+            "Porque commit no usa índice"
+          ],
+          "correct": "A",
+          "explanation": "ignore afecta a paths no seguidos.",
+          "citation": "gitignore — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-186",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Se necesita devolver un archivo del índice o working tree según una opción sin mover una ref. ¿Qué orden encaja?",
+          "options": [
+            "git restore",
+            "git reset siempre",
+            "git branch --move",
+            "git reflog"
+          ],
+          "correct": "A",
+          "explanation": "restore se dirige al working tree o índice.",
+          "citation": "git-restore — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-187",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Se necesita mover una ref y elegir un efecto sobre índice/árbol. ¿Qué orden tiene esa capacidad?",
+          "options": [
+            "git reset",
+            "git restore únicamente",
+            "git status",
+            "git diff"
+          ],
+          "correct": "A",
+          "explanation": "reset puede mover refs y modificar otras capas según modo.",
+          "citation": "git-reset — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-188",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Se quiere corregir el mensaje o contenido de la punta sin añadir un commit independiente. ¿Qué operación?",
+          "options": [
+            "git commit --amend",
+            "git commit --new-root",
+            "git log --edit",
+            "git show --replace"
+          ],
+          "correct": "A",
+          "explanation": "amend reemplaza la punta.",
+          "citation": "git-commit — --amend",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-189",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Se comprueba un commit directamente para experimentar sin una rama que avance. ¿Qué estado resulta?",
+          "options": [
+            "Detached HEAD",
+            "Índice vacío siempre",
+            "Working tree ignorado",
+            "HEAD global"
+          ],
+          "correct": "A",
+          "explanation": "HEAD apunta directamente al commit.",
+          "citation": "git-switch — --detach; gitglossary — detached HEAD",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-190",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Se quiere conocer si una ruta está modificada entre HEAD, índice y working tree. ¿Qué orden?",
+          "options": [
+            "git status",
+            "git init",
+            "git tag",
+            "git config"
+          ],
+          "correct": "A",
+          "explanation": "status informa esas diferencias.",
+          "citation": "git-status — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-191",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué componente representa la propuesta antes de crear un commit?",
+          "options": [
+            "El índice",
+            "El reflog",
+            "El object database remoto",
+            "El archivo .gitignore"
+          ],
+          "correct": "A",
+          "explanation": "El índice es el staging area.",
+          "citation": "gitglossary — index; gittutorial — The index",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-192",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué componente contiene los archivos con los que se trabaja actualmente?",
+          "options": [
+            "Working tree",
+            "Index exclusivamente",
+            "Refs/tags",
+            "Logs de refs"
+          ],
+          "correct": "A",
+          "explanation": "El working tree contiene los archivos checkout.",
+          "citation": "gitglossary — working tree",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-193",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué conjunto está ordenado desde contenido editable hasta historial confirmado?",
+          "options": [
+            "Working tree, índice, commit",
+            "Commit, ignore, working tree",
+            "Ref, config, blob",
+            "Reflog, tag, system"
+          ],
+          "correct": "A",
+          "explanation": "El flujo local pasa por esas capas.",
+          "citation": "gittutorial — The index; git-commit — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-194",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué debe configurarse para que la identidad aparezca en nuevos commits?",
+          "options": [
+            "user.name y user.email",
+            "remote.url y push.url",
+            "core.ignore y index.path",
+            "HEAD y FETCH_HEAD"
+          ],
+          "correct": "A",
+          "explanation": "Ambas claves forman la identidad del commit.",
+          "citation": "git-config — user.name; user.email",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-195",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué no garantiza configurar user.email?",
+          "options": [
+            "Autenticación ante un servicio remoto",
+            "Metadatos de committer",
+            "Información del commit",
+            "Identidad textual del autor"
+          ],
+          "correct": "A",
+          "explanation": "La identidad de commit no equivale a autenticación remota.",
+          "citation": "git-config — user.email",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-196",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué consulta permite comprobar la capa efectiva de una clave?",
+          "options": [
+            "git config --list o --get con el alcance apropiado",
+            "git status --remote-only",
+            "git diff --config",
+            "git log --scope"
+          ],
+          "correct": "A",
+          "explanation": "config consulta valores y alcances.",
+          "citation": "git-config — --list; --get",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-197",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué relación hay entre init y clone?",
+          "options": [
+            "init crea/reinicializa localmente; clone crea estructura y obtiene una copia existente",
+            "init siempre obtiene y clone nunca inicializa",
+            "Ambos solo configuran usuario",
+            "Clone solo crea un ignore"
+          ],
+          "correct": "A",
+          "explanation": "Son mecanismos diferentes de creación local.",
+          "citation": "git-init — DESCRIPTION; git-clone — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-198",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué recuperación local puede ayudar después de mover HEAD?",
+          "options": [
+            "Consultar el reflog",
+            "Consultar solo .gitignore",
+            "Ejecutar config --unset",
+            "Mostrar solo untracked"
+          ],
+          "correct": "A",
+          "explanation": "reflog registra actualizaciones locales.",
+          "citation": "git-reflog — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-199",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué diferencia conceptual existe entre un tag anotado y una rama?",
+          "options": [
+            "El tag anotado puede ser un objeto con metadatos; la rama es una ref que avanza",
+            "La rama siempre es un blob",
+            "El tag siempre avanza con commits",
+            "No hay diferencia"
+          ],
+          "correct": "A",
+          "explanation": "Son referencias/objetos con semánticas distintas.",
+          "citation": "gitglossary — tag object; branch",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-200",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué principio resume las capas del trabajo local?",
+          "options": [
+            "Preparar en índice, inspeccionar diferencias y registrar un commit deliberadamente",
+            "Editar HEAD directamente para cada cambio",
+            "Ignorar siempre el índice",
+            "Usar solo el working tree sin historia"
+          ],
+          "correct": "A",
+          "explanation": "El flujo separa preparación, revisión y registro.",
+          "citation": "gittutorial — The index; git-diff; git-commit",
+          "source_id": "GIT-2.50"
+        }
+      ]
+    }
+  ]
+}
