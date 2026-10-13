@@ -454,6 +454,45 @@ LOT_EXPECTATIONS.update({
     }
 })
 
+# Topic 31 expectations are pinned independently of candidate generation.
+LOT_EXPECTATIONS.update({
+    (31, 1): {
+        1:('A','Component state'), 2:('B','Component state'), 3:('C','Component state'), 4:('D','Notify components of state changes'),
+        5:('A','Notify components of state changes'), 6:('B','Component state'), 7:('C','Component state'), 8:('D','Component state'),
+        9:('A','Component state'), 10:('B','Component state'), 11:('C','State management recommendations'), 12:('D','Notify components of state changes'),
+        13:('A','State containers'), 14:('B','Notify components of state changes'), 15:('C','State management recommendations'), 16:('D','Component state'),
+        17:('A','Component state'), 18:('B','State containers'), 19:('C','State containers'), 20:('D','State management recommendations')
+    },
+    (31, 2): {
+        1:('A','State containers'), 2:('B','Notify components of state changes'), 3:('C','State containers'), 4:('D','State containers'),
+        5:('A','State containers'), 6:('B','Notify components of state changes'), 7:('C','State containers'), 8:('D','State containers'),
+        9:('A','Notify components of state changes'), 10:('B','Component state'), 11:('C','State management recommendations'), 12:('D','State containers'),
+        13:('A','State containers'), 14:('B','State management recommendations'), 15:('C','Blazor Server circuits'), 16:('D','State containers'),
+        17:('A','State containers'), 18:('B','State containers'), 19:('C','Browser storage'), 20:('D','State containers')
+    },
+    (31, 3): {
+        1:('A','Browser storage'), 2:('B','Browser storage'), 3:('C','Browser storage'), 4:('D','Browser storage'),
+        5:('A','Browser storage'), 6:('B','Prerendering'), 7:('C','Browser storage'), 8:('D','Browser storage'),
+        9:('A','Browser storage'), 10:('B','Browser storage'), 11:('C','Browser storage'), 12:('D','Browser storage'),
+        13:('A','Browser storage'), 14:('B','Browser storage'), 15:('C','State management recommendations'), 16:('D','Browser storage'),
+        17:('A','Browser storage'), 18:('B','Browser storage'), 19:('C','Browser storage'), 20:('D','State management recommendations')
+    },
+    (31, 4): {
+        1:('A','Prerendering'), 2:('B','Prerendering'), 3:('C','PersistentComponentState'), 4:('D','Persist prerendered state'),
+        5:('A','PersistentComponentState'), 6:('B','PersistentComponentState'), 7:('C','PersistentComponentState'), 8:('D','PersistentComponentState'),
+        9:('A','PersistentComponentState'), 10:('B','State management recommendations'), 11:('C','Prerendering'), 12:('D','Persist prerendered state'),
+        13:('A','PersistentComponentState'), 14:('B','State management recommendations'), 15:('C','PersistentComponentState'), 16:('D','PersistentComponentState'),
+        17:('A','Prerendering'), 18:('B','PersistentComponentState'), 19:('C','PersistentComponentState'), 20:('D','PersistentComponentState')
+    },
+    (31, 5): {
+        1:('A','State management recommendations'), 2:('B','State management recommendations'), 3:('C','State management recommendations'), 4:('D','State management recommendations'),
+        5:('A','State containers'), 6:('B','State containers'), 7:('C','Notify components of state changes'), 8:('D','State containers'),
+        9:('A','State containers'), 10:('B','State management recommendations'), 11:('C','State management recommendations'), 12:('D','State management recommendations'),
+        13:('A','State management recommendations'), 14:('B','State containers'), 15:('C','Blazor Server circuits'), 16:('D','State management recommendations'),
+        17:('A','State management recommendations'), 18:('B','State management recommendations'), 19:('C','State containers'), 20:('D','State management recommendations')
+    }
+})
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("topic_num", type=int, choices=tuple(range(2, 41)))

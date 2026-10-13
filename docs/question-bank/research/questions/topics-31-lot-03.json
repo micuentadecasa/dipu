@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-31-blazor-state-management.md",
+  "batches": [
+    {
+      "topic_num": 31,
+      "lot_num": 3,
+      "source_ids": [
+        "BLAZOR-STATE-10"
+      ],
+      "questions": [
+        {
+          "objective_id": "t31-lo-041",
+          "difficulty": "basic",
+          "type": "definition",
+          "question": "¿Qué almacenamiento del navegador conserva valores después de cerrar y volver a abrir el navegador?",
+          "options": [
+            "localStorage",
+            "sessionStorage",
+            "RenderFragment",
+            "DbContext"
+          ],
+          "correct": "A",
+          "explanation": "localStorage persiste datos del origen más allá de la sesión de la pestaña.",
+          "citation": "Browser storage",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-042",
+          "difficulty": "basic",
+          "type": "definition",
+          "question": "¿Qué almacenamiento se asocia normalmente a la vida de una pestaña o sesión de navegación?",
+          "options": [
+            "localStorage",
+            "sessionStorage",
+            "IServiceProvider",
+            "PersistentComponentState"
+          ],
+          "correct": "B",
+          "explanation": "sessionStorage dura la sesión de la pestaña según el almacenamiento del navegador.",
+          "citation": "Browser storage",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-043",
+          "difficulty": "basic",
+          "type": "comparison",
+          "question": "¿Qué alcance comparten localStorage y sessionStorage respecto a los datos almacenados?",
+          "options": [
+            "Todos los orígenes del equipo",
+            "Todos los usuarios del servidor",
+            "El origen del navegador",
+            "Solo el componente actual"
+          ],
+          "correct": "C",
+          "explanation": "El almacenamiento web está aislado por origen; no es una base de datos global entre sitios.",
+          "citation": "Browser storage",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-044",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Por qué una aplicación Blazor suele serializar un objeto antes de guardarlo en almacenamiento web?",
+          "options": [
+            "Porque el servidor exige SQL",
+            "Porque StateHasChanged lo requiere",
+            "Porque JSON evita toda validación",
+            "Porque el almacenamiento web maneja valores de texto"
+          ],
+          "correct": "D",
+          "explanation": "Los objetos se convierten normalmente a una representación textual, como JSON, para almacenarlos y recuperarlos.",
+          "citation": "Browser storage",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-045",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué mecanismo usa Blazor para acceder normalmente a APIs de almacenamiento del navegador?",
+          "options": [
+            "Interop de JavaScript",
+            "Inyección de DbContext",
+            "Middleware de rutas",
+            "Un filtro de autorización"
+          ],
+          "correct": "A",
+          "explanation": "Las APIs de localStorage y sessionStorage pertenecen al navegador y se alcanzan mediante JavaScript interop o una biblioteca basada en él.",
+          "citation": "Browser storage",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-046",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "Un componente intenta leer localStorage durante el prerenderizado en el servidor. ¿Qué debe prever?",
+          "options": [
+            "El valor se crea en SQL",
+            "La API del navegador aún no está disponible",
+            "La lectura siempre devuelve el usuario actual",
+            "El navegador ejecuta JS en el servidor"
+          ],
+          "correct": "B",
+          "explanation": "Durante prerendering no existe un DOM de navegador disponible para ejecutar esa interop.",
+          "citation": "Prerendering",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-047",
+          "difficulty": "intermediate",
+          "type": "comparison",
+          "question": "¿Qué tipo de datos no debe guardarse en localStorage por considerarse público para el código del cliente?",
+          "options": [
+            "Preferencias de tema",
+            "Una página seleccionada",
+            "Secretos y credenciales",
+            "Un filtro no sensible"
+          ],
+          "correct": "C",
+          "explanation": "El usuario o scripts del origen pueden inspeccionar localStorage; no es un almacén de secretos.",
+          "citation": "Browser storage",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-048",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué operación elimina una clave concreta del almacenamiento de navegador?",
+          "options": [
+            "DeleteRow",
+            "ClearCircuit",
+            "DropKey",
+            "removeItem"
+          ],
+          "correct": "D",
+          "explanation": "removeItem elimina la entrada identificada por su clave del almacenamiento web.",
+          "citation": "Browser storage",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-049",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué operación borra todas las entradas del almacenamiento del origen actual?",
+          "options": [
+            "clear",
+            "ResetAllComponents",
+            "DisposeStorage",
+            "RemoveOrigin"
+          ],
+          "correct": "A",
+          "explanation": "clear vacía las entradas del almacenamiento asociado al origen.",
+          "citation": "Browser storage",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-050",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "Un valor guardado no existe al restaurar una preferencia. ¿Qué resultado debe manejar el componente?",
+          "options": [
+            "Una instancia válida garantizada",
+            "Una ausencia o valor nulo",
+            "Una ruta nueva",
+            "Un circuito autenticado"
+          ],
+          "correct": "B",
+          "explanation": "El componente debe tratar la clave ausente como un caso normal y aplicar un valor inicial seguro.",
+          "citation": "Browser storage",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-051",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué propiedad diferencia una preferencia guardada en localStorage de un campo local?",
+          "options": [
+            "Se sincroniza siempre con todos los usuarios",
+            "Solo existe durante un render",
+            "Puede restaurarse después de recrear la instancia",
+            "No requiere serialización"
+          ],
+          "correct": "C",
+          "explanation": "localStorage ofrece persistencia en el navegador, mientras el campo local vive con la instancia del componente.",
+          "citation": "Browser storage",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-052",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "Un usuario abre dos pestañas del mismo origen y usa sessionStorage en ambas. ¿Qué debe asumir la aplicación?",
+          "options": [
+            "Ambas comparten siempre el mismo objeto",
+            "El servidor mezcla sus circuitos",
+            "sessionStorage dura después de cerrar todo",
+            "Cada pestaña tiene su propio almacenamiento de sesión"
+          ],
+          "correct": "D",
+          "explanation": "sessionStorage se asocia a la sesión de una pestaña y no es un contenedor global entre pestañas.",
+          "citation": "Browser storage",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-053",
+          "difficulty": "intermediate",
+          "type": "procedure",
+          "question": "¿Qué debe hacer una aplicación al cambiar el formato JSON de un estado persistido antiguo?",
+          "options": [
+            "Versionar o migrar el formato antes de usarlo",
+            "Deserializarlo sin comprobar",
+            "Borrar toda la cuenta del usuario",
+            "Convertirlo en un servicio singleton"
+          ],
+          "correct": "A",
+          "explanation": "Los formatos persistidos necesitan compatibilidad, versión o migración para restaurarse de forma segura.",
+          "citation": "Browser storage",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-054",
+          "difficulty": "intermediate",
+          "type": "scenario",
+          "question": "Una escritura en almacenamiento web falla por cuota o restricciones del navegador. ¿Qué diseño es adecuado?",
+          "options": [
+            "Asumir que toda escritura tiene éxito",
+            "Tratar el error y conservar un estado operativo alternativo",
+            "Reiniciar el servidor",
+            "Guardar el error como secreto"
+          ],
+          "correct": "B",
+          "explanation": "El almacenamiento del cliente puede fallar y no debe ser la única fuente irremplazable del estado.",
+          "citation": "Browser storage",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-055",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Qué dato debe permanecer en el servidor aunque exista una copia de conveniencia en localStorage?",
+          "options": [
+            "El color elegido por el usuario",
+            "El tamaño de una ventana",
+            "El estado autoritativo de una operación sensible",
+            "La pestaña activa"
+          ],
+          "correct": "C",
+          "explanation": "El cliente puede manipularse; decisiones sensibles deben validarse y persistirse en el servidor autorizado.",
+          "citation": "State management recommendations",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-056",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué característica hace que localStorage no sea equivalente a una base de datos de aplicación?",
+          "options": [
+            "Tiene transacciones SQL completas",
+            "Se comparte entre todos los servidores",
+            "Se replica automáticamente entre dispositivos",
+            "Está limitado al navegador y al origen del cliente"
+          ],
+          "correct": "D",
+          "explanation": "localStorage es almacenamiento local del navegador y no aporta el modelo de durabilidad y autoridad de una base de datos.",
+          "citation": "Browser storage",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-057",
+          "difficulty": "advanced",
+          "type": "procedure",
+          "question": "¿Qué representación permite guardar una lista simple en almacenamiento web y reconstruirla después?",
+          "options": [
+            "Una cadena JSON",
+            "Un puntero a un componente",
+            "Un circuito serializado por referencia",
+            "Un DbSet"
+          ],
+          "correct": "A",
+          "explanation": "JSON proporciona una representación textual que puede analizarse al restaurar la lista.",
+          "citation": "Browser storage",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-058",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Una aplicación guarda datos sensibles en localStorage esperando que HttpOnly los proteja. ¿Qué conclusión es correcta?",
+          "options": [
+            "localStorage siempre es HttpOnly",
+            "HttpOnly no protege entradas escritas en localStorage",
+            "El servidor cifra automáticamente el navegador",
+            "El valor nunca puede leerse con scripts"
+          ],
+          "correct": "B",
+          "explanation": "HttpOnly es una propiedad de cookies y no convierte el almacenamiento web en secreto.",
+          "citation": "Browser storage",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-059",
+          "difficulty": "advanced",
+          "type": "comparison",
+          "question": "¿Qué opción conserva una preferencia al recargar la página pero no necesariamente al cerrar la pestaña?",
+          "options": [
+            "localStorage",
+            "Una tabla del servidor",
+            "sessionStorage",
+            "Un singleton de proceso"
+          ],
+          "correct": "C",
+          "explanation": "sessionStorage puede sobrevivir a una recarga dentro de la sesión de la pestaña, pero su ciclo es más corto que localStorage.",
+          "citation": "Browser storage",
+          "source_id": "BLAZOR-STATE-10"
+        },
+        {
+          "objective_id": "t31-lo-060",
+          "difficulty": "advanced",
+          "type": "scenario",
+          "question": "Una aplicación necesita sincronizar el estado de un usuario entre varios dispositivos. ¿Qué solución no basta por sí sola?",
+          "options": [
+            "Una API del servidor",
+            "Una base de datos del usuario",
+            "Un servicio autorizado",
+            "localStorage"
+          ],
+          "correct": "D",
+          "explanation": "localStorage pertenece a un navegador concreto y no sincroniza automáticamente dispositivos.",
+          "citation": "State management recommendations",
+          "source_id": "BLAZOR-STATE-10"
+        }
+      ]
+    }
+  ]
+}
