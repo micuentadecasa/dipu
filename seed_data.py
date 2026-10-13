@@ -23273,3 +23273,1028 @@ SEED_QUESTIONS.extend([
     }
 ])
 # QUESTION_BANK_ACCEPTED_TOPIC_38_LOT_05_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_39_LOT_01_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 39,
+        "question": "Según el artículo 5.1 del Real Decreto 203/2021, ¿qué es un portal de internet de una Administración Pública?",
+        "option_a": "Un punto de acceso electrónico titularidad de una Administración que permite acceder por internet a información y, en su caso, a una sede",
+        "option_b": "Un registro contable de facturas",
+        "option_c": "Un certificado cualificado de autenticación",
+        "option_d": "Un órgano colegiado de contratación",
+        "correct": "A",
+        "explanation": "El portal es un punto de acceso electrónico titularidad pública para información y, en su caso, la sede."
+    },
+    {
+        "topic_num": 39,
+        "question": "En el ámbito estatal, ¿qué requisito de dominio debe incluir la dirección electrónica de un nuevo portal?",
+        "option_a": "El dominio .com",
+        "option_b": "El nombre de dominio de segundo nivel «.gob.es»",
+        "option_c": "El dominio de la Unión Europea «.eu»",
+        "option_d": "Un dominio reservado a proveedores",
+        "correct": "B",
+        "explanation": "El artículo 6.2 exige que la dirección incluya el dominio de segundo nivel «.gob.es»."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué deben tener las Administraciones Públicas según el artículo 7.1 del Real Decreto 203/2021?",
+        "option_a": "Una aplicación móvil obligatoria",
+        "option_b": "Un registro contable único",
+        "option_c": "Un Punto de Acceso General electrónico (PAGe)",
+        "option_d": "Un certificado de sello para cada ciudadano",
+        "correct": "C",
+        "explanation": "El reglamento establece que las Administraciones Públicas contarán con un PAGe."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué función de comprobación atribuye el artículo 7.4 al PAGe estatal?",
+        "option_a": "Autorizar contratos menores",
+        "option_b": "Emitir certificados de empleado público",
+        "option_c": "Conceder subvenciones directas",
+        "option_d": "Comprobar la autenticidad e integridad de documentos mediante CSV u otro sistema cualificado usado en su generación",
+        "correct": "D",
+        "explanation": "La sede del PAGe estatal permite comprobar autenticidad e integridad y, en su caso, recuperar los documentos."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Cómo define el artículo 8.1 la Carpeta Ciudadana del sector público estatal?",
+        "option_a": "Como el área personalizada de las personas interesadas en su relación con el sector público estatal",
+        "option_b": "Como un archivo electrónico de facturas",
+        "option_c": "Como un directorio de oficinas de registro",
+        "option_d": "Como una plataforma de licitación",
+        "correct": "A",
+        "explanation": "La Carpeta es el área personalizada vinculada al área del PAGe prevista en el artículo 7.3."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Cuál es una funcionalidad que puede ofrecer la Carpeta Ciudadana?",
+        "option_a": "Aprobar automáticamente cualquier solicitud",
+        "option_b": "Permitir el seguimiento del estado de tramitación de los procedimientos del interesado",
+        "option_c": "Sustituir todos los boletines oficiales",
+        "option_d": "Crear certificados cualificados de prestadores",
+        "correct": "B",
+        "explanation": "El seguimiento del estado de los procedimientos figura entre sus funcionalidades."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Mediante qué sistemas accede el interesado a la Carpeta Ciudadana?",
+        "option_a": "Solo mediante contraseña postal",
+        "option_b": "Solo mediante comparecencia presencial",
+        "option_c": "Mediante los sistemas de identificación del artículo 9.2 de la Ley 39/2015",
+        "option_d": "Mediante cualquier correo electrónico",
+        "correct": "C",
+        "explanation": "El acceso se realiza mediante los sistemas de identificación previstos en la Ley 39/2015."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué es una sede electrónica conforme al artículo 9.1 del Real Decreto 203/2021?",
+        "option_a": "Un repositorio privado de datos",
+        "option_b": "Un canal telefónico de asistencia",
+        "option_c": "Una aplicación de firma de proveedores",
+        "option_d": "Una dirección electrónica disponible para la ciudadanía mediante redes de telecomunicaciones",
+        "correct": "D",
+        "explanation": "La sede es una dirección electrónica para actuaciones y trámites que requieran identificación de la Administración y, en su caso, del interesado."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Dónde debe publicarse el acto de creación o supresión de una sede electrónica?",
+        "option_a": "En el boletín oficial correspondiente y en el directorio del PAGe que corresponda",
+        "option_b": "Solo en una red social institucional",
+        "option_c": "Solo en el registro contable de facturas",
+        "option_d": "Únicamente en el expediente interno",
+        "correct": "A",
+        "explanation": "El artículo 10.2 exige ambas publicaciones; para entidades locales, el boletín es el de la provincia."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Cuál de estos elementos forma parte del contenido mínimo de toda sede electrónica?",
+        "option_a": "El historial de navegación de todos los usuarios",
+        "option_b": "La relación de sistemas de identificación y firma admitidos o utilizados",
+        "option_c": "La clave privada del certificado de sede",
+        "option_d": "El listado de contraseñas de los interesados",
+        "correct": "B",
+        "explanation": "El artículo 11.1.d incluye la relación de sistemas de identificación y firma."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué fecha debe ofrecer una sede electrónica entre su contenido mínimo?",
+        "option_a": "La fecha de nacimiento del titular",
+        "option_b": "La fecha de la última factura",
+        "option_c": "La fecha y hora oficial, junto con el calendario de días inhábiles aplicable",
+        "option_d": "La fecha de alta de cada usuario",
+        "correct": "C",
+        "explanation": "La fecha y hora oficial y el calendario de días inhábiles son contenido mínimo."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué servicio de verificación debe ofrecer, al menos, una sede electrónica?",
+        "option_a": "Un sistema para modificar leyes",
+        "option_b": "Un servicio para ocultar los anuncios",
+        "option_c": "Un servicio para emitir tarjetas bancarias",
+        "option_d": "Un sistema de verificación de los certificados de la sede electrónica",
+        "correct": "D",
+        "explanation": "El artículo 11.2.d incluye la verificación de los certificados de la sede."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Quién responde de la integridad, veracidad y actualización de la información y servicios de competencia de una sede?",
+        "option_a": "El titular de la sede electrónica",
+        "option_b": "Cualquier usuario registrado",
+        "option_c": "El proveedor de telefonía",
+        "option_d": "El órgano que gestione el registro contable",
+        "correct": "A",
+        "explanation": "El artículo 12.1 atribuye esa responsabilidad al titular de la sede."
+    },
+    {
+        "topic_num": 39,
+        "question": "En el ámbito estatal, ¿cómo se autoriza la determinación de una actuación administrativa como automatizada?",
+        "option_a": "Por una encuesta pública",
+        "option_b": "Por resolución del titular del órgano competente por razón de la materia o del órgano ejecutivo competente del organismo",
+        "option_c": "Por una factura electrónica",
+        "option_d": "Por una decisión del proveedor del software",
+        "correct": "B",
+        "explanation": "El artículo 13.2 exige resolución del órgano competente y publicación en la sede."
+    },
+    {
+        "topic_num": 39,
+        "question": "Si una persona obligada a relacionarse electrónicamente no utiliza ese medio, ¿qué plazo ordinario se concede para subsanar?",
+        "option_a": "Dos días",
+        "option_b": "Cinco días naturales",
+        "option_c": "Diez días",
+        "option_d": "Un mes",
+        "correct": "C",
+        "explanation": "El artículo 14.1 establece un requerimiento de subsanación con plazo de diez días."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué deben garantizar los sistemas de firma electrónica admitidos por las Administraciones?",
+        "option_a": "La gratuidad de todo trámite",
+        "option_b": "La identificación de los interesados y, en su caso, la autenticidad e integridad de los documentos",
+        "option_c": "La eliminación del registro",
+        "option_d": "La sustitución de los boletines oficiales",
+        "correct": "D",
+        "explanation": "El artículo 15.1 vincula la firma a la identificación y a la autenticidad e integridad documental."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué plataforma debe disponer la Administración General del Estado según el artículo 16?",
+        "option_a": "Una plataforma para verificar la vigencia y contenido de certificados cualificados admitidos en el sector público",
+        "option_b": "Una plataforma para adjudicar todas las obras",
+        "option_c": "Una plataforma para emitir facturas privadas",
+        "option_d": "Una plataforma de mensajería ciudadana",
+        "correct": "A",
+        "explanation": "El reglamento prevé una plataforma de verificación libre y gratuita para el sector público."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Quién es responsable de la plataforma estatal de verificación de certificados?",
+        "option_a": "La Agencia Estatal de Administración Tributaria",
+        "option_b": "La Secretaría General de Administración Digital",
+        "option_c": "El órgano de contratación de cada ministerio",
+        "option_d": "La entidad colaboradora de cada subvención",
+        "correct": "B",
+        "explanation": "El artículo 16.1 atribuye esa responsabilidad a la Secretaría General de Administración Digital."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Cómo se aprueba la política de firma electrónica y certificados en el ámbito estatal?",
+        "option_a": "Por resolución de la persona titular de la Secretaría de Estado de Digitalización e Inteligencia Artificial",
+        "option_b": "Por un contrato menor",
+        "option_c": "Por decisión unilateral de cada proveedor",
+        "option_d": "Por resolución de cualquier oficina de registro",
+        "correct": "A",
+        "explanation": "El artículo 17.3 establece esa aprobación y su publicación en el BOE y en la sede del PAGe estatal."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué certificado utilizan las sedes electrónicas estatales para identificarse y garantizar una comunicación segura?",
+        "option_a": "Un certificado de sello personal no cualificado",
+        "option_b": "Un certificado cualificado de autenticación de sitio web",
+        "option_c": "Un certificado de facturae",
+        "option_d": "Un certificado de registro contable",
+        "correct": "B",
+        "explanation": "El artículo 18.2 dispone la identificación estatal mediante certificados cualificados de autenticación de sitio web."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_39_LOT_01_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_39_LOT_02_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 39,
+        "question": "¿Cuál es el objetivo principal de Cl@ve según su página oficial?",
+        "option_a": "Unificar y simplificar el acceso electrónico de los ciudadanos a los servicios públicos",
+        "option_b": "Sustituir los registros contables",
+        "option_c": "Gestionar únicamente licitaciones",
+        "option_d": "Emitir documentos nacionales de identidad",
+        "correct": "A",
+        "explanation": "La página oficial presenta Cl@ve como sistema para unificar y simplificar el acceso electrónico a servicios públicos."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué sistema complementa Cl@ve?",
+        "option_a": "Solo los pagos con tarjeta",
+        "option_b": "Los sistemas de acceso mediante DNIe y certificado electrónico",
+        "option_c": "Únicamente la factura en papel",
+        "option_d": "Los registros mercantiles",
+        "correct": "B",
+        "explanation": "La información oficial indica que Cl@ve complementa el DNIe y el certificado electrónico."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué tipo de firma permite Cl@ve además de la identificación y autenticación?",
+        "option_a": "Firma manuscrita digitalizada",
+        "option_b": "Firma en la nube con certificados personales custodiados en servidores remotos",
+        "option_c": "Firma sin certificado ni autenticación",
+        "option_d": "Firma exclusiva mediante registro presencial",
+        "correct": "B",
+        "explanation": "La página oficial describe la posibilidad de firma en la nube con certificados custodiados remotamente."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué nivel de registro puede resultar de los procedimientos de registro de Cl@ve?",
+        "option_a": "Básico o avanzado",
+        "option_b": "Local o provincial",
+        "option_c": "Público o privado",
+        "option_d": "Temporal o definitivo",
+        "correct": "A",
+        "explanation": "La página oficial distingue el nivel básico y el nivel avanzado según el método utilizado."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué permite Cl@ve Móvil según la página oficial?",
+        "option_a": "Identificarse sin claves ni contraseñas escaneando un QR o confirmando una petición en el móvil",
+        "option_b": "Firmar cualquier contrato sin autenticación",
+        "option_c": "Crear un certificado cualificado de prestador",
+        "option_d": "Acceder solo a servicios presenciales",
+        "correct": "A",
+        "explanation": "Cl@ve Móvil permite identificarse mediante QR o confirmación de la petición recibida en el móvil."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Para qué está orientada Cl@ve Permanente?",
+        "option_a": "A los accesos habituales y al uso de la firma en la nube",
+        "option_b": "Exclusivamente a renovar el DNI",
+        "option_c": "Solo a registrar facturas",
+        "option_d": "A sustituir el PAGe estatal",
+        "correct": "A",
+        "explanation": "La página de Cl@ve describe Cl@ve Permanente como opción para accesos habituales y firma en la nube."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué refuerzo puede requerir Cl@ve Permanente en servicios de nivel superior?",
+        "option_a": "Una clave de un solo uso remitida por SMS",
+        "option_b": "Un documento en papel sin firmar",
+        "option_c": "Una llamada al registro mercantil",
+        "option_d": "Un segundo certificado de sede",
+        "correct": "A",
+        "explanation": "La modalidad reforzada añade una clave de un solo uso enviada por SMS."
+    },
+    {
+        "topic_num": 39,
+        "question": "En la pasarela de Cl@ve, ¿qué determina qué métodos de identificación aparecen disponibles?",
+        "option_a": "Que el método proporcione un nivel de seguridad igual o superior al requerido por el servicio",
+        "option_b": "El tamaño del dispositivo",
+        "option_c": "El número de facturas pendientes",
+        "option_d": "La provincia del usuario",
+        "correct": "A",
+        "explanation": "La página oficial explica que solo se permiten métodos con nivel suficiente para el servicio."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué puede ocurrir en la pasarela si el nivel de registro no permite acceder a un trámite?",
+        "option_a": "Algunos métodos aparecen en gris o no aparecen",
+        "option_b": "Se borra el registro del usuario",
+        "option_c": "Se convierte automáticamente en firma manuscrita",
+        "option_d": "Se crea una sede asociada",
+        "correct": "A",
+        "explanation": "La página oficial indica que los métodos no disponibles aparecen en tonos grises o no aparecen."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué sucede después de identificarse correctamente mediante Cl@ve?",
+        "option_a": "Cl@ve redirige automáticamente al servicio de administración electrónica",
+        "option_b": "Se exige siempre una comparecencia presencial",
+        "option_c": "Se cierra el expediente sin trámite",
+        "option_d": "Se genera una factura electrónica",
+        "correct": "A",
+        "explanation": "La página oficial describe el retorno automático al servicio electrónico tras la identificación."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué registro se exige previamente para usar la firma centralizada de Cl@ve?",
+        "option_a": "Registro de Nivel Avanzado en Cl@ve",
+        "option_b": "Registro de proveedor en FACe",
+        "option_c": "Registro contable de facturas",
+        "option_d": "Registro de contratistas menores",
+        "correct": "A",
+        "explanation": "La página oficial de Cl@ve Firma exige previamente un registro de nivel avanzado."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Dónde se almacenan y custodian los certificados centralizados de Cl@ve Firma?",
+        "option_a": "En servidores de la Administración Pública",
+        "option_b": "En el navegador del usuario exclusivamente",
+        "option_c": "En el registro contable de facturas",
+        "option_d": "En la sede electrónica del proveedor",
+        "correct": "A",
+        "explanation": "La información oficial los describe como certificados almacenados y custodiados por la Administración Pública."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué ventaja describe Cl@ve para la firma centralizada?",
+        "option_a": "Permite firmar desde cualquier dispositivo con conexión a Internet sin equipamiento adicional",
+        "option_b": "Obliga a usar un lector físico en cada firma",
+        "option_c": "Solo permite firmar desde una oficina",
+        "option_d": "Impide usar dispositivos móviles",
+        "correct": "A",
+        "explanation": "Los certificados en la nube permiten firmar desde cualquier dispositivo conectado, sin equipamiento adicional."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué ocurre con la contraseña de Cl@ve Permanente?",
+        "option_a": "Tiene una validez limitada en el tiempo",
+        "option_b": "Es ilimitada y no puede cambiarse",
+        "option_c": "Solo sirve para trámites presenciales",
+        "option_d": "Se sustituye siempre por una factura",
+        "correct": "A",
+        "explanation": "La página oficial indica que la validez de la contraseña está limitada en el tiempo."
+    },
+    {
+        "topic_num": 39,
+        "question": "En Cl@ve Firma, ¿qué genera el certificado de firma?",
+        "option_a": "Puede generarse automáticamente al realizar la primera firma o en otro momento elegido por el usuario",
+        "option_b": "Solo puede generarlo un órgano de contratación",
+        "option_c": "Se genera al presentar una factura",
+        "option_d": "Lo genera cualquier sede sin autorización",
+        "correct": "A",
+        "explanation": "La página oficial permite la generación automática en la primera firma o en otro momento a voluntad del usuario."
+    },
+    {
+        "topic_num": 39,
+        "question": "Según el artículo 20 del Real Decreto 203/2021, ¿qué sistemas puede determinar una Administración para la firma en actuación automatizada?",
+        "option_a": "Sello electrónico cualificado o código seguro de verificación",
+        "option_b": "Solo contraseña y correo electrónico",
+        "option_c": "Solo firma manuscrita escaneada",
+        "option_d": "Únicamente DNI físico",
+        "correct": "A",
+        "explanation": "El artículo 20 enumera el sello electrónico y el CSV vinculado a la Administración."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué vincula el código seguro de verificación a un documento?",
+        "option_a": "Al órgano, organismo o entidad y, en su caso, a la persona firmante",
+        "option_b": "A la cuenta bancaria del proveedor",
+        "option_c": "A la fecha de una licitación",
+        "option_d": "A una contraseña de Cl@ve Móvil",
+        "correct": "A",
+        "explanation": "El artículo 21.1 vincula el código al órgano y, en su caso, a la persona firmante."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué propiedad debe garantizar el sistema de CSV respecto de cada documento?",
+        "option_a": "El carácter único del código generado",
+        "option_b": "Que todos los documentos compartan el mismo código",
+        "option_c": "Que el código no pueda verificarse",
+        "option_d": "Que solo exista en papel",
+        "correct": "A",
+        "explanation": "El artículo 21.2.b exige que el código sea único para cada documento."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué ocurre si se modifica un documento generado con CSV?",
+        "option_a": "Se genera un nuevo documento con un CSV diferente",
+        "option_b": "Se conserva obligatoriamente el mismo CSV",
+        "option_c": "Se convierte en factura electrónica",
+        "option_d": "Se elimina la sede electrónica",
+        "correct": "A",
+        "explanation": "El artículo 21.2.c establece esa consecuencia para preservar la vinculación del código."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Cuál es el plazo mínimo estatal de disponibilidad para verificar un CSV aplicado a un documento?",
+        "option_a": "Cinco años, salvo que una norma especial prevea un plazo superior",
+        "option_b": "Diez días en todos los casos",
+        "option_c": "Un mes sin excepciones",
+        "option_d": "Cincuenta años en todos los casos",
+        "correct": "A",
+        "explanation": "El artículo 21.4.e fija al menos cinco años, salvo plazo superior por norma especial."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_39_LOT_02_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_39_LOT_03_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 39,
+        "question": "¿Qué identificación deben contener, como mínimo, los certificados electrónicos de empleado público?",
+        "option_a": "La condición de cualificado y ajuste al ENI y a la legislación de identidad y firma",
+        "option_b": "Solo el nombre de la oficina",
+        "option_c": "Una factura asociada",
+        "option_d": "El número de expediente de contratación",
+        "correct": "A",
+        "explanation": "El artículo 22.3 exige certificados cualificados conformes con el ENI y la legislación vigente."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Cuándo pueden incluir un número de identificación profesional los certificados de empleado público?",
+        "option_a": "Cuando la Administración lo solicite para actuaciones en las que esté legalmente justificado el anonimato",
+        "option_b": "Siempre que lo pida cualquier ciudadano",
+        "option_c": "Solo para facturas privadas",
+        "option_d": "Únicamente para contratos menores",
+        "correct": "A",
+        "explanation": "El artículo 23 contempla esa posibilidad para información clasificada, seguridad pública, defensa u otras actuaciones justificadas."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué regula la acreditación de la representación de las personas interesadas en el Real Decreto 203/2021?",
+        "option_a": "El registro electrónico de apoderamientos y las condiciones de acreditación de la representación",
+        "option_b": "La custodia de facturas en papel",
+        "option_c": "La clasificación de contratistas",
+        "option_d": "El calendario presupuestario",
+        "correct": "A",
+        "explanation": "El reglamento desarrolla la acreditación de representación y el registro electrónico de apoderamientos."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué principio describe el Real Decreto 203/2021 como capacidad de compartir datos y posibilitar el intercambio de información?",
+        "option_a": "Interoperabilidad",
+        "option_b": "Publicidad contractual",
+        "option_c": "Concurrencia competitiva",
+        "option_d": "Subsanación",
+        "correct": "A",
+        "explanation": "El reglamento define la interoperabilidad en esos términos."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué canal debe ofrecer asistencia para el acceso a los servicios electrónicos?",
+        "option_a": "Canales de asistencia para el acceso a los servicios electrónicos conforme al reglamento",
+        "option_b": "Solo correo postal",
+        "option_c": "Solo atención de proveedores",
+        "option_d": "Ningún canal adicional",
+        "correct": "A",
+        "explanation": "El título preliminar incluye canales de asistencia para el acceso a los servicios electrónicos."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué permite la Carpeta Ciudadana además del seguimiento de procedimientos?",
+        "option_a": "Acceder a comunicaciones y notificaciones del interesado",
+        "option_b": "Modificar el texto de una ley",
+        "option_c": "Adjudicar un contrato",
+        "option_d": "Emitir moneda electrónica",
+        "correct": "A",
+        "explanation": "El artículo 8.2.b incluye el acceso a comunicaciones y notificaciones."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué información puede conocer el interesado desde la Carpeta Ciudadana?",
+        "option_a": "Qué datos suyos obran en poder del sector público estatal, dentro de los límites legales",
+        "option_b": "Las claves privadas de otros usuarios",
+        "option_c": "Todos los expedientes secretos",
+        "option_d": "Las contraseñas de las sedes",
+        "correct": "A",
+        "explanation": "El artículo 8.2.c reconoce esa funcionalidad con las limitaciones normativas."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué debe hacer el interesado respecto del acceso a su Carpeta Ciudadana?",
+        "option_a": "Velar por que el acceso solo lo realice él mismo o un tercero autorizado",
+        "option_b": "Compartir siempre sus credenciales",
+        "option_c": "Publicar su carpeta en el PAGe",
+        "option_d": "Renunciar a la identificación",
+        "correct": "A",
+        "explanation": "El artículo 8.4 exige buen uso de los sistemas y control del acceso autorizado."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué debe publicar una sede sobre las actuaciones administrativas automatizadas vinculadas?",
+        "option_a": "Su relación y una descripción de diseño, funcionamiento, rendición de cuentas, transparencia y datos utilizados",
+        "option_b": "Las claves privadas del sistema",
+        "option_c": "El historial de navegación individual",
+        "option_d": "La lista de proveedores no relacionados",
+        "correct": "A",
+        "explanation": "El artículo 11.1.i exige esa relación y descripción."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué servicio de una sede permite localizar la oficina de asistencia en materia de registros más próxima?",
+        "option_a": "El directorio geográfico de oficinas de asistencia en materia de registros",
+        "option_b": "El registro contable de facturas",
+        "option_c": "El perfil de contratante",
+        "option_d": "El archivo de certificados",
+        "correct": "A",
+        "explanation": "El artículo 11.2.i exige ese servicio de consulta del directorio geográfico."
+    },
+    {
+        "topic_num": 39,
+        "question": "Si una sede enlaza a otra sede, ¿quién responde de la información de la sede enlazada?",
+        "option_a": "El titular de la sede enlazada, sin perjuicio de la diligencia del titular de la primera",
+        "option_b": "El usuario que siga el enlace",
+        "option_c": "El órgano de contratación",
+        "option_d": "La oficina contable",
+        "correct": "A",
+        "explanation": "El artículo 12.2 atribuye la responsabilidad al titular de la sede de destino."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué debe expresar la resolución estatal que autorice una actuación administrativa automatizada?",
+        "option_a": "Los recursos procedentes, el órgano ante el que se presentan y el plazo para interponerlos",
+        "option_b": "La contraseña del empleado",
+        "option_c": "La factura del software",
+        "option_d": "La lista de licitadores",
+        "correct": "A",
+        "explanation": "El artículo 13.2 exige que la resolución informe sobre recursos, órgano y plazo."
+    },
+    {
+        "topic_num": 39,
+        "question": "En la subsanación de una solicitud electrónica, ¿cuándo se considera presentada la solicitud de iniciación?",
+        "option_a": "En la fecha de la subsanación",
+        "option_b": "En la fecha de la primera visita al portal",
+        "option_c": "En la fecha de publicación del BOE",
+        "option_d": "En la fecha de la resolución final",
+        "correct": "A",
+        "explanation": "El artículo 14.1 remite al artículo 68.4 de la Ley 39/2015 para considerar la fecha de subsanación."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué plataforma permite verificar libre y gratuitamente certificados cualificados para el sector público?",
+        "option_a": "La plataforma estatal prevista en el artículo 16",
+        "option_b": "El perfil de contratante",
+        "option_c": "La Carpeta Ciudadana",
+        "option_d": "El punto de entrada de facturas",
+        "correct": "A",
+        "explanation": "El artículo 16.1 establece esa plataforma de verificación para el sector público."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué deben facilitar los prestadores cualificados a la plataforma de verificación?",
+        "option_a": "Acceso electrónico y gratuito para verificar la vigencia de los certificados que emitieron",
+        "option_b": "Acceso a las claves privadas",
+        "option_c": "La adjudicación de contratos",
+        "option_d": "El contenido de las carpetas ciudadanas",
+        "correct": "A",
+        "explanation": "El artículo 16.3 impone el acceso electrónico y gratuito para la verificación."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué debe indicar la política estatal de firma sobre su ámbito?",
+        "option_a": "La definición de su ámbito de aplicación",
+        "option_b": "Solo el nombre comercial del certificado",
+        "option_c": "El importe de las facturas",
+        "option_d": "La composición de una mesa de contratación",
+        "correct": "A",
+        "explanation": "El artículo 17.2.a incluye la definición del ámbito de aplicación."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué certificado identifica una sede estatal en la comunicación segura?",
+        "option_a": "Un certificado cualificado de autenticación de sitio web",
+        "option_b": "Un certificado de proveedor de factura",
+        "option_c": "Un CSV de una licitación",
+        "option_d": "Un certificado de usuario sin cualificación",
+        "correct": "A",
+        "explanation": "El artículo 18.1 y 18.2 regulan ese certificado de autenticación de sitio web."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué debe ser pública y accesible respecto de los sellos electrónicos de una Administración?",
+        "option_a": "La relación de sellos utilizados, sus características y los prestadores que los expiden",
+        "option_b": "La clave privada de cada sello",
+        "option_c": "Los datos personales de todos los usuarios",
+        "option_d": "El contenido de todas las facturas",
+        "correct": "A",
+        "explanation": "El artículo 19.2 exige publicar esa relación y facilitar la verificación."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué elementos debe contener una resolución estatal de creación de un sello electrónico?",
+        "option_a": "Titular, características técnicas generales, servicio de validación y actuaciones en que se usará",
+        "option_b": "Solo el nombre del proveedor",
+        "option_c": "Únicamente la fecha de emisión",
+        "option_d": "El importe del contrato de mantenimiento",
+        "correct": "A",
+        "explanation": "El artículo 19.3 enumera esos cuatro contenidos mínimos."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué debe hacer el sistema de CSV para el acceso al documento?",
+        "option_a": "Permitir la verificación directa y gratuita en la sede electrónica o asociada",
+        "option_b": "Exigir siempre pago",
+        "option_c": "Impedir la consulta al interesado",
+        "option_d": "Enviar el documento solo por correo postal",
+        "correct": "A",
+        "explanation": "El artículo 21.1 exige un procedimiento de verificación directo y gratuito."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_39_LOT_03_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_39_LOT_04_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 39,
+        "question": "¿Qué es una factura electrónica según el portal oficial Facturae?",
+        "option_a": "Una factura que se expide y se recibe en formato electrónico",
+        "option_b": "Una factura impresa y escaneada siempre",
+        "option_c": "Un contrato de suministro",
+        "option_d": "Un certificado de sede",
+        "correct": "A",
+        "explanation": "El portal oficial ofrece esa definición básica."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué función cumple FACe según el portal oficial Facturae?",
+        "option_a": "Es un Punto General de Entrada de Facturas Electrónicas",
+        "option_b": "Es un registro de contratistas",
+        "option_c": "Es un sistema de identificación ciudadana",
+        "option_d": "Es una autoridad de certificación",
+        "correct": "A",
+        "explanation": "El portal identifica FACe como Punto General de Entrada de Facturas Electrónicas."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué crea la Ley 25/2013 además de impulsar la factura electrónica?",
+        "option_a": "El registro contable de facturas en el sector público",
+        "option_b": "Un registro de certificados de empleado",
+        "option_c": "Un registro de oficinas consulares",
+        "option_d": "Un registro de sedes privadas",
+        "correct": "A",
+        "explanation": "El objeto legal incluye impulsar la factura electrónica y crear el registro contable de facturas."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué proveedores están obligados, con carácter general, al uso de la factura electrónica frente al sector público?",
+        "option_a": "Los sujetos enumerados en el artículo 4 de la Ley 25/2013, con las exclusiones reglamentarias previstas",
+        "option_b": "Solo las personas físicas",
+        "option_c": "Solo las Administraciones Públicas",
+        "option_d": "Solo los consumidores",
+        "correct": "A",
+        "explanation": "El artículo 4 establece la obligación para las entidades allí enumeradas y permite ciertas exclusiones reglamentarias."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué puede excluir reglamentariamente una Administración de la obligación de facturación electrónica?",
+        "option_a": "Facturas de importe de hasta 5.000 euros y determinadas facturas de servicios en el exterior, en los términos legales",
+        "option_b": "Todas las facturas sin límite",
+        "option_c": "Solo las facturas de la Administración General del Estado",
+        "option_d": "Las facturas ya registradas sin condición",
+        "correct": "A",
+        "explanation": "El artículo 4.2 contempla esas exclusiones dentro de sus condiciones."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué formato deben tener las facturas electrónicas remitidas a las Administraciones Públicas?",
+        "option_a": "Un formato estructurado",
+        "option_b": "Cualquier imagen sin estructura",
+        "option_c": "Solo un documento de texto plano",
+        "option_d": "Exclusivamente una hoja de cálculo",
+        "correct": "A",
+        "explanation": "El artículo 5 exige formato estructurado."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué firma se exige a las facturas electrónicas remitidas a las Administraciones Públicas?",
+        "option_a": "Firma electrónica avanzada basada en un certificado reconocido, conforme a la norma aplicable",
+        "option_b": "Firma manuscrita escaneada en todos los casos",
+        "option_c": "Ninguna firma posible",
+        "option_d": "Solo una contraseña de Cl@ve",
+        "correct": "A",
+        "explanation": "El artículo 5.1 regula el formato estructurado y la firma electrónica avanzada basada en certificado reconocido."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿De qué deben disponer el Estado, las Comunidades Autónomas y las Entidades locales?",
+        "option_a": "De un Punto General de Entrada de Facturas Electrónicas",
+        "option_b": "De un único registro mercantil común",
+        "option_c": "De una Carpeta Ciudadana propia para proveedores",
+        "option_d": "De una oficina de contratación europea",
+        "correct": "A",
+        "explanation": "El artículo 6.1 exige un punto general para cada nivel administrativo, con posibilidad de adhesión."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué solución proporciona el Punto General de Entrada entre el presentador y la oficina contable?",
+        "option_a": "Una solución de intermediación",
+        "option_b": "Una sanción automática",
+        "option_c": "Una firma manuscrita",
+        "option_d": "Un procedimiento de contratación",
+        "correct": "A",
+        "explanation": "El artículo 6.2 define esa función de intermediación."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué puede consultar el proveedor en el Punto General de Entrada?",
+        "option_a": "El estado de tramitación de la factura",
+        "option_b": "La clave privada de la oficina contable",
+        "option_c": "La contraseña del receptor",
+        "option_d": "El contenido de expedientes ajenos",
+        "correct": "A",
+        "explanation": "El artículo 6.3 reconoce la consulta del estado de tramitación."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué efecto produce la presentación de una factura que reúne los requisitos legales en el Punto General de Entrada?",
+        "option_a": "Su admisión y una entrada automática en el registro electrónico, con acuse de recibo de fecha y hora",
+        "option_b": "Su rechazo automático sin registro",
+        "option_c": "La adjudicación de un contrato",
+        "option_d": "La creación de una subvención",
+        "correct": "A",
+        "explanation": "El artículo 6.4 regula la admisión, anotación automática y acuse de recibo."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué debe proporcionar automáticamente el Punto General de Entrada a las oficinas contables competentes?",
+        "option_a": "La puesta a disposición o remisión electrónica de las facturas",
+        "option_b": "Una copia en papel obligatoria",
+        "option_c": "La resolución de pago",
+        "option_d": "Una certificación de subvención",
+        "correct": "A",
+        "explanation": "El artículo 6.5 establece la puesta a disposición o remisión electrónica."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Quién es responsable del archivo y custodia de las facturas electrónicas?",
+        "option_a": "El órgano administrativo destinatario, sin perjuicio de la opción legal sobre el punto de entrada",
+        "option_b": "Siempre el proveedor",
+        "option_c": "El registro mercantil",
+        "option_d": "La oficina de asistencia registral",
+        "correct": "A",
+        "explanation": "El artículo 7.1 atribuye la responsabilidad al órgano destinatario."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué debe crear cada Administración Pública según el artículo 8?",
+        "option_a": "Un registro contable de facturas",
+        "option_b": "Una autoridad de certificación privada",
+        "option_c": "Un registro de licitadores extranjeros",
+        "option_d": "Una aplicación de firma manuscrita",
+        "correct": "A",
+        "explanation": "El artículo 8 regula la creación del registro contable de facturas."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Cómo llegan las facturas del Punto General de Entrada al registro contable?",
+        "option_a": "Mediante un servicio automático de puesta a disposición o remisión electrónica",
+        "option_b": "Solo por correo postal",
+        "option_c": "Mediante una licitación",
+        "option_d": "Por una llamada telefónica",
+        "correct": "A",
+        "explanation": "El artículo 9 describe la puesta a disposición o remisión electrónica al registro que corresponda."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué pueden conectar los registros contables de facturas?",
+        "option_a": "Distintos Puntos Generales de Entrada, y en ciertos casos el punto estatal",
+        "option_b": "Solo una cuenta bancaria",
+        "option_c": "Únicamente el registro mercantil",
+        "option_d": "Ningún sistema externo",
+        "correct": "A",
+        "explanation": "El artículo 9 permite conexiones con distintos puntos y prevé la conexión con el estatal en caso de adhesión."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué efecto tienen la recepción en el punto de entrada y la anotación contable?",
+        "option_a": "Los efectos que establezca la legislación aplicable, sin equivaler por sí solos a la conformidad o pago",
+        "option_b": "La aprobación automática del pago",
+        "option_c": "La adjudicación del contrato",
+        "option_d": "La renuncia del proveedor",
+        "correct": "A",
+        "explanation": "El artículo 11 remite sus efectos a la legislación aplicable y no convierte la anotación en pago automático."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué auditoría deben realizar anualmente las Intervenciones Generales u órganos equivalentes?",
+        "option_a": "Una auditoría de sistemas para verificar las condiciones de funcionamiento de los registros contables",
+        "option_b": "Una auditoría de identidad de todos los ciudadanos",
+        "option_c": "Una auditoría de todas las sedes privadas",
+        "option_d": "Una auditoría de contratos europeos",
+        "correct": "A",
+        "explanation": "El artículo 12.3 exige la auditoría anual del registro contable y de las facturas no retenidas."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué validez tributaria tiene la factura electrónica prevista en la Ley 25/2013?",
+        "option_a": "Es válida y tiene los mismos efectos tributarios que la factura en soporte papel",
+        "option_b": "No tiene efectos tributarios",
+        "option_c": "Solo sirve como borrador",
+        "option_d": "Solo vale si se imprime",
+        "correct": "A",
+        "explanation": "La disposición adicional tercera reconoce la validez y equivalencia tributaria en los términos legales."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué órgano es competente para exigir el reintegro de una subvención?",
+        "option_a": "La entidad concedente",
+        "option_b": "El proveedor de la plataforma",
+        "option_c": "El registro mercantil",
+        "option_d": "El órgano que gestione Cl@ve",
+        "correct": "A",
+        "explanation": "La Ley atribuye la competencia para exigir el reintegro a la entidad concedente."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_39_LOT_04_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_39_LOT_05_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 39,
+        "question": "¿Qué principio busca garantizar la Ley 9/2017 en la contratación del sector público?",
+        "option_a": "Libertad de acceso, publicidad, transparencia, igualdad y no discriminación, junto con uso eficiente de fondos",
+        "option_b": "Adjudicación sin publicidad en todos los contratos",
+        "option_c": "Preferencia automática por un proveedor",
+        "option_d": "Eliminación de la competencia",
+        "correct": "A",
+        "explanation": "El artículo 1 recoge esos principios y objetivos."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué deben determinar con precisión las entidades del sector público antes de iniciar la adjudicación?",
+        "option_a": "La naturaleza y extensión de las necesidades y la idoneidad del objeto y contenido del contrato",
+        "option_b": "La contraseña de cada licitador",
+        "option_c": "La factura final antes de licitar",
+        "option_d": "La identidad de todos los usuarios del PAGe",
+        "correct": "A",
+        "explanation": "El artículo 28 exige justificar la necesidad e idoneidad en la documentación preparatoria."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué es el perfil de contratante?",
+        "option_a": "El elemento accesible por Internet que agrupa información y documentos de la actividad contractual",
+        "option_b": "Un registro contable de facturas",
+        "option_c": "Una sede electrónica de ciudadanos",
+        "option_d": "Una plataforma de subvenciones",
+        "correct": "A",
+        "explanation": "El artículo 63 lo define como instrumento de transparencia y acceso público."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Cuánto tiempo mínimo debe permanecer accesible al público la información del perfil de contratante?",
+        "option_a": "Cinco años",
+        "option_b": "Diez días",
+        "option_c": "Un mes",
+        "option_d": "Un año",
+        "correct": "A",
+        "explanation": "El artículo 63.1 fija un periodo no inferior a cinco años."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿En qué formatos debe publicarse la información del perfil de contratante?",
+        "option_a": "En formatos abiertos y reutilizables",
+        "option_b": "Solo en formato impreso",
+        "option_c": "Exclusivamente como imagen escaneada",
+        "option_d": "En un formato privado no reutilizable",
+        "correct": "A",
+        "explanation": "El artículo 63.1 exige formatos abiertos y reutilizables."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué debe contener el perfil de contratante sobre la preparación del contrato?",
+        "option_a": "Entre otros, la memoria justificativa, pliegos y documento de aprobación del expediente",
+        "option_b": "Solo la factura pagada",
+        "option_c": "Solo la identidad del proveedor adjudicatario",
+        "option_d": "Únicamente el anuncio posterior",
+        "correct": "A",
+        "explanation": "El artículo 63.3 enumera documentación preparatoria que debe publicarse."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué regla establece la Ley 9/2017 sobre la división del contrato en lotes?",
+        "option_a": "La división es la regla general y la no división debe justificarse, con las salvedades legales",
+        "option_b": "La división está siempre prohibida",
+        "option_c": "Solo el contratista decide la división",
+        "option_d": "La división solo se permite en facturas",
+        "correct": "A",
+        "explanation": "El artículo 99.3 parte de la división en lotes y exige justificar la no división."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué prohibición se aplica al fraccionamiento del contrato?",
+        "option_a": "No puede fraccionarse para disminuir la cuantía y eludir publicidad o procedimiento",
+        "option_b": "Se exige fraccionar todo contrato",
+        "option_c": "Solo se prohíbe fraccionar facturas electrónicas",
+        "option_d": "Se permite siempre en contratos menores",
+        "correct": "A",
+        "explanation": "El artículo 99.2 prohíbe el fraccionamiento fraudulento para eludir requisitos."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué debe motivar el expediente de un contrato menor?",
+        "option_a": "La necesidad del contrato y que no se altera su objeto para evitar los umbrales",
+        "option_b": "La identidad de todos los ciudadanos",
+        "option_c": "La elección de Cl@ve",
+        "option_d": "La custodia de certificados",
+        "correct": "A",
+        "explanation": "El artículo 118.2 exige ese informe motivado."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué es una subvención según la Ley 38/2003?",
+        "option_a": "Una disposición dineraria sin contraprestación directa, sujeta al cumplimiento de un objetivo, proyecto, actividad, comportamiento o situación",
+        "option_b": "Cualquier contrato con precio",
+        "option_c": "Una factura electrónica recibida",
+        "option_d": "Un préstamo bancario siempre",
+        "correct": "A",
+        "explanation": "El artículo 2 define la subvención mediante esos elementos."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué principios informan la gestión de subvenciones?",
+        "option_a": "Publicidad, transparencia, concurrencia, objetividad, igualdad y no discriminación, eficacia y eficiencia",
+        "option_b": "Secreto, discrecionalidad y exclusividad",
+        "option_c": "Solo rapidez y ausencia de controles",
+        "option_d": "Preferencia automática por empresas grandes",
+        "correct": "A",
+        "explanation": "El artículo 8 recoge los principios generales de gestión."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué requisito debe existir antes del otorgamiento de una subvención?",
+        "option_a": "La aprobación previa de las bases reguladoras, salvo los supuestos legalmente previstos",
+        "option_b": "La emisión de la factura final",
+        "option_c": "La inscripción en el perfil de contratante",
+        "option_d": "La firma de todos los ciudadanos",
+        "correct": "A",
+        "explanation": "El artículo 9.2 exige aprobar las bases reguladoras con carácter previo."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Dónde se publican las bases reguladoras de cada tipo de subvención?",
+        "option_a": "En el BOE o en el diario oficial correspondiente",
+        "option_b": "Solo en una comunicación privada",
+        "option_c": "En la factura electrónica",
+        "option_d": "Únicamente en una oficina presencial",
+        "correct": "A",
+        "explanation": "El artículo 9.3 establece esa publicación oficial."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Quién tiene la consideración de beneficiario?",
+        "option_a": "La persona que realiza la actividad que fundamentó el otorgamiento o se encuentra en la situación legitimadora",
+        "option_b": "Cualquier persona que consulte la convocatoria",
+        "option_c": "Solo la entidad pagadora",
+        "option_d": "El proveedor del sistema informático",
+        "correct": "A",
+        "explanation": "El artículo 11.1 define al beneficiario en esos términos."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué es una entidad colaboradora?",
+        "option_a": "La que actúa en nombre y por cuenta del órgano concedente entregando fondos o colaborando en la gestión, sin que los fondos integren su patrimonio",
+        "option_b": "La que recibe siempre la subvención para sí",
+        "option_c": "La que adjudica contratos públicos",
+        "option_d": "La que emite certificados de sede",
+        "correct": "A",
+        "explanation": "El artículo 12 describe sus funciones y excluye que los fondos formen parte de su patrimonio."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué obligación tiene el beneficiario respecto del objetivo de la subvención?",
+        "option_a": "Cumplir el objetivo, ejecutar el proyecto, realizar la actividad o adoptar el comportamiento que fundamenta la concesión",
+        "option_b": "Publicar todas sus claves privadas",
+        "option_c": "Adjudicar un contrato a un tercero",
+        "option_d": "Crear un PAGe estatal",
+        "correct": "A",
+        "explanation": "El artículo 14.1.a establece esa obligación."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué base de datos regula el artículo 20 de la Ley 38/2003?",
+        "option_a": "La Base de Datos Nacional de Subvenciones (BDNS)",
+        "option_b": "El registro contable de facturas",
+        "option_c": "El directorio de oficinas de registro",
+        "option_d": "El registro de certificados de sede",
+        "correct": "A",
+        "explanation": "El artículo 20 regula la BDNS como sistema nacional de publicidad de subvenciones y ayudas públicas."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Cuál es el régimen general de concesión de subvenciones?",
+        "option_a": "La concurrencia competitiva",
+        "option_b": "La adjudicación directa en todos los casos",
+        "option_c": "La contratación menor",
+        "option_d": "La asignación por orden de llegada sin bases",
+        "correct": "A",
+        "explanation": "La Ley configura la concurrencia competitiva como régimen general, sin perjuicio de los supuestos de concesión directa."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Cuándo puede concederse una subvención de forma directa?",
+        "option_a": "Solo en los supuestos previstos legalmente, como los contemplados en el artículo 22.2",
+        "option_b": "Siempre que lo pida el proveedor",
+        "option_c": "Cuando no exista factura electrónica",
+        "option_d": "En cualquier contrato menor",
+        "correct": "A",
+        "explanation": "La concesión directa queda limitada a los supuestos previstos por la ley."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué regla general rige el pago de una subvención?",
+        "option_a": "Exige la previa justificación de la realización del objeto, salvo las previsiones legales aplicables",
+        "option_b": "Se paga siempre antes de cualquier actuación",
+        "option_c": "Se paga solo mediante FACe",
+        "option_d": "No requiere control ni justificación",
+        "correct": "A",
+        "explanation": "La regulación de gestión presupuestaria parte de la previa justificación del objeto subvencionado."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_39_LOT_05_END

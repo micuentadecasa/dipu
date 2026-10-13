@@ -119,6 +119,11 @@ SPEC_PATHS = [
     ROOT / "docs/question-bank/research/questions/topics-38-lot-03.json",
     ROOT / "docs/question-bank/research/questions/topics-38-lot-04.json",
     ROOT / "docs/question-bank/research/questions/topics-38-lot-05.json",
+    ROOT / "docs/question-bank/research/questions/topics-39-lot-01.json",
+    ROOT / "docs/question-bank/research/questions/topics-39-lot-02.json",
+    ROOT / "docs/question-bank/research/questions/topics-39-lot-03.json",
+    ROOT / "docs/question-bank/research/questions/topics-39-lot-04.json",
+    ROOT / "docs/question-bank/research/questions/topics-39-lot-05.json",
 ]
 
 
