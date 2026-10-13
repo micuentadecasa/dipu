@@ -26,3 +26,9 @@ The local PDF was text-extracted with `pypdf` and compared with `temario.md` aft
 ## Generation gate
 
 Every candidate must carry one of `topic_num` 1--40 and an objective from the matching topic coverage plan. A source may support an item, but it may not add a new topic or silently broaden a topic beyond the scope recorded in the official call. Any apparent scope mismatch is quarantined for review rather than normalized into the question bank.
+
+## Continuation gate
+
+**Checked:** 2026-10-13 (UTC)
+
+Inbox continuation request 035 asks whether a topic 41 exists. It does not: the official call and `temario.md` contain exactly topics 1 through 40, with the PDF page marker “Número 41” being pagination rather than a syllabus topic. No topic-41 artifacts may be generated. Further work must use additional, nonduplicate, authoritative objectives within topics 1–40; the remaining objective slots are source-gated until their evidence boundaries are cleared.
