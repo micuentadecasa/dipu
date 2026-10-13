@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/objectives/topic-25.json",
+  "batches": [
+    {
+      "topic_num": 25,
+      "lot_num": 9,
+      "source_ids": [
+        "ODATA-4.01"
+      ],
+      "questions": [
+        {
+          "objective_id": "t25-lo-161",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué pregunta responde `$metadata` durante integración?",
+          "options": [
+            "Qué tipos y recursos expone el servicio",
+            "Qué usuario está autenticado",
+            "Qué CSS cargar",
+            "Qué servidor usar"
+          ],
+          "correct": "A",
+          "explanation": "Metadata permite conocer el modelo.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Metadata Service",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-162",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué ruta solicita una entidad concreta?",
+          "options": [
+            "EntitySet(key)",
+            "EntitySet/$metadata",
+            "EntitySet/$countOnly",
+            "EntitySet?$format=key"
+          ],
+          "correct": "A",
+          "explanation": "La clave entre paréntesis identifica una entidad.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Key Predicates",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-163",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué ruta solicita una navegación de una entidad?",
+          "options": [
+            "EntitySet(key)/Navigation",
+            "EntitySet/$expandOnly",
+            "Navigation/$metadataOnly",
+            "EntitySet?$nav=true"
+          ],
+          "correct": "A",
+          "explanation": "La ruta puede continuar por navegación.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Resource Path",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-164",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué ruta solicita una propiedad concreta?",
+          "options": [
+            "EntitySet(key)/Property",
+            "EntitySet/$select=Property",
+            "Property/$root",
+            "EntitySet/$propertyOnly"
+          ],
+          "correct": "A",
+          "explanation": "La propiedad puede formar el final de la ruta.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Resource Path",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-165",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué usar para devolver solo `Name` y `Id`?",
+          "options": [
+            "$select=Name,Id",
+            "$filter=Name,Id",
+            "$expand=Name,Id",
+            "$orderby=Name,Id"
+          ],
+          "correct": "A",
+          "explanation": "Select limita propiedades.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Select System Query Option",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-166",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué usar para incluir Orders relacionados?",
+          "options": [
+            "$expand=Orders",
+            "$select=Orders",
+            "$filter=Orders",
+            "$top=Orders"
+          ],
+          "correct": "A",
+          "explanation": "Expand solicita navegación relacionada.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Expand System Query Option",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-167",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué usar para clientes activos?",
+          "options": [
+            "$filter=Active eq true",
+            "$select=Active",
+            "$orderby=Active",
+            "$count=Active"
+          ],
+          "correct": "A",
+          "explanation": "Filter aplica condición booleana.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Filter System Query Option",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-168",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué usar para los diez primeros recursos?",
+          "options": [
+            "$top=10",
+            "$skip=10",
+            "$count=true",
+            "$format=10"
+          ],
+          "correct": "A",
+          "explanation": "Top limita a diez.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Top System Query Option",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-169",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué usar para omitir los primeros veinte?",
+          "options": [
+            "$skip=20",
+            "$top=20",
+            "$count=20",
+            "$search=20"
+          ],
+          "correct": "A",
+          "explanation": "Skip omite elementos iniciales.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Skip System Query Option",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-170",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué usar para ordenar por fecha descendente?",
+          "options": [
+            "$orderby=Date desc",
+            "$filter=Date desc",
+            "$select=Date desc",
+            "$expand=Date desc"
+          ],
+          "correct": "A",
+          "explanation": "Orderby controla orden y desc dirección.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, OrderBy System Query Option",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-171",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué usar para solicitar total junto con una colección?",
+          "options": [
+            "$count=true",
+            "$top=count",
+            "$select=count",
+            "$search=count"
+          ],
+          "correct": "A",
+          "explanation": "Count solicita el recuento.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Count System Query Option",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-172",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué usar para una búsqueda textual?",
+          "options": [
+            "$search=term",
+            "$filter=text-only",
+            "$select=term",
+            "$orderby=term"
+          ],
+          "correct": "A",
+          "explanation": "Search expresa búsqueda textual.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Search System Query Option",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-173",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué recurso ayuda a un cliente genérico a construir consultas correctas?",
+          "options": [
+            "El documento de metadatos",
+            "Una respuesta CSS",
+            "Un código 204",
+            "Un singleton sin modelo"
+          ],
+          "correct": "A",
+          "explanation": "Metadata describe tipos y relaciones.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Metadata Service",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-174",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Un cliente intenta seleccionar una navegación con `$select` esperando datos relacionados. ¿Qué opción debe considerar?",
+          "options": [
+            "`$expand` para incluir recursos relacionados",
+            "$top para navegar",
+            "$count para expandir",
+            "$format para relaciones"
+          ],
+          "correct": "A",
+          "explanation": "Expand y select tienen funciones distintas.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Expand System Query Option",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-175",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "Una consulta devuelve demasiadas propiedades y no requiere detalle. ¿Qué reduce la respuesta?",
+          "options": [
+            "`$select`",
+            "$expand`",
+            "$skip`",
+            "$search`"
+          ],
+          "correct": "A",
+          "explanation": "Select reduce propiedades.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Select System Query Option",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-176",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "Una API necesita filtrar por precio mayor que 100. ¿Qué concepto usa?",
+          "options": [
+            "Operador `gt` en `$filter`",
+            "`desc` en `$orderby`",
+            "`$top`",
+            "`$format`"
+          ],
+          "correct": "A",
+          "explanation": "gt compara mayor que.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Filter System Query Option",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-177",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "Una consulta necesita que dos condiciones se cumplan. ¿Qué operador usa?",
+          "options": [
+            "`and`",
+            "`or`",
+            "`desc`",
+            "`expand`"
+          ],
+          "correct": "A",
+          "explanation": "and exige ambas condiciones.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Filter System Query Option",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-178",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "Un consumidor necesita distinguir un valor complejo de una entidad. ¿Qué revisa?",
+          "options": [
+            "Si el tipo tiene identidad/clave propia",
+            "El formato de respuesta",
+            "El código de estado",
+            "El número de propiedades solamente"
+          ],
+          "correct": "A",
+          "explanation": "La identidad diferencia ambos conceptos.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Complex Types; Entity Keys",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-179",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "Un cliente necesita acceder al único recurso Settings. ¿Qué modelo puede representarlo?",
+          "options": [
+            "Singleton",
+            "Entity set obligatorio",
+            "Complex type únicamente",
+            "Collection property"
+          ],
+          "correct": "A",
+          "explanation": "Singleton representa entidad única.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Singletons",
+          "source_id": "ODATA-4.01"
+        },
+        {
+          "objective_id": "t25-lo-180",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "Un recurso relacionado tiene muchos elementos. ¿Qué modela esa relación?",
+          "options": [
+            "Una navigation property de colección",
+            "Una propiedad primitiva",
+            "Un singleton",
+            "Un formato"
+          ],
+          "correct": "A",
+          "explanation": "La navegación de colección representa relación múltiple.",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Navigation Properties",
+          "source_id": "ODATA-4.01"
+        }
+      ]
+    }
+  ]
+}
