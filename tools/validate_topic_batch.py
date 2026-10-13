@@ -51,7 +51,7 @@ def main() -> int:
     for record in records:
         for source in record["sources"]:
             tier_counts[source["tier"]] += 1
-    report = {"validation_version":"1.0","status":"passed","mode":"dry_run","lot":stem,"revision":payload["revision"],"validated_at":"2026-10-12","writes_performed":0,"legacy_snapshot_total":1200,"prior_accepted_topics":args.topic_num - 1,"runtime_records_before_batch":runtime_before_batch,"accepted_delta":len(records),"stable_id_collisions":0,"numeric_id_collisions":0,"source_tier_counts":tier_counts,"artifact_to_import":"existing seed_data.py -> frontend/src/questions.js path","frontend_artifact_replaced":False,"stable_ids":stable_ids}
+    report = {"validation_version":"1.0","status":"passed","mode":"dry_run","lot":stem,"revision":payload["revision"],"validated_at":"2026-10-13","writes_performed":0,"legacy_snapshot_total":1200,"prior_accepted_topics":args.topic_num - 1,"runtime_records_before_batch":runtime_before_batch,"accepted_delta":len(records),"stable_id_collisions":0,"numeric_id_collisions":0,"source_tier_counts":tier_counts,"artifact_to_import":"existing seed_data.py -> frontend/src/questions.js path","frontend_artifact_replaced":False,"stable_ids":stable_ids}
     report_path = ROOT / "docs/question-bank/imports" / f"{stem}-dry-run.json"
     report_path.parent.mkdir(parents=True, exist_ok=True)
     report_path.write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")

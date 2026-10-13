@@ -16,7 +16,8 @@ if str(ROOT) not in sys.path:
 from question_bank.checkpoints import append_checkpoint, file_sha256
 from question_bank.validation import validate_record
 
-DATE = "2026-10-12"
+DATE = "2026-10-13"
+TOPIC34_KEY_PATH = ROOT / "docs/question-bank/reviews/topic-34-answer-key.json"
 EXPECTATIONS = {
     2: {
         1:("A","Artículo 97"),2:("A","Artículo 98.1"),3:("A","Artículo 98.2"),4:("A","Artículo 98.3"),5:("B","Artículo 100"),
@@ -590,9 +591,14 @@ def main() -> int:
         objective_num = int(candidate["learning_objective_id"].rsplit("-", 1)[1])
         question_num = objective_num - (args.lot_num - 1) * 20
         expectations = LOT_EXPECTATIONS.get((args.topic_num, args.lot_num), EXPECTATIONS.get(args.topic_num))
-        if expectations is None:
-            raise RuntimeError(f"no review expectations for topic {args.topic_num}, lot {args.lot_num}")
-        expected = expectations[question_num]
+        if args.topic_num == 34:
+            key = json.loads(TOPIC34_KEY_PATH.read_text(encoding="utf-8"))
+            key_entry = key["lots"][str(args.lot_num)][str(question_num)]
+            expected = (key_entry["correct"], key_entry["citation"])
+        else:
+            if expectations is None:
+                raise RuntimeError(f"no review expectations for topic {args.topic_num}, lot {args.lot_num}")
+            expected = expectations[question_num]
         source = sources[candidate["sources"][0]["source_id"]]
         if candidate["correct"] != expected[0] or candidate["sources"][0]["citation"] != expected[1]:
             raise RuntimeError(f"independent review disagreement for {candidate['learning_objective_id']}")

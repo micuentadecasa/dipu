@@ -21,7 +21,7 @@ from question_bank.checkpoints import append_checkpoint, file_sha256
 from question_bank.validation import screen_duplicates, stable_id_for, validate_record
 from seed_data import SEED_QUESTIONS
 
-DATE = "2026-10-12"
+DATE = "2026-10-13"
 REGISTER_PATH = ROOT / "docs/question-bank/source-register.json"
 OBJECTIVE_PATH = ROOT / "docs/question-bank/objective-manifest.json"
 SYLLABUS_PATH = ROOT / "temario.md"
@@ -94,6 +94,11 @@ SPEC_PATHS = [
     ROOT / "docs/question-bank/research/questions/topics-33-lot-03.json",
     ROOT / "docs/question-bank/research/questions/topics-33-lot-04.json",
     ROOT / "docs/question-bank/research/questions/topics-33-lot-05.json",
+    ROOT / "docs/question-bank/research/questions/topics-34-lot-01.json",
+    ROOT / "docs/question-bank/research/questions/topics-34-lot-02.json",
+    ROOT / "docs/question-bank/research/questions/topics-34-lot-03.json",
+    ROOT / "docs/question-bank/research/questions/topics-34-lot-04.json",
+    ROOT / "docs/question-bank/research/questions/topics-34-lot-05.json",
 ]
 
 
