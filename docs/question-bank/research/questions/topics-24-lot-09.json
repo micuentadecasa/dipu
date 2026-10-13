@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/objectives/topic-24.json",
+  "batches": [
+    {
+      "topic_num": 24,
+      "lot_num": 9,
+      "source_ids": [
+        "ASPNET-WEBAPI-10"
+      ],
+      "questions": [
+        {
+          "objective_id": "t24-lo-161",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "Una acción API recibe id en URL y DTO JSON. ¿Qué atributos hacen explícito el contrato?",
+          "options": [
+            "FromRoute para id y FromBody para DTO",
+            "FromQuery para ambos",
+            "FromHeader para ambos",
+            "FromServices para DTO"
+          ],
+          "correct": "A",
+          "explanation": "Cada parámetro usa su fuente.",
+          "citation": "Create web APIs with ASP.NET Core — binding source attributes",
+          "source_id": "ASPNET-WEBAPI-10"
+        },
+        {
+          "objective_id": "t24-lo-162",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "Una acción ApiController devuelve 400 antes de ejecutar su cuerpo por datos inválidos. ¿Qué convención lo explica?",
+          "options": [
+            "Automatic HTTP 400",
+            "Output formatter",
+            "Swagger UI",
+            "Route token"
+          ],
+          "correct": "A",
+          "explanation": "ApiController automatiza respuesta ante ModelState inválido.",
+          "citation": "Create web APIs with ASP.NET Core — Automatic HTTP 400 responses",
+          "source_id": "ASPNET-WEBAPI-10"
+        },
+        {
+          "objective_id": "t24-lo-163",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "Un cliente envía application/xml pero la API solo configura JSON. ¿Qué diagnosticar?",
+          "options": [
+            "Content-Type/input formatter no soportado",
+            "Ruta no encontrada",
+            "Clave de entidad",
+            "OpenAPI inválido"
+          ],
+          "correct": "A",
+          "explanation": "El media type de entrada no tiene formatter.",
+          "citation": "Create web APIs with ASP.NET Core — Formatters",
+          "source_id": "ASPNET-WEBAPI-10"
+        },
+        {
+          "objective_id": "t24-lo-164",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "Un cliente pide text/xml mediante Accept y la API no lo soporta. ¿Qué revisar?",
+          "options": [
+            "Output formatter/negociación de contenido",
+            "FromRoute",
+            "ModelState de entrada",
+            "Token controller"
+          ],
+          "correct": "A",
+          "explanation": "Accept participa en elegir salida.",
+          "citation": "Create web APIs with ASP.NET Core — Content negotiation",
+          "source_id": "ASPNET-WEBAPI-10"
+        },
+        {
+          "objective_id": "t24-lo-165",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Una acción crea un recurso pero no indica cómo recuperarlo. ¿Qué helper mejora el contrato?",
+          "options": [
+            "CreatedAtAction",
+            "BadRequest",
+            "NotFound",
+            "Ok sin ubicación"
+          ],
+          "correct": "A",
+          "explanation": "CreatedAtAction incluye ubicación.",
+          "citation": "Create web APIs with ASP.NET Core — Controller action return types",
+          "source_id": "ASPNET-WEBAPI-10"
+        },
+        {
+          "objective_id": "t24-lo-166",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Una consulta de recurso inexistente devuelve Ok(null) y el cliente espera 404. ¿Qué resultado usar?",
+          "options": [
+            "NotFound",
+            "CreatedAtAction",
+            "BadRequest siempre",
+            "ValidationProblem"
+          ],
+          "correct": "A",
+          "explanation": "NotFound representa ausencia.",
+          "citation": "Create web APIs with ASP.NET Core — Controller action return types",
+          "source_id": "ASPNET-WEBAPI-10"
+        },
+        {
+          "objective_id": "t24-lo-167",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Un DTO inválido genera un JSON estructurado de errores. ¿Qué representación puede ser?",
+          "options": [
+            "ValidationProblemDetails",
+            "EntityType",
+            "SwaggerDocument",
+            "RouteValues"
+          ],
+          "correct": "A",
+          "explanation": "Es la estructura de validación.",
+          "citation": "Create web APIs with ASP.NET Core — ValidationProblemDetails",
+          "source_id": "ASPNET-WEBAPI-10"
+        },
+        {
+          "objective_id": "t24-lo-168",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Una acción normalmente devuelve Product pero también NotFound. ¿Qué tipo expresa eso?",
+          "options": [
+            "ActionResult<Product>",
+            "ProductOnly",
+            "IHeaderResult",
+            "RouteResult<Product>"
+          ],
+          "correct": "A",
+          "explanation": "ActionResult<T> permite éxito tipado y errores.",
+          "citation": "Controller action return types in ASP.NET Core web API — ActionResult<T>",
+          "source_id": "ASPNET-WEBAPI-10"
+        },
+        {
+          "objective_id": "t24-lo-169",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Una ruta con [ApiController] no coincide aunque el método tiene HttpGet. ¿Qué revisar primero?",
+          "options": [
+            "Que exista attribute route en el controlador/acción",
+            "El output formatter",
+            "El Accept",
+            "El DTO"
+          ],
+          "correct": "A",
+          "explanation": "ApiController necesita attribute routing.",
+          "citation": "Create web APIs with ASP.NET Core — Attribute routing requirement",
+          "source_id": "ASPNET-WEBAPI-10"
+        },
+        {
+          "objective_id": "t24-lo-170",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Una propiedad de servicio aparece como parámetro de acción y se intenta leer del body. ¿Qué marcar?",
+          "options": [
+            "FromServices",
+            "FromBody",
+            "FromQuery",
+            "FromForm"
+          ],
+          "correct": "A",
+          "explanation": "La dependencia debe venir de DI.",
+          "citation": "Create web APIs with ASP.NET Core — binding source attributes",
+          "source_id": "ASPNET-WEBAPI-10"
+        },
+        {
+          "objective_id": "t24-lo-171",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Un archivo subido no llega al DTO JSON. ¿Qué binding revisar?",
+          "options": [
+            "FromForm y el media type de formulario",
+            "FromRoute",
+            "FromHeader",
+            "FromQuery solamente"
+          ],
+          "correct": "A",
+          "explanation": "Form data se enlaza con FromForm.",
+          "citation": "Create web APIs with ASP.NET Core — binding source attributes",
+          "source_id": "ASPNET-WEBAPI-10"
+        },
+        {
+          "objective_id": "t24-lo-172",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Swagger no muestra una operación esperada. ¿Qué revisar?",
+          "options": [
+            "Que la acción y ruta estén descubiertas/documentadas",
+            "El CSS de Swagger",
+            "El JSON de una entidad",
+            "El circuito"
+          ],
+          "correct": "A",
+          "explanation": "OpenAPI solo describe endpoints descubiertos.",
+          "citation": "ASP.NET Core web API documentation with Swagger / OpenAPI — OpenAPI",
+          "source_id": "ASPNET-WEBAPI-10"
+        },
+        {
+          "objective_id": "t24-lo-173",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Una clase tiene método público auxiliar y aparece como endpoint. ¿Qué concepto revisar?",
+          "options": [
+            "Las convenciones de acciones públicas y exclusión explícita",
+            "El output formatter",
+            "Content-Type",
+            "ProblemDetails"
+          ],
+          "correct": "A",
+          "explanation": "Los métodos públicos pueden tratarse como acciones.",
+          "citation": "Create web APIs with ASP.NET Core — controller actions",
+          "source_id": "ASPNET-WEBAPI-10"
+        },
+        {
+          "objective_id": "t24-lo-174",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "Una API devuelve HTML en vez de JSON. ¿Qué diagnosticar?",
+          "options": [
+            "Representación/formatter y negociación, además de la configuración de endpoint",
+            "FromRoute solamente",
+            "Clave primaria",
+            "Entity container"
+          ],
+          "correct": "A",
+          "explanation": "La salida depende del formatter/configuración.",
+          "citation": "Create web APIs with ASP.NET Core — Formatters; Content negotiation",
+          "source_id": "ASPNET-WEBAPI-10"
+        },
+        {
+          "objective_id": "t24-lo-175",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "Una respuesta de validación carece de detalles por campo. ¿Qué estructura revisar?",
+          "options": [
+            "ValidationProblemDetails y errores de ModelState",
+            "CreatedAtAction",
+            "Route token",
+            "Input formatter solamente"
+          ],
+          "correct": "A",
+          "explanation": "La estructura comunica errores por campo.",
+          "citation": "Create web APIs with ASP.NET Core — ValidationProblemDetails",
+          "source_id": "ASPNET-WEBAPI-10"
+        },
+        {
+          "objective_id": "t24-lo-176",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "Una API no puede deserializar body con Content-Type correcto. ¿Qué revisar?",
+          "options": [
+            "Input formatter y tipo/modelo de entrada",
+            "Swagger UI exclusivamente",
+            "HttpGet",
+            "NotFound"
+          ],
+          "correct": "A",
+          "explanation": "El formatter debe poder convertir el body.",
+          "citation": "Create web APIs with ASP.NET Core — Formatters",
+          "source_id": "ASPNET-WEBAPI-10"
+        },
+        {
+          "objective_id": "t24-lo-177",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "Una API acepta parámetro query inesperadamente desde body. ¿Qué hacer?",
+          "options": [
+            "Declarar FromQuery explícitamente si ese es el contrato",
+            "Cambiar a FromBody",
+            "Usar Accept",
+            "Eliminar ruta"
+          ],
+          "correct": "A",
+          "explanation": "El atributo fija la fuente.",
+          "citation": "Create web APIs with ASP.NET Core — Binding source parameter inference",
+          "source_id": "ASPNET-WEBAPI-10"
+        },
+        {
+          "objective_id": "t24-lo-178",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "Un cliente llama POST a una acción solo HttpGet. ¿Qué resultado esperar?",
+          "options": [
+            "La ruta/verb no coincide",
+            "Output formatter 415 necesariamente",
+            "CreatedAtAction automático",
+            "ModelState válido"
+          ],
+          "correct": "A",
+          "explanation": "El verbo restringe coincidencia.",
+          "citation": "Routing to controller actions in ASP.NET Core — HTTP method attributes",
+          "source_id": "ASPNET-WEBAPI-10"
+        },
+        {
+          "objective_id": "t24-lo-179",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "Una acción devuelve un DTO y errores HTTP de forma clara. ¿Qué diseño combina?",
+          "options": [
+            "ActionResult<T> y helpers apropiados",
+            "Tipo concreto sin errores",
+            "Solo IActionResult sin contrato",
+            "HTML view"
+          ],
+          "correct": "A",
+          "explanation": "Combina tipo de éxito y resultados HTTP.",
+          "citation": "Controller action return types in ASP.NET Core web API — ActionResult<T>",
+          "source_id": "ASPNET-WEBAPI-10"
+        },
+        {
+          "objective_id": "t24-lo-180",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "Una API crea con body, valida, persiste y devuelve ubicación. ¿Qué secuencia es correcta?",
+          "options": [
+            "Binding/validación, persistencia y CreatedAtAction",
+            "CreatedAtAction antes de binding",
+            "NotFound siempre",
+            "HTML y redirect"
+          ],
+          "correct": "A",
+          "explanation": "La secuencia respeta entrada y resultado.",
+          "citation": "Create web APIs with ASP.NET Core — Automatic HTTP 400 responses; Controller action return types",
+          "source_id": "ASPNET-WEBAPI-10"
+        }
+      ]
+    }
+  ]
+}
