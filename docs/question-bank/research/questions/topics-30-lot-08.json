@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-30-blazor-di-configuration.md",
+  "batches": [
+    {
+      "topic_num": 30,
+      "lot_num": 8,
+      "source_ids": [
+        "DOTNET-CONFIG-10"
+      ],
+      "questions": [
+        {
+          "objective_id": "t30-lo-141",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué representa un configuration provider?",
+          "options": [
+            "Una fuente que aporta pares clave-valor",
+            "Un servicio de UI",
+            "Un lifetime de DI",
+            "Un componente de ruta"
+          ],
+          "correct": "A",
+          "explanation": "Los providers suministran valores de configuración.",
+          "citation": "Configuration providers",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-142",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué fuente puede proporcionar configuración en ASP.NET Core?",
+          "options": [
+            "JSON, variables de entorno y línea de comandos",
+            "Solo clases C#",
+            "Solo cookies",
+            "Solo rutas Blazor"
+          ],
+          "correct": "A",
+          "explanation": "La configuración puede componerse de varios proveedores.",
+          "citation": "Configuration providers",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-143",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué ocurre cuando varios providers definen la misma clave?",
+          "options": [
+            "La precedencia determina qué valor resulta efectivo",
+            "Se eligen todos a la vez",
+            "Siempre gana JSON",
+            "La aplicación elimina la clave"
+          ],
+          "correct": "A",
+          "explanation": "Los providers se ordenan por precedencia.",
+          "citation": "Configuration providers — precedence",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-144",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué fuente suele permitir sobreescribir valores para un despliegue?",
+          "options": [
+            "Variables de entorno o argumentos de línea de comandos",
+            "Comentarios JSON",
+            "Nombres de clases",
+            "Layouts Razor"
+          ],
+          "correct": "A",
+          "explanation": "Esas fuentes se usan para ajustar configuración por entorno.",
+          "citation": "Configuration providers — precedence",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-145",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Cómo se expresa una jerarquía de configuración en una clave?",
+          "options": [
+            "Con separadores de sección como `:`",
+            "Con espacios solamente",
+            "Con código CSS",
+            "Con un hash de URL"
+          ],
+          "correct": "A",
+          "explanation": "Las claves jerárquicas usan separador de sección.",
+          "citation": "Configuration keys — hierarchical data",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-146",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué carácter reemplaza normalmente `:` en variables de entorno?",
+          "options": [
+            "__",
+            "##",
+            "@@",
+            ".."
+          ],
+          "correct": "A",
+          "explanation": "El doble guion bajo representa niveles jerárquicos.",
+          "citation": "Environment variables provider",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-147",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué ventaja tiene la línea de comandos como provider?",
+          "options": [
+            "Permite suministrar valores al iniciar el proceso",
+            "Persiste valores en el navegador",
+            "Crea servicios DI",
+            "Define rutas automáticamente"
+          ],
+          "correct": "A",
+          "explanation": "Los argumentos aportan configuración al arranque.",
+          "citation": "Command-line configuration provider",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-148",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué propiedad se usa para leer valores jerárquicos?",
+          "options": [
+            "IConfiguration",
+            "IServiceCollection",
+            "IOptionsMonitorOnly",
+            "NavigationManager"
+          ],
+          "correct": "A",
+          "explanation": "IConfiguration expone acceso a claves y secciones.",
+          "citation": "Access configuration — IConfiguration",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-149",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué devuelve GetSection?",
+          "options": [
+            "Una sección de configuración bajo una clave",
+            "Una instancia de servicio",
+            "Una ruta Blazor",
+            "Un archivo JSON nuevo"
+          ],
+          "correct": "A",
+          "explanation": "GetSection obtiene una sección jerárquica.",
+          "citation": "Configuration sections — GetSection",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-150",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué método lee un valor simple convertido al tipo solicitado?",
+          "options": [
+            "GetValue<T>",
+            "GetServiceSection<T>",
+            "ReadRoute<T>",
+            "BindProviderOnly<T>"
+          ],
+          "correct": "A",
+          "explanation": "GetValue obtiene y convierte un valor.",
+          "citation": "Configuration values — GetValue",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-151",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué provider se carga normalmente desde appsettings.json?",
+          "options": [
+            "JSON configuration provider",
+            "Browser storage provider",
+            "DI scope provider",
+            "Route provider"
+          ],
+          "correct": "A",
+          "explanation": "El archivo JSON es una fuente de configuración.",
+          "citation": "JSON configuration provider",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-152",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué puede hacer el provider JSON al cambiar el archivo?",
+          "options": [
+            "Recargar valores si la recarga está habilitada",
+            "Cambiar el assembly",
+            "Crear una ruta",
+            "Disponer el contenedor"
+          ],
+          "correct": "A",
+          "explanation": "La recarga permite actualizar configuración.",
+          "citation": "JSON provider — reloadOnChange",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-153",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué configuración suele variar por entorno?",
+          "options": [
+            "Valores de desarrollo, prueba y producción",
+            "El nombre del componente exclusivamente",
+            "El tipo de layout",
+            "Los parámetros de ruta"
+          ],
+          "correct": "A",
+          "explanation": "Los entornos suelen usar valores diferenciados.",
+          "citation": "Environment configuration",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-154",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué debe evitarse en archivos de configuración versionados?",
+          "options": [
+            "Secretos que no deben exponerse",
+            "Claves públicas no sensibles",
+            "Nombres de secciones",
+            "Valores de logging no sensibles"
+          ],
+          "correct": "A",
+          "explanation": "Los secretos deben gestionarse con mecanismos apropiados.",
+          "citation": "Configuration and secrets",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-155",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué representa una sección `ConnectionStrings`?",
+          "options": [
+            "Una convención para cadenas de conexión",
+            "Un lifetime de DI",
+            "Una ruta de componente",
+            "Un proveedor de certificados"
+          ],
+          "correct": "A",
+          "explanation": "ASP.NET Core ofrece acceso convencional a connection strings.",
+          "citation": "Connection strings",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-156",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué método puede leer una cadena de conexión nombrada?",
+          "options": [
+            "GetConnectionString",
+            "GetRouteTemplate",
+            "GetServiceKey",
+            "GetBrowserStorage"
+          ],
+          "correct": "A",
+          "explanation": "GetConnectionString accede a la sección convencional.",
+          "citation": "Connection strings — GetConnectionString",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-157",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué debe considerar la configuración por variables de entorno?",
+          "options": [
+            "La transformación de nombres jerárquicos y la precedencia",
+            "Solo el color de consola",
+            "El layout de componentes",
+            "La rama Git"
+          ],
+          "correct": "A",
+          "explanation": "El provider mapea nombres y participa en precedencia.",
+          "citation": "Environment variables provider",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-158",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué hace la precedencia cuando un argumento CLI y JSON difieren?",
+          "options": [
+            "El provider de mayor precedencia aporta el valor efectivo",
+            "Se usa siempre JSON",
+            "Se lanza excepción siempre",
+            "Se concatenan cadenas"
+          ],
+          "correct": "A",
+          "explanation": "El orden de providers decide el valor efectivo.",
+          "citation": "Configuration providers — precedence",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-159",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué diferencia configuración y DI?",
+          "options": [
+            "Configuración aporta valores; DI compone servicios que pueden consumirlos",
+            "DI solo lee JSON y configuration crea componentes",
+            "Son idénticos",
+            "Configuración reemplaza todos los servicios"
+          ],
+          "correct": "A",
+          "explanation": "Son subsistemas complementarios.",
+          "citation": "Configuration; dependency injection",
+          "source_id": "DOTNET-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-160",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué práctica permite probar una configuración alternativa?",
+          "options": [
+            "Usar un provider o fuente con precedencia controlada",
+            "Editar siempre producción",
+            "Cambiar el layout",
+            "Crear un singleton mutable"
+          ],
+          "correct": "A",
+          "explanation": "Las fuentes sustituibles facilitan entornos y pruebas.",
+          "citation": "Configuration providers — precedence",
+          "source_id": "DOTNET-CONFIG-10"
+        }
+      ]
+    }
+  ]
+}

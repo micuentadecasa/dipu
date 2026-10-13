@@ -1,0 +1,336 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-30-blazor-di-configuration.md",
+  "batches": [
+    {
+      "topic_num": 30,
+      "lot_num": 10,
+      "source_ids": [
+        "BLAZOR-CONFIG-10",
+        "BLAZOR-DI-10"
+      ],
+      "questions": [
+        {
+          "objective_id": "t30-lo-181",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Cómo se inyecta habitualmente un servicio en un componente Razor?",
+          "options": [
+            "@inject o la propiedad [Inject]",
+            "@serviceonly",
+            "@provider",
+            "@configuration-route"
+          ],
+          "correct": "A",
+          "explanation": "Blazor admite directiva @inject y atributo [Inject].",
+          "citation": "Blazor DI — component injection",
+          "source_id": "BLAZOR-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-182",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Dónde se registran normalmente servicios de una aplicación Blazor?",
+          "options": [
+            "En la composición de servicios de Program",
+            "En el markup de cada enlace",
+            "En appsettings solamente",
+            "En RouteView"
+          ],
+          "correct": "A",
+          "explanation": "Los servicios se registran durante la composición de la aplicación.",
+          "citation": "Blazor DI — service registration",
+          "source_id": "BLAZOR-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-183",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué servicio suele proporcionar solicitudes HTTP en un componente?",
+          "options": [
+            "HttpClient",
+            "IServiceCollection",
+            "RouteData",
+            "IOptionsSnapshotOnly"
+          ],
+          "correct": "A",
+          "explanation": "HttpClient se registra/injecta para llamadas HTTP.",
+          "citation": "Blazor DI — HttpClient",
+          "source_id": "BLAZOR-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-184",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué lifetime debe analizarse especialmente en Blazor Server?",
+          "options": [
+            "Scoped puede corresponder al circuito y no a una request independiente",
+            "Singleton siempre es por usuario",
+            "Transient siempre es global",
+            "No existen scopes"
+          ],
+          "correct": "A",
+          "explanation": "El modelo de circuito afecta al alcance de servicios.",
+          "citation": "Blazor DI — lifetimes in Blazor Server",
+          "source_id": "BLAZOR-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-185",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué ocurre con inyección durante prerendering?",
+          "options": [
+            "El servicio debe estar disponible en el entorno de prerender y no depender de APIs browser no disponibles",
+            "Todos los servicios se vuelven cliente",
+            "No se puede inyectar ningún servicio",
+            "El Router lo resuelve automáticamente"
+          ],
+          "correct": "A",
+          "explanation": "Prerendering tiene restricciones de entorno.",
+          "citation": "Blazor DI — prerendering",
+          "source_id": "BLAZOR-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-186",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué debe considerar un servicio scoped usado en un circuito?",
+          "options": [
+            "Su estado puede vivir durante el circuito y debe aislarse de otros usuarios",
+            "Se comparte con todos los circuitos siempre",
+            "Se elimina después de cada propiedad",
+            "Se guarda automáticamente en localStorage"
+          ],
+          "correct": "A",
+          "explanation": "El scope de circuito determina la vida del servicio.",
+          "citation": "Blazor DI — service scopes",
+          "source_id": "BLAZOR-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-187",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué configuración puede exponerse en Blazor WebAssembly?",
+          "options": [
+            "Solo valores que el cliente pueda conocer",
+            "Secretos de base de datos",
+            "Claves privadas",
+            "Contraseñas de servicios internos"
+          ],
+          "correct": "A",
+          "explanation": "La configuración WASM pública es visible al cliente.",
+          "citation": "Blazor configuration — public configuration",
+          "source_id": "BLAZOR-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-188",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué debe hacer un componente que necesita una configuración pública?",
+          "options": [
+            "Leerla mediante la configuración disponible en el cliente",
+            "Leer secretos del servidor directamente",
+            "Crear un singleton de credenciales",
+            "Usar el índice de DI como URL"
+          ],
+          "correct": "A",
+          "explanation": "El cliente solo puede consumir configuración pública disponible.",
+          "citation": "Blazor configuration — public configuration",
+          "source_id": "BLAZOR-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-189",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué combinación distingue Blazor Server de WebAssembly respecto de configuración?",
+          "options": [
+            "Server puede mantener secretos en servidor; WASM recibe valores públicos",
+            "WASM oculta secretos mejor",
+            "Server no tiene DI",
+            "Ambos exponen todo al cliente"
+          ],
+          "correct": "A",
+          "explanation": "Los modelos de hosting tienen límites de exposición distintos.",
+          "citation": "Blazor configuration — public configuration; Blazor DI",
+          "source_id": "BLAZOR-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-190",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué riesgo tiene registrar un servicio de usuario como singleton en Blazor Server?",
+          "options": [
+            "Compartir accidentalmente estado entre circuitos",
+            "Crear un servicio por cada request",
+            "Impedir toda inyección",
+            "Desactivar prerender"
+          ],
+          "correct": "A",
+          "explanation": "Singleton puede cruzar límites de circuito.",
+          "citation": "Blazor DI — lifetimes in Blazor Server",
+          "source_id": "BLAZOR-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-191",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué patrón permite usar un servicio de configuración tipado en un componente?",
+          "options": [
+            "Registrar options y pedir IOptions<T> o la variante adecuada",
+            "Leer cualquier string global",
+            "Usar NavigationManager",
+            "Crear una ruta con el nombre de la opción"
+          ],
+          "correct": "A",
+          "explanation": "Options se integra con DI para consumo tipado.",
+          "citation": "Blazor DI; Options pattern",
+          "source_id": "BLAZOR-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-192",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué debe ocurrir si una dependencia de componente no está registrada?",
+          "options": [
+            "La creación/resolución del componente falla",
+            "Se crea una instancia pública siempre",
+            "Se usa appsettings automáticamente",
+            "Se convierte en singleton"
+          ],
+          "correct": "A",
+          "explanation": "El servicio debe estar registrado para resolverse.",
+          "citation": "Blazor DI — registration",
+          "source_id": "BLAZOR-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-193",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué servicio puede inyectarse en un componente para leer configuración?",
+          "options": [
+            "IConfiguration",
+            "IServiceCollection para mutar registro en runtime",
+            "NavigationManager únicamente",
+            "RouteView"
+          ],
+          "correct": "A",
+          "explanation": "IConfiguration expone valores de configuración.",
+          "citation": "Blazor configuration — configuration access",
+          "source_id": "BLAZOR-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-194",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué diferencia hay entre registrar y consumir un servicio?",
+          "options": [
+            "Registrar lo añade al contenedor; consumirlo lo solicita mediante DI",
+            "Consumirlo siempre lo registra",
+            "Registrar lo serializa",
+            "No hay diferencia"
+          ],
+          "correct": "A",
+          "explanation": "Son fases distintas.",
+          "citation": "Blazor DI — service registration and injection",
+          "source_id": "BLAZOR-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-195",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué debe evitarse al inyectar servicios en componentes?",
+          "options": [
+            "Hacer que el componente gestione lifetimes globales manualmente sin necesidad",
+            "Usar @inject",
+            "Registrar en Program",
+            "Inyectar una abstracción"
+          ],
+          "correct": "A",
+          "explanation": "El contenedor debe gestionar composición y lifetimes.",
+          "citation": "Blazor DI — component injection; DI guidelines",
+          "source_id": "BLAZOR-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-196",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué decisión protege secretos en una aplicación Blazor?",
+          "options": [
+            "Realizar la operación sensible en servidor y no enviar el secreto al cliente",
+            "Ponerlo en configuración pública WASM",
+            "Guardarlo en un campo del componente",
+            "Codificarlo en una URL"
+          ],
+          "correct": "A",
+          "explanation": "El cliente no es un lugar seguro para secretos.",
+          "citation": "Blazor configuration — public configuration",
+          "source_id": "BLAZOR-CONFIG-10"
+        },
+        {
+          "objective_id": "t30-lo-197",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué puede hacer una aplicación al prerenderizar un componente que depende de datos?",
+          "options": [
+            "Usar una estrategia compatible con prerender y evitar asumir interactividad browser",
+            "Leer siempre localStorage de inmediato",
+            "Crear un singleton global",
+            "Ignorar la fase interactiva"
+          ],
+          "correct": "A",
+          "explanation": "Prerendering debe respetar las APIs disponibles.",
+          "citation": "Blazor DI — prerendering; Blazor configuration",
+          "source_id": "BLAZOR-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-198",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué combina correctamente DI y configuración?",
+          "options": [
+            "Provider/configuration aporta valores y DI suministra options/servicios al componente",
+            "DI reemplaza providers",
+            "Configuration crea componentes sin registro",
+            "Son mecanismos idénticos"
+          ],
+          "correct": "A",
+          "explanation": "La integración conecta configuración y composición.",
+          "citation": "Blazor DI; configuration; options",
+          "source_id": "BLAZOR-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-199",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué lifetime debe revisarse al inyectar un servicio IDisposable en un componente?",
+          "options": [
+            "El contenedor y el alcance que determinan cuándo se dispone",
+            "Solo el nombre del componente",
+            "La URL pública",
+            "El tipo de layout"
+          ],
+          "correct": "A",
+          "explanation": "El lifetime determina disposición y duración.",
+          "citation": "Blazor DI — disposal and lifetimes",
+          "source_id": "BLAZOR-DI-10"
+        },
+        {
+          "objective_id": "t30-lo-200",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué principio resume la integración segura de Blazor?",
+          "options": [
+            "Registrar explícitamente, elegir lifetime por hosting y exponer solo configuración pública",
+            "Usar singleton para todo y publicar secretos",
+            "Evitar DI en componentes",
+            "Leer configuración desde cualquier cliente"
+          ],
+          "correct": "A",
+          "explanation": "La integración debe respetar registro, alcance y exposición.",
+          "citation": "Blazor DI; Blazor configuration",
+          "source_id": "BLAZOR-DI-10"
+        }
+      ]
+    }
+  ]
+}
