@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-28-blazor-advanced-styles.md",
+  "batches": [
+    {
+      "topic_num": 28,
+      "lot_num": 7,
+      "source_ids": [
+        "BLAZOR-10"
+      ],
+      "questions": [
+        {
+          "objective_id": "t28-lo-121",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué archivo contiene estilos aislados de un componente Razor?",
+          "options": [
+            "Componente.razor.css",
+            "Componente.css.global",
+            "Styles.razor-only",
+            "Component.scope.json"
+          ],
+          "correct": "A",
+          "explanation": "El archivo .razor.css contiene estilos aislados.",
+          "citation": "CSS isolation — .razor.css",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-122",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué alcance busca CSS isolation?",
+          "options": [
+            "Limitar estilos al markup del componente",
+            "Aplicar estilos a todo Internet",
+            "Eliminar CSS global",
+            "Crear un componente hijo"
+          ],
+          "correct": "A",
+          "explanation": "El aislamiento reduce colisiones de estilos.",
+          "citation": "CSS isolation — scoping",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-123",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Cómo se empaquetan normalmente estilos aislados?",
+          "options": [
+            "En un bundle generado durante el build",
+            "En la base de datos",
+            "En los parámetros",
+            "En EditContext"
+          ],
+          "correct": "A",
+          "explanation": "El build procesa y combina los estilos aislados.",
+          "citation": "CSS isolation — bundling",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-124",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué límite tienen los estilos aislados respecto de componentes hijos?",
+          "options": [
+            "No atraviesan automáticamente el límite del componente hijo",
+            "Siempre afectan a todos los hijos",
+            "Solo afectan a JavaScript",
+            "Eliminan templates"
+          ],
+          "correct": "A",
+          "explanation": "El aislamiento respeta límites de componentes.",
+          "citation": "CSS isolation — child component boundaries",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-125",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué pseudo-elemento permite alcanzar markup descendiente de un componente hijo?",
+          "options": [
+            "::deep",
+            "::child",
+            "::scope-all",
+            "::component"
+          ],
+          "correct": "A",
+          "explanation": "::deep permite aplicar un selector a descendientes en el escenario documentado.",
+          "citation": "CSS isolation — ::deep",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-126",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué requisito suele tener ::deep para afectar descendientes?",
+          "options": [
+            "Un elemento antecesor del componente que contiene el selector",
+            "Un nuevo RenderFragment",
+            "Un parámetro genérico",
+            "Una ruta catch-all"
+          ],
+          "correct": "A",
+          "explanation": "El selector necesita el contexto antecesor adecuado.",
+          "citation": "CSS isolation — ::deep",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-127",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué soporte puede tener CSS isolation para preprocesadores?",
+          "options": [
+            "Procesamiento mediante la configuración/herramienta apropiada de build",
+            "Solo durante runtime del navegador",
+            "Nunca",
+            "Mediante EditContext"
+          ],
+          "correct": "A",
+          "explanation": "Los preprocesadores se integran en el build según configuración.",
+          "citation": "CSS isolation — preprocessor support",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-128",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Pueden las Razor Class Libraries aportar estilos aislados?",
+          "options": [
+            "Sí, el soporte contempla estilos aislados en RCL",
+            "No, jamás",
+            "Solo como appsettings",
+            "Solo con RenderFragment"
+          ],
+          "correct": "A",
+          "explanation": "Las RCL pueden empaquetar CSS aislado.",
+          "citation": "CSS isolation — RCL support",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-129",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué identifica el scope aplicado al CSS aislado?",
+          "options": [
+            "Un identificador generado para asociar reglas y markup",
+            "El nombre del usuario",
+            "La ruta HTTP",
+            "El lifetime"
+          ],
+          "correct": "A",
+          "explanation": "El scope permite seleccionar el markup del componente.",
+          "citation": "CSS isolation — scope identifiers",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-130",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué puede modificar MSBuild respecto de CSS isolation?",
+          "options": [
+            "La configuración del proceso de compilación de estilos",
+            "El valor de un parámetro en runtime",
+            "El modelo de formulario",
+            "El circuito"
+          ],
+          "correct": "A",
+          "explanation": "MSBuild controla tareas y configuración del build.",
+          "citation": "CSS isolation — MSBuild configuration",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-131",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué diferencia hay entre CSS global y aislado?",
+          "options": [
+            "Global puede afectar muchos componentes; aislado se limita al componente",
+            "Global solo afecta inputs",
+            "Aislado siempre es inline",
+            "No hay diferencia"
+          ],
+          "correct": "A",
+          "explanation": "Sus ámbitos de aplicación son distintos.",
+          "citation": "CSS isolation — scoping",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-132",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué riesgo reduce CSS isolation?",
+          "options": [
+            "Colisiones accidentales entre nombres de clase de componentes",
+            "Overposting",
+            "Fugas de secretos",
+            "Errores de DI"
+          ],
+          "correct": "A",
+          "explanation": "El alcance reduce interferencias de estilos.",
+          "citation": "CSS isolation — scoping",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-133",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué no resuelve CSS isolation?",
+          "options": [
+            "Problemas de autorización o sanitización de HTML",
+            "Colisiones de selectores locales",
+            "Empaquetado de CSS",
+            "Estilos de un componente"
+          ],
+          "correct": "A",
+          "explanation": "CSS isolation es una técnica de estilos, no de seguridad de datos.",
+          "citation": "CSS isolation — scope boundaries",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-134",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué debe comprobarse si un selector aislado no afecta a un hijo?",
+          "options": [
+            "El límite de componente y si el selector necesita ::deep",
+            "La cadena de conexión",
+            "El EditContext",
+            "El evento OnSubmit"
+          ],
+          "correct": "A",
+          "explanation": "Los límites explican por qué el selector no cruza.",
+          "citation": "CSS isolation — child component boundaries",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-135",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué es una plantilla en un componente templated?",
+          "options": [
+            "Un RenderFragment que el consumidor proporciona para renderizar contenido",
+            "Un archivo .css",
+            "Un servicio DI",
+            "Una ruta"
+          ],
+          "correct": "A",
+          "explanation": "La plantilla es contenido renderizable configurable.",
+          "citation": "Templated components — templates",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-136",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué patrón usa una lista para dejar que el consumidor defina cada fila?",
+          "options": [
+            "RenderFragment<TItem>",
+            "RenderFragment sin contexto siempre",
+            "EventCallback only",
+            "MarkupString only"
+          ],
+          "correct": "A",
+          "explanation": "La plantilla recibe cada elemento.",
+          "citation": "Templated components — RenderFragment<TValue>",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-137",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué expresa @typeparam TItem en un componente lista?",
+          "options": [
+            "Que el componente trabaja con un tipo de elemento genérico",
+            "Que la lista es una ruta",
+            "Que CSS es global",
+            "Que el componente es singleton"
+          ],
+          "correct": "A",
+          "explanation": "El parámetro de tipo hace reusable la lista.",
+          "citation": "Templated components — @typeparam",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-138",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué aporta una plantilla frente a duplicar componentes?",
+          "options": [
+            "Reutiliza estructura con presentación suministrada por el consumidor",
+            "Elimina parámetros",
+            "Impide callbacks",
+            "Evita compilación"
+          ],
+          "correct": "A",
+          "explanation": "La plantilla permite variar presentación sin duplicar estructura.",
+          "citation": "Templated components — reusable templates",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-139",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué puede ocurrir si el nombre Context se cambia incorrectamente?",
+          "options": [
+            "La plantilla no puede referenciar el valor con el nombre esperado",
+            "Se crea un scope DI",
+            "El CSS se vuelve global",
+            "Se elimina el componente"
+          ],
+          "correct": "A",
+          "explanation": "El nombre debe coincidir con su uso en el template.",
+          "citation": "Templated components — Context",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-140",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué debe preferirse para estilos internos de un componente reusable?",
+          "options": [
+            "CSS isolation cuando se desea limitar reglas a ese componente",
+            "Selectores globales genéricos siempre",
+            "HTML raw",
+            "Una ruta"
+          ],
+          "correct": "A",
+          "explanation": "El aislamiento evita afectar consumidores no relacionados.",
+          "citation": "CSS isolation — scoping",
+          "source_id": "BLAZOR-10"
+        }
+      ]
+    }
+  ]
+}

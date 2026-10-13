@@ -37623,3 +37623,1028 @@ SEED_QUESTIONS.extend([
     }
 ])
 # QUESTION_BANK_ACCEPTED_TOPIC_29_LOT_10_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_28_LOT_06_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 28,
+        "question": "¿Qué representa un componente Razor en Blazor?",
+        "option_a": "Una unidad de UI reutilizable con markup y lógica",
+        "option_b": "Solo un archivo CSS",
+        "option_c": "Una tabla de base de datos",
+        "option_d": "Un proveedor DI",
+        "correct": "A",
+        "explanation": "Los componentes encapsulan UI y comportamiento."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué directiva declara un parámetro de componente?",
+        "option_a": "[Parameter]",
+        "option_b": "[RouteParameterOnly]",
+        "option_c": "[InjectOnly]",
+        "option_d": "[ComponentProperty]",
+        "correct": "A",
+        "explanation": "Parameter marca propiedades configurables por el padre."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué debe hacer un padre para pasar un parámetro?",
+        "option_a": "Asignar el atributo correspondiente al componente hijo",
+        "option_b": "Modificar el assembly hijo",
+        "option_c": "Editar su CSS aislado",
+        "option_d": "Crear una ruta nueva",
+        "correct": "A",
+        "explanation": "Los parámetros se pasan como atributos."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué representa ChildContent normalmente?",
+        "option_a": "Contenido hijo capturado como RenderFragment",
+        "option_b": "Un servicio scoped",
+        "option_c": "Una URL",
+        "option_d": "Un evento de navegación",
+        "correct": "A",
+        "explanation": "ChildContent es la convención para contenido anidado."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué tipo representa contenido renderizable sin datos?",
+        "option_a": "RenderFragment",
+        "option_b": "RenderComponentOnly",
+        "option_c": "MarkupRoute",
+        "option_d": "TemplateContext",
+        "correct": "A",
+        "explanation": "RenderFragment representa un fragmento de UI."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué tipo representa una plantilla parametrizada?",
+        "option_a": "RenderFragment<TValue>",
+        "option_b": "RenderTemplateOnly<TValue>",
+        "option_c": "ComponentRoute<TValue>",
+        "option_d": "MarkupProvider<TValue>",
+        "correct": "A",
+        "explanation": "La variante genérica recibe un valor de contexto."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué directiva define un parámetro de tipo genérico?",
+        "option_a": "@typeparam",
+        "option_b": "@generic",
+        "option_c": "@typeonly",
+        "option_d": "@templateparam",
+        "correct": "A",
+        "explanation": "@typeparam hace genérico el componente."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué permite una plantilla de componente?",
+        "option_a": "Personalizar el markup de elementos repetidos o regiones",
+        "option_b": "Cambiar el lifetime DI",
+        "option_c": "Crear un endpoint HTTP",
+        "option_d": "Desactivar renderizado",
+        "correct": "A",
+        "explanation": "Las plantillas separan estructura y presentación."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué hace Context en una plantilla?",
+        "option_a": "Cambia el nombre de la variable de contexto del RenderFragment<TValue>",
+        "option_b": "Crea un contexto DI",
+        "option_c": "Define una ruta",
+        "option_d": "Aísla CSS",
+        "correct": "A",
+        "explanation": "Context renombra el parámetro implícito de la plantilla."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué utilidad tiene @ref en un componente?",
+        "option_a": "Capturar una referencia a una instancia o elemento después del render",
+        "option_b": "Registrar el componente",
+        "option_c": "Definir un parámetro",
+        "option_d": "Aislar estilos",
+        "correct": "A",
+        "explanation": "@ref permite obtener una referencia renderizada."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Cuándo está disponible de forma segura una referencia @ref?",
+        "option_a": "Después de que el componente/elemento haya sido renderizado",
+        "option_b": "Durante la compilación siempre",
+        "option_c": "Antes de crear el componente",
+        "option_d": "En cualquier constructor",
+        "correct": "A",
+        "explanation": "La referencia se asigna durante el renderizado."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué riesgo tiene usar una referencia de componente como API principal entre componentes?",
+        "option_a": "Puede acoplarlos y depender del momento del render",
+        "option_b": "Mejora siempre la reutilización",
+        "option_c": "Elimina parámetros",
+        "option_d": "Aísla todos los estilos",
+        "correct": "A",
+        "explanation": "Los parámetros y callbacks suelen expresar mejor comunicación."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué atributo captura atributos no reconocidos en una propiedad?",
+        "option_a": "[Parameter(CaptureUnmatchedValues = true)]",
+        "option_b": "[CaptureRouteValues]",
+        "option_c": "[AdditionalAttributesOnly]",
+        "option_d": "[AttributeBag]",
+        "correct": "A",
+        "explanation": "La captura permite recibir atributos adicionales."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué es attribute splatting?",
+        "option_a": "Aplicar un diccionario de atributos a un elemento/componente",
+        "option_b": "Renderizar HTML sin escape",
+        "option_c": "Crear un scope",
+        "option_d": "Copiar un modelo",
+        "correct": "A",
+        "explanation": "Splatting expande atributos desde una colección."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué debe cuidar un componente al combinar atributos capturados con explícitos?",
+        "option_a": "La precedencia y posibles duplicados de atributos",
+        "option_b": "El nombre del assembly",
+        "option_c": "El lifetime singleton",
+        "option_d": "La ruta raíz",
+        "correct": "A",
+        "explanation": "El orden/uso de atributos afecta el resultado."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué significa renderizar markup sin procesar?",
+        "option_a": "Insertar contenido como HTML con los riesgos correspondientes",
+        "option_b": "Convertirlo en CSS aislado",
+        "option_c": "Validarlo como parámetro",
+        "option_d": "Crear un RenderFragment tipado",
+        "correct": "A",
+        "explanation": "El markup sin procesar no recibe el mismo tratamiento que texto."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué debe hacerse con HTML construido desde entrada no confiable?",
+        "option_a": "Evitar renderizarlo sin una sanitización/garantía adecuada",
+        "option_b": "Usarlo siempre como MarkupString",
+        "option_c": "Ponerlo en @ref",
+        "option_d": "Pasarlo a CSS isolation",
+        "correct": "A",
+        "explanation": "HTML no confiable puede introducir riesgos."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué es un callback de evento de componente?",
+        "option_a": "Una EventCallback que permite notificar al padre",
+        "option_b": "Una ruta HTTP",
+        "option_c": "Un CSS provider",
+        "option_d": "Un tipo genérico obligatorio",
+        "correct": "A",
+        "explanation": "EventCallback expresa eventos entre componentes."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué ventaja aporta EventCallback<TValue>?",
+        "option_a": "Tipa el argumento comunicado al consumidor",
+        "option_b": "Evita todo render",
+        "option_c": "Registra servicios",
+        "option_d": "Captura atributos CSS",
+        "correct": "A",
+        "explanation": "La variante genérica comunica un tipo conocido."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué diseño favorece un componente reutilizable?",
+        "option_a": "Parámetros explícitos, contenido hijo y callbacks bien definidos",
+        "option_b": "Estado global oculto",
+        "option_c": "Referencias cruzadas siempre",
+        "option_d": "HTML no confiable",
+        "correct": "A",
+        "explanation": "Una API explícita reduce acoplamiento."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_28_LOT_06_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_28_LOT_07_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 28,
+        "question": "¿Qué archivo contiene estilos aislados de un componente Razor?",
+        "option_a": "Componente.razor.css",
+        "option_b": "Componente.css.global",
+        "option_c": "Styles.razor-only",
+        "option_d": "Component.scope.json",
+        "correct": "A",
+        "explanation": "El archivo .razor.css contiene estilos aislados."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué alcance busca CSS isolation?",
+        "option_a": "Limitar estilos al markup del componente",
+        "option_b": "Aplicar estilos a todo Internet",
+        "option_c": "Eliminar CSS global",
+        "option_d": "Crear un componente hijo",
+        "correct": "A",
+        "explanation": "El aislamiento reduce colisiones de estilos."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Cómo se empaquetan normalmente estilos aislados?",
+        "option_a": "En un bundle generado durante el build",
+        "option_b": "En la base de datos",
+        "option_c": "En los parámetros",
+        "option_d": "En EditContext",
+        "correct": "A",
+        "explanation": "El build procesa y combina los estilos aislados."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué límite tienen los estilos aislados respecto de componentes hijos?",
+        "option_a": "No atraviesan automáticamente el límite del componente hijo",
+        "option_b": "Siempre afectan a todos los hijos",
+        "option_c": "Solo afectan a JavaScript",
+        "option_d": "Eliminan templates",
+        "correct": "A",
+        "explanation": "El aislamiento respeta límites de componentes."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué pseudo-elemento permite alcanzar markup descendiente de un componente hijo?",
+        "option_a": "::deep",
+        "option_b": "::child",
+        "option_c": "::scope-all",
+        "option_d": "::component",
+        "correct": "A",
+        "explanation": "::deep permite aplicar un selector a descendientes en el escenario documentado."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué requisito suele tener ::deep para afectar descendientes?",
+        "option_a": "Un elemento antecesor del componente que contiene el selector",
+        "option_b": "Un nuevo RenderFragment",
+        "option_c": "Un parámetro genérico",
+        "option_d": "Una ruta catch-all",
+        "correct": "A",
+        "explanation": "El selector necesita el contexto antecesor adecuado."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué soporte puede tener CSS isolation para preprocesadores?",
+        "option_a": "Procesamiento mediante la configuración/herramienta apropiada de build",
+        "option_b": "Solo durante runtime del navegador",
+        "option_c": "Nunca",
+        "option_d": "Mediante EditContext",
+        "correct": "A",
+        "explanation": "Los preprocesadores se integran en el build según configuración."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Pueden las Razor Class Libraries aportar estilos aislados?",
+        "option_a": "Sí, el soporte contempla estilos aislados en RCL",
+        "option_b": "No, jamás",
+        "option_c": "Solo como appsettings",
+        "option_d": "Solo con RenderFragment",
+        "correct": "A",
+        "explanation": "Las RCL pueden empaquetar CSS aislado."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué identifica el scope aplicado al CSS aislado?",
+        "option_a": "Un identificador generado para asociar reglas y markup",
+        "option_b": "El nombre del usuario",
+        "option_c": "La ruta HTTP",
+        "option_d": "El lifetime",
+        "correct": "A",
+        "explanation": "El scope permite seleccionar el markup del componente."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué puede modificar MSBuild respecto de CSS isolation?",
+        "option_a": "La configuración del proceso de compilación de estilos",
+        "option_b": "El valor de un parámetro en runtime",
+        "option_c": "El modelo de formulario",
+        "option_d": "El circuito",
+        "correct": "A",
+        "explanation": "MSBuild controla tareas y configuración del build."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué diferencia hay entre CSS global y aislado?",
+        "option_a": "Global puede afectar muchos componentes; aislado se limita al componente",
+        "option_b": "Global solo afecta inputs",
+        "option_c": "Aislado siempre es inline",
+        "option_d": "No hay diferencia",
+        "correct": "A",
+        "explanation": "Sus ámbitos de aplicación son distintos."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué riesgo reduce CSS isolation?",
+        "option_a": "Colisiones accidentales entre nombres de clase de componentes",
+        "option_b": "Overposting",
+        "option_c": "Fugas de secretos",
+        "option_d": "Errores de DI",
+        "correct": "A",
+        "explanation": "El alcance reduce interferencias de estilos."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué no resuelve CSS isolation?",
+        "option_a": "Problemas de autorización o sanitización de HTML",
+        "option_b": "Colisiones de selectores locales",
+        "option_c": "Empaquetado de CSS",
+        "option_d": "Estilos de un componente",
+        "correct": "A",
+        "explanation": "CSS isolation es una técnica de estilos, no de seguridad de datos."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué debe comprobarse si un selector aislado no afecta a un hijo?",
+        "option_a": "El límite de componente y si el selector necesita ::deep",
+        "option_b": "La cadena de conexión",
+        "option_c": "El EditContext",
+        "option_d": "El evento OnSubmit",
+        "correct": "A",
+        "explanation": "Los límites explican por qué el selector no cruza."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué es una plantilla en un componente templated?",
+        "option_a": "Un RenderFragment que el consumidor proporciona para renderizar contenido",
+        "option_b": "Un archivo .css",
+        "option_c": "Un servicio DI",
+        "option_d": "Una ruta",
+        "correct": "A",
+        "explanation": "La plantilla es contenido renderizable configurable."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué patrón usa una lista para dejar que el consumidor defina cada fila?",
+        "option_a": "RenderFragment<TItem>",
+        "option_b": "RenderFragment sin contexto siempre",
+        "option_c": "EventCallback only",
+        "option_d": "MarkupString only",
+        "correct": "A",
+        "explanation": "La plantilla recibe cada elemento."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué expresa @typeparam TItem en un componente lista?",
+        "option_a": "Que el componente trabaja con un tipo de elemento genérico",
+        "option_b": "Que la lista es una ruta",
+        "option_c": "Que CSS es global",
+        "option_d": "Que el componente es singleton",
+        "correct": "A",
+        "explanation": "El parámetro de tipo hace reusable la lista."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué aporta una plantilla frente a duplicar componentes?",
+        "option_a": "Reutiliza estructura con presentación suministrada por el consumidor",
+        "option_b": "Elimina parámetros",
+        "option_c": "Impide callbacks",
+        "option_d": "Evita compilación",
+        "correct": "A",
+        "explanation": "La plantilla permite variar presentación sin duplicar estructura."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué puede ocurrir si el nombre Context se cambia incorrectamente?",
+        "option_a": "La plantilla no puede referenciar el valor con el nombre esperado",
+        "option_b": "Se crea un scope DI",
+        "option_c": "El CSS se vuelve global",
+        "option_d": "Se elimina el componente",
+        "correct": "A",
+        "explanation": "El nombre debe coincidir con su uso en el template."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué debe preferirse para estilos internos de un componente reusable?",
+        "option_a": "CSS isolation cuando se desea limitar reglas a ese componente",
+        "option_b": "Selectores globales genéricos siempre",
+        "option_c": "HTML raw",
+        "option_d": "Una ruta",
+        "correct": "A",
+        "explanation": "El aislamiento evita afectar consumidores no relacionados."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_28_LOT_07_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_28_LOT_08_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 28,
+        "question": "¿Qué inicia normalmente un renderizado de componente?",
+        "option_a": "Un cambio de parámetros, estado o evento que requiere actualizar UI",
+        "option_b": "Solo un cambio de CSS externo",
+        "option_c": "Una consulta SQL",
+        "option_d": "El nombre del assembly",
+        "correct": "A",
+        "explanation": "Los cambios relevantes provocan una actualización."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué método solicita que un componente se vuelva a renderizar?",
+        "option_a": "StateHasChanged",
+        "option_b": "RenderNowOnly",
+        "option_c": "UpdateMarkupDirect",
+        "option_d": "RefreshRoute",
+        "correct": "A",
+        "explanation": "StateHasChanged notifica que el estado cambió."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Cuándo suele invocarse StateHasChanged automáticamente?",
+        "option_a": "Tras eventos gestionados por el framework y cambios de parámetros en el flujo normal",
+        "option_b": "Nunca",
+        "option_c": "Solo desde CSS",
+        "option_d": "Solo en constructores",
+        "correct": "A",
+        "explanation": "El framework programa renders en varios puntos del ciclo."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué hace ShouldRender?",
+        "option_a": "Permite decidir si el componente debe renderizarse de nuevo",
+        "option_b": "Valida el modelo",
+        "option_c": "Aísla CSS",
+        "option_d": "Crea parámetros",
+        "correct": "A",
+        "explanation": "ShouldRender puede suprimir un render."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué valor devuelve ShouldRender para permitir el render normal?",
+        "option_a": "true",
+        "option_b": "false",
+        "option_c": "null",
+        "option_d": "Un RenderFragment",
+        "correct": "A",
+        "explanation": "true permite el render."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué riesgo tiene usar ShouldRender de forma indiscriminada?",
+        "option_a": "La UI puede no reflejar cambios de estado",
+        "option_b": "Se duplican rutas",
+        "option_c": "Se filtran secretos",
+        "option_d": "Se crea overposting",
+        "correct": "A",
+        "explanation": "Suprimir renders puede dejar UI obsoleta."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué es un render fragment?",
+        "option_a": "Contenido de renderizado que puede pasarse o componerse",
+        "option_b": "Un archivo CSS",
+        "option_c": "Una instancia DI",
+        "option_d": "Una validación",
+        "correct": "A",
+        "explanation": "RenderFragment representa UI componible."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué puede hacer un componente padre al renderizar un hijo?",
+        "option_a": "Pasar parámetros y contenido como parte del árbol",
+        "option_b": "Cambiar el assembly del hijo",
+        "option_c": "Aislar todos los estilos globales",
+        "option_d": "Evitar la asignación de parámetros",
+        "correct": "A",
+        "explanation": "El padre compone al hijo mediante parámetros/contenido."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué significa que el renderizado sea declarativo?",
+        "option_a": "La UI se describe a partir del estado y el framework actualiza el output",
+        "option_b": "Se manipula siempre DOM manualmente",
+        "option_c": "CSS crea el modelo",
+        "option_d": "Solo se usan rutas",
+        "correct": "A",
+        "explanation": "El markup declara la UI resultante."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Cómo notifica un callback externo que su estado cambió?",
+        "option_a": "Solicitar StateHasChanged cuando el cambio está fuera del flujo automático",
+        "option_b": "Cambiar CSS global",
+        "option_c": "Crear una ruta",
+        "option_d": "Reinstanciar la aplicación",
+        "correct": "A",
+        "explanation": "Los callbacks externos pueden necesitar notificar el render."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Por qué un evento externo puede no actualizar la UI automáticamente?",
+        "option_a": "No se ejecuta dentro del flujo de eventos que el framework rastrea",
+        "option_b": "El parámetro es genérico",
+        "option_c": "CSS está aislado",
+        "option_d": "El componente tiene ChildContent",
+        "correct": "A",
+        "explanation": "El framework no conoce necesariamente cambios externos."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué hace InvokeAsync(StateHasChanged) en un callback externo?",
+        "option_a": "Programa la actualización en el contexto de render apropiado",
+        "option_b": "Valida anotaciones",
+        "option_c": "Crea un template",
+        "option_d": "Elimina CSS",
+        "correct": "A",
+        "explanation": "InvokeAsync coordina con el contexto del componente."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué relación hay entre cambio de parámetro y render?",
+        "option_a": "La asignación de parámetros puede provocar un nuevo render",
+        "option_b": "Nunca se vuelve a renderizar",
+        "option_c": "Solo cambia CSS",
+        "option_d": "Crea un servicio",
+        "correct": "A",
+        "explanation": "Los parámetros participan en el flujo de renderizado."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué debe evitarse al llamar StateHasChanged repetidamente sin necesidad?",
+        "option_a": "Renders adicionales y trabajo innecesario",
+        "option_b": "La validación",
+        "option_c": "El aislamiento CSS",
+        "option_d": "Los parámetros",
+        "correct": "A",
+        "explanation": "Las notificaciones deben responder a cambios reales."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué optimización permite ShouldRender?",
+        "option_a": "Evitar renders cuando el componente sabe que no cambió la UI",
+        "option_b": "Evitar toda asignación de parámetros",
+        "option_c": "Eliminar el árbol",
+        "option_d": "Desactivar eventos",
+        "correct": "A",
+        "explanation": "ShouldRender sirve para supresión controlada."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué no debe asumirse de ShouldRender?",
+        "option_a": "Que impide siempre todo trabajo previo del ciclo de vida",
+        "option_b": "Que valida inputs",
+        "option_c": "Que cambia CSS",
+        "option_d": "Que crea componentes",
+        "correct": "A",
+        "explanation": "La decisión ocurre dentro del flujo; no sustituye todos los callbacks."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué compone el árbol de renderizado?",
+        "option_a": "Componentes, elementos, texto y fragmentos declarados",
+        "option_b": "Solo archivos CSS",
+        "option_c": "Solo servicios",
+        "option_d": "Solo rutas",
+        "correct": "A",
+        "explanation": "El árbol representa la UI declarada."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué pasa si un callback actualiza una propiedad sin notificar?",
+        "option_a": "La UI puede no cambiar hasta otra actualización",
+        "option_b": "Siempre se actualiza de inmediato",
+        "option_c": "Se destruye el componente",
+        "option_d": "Se crea un error antiforgery",
+        "correct": "A",
+        "explanation": "Debe notificarse el cambio fuera del flujo normal."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué es una referencia de elemento frente a una de componente?",
+        "option_a": "Una apunta al elemento renderizado; otra a la instancia del componente",
+        "option_b": "Ambas son siempre servicios",
+        "option_c": "Una es un CSS class",
+        "option_d": "No hay diferencia",
+        "correct": "A",
+        "explanation": "@ref puede usarse en ambos contextos."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué criterio guía la supresión de renders?",
+        "option_a": "Solo suprimir cuando se entiende el estado y se conserva la corrección visual",
+        "option_b": "Suprimir en todos los componentes",
+        "option_c": "Suprimir después de cada evento",
+        "option_d": "Suprimir para seguridad",
+        "correct": "A",
+        "explanation": "La optimización no debe romper coherencia UI."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_28_LOT_08_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_28_LOT_09_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 28,
+        "question": "¿Qué ocurre antes de que el componente use sus parámetros?",
+        "option_a": "El framework los asigna desde el padre",
+        "option_b": "Se dispone el componente",
+        "option_c": "Se genera CSS global",
+        "option_d": "Se crea una ruta",
+        "correct": "A",
+        "explanation": "Los parámetros se asignan durante el ciclo."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué callback se usa para inicialización síncrona?",
+        "option_a": "OnInitialized",
+        "option_b": "OnInitializedAsync",
+        "option_c": "OnParametersSetOnly",
+        "option_d": "OnAfterRenderOnly",
+        "correct": "A",
+        "explanation": "OnInitialized se ejecuta en inicialización síncrona."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué método del ciclo de vida permite inicialización asíncrona?",
+        "option_a": "OnInitializedAsync",
+        "option_b": "OnInitializeTaskOnly",
+        "option_c": "OnAsyncRender",
+        "option_d": "OnAfterParameter",
+        "correct": "A",
+        "explanation": "OnInitializedAsync permite trabajo asíncrono inicial."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué callback se ejecuta después de asignar parámetros?",
+        "option_a": "OnParametersSet",
+        "option_b": "OnParametersAssignedOnly",
+        "option_c": "OnChildContentSet",
+        "option_d": "OnRenderStart",
+        "correct": "A",
+        "explanation": "OnParametersSet responde a asignación de parámetros."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué variante permite trabajo asíncrono tras parámetros?",
+        "option_a": "OnParametersSetAsync",
+        "option_b": "OnParametersAsyncOnly",
+        "option_c": "OnSetAwaited",
+        "option_d": "OnParameterTask",
+        "correct": "A",
+        "explanation": "OnParametersSetAsync permite operaciones asíncronas."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué callback se ejecuta después del render?",
+        "option_a": "OnAfterRender",
+        "option_b": "OnAfterRenderAsync",
+        "option_c": "OnRenderCompleteOnly",
+        "option_d": "OnMarkupDone",
+        "correct": "A",
+        "explanation": "Los callbacks after-render ocurren después de renderizar."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué parámetro indica si es el primer render en after-render?",
+        "option_a": "firstRender",
+        "option_b": "initialRenderOnly",
+        "option_c": "isNewComponent",
+        "option_d": "renderNumber",
+        "correct": "A",
+        "explanation": "firstRender distingue la primera ejecución."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Por qué es útil firstRender?",
+        "option_a": "Evita repetir inicialización que solo debe hacerse una vez",
+        "option_b": "Convierte el componente en singleton",
+        "option_c": "Crea un parámetro",
+        "option_d": "Aísla CSS",
+        "correct": "A",
+        "explanation": "Permite limitar trabajo de primer render."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué interfaz permite liberar recursos al destruirse?",
+        "option_a": "IDisposable",
+        "option_b": "IRenderDisposableOnly",
+        "option_c": "IComponentCleanup",
+        "option_d": "IReleaseContext",
+        "correct": "A",
+        "explanation": "IDisposable define liberación síncrona."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué interfaz permite liberación asíncrona?",
+        "option_a": "IAsyncDisposable",
+        "option_b": "IAsyncComponentCleanup",
+        "option_c": "IReleaseTaskOnly",
+        "option_d": "IAsyncRender",
+        "correct": "A",
+        "explanation": "IAsyncDisposable define limpieza asíncrona."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué recursos suelen requerir disposición?",
+        "option_a": "Suscripciones, timers y recursos externos",
+        "option_b": "Parámetros simples",
+        "option_c": "Clases CSS",
+        "option_d": "Texto estático",
+        "correct": "A",
+        "explanation": "Esos recursos pueden sobrevivir si no se liberan."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué debe hacer un componente que suscribe un evento externo?",
+        "option_a": "Desuscribirse durante la disposición",
+        "option_b": "Suscribirse en cada render",
+        "option_c": "Ignorar el evento",
+        "option_d": "Convertirlo en CSS",
+        "correct": "A",
+        "explanation": "Desuscribirse evita referencias y callbacks posteriores."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué riesgo hay al iniciar un timer en OnInitialized y no disponerlo?",
+        "option_a": "El timer puede seguir invocando al componente destruido",
+        "option_b": "Mejora el render",
+        "option_c": "Se valida el modelo",
+        "option_d": "Se aísla el CSS",
+        "correct": "A",
+        "explanation": "El timer mantiene trabajo/referencias."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué puede ocurrir con un componente prerenderizado y lifecycle?",
+        "option_a": "Algunos callbacks pueden ejecutarse durante prerender y luego durante interacción",
+        "option_b": "Solo se ejecuta un constructor",
+        "option_c": "Nunca se llama OnInitialized",
+        "option_d": "CSS controla el ciclo",
+        "correct": "A",
+        "explanation": "Prerendering tiene un ciclo que debe tenerse en cuenta."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué trabajo no debe asumirse disponible durante prerender?",
+        "option_a": "Acceso a APIs de navegador/interactividad que requieren cliente",
+        "option_b": "Cálculo puro",
+        "option_c": "Asignación de parámetros",
+        "option_d": "Markup estático",
+        "correct": "A",
+        "explanation": "Prerender puede ocurrir sin APIs browser."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué lugar es adecuado para lógica que necesita DOM/interactividad tras render?",
+        "option_a": "OnAfterRenderAsync con control de firstRender",
+        "option_b": "Constructor siempre",
+        "option_c": "OnParametersSet antes de render",
+        "option_d": "CSS isolation",
+        "correct": "A",
+        "explanation": "After-render es el momento documentado para ese trabajo."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué diferencia OnInitialized y OnParametersSet?",
+        "option_a": "El primero inicializa; el segundo puede ejecutarse tras nuevas asignaciones de parámetros",
+        "option_b": "Son idénticos",
+        "option_c": "El segundo dispone recursos",
+        "option_d": "El primero solo cambia CSS",
+        "correct": "A",
+        "explanation": "Sus momentos y propósitos difieren."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué debe hacer una operación asíncrona de lifecycle con estado actualizado?",
+        "option_a": "Permitir que el flujo del componente renderice el resultado y manejar cancelación/errores según corresponda",
+        "option_b": "Cambiar DOM manualmente siempre",
+        "option_c": "Crear un Router",
+        "option_d": "Ignorar la tarea",
+        "correct": "A",
+        "explanation": "El resultado asíncrono debe integrarse al ciclo."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué callback es apropiado para reaccionar a parámetros nuevos?",
+        "option_a": "OnParametersSetAsync",
+        "option_b": "OnAfterRender solo",
+        "option_c": "Dispose",
+        "option_d": "ShouldRender únicamente",
+        "correct": "A",
+        "explanation": "Ese callback responde a nuevos parámetros."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué debe evitarse en OnAfterRenderAsync sin firstRender?",
+        "option_a": "Repetir una actualización que provoca un bucle de renders",
+        "option_b": "Leer un elemento una vez",
+        "option_c": "Inicializar una librería una vez",
+        "option_d": "Comprobar estado",
+        "correct": "A",
+        "explanation": "Actualizar en cada after-render puede crear ciclos."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_28_LOT_09_END
+
+# QUESTION_BANK_ACCEPTED_TOPIC_28_LOT_10_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 28,
+        "question": "¿Qué permite DynamicComponent?",
+        "option_a": "Seleccionar y renderizar un tipo de componente en tiempo de ejecución",
+        "option_b": "Crear CSS global",
+        "option_c": "Validar un modelo",
+        "option_d": "Registrar un servicio",
+        "correct": "A",
+        "explanation": "DynamicComponent renderiza componentes seleccionados dinámicamente."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué debe proporcionar un componente dinámico para su configuración?",
+        "option_a": "El tipo y los parámetros apropiados",
+        "option_b": "Solo una URL",
+        "option_c": "Solo un CSS class",
+        "option_d": "Un EditContext obligatorio",
+        "correct": "A",
+        "explanation": "El componente dinámico necesita tipo y parámetros compatibles."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué riesgo tiene elegir tipos dinámicos desde entrada no confiable?",
+        "option_a": "Permitir renderizar componentes no previstos",
+        "option_b": "Mejorar validación",
+        "option_c": "Evitar errores",
+        "option_d": "Aislar CSS",
+        "correct": "A",
+        "explanation": "La selección debe estar controlada por la aplicación."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué componente ayuda a delimitar errores de renderizado?",
+        "option_a": "ErrorBoundary",
+        "option_b": "RenderErrorRoute",
+        "option_c": "ExceptionComponentOnly",
+        "option_d": "BoundaryProvider",
+        "correct": "A",
+        "explanation": "ErrorBoundary captura errores del subárbol soportado."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué efecto tiene un error no controlado en un componente?",
+        "option_a": "Puede hacer fallar el circuito o dejar la UI en estado de error según hosting",
+        "option_b": "Siempre se ignora",
+        "option_c": "Se vuelve CSS",
+        "option_d": "Se convierte en parámetro",
+        "correct": "A",
+        "explanation": "Los errores de componentes requieren manejo adecuado."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué debe hacer una ErrorBoundary tras capturar un error si procede?",
+        "option_a": "Mostrar estado de error y permitir recuperación/reintento según diseño",
+        "option_b": "Persistir el secreto",
+        "option_c": "Cambiar el assembly",
+        "option_d": "Crear una ruta externa",
+        "correct": "A",
+        "explanation": "La frontera puede representar y recuperar el error."
+    },
+    {
+        "topic_num": 28,
+        "question": "Un callback externo cambia una lista pero no se ve en pantalla. ¿Qué revisar?",
+        "option_a": "Notificación StateHasChanged mediante el contexto apropiado",
+        "option_b": "CSS isolation",
+        "option_c": "@typeparam",
+        "option_d": "Dispose",
+        "correct": "A",
+        "explanation": "Los cambios externos necesitan notificación."
+    },
+    {
+        "topic_num": 28,
+        "question": "Un componente llama StateHasChanged dentro de cada OnAfterRenderAsync y genera actividad continua. ¿Qué revisar?",
+        "option_a": "Controlar firstRender y evitar el ciclo de actualización",
+        "option_b": "El nombre del componente",
+        "option_c": "El modelo de datos",
+        "option_d": "El CSS global",
+        "correct": "A",
+        "explanation": "La actualización after-render puede repetirse indefinidamente."
+    },
+    {
+        "topic_num": 28,
+        "question": "Una lista genérica necesita renderizar una fila distinta por consumidor. ¿Qué API usar?",
+        "option_a": "RenderFragment<TItem>",
+        "option_b": "RenderFragment sin tipo siempre",
+        "option_c": "DynamicComponent sin parámetros",
+        "option_d": "Raw HTML",
+        "correct": "A",
+        "explanation": "La plantilla tipada recibe cada elemento."
+    },
+    {
+        "topic_num": 28,
+        "question": "Una regla .razor.css no afecta el contenido interno de un hijo. ¿Cuál es la explicación?",
+        "option_a": "CSS isolation no cruza automáticamente el límite del hijo",
+        "option_b": "El hijo no tiene parámetros",
+        "option_c": "RenderFragment siempre elimina estilos",
+        "option_d": "Se requiere EditContext",
+        "correct": "A",
+        "explanation": "El aislamiento limita el alcance."
+    },
+    {
+        "topic_num": 28,
+        "question": "Una aplicación debe aplicar estilo al markup descendiente del hijo de forma documentada. ¿Qué revisar?",
+        "option_a": "Uso correcto de ::deep y el elemento antecesor requerido",
+        "option_b": "Cambiar a singleton",
+        "option_c": "Añadir @ref",
+        "option_d": "Usar OnSubmit",
+        "correct": "A",
+        "explanation": "::deep es la herramienta documentada para ese cruce."
+    },
+    {
+        "topic_num": 28,
+        "question": "Un componente debe inicializar una librería JS solo tras estar en DOM interactivo. ¿Dónde encaja?",
+        "option_a": "OnAfterRenderAsync condicionado a firstRender",
+        "option_b": "OnInitialized siempre",
+        "option_c": "Constructor",
+        "option_d": "OnParametersSet antes del render",
+        "correct": "A",
+        "explanation": "After-render permite que el DOM exista."
+    },
+    {
+        "topic_num": 28,
+        "question": "El mismo componente se inicializa durante prerender y después interactivo. ¿Qué diseño es prudente?",
+        "option_a": "Hacer idempotente la inicialización y distinguir firstRender/entorno",
+        "option_b": "Asumir una sola ejecución",
+        "option_c": "Leer siempre APIs browser en prerender",
+        "option_d": "Crear singleton",
+        "correct": "A",
+        "explanation": "Prerender puede producir fases distintas."
+    },
+    {
+        "topic_num": 28,
+        "question": "Un componente se suscribe a un observable y luego se navega fuera. ¿Qué debe hacer?",
+        "option_a": "Liberar la suscripción en Dispose/DisposeAsync",
+        "option_b": "Mantenerla global",
+        "option_c": "Suscribirse otra vez en cada render",
+        "option_d": "Moverla a CSS",
+        "correct": "A",
+        "explanation": "La limpieza evita callbacks a una instancia destruida."
+    },
+    {
+        "topic_num": 28,
+        "question": "Un DynamicComponent recibe un tipo fuera de una lista permitida. ¿Qué control falta?",
+        "option_a": "Validar/limitar la selección de tipos dinámicos",
+        "option_b": "Añadir Required",
+        "option_c": "Cambiar CSS",
+        "option_d": "Usar OnValidSubmit",
+        "correct": "A",
+        "explanation": "El tipo dinámico debe pertenecer a una selección confiable."
+    },
+    {
+        "topic_num": 28,
+        "question": "Una página tiene una tarjeta de error para solo un widget. ¿Qué diseño ayuda?",
+        "option_a": "Colocar ErrorBoundary alrededor del subárbol del widget",
+        "option_b": "Capturar todas las excepciones globales en CSS",
+        "option_c": "Usar RenderFragment sin error",
+        "option_d": "Disponer el Router",
+        "correct": "A",
+        "explanation": "La frontera limita el área afectada."
+    },
+    {
+        "topic_num": 28,
+        "question": "Un parámetro se transforma en OnParametersSetAsync pero la UI muestra el anterior durante el proceso. ¿Qué debe considerar?",
+        "option_a": "Estado de carga y renderizado tras completar la operación",
+        "option_b": "Cambiar CSS isolation",
+        "option_c": "Crear un DynamicComponent",
+        "option_d": "Usar raw HTML",
+        "correct": "A",
+        "explanation": "El trabajo asíncrono necesita estado intermedio y actualización."
+    },
+    {
+        "topic_num": 28,
+        "question": "Un componente usa @ref durante OnInitialized y obtiene null. ¿Qué explica el resultado?",
+        "option_a": "La referencia se asigna durante/después del render, no en inicialización",
+        "option_b": "@ref solo sirve para CSS",
+        "option_c": "El componente debe ser singleton",
+        "option_d": "Falta EditContext",
+        "correct": "A",
+        "explanation": "La referencia no está disponible antes de renderizar."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué combinación favorece un componente avanzado mantenible?",
+        "option_a": "Parámetros/callbacks explícitos, templates tipados, CSS aislado y lifecycle/disposición correctos",
+        "option_b": "Estado oculto, HTML raw y renders infinitos",
+        "option_c": "Referencias globales y CSS universal",
+        "option_d": "DynamicComponent sin control",
+        "correct": "A",
+        "explanation": "Estas APIs separan composición, estilo y ciclo de vida."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué permite un componente recibir contenido alternativo sin duplicar su estructura?",
+        "option_a": "Un RenderFragment proporcionado por el consumidor",
+        "option_b": "Un CSS global",
+        "option_c": "Un servicio estático",
+        "option_d": "Una ruta fija",
+        "correct": "A",
+        "explanation": "El contenido hijo parametriza la estructura reutilizable."
+    }
+])
+# QUESTION_BANK_ACCEPTED_TOPIC_28_LOT_10_END

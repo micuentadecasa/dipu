@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-28-blazor-advanced-styles.md",
+  "batches": [
+    {
+      "topic_num": 28,
+      "lot_num": 8,
+      "source_ids": [
+        "BLAZOR-10"
+      ],
+      "questions": [
+        {
+          "objective_id": "t28-lo-141",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué inicia normalmente un renderizado de componente?",
+          "options": [
+            "Un cambio de parámetros, estado o evento que requiere actualizar UI",
+            "Solo un cambio de CSS externo",
+            "Una consulta SQL",
+            "El nombre del assembly"
+          ],
+          "correct": "A",
+          "explanation": "Los cambios relevantes provocan una actualización.",
+          "citation": "Rendering — render flow",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-142",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué método solicita que un componente se vuelva a renderizar?",
+          "options": [
+            "StateHasChanged",
+            "RenderNowOnly",
+            "UpdateMarkupDirect",
+            "RefreshRoute"
+          ],
+          "correct": "A",
+          "explanation": "StateHasChanged notifica que el estado cambió.",
+          "citation": "Rendering — StateHasChanged",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-143",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Cuándo suele invocarse StateHasChanged automáticamente?",
+          "options": [
+            "Tras eventos gestionados por el framework y cambios de parámetros en el flujo normal",
+            "Nunca",
+            "Solo desde CSS",
+            "Solo en constructores"
+          ],
+          "correct": "A",
+          "explanation": "El framework programa renders en varios puntos del ciclo.",
+          "citation": "Rendering — render flow",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-144",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué hace ShouldRender?",
+          "options": [
+            "Permite decidir si el componente debe renderizarse de nuevo",
+            "Valida el modelo",
+            "Aísla CSS",
+            "Crea parámetros"
+          ],
+          "correct": "A",
+          "explanation": "ShouldRender puede suprimir un render.",
+          "citation": "Rendering — ShouldRender",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-145",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué valor devuelve ShouldRender para permitir el render normal?",
+          "options": [
+            "true",
+            "false",
+            "null",
+            "Un RenderFragment"
+          ],
+          "correct": "A",
+          "explanation": "true permite el render.",
+          "citation": "Rendering — ShouldRender",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-146",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué riesgo tiene usar ShouldRender de forma indiscriminada?",
+          "options": [
+            "La UI puede no reflejar cambios de estado",
+            "Se duplican rutas",
+            "Se filtran secretos",
+            "Se crea overposting"
+          ],
+          "correct": "A",
+          "explanation": "Suprimir renders puede dejar UI obsoleta.",
+          "citation": "Rendering — render suppression",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-147",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué es un render fragment?",
+          "options": [
+            "Contenido de renderizado que puede pasarse o componerse",
+            "Un archivo CSS",
+            "Una instancia DI",
+            "Una validación"
+          ],
+          "correct": "A",
+          "explanation": "RenderFragment representa UI componible.",
+          "citation": "Razor components — RenderFragment",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-148",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué puede hacer un componente padre al renderizar un hijo?",
+          "options": [
+            "Pasar parámetros y contenido como parte del árbol",
+            "Cambiar el assembly del hijo",
+            "Aislar todos los estilos globales",
+            "Evitar la asignación de parámetros"
+          ],
+          "correct": "A",
+          "explanation": "El padre compone al hijo mediante parámetros/contenido.",
+          "citation": "Rendering — component render flow",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-149",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué significa que el renderizado sea declarativo?",
+          "options": [
+            "La UI se describe a partir del estado y el framework actualiza el output",
+            "Se manipula siempre DOM manualmente",
+            "CSS crea el modelo",
+            "Solo se usan rutas"
+          ],
+          "correct": "A",
+          "explanation": "El markup declara la UI resultante.",
+          "citation": "Rendering — render flow",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-150",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Cómo notifica un callback externo que su estado cambió?",
+          "options": [
+            "Solicitar StateHasChanged cuando el cambio está fuera del flujo automático",
+            "Cambiar CSS global",
+            "Crear una ruta",
+            "Reinstanciar la aplicación"
+          ],
+          "correct": "A",
+          "explanation": "Los callbacks externos pueden necesitar notificar el render.",
+          "citation": "Rendering — external callbacks",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-151",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Por qué un evento externo puede no actualizar la UI automáticamente?",
+          "options": [
+            "No se ejecuta dentro del flujo de eventos que el framework rastrea",
+            "El parámetro es genérico",
+            "CSS está aislado",
+            "El componente tiene ChildContent"
+          ],
+          "correct": "A",
+          "explanation": "El framework no conoce necesariamente cambios externos.",
+          "citation": "Rendering — external callbacks",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-152",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué hace InvokeAsync(StateHasChanged) en un callback externo?",
+          "options": [
+            "Programa la actualización en el contexto de render apropiado",
+            "Valida anotaciones",
+            "Crea un template",
+            "Elimina CSS"
+          ],
+          "correct": "A",
+          "explanation": "InvokeAsync coordina con el contexto del componente.",
+          "citation": "Rendering — external callbacks",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-153",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué relación hay entre cambio de parámetro y render?",
+          "options": [
+            "La asignación de parámetros puede provocar un nuevo render",
+            "Nunca se vuelve a renderizar",
+            "Solo cambia CSS",
+            "Crea un servicio"
+          ],
+          "correct": "A",
+          "explanation": "Los parámetros participan en el flujo de renderizado.",
+          "citation": "Rendering — parameter assignment",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-154",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué debe evitarse al llamar StateHasChanged repetidamente sin necesidad?",
+          "options": [
+            "Renders adicionales y trabajo innecesario",
+            "La validación",
+            "El aislamiento CSS",
+            "Los parámetros"
+          ],
+          "correct": "A",
+          "explanation": "Las notificaciones deben responder a cambios reales.",
+          "citation": "Rendering — StateHasChanged",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-155",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué optimización permite ShouldRender?",
+          "options": [
+            "Evitar renders cuando el componente sabe que no cambió la UI",
+            "Evitar toda asignación de parámetros",
+            "Eliminar el árbol",
+            "Desactivar eventos"
+          ],
+          "correct": "A",
+          "explanation": "ShouldRender sirve para supresión controlada.",
+          "citation": "Rendering — ShouldRender",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-156",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué no debe asumirse de ShouldRender?",
+          "options": [
+            "Que impide siempre todo trabajo previo del ciclo de vida",
+            "Que valida inputs",
+            "Que cambia CSS",
+            "Que crea componentes"
+          ],
+          "correct": "A",
+          "explanation": "La decisión ocurre dentro del flujo; no sustituye todos los callbacks.",
+          "citation": "Rendering — ShouldRender",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-157",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué compone el árbol de renderizado?",
+          "options": [
+            "Componentes, elementos, texto y fragmentos declarados",
+            "Solo archivos CSS",
+            "Solo servicios",
+            "Solo rutas"
+          ],
+          "correct": "A",
+          "explanation": "El árbol representa la UI declarada.",
+          "citation": "Rendering — render tree",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-158",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué pasa si un callback actualiza una propiedad sin notificar?",
+          "options": [
+            "La UI puede no cambiar hasta otra actualización",
+            "Siempre se actualiza de inmediato",
+            "Se destruye el componente",
+            "Se crea un error antiforgery"
+          ],
+          "correct": "A",
+          "explanation": "Debe notificarse el cambio fuera del flujo normal.",
+          "citation": "Rendering — external callbacks",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-159",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué es una referencia de elemento frente a una de componente?",
+          "options": [
+            "Una apunta al elemento renderizado; otra a la instancia del componente",
+            "Ambas son siempre servicios",
+            "Una es un CSS class",
+            "No hay diferencia"
+          ],
+          "correct": "A",
+          "explanation": "@ref puede usarse en ambos contextos.",
+          "citation": "Razor components — component references",
+          "source_id": "BLAZOR-10"
+        },
+        {
+          "objective_id": "t28-lo-160",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué criterio guía la supresión de renders?",
+          "options": [
+            "Solo suprimir cuando se entiende el estado y se conserva la corrección visual",
+            "Suprimir en todos los componentes",
+            "Suprimir después de cada evento",
+            "Suprimir para seguridad"
+          ],
+          "correct": "A",
+          "explanation": "La optimización no debe romper coherencia UI.",
+          "citation": "Rendering — ShouldRender",
+          "source_id": "BLAZOR-10"
+        }
+      ]
+    }
+  ]
+}
