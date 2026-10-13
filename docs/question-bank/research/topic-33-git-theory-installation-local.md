@@ -35,4 +35,4 @@ The question lots cite the official Git documentation by page and section:
 
 ## Scope-gated objective design
 
-The 100 researched objectives use four blocks of 25: object model/repository layout, installation and configuration, working tree/index/staging, and local commits/references. Each lot has four basic, ten intermediate and six advanced questions. No claims about remote transport, pull requests, branch integration, rebase, merge conflict resolution or stash behavior are used as Topic 33 evidence; those belong to later Git topics.
+The initial 100 researched objectives use four blocks of 25: object model/repository layout, installation and configuration, working tree/index/staging, and local commits/references. Expansion lots 06–10 add 100 independently reviewed scenarios across those same blocks. Each lot has four basic, ten intermediate and six advanced questions. No claims about remote transport, pull requests, branch integration, rebase, merge conflict resolution or stash behavior are used as Topic 33 evidence; those belong to later Git topics.

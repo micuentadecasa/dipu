@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-10-13",
+  "research_artifact": "docs/question-bank/research/topic-33-git-theory-installation-local.md",
+  "batches": [
+    {
+      "topic_num": 33,
+      "lot_num": 8,
+      "source_ids": [
+        "GIT-2.50"
+      ],
+      "questions": [
+        {
+          "objective_id": "t33-lo-141",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué compara git diff sin --cached por defecto?",
+          "options": [
+            "Cambios del working tree frente al índice",
+            "Índice frente a HEAD",
+            "Dos remotos",
+            "Todos los tags"
+          ],
+          "correct": "A",
+          "explanation": "La comparación por defecto es working tree contra index.",
+          "citation": "git-diff — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-142",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué estados enfrenta la variante --cached de git diff?",
+          "options": [
+            "Índice frente a HEAD",
+            "Working tree frente a index",
+            "Dos ramas remotas",
+            "Objetos frente a refs"
+          ],
+          "correct": "A",
+          "explanation": "cached muestra lo staged respecto a HEAD.",
+          "citation": "git-diff — --cached",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-143",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué actualiza git add?",
+          "options": [
+            "El índice con contenido del working tree",
+            "HEAD sin commit",
+            "La configuración global",
+            "El reflog remoto"
+          ],
+          "correct": "A",
+          "explanation": "add prepara cambios en el índice.",
+          "citation": "git-add — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-144",
+          "difficulty": "basic",
+          "type": "concept",
+          "question": "¿Qué registra git commit normalmente?",
+          "options": [
+            "El contenido del índice como nuevo commit",
+            "Todos los archivos ignorados",
+            "Solo el working tree sin staging",
+            "La URL de origen"
+          ],
+          "correct": "A",
+          "explanation": "commit crea un snapshot desde el índice.",
+          "citation": "git-commit — DESCRIPTION; gittutorial",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-145",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué tres estados contrasta git status?",
+          "options": [
+            "HEAD, índice y working tree",
+            "Solo ramas remotas",
+            "Solo tags y blobs",
+            "Solo config y logs"
+          ],
+          "correct": "A",
+          "explanation": "status informa diferencias entre esos estados.",
+          "citation": "git-status — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-146",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué muestra status sobre un archivo no seguido no ignorado?",
+          "options": [
+            "Lo reporta como untracked",
+            "Lo incluye automáticamente en HEAD",
+            "Lo convierte en blob committed",
+            "Lo borra"
+          ],
+          "correct": "A",
+          "explanation": "status informa paths no seguidos si no están ignorados.",
+          "citation": "git-status — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-147",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué puede restaurar git restore según sus opciones?",
+          "options": [
+            "Contenido del working tree o del índice",
+            "La autenticación remota",
+            "La configuración system solamente",
+            "Los reflogs de otros usuarios"
+          ],
+          "correct": "A",
+          "explanation": "restore actúa sobre working tree o index según opciones.",
+          "citation": "git-restore — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-148",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué capacidad distingue a git reset?",
+          "options": [
+            "Puede mover una referencia y modificar índice/working tree según modo",
+            "Solo muestra diferencias",
+            "Solo lista stashes",
+            "Solo cambia user.email"
+          ],
+          "correct": "A",
+          "explanation": "reset tiene modos que afectan ref, index y working tree.",
+          "citation": "git-reset — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-149",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Por qué no deben confundirse restore y reset?",
+          "options": [
+            "Tienen alcances y efectos distintos sobre refs, índice y árbol",
+            "Ambos son exactamente iguales",
+            "Restore siempre publica y reset solo lista",
+            "Uno solo sirve para tags remotos"
+          ],
+          "correct": "A",
+          "explanation": "La documentación diferencia sus operaciones.",
+          "citation": "git-restore — DESCRIPTION; git-reset — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-150",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué hace git rm en el flujo local?",
+          "options": [
+            "Prepara la eliminación de archivos del índice y working tree según opciones",
+            "Solo los ignora",
+            "Crea una rama",
+            "Muestra el reflog"
+          ],
+          "correct": "A",
+          "explanation": "rm gestiona la eliminación de paths tracked.",
+          "citation": "git-rm — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-151",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué debe hacer un usuario para incluir en el siguiente commit un cambio de archivo?",
+          "options": [
+            "Actualizar el índice con git add",
+            "Ejecutar solo git diff",
+            "Editar HEAD manualmente",
+            "Cambiar user.name"
+          ],
+          "correct": "A",
+          "explanation": "El cambio debe estar en el índice.",
+          "citation": "gittutorial — The index; git-add — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-152",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué indica un diff entre working tree e índice?",
+          "options": [
+            "Cambios aún no preparados",
+            "Cambios ya publicados",
+            "Solo objetos inaccesibles",
+            "Solo configuración global"
+          ],
+          "correct": "A",
+          "explanation": "diff sin cached muestra lo no staged.",
+          "citation": "git-diff — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-153",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué indica un diff --cached frente a HEAD?",
+          "options": [
+            "Cambios preparados para el siguiente commit",
+            "Cambios ignorados",
+            "Cambios del remoto sin fetch",
+            "Solo archivos borrados del disco"
+          ],
+          "correct": "A",
+          "explanation": "cached muestra lo staged.",
+          "citation": "git-diff — --cached",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-154",
+          "difficulty": "intermediate",
+          "type": "concept",
+          "question": "¿Qué puede hacer restore --staged conceptualmente?",
+          "options": [
+            "Quitar contenido del índice sin ser una operación de commit",
+            "Publicar una rama",
+            "Crear un tag",
+            "Cambiar el autor del commit"
+          ],
+          "correct": "A",
+          "explanation": "restore tiene opciones dirigidas al índice.",
+          "citation": "git-restore — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-155",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué riesgo tiene reset según el modo elegido?",
+          "options": [
+            "Puede mover una ref y afectar índice o working tree",
+            "Solo cambia una descripción",
+            "Nunca modifica refs",
+            "Solo lista objetos"
+          ],
+          "correct": "A",
+          "explanation": "Los modos de reset tienen efectos distintos.",
+          "citation": "git-reset — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-156",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué diferencia hay entre untracked e ignored?",
+          "options": [
+            "Untracked no está seguido; ignored además queda excluido de descubrimiento según patrones",
+            "Son siempre sinónimos",
+            "Ignored siempre está en HEAD",
+            "Untracked nunca aparece en status"
+          ],
+          "correct": "A",
+          "explanation": "Son estados diferentes.",
+          "citation": "git-status — DESCRIPTION; gitignore",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-157",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué puede mostrar status además de paths modificados?",
+          "options": [
+            "Paths no seguidos que no están ignorados",
+            "Las contraseñas de configuración",
+            "Todos los objetos internos",
+            "Los remotos del servidor"
+          ],
+          "correct": "A",
+          "explanation": "status incluye untracked no ignorados.",
+          "citation": "git-status — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-158",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué orden prepara una eliminación de archivo tracked?",
+          "options": [
+            "git rm",
+            "git ignore",
+            "git show --delete",
+            "git diff --remove-index"
+          ],
+          "correct": "A",
+          "explanation": "rm actualiza índice y working tree según la eliminación.",
+          "citation": "git-rm — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-159",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué representa el índice cuando contiene una versión modificada?",
+          "options": [
+            "La versión propuesta para el próximo snapshot",
+            "La versión ya publicada",
+            "La configuración local",
+            "El reflog de HEAD"
+          ],
+          "correct": "A",
+          "explanation": "El índice propone el siguiente snapshot.",
+          "citation": "gitglossary — index; gittutorial",
+          "source_id": "GIT-2.50"
+        },
+        {
+          "objective_id": "t33-lo-160",
+          "difficulty": "advanced",
+          "type": "concept",
+          "question": "¿Qué orden completa la transición del índice a una historia nueva?",
+          "options": [
+            "git commit",
+            "git status",
+            "git diff",
+            "git check-ignore"
+          ],
+          "correct": "A",
+          "explanation": "commit registra el índice como nuevo commit.",
+          "citation": "git-commit — DESCRIPTION",
+          "source_id": "GIT-2.50"
+        }
+      ]
+    }
+  ]
+}
