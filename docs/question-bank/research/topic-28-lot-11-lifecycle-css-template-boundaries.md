@@ -2,7 +2,7 @@
 
 **Research/verification date:** 2026-10-15 UTC
 **Primary authority:** Microsoft Learn, ASP.NET Core 10.0 Blazor documentation (`BLAZOR-10`)
-**Scope:** supplemental coverage-gap lot for exact lifecycle, CSS-isolation, and templated-component behavior not represented precisely in published topic-28 lots 1–10.
+**Scope:** supplemental candidate lot initially identified for exact lifecycle, CSS-isolation, and templated-component behavior; cross-lot review later found overlap with published topic-28 coverage.
 
 ## Verified pages
 
