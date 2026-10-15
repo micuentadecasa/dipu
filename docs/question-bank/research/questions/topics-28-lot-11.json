@@ -19,323 +19,443 @@
       "questions": [
         {
           "objective_id": "t28-lo-supp-001",
-          "difficulty": "basic",
+          "difficulty": "intermediate",
           "question_type": "concept",
-          "question": "Si ParameterView no contiene un valor para una propiedad de parámetro, ¿qué hace la implementación predeterminada?",
+          "question": "ParameterView.TryGetValue recibe un nombre de parámetro que coincide con el nombre de la propiedad. ¿Qué regla de coincidencia documenta la API?",
           "options": [
-            "La establece en null",
-            "La deja sin cambios",
-            "Lanza una excepción",
-            "La elimina del componente"
+            "La coincidencia ignora siempre mayúsculas",
+            "La coincidencia de nombre distingue mayúsculas y minúsculas",
+            "La coincidencia usa la ruta URL",
+            "La coincidencia solo usa el tipo"
           ],
           "correct": "B",
-          "explanation": "Los parámetros sin valor correspondiente en ParameterView quedan sin cambios.",
+          "explanation": "ParameterView.TryGetValue usa coincidencia de nombre sensible a mayúsculas y minúsculas.",
           "citation": "When parameters are set (SetParametersAsync)",
-          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0"
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "parameterview-trygetvalue-case-sensitive",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
         },
         {
           "objective_id": "t28-lo-supp-002",
-          "difficulty": "intermediate",
-          "question_type": "concept",
-          "question": "En la inicialización síncrona de un componente padre y uno hijo, ¿qué orden documenta Blazor?",
+          "difficulty": "advanced",
+          "question_type": "scenario",
+          "question": "¿Qué valor puede pasar un componente a SetParametersAsync si pretende omitir deliberadamente los parámetros entrantes?",
           "options": [
-            "El hijo siempre termina primero",
-            "No existe ninguna llamada al hijo",
-            "El padre se inicializa antes que el hijo",
-            "Ambos se inicializan después del render"
+            "null",
+            "Un RenderFragment vacío",
+            "ParameterView.Empty",
+            "Una ruta vacía"
           ],
           "correct": "C",
-          "explanation": "La inicialización síncrona del padre completa antes de la del hijo.",
-          "citation": "Component initialization — parent and child order",
-          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0"
+          "explanation": "ParameterView.Empty representa una vista sin parámetros para ese caso deliberado.",
+          "citation": "When parameters are set (SetParametersAsync)",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "parameterview-empty-bypass",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
         },
         {
           "objective_id": "t28-lo-supp-003",
           "difficulty": "intermediate",
           "question_type": "concept",
-          "question": "Si la inicialización del padre y del hijo es asíncrona, ¿qué orden de finalización puede garantizarse?",
+          "question": "Antes de inicializar al hijo, ¿qué ocurre normalmente con el renderizado del componente padre?",
           "options": [
-            "Ninguno: depende del código asíncrono",
-            "Siempre el del hijo",
-            "Siempre el del padre",
-            "El orden del markup"
+            "El padre se renderiza antes de que comience el hijo",
+            "El hijo se renderiza antes del padre",
+            "Ninguno se renderiza",
+            "Solo se renderiza el hijo"
           ],
           "correct": "A",
-          "explanation": "La finalización asíncrona depende del código y no tiene un orden garantizado.",
-          "citation": "Component initialization — asynchronous order",
-          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0"
+          "explanation": "El ciclo de renderizado procesa primero el padre y después el contenido del hijo.",
+          "citation": "Component initialization (OnInitialized{Async})",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "parent-render-before-child",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
         },
         {
           "objective_id": "t28-lo-supp-004",
-          "difficulty": "intermediate",
-          "question_type": "concept",
-          "question": "¿Qué puede provocar que se invoque OnParametersSet{Async} aunque un parámetro complejo parezca no haber cambiado?",
+          "difficulty": "advanced",
+          "question_type": "scenario",
+          "question": "Durante el prerenderizado, ¿qué espera la quiescencia antes de producir el resultado?",
           "options": [
-            "Un cambio de CSS",
-            "Una excepción de JavaScript",
-            "La destrucción del componente",
-            "Que el padre vuelva a renderizar con un parámetro complejo"
+            "Solo las hojas CSS",
+            "Las tareas asíncronas del árbol de componentes",
+            "La primera navegación del usuario",
+            "El primer evento DOM"
           ],
           "correct": "D",
-          "explanation": "Los parámetros complejos se tratan como cambiados cuando el padre vuelve a renderizar.",
-          "citation": "After parameters are set — complex parameters",
-          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0"
+          "explanation": "La quiescencia espera a que finalice el trabajo asíncrono relevante del árbol prerenderizado.",
+          "citation": "Prerendering and quiescence",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "prerender-quiescence",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
         },
         {
           "objective_id": "t28-lo-supp-005",
-          "difficulty": "advanced",
-          "question_type": "scenario",
-          "question": "Antes de un await que devuelve una Task incompleta en OnParametersSetAsync, ¿qué debe hacer el componente?",
+          "difficulty": "intermediate",
+          "question_type": "concept",
+          "question": "¿Qué callback de ciclo de vida no se invoca durante el prerenderizado?",
           "options": [
-            "Esperar a que exista ElementReference",
-            "Dejar un estado válido para renderizar",
-            "Llamar dos veces a StateHasChanged",
-            "No asignar ningún parámetro"
+            "OnInitialized",
+            "OnParametersSet",
+            "OnAfterRender{Async}",
+            "SetParametersAsync"
           ],
           "correct": "B",
-          "explanation": "La parte síncrona previa a la espera debe dejar un estado válido para el render.",
-          "citation": "After parameters are set — valid state before await",
-          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0"
+          "explanation": "OnAfterRender y OnAfterRenderAsync no se ejecutan durante el prerenderizado.",
+          "citation": "After component render (OnAfterRender{Async})",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "after-render-prerender-immunity",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
         },
         {
           "objective_id": "t28-lo-supp-006",
-          "difficulty": "advanced",
-          "question_type": "scenario",
-          "question": "¿Dónde se referencia normalmente la hoja de estilos CSS aislada agrupada?",
+          "difficulty": "intermediate",
+          "question_type": "concept",
+          "question": "¿Cómo trata Blazor un parámetro complejo cuando el padre vuelve a renderizar el componente?",
           "options": [
-            "En un archivo JSON",
-            "Dentro de la etiqueta <head>",
-            "Solo dentro de un componente hijo",
-            "En una base de datos"
+            "Siempre como inmutable",
+            "Siempre como inexistente",
+            "Como potencialmente cambiado",
+            "Solo como cambiado si cambia su referencia"
           ],
-          "correct": "B",
-          "explanation": "La hoja de estilos agrupada se produce como un activo estático y se referencia dentro de la etiqueta <head>.",
-          "citation": "CSS isolation — bundled stylesheet link",
-          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0"
+          "correct": "C",
+          "explanation": "Los parámetros complejos se consideran potencialmente cambiados porque su contenido puede haber cambiado.",
+          "citation": "After parameters are set (OnParametersSet{Async})",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "complex-parameter-change-treatment",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
         },
         {
           "objective_id": "t28-lo-supp-007",
           "difficulty": "advanced",
           "question_type": "scenario",
-          "question": "¿Qué operador permite compartir un identificador de alcance entre varios archivos CSS aislados?",
+          "question": "Al implementar un método de ciclo de vida en una clase base personalizada, ¿qué debe decidir explícitamente el componente derivado?",
           "options": [
-            "+",
-            "?",
-            "*",
-            "@"
+            "Si debe llamar a la implementación base",
+            "Si debe crear un CSS scope",
+            "Si debe serializar RenderFragment",
+            "Si debe usar una ruta"
           ],
-          "correct": "C",
-          "explanation": "El operador comodín * permite compartir scope identifiers entre archivos.",
-          "citation": "CSS isolation — shared scope identifiers",
-          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0"
+          "correct": "A",
+          "explanation": "Una clase base personalizada puede requerir que el derivado invoque explícitamente su implementación base.",
+          "citation": "Component base class lifecycle methods",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "custom-base-lifecycle-call",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
         },
         {
           "objective_id": "t28-lo-supp-008",
-          "difficulty": "advanced",
-          "question_type": "scenario",
-          "question": "¿Qué relación permite conseguir la herencia de estilos con identificadores de alcance?",
+          "difficulty": "basic",
+          "question_type": "concept",
+          "question": "¿Qué parte de un método de ciclo de vida asíncrono se ejecuta antes de que comience la continuación tras await?",
           "options": [
-            "Un componente hijo sin markup",
-            "Una hoja global sin bundle",
-            "Un selector JavaScript",
-            "Una hoja de componente base y otra derivada"
+            "La parte asíncrona posterior",
+            "La parte síncrona inicial",
+            "El callback de disposición",
+            "El renderizado del hijo"
           ],
           "correct": "D",
-          "explanation": "Las hojas aisladas de un componente base y uno derivado pueden compartir el scope para heredar estilos.",
-          "citation": "CSS isolation — inherited scoped styles",
-          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0"
+          "explanation": "La parte síncrona del método se ejecuta antes de la continuación asíncrona.",
+          "citation": "Component lifecycle synchronous and asynchronous methods",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "synchronous-before-asynchronous-lifecycle",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
         },
         {
           "objective_id": "t28-lo-supp-009",
-          "difficulty": "advanced",
-          "question_type": "scenario",
-          "question": "¿Cómo se transforma `div ::deep > a` en CSS aislado?",
+          "difficulty": "intermediate",
+          "question_type": "concept",
+          "question": "¿Cuándo están disponibles las referencias a elementos y componentes para uso interactivo?",
           "options": [
-            "En `div[b-{STRING}] > a`",
-            "En `div > a[b-{STRING}]`",
-            "En `div[a] > a`",
-            "Se elimina el selector"
+            "Durante el constructor",
+            "Antes de asignar parámetros",
+            "Después de que termina el renderizado interactivo",
+            "Solo durante el prerenderizado"
           ],
-          "correct": "A",
-          "explanation": "::deep hace que el scope se aplique al div, produciendo `div[b-{STRING}] > a`.",
-          "citation": "CSS isolation — ::deep selector placement",
-          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0"
+          "correct": "B",
+          "explanation": "Las referencias se pueblan después del renderizado interactivo, en los callbacks after-render.",
+          "citation": "After component render (OnAfterRender{Async})",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "references-populated-after-interactive-render",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
         },
         {
           "objective_id": "t28-lo-supp-010",
-          "difficulty": "advanced",
-          "question_type": "scenario",
-          "question": "¿Cuántos caracteres tiene el string generado que representa el identificador de alcance CSS?",
+          "difficulty": "basic",
+          "question_type": "concept",
+          "question": "¿Qué relación de nombres requiere normalmente un archivo CSS aislado de Razor?",
           "options": [
-            "Cinco",
-            "Veinte",
-            "Diez",
-            "No tiene longitud definida"
+            "Cualquier nombre en cualquier carpeta",
+            "Mismo nombre base y carpeta que el componente Razor",
+            "Nombre idéntico al ensamblado",
+            "Nombre de una ruta URL"
           ],
           "correct": "C",
-          "explanation": "La documentación describe el marcador {STRING} del identificador generado como un string de diez caracteres.",
-          "citation": "CSS isolation — generated scope length",
-          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0"
+          "explanation": "El archivo .razor.css se asocia normalmente por nombre base y ubicación con el componente Razor.",
+          "citation": "CSS isolation file naming",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "razor-css-same-folder-basename",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
         },
         {
           "objective_id": "t28-lo-supp-011",
           "difficulty": "advanced",
           "question_type": "scenario",
-          "question": "Para aplicar `::deep > a` al enlace que renderiza un componente hijo, ¿qué estructura recomienda la documentación?",
+          "question": "¿Qué ocurre con la coincidencia del nombre base al asociar un archivo .razor.css?",
           "options": [
-            "Un iframe",
-            "Un parámetro complejo",
-            "Un elemento envolvente como div",
-            "Una hoja global"
+            "No depende de mayúsculas y minúsculas",
+            "Exige una ruta URL",
+            "Solo funciona en RCL",
+            "Depende del nombre del parámetro"
           ],
-          "correct": "C",
-          "explanation": "El componente padre debe envolver el componente que renderiza el enlace en un elemento como div.",
-          "citation": "CSS isolation — hyperlink descendant wrapper",
-          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0"
+          "correct": "A",
+          "explanation": "La asociación del nombre de archivo del componente y su CSS aislado no depende de mayúsculas y minúsculas.",
+          "citation": "CSS isolation file naming",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "razor-css-case-insensitive-basename",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
         },
         {
           "objective_id": "t28-lo-supp-012",
-          "difficulty": "intermediate",
-          "question_type": "concept",
-          "question": "¿Qué recibe RenderFragment<TValue> cuando se invoca?",
+          "difficulty": "advanced",
+          "question_type": "scenario",
+          "question": "¿Qué limitación documentada se aplica a una importación CSS escrita dentro de un bloque de código Razor?",
           "options": [
-            "Una hoja CSS",
-            "Un objeto JSON",
-            "Una ruta de navegación",
-            "Un valor del tipo TValue"
+            "Se convierte en RenderFragment",
+            "Se agrupa automáticamente",
+            "Se ejecuta como JavaScript",
+            "No está admitida como importación CSS aislada"
           ],
           "correct": "D",
-          "explanation": "RenderFragment<TValue> es un fragmento que recibe un valor del tipo TValue al invocarse.",
-          "citation": "Templated components — typed fragment invocation",
-          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-10.0"
+          "explanation": "Las importaciones CSS dentro de bloques de código Razor no son una vía admitida por el aislamiento CSS.",
+          "citation": "CSS isolation limitations",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "unsupported-css-import-in-razor-code",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
         },
         {
           "objective_id": "t28-lo-supp-013",
-          "difficulty": "advanced",
-          "question_type": "scenario",
-          "question": "En un componente templado con varias plantillas RenderFragment<TValue>, ¿qué alcance tiene Context en el elemento del componente?",
+          "difficulty": "intermediate",
+          "question_type": "concept",
+          "question": "¿Qué ocurre con los estilos aislados aportados por una Razor Class Library?",
           "options": [
-            "Se aplica a todos los parámetros de plantilla",
-            "Solo al primer parámetro",
-            "Solo a la clase C#",
-            "Solo al contenido global"
+            "Se descartan al compilar",
+            "Se incluyen en el bundle de estilos de la aplicación",
+            "Solo se aplican durante prerender",
+            "Se convierten en parámetros"
           ],
-          "correct": "A",
-          "explanation": "Context en el elemento del componente establece el nombre del parámetro de contenido para todas sus plantillas tipadas.",
-          "citation": "Templated components — component-level Context",
-          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-10.0"
+          "correct": "B",
+          "explanation": "Los estilos aislados de una RCL se incorporan al bundle de estilos de la aplicación consumidora.",
+          "citation": "CSS isolation in Razor class libraries",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "rcl-css-bundle-import",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
         },
         {
           "objective_id": "t28-lo-supp-014",
           "difficulty": "advanced",
           "question_type": "scenario",
-          "question": "¿Dónde puede colocarse Context para cambiar el nombre del parámetro de una sola plantilla?",
+          "question": "¿Qué propiedad controla la desactivación de la agrupación de CSS aislado?",
           "options": [
-            "Solo en appsettings.json",
-            "En el elemento hijo de esa plantilla RenderFragment<TValue>",
-            "Solo en el archivo .razor.css",
-            "En el constructor del componente"
+            "DisableScopedCss",
+            "DisableScopedCssBundling",
+            "NoScopedStyles",
+            "ScopedCssOff"
           ],
-          "correct": "B",
-          "explanation": "Context puede establecerse en el elemento hijo de RenderFragment<TValue> para cambiar el nombre de esa plantilla concreta.",
-          "citation": "Templated components — child-level Context placement",
-          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-10.0"
+          "correct": "C",
+          "explanation": "DisableScopedCssBundling es la propiedad de MSBuild usada para desactivar la agrupación.",
+          "citation": "CSS isolation bundling",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "disable-scoped-css-bundling",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
         },
         {
           "objective_id": "t28-lo-supp-015",
-          "difficulty": "intermediate",
+          "difficulty": "basic",
           "question_type": "concept",
-          "question": "¿Cuál es el nombre implícito del parámetro de una plantilla RenderFragment<TValue> si no se establece Context?",
+          "question": "¿Qué tipo de archivo genera normalmente el proceso de agrupación de CSS aislado?",
           "options": [
-            "context",
-            "item",
-            "template",
-            "value"
+            "Un activo estático de estilos",
+            "Una tabla SQL",
+            "Un componente dinámico",
+            "Un archivo de parámetros"
           ],
           "correct": "A",
-          "explanation": "Sin Context explícito, el parámetro implícito de la plantilla se llama context.",
-          "citation": "Templated components — implicit context name",
-          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-10.0"
+          "explanation": "El bundle se produce como un activo estático de estilos para la aplicación.",
+          "citation": "CSS isolation bundling",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "scoped-css-static-asset",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
         },
         {
           "objective_id": "t28-lo-supp-016",
-          "difficulty": "advanced",
-          "question_type": "scenario",
-          "question": "¿Qué colección usa el ejemplo genérico TemplatedNavBar para representar sus elementos?",
+          "difficulty": "intermediate",
+          "question_type": "concept",
+          "question": "¿Qué parámetro de plantilla no recibe un valor de elemento en el ejemplo TemplatedNavBar?",
           "options": [
-            "List<object>",
-            "IEnumerable<string>",
-            "RenderFragment<T>",
-            "IReadOnlyList<T>"
+            "ItemTemplate",
+            "Items",
+            "TItem",
+            "StartContent"
           ],
           "correct": "D",
-          "explanation": "El ejemplo usa IReadOnlyList<T> para los elementos del componente genérico.",
-          "citation": "Templated components — generic list type",
-          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-10.0"
+          "explanation": "StartContent es el fragmento de contenido inicial sin el valor de cada elemento.",
+          "citation": "Templated components",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "untyped-template-parameter-role",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
         },
         {
           "objective_id": "t28-lo-supp-017",
-          "difficulty": "intermediate",
+          "difficulty": "basic",
           "question_type": "concept",
-          "question": "¿Cuándo puede omitirse el atributo explícito TItem en un componente genérico?",
+          "question": "¿Qué atributo renombra el parámetro implícito de una plantilla tipada?",
           "options": [
-            "Cuando el tipo genérico puede inferirse",
-            "Cuando no hay plantillas",
-            "Cuando Context está vacío",
-            "Solo durante prerender"
+            "TypeName",
+            "Context",
+            "TemplateName",
+            "Scope"
           ],
-          "correct": "A",
-          "explanation": "La documentación indica que el tipo se infiere cuando es posible.",
-          "citation": "Templated components — inferred generic type",
-          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-10.0"
+          "correct": "B",
+          "explanation": "El atributo Context cambia el nombre del parámetro implícito de la plantilla.",
+          "citation": "Templated components",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "context-renames-template-parameter",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
         },
         {
           "objective_id": "t28-lo-supp-018",
-          "difficulty": "basic",
+          "difficulty": "intermediate",
           "question_type": "concept",
-          "question": "¿Qué operación realiza la implementación base al aplicar los parámetros recibidos?",
+          "question": "¿Qué relación tiene TItem con la colección de elementos de un componente genérico?",
           "options": [
-            "Convierte parámetros en CSS",
-            "Asigna los valores coincidentes a propiedades de parámetros",
-            "Ejecuta OnAfterRenderAsync",
-            "Crea una instancia hija"
+            "Es un nombre CSS",
+            "Es un parámetro de navegación",
+            "Es el parámetro de tipo de los elementos",
+            "Es una propiedad de configuración"
           ],
-          "correct": "B",
-          "explanation": "La implementación base asigna a las propiedades los valores coincidentes de ParameterView.",
-          "citation": "When parameters are set — base assignment",
-          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0"
+          "correct": "C",
+          "explanation": "TItem representa el tipo de cada elemento de la colección del componente.",
+          "citation": "Templated components",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "generic-item-type-relationship",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
         },
         {
           "objective_id": "t28-lo-supp-019",
-          "difficulty": "basic",
-          "question_type": "concept",
-          "question": "¿Cuándo se invoca OnParametersSetAsync en relación con la aplicación de parámetros?",
+          "difficulty": "advanced",
+          "question_type": "scenario",
+          "question": "¿Qué puede inferir el compilador a partir de un parámetro de tipo RenderFragment<TItem>?",
           "options": [
-            "Antes de crear la instancia",
-            "Después de destruir el componente",
-            "Después de asignar los parámetros",
-            "Solo después de JavaScript"
+            "El tipo genérico del componente cuando el contexto lo permite",
+            "El nombre del ensamblado",
+            "El scope CSS",
+            "La ruta de navegación"
           ],
-          "correct": "C",
-          "explanation": "El callback se ejecuta después de que se establecen los parámetros.",
-          "citation": "After parameters are set — callback timing",
-          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0"
+          "correct": "A",
+          "explanation": "Los parámetros tipados de plantilla pueden aportar información para inferir el tipo genérico.",
+          "citation": "Templated components",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "generic-type-inference-from-template",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
         },
         {
           "objective_id": "t28-lo-supp-020",
-          "difficulty": "advanced",
+          "difficulty": "intermediate",
           "question_type": "concept",
-          "question": "¿Cómo se especifica explícitamente el tipo genérico TItem en una instancia de componente?",
+          "question": "¿Qué diferencia conceptual hay entre RenderFragment y RenderFragment<TValue>?",
           "options": [
-            "Con el atributo ContextType",
-            "Con una regla CSS",
-            "Con el atributo TItem=\"Pet\"",
-            "Con ParameterView.Empty"
+            "Ambos exigen el mismo valor",
+            "RenderFragment solo existe en RCL",
+            "RenderFragment<TValue> es siempre CSS",
+            "El segundo recibe un valor tipado al invocarse"
           ],
-          "correct": "C",
-          "explanation": "Cuando la inferencia no es posible, el tipo puede proporcionarse mediante un atributo cuyo nombre coincide con el parámetro genérico, como TItem=\"Pet\".",
-          "citation": "Templated components — explicit type attribute",
-          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-10.0"
+          "correct": "D",
+          "explanation": "RenderFragment<TValue> añade un valor de tipo TValue al fragmento renderizable.",
+          "citation": "Templated components",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "typed-versus-untyped-render-fragment",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
         }
       ]
     }

@@ -43163,203 +43163,203 @@ SEED_QUESTIONS.extend([
 SEED_QUESTIONS.extend([
     {
         "topic_num": 28,
-        "question": "Si ParameterView no contiene un valor para una propiedad de parámetro, ¿qué hace la implementación predeterminada?",
-        "option_a": "La establece en null",
-        "option_b": "La deja sin cambios",
-        "option_c": "Lanza una excepción",
-        "option_d": "La elimina del componente",
+        "question": "ParameterView.TryGetValue recibe un nombre de parámetro que coincide con el nombre de la propiedad. ¿Qué regla de coincidencia documenta la API?",
+        "option_a": "La coincidencia ignora siempre mayúsculas",
+        "option_b": "La coincidencia de nombre distingue mayúsculas y minúsculas",
+        "option_c": "La coincidencia usa la ruta URL",
+        "option_d": "La coincidencia solo usa el tipo",
         "correct": "B",
-        "explanation": "Los parámetros sin valor correspondiente en ParameterView quedan sin cambios."
+        "explanation": "ParameterView.TryGetValue usa coincidencia de nombre sensible a mayúsculas y minúsculas."
     },
     {
         "topic_num": 28,
-        "question": "En la inicialización síncrona de un componente padre y uno hijo, ¿qué orden documenta Blazor?",
-        "option_a": "El hijo siempre termina primero",
-        "option_b": "No existe ninguna llamada al hijo",
-        "option_c": "El padre se inicializa antes que el hijo",
-        "option_d": "Ambos se inicializan después del render",
+        "question": "¿Qué valor puede pasar un componente a SetParametersAsync si pretende omitir deliberadamente los parámetros entrantes?",
+        "option_a": "null",
+        "option_b": "Un RenderFragment vacío",
+        "option_c": "ParameterView.Empty",
+        "option_d": "Una ruta vacía",
         "correct": "C",
-        "explanation": "La inicialización síncrona del padre completa antes de la del hijo."
+        "explanation": "ParameterView.Empty representa una vista sin parámetros para ese caso deliberado."
     },
     {
         "topic_num": 28,
-        "question": "Si la inicialización del padre y del hijo es asíncrona, ¿qué orden de finalización puede garantizarse?",
-        "option_a": "Ninguno: depende del código asíncrono",
-        "option_b": "Siempre el del hijo",
-        "option_c": "Siempre el del padre",
-        "option_d": "El orden del markup",
+        "question": "Antes de inicializar al hijo, ¿qué ocurre normalmente con el renderizado del componente padre?",
+        "option_a": "El padre se renderiza antes de que comience el hijo",
+        "option_b": "El hijo se renderiza antes del padre",
+        "option_c": "Ninguno se renderiza",
+        "option_d": "Solo se renderiza el hijo",
         "correct": "A",
-        "explanation": "La finalización asíncrona depende del código y no tiene un orden garantizado."
+        "explanation": "El ciclo de renderizado procesa primero el padre y después el contenido del hijo."
     },
     {
         "topic_num": 28,
-        "question": "¿Qué puede provocar que se invoque OnParametersSet{Async} aunque un parámetro complejo parezca no haber cambiado?",
-        "option_a": "Un cambio de CSS",
-        "option_b": "Una excepción de JavaScript",
-        "option_c": "La destrucción del componente",
-        "option_d": "Que el padre vuelva a renderizar con un parámetro complejo",
+        "question": "Durante el prerenderizado, ¿qué espera la quiescencia antes de producir el resultado?",
+        "option_a": "Solo las hojas CSS",
+        "option_b": "Las tareas asíncronas del árbol de componentes",
+        "option_c": "La primera navegación del usuario",
+        "option_d": "El primer evento DOM",
         "correct": "D",
-        "explanation": "Los parámetros complejos se tratan como cambiados cuando el padre vuelve a renderizar."
+        "explanation": "La quiescencia espera a que finalice el trabajo asíncrono relevante del árbol prerenderizado."
     },
     {
         "topic_num": 28,
-        "question": "Antes de un await que devuelve una Task incompleta en OnParametersSetAsync, ¿qué debe hacer el componente?",
-        "option_a": "Esperar a que exista ElementReference",
-        "option_b": "Dejar un estado válido para renderizar",
-        "option_c": "Llamar dos veces a StateHasChanged",
-        "option_d": "No asignar ningún parámetro",
+        "question": "¿Qué callback de ciclo de vida no se invoca durante el prerenderizado?",
+        "option_a": "OnInitialized",
+        "option_b": "OnParametersSet",
+        "option_c": "OnAfterRender{Async}",
+        "option_d": "SetParametersAsync",
         "correct": "B",
-        "explanation": "La parte síncrona previa a la espera debe dejar un estado válido para el render."
+        "explanation": "OnAfterRender y OnAfterRenderAsync no se ejecutan durante el prerenderizado."
     },
     {
         "topic_num": 28,
-        "question": "¿Dónde se referencia normalmente la hoja de estilos CSS aislada agrupada?",
-        "option_a": "En un archivo JSON",
-        "option_b": "Dentro de la etiqueta <head>",
-        "option_c": "Solo dentro de un componente hijo",
-        "option_d": "En una base de datos",
-        "correct": "B",
-        "explanation": "La hoja de estilos agrupada se produce como un activo estático y se referencia dentro de la etiqueta <head>."
-    },
-    {
-        "topic_num": 28,
-        "question": "¿Qué operador permite compartir un identificador de alcance entre varios archivos CSS aislados?",
-        "option_a": "+",
-        "option_b": "?",
-        "option_c": "*",
-        "option_d": "@",
+        "question": "¿Cómo trata Blazor un parámetro complejo cuando el padre vuelve a renderizar el componente?",
+        "option_a": "Siempre como inmutable",
+        "option_b": "Siempre como inexistente",
+        "option_c": "Como potencialmente cambiado",
+        "option_d": "Solo como cambiado si cambia su referencia",
         "correct": "C",
-        "explanation": "El operador comodín * permite compartir scope identifiers entre archivos."
+        "explanation": "Los parámetros complejos se consideran potencialmente cambiados porque su contenido puede haber cambiado."
     },
     {
         "topic_num": 28,
-        "question": "¿Qué relación permite conseguir la herencia de estilos con identificadores de alcance?",
-        "option_a": "Un componente hijo sin markup",
-        "option_b": "Una hoja global sin bundle",
-        "option_c": "Un selector JavaScript",
-        "option_d": "Una hoja de componente base y otra derivada",
+        "question": "Al implementar un método de ciclo de vida en una clase base personalizada, ¿qué debe decidir explícitamente el componente derivado?",
+        "option_a": "Si debe llamar a la implementación base",
+        "option_b": "Si debe crear un CSS scope",
+        "option_c": "Si debe serializar RenderFragment",
+        "option_d": "Si debe usar una ruta",
+        "correct": "A",
+        "explanation": "Una clase base personalizada puede requerir que el derivado invoque explícitamente su implementación base."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué parte de un método de ciclo de vida asíncrono se ejecuta antes de que comience la continuación tras await?",
+        "option_a": "La parte asíncrona posterior",
+        "option_b": "La parte síncrona inicial",
+        "option_c": "El callback de disposición",
+        "option_d": "El renderizado del hijo",
         "correct": "D",
-        "explanation": "Las hojas aisladas de un componente base y uno derivado pueden compartir el scope para heredar estilos."
+        "explanation": "La parte síncrona del método se ejecuta antes de la continuación asíncrona."
     },
     {
         "topic_num": 28,
-        "question": "¿Cómo se transforma `div ::deep > a` en CSS aislado?",
-        "option_a": "En `div[b-{STRING}] > a`",
-        "option_b": "En `div > a[b-{STRING}]`",
-        "option_c": "En `div[a] > a`",
-        "option_d": "Se elimina el selector",
-        "correct": "A",
-        "explanation": "::deep hace que el scope se aplique al div, produciendo `div[b-{STRING}] > a`."
-    },
-    {
-        "topic_num": 28,
-        "question": "¿Cuántos caracteres tiene el string generado que representa el identificador de alcance CSS?",
-        "option_a": "Cinco",
-        "option_b": "Veinte",
-        "option_c": "Diez",
-        "option_d": "No tiene longitud definida",
-        "correct": "C",
-        "explanation": "La documentación describe el marcador {STRING} del identificador generado como un string de diez caracteres."
-    },
-    {
-        "topic_num": 28,
-        "question": "Para aplicar `::deep > a` al enlace que renderiza un componente hijo, ¿qué estructura recomienda la documentación?",
-        "option_a": "Un iframe",
-        "option_b": "Un parámetro complejo",
-        "option_c": "Un elemento envolvente como div",
-        "option_d": "Una hoja global",
-        "correct": "C",
-        "explanation": "El componente padre debe envolver el componente que renderiza el enlace en un elemento como div."
-    },
-    {
-        "topic_num": 28,
-        "question": "¿Qué recibe RenderFragment<TValue> cuando se invoca?",
-        "option_a": "Una hoja CSS",
-        "option_b": "Un objeto JSON",
-        "option_c": "Una ruta de navegación",
-        "option_d": "Un valor del tipo TValue",
-        "correct": "D",
-        "explanation": "RenderFragment<TValue> es un fragmento que recibe un valor del tipo TValue al invocarse."
-    },
-    {
-        "topic_num": 28,
-        "question": "En un componente templado con varias plantillas RenderFragment<TValue>, ¿qué alcance tiene Context en el elemento del componente?",
-        "option_a": "Se aplica a todos los parámetros de plantilla",
-        "option_b": "Solo al primer parámetro",
-        "option_c": "Solo a la clase C#",
-        "option_d": "Solo al contenido global",
-        "correct": "A",
-        "explanation": "Context en el elemento del componente establece el nombre del parámetro de contenido para todas sus plantillas tipadas."
-    },
-    {
-        "topic_num": 28,
-        "question": "¿Dónde puede colocarse Context para cambiar el nombre del parámetro de una sola plantilla?",
-        "option_a": "Solo en appsettings.json",
-        "option_b": "En el elemento hijo de esa plantilla RenderFragment<TValue>",
-        "option_c": "Solo en el archivo .razor.css",
-        "option_d": "En el constructor del componente",
+        "question": "¿Cuándo están disponibles las referencias a elementos y componentes para uso interactivo?",
+        "option_a": "Durante el constructor",
+        "option_b": "Antes de asignar parámetros",
+        "option_c": "Después de que termina el renderizado interactivo",
+        "option_d": "Solo durante el prerenderizado",
         "correct": "B",
-        "explanation": "Context puede establecerse en el elemento hijo de RenderFragment<TValue> para cambiar el nombre de esa plantilla concreta."
+        "explanation": "Las referencias se pueblan después del renderizado interactivo, en los callbacks after-render."
     },
     {
         "topic_num": 28,
-        "question": "¿Cuál es el nombre implícito del parámetro de una plantilla RenderFragment<TValue> si no se establece Context?",
-        "option_a": "context",
-        "option_b": "item",
-        "option_c": "template",
-        "option_d": "value",
+        "question": "¿Qué relación de nombres requiere normalmente un archivo CSS aislado de Razor?",
+        "option_a": "Cualquier nombre en cualquier carpeta",
+        "option_b": "Mismo nombre base y carpeta que el componente Razor",
+        "option_c": "Nombre idéntico al ensamblado",
+        "option_d": "Nombre de una ruta URL",
+        "correct": "C",
+        "explanation": "El archivo .razor.css se asocia normalmente por nombre base y ubicación con el componente Razor."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué ocurre con la coincidencia del nombre base al asociar un archivo .razor.css?",
+        "option_a": "No depende de mayúsculas y minúsculas",
+        "option_b": "Exige una ruta URL",
+        "option_c": "Solo funciona en RCL",
+        "option_d": "Depende del nombre del parámetro",
         "correct": "A",
-        "explanation": "Sin Context explícito, el parámetro implícito de la plantilla se llama context."
+        "explanation": "La asociación del nombre de archivo del componente y su CSS aislado no depende de mayúsculas y minúsculas."
     },
     {
         "topic_num": 28,
-        "question": "¿Qué colección usa el ejemplo genérico TemplatedNavBar para representar sus elementos?",
-        "option_a": "List<object>",
-        "option_b": "IEnumerable<string>",
-        "option_c": "RenderFragment<T>",
-        "option_d": "IReadOnlyList<T>",
+        "question": "¿Qué limitación documentada se aplica a una importación CSS escrita dentro de un bloque de código Razor?",
+        "option_a": "Se convierte en RenderFragment",
+        "option_b": "Se agrupa automáticamente",
+        "option_c": "Se ejecuta como JavaScript",
+        "option_d": "No está admitida como importación CSS aislada",
         "correct": "D",
-        "explanation": "El ejemplo usa IReadOnlyList<T> para los elementos del componente genérico."
+        "explanation": "Las importaciones CSS dentro de bloques de código Razor no son una vía admitida por el aislamiento CSS."
     },
     {
         "topic_num": 28,
-        "question": "¿Cuándo puede omitirse el atributo explícito TItem en un componente genérico?",
-        "option_a": "Cuando el tipo genérico puede inferirse",
-        "option_b": "Cuando no hay plantillas",
-        "option_c": "Cuando Context está vacío",
-        "option_d": "Solo durante prerender",
-        "correct": "A",
-        "explanation": "La documentación indica que el tipo se infiere cuando es posible."
-    },
-    {
-        "topic_num": 28,
-        "question": "¿Qué operación realiza la implementación base al aplicar los parámetros recibidos?",
-        "option_a": "Convierte parámetros en CSS",
-        "option_b": "Asigna los valores coincidentes a propiedades de parámetros",
-        "option_c": "Ejecuta OnAfterRenderAsync",
-        "option_d": "Crea una instancia hija",
+        "question": "¿Qué ocurre con los estilos aislados aportados por una Razor Class Library?",
+        "option_a": "Se descartan al compilar",
+        "option_b": "Se incluyen en el bundle de estilos de la aplicación",
+        "option_c": "Solo se aplican durante prerender",
+        "option_d": "Se convierten en parámetros",
         "correct": "B",
-        "explanation": "La implementación base asigna a las propiedades los valores coincidentes de ParameterView."
+        "explanation": "Los estilos aislados de una RCL se incorporan al bundle de estilos de la aplicación consumidora."
     },
     {
         "topic_num": 28,
-        "question": "¿Cuándo se invoca OnParametersSetAsync en relación con la aplicación de parámetros?",
-        "option_a": "Antes de crear la instancia",
-        "option_b": "Después de destruir el componente",
-        "option_c": "Después de asignar los parámetros",
-        "option_d": "Solo después de JavaScript",
+        "question": "¿Qué propiedad controla la desactivación de la agrupación de CSS aislado?",
+        "option_a": "DisableScopedCss",
+        "option_b": "DisableScopedCssBundling",
+        "option_c": "NoScopedStyles",
+        "option_d": "ScopedCssOff",
         "correct": "C",
-        "explanation": "El callback se ejecuta después de que se establecen los parámetros."
+        "explanation": "DisableScopedCssBundling es la propiedad de MSBuild usada para desactivar la agrupación."
     },
     {
         "topic_num": 28,
-        "question": "¿Cómo se especifica explícitamente el tipo genérico TItem en una instancia de componente?",
-        "option_a": "Con el atributo ContextType",
-        "option_b": "Con una regla CSS",
-        "option_c": "Con el atributo TItem=\"Pet\"",
-        "option_d": "Con ParameterView.Empty",
+        "question": "¿Qué tipo de archivo genera normalmente el proceso de agrupación de CSS aislado?",
+        "option_a": "Un activo estático de estilos",
+        "option_b": "Una tabla SQL",
+        "option_c": "Un componente dinámico",
+        "option_d": "Un archivo de parámetros",
+        "correct": "A",
+        "explanation": "El bundle se produce como un activo estático de estilos para la aplicación."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué parámetro de plantilla no recibe un valor de elemento en el ejemplo TemplatedNavBar?",
+        "option_a": "ItemTemplate",
+        "option_b": "Items",
+        "option_c": "TItem",
+        "option_d": "StartContent",
+        "correct": "D",
+        "explanation": "StartContent es el fragmento de contenido inicial sin el valor de cada elemento."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué atributo renombra el parámetro implícito de una plantilla tipada?",
+        "option_a": "TypeName",
+        "option_b": "Context",
+        "option_c": "TemplateName",
+        "option_d": "Scope",
+        "correct": "B",
+        "explanation": "El atributo Context cambia el nombre del parámetro implícito de la plantilla."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué relación tiene TItem con la colección de elementos de un componente genérico?",
+        "option_a": "Es un nombre CSS",
+        "option_b": "Es un parámetro de navegación",
+        "option_c": "Es el parámetro de tipo de los elementos",
+        "option_d": "Es una propiedad de configuración",
         "correct": "C",
-        "explanation": "Cuando la inferencia no es posible, el tipo puede proporcionarse mediante un atributo cuyo nombre coincide con el parámetro genérico, como TItem=\"Pet\"."
+        "explanation": "TItem representa el tipo de cada elemento de la colección del componente."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué puede inferir el compilador a partir de un parámetro de tipo RenderFragment<TItem>?",
+        "option_a": "El tipo genérico del componente cuando el contexto lo permite",
+        "option_b": "El nombre del ensamblado",
+        "option_c": "El scope CSS",
+        "option_d": "La ruta de navegación",
+        "correct": "A",
+        "explanation": "Los parámetros tipados de plantilla pueden aportar información para inferir el tipo genérico."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué diferencia conceptual hay entre RenderFragment y RenderFragment<TValue>?",
+        "option_a": "Ambos exigen el mismo valor",
+        "option_b": "RenderFragment solo existe en RCL",
+        "option_c": "RenderFragment<TValue> es siempre CSS",
+        "option_d": "El segundo recibe un valor tipado al invocarse",
+        "correct": "D",
+        "explanation": "RenderFragment<TValue> añade un valor de tipo TValue al fragmento renderizable."
     }
 ])
 # QUESTION_BANK_ACCEPTED_TOPIC_28_LOT_11_END

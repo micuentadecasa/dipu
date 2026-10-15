@@ -21,53 +21,47 @@ REVIEWER = "independent-source-review-2026-10-15"
 LOT_PATH = ROOT / "docs/question-bank/lots/topic-28-lot-11.json"
 ACCEPTED_PATH = ROOT / "docs/question-bank/accepted/topic-28-lot-11.json"
 REVIEW_PATH = ROOT / "docs/question-bank/reviews/topic-28-lot-11.json"
+RESEARCH_PATH = ROOT / "docs/question-bank/research/questions/topics-28-lot-11.json"
 CHECKPOINT_PATH = ROOT / "docs/question-bank/checkpoints/topic-28-lot-11.jsonl"
 
 EXPECTED = {
     1: ("B", "When parameters are set (SetParametersAsync)"),
-    2: ("C", "Component initialization — parent and child order"),
-    3: ("A", "Component initialization — asynchronous order"),
-    4: ("D", "After parameters are set — complex parameters"),
-    5: ("B", "After parameters are set — valid state before await"),
-    6: ("B", "CSS isolation — bundled stylesheet link"),
-    7: ("C", "CSS isolation — shared scope identifiers"),
-    8: ("D", "CSS isolation — inherited scoped styles"),
-    9: ("A", "CSS isolation — ::deep selector placement"),
-    10: ("C", "CSS isolation — generated scope length"),
-    11: ("C", "CSS isolation — hyperlink descendant wrapper"),
-    12: ("D", "Templated components — typed fragment invocation"),
-    13: ("A", "Templated components — component-level Context"),
-    14: ("B", "Templated components — child-level Context placement"),
-    15: ("A", "Templated components — implicit context name"),
-    16: ("D", "Templated components — generic list type"),
-    17: ("A", "Templated components — inferred generic type"),
-    18: ("B", "When parameters are set — base assignment"),
-    19: ("C", "After parameters are set — callback timing"),
-    20: ("C", "Templated components — explicit type attribute"),
+    2: ("C", "When parameters are set (SetParametersAsync)"),
+    3: ("A", "Component initialization (OnInitialized{Async})"),
+    4: ("D", "Prerendering and quiescence"),
+    5: ("B", "After component render (OnAfterRender{Async})"),
+    6: ("C", "After parameters are set (OnParametersSet{Async})"),
+    7: ("A", "Component base class lifecycle methods"),
+    8: ("D", "Component lifecycle synchronous and asynchronous methods"),
+    9: ("B", "After component render (OnAfterRender{Async})"),
+    10: ("C", "CSS isolation file naming"),
+    11: ("A", "CSS isolation file naming"),
+    12: ("D", "CSS isolation limitations"),
+    13: ("B", "CSS isolation in Razor class libraries"),
+    14: ("C", "CSS isolation bundling"),
+    15: ("A", "CSS isolation bundling"),
+    16: ("D", "Templated components"),
+    17: ("B", "Templated components"),
+    18: ("C", "Templated components"),
+    19: ("A", "Templated components"),
+    20: ("D", "Templated components"),
 }
 
-SEMANTIC_DECISIONS = {
-    "t28-lo-supp-001": {"status": "unique", "basis": "Compared missing-parameter preservation with all published lifecycle records and lot-11 candidates; no proposition collision."},
-    "t28-lo-supp-002": {"status": "unique", "basis": "Compared synchronous parent-before-child initialization with all published lifecycle records and lot-11 candidates; no proposition collision."},
-    "t28-lo-supp-003": {"status": "unique", "basis": "Compared nondeterministic asynchronous initialization completion with all published lifecycle records and lot-11 candidates; no proposition collision."},
-    "t28-lo-supp-004": {"status": "unique", "basis": "Compared complex-parameter callback triggering with all published lifecycle records and lot-11 candidates; no proposition collision."},
-    "t28-lo-supp-005": {"status": "unique", "basis": "Compared valid-state requirements before OnParametersSetAsync await with all published lifecycle records and lot-11 candidates; no proposition collision."},
-    "t28-lo-supp-006": {"status": "unique", "basis": "Compared the bundled stylesheet link location with all published CSS records and lot-11 candidates; no proposition collision."},
-    "t28-lo-supp-007": {"status": "unique", "basis": "Compared wildcard scope sharing with all published CSS records and lot-11 candidates; no proposition collision."},
-    "t28-lo-supp-008": {"status": "unique", "basis": "Compared base-derived scoped-style inheritance with all published CSS records and lot-11 candidates; no proposition collision."},
-    "t28-lo-supp-009": {"status": "unique", "basis": "Compared the div ::deep selector transformation with all published CSS records and lot-11 candidates; no proposition collision."},
-    "t28-lo-supp-010": {"status": "unique", "basis": "Compared generated scope-string length with all published CSS records and lot-11 candidates; no proposition collision."},
-    "t28-lo-supp-011": {"status": "unique", "basis": "Compared the wrapper requirement for a child hyperlink with all published CSS records and lot-11 candidates; no proposition collision."},
-    "t28-lo-supp-012": {"status": "unique", "basis": "Compared the typed-fragment invocation contract with all published template records and lot-11 candidates; no proposition collision."},
-    "t28-lo-supp-013": {"status": "unique", "basis": "Compared component-level Context scope across templates with all published template records and lot-11 candidates; no proposition collision."},
-    "t28-lo-supp-014": {"status": "unique", "basis": "Compared child-element Context placement with all published template records and lot-11 candidates; no proposition collision."},
-    "t28-lo-supp-015": {"status": "unique", "basis": "Compared the implicit context name with all published template records and lot-11 candidates; no proposition collision."},
-    "t28-lo-supp-016": {"status": "unique", "basis": "Compared IReadOnlyList<T> in the generic example with all published template records and lot-11 candidates; no proposition collision."},
-    "t28-lo-supp-017": {"status": "unique", "basis": "Compared generic type inference conditions with all published template records and lot-11 candidates; no proposition collision."},
-    "t28-lo-supp-018": {"status": "unique", "basis": "Compared base parameter assignment behavior with all published parameter records and lot-11 candidates; no proposition collision."},
-    "t28-lo-supp-019": {"status": "unique", "basis": "Compared callback timing after parameter assignment with all published lifecycle records and lot-11 candidates; no proposition collision."},
-    "t28-lo-supp-020": {"status": "unique", "basis": "Compared the explicit generic type attribute with all published template records and lot-11 candidates; no proposition collision."},
-}
+def load_semantic_audit() -> dict[str, dict[str, str]]:
+    payload = json.loads(RESEARCH_PATH.read_text(encoding="utf-8"))
+    return {
+        question["objective_id"]: question["semantic_review"]
+        for question in payload["batches"][0]["questions"]
+    }
+
+
+def load_published_topic_records() -> list[dict]:
+    records = []
+    for path in sorted((ROOT / "docs/question-bank/accepted").glob("topic-28-lot-*.json")):
+        if path == ACCEPTED_PATH:
+            continue
+        records.extend(json.loads(path.read_text(encoding="utf-8")).get("questions", []))
+    return records
 
 
 def main() -> int:
@@ -75,6 +69,13 @@ def main() -> int:
     records = payload["questions"]
     if payload["state"] != "candidates_written" or len(records) != 20:
         raise RuntimeError("unexpected supplemental candidate lot")
+    audit = load_semantic_audit()
+    published = load_published_topic_records()
+    if set(audit) != {record["learning_objective_id"] for record in records}:
+        raise RuntimeError("semantic audit does not cover exactly this lot")
+    proposition_keys = [audit[record["learning_objective_id"]]["proposition_key"] for record in records]
+    if len(set(proposition_keys)) != len(proposition_keys):
+        raise RuntimeError("semantic audit contains a collision within this lot")
     accepted = []
     decisions = []
     for index, candidate in enumerate(records, start=1):
@@ -95,14 +96,15 @@ def main() -> int:
         reviewed["deduplication"] = {
             name: dict(result) for name, result in deterministic.items()
         }
-        decision = SEMANTIC_DECISIONS.get(reviewed["learning_objective_id"])
-        if not decision:
-            raise RuntimeError(f"missing semantic review decision for question {index}")
+        decision = audit[reviewed["learning_objective_id"]]
+        if decision["status"] != "unique" or decision["published_match_count"] != 0:
+            raise RuntimeError(f"semantic collision detected for question {index}")
+        basis = f"{decision['basis']} Compared records: {len(published)} published topic-28 records; candidate proposition key: {decision['proposition_key']}."
         for name in ("semantic", "concept"):
             reviewed["deduplication"][name] = {
                 "status": decision["status"],
                 "checked_at": DATE,
-                "basis": decision["basis"],
+                "basis": basis,
             }
         reviewed["status"] = "validated"
         errors = validate_record(reviewed)
@@ -133,6 +135,7 @@ def main() -> int:
         "excluded_from_target_manifest": True,
         "reviewer": REVIEWER,
         "source_tier_counts": {"official_primary": 20, "secondary_reputable": 0},
+        "semantic_audit": {"published_topic28_records": len(published), "lot_candidates": len(records), "proposition_keys_unique": True},
         "decisions": decisions,
         "reviewed_at": DATE,
     }
