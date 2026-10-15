@@ -182,6 +182,26 @@ class RuntimeQuestionBankTests(unittest.TestCase):
         self.assertTrue(all(not validate_record(record) for record in records))
         self.assertTrue(all(result["status"] == "unique" for record in records for result in record["deduplication"].values()))
 
+    def test_topic28_supplemental_lifecycle_css_templates_is_published_and_gated(self):
+        path = ROOT / "docs/question-bank/accepted/topic-28-lot-11.json"
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        records = payload["questions"]
+        self.assertTrue(payload["supplemental"])
+        self.assertTrue(payload["excluded_from_target_manifest"])
+        self.assertEqual(len(records), 20)
+        self.assertEqual(Counter(record["correct"] for record in records), Counter({"A": 5, "B": 5, "C": 5, "D": 5}))
+        self.assertEqual({record["sources"][0]["source_id"] for record in records}, {"BLAZOR-10"})
+        self.assertEqual({record["sources"][0]["url"] for record in records}, {
+            "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
+            "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0",
+            "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-10.0",
+        })
+        self.assertEqual(len({record["stable_id"] for record in records}), 20)
+        self.assertTrue(all(record["learning_objective_id"].startswith("t28-lo-supp-") for record in records))
+        self.assertTrue(all(not answer_leakage_errors(record) for record in records))
+        self.assertTrue(all(not validate_record(record) for record in records))
+        self.assertTrue(all(result["status"] == "unique" for record in records for result in record["deduplication"].values()))
+
 
 class CheckpointTests(unittest.TestCase):
     def manifest(self):
