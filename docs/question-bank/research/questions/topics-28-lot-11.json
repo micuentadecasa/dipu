@@ -1,0 +1,339 @@
+{
+  "generated_at": "2026-10-15",
+  "research_artifact": "docs/question-bank/research/topic-28-lot-11-lifecycle-css-template-boundaries.md",
+  "topic_num": 28,
+  "lot_num": 11,
+  "revision": 1,
+  "supplemental": true,
+  "excluded_from_target_manifest": true,
+  "source_ids": ["BLAZOR-10"],
+  "batches": [
+    {
+      "topic_num": 28,
+      "lot_num": 11,
+      "source_ids": ["BLAZOR-10"],
+      "questions": [
+        {
+          "objective_id": "t28-lo-supp-001",
+          "difficulty": "basic",
+          "question_type": "concept",
+          "question": "¿Qué objeto recibe SetParametersAsync cada vez que se invoca para aplicar parámetros a un componente?",
+          "options": [
+            "Un ParameterView con el conjunto de valores recibido",
+            "Un EditContext con el modelo del formulario",
+            "Un RenderFragment con el contenido hijo",
+            "Un NavigationManager con la ruta actual"
+          ],
+          "correct": "A",
+          "explanation": "La documentación define ParameterView como el objeto que contiene el conjunto de valores de parámetros del componente en cada llamada a SetParametersAsync.",
+          "citation": "When parameters are set (SetParametersAsync)",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t28-lo-supp-002",
+          "difficulty": "basic",
+          "question_type": "concept",
+          "question": "Si ParameterView no contiene un valor correspondiente a una propiedad de parámetro, ¿qué hace la implementación predeterminada de SetParametersAsync?",
+          "options": [
+            "La establece siempre en null",
+            "La deja sin cambios",
+            "Lanza una excepción de validación",
+            "La sustituye por un RenderFragment vacío"
+          ],
+          "correct": "B",
+          "explanation": "La implementación predeterminada solo asigna propiedades con el atributo correspondiente cuando existe un valor coincidente; los parámetros ausentes quedan sin cambios.",
+          "citation": "When parameters are set (SetParametersAsync)",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t28-lo-supp-003",
+          "difficulty": "basic",
+          "question_type": "procedure",
+          "question": "Al sobrescribir SetParametersAsync en un componente normal, ¿qué recomienda generalmente la documentación?",
+          "options": [
+            "Llamar solo a OnAfterRenderAsync",
+            "No devolver ninguna Task",
+            "Esperar a base.SetParametersAsync(parameters)",
+            "Reemplazar ParameterView por EditContext"
+          ],
+          "correct": "C",
+          "explanation": "La recomendación general es invocar await base.SetParametersAsync(parameters), porque la implementación base aplica parámetros y participa en la lógica del ciclo de vida y del renderizado.",
+          "citation": "When parameters are set (SetParametersAsync)",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t28-lo-supp-004",
+          "difficulty": "basic",
+          "question_type": "concept",
+          "question": "¿Qué describe mejor el propósito de OnInitialized y OnInitializedAsync?",
+          "options": [
+            "Reaccionar exclusivamente a cada cambio de parámetro",
+            "Ejecutar JavaScript antes de que exista el DOM",
+            "Controlar la especificidad de los selectores CSS",
+            "Inicializar el componente durante toda la vida de su instancia"
+          ],
+          "correct": "D",
+          "explanation": "Los métodos de inicialización se usan para inicializar una instancia durante toda su vida; los cambios de parámetros deben tratarse normalmente en OnParametersSet{Async}.",
+          "citation": "Component initialization (OnInitialized{Async})",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t28-lo-supp-005",
+          "difficulty": "intermediate",
+          "question_type": "scenario",
+          "question": "Un componente padre y uno hijo realizan inicialización asíncrona. ¿Qué puede afirmar la aplicación sobre el orden de finalización?",
+          "options": [
+            "No se puede determinar: depende del código de inicialización",
+            "El hijo siempre termina antes que el padre",
+            "El padre siempre termina después del hijo",
+            "Ambos terminan necesariamente al mismo tiempo"
+          ],
+          "correct": "A",
+          "explanation": "La finalización de la inicialización asíncrona del padre y del hijo no tiene un orden garantizado porque depende del código que ejecutan.",
+          "citation": "Component initialization (OnInitialized{Async})",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t28-lo-supp-006",
+          "difficulty": "intermediate",
+          "question_type": "procedure",
+          "question": "OnInitializedAsync va a esperar una operación potencialmente incompleta. ¿Qué debe garantizar el código antes del await?",
+          "options": [
+            "Que todos los parámetros sean tipos primitivos",
+            "Que el componente esté en un estado válido para renderizar",
+            "Que se haya llamado a StateHasChanged dos veces",
+            "Que exista ya una referencia ElementReference"
+          ],
+          "correct": "B",
+          "explanation": "Si OnInitializedAsync devuelve una Task incompleta, la parte síncrona previa al await debe dejar el componente en un estado válido para el renderizado.",
+          "citation": "Component initialization (OnInitialized{Async})",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t28-lo-supp-007",
+          "difficulty": "intermediate",
+          "question_type": "concept",
+          "question": "En una aplicación Blazor que prerenderiza, ¿cuántas veces puede ejecutarse OnInitializedAsync para una instancia durante el flujo de prerender e interacción?",
+          "options": [
+            "Nunca durante el prerender",
+            "Una sola vez siempre",
+            "Dos veces: durante el prerender estático y al renderizar interactivamente",
+            "Una vez por cada elemento HTML generado"
+          ],
+          "correct": "C",
+          "explanation": "La documentación indica que las aplicaciones que prerenderizan pueden llamar a OnInitializedAsync una vez para el render estático inicial y otra cuando el navegador renderiza el componente interactivamente.",
+          "citation": "Component initialization (OnInitialized{Async}); prerendering",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t28-lo-supp-008",
+          "difficulty": "intermediate",
+          "question_type": "scenario",
+          "question": "Un componente intenta invocar JavaScript durante el prerenderizado. ¿Qué restricción documentada debe contemplar?",
+          "options": [
+            "JavaScript solo puede invocarse desde CSS aislado",
+            "La llamada se convierte automáticamente en navegación",
+            "Solo se permite si el parámetro es complejo",
+            "Durante el prerenderizado no es posible llamar a JavaScript"
+          ],
+          "correct": "D",
+          "explanation": "Durante el prerenderizado no es posible llamar a JavaScript; la documentación muestra el uso de OnAfterRenderAsync para interop compatible con prerenderizado.",
+          "citation": "Prerendering with JavaScript interop",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t28-lo-supp-009",
+          "difficulty": "intermediate",
+          "question_type": "concept",
+          "question": "¿Cuándo pueden invocarse OnParametersSet y OnParametersSetAsync además de la inicialización inicial?",
+          "options": [
+            "Cuando el padre vuelve a renderizar y suministra parámetros, incluidos los complejos",
+            "Solo cuando cambia una regla CSS",
+            "Únicamente cuando se destruye la instancia",
+            "Solo después de una navegación externa completa"
+          ],
+          "correct": "A",
+          "explanation": "Estos métodos se invocan después de la inicialización y cuando el padre vuelve a renderizar proporcionando parámetros; la presencia de parámetros complejos hace que el conjunto se trate como cambiado.",
+          "citation": "After parameters are set (OnParametersSet{Async})",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t28-lo-supp-010",
+          "difficulty": "intermediate",
+          "question_type": "procedure",
+          "question": "¿En qué método debe realizarse el trabajo asíncrono que aplica parámetros y valores de propiedades?",
+          "options": [
+            "En el constructor del componente",
+            "En OnParametersSetAsync",
+            "En Dispose",
+            "En ShouldRender"
+          ],
+          "correct": "B",
+          "explanation": "La guía sitúa el trabajo asíncrono realizado al aplicar parámetros y valores de propiedades en el evento de ciclo de vida OnParametersSetAsync.",
+          "citation": "After parameters are set (OnParametersSet{Async})",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t28-lo-supp-011",
+          "difficulty": "intermediate",
+          "question_type": "scenario",
+          "question": "OnParametersSetAsync espera una Task incompleta después de marcar una carga. ¿Qué requisito sigue siendo aplicable?",
+          "options": [
+            "La UI debe esperar sin renderizar hasta que termine",
+            "Debe reemplazarse el método por OnInitializedAsync",
+            "La parte síncrona debe dejar un estado válido para renderizar",
+            "Debe eliminarse cualquier parámetro complejo"
+          ],
+          "correct": "C",
+          "explanation": "Al igual que en la inicialización asíncrona, la parte de OnParametersSetAsync que se ejecuta antes de una espera incompleta debe dejar el componente en un estado válido para renderizar.",
+          "citation": "After parameters are set (OnParametersSet{Async})",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t28-lo-supp-012",
+          "difficulty": "intermediate",
+          "question_type": "concept",
+          "question": "¿En qué momento se invocan OnAfterRender y OnAfterRenderAsync según la documentación?",
+          "options": [
+            "Antes de aplicar los parámetros iniciales",
+            "Durante el constructor, antes del primer render",
+            "Durante cualquier prerender estático aunque no haya DOM",
+            "Después de un render interactivo, cuando la interfaz terminó de actualizarse"
+          ],
+          "correct": "D",
+          "explanation": "Los callbacks after-render se invocan después de un render interactivo y de que la interfaz haya terminado de actualizarse; las referencias de elemento y componente están disponibles entonces.",
+          "citation": "After component render (OnAfterRender{Async})",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t28-lo-supp-013",
+          "difficulty": "intermediate",
+          "question_type": "concept",
+          "question": "¿Qué valor tiene firstRender la primera vez que se renderiza una instancia de componente?",
+          "options": [
+            "true",
+            "false",
+            "null",
+            "El valor del primer parámetro"
+          ],
+          "correct": "A",
+          "explanation": "El parámetro firstRender se establece en true la primera vez que se renderiza la instancia y permite ejecutar una inicialización una sola vez.",
+          "citation": "After component render (OnAfterRender{Async})",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t28-lo-supp-014",
+          "difficulty": "intermediate",
+          "question_type": "concept",
+          "question": "¿Qué comportamiento evita Blazor al completar la Task devuelta por OnAfterRenderAsync?",
+          "options": [
+            "La asignación de parámetros",
+            "Un rerender automático para evitar un bucle infinito",
+            "La llamada de DisposeAsync",
+            "La creación del DOM inicial"
+          ],
+          "correct": "B",
+          "explanation": "Blazor no vuelve a renderizar automáticamente al completarse la Task de OnAfterRenderAsync, precisamente para evitar un bucle infinito de renderizados.",
+          "citation": "After component render (OnAfterRender{Async})",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t28-lo-supp-015",
+          "difficulty": "advanced",
+          "question_type": "scenario",
+          "question": "OnAfterRenderAsync actualiza un campo que debe mostrarse en la UI. ¿Qué acción adicional puede necesitar el componente?",
+          "options": [
+            "Llamar explícitamente a StateHasChanged",
+            "Llamar a SetParametersAsync con ParameterView.Empty",
+            "Mover la actualización a un archivo .razor.css",
+            "Desactivar el prerenderizado para todos los componentes"
+          ],
+          "correct": "A",
+          "explanation": "Como la finalización de OnAfterRenderAsync no programa automáticamente otro render, el componente puede llamar explícitamente a StateHasChanged después de cambiar el estado que debe mostrarse.",
+          "citation": "After component render (OnAfterRender{Async}); prerendering with JavaScript interop",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t28-lo-supp-016",
+          "difficulty": "advanced",
+          "question_type": "concept",
+          "question": "¿Qué transformación general aplica Blazor al CSS aislado durante la compilación?",
+          "options": [
+            "Convierte todos los selectores en estilos inline",
+            "Elimina las reglas que no usan JavaScript",
+            "Reescribe los selectores para que coincidan con el markup del componente",
+            "Fusiona todos los estilos en una hoja global sin identificadores"
+          ],
+          "correct": "C",
+          "explanation": "La documentación indica que el aislamiento CSS se produce en la compilación y que Blazor reescribe los selectores para que coincidan con el markup renderizado por el componente.",
+          "citation": "CSS isolation bundling",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t28-lo-supp-017",
+          "difficulty": "advanced",
+          "question_type": "concept",
+          "question": "¿Qué forma tiene el atributo de alcance que Blazor añade a los elementos HTML al aplicar CSS aislado?",
+          "options": [
+            "scope-{ASSEMBLY}",
+            "b-{STRING}",
+            "css-{ROUTE}",
+            "isolated-{COMPONENT}"
+          ],
+          "correct": "B",
+          "explanation": "Cada componente estilizado recibe un identificador de alcance con el formato b-{STRING}, donde STRING es generado por el framework.",
+          "citation": "CSS isolation bundling",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t28-lo-supp-018",
+          "difficulty": "advanced",
+          "question_type": "scenario",
+          "question": "En CSS aislado, ¿dónde se aplica por defecto el identificador de alcance en el selector `div > a`?",
+          "options": [
+            "En `div`, convirtiéndolo en `div[b-{STRING}] > a`",
+            "En ambos elementos, `div[b-{STRING}] > a[b-{STRING}]`",
+            "En ningún elemento porque `>` no está soportado",
+            "En `a`, convirtiéndolo en `div > a[b-{STRING}]`"
+          ],
+          "correct": "D",
+          "explanation": "La documentación muestra que el alcance se aplica al elemento situado más a la derecha: div > a se transforma en div > a[b-{STRING}].",
+          "citation": "CSS isolation — scope identifiers",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t28-lo-supp-019",
+          "difficulty": "advanced",
+          "question_type": "concept",
+          "question": "En un parámetro RenderFragment<TValue> de un componente templado, ¿cuál es el nombre implícito del parámetro de contenido si no se especifica Context?",
+          "options": [
+            "item",
+            "value",
+            "context",
+            "template"
+          ],
+          "correct": "C",
+          "explanation": "Los argumentos de componente de tipo RenderFragment<TValue> tienen un parámetro implícito llamado context, que puede usarse dentro de la plantilla.",
+          "citation": "Templated components — implicit context parameter",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t28-lo-supp-020",
+          "difficulty": "advanced",
+          "question_type": "procedure",
+          "question": "Un componente genérico TemplatedNavBar no permite inferir TItem en una llamada concreta. ¿Cómo puede especificarse explícitamente el tipo?",
+          "options": [
+            "Añadiendo `ContextType` al RenderFragment",
+            "Cambiando `RenderFragment<TItem>` por `RenderFragment`",
+            "Usando `@typeparam` dentro del contenido hijo",
+            "Añadiendo un atributo `TItem=\"Pet\"` al elemento del componente"
+          ],
+          "correct": "D",
+          "explanation": "Cuando es necesario, el tipo genérico puede especificarse explícitamente mediante un atributo cuyo nombre coincide con el parámetro de tipo, como TItem=\"Pet\".",
+          "citation": "Templated components — generic type inference",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-10.0"
+        }
+      ]
+    }
+  ]
+}
