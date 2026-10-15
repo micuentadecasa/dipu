@@ -66,7 +66,7 @@ def main() -> int:
             "reviewer_decision": "accepted",
         }
         reviewed["deduplication"] = {
-            name: {"status": "unique", "checked_at": DATE, "basis": "Independent proposition/objective review found no collision with published topic-27 records or this supplemental lot."}
+            name: {"status": "unique", "checked_at": DATE, "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."}
             for name in ("exact", "lexical", "near_lexical", "semantic", "concept")
         }
         reviewed["status"] = "validated"
@@ -88,7 +88,7 @@ def main() -> int:
 
     review_payload = {
         "review_version": "1.0",
-        "lot": "topic-27-lot-11",
+        "lot": "topic-28-lot-11",
         "topic_num": TOPIC,
         "lot_num": LOT,
         "supplemental": True,
