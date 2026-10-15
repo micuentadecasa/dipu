@@ -1,6 +1,6 @@
 # Question-bank quality report — checkpoint 1
 
-**As of:** 2026-10-13 UTC
+**As of:** 2026-10-15 UTC
 **Scope:** topics 1--19 lot 1, topic 20 lots 1--5, topics 21--22 lot 1, topics 23--39 lots 1--5, and topic 40 lots 1--10 are published with duplicate-free runtime data.
 
 ## Current counts
@@ -14,7 +14,7 @@
 | Quarantined candidate audits | 4,020 | Original candidate lots remain audit trails; 460 answer-leaking records are archived with replacements |
 | Deterministic duplicate matches | 0 | Exact, lexical and near-lexical checks against legacy/topic-lot records |
 | Semantic/concept decisions | 4,020 unique | Independently reviewed against the objective and proposition |
-| Native import/export | 4,020 | Accepted topics 1--20 lot 1, topic 20 lots 2--5, topics 21--22 lot 1, topic 23 lots 1--5, topic 24 lots 1--10, topic 25 lots 1--10, topic 26 lots 1--10, topic 27 lots 1--10, topic 28 lots 1--10, topic 29 lots 1--10, topic 30 lots 1--10, topic 31 lots 1--10, topic 32 lots 1--10, topic 33 lots 1--10, topic 34 lots 1--10, topic 35 lots 1--10, topic 36 lots 1--10, topic 37 lots 1--10, topic 38 lots 1--10, topic 39 lots 1--10, and topic 40 lots 1--10 are imported through `seed_data.py`; duplicate-free `frontend/src/questions.js` contains 4,409 records |
+| Native import/export | 4,020 target records | Accepted target lots are imported through `seed_data.py`; duplicate-free `frontend/src/questions.js` contains 4,469 records after adding 60 explicitly supplemental records from topics 26--28 |
 | Published batches | 126 | Topics 1--19 lot 1, topic 20 lots 1--5, topics 21--22 lot 1, and topics 23--40 lots 1--5 are published in the native artifacts |
 
 ## Lot 1 distributions
@@ -59,3 +59,9 @@ The lot has 5 basic, 9 intermediate, and 6 advanced records; correct answers are
 A source-gated coverage-gap lot adds 20 independently reviewed `official_primary` records on advanced Blazor event, binding, and rendering behavior from `BLAZOR-10`: exception and custom-event handling, binding modifier restrictions and synchronization, multiple-select and unparsable values, DateTime formatting, render suppression and queueing, external notifications, streaming-rendering behavior, and parameter-overwrite avoidance. The candidate, review, accepted, dry-run import, and append-only checkpoint artifacts are `topic-27-lot-11` under `research/questions/`, `lots/`, `reviews/`, `accepted/`, `imports/`, and `checkpoints/`.
 
 The lot has 4 basic, 8 intermediate, and 8 advanced records; correct answers are A=5, B=6, C=6, D=3. All 20 records passed schema, option, answer, explanation, answer-leakage, exact/lexical/near-lexical, semantic, and concept-level review. The native import marker was applied and the regenerated runtime increased from 4,429 to 4,449 records. This is explicitly supplemental (`t27-lo-supp-*`) and excluded from the captain-approved 200-objective/topic manifest and target-count statistics; the 8,000-slot target remains unchanged.
+
+## Topic 28 supplemental lot 11 — 2026-10-15
+
+A source-gated coverage-gap lot adds 20 independently reviewed `official_primary` records on exact Blazor lifecycle, CSS-isolation, and templated-component boundaries from `BLAZOR-10`: `ParameterView` assignment and missing-parameter preservation, base lifecycle calls, parent/child asynchronous initialization ordering, valid state before asynchronous yields, prerender duplication and JavaScript restrictions, parameter-set callback rules, after-render invocation and rerender suppression, CSS selector rewriting and scope identifiers, and generic template context/type inference. The candidate, review, accepted, dry-run import, and append-only checkpoint artifacts are `topic-28-lot-11` under `research/questions/`, `lots/`, `reviews/`, `accepted/`, `imports/`, and `checkpoints/`.
+
+The lot has 4 basic, 10 intermediate, and 6 advanced records; correct answers are A=5, B=5, C=5, D=5. All 20 records passed schema, option, answer, explanation, answer-leakage, exact/lexical/near-lexical, semantic, and concept-level review. The native import marker was applied and the regenerated runtime increased from 4,449 to 4,469 records. This is explicitly supplemental (`t28-lo-supp-*`) and excluded from the captain-approved 200-objective/topic manifest and target-count statistics; the 8,000-slot target remains unchanged.
