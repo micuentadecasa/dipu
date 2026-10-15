@@ -29,7 +29,7 @@ EXPECTED = {
     2: ("C", "When parameters are set (SetParametersAsync)"),
     3: ("A", "Component initialization (OnInitialized{Async})"),
     4: ("B", "Prerendering and quiescence"),
-    5: ("C", "After component render (OnAfterRender{Async})"),
+    5: ("B", "Component initialization (OnInitialized{Async})"),
     6: ("C", "After parameters are set (OnParametersSet{Async})"),
     7: ("A", "Component base class lifecycle methods"),
     8: ("B", "Component lifecycle synchronous and asynchronous methods"),
@@ -37,14 +37,14 @@ EXPECTED = {
     10: ("B", "CSS isolation file naming"),
     11: ("A", "CSS isolation file naming"),
     12: ("D", "CSS isolation limitations"),
-    13: ("B", "CSS isolation in Razor class libraries"),
-    14: ("B", "CSS isolation bundling"),
+    13: ("C", "CSS isolation — CSS imports"),
+    14: ("A", "CSS isolation — preprocessor ordering"),
     15: ("A", "CSS isolation bundling"),
     16: ("D", "Templated components"),
-    17: ("B", "Templated components"),
+    17: ("D", "Templated components — @typeparam declaration"),
     18: ("C", "Templated components"),
     19: ("A", "Templated components"),
-    20: ("D", "Templated components"),
+    20: ("A", "Templated components — IReadOnlyList<T>"),
 }
 
 def load_semantic_audit() -> dict[str, dict[str, str]]:
