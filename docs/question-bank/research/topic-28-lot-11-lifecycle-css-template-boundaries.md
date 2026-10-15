@@ -12,6 +12,6 @@
 
 ## Coverage gap
 
-The published topic-28 set covers the lifecycle names, basic prerendering/disposal, CSS isolation, templates, dynamic components, and ErrorBoundary scenarios. This lot isolates exact boundaries useful for implementation reasoning: `ParameterView` assignment and base calls; missing-parameter preservation; parent/child initialization ordering; valid state before asynchronous yields; prerender duplication and JS restrictions; unchanged parameter-set callbacks; after-render invocation and rerender suppression; CSS scope placement; and generic template context/type inference.
+The published topic-28 set covers the lifecycle names, basic prerendering/disposal, CSS isolation, templates, dynamic components, and ErrorBoundary scenarios. This lot isolates distinct implementation boundaries: missing-parameter preservation and callback timing; synchronous versus asynchronous parent/child initialization; valid state before asynchronous yields; custom and shared CSS scope identifiers; scoped-style inheritance and `::deep` placement; and the typed, untyped, named, and inferred template parameters shown in the official examples.
 
 The lot is supplemental and does **not** change the captain-approved 200-objective-per-topic manifest or 8,000-slot target. Its `t28-lo-supp-*` objective IDs are excluded from target-count statistics. Every record cites the exact official page and section used; no code or SQL execution is applicable.

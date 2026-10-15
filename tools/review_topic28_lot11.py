@@ -24,26 +24,49 @@ REVIEW_PATH = ROOT / "docs/question-bank/reviews/topic-28-lot-11.json"
 CHECKPOINT_PATH = ROOT / "docs/question-bank/checkpoints/topic-28-lot-11.jsonl"
 
 EXPECTED = {
-    1: ("A", "When parameters are set (SetParametersAsync)"),
-    2: ("B", "When parameters are set (SetParametersAsync)"),
-    3: ("C", "When parameters are set (SetParametersAsync)"),
-    4: ("D", "Component initialization (OnInitialized{Async})"),
-    5: ("A", "Component initialization (OnInitialized{Async})"),
-    6: ("B", "Component initialization (OnInitialized{Async})"),
-    7: ("C", "Component initialization (OnInitialized{Async}); prerendering"),
-    8: ("D", "Prerendering with JavaScript interop"),
-    9: ("A", "After parameters are set (OnParametersSet{Async})"),
-    10: ("B", "After parameters are set (OnParametersSet{Async})"),
-    11: ("C", "After parameters are set (OnParametersSet{Async})"),
-    12: ("D", "After component render (OnAfterRender{Async})"),
-    13: ("A", "After component render (OnAfterRender{Async})"),
-    14: ("B", "After component render (OnAfterRender{Async})"),
-    15: ("A", "After component render (OnAfterRender{Async}); prerendering with JavaScript interop"),
-    16: ("C", "CSS isolation bundling"),
-    17: ("B", "CSS isolation bundling"),
-    18: ("D", "CSS isolation — scope identifiers"),
-    19: ("C", "Templated components — implicit context parameter"),
-    20: ("D", "Templated components — generic type inference"),
+    1: ("B", "When parameters are set (SetParametersAsync)"),
+    2: ("C", "Component initialization — parent and child order"),
+    3: ("A", "Component initialization — asynchronous order"),
+    4: ("D", "After parameters are set — complex parameters"),
+    5: ("B", "After parameters are set — valid state before await"),
+    6: ("A", "CSS isolation — custom scope format"),
+    7: ("C", "CSS isolation — shared scope identifiers"),
+    8: ("D", "CSS isolation — inherited scoped styles"),
+    9: ("A", "CSS isolation — ::deep selector placement"),
+    10: ("B", "CSS isolation — descendant-only ::deep"),
+    11: ("C", "CSS isolation — hyperlink descendant wrapper"),
+    12: ("D", "Templated components — typed fragment invocation"),
+    13: ("A", "Templated components — component-level Context"),
+    14: ("B", "Templated components — template-level Context"),
+    15: ("C", "Templated components — named template parameters"),
+    16: ("D", "Templated components — generic list type"),
+    17: ("A", "Templated components — inferred generic type"),
+    18: ("B", "When parameters are set — base assignment"),
+    19: ("C", "After parameters are set — callback timing"),
+    20: ("D", "Templated components — typed and untyped templates"),
+}
+
+SEMANTIC_DECISIONS = {
+    "t28-lo-supp-001": {"status": "unique", "basis": "Compared missing-parameter preservation with all published lifecycle records and lot-11 candidates; no proposition collision."},
+    "t28-lo-supp-002": {"status": "unique", "basis": "Compared synchronous parent-before-child initialization with all published lifecycle records and lot-11 candidates; no proposition collision."},
+    "t28-lo-supp-003": {"status": "unique", "basis": "Compared nondeterministic asynchronous initialization completion with all published lifecycle records and lot-11 candidates; no proposition collision."},
+    "t28-lo-supp-004": {"status": "unique", "basis": "Compared complex-parameter callback triggering with all published lifecycle records and lot-11 candidates; no proposition collision."},
+    "t28-lo-supp-005": {"status": "unique", "basis": "Compared valid-state requirements before OnParametersSetAsync await with all published lifecycle records and lot-11 candidates; no proposition collision."},
+    "t28-lo-supp-006": {"status": "unique", "basis": "Compared project-file scope-format configuration with all published CSS records and lot-11 candidates; no proposition collision."},
+    "t28-lo-supp-007": {"status": "unique", "basis": "Compared wildcard scope sharing with all published CSS records and lot-11 candidates; no proposition collision."},
+    "t28-lo-supp-008": {"status": "unique", "basis": "Compared base-derived scoped-style inheritance with all published CSS records and lot-11 candidates; no proposition collision."},
+    "t28-lo-supp-009": {"status": "unique", "basis": "Compared the div ::deep selector transformation with all published CSS records and lot-11 candidates; no proposition collision."},
+    "t28-lo-supp-010": {"status": "unique", "basis": "Compared the descendant-only restriction of ::deep with all published CSS records and lot-11 candidates; no proposition collision."},
+    "t28-lo-supp-011": {"status": "unique", "basis": "Compared the wrapper requirement for a child hyperlink with all published CSS records and lot-11 candidates; no proposition collision."},
+    "t28-lo-supp-012": {"status": "unique", "basis": "Compared the typed-fragment value contract with all published template records and lot-11 candidates; no proposition collision."},
+    "t28-lo-supp-013": {"status": "unique", "basis": "Compared component-level Context scope across templates with all published template records and lot-11 candidates; no proposition collision."},
+    "t28-lo-supp-014": {"status": "unique", "basis": "Compared template-level Context scope with all published template records and lot-11 candidates; no proposition collision."},
+    "t28-lo-supp-015": {"status": "unique", "basis": "Compared the named StartContent and ItemTemplate parameters with all published template records and lot-11 candidates; no proposition collision."},
+    "t28-lo-supp-016": {"status": "unique", "basis": "Compared IReadOnlyList<T> in the generic example with all published template records and lot-11 candidates; no proposition collision."},
+    "t28-lo-supp-017": {"status": "unique", "basis": "Compared generic type inference conditions with all published template records and lot-11 candidates; no proposition collision."},
+    "t28-lo-supp-018": {"status": "unique", "basis": "Compared base parameter assignment behavior with all published parameter records and lot-11 candidates; no proposition collision."},
+    "t28-lo-supp-019": {"status": "unique", "basis": "Compared callback timing after parameter assignment with all published lifecycle records and lot-11 candidates; no proposition collision."},
+    "t28-lo-supp-020": {"status": "unique", "basis": "Compared typed versus untyped template parameters with all published template records and lot-11 candidates; no proposition collision."},
 }
 
 
@@ -72,11 +95,14 @@ def main() -> int:
         reviewed["deduplication"] = {
             name: dict(result) for name, result in deterministic.items()
         }
+        decision = SEMANTIC_DECISIONS.get(reviewed["learning_objective_id"])
+        if not decision:
+            raise RuntimeError(f"missing semantic review decision for question {index}")
         for name in ("semantic", "concept"):
             reviewed["deduplication"][name] = {
-                "status": "unique",
+                "status": decision["status"],
                 "checked_at": DATE,
-                "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot.",
+                "basis": decision["basis"],
             }
         reviewed["status"] = "validated"
         errors = validate_record(reviewed)
