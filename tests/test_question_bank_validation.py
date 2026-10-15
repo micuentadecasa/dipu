@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import copy
 import json
+from collections import Counter
 import tempfile
 import unicodedata
 import unittest
@@ -131,6 +132,24 @@ class RuntimeQuestionBankTests(unittest.TestCase):
         self.assertEqual(len({fingerprint(question) for question in SEED_QUESTIONS}), len(SEED_QUESTIONS))
         self.assertEqual(len({prompt_key(question["question"]) for question in runtime}), len(runtime))
         self.assertEqual(len({fingerprint(question) for question in runtime}), len(runtime))
+
+    def test_topic26_expansion_is_complete_balanced_and_validated(self):
+        records = []
+        for lot_num in range(1, 11):
+            path = ROOT / f"docs/question-bank/accepted/topic-26-lot-{lot_num:02d}.json"
+            payload = json.loads(path.read_text(encoding="utf-8"))
+            records.extend(payload["questions"])
+            if lot_num >= 6:
+                self.assertEqual(payload["revision"], 2)
+        self.assertEqual(len(records), 200)
+        self.assertEqual(Counter(record["correct"] for record in records), Counter({"A": 50, "B": 50, "C": 50, "D": 50}))
+        self.assertEqual(Counter(record["question_type"] for record in records), Counter({"concept": 140, "procedure": 30, "scenario": 30}))
+        self.assertEqual(len({record["stable_id"] for record in records}), 200)
+        self.assertEqual(len({record["learning_objective_id"] for record in records}), 200)
+        self.assertTrue(all(record["sources"][0]["source_id"] == "BLAZOR-10" for record in records))
+        self.assertTrue(all(not answer_leakage_errors(record) for record in records))
+        self.assertTrue(all(not validate_record(record) for record in records))
+        self.assertTrue(all(result["status"] == "unique" for record in records for result in record["deduplication"].values()))
 
 
 class CheckpointTests(unittest.TestCase):

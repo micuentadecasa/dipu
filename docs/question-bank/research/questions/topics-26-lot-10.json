@@ -12,7 +12,7 @@
         {
           "objective_id": "t26-lo-181",
           "difficulty": "basic",
-          "type": "concept",
+          "type": "scenario",
           "question": "Una app con SEO y panel interactivo necesita ambos comportamientos. ¿Qué diseño valorar?",
           "options": [
             "Contenido Static/prerender y panel con modo interactivo",
@@ -28,15 +28,15 @@
         {
           "objective_id": "t26-lo-182",
           "difficulty": "basic",
-          "type": "concept",
+          "type": "scenario",
           "question": "Una app de administración interna prioriza acceso server y bajo payload cliente. ¿Qué modo puede encajar?",
           "options": [
-            "InteractiveServer",
             "Static únicamente",
+            "InteractiveServer",
             "WebAssembly standalone siempre",
             "PWA sin backend"
           ],
-          "correct": "A",
+          "correct": "B",
           "explanation": "Server mantiene lógica y reduce descarga cliente.",
           "citation": "Blazor hosting models — InteractiveServer",
           "source_id": "BLAZOR-10"
@@ -44,15 +44,15 @@
         {
           "objective_id": "t26-lo-183",
           "difficulty": "basic",
-          "type": "concept",
+          "type": "scenario",
           "question": "Una app pública debe funcionar con CDN y API separada. ¿Qué modelo cliente valorar?",
           "options": [
-            "WebAssembly standalone con backend API independiente",
             "Blazor Server sin servidor",
             "Hybrid obligatorio",
+            "WebAssembly standalone con backend API independiente",
             "Static sin cliente"
           ],
-          "correct": "A",
+          "correct": "C",
           "explanation": "Standalone se sirve como assets y puede llamar API separada.",
           "citation": "Blazor hosting models — standalone deployment",
           "source_id": "BLAZOR-10"
@@ -60,15 +60,15 @@
         {
           "objective_id": "t26-lo-184",
           "difficulty": "basic",
-          "type": "concept",
+          "type": "scenario",
           "question": "Un equipo necesita compartir DTOs entre cliente y API. ¿Qué modelo facilita esa organización?",
           "options": [
-            "WebAssembly hosted con biblioteca compartida",
             "Static sin backend",
             "CSS isolation",
-            "InteractiveServer sin cliente"
+            "InteractiveServer sin cliente",
+            "WebAssembly hosted con biblioteca compartida"
           ],
-          "correct": "A",
+          "correct": "D",
           "explanation": "Hosted permite compartir código cliente/servidor.",
           "citation": "Blazor hosting models — hosted model",
           "source_id": "BLAZOR-10"
@@ -76,7 +76,7 @@
         {
           "objective_id": "t26-lo-185",
           "difficulty": "intermediate",
-          "type": "concept",
+          "type": "scenario",
           "question": "Una operación de servidor se llama desde WebAssembly. ¿Qué frontera debe existir?",
           "options": [
             "Una API o endpoint de backend",
@@ -92,15 +92,15 @@
         {
           "objective_id": "t26-lo-186",
           "difficulty": "intermediate",
-          "type": "concept",
+          "type": "scenario",
           "question": "Un componente funciona en prerender pero falla al activar cliente por estado no serializable. ¿Qué revisar?",
           "options": [
-            "Datos/parámetros compatibles con el límite entre fases",
             "El CSS global",
+            "Datos/parámetros compatibles con el límite entre fases",
             "El nombre del proyecto",
             "Solo la key"
           ],
-          "correct": "A",
+          "correct": "B",
           "explanation": "Las fases pueden requerir datos transferibles/compatibles.",
           "citation": "Blazor render modes — prerendering",
           "source_id": "BLAZOR-10"
@@ -108,15 +108,15 @@
         {
           "objective_id": "t26-lo-187",
           "difficulty": "intermediate",
-          "type": "concept",
+          "type": "scenario",
           "question": "Una organización no quiere conexión persistente para contenido estático. ¿Qué modo evita interactividad?",
           "options": [
-            "Static",
             "InteractiveServer",
             "InteractiveAuto",
+            "Static",
             "InteractiveWebAssembly"
           ],
-          "correct": "A",
+          "correct": "C",
           "explanation": "Static no mantiene conexión interactiva.",
           "citation": "Blazor render modes — Static",
           "source_id": "BLAZOR-10"
@@ -124,15 +124,15 @@
         {
           "objective_id": "t26-lo-188",
           "difficulty": "intermediate",
-          "type": "concept",
+          "type": "scenario",
           "question": "Una aplicación necesita una API nativa en escritorio pero UI Razor compartida. ¿Qué elegir?",
           "options": [
-            "Blazor Hybrid",
             "WebAssembly standalone",
             "InteractiveServer",
-            "Static CDN"
+            "Static CDN",
+            "Blazor Hybrid"
           ],
-          "correct": "A",
+          "correct": "D",
           "explanation": "Hybrid combina UI Razor y plataforma nativa.",
           "citation": "Blazor hosting models — Hybrid",
           "source_id": "BLAZOR-10"
@@ -140,7 +140,7 @@
         {
           "objective_id": "t26-lo-189",
           "difficulty": "intermediate",
-          "type": "concept",
+          "type": "scenario",
           "question": "Una aplicación server escala horizontalmente y mantiene circuitos. ¿Qué servicio puede apoyar la conectividad?",
           "options": [
             "Azure SignalR Service",
@@ -156,15 +156,15 @@
         {
           "objective_id": "t26-lo-190",
           "difficulty": "intermediate",
-          "type": "concept",
+          "type": "scenario",
           "question": "Una UI tiene un botón pero usa Static. ¿Qué resultado esperar?",
           "options": [
-            "El botón no tiene interactividad de componente activada por ese modo",
             "El botón siempre ejecuta en servidor",
+            "El botón no tiene interactividad de componente activada por ese modo",
             "El botón descarga runtime",
             "El botón crea circuito"
           ],
-          "correct": "A",
+          "correct": "B",
           "explanation": "Static genera markup sin interacción.",
           "citation": "Blazor render modes — Static",
           "source_id": "BLAZOR-10"
@@ -172,15 +172,15 @@
         {
           "objective_id": "t26-lo-191",
           "difficulty": "intermediate",
-          "type": "concept",
+          "type": "scenario",
           "question": "Una UI usa InteractiveWebAssembly pero el payload es muy grande. ¿Qué optimización es relevante?",
           "options": [
-            "Reducir dependencias y payload publicado",
             "Añadir circuitos",
             "Activar CSS global",
+            "Reducir dependencias y payload publicado",
             "Cambiar a Hybrid sin evaluar"
           ],
-          "correct": "A",
+          "correct": "C",
           "explanation": "El payload afecta rendimiento inicial.",
           "citation": "Blazor hosting models — WebAssembly payload",
           "source_id": "BLAZOR-10"
@@ -191,12 +191,12 @@
           "type": "concept",
           "question": "¿Qué debe documentar un componente reusable multi-hosting?",
           "options": [
-            "Qué APIs de host requiere y qué parte es lógica común",
             "Solo el nombre del archivo",
             "Solo el color",
-            "Solo el número de parámetros"
+            "Solo el número de parámetros",
+            "Qué APIs de host requiere y qué parte es lógica común"
           ],
-          "correct": "A",
+          "correct": "D",
           "explanation": "Los contratos de host evitan supuestos incorrectos.",
           "citation": "Blazor hosting models — common component model",
           "source_id": "BLAZOR-10"
@@ -220,15 +220,15 @@
         {
           "objective_id": "t26-lo-194",
           "difficulty": "intermediate",
-          "type": "concept",
+          "type": "scenario",
           "question": "Una app quiere comenzar server y usar cliente cuando esté descargado. ¿Qué modo expresa la intención?",
           "options": [
-            "InteractiveAuto",
             "Static",
+            "InteractiveAuto",
             "InteractiveServer únicamente",
             "InteractiveWebAssembly sin fallback"
           ],
-          "correct": "A",
+          "correct": "B",
           "explanation": "Auto permite la transición.",
           "citation": "Blazor render modes — InteractiveAuto",
           "source_id": "BLAZOR-10"
@@ -239,12 +239,12 @@
           "type": "concept",
           "question": "¿Qué debe evitarse en lógica ejecutada en WebAssembly?",
           "options": [
-            "Asumir que secretos del servidor están protegidos",
             "Usar componentes Razor",
             "Usar binding",
+            "Asumir que secretos del servidor están protegidos",
             "Servir assets"
           ],
-          "correct": "A",
+          "correct": "C",
           "explanation": "El cliente no es un lugar secreto.",
           "citation": "Blazor hosting models — WebAssembly client",
           "source_id": "BLAZOR-10"
@@ -252,15 +252,15 @@
         {
           "objective_id": "t26-lo-196",
           "difficulty": "advanced",
-          "type": "concept",
+          "type": "scenario",
           "question": "Una página necesita HTML antes de que cargue el runtime cliente. ¿Qué técnica usar?",
           "options": [
-            "Prerendering",
             "Solo InteractiveWebAssembly sin prerender",
             "Dispose",
-            "@key"
+            "@key",
+            "Prerendering"
           ],
-          "correct": "A",
+          "correct": "D",
           "explanation": "Prerender produce HTML inicial.",
           "citation": "Blazor render modes — prerendering",
           "source_id": "BLAZOR-10"
@@ -287,12 +287,12 @@
           "type": "concept",
           "question": "¿Qué arquitectura mantiene datos sensibles en servidor con UI cliente?",
           "options": [
-            "WebAssembly cliente llamando API sin exponer secretos",
             "Enviar secretos en payload",
+            "WebAssembly cliente llamando API sin exponer secretos",
             "Guardar secretos en localStorage",
             "Publicar connection string"
           ],
-          "correct": "A",
+          "correct": "B",
           "explanation": "El servidor protege datos y el cliente usa una API controlada.",
           "citation": "Blazor hosting models — WebAssembly client",
           "source_id": "BLAZOR-10"
@@ -303,12 +303,12 @@
           "type": "concept",
           "question": "¿Qué debe probarse al cambiar de InteractiveServer a WebAssembly?",
           "options": [
-            "APIs disponibles, estado, serialización, payload y seguridad",
             "Solo el texto del botón",
             "Solo CSS",
+            "APIs disponibles, estado, serialización, payload y seguridad",
             "Solo nombre de ruta"
           ],
-          "correct": "A",
+          "correct": "C",
           "explanation": "Cambiar ubicación de ejecución cambia restricciones.",
           "citation": "Blazor render modes — choosing a mode",
           "source_id": "BLAZOR-10"
@@ -319,17 +319,18 @@
           "type": "concept",
           "question": "¿Qué resumen describe una decisión de hosting sólida?",
           "options": [
-            "Seleccionar hosting y render mode según UX, conexión, escalado, payload y confidencialidad",
             "Elegir por defecto Server sin análisis",
             "Elegir WebAssembly para secretos",
-            "Desactivar prerender siempre"
+            "Desactivar prerender siempre",
+            "Seleccionar hosting y render mode según UX, conexión, escalado, payload y confidencialidad"
           ],
-          "correct": "A",
+          "correct": "D",
           "explanation": "La decisión debe considerar los tradeoffs oficiales.",
           "citation": "Blazor hosting models; render modes",
           "source_id": "BLAZOR-10"
         }
       ]
     }
-  ]
+  ],
+  "revision": 2
 }
