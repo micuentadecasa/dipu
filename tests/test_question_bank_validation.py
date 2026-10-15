@@ -8,8 +8,17 @@ import unicodedata
 import unittest
 from pathlib import Path
 
-from question_bank.checkpoints import CheckpointError, append_checkpoint, load_checkpoints
-from question_bank.validation import answer_leakage_errors, screen_duplicates, stable_id_for, validate_record
+from question_bank.checkpoints import (
+    CheckpointError,
+    append_checkpoint,
+    load_checkpoints,
+)
+from question_bank.validation import (
+    answer_leakage_errors,
+    screen_duplicates,
+    stable_id_for,
+    validate_record,
+)
 from seed_data import SEED_QUESTIONS
 
 
@@ -21,7 +30,17 @@ def prompt_key(question: str) -> str:
 
 
 def fingerprint(record: dict) -> tuple:
-    return tuple(record[field] for field in ("topic_num", "question", "option_a", "option_b", "option_c", "option_d"))
+    return tuple(
+        record[field]
+        for field in (
+            "topic_num",
+            "question",
+            "option_a",
+            "option_b",
+            "option_c",
+            "option_d",
+        )
+    )
 
 
 def valid_record() -> dict:
@@ -41,26 +60,42 @@ def valid_record() -> dict:
         "learning_objective_id": "t10-lo-certificados-identidad",
         "difficulty": "basic",
         "question_type": "definition",
-        "sources": [{
-            "source_id": "RFC-5280",
-            "title": "Internet X.509 Public Key Infrastructure Certificate and CRL Profile",
-            "authority": "IETF RFC Editor",
-            "tier": "official_primary",
-            "url": "https://www.rfc-editor.org/rfc/rfc5280",
-            "citation": "section 3",
-            "version_or_as_of": "RFC 5280",
-            "retrieved_at": "2026-10-12",
-            "verified_at": "2026-10-12",
-        }],
+        "sources": [
+            {
+                "source_id": "RFC-5280",
+                "title": "Internet X.509 Public Key Infrastructure Certificate and CRL Profile",
+                "authority": "IETF RFC Editor",
+                "tier": "official_primary",
+                "url": "https://www.rfc-editor.org/rfc/rfc5280",
+                "citation": "section 3",
+                "version_or_as_of": "RFC 5280",
+                "retrieved_at": "2026-10-12",
+                "verified_at": "2026-10-12",
+            }
+        ],
         "verification": {
-            "answer": {"status": "passed", "reviewer": "reviewer-1", "checked_at": "2026-10-12", "basis": "RFC 5280 section 3"},
-            "explanation": {"status": "passed", "reviewer": "reviewer-2", "checked_at": "2026-10-12", "basis": "Explanation matches citation"},
+            "answer": {
+                "status": "passed",
+                "reviewer": "reviewer-1",
+                "checked_at": "2026-10-12",
+                "basis": "RFC 5280 section 3",
+            },
+            "explanation": {
+                "status": "passed",
+                "reviewer": "reviewer-2",
+                "checked_at": "2026-10-12",
+                "basis": "Explanation matches citation",
+            },
             "reviewed_at": "2026-10-12",
             "reviewer_decision": "accepted",
             "code_or_sql": {"status": "not_applicable"},
         },
         "deduplication": {
-            name: {"status": "unique", "checked_at": "2026-10-12", "basis": "No match in accepted/quarantine index"}
+            name: {
+                "status": "unique",
+                "checked_at": "2026-10-12",
+                "basis": "No match in accepted/quarantine index",
+            }
             for name in ("exact", "lexical", "near_lexical", "semantic", "concept")
         },
         "status": "validated",
@@ -85,13 +120,21 @@ class QuestionRecordTests(unittest.TestCase):
         record = valid_record()
         record["question"] = "¿Qué representa un certificado digital?"
         self.assertTrue(answer_leakage_errors(record))
-        self.assertTrue(any("answer leakage" in error for error in validate_record(record)))
+        self.assertTrue(
+            any("answer leakage" in error for error in validate_record(record))
+        )
 
     def test_near_verbatim_answer_leakage_is_rejected(self):
         record = valid_record()
-        record["option_a"] = "La autoridad certificadora emite un certificado digital para vincular la identidad"
-        record["question"] = "La autoridad certificadora emite el certificado digital para vincular la identidad."
-        self.assertTrue(any("near-verbatim" in error for error in answer_leakage_errors(record)))
+        record["option_a"] = (
+            "La autoridad certificadora emite un certificado digital para vincular la identidad"
+        )
+        record["question"] = (
+            "La autoridad certificadora emite el certificado digital para vincular la identidad."
+        )
+        self.assertTrue(
+            any("near-verbatim" in error for error in answer_leakage_errors(record))
+        )
 
     def test_duplicate_options_and_wrong_identity_are_rejected(self):
         record = valid_record()
@@ -115,7 +158,9 @@ class QuestionRecordTests(unittest.TestCase):
         candidate = valid_record()
         existing = [copy.deepcopy(candidate)]
         existing[0]["stable_id"] = "qb-t10-other-1111111111111111"
-        existing[0]["question"] = "¿Qué documento vincula una clave pública a la identidad de un sujeto?"
+        existing[0]["question"] = (
+            "¿Qué documento vincula una clave pública a la identidad de un sujeto?"
+        )
         screen = screen_duplicates(candidate, existing, checked_at="2026-10-12")
         self.assertEqual(screen.near_lexical.status, "duplicate")
         self.assertGreaterEqual(screen.near_lexical.score, 0.92)
@@ -124,14 +169,27 @@ class QuestionRecordTests(unittest.TestCase):
 class RuntimeQuestionBankTests(unittest.TestCase):
     def test_runtime_bank_has_unique_prompts_and_fingerprints(self):
         artifact = (ROOT / "frontend/src/questions.js").read_text(encoding="utf-8")
-        runtime = json.loads(artifact[artifact.index("["):])
+        runtime = json.loads(artifact[artifact.index("[") :])
 
         self.assertEqual(len(runtime), len(SEED_QUESTIONS))
-        self.assertEqual([question["id"] for question in runtime], list(range(1, len(runtime) + 1)))
-        self.assertEqual(len({prompt_key(question["question"]) for question in SEED_QUESTIONS}), len(SEED_QUESTIONS))
-        self.assertEqual(len({fingerprint(question) for question in SEED_QUESTIONS}), len(SEED_QUESTIONS))
-        self.assertEqual(len({prompt_key(question["question"]) for question in runtime}), len(runtime))
-        self.assertEqual(len({fingerprint(question) for question in runtime}), len(runtime))
+        self.assertEqual(
+            [question["id"] for question in runtime], list(range(1, len(runtime) + 1))
+        )
+        self.assertEqual(
+            len({prompt_key(question["question"]) for question in SEED_QUESTIONS}),
+            len(SEED_QUESTIONS),
+        )
+        self.assertEqual(
+            len({fingerprint(question) for question in SEED_QUESTIONS}),
+            len(SEED_QUESTIONS),
+        )
+        self.assertEqual(
+            len({prompt_key(question["question"]) for question in runtime}),
+            len(runtime),
+        )
+        self.assertEqual(
+            len({fingerprint(question) for question in runtime}), len(runtime)
+        )
 
     def test_topic26_expansion_is_complete_balanced_and_validated(self):
         records = []
@@ -142,14 +200,30 @@ class RuntimeQuestionBankTests(unittest.TestCase):
             if lot_num >= 6:
                 self.assertEqual(payload["revision"], 2)
         self.assertEqual(len(records), 200)
-        self.assertEqual(Counter(record["correct"] for record in records), Counter({"A": 50, "B": 50, "C": 50, "D": 50}))
-        self.assertEqual(Counter(record["question_type"] for record in records), Counter({"concept": 140, "procedure": 30, "scenario": 30}))
+        self.assertEqual(
+            Counter(record["correct"] for record in records),
+            Counter({"A": 50, "B": 50, "C": 50, "D": 50}),
+        )
+        self.assertEqual(
+            Counter(record["question_type"] for record in records),
+            Counter({"concept": 140, "procedure": 30, "scenario": 30}),
+        )
         self.assertEqual(len({record["stable_id"] for record in records}), 200)
-        self.assertEqual(len({record["learning_objective_id"] for record in records}), 200)
-        self.assertTrue(all(record["sources"][0]["source_id"] == "BLAZOR-10" for record in records))
+        self.assertEqual(
+            len({record["learning_objective_id"] for record in records}), 200
+        )
+        self.assertTrue(
+            all(record["sources"][0]["source_id"] == "BLAZOR-10" for record in records)
+        )
         self.assertTrue(all(not answer_leakage_errors(record) for record in records))
         self.assertTrue(all(not validate_record(record) for record in records))
-        self.assertTrue(all(result["status"] == "unique" for record in records for result in record["deduplication"].values()))
+        self.assertTrue(
+            all(
+                result["status"] == "unique"
+                for record in records
+                for result in record["deduplication"].values()
+            )
+        )
 
     def test_topic26_supplemental_render_mode_boundaries_is_published_and_gated(self):
         path = ROOT / "docs/question-bank/accepted/topic-26-lot-11.json"
@@ -158,14 +232,37 @@ class RuntimeQuestionBankTests(unittest.TestCase):
         self.assertTrue(payload["supplemental"])
         self.assertTrue(payload["excluded_from_target_manifest"])
         self.assertEqual(len(records), 20)
-        self.assertEqual(Counter(record["correct"] for record in records), Counter({"A": 6, "B": 5, "C": 6, "D": 3}))
-        self.assertEqual({record["sources"][0]["source_id"] for record in records}, {"BLAZOR-10"})
-        self.assertTrue(all(record["sources"][0]["url"].endswith("components/render-modes?view=aspnetcore-10.0") for record in records))
+        self.assertEqual(
+            Counter(record["correct"] for record in records),
+            Counter({"A": 6, "B": 5, "C": 6, "D": 3}),
+        )
+        self.assertEqual(
+            {record["sources"][0]["source_id"] for record in records}, {"BLAZOR-10"}
+        )
+        self.assertTrue(
+            all(
+                record["sources"][0]["url"].endswith(
+                    "components/render-modes?view=aspnetcore-10.0"
+                )
+                for record in records
+            )
+        )
         self.assertEqual(len({record["stable_id"] for record in records}), 20)
-        self.assertTrue(all(record["learning_objective_id"].startswith("t26-lo-supp-") for record in records))
+        self.assertTrue(
+            all(
+                record["learning_objective_id"].startswith("t26-lo-supp-")
+                for record in records
+            )
+        )
         self.assertTrue(all(not answer_leakage_errors(record) for record in records))
         self.assertTrue(all(not validate_record(record) for record in records))
-        self.assertTrue(all(result["status"] == "unique" for record in records for result in record["deduplication"].values()))
+        self.assertTrue(
+            all(
+                result["status"] == "unique"
+                for record in records
+                for result in record["deduplication"].values()
+            )
+        )
 
     def test_topic27_supplemental_binding_rendering_is_published_and_gated(self):
         path = ROOT / "docs/question-bank/accepted/topic-27-lot-11.json"
@@ -174,13 +271,29 @@ class RuntimeQuestionBankTests(unittest.TestCase):
         self.assertTrue(payload["supplemental"])
         self.assertTrue(payload["excluded_from_target_manifest"])
         self.assertEqual(len(records), 20)
-        self.assertEqual(Counter(record["correct"] for record in records), Counter({"A": 5, "B": 6, "C": 6, "D": 3}))
-        self.assertEqual({record["sources"][0]["source_id"] for record in records}, {"BLAZOR-10"})
+        self.assertEqual(
+            Counter(record["correct"] for record in records),
+            Counter({"A": 5, "B": 6, "C": 6, "D": 3}),
+        )
+        self.assertEqual(
+            {record["sources"][0]["source_id"] for record in records}, {"BLAZOR-10"}
+        )
         self.assertEqual(len({record["stable_id"] for record in records}), 20)
-        self.assertTrue(all(record["learning_objective_id"].startswith("t27-lo-supp-") for record in records))
+        self.assertTrue(
+            all(
+                record["learning_objective_id"].startswith("t27-lo-supp-")
+                for record in records
+            )
+        )
         self.assertTrue(all(not answer_leakage_errors(record) for record in records))
         self.assertTrue(all(not validate_record(record) for record in records))
-        self.assertTrue(all(result["status"] == "unique" for record in records for result in record["deduplication"].values()))
+        self.assertTrue(
+            all(
+                result["status"] == "unique"
+                for record in records
+                for result in record["deduplication"].values()
+            )
+        )
 
     def test_topic28_supplemental_lifecycle_css_templates_is_quarantined(self):
         path = ROOT / "docs/question-bank/lots/topic-28-lot-11.json"
@@ -189,16 +302,38 @@ class RuntimeQuestionBankTests(unittest.TestCase):
         self.assertEqual(payload["state"], "candidates_written")
         self.assertTrue(payload["supplemental"])
         self.assertTrue(payload["excluded_from_target_manifest"])
-        self.assertEqual(payload["counts"], {"candidates": 20, "accepted": 0, "rejected": 0, "quarantined": 20})
+        self.assertEqual(
+            payload["counts"],
+            {"candidates": 20, "accepted": 0, "rejected": 0, "quarantined": 20},
+        )
         self.assertEqual(len(records), 20)
-        self.assertEqual({record["sources"][0]["source_id"] for record in records}, {"BLAZOR-10"})
+        self.assertEqual(
+            {record["sources"][0]["source_id"] for record in records}, {"BLAZOR-10"}
+        )
         self.assertEqual(len({record["stable_id"] for record in records}), 20)
-        self.assertTrue(all(record["learning_objective_id"].startswith("t28-lo-supp-") for record in records))
+        self.assertTrue(
+            all(
+                record["learning_objective_id"].startswith("t28-lo-supp-")
+                for record in records
+            )
+        )
         self.assertTrue(all(not answer_leakage_errors(record) for record in records))
         self.assertTrue(all(not validate_record(record) for record in records))
         self.assertTrue(all(record["status"] == "quarantined" for record in records))
-        self.assertTrue(all(record["deduplication"][name]["status"] == "unique" for record in records for name in ("exact", "lexical", "near_lexical")))
-        self.assertTrue(all(record["deduplication"][name]["status"] == "uncertain" for record in records for name in ("semantic", "concept")))
+        self.assertTrue(
+            all(
+                record["deduplication"][name]["status"] == "unique"
+                for record in records
+                for name in ("exact", "lexical", "near_lexical")
+            )
+        )
+        self.assertTrue(
+            all(
+                record["deduplication"][name]["status"] == "uncertain"
+                for record in records
+                for name in ("semantic", "concept")
+            )
+        )
 
 
 class CheckpointTests(unittest.TestCase):
@@ -237,47 +372,88 @@ class CheckpointTests(unittest.TestCase):
 
 class SourceRegisterTests(unittest.TestCase):
     def test_register_has_exact_topic_boundary_and_explicit_open_gates(self):
-        register = json.loads((ROOT / "docs/question-bank/source-register.json").read_text(encoding="utf-8"))
+        register = json.loads(
+            (ROOT / "docs/question-bank/source-register.json").read_text(
+                encoding="utf-8"
+            )
+        )
         topics = register["topic_coverage"]
         self.assertEqual([topic["topic_num"] for topic in topics], list(range(1, 41)))
         self.assertTrue(register["open_gates"])
         self.assertEqual(register["official_call"]["source_id"], "CALL-2691")
-        self.assertEqual(register["captain_decisions"]["objective_target"], "200 distinct learning objectives per topic, 8,000 objective IDs across topics 1-40")
+        self.assertEqual(
+            register["captain_decisions"]["objective_target"],
+            "200 distinct learning objectives per topic, 8,000 objective IDs across topics 1-40",
+        )
 
     def test_objective_manifest_has_200_gated_slots_per_topic(self):
-        manifest = json.loads((ROOT / "docs/question-bank/objective-manifest.json").read_text(encoding="utf-8"))
+        manifest = json.loads(
+            (ROOT / "docs/question-bank/objective-manifest.json").read_text(
+                encoding="utf-8"
+            )
+        )
         self.assertEqual(manifest["objective_count"], 8000)
         self.assertEqual(manifest["objectives_per_topic"], 200)
         self.assertEqual(manifest["researched_objective_count"], 4020)
         topic_counts = {}
         researched_count = 0
         for objective in manifest["objectives"]:
-            topic_counts[objective["topic_num"]] = topic_counts.get(objective["topic_num"], 0) + 1
+            topic_counts[objective["topic_num"]] = (
+                topic_counts.get(objective["topic_num"], 0) + 1
+            )
             if objective["statement"] is None:
-                self.assertEqual(objective["coverage_state"], "planned_pending_source_verification")
+                self.assertEqual(
+                    objective["coverage_state"], "planned_pending_source_verification"
+                )
             else:
                 researched_count += 1
-                self.assertEqual(objective["coverage_state"], "researched_pending_independent_review")
+                self.assertEqual(
+                    objective["coverage_state"], "researched_pending_independent_review"
+                )
                 self.assertTrue(objective["citation"])
             self.assertEqual(objective["reviewer_decision"], "not_reviewed")
         self.assertEqual(researched_count, 4020)
         self.assertEqual(topic_counts, {topic: 200 for topic in range(1, 41)})
 
     def test_topic_one_lot_is_candidate_only_and_blockers_are_recorded(self):
-        lot = json.loads((ROOT / "docs/question-bank/lots/topic-01-lot-01.json").read_text(encoding="utf-8"))
-        register = json.loads((ROOT / "docs/question-bank/source-register.json").read_text(encoding="utf-8"))
+        lot = json.loads(
+            (ROOT / "docs/question-bank/lots/topic-01-lot-01.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        register = json.loads(
+            (ROOT / "docs/question-bank/source-register.json").read_text(
+                encoding="utf-8"
+            )
+        )
         self.assertEqual(lot["state"], "candidates_written")
         self.assertEqual(lot["counts"]["accepted"], 0)
         self.assertEqual(lot["counts"]["quarantined"], 20)
-        self.assertTrue(all(question["status"] == "quarantined" for question in lot["questions"]))
-        accepted = json.loads((ROOT / "docs/question-bank/accepted/topic-01-lot-01.json").read_text(encoding="utf-8"))
-        import_report = json.loads((ROOT / "docs/question-bank/imports/topic-01-lot-01-dry-run.json").read_text(encoding="utf-8"))
+        self.assertTrue(
+            all(question["status"] == "quarantined" for question in lot["questions"])
+        )
+        accepted = json.loads(
+            (ROOT / "docs/question-bank/accepted/topic-01-lot-01.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        import_report = json.loads(
+            (
+                ROOT / "docs/question-bank/imports/topic-01-lot-01-dry-run.json"
+            ).read_text(encoding="utf-8")
+        )
         self.assertEqual(accepted["state"], "reviewed")
         self.assertEqual(accepted["counts"]["accepted"], 20)
-        self.assertTrue(all(question["status"] == "validated" for question in accepted["questions"]))
+        self.assertTrue(
+            all(question["status"] == "validated" for question in accepted["questions"])
+        )
         self.assertEqual(import_report["status"], "passed")
         self.assertEqual(import_report["writes_performed"], 0)
-        blocked_topics = {topic for entry in register["source_blocker_log"] for topic in entry["topic_nums"]}
+        blocked_topics = {
+            topic
+            for entry in register["source_blocker_log"]
+            for topic in entry["topic_nums"]
+        }
         self.assertTrue({37, 38, 39}.issubset(blocked_topics))
 
 

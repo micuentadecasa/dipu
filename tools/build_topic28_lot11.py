@@ -12,9 +12,9 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from question_bank.checkpoints import append_checkpoint, file_sha256
-from question_bank.validation import screen_duplicates, stable_id_for, validate_record
-from seed_data import SEED_QUESTIONS
+from question_bank.checkpoints import append_checkpoint, file_sha256  # noqa: E402
+from question_bank.validation import screen_duplicates, stable_id_for, validate_record  # noqa: E402
+from seed_data import SEED_QUESTIONS  # noqa: E402
 
 DATE = "2026-10-15"
 TOPIC = 28
@@ -48,8 +48,12 @@ def title_for(url: str) -> str:
 
 def load_accepted_records() -> list[dict]:
     records = []
-    for path in sorted((ROOT / "docs/question-bank/accepted").glob("topic-*-lot-*.json")):
-        records.extend(json.loads(path.read_text(encoding="utf-8")).get("questions", []))
+    for path in sorted(
+        (ROOT / "docs/question-bank/accepted").glob("topic-*-lot-*.json")
+    ):
+        records.extend(
+            json.loads(path.read_text(encoding="utf-8")).get("questions", [])
+        )
     return records
 
 
@@ -81,8 +85,18 @@ def make_record(spec: dict, numeric_id: int) -> dict:
         "question_type": spec["question_type"],
         "sources": [source],
         "verification": {
-            "answer": {"status": "uncertain", "reviewer": "awaiting-independent-review", "checked_at": DATE, "basis": "Candidate answer requires an independent second pass against the cited official source."},
-            "explanation": {"status": "uncertain", "reviewer": "awaiting-independent-review", "checked_at": DATE, "basis": "Candidate explanation requires an independent second pass against the cited official source."},
+            "answer": {
+                "status": "uncertain",
+                "reviewer": "awaiting-independent-review",
+                "checked_at": DATE,
+                "basis": "Candidate answer requires an independent second pass against the cited official source.",
+            },
+            "explanation": {
+                "status": "uncertain",
+                "reviewer": "awaiting-independent-review",
+                "checked_at": DATE,
+                "basis": "Candidate explanation requires an independent second pass against the cited official source.",
+            },
             "reviewed_at": DATE,
             "reviewer_decision": "quarantined",
         },
@@ -100,16 +114,28 @@ def main() -> int:
     accepted = load_accepted_records()
     own_objectives = {spec["objective_id"] for spec in specs}
     own_questions = {spec["question"] for spec in specs}
-    existing = [question for question in SEED_QUESTIONS if question.get("question") not in own_questions]
-    existing.extend(record for record in accepted if record.get("learning_objective_id") not in own_objectives)
+    existing = [
+        question
+        for question in SEED_QUESTIONS
+        if question.get("question") not in own_questions
+    ]
+    existing.extend(
+        record
+        for record in accepted
+        if record.get("learning_objective_id") not in own_objectives
+    )
     start_id = max([1200, *(record["id"] for record in accepted)]) + 1
     records = []
     for offset, spec in enumerate(specs):
         record = make_record(spec, start_id + offset)
-        record["deduplication"] = screen_duplicates(record, existing + records, checked_at=DATE).as_dict()
+        record["deduplication"] = screen_duplicates(
+            record, existing + records, checked_at=DATE
+        ).as_dict()
         errors = validate_record(record)
         if errors:
-            raise RuntimeError(f"candidate {record['stable_id']} failed validation: {errors}")
+            raise RuntimeError(
+                f"candidate {record['stable_id']} failed validation: {errors}"
+            )
         records.append(record)
 
     source_hash = file_sha256(SOURCE_REGISTER)
@@ -132,7 +158,9 @@ def main() -> int:
         "questions": records,
     }
     LOT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    LOT_PATH.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    LOT_PATH.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
     checkpoint = {
         "schema_version": "1.0",
         "syllabus_hash": syllabus_hash,
@@ -144,12 +172,16 @@ def main() -> int:
         "objective_ids": [record["learning_objective_id"] for record in records],
         "stable_ids": [record["stable_id"] for record in records],
         "counts": payload["counts"],
-        "input_hash": hashlib.sha256((source_hash + manifest_hash).encode()).hexdigest(),
+        "input_hash": hashlib.sha256(
+            (source_hash + manifest_hash).encode()
+        ).hexdigest(),
         "output_hash": file_sha256(LOT_PATH),
         "last_import": {"status": "not_started", "transaction": None},
     }
     appended = append_checkpoint(CHECKPOINT_PATH, checkpoint)
-    print(f"topic {TOPIC} supplemental lot {LOT}: wrote {len(records)} quarantined candidates; checkpoint {'appended' if appended else 'already present'}")
+    print(
+        f"topic {TOPIC} supplemental lot {LOT}: wrote {len(records)} quarantined candidates; checkpoint {'appended' if appended else 'already present'}"
+    )
     return 0
 
 
