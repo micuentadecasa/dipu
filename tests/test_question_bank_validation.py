@@ -151,6 +151,22 @@ class RuntimeQuestionBankTests(unittest.TestCase):
         self.assertTrue(all(not validate_record(record) for record in records))
         self.assertTrue(all(result["status"] == "unique" for record in records for result in record["deduplication"].values()))
 
+    def test_topic26_supplemental_render_mode_boundaries_is_published_and_gated(self):
+        path = ROOT / "docs/question-bank/accepted/topic-26-lot-11.json"
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        records = payload["questions"]
+        self.assertTrue(payload["supplemental"])
+        self.assertTrue(payload["excluded_from_target_manifest"])
+        self.assertEqual(len(records), 20)
+        self.assertEqual(Counter(record["correct"] for record in records), Counter({"A": 6, "B": 5, "C": 6, "D": 3}))
+        self.assertEqual({record["sources"][0]["source_id"] for record in records}, {"BLAZOR-10"})
+        self.assertTrue(all(record["sources"][0]["url"].endswith("components/render-modes?view=aspnetcore-10.0") for record in records))
+        self.assertEqual(len({record["stable_id"] for record in records}), 20)
+        self.assertTrue(all(record["learning_objective_id"].startswith("t26-lo-supp-") for record in records))
+        self.assertTrue(all(not answer_leakage_errors(record) for record in records))
+        self.assertTrue(all(not validate_record(record) for record in records))
+        self.assertTrue(all(result["status"] == "unique" for record in records for result in record["deduplication"].values()))
+
 
 class CheckpointTests(unittest.TestCase):
     def manifest(self):

@@ -21,8 +21,10 @@ SEED_PATH = ROOT / "seed_data.py"
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("topic_num", type=int, choices=tuple(range(1, 41)))
-    parser.add_argument("--lot-num", type=int, default=1, choices=tuple(range(1, 11)))
+    parser.add_argument("--lot-num", type=int, default=1)
     args = parser.parse_args()
+    if args.lot_num < 1:
+        parser.error("--lot-num must be a positive integer")
     stem = f"topic-{args.topic_num:02d}-lot-{args.lot_num:02d}"
     accepted_path = ROOT / "docs/question-bank/accepted" / f"{stem}.json"
     checkpoint_path = ROOT / "docs/question-bank/checkpoints" / f"{stem}.jsonl"

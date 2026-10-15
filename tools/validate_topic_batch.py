@@ -20,8 +20,10 @@ from seed_data import SEED_QUESTIONS
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("topic_num", type=int, choices=tuple(range(2, 41)))
-    parser.add_argument("--lot-num", type=int, default=1, choices=tuple(range(1, 11)))
+    parser.add_argument("--lot-num", type=int, default=1)
     args = parser.parse_args()
+    if args.lot_num < 1:
+        parser.error("--lot-num must be a positive integer")
     stem = f"topic-{args.topic_num:02d}-lot-{args.lot_num:02d}"
     accepted_path = ROOT / "docs/question-bank/accepted" / f"{stem}.json"
     checkpoint_path = ROOT / "docs/question-bank/checkpoints" / f"{stem}.jsonl"
@@ -42,7 +44,9 @@ def main() -> int:
             continue
         prior_payload = json.loads(prior_path.read_text(encoding="utf-8"))
         prior_accepted += len(prior_payload.get("questions", []))
-    runtime_before_batch = 399 + prior_accepted
+    seed_text = (ROOT / "seed_data.py").read_text(encoding="utf-8")
+    marker = f"QUESTION_BANK_ACCEPTED_TOPIC_{args.topic_num:02d}_LOT_{args.lot_num:02d}"
+    runtime_before_batch = len(SEED_QUESTIONS) - (len(records) if marker in seed_text else 0)
     if any(record["id"] <= 1200 for record in records):
         raise RuntimeError("accepted numeric ID collides with legacy snapshot")
     if any(record["id"] <= 1200 + 20 * (args.topic_num - 1) for record in records):
