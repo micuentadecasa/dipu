@@ -48997,13 +48997,13 @@ export const QUESTIONS = [
   {
     "id": 4455,
     "topic_num": 28,
-    "question": "¿Dónde se configura un patrón personalizado para el identificador de alcance CSS?",
-    "option_a": "En el archivo de proyecto",
-    "option_b": "En el archivo .razor.css",
-    "option_c": "En un parámetro RenderFragment",
-    "option_d": "En appsettings.json",
-    "correct": "A",
-    "explanation": "La documentación configura el patrón personalizado del scope identifier en el archivo del proyecto."
+    "question": "¿Dónde se referencia normalmente la hoja de estilos CSS aislada agrupada?",
+    "option_a": "En un archivo JSON",
+    "option_b": "Dentro de la etiqueta <head>",
+    "option_c": "Solo dentro de un componente hijo",
+    "option_d": "En una base de datos",
+    "correct": "B",
+    "explanation": "La hoja de estilos agrupada se produce como un activo estático y se referencia dentro de la etiqueta <head>."
   },
   {
     "id": 4456,
@@ -49041,13 +49041,13 @@ export const QUESTIONS = [
   {
     "id": 4459,
     "topic_num": 28,
-    "question": "¿Qué configuración permite que un componente derivado herede estilos scoped de un componente base?",
-    "option_a": "Usar el mismo scope identifier en las hojas del componente base y derivado",
-    "option_b": "Añadir un RenderFragment",
-    "option_c": "Quitar el archivo .razor.css",
-    "option_d": "Mover el estilo a appsettings.json",
-    "correct": "A",
-    "explanation": "La documentación usa identificadores de alcance compartidos para que una hoja de componente derivado herede estilos de una hoja base."
+    "question": "¿Cuántos caracteres tiene el string generado que representa el identificador de alcance CSS?",
+    "option_a": "Cinco",
+    "option_b": "Veinte",
+    "option_c": "Diez",
+    "option_d": "No tiene longitud definida",
+    "correct": "C",
+    "explanation": "La documentación describe el marcador {STRING} del identificador generado como un string de diez caracteres."
   },
   {
     "id": 4460,
@@ -49063,13 +49063,13 @@ export const QUESTIONS = [
   {
     "id": 4461,
     "topic_num": 28,
-    "question": "En el ejemplo TemplatedNavBar, ¿qué tipo tiene el parámetro StartContent?",
-    "option_a": "RenderFragment<TItem>",
-    "option_b": "string",
-    "option_c": "RenderFragment",
-    "option_d": "IReadOnlyList<TItem>",
-    "correct": "C",
-    "explanation": "StartContent es un RenderFragment sin valor tipado; ItemTemplate es el fragmento que recibe TItem."
+    "question": "¿Qué recibe RenderFragment<TValue> cuando se invoca?",
+    "option_a": "Una hoja CSS",
+    "option_b": "Un objeto JSON",
+    "option_c": "Una ruta de navegación",
+    "option_d": "Un valor del tipo TValue",
+    "correct": "D",
+    "explanation": "RenderFragment<TValue> es un fragmento que recibe un valor del tipo TValue al invocarse."
   },
   {
     "id": 4462,
@@ -49096,13 +49096,13 @@ export const QUESTIONS = [
   {
     "id": 4464,
     "topic_num": 28,
-    "question": "En el ejemplo de TemplatedNavBar, ¿qué parámetros suministran plantillas RenderFragment<TValue>?",
-    "option_a": "Header y Footer",
-    "option_b": "Items y TItem",
-    "option_c": "StartContent e ItemTemplate",
-    "option_d": "Context y Type",
-    "correct": "C",
-    "explanation": "StartContent e ItemTemplate son los parámetros de plantilla mostrados en el ejemplo."
+    "question": "¿Cuál es el nombre implícito del parámetro de una plantilla RenderFragment<TValue> si no se establece Context?",
+    "option_a": "context",
+    "option_b": "item",
+    "option_c": "template",
+    "option_d": "value",
+    "correct": "A",
+    "explanation": "Sin Context explícito, el parámetro implícito de la plantilla se llama context."
   },
   {
     "id": 4465,
@@ -49151,12 +49151,12 @@ export const QUESTIONS = [
   {
     "id": 4469,
     "topic_num": 28,
-    "question": "En TemplatedNavBar, ¿qué diferencia de tipo existe entre StartContent e ItemTemplate?",
-    "option_a": "Ambos son RenderFragment<TItem>",
-    "option_b": "StartContent es CSS y ItemTemplate es HTML",
-    "option_c": "Ambos son solo texto",
-    "option_d": "StartContent es RenderFragment e ItemTemplate es RenderFragment<TItem>",
-    "correct": "D",
-    "explanation": "El ejemplo declara StartContent como RenderFragment e ItemTemplate como RenderFragment<TItem>, porque solo la fila recibe el elemento tipado."
+    "question": "¿Cómo se especifica explícitamente el tipo genérico TItem en una instancia de componente?",
+    "option_a": "Con el atributo ContextType",
+    "option_b": "Con una regla CSS",
+    "option_c": "Con el atributo TItem=\"Pet\"",
+    "option_d": "Con ParameterView.Empty",
+    "correct": "C",
+    "explanation": "Cuando la inferencia no es posible, el tipo puede proporcionarse mediante un atributo cuyo nombre coincide con el parámetro genérico, como TItem=\"Pet\"."
   }
 ]

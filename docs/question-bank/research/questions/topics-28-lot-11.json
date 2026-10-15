@@ -101,16 +101,16 @@
           "objective_id": "t28-lo-supp-006",
           "difficulty": "advanced",
           "question_type": "scenario",
-          "question": "¿Dónde se configura un patrón personalizado para el identificador de alcance CSS?",
+          "question": "¿Dónde se referencia normalmente la hoja de estilos CSS aislada agrupada?",
           "options": [
-            "En el archivo de proyecto",
-            "En el archivo .razor.css",
-            "En un parámetro RenderFragment",
-            "En appsettings.json"
+            "En un archivo JSON",
+            "Dentro de la etiqueta <head>",
+            "Solo dentro de un componente hijo",
+            "En una base de datos"
           ],
-          "correct": "A",
-          "explanation": "La documentación configura el patrón personalizado del scope identifier en el archivo del proyecto.",
-          "citation": "CSS isolation — custom scope format",
+          "correct": "B",
+          "explanation": "La hoja de estilos agrupada se produce como un activo estático y se referencia dentro de la etiqueta <head>.",
+          "citation": "CSS isolation — bundled stylesheet link",
           "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0"
         },
         {
@@ -165,16 +165,16 @@
           "objective_id": "t28-lo-supp-010",
           "difficulty": "advanced",
           "question_type": "scenario",
-          "question": "¿Qué configuración permite que un componente derivado herede estilos scoped de un componente base?",
+          "question": "¿Cuántos caracteres tiene el string generado que representa el identificador de alcance CSS?",
           "options": [
-            "Usar el mismo scope identifier en las hojas del componente base y derivado",
-            "Añadir un RenderFragment",
-            "Quitar el archivo .razor.css",
-            "Mover el estilo a appsettings.json"
+            "Cinco",
+            "Veinte",
+            "Diez",
+            "No tiene longitud definida"
           ],
-          "correct": "A",
-          "explanation": "La documentación usa identificadores de alcance compartidos para que una hoja de componente derivado herede estilos de una hoja base.",
-          "citation": "CSS isolation — inherited scope configuration",
+          "correct": "C",
+          "explanation": "La documentación describe el marcador {STRING} del identificador generado como un string de diez caracteres.",
+          "citation": "CSS isolation — generated scope length",
           "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0"
         },
         {
@@ -197,16 +197,16 @@
           "objective_id": "t28-lo-supp-012",
           "difficulty": "intermediate",
           "question_type": "concept",
-          "question": "En el ejemplo TemplatedNavBar, ¿qué tipo tiene el parámetro StartContent?",
+          "question": "¿Qué recibe RenderFragment<TValue> cuando se invoca?",
           "options": [
-            "RenderFragment<TItem>",
-            "string",
-            "RenderFragment",
-            "IReadOnlyList<TItem>"
+            "Una hoja CSS",
+            "Un objeto JSON",
+            "Una ruta de navegación",
+            "Un valor del tipo TValue"
           ],
-          "correct": "C",
-          "explanation": "StartContent es un RenderFragment sin valor tipado; ItemTemplate es el fragmento que recibe TItem.",
-          "citation": "Templated components — untyped start content",
+          "correct": "D",
+          "explanation": "RenderFragment<TValue> es un fragmento que recibe un valor del tipo TValue al invocarse.",
+          "citation": "Templated components — typed fragment invocation",
           "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-10.0"
         },
         {
@@ -245,16 +245,16 @@
           "objective_id": "t28-lo-supp-015",
           "difficulty": "intermediate",
           "question_type": "concept",
-          "question": "En el ejemplo de TemplatedNavBar, ¿qué parámetros suministran plantillas RenderFragment<TValue>?",
+          "question": "¿Cuál es el nombre implícito del parámetro de una plantilla RenderFragment<TValue> si no se establece Context?",
           "options": [
-            "Header y Footer",
-            "Items y TItem",
-            "StartContent e ItemTemplate",
-            "Context y Type"
+            "context",
+            "item",
+            "template",
+            "value"
           ],
-          "correct": "C",
-          "explanation": "StartContent e ItemTemplate son los parámetros de plantilla mostrados en el ejemplo.",
-          "citation": "Templated components — named template parameters",
+          "correct": "A",
+          "explanation": "Sin Context explícito, el parámetro implícito de la plantilla se llama context.",
+          "citation": "Templated components — implicit context name",
           "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-10.0"
         },
         {
@@ -325,16 +325,16 @@
           "objective_id": "t28-lo-supp-020",
           "difficulty": "advanced",
           "question_type": "concept",
-          "question": "En TemplatedNavBar, ¿qué diferencia de tipo existe entre StartContent e ItemTemplate?",
+          "question": "¿Cómo se especifica explícitamente el tipo genérico TItem en una instancia de componente?",
           "options": [
-            "Ambos son RenderFragment<TItem>",
-            "StartContent es CSS y ItemTemplate es HTML",
-            "Ambos son solo texto",
-            "StartContent es RenderFragment e ItemTemplate es RenderFragment<TItem>"
+            "Con el atributo ContextType",
+            "Con una regla CSS",
+            "Con el atributo TItem=\"Pet\"",
+            "Con ParameterView.Empty"
           ],
-          "correct": "D",
-          "explanation": "El ejemplo declara StartContent como RenderFragment e ItemTemplate como RenderFragment<TItem>, porque solo la fila recibe el elemento tipado.",
-          "citation": "Templated components — typed and untyped templates",
+          "correct": "C",
+          "explanation": "Cuando la inferencia no es posible, el tipo puede proporcionarse mediante un atributo cuyo nombre coincide con el parámetro genérico, como TItem=\"Pet\".",
+          "citation": "Templated components — explicit type attribute",
           "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-10.0"
         }
       ]
