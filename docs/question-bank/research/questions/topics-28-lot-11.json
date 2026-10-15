@@ -109,20 +109,20 @@
           "objective_id": "t28-lo-supp-005",
           "difficulty": "intermediate",
           "question_type": "concept",
-          "question": "¿Qué callback de ciclo de vida no se invoca durante el prerenderizado?",
+          "question": "¿Qué orden de finalización puede garantizarse para la inicialización síncrona del padre y del hijo?",
           "options": [
-            "OnInitialized",
-            "OnParametersSet",
-            "OnAfterRender{Async}",
-            "SetParametersAsync"
+            "El padre termina antes que el hijo",
+            "No se garantiza un orden distinto del flujo del ciclo",
+            "El hijo termina siempre primero",
+            "Ambos terminan juntos"
           ],
-          "correct": "C",
-          "explanation": "OnAfterRender y OnAfterRenderAsync no se ejecutan durante el prerenderizado.",
-          "citation": "After component render (OnAfterRender{Async})",
+          "correct": "B",
+          "explanation": "La documentación distingue la inicialización síncrona del orden asíncrono; el flujo general del ciclo no debe confundirse con una garantía de finalización simultánea.",
+          "citation": "Component initialization (OnInitialized{Async})",
           "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
           "semantic_review": {
             "status": "unique",
-            "proposition_key": "after-render-prerender-immunity",
+            "proposition_key": "synchronous-initialization-completion-order",
             "published_match_count": 0,
             "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
           }
@@ -283,22 +283,22 @@
         },
         {
           "objective_id": "t28-lo-supp-013",
-          "difficulty": "intermediate",
-          "question_type": "concept",
-          "question": "¿Qué ocurre con los estilos aislados aportados por una Razor Class Library?",
+          "difficulty": "advanced",
+          "question_type": "scenario",
+          "question": "¿Qué limitación se documenta para las reglas @import dentro de CSS aislado?",
           "options": [
-            "Se descartan al compilar",
-            "Se incluyen en el bundle de estilos de la aplicación",
-            "Solo se aplican durante prerender",
+            "Siempre se convierten en JavaScript",
+            "Solo funcionan en el constructor",
+            "No se admiten como importaciones CSS del aislamiento",
             "Se convierten en parámetros"
           ],
-          "correct": "B",
-          "explanation": "Los estilos aislados de una RCL se incorporan al bundle de estilos de la aplicación consumidora.",
-          "citation": "CSS isolation in Razor class libraries",
+          "correct": "C",
+          "explanation": "Las importaciones CSS no son una vía admitida para incorporar reglas al CSS aislado.",
+          "citation": "CSS isolation — CSS imports",
           "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0",
           "semantic_review": {
             "status": "unique",
-            "proposition_key": "rcl-css-bundle-import",
+            "proposition_key": "isolated-css-import-limitation",
             "published_match_count": 0,
             "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
           }
@@ -307,20 +307,20 @@
           "objective_id": "t28-lo-supp-014",
           "difficulty": "advanced",
           "question_type": "scenario",
-          "question": "¿Qué propiedad controla la desactivación de la agrupación de CSS aislado?",
+          "question": "¿Cuándo debe ejecutarse la compilación de un preprocesador CSS respecto de la reescritura de selectores de Blazor?",
           "options": [
-            "DisableScopedCss",
-            "DisableScopedCssBundling",
-            "NoScopedStyles",
-            "ScopedCssOff"
+            "Antes de que Blazor reescriba los selectores",
+            "Después de publicar la aplicación",
+            "Solo durante prerender",
+            "Nunca"
           ],
-          "correct": "B",
-          "explanation": "DisableScopedCssBundling es la propiedad de MSBuild usada para desactivar la agrupación.",
-          "citation": "CSS isolation bundling",
+          "correct": "A",
+          "explanation": "La compilación del preprocesador debe ocurrir antes de que Blazor reescriba los selectores aislados.",
+          "citation": "CSS isolation — preprocessor ordering",
           "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0",
           "semantic_review": {
             "status": "unique",
-            "proposition_key": "disable-scoped-css-bundling",
+            "proposition_key": "css-preprocessor-before-rewrite",
             "published_match_count": 0,
             "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
           }
@@ -371,22 +371,22 @@
         },
         {
           "objective_id": "t28-lo-supp-017",
-          "difficulty": "basic",
+          "difficulty": "intermediate",
           "question_type": "concept",
-          "question": "¿Qué atributo renombra el parámetro implícito de una plantilla tipada?",
+          "question": "¿Qué declara @typeparam TItem en un componente Razor genérico?",
           "options": [
-            "TypeName",
-            "Context",
-            "TemplateName",
-            "Scope"
+            "Una propiedad de navegación",
+            "Un identificador CSS",
+            "Un parámetro de ruta",
+            "El parámetro de tipo del componente"
           ],
-          "correct": "B",
-          "explanation": "El atributo Context cambia el nombre del parámetro implícito de la plantilla.",
-          "citation": "Templated components",
+          "correct": "D",
+          "explanation": "@typeparam TItem declara el parámetro de tipo que hace genérico al componente Razor.",
+          "citation": "Templated components — @typeparam declaration",
           "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-10.0",
           "semantic_review": {
             "status": "unique",
-            "proposition_key": "context-renames-template-parameter",
+            "proposition_key": "typeparam-declares-component-type",
             "published_match_count": 0,
             "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
           }
@@ -439,20 +439,20 @@
           "objective_id": "t28-lo-supp-020",
           "difficulty": "intermediate",
           "question_type": "concept",
-          "question": "¿Qué diferencia conceptual hay entre RenderFragment y RenderFragment<TValue>?",
+          "question": "¿Qué colección tipada usa el ejemplo genérico para proporcionar los elementos a TemplatedNavBar?",
           "options": [
-            "Ambos exigen el mismo valor",
-            "RenderFragment solo existe en RCL",
-            "RenderFragment<TValue> es siempre CSS",
-            "El segundo recibe un valor tipado al invocarse"
+            "IReadOnlyList<T>",
+            "RenderFragment",
+            "ParameterView.Empty",
+            "string"
           ],
-          "correct": "D",
-          "explanation": "RenderFragment<TValue> añade un valor de tipo TValue al fragmento renderizable.",
-          "citation": "Templated components",
+          "correct": "A",
+          "explanation": "El ejemplo proporciona los elementos del componente genérico mediante IReadOnlyList<T>.",
+          "citation": "Templated components — IReadOnlyList<T>",
           "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-10.0",
           "semantic_review": {
             "status": "unique",
-            "proposition_key": "typed-versus-untyped-render-fragment",
+            "proposition_key": "generic-component-items-collection",
             "published_match_count": 0,
             "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
           }
