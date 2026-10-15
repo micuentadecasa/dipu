@@ -201,6 +201,12 @@ class RuntimeQuestionBankTests(unittest.TestCase):
         self.assertTrue(all(not answer_leakage_errors(record) for record in records))
         self.assertTrue(all(not validate_record(record) for record in records))
         self.assertTrue(all(result["status"] == "unique" for record in records for result in record["deduplication"].values()))
+        candidates = json.loads((ROOT / "docs/question-bank/lots/topic-28-lot-11.json").read_text(encoding="utf-8"))["questions"]
+        candidate_by_id = {record["stable_id"]: record for record in candidates}
+        for record in records:
+            source = candidate_by_id[record["stable_id"]]
+            for name in ("exact", "lexical", "near_lexical"):
+                self.assertEqual(record["deduplication"][name], source["deduplication"][name])
 
 
 class CheckpointTests(unittest.TestCase):

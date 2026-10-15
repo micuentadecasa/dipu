@@ -65,10 +65,19 @@ def main() -> int:
             "reviewed_at": DATE,
             "reviewer_decision": "accepted",
         }
+        deterministic = candidate.get("deduplication", {})
+        for name in ("exact", "lexical", "near_lexical"):
+            if deterministic.get(name, {}).get("status") != "unique":
+                raise RuntimeError(f"deterministic duplicate detected for question {index}: {name}")
         reviewed["deduplication"] = {
-            name: {"status": "unique", "checked_at": DATE, "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."}
-            for name in ("exact", "lexical", "near_lexical", "semantic", "concept")
+            name: dict(result) for name, result in deterministic.items()
         }
+        for name in ("semantic", "concept"):
+            reviewed["deduplication"][name] = {
+                "status": "unique",
+                "checked_at": DATE,
+                "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot.",
+            }
         reviewed["status"] = "validated"
         errors = validate_record(reviewed)
         if errors:
@@ -80,8 +89,11 @@ def main() -> int:
             "answer": expected[0],
             "citation": expected[1],
             "source_tier": reviewed["sources"][0]["tier"],
-            "semantic_duplicate": "unique",
-            "concept_collision": "unique",
+            "exact_duplicate": reviewed["deduplication"]["exact"]["status"],
+            "lexical_duplicate": reviewed["deduplication"]["lexical"]["status"],
+            "near_lexical_duplicate": reviewed["deduplication"]["near_lexical"]["status"],
+            "semantic_duplicate": reviewed["deduplication"]["semantic"]["status"],
+            "concept_collision": reviewed["deduplication"]["concept"]["status"],
             "decision": "accepted",
             "reviewed_at": DATE,
         })
