@@ -14,7 +14,7 @@
 | Quarantined candidate audits | 4,020 | Original candidate lots remain audit trails; 460 answer-leaking records are archived with replacements |
 | Deterministic duplicate matches | 0 | Exact, lexical and near-lexical checks against legacy/topic-lot records |
 | Semantic/concept decisions | 4,020 unique | Independently reviewed against the objective and proposition |
-| Native import/export | 4,020 target records | Accepted target lots are imported through `seed_data.py`; duplicate-free `frontend/src/questions.js` contains 4,469 records after adding 60 explicitly supplemental records from topics 26--28 |
+| Native import/export | 4,020 target records | Accepted target lots are imported through `seed_data.py`; duplicate-free `frontend/src/questions.js` contains 4,449 records after adding 40 explicitly supplemental records from topics 26--27 |
 | Published batches | 126 | Topics 1--19 lot 1, topic 20 lots 1--5, topics 21--22 lot 1, and topics 23--40 lots 1--5 are published in the native artifacts |
 
 ## Lot 1 distributions
