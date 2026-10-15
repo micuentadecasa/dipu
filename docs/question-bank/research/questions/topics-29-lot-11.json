@@ -1,0 +1,334 @@
+{
+  "generated_at": "2026-10-15",
+  "research_artifact": "docs/question-bank/research/topic-29-lot-11-forms-validation.md",
+  "topic_num": 29,
+  "lot_num": 11,
+  "revision": 1,
+  "supplemental": true,
+  "excluded_from_target_manifest": true,
+  "source_ids": [
+    "BLAZOR-10"
+  ],
+  "questions": [
+    {
+      "objective_id": "t29-lo-supp-001",
+      "question": "What does EditForm's OnSubmit handler receive?",
+      "options": [
+        "The EditContext",
+        "Only the model",
+        "A RenderFragment",
+        "An HTTP response"
+      ],
+      "correct": "A",
+      "explanation": "OnSubmit receives the form's EditContext.",
+      "difficulty": "basic",
+      "question_type": "concept",
+      "citation": "EditForm — OnSubmit and EditContext",
+      "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/forms/?view=aspnetcore-10.0"
+    },
+    {
+      "objective_id": "t29-lo-supp-002",
+      "question": "Which callback runs when an EditForm submission has no validation errors?",
+      "options": [
+        "OnValidSubmit",
+        "OnInvalidSubmit",
+        "OnSubmitError",
+        "OnParsed"
+      ],
+      "correct": "A",
+      "explanation": "OnValidSubmit runs for a valid edit context.",
+      "difficulty": "basic",
+      "question_type": "concept",
+      "citation": "EditForm — OnValidSubmit",
+      "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/forms/?view=aspnetcore-10.0"
+    },
+    {
+      "objective_id": "t29-lo-supp-003",
+      "question": "Which callback runs when validation finds errors during EditForm submission?",
+      "options": [
+        "OnValidSubmit",
+        "OnInvalidSubmit",
+        "OnRender",
+        "OnInitialized"
+      ],
+      "correct": "B",
+      "explanation": "OnInvalidSubmit runs when the edit context is invalid.",
+      "difficulty": "basic",
+      "question_type": "concept",
+      "citation": "EditForm — OnInvalidSubmit",
+      "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/forms/?view=aspnetcore-10.0"
+    },
+    {
+      "objective_id": "t29-lo-supp-004",
+      "question": "What object tracks field state and validation messages for a Blazor form?",
+      "options": [
+        "EditContext",
+        "RenderFragment",
+        "NavigationManager",
+        "IJSRuntime"
+      ],
+      "correct": "A",
+      "explanation": "EditContext tracks the model, modified fields, and validation messages.",
+      "difficulty": "basic",
+      "question_type": "concept",
+      "citation": "EditContext",
+      "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/forms/?view=aspnetcore-10.0"
+    },
+    {
+      "objective_id": "t29-lo-supp-005",
+      "question": "What is the purpose of DataAnnotationsValidator in an EditForm?",
+      "options": [
+        "Enable DataAnnotations validation",
+        "Serialize the model to JSON",
+        "Render a submit button",
+        "Disable field binding"
+      ],
+      "correct": "A",
+      "explanation": "It enables validation based on DataAnnotations attributes on the model.",
+      "difficulty": "basic",
+      "question_type": "concept",
+      "citation": "DataAnnotationsValidator",
+      "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/forms/?view=aspnetcore-10.0"
+    },
+    {
+      "objective_id": "t29-lo-supp-006",
+      "question": "Which component displays validation messages for one field?",
+      "options": [
+        "All messages in the form",
+        "Messages associated with the selected field",
+        "The submitted model",
+        "The input's raw text"
+      ],
+      "correct": "B",
+      "explanation": "The field-specific component displays messages associated with its field expression.",
+      "difficulty": "basic",
+      "question_type": "concept",
+      "citation": "ValidationMessage component",
+      "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/forms/?view=aspnetcore-10.0"
+    },
+    {
+      "objective_id": "t29-lo-supp-007",
+      "question": "Which component displays all validation messages in the current EditContext?",
+      "options": [
+        "A summary of the form's messages",
+        "Only the selected field's messages",
+        "The input's raw text",
+        "The edit context object"
+      ],
+      "correct": "A",
+      "explanation": "The summary component displays the form's validation messages.",
+      "difficulty": "basic",
+      "question_type": "concept",
+      "citation": "ValidationSummary component",
+      "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/forms/?view=aspnetcore-10.0"
+    },
+    {
+      "objective_id": "t29-lo-supp-008",
+      "question": "A custom validator calls NotifyValidationStateChanged after changing messages. Why?",
+      "options": [
+        "To request the UI to refresh validation state",
+        "To submit the form twice",
+        "To navigate to the form route",
+        "To recreate the model"
+      ],
+      "correct": "A",
+      "explanation": "The notification tells consumers that validation messages changed.",
+      "difficulty": "intermediate",
+      "question_type": "scenario",
+      "citation": "Custom validation — NotifyValidationStateChanged",
+      "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/forms/?view=aspnetcore-10.0"
+    },
+    {
+      "objective_id": "t29-lo-supp-009",
+      "question": "What does ValidationMessage's For parameter identify?",
+      "options": [
+        "The field expression whose messages are shown",
+        "The form action URL",
+        "The submit callback",
+        "The validation service lifetime"
+      ],
+      "correct": "A",
+      "explanation": "For identifies the model field expression.",
+      "difficulty": "intermediate",
+      "question_type": "concept",
+      "citation": "ValidationMessage — For parameter",
+      "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/forms/?view=aspnetcore-10.0"
+    },
+    {
+      "objective_id": "t29-lo-supp-010",
+      "question": "What does EditContext.Validate return after running its validators?",
+      "options": [
+        "Whether the edit context is valid",
+        "The edited model",
+        "A list of components",
+        "The rendered markup"
+      ],
+      "correct": "A",
+      "explanation": "Validate returns true when validation succeeds and false otherwise.",
+      "difficulty": "intermediate",
+      "question_type": "concept",
+      "citation": "EditContext.Validate",
+      "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/forms/?view=aspnetcore-10.0"
+    },
+    {
+      "objective_id": "t29-lo-supp-011",
+      "question": "A form uses OnValidSubmit and OnInvalidSubmit together. Which handler runs for an invalid model?",
+      "options": [
+        "Both handlers",
+        "Only OnInvalidSubmit",
+        "Only OnValidSubmit",
+        "Neither handler"
+      ],
+      "correct": "B",
+      "explanation": "An invalid edit context invokes OnInvalidSubmit, not OnValidSubmit.",
+      "difficulty": "intermediate",
+      "question_type": "scenario",
+      "citation": "EditForm submission callbacks",
+      "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/forms/?view=aspnetcore-10.0"
+    },
+    {
+      "objective_id": "t29-lo-supp-012",
+      "question": "What is the effect of calling EditContext.NotifyFieldChanged for a field?",
+      "options": [
+        "It reports that the field value changed",
+        "It removes all validators",
+        "It submits the form",
+        "It replaces the model"
+      ],
+      "correct": "A",
+      "explanation": "The edit context records the field as changed and can trigger field validation behavior.",
+      "difficulty": "intermediate",
+      "question_type": "concept",
+      "citation": "EditContext — field change notification",
+      "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/forms/?view=aspnetcore-10.0"
+    },
+    {
+      "objective_id": "t29-lo-supp-013",
+      "question": "Which built-in input component is intended for a Boolean value?",
+      "options": [
+        "InputCheckbox",
+        "InputText",
+        "InputDate",
+        "InputSelect"
+      ],
+      "correct": "A",
+      "explanation": "InputCheckbox binds Boolean values.",
+      "difficulty": "intermediate",
+      "question_type": "concept",
+      "citation": "Built-in input components — InputCheckbox",
+      "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/forms/?view=aspnetcore-10.0"
+    },
+    {
+      "objective_id": "t29-lo-supp-014",
+      "question": "What happens when an InputNumber cannot parse the supplied text?",
+      "options": [
+        "A validation message is added",
+        "The value silently becomes zero",
+        "The form navigates away",
+        "The model is deleted"
+      ],
+      "correct": "A",
+      "explanation": "Parsing failures are represented as validation messages.",
+      "difficulty": "intermediate",
+      "question_type": "scenario",
+      "citation": "Built-in input components — parsing",
+      "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/forms/?view=aspnetcore-10.0"
+    },
+    {
+      "objective_id": "t29-lo-supp-015",
+      "question": "Which Input component is designed for selecting one value from option elements?",
+      "options": [
+        "InputSelect",
+        "InputFile",
+        "InputTextArea",
+        "InputCheckbox"
+      ],
+      "correct": "A",
+      "explanation": "InputSelect binds a selected option value.",
+      "difficulty": "intermediate",
+      "question_type": "concept",
+      "citation": "Built-in input components — InputSelect",
+      "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/forms/?view=aspnetcore-10.0"
+    },
+    {
+      "objective_id": "t29-lo-supp-016",
+      "question": "Why can a custom validator subscribe to EditContext.OnValidationRequested?",
+      "options": [
+        "To run custom checks when validation is requested",
+        "To intercept navigation",
+        "To change the render mode",
+        "To register a route"
+      ],
+      "correct": "A",
+      "explanation": "The event lets custom validation respond to a validation request.",
+      "difficulty": "advanced",
+      "question_type": "concept",
+      "citation": "Custom validation — OnValidationRequested",
+      "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/forms/?view=aspnetcore-10.0"
+    },
+    {
+      "objective_id": "t29-lo-supp-017",
+      "question": "A custom validator adds a message to a ValidationMessageStore but does not clear old messages. What risk results?",
+      "options": [
+        "Stale messages remain visible",
+        "The model becomes immutable",
+        "The EditForm stops rendering",
+        "All attributes are ignored"
+      ],
+      "correct": "A",
+      "explanation": "Messages must be cleared or replaced to avoid stale validation errors.",
+      "difficulty": "advanced",
+      "question_type": "scenario",
+      "citation": "Custom validation — ValidationMessageStore",
+      "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/forms/?view=aspnetcore-10.0"
+    },
+    {
+      "objective_id": "t29-lo-supp-018",
+      "question": "What does the form mapping feature use to identify a named form submission?",
+      "options": [
+        "The form name",
+        "The CSS isolation scope",
+        "The component type name only",
+        "The validation summary"
+      ],
+      "correct": "A",
+      "explanation": "A form name identifies the form for form mapping and submission handling.",
+      "difficulty": "advanced",
+      "question_type": "concept",
+      "citation": "Form naming and mapping",
+      "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/forms/?view=aspnetcore-10.0"
+    },
+    {
+      "objective_id": "t29-lo-supp-019",
+      "question": "A form model is supplied from a posted form and is invalid. What should the application do before processing it?",
+      "options": [
+        "Check validation state and display errors",
+        "Persist it unconditionally",
+        "Ignore the EditContext",
+        "Call StateHasChanged until valid"
+      ],
+      "correct": "A",
+      "explanation": "The application should validate the mapped model before processing it.",
+      "difficulty": "advanced",
+      "question_type": "scenario",
+      "citation": "Form mapping and validation",
+      "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/forms/?view=aspnetcore-10.0"
+    },
+    {
+      "objective_id": "t29-lo-supp-020",
+      "question": "Why should a custom validator remove its EditContext event subscriptions when disposed?",
+      "options": [
+        "To avoid callbacks and references after disposal",
+        "To make DataAnnotations run twice",
+        "To preserve invalid messages forever",
+        "To force a full page reload"
+      ],
+      "correct": "A",
+      "explanation": "Unsubscribing prevents callbacks and retained references after the validator is disposed.",
+      "difficulty": "advanced",
+      "question_type": "concept",
+      "citation": "Custom validator lifecycle",
+      "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/forms/?view=aspnetcore-10.0"
+    }
+  ]
+}
