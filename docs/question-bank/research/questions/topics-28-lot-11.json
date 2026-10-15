@@ -116,8 +116,8 @@
             "El hijo termina siempre primero",
             "Ambos terminan juntos"
           ],
-          "correct": "B",
-          "explanation": "La documentación distingue la inicialización síncrona del orden asíncrono; el flujo general del ciclo no debe confundirse con una garantía de finalización simultánea.",
+          "correct": "A",
+          "explanation": "En la inicialización síncrona, el padre completa OnInitialized antes de que se inicialice el hijo; el orden puede ser diferente cuando se usa OnInitializedAsync.",
           "citation": "Component initialization (OnInitialized{Async})",
           "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
           "semantic_review": {
@@ -243,18 +243,18 @@
           "question_type": "scenario",
           "question": "¿Qué ocurre con la coincidencia del nombre base al asociar un archivo .razor.css?",
           "options": [
-            "No depende de mayúsculas y minúsculas",
+            "Depende de mayúsculas y minúsculas",
             "Exige una ruta URL",
             "Solo funciona en RCL",
             "Depende del nombre del parámetro"
           ],
           "correct": "A",
-          "explanation": "La asociación del nombre de archivo del componente y su CSS aislado no depende de mayúsculas y minúsculas.",
+          "explanation": "La coincidencia del nombre base del archivo .razor.css es sensible a mayúsculas y minúsculas; debe coincidir con el nombre del componente.",
           "citation": "CSS isolation file naming",
           "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0",
           "semantic_review": {
             "status": "unique",
-            "proposition_key": "razor-css-case-insensitive-basename",
+            "proposition_key": "razor-css-case-sensitive-basename",
             "published_match_count": 0,
             "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
           }
