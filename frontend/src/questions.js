@@ -49041,13 +49041,13 @@ export const QUESTIONS = [
   {
     "id": 4459,
     "topic_num": 28,
-    "question": "¿Qué relación debe tener un elemento para que ::deep pueda seleccionarlo?",
-    "option_a": "Ser un hermano",
-    "option_b": "Ser descendiente",
-    "option_c": "Ser un antecesor",
-    "option_d": "Estar en otra aplicación",
-    "correct": "B",
-    "explanation": "::deep solo funciona con elementos descendientes del elemento con scope."
+    "question": "¿Qué configuración permite que un componente derivado herede estilos scoped de un componente base?",
+    "option_a": "Usar el mismo scope identifier en las hojas del componente base y derivado",
+    "option_b": "Añadir un RenderFragment",
+    "option_c": "Quitar el archivo .razor.css",
+    "option_d": "Mover el estilo a appsettings.json",
+    "correct": "A",
+    "explanation": "La documentación usa identificadores de alcance compartidos para que una hoja de componente derivado herede estilos de una hoja base."
   },
   {
     "id": 4460,
@@ -49063,13 +49063,13 @@ export const QUESTIONS = [
   {
     "id": 4461,
     "topic_num": 28,
-    "question": "¿Qué representa RenderFragment<TValue> en un componente templado?",
-    "option_a": "Una hoja CSS",
-    "option_b": "Un parámetro sin tipo",
-    "option_c": "Un callback de navegación",
-    "option_d": "Un fragmento que recibe un valor de tipo TValue",
-    "correct": "D",
-    "explanation": "RenderFragment<TValue> es un fragmento de UI parametrizado por el tipo TValue."
+    "question": "En el ejemplo TemplatedNavBar, ¿qué tipo tiene el parámetro StartContent?",
+    "option_a": "RenderFragment<TItem>",
+    "option_b": "string",
+    "option_c": "RenderFragment",
+    "option_d": "IReadOnlyList<TItem>",
+    "correct": "C",
+    "explanation": "StartContent es un RenderFragment sin valor tipado; ItemTemplate es el fragmento que recibe TItem."
   },
   {
     "id": 4462,
@@ -49085,13 +49085,13 @@ export const QUESTIONS = [
   {
     "id": 4463,
     "topic_num": 28,
-    "question": "¿Qué permite `Context` en el elemento hijo de una plantilla RenderFragment<TValue>?",
-    "option_a": "Cambiar el tipo TItem",
-    "option_b": "Cambiar el nombre solo de esa plantilla",
-    "option_c": "Desactivar el render",
-    "option_d": "Crear un scope CSS",
+    "question": "¿Dónde puede colocarse Context para cambiar el nombre del parámetro de una sola plantilla?",
+    "option_a": "Solo en appsettings.json",
+    "option_b": "En el elemento hijo de esa plantilla RenderFragment<TValue>",
+    "option_c": "Solo en el archivo .razor.css",
+    "option_d": "En el constructor del componente",
     "correct": "B",
-    "explanation": "Context en el elemento de plantilla cambia el nombre del parámetro para esa plantilla concreta."
+    "explanation": "Context puede establecerse en el elemento hijo de RenderFragment<TValue> para cambiar el nombre de esa plantilla concreta."
   },
   {
     "id": 4464,

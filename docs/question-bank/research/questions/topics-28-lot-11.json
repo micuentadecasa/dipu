@@ -165,16 +165,16 @@
           "objective_id": "t28-lo-supp-010",
           "difficulty": "advanced",
           "question_type": "scenario",
-          "question": "¿Qué relación debe tener un elemento para que ::deep pueda seleccionarlo?",
+          "question": "¿Qué configuración permite que un componente derivado herede estilos scoped de un componente base?",
           "options": [
-            "Ser un hermano",
-            "Ser descendiente",
-            "Ser un antecesor",
-            "Estar en otra aplicación"
+            "Usar el mismo scope identifier en las hojas del componente base y derivado",
+            "Añadir un RenderFragment",
+            "Quitar el archivo .razor.css",
+            "Mover el estilo a appsettings.json"
           ],
-          "correct": "B",
-          "explanation": "::deep solo funciona con elementos descendientes del elemento con scope.",
-          "citation": "CSS isolation — descendant-only ::deep",
+          "correct": "A",
+          "explanation": "La documentación usa identificadores de alcance compartidos para que una hoja de componente derivado herede estilos de una hoja base.",
+          "citation": "CSS isolation — inherited scope configuration",
           "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0"
         },
         {
@@ -197,16 +197,16 @@
           "objective_id": "t28-lo-supp-012",
           "difficulty": "intermediate",
           "question_type": "concept",
-          "question": "¿Qué representa RenderFragment<TValue> en un componente templado?",
+          "question": "En el ejemplo TemplatedNavBar, ¿qué tipo tiene el parámetro StartContent?",
           "options": [
-            "Una hoja CSS",
-            "Un parámetro sin tipo",
-            "Un callback de navegación",
-            "Un fragmento que recibe un valor de tipo TValue"
+            "RenderFragment<TItem>",
+            "string",
+            "RenderFragment",
+            "IReadOnlyList<TItem>"
           ],
-          "correct": "D",
-          "explanation": "RenderFragment<TValue> es un fragmento de UI parametrizado por el tipo TValue.",
-          "citation": "Templated components — typed fragment invocation",
+          "correct": "C",
+          "explanation": "StartContent es un RenderFragment sin valor tipado; ItemTemplate es el fragmento que recibe TItem.",
+          "citation": "Templated components — untyped start content",
           "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-10.0"
         },
         {
@@ -229,16 +229,16 @@
           "objective_id": "t28-lo-supp-014",
           "difficulty": "advanced",
           "question_type": "scenario",
-          "question": "¿Qué permite `Context` en el elemento hijo de una plantilla RenderFragment<TValue>?",
+          "question": "¿Dónde puede colocarse Context para cambiar el nombre del parámetro de una sola plantilla?",
           "options": [
-            "Cambiar el tipo TItem",
-            "Cambiar el nombre solo de esa plantilla",
-            "Desactivar el render",
-            "Crear un scope CSS"
+            "Solo en appsettings.json",
+            "En el elemento hijo de esa plantilla RenderFragment<TValue>",
+            "Solo en el archivo .razor.css",
+            "En el constructor del componente"
           ],
           "correct": "B",
-          "explanation": "Context en el elemento de plantilla cambia el nombre del parámetro para esa plantilla concreta.",
-          "citation": "Templated components — template-level Context",
+          "explanation": "Context puede establecerse en el elemento hijo de RenderFragment<TValue> para cambiar el nombre de esa plantilla concreta.",
+          "citation": "Templated components — child-level Context placement",
           "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-10.0"
         },
         {

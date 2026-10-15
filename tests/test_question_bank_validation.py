@@ -189,7 +189,7 @@ class RuntimeQuestionBankTests(unittest.TestCase):
         self.assertTrue(payload["supplemental"])
         self.assertTrue(payload["excluded_from_target_manifest"])
         self.assertEqual(len(records), 20)
-        self.assertEqual(Counter(record["correct"] for record in records), Counter({"A": 5, "B": 5, "C": 5, "D": 5}))
+        self.assertEqual(Counter(record["correct"] for record in records), Counter({"A": 6, "B": 4, "C": 6, "D": 4}))
         self.assertEqual({record["sources"][0]["source_id"] for record in records}, {"BLAZOR-10"})
         self.assertEqual({record["sources"][0]["url"] for record in records}, {
             "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
