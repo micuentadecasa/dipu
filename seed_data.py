@@ -43198,7 +43198,7 @@ SEED_QUESTIONS.extend([
         "option_b": "Las tareas asíncronas del árbol de componentes",
         "option_c": "La primera navegación del usuario",
         "option_d": "El primer evento DOM",
-        "correct": "D",
+        "correct": "B",
         "explanation": "La quiescencia espera a que finalice el trabajo asíncrono relevante del árbol prerenderizado."
     },
     {
@@ -43208,7 +43208,7 @@ SEED_QUESTIONS.extend([
         "option_b": "OnParametersSet",
         "option_c": "OnAfterRender{Async}",
         "option_d": "SetParametersAsync",
-        "correct": "B",
+        "correct": "C",
         "explanation": "OnAfterRender y OnAfterRenderAsync no se ejecutan durante el prerenderizado."
     },
     {
@@ -43238,7 +43238,7 @@ SEED_QUESTIONS.extend([
         "option_b": "La parte síncrona inicial",
         "option_c": "El callback de disposición",
         "option_d": "El renderizado del hijo",
-        "correct": "D",
+        "correct": "B",
         "explanation": "La parte síncrona del método se ejecuta antes de la continuación asíncrona."
     },
     {
@@ -43248,7 +43248,7 @@ SEED_QUESTIONS.extend([
         "option_b": "Antes de asignar parámetros",
         "option_c": "Después de que termina el renderizado interactivo",
         "option_d": "Solo durante el prerenderizado",
-        "correct": "B",
+        "correct": "C",
         "explanation": "Las referencias se pueblan después del renderizado interactivo, en los callbacks after-render."
     },
     {
@@ -43258,7 +43258,7 @@ SEED_QUESTIONS.extend([
         "option_b": "Mismo nombre base y carpeta que el componente Razor",
         "option_c": "Nombre idéntico al ensamblado",
         "option_d": "Nombre de una ruta URL",
-        "correct": "C",
+        "correct": "B",
         "explanation": "El archivo .razor.css se asocia normalmente por nombre base y ubicación con el componente Razor."
     },
     {
@@ -43298,7 +43298,7 @@ SEED_QUESTIONS.extend([
         "option_b": "DisableScopedCssBundling",
         "option_c": "NoScopedStyles",
         "option_d": "ScopedCssOff",
-        "correct": "C",
+        "correct": "B",
         "explanation": "DisableScopedCssBundling es la propiedad de MSBuild usada para desactivar la agrupación."
     },
     {
