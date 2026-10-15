@@ -167,6 +167,21 @@ class RuntimeQuestionBankTests(unittest.TestCase):
         self.assertTrue(all(not validate_record(record) for record in records))
         self.assertTrue(all(result["status"] == "unique" for record in records for result in record["deduplication"].values()))
 
+    def test_topic27_supplemental_binding_rendering_is_published_and_gated(self):
+        path = ROOT / "docs/question-bank/accepted/topic-27-lot-11.json"
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        records = payload["questions"]
+        self.assertTrue(payload["supplemental"])
+        self.assertTrue(payload["excluded_from_target_manifest"])
+        self.assertEqual(len(records), 20)
+        self.assertEqual(Counter(record["correct"] for record in records), Counter({"A": 5, "B": 6, "C": 6, "D": 3}))
+        self.assertEqual({record["sources"][0]["source_id"] for record in records}, {"BLAZOR-10"})
+        self.assertEqual(len({record["stable_id"] for record in records}), 20)
+        self.assertTrue(all(record["learning_objective_id"].startswith("t27-lo-supp-") for record in records))
+        self.assertTrue(all(not answer_leakage_errors(record) for record in records))
+        self.assertTrue(all(not validate_record(record) for record in records))
+        self.assertTrue(all(result["status"] == "unique" for record in records for result in record["deduplication"].values()))
+
 
 class CheckpointTests(unittest.TestCase):
     def manifest(self):
