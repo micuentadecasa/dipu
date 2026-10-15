@@ -19,7 +19,7 @@ from seed_data import SEED_QUESTIONS
 DATE = "2026-10-15"
 TOPIC = 28
 LOT = 11
-REVISION = 5
+REVISION = 6
 SOURCE_REGISTER = ROOT / "docs/question-bank/source-register.json"
 OBJECTIVE_MANIFEST = ROOT / "docs/question-bank/objective-manifest.json"
 SYLLABUS = ROOT / "temario.md"
