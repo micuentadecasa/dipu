@@ -54,6 +54,12 @@ A source-gated coverage-gap lot adds 20 independently reviewed `official_primary
 
 The lot has 5 basic, 9 intermediate, and 6 advanced records; correct answers are A=6, B=5, C=6, D=3. All 20 records passed schema, option, answer, explanation, answer-leakage, exact/lexical/near-lexical, semantic, and concept-level review. The native import marker was applied and the regenerated runtime increased from 4,409 to 4,429 records. This is explicitly supplemental (`t26-lo-supp-*`) and excluded from the captain-approved 200-objective/topic manifest and target-count statistics; the 8,000-slot target therefore remains unchanged.
 
+## Topic 29 supplemental lot 11 — 2026-10-15
+
+A source-backed coverage-gap lot adds 20 independently reviewed `official_primary` records on Blazor forms and validation from `BLAZOR-10`: EditForm callbacks, EditContext state, built-in input parsing, validation messages, custom validation notifications, form mapping, and validator lifecycle. The candidate, review, accepted, dry-run import, and append-only checkpoint artifacts are `topic-29-lot-11` under `research/questions/`, `lots/`, `reviews/`, `accepted/`, `imports/`, and `checkpoints/`.
+
+The lot has 7 basic, 8 intermediate, and 5 advanced records; all 20 records passed schema, option, answer, explanation, answer-leakage, exact/lexical/near-lexical, semantic, and concept-level review. The native import marker was applied and the regenerated runtime increased from 4,449 to 4,469 records. This is explicitly supplemental (`t29-lo-supp-*`) and excluded from the captain-approved 200-objective/topic manifest and target-count statistics; the 8,000-slot target remains unchanged.
+
 ## Topic 27 supplemental lot 11 — 2026-10-15
 
 A source-gated coverage-gap lot adds 20 independently reviewed `official_primary` records on advanced Blazor event, binding, and rendering behavior from `BLAZOR-10`: exception and custom-event handling, binding modifier restrictions and synchronization, multiple-select and unparsable values, DateTime formatting, render suppression and queueing, external notifications, streaming-rendering behavior, and parameter-overwrite avoidance. The candidate, review, accepted, dry-run import, and append-only checkpoint artifacts are `topic-27-lot-11` under `research/questions/`, `lots/`, `reviews/`, `accepted/`, `imports/`, and `checkpoints/`.
