@@ -31,12 +31,12 @@
           "type": "concept",
           "question": "¿Qué diferencia principal tiene Hybrid frente a WebAssembly standalone?",
           "options": [
-            "Hybrid vive dentro de una app nativa; standalone se sirve como assets web",
             "Hybrid siempre usa SignalR",
+            "Hybrid vive dentro de una app nativa; standalone se sirve como assets web",
             "Standalone siempre usa Web View",
             "No hay diferencia"
           ],
-          "correct": "A",
+          "correct": "B",
           "explanation": "Los hosts y APIs disponibles son diferentes.",
           "citation": "Blazor hosting models — comparison",
           "source_id": "BLAZOR-10"
@@ -47,12 +47,12 @@
           "type": "concept",
           "question": "¿Qué tipo de aplicación puede usar Blazor Hybrid?",
           "options": [
-            "Móvil o escritorio",
             "Solo CDN",
             "Solo servidor Linux sin UI",
+            "Móvil o escritorio",
             "Solo navegador sin host"
           ],
-          "correct": "A",
+          "correct": "C",
           "explanation": "Hybrid se integra en apps móviles/escritorio.",
           "citation": "Blazor hosting models — Hybrid",
           "source_id": "BLAZOR-10"
@@ -63,12 +63,12 @@
           "type": "concept",
           "question": "¿Qué significa que los componentes tengan modelo de programación común?",
           "options": [
-            "El markup y composición pueden reutilizarse entre hostings",
             "Las APIs browser y server son idénticas",
             "Todos comparten circuito",
-            "El payload es igual"
+            "El payload es igual",
+            "El markup y composición pueden reutilizarse entre hostings"
           ],
-          "correct": "A",
+          "correct": "D",
           "explanation": "La construcción común no elimina diferencias del host.",
           "citation": "Blazor hosting models — common component model",
           "source_id": "BLAZOR-10"
@@ -95,12 +95,12 @@
           "type": "concept",
           "question": "¿Qué significa descargar el runtime .NET en WebAssembly?",
           "options": [
-            "El navegador recibe recursos para ejecutar la aplicación cliente",
             "El servidor crea un circuito",
+            "El navegador recibe recursos para ejecutar la aplicación cliente",
             "Se instala .NET globalmente",
             "Se publica un secreto"
           ],
-          "correct": "A",
+          "correct": "B",
           "explanation": "El runtime forma parte de los recursos cliente.",
           "citation": "Blazor hosting models — WebAssembly payload",
           "source_id": "BLAZOR-10"
@@ -111,12 +111,12 @@
           "type": "concept",
           "question": "¿Qué ventaja puede ofrecer WebAssembly standalone?",
           "options": [
-            "Despliegue de contenido cliente sin servidor ASP.NET Core para servirlo",
             "Acceso directo a base de datos privada",
             "Cero descarga",
+            "Despliegue de contenido cliente sin servidor ASP.NET Core para servirlo",
             "Circuitos automáticos"
           ],
-          "correct": "A",
+          "correct": "C",
           "explanation": "Standalone no necesita backend ASP.NET Core para servir sus archivos.",
           "citation": "Blazor hosting models — standalone",
           "source_id": "BLAZOR-10"
@@ -127,12 +127,12 @@
           "type": "concept",
           "question": "¿Qué ventaja ofrece Hosted frente a standalone para una solución completa?",
           "options": [
-            "Incluye un servidor que puede servir cliente y exponer API",
             "No descarga recursos",
             "Elimina HTTP",
-            "Solo ejecuta CSS"
+            "Solo ejecuta CSS",
+            "Incluye un servidor que puede servir cliente y exponer API"
           ],
-          "correct": "A",
+          "correct": "D",
           "explanation": "Hosted añade backend ASP.NET Core.",
           "citation": "Blazor hosting models — hosted",
           "source_id": "BLAZOR-10"
@@ -159,12 +159,12 @@
           "type": "concept",
           "question": "¿Qué recurso permite escalar conexiones SignalR sin asumir una única instancia?",
           "options": [
-            "Azure SignalR Service",
             "CSS bundle",
+            "Azure SignalR Service",
             "WebAssembly linker",
             "Razor compiler"
           ],
-          "correct": "A",
+          "correct": "B",
           "explanation": "El servicio gestiona conexiones SignalR a escala.",
           "citation": "Blazor hosting models — Azure SignalR Service",
           "source_id": "BLAZOR-10"
@@ -175,12 +175,12 @@
           "type": "concept",
           "question": "¿Qué estado debe considerarse al distribuir una app Blazor Server?",
           "options": [
-            "Estado de circuito y afinidad/gestión de conexión",
             "Solo estado CSS",
             "Solo payload estático",
+            "Estado de circuito y afinidad/gestión de conexión",
             "Ningún estado"
           ],
-          "correct": "A",
+          "correct": "C",
           "explanation": "El circuito contiene estado de UI del cliente.",
           "citation": "Blazor hosting models — circuit state",
           "source_id": "BLAZOR-10"
@@ -191,12 +191,12 @@
           "type": "concept",
           "question": "¿Qué ocurre si una pestaña abre una segunda sesión Blazor Server?",
           "options": [
-            "Se establece otro circuito asociado a esa pestaña",
             "Se reutiliza siempre el circuito original",
             "Se cambia a WebAssembly",
-            "No puede renderizar"
+            "No puede renderizar",
+            "Se establece otro circuito asociado a esa pestaña"
           ],
-          "correct": "A",
+          "correct": "D",
           "explanation": "Cada pestaña tiene su interacción/circuito.",
           "citation": "Blazor hosting models — circuits",
           "source_id": "BLAZOR-10"
@@ -223,12 +223,12 @@
           "type": "concept",
           "question": "¿Qué modo no habilita eventos interactivos de componente por sí mismo?",
           "options": [
-            "Static",
             "InteractiveServer",
+            "Static",
             "InteractiveWebAssembly",
             "InteractiveAuto"
           ],
-          "correct": "A",
+          "correct": "B",
           "explanation": "Static no activa interactividad.",
           "citation": "Blazor render modes — Static",
           "source_id": "BLAZOR-10"
@@ -239,12 +239,12 @@
           "type": "concept",
           "question": "¿Qué orden describe mejor un componente prerenderizado interactivo?",
           "options": [
-            "Generar HTML, descargar/activar recursos y procesar eventos",
             "Procesar eventos antes de HTML",
             "Descargar solo CSS y disponer",
+            "Generar HTML, descargar/activar recursos y procesar eventos",
             "Crear circuito en compilación"
           ],
-          "correct": "A",
+          "correct": "C",
           "explanation": "La interactividad se activa después del markup inicial.",
           "citation": "Blazor render modes — prerendering",
           "source_id": "BLAZOR-10"
@@ -255,12 +255,12 @@
           "type": "concept",
           "question": "¿Qué no garantiza prerendering?",
           "options": [
-            "Que las APIs de navegador estén disponibles durante la primera fase",
             "Que haya HTML inicial",
             "Que exista una fase interactiva posterior",
-            "Que se renderice markup"
+            "Que se renderice markup",
+            "Que las APIs de navegador estén disponibles durante la primera fase"
           ],
-          "correct": "A",
+          "correct": "D",
           "explanation": "El prerender puede ejecutarse fuera del navegador interactivo.",
           "citation": "Blazor render modes — prerendering",
           "source_id": "BLAZOR-10"
@@ -287,12 +287,12 @@
           "type": "concept",
           "question": "¿Qué caracteriza un modo de render frente a una plantilla de componente?",
           "options": [
-            "El modo decide ejecución/interactividad; la plantilla decide contenido UI",
             "Son el mismo mecanismo",
+            "El modo decide ejecución/interactividad; la plantilla decide contenido UI",
             "La plantilla decide conexiones",
             "El modo solo decide CSS"
           ],
-          "correct": "A",
+          "correct": "B",
           "explanation": "Cumplen responsabilidades distintas.",
           "citation": "Blazor render modes; templated components",
           "source_id": "BLAZOR-10"
@@ -303,12 +303,12 @@
           "type": "concept",
           "question": "¿Qué debe limitarse al enviar al cliente WebAssembly?",
           "options": [
-            "Secretos y lógica que requiera confidencialidad",
             "Componentes públicos",
             "Assets estáticos",
+            "Secretos y lógica que requiera confidencialidad",
             "Configuración pública"
           ],
-          "correct": "A",
+          "correct": "C",
           "explanation": "Lo enviado al cliente puede analizarse.",
           "citation": "Blazor hosting models — WebAssembly client",
           "source_id": "BLAZOR-10"
@@ -319,17 +319,18 @@
           "type": "concept",
           "question": "¿Qué documentación debe consultar un equipo al elegir hosting?",
           "options": [
-            "La página oficial de modelos de alojamiento y modos de renderizado",
             "Solo un blog no verificado",
             "Solo CSS reference",
-            "Solo una ruta local"
+            "Solo una ruta local",
+            "La página oficial de modelos de alojamiento y modos de renderizado"
           ],
-          "correct": "A",
+          "correct": "D",
           "explanation": "La fuente oficial describe tradeoffs y configuración.",
           "citation": "Blazor hosting models — official guidance",
           "source_id": "BLAZOR-10"
         }
       ]
     }
-  ]
+  ],
+  "revision": 2
 }
