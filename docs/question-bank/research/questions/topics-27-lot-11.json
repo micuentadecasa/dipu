@@ -1,0 +1,339 @@
+{
+  "generated_at": "2026-10-15",
+  "research_artifact": "docs/question-bank/research/topic-27-lot-11-advanced-binding-rendering.md",
+  "topic_num": 27,
+  "lot_num": 11,
+  "revision": 1,
+  "supplemental": true,
+  "excluded_from_target_manifest": true,
+  "source_ids": ["BLAZOR-10"],
+  "batches": [
+    {
+      "topic_num": 27,
+      "lot_num": 11,
+      "source_ids": ["BLAZOR-10"],
+      "questions": [
+        {
+          "objective_id": "t27-lo-supp-001",
+          "question": "¿Qué tratamiento documenta Blazor para las excepciones producidas por manejadores de eventos delegados?",
+          "options": [
+            "Se registran en el sistema de logs.",
+            "Se convierten automáticamente en respuestas HTTP 404.",
+            "Se ignoran sin dejar ningún resultado.",
+            "Se almacenan en una migración de base de datos."
+          ],
+          "correct": "A",
+          "explanation": "La guía de manejadores de eventos indica que las excepciones producidas por estos manejadores se registran.",
+          "difficulty": "basic",
+          "question_type": "concept",
+          "citation": "Delegate event handlers — exception logging",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/event-handling?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t27-lo-supp-002",
+          "question": "Al registrar un evento personalizado con EventHandler, ¿qué capacidad adicional muestra el ejemplo de la documentación?",
+          "options": [
+            "Cambiar el proveedor de base de datos del componente.",
+            "Habilitar preventDefault y stopPropagation para el evento registrado.",
+            "Desactivar la comunicación con JavaScript.",
+            "Obligar a que el evento se ejecute como una consulta SQL."
+          ],
+          "correct": "B",
+          "explanation": "El atributo EventHandler del ejemplo puede registrarse con enableStopPropagation y enablePreventDefault para habilitar esos modificadores en el evento personalizado.",
+          "difficulty": "basic",
+          "question_type": "concept",
+          "citation": "Custom event arguments — prevent-default and stop-propagation flags",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/event-handling?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t27-lo-supp-003",
+          "question": "¿Qué regla se aplica a las directivas de binding documentadas por Blazor?",
+          "options": [
+            "Solo se acepta la variante escrita completamente en mayúsculas.",
+            "Las mayúsculas y minúsculas nunca afectan a las directivas Razor.",
+            "@bind, @bind:event y @bind:after son válidas, pero sus variantes con distinta capitalización no lo son.",
+            "Las directivas de binding solo pueden escribirse dentro de una consulta LINQ."
+          ],
+          "correct": "C",
+          "explanation": "La guía indica que los atributos Razor de binding son sensibles a mayúsculas y minúsculas: las formas documentadas son válidas y las formas con capitalización distinta no lo son.",
+          "difficulty": "basic",
+          "question_type": "concept",
+          "citation": "Binding features — case-sensitive bind attributes",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/event-handling?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t27-lo-supp-004",
+          "question": "¿Cómo denomina la guía al enlace de una propiedad de componente que atraviesa varios niveles padre-hijo?",
+          "options": [
+            "Un binding estático de hoja.",
+            "Un binding de servidor sin parámetros.",
+            "Una cascada de estilos.",
+            "Un chained bind, es decir, un enlace encadenado entre componentes."
+          ],
+          "correct": "D",
+          "explanation": "La documentación llama chained bind al escenario en que el binding de una propiedad de un componente hijo se enlaza con la propiedad correspondiente del padre y puede continuar por más niveles.",
+          "difficulty": "basic",
+          "question_type": "comparison",
+          "citation": "Binding with component parameters — chained bind",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/event-handling?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t27-lo-supp-005",
+          "question": "¿Qué mecanismo muestra la documentación para registrar argumentos de un evento personalizado procedente de JavaScript?",
+          "options": [
+            "Un atributo EventHandler que asocia el evento con una clase de argumentos.",
+            "Una migración de Entity Framework que crea el evento.",
+            "Un parámetro de ruta que serializa todos los eventos.",
+            "Una regla CSS que transforma el evento en un callback."
+          ],
+          "correct": "A",
+          "explanation": "El ejemplo de eventos personalizados usa el atributo EventHandler para registrar el nombre del evento y su tipo CustomEventArgs, que recibe los datos proporcionados por JavaScript.",
+          "difficulty": "intermediate",
+          "question_type": "procedure",
+          "citation": "Custom event arguments — EventHandler registration",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/event-handling?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t27-lo-supp-006",
+          "question": "¿Qué tipo de parámetro no admite la sintaxis @bind:after como delegado posterior al binding?",
+          "options": [
+            "Una acción síncrona del componente.",
+            "Un EventCallback o EventCallback<TValue>.",
+            "Un método que devuelve Task.",
+            "Un método que devuelve Action."
+          ],
+          "correct": "B",
+          "explanation": "La guía indica que @bind:after recibe un método que devuelve Action o Task y no admite un parámetro EventCallback o EventCallback<TValue> para ese propósito.",
+          "difficulty": "intermediate",
+          "question_type": "concept",
+          "citation": "Binding features — @bind:after delegate restriction",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/data-binding?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t27-lo-supp-007",
+          "question": "¿Qué problema pretende evitar el patrón @bind:get y @bind:set frente al patrón antiguo value más onchange?",
+          "options": [
+            "La falta de una ruta para el componente.",
+            "La creación automática de una migración de base de datos.",
+            "Que el elemento muestre un valor distinto del valor sincronizado por el componente.",
+            "Que un componente pueda recibir parámetros tipados."
+          ],
+          "correct": "C",
+          "explanation": "La guía recomienda :get y :set para mantener sincronizado el elemento con el valor del componente y evitar errores de sincronización del patrón antiguo.",
+          "difficulty": "intermediate",
+          "question_type": "scenario",
+          "citation": "Binding with @bind:get and @bind:set — synchronization",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/data-binding?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t27-lo-supp-008",
+          "question": "¿Qué posibilidad ofrecen los modificadores :get y :set antes de actualizar el DOM?",
+          "options": [
+            "Solo registrar el valor sin poder cambiarlo.",
+            "Forzar siempre el valor recibido, aunque sea inválido.",
+            "Desactivar toda actualización del componente.",
+            "Reaccionar al cambio y transformar el valor que finalmente se aplica."
+          ],
+          "correct": "D",
+          "explanation": "Con :get y :set se puede reaccionar antes de aplicar el valor al DOM y modificar el valor que se termina aplicando cuando el caso lo requiere.",
+          "difficulty": "intermediate",
+          "question_type": "scenario",
+          "citation": "Binding with @bind:get and @bind:set — synchronization",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/data-binding?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t27-lo-supp-009",
+          "question": "¿Qué tipo de propiedad es adecuado para enlazar la selección múltiple de un elemento select?",
+          "options": [
+            "Un tipo array que contenga los valores seleccionados.",
+            "Una única instancia de DbContext.",
+            "Una ruta de navegación absoluta.",
+            "Un valor booleano que ignore las opciones."
+          ],
+          "correct": "A",
+          "explanation": "La guía indica que el binding de un select con múltiples opciones proporciona los elementos seleccionados y que el valor enlazado debe ser un tipo array.",
+          "difficulty": "intermediate",
+          "question_type": "concept",
+          "citation": "Multiple option selection with select elements",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/data-binding?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t27-lo-supp-010",
+          "question": "Si el usuario escribe un valor que no se puede convertir al tipo de un elemento enlazado, ¿qué comportamiento describe la guía?",
+          "options": [
+            "El valor inválido siempre se persiste en el modelo.",
+            "El valor del elemento vuelve automáticamente al valor anterior cuando se dispara el evento de binding.",
+            "El componente se convierte en solo lectura para siempre.",
+            "El navegador elimina toda la página."
+          ],
+          "correct": "B",
+          "explanation": "Para un valor no analizable, Blazor revierte automáticamente el valor del elemento al valor anterior cuando se dispara el evento de binding.",
+          "difficulty": "intermediate",
+          "question_type": "scenario",
+          "citation": "Unparsable values",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/data-binding?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t27-lo-supp-011",
+          "question": "¿Qué clase de formato admite @bind:format según la documentación de binding?",
+          "options": [
+            "Cualquier formato monetario aplicado a todos los tipos numéricos.",
+            "Solo una expresión regular de validación.",
+            "Una única cadena de formato para valores DateTime.",
+            "Un formato de ruta para componentes hijos."
+          ],
+          "correct": "C",
+          "explanation": "La guía documenta @bind:format con una única cadena de formato DateTime; no presenta esa sintaxis como un formato monetario general para números.",
+          "difficulty": "intermediate",
+          "question_type": "concept",
+          "citation": "Format strings — DateTime binding",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/data-binding?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t27-lo-supp-012",
+          "question": "¿Qué forma documenta la guía para ejecutar lógica posterior al binding del parámetro Value de InputText?",
+          "options": [
+            "<InputText @after-Value=\"After\" />",
+            "<InputText @bind:after-Value=\"After\" />",
+            "<InputText @bind-Value:after=\"After\" />",
+            "<InputText data-after-binding=\"After\" />"
+          ],
+          "correct": "C",
+          "explanation": "Para un componente, la guía muestra el modificador :after aplicado al parámetro enlazado: @bind-Value:after=\"After\".",
+          "difficulty": "intermediate",
+          "question_type": "procedure",
+          "citation": "Binding features — component @bind:after",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/data-binding?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t27-lo-supp-013",
+          "question": "En el patrón antiguo de binding bidireccional de un componente, ¿qué detalle exige el setter al invocar el callback de cambio?",
+          "options": [
+            "Descartar la Task devuelta por EventCallback.InvokeAsync; en versiones modernas se recomienda @bind:get y @bind:set.",
+            "Convertir la Task en una ruta de navegación.",
+            "Ejecutar siempre InvokeAsync dos veces para forzar dos renders.",
+            "Sustituir el callback por una consulta SQL."
+          ],
+          "correct": "A",
+          "explanation": "La guía explica que el patrón antiguo con un setter debe descartar la Task devuelta por EventCallback.InvokeAsync y recomienda los modificadores get/set en .NET 7 o posterior.",
+          "difficulty": "advanced",
+          "question_type": "scenario",
+          "citation": "Binding with component parameters — legacy callback Task",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/rendering?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t27-lo-supp-014",
+          "question": "¿Qué efecto tiene que ShouldRender devuelva false en una actualización posterior?",
+          "options": [
+            "Impide incluso el primer renderizado del componente.",
+            "Evita refrescar la interfaz en esa actualización, aunque la instancia pueda haberse renderizado inicialmente.",
+            "Convierte todos los eventos en llamadas JavaScript.",
+            "Elimina el componente del árbol de renderizado."
+          ],
+          "correct": "B",
+          "explanation": "ShouldRender controla la actualización de la interfaz: si devuelve false se omite ese refresco, pero el componente se renderiza inicialmente cuando se incorpora al árbol.",
+          "difficulty": "advanced",
+          "question_type": "concept",
+          "citation": "Suppress UI refreshing — ShouldRender",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/rendering?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t27-lo-supp-015",
+          "question": "¿Cómo gestiona el framework varias llamadas consecutivas a StateHasChanged mientras ya hay un render pendiente?",
+          "options": [
+            "Ejecuta siempre un render completo por cada llamada.",
+            "Descarta el estado del componente y reinicia la aplicación.",
+            "Encola el componente y evita volver a encolarlo si ya existe un render pendiente.",
+            "Convierte las llamadas en eventos del navegador."
+          ],
+          "correct": "C",
+          "explanation": "StateHasChanged encola un render y el componente no vuelve a encolarse si ya existe un render pendiente.",
+          "difficulty": "advanced",
+          "question_type": "concept",
+          "citation": "StateHasChanged — render queue",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/rendering?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t27-lo-supp-016",
+          "question": "Un temporizador externo modifica el estado de un componente. ¿Qué patrón indica la guía para actualizar la interfaz?",
+          "options": [
+            "Esperar a que ocurra otro clic del usuario.",
+            "Llamar a un método SQL desde el temporizador.",
+            "Modificar directamente el DOM sin pasar por Blazor.",
+            "Usar InvokeAsync para entrar en el contexto de Blazor y llamar a StateHasChanged."
+          ],
+          "correct": "D",
+          "explanation": "Las notificaciones externas no son conocidas por el flujo de renderizado de Blazor; el ejemplo del temporizador usa InvokeAsync y StateHasChanged, además de disponer el temporizador.",
+          "difficulty": "advanced",
+          "question_type": "scenario",
+          "citation": "Receiving a call from something external — timer and StateHasChanged",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/rendering?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t27-lo-supp-017",
+          "question": "¿Para qué escenario recomienda la guía el streaming rendering?",
+          "options": [
+            "Para mostrar pronto contenido provisional mientras una tarea asíncrona larga termina durante static SSR o prerendering.",
+            "Para sustituir toda la navegación por consultas SQL.",
+            "Para impedir que el servidor envíe cualquier respuesta inicial.",
+            "Para convertir cualquier componente en WebAssembly standalone."
+          ],
+          "correct": "A",
+          "explanation": "Streaming rendering permite enviar primero la página con contenido provisional y aplicar después las actualizaciones cuando terminan tareas asíncronas largas durante static SSR o prerendering.",
+          "difficulty": "advanced",
+          "question_type": "scenario",
+          "citation": "Streaming rendering — long-running asynchronous tasks",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/rendering?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t27-lo-supp-018",
+          "question": "En ASP.NET Core 9 o posterior, ¿qué atributo habilita explícitamente streaming rendering en un componente?",
+          "options": [
+            "[RenderStream(false)]",
+            "[StreamRendering]",
+            "[EnableStreamingEndpoint]",
+            "[UseStreamingDom]"
+          ],
+          "correct": "B",
+          "explanation": "La guía indica que en .NET 9 o posterior se aplica el atributo StreamRendering; en .NET 8 se usaba StreamRendering(true).",
+          "difficulty": "advanced",
+          "question_type": "procedure",
+          "citation": "Streaming rendering — StreamRendering attribute",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/rendering?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t27-lo-supp-019",
+          "question": "¿Qué sucede si el host impone buffering al intentar usar streaming rendering?",
+          "options": [
+            "La página siempre queda en blanco.",
+            "Se crea automáticamente una conexión SignalR.",
+            "La funcionalidad se degrada y la página carga sin streaming rendering.",
+            "El componente se convierte en un formulario MVC."
+          ],
+          "correct": "C",
+          "explanation": "El servidor debe dejar fluir la respuesta; si el host aplica buffering, streaming rendering se degrada correctamente y la página carga sin esa modalidad.",
+          "difficulty": "advanced",
+          "question_type": "scenario",
+          "citation": "Streaming rendering — buffering fallback",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/rendering?view=aspnetcore-10.0"
+        },
+        {
+          "objective_id": "t27-lo-supp-020",
+          "question": "¿Qué diseño evita que una rerenderización del padre sobrescriba el estado interno de un componente hijo?",
+          "options": [
+            "Escribir directamente el parámetro recibido cada vez que cambia la UI.",
+            "Copiar el valor inicial del parámetro a un campo privado y modificar ese estado interno.",
+            "Eliminar todos los parámetros del componente.",
+            "Llamar a StateHasChanged desde el setter del parámetro en cada asignación."
+          ],
+          "correct": "B",
+          "explanation": "La guía recomienda no escribir directamente en parámetros después del primer render; para el estado interno, copia el valor inicial a un campo privado y trabaja con ese campo.",
+          "difficulty": "advanced",
+          "question_type": "scenario",
+          "citation": "Overwritten parameters — private state field",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/overwriting-parameters?view=aspnetcore-10.0"
+        }
+      ]
+    }
+  ]
+}
