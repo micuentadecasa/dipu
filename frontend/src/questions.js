@@ -48986,13 +48986,13 @@ export const QUESTIONS = [
   {
     "id": 4454,
     "topic_num": 28,
-    "question": "¿Qué callback de ciclo de vida no se invoca durante el prerenderizado?",
-    "option_a": "OnInitialized",
-    "option_b": "OnParametersSet",
-    "option_c": "OnAfterRender{Async}",
-    "option_d": "SetParametersAsync",
-    "correct": "C",
-    "explanation": "OnAfterRender y OnAfterRenderAsync no se ejecutan durante el prerenderizado."
+    "question": "¿Qué orden de finalización puede garantizarse para la inicialización síncrona del padre y del hijo?",
+    "option_a": "El padre termina antes que el hijo",
+    "option_b": "No se garantiza un orden distinto del flujo del ciclo",
+    "option_c": "El hijo termina siempre primero",
+    "option_d": "Ambos terminan juntos",
+    "correct": "B",
+    "explanation": "La documentación distingue la inicialización síncrona del orden asíncrono; el flujo general del ciclo no debe confundirse con una garantía de finalización simultánea."
   },
   {
     "id": 4455,
@@ -49074,24 +49074,24 @@ export const QUESTIONS = [
   {
     "id": 4462,
     "topic_num": 28,
-    "question": "¿Qué ocurre con los estilos aislados aportados por una Razor Class Library?",
-    "option_a": "Se descartan al compilar",
-    "option_b": "Se incluyen en el bundle de estilos de la aplicación",
-    "option_c": "Solo se aplican durante prerender",
+    "question": "¿Qué limitación se documenta para las reglas @import dentro de CSS aislado?",
+    "option_a": "Siempre se convierten en JavaScript",
+    "option_b": "Solo funcionan en el constructor",
+    "option_c": "No se admiten como importaciones CSS del aislamiento",
     "option_d": "Se convierten en parámetros",
-    "correct": "B",
-    "explanation": "Los estilos aislados de una RCL se incorporan al bundle de estilos de la aplicación consumidora."
+    "correct": "C",
+    "explanation": "Las importaciones CSS no son una vía admitida para incorporar reglas al CSS aislado."
   },
   {
     "id": 4463,
     "topic_num": 28,
-    "question": "¿Qué propiedad controla la desactivación de la agrupación de CSS aislado?",
-    "option_a": "DisableScopedCss",
-    "option_b": "DisableScopedCssBundling",
-    "option_c": "NoScopedStyles",
-    "option_d": "ScopedCssOff",
-    "correct": "B",
-    "explanation": "DisableScopedCssBundling es la propiedad de MSBuild usada para desactivar la agrupación."
+    "question": "¿Cuándo debe ejecutarse la compilación de un preprocesador CSS respecto de la reescritura de selectores de Blazor?",
+    "option_a": "Antes de que Blazor reescriba los selectores",
+    "option_b": "Después de publicar la aplicación",
+    "option_c": "Solo durante prerender",
+    "option_d": "Nunca",
+    "correct": "A",
+    "explanation": "La compilación del preprocesador debe ocurrir antes de que Blazor reescriba los selectores aislados."
   },
   {
     "id": 4464,
@@ -49118,13 +49118,13 @@ export const QUESTIONS = [
   {
     "id": 4466,
     "topic_num": 28,
-    "question": "¿Qué atributo renombra el parámetro implícito de una plantilla tipada?",
-    "option_a": "TypeName",
-    "option_b": "Context",
-    "option_c": "TemplateName",
-    "option_d": "Scope",
-    "correct": "B",
-    "explanation": "El atributo Context cambia el nombre del parámetro implícito de la plantilla."
+    "question": "¿Qué declara @typeparam TItem en un componente Razor genérico?",
+    "option_a": "Una propiedad de navegación",
+    "option_b": "Un identificador CSS",
+    "option_c": "Un parámetro de ruta",
+    "option_d": "El parámetro de tipo del componente",
+    "correct": "D",
+    "explanation": "@typeparam TItem declara el parámetro de tipo que hace genérico al componente Razor."
   },
   {
     "id": 4467,
@@ -49151,12 +49151,12 @@ export const QUESTIONS = [
   {
     "id": 4469,
     "topic_num": 28,
-    "question": "¿Qué diferencia conceptual hay entre RenderFragment y RenderFragment<TValue>?",
-    "option_a": "Ambos exigen el mismo valor",
-    "option_b": "RenderFragment solo existe en RCL",
-    "option_c": "RenderFragment<TValue> es siempre CSS",
-    "option_d": "El segundo recibe un valor tipado al invocarse",
-    "correct": "D",
-    "explanation": "RenderFragment<TValue> añade un valor de tipo TValue al fragmento renderizable."
+    "question": "¿Qué colección tipada usa el ejemplo genérico para proporcionar los elementos a TemplatedNavBar?",
+    "option_a": "IReadOnlyList<T>",
+    "option_b": "RenderFragment",
+    "option_c": "ParameterView.Empty",
+    "option_d": "string",
+    "correct": "A",
+    "explanation": "El ejemplo proporciona los elementos del componente genérico mediante IReadOnlyList<T>."
   }
 ]
