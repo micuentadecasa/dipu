@@ -1,0 +1,463 @@
+{
+  "generated_at": "2026-10-15",
+  "research_artifact": "docs/question-bank/research/topic-28-lot-11-lifecycle-css-template-boundaries.md",
+  "topic_num": 28,
+  "lot_num": 11,
+  "revision": 1,
+  "supplemental": true,
+  "excluded_from_target_manifest": true,
+  "source_ids": [
+    "BLAZOR-10"
+  ],
+  "batches": [
+    {
+      "topic_num": 28,
+      "lot_num": 11,
+      "source_ids": [
+        "BLAZOR-10"
+      ],
+      "questions": [
+        {
+          "objective_id": "t28-lo-supp-001",
+          "difficulty": "intermediate",
+          "question_type": "concept",
+          "question": "ParameterView.TryGetValue recibe un nombre de parámetro que coincide con el nombre de la propiedad. ¿Qué regla de coincidencia documenta la API?",
+          "options": [
+            "La coincidencia ignora siempre mayúsculas",
+            "La coincidencia de nombre distingue mayúsculas y minúsculas",
+            "La coincidencia usa la ruta URL",
+            "La coincidencia solo usa el tipo"
+          ],
+          "correct": "B",
+          "explanation": "ParameterView.TryGetValue usa coincidencia de nombre sensible a mayúsculas y minúsculas.",
+          "citation": "When parameters are set (SetParametersAsync)",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "parameterview-trygetvalue-case-sensitive",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
+        },
+        {
+          "objective_id": "t28-lo-supp-002",
+          "difficulty": "advanced",
+          "question_type": "scenario",
+          "question": "¿Qué valor puede pasar un componente a SetParametersAsync si pretende omitir deliberadamente los parámetros entrantes?",
+          "options": [
+            "null",
+            "Un RenderFragment vacío",
+            "ParameterView.Empty",
+            "Una ruta vacía"
+          ],
+          "correct": "C",
+          "explanation": "ParameterView.Empty representa una vista sin parámetros para ese caso deliberado.",
+          "citation": "When parameters are set (SetParametersAsync)",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "parameterview-empty-bypass",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
+        },
+        {
+          "objective_id": "t28-lo-supp-003",
+          "difficulty": "intermediate",
+          "question_type": "concept",
+          "question": "Antes de inicializar al hijo, ¿qué ocurre normalmente con el renderizado del componente padre?",
+          "options": [
+            "El padre se renderiza antes de que comience el hijo",
+            "El hijo se renderiza antes del padre",
+            "Ninguno se renderiza",
+            "Solo se renderiza el hijo"
+          ],
+          "correct": "A",
+          "explanation": "El ciclo de renderizado procesa primero el padre y después el contenido del hijo.",
+          "citation": "Component initialization (OnInitialized{Async})",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "parent-render-before-child",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
+        },
+        {
+          "objective_id": "t28-lo-supp-004",
+          "difficulty": "advanced",
+          "question_type": "scenario",
+          "question": "Durante el prerenderizado, ¿qué espera la quiescencia antes de producir el resultado?",
+          "options": [
+            "Solo las hojas CSS",
+            "Las tareas asíncronas del árbol de componentes",
+            "La primera navegación del usuario",
+            "El primer evento DOM"
+          ],
+          "correct": "B",
+          "explanation": "La quiescencia espera a que finalice el trabajo asíncrono relevante del árbol prerenderizado.",
+          "citation": "Prerendering and quiescence",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "prerender-quiescence",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
+        },
+        {
+          "objective_id": "t28-lo-supp-005",
+          "difficulty": "intermediate",
+          "question_type": "concept",
+          "question": "¿Qué orden de finalización puede garantizarse para la inicialización síncrona del padre y del hijo?",
+          "options": [
+            "El padre termina antes que el hijo",
+            "No se garantiza un orden distinto del flujo del ciclo",
+            "El hijo termina siempre primero",
+            "Ambos terminan juntos"
+          ],
+          "correct": "A",
+          "explanation": "En la inicialización síncrona, el padre completa OnInitialized antes de que se inicialice el hijo; el orden puede ser diferente cuando se usa OnInitializedAsync.",
+          "citation": "Component initialization (OnInitialized{Async})",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "synchronous-initialization-completion-order",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
+        },
+        {
+          "objective_id": "t28-lo-supp-006",
+          "difficulty": "intermediate",
+          "question_type": "concept",
+          "question": "¿Cómo trata Blazor un parámetro complejo cuando el padre vuelve a renderizar el componente?",
+          "options": [
+            "Siempre como inmutable",
+            "Siempre como inexistente",
+            "Como potencialmente cambiado",
+            "Solo como cambiado si cambia su referencia"
+          ],
+          "correct": "C",
+          "explanation": "Los parámetros complejos se consideran potencialmente cambiados porque su contenido puede haber cambiado.",
+          "citation": "After parameters are set (OnParametersSet{Async})",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "complex-parameter-change-treatment",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
+        },
+        {
+          "objective_id": "t28-lo-supp-007",
+          "difficulty": "advanced",
+          "question_type": "scenario",
+          "question": "Al implementar un método de ciclo de vida en una clase base personalizada, ¿qué debe decidir explícitamente el componente derivado?",
+          "options": [
+            "Si debe llamar a la implementación base",
+            "Si debe crear un CSS scope",
+            "Si debe serializar RenderFragment",
+            "Si debe usar una ruta"
+          ],
+          "correct": "A",
+          "explanation": "Una clase base personalizada puede requerir que el derivado invoque explícitamente su implementación base.",
+          "citation": "Component base class lifecycle methods",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "custom-base-lifecycle-call",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
+        },
+        {
+          "objective_id": "t28-lo-supp-008",
+          "difficulty": "basic",
+          "question_type": "concept",
+          "question": "¿Qué parte de un método de ciclo de vida asíncrono se ejecuta antes de que comience la continuación tras await?",
+          "options": [
+            "La parte asíncrona posterior",
+            "La parte síncrona inicial",
+            "El callback de disposición",
+            "El renderizado del hijo"
+          ],
+          "correct": "B",
+          "explanation": "La parte síncrona del método se ejecuta antes de la continuación asíncrona.",
+          "citation": "Component lifecycle synchronous and asynchronous methods",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "synchronous-before-asynchronous-lifecycle",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
+        },
+        {
+          "objective_id": "t28-lo-supp-009",
+          "difficulty": "intermediate",
+          "question_type": "concept",
+          "question": "¿Cuándo están disponibles las referencias a elementos y componentes para uso interactivo?",
+          "options": [
+            "Durante el constructor",
+            "Antes de asignar parámetros",
+            "Después de que termina el renderizado interactivo",
+            "Solo durante el prerenderizado"
+          ],
+          "correct": "C",
+          "explanation": "Las referencias se pueblan después del renderizado interactivo, en los callbacks after-render.",
+          "citation": "After component render (OnAfterRender{Async})",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "references-populated-after-interactive-render",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
+        },
+        {
+          "objective_id": "t28-lo-supp-010",
+          "difficulty": "basic",
+          "question_type": "concept",
+          "question": "¿Qué relación de nombres requiere normalmente un archivo CSS aislado de Razor?",
+          "options": [
+            "Cualquier nombre en cualquier carpeta",
+            "Mismo nombre base y carpeta que el componente Razor",
+            "Nombre idéntico al ensamblado",
+            "Nombre de una ruta URL"
+          ],
+          "correct": "B",
+          "explanation": "El archivo .razor.css se asocia normalmente por nombre base y ubicación con el componente Razor.",
+          "citation": "CSS isolation file naming",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "razor-css-same-folder-basename",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
+        },
+        {
+          "objective_id": "t28-lo-supp-011",
+          "difficulty": "advanced",
+          "question_type": "scenario",
+          "question": "¿Qué ocurre con la coincidencia del nombre base al asociar un archivo .razor.css?",
+          "options": [
+            "Depende de mayúsculas y minúsculas",
+            "Exige una ruta URL",
+            "Solo funciona en RCL",
+            "Depende del nombre del parámetro"
+          ],
+          "correct": "A",
+          "explanation": "La coincidencia del nombre base del archivo .razor.css es sensible a mayúsculas y minúsculas; debe coincidir con el nombre del componente.",
+          "citation": "CSS isolation file naming",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "razor-css-case-sensitive-basename",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
+        },
+        {
+          "objective_id": "t28-lo-supp-012",
+          "difficulty": "advanced",
+          "question_type": "scenario",
+          "question": "¿Qué limitación documentada se aplica a una importación CSS escrita dentro de un bloque de código Razor?",
+          "options": [
+            "Se convierte en RenderFragment",
+            "Se agrupa automáticamente",
+            "Se ejecuta como JavaScript",
+            "No está admitida como importación CSS aislada"
+          ],
+          "correct": "D",
+          "explanation": "Las importaciones CSS dentro de bloques de código Razor no son una vía admitida por el aislamiento CSS.",
+          "citation": "CSS isolation limitations",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "unsupported-css-import-in-razor-code",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
+        },
+        {
+          "objective_id": "t28-lo-supp-013",
+          "difficulty": "advanced",
+          "question_type": "scenario",
+          "question": "¿Qué limitación se documenta para las reglas @import dentro de CSS aislado?",
+          "options": [
+            "Siempre se convierten en JavaScript",
+            "Solo funcionan en el constructor",
+            "No se admiten como importaciones CSS del aislamiento",
+            "Se convierten en parámetros"
+          ],
+          "correct": "C",
+          "explanation": "Las importaciones CSS no son una vía admitida para incorporar reglas al CSS aislado.",
+          "citation": "CSS isolation — CSS imports",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "isolated-css-import-limitation",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
+        },
+        {
+          "objective_id": "t28-lo-supp-014",
+          "difficulty": "advanced",
+          "question_type": "scenario",
+          "question": "¿Cuándo debe ejecutarse la compilación de un preprocesador CSS respecto de la reescritura de selectores de Blazor?",
+          "options": [
+            "Antes de que Blazor reescriba los selectores",
+            "Después de publicar la aplicación",
+            "Solo durante prerender",
+            "Nunca"
+          ],
+          "correct": "A",
+          "explanation": "La compilación del preprocesador debe ocurrir antes de que Blazor reescriba los selectores aislados.",
+          "citation": "CSS isolation — preprocessor ordering",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "css-preprocessor-before-rewrite",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
+        },
+        {
+          "objective_id": "t28-lo-supp-015",
+          "difficulty": "basic",
+          "question_type": "concept",
+          "question": "¿Qué tipo de archivo genera normalmente el proceso de agrupación de CSS aislado?",
+          "options": [
+            "Un activo estático de estilos",
+            "Una tabla SQL",
+            "Un componente dinámico",
+            "Un archivo de parámetros"
+          ],
+          "correct": "A",
+          "explanation": "El bundle se produce como un activo estático de estilos para la aplicación.",
+          "citation": "CSS isolation bundling",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "scoped-css-static-asset",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
+        },
+        {
+          "objective_id": "t28-lo-supp-016",
+          "difficulty": "intermediate",
+          "question_type": "concept",
+          "question": "¿Qué parámetro de plantilla no recibe un valor de elemento en el ejemplo TemplatedNavBar?",
+          "options": [
+            "ItemTemplate",
+            "Items",
+            "TItem",
+            "StartContent"
+          ],
+          "correct": "D",
+          "explanation": "StartContent es el fragmento de contenido inicial sin el valor de cada elemento.",
+          "citation": "Templated components",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "untyped-template-parameter-role",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
+        },
+        {
+          "objective_id": "t28-lo-supp-017",
+          "difficulty": "intermediate",
+          "question_type": "concept",
+          "question": "¿Qué declara @typeparam TItem en un componente Razor genérico?",
+          "options": [
+            "Una propiedad de navegación",
+            "Un identificador CSS",
+            "Un parámetro de ruta",
+            "El parámetro de tipo del componente"
+          ],
+          "correct": "D",
+          "explanation": "@typeparam TItem declara el parámetro de tipo que hace genérico al componente Razor.",
+          "citation": "Templated components — @typeparam declaration",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "typeparam-declares-component-type",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
+        },
+        {
+          "objective_id": "t28-lo-supp-018",
+          "difficulty": "intermediate",
+          "question_type": "concept",
+          "question": "¿Qué relación tiene TItem con la colección de elementos de un componente genérico?",
+          "options": [
+            "Es un nombre CSS",
+            "Es un parámetro de navegación",
+            "Es el parámetro de tipo de los elementos",
+            "Es una propiedad de configuración"
+          ],
+          "correct": "C",
+          "explanation": "TItem representa el tipo de cada elemento de la colección del componente.",
+          "citation": "Templated components",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "generic-item-type-relationship",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
+        },
+        {
+          "objective_id": "t28-lo-supp-019",
+          "difficulty": "advanced",
+          "question_type": "scenario",
+          "question": "¿Qué puede inferir el compilador a partir de un parámetro de tipo RenderFragment<TItem>?",
+          "options": [
+            "El tipo genérico del componente cuando el contexto lo permite",
+            "El nombre del ensamblado",
+            "El scope CSS",
+            "La ruta de navegación"
+          ],
+          "correct": "A",
+          "explanation": "Los parámetros tipados de plantilla pueden aportar información para inferir el tipo genérico.",
+          "citation": "Templated components",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "generic-type-inference-from-template",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
+        },
+        {
+          "objective_id": "t28-lo-supp-020",
+          "difficulty": "intermediate",
+          "question_type": "concept",
+          "question": "¿Qué colección tipada usa el ejemplo genérico para proporcionar los elementos a TemplatedNavBar?",
+          "options": [
+            "IReadOnlyList<T>",
+            "RenderFragment",
+            "ParameterView.Empty",
+            "string"
+          ],
+          "correct": "A",
+          "explanation": "El ejemplo proporciona los elementos del componente genérico mediante IReadOnlyList<T>.",
+          "citation": "Templated components — IReadOnlyList<T>",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-10.0",
+          "semantic_review": {
+            "status": "unique",
+            "proposition_key": "generic-component-items-collection",
+            "published_match_count": 0,
+            "basis": "Independent proposition-level comparison against every accepted topic-28 record and every other candidate in this lot found no collision."
+          }
+        }
+      ]
+    }
+  ]
+}
