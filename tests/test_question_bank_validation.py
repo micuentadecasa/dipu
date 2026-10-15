@@ -182,31 +182,23 @@ class RuntimeQuestionBankTests(unittest.TestCase):
         self.assertTrue(all(not validate_record(record) for record in records))
         self.assertTrue(all(result["status"] == "unique" for record in records for result in record["deduplication"].values()))
 
-    def test_topic28_supplemental_lifecycle_css_templates_is_published_and_gated(self):
-        path = ROOT / "docs/question-bank/accepted/topic-28-lot-11.json"
+    def test_topic28_supplemental_lifecycle_css_templates_is_quarantined(self):
+        path = ROOT / "docs/question-bank/lots/topic-28-lot-11.json"
         payload = json.loads(path.read_text(encoding="utf-8"))
         records = payload["questions"]
+        self.assertEqual(payload["state"], "candidates_written")
         self.assertTrue(payload["supplemental"])
         self.assertTrue(payload["excluded_from_target_manifest"])
+        self.assertEqual(payload["counts"], {"candidates": 20, "accepted": 0, "rejected": 0, "quarantined": 20})
         self.assertEqual(len(records), 20)
-        self.assertEqual(Counter(record["correct"] for record in records), Counter({"A": 7, "B": 5, "C": 5, "D": 3}))
         self.assertEqual({record["sources"][0]["source_id"] for record in records}, {"BLAZOR-10"})
-        self.assertEqual({record["sources"][0]["url"] for record in records}, {
-            "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
-            "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0",
-            "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-10.0",
-        })
         self.assertEqual(len({record["stable_id"] for record in records}), 20)
         self.assertTrue(all(record["learning_objective_id"].startswith("t28-lo-supp-") for record in records))
         self.assertTrue(all(not answer_leakage_errors(record) for record in records))
         self.assertTrue(all(not validate_record(record) for record in records))
-        self.assertTrue(all(result["status"] == "unique" for record in records for result in record["deduplication"].values()))
-        candidates = json.loads((ROOT / "docs/question-bank/lots/topic-28-lot-11.json").read_text(encoding="utf-8"))["questions"]
-        candidate_by_id = {record["stable_id"]: record for record in candidates}
-        for record in records:
-            source = candidate_by_id[record["stable_id"]]
-            for name in ("exact", "lexical", "near_lexical"):
-                self.assertEqual(record["deduplication"][name], source["deduplication"][name])
+        self.assertTrue(all(record["status"] == "quarantined" for record in records))
+        self.assertTrue(all(record["deduplication"][name]["status"] == "unique" for record in records for name in ("exact", "lexical", "near_lexical")))
+        self.assertTrue(all(record["deduplication"][name]["status"] == "uncertain" for record in records for name in ("semantic", "concept")))
 
 
 class CheckpointTests(unittest.TestCase):
