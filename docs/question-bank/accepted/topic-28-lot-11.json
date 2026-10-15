@@ -19,16 +19,16 @@
   "review_audit": "docs/question-bank/reviews/topic-28-lot-11.json",
   "questions": [
     {
-      "id": 4681,
-      "stable_id": "qb-t28-supp-001-6218391edab8274b2bd9e449",
+      "id": 4701,
+      "stable_id": "qb-t28-supp-001-857418620d7fc68b590b7449",
       "topic_num": 28,
-      "question": "¿Qué objeto recibe SetParametersAsync cada vez que se invoca para aplicar parámetros a un componente?",
-      "option_a": "Un ParameterView con el conjunto de valores recibido",
-      "option_b": "Un EditContext con el modelo del formulario",
-      "option_c": "Un RenderFragment con el contenido hijo",
-      "option_d": "Un NavigationManager con la ruta actual",
-      "correct": "A",
-      "explanation": "La documentación define ParameterView como el objeto que contiene el conjunto de valores de parámetros del componente en cada llamada a SetParametersAsync.",
+      "question": "Si ParameterView no contiene un valor para una propiedad de parámetro, ¿qué hace la implementación predeterminada?",
+      "option_a": "La establece en null",
+      "option_b": "La deja sin cambios",
+      "option_c": "Lanza una excepción",
+      "option_d": "La elimina del componente",
+      "correct": "B",
+      "explanation": "Los parámetros sin valor correspondiente en ParameterView quedan sin cambios.",
       "learning_objective_id": "t28-lo-supp-001",
       "difficulty": "basic",
       "question_type": "concept",
@@ -80,29 +80,29 @@
         "semantic": {
           "status": "unique",
           "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
+          "basis": "Compared missing-parameter preservation with all published lifecycle records and lot-11 candidates; no proposition collision."
         },
         "concept": {
           "status": "unique",
           "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
+          "basis": "Compared missing-parameter preservation with all published lifecycle records and lot-11 candidates; no proposition collision."
         }
       },
       "status": "validated"
     },
     {
-      "id": 4682,
-      "stable_id": "qb-t28-supp-002-a638d51124c281153bb7a0c4",
+      "id": 4702,
+      "stable_id": "qb-t28-supp-002-54478a0bf44834f23213965d",
       "topic_num": 28,
-      "question": "Si ParameterView no contiene un valor correspondiente a una propiedad de parámetro, ¿qué hace la implementación predeterminada de SetParametersAsync?",
-      "option_a": "La establece siempre en null",
-      "option_b": "La deja sin cambios",
-      "option_c": "Lanza una excepción de validación",
-      "option_d": "La sustituye por un RenderFragment vacío",
-      "correct": "B",
-      "explanation": "La implementación predeterminada solo asigna propiedades con el atributo correspondiente cuando existe un valor coincidente; los parámetros ausentes quedan sin cambios.",
+      "question": "En la inicialización síncrona de un componente padre y uno hijo, ¿qué orden documenta Blazor?",
+      "option_a": "El hijo siempre termina primero",
+      "option_b": "No existe ninguna llamada al hijo",
+      "option_c": "El padre se inicializa antes que el hijo",
+      "option_d": "Ambos se inicializan después del render",
+      "correct": "C",
+      "explanation": "La inicialización síncrona del padre completa antes de la del hijo.",
       "learning_objective_id": "t28-lo-supp-002",
-      "difficulty": "basic",
+      "difficulty": "intermediate",
       "question_type": "concept",
       "sources": [
         {
@@ -111,7 +111,7 @@
           "authority": "Microsoft Learn",
           "tier": "official_primary",
           "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
-          "citation": "When parameters are set (SetParametersAsync)",
+          "citation": "Component initialization — parent and child order",
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-15",
           "verified_at": "2026-10-15"
@@ -122,13 +122,13 @@
           "status": "passed",
           "reviewer": "independent-source-review-2026-10-15",
           "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section When parameters are set (SetParametersAsync)."
+          "basis": "Independent answer-key check against BLAZOR-10 section Component initialization — parent and child order."
         },
         "explanation": {
           "status": "passed",
           "reviewer": "independent-source-review-2026-10-15",
           "checked_at": "2026-10-15",
-          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section When parameters are set (SetParametersAsync)."
+          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section Component initialization — parent and child order."
         },
         "reviewed_at": "2026-10-15",
         "reviewer_decision": "accepted"
@@ -152,30 +152,30 @@
         "semantic": {
           "status": "unique",
           "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
+          "basis": "Compared synchronous parent-before-child initialization with all published lifecycle records and lot-11 candidates; no proposition collision."
         },
         "concept": {
           "status": "unique",
           "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
+          "basis": "Compared synchronous parent-before-child initialization with all published lifecycle records and lot-11 candidates; no proposition collision."
         }
       },
       "status": "validated"
     },
     {
-      "id": 4683,
-      "stable_id": "qb-t28-supp-003-c75225004abc6ee27b497c09",
+      "id": 4703,
+      "stable_id": "qb-t28-supp-003-7dd0e318d09d73d44a8c3e32",
       "topic_num": 28,
-      "question": "Al sobrescribir SetParametersAsync en un componente normal, ¿qué recomienda generalmente la documentación?",
-      "option_a": "Llamar solo a OnAfterRenderAsync",
-      "option_b": "No devolver ninguna Task",
-      "option_c": "Esperar a base.SetParametersAsync(parameters)",
-      "option_d": "Reemplazar ParameterView por EditContext",
-      "correct": "C",
-      "explanation": "La recomendación general es invocar await base.SetParametersAsync(parameters), porque la implementación base aplica parámetros y participa en la lógica del ciclo de vida y del renderizado.",
+      "question": "Si la inicialización del padre y del hijo es asíncrona, ¿qué orden de finalización puede garantizarse?",
+      "option_a": "Ninguno: depende del código asíncrono",
+      "option_b": "Siempre el del hijo",
+      "option_c": "Siempre el del padre",
+      "option_d": "El orden del markup",
+      "correct": "A",
+      "explanation": "La finalización asíncrona depende del código y no tiene un orden garantizado.",
       "learning_objective_id": "t28-lo-supp-003",
-      "difficulty": "basic",
-      "question_type": "procedure",
+      "difficulty": "intermediate",
+      "question_type": "concept",
       "sources": [
         {
           "source_id": "BLAZOR-10",
@@ -183,7 +183,7 @@
           "authority": "Microsoft Learn",
           "tier": "official_primary",
           "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
-          "citation": "When parameters are set (SetParametersAsync)",
+          "citation": "Component initialization — asynchronous order",
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-15",
           "verified_at": "2026-10-15"
@@ -194,13 +194,13 @@
           "status": "passed",
           "reviewer": "independent-source-review-2026-10-15",
           "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section When parameters are set (SetParametersAsync)."
+          "basis": "Independent answer-key check against BLAZOR-10 section Component initialization — asynchronous order."
         },
         "explanation": {
           "status": "passed",
           "reviewer": "independent-source-review-2026-10-15",
           "checked_at": "2026-10-15",
-          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section When parameters are set (SetParametersAsync)."
+          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section Component initialization — asynchronous order."
         },
         "reviewed_at": "2026-10-15",
         "reviewer_decision": "accepted"
@@ -224,29 +224,29 @@
         "semantic": {
           "status": "unique",
           "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
+          "basis": "Compared nondeterministic asynchronous initialization completion with all published lifecycle records and lot-11 candidates; no proposition collision."
         },
         "concept": {
           "status": "unique",
           "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
+          "basis": "Compared nondeterministic asynchronous initialization completion with all published lifecycle records and lot-11 candidates; no proposition collision."
         }
       },
       "status": "validated"
     },
     {
-      "id": 4684,
-      "stable_id": "qb-t28-supp-004-017199d8e93a3f2a1d737aaa",
+      "id": 4704,
+      "stable_id": "qb-t28-supp-004-b714995a9bcc33350df10442",
       "topic_num": 28,
-      "question": "¿Qué describe mejor el propósito de OnInitialized y OnInitializedAsync?",
-      "option_a": "Reaccionar exclusivamente a cada cambio de parámetro",
-      "option_b": "Ejecutar JavaScript antes de que exista el DOM",
-      "option_c": "Controlar la especificidad de los selectores CSS",
-      "option_d": "Inicializar el componente durante toda la vida de su instancia",
+      "question": "¿Qué puede provocar que se invoque OnParametersSet{Async} aunque un parámetro complejo parezca no haber cambiado?",
+      "option_a": "Un cambio de CSS",
+      "option_b": "Una excepción de JavaScript",
+      "option_c": "La destrucción del componente",
+      "option_d": "Que el padre vuelva a renderizar con un parámetro complejo",
       "correct": "D",
-      "explanation": "Los métodos de inicialización se usan para inicializar una instancia durante toda su vida; los cambios de parámetros deben tratarse normalmente en OnParametersSet{Async}.",
+      "explanation": "Los parámetros complejos se tratan como cambiados cuando el padre vuelve a renderizar.",
       "learning_objective_id": "t28-lo-supp-004",
-      "difficulty": "basic",
+      "difficulty": "intermediate",
       "question_type": "concept",
       "sources": [
         {
@@ -255,7 +255,7 @@
           "authority": "Microsoft Learn",
           "tier": "official_primary",
           "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
-          "citation": "Component initialization (OnInitialized{Async})",
+          "citation": "After parameters are set — complex parameters",
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-15",
           "verified_at": "2026-10-15"
@@ -266,13 +266,13 @@
           "status": "passed",
           "reviewer": "independent-source-review-2026-10-15",
           "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section Component initialization (OnInitialized{Async})."
+          "basis": "Independent answer-key check against BLAZOR-10 section After parameters are set — complex parameters."
         },
         "explanation": {
           "status": "passed",
           "reviewer": "independent-source-review-2026-10-15",
           "checked_at": "2026-10-15",
-          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section Component initialization (OnInitialized{Async})."
+          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section After parameters are set — complex parameters."
         },
         "reviewed_at": "2026-10-15",
         "reviewer_decision": "accepted"
@@ -296,29 +296,29 @@
         "semantic": {
           "status": "unique",
           "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
+          "basis": "Compared complex-parameter callback triggering with all published lifecycle records and lot-11 candidates; no proposition collision."
         },
         "concept": {
           "status": "unique",
           "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
+          "basis": "Compared complex-parameter callback triggering with all published lifecycle records and lot-11 candidates; no proposition collision."
         }
       },
       "status": "validated"
     },
     {
-      "id": 4685,
-      "stable_id": "qb-t28-supp-005-a66fe17ede3ff50d4cc93c7e",
+      "id": 4705,
+      "stable_id": "qb-t28-supp-005-a9e4d418fb6911708124b526",
       "topic_num": 28,
-      "question": "Un componente padre y uno hijo realizan inicialización asíncrona. ¿Qué puede afirmar la aplicación sobre el orden de finalización?",
-      "option_a": "No se puede determinar: depende del código de inicialización",
-      "option_b": "El hijo siempre termina antes que el padre",
-      "option_c": "El padre siempre termina después del hijo",
-      "option_d": "Ambos terminan necesariamente al mismo tiempo",
-      "correct": "A",
-      "explanation": "La finalización de la inicialización asíncrona del padre y del hijo no tiene un orden garantizado porque depende del código que ejecutan.",
+      "question": "Antes de un await que devuelve una Task incompleta en OnParametersSetAsync, ¿qué debe hacer el componente?",
+      "option_a": "Esperar a que exista ElementReference",
+      "option_b": "Dejar un estado válido para renderizar",
+      "option_c": "Llamar dos veces a StateHasChanged",
+      "option_d": "No asignar ningún parámetro",
+      "correct": "B",
+      "explanation": "La parte síncrona previa a la espera debe dejar un estado válido para el render.",
       "learning_objective_id": "t28-lo-supp-005",
-      "difficulty": "intermediate",
+      "difficulty": "advanced",
       "question_type": "scenario",
       "sources": [
         {
@@ -327,7 +327,7 @@
           "authority": "Microsoft Learn",
           "tier": "official_primary",
           "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
-          "citation": "Component initialization (OnInitialized{Async})",
+          "citation": "After parameters are set — valid state before await",
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-15",
           "verified_at": "2026-10-15"
@@ -338,13 +338,13 @@
           "status": "passed",
           "reviewer": "independent-source-review-2026-10-15",
           "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section Component initialization (OnInitialized{Async})."
+          "basis": "Independent answer-key check against BLAZOR-10 section After parameters are set — valid state before await."
         },
         "explanation": {
           "status": "passed",
           "reviewer": "independent-source-review-2026-10-15",
           "checked_at": "2026-10-15",
-          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section Component initialization (OnInitialized{Async})."
+          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section After parameters are set — valid state before await."
         },
         "reviewed_at": "2026-10-15",
         "reviewer_decision": "accepted"
@@ -368,398 +368,38 @@
         "semantic": {
           "status": "unique",
           "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
+          "basis": "Compared valid-state requirements before OnParametersSetAsync await with all published lifecycle records and lot-11 candidates; no proposition collision."
         },
         "concept": {
           "status": "unique",
           "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
+          "basis": "Compared valid-state requirements before OnParametersSetAsync await with all published lifecycle records and lot-11 candidates; no proposition collision."
         }
       },
       "status": "validated"
     },
     {
-      "id": 4686,
-      "stable_id": "qb-t28-supp-006-799483343a1c511bbf1c09a7",
+      "id": 4706,
+      "stable_id": "qb-t28-supp-006-0a792c2421cc6b13672b26a6",
       "topic_num": 28,
-      "question": "OnInitializedAsync va a esperar una operación potencialmente incompleta. ¿Qué debe garantizar el código antes del await?",
-      "option_a": "Que todos los parámetros sean tipos primitivos",
-      "option_b": "Que el componente esté en un estado válido para renderizar",
-      "option_c": "Que se haya llamado a StateHasChanged dos veces",
-      "option_d": "Que exista ya una referencia ElementReference",
-      "correct": "B",
-      "explanation": "Si OnInitializedAsync devuelve una Task incompleta, la parte síncrona previa al await debe dejar el componente en un estado válido para el renderizado.",
-      "learning_objective_id": "t28-lo-supp-006",
-      "difficulty": "intermediate",
-      "question_type": "procedure",
-      "sources": [
-        {
-          "source_id": "BLAZOR-10",
-          "title": "ASP.NET Core Razor component lifecycle",
-          "authority": "Microsoft Learn",
-          "tier": "official_primary",
-          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
-          "citation": "Component initialization (OnInitialized{Async})",
-          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
-          "retrieved_at": "2026-10-15",
-          "verified_at": "2026-10-15"
-        }
-      ],
-      "verification": {
-        "answer": {
-          "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section Component initialization (OnInitialized{Async})."
-        },
-        "explanation": {
-          "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section Component initialization (OnInitialized{Async})."
-        },
-        "reviewed_at": "2026-10-15",
-        "reviewer_decision": "accepted"
-      },
-      "deduplication": {
-        "exact": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "stable ID/content digest comparison"
-        },
-        "lexical": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "accent-folded punctuation-free prompt key"
-        },
-        "near_lexical": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
-        },
-        "semantic": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
-        },
-        "concept": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
-        }
-      },
-      "status": "validated"
-    },
-    {
-      "id": 4687,
-      "stable_id": "qb-t28-supp-007-2a4a0cfa2d38b36dd1924120",
-      "topic_num": 28,
-      "question": "En una aplicación Blazor que prerenderiza, ¿cuántas veces puede ejecutarse OnInitializedAsync para una instancia durante el flujo de prerender e interacción?",
-      "option_a": "Nunca durante el prerender",
-      "option_b": "Una sola vez siempre",
-      "option_c": "Dos veces: durante el prerender estático y al renderizar interactivamente",
-      "option_d": "Una vez por cada elemento HTML generado",
-      "correct": "C",
-      "explanation": "La documentación indica que las aplicaciones que prerenderizan pueden llamar a OnInitializedAsync una vez para el render estático inicial y otra cuando el navegador renderiza el componente interactivamente.",
-      "learning_objective_id": "t28-lo-supp-007",
-      "difficulty": "intermediate",
-      "question_type": "concept",
-      "sources": [
-        {
-          "source_id": "BLAZOR-10",
-          "title": "ASP.NET Core Razor component lifecycle",
-          "authority": "Microsoft Learn",
-          "tier": "official_primary",
-          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
-          "citation": "Component initialization (OnInitialized{Async}); prerendering",
-          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
-          "retrieved_at": "2026-10-15",
-          "verified_at": "2026-10-15"
-        }
-      ],
-      "verification": {
-        "answer": {
-          "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section Component initialization (OnInitialized{Async}); prerendering."
-        },
-        "explanation": {
-          "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section Component initialization (OnInitialized{Async}); prerendering."
-        },
-        "reviewed_at": "2026-10-15",
-        "reviewer_decision": "accepted"
-      },
-      "deduplication": {
-        "exact": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "stable ID/content digest comparison"
-        },
-        "lexical": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "accent-folded punctuation-free prompt key"
-        },
-        "near_lexical": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
-        },
-        "semantic": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
-        },
-        "concept": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
-        }
-      },
-      "status": "validated"
-    },
-    {
-      "id": 4688,
-      "stable_id": "qb-t28-supp-008-cdf35241829651e248dc8b19",
-      "topic_num": 28,
-      "question": "Un componente intenta invocar JavaScript durante el prerenderizado. ¿Qué restricción documentada debe contemplar?",
-      "option_a": "JavaScript solo puede invocarse desde CSS aislado",
-      "option_b": "La llamada se convierte automáticamente en navegación",
-      "option_c": "Solo se permite si el parámetro es complejo",
-      "option_d": "Durante el prerenderizado no es posible llamar a JavaScript",
-      "correct": "D",
-      "explanation": "Durante el prerenderizado no es posible llamar a JavaScript; la documentación muestra el uso de OnAfterRenderAsync para interop compatible con prerenderizado.",
-      "learning_objective_id": "t28-lo-supp-008",
-      "difficulty": "intermediate",
-      "question_type": "scenario",
-      "sources": [
-        {
-          "source_id": "BLAZOR-10",
-          "title": "ASP.NET Core Razor component lifecycle",
-          "authority": "Microsoft Learn",
-          "tier": "official_primary",
-          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
-          "citation": "Prerendering with JavaScript interop",
-          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
-          "retrieved_at": "2026-10-15",
-          "verified_at": "2026-10-15"
-        }
-      ],
-      "verification": {
-        "answer": {
-          "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section Prerendering with JavaScript interop."
-        },
-        "explanation": {
-          "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section Prerendering with JavaScript interop."
-        },
-        "reviewed_at": "2026-10-15",
-        "reviewer_decision": "accepted"
-      },
-      "deduplication": {
-        "exact": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "stable ID/content digest comparison"
-        },
-        "lexical": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "accent-folded punctuation-free prompt key"
-        },
-        "near_lexical": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
-        },
-        "semantic": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
-        },
-        "concept": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
-        }
-      },
-      "status": "validated"
-    },
-    {
-      "id": 4689,
-      "stable_id": "qb-t28-supp-009-17b342a4d26bcab658114073",
-      "topic_num": 28,
-      "question": "¿Cuándo pueden invocarse OnParametersSet y OnParametersSetAsync además de la inicialización inicial?",
-      "option_a": "Cuando el padre vuelve a renderizar y suministra parámetros, incluidos los complejos",
-      "option_b": "Solo cuando cambia una regla CSS",
-      "option_c": "Únicamente cuando se destruye la instancia",
-      "option_d": "Solo después de una navegación externa completa",
+      "question": "¿Dónde se configura un patrón personalizado para el identificador de alcance CSS?",
+      "option_a": "En el archivo de proyecto",
+      "option_b": "En el archivo .razor.css",
+      "option_c": "En un parámetro RenderFragment",
+      "option_d": "En appsettings.json",
       "correct": "A",
-      "explanation": "Estos métodos se invocan después de la inicialización y cuando el padre vuelve a renderizar proporcionando parámetros; la presencia de parámetros complejos hace que el conjunto se trate como cambiado.",
-      "learning_objective_id": "t28-lo-supp-009",
-      "difficulty": "intermediate",
-      "question_type": "concept",
-      "sources": [
-        {
-          "source_id": "BLAZOR-10",
-          "title": "ASP.NET Core Razor component lifecycle",
-          "authority": "Microsoft Learn",
-          "tier": "official_primary",
-          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
-          "citation": "After parameters are set (OnParametersSet{Async})",
-          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
-          "retrieved_at": "2026-10-15",
-          "verified_at": "2026-10-15"
-        }
-      ],
-      "verification": {
-        "answer": {
-          "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section After parameters are set (OnParametersSet{Async})."
-        },
-        "explanation": {
-          "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section After parameters are set (OnParametersSet{Async})."
-        },
-        "reviewed_at": "2026-10-15",
-        "reviewer_decision": "accepted"
-      },
-      "deduplication": {
-        "exact": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "stable ID/content digest comparison"
-        },
-        "lexical": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "accent-folded punctuation-free prompt key"
-        },
-        "near_lexical": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
-        },
-        "semantic": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
-        },
-        "concept": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
-        }
-      },
-      "status": "validated"
-    },
-    {
-      "id": 4690,
-      "stable_id": "qb-t28-supp-010-939dbec0b954133d647e4f6d",
-      "topic_num": 28,
-      "question": "¿En qué método debe realizarse el trabajo asíncrono que aplica parámetros y valores de propiedades?",
-      "option_a": "En el constructor del componente",
-      "option_b": "En OnParametersSetAsync",
-      "option_c": "En Dispose",
-      "option_d": "En ShouldRender",
-      "correct": "B",
-      "explanation": "La guía sitúa el trabajo asíncrono realizado al aplicar parámetros y valores de propiedades en el evento de ciclo de vida OnParametersSetAsync.",
-      "learning_objective_id": "t28-lo-supp-010",
-      "difficulty": "intermediate",
-      "question_type": "procedure",
-      "sources": [
-        {
-          "source_id": "BLAZOR-10",
-          "title": "ASP.NET Core Razor component lifecycle",
-          "authority": "Microsoft Learn",
-          "tier": "official_primary",
-          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
-          "citation": "After parameters are set (OnParametersSet{Async})",
-          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
-          "retrieved_at": "2026-10-15",
-          "verified_at": "2026-10-15"
-        }
-      ],
-      "verification": {
-        "answer": {
-          "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section After parameters are set (OnParametersSet{Async})."
-        },
-        "explanation": {
-          "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section After parameters are set (OnParametersSet{Async})."
-        },
-        "reviewed_at": "2026-10-15",
-        "reviewer_decision": "accepted"
-      },
-      "deduplication": {
-        "exact": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "stable ID/content digest comparison"
-        },
-        "lexical": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "accent-folded punctuation-free prompt key"
-        },
-        "near_lexical": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
-        },
-        "semantic": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
-        },
-        "concept": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
-        }
-      },
-      "status": "validated"
-    },
-    {
-      "id": 4691,
-      "stable_id": "qb-t28-supp-011-661968ea1d2366aae7cd7687",
-      "topic_num": 28,
-      "question": "OnParametersSetAsync espera una Task incompleta después de marcar una carga. ¿Qué requisito sigue siendo aplicable?",
-      "option_a": "La UI debe esperar sin renderizar hasta que termine",
-      "option_b": "Debe reemplazarse el método por OnInitializedAsync",
-      "option_c": "La parte síncrona debe dejar un estado válido para renderizar",
-      "option_d": "Debe eliminarse cualquier parámetro complejo",
-      "correct": "C",
-      "explanation": "Al igual que en la inicialización asíncrona, la parte de OnParametersSetAsync que se ejecuta antes de una espera incompleta debe dejar el componente en un estado válido para renderizar.",
-      "learning_objective_id": "t28-lo-supp-011",
-      "difficulty": "intermediate",
+      "explanation": "La documentación configura el patrón personalizado del scope identifier en el archivo del proyecto.",
+      "learning_objective_id": "t28-lo-supp-006",
+      "difficulty": "advanced",
       "question_type": "scenario",
       "sources": [
         {
           "source_id": "BLAZOR-10",
-          "title": "ASP.NET Core Razor component lifecycle",
+          "title": "ASP.NET Core Blazor CSS isolation",
           "authority": "Microsoft Learn",
           "tier": "official_primary",
-          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
-          "citation": "After parameters are set (OnParametersSet{Async})",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0",
+          "citation": "CSS isolation — custom scope format",
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-15",
           "verified_at": "2026-10-15"
@@ -770,13 +410,13 @@
           "status": "passed",
           "reviewer": "independent-source-review-2026-10-15",
           "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section After parameters are set (OnParametersSet{Async})."
+          "basis": "Independent answer-key check against BLAZOR-10 section CSS isolation — custom scope format."
         },
         "explanation": {
           "status": "passed",
           "reviewer": "independent-source-review-2026-10-15",
           "checked_at": "2026-10-15",
-          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section After parameters are set (OnParametersSet{Async})."
+          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section CSS isolation — custom scope format."
         },
         "reviewed_at": "2026-10-15",
         "reviewer_decision": "accepted"
@@ -800,38 +440,398 @@
         "semantic": {
           "status": "unique",
           "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
+          "basis": "Compared project-file scope-format configuration with all published CSS records and lot-11 candidates; no proposition collision."
         },
         "concept": {
           "status": "unique",
           "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
+          "basis": "Compared project-file scope-format configuration with all published CSS records and lot-11 candidates; no proposition collision."
         }
       },
       "status": "validated"
     },
     {
-      "id": 4692,
-      "stable_id": "qb-t28-supp-012-ec13b2d3284942f1011b1e38",
+      "id": 4707,
+      "stable_id": "qb-t28-supp-007-7df4bcb67140f0c81f9d7301",
       "topic_num": 28,
-      "question": "¿En qué momento se invocan OnAfterRender y OnAfterRenderAsync según la documentación?",
-      "option_a": "Antes de aplicar los parámetros iniciales",
-      "option_b": "Durante el constructor, antes del primer render",
-      "option_c": "Durante cualquier prerender estático aunque no haya DOM",
-      "option_d": "Después de un render interactivo, cuando la interfaz terminó de actualizarse",
+      "question": "¿Qué operador permite compartir un identificador de alcance entre varios archivos CSS aislados?",
+      "option_a": "+",
+      "option_b": "?",
+      "option_c": "*",
+      "option_d": "@",
+      "correct": "C",
+      "explanation": "El operador comodín * permite compartir scope identifiers entre archivos.",
+      "learning_objective_id": "t28-lo-supp-007",
+      "difficulty": "advanced",
+      "question_type": "scenario",
+      "sources": [
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor CSS isolation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0",
+          "citation": "CSS isolation — shared scope identifiers",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-15",
+          "verified_at": "2026-10-15"
+        }
+      ],
+      "verification": {
+        "answer": {
+          "status": "passed",
+          "reviewer": "independent-source-review-2026-10-15",
+          "checked_at": "2026-10-15",
+          "basis": "Independent answer-key check against BLAZOR-10 section CSS isolation — shared scope identifiers."
+        },
+        "explanation": {
+          "status": "passed",
+          "reviewer": "independent-source-review-2026-10-15",
+          "checked_at": "2026-10-15",
+          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section CSS isolation — shared scope identifiers."
+        },
+        "reviewed_at": "2026-10-15",
+        "reviewer_decision": "accepted"
+      },
+      "deduplication": {
+        "exact": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "stable ID/content digest comparison"
+        },
+        "lexical": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "accent-folded punctuation-free prompt key"
+        },
+        "near_lexical": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
+        },
+        "semantic": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "Compared wildcard scope sharing with all published CSS records and lot-11 candidates; no proposition collision."
+        },
+        "concept": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "Compared wildcard scope sharing with all published CSS records and lot-11 candidates; no proposition collision."
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": 4708,
+      "stable_id": "qb-t28-supp-008-cdd5e7b0f89f884f078bb571",
+      "topic_num": 28,
+      "question": "¿Qué relación permite conseguir la herencia de estilos con identificadores de alcance?",
+      "option_a": "Un componente hijo sin markup",
+      "option_b": "Una hoja global sin bundle",
+      "option_c": "Un selector JavaScript",
+      "option_d": "Una hoja de componente base y otra derivada",
       "correct": "D",
-      "explanation": "Los callbacks after-render se invocan después de un render interactivo y de que la interfaz haya terminado de actualizarse; las referencias de elemento y componente están disponibles entonces.",
+      "explanation": "Las hojas aisladas de un componente base y uno derivado pueden compartir el scope para heredar estilos.",
+      "learning_objective_id": "t28-lo-supp-008",
+      "difficulty": "advanced",
+      "question_type": "scenario",
+      "sources": [
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor CSS isolation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0",
+          "citation": "CSS isolation — inherited scoped styles",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-15",
+          "verified_at": "2026-10-15"
+        }
+      ],
+      "verification": {
+        "answer": {
+          "status": "passed",
+          "reviewer": "independent-source-review-2026-10-15",
+          "checked_at": "2026-10-15",
+          "basis": "Independent answer-key check against BLAZOR-10 section CSS isolation — inherited scoped styles."
+        },
+        "explanation": {
+          "status": "passed",
+          "reviewer": "independent-source-review-2026-10-15",
+          "checked_at": "2026-10-15",
+          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section CSS isolation — inherited scoped styles."
+        },
+        "reviewed_at": "2026-10-15",
+        "reviewer_decision": "accepted"
+      },
+      "deduplication": {
+        "exact": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "stable ID/content digest comparison"
+        },
+        "lexical": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "accent-folded punctuation-free prompt key"
+        },
+        "near_lexical": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
+        },
+        "semantic": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "Compared base-derived scoped-style inheritance with all published CSS records and lot-11 candidates; no proposition collision."
+        },
+        "concept": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "Compared base-derived scoped-style inheritance with all published CSS records and lot-11 candidates; no proposition collision."
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": 4709,
+      "stable_id": "qb-t28-supp-009-fcd46977dec17cd8726b33fc",
+      "topic_num": 28,
+      "question": "¿Cómo se transforma `div ::deep > a` en CSS aislado?",
+      "option_a": "En `div[b-{STRING}] > a`",
+      "option_b": "En `div > a[b-{STRING}]`",
+      "option_c": "En `div[a] > a`",
+      "option_d": "Se elimina el selector",
+      "correct": "A",
+      "explanation": "::deep hace que el scope se aplique al div, produciendo `div[b-{STRING}] > a`.",
+      "learning_objective_id": "t28-lo-supp-009",
+      "difficulty": "advanced",
+      "question_type": "scenario",
+      "sources": [
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor CSS isolation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0",
+          "citation": "CSS isolation — ::deep selector placement",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-15",
+          "verified_at": "2026-10-15"
+        }
+      ],
+      "verification": {
+        "answer": {
+          "status": "passed",
+          "reviewer": "independent-source-review-2026-10-15",
+          "checked_at": "2026-10-15",
+          "basis": "Independent answer-key check against BLAZOR-10 section CSS isolation — ::deep selector placement."
+        },
+        "explanation": {
+          "status": "passed",
+          "reviewer": "independent-source-review-2026-10-15",
+          "checked_at": "2026-10-15",
+          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section CSS isolation — ::deep selector placement."
+        },
+        "reviewed_at": "2026-10-15",
+        "reviewer_decision": "accepted"
+      },
+      "deduplication": {
+        "exact": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "stable ID/content digest comparison"
+        },
+        "lexical": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "accent-folded punctuation-free prompt key"
+        },
+        "near_lexical": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
+        },
+        "semantic": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "Compared the div ::deep selector transformation with all published CSS records and lot-11 candidates; no proposition collision."
+        },
+        "concept": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "Compared the div ::deep selector transformation with all published CSS records and lot-11 candidates; no proposition collision."
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": 4710,
+      "stable_id": "qb-t28-supp-010-fa1c389bdc3ef158e466b46f",
+      "topic_num": 28,
+      "question": "¿Qué relación debe tener un elemento para que ::deep pueda seleccionarlo?",
+      "option_a": "Ser un hermano",
+      "option_b": "Ser descendiente",
+      "option_c": "Ser un antecesor",
+      "option_d": "Estar en otra aplicación",
+      "correct": "B",
+      "explanation": "::deep solo funciona con elementos descendientes del elemento con scope.",
+      "learning_objective_id": "t28-lo-supp-010",
+      "difficulty": "advanced",
+      "question_type": "scenario",
+      "sources": [
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor CSS isolation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0",
+          "citation": "CSS isolation — descendant-only ::deep",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-15",
+          "verified_at": "2026-10-15"
+        }
+      ],
+      "verification": {
+        "answer": {
+          "status": "passed",
+          "reviewer": "independent-source-review-2026-10-15",
+          "checked_at": "2026-10-15",
+          "basis": "Independent answer-key check against BLAZOR-10 section CSS isolation — descendant-only ::deep."
+        },
+        "explanation": {
+          "status": "passed",
+          "reviewer": "independent-source-review-2026-10-15",
+          "checked_at": "2026-10-15",
+          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section CSS isolation — descendant-only ::deep."
+        },
+        "reviewed_at": "2026-10-15",
+        "reviewer_decision": "accepted"
+      },
+      "deduplication": {
+        "exact": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "stable ID/content digest comparison"
+        },
+        "lexical": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "accent-folded punctuation-free prompt key"
+        },
+        "near_lexical": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
+        },
+        "semantic": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "Compared the descendant-only restriction of ::deep with all published CSS records and lot-11 candidates; no proposition collision."
+        },
+        "concept": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "Compared the descendant-only restriction of ::deep with all published CSS records and lot-11 candidates; no proposition collision."
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": 4711,
+      "stable_id": "qb-t28-supp-011-8796bf0cddb557d5a8c21f42",
+      "topic_num": 28,
+      "question": "Para aplicar `::deep > a` al enlace que renderiza un componente hijo, ¿qué estructura recomienda la documentación?",
+      "option_a": "Un iframe",
+      "option_b": "Un parámetro complejo",
+      "option_c": "Un elemento envolvente como div",
+      "option_d": "Una hoja global",
+      "correct": "C",
+      "explanation": "El componente padre debe envolver el componente que renderiza el enlace en un elemento como div.",
+      "learning_objective_id": "t28-lo-supp-011",
+      "difficulty": "advanced",
+      "question_type": "scenario",
+      "sources": [
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor CSS isolation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0",
+          "citation": "CSS isolation — hyperlink descendant wrapper",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-15",
+          "verified_at": "2026-10-15"
+        }
+      ],
+      "verification": {
+        "answer": {
+          "status": "passed",
+          "reviewer": "independent-source-review-2026-10-15",
+          "checked_at": "2026-10-15",
+          "basis": "Independent answer-key check against BLAZOR-10 section CSS isolation — hyperlink descendant wrapper."
+        },
+        "explanation": {
+          "status": "passed",
+          "reviewer": "independent-source-review-2026-10-15",
+          "checked_at": "2026-10-15",
+          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section CSS isolation — hyperlink descendant wrapper."
+        },
+        "reviewed_at": "2026-10-15",
+        "reviewer_decision": "accepted"
+      },
+      "deduplication": {
+        "exact": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "stable ID/content digest comparison"
+        },
+        "lexical": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "accent-folded punctuation-free prompt key"
+        },
+        "near_lexical": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
+        },
+        "semantic": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "Compared the wrapper requirement for a child hyperlink with all published CSS records and lot-11 candidates; no proposition collision."
+        },
+        "concept": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "Compared the wrapper requirement for a child hyperlink with all published CSS records and lot-11 candidates; no proposition collision."
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": 4712,
+      "stable_id": "qb-t28-supp-012-4339ef8c8abb04afe1cfb511",
+      "topic_num": 28,
+      "question": "¿Qué representa RenderFragment<TValue> en un componente templado?",
+      "option_a": "Una hoja CSS",
+      "option_b": "Un parámetro sin tipo",
+      "option_c": "Un callback de navegación",
+      "option_d": "Un fragmento que recibe un valor de tipo TValue",
+      "correct": "D",
+      "explanation": "RenderFragment<TValue> es un fragmento de UI parametrizado por el tipo TValue.",
       "learning_objective_id": "t28-lo-supp-012",
       "difficulty": "intermediate",
       "question_type": "concept",
       "sources": [
         {
           "source_id": "BLAZOR-10",
-          "title": "ASP.NET Core Razor component lifecycle",
+          "title": "ASP.NET Core Blazor templated components",
           "authority": "Microsoft Learn",
           "tier": "official_primary",
-          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
-          "citation": "After component render (OnAfterRender{Async})",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-10.0",
+          "citation": "Templated components — typed fragment invocation",
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-15",
           "verified_at": "2026-10-15"
@@ -842,13 +842,13 @@
           "status": "passed",
           "reviewer": "independent-source-review-2026-10-15",
           "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section After component render (OnAfterRender{Async})."
+          "basis": "Independent answer-key check against BLAZOR-10 section Templated components — typed fragment invocation."
         },
         "explanation": {
           "status": "passed",
           "reviewer": "independent-source-review-2026-10-15",
           "checked_at": "2026-10-15",
-          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section After component render (OnAfterRender{Async})."
+          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section Templated components — typed fragment invocation."
         },
         "reviewed_at": "2026-10-15",
         "reviewer_decision": "accepted"
@@ -872,182 +872,38 @@
         "semantic": {
           "status": "unique",
           "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
+          "basis": "Compared the typed-fragment value contract with all published template records and lot-11 candidates; no proposition collision."
         },
         "concept": {
           "status": "unique",
           "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
+          "basis": "Compared the typed-fragment value contract with all published template records and lot-11 candidates; no proposition collision."
         }
       },
       "status": "validated"
     },
     {
-      "id": 4693,
-      "stable_id": "qb-t28-supp-013-a217f06733f84466620124ad",
+      "id": 4713,
+      "stable_id": "qb-t28-supp-013-cdaba832fb6aed1233d4c46d",
       "topic_num": 28,
-      "question": "¿Qué valor tiene firstRender la primera vez que se renderiza una instancia de componente?",
-      "option_a": "true",
-      "option_b": "false",
-      "option_c": "null",
-      "option_d": "El valor del primer parámetro",
+      "question": "En un componente templado con varias plantillas RenderFragment<TValue>, ¿qué alcance tiene Context en el elemento del componente?",
+      "option_a": "Se aplica a todos los parámetros de plantilla",
+      "option_b": "Solo al primer parámetro",
+      "option_c": "Solo a la clase C#",
+      "option_d": "Solo al contenido global",
       "correct": "A",
-      "explanation": "El parámetro firstRender se establece en true la primera vez que se renderiza la instancia y permite ejecutar una inicialización una sola vez.",
+      "explanation": "Context en el elemento del componente establece el nombre del parámetro de contenido para todas sus plantillas tipadas.",
       "learning_objective_id": "t28-lo-supp-013",
-      "difficulty": "intermediate",
-      "question_type": "concept",
-      "sources": [
-        {
-          "source_id": "BLAZOR-10",
-          "title": "ASP.NET Core Razor component lifecycle",
-          "authority": "Microsoft Learn",
-          "tier": "official_primary",
-          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
-          "citation": "After component render (OnAfterRender{Async})",
-          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
-          "retrieved_at": "2026-10-15",
-          "verified_at": "2026-10-15"
-        }
-      ],
-      "verification": {
-        "answer": {
-          "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section After component render (OnAfterRender{Async})."
-        },
-        "explanation": {
-          "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section After component render (OnAfterRender{Async})."
-        },
-        "reviewed_at": "2026-10-15",
-        "reviewer_decision": "accepted"
-      },
-      "deduplication": {
-        "exact": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "stable ID/content digest comparison"
-        },
-        "lexical": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "accent-folded punctuation-free prompt key"
-        },
-        "near_lexical": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
-        },
-        "semantic": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
-        },
-        "concept": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
-        }
-      },
-      "status": "validated"
-    },
-    {
-      "id": 4694,
-      "stable_id": "qb-t28-supp-014-7d8ec16b7810ac0fadb7f9ad",
-      "topic_num": 28,
-      "question": "¿Qué comportamiento evita Blazor al completar la Task devuelta por OnAfterRenderAsync?",
-      "option_a": "La asignación de parámetros",
-      "option_b": "Un rerender automático para evitar un bucle infinito",
-      "option_c": "La llamada de DisposeAsync",
-      "option_d": "La creación del DOM inicial",
-      "correct": "B",
-      "explanation": "Blazor no vuelve a renderizar automáticamente al completarse la Task de OnAfterRenderAsync, precisamente para evitar un bucle infinito de renderizados.",
-      "learning_objective_id": "t28-lo-supp-014",
-      "difficulty": "intermediate",
-      "question_type": "concept",
-      "sources": [
-        {
-          "source_id": "BLAZOR-10",
-          "title": "ASP.NET Core Razor component lifecycle",
-          "authority": "Microsoft Learn",
-          "tier": "official_primary",
-          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
-          "citation": "After component render (OnAfterRender{Async})",
-          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
-          "retrieved_at": "2026-10-15",
-          "verified_at": "2026-10-15"
-        }
-      ],
-      "verification": {
-        "answer": {
-          "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section After component render (OnAfterRender{Async})."
-        },
-        "explanation": {
-          "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section After component render (OnAfterRender{Async})."
-        },
-        "reviewed_at": "2026-10-15",
-        "reviewer_decision": "accepted"
-      },
-      "deduplication": {
-        "exact": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "stable ID/content digest comparison"
-        },
-        "lexical": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "accent-folded punctuation-free prompt key"
-        },
-        "near_lexical": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
-        },
-        "semantic": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
-        },
-        "concept": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
-        }
-      },
-      "status": "validated"
-    },
-    {
-      "id": 4695,
-      "stable_id": "qb-t28-supp-015-562d7b5eb950ba03ace5057d",
-      "topic_num": 28,
-      "question": "OnAfterRenderAsync actualiza un campo que debe mostrarse en la UI. ¿Qué acción adicional puede necesitar el componente?",
-      "option_a": "Llamar explícitamente a StateHasChanged",
-      "option_b": "Llamar a SetParametersAsync con ParameterView.Empty",
-      "option_c": "Mover la actualización a un archivo .razor.css",
-      "option_d": "Desactivar el prerenderizado para todos los componentes",
-      "correct": "A",
-      "explanation": "Como la finalización de OnAfterRenderAsync no programa automáticamente otro render, el componente puede llamar explícitamente a StateHasChanged después de cambiar el estado que debe mostrarse.",
-      "learning_objective_id": "t28-lo-supp-015",
       "difficulty": "advanced",
       "question_type": "scenario",
       "sources": [
         {
           "source_id": "BLAZOR-10",
-          "title": "ASP.NET Core Razor component lifecycle",
+          "title": "ASP.NET Core Blazor templated components",
           "authority": "Microsoft Learn",
           "tier": "official_primary",
-          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
-          "citation": "After component render (OnAfterRender{Async}); prerendering with JavaScript interop",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-10.0",
+          "citation": "Templated components — component-level Context",
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-15",
           "verified_at": "2026-10-15"
@@ -1058,13 +914,13 @@
           "status": "passed",
           "reviewer": "independent-source-review-2026-10-15",
           "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section After component render (OnAfterRender{Async}); prerendering with JavaScript interop."
+          "basis": "Independent answer-key check against BLAZOR-10 section Templated components — component-level Context."
         },
         "explanation": {
           "status": "passed",
           "reviewer": "independent-source-review-2026-10-15",
           "checked_at": "2026-10-15",
-          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section After component render (OnAfterRender{Async}); prerendering with JavaScript interop."
+          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section Templated components — component-level Context."
         },
         "reviewed_at": "2026-10-15",
         "reviewer_decision": "accepted"
@@ -1088,182 +944,182 @@
         "semantic": {
           "status": "unique",
           "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
+          "basis": "Compared component-level Context scope across templates with all published template records and lot-11 candidates; no proposition collision."
         },
         "concept": {
           "status": "unique",
           "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
+          "basis": "Compared component-level Context scope across templates with all published template records and lot-11 candidates; no proposition collision."
         }
       },
       "status": "validated"
     },
     {
-      "id": 4696,
-      "stable_id": "qb-t28-supp-016-1f6b2a8c7da63f1d7697c99d",
+      "id": 4714,
+      "stable_id": "qb-t28-supp-014-0a081f7968df171471d13456",
       "topic_num": 28,
-      "question": "¿Qué transformación general aplica Blazor al CSS aislado durante la compilación?",
-      "option_a": "Convierte todos los selectores en estilos inline",
-      "option_b": "Elimina las reglas que no usan JavaScript",
-      "option_c": "Reescribe los selectores para que coincidan con el markup del componente",
-      "option_d": "Fusiona todos los estilos en una hoja global sin identificadores",
+      "question": "¿Qué permite `Context` en el elemento hijo de una plantilla RenderFragment<TValue>?",
+      "option_a": "Cambiar el tipo TItem",
+      "option_b": "Cambiar el nombre solo de esa plantilla",
+      "option_c": "Desactivar el render",
+      "option_d": "Crear un scope CSS",
+      "correct": "B",
+      "explanation": "Context en el elemento de plantilla cambia el nombre del parámetro para esa plantilla concreta.",
+      "learning_objective_id": "t28-lo-supp-014",
+      "difficulty": "advanced",
+      "question_type": "scenario",
+      "sources": [
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor templated components",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-10.0",
+          "citation": "Templated components — template-level Context",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-15",
+          "verified_at": "2026-10-15"
+        }
+      ],
+      "verification": {
+        "answer": {
+          "status": "passed",
+          "reviewer": "independent-source-review-2026-10-15",
+          "checked_at": "2026-10-15",
+          "basis": "Independent answer-key check against BLAZOR-10 section Templated components — template-level Context."
+        },
+        "explanation": {
+          "status": "passed",
+          "reviewer": "independent-source-review-2026-10-15",
+          "checked_at": "2026-10-15",
+          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section Templated components — template-level Context."
+        },
+        "reviewed_at": "2026-10-15",
+        "reviewer_decision": "accepted"
+      },
+      "deduplication": {
+        "exact": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "stable ID/content digest comparison"
+        },
+        "lexical": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "accent-folded punctuation-free prompt key"
+        },
+        "near_lexical": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
+        },
+        "semantic": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "Compared template-level Context scope with all published template records and lot-11 candidates; no proposition collision."
+        },
+        "concept": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "Compared template-level Context scope with all published template records and lot-11 candidates; no proposition collision."
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": 4715,
+      "stable_id": "qb-t28-supp-015-8a7a58a7e536ce741da198a2",
+      "topic_num": 28,
+      "question": "En el ejemplo de TemplatedNavBar, ¿qué parámetros suministran plantillas RenderFragment<TValue>?",
+      "option_a": "Header y Footer",
+      "option_b": "Items y TItem",
+      "option_c": "StartContent e ItemTemplate",
+      "option_d": "Context y Type",
       "correct": "C",
-      "explanation": "La documentación indica que el aislamiento CSS se produce en la compilación y que Blazor reescribe los selectores para que coincidan con el markup renderizado por el componente.",
+      "explanation": "StartContent e ItemTemplate son los parámetros de plantilla mostrados en el ejemplo.",
+      "learning_objective_id": "t28-lo-supp-015",
+      "difficulty": "intermediate",
+      "question_type": "concept",
+      "sources": [
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor templated components",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-10.0",
+          "citation": "Templated components — named template parameters",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-15",
+          "verified_at": "2026-10-15"
+        }
+      ],
+      "verification": {
+        "answer": {
+          "status": "passed",
+          "reviewer": "independent-source-review-2026-10-15",
+          "checked_at": "2026-10-15",
+          "basis": "Independent answer-key check against BLAZOR-10 section Templated components — named template parameters."
+        },
+        "explanation": {
+          "status": "passed",
+          "reviewer": "independent-source-review-2026-10-15",
+          "checked_at": "2026-10-15",
+          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section Templated components — named template parameters."
+        },
+        "reviewed_at": "2026-10-15",
+        "reviewer_decision": "accepted"
+      },
+      "deduplication": {
+        "exact": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "stable ID/content digest comparison"
+        },
+        "lexical": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "accent-folded punctuation-free prompt key"
+        },
+        "near_lexical": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
+        },
+        "semantic": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "Compared the named StartContent and ItemTemplate parameters with all published template records and lot-11 candidates; no proposition collision."
+        },
+        "concept": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "Compared the named StartContent and ItemTemplate parameters with all published template records and lot-11 candidates; no proposition collision."
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": 4716,
+      "stable_id": "qb-t28-supp-016-19be85546d9a2f193d5cf9ea",
+      "topic_num": 28,
+      "question": "¿Qué colección usa el ejemplo genérico TemplatedNavBar para representar sus elementos?",
+      "option_a": "List<object>",
+      "option_b": "IEnumerable<string>",
+      "option_c": "RenderFragment<T>",
+      "option_d": "IReadOnlyList<T>",
+      "correct": "D",
+      "explanation": "El ejemplo usa IReadOnlyList<T> para los elementos del componente genérico.",
       "learning_objective_id": "t28-lo-supp-016",
       "difficulty": "advanced",
-      "question_type": "concept",
-      "sources": [
-        {
-          "source_id": "BLAZOR-10",
-          "title": "ASP.NET Core Blazor CSS isolation",
-          "authority": "Microsoft Learn",
-          "tier": "official_primary",
-          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0",
-          "citation": "CSS isolation bundling",
-          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
-          "retrieved_at": "2026-10-15",
-          "verified_at": "2026-10-15"
-        }
-      ],
-      "verification": {
-        "answer": {
-          "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section CSS isolation bundling."
-        },
-        "explanation": {
-          "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section CSS isolation bundling."
-        },
-        "reviewed_at": "2026-10-15",
-        "reviewer_decision": "accepted"
-      },
-      "deduplication": {
-        "exact": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "stable ID/content digest comparison"
-        },
-        "lexical": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "accent-folded punctuation-free prompt key"
-        },
-        "near_lexical": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
-        },
-        "semantic": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
-        },
-        "concept": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
-        }
-      },
-      "status": "validated"
-    },
-    {
-      "id": 4697,
-      "stable_id": "qb-t28-supp-017-b154441ef6718663ecdafa81",
-      "topic_num": 28,
-      "question": "¿Qué forma tiene el atributo de alcance que Blazor añade a los elementos HTML al aplicar CSS aislado?",
-      "option_a": "scope-{ASSEMBLY}",
-      "option_b": "b-{STRING}",
-      "option_c": "css-{ROUTE}",
-      "option_d": "isolated-{COMPONENT}",
-      "correct": "B",
-      "explanation": "Cada componente estilizado recibe un identificador de alcance con el formato b-{STRING}, donde STRING es generado por el framework.",
-      "learning_objective_id": "t28-lo-supp-017",
-      "difficulty": "advanced",
-      "question_type": "concept",
-      "sources": [
-        {
-          "source_id": "BLAZOR-10",
-          "title": "ASP.NET Core Blazor CSS isolation",
-          "authority": "Microsoft Learn",
-          "tier": "official_primary",
-          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0",
-          "citation": "CSS isolation bundling",
-          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
-          "retrieved_at": "2026-10-15",
-          "verified_at": "2026-10-15"
-        }
-      ],
-      "verification": {
-        "answer": {
-          "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section CSS isolation bundling."
-        },
-        "explanation": {
-          "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section CSS isolation bundling."
-        },
-        "reviewed_at": "2026-10-15",
-        "reviewer_decision": "accepted"
-      },
-      "deduplication": {
-        "exact": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "stable ID/content digest comparison"
-        },
-        "lexical": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "accent-folded punctuation-free prompt key"
-        },
-        "near_lexical": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
-        },
-        "semantic": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
-        },
-        "concept": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
-        }
-      },
-      "status": "validated"
-    },
-    {
-      "id": 4698,
-      "stable_id": "qb-t28-supp-018-64a9c151263219d70f094d64",
-      "topic_num": 28,
-      "question": "En CSS aislado, ¿dónde se aplica por defecto el identificador de alcance en el selector `div > a`?",
-      "option_a": "En `div`, convirtiéndolo en `div[b-{STRING}] > a`",
-      "option_b": "En ambos elementos, `div[b-{STRING}] > a[b-{STRING}]`",
-      "option_c": "En ningún elemento porque `>` no está soportado",
-      "option_d": "En `a`, convirtiéndolo en `div > a[b-{STRING}]`",
-      "correct": "D",
-      "explanation": "La documentación muestra que el alcance se aplica al elemento situado más a la derecha: div > a se transforma en div > a[b-{STRING}].",
-      "learning_objective_id": "t28-lo-supp-018",
-      "difficulty": "advanced",
       "question_type": "scenario",
       "sources": [
         {
           "source_id": "BLAZOR-10",
-          "title": "ASP.NET Core Blazor CSS isolation",
+          "title": "ASP.NET Core Blazor templated components",
           "authority": "Microsoft Learn",
           "tier": "official_primary",
-          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-10.0",
-          "citation": "CSS isolation — scope identifiers",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-10.0",
+          "citation": "Templated components — generic list type",
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-15",
           "verified_at": "2026-10-15"
@@ -1274,13 +1130,13 @@
           "status": "passed",
           "reviewer": "independent-source-review-2026-10-15",
           "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section CSS isolation — scope identifiers."
+          "basis": "Independent answer-key check against BLAZOR-10 section Templated components — generic list type."
         },
         "explanation": {
           "status": "passed",
           "reviewer": "independent-source-review-2026-10-15",
           "checked_at": "2026-10-15",
-          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section CSS isolation — scope identifiers."
+          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section Templated components — generic list type."
         },
         "reviewed_at": "2026-10-15",
         "reviewer_decision": "accepted"
@@ -1304,28 +1160,244 @@
         "semantic": {
           "status": "unique",
           "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
+          "basis": "Compared IReadOnlyList<T> in the generic example with all published template records and lot-11 candidates; no proposition collision."
         },
         "concept": {
           "status": "unique",
           "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
+          "basis": "Compared IReadOnlyList<T> in the generic example with all published template records and lot-11 candidates; no proposition collision."
         }
       },
       "status": "validated"
     },
     {
-      "id": 4699,
-      "stable_id": "qb-t28-supp-019-da3114e0e61e82d16de47a88",
+      "id": 4717,
+      "stable_id": "qb-t28-supp-017-af09ee50ac0c1a1ea75bf160",
       "topic_num": 28,
-      "question": "En un parámetro RenderFragment<TValue> de un componente templado, ¿cuál es el nombre implícito del parámetro de contenido si no se especifica Context?",
-      "option_a": "item",
-      "option_b": "value",
-      "option_c": "context",
-      "option_d": "template",
+      "question": "¿Cuándo puede omitirse el atributo explícito TItem en un componente genérico?",
+      "option_a": "Cuando el tipo genérico puede inferirse",
+      "option_b": "Cuando no hay plantillas",
+      "option_c": "Cuando Context está vacío",
+      "option_d": "Solo durante prerender",
+      "correct": "A",
+      "explanation": "La documentación indica que el tipo se infiere cuando es posible.",
+      "learning_objective_id": "t28-lo-supp-017",
+      "difficulty": "intermediate",
+      "question_type": "concept",
+      "sources": [
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor templated components",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-10.0",
+          "citation": "Templated components — inferred generic type",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-15",
+          "verified_at": "2026-10-15"
+        }
+      ],
+      "verification": {
+        "answer": {
+          "status": "passed",
+          "reviewer": "independent-source-review-2026-10-15",
+          "checked_at": "2026-10-15",
+          "basis": "Independent answer-key check against BLAZOR-10 section Templated components — inferred generic type."
+        },
+        "explanation": {
+          "status": "passed",
+          "reviewer": "independent-source-review-2026-10-15",
+          "checked_at": "2026-10-15",
+          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section Templated components — inferred generic type."
+        },
+        "reviewed_at": "2026-10-15",
+        "reviewer_decision": "accepted"
+      },
+      "deduplication": {
+        "exact": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "stable ID/content digest comparison"
+        },
+        "lexical": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "accent-folded punctuation-free prompt key"
+        },
+        "near_lexical": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
+        },
+        "semantic": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "Compared generic type inference conditions with all published template records and lot-11 candidates; no proposition collision."
+        },
+        "concept": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "Compared generic type inference conditions with all published template records and lot-11 candidates; no proposition collision."
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": 4718,
+      "stable_id": "qb-t28-supp-018-d2dc999251125017b02bc85e",
+      "topic_num": 28,
+      "question": "¿Qué operación realiza la implementación base al aplicar los parámetros recibidos?",
+      "option_a": "Convierte parámetros en CSS",
+      "option_b": "Asigna los valores coincidentes a propiedades de parámetros",
+      "option_c": "Ejecuta OnAfterRenderAsync",
+      "option_d": "Crea una instancia hija",
+      "correct": "B",
+      "explanation": "La implementación base asigna a las propiedades los valores coincidentes de ParameterView.",
+      "learning_objective_id": "t28-lo-supp-018",
+      "difficulty": "basic",
+      "question_type": "concept",
+      "sources": [
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Razor component lifecycle",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
+          "citation": "When parameters are set — base assignment",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-15",
+          "verified_at": "2026-10-15"
+        }
+      ],
+      "verification": {
+        "answer": {
+          "status": "passed",
+          "reviewer": "independent-source-review-2026-10-15",
+          "checked_at": "2026-10-15",
+          "basis": "Independent answer-key check against BLAZOR-10 section When parameters are set — base assignment."
+        },
+        "explanation": {
+          "status": "passed",
+          "reviewer": "independent-source-review-2026-10-15",
+          "checked_at": "2026-10-15",
+          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section When parameters are set — base assignment."
+        },
+        "reviewed_at": "2026-10-15",
+        "reviewer_decision": "accepted"
+      },
+      "deduplication": {
+        "exact": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "stable ID/content digest comparison"
+        },
+        "lexical": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "accent-folded punctuation-free prompt key"
+        },
+        "near_lexical": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
+        },
+        "semantic": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "Compared base parameter assignment behavior with all published parameter records and lot-11 candidates; no proposition collision."
+        },
+        "concept": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "Compared base parameter assignment behavior with all published parameter records and lot-11 candidates; no proposition collision."
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": 4719,
+      "stable_id": "qb-t28-supp-019-2933f51038903794091e85d1",
+      "topic_num": 28,
+      "question": "¿Cuándo se invoca OnParametersSetAsync en relación con la aplicación de parámetros?",
+      "option_a": "Antes de crear la instancia",
+      "option_b": "Después de destruir el componente",
+      "option_c": "Después de asignar los parámetros",
+      "option_d": "Solo después de JavaScript",
       "correct": "C",
-      "explanation": "Los argumentos de componente de tipo RenderFragment<TValue> tienen un parámetro implícito llamado context, que puede usarse dentro de la plantilla.",
+      "explanation": "El callback se ejecuta después de que se establecen los parámetros.",
       "learning_objective_id": "t28-lo-supp-019",
+      "difficulty": "basic",
+      "question_type": "concept",
+      "sources": [
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Razor component lifecycle",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-10.0",
+          "citation": "After parameters are set — callback timing",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-15",
+          "verified_at": "2026-10-15"
+        }
+      ],
+      "verification": {
+        "answer": {
+          "status": "passed",
+          "reviewer": "independent-source-review-2026-10-15",
+          "checked_at": "2026-10-15",
+          "basis": "Independent answer-key check against BLAZOR-10 section After parameters are set — callback timing."
+        },
+        "explanation": {
+          "status": "passed",
+          "reviewer": "independent-source-review-2026-10-15",
+          "checked_at": "2026-10-15",
+          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section After parameters are set — callback timing."
+        },
+        "reviewed_at": "2026-10-15",
+        "reviewer_decision": "accepted"
+      },
+      "deduplication": {
+        "exact": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "stable ID/content digest comparison"
+        },
+        "lexical": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "accent-folded punctuation-free prompt key"
+        },
+        "near_lexical": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
+        },
+        "semantic": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "Compared callback timing after parameter assignment with all published lifecycle records and lot-11 candidates; no proposition collision."
+        },
+        "concept": {
+          "status": "unique",
+          "checked_at": "2026-10-15",
+          "basis": "Compared callback timing after parameter assignment with all published lifecycle records and lot-11 candidates; no proposition collision."
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": 4720,
+      "stable_id": "qb-t28-supp-020-e50e11c56c2fab7dab7b2c21",
+      "topic_num": 28,
+      "question": "En TemplatedNavBar, ¿qué diferencia de tipo existe entre StartContent e ItemTemplate?",
+      "option_a": "Ambos son RenderFragment<TItem>",
+      "option_b": "StartContent es CSS y ItemTemplate es HTML",
+      "option_c": "Ambos son solo texto",
+      "option_d": "StartContent es RenderFragment e ItemTemplate es RenderFragment<TItem>",
+      "correct": "D",
+      "explanation": "El ejemplo declara StartContent como RenderFragment e ItemTemplate como RenderFragment<TItem>, porque solo la fila recibe el elemento tipado.",
+      "learning_objective_id": "t28-lo-supp-020",
       "difficulty": "advanced",
       "question_type": "concept",
       "sources": [
@@ -1335,7 +1407,7 @@
           "authority": "Microsoft Learn",
           "tier": "official_primary",
           "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-10.0",
-          "citation": "Templated components — implicit context parameter",
+          "citation": "Templated components — typed and untyped templates",
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-15",
           "verified_at": "2026-10-15"
@@ -1346,13 +1418,13 @@
           "status": "passed",
           "reviewer": "independent-source-review-2026-10-15",
           "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section Templated components — implicit context parameter."
+          "basis": "Independent answer-key check against BLAZOR-10 section Templated components — typed and untyped templates."
         },
         "explanation": {
           "status": "passed",
           "reviewer": "independent-source-review-2026-10-15",
           "checked_at": "2026-10-15",
-          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section Templated components — implicit context parameter."
+          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section Templated components — typed and untyped templates."
         },
         "reviewed_at": "2026-10-15",
         "reviewer_decision": "accepted"
@@ -1376,84 +1448,12 @@
         "semantic": {
           "status": "unique",
           "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
+          "basis": "Compared typed versus untyped template parameters with all published template records and lot-11 candidates; no proposition collision."
         },
         "concept": {
           "status": "unique",
           "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
-        }
-      },
-      "status": "validated"
-    },
-    {
-      "id": 4700,
-      "stable_id": "qb-t28-supp-020-60ca2e663fa2a9ae4eb34d5e",
-      "topic_num": 28,
-      "question": "Un componente genérico TemplatedNavBar no permite inferir TItem en una llamada concreta. ¿Cómo puede especificarse explícitamente el tipo?",
-      "option_a": "Añadiendo `ContextType` al RenderFragment",
-      "option_b": "Cambiando `RenderFragment<TItem>` por `RenderFragment`",
-      "option_c": "Usando `@typeparam` dentro del contenido hijo",
-      "option_d": "Añadiendo un atributo `TItem=\"Pet\"` al elemento del componente",
-      "correct": "D",
-      "explanation": "Cuando es necesario, el tipo genérico puede especificarse explícitamente mediante un atributo cuyo nombre coincide con el parámetro de tipo, como TItem=\"Pet\".",
-      "learning_objective_id": "t28-lo-supp-020",
-      "difficulty": "advanced",
-      "question_type": "procedure",
-      "sources": [
-        {
-          "source_id": "BLAZOR-10",
-          "title": "ASP.NET Core Blazor templated components",
-          "authority": "Microsoft Learn",
-          "tier": "official_primary",
-          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-10.0",
-          "citation": "Templated components — generic type inference",
-          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
-          "retrieved_at": "2026-10-15",
-          "verified_at": "2026-10-15"
-        }
-      ],
-      "verification": {
-        "answer": {
-          "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section Templated components — generic type inference."
-        },
-        "explanation": {
-          "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section Templated components — generic type inference."
-        },
-        "reviewed_at": "2026-10-15",
-        "reviewer_decision": "accepted"
-      },
-      "deduplication": {
-        "exact": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "stable ID/content digest comparison"
-        },
-        "lexical": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "accent-folded punctuation-free prompt key"
-        },
-        "near_lexical": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
-        },
-        "semantic": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
-        },
-        "concept": {
-          "status": "unique",
-          "checked_at": "2026-10-15",
-          "basis": "Independent proposition/objective review found no collision with published topic-28 records or this supplemental lot."
+          "basis": "Compared typed versus untyped template parameters with all published template records and lot-11 candidates; no proposition collision."
         }
       },
       "status": "validated"
