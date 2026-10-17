@@ -35,6 +35,19 @@ test('never duplicates question IDs within a round', () => {
   assert.deepEqual(ids(round).sort(), [1, 2])
 })
 
+test('never repeats a visible question prompt when records have different IDs', () => {
+  const round = makeRound(
+    [
+      { id: 1, question: '¿Qué hace esta operación?' },
+      { id: 2, question: '  ¿qué hace esta operación?  ' },
+      { id: 3, question: '¿Qué devuelve esta operación?' },
+    ],
+    { random: withConstantRandom },
+  )
+
+  assert.deepEqual(ids(round).sort(), [1, 3])
+})
+
 test('excludes questions shown less than 14 hours ago', () => {
   const now = COOLDOWN_MS * 2
   const storage = new MemoryStorage()
