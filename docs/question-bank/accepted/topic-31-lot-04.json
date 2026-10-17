@@ -3,7 +3,7 @@
   "state": "reviewed",
   "topic_num": 31,
   "lot_num": 4,
-  "revision": 4,
+  "revision": 5,
   "reviewed_at": "2026-10-12",
   "source_register_sha256": "b995506e1e955cc1bce9c79abc507098de88fbdae378df148aa7be42037da503",
   "objective_manifest_sha256": "38a16b0a8ca06889a91ef6b83074e70a5e59db3cdc08801e7490fea120cfa302",
@@ -18,13 +18,13 @@
   "questions": [
     {
       "id": 2441,
-      "stable_id": "qb-t31-061-68a94e380f8ef8e2d9b017b6",
+      "stable_id": "qb-t31-061-38a3ad173b778cb67c02b1d9",
       "topic_num": 31,
       "question": "¿Qué ocurre normalmente con un componente de una Blazor Web App que se prerenderiza?",
       "option_a": "Se genera HTML antes de la interacción interactiva",
-      "option_b": "Se ejecuta solo en el navegador",
-      "option_c": "Se persiste automáticamente en SQL",
-      "option_d": "Se convierte en singleton",
+      "option_b": "Métodos de operación y una notificación controlada",
+      "option_c": "Actualizar el valor y notificar a los suscriptores",
+      "option_d": "Está limitado al navegador y al origen del cliente",
       "correct": "A",
       "explanation": "El prerenderizado produce una representación inicial antes de que el componente sea interactivo.",
       "learning_objective_id": "t31-lo-061",
@@ -41,14 +41,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "State containers",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "Notify components of state changes",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "Browser storage",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-STATE-10 Prerendering; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[50, 50, 50, 50]."
         },
         "explanation": {
           "status": "passed",
@@ -56,33 +89,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-STATE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -90,13 +123,13 @@
     },
     {
       "id": 2442,
-      "stable_id": "qb-t31-062-318bd11c11fa0c5b603769a6",
+      "stable_id": "qb-t31-062-3e0910e0b4134eff1ead5556",
       "topic_num": 31,
       "question": "¿Por qué una inicialización aleatoria o una llamada de datos puede repetirse con prerendering?",
-      "option_a": "Porque localStorage ejecuta dos veces",
+      "option_a": "Solo solicita renderizado; no guarda datos duraderamente",
       "option_b": "Porque puede haber una fase prerender y otra interactiva",
-      "option_c": "Porque StateHasChanged duplica todos los campos",
-      "option_d": "Porque el CSS se compila dos veces",
+      "option_c": "Exponer una API de estado y notificar a sus consumidores",
+      "option_d": "Repetir la inicialización no produce efectos incorrectos",
       "correct": "B",
       "explanation": "El componente puede ejecutarse durante prerender y volver a inicializarse al activarse interactivamente.",
       "learning_objective_id": "t31-lo-062",
@@ -113,14 +146,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "Component state",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "State containers",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-STATE-10 Prerendering; expected option B."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[56, 56, 56, 56]."
         },
         "explanation": {
           "status": "passed",
@@ -128,33 +183,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-STATE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -162,13 +217,13 @@
     },
     {
       "id": 2443,
-      "stable_id": "qb-t31-063-12812072474845abebe44089",
+      "stable_id": "qb-t31-063-d51a79634c73100b25e51ebf",
       "topic_num": 31,
       "question": "¿Qué servicio representa la API de estado persistente de componentes durante prerender e hidratación?",
-      "option_a": "IServiceScopeFactory",
-      "option_b": "NavigationManager",
+      "option_a": "Solicitar StateHasChanged",
+      "option_b": "Se inicializan de nuevo",
       "option_c": "PersistentComponentState",
-      "option_d": "EditContext",
+      "option_d": "Un contenedor de estado",
       "correct": "C",
       "explanation": "PersistentComponentState permite registrar y recuperar datos destinados a cruzar la transición de prerender a interacción.",
       "learning_objective_id": "t31-lo-063",
@@ -185,14 +240,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "Notify components of state changes",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "Component state",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "State containers",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-STATE-10 PersistentComponentState; expected option C."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[25, 23, 24, 23]."
         },
         "explanation": {
           "status": "passed",
@@ -200,33 +288,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-STATE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -234,12 +322,12 @@
     },
     {
       "id": 2444,
-      "stable_id": "qb-t31-064-9e7f176f53fa9f6738a0a141",
+      "stable_id": "qb-t31-064-6cc265a1069039b37e1e609e",
       "topic_num": 31,
       "question": "¿Qué objetivo tiene persistir el resultado de una carga durante prerender?",
-      "option_a": "Forzar un singleton",
-      "option_b": "Desactivar la serialización",
-      "option_c": "Compartir secretos con el navegador",
+      "option_a": "Comparar el coste del payload con el coste de recargar",
+      "option_b": "Una interacción de evento gestionada por el componente",
+      "option_c": "Quién debe compartir el estado y durante cuánto tiempo",
       "option_d": "Evitar repetir la carga al activar la fase interactiva",
       "correct": "D",
       "explanation": "El estado persistido permite reutilizar el resultado inicial en lugar de ejecutar de nuevo la carga.",
@@ -257,14 +345,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "State management recommendations",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "Component state — component rendering",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "State containers — service lifetimes",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-STATE-10 Persist prerendered state; expected option D."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[54, 54, 54, 54]."
         },
         "explanation": {
           "status": "passed",
@@ -272,33 +393,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-STATE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -306,13 +427,13 @@
     },
     {
       "id": 2445,
-      "stable_id": "qb-t31-065-51f241a7379d55076e942e65",
+      "stable_id": "qb-t31-065-ba6d96232240d7b6de5070ad",
       "topic_num": 31,
       "question": "¿Qué método registra una devolución que se ejecutará cuando el estado del componente vaya a persistirse?",
       "option_a": "RegisterOnPersisting",
-      "option_b": "RegisterOnRender",
-      "option_c": "OnCircuitStarted",
-      "option_d": "PersistOnNavigate",
+      "option_b": "Un evento de cambio",
+      "option_c": "Interop de JavaScript",
+      "option_d": "Evitar ese renderizado",
       "correct": "A",
       "explanation": "RegisterOnPersisting permite registrar la lógica que guarda valores justo antes de la persistencia.",
       "learning_objective_id": "t31-lo-065",
@@ -329,14 +450,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "Notify components of state changes",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "Browser storage",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "Component state",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-STATE-10 PersistentComponentState; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[20, 19, 21, 22]."
         },
         "explanation": {
           "status": "passed",
@@ -344,33 +498,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-STATE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -378,13 +532,13 @@
     },
     {
       "id": 2446,
-      "stable_id": "qb-t31-066-8ecd813515317934cb60f811",
+      "stable_id": "qb-t31-066-045f76f6bd6f72664492eb66",
       "topic_num": 31,
       "question": "¿Qué operación guarda un valor JSON bajo una clave en PersistentComponentState?",
-      "option_a": "SaveAsSql",
+      "option_a": "ShouldRender()",
       "option_b": "PersistAsJson",
-      "option_c": "StoreInCircuit",
-      "option_d": "WriteToDom",
+      "option_c": "sessionStorage",
+      "option_d": "localStorage",
       "correct": "B",
       "explanation": "PersistAsJson serializa y registra el valor con una clave para recuperarlo después.",
       "learning_objective_id": "t31-lo-066",
@@ -401,14 +555,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "Component state",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "Browser storage",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-STATE-10 PersistentComponentState; expected option B."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[14, 13, 14, 12]."
         },
         "explanation": {
           "status": "passed",
@@ -416,33 +592,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-STATE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -450,13 +626,13 @@
     },
     {
       "id": 2447,
-      "stable_id": "qb-t31-067-473021756e3a6d715f1e6b24",
+      "stable_id": "qb-t31-067-c05601fc97e104be1e5f1905",
       "topic_num": 31,
       "question": "¿Qué operación intenta recuperar y consumir un valor JSON persistido?",
-      "option_a": "TryGetFromRoute<T>",
-      "option_b": "ReadLocalOnly<T>",
+      "option_a": "JavaScript interop",
+      "option_b": "StateHasChanged()",
       "option_c": "TryTakeFromJson<T>",
-      "option_d": "TakeFromDb<T>",
+      "option_d": "Un evento de cambio",
       "correct": "C",
       "explanation": "TryTakeFromJson<T> intenta obtener el valor persistido y lo consume para la fase interactiva.",
       "learning_objective_id": "t31-lo-067",
@@ -473,14 +649,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "Browser storage — JavaScript interop",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "Component state",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "Notify components of state changes",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-STATE-10 PersistentComponentState; expected option C."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[18, 17, 18, 19]."
         },
         "explanation": {
           "status": "passed",
@@ -488,33 +697,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-STATE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -522,12 +731,12 @@
     },
     {
       "id": 2448,
-      "stable_id": "qb-t31-068-faae788d6e0547246f8a75cd",
+      "stable_id": "qb-t31-068-73cfabf2d0aa689c72250042",
       "topic_num": 31,
       "question": "Una aplicación persiste el resultado de una consulta y luego lo recupera en la fase interactiva. ¿Qué debe comprobar antes de volver a consultar?",
-      "option_a": "Si el CSS está aislado",
-      "option_b": "Si el circuito es singleton",
-      "option_c": "Si la ruta tiene un fragmento",
+      "option_a": "Puede restaurarse después de recrear la instancia",
+      "option_b": "Definir claramente qué estado cruza la transición",
+      "option_c": "Conectarlo con la ejecución interactiva posterior",
       "option_d": "Si el estado persistido se recuperó correctamente",
       "correct": "D",
       "explanation": "Comprobar la recuperación evita repetir la consulta cuando el prerender ya dejó un resultado válido.",
@@ -545,14 +754,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "Browser storage",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "Prerendering and state — hydration",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-STATE-10 PersistentComponentState; expected option D."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[49, 49, 49, 49]."
         },
         "explanation": {
           "status": "passed",
@@ -560,33 +791,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-STATE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -594,13 +825,13 @@
     },
     {
       "id": 2449,
-      "stable_id": "qb-t31-069-c94df70ea3c32d44f3561a75",
+      "stable_id": "qb-t31-069-b5a022c365c91e0405baa2ae",
       "topic_num": 31,
       "question": "¿Qué tipo de valor es adecuado para PersistAsJson?",
       "option_a": "Un objeto serializable con datos necesarios",
-      "option_b": "Un delegado con referencias a componentes",
-      "option_c": "Un socket abierto",
-      "option_d": "Un objeto que contiene un circuito",
+      "option_b": "La API del navegador aún no está disponible",
+      "option_c": "Si el componente debe renderizarse de nuevo",
+      "option_d": "Persistir o reconstruir el estado necesario",
       "correct": "A",
       "explanation": "La persistencia JSON necesita valores que puedan serializarse y reconstruirse sin recursos vivos.",
       "learning_objective_id": "t31-lo-069",
@@ -617,14 +848,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "Prerendering",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "Component state — ShouldRender",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "Circuits — reconnection and transient state",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-STATE-10 PersistentComponentState; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[43, 43, 43, 43]."
         },
         "explanation": {
           "status": "passed",
@@ -632,33 +896,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-STATE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -666,13 +930,13 @@
     },
     {
       "id": 2450,
-      "stable_id": "qb-t31-070-1ca48dcd8dc01a7c68db3754",
+      "stable_id": "qb-t31-070-8429a787614eef39fc708b1f",
       "topic_num": 31,
       "question": "¿Qué riesgo tiene persistir más datos de los necesarios durante prerender?",
-      "option_a": "Garantizar siempre más rendimiento",
+      "option_a": "Aplicar la mutación completa y notificar una sola vez",
       "option_b": "Aumentar el payload y exponer información innecesaria",
-      "option_c": "Convertir la app en offline",
-      "option_d": "Eliminar la necesidad de autorización",
+      "option_c": "Una vista coherente que no cambia mientras se procesa",
+      "option_d": "Cada pestaña tiene su propio almacenamiento de sesión",
       "correct": "B",
       "explanation": "La persistencia debe ser mínima: más datos elevan coste y superficie de exposición.",
       "learning_objective_id": "t31-lo-070",
@@ -689,14 +953,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "State containers",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "Browser storage",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-STATE-10 State management recommendations; expected option B."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[53, 53, 53, 53]."
         },
         "explanation": {
           "status": "passed",
@@ -704,33 +990,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-STATE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -738,13 +1024,13 @@
     },
     {
       "id": 2451,
-      "stable_id": "qb-t31-071-e117298e1bd6fd26fd59ae85",
+      "stable_id": "qb-t31-071-fb903867e6f5c39d6194eec5",
       "topic_num": 31,
       "question": "¿Qué sucede con una API de navegador durante el prerenderizado en servidor?",
-      "option_a": "Se ejecuta mediante SQL",
-      "option_b": "Se resuelve como singleton",
+      "option_a": "La UI puede serializarse; el recurso debe resolverse o abrirse de nuevo",
+      "option_b": "Datos necesarios para evitar repetir carga entre prerender e interacción",
       "option_c": "No está disponible hasta que existe un entorno interactivo de navegador",
-      "option_d": "Se reemplaza por localStorage del servidor",
+      "option_d": "Mostrar un estado válido o reconstruirlo, en vez de asumir que permanece",
       "correct": "C",
       "explanation": "El servidor no tiene las APIs de navegador; la interop debe diferirse a un momento interactivo.",
       "learning_objective_id": "t31-lo-071",
@@ -761,14 +1047,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "State management recommendations",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "Persistent component state",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "Circuits — reconnection and transient state",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-STATE-10 Prerendering; expected option C."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[71, 72, 71, 72]."
         },
         "explanation": {
           "status": "passed",
@@ -776,33 +1095,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-STATE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -810,12 +1129,12 @@
     },
     {
       "id": 2452,
-      "stable_id": "qb-t31-072-7b4340ad30e6e9aa63cc1643",
+      "stable_id": "qb-t31-072-79741a920db35919c6b93beb",
       "topic_num": 31,
       "question": "¿Qué enfoque evita una carga repetida cuando el componente puede prerenderizarse?",
-      "option_a": "Llamar siempre desde OnAfterRender",
-      "option_b": "Usar un campo estático global",
-      "option_c": "Borrar el estado antes de renderizar",
+      "option_a": "Métodos de operación y una notificación controlada",
+      "option_b": "Actualizar el valor y notificar a los suscriptores",
+      "option_c": "Está limitado al navegador y al origen del cliente",
       "option_d": "Restaurar estado persistido y cargar solo si falta",
       "correct": "D",
       "explanation": "La lógica puede recuperar el resultado persistido y ejecutar la carga únicamente si no existe.",
@@ -833,14 +1152,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "State containers",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "Notify components of state changes",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "Browser storage",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-STATE-10 Persist prerendered state; expected option D."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[50, 50, 50, 50]."
         },
         "explanation": {
           "status": "passed",
@@ -848,33 +1200,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-STATE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -882,13 +1234,13 @@
     },
     {
       "id": 2453,
-      "stable_id": "qb-t31-073-b174a45281fc1f96b5ab36d1",
+      "stable_id": "qb-t31-073-d8d9f2de04d48a89e56e009f",
       "topic_num": 31,
       "question": "Un callback de persistencia se registra demasiado pronto durante el apagado de la aplicación. ¿Qué precaución documenta la guía?",
       "option_a": "Registrar la persistencia cerca del final de la inicialización",
-      "option_b": "Registrar cientos de callbacks en cada render",
-      "option_c": "Persistir directamente en el DOM",
-      "option_d": "Desactivar todos los circuitos",
+      "option_b": "Usar InvokeAsync, cambiar el estado y llamar a StateHasChanged",
+      "option_c": "Un cambio de estado para que los consumidores actualicen su UI",
+      "option_d": "Usar alcance por circuito/usuario y no un singleton compartido",
       "correct": "A",
       "explanation": "La documentación recomienda registrar el callback en un momento que evite condiciones de carrera durante el cierre.",
       "learning_objective_id": "t31-lo-073",
@@ -905,14 +1257,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "Notify components of state changes",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "State containers — notification",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "State containers — scoped versus singleton in Blazor Server",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-STATE-10 PersistentComponentState; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[62, 62, 62, 62]."
         },
         "explanation": {
           "status": "passed",
@@ -920,33 +1305,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-STATE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -954,13 +1339,13 @@
     },
     {
       "id": 2454,
-      "stable_id": "qb-t31-074-dc011d1e0c565ae36b46e625",
+      "stable_id": "qb-t31-074-3819bcf086a3b88134b0cb55",
       "topic_num": 31,
       "question": "¿Qué diferencia existe entre PersistentComponentState y una base de datos?",
-      "option_a": "El primero es siempre global",
+      "option_a": "La memoria depende del proceso o circuito; la base de datos ofrece almacenamiento duradero",
       "option_b": "El primero cruza una transición de componente; la segunda ofrece durabilidad de aplicación",
-      "option_c": "La base de datos solo vive durante prerender",
-      "option_d": "Ambos comparten el mismo ciclo",
+      "option_c": "Guardar preferencia ligera en browser storage y datos de negocio en almacenamiento durable",
+      "option_d": "La primera puede desaparecer; los segundos requieren fuente durable si deben sobrevivir",
       "correct": "B",
       "explanation": "PersistentComponentState sirve para la transición de renderizado y no sustituye el almacenamiento durable.",
       "learning_objective_id": "t31-lo-074",
@@ -977,14 +1362,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "Design and safety — ephemeral versus durable data",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "State management guidance — ephemeral versus durable state",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-STATE-10 State management recommendations; expected option B."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[90, 90, 90, 87]."
         },
         "explanation": {
           "status": "passed",
@@ -992,33 +1399,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-STATE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1026,13 +1433,13 @@
     },
     {
       "id": 2455,
-      "stable_id": "qb-t31-075-f93fad0388a4e1d8f1d15103",
+      "stable_id": "qb-t31-075-deabc6700df509753300bcd0",
       "topic_num": 31,
       "question": "Una propiedad persistida contiene una conexión abierta. ¿Qué debe hacer el equipo?",
-      "option_a": "Serializar el objeto completo",
-      "option_b": "Guardar la conexión en localStorage",
+      "option_a": "Reduce renders, sincronización y datos que deben restaurarse",
+      "option_b": "No están disponibles ciertas APIs interactivas del navegador",
       "option_c": "Persistir solo datos serializables y reconstruir la conexión",
-      "option_d": "Compartirla entre circuitos",
+      "option_d": "El estado transitorio en memoria del circuito puede perderse",
       "correct": "C",
       "explanation": "Los recursos vivos no deben serializarse; se persisten datos y se recrea el recurso en la fase correspondiente.",
       "learning_objective_id": "t31-lo-075",
@@ -1049,14 +1456,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "State management recommendations",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "Prerendering and state — state unavailable during prerender",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "Circuits — circuit lifetime",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-STATE-10 PersistentComponentState; expected option C."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[60, 60, 60, 60]."
         },
         "explanation": {
           "status": "passed",
@@ -1064,33 +1504,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-STATE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1098,12 +1538,12 @@
     },
     {
       "id": 2456,
-      "stable_id": "qb-t31-076-b4fb3e6ca544a2e066b0eb75",
+      "stable_id": "qb-t31-076-a1e60a539ef7ea36b93d40e2",
       "topic_num": 31,
       "question": "¿Qué estrategia hace segura una restauración de estado de una versión anterior?",
-      "option_a": "Usar el JSON sin comprobar",
-      "option_b": "Ignorar errores de deserialización",
-      "option_c": "Usar siempre el valor más antiguo",
+      "option_a": "Tratar el error y conservar un estado operativo alternativo",
+      "option_b": "Un filtro o selección derivable de preferencias persistidas",
+      "option_c": "Reduce renders, sincronización y datos que deben restaurarse",
       "option_d": "Validar la versión y migrar o descartar datos incompatibles",
       "correct": "D",
       "explanation": "El estado persistido puede cambiar de forma y necesita comprobación de versión y una ruta de migración o descarte.",
@@ -1121,14 +1561,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "Browser storage",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "Circuits — reconstructing transient state",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "State management recommendations",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-STATE-10 PersistentComponentState; expected option D."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[59, 59, 60, 59]."
         },
         "explanation": {
           "status": "passed",
@@ -1136,33 +1609,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-STATE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1170,13 +1643,13 @@
     },
     {
       "id": 2457,
-      "stable_id": "qb-t31-077-da529d7ed981444b41034a97",
+      "stable_id": "qb-t31-077-2d7b3ff32bb1faf52713d09e",
       "topic_num": 31,
       "question": "¿Qué significa que un componente sea idempotente respecto a su inicialización de datos?",
       "option_a": "Repetir la inicialización no produce efectos incorrectos",
-      "option_b": "Que nunca puede inicializarse",
-      "option_c": "Que siempre usa singleton",
-      "option_d": "Que no admite persistencia",
+      "option_b": "Solo solicita renderizado; no guarda datos duraderamente",
+      "option_c": "Exponer una API de estado y notificar a sus consumidores",
+      "option_d": "Porque puede haber una fase prerender y otra interactiva",
       "correct": "A",
       "explanation": "La idempotencia es útil porque prerender y activación pueden provocar más de una ejecución.",
       "learning_objective_id": "t31-lo-077",
@@ -1193,14 +1666,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "Component state",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "State containers",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-STATE-10 Prerendering; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[56, 56, 56, 56]."
         },
         "explanation": {
           "status": "passed",
@@ -1208,33 +1703,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-STATE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1242,13 +1737,13 @@
     },
     {
       "id": 2458,
-      "stable_id": "qb-t31-078-8a60422a5ed4a262552bdd79",
+      "stable_id": "qb-t31-078-64cac7da93c58d887b77fc56",
       "topic_num": 31,
       "question": "Un componente carga un dato en prerender y modifica el resultado antes de la fase interactiva. ¿Qué diseño debe priorizar?",
-      "option_a": "Persistir todas las referencias",
+      "option_a": "Puede restaurarse después de recrear la instancia",
       "option_b": "Definir claramente qué estado cruza la transición",
-      "option_c": "Usar una variable estática",
-      "option_d": "Ocultar el dato en CSS",
+      "option_c": "Si el estado persistido se recuperó correctamente",
+      "option_d": "Conectarlo con la ejecución interactiva posterior",
       "correct": "B",
       "explanation": "Solo debe cruzar la transición el estado necesario y válido para la fase interactiva.",
       "learning_objective_id": "t31-lo-078",
@@ -1265,14 +1760,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "Browser storage",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "Prerendering and state — hydration",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-STATE-10 PersistentComponentState; expected option B."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[49, 49, 49, 49]."
         },
         "explanation": {
           "status": "passed",
@@ -1280,33 +1797,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-STATE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1314,13 +1831,13 @@
     },
     {
       "id": 2459,
-      "stable_id": "qb-t31-079-ba5bafb06981bd838380ba9a",
+      "stable_id": "qb-t31-079-90dcd46c920c191bae086a23",
       "topic_num": 31,
       "question": "¿Qué estado es más apropiado para recuperar una lista inicial tras prerender?",
-      "option_a": "Un servicio scoped completo",
-      "option_b": "Un manejador de evento",
+      "option_a": "Cada circuito tiene su propia instancia",
+      "option_b": "Centraliza invariantes y notificaciones",
       "option_c": "Datos serializables de la carga inicial",
-      "option_d": "Una referencia a un componente",
+      "option_d": "El texto actual de un campo de búsqueda",
       "correct": "C",
       "explanation": "La lista de datos puede serializarse; los servicios y referencias vivos deben resolverse de nuevo.",
       "learning_objective_id": "t31-lo-079",
@@ -1337,14 +1854,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "State containers",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "State management guidance — ephemeral UI state",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-STATE-10 PersistentComponentState; expected option C."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[39, 39, 39, 39]."
         },
         "explanation": {
           "status": "passed",
@@ -1352,33 +1891,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-STATE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1386,12 +1925,12 @@
     },
     {
       "id": 2460,
-      "stable_id": "qb-t31-080-4f5aedf315b3ef019810faf8",
+      "stable_id": "qb-t31-080-5ac2ff5a8918b5ac460c3f5a",
       "topic_num": 31,
       "question": "¿Qué debe hacer un componente si TryTakeFromJson<T> no encuentra el valor esperado?",
-      "option_a": "Asumir que T nunca puede ser nulo",
-      "option_b": "Leer una base de datos del navegador sin interop",
-      "option_c": "Renderizar un valor secreto",
+      "option_a": "Aplicar la mutación completa y notificar una sola vez",
+      "option_b": "Una vista coherente que no cambia mientras se procesa",
+      "option_c": "Cada pestaña tiene su propio almacenamiento de sesión",
       "option_d": "Ejecutar la carga normal y establecer un valor válido",
       "correct": "D",
       "explanation": "La ausencia es un camino normal cuando no hubo prerender o el estado expiró y debe tener una alternativa.",
@@ -1409,14 +1948,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "State containers",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-STATE-10",
+          "title": "ASP.NET Core Blazor state management",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management?view=aspnetcore-10.0",
+          "citation": "Browser storage",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-STATE-10 PersistentComponentState; expected option D."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[53, 53, 53, 53]."
         },
         "explanation": {
           "status": "passed",
@@ -1424,37 +1985,38 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-STATE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
       "status": "validated"
     }
-  ]
+  ],
+  "answer_length_balance_audit": "docs/question-bank/answer-length-balance-audit.json"
 }

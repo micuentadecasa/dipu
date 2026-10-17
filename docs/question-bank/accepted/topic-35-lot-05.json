@@ -3,7 +3,7 @@
   "state": "reviewed",
   "topic_num": 35,
   "lot_num": 5,
-  "revision": 1,
+  "revision": 2,
   "reviewed_at": "2026-10-13",
   "source_register_sha256": "035e3b0111f9ed6a2cabad619c8d7df6a79540305675e0802e6a1a94d00541cc",
   "objective_manifest_sha256": "ca5088b1ad635ca48ff32a9bed406458355109a788ece65613d8364929b77fb8",
@@ -18,13 +18,13 @@
   "questions": [
     {
       "id": 2681,
-      "stable_id": "qb-t35-081-dded10e38ee39a4fb0b8177d",
+      "stable_id": "qb-t35-081-e4d09940ab0d10f57832171f",
       "topic_num": 35,
       "question": "¿Qué es una rama de tema (topic branch) en un flujo Git?",
       "option_a": "Una rama temporal centrada en una funcionalidad o corrección concreta",
-      "option_b": "Una rama que solo contiene tags",
-      "option_c": "Una referencia que nunca puede fusionarse",
-      "option_d": "Una copia obligatoria de todos los remotos",
+      "option_b": "La identidad del objeto deriva de su contenido y metadatos relevantes",
+      "option_c": "El tree enlaza nombres/entradas con objetos que representan contenido",
+      "option_d": "Puede mover una referencia y modificar índice/working tree según modo",
       "correct": "A",
       "explanation": "Una topic branch aísla una línea de trabajo enfocada hasta que se integra en una rama de desarrollo o estable.",
       "learning_objective_id": "t35-lo-081",
@@ -41,14 +41,47 @@
           "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "gitglossary — object; gitrepository-layout — objects",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "gitglossary — tree object; blob object",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-reset — DESCRIPTION",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against GIT-2.50 gitworkflows — Topic branches; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[69, 69, 69, 69]."
         },
         "explanation": {
           "status": "passed",
@@ -56,33 +89,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited GIT-2.50 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -90,13 +123,13 @@
     },
     {
       "id": 2682,
-      "stable_id": "qb-t35-082-3b9f1e7551396d153b6a5788",
+      "stable_id": "qb-t35-082-a1552d8db3ff458116ef5461",
       "topic_num": 35,
       "question": "¿Qué describe el flujo de trabajo documentado para un proyecto con rama de integración?",
-      "option_a": "Cada desarrollador escribe directamente en la rama estable",
+      "option_a": "La primera cambia refs locales; la segunda usa push para pedir al servidor que elimine su referencia",
       "option_b": "Las contribuciones llegan a una rama de integración y se prueban antes de avanzar a una rama estable",
-      "option_c": "Todos los cambios se guardan como stashes",
-      "option_d": "Los remotos se sustituyen por tags",
+      "option_c": "La primera restaura el índice; la segunda quita la ruta del índice conservando el archivo de trabajo",
+      "option_d": "Cuando ninguna punta es ancestro directo de la otra y debe combinar dos cambios desde una base común",
       "correct": "B",
       "explanation": "Gitworkflows separa integración y estabilidad para ordenar la incorporación de contribuciones.",
       "learning_objective_id": "t35-lo-082",
@@ -113,14 +146,47 @@
           "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-branch — -d/--delete; git-push — --delete",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-restore — --staged; git-rm — --cached",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-merge — DESCRIPTION; git-merge-base — DESCRIPTION",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against GIT-2.50 gitworkflows — Integration branches; expected option B."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[100, 100, 100, 100]."
         },
         "explanation": {
           "status": "passed",
@@ -128,33 +194,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited GIT-2.50 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -162,13 +228,13 @@
     },
     {
       "id": 2683,
-      "stable_id": "qb-t35-083-0e1e8abb6a688e0b88ef71d0",
+      "stable_id": "qb-t35-083-ba2db0384fd002a5adf29f1a",
       "topic_num": 35,
       "question": "¿Qué ventaja aporta mantener una rama estable separada de una rama de integración?",
-      "option_a": "Obliga a reescribir todos los commits públicos",
-      "option_b": "Elimina la necesidad de remotos",
+      "option_a": "Crear un commit de merge incluso cuando sería posible avanzar directamente",
+      "option_b": "Permite únicamente un avance rápido y falla si se necesita un merge commit",
       "option_c": "Permite probar o revisar cambios antes de exponerlos como historia estable",
-      "option_d": "Impide crear ramas de tema",
+      "option_d": "Editar el contenido, elegir una solución y marcar el archivo como resuelto",
       "correct": "C",
       "explanation": "La separación proporciona una frontera de calidad entre trabajo en integración y código estable.",
       "learning_objective_id": "t35-lo-083",
@@ -185,14 +251,47 @@
           "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-merge — --ff/--no-ff",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-merge — --ff-only",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-merge — HOW CONFLICTS ARE PRESENTED; git-add — DESCRIPTION",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against GIT-2.50 gitworkflows — Integration branches; expected option C."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[74, 74, 74, 74]."
         },
         "explanation": {
           "status": "passed",
@@ -200,33 +299,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited GIT-2.50 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -234,12 +333,12 @@
     },
     {
       "id": 2684,
-      "stable_id": "qb-t35-084-e66d2a40aecfc157482ea7e6",
+      "stable_id": "qb-t35-084-2f594d52dfd9af65e740174b",
       "topic_num": 35,
       "question": "¿Qué caracteriza un flujo distribuido de Git?",
-      "option_a": "Solo existe un servidor que controla todos los commits",
-      "option_b": "No puede haber ramas de tema",
-      "option_c": "Las pull requests dejan de ser posibles",
+      "option_a": "Separar trabajo, revisión e integración de forma explícita y preservar la historia compartida salvo decisión coordinada",
+      "option_b": "Ambos favorecen ramas cortas e integración frecuente, aunque GitHub flow concreta el uso de pull requests y despliegue",
+      "option_c": "La reconstrucción del estado previo puede no recuperar fielmente esos cambios y debe evitarse confiar ciegamente en abort",
       "option_d": "Cada participante puede intercambiar contribuciones entre repositorios y un integrador puede seleccionar qué incorporar",
       "correct": "D",
       "explanation": "Git distribuido permite múltiples repositorios y roles de integración mediante fetch, push y selección de refs.",
@@ -257,14 +356,47 @@
           "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "gitworkflows — Workflow; About pull requests; git-push — NOTE ABOUT FAST-FORWARDS",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GITHUB-FLOW",
+          "title": "GitHub flow documentation",
+          "authority": "GitHub",
+          "tier": "official_primary",
+          "url": "https://docs.github.com/en/get-started/using-github/github-flow",
+          "citation": "GitHub flow — Understanding the GitHub flow",
+          "version_or_as_of": "Current official documentation reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-merge — --abort",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against GIT-2.50 gitworkflows — Distributed workflows; expected option D."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[119, 118, 121, 119]."
         },
         "explanation": {
           "status": "passed",
@@ -272,33 +404,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited GIT-2.50 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -306,13 +438,13 @@
     },
     {
       "id": 2685,
-      "stable_id": "qb-t35-085-061a77490bdfb4b214681546",
+      "stable_id": "qb-t35-085-8cea40aa180fecacb23192c0",
       "topic_num": 35,
       "question": "¿Por qué conviene no reescribir una rama pública que ya sirve de base a otros?",
       "option_a": "Porque obliga a los demás a reconciliar identificadores y puede invalidar referencias de trabajo",
-      "option_b": "Porque Git no permite crear tags después",
-      "option_c": "Porque fetch borra la rama local",
-      "option_d": "Porque una rama pública no puede fusionarse",
+      "option_b": "Fetch actualiza referencias sin integrar; pull añade una integración posterior en la rama actual",
+      "option_c": "Guardar temporalmente cambios locales, realizar la integración y tratar de reaplicarlos al final",
+      "option_d": "La primera compara el working tree completo con HEAD; la segunda compara working tree con índice",
       "correct": "A",
       "explanation": "La estabilidad de referencias compartidas reduce el coste de coordinación y evita divergencias artificiales.",
       "learning_objective_id": "t35-lo-085",
@@ -329,14 +461,47 @@
           "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-fetch — DESCRIPTION; git-pull — DESCRIPTION",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-pull — --autostash",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-diff — COMMIT and --cached",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against GIT-2.50 gitworkflows — Public history; git-rebase — DESCRIPTION; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[96, 96, 96, 96]."
         },
         "explanation": {
           "status": "passed",
@@ -344,33 +509,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited GIT-2.50 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -378,13 +543,13 @@
     },
     {
       "id": 2686,
-      "stable_id": "qb-t35-086-e31fa0d5d5ee66ce22bca1a1",
+      "stable_id": "qb-t35-086-abb2d18e2263813a3f8e864d",
       "topic_num": 35,
       "question": "¿Qué caracteriza al enfoque GitHub flow?",
-      "option_a": "Mantener ramas release y hotfix durante años",
+      "option_a": "Porque permite revisar la historia obtenida y elegir merge, rebase u otra acción de forma explícita",
       "option_b": "Usar ramas de trabajo cortas, cambios revisables mediante pull request y una integración frecuente",
-      "option_c": "Enviar siempre directamente a main con force",
-      "option_d": "No ejecutar comprobaciones antes de integrar",
+      "option_c": "Una opción adicional para hooks o lógica de recepción que el servidor haya configurado para aceptar",
+      "option_d": "Que la expectativa local de la punta remota sea fiable y que reescribir la historia esté autorizado",
       "correct": "B",
       "explanation": "GitHub flow documenta un flujo ligero basado en rama, commit, pull request, revisión y despliegue.",
       "learning_objective_id": "t35-lo-086",
@@ -401,14 +566,47 @@
           "version_or_as_of": "Current official documentation reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-fetch — DESCRIPTION; git-pull — DESCRIPTION",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-push — --push-option",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-push — --force-with-lease",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against GITHUB-FLOW GitHub flow — Understanding the GitHub flow; expected option B."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[99, 98, 99, 99]."
         },
         "explanation": {
           "status": "passed",
@@ -416,33 +614,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited GITHUB-FLOW source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -450,13 +648,13 @@
     },
     {
       "id": 2687,
-      "stable_id": "qb-t35-087-01198ec69a5f200f0bba1a58",
+      "stable_id": "qb-t35-087-dc3c8e17c26f23589074511b",
       "topic_num": 35,
       "question": "¿Qué paso pertenece al flujo GitHub flow después de crear una rama de trabajo?",
-      "option_a": "Borrar main antes de probar",
-      "option_b": "Crear obligatoriamente una rama develop",
+      "option_a": "Limita los commits obtenidos y puede ampliar un repositorio shallow",
+      "option_b": "Añade discusión, revisión y políticas a la propuesta de referencias",
       "option_c": "Realizar commits y abrir una pull request para proponer los cambios",
-      "option_d": "Publicar tags de cada archivo",
+      "option_d": "Hotfix atiende urgencia en producción y release prepara una versión",
       "correct": "C",
       "explanation": "La pull request convierte la rama corta en una propuesta revisable contra la rama base.",
       "learning_objective_id": "t35-lo-087",
@@ -473,14 +671,47 @@
           "version_or_as_of": "Current official documentation reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-fetch — --depth",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GITHUB-PULL-REQUESTS",
+          "title": "GitHub pull requests documentation",
+          "authority": "GitHub",
+          "tier": "official_primary",
+          "url": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests",
+          "citation": "About pull requests — differences from Git commands",
+          "version_or_as_of": "Current official documentation reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "ATLASSIAN-GIT-FLOW",
+          "title": "Atlassian Gitflow workflow documentation",
+          "authority": "Atlassian",
+          "tier": "official_primary",
+          "url": "https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow",
+          "citation": "Gitflow workflow — hotfix branches; release branches",
+          "version_or_as_of": "Current official documentation reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against GITHUB-FLOW GitHub flow — Creating a branch; opening a pull request; expected option C."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[67, 67, 67, 67]."
         },
         "explanation": {
           "status": "passed",
@@ -488,33 +719,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited GITHUB-FLOW source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -522,12 +753,12 @@
     },
     {
       "id": 2688,
-      "stable_id": "qb-t35-088-6cad00035db7e32c5bae0541",
+      "stable_id": "qb-t35-088-6ace0b2cbff549b13624cd88",
       "topic_num": 35,
       "question": "¿Qué diferencia general hay entre un flujo ligero de ramas y Gitflow?",
-      "option_a": "El flujo ligero no usa Git y Gitflow solo usa stashes",
-      "option_b": "Ambos requieren exactamente las mismas ramas",
-      "option_c": "Gitflow prohíbe cualquier integración",
+      "option_a": "Condiciones especiales relacionadas con la igualdad y medidas de igualdad en los contratos y subvenciones, dentro de la legislación aplicable",
+      "option_b": "Ejecuta localmente la operación de firma con los medios del firmante, pero no se convierte por ello en el prestador del servicio de confianza",
+      "option_c": "La situación en que una persona es, ha sido o pudiera ser tratada de manera menos favorable que otra en situación comparable por razón de sexo",
       "option_d": "El primero suele integrar ramas cortas hacia una línea principal; Gitflow define ramas de desarrollo, release y hotfix con roles más formales",
       "correct": "D",
       "explanation": "Las guías distinguen la simplicidad de ramas cortas de la estructura explícita de Gitflow.",
@@ -545,14 +776,47 @@
           "version_or_as_of": "Current official documentation reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BOE-LO-3-2007",
+          "title": "Ley Orgánica 3/2007, para la igualdad efectiva de mujeres y hombres, texto consolidado",
+          "authority": "Agencia Estatal Boletín Oficial del Estado",
+          "tier": "official_primary",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6115",
+          "citation": "Artículos 33 y 35",
+          "version_or_as_of": "Texto consolidado consultado el 2026-10-12",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "PAE-AUTOFIRMA",
+          "title": "AutoFirma, documentación oficial",
+          "authority": "Portal de Administración Electrónica",
+          "tier": "official_primary",
+          "url": "https://firmaelectronica.gob.es/Home/Descargas.html",
+          "citation": "eIDAS, artículos 3 y 24; página oficial de AutoFirma",
+          "version_or_as_of": "Página de descargas consultada el 2026-10-12; versión de aplicación debe fijarse por lote",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BOE-LO-3-2007",
+          "title": "Ley Orgánica 3/2007, para la igualdad efectiva de mujeres y hombres, texto consolidado",
+          "authority": "Agencia Estatal Boletín Oficial del Estado",
+          "tier": "official_primary",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6115",
+          "citation": "Artículo 6.1",
+          "version_or_as_of": "Texto consolidado consultado el 2026-10-12",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against GITHUB-FLOW GitHub flow — Understanding the GitHub flow; Gitflow workflow — overview; expected option D."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[141, 141, 142, 141]."
         },
         "explanation": {
           "status": "passed",
@@ -560,33 +824,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited GITHUB-FLOW source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -594,13 +858,13 @@
     },
     {
       "id": 2689,
-      "stable_id": "qb-t35-089-afa6fc33c45733f9d03d1d30",
+      "stable_id": "qb-t35-089-f7b33bf1fcde06027e02b054",
       "topic_num": 35,
       "question": "En Gitflow, ¿qué papel cumple normalmente develop?",
       "option_a": "Servir como rama de integración del trabajo que se prepara para una futura versión",
-      "option_b": "Contener únicamente correcciones urgentes de producción",
-      "option_c": "Ser la rama de cada pull request cerrada",
-      "option_d": "Reemplazar todos los tags de versión",
+      "option_b": "Emitir una revisión que solicite cambios y esperar a que la rama head se actualice",
+      "option_c": "Usar merge para integrar la historia obtenida, salvo otras opciones incompatibles",
+      "option_d": "Consulta refs del otro repositorio sin actualizar las refs de seguimiento locales",
       "correct": "A",
       "explanation": "Gitflow usa develop como línea donde se integran funcionalidades antes de preparar una release.",
       "learning_objective_id": "t35-lo-089",
@@ -617,14 +881,47 @@
           "version_or_as_of": "Current official documentation reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "GITHUB-PULL-REQUESTS",
+          "title": "GitHub pull requests documentation",
+          "authority": "GitHub",
+          "tier": "official_primary",
+          "url": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests",
+          "citation": "Submitting a pull request review",
+          "version_or_as_of": "Current official documentation reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-pull — --no-rebase",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-ls-remote — DESCRIPTION",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ATLASSIAN-GIT-FLOW Gitflow workflow — develop branch; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[82, 82, 81, 81]."
         },
         "explanation": {
           "status": "passed",
@@ -632,33 +929,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ATLASSIAN-GIT-FLOW source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -666,13 +963,13 @@
     },
     {
       "id": 2690,
-      "stable_id": "qb-t35-090-edc6960fd40b46d50fa0e097",
+      "stable_id": "qb-t35-090-59b3b6ff1c67af97b1594359",
       "topic_num": 35,
       "question": "En Gitflow, ¿para qué se usa una rama release?",
-      "option_a": "Guardar archivos ignorados de una release anterior",
+      "option_a": "Obtiene objetos y referencias de otro repositorio sin integrar automáticamente sus cambios en la rama actual",
       "option_b": "Preparar una versión concreta y estabilizarla antes de incorporarla a las ramas de producción e integración",
-      "option_c": "Sustituir el repositorio remoto",
-      "option_d": "Evitar cualquier prueba automatizada",
+      "option_c": "Porque permite inspeccionar cambios remotos y decidir cómo integrarlos antes de modificar la rama de trabajo",
+      "option_d": "Integrar cambios pequeños y frecuentes en una línea principal, usando ramas muy cortas cuando se necesiten",
       "correct": "B",
       "explanation": "La rama release aísla la estabilización de una versión mientras el desarrollo futuro puede continuar.",
       "learning_objective_id": "t35-lo-090",
@@ -689,14 +986,47 @@
           "version_or_as_of": "Current official documentation reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-fetch — DESCRIPTION",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-fetch — DESCRIPTION; git-merge — DESCRIPTION; git-rebase — DESCRIPTION",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GITHUB-FLOW",
+          "title": "GitHub flow documentation",
+          "authority": "GitHub",
+          "tier": "official_primary",
+          "url": "https://docs.github.com/en/get-started/using-github/github-flow",
+          "citation": "GitHub flow — Understanding the GitHub flow",
+          "version_or_as_of": "Current official documentation reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ATLASSIAN-GIT-FLOW Gitflow workflow — release branches; expected option B."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[108, 107, 108, 106]."
         },
         "explanation": {
           "status": "passed",
@@ -704,33 +1034,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ATLASSIAN-GIT-FLOW source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -738,13 +1068,13 @@
     },
     {
       "id": 2691,
-      "stable_id": "qb-t35-091-6b05c09f6767ae680833f913",
+      "stable_id": "qb-t35-091-e17f224e80ff6de523844d37",
       "topic_num": 35,
       "question": "En Gitflow, ¿qué finalidad tiene una rama hotfix?",
-      "option_a": "Desarrollar una funcionalidad experimental sin revisión",
-      "option_b": "Almacenar las URLs de remotos",
+      "option_a": "La correspondencia entre referencias del repositorio remoto y referencias locales que se actualizarán",
+      "option_b": "La pull request añade conversación, revisiones y comprobaciones alrededor de una comparación de ramas",
       "option_c": "Corregir urgentemente una versión de producción y propagar la corrección a las ramas correspondientes",
-      "option_d": "Reemplazar la rama de integración permanentemente",
+      "option_d": "Obtener cambios y después integrarlos en la rama actual mediante merge o rebase según la configuración",
       "correct": "C",
       "explanation": "Hotfix se reserva para correcciones urgentes sobre la línea de producción y después se integra donde corresponda.",
       "learning_objective_id": "t35-lo-091",
@@ -761,14 +1091,47 @@
           "version_or_as_of": "Current official documentation reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-fetch — REFSPEC; gitglossary — refspec",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GITHUB-PULL-REQUESTS",
+          "title": "GitHub pull requests documentation",
+          "authority": "GitHub",
+          "tier": "official_primary",
+          "url": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests",
+          "citation": "About pull requests — differences from Git commands",
+          "version_or_as_of": "Current official documentation reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-pull — DESCRIPTION",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ATLASSIAN-GIT-FLOW Gitflow workflow — hotfix branches; expected option C."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[101, 101, 101, 102]."
         },
         "explanation": {
           "status": "passed",
@@ -776,33 +1139,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ATLASSIAN-GIT-FLOW source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -810,12 +1173,12 @@
     },
     {
       "id": 2692,
-      "stable_id": "qb-t35-092-8a32972cf04bde1ca31ee7c2",
+      "stable_id": "qb-t35-092-8635b4fe23790320a7a0ebaf",
       "topic_num": 35,
       "question": "¿Qué suele ocurrir al finalizar una rama release en Gitflow?",
-      "option_a": "Se elimina sin merge ni tag",
-      "option_b": "Se convierte en remote-tracking branch",
-      "option_c": "Se aplica como stash a todos los clones",
+      "option_a": "Obtener cambios y después integrarlos en la rama actual mediante merge o rebase según la configuración",
+      "option_b": "Consultar la referencia local de seguimiento que refleja la última posición conocida de main en origin",
+      "option_c": "Integrar cambios pequeños y frecuentes en una línea principal, usando ramas muy cortas cuando se necesiten",
       "option_d": "Se integra en la rama de producción, se marca la versión y se devuelve el cambio a la rama de desarrollo",
       "correct": "D",
       "explanation": "El cierre de una release conserva la versión en producción y sincroniza la línea de desarrollo.",
@@ -833,14 +1196,47 @@
           "version_or_as_of": "Current official documentation reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-pull — DESCRIPTION",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "gitglossary — remote-tracking branch; git-fetch — DESCRIPTION",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GITHUB-FLOW",
+          "title": "GitHub flow documentation",
+          "authority": "GitHub",
+          "tier": "official_primary",
+          "url": "https://docs.github.com/en/get-started/using-github/github-flow",
+          "citation": "GitHub flow — Understanding the GitHub flow",
+          "version_or_as_of": "Current official documentation reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ATLASSIAN-GIT-FLOW Gitflow workflow — release branches; expected option D."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[102, 102, 106, 104]."
         },
         "explanation": {
           "status": "passed",
@@ -848,33 +1244,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ATLASSIAN-GIT-FLOW source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -882,13 +1278,13 @@
     },
     {
       "id": 2693,
-      "stable_id": "qb-t35-093-1eb521086a0437f663ab6641",
+      "stable_id": "qb-t35-093-335d2f86bf65c536f46264f5",
       "topic_num": 35,
       "question": "¿Qué coste puede tener Gitflow frente a un flujo de ramas cortas?",
       "option_a": "Mantiene más ramas de larga duración y exige más coordinación de integración",
-      "option_b": "No permite etiquetar versiones",
-      "option_c": "No puede usar remotos",
-      "option_d": "Tiene menos estados y menos decisiones siempre",
+      "option_b": "Añadirlo con git remote add y revisar su configuración antes de fetch o push",
+      "option_c": "Que la integración pueda resolverse como fast-forward; de lo contrario falla",
+      "option_d": "Que todas las actualizaciones de refs se acepten juntas o ninguna se aplique",
       "correct": "A",
       "explanation": "La estructura formal de Gitflow ofrece roles claros, pero aumenta la coordinación y la divergencia potencial.",
       "learning_objective_id": "t35-lo-093",
@@ -905,14 +1301,47 @@
           "version_or_as_of": "Current official documentation reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-remote — add",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-pull — --ff-only",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-push — --atomic",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ATLASSIAN-GIT-FLOW Gitflow workflow — comparing workflows; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[76, 76, 76, 76]."
         },
         "explanation": {
           "status": "passed",
@@ -920,33 +1349,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ATLASSIAN-GIT-FLOW source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -954,13 +1383,13 @@
     },
     {
       "id": 2694,
-      "stable_id": "qb-t35-094-8c66d931fd515af37136243a",
+      "stable_id": "qb-t35-094-0b3fc6fc274142c8c6c35609",
       "topic_num": 35,
       "question": "¿Qué práctica es coherente con trunk-based development?",
-      "option_a": "Mantener cada funcionalidad en una rama permanente hasta fin de año",
+      "option_a": "Preparar una versión concreta y estabilizarla antes de incorporarla a las ramas de producción e integración",
       "option_b": "Integrar cambios pequeños y frecuentes en una línea principal, usando ramas muy cortas cuando se necesiten",
-      "option_c": "Separar siempre develop y release aunque no haya versiones",
-      "option_d": "Reescribir main después de cada integración",
+      "option_c": "Obtiene objetos y referencias de otro repositorio sin integrar automáticamente sus cambios en la rama actual",
+      "option_d": "Porque permite inspeccionar cambios remotos y decidir cómo integrarlos antes de modificar la rama de trabajo",
       "correct": "B",
       "explanation": "Trunk-based development reduce el tiempo de vida de ramas y favorece la integración frecuente sobre el tronco.",
       "learning_objective_id": "t35-lo-094",
@@ -977,14 +1406,47 @@
           "version_or_as_of": "Current official documentation reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "ATLASSIAN-GIT-FLOW",
+          "title": "Atlassian Gitflow workflow documentation",
+          "authority": "Atlassian",
+          "tier": "official_primary",
+          "url": "https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow",
+          "citation": "Gitflow workflow — release branches",
+          "version_or_as_of": "Current official documentation reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-fetch — DESCRIPTION",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-fetch — DESCRIPTION; git-merge — DESCRIPTION; git-rebase — DESCRIPTION",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against GITHUB-FLOW GitHub flow — Understanding the GitHub flow; expected option B."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[107, 106, 108, 108]."
         },
         "explanation": {
           "status": "passed",
@@ -992,33 +1454,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited GITHUB-FLOW source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1026,13 +1488,13 @@
     },
     {
       "id": 2695,
-      "stable_id": "qb-t35-095-848aaea6f19e3bafb9eac1d7",
+      "stable_id": "qb-t35-095-e957410cc9ebd2ed542113f4",
       "topic_num": 35,
       "question": "¿Qué relación existe entre GitHub flow y trunk-based development?",
-      "option_a": "Uno exige Gitflow y el otro prohíbe main",
-      "option_b": "Ambos requieren ramas release y hotfix",
+      "option_a": "Cada participante puede intercambiar contribuciones entre repositorios y un integrador puede seleccionar qué incorporar",
+      "option_b": "Separar trabajo, revisión e integración de forma explícita y preservar la historia compartida salvo decisión coordinada",
       "option_c": "Ambos favorecen ramas cortas e integración frecuente, aunque GitHub flow concreta el uso de pull requests y despliegue",
-      "option_d": "No comparten ninguna práctica",
+      "option_d": "Debe combinarse con la política de poda indicada porque puede eliminar tags locales que ya no estén en el remoto",
       "correct": "C",
       "explanation": "El flujo de GitHub es una realización ligera compatible con la idea de mantener corta la divergencia respecto al tronco.",
       "learning_objective_id": "t35-lo-095",
@@ -1049,14 +1511,47 @@
           "version_or_as_of": "Current official documentation reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "gitworkflows — Distributed workflows",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "gitworkflows — Workflow; About pull requests; git-push — NOTE ABOUT FAST-FORWARDS",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-fetch — --prune-tags",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against GITHUB-FLOW GitHub flow — Understanding the GitHub flow; expected option C."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[119, 119, 118, 112]."
         },
         "explanation": {
           "status": "passed",
@@ -1064,33 +1559,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited GITHUB-FLOW source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1098,12 +1593,12 @@
     },
     {
       "id": 2696,
-      "stable_id": "qb-t35-096-8a1a735eb5efe78a4cb50f70",
+      "stable_id": "qb-t35-096-9547a084ebf460cbfa78f9f6",
       "topic_num": 35,
       "question": "¿Qué criterio ayuda a elegir entre una rama release formal y una integración continua sobre trunk?",
-      "option_a": "El nombre del remoto origin",
-      "option_b": "La existencia de archivos ignorados",
-      "option_c": "El número de tags ligeros locales",
+      "option_a": "El primero suele integrar ramas cortas hacia una línea principal; Gitflow define ramas de desarrollo, release y hotfix con roles más formales",
+      "option_b": "Cada participante puede intercambiar contribuciones entre repositorios y un integrador puede seleccionar qué incorporar",
+      "option_c": "Separar trabajo, revisión e integración de forma explícita y preservar la historia compartida salvo decisión coordinada",
       "option_d": "La necesidad real de estabilizar versiones separadas frente a la capacidad de integrar cambios pequeños con controles automatizados",
       "correct": "D",
       "explanation": "La estrategia debe responder al ritmo de entrega, controles y necesidades de mantenimiento, no a una receta universal.",
@@ -1121,14 +1616,47 @@
           "version_or_as_of": "Current official documentation reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "GITHUB-FLOW",
+          "title": "GitHub flow documentation",
+          "authority": "GitHub",
+          "tier": "official_primary",
+          "url": "https://docs.github.com/en/get-started/using-github/github-flow",
+          "citation": "GitHub flow — Understanding the GitHub flow; Gitflow workflow — overview",
+          "version_or_as_of": "Current official documentation reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "gitworkflows — Distributed workflows",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "gitworkflows — Workflow; About pull requests; git-push — NOTE ABOUT FAST-FORWARDS",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ATLASSIAN-GIT-FLOW Gitflow workflow — comparing workflows; GitHub flow — understanding the flow; expected option D."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[141, 119, 119, 131]."
         },
         "explanation": {
           "status": "passed",
@@ -1136,33 +1664,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ATLASSIAN-GIT-FLOW source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1170,13 +1698,13 @@
     },
     {
       "id": 2697,
-      "stable_id": "qb-t35-097-023c190d7e2d159414f6519b",
+      "stable_id": "qb-t35-097-8ad9d38d0055fb8fc5f0b42d",
       "topic_num": 35,
       "question": "¿Qué secuencia es coherente con una contribución revisable y de bajo riesgo?",
       "option_a": "Crear rama corta, obtener la base actual, hacer commits enfocados, abrir pull request, pasar checks y fusionar",
-      "option_b": "Forzar directamente main y borrar el reflog",
-      "option_c": "Crear una rama permanente por cada archivo",
-      "option_d": "Publicar sin revisar y resolver después en todos los clones",
+      "option_b": "Requerir revisiones y checks, impedir pushes directos no autorizados y publicar cambios desde ramas de trabajo",
+      "option_c": "Obtiene objetos y referencias de otro repositorio sin integrar automáticamente sus cambios en la rama actual",
+      "option_d": "Debe combinarse con la política de poda indicada porque puede eliminar tags locales que ya no estén en el remoto",
       "correct": "A",
       "explanation": "La secuencia limita la divergencia, conserva la revisión y usa checks antes de modificar la línea principal.",
       "learning_objective_id": "t35-lo-097",
@@ -1193,14 +1721,47 @@
           "version_or_as_of": "Current official documentation reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "GITHUB-PULL-REQUESTS",
+          "title": "GitHub pull requests documentation",
+          "authority": "GitHub",
+          "tier": "official_primary",
+          "url": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests",
+          "citation": "About protected branches; About status checks",
+          "version_or_as_of": "Current official documentation reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-fetch — DESCRIPTION",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-fetch — --prune-tags",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against GITHUB-FLOW GitHub flow — understanding the GitHub flow; git-fetch — DESCRIPTION; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[110, 110, 108, 112]."
         },
         "explanation": {
           "status": "passed",
@@ -1208,33 +1769,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited GITHUB-FLOW source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1242,13 +1803,13 @@
     },
     {
       "id": 2698,
-      "stable_id": "qb-t35-098-26b184ab8ef0a43a118c3e3e",
+      "stable_id": "qb-t35-098-6cefef8e4c2c4847b04258fa",
       "topic_num": 35,
       "question": "¿Qué debe conservar una estrategia de ramas bien definida además de los nombres de ramas?",
-      "option_a": "Solo una lista de URLs",
+      "option_a": "Fetch actualiza referencias sin integrar; pull añade una integración posterior en la rama actual",
       "option_b": "Reglas claras de integración, revisión, pruebas, publicación y tratamiento de historia compartida",
-      "option_c": "Un stash por desarrollador",
-      "option_d": "Un merge commit vacío en cada push",
+      "option_c": "Guardar temporalmente cambios locales, realizar la integración y tratar de reaplicarlos al final",
+      "option_d": "Porque obliga a los demás a reconciliar identificadores y puede invalidar referencias de trabajo",
       "correct": "B",
       "explanation": "Una estrategia es un proceso de colaboración y calidad, no solo una nomenclatura de refs.",
       "learning_objective_id": "t35-lo-098",
@@ -1265,14 +1826,47 @@
           "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-fetch — DESCRIPTION; git-pull — DESCRIPTION",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-pull — --autostash",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "gitworkflows — Public history; git-rebase — DESCRIPTION",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against GIT-2.50 gitworkflows — Workflow; About protected branches; expected option B."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[96, 97, 96, 96]."
         },
         "explanation": {
           "status": "passed",
@@ -1280,33 +1874,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited GIT-2.50 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1314,13 +1908,13 @@
     },
     {
       "id": 2699,
-      "stable_id": "qb-t35-099-34e96b702a3f68f11d3b6e4a",
+      "stable_id": "qb-t35-099-299421b9b0bf8187b3ce3fb0",
       "topic_num": 35,
       "question": "¿Qué decisión protege mejor una rama principal en un equipo con pull requests?",
-      "option_a": "Permitir force push anónimo y saltar checks",
-      "option_b": "Eliminar la rama principal tras cada release",
+      "option_a": "Crear rama corta, obtener la base actual, hacer commits enfocados, abrir pull request, pasar checks y fusionar",
+      "option_b": "Obtiene objetos y referencias de otro repositorio sin integrar automáticamente sus cambios en la rama actual",
       "option_c": "Requerir revisiones y checks, impedir pushes directos no autorizados y publicar cambios desde ramas de trabajo",
-      "option_d": "Aceptar cualquier actualización de una remote-tracking ref",
+      "option_d": "Debe combinarse con la política de poda indicada porque puede eliminar tags locales que ya no estén en el remoto",
       "correct": "C",
       "explanation": "Las protecciones combinan control de acceso y señales de calidad antes de integrar cambios.",
       "learning_objective_id": "t35-lo-099",
@@ -1337,14 +1931,47 @@
           "version_or_as_of": "Current official documentation reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "GITHUB-FLOW",
+          "title": "GitHub flow documentation",
+          "authority": "GitHub",
+          "tier": "official_primary",
+          "url": "https://docs.github.com/en/get-started/using-github/github-flow",
+          "citation": "GitHub flow — understanding the GitHub flow; git-fetch — DESCRIPTION",
+          "version_or_as_of": "Current official documentation reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-fetch — DESCRIPTION",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-fetch — --prune-tags",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against GITHUB-PULL-REQUESTS About protected branches; About status checks; expected option C."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[110, 108, 110, 112]."
         },
         "explanation": {
           "status": "passed",
@@ -1352,33 +1979,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited GITHUB-PULL-REQUESTS source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1386,12 +2013,12 @@
     },
     {
       "id": 2700,
-      "stable_id": "qb-t35-100-96e2160d59d0ee2fbd63a76d",
+      "stable_id": "qb-t35-100-b05c30a3954ce92767b60da4",
       "topic_num": 35,
       "question": "¿Qué principio común une los flujos remotos, las pull requests y las estrategias de ramas?",
-      "option_a": "Evitar siempre los remotos y usar solo stashes",
-      "option_b": "Reescribir toda rama pública antes de cada push",
-      "option_c": "Tratar una pull request como un objeto blob local",
+      "option_a": "Cada participante puede intercambiar contribuciones entre repositorios y un integrador puede seleccionar qué incorporar",
+      "option_b": "Ambos favorecen ramas cortas e integración frecuente, aunque GitHub flow concreta el uso de pull requests y despliegue",
+      "option_c": "La reconstrucción del estado previo puede no recuperar fielmente esos cambios y debe evitarse confiar ciegamente en abort",
       "option_d": "Separar trabajo, revisión e integración de forma explícita y preservar la historia compartida salvo decisión coordinada",
       "correct": "D",
       "explanation": "La colaboración segura hace visibles los límites entre trabajo local, referencias compartidas, revisión e integración.",
@@ -1409,14 +2036,47 @@
           "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "gitworkflows — Distributed workflows",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GITHUB-FLOW",
+          "title": "GitHub flow documentation",
+          "authority": "GitHub",
+          "tier": "official_primary",
+          "url": "https://docs.github.com/en/get-started/using-github/github-flow",
+          "citation": "GitHub flow — Understanding the GitHub flow",
+          "version_or_as_of": "Current official documentation reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-merge — --abort",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against GIT-2.50 gitworkflows — Workflow; About pull requests; git-push — NOTE ABOUT FAST-FORWARDS; expected option D."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[119, 118, 121, 119]."
         },
         "explanation": {
           "status": "passed",
@@ -1424,37 +2084,38 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited GIT-2.50 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
       "status": "validated"
     }
-  ]
+  ],
+  "answer_length_balance_audit": "docs/question-bank/answer-length-balance-audit.json"
 }

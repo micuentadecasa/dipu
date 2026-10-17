@@ -3,7 +3,7 @@
   "state": "reviewed",
   "topic_num": 29,
   "lot_num": 5,
-  "revision": 1,
+  "revision": 2,
   "reviewed_at": "2026-10-12",
   "source_register_sha256": "39aae1a25ad634bf79e7b3a0ca3e74ce39e48b752561f52b7b60111aa4256f49",
   "objective_manifest_sha256": "5bf485a2418a85d0f85d1ec587942db38a23233cf09fc3fa539289f13f00417b",
@@ -18,13 +18,13 @@
   "questions": [
     {
       "id": 2401,
-      "stable_id": "qb-t29-081-638fb153f28b692b12c253d0",
+      "stable_id": "qb-t29-081-a66131b4491b39e007dcc9cb",
       "topic_num": 29,
       "question": "Al estudiar el formulario «protección de envíos», ¿qué regla de Blazor se aplica? (objetivo t29-lo-081)",
       "option_a": "Usar el soporte antiforgery del formulario.",
-      "option_b": "Una regla de CSS.",
-      "option_c": "Una consulta SQL.",
-      "option_d": "Una migración de datos.",
+      "option_b": "Configurar validación del grafo de objetos.",
+      "option_c": "Consultar los mensajes del FieldIdentifier.",
+      "option_d": "Proporcionar el EditContext del formulario.",
       "correct": "A",
       "explanation": "Los formularios de Blazor incluyen soporte antiforgery para proteger envíos al servidor.",
       "learning_objective_id": "t29-lo-081",
@@ -41,14 +41,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Validate nested object graphs",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Display validation messages",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-10 Antiforgery support; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[43, 43, 43, 43]."
         },
         "explanation": {
           "status": "passed",
@@ -56,33 +78,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -90,13 +112,13 @@
     },
     {
       "id": 2402,
-      "stable_id": "qb-t29-082-6586a3811c8c978157bd0ec9",
+      "stable_id": "qb-t29-082-8b7aad353adc8896a07bc33c",
       "topic_num": 29,
       "question": "La guía oficial trata «un token antiforgery explícito». ¿Cuál es la interpretación correcta? — t29-lo-082",
-      "option_a": "Una regla de CSS.",
+      "option_a": "Usar ValidationMessageStore.",
       "option_b": "Renderizar AntiforgeryToken.",
-      "option_c": "Una consulta SQL.",
-      "option_d": "Una migración de datos.",
+      "option_c": "Llamar a NotifyFieldChanged.",
+      "option_d": "Pasar atributos adicionales.",
       "correct": "B",
       "explanation": "Los formularios estáticos pueden incluir el componente AntiforgeryToken cuando el escenario lo requiere.",
       "learning_objective_id": "t29-lo-082",
@@ -113,14 +135,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Write model-based custom rules",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Respond to validation state",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Display validation messages",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-10 Antiforgery support; expected option B."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[28, 28, 28, 28]."
         },
         "explanation": {
           "status": "passed",
@@ -128,33 +183,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -162,13 +217,13 @@
     },
     {
       "id": 2403,
-      "stable_id": "qb-t29-083-1c3f44de6b6b42ac82718832",
+      "stable_id": "qb-t29-083-1df09032b08e1343cabf06ed",
       "topic_num": 29,
       "question": "En el caso «verificación del envío», ¿qué comportamiento documenta Blazor? Referencia t29-lo-083",
-      "option_a": "Una regla de CSS.",
-      "option_b": "Una consulta SQL.",
+      "option_a": "Usar InputRadioGroup<TValue>.",
+      "option_b": "Suscribirse a OnFieldChanged.",
       "option_c": "Validar el token antiforgery.",
-      "option_d": "Una migración de datos.",
+      "option_d": "Notificar NotifyFieldChanged.",
       "correct": "C",
       "explanation": "La protección antiforgery verifica que el envío procede de un contexto autorizado.",
       "learning_objective_id": "t29-lo-083",
@@ -185,14 +240,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Input components and forms",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Respond to validation state",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "When validation runs",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-10 Antiforgery support; expected option C."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[29, 29, 29, 29]."
         },
         "explanation": {
           "status": "passed",
@@ -200,33 +288,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -234,12 +322,12 @@
     },
     {
       "id": 2404,
-      "stable_id": "qb-t29-084-981e2228b717fe3c9f95664b",
+      "stable_id": "qb-t29-084-7c9f444ae564f3dfc80eb010",
       "topic_num": 29,
       "question": "Para «suministro de datos del formulario», selecciona la conducta respaldada por Microsoft Learn. [t29-lo-084]",
-      "option_a": "Una consulta SQL sin formulario.",
-      "option_b": "Una hoja de estilos global.",
-      "option_c": "Una ruta que no procesa datos.",
+      "option_a": "Usar InputRadioGroup<TValue>.",
+      "option_b": "Suscribirse a OnFieldChanged.",
+      "option_c": "Notificar NotifyFieldChanged.",
       "option_d": "Usar SupplyParameterFromForm.",
       "correct": "D",
       "explanation": "SupplyParameterFromForm permite suministrar valores enviados por un formulario a una propiedad del componente.",
@@ -257,14 +345,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Input components and forms",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Respond to validation state",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "When validation runs",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-10 Handle form submission; expected option D."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[29, 29, 29, 29]."
         },
         "explanation": {
           "status": "passed",
@@ -272,33 +393,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -306,13 +427,13 @@
     },
     {
       "id": 2405,
-      "stable_id": "qb-t29-085-a12c946441c88bf703217492",
+      "stable_id": "qb-t29-085-f329515ae7295d11b5361520",
       "topic_num": 29,
       "question": "Un revisor encuentra «identidad de un formulario SSR». ¿Qué debe concluir según la guía? (t29-lo-085)",
       "option_a": "Asignar un FormName único.",
-      "option_b": "Una consulta SQL sin formulario.",
-      "option_c": "Una hoja de estilos global.",
-      "option_d": "Una ruta que no procesa datos.",
+      "option_b": "Devolver ValidationResult.",
+      "option_c": "Usar el mismo EditContext.",
+      "option_d": "Un parámetro de componente",
       "correct": "A",
       "explanation": "El nombre del formulario debe ser único cuando se usa el suministro de parámetros desde formularios.",
       "learning_objective_id": "t29-lo-085",
@@ -329,14 +450,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Write model-based custom rules",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Configure data annotations validation",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Components — parameters",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-10 Handle form submission; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[26, 26, 26, 26]."
         },
         "explanation": {
           "status": "passed",
@@ -344,33 +498,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -378,13 +532,13 @@
     },
     {
       "id": 2406,
-      "stable_id": "qb-t29-086-5874a46d633bcde5fc0ad669",
+      "stable_id": "qb-t29-086-b17adbc35ec42df2463b54f0",
       "topic_num": 29,
       "question": "Al estudiar el formulario «sobrepublicación de propiedades», ¿qué regla de Blazor se aplica? (objetivo t29-lo-086)",
-      "option_a": "Una hoja de estilos.",
+      "option_a": "Calcularla con FieldCssClassProvider.",
       "option_b": "Usar un modelo de entrada específico.",
-      "option_c": "Una ruta de navegación.",
-      "option_d": "Una consulta SQL.",
+      "option_c": "Instalar un proveedor en el contexto.",
+      "option_d": "Valida el modelo asociado al contexto",
       "correct": "B",
       "explanation": "Un modelo de entrada específico reduce la superficie de sobrepublicación frente a enlazar una entidad completa.",
       "learning_objective_id": "t29-lo-086",
@@ -401,14 +555,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Customize validation appearance",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Validation — data annotations",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-10 Mitigate overposting attacks; expected option B."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[37, 37, 37, 37]."
         },
         "explanation": {
           "status": "passed",
@@ -416,33 +592,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -450,13 +626,13 @@
     },
     {
       "id": 2407,
-      "stable_id": "qb-t29-087-1783e9fdeccdabcaf0ed651c",
+      "stable_id": "qb-t29-087-8cf4b310f3cfa3754caa7e57",
       "topic_num": 29,
       "question": "La guía oficial trata «propiedades no autorizadas». ¿Cuál es la interpretación correcta? — t29-lo-087",
-      "option_a": "Una hoja de estilos.",
-      "option_b": "Una ruta de navegación.",
+      "option_a": "El estado del campo del EditContext",
+      "option_b": "Conexiones y estado de los clientes",
       "option_c": "Limitar las propiedades enlazables.",
-      "option_d": "Una consulta SQL.",
+      "option_d": "Backend Web API en el modelo hosted",
       "correct": "C",
       "explanation": "La sobrepublicación puede permitir que el cliente establezca propiedades que no debía controlar.",
       "learning_objective_id": "t29-lo-087",
@@ -473,14 +649,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Validation — CSS appearance",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Blazor hosting models — scaling",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Blazor hosting models — Web API",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-10 Mitigate overposting attacks; expected option C."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[35, 35, 35, 35]."
         },
         "explanation": {
           "status": "passed",
@@ -488,33 +697,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -522,12 +731,12 @@
     },
     {
       "id": 2408,
-      "stable_id": "qb-t29-088-64441e186d4c2f31ccd336cf",
+      "stable_id": "qb-t29-088-98cb1795a7a28bc19153e007",
       "topic_num": 29,
       "question": "En el caso «procesamiento en el servidor», ¿qué comportamiento documenta Blazor? Referencia t29-lo-088",
-      "option_a": "Una consulta SQL sin formulario.",
-      "option_b": "Una hoja de estilos global.",
-      "option_c": "Una ruta que no procesa datos.",
+      "option_a": "Derivar de ValidationAttribute.",
+      "option_b": "Implementar IValidatableObject.",
+      "option_c": "Añadir una regla personalizada.",
       "option_d": "Usar el handler del formulario.",
       "correct": "D",
       "explanation": "Un formulario puede procesarse mediante un handler que recibe datos suministrados desde el formulario.",
@@ -545,14 +754,25 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Write model-based custom rules",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-10 Handle form submission; expected option D."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[31, 31, 31, 31]."
         },
         "explanation": {
           "status": "passed",
@@ -560,33 +780,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -594,13 +814,13 @@
     },
     {
       "id": 2409,
-      "stable_id": "qb-t29-089-dfe9c207620d9e6fe835c2dd",
+      "stable_id": "qb-t29-089-b6fdecb8aa48bd71b5ded2a1",
       "topic_num": 29,
       "question": "Para «envío mejorado», selecciona la conducta respaldada por Microsoft Learn. [t29-lo-089]",
       "option_a": "Habilitar enhanced form handling.",
-      "option_b": "Una migración.",
-      "option_c": "Una política CSS.",
-      "option_d": "Una consulta SQL.",
+      "option_b": "Usar el FieldIdentifier correcto.",
+      "option_c": "Incluirlas en el modelo validado.",
+      "option_d": "Cambiar el FieldCssClassProvider.",
       "correct": "A",
       "explanation": "El manejo mejorado permite enviar un formulario sin una recarga completa de la página.",
       "learning_objective_id": "t29-lo-089",
@@ -617,14 +837,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Write model-based custom rules",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Validate nested object graphs",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Customize validation appearance",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-10 Enhanced form handling; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[33, 33, 33, 33]."
         },
         "explanation": {
           "status": "passed",
@@ -632,33 +885,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -666,13 +919,13 @@
     },
     {
       "id": 2410,
-      "stable_id": "qb-t29-090-f0e40a8b783f69d102f3a49e",
+      "stable_id": "qb-t29-090-4dc7405a83785045f967dfed",
       "topic_num": 29,
       "question": "Un revisor encuentra «la mejora de EditForm». ¿Qué debe concluir según la guía? (t29-lo-090)",
-      "option_a": "Una migración.",
+      "option_a": "Usar OnValidSubmit.",
       "option_b": "Configurar Enhance.",
-      "option_c": "Una política CSS.",
-      "option_d": "Una consulta SQL.",
+      "option_c": "Usar InputCheckbox.",
+      "option_d": "Usar InputTextArea.",
       "correct": "B",
       "explanation": "Enhance en EditForm habilita el manejo mejorado del envío del formulario.",
       "learning_objective_id": "t29-lo-090",
@@ -689,14 +942,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Handle form submission",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Input components and forms",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-10 Enhanced form handling; expected option B."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[19, 19, 19, 19]."
         },
         "explanation": {
           "status": "passed",
@@ -704,33 +979,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -738,13 +1013,13 @@
     },
     {
       "id": 2411,
-      "stable_id": "qb-t29-091-b32867aaa2959b34bcf05d0e",
+      "stable_id": "qb-t29-091-3fd9f3514c0dc28d3859098a",
       "topic_num": 29,
       "question": "Al estudiar el formulario «mejora en HTML», ¿qué regla de Blazor se aplica? (objetivo t29-lo-091)",
-      "option_a": "Una migración.",
-      "option_b": "Una política CSS.",
+      "option_a": "Móvil o escritorio",
+      "option_b": "CascadingParameter",
       "option_c": "Usar data-enhance.",
-      "option_d": "Una consulta SQL.",
+      "option_d": "OnAfterRenderAsync",
       "correct": "C",
       "explanation": "data-enhance expresa el manejo mejorado en un formulario HTML compatible.",
       "learning_objective_id": "t29-lo-091",
@@ -761,14 +1036,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Blazor hosting models — Hybrid",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Cascading values and parameters — CascadingParameter",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Lifecycle — after-render callbacks",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-10 Enhanced form handling; expected option C."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[18, 18, 18, 18]."
         },
         "explanation": {
           "status": "passed",
@@ -776,33 +1084,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -810,12 +1118,12 @@
     },
     {
       "id": 2412,
-      "stable_id": "qb-t29-092-3035e5ff2307812f98dad68e",
+      "stable_id": "qb-t29-092-c31be1dbbbfe316d4315dff6",
       "topic_num": 29,
       "question": "La guía oficial trata «validación cliente interactiva». ¿Cuál es la interpretación correcta? — t29-lo-092",
-      "option_a": "Una ruta HTTP.",
-      "option_b": "Una migración SQL.",
-      "option_c": "Una hoja CSS.",
+      "option_a": "Consultar GetValidationMessages().",
+      "option_b": "Proporcionar el mismo EditContext.",
+      "option_c": "Devolver ValidationResult.Success.",
       "option_d": "Disponer de un circuito de Blazor.",
       "correct": "D",
       "explanation": "La validación del lado cliente de un formulario interactivo requiere un circuito de Blazor.",
@@ -833,14 +1141,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Display validation messages",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Input components and forms",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Write model-based custom rules",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-10 Client-side validation requires a circuit; expected option D."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[34, 34, 34, 34]."
         },
         "explanation": {
           "status": "passed",
@@ -848,33 +1189,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -882,13 +1223,13 @@
     },
     {
       "id": 2413,
-      "stable_id": "qb-t29-093-aeb8478c0e6f044f53e63c7c",
+      "stable_id": "qb-t29-093-4d22edd26677bf928a829f1e",
       "topic_num": 29,
       "question": "En el caso «validación en static SSR», ¿qué comportamiento documenta Blazor? Referencia t29-lo-093",
       "option_a": "Validar durante el procesamiento del servidor.",
-      "option_b": "Una consulta SQL.",
-      "option_c": "Una regla CSS.",
-      "option_d": "Una ruta sin formulario.",
+      "option_b": "Runtime, dependencias y componentes publicados",
+      "option_c": "null, porque no tiene un render mode asignado.",
+      "option_d": "El argumento del callback tiene tipo explícito",
       "correct": "A",
       "explanation": "En un formulario de static SSR, la validación del lado servidor se ejecuta al procesar el envío.",
       "learning_objective_id": "t29-lo-093",
@@ -905,14 +1246,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Blazor hosting models — WebAssembly payload",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor render modes",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/render-modes?view=aspnetcore-10.0",
+          "citation": "Detect rendering location and interactivity — AssignedRenderMode",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-15",
+          "verified_at": "2026-10-15"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Event handling — EventCallback<TValue>",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-10 Client-side validation in static SSR forms; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[46, 46, 46, 46]."
         },
         "explanation": {
           "status": "passed",
@@ -920,33 +1294,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -954,13 +1328,13 @@
     },
     {
       "id": 2414,
-      "stable_id": "qb-t29-094-726de2408e2a8d16e5838233",
+      "stable_id": "qb-t29-094-bd76b1a661f6a30aa31a9222",
       "topic_num": 29,
       "question": "Para «límites del static SSR», selecciona la conducta respaldada por Microsoft Learn. [t29-lo-094]",
-      "option_a": "Una migración.",
+      "option_a": "HTML inicial antes de activar interactividad",
       "option_b": "Aplicar solo las características soportadas.",
-      "option_c": "Una hoja de estilos.",
-      "option_d": "Una consulta SQL.",
+      "option_c": "WebAssembly hosted con biblioteca compartida",
+      "option_d": "El nombre proporcionado y el nombre esperado",
       "correct": "B",
       "explanation": "No todas las características de validación interactiva están disponibles en formularios static SSR.",
       "learning_objective_id": "t29-lo-094",
@@ -977,14 +1351,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Blazor render modes — prerendering",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Blazor hosting models — hosted model",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Cascading values and parameters — named cascades",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-10 Unsupported validation features; expected option B."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[44, 44, 44, 44]."
         },
         "explanation": {
           "status": "passed",
@@ -992,33 +1399,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1026,13 +1433,13 @@
     },
     {
       "id": 2415,
-      "stable_id": "qb-t29-095-41b88b3b16c25e3fe6bb30e4",
+      "stable_id": "qb-t29-095-8980b21dfbab5874a9d9392c",
       "topic_num": 29,
       "question": "Un revisor encuentra «respuesta de un envío mejorado». ¿Qué debe concluir según la guía? (t29-lo-095)",
-      "option_a": "Una migración.",
-      "option_b": "Una política CSS.",
+      "option_a": "Configurar validación del grafo de objetos.",
+      "option_b": "Consultar los mensajes del FieldIdentifier.",
       "option_c": "Procesar la respuesta sin recarga completa.",
-      "option_d": "Una consulta SQL.",
+      "option_d": "Proporcionar el EditContext del formulario.",
       "correct": "C",
       "explanation": "Un formulario mejorado puede actualizar el contenido de la página como respuesta del servidor.",
       "learning_objective_id": "t29-lo-095",
@@ -1049,14 +1456,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Validate nested object graphs",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Display validation messages",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-10 Enhanced form handling; expected option C."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[43, 43, 43, 43]."
         },
         "explanation": {
           "status": "passed",
@@ -1064,33 +1493,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1098,12 +1527,12 @@
     },
     {
       "id": 2416,
-      "stable_id": "qb-t29-096-71be65e74113a265fde0d42b",
+      "stable_id": "qb-t29-096-175ed4a7c47988c4975a8081",
       "topic_num": 29,
       "question": "Al estudiar el formulario «dos controles de seguridad», ¿qué regla de Blazor se aplica? (objetivo t29-lo-096)",
-      "option_a": "Una regla de CSS.",
-      "option_b": "Una consulta SQL.",
-      "option_c": "Una migración de datos.",
+      "option_a": "Elegir Model o EditContext, pero no ambos.",
+      "option_b": "No procesar como válido y mostrar mensajes",
+      "option_c": "Mensajes de validación del modelo/contexto",
       "option_d": "Combinar antiforgery y un modelo limitado.",
       "correct": "D",
       "explanation": "La protección antiforgery y la limitación de propiedades son controles distintos que pueden combinarse.",
@@ -1121,14 +1550,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Input components and forms",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Validation — submission",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Validation — ValidationSummary",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-10 Antiforgery support; expected option D."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[42, 42, 42, 42]."
         },
         "explanation": {
           "status": "passed",
@@ -1136,33 +1598,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1170,13 +1632,13 @@
     },
     {
       "id": 2417,
-      "stable_id": "qb-t29-097-7d13749b37f04ffb88672d2b",
+      "stable_id": "qb-t29-097-39d854b58fc9a25e9fb00596",
       "topic_num": 29,
       "question": "La guía oficial trata «validación frente a autorización». ¿Cuál es la interpretación correcta? — t29-lo-097",
       "option_a": "Comprobar autorización en el servidor.",
-      "option_b": "Una hoja CSS sin contexto.",
-      "option_c": "Una migración de datos.",
-      "option_d": "Una ruta de navegación.",
+      "option_b": "Llamar a NotifyValidationStateChanged.",
+      "option_c": "Usar el campo y el contexto recibidos.",
+      "option_d": "Construirla con GetValidationMessages.",
       "correct": "A",
       "explanation": "OnValidSubmit no sustituye la autorización del usuario ni las comprobaciones del servidor.",
       "learning_objective_id": "t29-lo-097",
@@ -1193,14 +1655,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Respond to validation state",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Customize validation appearance",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Display validation messages",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-10 Control form submission; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[38, 38, 38, 38]."
         },
         "explanation": {
           "status": "passed",
@@ -1208,33 +1703,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1242,13 +1737,13 @@
     },
     {
       "id": 2418,
-      "stable_id": "qb-t29-098-e0ab02fea68e03ff0500899d",
+      "stable_id": "qb-t29-098-e6ad0af8ee4596ea4cc39805",
       "topic_num": 29,
       "question": "En el caso «confianza en la validación cliente», ¿qué comportamiento documenta Blazor? Referencia t29-lo-098",
-      "option_a": "Una hoja de estilos.",
+      "option_a": "Derivar de ValidationAttribute.",
       "option_b": "Validar también en el servidor.",
-      "option_c": "Una ruta de navegación.",
-      "option_d": "Una consulta SQL.",
+      "option_c": "Implementar IValidatableObject.",
+      "option_d": "Añadir una regla personalizada.",
       "correct": "B",
       "explanation": "La validación de datos de entrada debe repetirse en el servidor aunque exista validación en el cliente.",
       "learning_objective_id": "t29-lo-098",
@@ -1265,14 +1760,25 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Write model-based custom rules",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-10 Mitigate overposting attacks; expected option B."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[31, 31, 31, 31]."
         },
         "explanation": {
           "status": "passed",
@@ -1280,33 +1786,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1314,13 +1820,13 @@
     },
     {
       "id": 2419,
-      "stable_id": "qb-t29-099-0ef9cc69505cec52e114fa9e",
+      "stable_id": "qb-t29-099-2ae0bc85eb037cdfe953e50a",
       "topic_num": 29,
       "question": "Para «identificación del origen de valores», selecciona la conducta respaldada por Microsoft Learn. [t29-lo-099]",
-      "option_a": "Una consulta SQL sin formulario.",
-      "option_b": "Una hoja de estilos global.",
+      "option_a": "Usar OnSubmit.",
+      "option_b": "Aplicar Range.",
       "option_c": "Usar FormName.",
-      "option_d": "Una ruta que no procesa datos.",
+      "option_d": "CascadingValue",
       "correct": "C",
       "explanation": "Un formulario con nombre facilita identificar qué formulario suministra los valores al componente.",
       "learning_objective_id": "t29-lo-099",
@@ -1337,14 +1843,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Validate with data annotations",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Cascading values and parameters — CascadingValue",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-10 Handle form submission; expected option C."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[14, 14, 14, 14]."
         },
         "explanation": {
           "status": "passed",
@@ -1352,33 +1880,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1386,12 +1914,12 @@
     },
     {
       "id": 2420,
-      "stable_id": "qb-t29-100-3a3757a2e6e58cdd687f1721",
+      "stable_id": "qb-t29-100-c18d3c58b69ab8fd00f08bec",
       "topic_num": 29,
       "question": "Un revisor encuentra «defensa combinada del formulario». ¿Qué debe concluir según la guía? (t29-lo-100)",
-      "option_a": "Una hoja de estilos.",
-      "option_b": "Una ruta de navegación.",
-      "option_c": "Una consulta SQL.",
+      "option_a": "Usar InputNumber<TValue>.",
+      "option_b": "Usar InputSelect<TValue>.",
+      "option_c": "Pasar el FieldIdentifier.",
       "option_d": "Aplicar las tres medidas.",
       "correct": "D",
       "explanation": "La combinación de modelo de entrada, antiforgery y validación de servidor reduce riesgos al aceptar datos de formularios.",
@@ -1409,14 +1937,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Input components and forms",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Display validation messages",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-10 Mitigate overposting attacks; expected option D."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[25, 25, 25, 25]."
         },
         "explanation": {
           "status": "passed",
@@ -1424,37 +1974,38 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
       "status": "validated"
     }
-  ]
+  ],
+  "answer_length_balance_audit": "docs/question-bank/answer-length-balance-audit.json"
 }

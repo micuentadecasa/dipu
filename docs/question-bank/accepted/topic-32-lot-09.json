@@ -3,7 +3,7 @@
   "state": "reviewed",
   "topic_num": 32,
   "lot_num": 9,
-  "revision": 1,
+  "revision": 2,
   "reviewed_at": "2026-10-13",
   "source_register_sha256": "72d2734b05f0fab4049c12fba8d136c40b697f9e23616e084fdda10944bda146",
   "objective_manifest_sha256": "3248b037a1e8a8a8f0d43d941658a34274e80b862d27f48d920724f7e08389fb",
@@ -18,13 +18,13 @@
   "questions": [
     {
       "id": 3741,
-      "stable_id": "qb-t32-161-d90b74ae226196453529a340",
+      "stable_id": "qb-t32-161-dc9a0b99e05431de3be6a477",
       "topic_num": 32,
       "question": "¿Qué directiva enlaza una propiedad de componente con un parámetro query?",
       "option_a": "[SupplyParameterFromQuery]",
-      "option_b": "[SupplyParameterFromRoute] solamente",
-      "option_c": "[BindFromUri]",
-      "option_d": "[QueryRouteOnly]",
+      "option_b": "OnBeforeInternalNavigation",
+      "option_c": "GetUriWithQueryParameters",
+      "option_d": "ConfirmExternalNavigation",
       "correct": "A",
       "explanation": "La directiva suministra valores de query.",
       "learning_objective_id": "t32-lo-161",
@@ -41,14 +41,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "NavigationLock",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "NavigationManager",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against BLAZOR-NAV-10 Query string parameters — SupplyParameterFromQuery; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[26, 26, 25, 25]."
         },
         "explanation": {
           "status": "passed",
@@ -56,33 +78,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited BLAZOR-NAV-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -90,13 +112,13 @@
     },
     {
       "id": 3742,
-      "stable_id": "qb-t32-162-ea057369e1c05e842f06270b",
+      "stable_id": "qb-t32-162-c6b3b199a2253057cab5df5d",
       "topic_num": 32,
       "question": "¿Dónde aparece un parámetro query en la URL?",
       "option_a": "Después del signo ?",
-      "option_b": "Como segmento antes del dominio",
-      "option_c": "Dentro del nombre del assembly",
-      "option_d": "En el layout",
+      "option_b": "PreventNavigation()",
+      "option_c": "La codificación URL",
+      "option_d": "NavLinkMatch.Prefix",
       "correct": "A",
       "explanation": "La query sigue al signo de interrogación.",
       "learning_objective_id": "t32-lo-162",
@@ -113,14 +135,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "NavigationLock",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "Route parameters — URL encoding",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "NavLink — Match",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against BLAZOR-NAV-10 Query string parameters; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[19, 19, 19, 19]."
         },
         "explanation": {
           "status": "passed",
@@ -128,33 +183,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited BLAZOR-NAV-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -162,13 +217,13 @@
     },
     {
       "id": 3743,
-      "stable_id": "qb-t32-163-49894c7663d256fbb280017a",
+      "stable_id": "qb-t32-163-e6788589b6d546f65039b4ef",
       "topic_num": 32,
       "question": "¿Qué separa varios parámetros query?",
       "option_a": "El carácter &",
-      "option_b": "El carácter @",
-      "option_c": "Un nuevo dominio",
-      "option_d": "El nombre del layout",
+      "option_b": "DefaultLayout",
+      "option_c": "NotAuthorized",
+      "option_d": "replace: true",
       "correct": "A",
       "explanation": "La sintaxis query separa pares con ampersand.",
       "learning_objective_id": "t32-lo-163",
@@ -185,14 +240,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "RouteView",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "AuthorizeRouteView",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "NavigationManager",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against BLAZOR-NAV-10 Query string syntax; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[13, 13, 13, 13]."
         },
         "explanation": {
           "status": "passed",
@@ -200,33 +288,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited BLAZOR-NAV-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -234,13 +322,13 @@
     },
     {
       "id": 3744,
-      "stable_id": "qb-t32-164-83eb6b4d2d33393da675995c",
+      "stable_id": "qb-t32-164-4be83b448d47b09624a5d8d0",
       "topic_num": 32,
       "question": "¿Qué debe ocurrir con un valor query que contiene caracteres reservados?",
       "option_a": "Debe codificarse para URI",
-      "option_b": "Debe convertirse en layout",
-      "option_c": "Debe eliminarse siempre",
-      "option_d": "Debe ir a RouteData",
+      "option_b": "GetUriWithQueryParameters",
+      "option_c": "ConfirmExternalNavigation",
+      "option_d": "La query string de la URL",
       "correct": "A",
       "explanation": "La codificación evita interpretar mal los caracteres.",
       "learning_objective_id": "t32-lo-164",
@@ -257,14 +345,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "NavigationManager",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "NavigationLock",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "Query string parameters",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against BLAZOR-NAV-10 Query string parameters — URL encoding; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[25, 25, 25, 25]."
         },
         "explanation": {
           "status": "passed",
@@ -272,33 +393,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited BLAZOR-NAV-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -306,13 +427,13 @@
     },
     {
       "id": 3745,
-      "stable_id": "qb-t32-165-493b5a5cfa5b09807b51fd91",
+      "stable_id": "qb-t32-165-1c85bee27d9840f8a7028886",
       "topic_num": 32,
       "question": "¿Qué tipos pueden enlazarse desde query según la documentación?",
       "option_a": "Tipos soportados, incluidos valores tipados documentados",
-      "option_b": "Solo objetos complejos arbitrarios",
-      "option_c": "Solo layouts",
-      "option_d": "Solo componentes Razor",
+      "option_b": "Limitar los valores que pueden coincidir con el parámetro",
+      "option_c": "Mostrar un estado mientras se determina la autorización",
+      "option_d": "Fuerza una carga completa desde el servidor o navegador",
       "correct": "A",
       "explanation": "El binding soporta tipos indicados por la documentación.",
       "learning_objective_id": "t32-lo-165",
@@ -329,14 +450,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "Route constraints",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "AuthorizeRouteView — Authorizing",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "NavigationManager — NavigateTo forceLoad",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against BLAZOR-NAV-10 Query string parameters — supported types; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[56, 57, 55, 55]."
         },
         "explanation": {
           "status": "passed",
@@ -344,33 +498,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited BLAZOR-NAV-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -378,13 +532,13 @@
     },
     {
       "id": 3746,
-      "stable_id": "qb-t32-166-29bc6034a122592ab1c6c2ca",
+      "stable_id": "qb-t32-166-86f3bb7ff947bd18aaf22b2b",
       "topic_num": 32,
       "question": "¿Qué ocurre normalmente si falta un parámetro query opcional?",
       "option_a": "La propiedad recibe su valor predeterminado",
-      "option_b": "La ruta se vuelve NotFound siempre",
-      "option_c": "Se crea una excepción de servidor siempre",
-      "option_d": "Se cambia BaseUri",
+      "option_b": "Un signo de interrogación tras el parámetro",
+      "option_c": "El tipo de componente y los valores de ruta",
+      "option_d": "El contenido para una URI sin coincidencia",
       "correct": "A",
       "explanation": "Un parámetro ausente puede usar el valor predeterminado.",
       "learning_objective_id": "t32-lo-166",
@@ -401,14 +555,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "Route templates",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "RouteView",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "Router",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against BLAZOR-NAV-10 Query string parameters; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[43, 43, 43, 42]."
         },
         "explanation": {
           "status": "passed",
@@ -416,33 +603,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited BLAZOR-NAV-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -450,13 +637,13 @@
     },
     {
       "id": 3747,
-      "stable_id": "qb-t32-167-c93766e7454d98061e50e6ae",
+      "stable_id": "qb-t32-167-877763f397a6df246e9b936d",
       "topic_num": 32,
       "question": "¿Qué diferencia un parámetro query de uno de ruta?",
       "option_a": "La query no determina por sí sola qué componente enrutable coincide",
-      "option_b": "La ruta nunca selecciona componentes",
-      "option_c": "La query siempre es obligatoria",
-      "option_d": "No hay diferencia",
+      "option_b": "Solicitar confirmación al usuario mediante el mecanismo documentado",
+      "option_c": "El primero forma parte de la plantilla; el segundo va después de ?",
+      "option_d": "Rutas cuyos componentes no están en el assembly principal esperado",
       "correct": "A",
       "explanation": "La ruta participa en la selección y la query aporta estado.",
       "learning_objective_id": "t32-lo-167",
@@ -473,14 +660,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "NavigationLock — confirm external navigation",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "Route templates",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "Router — AdditionalAssemblies",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against BLAZOR-NAV-10 Route and query parameters; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[67, 67, 66, 66]."
         },
         "explanation": {
           "status": "passed",
@@ -488,33 +708,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited BLAZOR-NAV-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -522,13 +742,13 @@
     },
     {
       "id": 3748,
-      "stable_id": "qb-t32-168-63b7be525077ae29040e0aaa",
+      "stable_id": "qb-t32-168-13c9974f3df8030c29851b5f",
       "topic_num": 32,
       "question": "¿Qué componente coordina bloqueos de navegación?",
       "option_a": "NavigationLock",
-      "option_b": "NavLink",
-      "option_c": "RouteView",
-      "option_d": "RouterData",
+      "option_b": "data-permanent",
+      "option_c": "DefaultLayout",
+      "option_d": "NotAuthorized",
       "correct": "A",
       "explanation": "NavigationLock permite controlar navegación potencialmente peligrosa.",
       "learning_objective_id": "t32-lo-168",
@@ -545,14 +765,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "Enhanced navigation",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "RouteView",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "AuthorizeRouteView",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against BLAZOR-NAV-10 NavigationLock; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[14, 14, 13, 13]."
         },
         "explanation": {
           "status": "passed",
@@ -560,33 +813,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited BLAZOR-NAV-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -594,13 +847,13 @@
     },
     {
       "id": 3749,
-      "stable_id": "qb-t32-169-5e0e0d168769987fc480d8fc",
+      "stable_id": "qb-t32-169-0bcf56f5d4e3d33d075b40ff",
       "topic_num": 32,
       "question": "¿Qué puede hacer NavigationLock ante navegación externa?",
       "option_a": "Solicitar confirmación al usuario mediante el mecanismo documentado",
-      "option_b": "Cambiar el layout automáticamente",
-      "option_c": "Convertir URL en query",
-      "option_d": "Crear un commit",
+      "option_b": "La query no determina por sí sola qué componente enrutable coincide",
+      "option_c": "El primero forma parte de la plantilla; el segundo va después de ?",
+      "option_d": "Rutas cuyos componentes no están en el assembly principal esperado",
       "correct": "A",
       "explanation": "Puede confirmar navegación externa.",
       "learning_objective_id": "t32-lo-169",
@@ -617,14 +870,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "Route and query parameters",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "Route templates",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "Router — AdditionalAssemblies",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against BLAZOR-NAV-10 NavigationLock — confirm external navigation; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[67, 67, 66, 66]."
         },
         "explanation": {
           "status": "passed",
@@ -632,33 +918,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited BLAZOR-NAV-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -666,13 +952,13 @@
     },
     {
       "id": 3750,
-      "stable_id": "qb-t32-170-33749958f85b93d598fccb08",
+      "stable_id": "qb-t32-170-a212a25d2bcc0f64413b5a91",
       "topic_num": 32,
       "question": "¿Qué API trata los cambios de ubicación antes de completarlos?",
       "option_a": "LocationChanging handlers",
-      "option_b": "LocationChanged únicamente",
-      "option_c": "RouteView parameters",
-      "option_d": "NavLink ActiveClass",
+      "option_b": "GetUriWithQueryParameters",
+      "option_c": "ConfirmExternalNavigation",
+      "option_d": "La query string de la URL",
       "correct": "A",
       "explanation": "Los handlers de cambio permiten intervenir antes de navegar.",
       "learning_objective_id": "t32-lo-170",
@@ -689,14 +975,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "NavigationManager",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "NavigationLock",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "Query string parameters",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against BLAZOR-NAV-10 NavigationLock — location changing; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[25, 25, 25, 25]."
         },
         "explanation": {
           "status": "passed",
@@ -704,33 +1023,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited BLAZOR-NAV-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -738,13 +1057,13 @@
     },
     {
       "id": 3751,
-      "stable_id": "qb-t32-171-b8934c474fdfefaf611d17da",
+      "stable_id": "qb-t32-171-5b02e18e22142510e6b9db74",
       "topic_num": 32,
       "question": "¿Qué diferencia LocationChanging de LocationChanged?",
       "option_a": "El primero permite intervenir antes y el segundo informa después del cambio",
-      "option_b": "Ambos solo muestran NotFound",
-      "option_c": "LocationChanged bloquea siempre",
-      "option_d": "No hay diferencia",
+      "option_b": "Actualizar el contenido de la página sin una recarga completa del documento",
+      "option_c": "NavigateTo permite usar el enrutado y las opciones de navegación de Blazor",
+      "option_d": "La primera puede resolverse con Router; la segunda solicita carga completa",
       "correct": "A",
       "explanation": "Son fases distintas del ciclo de navegación.",
       "learning_objective_id": "t32-lo-171",
@@ -761,14 +1080,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "Enhanced navigation",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "NavigationManager",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against BLAZOR-NAV-10 NavigationLock; NavigationManager — LocationChanged; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[75, 75, 74, 74]."
         },
         "explanation": {
           "status": "passed",
@@ -776,33 +1117,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited BLAZOR-NAV-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -810,13 +1151,13 @@
     },
     {
       "id": 3752,
-      "stable_id": "qb-t32-172-90363c6eca9c224608efa967",
+      "stable_id": "qb-t32-172-d611a360ad57f630a826fdaf",
       "topic_num": 32,
       "question": "¿Qué atributo habilita navegación mejorada en un enlace?",
       "option_a": "data-enhance-nav",
-      "option_b": "data-route-lock",
-      "option_c": "enhance-route-only",
-      "option_d": "blazor-full-load",
+      "option_b": "NavLinkMatch.All",
+      "option_c": "Parámetros query",
+      "option_d": "FocusOnNavigate",
       "correct": "A",
       "explanation": "El atributo documentado habilita enhanced navigation.",
       "learning_objective_id": "t32-lo-172",
@@ -833,14 +1174,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "NavLink — Match",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "Query string parameters",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "FocusOnNavigate",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against BLAZOR-NAV-10 Enhanced navigation — data-enhance-nav; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[16, 16, 16, 15]."
         },
         "explanation": {
           "status": "passed",
@@ -848,33 +1222,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited BLAZOR-NAV-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -882,13 +1256,13 @@
     },
     {
       "id": 3753,
-      "stable_id": "qb-t32-173-e10d82ebccec5c720a296ebb",
+      "stable_id": "qb-t32-173-d74e341193f5eb0bc84a6be0",
       "topic_num": 32,
       "question": "¿Qué busca la navegación mejorada en una aplicación Blazor?",
       "option_a": "Actualizar la navegación sin una recarga completa tradicional cuando procede",
-      "option_b": "Desactivar todas las rutas",
-      "option_c": "Forzar siempre el servidor",
-      "option_d": "Eliminar el historial",
+      "option_b": "Actualizar el contenido de la página sin una recarga completa del documento",
+      "option_c": "El primero permite intervenir antes y el segundo informa después del cambio",
+      "option_d": "NavigateTo permite usar el enrutado y las opciones de navegación de Blazor",
       "correct": "A",
       "explanation": "Enhanced navigation optimiza la transición de página.",
       "learning_objective_id": "t32-lo-173",
@@ -905,14 +1279,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "NavigationLock; NavigationManager — LocationChanged",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "NavigationManager",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against BLAZOR-NAV-10 Enhanced navigation; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[76, 75, 75, 74]."
         },
         "explanation": {
           "status": "passed",
@@ -920,33 +1316,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited BLAZOR-NAV-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -954,13 +1350,13 @@
     },
     {
       "id": 3754,
-      "stable_id": "qb-t32-174-b4ab58f83286a78d28d606b7",
+      "stable_id": "qb-t32-174-da6db5ed687345d47101edc6",
       "topic_num": 32,
       "question": "¿Qué puede restaurar Blazor después de una navegación mejorada?",
       "option_a": "El foco del documento",
-      "option_b": "El valor de user.email",
-      "option_c": "La rama actual",
-      "option_d": "El contenido de un stash",
+      "option_b": "La cadena de consulta",
+      "option_c": "enhancednavigationend",
+      "option_d": "Un parámetro de ruta",
       "correct": "A",
       "explanation": "La documentación trata la restauración del foco.",
       "learning_objective_id": "t32-lo-174",
@@ -977,14 +1373,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "Query-string parameters",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "Enhanced navigation",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "Route parameters",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against BLAZOR-NAV-10 Enhanced navigation — focus; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[21, 21, 21, 20]."
         },
         "explanation": {
           "status": "passed",
@@ -992,33 +1421,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited BLAZOR-NAV-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1026,13 +1455,13 @@
     },
     {
       "id": 3755,
-      "stable_id": "qb-t32-175-b19a9ff45928a702d138bde6",
+      "stable_id": "qb-t32-175-f521458f90ec7d207b75cab9",
       "topic_num": 32,
       "question": "¿Qué atributo puede desactivar la navegación mejorada para un enlace?",
       "option_a": "data-enhance-nav=false",
-      "option_b": "data-force-route=false",
-      "option_c": "disable-router=true",
-      "option_d": "no-enhanced-only",
+      "option_b": "Un parámetro catch-all",
+      "option_c": "IsNavigationIntercepted",
+      "option_d": "La cadena de consulta",
       "correct": "A",
       "explanation": "El valor false desactiva la mejora para el elemento.",
       "learning_objective_id": "t32-lo-175",
@@ -1049,14 +1478,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "Route parameters — catch-all",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "NavigationManager",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "Query-string parameters",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against BLAZOR-NAV-10 Enhanced navigation — disable enhanced navigation; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[22, 22, 23, 21]."
         },
         "explanation": {
           "status": "passed",
@@ -1064,33 +1526,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited BLAZOR-NAV-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1098,13 +1560,13 @@
     },
     {
       "id": 3756,
-      "stable_id": "qb-t32-176-99fcab6f373cb6823f81adde",
+      "stable_id": "qb-t32-176-7823d02dba826882015cab96",
       "topic_num": 32,
       "question": "¿Qué problema protege NavigationLock especialmente?",
       "option_a": "Pérdida accidental de cambios no guardados al abandonar una página",
-      "option_b": "La ausencia de un assembly",
-      "option_c": "El color de NavLink",
-      "option_d": "La falta de un parámetro int",
+      "option_b": "El primero forma parte de la plantilla; el segundo va después de ?",
+      "option_c": "Rutas cuyos componentes no están en el assembly principal esperado",
+      "option_d": "La primera añade la evaluación de autorización a la vista de ruta",
       "correct": "A",
       "explanation": "Su uso protege frente a navegación con trabajo pendiente.",
       "learning_objective_id": "t32-lo-176",
@@ -1121,14 +1583,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "Route templates",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "Router — AdditionalAssemblies",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "AuthorizeRouteView; RouteView",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against BLAZOR-NAV-10 NavigationLock; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[66, 66, 66, 65]."
         },
         "explanation": {
           "status": "passed",
@@ -1136,33 +1631,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited BLAZOR-NAV-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1170,13 +1665,13 @@
     },
     {
       "id": 3757,
-      "stable_id": "qb-t32-177-5971d39c3571927a97be8df6",
+      "stable_id": "qb-t32-177-bc7af08d34fee19078c14d56",
       "topic_num": 32,
       "question": "¿Qué estado puede decidir cancelar un handler de cambio de ubicación?",
       "option_a": "Una navegación que no debe completarse",
-      "option_b": "La clase activa de un enlace",
-      "option_c": "La URI base de la aplicación",
-      "option_d": "La carga de un layout",
+      "option_b": "La devolución IDisposable del registro",
+      "option_c": "Una propiedad de componente enlazable",
+      "option_d": "Una cadena que incluye esos segmentos",
       "correct": "A",
       "explanation": "El handler puede intervenir en la navegación.",
       "learning_objective_id": "t32-lo-177",
@@ -1193,14 +1688,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "NavigationManager",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "Route parameters",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "Route templates",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against BLAZOR-NAV-10 Location-changing handlers; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[38, 38, 37, 37]."
         },
         "explanation": {
           "status": "passed",
@@ -1208,33 +1736,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited BLAZOR-NAV-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1242,13 +1770,13 @@
     },
     {
       "id": 3758,
-      "stable_id": "qb-t32-178-8040eb006aa6243adf497861",
+      "stable_id": "qb-t32-178-62c36c881ff319b59591051b",
       "topic_num": 32,
       "question": "¿Qué combinación distingue estado de URL y datos de ruta?",
       "option_a": "Query string aporta estado y route template selecciona componente",
-      "option_b": "Query selecciona siempre componente y route solo CSS",
-      "option_c": "Ambos son layouts",
-      "option_d": "Route solo funciona con cookies",
+      "option_b": "La primera añade la evaluación de autorización a la vista de ruta",
+      "option_c": "El primero forma parte de la plantilla; el segundo va después de ?",
+      "option_d": "Permitir descubrir componentes enrutable en assemblies indicados",
       "correct": "A",
       "explanation": "Son usos distintos de la URL.",
       "learning_objective_id": "t32-lo-178",
@@ -1265,14 +1793,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "AuthorizeRouteView; RouteView",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "Route templates",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "Router — AdditionalAssemblies",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against BLAZOR-NAV-10 Route parameters and query strings; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[65, 65, 66, 64]."
         },
         "explanation": {
           "status": "passed",
@@ -1280,33 +1841,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited BLAZOR-NAV-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1314,13 +1875,13 @@
     },
     {
       "id": 3759,
-      "stable_id": "qb-t32-179-c21c0755c381de3a0b21c4f0",
+      "stable_id": "qb-t32-179-472a701d10e5870bd3c9fe0a",
       "topic_num": 32,
       "question": "¿Qué ventaja proporciona un parámetro query tipado?",
       "option_a": "Conversión a un tipo soportado para la propiedad del componente",
-      "option_b": "Elimina la necesidad de Router",
-      "option_c": "Fuerza carga completa",
-      "option_d": "Cambia el assembly",
+      "option_b": "Seleccionar y renderizar el componente que coincide con la URI",
+      "option_c": "Permitir descubrir componentes enrutable en assemblies indicados",
+      "option_d": "SupplyParameterFromQuery y el ciclo de parámetros/renderizado",
       "correct": "A",
       "explanation": "El binding puede suministrar valores tipados.",
       "learning_objective_id": "t32-lo-179",
@@ -1337,14 +1898,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "Router",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "Router — AdditionalAssemblies",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "Query-string parameters",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against BLAZOR-NAV-10 Query string parameters — supported types; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[63, 62, 64, 61]."
         },
         "explanation": {
           "status": "passed",
@@ -1352,33 +1946,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited BLAZOR-NAV-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1386,13 +1980,13 @@
     },
     {
       "id": 3760,
-      "stable_id": "qb-t32-180-aed4599f3849ff1372f8e517",
+      "stable_id": "qb-t32-180-e8c1484b1f7916308ddd4e6c",
       "topic_num": 32,
       "question": "¿Qué debe hacer una página con formulario sin guardar antes de navegación?",
       "option_a": "Usar un mecanismo de bloqueo/confirmación apropiado",
-      "option_b": "Cambiar solo ActiveClass",
-      "option_c": "Eliminar RouteData",
-      "option_d": "Activar NotFound",
+      "option_b": "La plantilla no coincide y puede mostrarse NotFound",
+      "option_c": "Son datos de navegación controlables por el cliente",
+      "option_d": "Prevenir la navegación y pedir confirmación propia",
       "correct": "A",
       "explanation": "NavigationLock se usa para advertir o controlar abandono.",
       "learning_objective_id": "t32-lo-180",
@@ -1409,14 +2003,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-13",
           "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "Route constraints",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
+        },
+        {
+          "source_id": "BLAZOR-NAV-10",
+          "title": "ASP.NET Core Blazor routing and navigation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-10.0",
+          "citation": "Query-string parameters",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-13",
+          "verified_at": "2026-10-13"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against BLAZOR-NAV-10 NavigationLock; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[51, 51, 51, 50]."
         },
         "explanation": {
           "status": "passed",
@@ -1424,37 +2040,38 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited BLAZOR-NAV-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
       "status": "validated"
     }
-  ]
+  ],
+  "answer_length_balance_audit": "docs/question-bank/answer-length-balance-audit.json"
 }

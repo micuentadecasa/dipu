@@ -3,7 +3,7 @@
   "state": "reviewed",
   "topic_num": 20,
   "lot_num": 5,
-  "revision": 1,
+  "revision": 2,
   "reviewed_at": "2026-10-12",
   "source_register_sha256": "39aae1a25ad634bf79e7b3a0ca3e74ce39e48b752561f52b7b60111aa4256f49",
   "objective_manifest_sha256": "723bd40438eeae705721ddce92f8964ad698febf434d8e51165b6c65f11447a9",
@@ -18,13 +18,13 @@
   "questions": [
     {
       "id": 1661,
-      "stable_id": "qb-t20-081-d36a51613bfa40167b059ed9",
+      "stable_id": "qb-t20-081-37192c4be2bbf9b0eb4b678a",
       "topic_num": 20,
       "question": "¿Qué describe el modelo metadata de EF Core?",
-      "option_a": "Solo las rutas HTTP",
+      "option_a": "Un DbContext y tipos de entidad a partir del esquema existente de una base de datos",
       "option_b": "Cómo se asignan los tipos de entidad de la aplicación a la base de datos subyacente",
-      "option_c": "Únicamente los estilos de las entidades",
-      "option_d": "Los usuarios conectados al servidor",
+      "option_c": "Explorando recursivamente las propiedades de navegación de entidades ya descubiertas",
+      "option_d": "Conecta una entidad principal con como máximo una entidad dependiente en el otro lado",
       "correct": "B",
       "explanation": "EF Core utiliza un modelo metadata para describir cómo se asignan los tipos de entidad de la aplicación a la base de datos subyacente.",
       "learning_objective_id": "t20-lo-081",
@@ -41,14 +41,47 @@
           "version_or_as_of": "EF Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Entity Framework Core tools reference",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Including types in the model",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Introduction to relationships",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against EFCORE-10 Creating and Configuring a Model; expected option B."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[83, 83, 84, 85]."
         },
         "explanation": {
           "status": "passed",
@@ -56,33 +89,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited EFCORE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -90,13 +123,13 @@
     },
     {
       "id": 1662,
-      "stable_id": "qb-t20-082-4dcbce0412d02f35a2a037a6",
+      "stable_id": "qb-t20-082-2c0ef2518fd934b617ccb35e",
       "topic_num": 20,
       "question": "¿Qué método se usa habitualmente para aplicar configuración Fluent API?",
       "option_a": "OnModelCreating",
-      "option_b": "SaveChangesAsync",
-      "option_c": "ToListAsync",
-      "option_d": "DisposeAsync",
+      "option_b": "Nunca se rastrean",
+      "option_c": "Added",
+      "option_d": "Table name y Table schema",
       "correct": "A",
       "explanation": "La configuración Fluent API se aplica habitualmente con ModelBuilder dentro de OnModelCreating.",
       "learning_objective_id": "t20-lo-082",
@@ -113,14 +146,47 @@
           "version_or_as_of": "EF Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Tracking vs. No-Tracking Queries",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "How to track entities",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Table name; Table schema",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against EFCORE-10 Creating and Configuring a Model; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[15, 17, 5, 25]."
         },
         "explanation": {
           "status": "passed",
@@ -128,33 +194,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited EFCORE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -162,13 +228,13 @@
     },
     {
       "id": 1663,
-      "stable_id": "qb-t20-083-52fbfc9cb3a4e27382d6524c",
+      "stable_id": "qb-t20-083-24532dc71b3674ad9d3b428f",
       "topic_num": 20,
       "question": "¿Qué puede aportar un proveedor específico al modelado EF Core?",
-      "option_a": "Solo componentes de interfaz",
+      "option_a": "Si EF Core conserva información de una instancia de entidad en el change tracker",
       "option_b": "Configuración específica del almacén de datos además de la configuración general",
-      "option_c": "Una sustitución obligatoria del contexto",
-      "option_d": "Únicamente migraciones de otra aplicación",
+      "option_c": "Propiedades .NET que permiten navegar entre instancias de entidades relacionadas",
+      "option_d": "Los archivos describen cambios y el esquema es el destino que recibe esos cambios",
       "correct": "B",
       "explanation": "Los proveedores pueden habilitar configuración específica de su almacén de datos, además de la configuración general del modelo.",
       "learning_objective_id": "t20-lo-083",
@@ -185,14 +251,47 @@
           "version_or_as_of": "EF Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Tracking vs. No-Tracking Queries",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Introduction to relationships",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Migrations Overview",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against EFCORE-10 Creating and Configuring a Model; expected option B."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[80, 80, 80, 81]."
         },
         "explanation": {
           "status": "passed",
@@ -200,33 +299,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited EFCORE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -234,13 +333,13 @@
     },
     {
       "id": 1664,
-      "stable_id": "qb-t20-084-3e4bb88d40244e5a08f2f3b3",
+      "stable_id": "qb-t20-084-d885781c73c9b0078b45aec4",
       "topic_num": 20,
       "question": "¿Qué diferencia hay entre una propiedad DbSet y una tabla física?",
       "option_a": "Una propiedad DbSet expone un conjunto de entidades en el modelo; la tabla es una decisión de mapeo del almacén",
-      "option_b": "Son siempre el mismo objeto con el mismo nombre",
-      "option_c": "La tabla existe solo durante la compilación",
-      "option_d": "DbSet solo sirve para estilos",
+      "option_b": "Usa consultas fuertemente tipadas que el proveedor traduce al lenguaje específico de la base de datos, como SQL",
+      "option_c": "Un resultado proyectado puede seguir incluyendo entidades que EF Core rastrea si la consulta es de seguimiento",
+      "option_d": "Se ejecutan directamente contra la base de datos y no se acumulan como cambios de entidades en el change tracker",
       "correct": "A",
       "explanation": "DbSet incluye o expone un tipo de entidad en el modelo, mientras que el mapeo a una tabla física se configura como parte de la relación con el almacén.",
       "learning_objective_id": "t20-lo-084",
@@ -257,14 +356,47 @@
           "version_or_as_of": "EF Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Querying Data",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Tracking and custom projections",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Approach 2: ExecuteUpdate and ExecuteDelete (bulk update)",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against EFCORE-10 Entity Types; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[111, 111, 110, 112]."
         },
         "explanation": {
           "status": "passed",
@@ -272,33 +404,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited EFCORE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -306,13 +438,13 @@
     },
     {
       "id": 1665,
-      "stable_id": "qb-t20-085-3fc8f23269baa2cad9f40746",
+      "stable_id": "qb-t20-085-57bbb3ad3814e39755a249d4",
       "topic_num": 20,
       "question": "¿Qué opciones de mapeo relacional se refieren al nombre y esquema de una tabla?",
       "option_a": "Table name y Table schema",
-      "option_b": "Tracking y No-tracking",
-      "option_c": "Add y Attach",
-      "option_d": "Model y View",
+      "option_b": "Esperarla hasta que termine",
+      "option_c": "Nunca se rastrean",
+      "option_d": "OnModelCreating",
       "correct": "A",
       "explanation": "EF Core documenta Table name y Table schema como opciones de configuración del mapeo de un tipo de entidad.",
       "learning_objective_id": "t20-lo-085",
@@ -329,14 +461,47 @@
           "version_or_as_of": "EF Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Asynchronous operation pitfalls",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Tracking vs. No-Tracking Queries",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Creating and Configuring a Model",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against EFCORE-10 Table name; Table schema; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[25, 27, 17, 15]."
         },
         "explanation": {
           "status": "passed",
@@ -344,33 +509,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited EFCORE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -378,13 +543,13 @@
     },
     {
       "id": 1666,
-      "stable_id": "qb-t20-086-b95ecc3346fa852d23e88b5c",
+      "stable_id": "qb-t20-086-b1fccfc55ec4fbcf6d722013",
       "topic_num": 20,
       "question": "¿Qué permite el mapeo a una vista de EF Core?",
       "option_a": "Mapear un tipo de entidad a una vista de la base de datos en lugar de a una tabla normal",
-      "option_b": "Convertir una vista en una migración obligatoria",
-      "option_c": "Eliminar todas las propiedades de navegación",
-      "option_d": "Ejecutar consultas exclusivamente en memoria",
+      "option_b": "Clases de entidad y un objeto de contexto que representa una sesión con la base de datos",
+      "option_c": "Mediante claves foráneas y propiedades de navegación que conectan los tipos en el modelo",
+      "option_d": "Mantenerla disponible para el modelo pero evitar que las migraciones gestionen su esquema",
       "correct": "A",
       "explanation": "EF Core incluye configuración para mapear tipos de entidad a vistas de la base de datos.",
       "learning_objective_id": "t20-lo-086",
@@ -401,14 +566,47 @@
           "version_or_as_of": "EF Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "The model",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Introduction to relationships",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Excluding from migrations",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against EFCORE-10 View mapping; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[88, 88, 88, 89]."
         },
         "explanation": {
           "status": "passed",
@@ -416,33 +614,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited EFCORE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -450,13 +648,13 @@
     },
     {
       "id": 1667,
-      "stable_id": "qb-t20-087-60ac5f3750b4d958c1aaa839",
+      "stable_id": "qb-t20-087-0c6b7f05df114f4fe2c50b87",
       "topic_num": 20,
       "question": "¿Qué dos mecanismos pueden incluir tipos en el modelo EF Core?",
       "option_a": "Propiedades DbSet y tipos especificados en OnModelCreating",
-      "option_b": "Solo archivos CSS y JavaScript",
-      "option_c": "Únicamente llamadas a Dispose",
-      "option_d": "Solo tablas creadas por migraciones",
+      "option_b": "Aplica las migraciones para crear o evolucionar el esquema",
+      "option_c": "El enlace del lado dependiente hacia la entidad principal",
+      "option_d": "Una vida útil scoped, normalmente asociada a la solicitud",
       "correct": "A",
       "explanation": "Los tipos expuestos por DbSet, especificados en OnModelCreating o descubiertos mediante navegaciones pueden incluirse en el modelo.",
       "learning_objective_id": "t20-lo-087",
@@ -473,14 +671,47 @@
           "version_or_as_of": "EF Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Create your database and schema",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Introduction to relationships",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "DbContext in dependency injection for ASP.NET Core",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against EFCORE-10 Including types in the model; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[58, 58, 57, 57]."
         },
         "explanation": {
           "status": "passed",
@@ -488,33 +719,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited EFCORE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -522,13 +753,13 @@
     },
     {
       "id": 1668,
-      "stable_id": "qb-t20-088-49eb3513280837fb53aa7ae9",
+      "stable_id": "qb-t20-088-ea083c5267f2f8579276e5d9",
       "topic_num": 20,
       "question": "¿Qué puede hacer un proveedor con una configuración no aplicable a su almacén?",
-      "option_a": "Debe convertirla siempre en una tabla",
+      "option_a": "La representación del modelo anterior que se usa para calcular diferencias",
       "option_b": "Puede ignorarla si no está soportada o no es aplicable al almacén de datos",
-      "option_c": "Debe eliminar el DbContext",
-      "option_d": "Solo puede transformarla en CSS",
+      "option_c": "Permite organizar configuraciones relacionadas en clases o grupos separados",
+      "option_d": "Atributos que configuran aspectos de los tipos de entidad y sus propiedades",
       "correct": "B",
       "explanation": "La configuración específica puede variar por proveedor; la documentación indica que un proveedor puede ignorar configuración no soportada o no aplicable.",
       "learning_objective_id": "t20-lo-088",
@@ -545,14 +776,47 @@
           "version_or_as_of": "EF Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Evolving your model",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Grouping configuration",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Use data annotations to configure a model",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against EFCORE-10 Creating and Configuring a Model; expected option B."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[74, 74, 75, 75]."
         },
         "explanation": {
           "status": "passed",
@@ -560,33 +824,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited EFCORE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -594,13 +858,13 @@
     },
     {
       "id": 1669,
-      "stable_id": "qb-t20-089-85b80818ffb4401824a61b5f",
+      "stable_id": "qb-t20-089-fb4fa1deae141f787dec5ccc",
       "topic_num": 20,
       "question": "¿Qué diferencia hay entre cargar todos los datos y cargar una sola entidad?",
       "option_a": "La primera obtiene el conjunto de resultados y la segunda limita la operación a una entidad",
-      "option_b": "Ambas operaciones siempre eliminan datos",
-      "option_c": "Cargar una sola entidad solo sirve para migraciones",
-      "option_d": "Cargar todos los datos nunca usa LINQ",
+      "option_b": "Corta y asociada normalmente a una unidad de trabajo, desde su creación hasta su liberación",
+      "option_c": "Esperar las operaciones EF con await antes de continuar y devolver el resultado de la acción",
+      "option_d": "Generar el modelo desde una base existente, escribirlo manualmente o usar un diseñador visual",
       "correct": "A",
       "explanation": "La documentación separa el patrón de cargar todos los datos del de cargar una sola entidad, que restringe el resultado a un elemento.",
       "learning_objective_id": "t20-lo-089",
@@ -617,14 +881,47 @@
           "version_or_as_of": "EF Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "The DbContext lifetime",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Asynchronous Programming - EF Core",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "The model",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against EFCORE-10 Loading a single entity; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[91, 91, 92, 93]."
         },
         "explanation": {
           "status": "passed",
@@ -632,33 +929,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited EFCORE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -666,13 +963,13 @@
     },
     {
       "id": 1670,
-      "stable_id": "qb-t20-090-87d4b212906f87a77df2dd1a",
+      "stable_id": "qb-t20-090-5b7b3ff91ce51f120b2e1c2d",
       "topic_num": 20,
       "question": "¿Qué efecto tiene componer un filtro LINQ antes de materializar una consulta?",
       "option_a": "Restringe la consulta mediante una condición antes de obtener sus resultados",
-      "option_b": "Marca todos los resultados como Deleted",
-      "option_c": "Elimina el proveedor",
-      "option_d": "Fuerza a que todas las entidades sean keyless",
+      "option_b": "Traduce la representación de LINQ al lenguaje específico de la base de datos",
+      "option_c": "Una operación de diseño que genera una descripción de los cambios del modelo",
+      "option_d": "Mantener el esquema de la base de datos sincronizado con un modelo que cambia",
       "correct": "A",
       "explanation": "Un filtro LINQ permite componer una condición que restringe los resultados que se materializan desde la base de datos.",
       "learning_objective_id": "t20-lo-090",
@@ -689,14 +986,47 @@
           "version_or_as_of": "EF Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Querying Data",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Create your first migration",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Migrations Overview",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against EFCORE-10 Filtering; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[76, 76, 76, 77]."
         },
         "explanation": {
           "status": "passed",
@@ -704,33 +1034,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited EFCORE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -738,13 +1068,13 @@
     },
     {
       "id": 1671,
-      "stable_id": "qb-t20-091-7298147f6b406180cbe33009",
+      "stable_id": "qb-t20-091-3d65aaff92379a1d6db44596",
       "topic_num": 20,
       "question": "¿Qué relación entre claves y tracking es correcta?",
       "option_a": "Las consultas de tipos de entidad con clave se rastrean por defecto; los tipos keyless nunca se rastrean",
-      "option_b": "Todos los tipos keyless se rastrean siempre",
-      "option_c": "Las claves solo afectan a CSS",
-      "option_d": "Ninguna entidad puede rastrearse",
+      "option_b": "Detecta y persiste las modificaciones, adiciones o eliminaciones registradas por el seguimiento de cambios",
+      "option_c": "Para crear instancias cuando el contexto no puede seguir simplemente el ámbito normal de una solicitud",
+      "option_d": "La resolución de identidad puede reutilizar instancias, mientras tracking conserva cambios para persistirlos",
       "correct": "A",
       "explanation": "Las consultas de entidades con clave tienen tracking por defecto, mientras que la documentación indica que los tipos keyless nunca se rastrean.",
       "learning_objective_id": "t20-lo-091",
@@ -761,14 +1091,47 @@
           "version_or_as_of": "EF Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Approach 1: change tracking and SaveChanges",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Use a DbContext factory",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Identity resolution",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against EFCORE-10 Tracking vs. No-Tracking Queries; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[104, 106, 102, 108]."
         },
         "explanation": {
           "status": "passed",
@@ -776,33 +1139,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited EFCORE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -810,13 +1173,13 @@
     },
     {
       "id": 1672,
-      "stable_id": "qb-t20-092-c5d2faf7aafa1e1fa23a7b3c",
+      "stable_id": "qb-t20-092-65b54a87e66e5dc061d6dbc4",
       "topic_num": 20,
       "question": "¿Qué se consigue al configurar el comportamiento de tracking predeterminado?",
       "option_a": "Se cambia el comportamiento base de las consultas del contexto sin tener que indicarlo en cada una",
-      "option_b": "Se crea una migración de datos inmediatamente",
-      "option_c": "Se eliminan las claves primarias",
-      "option_d": "Se desactiva el proveedor de consultas",
+      "option_b": "Es un patrón no admitido porque DbContext no admite operaciones paralelas sobre la misma instancia",
+      "option_c": "Add, Attach, Update u otros métodos similares, además de entidades devueltas por consultas seguidas",
+      "option_d": "Que convierte la consulta expresada con tipos .NET al lenguaje de consulta específico del proveedor",
       "correct": "A",
       "explanation": "EF Core permite configurar el comportamiento de tracking predeterminado para establecer la política base de las consultas del contexto.",
       "learning_objective_id": "t20-lo-092",
@@ -833,14 +1196,47 @@
           "version_or_as_of": "EF Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Avoiding DbContext threading issues",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "How to track entities",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Querying Data",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against EFCORE-10 Configuring the default tracking behavior; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[98, 98, 99, 99]."
         },
         "explanation": {
           "status": "passed",
@@ -848,33 +1244,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited EFCORE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -882,13 +1278,13 @@
     },
     {
       "id": 1673,
-      "stable_id": "qb-t20-093-23fc4fe11b428b1c7ca56f53",
+      "stable_id": "qb-t20-093-b281d4c90ad4c428c242c514",
       "topic_num": 20,
       "question": "¿Qué diferencia práctica existe entre resultados tracked y no-tracked?",
       "option_a": "Los resultados tracked pueden participar en la persistencia de cambios mediante SaveChanges; los no-tracked no se mantienen en el change tracker",
-      "option_b": "Los no-tracked siempre se guardan automáticamente",
-      "option_c": "Los tracked solo sirven para migraciones",
-      "option_d": "No hay diferencia en el contexto",
+      "option_b": "ExecuteUpdate y ExecuteDelete ejecutan operaciones masivas directamente en la base de datos, en lugar del flujo basado en entidades seguidas y SaveChanges",
+      "option_c": "PMC está integrada en la consola del Administrador de paquetes de Visual Studio y CLI extiende las herramientas .NET multiplataforma",
+      "option_d": "Puede provocar una operación concurrente no admitida; cada operación asíncrona debe esperarse antes de usar de nuevo esa instancia",
       "correct": "A",
       "explanation": "El tracking mantiene información de las entidades para persistir cambios mediante SaveChanges; una consulta no-tracking evita ese seguimiento.",
       "learning_objective_id": "t20-lo-093",
@@ -905,14 +1301,47 @@
           "version_or_as_of": "EF Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Approach 2: ExecuteUpdate and ExecuteDelete (bulk update)",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Entity Framework Core tools reference",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Asynchronous operation pitfalls",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against EFCORE-10 Tracking vs. No-Tracking Queries; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[144, 154, 132, 130]."
         },
         "explanation": {
           "status": "passed",
@@ -920,33 +1349,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited EFCORE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -954,13 +1383,13 @@
     },
     {
       "id": 1674,
-      "stable_id": "qb-t20-094-7dcfd4a09f3e65e557985ce4",
+      "stable_id": "qb-t20-094-cfc3650ecd869faacdf6b714",
       "topic_num": 20,
       "question": "¿Qué información utiliza el change tracker para detectar modificaciones?",
       "option_a": "Valores actuales y valores originales de las entidades seguidas",
-      "option_b": "Solo el nombre del proveedor",
-      "option_c": "Únicamente el texto de una vista",
-      "option_d": "Solo el número de migración",
+      "option_b": "Que las entidades devueltas no se mantienen en el change tracker",
+      "option_c": "El contexto derivado y las clases de entidad como tipos .NET",
+      "option_d": "Las consultas que devuelven tipos de entidad con una clave definida",
       "correct": "A",
       "explanation": "El seguimiento de cambios conserva información de los valores de las entidades para detectar qué se modificó antes de guardar.",
       "learning_objective_id": "t20-lo-094",
@@ -977,14 +1406,47 @@
           "version_or_as_of": "EF Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "No-tracking queries",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Querying Data",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Tracking queries",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against EFCORE-10 Change Tracking in EF Core; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[63, 64, 60, 67]."
         },
         "explanation": {
           "status": "passed",
@@ -992,33 +1454,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited EFCORE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1026,13 +1488,13 @@
     },
     {
       "id": 1675,
-      "stable_id": "qb-t20-095-7ebcd8e5febee06ec8b5bbba",
+      "stable_id": "qb-t20-095-3323dc7cd93c310e7ead43c0",
       "topic_num": 20,
       "question": "¿Qué expresa desechar un DbContext respecto a la unidad de trabajo?",
       "option_a": "Que termina su ciclo de vida y su ámbito de seguimiento",
-      "option_b": "Que se convierte en singleton",
-      "option_c": "Que todas las entidades se insertan automáticamente",
-      "option_d": "Que se genera una nueva migración",
+      "option_b": "El modelo actual con la instantánea del modelo anterior",
+      "option_c": "Consultar la entidad, modificarla y llamar a SaveChanges",
+      "option_d": "Incluye normalmente el tipo en el modelo como entidad",
       "correct": "A",
       "explanation": "El ciclo de vida del DbContext termina al desechar la instancia, lo que cierra la unidad de trabajo y su seguimiento asociado.",
       "learning_objective_id": "t20-lo-095",
@@ -1049,14 +1511,47 @@
           "version_or_as_of": "EF Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Evolving your model",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Approach 1: change tracking and SaveChanges",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Including types in the model",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against EFCORE-10 The DbContext lifetime; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[55, 55, 56, 53]."
         },
         "explanation": {
           "status": "passed",
@@ -1064,33 +1559,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited EFCORE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1098,13 +1593,13 @@
     },
     {
       "id": 1676,
-      "stable_id": "qb-t20-096-375cd4a9df2962bbd1bdcd47",
+      "stable_id": "qb-t20-096-427c7af5f5e7b65cc796951d",
       "topic_num": 20,
       "question": "¿Qué decisión distingue una actualización masiva de una actualización mediante entidades?",
       "option_a": "ExecuteUpdate actúa directamente sobre las filas; SaveChanges persiste cambios de entidades seguidas",
-      "option_b": "ExecuteUpdate solo modifica archivos fuente",
-      "option_c": "SaveChanges nunca usa entidades",
-      "option_d": "Ambos requieren exactamente el mismo seguimiento",
+      "option_b": "Add, Attach, Update u otros métodos similares, además de entidades devueltas por consultas seguidas",
+      "option_c": "Que convierte la consulta expresada con tipos .NET al lenguaje de consulta específico del proveedor",
+      "option_d": "Es un patrón no admitido porque DbContext no admite operaciones paralelas sobre la misma instancia",
       "correct": "A",
       "explanation": "ExecuteUpdate y ExecuteDelete son operaciones masivas directas, mientras que el enfoque tradicional modifica entidades seguidas y llama a SaveChanges.",
       "learning_objective_id": "t20-lo-096",
@@ -1121,14 +1616,47 @@
           "version_or_as_of": "EF Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "How to track entities",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Querying Data",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Avoiding DbContext threading issues",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against EFCORE-10 Approach 2: ExecuteUpdate and ExecuteDelete (bulk update); expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[100, 99, 99, 98]."
         },
         "explanation": {
           "status": "passed",
@@ -1136,33 +1664,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited EFCORE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1170,13 +1698,13 @@
     },
     {
       "id": 1677,
-      "stable_id": "qb-t20-097-f41d3aefad3569dd88db43b8",
+      "stable_id": "qb-t20-097-e3dc0036c98dc0399f94e182",
       "topic_num": 20,
       "question": "¿Qué compara EF Core para generar una migración aunque la base de datos no se compare como texto?",
       "option_a": "El modelo actual y la instantánea del modelo anterior",
-      "option_b": "Solo las cadenas de conexión",
-      "option_c": "Los estilos y las rutas HTTP",
-      "option_d": "El contenido de una vista HTML",
+      "option_b": "Incluye normalmente el tipo en el modelo como entidad",
+      "option_c": "Cargar todos los datos, cargar una entidad y filtrar",
+      "option_d": "El modelo actual con la instantánea del modelo anterior",
       "correct": "A",
       "explanation": "La generación de migraciones se basa en comparar el modelo actual con la instantánea del modelo anterior y generar las diferencias.",
       "learning_objective_id": "t20-lo-097",
@@ -1193,14 +1721,36 @@
           "version_or_as_of": "EF Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Including types in the model",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Querying Data",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against EFCORE-10 Evolving your model; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[53, 53, 52, 55]."
         },
         "explanation": {
           "status": "passed",
@@ -1208,33 +1758,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited EFCORE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1242,13 +1792,13 @@
     },
     {
       "id": 1678,
-      "stable_id": "qb-t20-098-e121f9578220d9dfd3e713fa",
+      "stable_id": "qb-t20-098-c5660406d3f1071b7d431cf2",
       "topic_num": 20,
       "question": "¿Qué describe correctamente la ingeniería inversa de EF Core?",
       "option_a": "Es una tarea de herramientas de diseño que genera clases a partir del esquema, no el flujo normal de consulta en ejecución",
-      "option_b": "Es una técnica para aplicar CSS a las entidades",
-      "option_c": "Es una operación que siempre elimina la base",
-      "option_d": "Es otra forma de llamar a SaveChanges",
+      "option_b": "ExecuteUpdate realiza una operación masiva directa en lugar de cargar entidades, modificarlas y guardar cambios seguidos",
+      "option_c": "Mantiene información de las entidades en el change tracker y puede persistir cambios detectados al llamar a SaveChanges",
+      "option_d": "Una forma de integrar DbContext con la inyección de dependencias y administrar normalmente su instancia por solicitud",
       "correct": "A",
       "explanation": "La ingeniería inversa pertenece a las tareas de desarrollo de las herramientas de EF Core y genera tipos desde un esquema existente.",
       "learning_objective_id": "t20-lo-098",
@@ -1265,14 +1815,47 @@
           "version_or_as_of": "EF Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Approach 2: ExecuteUpdate and ExecuteDelete (bulk update)",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Tracking queries",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "DbContext in dependency injection for ASP.NET Core",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against EFCORE-10 Entity Framework Core tools reference; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[122, 120, 119, 117]."
         },
         "explanation": {
           "status": "passed",
@@ -1280,33 +1863,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited EFCORE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1314,13 +1897,13 @@
     },
     {
       "id": 1679,
-      "stable_id": "qb-t20-099-013e4939e9910c577604baa9",
+      "stable_id": "qb-t20-099-e9f4f0b42f282ba3eb34d5fc",
       "topic_num": 20,
       "question": "Una aplicación inicia consultas paralelas con la misma instancia de DbContext. ¿Qué debe corregirse?",
       "option_a": "El diseño de ciclo de vida y concurrencia: se deben evitar operaciones paralelas sobre una instancia y usar contextos apropiados",
-      "option_b": "Solo el nombre de la entidad",
-      "option_c": "La hoja de estilos de la aplicación",
-      "option_d": "La clave primaria de todas las tablas",
+      "option_b": "Una tecnología ORM ligera, extensible, de código abierto y multiplataforma para trabajar con bases de datos mediante objetos .NET",
+      "option_c": "DbContext no admite operaciones paralelas en la misma instancia; las operaciones asíncronas deben esperarse antes de reutilizarla",
+      "option_d": "Que las apariciones repetidas de la misma entidad pueden resolverse como la misma instancia cuando se habilita ese comportamiento",
       "correct": "A",
       "explanation": "El uso concurrente de una misma instancia no está admitido; el diseño debe respetar el ciclo de vida del contexto y esperar las operaciones.",
       "learning_objective_id": "t20-lo-099",
@@ -1337,14 +1920,36 @@
           "version_or_as_of": "EF Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Entity Framework Core",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Identity resolution",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against EFCORE-10 Avoiding DbContext threading issues; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[128, 129, 129, 129]."
         },
         "explanation": {
           "status": "passed",
@@ -1352,33 +1957,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited EFCORE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1386,13 +1991,13 @@
     },
     {
       "id": 1680,
-      "stable_id": "qb-t20-100-701d182a4a188209befbcae5",
+      "stable_id": "qb-t20-100-9a638ee8b58233dce299fb71",
       "topic_num": 20,
       "question": "¿Qué combinación describe una unidad de trabajo segura con EF Core?",
       "option_a": "Un contexto de vida corta, operaciones asíncronas esperadas y SaveChanges para persistir cambios",
-      "option_b": "Un contexto global compartido, tareas sin await y eliminación de migraciones",
-      "option_c": "Solo consultas CSS y un proveedor no configurado",
-      "option_d": "Un contexto nuevo por cada propiedad sin guardar cambios",
+      "option_b": "En escenarios de solo lectura donde no se necesita que las entidades queden en el change tracker",
+      "option_c": "Múltiples entidades de cada lado pueden estar relacionadas con múltiples entidades del otro lado",
+      "option_d": "El principal es la entidad referenciada y el dependiente contiene normalmente la clave foránea",
       "correct": "A",
       "explanation": "Una unidad de trabajo adecuada usa un contexto de vida corta, espera las operaciones asíncronas y guarda los cambios mediante SaveChanges cuando corresponde.",
       "learning_objective_id": "t20-lo-100",
@@ -1409,14 +2014,36 @@
           "version_or_as_of": "EF Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "No-tracking queries",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Introduction to relationships",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against EFCORE-10 The DbContext lifetime; Asynchronous operation pitfalls; Approach 1: change tracking and SaveChanges; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[96, 96, 96, 94]."
         },
         "explanation": {
           "status": "passed",
@@ -1424,37 +2051,38 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited EFCORE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
       "status": "validated"
     }
-  ]
+  ],
+  "answer_length_balance_audit": "docs/question-bank/answer-length-balance-audit.json"
 }

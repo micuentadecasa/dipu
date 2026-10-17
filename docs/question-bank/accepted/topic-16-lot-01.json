@@ -3,7 +3,7 @@
   "state": "reviewed",
   "topic_num": 16,
   "lot_num": 1,
-  "revision": 1,
+  "revision": 2,
   "reviewed_at": "2026-10-12",
   "source_register_sha256": "48f61644f7dbfce47eefc7bece271d06f01fd79756bdcc733ded5a85f26345ff",
   "objective_manifest_sha256": "539f7ed57afb26e7206b4fa2ba79e68a051e5a52cbefb54ff67d751aecf09b3d",
@@ -18,13 +18,13 @@
   "questions": [
     {
       "id": 1501,
-      "stable_id": "qb-t16-001-170a87dd261146a9b69d2a06",
+      "stable_id": "qb-t16-001-aab5a7f853550983e538aada",
       "topic_num": 16,
       "question": "¿Qué es psql en el ecosistema de PostgreSQL?",
       "option_a": "Un front end basado en terminal para introducir consultas y ver sus resultados",
-      "option_b": "Un formato de archivo de copias de seguridad",
-      "option_c": "Un servidor de aplicaciones web",
-      "option_d": "Un gestor de certificados",
+      "option_b": "Los datos se transmiten a través de la conexión entre el cliente y el servidor",
+      "option_c": "Que sus operaciones se confirman como una unidad o se deshacen como una unidad",
+      "option_d": "Para estimar costes y cardinalidades y elegir planes de ejecución más adecuados",
       "correct": "A",
       "explanation": "La documentación describe psql como un front end basado en terminal que permite introducir consultas y ver sus resultados.",
       "learning_objective_id": "t16-lo-001",
@@ -41,14 +41,47 @@
           "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "SQL COPY, Description",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "PostgreSQL 18, gestión de transacciones",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "PostgreSQL 18, capítulo 14",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against POSTGRESQL-18 psql, Description; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[78, 78, 78, 79]."
         },
         "explanation": {
           "status": "passed",
@@ -56,33 +89,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited POSTGRESQL-18 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -90,13 +123,13 @@
     },
     {
       "id": 1502,
-      "stable_id": "qb-t16-002-73e3a41d009f79443a63219a",
+      "stable_id": "qb-t16-002-0fada642f478b1a524735f32",
       "topic_num": 16,
       "question": "¿Cuál es la finalidad principal de pg_dump?",
       "option_a": "Exportar una base de datos PostgreSQL a un script SQL o a otros formatos",
-      "option_b": "Reiniciar automáticamente el servidor",
-      "option_c": "Crear usuarios del sistema operativo",
-      "option_d": "Mostrar únicamente los índices",
+      "option_b": "Como un árbol de nodos de plan con información estimada de costes y filas",
+      "option_c": "Leer comandos desde el archivo indicado en vez de la entrada estándar",
+      "option_d": "Un índice construido solo sobre las filas que satisfacen un predicado",
       "correct": "A",
       "explanation": "pg_dump es la utilidad de PostgreSQL para exportar una base de datos a un script SQL u otros formatos.",
       "learning_objective_id": "t16-lo-002",
@@ -113,14 +146,47 @@
           "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "14.1.1. EXPLAIN Basics",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "psql, Options, -f/--file",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "11.8. Partial Indexes",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against POSTGRESQL-18 pg_dump, Description; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[72, 73, 69, 69]."
         },
         "explanation": {
           "status": "passed",
@@ -128,33 +194,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited POSTGRESQL-18 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -162,13 +228,13 @@
     },
     {
       "id": 1503,
-      "stable_id": "qb-t16-003-cba8c269d166d0928b26b121",
+      "stable_id": "qb-t16-003-3888a678300d2b82a864619d",
       "topic_num": 16,
       "question": "¿Qué diferencia básica existe entre COPY FROM y COPY TO?",
       "option_a": "COPY FROM copia datos desde una fuente a una tabla y COPY TO copia datos de una tabla o consulta a una salida",
-      "option_b": "COPY FROM siempre exporta y COPY TO siempre importa",
-      "option_c": "Ambos solo modifican metadatos",
-      "option_d": "COPY TO solo funciona con índices",
+      "option_b": "COPY con archivo usa el sistema de archivos del servidor; \\copy usa un archivo accesible para el cliente psql",
+      "option_c": "Registrar cambios antes de escribir las páginas de datos para permitir durabilidad y recuperación ante fallos",
+      "option_d": "Pueden ejecutarse dentro de transacciones y confirmarse o deshacerse, aunque existen excepciones documentadas",
       "correct": "A",
       "explanation": "COPY FROM carga datos en una tabla, mientras COPY TO exporta datos de una tabla o del resultado de una consulta.",
       "learning_objective_id": "t16-lo-003",
@@ -185,14 +251,47 @@
           "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "SQL COPY, Notes",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "PostgreSQL 18, capítulo 28",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "PostgreSQL 18, DDL transaccional",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against POSTGRESQL-18 SQL COPY, Description; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[109, 109, 109, 109]."
         },
         "explanation": {
           "status": "passed",
@@ -200,33 +299,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited POSTGRESQL-18 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -234,13 +333,13 @@
     },
     {
       "id": 1504,
-      "stable_id": "qb-t16-004-021b67601e2a0ba4edd35d12",
+      "stable_id": "qb-t16-004-39fba782456eb2718339accc",
       "topic_num": 16,
       "question": "¿Dónde debe estar un archivo usado directamente por COPY con nombre de archivo?",
       "option_a": "En una ubicación accesible para el servidor PostgreSQL y su usuario de ejecución",
-      "option_b": "Siempre en el ordenador del cliente, aunque el servidor no pueda verlo",
-      "option_c": "En el directorio personal del usuario que ejecuta psql, necesariamente",
-      "option_d": "En un recurso web público",
+      "option_b": "El autovacuum launcher, que inicia workers para ejecutar tareas de mantenimiento",
+      "option_c": "Para estimar costes y cardinalidades y elegir planes de ejecución más adecuados",
+      "option_d": "Mediante REFRESH MATERIALIZED VIEW, que vuelve a calcular y almacena su resultado",
       "correct": "A",
       "explanation": "COPY con nombre de archivo hace que el servidor lea o escriba directamente el archivo, que debe ser accesible para el usuario PostgreSQL desde el servidor.",
       "learning_objective_id": "t16-lo-004",
@@ -257,14 +356,47 @@
           "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "PostgreSQL 18, sección 24.1",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "PostgreSQL 18, capítulo 14",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "PostgreSQL 18, sección 39.3",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against POSTGRESQL-18 SQL COPY, Notes; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[80, 80, 79, 81]."
         },
         "explanation": {
           "status": "passed",
@@ -272,33 +404,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited POSTGRESQL-18 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -306,13 +438,13 @@
     },
     {
       "id": 1505,
-      "stable_id": "qb-t16-005-1f964dc747ed8d152600389a",
+      "stable_id": "qb-t16-005-091854b1c224361f839cea98",
       "topic_num": 16,
       "question": "¿Para qué sirve pg_restore?",
       "option_a": "Para restaurar un archivo de archivo no textual creado por pg_dump",
-      "option_b": "Para convertir siempre una tabla en una vista",
-      "option_c": "Para iniciar el servidor PostgreSQL",
-      "option_d": "Para sustituir el planificador de consultas",
+      "option_b": "Influir de forma general en los planes elegidos por el optimizador",
+      "option_c": "Seleccionar elementos concretos o reordenarlos antes de restaurarlos",
+      "option_d": "Leer comandos desde el archivo indicado en vez de la entrada estándar",
       "correct": "A",
       "explanation": "pg_restore restaura un archivo de archivo creado por pg_dump en uno de los formatos no textuales.",
       "learning_objective_id": "t16-lo-005",
@@ -329,14 +461,36 @@
           "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "19.7. Query Planning",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "psql, Options, -f/--file",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against POSTGRESQL-18 pg_restore, Description; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[66, 66, 68, 69]."
         },
         "explanation": {
           "status": "passed",
@@ -344,33 +498,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited POSTGRESQL-18 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -378,13 +532,13 @@
     },
     {
       "id": 1506,
-      "stable_id": "qb-t16-006-e7b3602ad132270857101acd",
+      "stable_id": "qb-t16-006-ce2814c79402f5dcd64afaa1",
       "topic_num": 16,
       "question": "¿Qué combinación describe correctamente los formatos de volcado?",
       "option_a": "Un volcado de texto se restaura normalmente con psql; los formatos de archivo no textual se restauran con pg_restore",
-      "option_b": "Todo volcado se restaura exclusivamente con pg_restore",
-      "option_c": "Los formatos no textuales solo pueden abrirse con un editor de texto",
-      "option_d": "Un volcado de texto siempre crea la base de datos destino por sí solo",
+      "option_b": "Una espera circular en la que transacciones se bloquean mutuamente; PostgreSQL detecta el caso y aborta una de ellas",
+      "option_c": "Recuperar o reutilizar espacio de filas obsoletas y mantener la salud de las tablas y estadísticas según el comando",
+      "option_d": "Una acción asociada a eventos de una tabla, vista o evento de base de datos que ejecuta una función cuando se dispara",
       "correct": "A",
       "explanation": "Los scripts SQL de texto se ejecutan con psql, mientras que los formatos de archivo alternativos requieren pg_restore.",
       "learning_objective_id": "t16-lo-006",
@@ -401,14 +555,47 @@
           "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "PostgreSQL 18, sección 13.3.4",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "PostgreSQL 18, sección 24.1",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "PostgreSQL 18, CREATE TRIGGER",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against POSTGRESQL-18 SQL Dump; pg_dump, Description; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[116, 116, 115, 117]."
         },
         "explanation": {
           "status": "passed",
@@ -416,33 +603,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited POSTGRESQL-18 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -450,13 +637,13 @@
     },
     {
       "id": 1507,
-      "stable_id": "qb-t16-007-b37915d0b045631940dea586",
+      "stable_id": "qb-t16-007-2c592d9436739df58ee3ec58",
       "topic_num": 16,
       "question": "¿Qué hace la metaorden \\copy de psql?",
       "option_a": "Ejecuta una operación COPY, pero psql lee o escribe el archivo del cliente y transfiere los datos por la conexión",
-      "option_b": "Obliga al servidor a leer siempre un archivo del cliente mediante una ruta local del servidor",
-      "option_c": "Crea un archivo de configuración de psql",
-      "option_d": "Desactiva los privilegios de la conexión",
+      "option_b": "Las suposiciones sobre si puede cambiar el resultado y sobre los efectos observables, para ayudar al optimizador",
+      "option_c": "Puede mantener una instantánea que todavía necesite versiones antiguas de filas, impidiendo que VACUUM las elimine",
+      "option_d": "Resolver el estado de error con ROLLBACK o SAVEPOINT y ROLLBACK TO antes de ejecutar nuevas operaciones permitidas",
       "correct": "A",
       "explanation": "\\copy realiza una copia desde el lado cliente: psql gestiona el archivo y canaliza los datos mediante la conexión.",
       "learning_objective_id": "t16-lo-007",
@@ -473,14 +660,47 @@
           "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "PostgreSQL 18, sección 36.7.1",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "PostgreSQL 18, sección 24.1",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "PostgreSQL 18, gestión de transacciones",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against POSTGRESQL-18 SQL COPY, Notes; psql, Meta-Commands; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[113, 112, 114, 114]."
         },
         "explanation": {
           "status": "passed",
@@ -488,33 +708,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited POSTGRESQL-18 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -522,13 +742,13 @@
     },
     {
       "id": 1508,
-      "stable_id": "qb-t16-008-3d93e53d2d10c51d609ab452",
+      "stable_id": "qb-t16-008-e71c58f7052b16ac003d95f6",
       "topic_num": 16,
       "question": "¿Qué formatos admite COPY y cuál es el predeterminado?",
       "option_a": "Texto, CSV y binario; el formato predeterminado es texto",
-      "option_b": "Solo CSV, que es siempre el predeterminado",
-      "option_c": "JSON, XML y binario; el predeterminado es JSON",
-      "option_d": "Texto y XML; el predeterminado es XML",
+      "option_b": "Una relación organizada en filas y columnas que almacena datos",
+      "option_c": "BEGIN inicia; COMMIT confirma y ROLLBACK deshace la transacción",
+      "option_d": "Para restaurar un archivo de archivo no textual creado por pg_dump",
       "correct": "A",
       "explanation": "La opción FORMAT de COPY admite text, csv y binary, y el formato predeterminado es text.",
       "learning_objective_id": "t16-lo-008",
@@ -545,14 +765,47 @@
           "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "PostgreSQL 18, capítulo 5",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "PostgreSQL 18, gestión de transacciones",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "pg_restore, Description",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against POSTGRESQL-18 SQL COPY, Parameters; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[56, 62, 63, 66]."
         },
         "explanation": {
           "status": "passed",
@@ -560,33 +813,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited POSTGRESQL-18 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -594,13 +847,13 @@
     },
     {
       "id": 1509,
-      "stable_id": "qb-t16-009-d0856e26a71f56c3ee711c1c",
+      "stable_id": "qb-t16-009-649cb63f4d2baf80d1a46925",
       "topic_num": 16,
       "question": "¿Qué indica la opción -f de psql?",
       "option_a": "Leer comandos desde el archivo indicado en vez de la entrada estándar",
-      "option_b": "Forzar el formato binario de COPY",
-      "option_c": "Crear una copia completa del clúster",
-      "option_d": "Listar únicamente las funciones",
+      "option_b": "Un índice construido solo sobre las filas que satisfacen un predicado",
+      "option_c": "Seleccionar elementos concretos o reordenarlos antes de restaurarlos",
+      "option_d": "Exportar una base de datos PostgreSQL a un script SQL o a otros formatos",
       "correct": "A",
       "explanation": "La opción -f/--file hace que psql lea comandos del archivo indicado; puede combinarse con -c.",
       "learning_objective_id": "t16-lo-009",
@@ -617,14 +870,47 @@
           "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "11.8. Partial Indexes",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "pg_restore, Description",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "pg_dump, Description",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against POSTGRESQL-18 psql, Options, -f/--file; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[69, 69, 68, 72]."
         },
         "explanation": {
           "status": "passed",
@@ -632,33 +918,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited POSTGRESQL-18 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -666,13 +952,13 @@
     },
     {
       "id": 1510,
-      "stable_id": "qb-t16-010-ca79a31d3e1ad99ae542643e",
+      "stable_id": "qb-t16-010-dc9904d77cd87ce92acecc79",
       "topic_num": 16,
       "question": "¿Qué característica tiene un volcado realizado con pg_dump mientras hay actividad concurrente?",
       "option_a": "Produce una exportación consistente y no bloquea el acceso de otros usuarios en las condiciones documentadas",
-      "option_b": "Siempre detiene todas las lecturas y escrituras",
-      "option_c": "Solo exporta las filas modificadas durante el volcado",
-      "option_d": "No puede ejecutarse contra una base de datos remota",
+      "option_b": "COPY FROM copia datos desde una fuente a una tabla y COPY TO copia datos de una tabla o consulta a una salida",
+      "option_c": "COPY con archivo usa el sistema de archivos del servidor; \\copy usa un archivo accesible para el cliente psql",
+      "option_d": "Registrar cambios antes de escribir las páginas de datos para permitir durabilidad y recuperación ante fallos",
       "correct": "A",
       "explanation": "La documentación indica que pg_dump realiza exportaciones consistentes aunque se use la base de datos concurrentemente y no bloquea a lectores ni escritores.",
       "learning_objective_id": "t16-lo-010",
@@ -689,14 +975,47 @@
           "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "SQL COPY, Description",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "SQL COPY, Notes",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "PostgreSQL 18, capítulo 28",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against POSTGRESQL-18 pg_dump, Description; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[108, 109, 109, 109]."
         },
         "explanation": {
           "status": "passed",
@@ -704,33 +1023,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited POSTGRESQL-18 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -738,13 +1057,13 @@
     },
     {
       "id": 1511,
-      "stable_id": "qb-t16-011-8cc33baa907c52174c1afce6",
+      "stable_id": "qb-t16-011-c856e84c186252991df52a6f",
       "topic_num": 16,
       "question": "¿Qué afirmación distingue correctamente los formatos custom y directory de pg_dump?",
       "option_a": "Permiten seleccionar y reordenar elementos y admiten restauración paralela; directory es el único que admite volcado paralelo",
-      "option_b": "Ambos solo producen scripts de texto y no admiten restauración selectiva",
-      "option_c": "Solo el formato tar admite volcado paralelo",
-      "option_d": "El formato custom no puede ser leído por pg_restore",
+      "option_b": "La cuenta usada debe tener acceso de lectura a los objetos que se quieren volcar; pg_dump no opera con privilegios especiales",
+      "option_c": "Una función puede usarse para devolver un valor en expresiones; un procedimiento se invoca con CALL y tiene semántica propia",
+      "option_d": "La espera puede resolverse cuando libera el bloqueador; el deadlock forma un ciclo y requiere abortar al menos una transacción",
       "correct": "A",
       "explanation": "La documentación identifica custom y directory como formatos flexibles para selección, reordenación y restauración paralela, y señala que directory admite el volcado paralelo.",
       "learning_objective_id": "t16-lo-011",
@@ -761,14 +1080,47 @@
           "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "pg_dump, Description",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "PostgreSQL 18, sección 36.4",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "PostgreSQL 18, sección 13.3.4",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against POSTGRESQL-18 pg_dump, Description, Output Formats; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[125, 125, 124, 126]."
         },
         "explanation": {
           "status": "passed",
@@ -776,33 +1128,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited POSTGRESQL-18 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -810,13 +1162,13 @@
     },
     {
       "id": 1512,
-      "stable_id": "qb-t16-012-c5e1784acc7913502d56e767",
+      "stable_id": "qb-t16-012-6be328d986e8736623221953",
       "topic_num": 16,
       "question": "¿Qué permite hacer pg_restore con un archivo de archivo?",
       "option_a": "Seleccionar elementos concretos o reordenarlos antes de restaurarlos",
-      "option_b": "Restaurar únicamente el sistema operativo",
-      "option_c": "Convertirlo siempre en un certificado",
-      "option_d": "Impedir cualquier filtrado de objetos",
+      "option_b": "Leer comandos desde el archivo indicado en vez de la entrada estándar",
+      "option_c": "Un índice construido solo sobre las filas que satisfacen un predicado",
+      "option_d": "Para restaurar un archivo de archivo no textual creado por pg_dump",
       "correct": "A",
       "explanation": "Los archivos de archivo permiten que pg_restore seleccione elementos o los reordene antes de la restauración.",
       "learning_objective_id": "t16-lo-012",
@@ -833,14 +1185,36 @@
           "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "psql, Options, -f/--file",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "11.8. Partial Indexes",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against POSTGRESQL-18 pg_restore, Description; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[68, 69, 69, 66]."
         },
         "explanation": {
           "status": "passed",
@@ -848,33 +1222,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited POSTGRESQL-18 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -882,13 +1256,13 @@
     },
     {
       "id": 1513,
-      "stable_id": "qb-t16-013-efa688bbbc02af6ffb8a51ad",
+      "stable_id": "qb-t16-013-f96a372f84d2f0cca77de47a",
       "topic_num": 16,
       "question": "¿Cuál es la diferencia de acceso a archivos entre COPY y \\copy?",
       "option_a": "COPY con archivo usa el sistema de archivos del servidor; \\copy usa un archivo accesible para el cliente psql",
-      "option_b": "Ambos usan siempre el sistema de archivos del servidor",
-      "option_c": "COPY usa siempre el cliente y \\copy siempre el servidor",
-      "option_d": "Ninguno accede a archivos",
+      "option_b": "COPY FROM copia datos desde una fuente a una tabla y COPY TO copia datos de una tabla o consulta a una salida",
+      "option_c": "Registrar cambios antes de escribir las páginas de datos para permitir durabilidad y recuperación ante fallos",
+      "option_d": "Pueden ejecutarse dentro de transacciones y confirmarse o deshacerse, aunque existen excepciones documentadas",
       "correct": "A",
       "explanation": "COPY con nombre de archivo se ejecuta en el servidor, mientras \\copy hace que psql lea o escriba en el lado cliente.",
       "learning_objective_id": "t16-lo-013",
@@ -905,14 +1279,47 @@
           "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "SQL COPY, Description",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "PostgreSQL 18, capítulo 28",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "PostgreSQL 18, DDL transaccional",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against POSTGRESQL-18 SQL COPY, Notes; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[109, 109, 109, 109]."
         },
         "explanation": {
           "status": "passed",
@@ -920,33 +1327,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited POSTGRESQL-18 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -954,13 +1361,13 @@
     },
     {
       "id": 1514,
-      "stable_id": "qb-t16-014-f70cf63149be9c98393ea10f",
+      "stable_id": "qb-t16-014-f46c99d233abc91cc30dcdde",
       "topic_num": 16,
       "question": "¿Qué ocurre cuando COPY usa STDIN o STDOUT?",
       "option_a": "Los datos se transmiten a través de la conexión entre el cliente y el servidor",
-      "option_b": "El servidor siempre abre un archivo local con el mismo nombre",
-      "option_c": "Los datos se envían por correo electrónico",
-      "option_d": "Se desactiva la autenticación de la sesión",
+      "option_b": "Un front end basado en terminal para introducir consultas y ver sus resultados",
+      "option_c": "Que sus operaciones se confirman como una unidad o se deshacen como una unidad",
+      "option_d": "Para estimar costes y cardinalidades y elegir planes de ejecución más adecuados",
       "correct": "A",
       "explanation": "Con STDIN o STDOUT, COPY transmite los datos mediante la conexión cliente-servidor.",
       "learning_objective_id": "t16-lo-014",
@@ -977,14 +1384,47 @@
           "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "psql, Description",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "PostgreSQL 18, gestión de transacciones",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "PostgreSQL 18, capítulo 14",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against POSTGRESQL-18 SQL COPY, Description; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[78, 78, 78, 79]."
         },
         "explanation": {
           "status": "passed",
@@ -992,33 +1432,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited POSTGRESQL-18 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1026,13 +1466,13 @@
     },
     {
       "id": 1515,
-      "stable_id": "qb-t16-015-1e0aa62ecc80ddddaafb257e",
+      "stable_id": "qb-t16-015-2f02d1486695004faeceb341",
       "topic_num": 16,
       "question": "¿Qué inconveniente de portabilidad tiene el formato binario de COPY?",
       "option_a": "Es menos portable entre arquitecturas y versiones de PostgreSQL y es específico de los tipos de datos",
-      "option_b": "Es más portable que el texto en todas las arquitecturas",
-      "option_c": "No contiene información dependiente de tipos",
-      "option_d": "Solo puede utilizarse con nombres de columnas",
+      "option_b": "La autenticación de clientes y las reglas de acceso a bases de datos, usuarios, direcciones y métodos",
+      "option_c": "La restauración hace que el destino ejecute código arbitrario elegido por los superusuarios del origen",
+      "option_d": "Una tabla cuya existencia o visibilidad está vinculada a la sesión o transacción según su definición",
       "correct": "A",
       "explanation": "El formato binario puede ser más rápido, pero es menos portable entre arquitecturas y versiones y depende fuertemente de los tipos.",
       "learning_objective_id": "t16-lo-015",
@@ -1049,14 +1489,47 @@
           "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "PostgreSQL 18, sección 20.1",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "pg_restore, Warning",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "PostgreSQL 18, sección 5.1",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against POSTGRESQL-18 SQL COPY, Binary Format; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[101, 101, 102, 100]."
         },
         "explanation": {
           "status": "passed",
@@ -1064,33 +1537,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited POSTGRESQL-18 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1098,13 +1571,13 @@
     },
     {
       "id": 1516,
-      "stable_id": "qb-t16-016-12c016cad5c50580b3066d3f",
+      "stable_id": "qb-t16-016-93e168ff45c2077607a21751",
       "topic_num": 16,
       "question": "Para que pg_dump pueda exportar una tabla, ¿qué condición general debe cumplirse?",
       "option_a": "La cuenta usada debe tener acceso de lectura a los objetos que se quieren volcar; pg_dump no opera con privilegios especiales",
-      "option_b": "pg_dump siempre puede leer cualquier tabla sin permisos",
-      "option_c": "Solo hace falta ser usuario del sistema operativo",
-      "option_d": "La tabla debe ser temporal",
+      "option_b": "Permiten seleccionar y reordenar elementos y admiten restauración paralela; directory es el único que admite volcado paralelo",
+      "option_c": "Una función puede usarse para devolver un valor en expresiones; un procedimiento se invoca con CALL y tiene semántica propia",
+      "option_d": "La espera puede resolverse cuando libera el bloqueador; el deadlock forma un ciclo y requiere abortar al menos una transacción",
       "correct": "A",
       "explanation": "pg_dump es una aplicación cliente normal y necesita acceso de lectura a las tablas que se desean exportar.",
       "learning_objective_id": "t16-lo-016",
@@ -1121,14 +1594,47 @@
           "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "pg_dump, Description, Output Formats",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "PostgreSQL 18, sección 36.4",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "PostgreSQL 18, sección 13.3.4",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against POSTGRESQL-18 pg_dump, Description; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[125, 125, 124, 126]."
         },
         "explanation": {
           "status": "passed",
@@ -1136,33 +1642,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited POSTGRESQL-18 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1170,13 +1676,13 @@
     },
     {
       "id": 1517,
-      "stable_id": "qb-t16-017-06e1472e0e6827fc2e8edd2a",
+      "stable_id": "qb-t16-017-117d59f1682b0c1410c432fc",
       "topic_num": 16,
       "question": "¿Qué riesgo debe considerarse al restaurar un volcado de origen no confiable?",
       "option_a": "La restauración hace que el destino ejecute código arbitrario elegido por los superusuarios del origen",
-      "option_b": "El volcado solo puede contener datos inertes y nunca comandos",
-      "option_c": "La restauración elimina automáticamente todo riesgo de privilegios",
-      "option_d": "El riesgo solo existe en archivos CSV",
+      "option_b": "Es menos portable entre arquitecturas y versiones de PostgreSQL y es específico de los tipos de datos",
+      "option_c": "La autenticación de clientes y las reglas de acceso a bases de datos, usuarios, direcciones y métodos",
+      "option_d": "Los checkpoints proporcionan un punto de referencia y el WAL permite rehacer cambios necesarios desde él",
       "correct": "A",
       "explanation": "La documentación advierte que restaurar un volcado ejecuta código arbitrario elegido por los superusuarios del origen, incluso en restauraciones parciales.",
       "learning_objective_id": "t16-lo-017",
@@ -1193,14 +1699,47 @@
           "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "SQL COPY, Binary Format",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "PostgreSQL 18, sección 20.1",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "PostgreSQL 18, capítulo 28",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against POSTGRESQL-18 pg_restore, Warning; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[102, 101, 101, 104]."
         },
         "explanation": {
           "status": "passed",
@@ -1208,33 +1747,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited POSTGRESQL-18 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1242,13 +1781,13 @@
     },
     {
       "id": 1518,
-      "stable_id": "qb-t16-018-f3960c57a2e9be537c960bbf",
+      "stable_id": "qb-t16-018-c414a0d9bdfd48b6fce53536",
       "topic_num": 16,
       "question": "¿Qué afirmación es correcta sobre COPY PROGRAM?",
       "option_a": "El servidor ejecuta el comando y el acceso requiere privilegios de superusuario o el rol de sistema correspondiente; las entradas no confiables deben escaparse",
-      "option_b": "El cliente ejecuta siempre el comando sin permisos adicionales",
-      "option_c": "Cualquier usuario puede ejecutar cualquier programa del servidor sin control",
-      "option_d": "COPY PROGRAM solo consulta metadatos",
+      "option_b": "Crear la base de datos destino, normalmente desde template0, y ejecutar psql -X sobre el archivo; los propietarios y usuarios necesarios deben existir",
+      "option_c": "VACUUM FULL escribe una versión nueva y compactada de la tabla, mientras VACUUM normal deja espacio para reutilización y normalmente no lo devuelve al sistema operativo",
+      "option_d": "Serializable añade una garantía de ejecución equivalente a algún orden serial y puede abortar transacciones por conflictos; Repeatable Read ofrece una instantánea estable",
       "correct": "A",
       "explanation": "COPY PROGRAM ejecuta el comando desde el servidor y la documentación exige cautela con entradas no confiables y limita el acceso a privilegios específicos.",
       "learning_objective_id": "t16-lo-018",
@@ -1265,14 +1804,47 @@
           "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "SQL Dump, Restoring the Dump",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "24.1. Routine Vacuuming",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "PostgreSQL 18, secciones 13.2.2 y 13.2.3",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against POSTGRESQL-18 SQL COPY, Notes; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[159, 150, 168, 170]."
         },
         "explanation": {
           "status": "passed",
@@ -1280,33 +1852,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited POSTGRESQL-18 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1314,13 +1886,13 @@
     },
     {
       "id": 1519,
-      "stable_id": "qb-t16-019-b29ca939a77a5b3d1f930668",
+      "stable_id": "qb-t16-019-01e6190b822b953a93291da8",
       "topic_num": 16,
       "question": "¿Qué debe hacerse antes de restaurar un volcado SQL de texto con psql?",
       "option_a": "Crear la base de datos destino, normalmente desde template0, y ejecutar psql -X sobre el archivo; los propietarios y usuarios necesarios deben existir",
-      "option_b": "Usar pg_restore sin crear la base de datos",
-      "option_c": "Borrar siempre el clúster completo",
-      "option_d": "Ejecutarlo únicamente con COPY",
+      "option_b": "Una restricción de integridad referencial que exige que los valores correspondan a una clave de la tabla referenciada, salvo acciones definidas",
+      "option_c": "El segmento pertenece al flujo de registros de recuperación; la página es una unidad de datos que puede escribirse en los archivos de relación",
+      "option_d": "El servidor ejecuta el comando y el acceso requiere privilegios de superusuario o el rol de sistema correspondiente; las entradas no confiables deben escaparse",
       "correct": "A",
       "explanation": "Para un volcado de texto se debe crear la base de datos porque psql no la crea; además, los usuarios propietarios o con permisos deben existir para reproducir propiedad y privilegios.",
       "learning_objective_id": "t16-lo-019",
@@ -1337,14 +1909,47 @@
           "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "PostgreSQL 18, sección 5.5.5",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "PostgreSQL 18, capítulo 28",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "SQL COPY, Notes",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against POSTGRESQL-18 SQL Dump, Restoring the Dump; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[150, 143, 142, 159]."
         },
         "explanation": {
           "status": "passed",
@@ -1352,33 +1957,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited POSTGRESQL-18 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1386,13 +1991,13 @@
     },
     {
       "id": 1520,
-      "stable_id": "qb-t16-020-ef90e5528d43ffa42817c76a",
+      "stable_id": "qb-t16-020-d023ba17aa89bb663150cfdd",
       "topic_num": 16,
       "question": "¿Cómo se puede inspeccionar y limitar el orden de restauración de un archivo con pg_restore?",
       "option_a": "-l/--list muestra el índice de contenidos y -L/--use-list restaura solo los elementos enumerados y en el orden del archivo de lista",
-      "option_b": "-l borra el archivo y -L crea una base de datos",
-      "option_c": "Ambas opciones solo afectan a volcado de texto",
-      "option_d": "-L fuerza siempre la restauración de todos los elementos",
+      "option_b": "Ejecuta automáticamente operaciones de mantenimiento y ANALYZE cuando la actividad de las tablas alcanza los umbrales configurados",
+      "option_c": "El propietario tiene control sobre el objeto y puede conceder privilegios, sin perjuicio de reglas como ACL y pertenencia a roles",
+      "option_d": "Un clúster contiene bases de datos; cada base contiene esquemas y los esquemas contienen objetos como tablas, vistas y funciones",
       "correct": "A",
       "explanation": "pg_restore -l lista el contenido del archivo y esa salida puede usarse con -L para restaurar solo los elementos enumerados en el orden indicado.",
       "learning_objective_id": "t16-lo-020",
@@ -1409,14 +2014,47 @@
           "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "24.1.6. The Autovacuum Daemon",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "PostgreSQL 18, capítulos 5 y 21",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "PostgreSQL 18, capítulo 22 y sección 5.9",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against POSTGRESQL-18 pg_restore, Options, -l/--list and -L/--use-list; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[131, 130, 129, 128]."
         },
         "explanation": {
           "status": "passed",
@@ -1424,37 +2062,38 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited POSTGRESQL-18 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
       "status": "validated"
     }
-  ]
+  ],
+  "answer_length_balance_audit": "docs/question-bank/answer-length-balance-audit.json"
 }

@@ -3,7 +3,7 @@
   "state": "reviewed",
   "topic_num": 30,
   "lot_num": 5,
-  "revision": 8,
+  "revision": 9,
   "reviewed_at": "2026-10-12",
   "source_register_sha256": "b995506e1e955cc1bce9c79abc507098de88fbdae378df148aa7be42037da503",
   "objective_manifest_sha256": "38a16b0a8ca06889a91ef6b83074e70a5e59db3cdc08801e7490fea120cfa302",
@@ -18,13 +18,13 @@
   "questions": [
     {
       "id": 2421,
-      "stable_id": "qb-t30-081-d98ccfaf4cc45b90d13400bf",
+      "stable_id": "qb-t30-081-e6195d38623755a9d7a94eb2",
       "topic_num": 30,
       "question": "¿Qué factor decide cuál de dos valores iguales termina visible en IConfiguration?",
       "option_a": "El orden de los proveedores",
-      "option_b": "El tamaño del archivo",
-      "option_c": "El nombre del ensamblado",
-      "option_d": "La cantidad de componentes",
+      "option_b": "JSON configuration provider",
+      "option_c": "Inyección de IConfiguration",
+      "option_d": "Con doble guion bajo (__ )",
       "correct": "A",
       "explanation": "El proveedor con mayor prioridad según el orden de configuración determina el valor final de la clave.",
       "learning_objective_id": "t30-lo-081",
@@ -41,14 +41,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "DOTNET-CONFIG-10",
+          "title": "Configuration in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-10.0",
+          "citation": "JSON configuration provider",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-CONFIG-10",
+          "title": "ASP.NET Core Blazor configuration",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/configuration?view=aspnetcore-10.0",
+          "citation": "Configuration in Blazor Server",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "DOTNET-CONFIG-10",
+          "title": "Configuration in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-10.0",
+          "citation": "Environment variables",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against DOTNET-CONFIG-10 Configuration providers; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[27, 27, 27, 26]."
         },
         "explanation": {
           "status": "passed",
@@ -56,33 +89,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited DOTNET-CONFIG-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -90,13 +123,13 @@
     },
     {
       "id": 2422,
-      "stable_id": "qb-t30-082-56548dcce93496ddbe037d9e",
+      "stable_id": "qb-t30-082-5d36dfb33106e496bc171df7",
       "topic_num": 30,
       "question": "¿Qué propiedad de IConfigurationRoot permite inspeccionar los proveedores cargados?",
-      "option_a": "Services",
+      "option_a": "AddScoped",
       "option_b": "Providers",
-      "option_c": "Routes",
-      "option_d": "Components",
+      "option_c": "Transient",
+      "option_d": "GetSection",
       "correct": "B",
       "explanation": "IConfigurationRoot expone Providers para enumerar los proveedores que participan en la configuración.",
       "learning_objective_id": "t30-lo-082",
@@ -113,14 +146,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-DI-10",
+          "title": "Dependency injection in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-10.0",
+          "citation": "Service lifetimes — AddScoped",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-DI-10",
+          "title": "Dependency injection in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-10.0",
+          "citation": "Service lifetimes — transient",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "DOTNET-CONFIG-10",
+          "title": "Configuration in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-10.0",
+          "citation": "Bind hierarchical configuration",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against DOTNET-CONFIG-10 Configuration providers; expected option B."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[9, 9, 9, 10]."
         },
         "explanation": {
           "status": "passed",
@@ -128,33 +194,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited DOTNET-CONFIG-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -162,13 +228,13 @@
     },
     {
       "id": 2423,
-      "stable_id": "qb-t30-083-02b45b6a1830af1fa4c902b0",
+      "stable_id": "qb-t30-083-ba297fea1bfd1254ebc9a992",
       "topic_num": 30,
       "question": "Al leer una variable de entorno con niveles anidados, ¿qué transformación aplica el proveedor?",
-      "option_a": "Sustituir __ por un punto",
-      "option_b": "Sustituir __ por una barra",
+      "option_a": "Recarga al cambiar",
+      "option_b": "Patrón de opciones",
       "option_c": "Sustituir __ por :",
-      "option_d": "Eliminar los niveles",
+      "option_d": "IOptionsMonitor<T>",
       "correct": "C",
       "explanation": "El doble guion bajo se transforma en dos puntos y conserva la jerarquía de tres niveles.",
       "learning_objective_id": "t30-lo-083",
@@ -185,14 +251,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "DOTNET-CONFIG-10",
+          "title": "Configuration in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-10.0",
+          "citation": "JSON configuration provider",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "DOTNET-CONFIG-10",
+          "title": "Configuration in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-10.0",
+          "citation": "Options pattern",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "DOTNET-CONFIG-10",
+          "title": "Configuration in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-10.0",
+          "citation": "Options interfaces",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against DOTNET-CONFIG-10 Environment variables; expected option C."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[18, 18, 18, 18]."
         },
         "explanation": {
           "status": "passed",
@@ -200,33 +299,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited DOTNET-CONFIG-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -234,12 +333,12 @@
     },
     {
       "id": 2424,
-      "stable_id": "qb-t30-084-7c942dad8927ccd13ddfbdde",
+      "stable_id": "qb-t30-084-070c49affd02869b69055aa6",
       "topic_num": 30,
       "question": "¿Qué entrada de configuración permite seleccionar un valor con el argumento --urls al iniciar una aplicación?",
-      "option_a": "Proveedor de cookies",
-      "option_b": "Proveedor de formularios",
-      "option_c": "Proveedor de estilos",
+      "option_a": "appsettings.{Environment}.json",
+      "option_b": "AddScoped<IClock, SystemClock>",
+      "option_c": "Un almacén seguro de secretos",
       "option_d": "Proveedor de línea de comandos",
       "correct": "D",
       "explanation": "El proveedor de línea de comandos convierte los argumentos en claves y valores de configuración.",
@@ -257,14 +356,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "DOTNET-CONFIG-10",
+          "title": "Configuration in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-10.0",
+          "citation": "Default configuration providers",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-DI-10",
+          "title": "Dependency injection in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-10.0",
+          "citation": "Register services",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "DOTNET-CONFIG-10",
+          "title": "Configuration in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-10.0",
+          "citation": "Safe storage of secrets",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against DOTNET-CONFIG-10 Command-line configuration provider; expected option D."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[30, 30, 29, 30]."
         },
         "explanation": {
           "status": "passed",
@@ -272,33 +404,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited DOTNET-CONFIG-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -306,13 +438,13 @@
     },
     {
       "id": 2425,
-      "stable_id": "qb-t30-085-28f12de5f9a3f3472219c61f",
+      "stable_id": "qb-t30-085-1a9fadde00d98a4e0f84bb7c",
       "topic_num": 30,
       "question": "¿Cómo se representan normalmente elementos de una colección al enlazar configuración jerárquica?",
       "option_a": "Con índices numéricos consecutivos",
-      "option_b": "Con claves de tipo GUID obligatorias",
-      "option_c": "Con una clave única global",
-      "option_d": "Con nombres de métodos",
+      "option_b": "Bind sobre una instancia existente",
+      "option_c": "Con separadores de sección como `:`",
+      "option_d": "AddSingleton<IClock, SystemClock>",
       "correct": "A",
       "explanation": "El binder puede enlazar secciones cuyos hijos usan índices numéricos para formar una colección.",
       "learning_objective_id": "t30-lo-085",
@@ -329,14 +461,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "DOTNET-CONFIG-10",
+          "title": "Configuration in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-10.0",
+          "citation": "Bind configuration",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "DOTNET-CONFIG-10",
+          "title": "Configuration in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-10.0",
+          "citation": "Configuration keys — hierarchical data",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-DI-10",
+          "title": "Dependency injection in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-10.0",
+          "citation": "Register services",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against DOTNET-CONFIG-10 Configuration keys and values; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[34, 34, 35, 33]."
         },
         "explanation": {
           "status": "passed",
@@ -344,33 +509,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited DOTNET-CONFIG-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -378,13 +543,13 @@
     },
     {
       "id": 2426,
-      "stable_id": "qb-t30-086-926b75020fe7136b651dc100",
+      "stable_id": "qb-t30-086-cffd638551cd6f84c51204c8",
       "topic_num": 30,
       "question": "¿Qué comportamiento permite GetValue<T> cuando una clave no existe y se proporciona un valor alternativo?",
-      "option_a": "Lanza siempre una excepción de red",
+      "option_a": "GetKeyedService y GetRequiredKeyedService",
       "option_b": "Devuelve el valor predeterminado indicado",
-      "option_c": "Crea una clave en el archivo JSON",
-      "option_d": "Devuelve una sección vacía",
+      "option_c": "Evitar registrar el servicio si ya existe",
+      "option_d": "Fallo de resolución al construir la clase",
       "correct": "B",
       "explanation": "GetValue<T> admite un valor por defecto que se devuelve cuando no hay un valor utilizable.",
       "learning_objective_id": "t30-lo-086",
@@ -401,14 +566,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-DI-10",
+          "title": "Dependency injection in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-10.0",
+          "citation": "Keyed services",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-DI-10",
+          "title": "Dependency injection in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-10.0",
+          "citation": "Register groups of services with TryAdd",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-DI-10",
+          "title": "Dependency injection in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-10.0",
+          "citation": "Service resolution",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against DOTNET-CONFIG-10 GetValue; expected option B."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[41, 41, 41, 41]."
         },
         "explanation": {
           "status": "passed",
@@ -416,33 +614,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited DOTNET-CONFIG-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -450,13 +648,13 @@
     },
     {
       "id": 2427,
-      "stable_id": "qb-t30-087-5d592f90aa67fc1cb5dc265b",
+      "stable_id": "qb-t30-087-b7b9920fb77b21ea1109f217",
       "topic_num": 30,
       "question": "Al enlazar una clase de opciones convencional, ¿qué propiedades se consideran normalmente por el binder?",
-      "option_a": "Campos privados solamente",
-      "option_b": "Métodos estáticos",
+      "option_a": "Atributos de validación como DataAnnotations",
+      "option_b": "Crear una instancia nueva en cada resolución",
       "option_c": "Propiedades públicas con acceso de escritura",
-      "option_d": "Constantes del ensamblado",
+      "option_d": "Reducir acoplamiento y facilitar sustitución",
       "correct": "C",
       "explanation": "El binder de configuración trabaja normalmente con propiedades públicas que puede establecer.",
       "learning_objective_id": "t30-lo-087",
@@ -473,14 +671,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "DOTNET-CONFIG-10",
+          "title": "Configuration in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-10.0",
+          "citation": "Options validation — DataAnnotations",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-DI-10",
+          "title": "Dependency injection in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-10.0",
+          "citation": "Service lifetimes",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-DI-10",
+          "title": "Dependency injection in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-10.0",
+          "citation": "Dependency injection — design guidelines",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against DOTNET-CONFIG-10 Options pattern; expected option C."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[44, 44, 44, 44]."
         },
         "explanation": {
           "status": "passed",
@@ -488,33 +719,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited DOTNET-CONFIG-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -522,12 +753,12 @@
     },
     {
       "id": 2428,
-      "stable_id": "qb-t30-088-22a60df29953b2691a862e1e",
+      "stable_id": "qb-t30-088-278875ded70899d2a1d5435b",
       "topic_num": 30,
       "question": "¿Qué operación resulta apropiada para enlazar una sección sin crear automáticamente una clase nueva?",
-      "option_a": "GetSection sin destino",
-      "option_b": "AddSingleton sin tipo",
-      "option_c": "Build sobre IConfiguration",
+      "option_a": "Con índices numéricos consecutivos",
+      "option_b": "Con separadores de sección como `:`",
+      "option_c": "AddSingleton<IClock, SystemClock>",
       "option_d": "Bind sobre una instancia existente",
       "correct": "D",
       "explanation": "Bind aplica los valores a una instancia que ya ha sido creada por la aplicación.",
@@ -545,14 +776,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "DOTNET-CONFIG-10",
+          "title": "Configuration in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-10.0",
+          "citation": "Configuration keys and values",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "DOTNET-CONFIG-10",
+          "title": "Configuration in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-10.0",
+          "citation": "Configuration keys — hierarchical data",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-DI-10",
+          "title": "Dependency injection in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-10.0",
+          "citation": "Register services",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against DOTNET-CONFIG-10 Bind configuration; expected option D."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[34, 35, 33, 34]."
         },
         "explanation": {
           "status": "passed",
@@ -560,33 +824,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited DOTNET-CONFIG-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -594,13 +858,13 @@
     },
     {
       "id": 2429,
-      "stable_id": "qb-t30-089-9987d0b0670260c94835510c",
+      "stable_id": "qb-t30-089-c2b6759b4e16e9cb8956e50b",
       "topic_num": 30,
       "question": "¿Qué ventaja principal aporta una clase POCO para representar opciones?",
       "option_a": "Ofrecer un contrato tipado para valores relacionados",
-      "option_b": "Ocultar todos los valores al proceso",
-      "option_c": "Sustituir el proveedor de configuración",
-      "option_d": "Impedir cualquier validación",
+      "option_b": "Usar un provider o fuente con precedencia controlada",
+      "option_c": "Se crea una nueva instancia cada vez que se solicita",
+      "option_d": "El proveedor añadido posteriormente tiene prioridad",
       "correct": "A",
       "explanation": "Una clase de opciones da nombres y tipos a un grupo de valores de configuración.",
       "learning_objective_id": "t30-lo-089",
@@ -617,14 +881,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "DOTNET-CONFIG-10",
+          "title": "Configuration in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-10.0",
+          "citation": "Configuration providers — precedence",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-DI-10",
+          "title": "Dependency injection in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-10.0",
+          "citation": "Service lifetimes — transient",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "DOTNET-CONFIG-10",
+          "title": "Configuration in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-10.0",
+          "citation": "Configuration providers",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against DOTNET-CONFIG-10 Options pattern; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[52, 52, 52, 51]."
         },
         "explanation": {
           "status": "passed",
@@ -632,33 +929,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited DOTNET-CONFIG-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -666,13 +963,13 @@
     },
     {
       "id": 2430,
-      "stable_id": "qb-t30-090-bda51cef1a4a1991107884ae",
+      "stable_id": "qb-t30-090-adca9769c541ff9e2f50481a",
       "topic_num": 30,
       "question": "¿Qué extensión aplica atributos de validación de DataAnnotations a una clase de opciones?",
-      "option_a": "ValidateJsonOnly",
+      "option_a": "El circuito del usuario",
       "option_b": "ValidateDataAnnotations",
-      "option_c": "UseAnnotationsRoute",
-      "option_d": "BindAttributesOnly",
+      "option_c": "Una instancia por scope",
+      "option_d": "wwwroot/appsettings.json",
       "correct": "B",
       "explanation": "ValidateDataAnnotations registra la validación de los atributos de anotaciones de datos de la clase de opciones.",
       "learning_objective_id": "t30-lo-090",
@@ -689,14 +986,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-DI-10",
+          "title": "Dependency injection in ASP.NET Core Blazor",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/dependency-injection?view=aspnetcore-10.0",
+          "citation": "Service lifetimes",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-DI-10",
+          "title": "Dependency injection in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-10.0",
+          "citation": "Service lifetimes — scoped",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-CONFIG-10",
+          "title": "ASP.NET Core Blazor configuration",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/configuration?view=aspnetcore-10.0",
+          "citation": "Configuration in Blazor WebAssembly",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against DOTNET-CONFIG-10 Options validation; expected option B."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[23, 23, 23, 24]."
         },
         "explanation": {
           "status": "passed",
@@ -704,33 +1034,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited DOTNET-CONFIG-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -738,13 +1068,13 @@
     },
     {
       "id": 2431,
-      "stable_id": "qb-t30-091-c13eb913b22b5932872e92cd",
+      "stable_id": "qb-t30-091-b3530f5c90a0d902d465cd94",
       "topic_num": 30,
       "question": "Una aplicación debe fallar durante el arranque si una opción obligatoria no es válida. ¿Qué combinación resulta adecuada?",
-      "option_a": "Solo leer IConfiguration al final",
-      "option_b": "Usar un comentario en appsettings",
+      "option_a": "Porque puede compartirse entre circuitos",
+      "option_b": "Crear un ámbito con IServiceScopeFactory",
       "option_c": "Validación de opciones y ValidateOnStart",
-      "option_d": "Registrar el POCO como endpoint",
+      "option_d": "Crear un scope explícito para el trabajo",
       "correct": "C",
       "explanation": "La regla de validación comprueba el valor y ValidateOnStart adelanta la comprobación al arranque.",
       "learning_objective_id": "t30-lo-091",
@@ -761,14 +1091,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-DI-10",
+          "title": "Dependency injection in ASP.NET Core Blazor",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/dependency-injection?view=aspnetcore-10.0",
+          "citation": "Service lifetimes",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-DI-10",
+          "title": "Dependency injection in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-10.0",
+          "citation": "Use scoped services within a BackgroundService",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-DI-10",
+          "title": "Dependency injection in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-10.0",
+          "citation": "DI guidelines — scoped services in background services",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against DOTNET-CONFIG-10 Options validation; expected option C."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[40, 40, 40, 40]."
         },
         "explanation": {
           "status": "passed",
@@ -776,33 +1139,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited DOTNET-CONFIG-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -810,12 +1173,12 @@
     },
     {
       "id": 2432,
-      "stable_id": "qb-t30-092-942ab96759cbecad8913c85a",
+      "stable_id": "qb-t30-092-1ce56213b7f51c437ea753e8",
       "topic_num": 30,
       "question": "¿Qué interfaz permite observar cambios para una opción nombrada especificando el nombre al acceder al valor?",
-      "option_a": "IOptions<T> sin nombre",
-      "option_b": "IConfigurationProvider",
-      "option_c": "IServiceScopeFactory",
+      "option_a": "Recarga al cambiar",
+      "option_b": "Patrón de opciones",
+      "option_c": "Sustituir __ por :",
       "option_d": "IOptionsMonitor<T>",
       "correct": "D",
       "explanation": "IOptionsMonitor<T> permite obtener el valor actual de una opción nombrada mediante el nombre correspondiente.",
@@ -833,14 +1196,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "DOTNET-CONFIG-10",
+          "title": "Configuration in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-10.0",
+          "citation": "JSON configuration provider",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "DOTNET-CONFIG-10",
+          "title": "Configuration in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-10.0",
+          "citation": "Options pattern",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "DOTNET-CONFIG-10",
+          "title": "Configuration in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-10.0",
+          "citation": "Environment variables",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against DOTNET-CONFIG-10 Named options; expected option D."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[18, 18, 18, 18]."
         },
         "explanation": {
           "status": "passed",
@@ -848,33 +1244,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited DOTNET-CONFIG-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -882,13 +1278,13 @@
     },
     {
       "id": 2433,
-      "stable_id": "qb-t30-093-16b253753b2b4753c05ac44e",
+      "stable_id": "qb-t30-093-4a732c4e945a065836be05fd",
       "topic_num": 30,
       "question": "Un archivo JSON cambia y las opciones configuradas con monitor reflejan el nuevo valor. ¿Qué dos capacidades cooperan?",
       "option_a": "Recarga del proveedor y notificación del monitor",
-      "option_b": "Compilación Razor y rutas",
-      "option_c": "Singleton y cookies",
-      "option_d": "OpenAPI y antiforgery",
+      "option_b": "Tipado y agrupación de configuración relacionada",
+      "option_c": "Compartir accidentalmente estado entre circuitos",
+      "option_d": "Proporciona el valor configurado mediante Value",
       "correct": "A",
       "explanation": "El proveedor recarga la clave y el monitor notifica o expone el valor actualizado.",
       "learning_objective_id": "t30-lo-093",
@@ -905,14 +1301,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "DOTNET-CONFIG-10",
+          "title": "Configuration in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-10.0",
+          "citation": "Options pattern",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-DI-10",
+          "title": "Dependency injection in ASP.NET Core Blazor",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/dependency-injection?view=aspnetcore-10.0",
+          "citation": "Blazor DI — lifetimes in Blazor Server",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against DOTNET-CONFIG-10 Options interfaces; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[48, 48, 48, 47]."
         },
         "explanation": {
           "status": "passed",
@@ -920,33 +1338,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited DOTNET-CONFIG-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -954,13 +1372,13 @@
     },
     {
       "id": 2434,
-      "stable_id": "qb-t30-094-192be7d72aacfc3bf0a22f3a",
+      "stable_id": "qb-t30-094-151376c78677d8242c9f14fa",
       "topic_num": 30,
       "question": "En Blazor WebAssembly, ¿qué archivo público puede contener valores de configuración que el cliente descarga?",
-      "option_a": "appsettings.secrets.bin fuera de wwwroot",
+      "option_a": "La clave correspondiente",
       "option_b": "wwwroot/appsettings.json",
-      "option_c": "El almacén seguro del servidor",
-      "option_d": "Una tabla SQLite privada del host",
+      "option_c": "Añadirse antes de Build()",
+      "option_d": "Inyección por constructor",
       "correct": "B",
       "explanation": "La configuración de WebAssembly se sirve como recurso público y puede incluir wwwroot/appsettings.json.",
       "learning_objective_id": "t30-lo-094",
@@ -977,14 +1395,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-DI-10",
+          "title": "Dependency injection in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-10.0",
+          "citation": "Keyed services",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-DI-10",
+          "title": "Dependency injection in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-10.0",
+          "citation": "Constructor injection",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-CONFIG-10 Configuration in Blazor WebAssembly; expected option B."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[24, 24, 25, 25]."
         },
         "explanation": {
           "status": "passed",
@@ -992,33 +1432,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-CONFIG-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1026,13 +1466,13 @@
     },
     {
       "id": 2435,
-      "stable_id": "qb-t30-095-e75462ff9288c2d80250fdf9",
+      "stable_id": "qb-t30-095-d05b82aeab3319fa29a33846",
       "topic_num": 30,
       "question": "¿Qué regla de seguridad se aplica a un valor incluido en la configuración de Blazor WebAssembly?",
-      "option_a": "Se cifra automáticamente en el navegador",
-      "option_b": "Solo lo ve el servidor",
+      "option_a": "Inyección de IConfiguration",
+      "option_b": "Un almacén seguro de secretos",
       "option_c": "No debe considerarse secreto",
-      "option_d": "Se elimina antes de descargarlo",
+      "option_d": "Sí, como cualquier componente",
       "correct": "C",
       "explanation": "Todo lo que se envía a WebAssembly puede inspeccionarse en el cliente y no debe contener secretos.",
       "learning_objective_id": "t30-lo-095",
@@ -1049,14 +1489,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-CONFIG-10",
+          "title": "ASP.NET Core Blazor configuration",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/configuration?view=aspnetcore-10.0",
+          "citation": "Configuration in Blazor Server",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "DOTNET-CONFIG-10",
+          "title": "Configuration in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-10.0",
+          "citation": "Safe storage of secrets",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-DI-10",
+          "title": "Dependency injection in ASP.NET Core Blazor",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/dependency-injection?view=aspnetcore-10.0",
+          "citation": "Inject services into components",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-CONFIG-10 Configuration security; expected option C."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[27, 29, 28, 29]."
         },
         "explanation": {
           "status": "passed",
@@ -1064,33 +1537,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-CONFIG-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1098,12 +1571,12 @@
     },
     {
       "id": 2436,
-      "stable_id": "qb-t30-096-3f6430b75cced55ab9dd4c6a",
+      "stable_id": "qb-t30-096-1a1d3dd8e5fa1561a2d6950c",
       "topic_num": 30,
       "question": "En Blazor Server, ¿qué mecanismo usa normalmente un componente para recibir configuración del servidor?",
-      "option_a": "Descargar siempre un JSON público",
-      "option_b": "Leer localStorage del navegador",
-      "option_c": "Usar una variable de entorno del cliente",
+      "option_a": "El orden de los proveedores",
+      "option_b": "JSON configuration provider",
+      "option_c": "No debe considerarse secreto",
       "option_d": "Inyección de IConfiguration",
       "correct": "D",
       "explanation": "La aplicación Server puede inyectar IConfiguration porque la configuración permanece en el proceso del servidor.",
@@ -1121,14 +1594,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "DOTNET-CONFIG-10",
+          "title": "Configuration in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-10.0",
+          "citation": "Configuration providers",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "DOTNET-CONFIG-10",
+          "title": "Configuration in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-10.0",
+          "citation": "JSON configuration provider",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-CONFIG-10",
+          "title": "ASP.NET Core Blazor configuration",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/configuration?view=aspnetcore-10.0",
+          "citation": "Configuration security",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-CONFIG-10 Configuration in Blazor Server; expected option D."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[27, 27, 28, 27]."
         },
         "explanation": {
           "status": "passed",
@@ -1136,33 +1642,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-CONFIG-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1170,13 +1676,13 @@
     },
     {
       "id": 2437,
-      "stable_id": "qb-t30-097-26225aae7491d6d07f1f9d3e",
+      "stable_id": "qb-t30-097-3425278b5ea4d09384b78530",
       "topic_num": 30,
       "question": "¿Qué propiedad del builder de Blazor WebAssembly permite leer o ampliar la configuración del host cliente?",
       "option_a": "builder.Configuration",
-      "option_b": "builder.ServicesOnly",
-      "option_c": "builder.Routes",
-      "option_d": "builder.ServerSecrets",
+      "option_b": "La directiva @inject",
+      "option_c": "IEnumerable<IParser>",
+      "option_d": "Dependencia circular",
       "correct": "A",
       "explanation": "WebAssemblyHostBuilder expone Configuration para leer y añadir fuentes disponibles al cliente.",
       "learning_objective_id": "t30-lo-097",
@@ -1193,14 +1699,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-DI-10",
+          "title": "Dependency injection in ASP.NET Core Blazor",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/dependency-injection?view=aspnetcore-10.0",
+          "citation": "Inject services into components",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-DI-10",
+          "title": "Dependency injection in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-10.0",
+          "citation": "Register multiple implementations",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-DI-10",
+          "title": "Dependency injection in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-10.0",
+          "citation": "Service resolution",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-CONFIG-10 Configuration in Blazor WebAssembly; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[21, 20, 20, 20]."
         },
         "explanation": {
           "status": "passed",
@@ -1208,33 +1747,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-CONFIG-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1242,13 +1781,13 @@
     },
     {
       "id": 2438,
-      "stable_id": "qb-t30-098-9e74870ba875f6b5484eec02",
+      "stable_id": "qb-t30-098-c436f9cb74f769b65bf6e6a3",
       "topic_num": 30,
       "question": "Se añade una fuente de configuración al builder de Blazor antes de construir el host. ¿Qué condición debe cumplir para estar disponible al resolver opciones?",
-      "option_a": "Añadirse después de Run()",
+      "option_a": "Inyección por constructor",
       "option_b": "Añadirse antes de Build()",
-      "option_c": "Añadirse al CSS aislado",
-      "option_d": "Añadirse a una ruta del Router",
+      "option_c": "Una sobrecarga de fábrica",
+      "option_d": "Registro de una instancia",
       "correct": "B",
       "explanation": "Las fuentes deben configurarse antes de construir el host para que la configuración resultante esté disponible.",
       "learning_objective_id": "t30-lo-098",
@@ -1265,14 +1804,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-DI-10",
+          "title": "Dependency injection in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-10.0",
+          "citation": "Constructor injection",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-DI-10",
+          "title": "Dependency injection in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-10.0",
+          "citation": "Register services",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-CONFIG-10 Configuration in Blazor WebAssembly; expected option B."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[25, 25, 25, 25]."
         },
         "explanation": {
           "status": "passed",
@@ -1280,33 +1841,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-CONFIG-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1314,13 +1875,13 @@
     },
     {
       "id": 2439,
-      "stable_id": "qb-t30-099-0a7478b6e766d75d9288f5f8",
+      "stable_id": "qb-t30-099-9028273d5947a4e8a797d160",
       "topic_num": 30,
       "question": "¿Qué diferencia de exposición debe considerar un equipo al mover una clave de configuración del servidor a WebAssembly?",
-      "option_a": "La versión WebAssembly se vuelve privada",
-      "option_b": "La versión Server se descarga siempre",
+      "option_a": "Falla porque el contenedor no conoce cómo crearlo",
+      "option_b": "Si el estado debe compartirse y cuánto debe vivir",
       "option_c": "La versión WebAssembly queda accesible al cliente",
-      "option_d": "No existe diferencia de seguridad",
+      "option_d": "Permite suministrar valores al iniciar el proceso",
       "correct": "C",
       "explanation": "La configuración que acompaña al cliente puede inspeccionarse, mientras que la del servidor permanece en el proceso.",
       "learning_objective_id": "t30-lo-099",
@@ -1337,14 +1898,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-DI-10",
+          "title": "Dependency injection in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-10.0",
+          "citation": "Service resolution — unregistered services",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-DI-10",
+          "title": "Dependency injection in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-10.0",
+          "citation": "Service lifetimes — choosing a lifetime",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "DOTNET-CONFIG-10",
+          "title": "Configuration in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-10.0",
+          "citation": "Command-line configuration provider",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-CONFIG-10 Configuration security; expected option C."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[49, 49, 49, 49]."
         },
         "explanation": {
           "status": "passed",
@@ -1352,33 +1946,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-CONFIG-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1386,12 +1980,12 @@
     },
     {
       "id": 2440,
-      "stable_id": "qb-t30-100-dd7f62844cfbd2a63e21a353",
+      "stable_id": "qb-t30-100-2055283d24cda4184ab78341",
       "topic_num": 30,
       "question": "Una aplicación Blazor WebAssembly necesita cambiar una URL pública entre entornos. ¿Qué estrategia documentada evita compilar un secreto en el cliente?",
-      "option_a": "Poner la clave privada en appsettings.json",
-      "option_b": "Usar un singleton secreto en el navegador",
-      "option_c": "Guardar la URL en una cookie HttpOnly del servidor",
+      "option_a": "El proveedor añadido posteriormente tiene prioridad",
+      "option_b": "Otro servicio que necesita para realizar su función",
+      "option_c": "La precedencia determina qué valor resulta efectivo",
       "option_d": "Usar archivos de configuración públicos por entorno",
       "correct": "D",
       "explanation": "Las URLs públicas pueden variar mediante archivos de configuración servidos por entorno, pero los secretos no deben viajar al cliente.",
@@ -1409,14 +2003,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "DOTNET-CONFIG-10",
+          "title": "Configuration in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-10.0",
+          "citation": "Configuration providers",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-DI-10",
+          "title": "Dependency injection in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-10.0",
+          "citation": "Dependency injection — fundamentals",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "DOTNET-CONFIG-10",
+          "title": "Configuration in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-10.0",
+          "citation": "Configuration providers — precedence",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against BLAZOR-CONFIG-10 Configuration in Blazor WebAssembly; expected option D."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[51, 51, 51, 51]."
         },
         "explanation": {
           "status": "passed",
@@ -1424,37 +2051,38 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited BLAZOR-CONFIG-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
       "status": "validated"
     }
-  ]
+  ],
+  "answer_length_balance_audit": "docs/question-bank/answer-length-balance-audit.json"
 }

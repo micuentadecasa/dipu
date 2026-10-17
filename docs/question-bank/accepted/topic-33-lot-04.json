@@ -3,7 +3,7 @@
   "state": "reviewed",
   "topic_num": 33,
   "lot_num": 4,
-  "revision": 2,
+  "revision": 3,
   "reviewed_at": "2026-10-12",
   "source_register_sha256": "b995506e1e955cc1bce9c79abc507098de88fbdae378df148aa7be42037da503",
   "objective_manifest_sha256": "38a16b0a8ca06889a91ef6b83074e70a5e59db3cdc08801e7490fea120cfa302",
@@ -18,13 +18,13 @@
   "questions": [
     {
       "id": 2481,
-      "stable_id": "qb-t33-061-a42f46ef2151322aecd45875",
+      "stable_id": "qb-t33-061-998643144dcfd7ffaee8703d",
       "topic_num": 33,
       "question": "¿Qué comando crea un commit con el contenido actualmente preparado?",
       "option_a": "git commit",
-      "option_b": "git snapshot --index-only",
-      "option_c": "git save-working-tree",
-      "option_d": "git record-ref-only",
+      "option_b": "user.email",
+      "option_c": "git status",
+      "option_d": "git tag v1",
       "correct": "A",
       "explanation": "git commit registra el estado del índice como una nueva instantánea del historial.",
       "learning_objective_id": "t33-lo-061",
@@ -41,14 +41,47 @@
           "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-config — user.email",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-status — DESCRIPTION",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-tag — DESCRIPTION",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against GIT-2.50 git-commit — DESCRIPTION; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[10, 10, 10, 10]."
         },
         "explanation": {
           "status": "passed",
@@ -56,33 +89,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited GIT-2.50 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -90,13 +123,13 @@
     },
     {
       "id": 2482,
-      "stable_id": "qb-t33-062-7c58c8027abf70eb0ebfe521",
+      "stable_id": "qb-t33-062-5ba688c850cc38226f9b4524",
       "topic_num": 33,
       "question": "¿Qué opción proporciona directamente el mensaje de commit?",
-      "option_a": "-msg-only",
+      "option_a": ".git",
       "option_b": "-m",
-      "option_c": "--title-as-ref",
-      "option_d": "--message-file-name",
+      "option_c": "HEAD^",
+      "option_d": "logs/",
       "correct": "B",
       "explanation": "-m permite especificar el mensaje sin abrir el editor para ese commit.",
       "learning_objective_id": "t33-lo-062",
@@ -113,14 +146,47 @@
           "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "gitrepository-layout — The .git directory",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "gitrevisions — SPECIFYING REVISIONS",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "gitrepository-layout — logs",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against GIT-2.50 git-commit — -m/--message; expected option B."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[4, 2, 5, 5]."
         },
         "explanation": {
           "status": "passed",
@@ -128,33 +194,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited GIT-2.50 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -162,13 +228,13 @@
     },
     {
       "id": 2483,
-      "stable_id": "qb-t33-063-6b451d9d981c4750d28c1922",
+      "stable_id": "qb-t33-063-564557064c359c5232c2cd05",
       "topic_num": 33,
       "question": "¿Qué muestra `git log`?",
-      "option_a": "Solo el índice actual",
-      "option_b": "Las reglas de .gitignore",
+      "option_a": "HEAD apunta directamente a un commit y no a una rama que avance",
+      "option_b": "Actualizar el índice con una operación de eliminación apropiada",
       "option_c": "El historial de commits alcanzable desde la referencia indicada",
-      "option_d": "La configuración del sistema",
+      "option_d": "Ramas cuya punta no es alcanzable desde el commit de referencia",
       "correct": "C",
       "explanation": "git log recorre y muestra commits del historial según la revisión y opciones elegidas.",
       "learning_objective_id": "t33-lo-063",
@@ -185,14 +251,47 @@
           "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "gitglossary — detached HEAD",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "gitignore — DESCRIPTION; git-rm — DESCRIPTION",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-branch — --no-merged",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against GIT-2.50 git-log — DESCRIPTION; expected option C."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[63, 63, 63, 63]."
         },
         "explanation": {
           "status": "passed",
@@ -200,33 +299,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited GIT-2.50 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -234,12 +333,12 @@
     },
     {
       "id": 2484,
-      "stable_id": "qb-t33-064-22d81f0172d1b4b443b9a57f",
+      "stable_id": "qb-t33-064-8a21845ed5b7abc59764ceea",
       "topic_num": 33,
       "question": "¿Qué inspecciona `git show` cuando se le proporciona un commit?",
-      "option_a": "Solo la versión de Git instalada",
-      "option_b": "La configuración global completa",
-      "option_c": "El contenido de todos los remotos",
+      "option_a": "Un sistema distribuido de control de versiones",
+      "option_b": "Metadatos de autor/committer, mensaje y padres",
+      "option_c": "Porque reescribe la punta de la historia local",
       "option_d": "El commit y su diferencia o contenido asociado",
       "correct": "D",
       "explanation": "git show presenta objetos y, para commits, sus metadatos y cambios asociados.",
@@ -257,14 +356,47 @@
           "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "gittutorial — Getting Started",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "gitglossary — commit object; git-commit",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-commit — --amend",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against GIT-2.50 git-show — DESCRIPTION; expected option D."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[46, 46, 46, 46]."
         },
         "explanation": {
           "status": "passed",
@@ -272,33 +404,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited GIT-2.50 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -306,13 +438,13 @@
     },
     {
       "id": 2485,
-      "stable_id": "qb-t33-065-8b6ca93f8f896ab60075cb87",
+      "stable_id": "qb-t33-065-22e9c58857f98c02649067e3",
       "topic_num": 33,
       "question": "¿Qué opción produce una representación compacta de commits en git log?",
       "option_a": "--oneline",
-      "option_b": "--single-commit-text",
-      "option_c": "--compact-tree-only",
-      "option_d": "--short-object-store",
+      "option_b": "Un commit",
+      "option_c": "git clone",
+      "option_d": "user.name",
       "correct": "A",
       "explanation": "--oneline combina una forma abreviada del objeto y el asunto del commit.",
       "learning_objective_id": "t33-lo-065",
@@ -329,14 +461,47 @@
           "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "gitglossary — commit object",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-clone — DESCRIPTION",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-config — user.name",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against GIT-2.50 git-log — --oneline; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[9, 9, 9, 9]."
         },
         "explanation": {
           "status": "passed",
@@ -344,33 +509,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited GIT-2.50 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -378,13 +543,13 @@
     },
     {
       "id": 2486,
-      "stable_id": "qb-t33-066-35b6bbd91ca76af5ba50a9d2",
+      "stable_id": "qb-t33-066-c7ff79f904c091775c608d14",
       "topic_num": 33,
       "question": "¿Qué hace `git commit --amend`?",
-      "option_a": "Añade siempre un hijo independiente",
+      "option_a": "La opción -s/--strategy seguida del nombre de estrategia",
       "option_b": "Reemplaza el commit más reciente con un commit corregido",
-      "option_c": "Solo edita .gitignore",
-      "option_d": "Mueve todas las ramas remotas",
+      "option_c": "Reaplicar los commits propios sobre la punta de upstream",
+      "option_d": "Aplica sus cambios al working tree y conserva la entrada",
       "correct": "B",
       "explanation": "Amend reconstruye la punta actual combinando el commit anterior con el estado y mensaje corregidos.",
       "learning_objective_id": "t33-lo-066",
@@ -401,14 +566,47 @@
           "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-merge — -s/--strategy",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-rebase — DESCRIPTION",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-stash — apply",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against GIT-2.50 git-commit — --amend; expected option B."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[56, 56, 56, 56]."
         },
         "explanation": {
           "status": "passed",
@@ -416,33 +614,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited GIT-2.50 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -450,13 +648,13 @@
     },
     {
       "id": 2487,
-      "stable_id": "qb-t33-067-9214012a68e8906d7d5a1224",
+      "stable_id": "qb-t33-067-0796659bfb0219467e36312f",
       "topic_num": 33,
       "question": "¿Qué diferencia hay entre el autor y el committer de un commit?",
-      "option_a": "El autor es siempre una rama",
-      "option_b": "El committer es siempre el remoto",
+      "option_a": "Es un objeto con mensaje y metadatos que apunta a otro objeto",
+      "option_b": "El commit apunta a un tree que representa la instantánea raíz",
       "option_c": "El autor escribió el cambio y el committer registró el commit",
-      "option_d": "Son siempre dos objetos blob",
+      "option_d": "Un archivo del working tree que Git no está siguiendo todavía",
       "correct": "C",
       "explanation": "Git conserva ambos roles en los metadatos y pueden ser personas distintas.",
       "learning_objective_id": "t33-lo-067",
@@ -473,14 +671,47 @@
           "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "gitglossary — tag object; git-tag",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "gitglossary — commit object; tree object",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-status — DESCRIPTION",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against GIT-2.50 git-commit — COMMIT INFORMATION; expected option C."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[61, 61, 61, 61]."
         },
         "explanation": {
           "status": "passed",
@@ -488,33 +719,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited GIT-2.50 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -522,12 +753,12 @@
     },
     {
       "id": 2488,
-      "stable_id": "qb-t33-068-7bf8708d3b33a3003286ba2a",
+      "stable_id": "qb-t33-068-c156558d785c7a6fec1e13cf",
       "topic_num": 33,
       "question": "¿Qué expresión suele designar el primer padre del commit actual?",
-      "option_a": "HEAD@{1}",
-      "option_b": "HEAD~0",
-      "option_c": "refs/parent/HEAD",
+      "option_a": "logs/",
+      "option_b": "Merge",
+      "option_c": ".git",
       "option_d": "HEAD^",
       "correct": "D",
       "explanation": "La notación ^ selecciona un padre; sin número, el primero.",
@@ -545,14 +776,47 @@
           "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "gitrepository-layout — logs",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-pull — --no-rebase",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "gitrepository-layout — The .git directory",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against GIT-2.50 gitrevisions — SPECIFYING REVISIONS; expected option D."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[5, 5, 4, 5]."
         },
         "explanation": {
           "status": "passed",
@@ -560,33 +824,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited GIT-2.50 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -594,13 +858,13 @@
     },
     {
       "id": 2489,
-      "stable_id": "qb-t33-069-e356adf8f10864fd0e53f1e0",
+      "stable_id": "qb-t33-069-845d731460a6548f05472aac",
       "topic_num": 33,
       "question": "¿Qué expresión suele designar el commit anterior siguiendo el primer padre?",
       "option_a": "HEAD~1",
-      "option_b": "HEAD^0",
-      "option_c": "HEAD@{now}",
-      "option_d": "HEAD+1",
+      "option_b": "--soft",
+      "option_c": "--hard",
+      "option_d": "git rm",
       "correct": "A",
       "explanation": "~1 sigue el primer padre una vez, equivalente a HEAD^ para un commit normal.",
       "learning_objective_id": "t33-lo-069",
@@ -617,14 +881,47 @@
           "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-reset — --soft",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-reset — --hard",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-rm — DESCRIPTION",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against GIT-2.50 gitrevisions — Ancestry References; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[6, 6, 6, 6]."
         },
         "explanation": {
           "status": "passed",
@@ -632,33 +929,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited GIT-2.50 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -666,13 +963,13 @@
     },
     {
       "id": 2490,
-      "stable_id": "qb-t33-070-d54c45a2fa43461737c18d3e",
+      "stable_id": "qb-t33-070-5cdfdd11058605d881c4ddc2",
       "topic_num": 33,
       "question": "¿Qué comando obtiene el nombre completo de la referencia o commit de HEAD?",
-      "option_a": "git resolve-head --pretty",
+      "option_a": "git config --unset",
       "option_b": "git rev-parse HEAD",
-      "option_c": "git name-rev --object-only HEAD",
-      "option_d": "git show-head --full-ref",
+      "option_c": "git commit --amend",
+      "option_d": "git branch feature",
       "correct": "B",
       "explanation": "rev-parse interpreta revisiones y puede imprimir el identificador resuelto de HEAD.",
       "learning_objective_id": "t33-lo-070",
@@ -689,14 +986,47 @@
           "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-config — --unset",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-commit — --amend",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-branch — DESCRIPTION",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against GIT-2.50 git-rev-parse — DESCRIPTION; expected option B."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[18, 18, 18, 18]."
         },
         "explanation": {
           "status": "passed",
@@ -704,33 +1034,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited GIT-2.50 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -738,13 +1068,13 @@
     },
     {
       "id": 2491,
-      "stable_id": "qb-t33-071-3d847378fdfec171f03921d9",
+      "stable_id": "qb-t33-071-02a9544bde97985c3c90216b",
       "topic_num": 33,
       "question": "¿Qué registran los reflogs?",
-      "option_a": "Todos los cambios de cualquier clon",
-      "option_b": "Solo objetos borrados del remoto",
+      "option_a": "La configuración local del repositorio",
+      "option_b": "Los archivos comprobados para trabajar",
       "option_c": "Actualizaciones locales de refs y HEAD",
-      "option_d": "La configuración global",
+      "option_d": "Una contraseña de autenticación remota",
       "correct": "C",
       "explanation": "Los reflogs permiten inspeccionar movimientos locales de referencias, incluido HEAD.",
       "learning_objective_id": "t33-lo-071",
@@ -761,14 +1091,47 @@
           "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-config — SCOPES",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "gitglossary — working tree",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "gitglossary — objects",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against GIT-2.50 git-reflog — DESCRIPTION; expected option C."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[38, 38, 38, 38]."
         },
         "explanation": {
           "status": "passed",
@@ -776,33 +1139,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited GIT-2.50 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -810,12 +1173,12 @@
     },
     {
       "id": 2492,
-      "stable_id": "qb-t33-072-775bd0de6792bbbde7b551a3",
+      "stable_id": "qb-t33-072-66a8da1a3abd90f804228b72",
       "topic_num": 33,
       "question": "¿Qué comando muestra las referencias existentes y sus objetos apuntados?",
-      "option_a": "git refs --objects-only",
-      "option_b": "git list-heads --all",
-      "option_c": "git cat-refs --working-tree",
+      "option_a": "Working tree",
+      "option_b": "-m/--message",
+      "option_c": "--keep-index",
       "option_d": "git show-ref",
       "correct": "D",
       "explanation": "show-ref lista referencias disponibles y los object IDs asociados.",
@@ -833,14 +1196,47 @@
           "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "gitglossary — working tree",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-stash — -m/--message",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-stash — --keep-index",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against GIT-2.50 git-show-ref — DESCRIPTION; expected option D."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[12, 12, 12, 12]."
         },
         "explanation": {
           "status": "passed",
@@ -848,33 +1244,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited GIT-2.50 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -882,13 +1278,13 @@
     },
     {
       "id": 2493,
-      "stable_id": "qb-t33-073-fb2f4fd4bb15ac8d0ac7ed5f",
+      "stable_id": "qb-t33-073-401e4e15a891ff5fb767d499",
       "topic_num": 33,
       "question": "¿Qué ocurre al crear un commit normal en una rama checkout?",
       "option_a": "La ref de la rama avanza al nuevo commit y HEAD sigue nombrándola",
-      "option_b": "HEAD se borra",
-      "option_c": "El índice se convierte en remoto",
-      "option_d": "El commit no tiene padre",
+      "option_b": "Puede eliminar la referencia aunque Git no la considere fusionada",
+      "option_c": "Porque un fast-forward no crea un commit donde insertar una pausa",
+      "option_d": "Mueve la referencia actual a la otra punta sin crear merge commit",
       "correct": "A",
       "explanation": "La rama actual se actualiza para apuntar al nuevo commit.",
       "learning_objective_id": "t33-lo-073",
@@ -905,14 +1301,47 @@
           "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-branch — -D",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-merge — --no-commit",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-merge — FAST-FORWARD MERGE",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against GIT-2.50 gitglossary — branch; git-commit — DESCRIPTION; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[65, 65, 65, 65]."
         },
         "explanation": {
           "status": "passed",
@@ -920,33 +1349,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited GIT-2.50 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -954,13 +1383,13 @@
     },
     {
       "id": 2494,
-      "stable_id": "qb-t33-074-08e9a75a52eb2bef7ff0e8f1",
+      "stable_id": "qb-t33-074-296fdbeb5304509e99e7320e",
       "topic_num": 33,
       "question": "¿Qué opción permite crear un commit sin cambios de contenido?",
-      "option_a": "--permit-no-tree",
+      "option_a": "git --version",
       "option_b": "--allow-empty",
-      "option_c": "--empty-index-only",
-      "option_d": "--no-snapshot",
+      "option_c": "git tag -d v1",
+      "option_d": "Command scope",
       "correct": "B",
       "explanation": "--allow-empty autoriza un commit cuyo tree puede ser igual al de su padre.",
       "learning_objective_id": "t33-lo-074",
@@ -977,14 +1406,47 @@
           "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git — --version",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-tag — -d/--delete",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-config — Scope",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against GIT-2.50 git-commit — --allow-empty; expected option B."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[13, 13, 13, 13]."
         },
         "explanation": {
           "status": "passed",
@@ -992,33 +1454,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited GIT-2.50 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1026,13 +1488,13 @@
     },
     {
       "id": 2495,
-      "stable_id": "qb-t33-075-bfdead7c281c60075280ef18",
+      "stable_id": "qb-t33-075-b2eb2e1720d4063f1f425b5e",
       "topic_num": 33,
       "question": "Se ejecuta amend tras haber creado un commit local que aún no se comparte. ¿Qué riesgo conceptual debe considerarse?",
-      "option_a": "Convierte el commit en un blob sin historial",
-      "option_b": "No cambia nada",
+      "option_a": "El tag anotado puede ser un objeto con metadatos; la rama es una ref que avanza",
+      "option_b": "La referencia actual avanza hasta una descendiente sin crear un commit de merge",
       "option_c": "Cambia la identidad del commit y puede invalidar referencias al commit anterior",
-      "option_d": "Solo cambia el nombre del working tree",
+      "option_d": "Reaplicar commits de una línea sobre otra base para cambiar su punto de partida",
       "correct": "C",
       "explanation": "Amend crea un nuevo commit con otro ID, por lo que referencias al anterior quedan desactualizadas.",
       "learning_objective_id": "t33-lo-075",
@@ -1049,14 +1511,47 @@
           "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "gitglossary — tag object; branch",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-merge — FAST-FORWARD MERGE",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-rebase — DESCRIPTION",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against GIT-2.50 git-commit — --amend; expected option C."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[79, 79, 79, 79]."
         },
         "explanation": {
           "status": "passed",
@@ -1064,33 +1559,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited GIT-2.50 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1098,12 +1593,12 @@
     },
     {
       "id": 2496,
-      "stable_id": "qb-t33-076-4172d1d8b15245fa701173fe",
+      "stable_id": "qb-t33-076-9c96ccf3e48e45df6ab54296",
       "topic_num": 33,
       "question": "¿Qué diferencia hay entre HEAD@{1} y HEAD~1?",
-      "option_a": "Ambas siempre designan el mismo commit",
-      "option_b": "La primera es una rama remota",
-      "option_c": "La segunda depende del reflog",
+      "option_a": "El primero registra relación con padres múltiples y el segundo solo mueve una ref",
+      "option_b": "Porque los commits recreados aún no son referencias compartidas por colaboradores",
+      "option_c": "Usar merge para integrar la historia obtenida, salvo otras opciones incompatibles",
       "option_d": "La primera usa el reflog temporal; la segunda sigue el primer padre del historial",
       "correct": "D",
       "explanation": "Son dos recorridos distintos: movimiento local de HEAD frente a ascendencia de commits.",
@@ -1121,14 +1616,47 @@
           "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-merge — TRUE MERGE; FAST-FORWARD MERGE",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-rebase — RECOVERING FROM UPSTREAM REBASE",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-pull — --no-rebase",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against GIT-2.50 gitrevisions — Reflog Identifiers; Ancestry References; expected option D."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[81, 81, 81, 81]."
         },
         "explanation": {
           "status": "passed",
@@ -1136,33 +1664,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited GIT-2.50 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1170,13 +1698,13 @@
     },
     {
       "id": 2497,
-      "stable_id": "qb-t33-077-7763a6651006efaea2dca257",
+      "stable_id": "qb-t33-077-91cc8eec750afe5b4288bd9b",
       "topic_num": 33,
       "question": "¿Qué comando inspecciona el contenido de un objeto con su tipo y tamaño?",
       "option_a": "git cat-file -p objeto",
-      "option_b": "git inspect-object --tree objeto",
-      "option_c": "git object-show --size-only objeto",
-      "option_d": "git read-object-name objeto",
+      "option_b": "git restore --staged .",
+      "option_c": "git rev-parse revisión",
+      "option_d": "git cat-file -t objeto",
       "correct": "A",
       "explanation": "cat-file permite consultar información y contenido de objetos del repositorio.",
       "learning_objective_id": "t33-lo-077",
@@ -1193,14 +1721,47 @@
           "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-restore — --staged",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-rev-parse — DESCRIPTION",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-cat-file — -t",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against GIT-2.50 git-cat-file — DESCRIPTION; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[22, 22, 22, 22]."
         },
         "explanation": {
           "status": "passed",
@@ -1208,33 +1769,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited GIT-2.50 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1242,13 +1803,13 @@
     },
     {
       "id": 2498,
-      "stable_id": "qb-t33-078-4d8c299b9d0828f85b993246",
+      "stable_id": "qb-t33-078-bda0f635b7ce9773962894d6",
       "topic_num": 33,
       "question": "Un commit se alcanza desde HEAD pero no desde la rama que el usuario esperaba. ¿Qué debe inspeccionarse primero?",
-      "option_a": "El archivo .gitignore",
+      "option_a": "git rm --cached archivo.txt",
       "option_b": "Las refs y el valor de HEAD",
-      "option_c": "Solo user.email",
-      "option_d": "El CSS del working tree",
+      "option_c": "HEAD, índice y working tree",
+      "option_d": "El contenido de un archivo",
       "correct": "B",
       "explanation": "HEAD y las refs determinan qué commits son alcanzables por cada nombre local.",
       "learning_objective_id": "t33-lo-078",
@@ -1265,14 +1826,47 @@
           "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-rm — --cached",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-status — DESCRIPTION",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "gitglossary — blob object",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against GIT-2.50 git-show-ref; gitglossary — HEAD/ref; expected option B."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[27, 27, 27, 26]."
         },
         "explanation": {
           "status": "passed",
@@ -1280,33 +1874,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited GIT-2.50 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1314,13 +1908,13 @@
     },
     {
       "id": 2499,
-      "stable_id": "qb-t33-079-81c744fd8f54fc5be662dfc4",
+      "stable_id": "qb-t33-079-7f4710ff1d85766c06cd1018",
       "topic_num": 33,
       "question": "¿Qué opción limita `git log` a cambios de una ruta concreta?",
-      "option_a": "Usar `--path-only` antes de la revisión",
-      "option_b": "Pasar la ruta a git config",
+      "option_a": "git check-ignore --verbose path",
+      "option_b": "git branch --move antiguo nuevo",
       "option_c": "Indicar `--` seguido de la ruta",
-      "option_d": "Usar `--index`",
+      "option_d": "git remote rename antiguo nuevo",
       "correct": "C",
       "explanation": "El separador -- distingue revisiones de paths y permite limitar el historial a la ruta posterior.",
       "learning_objective_id": "t33-lo-079",
@@ -1337,14 +1931,47 @@
           "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-check-ignore — --verbose",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-branch — -m/--move",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-remote — rename",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against GIT-2.50 git-log — Limiting Commit History; expected option C."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[31, 31, 31, 31]."
         },
         "explanation": {
           "status": "passed",
@@ -1352,33 +1979,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited GIT-2.50 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1386,12 +2013,12 @@
     },
     {
       "id": 2500,
-      "stable_id": "qb-t33-080-46cf4f90d1db79a8bb4369fd",
+      "stable_id": "qb-t33-080-1e326729b65d82a53fdcc959",
       "topic_num": 33,
       "question": "¿Por qué un reflog no debe tratarse como historial compartido del repositorio?",
-      "option_a": "Porque contiene solo blobs",
-      "option_b": "Porque siempre es público",
-      "option_c": "Porque reemplaza a las ramas",
+      "option_a": "La variante pop intenta aplicar y después elimina la entrada si la aplicación termina correctamente",
+      "option_b": "Porque permite revisar la historia obtenida y elegir merge, rebase u otra acción de forma explícita",
+      "option_c": "Una opción adicional para hooks o lógica de recepción que el servidor haya configurado para aceptar",
       "option_d": "Porque registra movimientos locales y no se transporta como parte normal de la historia compartida",
       "correct": "D",
       "explanation": "Los reflogs son datos locales de referencia y su retención y disponibilidad dependen del repositorio local.",
@@ -1409,14 +2036,47 @@
           "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-stash — pop",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-fetch — DESCRIPTION; git-pull — DESCRIPTION",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "GIT-2.50",
+          "title": "Git reference and Pro Git",
+          "authority": "Git project",
+          "tier": "official_primary",
+          "url": "https://git-scm.com/docs",
+          "citation": "git-push — --push-option",
+          "version_or_as_of": "Git 2.50.1 installed in the validation environment; commands must record version",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against GIT-2.50 git-reflog — DESCRIPTION; expected option D."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[99, 99, 99, 98]."
         },
         "explanation": {
           "status": "passed",
@@ -1424,37 +2084,38 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited GIT-2.50 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
       "status": "validated"
     }
-  ]
+  ],
+  "answer_length_balance_audit": "docs/question-bank/answer-length-balance-audit.json"
 }

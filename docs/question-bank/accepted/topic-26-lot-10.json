@@ -3,7 +3,7 @@
   "state": "reviewed",
   "topic_num": 26,
   "lot_num": 10,
-  "revision": 2,
+  "revision": 3,
   "reviewed_at": "2026-10-15",
   "source_register_sha256": "72d2734b05f0fab4049c12fba8d136c40b697f9e23616e084fdda10944bda146",
   "objective_manifest_sha256": "b2e3f23bbb1a5892f96c3bcf1e15f43c688be30e5ea1bb32aa1f4bea93e6a04e",
@@ -18,13 +18,13 @@
   "questions": [
     {
       "id": 4361,
-      "stable_id": "qb-t26-181-b92fe4fcaa4272026ef26974",
+      "stable_id": "qb-t26-181-a06dd263644aa18de1142515",
       "topic_num": 26,
       "question": "Una app con SEO y panel interactivo necesita ambos comportamientos. ¿Qué diseño valorar?",
       "option_a": "Contenido Static/prerender y panel con modo interactivo",
-      "option_b": "Todo WebAssembly sin HTML inicial",
-      "option_c": "Todo Static sin panel",
-      "option_d": "Solo Hybrid",
+      "option_b": "Dónde ejecutar lógica y cómo gestionar conexión/payload",
+      "option_c": "El primero ejecuta en servidor; el segundo en navegador",
+      "option_d": "La necesidad de diseñar componentes y estado coherentes",
       "correct": "A",
       "explanation": "Los modos permiten separar contenido y panel.",
       "learning_objective_id": "t26-lo-181",
@@ -41,14 +41,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Blazor hosting models — comparison",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Blazor render modes — comparison",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Blazor render modes — component design",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Rechecked against BLAZOR-10 Blazor render modes — mixed rendering; expected option A after revision 2 option-order audit."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[55, 55, 55, 55]."
         },
         "explanation": {
           "status": "passed",
@@ -56,33 +89,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation rechecked against the cited BLAZOR-10 source and recorded version during revision 2 audit."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -90,13 +123,13 @@
     },
     {
       "id": 4362,
-      "stable_id": "qb-t26-182-8b59e5602a05e6dd507eb160",
+      "stable_id": "qb-t26-182-44102fb252942dada1f4a5c8",
       "topic_num": 26,
       "question": "Una app de administración interna prioriza acceso server y bajo payload cliente. ¿Qué modo puede encajar?",
-      "option_a": "Static únicamente",
+      "option_a": "[StreamRendering]",
       "option_b": "InteractiveServer",
-      "option_c": "WebAssembly standalone siempre",
-      "option_d": "PWA sin backend",
+      "option_c": "Llamar a Recover.",
+      "option_d": "Usar @bind-Value.",
       "correct": "B",
       "explanation": "Server mantiene lógica y reduce descarga cliente.",
       "learning_objective_id": "t26-lo-182",
@@ -113,14 +146,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor rendering",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/rendering?view=aspnetcore-10.0",
+          "citation": "Streaming rendering — StreamRendering attribute",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-15",
+          "verified_at": "2026-10-15"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Handle errors",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Input components and forms",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Rechecked against BLAZOR-10 Blazor hosting models — InteractiveServer; expected option B after revision 2 option-order audit."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[17, 17, 17, 17]."
         },
         "explanation": {
           "status": "passed",
@@ -128,33 +194,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation rechecked against the cited BLAZOR-10 source and recorded version during revision 2 audit."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -162,13 +228,13 @@
     },
     {
       "id": 4363,
-      "stable_id": "qb-t26-183-723021d6240857c6c372d3e2",
+      "stable_id": "qb-t26-183-45f710983acb435077840d1e",
       "topic_num": 26,
       "question": "Una app pública debe funcionar con CDN y API separada. ¿Qué modelo cliente valorar?",
-      "option_a": "Blazor Server sin servidor",
-      "option_b": "Hybrid obligatorio",
+      "option_a": "En un componente raíz para heredarlo a descendientes",
+      "option_b": "El binding añade un canal de cambio además del valor",
       "option_c": "WebAssembly standalone con backend API independiente",
-      "option_d": "Static sin cliente",
+      "option_d": "Leer y asignar mediante la forma de binding admitida",
       "correct": "C",
       "explanation": "Standalone se sirve como assets y puede llamar API separada.",
       "learning_objective_id": "t26-lo-183",
@@ -185,14 +251,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Blazor render modes — render mode inheritance",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Data binding — component binding",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Data binding — @bind",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Rechecked against BLAZOR-10 Blazor hosting models — standalone deployment; expected option C after revision 2 option-order audit."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[52, 52, 52, 52]."
         },
         "explanation": {
           "status": "passed",
@@ -200,33 +299,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation rechecked against the cited BLAZOR-10 source and recorded version during revision 2 audit."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -234,12 +333,12 @@
     },
     {
       "id": 4364,
-      "stable_id": "qb-t26-184-2fc5b1763829e271c5a634e9",
+      "stable_id": "qb-t26-184-d70712c455bf047eebbb43bf",
       "topic_num": 26,
       "question": "Un equipo necesita compartir DTOs entre cliente y API. ¿Qué modelo facilita esa organización?",
-      "option_a": "Static sin backend",
-      "option_b": "CSS isolation",
-      "option_c": "InteractiveServer sin cliente",
+      "option_a": "HTML inicial antes de activar interactividad",
+      "option_b": "El nombre proporcionado y el nombre esperado",
+      "option_c": "Evita la acción predeterminada del navegador",
       "option_d": "WebAssembly hosted con biblioteca compartida",
       "correct": "D",
       "explanation": "Hosted permite compartir código cliente/servidor.",
@@ -257,14 +356,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Blazor render modes — prerendering",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Cascading values and parameters — named cascades",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Event handling — preventDefault",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Rechecked against BLAZOR-10 Blazor hosting models — hosted model; expected option D after revision 2 option-order audit."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[44, 44, 44, 44]."
         },
         "explanation": {
           "status": "passed",
@@ -272,33 +404,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation rechecked against the cited BLAZOR-10 source and recorded version during revision 2 audit."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -306,13 +438,13 @@
     },
     {
       "id": 4365,
-      "stable_id": "qb-t26-185-f852f513152c2b4dbceb2732",
+      "stable_id": "qb-t26-185-7f15d1ed3440fb591ce0dab8",
       "topic_num": 26,
       "question": "Una operación de servidor se llama desde WebAssembly. ¿Qué frontera debe existir?",
       "option_a": "Una API o endpoint de backend",
-      "option_b": "Una cascada de UI",
-      "option_c": "Un RenderFragment",
-      "option_d": "Una key",
+      "option_b": "El subárbol bajo el proveedor",
+      "option_c": "Usar @implements IDisposable.",
+      "option_d": "Implementar IAsyncDisposable.",
       "correct": "A",
       "explanation": "El cliente se comunica con servidor mediante API.",
       "learning_objective_id": "t26-lo-185",
@@ -329,14 +461,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Cascading values and parameters — scope",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Dispose pattern",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Rechecked against BLAZOR-10 Blazor hosting models — Web API; expected option A after revision 2 option-order audit."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[29, 29, 29, 29]."
         },
         "explanation": {
           "status": "passed",
@@ -344,33 +498,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation rechecked against the cited BLAZOR-10 source and recorded version during revision 2 audit."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -378,13 +532,13 @@
     },
     {
       "id": 4366,
-      "stable_id": "qb-t26-186-e978e5902f9ada237eb52337",
+      "stable_id": "qb-t26-186-0db966079b8b45d96d8efd1e",
       "topic_num": 26,
       "question": "Un componente funciona en prerender pero falla al activar cliente por estado no serializable. ¿Qué revisar?",
-      "option_a": "El CSS global",
+      "option_a": "Elegir interactividad para diferentes partes del árbol",
       "option_b": "Datos/parámetros compatibles con el límite entre fases",
-      "option_c": "El nombre del proyecto",
-      "option_d": "Solo la key",
+      "option_c": "Un manejador asíncrono de eventos puede devolver Task.",
+      "option_d": "Proporcionar parámetros, contenido y callbacks al hijo",
       "correct": "B",
       "explanation": "Las fases pueden requerir datos transferibles/compatibles.",
       "learning_objective_id": "t26-lo-186",
@@ -401,14 +555,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Blazor render modes — Blazor Web App",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "ASP.NET Core Blazor event handling",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Components — component composition",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Rechecked against BLAZOR-10 Blazor render modes — prerendering; expected option B after revision 2 option-order audit."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[54, 54, 54, 54]."
         },
         "explanation": {
           "status": "passed",
@@ -416,33 +603,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation rechecked against the cited BLAZOR-10 source and recorded version during revision 2 audit."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -450,13 +637,13 @@
     },
     {
       "id": 4367,
-      "stable_id": "qb-t26-187-c40a39b8b15d000a22a28fa9",
+      "stable_id": "qb-t26-187-e3f16884269a926703f4c6ce",
       "topic_num": 26,
       "question": "Una organización no quiere conexión persistente para contenido estático. ¿Qué modo evita interactividad?",
-      "option_a": "InteractiveServer",
-      "option_b": "InteractiveAuto",
+      "option_a": "::deep",
+      "option_b": "@bind",
       "option_c": "Static",
-      "option_d": "InteractiveWebAssembly",
+      "option_d": "Range",
       "correct": "C",
       "explanation": "Static no mantiene conexión interactiva.",
       "learning_objective_id": "t26-lo-187",
@@ -473,14 +660,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "CSS isolation — ::deep",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Data binding — @bind",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Validation — data annotations",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Rechecked against BLAZOR-10 Blazor render modes — Static; expected option C after revision 2 option-order audit."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[6, 5, 6, 5]."
         },
         "explanation": {
           "status": "passed",
@@ -488,33 +708,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation rechecked against the cited BLAZOR-10 source and recorded version during revision 2 audit."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -522,12 +742,12 @@
     },
     {
       "id": 4368,
-      "stable_id": "qb-t26-188-538081281a3264b8cd618854",
+      "stable_id": "qb-t26-188-056deb3b5bbc7492aa43a2c8",
       "topic_num": 26,
       "question": "Una aplicación necesita una API nativa en escritorio pero UI Razor compartida. ¿Qué elegir?",
-      "option_a": "WebAssembly standalone",
-      "option_b": "InteractiveServer",
-      "option_c": "Static CDN",
+      "option_a": "OnInitialized",
+      "option_b": "OnAfterRender",
+      "option_c": "ErrorBoundary",
       "option_d": "Blazor Hybrid",
       "correct": "D",
       "explanation": "Hybrid combina UI Razor y plataforma nativa.",
@@ -545,14 +765,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Lifecycle — initialization",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Lifecycle — after-render callbacks",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Lifecycle — error handling",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Rechecked against BLAZOR-10 Blazor hosting models — Hybrid; expected option D after revision 2 option-order audit."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[13, 13, 13, 13]."
         },
         "explanation": {
           "status": "passed",
@@ -560,33 +813,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation rechecked against the cited BLAZOR-10 source and recorded version during revision 2 audit."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -594,13 +847,13 @@
     },
     {
       "id": 4369,
-      "stable_id": "qb-t26-189-576b39cf5267371f973755ca",
+      "stable_id": "qb-t26-189-e060a0feb6bf2caf043626ae",
       "topic_num": 26,
       "question": "Una aplicación server escala horizontalmente y mantiene circuitos. ¿Qué servicio puede apoyar la conectividad?",
       "option_a": "Azure SignalR Service",
-      "option_b": "Static file server",
-      "option_c": "WebAssembly runtime",
-      "option_d": "CSS compiler",
+      "option_b": "EventCallback<TValue>",
+      "option_c": "RenderFragment<TItem>",
+      "option_d": "Usar OnInvalidSubmit.",
       "correct": "A",
       "explanation": "Azure SignalR ayuda a gestionar conexiones.",
       "learning_objective_id": "t26-lo-189",
@@ -617,14 +870,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Event handling — typed callbacks",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Templated components — RenderFragment<TValue>",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Handle form submission",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Rechecked against BLAZOR-10 Blazor hosting models — Azure SignalR Service; expected option A after revision 2 option-order audit."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[21, 21, 21, 21]."
         },
         "explanation": {
           "status": "passed",
@@ -632,33 +918,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation rechecked against the cited BLAZOR-10 source and recorded version during revision 2 audit."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -666,13 +952,13 @@
     },
     {
       "id": 4370,
-      "stable_id": "qb-t26-190-1e41ba40ddd0d9c5d05ac587",
+      "stable_id": "qb-t26-190-e087f33ddee5a8fc9ccfe6b9",
       "topic_num": 26,
       "question": "Una UI tiene un botón pero usa Static. ¿Qué resultado esperar?",
-      "option_a": "El botón siempre ejecuta en servidor",
+      "option_a": "Desactivar prerendering es distinto de desactivar la interactividad.",
       "option_b": "El botón no tiene interactividad de componente activada por ese modo",
-      "option_c": "El botón descarga runtime",
-      "option_d": "El botón crea circuito",
+      "option_c": "ShouldRender puede controlar si se produce un renderizado posterior.",
+      "option_d": "El contenido ChildContent puede incluir marcado y componentes hijos.",
       "correct": "B",
       "explanation": "Static genera markup sin interacción.",
       "learning_objective_id": "t26-lo-190",
@@ -689,14 +975,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "ASP.NET Core Blazor render modes",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "ASP.NET Core Razor component lifecycle",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "ASP.NET Core Blazor templated components",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Rechecked against BLAZOR-10 Blazor render modes — Static; expected option B after revision 2 option-order audit."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[68, 68, 68, 68]."
         },
         "explanation": {
           "status": "passed",
@@ -704,33 +1023,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation rechecked against the cited BLAZOR-10 source and recorded version during revision 2 audit."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -738,13 +1057,13 @@
     },
     {
       "id": 4371,
-      "stable_id": "qb-t26-191-ec95f8366ea96f32b1b14ba2",
+      "stable_id": "qb-t26-191-d0c9420dfc70837a29413e3c",
       "topic_num": 26,
       "question": "Una UI usa InteractiveWebAssembly pero el payload es muy grande. ¿Qué optimización es relevante?",
-      "option_a": "Añadir circuitos",
-      "option_b": "Activar CSS global",
+      "option_a": "Reconexión y comportamiento del circuito",
+      "option_b": "No ofrece binding bidireccional completo",
       "option_c": "Reducir dependencias y payload publicado",
-      "option_d": "Cambiar a Hybrid sin evaluar",
+      "option_d": "Incorporarlo a los selectores generados.",
       "correct": "C",
       "explanation": "El payload afecta rendimiento inicial.",
       "learning_objective_id": "t26-lo-191",
@@ -761,14 +1080,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Blazor hosting models — reconnection",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Data binding — component binding",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "CSS isolation bundling",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Rechecked against BLAZOR-10 Blazor hosting models — WebAssembly payload; expected option C after revision 2 option-order audit."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[40, 40, 40, 40]."
         },
         "explanation": {
           "status": "passed",
@@ -776,33 +1128,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation rechecked against the cited BLAZOR-10 source and recorded version during revision 2 audit."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -810,12 +1162,12 @@
     },
     {
       "id": 4372,
-      "stable_id": "qb-t26-192-fe61e4f92859c036aab0eed1",
+      "stable_id": "qb-t26-192-95d2c3adc94edd5d90484741",
       "topic_num": 26,
       "question": "¿Qué debe documentar un componente reusable multi-hosting?",
-      "option_a": "Solo el nombre del archivo",
-      "option_b": "Solo el color",
-      "option_c": "Solo el número de parámetros",
+      "option_a": "Escalabilidad de conexiones y estado de Blazor Server",
+      "option_b": "WebAssembly cliente llamando API sin exponer secretos",
+      "option_c": "Un tipo array que contenga los valores seleccionados.",
       "option_d": "Qué APIs de host requiere y qué parte es lógica común",
       "correct": "D",
       "explanation": "Los contratos de host evitan supuestos incorrectos.",
@@ -833,14 +1185,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Blazor hosting models — scaling",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Blazor hosting models — WebAssembly client",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor data binding",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/data-binding?view=aspnetcore-10.0",
+          "citation": "Multiple option selection with select elements",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-15",
+          "verified_at": "2026-10-15"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Rechecked against BLAZOR-10 Blazor hosting models — common component model; expected option D after revision 2 option-order audit."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[53, 53, 53, 53]."
         },
         "explanation": {
           "status": "passed",
@@ -848,33 +1233,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation rechecked against the cited BLAZOR-10 source and recorded version during revision 2 audit."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -882,13 +1267,13 @@
     },
     {
       "id": 4373,
-      "stable_id": "qb-t26-193-7eb92844c16f5a37d5795970",
+      "stable_id": "qb-t26-193-81c5bf02e2e0c1073fb6cdd0",
       "topic_num": 26,
       "question": "¿Qué relación existe entre @rendermode y circuito?",
       "option_a": "Un modo server interactivo puede crear/usar circuito; Static no",
-      "option_b": "Todos los modos crean circuito",
-      "option_c": "@rendermode solo cambia CSS",
-      "option_d": "Circuito solo existe en Hybrid",
+      "option_b": "El código cliente y sus recursos se descargan y no son secretos",
+      "option_c": "Dependencias implícitas y actualizaciones difíciles de rastrear",
+      "option_d": "No reasignar continuamente el mismo valor desde la notificación",
       "correct": "A",
       "explanation": "El circuito es propio de interacción server.",
       "learning_objective_id": "t26-lo-193",
@@ -905,14 +1290,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Blazor hosting models — WebAssembly client",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Cascading values and parameters — design considerations",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Data binding — component binding",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Rechecked against BLAZOR-10 Blazor render modes — InteractiveServer and circuits; expected option A after revision 2 option-order audit."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[63, 63, 63, 63]."
         },
         "explanation": {
           "status": "passed",
@@ -920,33 +1338,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation rechecked against the cited BLAZOR-10 source and recorded version during revision 2 audit."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -954,13 +1372,13 @@
     },
     {
       "id": 4374,
-      "stable_id": "qb-t26-194-4c0b2196c99d6f9794410523",
+      "stable_id": "qb-t26-194-2fa73d17fa970550fe16c36f",
       "topic_num": 26,
       "question": "Una app quiere comenzar server y usar cliente cuando esté descargado. ¿Qué modo expresa la intención?",
-      "option_a": "Static",
+      "option_a": "ChangeEventArgs",
       "option_b": "InteractiveAuto",
-      "option_c": "InteractiveServer únicamente",
-      "option_d": "InteractiveWebAssembly sin fallback",
+      "option_c": "Con InvokeAsync",
+      "option_d": "stopPropagation",
       "correct": "B",
       "explanation": "Auto permite la transición.",
       "learning_objective_id": "t26-lo-194",
@@ -977,14 +1395,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Event handling — event arguments",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Event handling — EventCallback invocation",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Event handling — stopPropagation",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Rechecked against BLAZOR-10 Blazor render modes — InteractiveAuto; expected option B after revision 2 option-order audit."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[15, 15, 15, 15]."
         },
         "explanation": {
           "status": "passed",
@@ -992,33 +1443,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation rechecked against the cited BLAZOR-10 source and recorded version during revision 2 audit."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1026,13 +1477,13 @@
     },
     {
       "id": 4375,
-      "stable_id": "qb-t26-195-742df877ed92f4d8f3686a07",
+      "stable_id": "qb-t26-195-336a4f94342bdb5cf96399bd",
       "topic_num": 26,
       "question": "¿Qué debe evitarse en lógica ejecutada en WebAssembly?",
-      "option_a": "Usar componentes Razor",
-      "option_b": "Usar binding",
+      "option_a": "Estado de circuito y afinidad/gestión de conexión",
+      "option_b": "Se establece otro circuito asociado a esa pestaña",
       "option_c": "Asumir que secretos del servidor están protegidos",
-      "option_d": "Servir assets",
+      "option_d": "Notificar ValueChanged cuando cambia internamente",
       "correct": "C",
       "explanation": "El cliente no es un lugar secreto.",
       "learning_objective_id": "t26-lo-195",
@@ -1049,14 +1500,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Blazor hosting models — circuit state",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Blazor hosting models — circuits",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Data binding — component binding",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Rechecked against BLAZOR-10 Blazor hosting models — WebAssembly client; expected option C after revision 2 option-order audit."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[49, 49, 49, 49]."
         },
         "explanation": {
           "status": "passed",
@@ -1064,33 +1548,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation rechecked against the cited BLAZOR-10 source and recorded version during revision 2 audit."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1098,12 +1582,12 @@
     },
     {
       "id": 4376,
-      "stable_id": "qb-t26-196-e352bb13cfdf1beea6967dad",
+      "stable_id": "qb-t26-196-84f99525d556e05ce19eb894",
       "topic_num": 26,
       "question": "Una página necesita HTML antes de que cargue el runtime cliente. ¿Qué técnica usar?",
-      "option_a": "Solo InteractiveWebAssembly sin prerender",
-      "option_b": "Dispose",
-      "option_c": "@key",
+      "option_a": "IsFixed=true",
+      "option_b": "StringLength",
+      "option_c": "@rendermode",
       "option_d": "Prerendering",
       "correct": "D",
       "explanation": "Prerender produce HTML inicial.",
@@ -1121,14 +1605,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Cascading values and parameters — IsFixed",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Validation — data annotations",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Blazor render modes — @rendermode",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Rechecked against BLAZOR-10 Blazor render modes — prerendering; expected option D after revision 2 option-order audit."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[12, 12, 11, 12]."
         },
         "explanation": {
           "status": "passed",
@@ -1136,33 +1653,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation rechecked against the cited BLAZOR-10 source and recorded version during revision 2 audit."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1170,13 +1687,13 @@
     },
     {
       "id": 4377,
-      "stable_id": "qb-t26-197-13193327e338c686eacb47f5",
+      "stable_id": "qb-t26-197-7b37d7fc8dd8e35cbfe085dc",
       "topic_num": 26,
       "question": "¿Qué combinación minimiza un error de browser API durante prerender?",
       "option_a": "Diferirla hasta una fase interactiva después del render",
-      "option_b": "Ejecutarla en constructor",
-      "option_c": "Ponerla en Static",
-      "option_d": "Usarla durante cualquier lifecycle",
+      "option_b": "Dónde ejecutar lógica y cómo gestionar conexión/payload",
+      "option_c": "El primero ejecuta en servidor; el segundo en navegador",
+      "option_d": "La necesidad de diseñar componentes y estado coherentes",
       "correct": "A",
       "explanation": "Las APIs browser requieren disponibilidad cliente.",
       "learning_objective_id": "t26-lo-197",
@@ -1193,14 +1710,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Blazor hosting models — comparison",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Blazor render modes — comparison",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Blazor render modes — component design",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Rechecked against BLAZOR-10 Blazor render modes — prerendering; expected option A after revision 2 option-order audit."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[55, 55, 55, 55]."
         },
         "explanation": {
           "status": "passed",
@@ -1208,33 +1758,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation rechecked against the cited BLAZOR-10 source and recorded version during revision 2 audit."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1242,13 +1792,13 @@
     },
     {
       "id": 4378,
-      "stable_id": "qb-t26-198-ea35c9c37a11ac5b58255d59",
+      "stable_id": "qb-t26-198-71dbf5e1c4728780ad6598a0",
       "topic_num": 26,
       "question": "¿Qué arquitectura mantiene datos sensibles en servidor con UI cliente?",
-      "option_a": "Enviar secretos en payload",
+      "option_a": "Escalabilidad de conexiones y estado de Blazor Server",
       "option_b": "WebAssembly cliente llamando API sin exponer secretos",
-      "option_c": "Guardar secretos en localStorage",
-      "option_d": "Publicar connection string",
+      "option_c": "Qué APIs de host requiere y qué parte es lógica común",
+      "option_d": "Un tipo array que contenga los valores seleccionados.",
       "correct": "B",
       "explanation": "El servidor protege datos y el cliente usa una API controlada.",
       "learning_objective_id": "t26-lo-198",
@@ -1265,14 +1815,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Blazor hosting models — scaling",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Blazor hosting models — common component model",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor data binding",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/data-binding?view=aspnetcore-10.0",
+          "citation": "Multiple option selection with select elements",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-15",
+          "verified_at": "2026-10-15"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Rechecked against BLAZOR-10 Blazor hosting models — WebAssembly client; expected option B after revision 2 option-order audit."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[53, 53, 53, 53]."
         },
         "explanation": {
           "status": "passed",
@@ -1280,33 +1863,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation rechecked against the cited BLAZOR-10 source and recorded version during revision 2 audit."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1314,13 +1897,13 @@
     },
     {
       "id": 4379,
-      "stable_id": "qb-t26-199-5c174623f3fd92804d96895a",
+      "stable_id": "qb-t26-199-75a95b7dc91b4914daebbc17",
       "topic_num": 26,
       "question": "¿Qué debe probarse al cambiar de InteractiveServer a WebAssembly?",
-      "option_a": "Solo el texto del botón",
-      "option_b": "Solo CSS",
+      "option_a": "APIs disponibles, ubicación de ejecución, conexión y payload",
+      "option_b": "El método Dispose permite liberar recursos de un componente.",
       "option_c": "APIs disponibles, estado, serialización, payload y seguridad",
-      "option_d": "Solo nombre de ruta",
+      "option_d": "ShouldRender no impide el primer renderizado del componente.",
       "correct": "C",
       "explanation": "Cambiar ubicación de ejecución cambia restricciones.",
       "learning_objective_id": "t26-lo-199",
@@ -1337,14 +1920,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Blazor render modes — selecting a mode",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "ASP.NET Core Razor component lifecycle",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "ASP.NET Core Blazor rendering",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Rechecked against BLAZOR-10 Blazor render modes — choosing a mode; expected option C after revision 2 option-order audit."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[60, 60, 60, 60]."
         },
         "explanation": {
           "status": "passed",
@@ -1352,33 +1968,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation rechecked against the cited BLAZOR-10 source and recorded version during revision 2 audit."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1386,12 +2002,12 @@
     },
     {
       "id": 4380,
-      "stable_id": "qb-t26-200-0c4c9be49b3064da76590004",
+      "stable_id": "qb-t26-200-9abf7aeed747989f803b8504",
       "topic_num": 26,
       "question": "¿Qué resumen describe una decisión de hosting sólida?",
-      "option_a": "Elegir por defecto Server sin análisis",
-      "option_b": "Elegir WebAssembly para secretos",
-      "option_c": "Desactivar prerender siempre",
+      "option_a": "Una aplicación standalone WebAssembly puede alojarse en un servidor de archivos estáticos.",
+      "option_b": "El archivo de configuración del proyecto determina el SDK y referencias usadas por Blazor.",
+      "option_c": "Los modificadores @on{event}:preventDefault evitan la acción predeterminada del navegador.",
       "option_d": "Seleccionar hosting y render mode según UX, conexión, escalado, payload y confidencialidad",
       "correct": "D",
       "explanation": "La decisión debe considerar los tradeoffs oficiales.",
@@ -1409,14 +2025,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "ASP.NET Core Blazor hosting models",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "ASP.NET Core Blazor project structure",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "ASP.NET Core Blazor event handling",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Rechecked against BLAZOR-10 Blazor hosting models; render modes; expected option D after revision 2 option-order audit."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[90, 90, 90, 90]."
         },
         "explanation": {
           "status": "passed",
@@ -1424,37 +2073,38 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation rechecked against the cited BLAZOR-10 source and recorded version during revision 2 audit."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
       "status": "validated"
     }
-  ]
+  ],
+  "answer_length_balance_audit": "docs/question-bank/answer-length-balance-audit.json"
 }

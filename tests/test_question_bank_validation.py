@@ -13,6 +13,9 @@ from question_bank.checkpoints import (
     append_checkpoint,
     load_checkpoints,
 )
+from question_bank.answer_balance import (
+    answer_length_leakage_errors,
+)
 from question_bank.validation import (
     answer_leakage_errors,
     screen_duplicates,
@@ -191,14 +194,35 @@ class RuntimeQuestionBankTests(unittest.TestCase):
             len({fingerprint(question) for question in runtime}), len(runtime)
         )
 
+    def test_runtime_choices_do_not_leak_correctness_by_length(self):
+        artifact = (ROOT / "frontend/src/questions.js").read_text(encoding="utf-8")
+        runtime = json.loads(artifact[artifact.index("[") :])
+        audit = json.loads(
+            (ROOT / "docs/question-bank/answer-length-balance-audit.json").read_text(
+                encoding="utf-8"
+            )
+        )
+
+        self.assertEqual(audit["correct_answers_changed"], 0)
+        self.assertTrue(
+            all(
+                entry["correct_before"] == entry["correct_after"]
+                and entry["correct_text_before"] == entry["correct_text_after"]
+                for entry in audit["entries"]
+            )
+        )
+        self.assertGreater(audit["summary"]["before"]["runtime"]["leakage_errors"], 0)
+        self.assertEqual(audit["summary"]["after"]["runtime"]["leakage_errors"], 0)
+        self.assertTrue(all(not answer_length_leakage_errors(record) for record in runtime))
+        self.assertTrue(all(record["correct"] in "ABCD" for record in runtime))
+
     def test_topic26_expansion_is_complete_balanced_and_validated(self):
         records = []
         for lot_num in range(1, 11):
             path = ROOT / f"docs/question-bank/accepted/topic-26-lot-{lot_num:02d}.json"
             payload = json.loads(path.read_text(encoding="utf-8"))
             records.extend(payload["questions"])
-            if lot_num >= 6:
-                self.assertEqual(payload["revision"], 2)
+            self.assertEqual(payload["revision"], 3 if lot_num >= 6 else 2)
         self.assertEqual(len(records), 200)
         self.assertEqual(
             Counter(record["correct"] for record in records),

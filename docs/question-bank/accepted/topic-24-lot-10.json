@@ -3,7 +3,7 @@
   "state": "reviewed",
   "topic_num": 24,
   "lot_num": 10,
-  "revision": 1,
+  "revision": 2,
   "reviewed_at": "2026-10-13",
   "source_register_sha256": "72d2734b05f0fab4049c12fba8d136c40b697f9e23616e084fdda10944bda146",
   "objective_manifest_sha256": "477cae96d7cc824168a351527c3afcfa160cbf5f92b17994680cb2bc139419c9",
@@ -18,13 +18,13 @@
   "questions": [
     {
       "id": 4561,
-      "stable_id": "qb-t24-181-0b8ae33183f460bda58f924e",
+      "stable_id": "qb-t24-181-2552b9a36f86982a251c949a",
       "topic_num": 24,
       "question": "¿Qué debe definir un API controller para una operación de colección?",
       "option_a": "Ruta y atributo HTTP coherentes con el recurso",
-      "option_b": "Solo un ViewName",
-      "option_c": "Solo un header",
-      "option_d": "Solo un formatter",
+      "option_b": "La forma de la URL que coincide con una acción",
+      "option_c": "Describir y explorar el contrato HTTP de la API",
+      "option_d": "Definir ruta base usando token de controlador",
       "correct": "A",
       "explanation": "Ruta y verbo forman la operación.",
       "learning_objective_id": "t24-lo-181",
@@ -41,14 +41,25 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "ASP.NET Core web API documentation with Swagger / OpenAPI",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ASPNET-WEBAPI-10 Routing to controller actions in ASP.NET Core — route templates; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[46, 46, 47, 45]."
         },
         "explanation": {
           "status": "passed",
@@ -56,33 +67,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ASPNET-WEBAPI-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -90,13 +101,13 @@
     },
     {
       "id": 4562,
-      "stable_id": "qb-t24-182-ef5b78c5d1d519b73489d173",
+      "stable_id": "qb-t24-182-cb40a7ddbfe8edb4f5e2213a",
       "topic_num": 24,
       "question": "¿Qué debe definir una operación de recurso por id?",
       "option_a": "Ruta con parámetro y binding desde route",
-      "option_b": "Solo FromBody",
-      "option_c": "Solo Accept",
-      "option_d": "Solo ProblemDetails",
+      "option_b": "El tipo/valor y negociación de contenido",
+      "option_c": "Explorar y probar endpoints documentados",
+      "option_d": "Input formatter y tipo/modelo de entrada",
       "correct": "A",
       "explanation": "El id pertenece a la ruta.",
       "learning_objective_id": "t24-lo-182",
@@ -113,14 +124,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core — Content negotiation",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "ASP.NET Core web API documentation with Swagger / OpenAPI — Swagger UI",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core — Formatters",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ASPNET-WEBAPI-10 Create web APIs with ASP.NET Core — binding sources; Routing; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[40, 40, 40, 40]."
         },
         "explanation": {
           "status": "passed",
@@ -128,33 +172,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ASPNET-WEBAPI-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -162,13 +206,13 @@
     },
     {
       "id": 4563,
-      "stable_id": "qb-t24-183-ddf598ded2397c2a18f56859",
+      "stable_id": "qb-t24-183-16b6b573d4dd8c3f1b491897",
       "topic_num": 24,
       "question": "¿Qué header describe el cuerpo que un cliente envía?",
       "option_a": "Content-Type",
-      "option_b": "Accept",
-      "option_c": "Location",
-      "option_d": "Allow",
+      "option_b": "[controller]",
+      "option_c": "[FromHeader]",
+      "option_d": "FromServices",
       "correct": "A",
       "explanation": "Content-Type describe media type de entrada.",
       "learning_objective_id": "t24-lo-183",
@@ -185,14 +229,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Routing to controller actions in ASP.NET Core — route tokens",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core — binding source attributes",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ASPNET-WEBAPI-10 Create web APIs with ASP.NET Core — Content negotiation; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[12, 12, 12, 12]."
         },
         "explanation": {
           "status": "passed",
@@ -200,33 +266,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ASPNET-WEBAPI-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -234,13 +300,13 @@
     },
     {
       "id": 4564,
-      "stable_id": "qb-t24-184-a8ee449189259ed9c12dfe3c",
+      "stable_id": "qb-t24-184-45cc1708147ce958624b9a39",
       "topic_num": 24,
       "question": "¿Qué header expresa qué respuesta prefiere el cliente?",
       "option_a": "Accept",
-      "option_b": "Content-Type",
-      "option_c": "Route",
-      "option_d": "FromBody",
+      "option_b": "JSON",
+      "option_c": "[action]",
+      "option_d": "NotFound",
       "correct": "A",
       "explanation": "Accept comunica preferencias de salida.",
       "learning_objective_id": "t24-lo-184",
@@ -257,14 +323,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core — Formatters",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Routing to controller actions in ASP.NET Core — route tokens",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core — Controller action return types",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ASPNET-WEBAPI-10 Create web APIs with ASP.NET Core — Content negotiation; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[6, 4, 8, 8]."
         },
         "explanation": {
           "status": "passed",
@@ -272,33 +371,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ASPNET-WEBAPI-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -306,13 +405,13 @@
     },
     {
       "id": 4565,
-      "stable_id": "qb-t24-185-5f5464b788f184d98cdf9266",
+      "stable_id": "qb-t24-185-48604639bcdcef1f5ffc6656",
       "topic_num": 24,
       "question": "¿Qué componente transforma JSON entrante en DTO?",
       "option_a": "Input formatter",
-      "option_b": "Output formatter",
-      "option_c": "Swagger UI",
-      "option_d": "Route handler only",
+      "option_b": "ActionResult<T>",
+      "option_c": "[ApiController]",
+      "option_d": "CreatedAtAction",
       "correct": "A",
       "explanation": "Input formatter deserializa.",
       "learning_objective_id": "t24-lo-185",
@@ -329,14 +428,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Controller action return types in ASP.NET Core web API",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core — ApiController",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core — Controller action return types",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ASPNET-WEBAPI-10 Create web APIs with ASP.NET Core — Formatters; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[15, 15, 15, 15]."
         },
         "explanation": {
           "status": "passed",
@@ -344,33 +476,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ASPNET-WEBAPI-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -378,13 +510,13 @@
     },
     {
       "id": 4566,
-      "stable_id": "qb-t24-186-12eda1abe2ff40d43d2803b1",
+      "stable_id": "qb-t24-186-2e643e3eb46027c7214574e7",
       "topic_num": 24,
       "question": "¿Qué componente transforma DTO en JSON saliente?",
       "option_a": "Output formatter",
-      "option_b": "Input formatter",
-      "option_c": "ModelState",
-      "option_d": "ApiController attribute",
+      "option_b": "ActionResult<T>",
+      "option_c": "[ApiController]",
+      "option_d": "Attribute routing",
       "correct": "A",
       "explanation": "Output formatter serializa.",
       "learning_objective_id": "t24-lo-186",
@@ -401,14 +533,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Controller action return types in ASP.NET Core web API",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core — ApiController",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core — Attribute routing requirement",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ASPNET-WEBAPI-10 Create web APIs with ASP.NET Core — Formatters; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[16, 15, 15, 17]."
         },
         "explanation": {
           "status": "passed",
@@ -416,33 +581,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ASPNET-WEBAPI-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -450,13 +615,13 @@
     },
     {
       "id": 4567,
-      "stable_id": "qb-t24-187-9e243c0a0e54f43f7e4bb261",
+      "stable_id": "qb-t24-187-bc4fd99fe2de3d4812f0f378",
       "topic_num": 24,
       "question": "¿Qué representa una respuesta de error API portable?",
       "option_a": "ProblemDetails",
-      "option_b": "ViewData",
-      "option_c": "EntitySet",
-      "option_d": "RenderFragment",
+      "option_b": "ControllerBase",
+      "option_c": "[FromServices]",
+      "option_d": "ActionResult<T>",
       "correct": "A",
       "explanation": "ProblemDetails estructura error.",
       "learning_objective_id": "t24-lo-187",
@@ -473,14 +638,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core — binding source attributes",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Controller action return types in ASP.NET Core web API",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ASPNET-WEBAPI-10 Create web APIs with ASP.NET Core — ProblemDetails; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[14, 14, 14, 15]."
         },
         "explanation": {
           "status": "passed",
@@ -488,33 +686,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ASPNET-WEBAPI-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -522,13 +720,13 @@
     },
     {
       "id": 4568,
-      "stable_id": "qb-t24-188-bf5fb67521468820ff7a74f1",
+      "stable_id": "qb-t24-188-cc53f96bc1498176b9303d18",
       "topic_num": 24,
       "question": "¿Qué representa un error de validación por campo?",
       "option_a": "ValidationProblemDetails",
-      "option_b": "CreatedAtAction",
-      "option_c": "ControllerBase",
-      "option_d": "OpenAPI route",
+      "option_b": "La ruta/verb no coincide",
+      "option_c": "Enrutamiento por atributos",
+      "option_d": "ActionResult<Product>",
       "correct": "A",
       "explanation": "ValidationProblemDetails representa validación.",
       "learning_objective_id": "t24-lo-188",
@@ -545,14 +743,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Routing to controller actions in ASP.NET Core — HTTP method attributes",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core — Attribute routing requirement",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Controller action return types in ASP.NET Core web API",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ASPNET-WEBAPI-10 Create web APIs with ASP.NET Core — ValidationProblemDetails; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[24, 24, 26, 21]."
         },
         "explanation": {
           "status": "passed",
@@ -560,33 +791,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ASPNET-WEBAPI-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -594,13 +825,13 @@
     },
     {
       "id": 4569,
-      "stable_id": "qb-t24-189-bde5a0c85b3de46e871ebee9",
+      "stable_id": "qb-t24-189-e9b5b65dc3f5e7735c29a4ab",
       "topic_num": 24,
       "question": "¿Qué herramienta permite explorar el contrato de una API documentada?",
       "option_a": "Swagger UI",
-      "option_b": "ModelState UI",
-      "option_c": "Route CSS",
-      "option_d": "Formatter Explorer",
+      "option_b": "[FromBody]",
+      "option_c": "NotFound()",
+      "option_d": "[HttpPost]",
       "correct": "A",
       "explanation": "Swagger UI explora OpenAPI.",
       "learning_objective_id": "t24-lo-189",
@@ -617,14 +848,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core — Binding source parameter inference",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core — Controller action return types",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Routing to controller actions in ASP.NET Core — HTTP method attributes",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ASPNET-WEBAPI-10 ASP.NET Core web API documentation with Swagger / OpenAPI — Swagger UI; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[10, 10, 10, 10]."
         },
         "explanation": {
           "status": "passed",
@@ -632,33 +896,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ASPNET-WEBAPI-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -666,13 +930,13 @@
     },
     {
       "id": 4570,
-      "stable_id": "qb-t24-190-a7b940b93811031fbd547c82",
+      "stable_id": "qb-t24-190-8e71ba7dca9144d4cbc033a4",
       "topic_num": 24,
       "question": "¿Qué debe consultar un cliente para conocer operaciones y esquemas?",
       "option_a": "Documento OpenAPI",
-      "option_b": "Solo una respuesta 404",
-      "option_c": "El CSS",
-      "option_d": "El código privado",
+      "option_b": "Attribute routing",
+      "option_c": "Automatic HTTP 400",
+      "option_d": "Output formatter",
       "correct": "A",
       "explanation": "OpenAPI describe el contrato.",
       "learning_objective_id": "t24-lo-190",
@@ -689,14 +953,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core — Attribute routing requirement",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core — Automatic HTTP 400 responses",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core — Formatters",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ASPNET-WEBAPI-10 ASP.NET Core web API documentation with Swagger / OpenAPI — OpenAPI; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[17, 17, 18, 16]."
         },
         "explanation": {
           "status": "passed",
@@ -704,33 +1001,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ASPNET-WEBAPI-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -738,13 +1035,13 @@
     },
     {
       "id": 4571,
-      "stable_id": "qb-t24-191-a2fed0fc3bc9b53a8b4df30e",
+      "stable_id": "qb-t24-191-d2884138bec77d825038bdef",
       "topic_num": 24,
       "question": "¿Qué elección es adecuada para una acción con múltiples códigos y tipo de éxito?",
       "option_a": "ActionResult<T>",
-      "option_b": "Solo T",
-      "option_c": "Solo string",
-      "option_d": "Solo ViewResult",
+      "option_b": "[ApiController]",
+      "option_c": "CreatedAtAction",
+      "option_d": "Input formatter",
       "correct": "A",
       "explanation": "ActionResult<T> expresa alternativas.",
       "learning_objective_id": "t24-lo-191",
@@ -761,14 +1058,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core — ApiController",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core — Controller action return types",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core — Formatters",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ASPNET-WEBAPI-10 Controller action return types in ASP.NET Core web API — ActionResult<T>; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[15, 15, 15, 15]."
         },
         "explanation": {
           "status": "passed",
@@ -776,33 +1106,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ASPNET-WEBAPI-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -810,13 +1140,13 @@
     },
     {
       "id": 4572,
-      "stable_id": "qb-t24-192-570eaa17b34c09455671c2c3",
+      "stable_id": "qb-t24-192-53122e16ef4f26878e010ce9",
       "topic_num": 24,
       "question": "¿Qué elección es adecuada cuando el resultado HTTP se construye dinámicamente?",
       "option_a": "IActionResult",
-      "option_b": "Concrete type only",
-      "option_c": "Entity type",
-      "option_d": "Formatter type",
+      "option_b": "ControllerBase",
+      "option_c": "[controller]",
+      "option_d": "[FromHeader]",
       "correct": "A",
       "explanation": "IActionResult abstrae resultados.",
       "learning_objective_id": "t24-lo-192",
@@ -833,14 +1163,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Routing to controller actions in ASP.NET Core — route tokens",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core — binding source attributes",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ASPNET-WEBAPI-10 Controller action return types in ASP.NET Core web API — IActionResult; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[13, 14, 12, 12]."
         },
         "explanation": {
           "status": "passed",
@@ -848,33 +1211,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ASPNET-WEBAPI-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -882,13 +1245,13 @@
     },
     {
       "id": 4573,
-      "stable_id": "qb-t24-193-863b7eefc2429592e0594473",
+      "stable_id": "qb-t24-193-2fe7949de0581cf2f779055c",
       "topic_num": 24,
       "question": "¿Qué debe hacer una API si no puede aceptar el media type del body?",
       "option_a": "Responder con error de media type según el framework",
-      "option_b": "Devolver entidad creada",
-      "option_c": "Ignorarlo",
-      "option_d": "Redirigir a vista",
+      "option_b": "Que la acción y ruta estén descubiertas/documentadas",
+      "option_c": "El contrato documentado de rutas, entradas y salidas",
+      "option_d": "HttpGet asocia una acción con solicitudes HTTP GET.",
       "correct": "A",
       "explanation": "El formatter determina soporte.",
       "learning_objective_id": "t24-lo-193",
@@ -905,14 +1268,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "ASP.NET Core web API documentation with Swagger / OpenAPI — OpenAPI",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Routing to controller actions in ASP.NET Core",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ASPNET-WEBAPI-10 Create web APIs with ASP.NET Core — Formatters; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[52, 52, 52, 51]."
         },
         "explanation": {
           "status": "passed",
@@ -920,33 +1305,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ASPNET-WEBAPI-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -954,13 +1339,13 @@
     },
     {
       "id": 4574,
-      "stable_id": "qb-t24-194-17ccb16426f0a6f6bbb34032",
+      "stable_id": "qb-t24-194-d9a930000701fc0f4465a792",
       "topic_num": 24,
       "question": "¿Qué debe hacer una API si no puede producir el media type aceptado?",
       "option_a": "Aplicar negociación y devolver resultado no aceptable si corresponde",
-      "option_b": "Cambiar la ruta",
-      "option_c": "Persistir datos",
-      "option_d": "Devolver siempre HTML",
+      "option_b": "El soporte XML requiere configurar el formatter XML correspondiente.",
+      "option_c": "Un error de conversión durante el binding se incorpora a ModelState.",
+      "option_d": "Ok devuelve normalmente un resultado 200 con el valor proporcionado.",
       "correct": "A",
       "explanation": "La negociación controla representación.",
       "learning_objective_id": "t24-lo-194",
@@ -977,14 +1362,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core — Formatters",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core — Binding source parameter inference",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core — Controller action return types",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ASPNET-WEBAPI-10 Create web APIs with ASP.NET Core — Content negotiation; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[68, 68, 68, 68]."
         },
         "explanation": {
           "status": "passed",
@@ -992,33 +1410,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ASPNET-WEBAPI-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1026,13 +1444,13 @@
     },
     {
       "id": 4575,
-      "stable_id": "qb-t24-195-a8c82004e5109c91f8878359",
+      "stable_id": "qb-t24-195-1f8ff771aeb82f2089a2f2de",
       "topic_num": 24,
       "question": "¿Qué principio evita mezclar API y vistas?",
       "option_a": "Usar ControllerBase y resultados HTTP para API, no vistas como contrato",
-      "option_b": "Devolver View siempre",
-      "option_c": "Usar ViewData en JSON",
-      "option_d": "Eliminar atributos HTTP",
+      "option_b": "NoContent representa normalmente una respuesta exitosa sin cuerpo, 204.",
+      "option_c": "El estado HTTP 404 representa que no se encontró el recurso solicitado.",
+      "option_d": "FromQuery fuerza el binding de un parámetro desde la cadena de consulta.",
       "correct": "A",
       "explanation": "ControllerBase es apropiado para APIs.",
       "learning_objective_id": "t24-lo-195",
@@ -1049,14 +1467,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core — Controller action return types",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core — Binding source parameter inference",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ASPNET-WEBAPI-10 Create web APIs with ASP.NET Core — ControllerBase; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[71, 71, 71, 72]."
         },
         "explanation": {
           "status": "passed",
@@ -1064,33 +1504,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ASPNET-WEBAPI-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1098,13 +1538,13 @@
     },
     {
       "id": 4576,
-      "stable_id": "qb-t24-196-aa5dca6b706630e62ffaa738",
+      "stable_id": "qb-t24-196-5a08ba71b793a96d85dcd06c",
       "topic_num": 24,
       "question": "¿Qué debe hacer un equipo al diseñar binding de acción?",
       "option_a": "Expresar explícitamente las fuentes cuando aportan claridad o evitan ambigüedad",
-      "option_b": "Leer todo del body",
-      "option_c": "Leer todo de headers",
-      "option_d": "No documentar parámetros",
+      "option_b": "Una restricción de ruta como {id:int} limita la coincidencia a valores enteros.",
+      "option_c": "SuppressModelStateInvalidFilter permite desactivar el filtro automático de 400.",
+      "option_d": "Los controladores ApiController requieren attribute routing para sus acciones.",
       "correct": "A",
       "explanation": "From* hace el contrato claro.",
       "learning_objective_id": "t24-lo-196",
@@ -1121,14 +1561,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Routing to controller actions in ASP.NET Core",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core — Automatic HTTP 400 responses",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core — Attribute routing requirement",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ASPNET-WEBAPI-10 Create web APIs with ASP.NET Core — Binding source inference; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[79, 79, 79, 78]."
         },
         "explanation": {
           "status": "passed",
@@ -1136,33 +1609,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ASPNET-WEBAPI-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1170,13 +1643,13 @@
     },
     {
       "id": 4577,
-      "stable_id": "qb-t24-197-db4b48e3bca0d21b0b2a57b7",
+      "stable_id": "qb-t24-197-3c61b0fe2e11a132f9b8a1e5",
       "topic_num": 24,
       "question": "¿Qué debe hacer un endpoint de creación ante entrada inválida?",
       "option_a": "Devolver error estructurado, no persistir como válida",
-      "option_b": "Devolver 201",
-      "option_c": "Devolver Ok siempre",
-      "option_d": "Ignorar ModelState",
+      "option_b": "HttpPost asocia una acción con solicitudes HTTP POST.",
+      "option_c": "Estado de binding y validación de los datos recibidos",
+      "option_d": "Aplica convenciones para deducir fuentes de parámetros",
       "correct": "A",
       "explanation": "La validación protege la operación.",
       "learning_objective_id": "t24-lo-197",
@@ -1193,14 +1666,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Routing to controller actions in ASP.NET Core",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core — automatic 400",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core — Binding source parameter inference",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ASPNET-WEBAPI-10 Create web APIs with ASP.NET Core — Automatic HTTP 400 responses; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[53, 53, 53, 54]."
         },
         "explanation": {
           "status": "passed",
@@ -1208,33 +1714,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ASPNET-WEBAPI-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1242,13 +1748,13 @@
     },
     {
       "id": 4578,
-      "stable_id": "qb-t24-198-a32db467b2748cdaac696f53",
+      "stable_id": "qb-t24-198-4c1b6e1ed2b32659304848d9",
       "topic_num": 24,
       "question": "¿Qué debe hacer un endpoint de creación ante éxito?",
       "option_a": "Devolver resultado creado con representación/ubicación apropiada",
-      "option_b": "Devolver NotFound",
-      "option_c": "Devolver 400",
-      "option_d": "Devolver solo HTML",
+      "option_b": "La API usa convenciones HTTP/serialización y no necesita vistas",
+      "option_c": "404 se relaciona con ruta/recurso; 415 con media type del body",
+      "option_d": "Para representar estructuradamente errores de validación de una API",
       "correct": "A",
       "explanation": "La respuesta creada comunica nuevo recurso.",
       "learning_objective_id": "t24-lo-198",
@@ -1265,14 +1771,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core — API controllers",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Routing; Formatters",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core — Automatic HTTP 400 responses",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ASPNET-WEBAPI-10 Create web APIs with ASP.NET Core — Controller action return types; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[64, 63, 62, 67]."
         },
         "explanation": {
           "status": "passed",
@@ -1280,33 +1819,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ASPNET-WEBAPI-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1314,13 +1853,13 @@
     },
     {
       "id": 4579,
-      "stable_id": "qb-t24-199-bfe6a66fe23dfb3b8aa2ec29",
+      "stable_id": "qb-t24-199-e0264baaf19211229bc3119c",
       "topic_num": 24,
       "question": "¿Qué combinación describe una Web API mantenible?",
       "option_a": "Routing explícito, binding claro, negociación, resultados HTTP y OpenAPI",
-      "option_b": "Métodos públicos sin rutas y HTML",
-      "option_c": "Body sin Content-Type",
-      "option_d": "Errores no estructurados",
+      "option_b": "FromQuery fuerza el binding de un parámetro desde la cadena de consulta.",
+      "option_c": "NoContent representa normalmente una respuesta exitosa sin cuerpo, 204.",
+      "option_d": "NotFound representa normalmente que el recurso solicitado no existe, 404.",
       "correct": "A",
       "explanation": "Los elementos forman un contrato claro.",
       "learning_objective_id": "t24-lo-199",
@@ -1337,14 +1876,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core — Binding source parameter inference",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core — Controller action return types",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ASPNET-WEBAPI-10 Create web APIs with ASP.NET Core; Swagger/OpenAPI; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[72, 72, 71, 73]."
         },
         "explanation": {
           "status": "passed",
@@ -1352,33 +1913,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ASPNET-WEBAPI-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1386,13 +1947,13 @@
     },
     {
       "id": 4580,
-      "stable_id": "qb-t24-200-dc78921cc6e39d8b8b011314",
+      "stable_id": "qb-t24-200-0687a3b55bcc143768ff6ce1",
       "topic_num": 24,
       "question": "¿Qué debe mantener estable una API al cambiar su implementación interna?",
       "option_a": "El contrato documentado de rutas, entradas y salidas",
-      "option_b": "El nombre de una variable privada",
-      "option_c": "El CSS interno",
-      "option_d": "La consulta SQL exacta",
+      "option_b": "Que la acción y ruta estén descubiertas/documentadas",
+      "option_c": "Responder con error de media type según el framework",
+      "option_d": "HttpGet asocia una acción con solicitudes HTTP GET.",
       "correct": "A",
       "explanation": "El contrato de API separa consumidores de implementación.",
       "learning_objective_id": "t24-lo-200",
@@ -1409,14 +1970,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core — Formatters",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Routing to controller actions in ASP.NET Core",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ASPNET-WEBAPI-10 ASP.NET Core web API documentation with Swagger / OpenAPI — OpenAPI; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[52, 52, 52, 51]."
         },
         "explanation": {
           "status": "passed",
@@ -1424,37 +2007,38 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ASPNET-WEBAPI-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
       "status": "validated"
     }
-  ]
+  ],
+  "answer_length_balance_audit": "docs/question-bank/answer-length-balance-audit.json"
 }

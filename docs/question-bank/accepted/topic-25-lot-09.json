@@ -3,7 +3,7 @@
   "state": "reviewed",
   "topic_num": 25,
   "lot_num": 9,
-  "revision": 1,
+  "revision": 2,
   "reviewed_at": "2026-10-13",
   "source_register_sha256": "72d2734b05f0fab4049c12fba8d136c40b697f9e23616e084fdda10944bda146",
   "objective_manifest_sha256": "dc74f33b1951942af3e135ba6d83350d61871c26aed50775ca9b0fe480612c2f",
@@ -18,13 +18,13 @@
   "questions": [
     {
       "id": 4441,
-      "stable_id": "qb-t25-161-49970f306f29a1f78c1a1c00",
+      "stable_id": "qb-t25-161-2a970fa729df8bd3555b5948",
       "topic_num": 25,
       "question": "¿Qué pregunta responde `$metadata` durante integración?",
       "option_a": "Qué tipos y recursos expone el servicio",
-      "option_b": "Qué usuario está autenticado",
-      "option_c": "Qué CSS cargar",
-      "option_d": "Qué servidor usar",
+      "option_b": "Recorrer una relación desde una entidad",
+      "option_c": "Propiedades y navegación de una entidad",
+      "option_d": "Si el tipo tiene identidad/clave propia",
       "correct": "A",
       "explanation": "Metadata permite conocer el modelo.",
       "learning_objective_id": "t25-lo-161",
@@ -41,14 +41,47 @@
           "version_or_as_of": "OData 4.01 OASIS Standard",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Resource Path",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Entity Data Model",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Complex Types; Entity Keys",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ODATA-4.01 OData Version 4.01 — Part 1: Protocol, Metadata Service; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[39, 39, 39, 39]."
         },
         "explanation": {
           "status": "passed",
@@ -56,33 +89,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ODATA-4.01 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -90,13 +123,13 @@
     },
     {
       "id": 4442,
-      "stable_id": "qb-t25-162-2ec484b1d25d7240cb59c1a0",
+      "stable_id": "qb-t25-162-22976e980d5283f819135f69",
       "topic_num": 25,
       "question": "¿Qué ruta solicita una entidad concreta?",
       "option_a": "EntitySet(key)",
-      "option_b": "EntitySet/$metadata",
-      "option_c": "EntitySet/$countOnly",
-      "option_d": "EntitySet?$format=key",
+      "option_b": "$expand=Orders",
+      "option_c": "Un entity set",
+      "option_d": "$select=Name,Id",
       "correct": "A",
       "explanation": "La clave entre paréntesis identifica una entidad.",
       "learning_objective_id": "t25-lo-162",
@@ -113,14 +146,47 @@
           "version_or_as_of": "OData 4.01 OASIS Standard",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Expand System Query Option",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Entity Sets",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Select System Query Option",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ODATA-4.01 OData Version 4.01 — Part 1: Protocol, Key Predicates; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[14, 14, 13, 15]."
         },
         "explanation": {
           "status": "passed",
@@ -128,33 +194,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ODATA-4.01 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -162,13 +228,13 @@
     },
     {
       "id": 4443,
-      "stable_id": "qb-t25-163-628e777aa9f59c6d022c41b2",
+      "stable_id": "qb-t25-163-ce47490229ac50d2398e48d1",
       "topic_num": 25,
       "question": "¿Qué ruta solicita una navegación de una entidad?",
       "option_a": "EntitySet(key)/Navigation",
-      "option_b": "EntitySet/$expandOnly",
-      "option_c": "Navigation/$metadataOnly",
-      "option_d": "EntitySet?$nav=true",
+      "option_b": "El valor de esa propiedad",
+      "option_c": "Que contiene cero valores",
+      "option_d": "El documento de metadatos",
       "correct": "A",
       "explanation": "La ruta puede continuar por navegación.",
       "learning_objective_id": "t25-lo-163",
@@ -185,14 +251,36 @@
           "version_or_as_of": "OData 4.01 OASIS Standard",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Collection-Valued Properties",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Metadata Service",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ODATA-4.01 OData Version 4.01 — Part 1: Protocol, Resource Path; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[25, 25, 25, 25]."
         },
         "explanation": {
           "status": "passed",
@@ -200,33 +288,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ODATA-4.01 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -234,13 +322,13 @@
     },
     {
       "id": 4444,
-      "stable_id": "qb-t25-164-5617ee8c0545fcffb0c612cc",
+      "stable_id": "qb-t25-164-057bd2ab3bbb51b019954b26",
       "topic_num": 25,
       "question": "¿Qué ruta solicita una propiedad concreta?",
       "option_a": "EntitySet(key)/Property",
-      "option_b": "EntitySet/$select=Property",
-      "option_c": "Property/$root",
-      "option_d": "EntitySet/$propertyOnly",
+      "option_b": "Comprueba mayor o igual",
+      "option_c": "El documento `$metadata`",
+      "option_d": "$filter=Active eq true",
       "correct": "A",
       "explanation": "La propiedad puede formar el final de la ruta.",
       "learning_objective_id": "t25-lo-164",
@@ -257,14 +345,36 @@
           "version_or_as_of": "OData 4.01 OASIS Standard",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Filter System Query Option",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Metadata Service",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ODATA-4.01 OData Version 4.01 — Part 1: Protocol, Resource Path; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[23, 23, 24, 22]."
         },
         "explanation": {
           "status": "passed",
@@ -272,33 +382,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ODATA-4.01 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -306,13 +416,13 @@
     },
     {
       "id": 4445,
-      "stable_id": "qb-t25-165-f60b8405be3863cdcaf201c8",
+      "stable_id": "qb-t25-165-e8c184d5ffcd312ce75a77d1",
       "topic_num": 25,
       "question": "¿Qué usar para devolver solo `Name` y `Id`?",
       "option_a": "$select=Name,Id",
-      "option_b": "$filter=Name,Id",
-      "option_c": "$expand=Name,Id",
-      "option_d": "$orderby=Name,Id",
+      "option_b": "Orden ascendente",
+      "option_c": "EntitySet(key)",
+      "option_d": "$expand=Orders",
       "correct": "A",
       "explanation": "Select limita propiedades.",
       "learning_objective_id": "t25-lo-165",
@@ -329,14 +439,47 @@
           "version_or_as_of": "OData 4.01 OASIS Standard",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, OrderBy System Query Option",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Key Predicates",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Expand System Query Option",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ODATA-4.01 OData Version 4.01 — Part 1: Protocol, Select System Query Option; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[15, 16, 14, 14]."
         },
         "explanation": {
           "status": "passed",
@@ -344,33 +487,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ODATA-4.01 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -378,13 +521,13 @@
     },
     {
       "id": 4446,
-      "stable_id": "qb-t25-166-f61246a2ccb49e7ecaabb3c6",
+      "stable_id": "qb-t25-166-33d2468d1abe151945b203d9",
       "topic_num": 25,
       "question": "¿Qué usar para incluir Orders relacionados?",
       "option_a": "$expand=Orders",
-      "option_b": "$select=Orders",
-      "option_c": "$filter=Orders",
-      "option_d": "$top=Orders",
+      "option_b": "EntitySet(key)",
+      "option_c": "Un entity set",
+      "option_d": "$select=Name,Id",
       "correct": "A",
       "explanation": "Expand solicita navegación relacionada.",
       "learning_objective_id": "t25-lo-166",
@@ -401,14 +544,47 @@
           "version_or_as_of": "OData 4.01 OASIS Standard",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Key Predicates",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Entity Sets",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Select System Query Option",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ODATA-4.01 OData Version 4.01 — Part 1: Protocol, Expand System Query Option; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[14, 14, 13, 15]."
         },
         "explanation": {
           "status": "passed",
@@ -416,33 +592,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ODATA-4.01 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -450,13 +626,13 @@
     },
     {
       "id": 4447,
-      "stable_id": "qb-t25-167-ae95f53e7133c9ce353c7a71",
+      "stable_id": "qb-t25-167-6738cb4defbf146fffab75ba",
       "topic_num": 25,
       "question": "¿Qué usar para clientes activos?",
       "option_a": "$filter=Active eq true",
-      "option_b": "$select=Active",
-      "option_c": "$orderby=Active",
-      "option_d": "$count=Active",
+      "option_b": "Comprueba mayor o igual",
+      "option_c": "EntitySet(key)/Property",
+      "option_d": "El documento `$metadata`",
       "correct": "A",
       "explanation": "Filter aplica condición booleana.",
       "learning_objective_id": "t25-lo-167",
@@ -473,14 +649,36 @@
           "version_or_as_of": "OData 4.01 OASIS Standard",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Resource Path",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Metadata Service",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ODATA-4.01 OData Version 4.01 — Part 1: Protocol, Filter System Query Option; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[22, 23, 23, 24]."
         },
         "explanation": {
           "status": "passed",
@@ -488,33 +686,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ODATA-4.01 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -522,13 +720,13 @@
     },
     {
       "id": 4448,
-      "stable_id": "qb-t25-168-d3a83a5368d9c3f7782e1df4",
+      "stable_id": "qb-t25-168-4c5e67d5eac8f5426d3ec94f",
       "topic_num": 25,
       "question": "¿Qué usar para los diez primeros recursos?",
       "option_a": "$top=10",
-      "option_b": "$skip=10",
-      "option_c": "$count=true",
-      "option_d": "$format=10",
+      "option_b": "$format",
+      "option_c": "$skip=20",
+      "option_d": "$metadata",
       "correct": "A",
       "explanation": "Top limita a diez.",
       "learning_objective_id": "t25-lo-168",
@@ -545,14 +743,47 @@
           "version_or_as_of": "OData 4.01 OASIS Standard",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Format System Query Option",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Skip System Query Option",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Metadata Service",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ODATA-4.01 OData Version 4.01 — Part 1: Protocol, Top System Query Option; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[7, 7, 8, 9]."
         },
         "explanation": {
           "status": "passed",
@@ -560,33 +791,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ODATA-4.01 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -594,13 +825,13 @@
     },
     {
       "id": 4449,
-      "stable_id": "qb-t25-169-6aec16373eb4476c57dff1cf",
+      "stable_id": "qb-t25-169-c0c797ddcc09d7006f434b58",
       "topic_num": 25,
       "question": "¿Qué usar para omitir los primeros veinte?",
       "option_a": "$skip=20",
-      "option_b": "$top=20",
-      "option_c": "$count=20",
-      "option_d": "$search=20",
+      "option_b": "$metadata",
+      "option_c": "$format",
+      "option_d": "$top=10",
       "correct": "A",
       "explanation": "Skip omite elementos iniciales.",
       "learning_objective_id": "t25-lo-169",
@@ -617,14 +848,47 @@
           "version_or_as_of": "OData 4.01 OASIS Standard",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Metadata Service",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Format System Query Option",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Top System Query Option",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ODATA-4.01 OData Version 4.01 — Part 1: Protocol, Skip System Query Option; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[8, 9, 7, 7]."
         },
         "explanation": {
           "status": "passed",
@@ -632,33 +896,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ODATA-4.01 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -666,13 +930,13 @@
     },
     {
       "id": 4450,
-      "stable_id": "qb-t25-170-5f123daa88847249195a2213",
+      "stable_id": "qb-t25-170-0443defd868c60df59e355cd",
       "topic_num": 25,
       "question": "¿Qué usar para ordenar por fecha descendente?",
       "option_a": "$orderby=Date desc",
-      "option_b": "$filter=Date desc",
-      "option_c": "$select=Date desc",
-      "option_d": "$expand=Date desc",
+      "option_b": "Orden ascendente",
+      "option_c": "$select=Name,Id",
+      "option_d": "EntitySet(key)",
       "correct": "A",
       "explanation": "Orderby controla orden y desc dirección.",
       "learning_objective_id": "t25-lo-170",
@@ -689,14 +953,36 @@
           "version_or_as_of": "OData 4.01 OASIS Standard",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Select System Query Option",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Key Predicates",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ODATA-4.01 OData Version 4.01 — Part 1: Protocol, OrderBy System Query Option; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[18, 16, 15, 14]."
         },
         "explanation": {
           "status": "passed",
@@ -704,33 +990,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ODATA-4.01 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -738,13 +1024,13 @@
     },
     {
       "id": 4451,
-      "stable_id": "qb-t25-171-d3e24b29fd71afc940f3f219",
+      "stable_id": "qb-t25-171-46675d681c6ace36c9314fc0",
       "topic_num": 25,
       "question": "¿Qué usar para solicitar total junto con una colección?",
       "option_a": "$count=true",
-      "option_b": "$top=count",
-      "option_c": "$select=count",
-      "option_d": "$search=count",
+      "option_b": "Descendente",
+      "option_c": "$search=term",
+      "option_d": "Complex type",
       "correct": "A",
       "explanation": "Count solicita el recuento.",
       "learning_objective_id": "t25-lo-171",
@@ -761,14 +1047,47 @@
           "version_or_as_of": "OData 4.01 OASIS Standard",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, OrderBy System Query Option",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Search System Query Option",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Complex Types",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ODATA-4.01 OData Version 4.01 — Part 1: Protocol, Count System Query Option; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[11, 11, 12, 12]."
         },
         "explanation": {
           "status": "passed",
@@ -776,33 +1095,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ODATA-4.01 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -810,13 +1129,13 @@
     },
     {
       "id": 4452,
-      "stable_id": "qb-t25-172-a010eb068a79a69a1a1e48ac",
+      "stable_id": "qb-t25-172-8eb796794f68850639486220",
       "topic_num": 25,
       "question": "¿Qué usar para una búsqueda textual?",
       "option_a": "$search=term",
-      "option_b": "$filter=text-only",
-      "option_c": "$select=term",
-      "option_d": "$orderby=term",
+      "option_b": "Complex type",
+      "option_c": "Descendente",
+      "option_d": "Un entity set",
       "correct": "A",
       "explanation": "Search expresa búsqueda textual.",
       "learning_objective_id": "t25-lo-172",
@@ -833,14 +1152,47 @@
           "version_or_as_of": "OData 4.01 OASIS Standard",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Complex Types",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, OrderBy System Query Option",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Entity Sets",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ODATA-4.01 OData Version 4.01 — Part 1: Protocol, Search System Query Option; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[12, 12, 11, 13]."
         },
         "explanation": {
           "status": "passed",
@@ -848,33 +1200,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ODATA-4.01 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -882,13 +1234,13 @@
     },
     {
       "id": 4453,
-      "stable_id": "qb-t25-173-bd10c27da9cd20ed922a861b",
+      "stable_id": "qb-t25-173-dd3ad4e7700707483da93d7f",
       "topic_num": 25,
       "question": "¿Qué recurso ayuda a un cliente genérico a construir consultas correctas?",
       "option_a": "El documento de metadatos",
-      "option_b": "Una respuesta CSS",
-      "option_c": "Un código 204",
-      "option_d": "Un singleton sin modelo",
+      "option_b": "El valor de esa propiedad",
+      "option_c": "Que contiene cero valores",
+      "option_d": "EntitySet(key)/Navigation",
       "correct": "A",
       "explanation": "Metadata describe tipos y relaciones.",
       "learning_objective_id": "t25-lo-173",
@@ -905,14 +1257,36 @@
           "version_or_as_of": "OData 4.01 OASIS Standard",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Resource Path",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Collection-Valued Properties",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ODATA-4.01 OData Version 4.01 — Part 1: Protocol, Metadata Service; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[25, 25, 25, 25]."
         },
         "explanation": {
           "status": "passed",
@@ -920,33 +1294,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ODATA-4.01 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -954,13 +1328,13 @@
     },
     {
       "id": 4454,
-      "stable_id": "qb-t25-174-2ac5554ac1fee5ef9c0aff6d",
+      "stable_id": "qb-t25-174-56c4f15bec04ba97497fa2fb",
       "topic_num": 25,
       "question": "Un cliente intenta seleccionar una navegación con `$select` esperando datos relacionados. ¿Qué opción debe considerar?",
       "option_a": "`$expand` para incluir recursos relacionados",
-      "option_b": "$top para navegar",
-      "option_c": "$count para expandir",
-      "option_d": "$format para relaciones",
+      "option_b": "Top limita cantidad; skip desplaza el inicio",
+      "option_c": "Solicitar el recuento además de los recursos",
+      "option_d": "Omite recursos al principio de la colección",
       "correct": "A",
       "explanation": "Expand y select tienen funciones distintas.",
       "learning_objective_id": "t25-lo-174",
@@ -977,14 +1351,47 @@
           "version_or_as_of": "OData 4.01 OASIS Standard",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Top/Skip System Query Options",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Count System Query Option",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Skip System Query Option",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ODATA-4.01 OData Version 4.01 — Part 1: Protocol, Expand System Query Option; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[44, 44, 44, 43]."
         },
         "explanation": {
           "status": "passed",
@@ -992,33 +1399,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ODATA-4.01 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1026,13 +1433,13 @@
     },
     {
       "id": 4455,
-      "stable_id": "qb-t25-175-4a1c3754399953c65dc94d4e",
+      "stable_id": "qb-t25-175-5006c46e403e2e2f78fa932b",
       "topic_num": 25,
       "question": "Una consulta devuelve demasiadas propiedades y no requiere detalle. ¿Qué reduce la respuesta?",
       "option_a": "`$select`",
-      "option_b": "$expand`",
-      "option_c": "$skip`",
-      "option_d": "$search`",
+      "option_b": "$metadata",
+      "option_c": "Singleton",
+      "option_d": "$skip=20",
       "correct": "A",
       "explanation": "Select reduce propiedades.",
       "learning_objective_id": "t25-lo-175",
@@ -1049,14 +1456,47 @@
           "version_or_as_of": "OData 4.01 OASIS Standard",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Metadata Service",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Singletons",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Skip System Query Option",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ODATA-4.01 OData Version 4.01 — Part 1: Protocol, Select System Query Option; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[9, 9, 9, 8]."
         },
         "explanation": {
           "status": "passed",
@@ -1064,33 +1504,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ODATA-4.01 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1098,13 +1538,13 @@
     },
     {
       "id": 4456,
-      "stable_id": "qb-t25-176-e17ec389136ca4a9293a8e1e",
+      "stable_id": "qb-t25-176-348a4f376166733a87605e8f",
       "topic_num": 25,
       "question": "Una API necesita filtrar por precio mayor que 100. ¿Qué concepto usa?",
       "option_a": "Operador `gt` en `$filter`",
-      "option_b": "`desc` en `$orderby`",
-      "option_c": "`$top`",
-      "option_d": "`$format`",
+      "option_b": "El valor de esa propiedad",
+      "option_c": "Que contiene cero valores",
+      "option_d": "Acepta una condición u otra",
       "correct": "A",
       "explanation": "gt compara mayor que.",
       "learning_objective_id": "t25-lo-176",
@@ -1121,14 +1561,36 @@
           "version_or_as_of": "OData 4.01 OASIS Standard",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Resource Path",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Collection-Valued Properties",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ODATA-4.01 OData Version 4.01 — Part 1: Protocol, Filter System Query Option; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[26, 25, 25, 27]."
         },
         "explanation": {
           "status": "passed",
@@ -1136,33 +1598,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ODATA-4.01 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1170,13 +1632,13 @@
     },
     {
       "id": 4457,
-      "stable_id": "qb-t25-177-1bb916e369a1a184d275da56",
+      "stable_id": "qb-t25-177-f490e2c0dc51ff88e72dc3dd",
       "topic_num": 25,
       "question": "Una consulta necesita que dos condiciones se cumplan. ¿Qué operador usa?",
       "option_a": "`and`",
-      "option_b": "`or`",
-      "option_c": "`desc`",
-      "option_d": "`expand`",
+      "option_b": "and",
+      "option_c": "$format",
+      "option_d": "$top=10",
       "correct": "A",
       "explanation": "and exige ambas condiciones.",
       "learning_objective_id": "t25-lo-177",
@@ -1193,14 +1655,36 @@
           "version_or_as_of": "OData 4.01 OASIS Standard",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Format System Query Option",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Top System Query Option",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ODATA-4.01 OData Version 4.01 — Part 1: Protocol, Filter System Query Option; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[5, 3, 7, 7]."
         },
         "explanation": {
           "status": "passed",
@@ -1208,33 +1692,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ODATA-4.01 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1242,13 +1726,13 @@
     },
     {
       "id": 4458,
-      "stable_id": "qb-t25-178-ff2c2b0a0b428b0531195ff3",
+      "stable_id": "qb-t25-178-e8f6c90a9c355ffd75d27cf7",
       "topic_num": 25,
       "question": "Un consumidor necesita distinguir un valor complejo de una entidad. ¿Qué revisa?",
       "option_a": "Si el tipo tiene identidad/clave propia",
-      "option_b": "El formato de respuesta",
-      "option_c": "El código de estado",
-      "option_d": "El número de propiedades solamente",
+      "option_b": "Recorrer una relación desde una entidad",
+      "option_c": "Propiedades y navegación de una entidad",
+      "option_d": "Qué tipos y recursos expone el servicio",
       "correct": "A",
       "explanation": "La identidad diferencia ambos conceptos.",
       "learning_objective_id": "t25-lo-178",
@@ -1265,14 +1749,47 @@
           "version_or_as_of": "OData 4.01 OASIS Standard",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Resource Path",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Entity Data Model",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Metadata Service",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ODATA-4.01 OData Version 4.01 — Part 1: Protocol, Complex Types; Entity Keys; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[39, 39, 39, 39]."
         },
         "explanation": {
           "status": "passed",
@@ -1280,33 +1797,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ODATA-4.01 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1314,13 +1831,13 @@
     },
     {
       "id": 4459,
-      "stable_id": "qb-t25-179-0ccfffd0b7c9a69132365209",
+      "stable_id": "qb-t25-179-05b924cd1645f0fbb6454c8a",
       "topic_num": 25,
       "question": "Un cliente necesita acceder al único recurso Settings. ¿Qué modelo puede representarlo?",
       "option_a": "Singleton",
-      "option_b": "Entity set obligatorio",
-      "option_c": "Complex type únicamente",
-      "option_d": "Collection property",
+      "option_b": "$metadata",
+      "option_c": "`$select`",
+      "option_d": "$skip=20",
       "correct": "A",
       "explanation": "Singleton representa entidad única.",
       "learning_objective_id": "t25-lo-179",
@@ -1337,14 +1854,47 @@
           "version_or_as_of": "OData 4.01 OASIS Standard",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Metadata Service",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Select System Query Option",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Skip System Query Option",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ODATA-4.01 OData Version 4.01 — Part 1: Protocol, Singletons; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[9, 9, 9, 8]."
         },
         "explanation": {
           "status": "passed",
@@ -1352,33 +1902,33 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ODATA-4.01 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1386,13 +1936,13 @@
     },
     {
       "id": 4460,
-      "stable_id": "qb-t25-180-41b94ddacfa4ccb072707d23",
+      "stable_id": "qb-t25-180-376a0491d587ab4c6483edcf",
       "topic_num": 25,
       "question": "Un recurso relacionado tiene muchos elementos. ¿Qué modela esa relación?",
       "option_a": "Una navigation property de colección",
-      "option_b": "Una propiedad primitiva",
-      "option_c": "Un singleton",
-      "option_d": "Un formato",
+      "option_b": "Recursos relacionados por navegación",
+      "option_c": "Cero o más valores del tipo declarado",
+      "option_d": "Declarar tipos derivados de otro tipo",
       "correct": "A",
       "explanation": "La navegación de colección representa relación múltiple.",
       "learning_objective_id": "t25-lo-180",
@@ -1409,14 +1959,47 @@
           "version_or_as_of": "OData 4.01 OASIS Standard",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Expand System Query Option",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Collection-Valued Properties",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, Entity Type Inheritance",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-13",
-          "checked_at": "2026-10-13",
-          "basis": "Rechecked against ODATA-4.01 OData Version 4.01 — Part 1: Protocol, Navigation Properties; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[36, 36, 37, 37]."
         },
         "explanation": {
           "status": "passed",
@@ -1424,37 +2007,38 @@
           "checked_at": "2026-10-13",
           "basis": "Explanation checked against the cited ODATA-4.01 source and recorded version."
         },
-        "reviewed_at": "2026-10-13",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
       "status": "validated"
     }
-  ]
+  ],
+  "answer_length_balance_audit": "docs/question-bank/answer-length-balance-audit.json"
 }

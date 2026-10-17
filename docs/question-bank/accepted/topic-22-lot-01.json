@@ -3,7 +3,7 @@
   "state": "reviewed",
   "topic_num": 22,
   "lot_num": 1,
-  "revision": 1,
+  "revision": 2,
   "reviewed_at": "2026-10-12",
   "source_register_sha256": "39aae1a25ad634bf79e7b3a0ca3e74ce39e48b752561f52b7b60111aa4256f49",
   "objective_manifest_sha256": "5ac1e533da6642c16673c54cd667ea087389c89d6fc123948e895c5ee41b7101",
@@ -18,13 +18,13 @@
   "questions": [
     {
       "id": 1701,
-      "stable_id": "qb-t22-001-e27ecaa68c1de9231310e2b8",
+      "stable_id": "qb-t22-001-37539e85f5add1d77d8ed227",
       "topic_num": 22,
       "question": "¿Qué proceso describe mejor el model binding de ASP.NET Core?",
-      "option_a": "La creación de tablas SQL a partir de una vista",
+      "option_a": "Leer la entidad existente, actualizar solo propiedades permitidas y guardar los cambios seguidos",
       "option_b": "La obtención de datos de la solicitud para poblar parámetros de acción o propiedades del modelo",
-      "option_c": "La ejecución automática de todas las migraciones",
-      "option_d": "La compresión de la respuesta HTTP",
+      "option_c": "Son métodos asíncronos de EF Core que representan operaciones de base de datos mediante tareas",
+      "option_d": "Usar Bind con una lista permitida o un view model que contenga solo propiedades actualizables",
       "correct": "B",
       "explanation": "El model binding obtiene datos de la solicitud y los utiliza para poblar parámetros de métodos o propiedades de tipos complejos.",
       "learning_objective_id": "t22-lo-001",
@@ -41,14 +41,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-MODEL-BINDING-10",
+          "title": "Model binding in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-10.0",
+          "citation": "Use recommended HttpPost Edit code: Read and update",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Asynchronous Programming - EF Core",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-MODEL-BINDING-10",
+          "title": "Model binding in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-10.0",
+          "citation": "Protect against overposting",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against ASPNET-MODEL-BINDING-10 Model Binding in ASP.NET Core; expected option B."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[96, 95, 94, 93]."
         },
         "explanation": {
           "status": "passed",
@@ -56,33 +89,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited ASPNET-MODEL-BINDING-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -90,13 +123,13 @@
     },
     {
       "id": 1702,
-      "stable_id": "qb-t22-002-b32f4dca7ae10e43d16429aa",
+      "stable_id": "qb-t22-002-86ac149af8b610854bb3b122",
       "topic_num": 22,
       "question": "¿Qué información registra ModelState?",
-      "option_a": "Solo las rutas de archivos estáticos",
+      "option_a": "Se marca como Added y SaveChanges genera una inserción",
       "option_b": "Los datos enlazados y los errores de binding o validación",
-      "option_c": "Únicamente las migraciones aplicadas",
-      "option_d": "Solo las consultas ejecutadas por EF Core",
+      "option_c": "El binding y la validación ocurren antes de ejecutar la acción",
+      "option_d": "Para especificar reglas de validación de las propiedades del modelo",
       "correct": "B",
       "explanation": "ModelState conserva el registro de los datos enlazados y de los errores de enlace o validación; ModelState.IsValid permite comprobar el resultado.",
       "learning_objective_id": "t22-lo-002",
@@ -113,14 +146,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-MODEL-BINDING-10",
+          "title": "Model binding in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-10.0",
+          "citation": "Understand entity states",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-MODEL-BINDING-10",
+          "title": "Model binding in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-10.0",
+          "citation": "Model validation in ASP.NET Core MVC and Razor Pages",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against ASPNET-MODEL-BINDING-10 Model Binding in ASP.NET Core; expected option B."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[54, 57, 62, 67]."
         },
         "explanation": {
           "status": "passed",
@@ -128,33 +183,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited ASPNET-MODEL-BINDING-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -162,13 +217,13 @@
     },
     {
       "id": 1703,
-      "stable_id": "qb-t22-003-4656178bd7a93391edc6808f",
+      "stable_id": "qb-t22-003-3db35b0f4c2b59aedbf07a34",
       "topic_num": 22,
       "question": "¿Qué origen corresponde a [FromRoute]?",
-      "option_a": "Los datos de la cadena de consulta",
-      "option_b": "Los campos de un formulario publicado",
+      "option_a": "SELECT FOR UPDATE",
+      "option_b": "if, else y switch",
       "option_c": "Los datos de ruta",
-      "option_d": "El cuerpo de la solicitud",
+      "option_d": "Nunca se rastrean",
       "correct": "C",
       "explanation": "FromRoute obtiene valores de los datos de ruta; FromQuery, FromForm y FromBody corresponden a otros orígenes de binding.",
       "learning_objective_id": "t22-lo-003",
@@ -185,14 +240,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "PostgreSQL 18, sección 13.3",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "DOTNET-CSHARP-10",
+          "title": "C# language documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/dotnet/csharp/",
+          "citation": "Selection statements",
+          "version_or_as_of": ".NET 10 / current stable C# reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Tracking vs. No-Tracking Queries",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against ASPNET-MODEL-BINDING-10 Model Binding in ASP.NET Core; expected option C."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[17, 17, 17, 17]."
         },
         "explanation": {
           "status": "passed",
@@ -200,33 +288,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited ASPNET-MODEL-BINDING-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -234,13 +322,13 @@
     },
     {
       "id": 1704,
-      "stable_id": "qb-t22-004-32b7b1d6c3e0a3aaa9143c5c",
+      "stable_id": "qb-t22-004-f6d27301edf0955b036760df",
       "topic_num": 22,
       "question": "¿Qué componente lee el cuerpo cuando un parámetro usa [FromBody]?",
       "option_a": "Un input formatter",
-      "option_b": "El motor de migraciones",
-      "option_c": "El enrutador de archivos estáticos",
-      "option_d": "El change tracker",
+      "option_b": "ModelState.IsValid",
+      "option_c": "Automatic HTTP 400",
+      "option_d": "$orderby=Date desc",
       "correct": "A",
       "explanation": "Cuando se aplica FromBody, el runtime de ASP.NET Core delega la lectura del cuerpo de la solicitud a un input formatter.",
       "learning_objective_id": "t22-lo-004",
@@ -257,14 +345,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-MODEL-BINDING-10",
+          "title": "Model binding in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-10.0",
+          "citation": "Model validation in ASP.NET Core MVC and Razor Pages",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core — Automatic HTTP 400 responses",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, OrderBy System Query Option",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against ASPNET-MODEL-BINDING-10 Model Binding in ASP.NET Core; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[18, 18, 18, 18]."
         },
         "explanation": {
           "status": "passed",
@@ -272,33 +393,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited ASPNET-MODEL-BINDING-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -306,13 +427,13 @@
     },
     {
       "id": 1705,
-      "stable_id": "qb-t22-005-c3909a9f9cf293098ab6ddfe",
+      "stable_id": "qb-t22-005-8a9e4073420261d81a906fdc",
       "topic_num": 22,
       "question": "Al enlazar una propiedad de un tipo complejo, ¿qué búsqueda realiza normalmente el model binder?",
-      "option_a": "Busca siempre solo el nombre sin prefijo",
+      "option_a": "Informar y asesorar al responsable o encargado, supervisar el cumplimiento y cooperar con la autoridad de control",
       "option_b": "Busca primero el patrón prefijo.propiedad y después el nombre de propiedad sin prefijo si no encuentra el primero",
-      "option_c": "Busca únicamente el nombre de la tabla de base de datos",
-      "option_d": "Convierte siempre el valor en JSON antes de buscarlo",
+      "option_c": "Ejecuta una operación COPY, pero psql lee o escribe el archivo del cliente y transfiere los datos por la conexión",
+      "option_d": "Limitan los argumentos de tipo que pueden utilizarse y permiten al compilador conocer las operaciones disponibles",
       "correct": "B",
       "explanation": "Para una propiedad de un tipo complejo, el binding busca el patrón prefijo.propiedad y, si no encuentra datos, busca la propiedad sin prefijo.",
       "learning_objective_id": "t22-lo-005",
@@ -329,14 +450,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EURLEX-RGPD-2016",
+          "title": "Reglamento (UE) 2016/679 (RGPD)",
+          "authority": "Unión Europea, EUR-Lex / Publications Office of the European Union",
+          "tier": "official_primary",
+          "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+          "citation": "RGPD, artículo 39",
+          "version_or_as_of": "Reglamento; official CELEX resource verified, exact current consolidated act must be selected per article",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "POSTGRESQL-18",
+          "title": "PostgreSQL 18 Documentation",
+          "authority": "PostgreSQL Global Development Group",
+          "tier": "official_primary",
+          "url": "https://www.postgresql.org/docs/18/",
+          "citation": "SQL COPY, Notes; psql, Meta-Commands",
+          "version_or_as_of": "PostgreSQL 18, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "DOTNET-CSHARP-10",
+          "title": "C# language documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/dotnet/csharp/",
+          "citation": "Generic constraints",
+          "version_or_as_of": ".NET 10 / current stable C# reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against ASPNET-MODEL-BINDING-10 Model Binding in ASP.NET Core; expected option B."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[113, 113, 113, 113]."
         },
         "explanation": {
           "status": "passed",
@@ -344,33 +498,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited ASPNET-MODEL-BINDING-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -378,13 +532,13 @@
     },
     {
       "id": 1706,
-      "stable_id": "qb-t22-006-679e4a8b11041434e4cda429",
+      "stable_id": "qb-t22-006-0e95a8c1881348893ca3c185",
       "topic_num": 22,
       "question": "¿Cuál es el orden correcto entre model binding, model validation y la ejecución de la acción?",
-      "option_a": "La acción se ejecuta primero y la validación después",
-      "option_b": "La validación ocurre antes del binding",
+      "option_a": "Los datos enlazados y los errores de binding o validación",
+      "option_b": "Para especificar reglas de validación de las propiedades del modelo",
       "option_c": "El binding y la validación ocurren antes de ejecutar la acción",
-      "option_d": "Solo se valida después de SaveChanges",
+      "option_d": "Added produce INSERT, Modified produce UPDATE y Deleted produce DELETE",
       "correct": "C",
       "explanation": "La documentación indica que el model binding y la validación ocurren antes de ejecutar la acción del controlador o el handler de Razor Pages.",
       "learning_objective_id": "t22-lo-006",
@@ -401,14 +555,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-MODEL-BINDING-10",
+          "title": "Model binding in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-10.0",
+          "citation": "Model Binding in ASP.NET Core",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-MODEL-BINDING-10",
+          "title": "Model binding in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-10.0",
+          "citation": "Understand entity states",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against ASPNET-MODEL-BINDING-10 Model validation in ASP.NET Core MVC and Razor Pages; expected option C."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[57, 67, 62, 70]."
         },
         "explanation": {
           "status": "passed",
@@ -416,33 +592,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited ASPNET-MODEL-BINDING-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -450,13 +626,13 @@
     },
     {
       "id": 1707,
-      "stable_id": "qb-t22-007-da115deba1438f8eeb904fe0",
+      "stable_id": "qb-t22-007-ce69087def0a3acba4b17596",
       "topic_num": 22,
       "question": "¿Qué diferencia hay entre un error de model binding y uno de model validation?",
       "option_a": "El primero suele ser de conversión de datos y el segundo indica que los datos no cumplen reglas de negocio",
-      "option_b": "El primero solo ocurre en SQL y el segundo solo en CSS",
-      "option_c": "El primero siempre es una excepción de red y el segundo una migración",
-      "option_d": "No hay diferencia en ModelState",
+      "option_b": "Leer la entidad y actualizar solo una lista permitida o usar un view model sin Secret antes de SaveChanges",
+      "option_c": "Busca primero el patrón prefijo.propiedad y después el nombre de propiedad sin prefijo si no encuentra el primero",
+      "option_d": "Leer la entidad existente, actualizar solo propiedades permitidas y guardar los cambios seguidos",
       "correct": "A",
       "explanation": "La documentación pone como ejemplo de binding introducir una x en un entero y como ejemplo de validación introducir un 0 cuando una regla exige un valor entre 1 y 5.",
       "learning_objective_id": "t22-lo-007",
@@ -473,14 +649,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-MODEL-BINDING-10",
+          "title": "Model binding in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-10.0",
+          "citation": "Protect against overposting",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-MODEL-BINDING-10",
+          "title": "Model binding in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-10.0",
+          "citation": "Model Binding in ASP.NET Core",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-MODEL-BINDING-10",
+          "title": "Model binding in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-10.0",
+          "citation": "Use recommended HttpPost Edit code: Read and update",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against ASPNET-MODEL-BINDING-10 Model validation in ASP.NET Core MVC and Razor Pages; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[106, 106, 113, 96]."
         },
         "explanation": {
           "status": "passed",
@@ -488,33 +697,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited ASPNET-MODEL-BINDING-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -522,12 +731,12 @@
     },
     {
       "id": 1708,
-      "stable_id": "qb-t22-008-813b0c6e8dbc8103273b5d52",
+      "stable_id": "qb-t22-008-b8f9794b0480295c3d01bf70",
       "topic_num": 22,
       "question": "¿Qué debe comprobar normalmente una aplicación MVC antes de continuar con un modelo recibido?",
-      "option_a": "Que la respuesta ya tenga código 500",
-      "option_b": "Que la consulta tenga un GroupBy",
-      "option_c": "Que el contexto sea singleton",
+      "option_a": "Un input formatter",
+      "option_b": "Automatic HTTP 400",
+      "option_c": "$orderby=Date desc",
       "option_d": "ModelState.IsValid",
       "correct": "D",
       "explanation": "Una aplicación web debe inspeccionar ModelState.IsValid y reaccionar ante errores antes de continuar con el procesamiento válido.",
@@ -545,14 +754,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-MODEL-BINDING-10",
+          "title": "Model binding in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-10.0",
+          "citation": "Model Binding in ASP.NET Core",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-WEBAPI-10",
+          "title": "Create web APIs with ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0",
+          "citation": "Create web APIs with ASP.NET Core — Automatic HTTP 400 responses",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ODATA-4.01",
+          "title": "OData Version 4.01, OASIS Standard",
+          "authority": "OASIS Open",
+          "tier": "official_primary",
+          "url": "https://docs.oasis-open.org/odata/odata/v4.01/os/part1-protocol/odata-v4.01-os-part1-protocol.html",
+          "citation": "OData Version 4.01 — Part 1: Protocol, OrderBy System Query Option",
+          "version_or_as_of": "OData 4.01 OASIS Standard",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against ASPNET-MODEL-BINDING-10 Model validation in ASP.NET Core MVC and Razor Pages; expected option D."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[18, 18, 18, 18]."
         },
         "explanation": {
           "status": "passed",
@@ -560,33 +802,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited ASPNET-MODEL-BINDING-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -594,13 +836,13 @@
     },
     {
       "id": 1709,
-      "stable_id": "qb-t22-009-7fa77f525dd983d367006ca1",
+      "stable_id": "qb-t22-009-f7a179f711e228f8069c6c65",
       "topic_num": 22,
       "question": "¿Para qué sirven los atributos de validación?",
       "option_a": "Para especificar reglas de validación de las propiedades del modelo",
-      "option_b": "Para elegir el proveedor SQL de EF Core",
-      "option_c": "Para ordenar rutas HTTP",
-      "option_d": "Para desactivar ModelState",
+      "option_b": "Added produce INSERT, Modified produce UPDATE y Deleted produce DELETE",
+      "option_c": "El binding y la validación ocurren antes de ejecutar la acción",
+      "option_d": "Se devuelve automáticamente una respuesta HTTP 400 con detalles de error",
       "correct": "A",
       "explanation": "Los atributos de validación permiten declarar reglas de validación para las propiedades del modelo.",
       "learning_objective_id": "t22-lo-009",
@@ -617,14 +859,25 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-MODEL-BINDING-10",
+          "title": "Model binding in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-10.0",
+          "citation": "Understand entity states",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against ASPNET-MODEL-BINDING-10 Model validation in ASP.NET Core MVC and Razor Pages; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[67, 70, 62, 72]."
         },
         "explanation": {
           "status": "passed",
@@ -632,33 +885,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited ASPNET-MODEL-BINDING-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -666,13 +919,13 @@
     },
     {
       "id": 1710,
-      "stable_id": "qb-t22-010-9ad6df844846c03c35e0d962",
+      "stable_id": "qb-t22-010-46c6e96f8cdf0d8b42a90cc7",
       "topic_num": 22,
       "question": "¿Qué comportamiento se asocia a un controlador Web API con [ApiController] cuando ModelState es inválido?",
-      "option_a": "Se ejecuta siempre SaveChangesAsync",
+      "option_a": "Added produce INSERT, Modified produce UPDATE y Deleted produce DELETE",
       "option_b": "Se devuelve automáticamente una respuesta HTTP 400 con detalles de error",
-      "option_c": "Se ignoran todos los errores de validación",
-      "option_d": "Se convierte la solicitud en una migración",
+      "option_c": "Para especificar reglas de validación de las propiedades del modelo",
+      "option_d": "Esperar cada operación y evitar operaciones paralelas sobre la misma instancia",
       "correct": "B",
       "explanation": "Con ApiController, los controladores Web API no tienen que comprobar manualmente ModelState.IsValid para este caso porque se devuelve automáticamente un HTTP 400 con los detalles.",
       "learning_objective_id": "t22-lo-010",
@@ -689,14 +942,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-MODEL-BINDING-10",
+          "title": "Model binding in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-10.0",
+          "citation": "Understand entity states",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Asynchronous Programming - EF Core",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against ASPNET-MODEL-BINDING-10 Model validation in ASP.NET Core MVC and Razor Pages; expected option B."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[70, 72, 67, 78]."
         },
         "explanation": {
           "status": "passed",
@@ -704,33 +979,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited ASPNET-MODEL-BINDING-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -738,13 +1013,13 @@
     },
     {
       "id": 1711,
-      "stable_id": "qb-t22-011-e9801c9c7cd3e68e895962ae",
+      "stable_id": "qb-t22-011-60ff2b9a498bcaa65675de2d",
       "topic_num": 22,
       "question": "¿Qué relación entre estados de entidad y comandos de SaveChanges es correcta?",
       "option_a": "Added produce INSERT, Modified produce UPDATE y Deleted produce DELETE",
-      "option_b": "Added produce SELECT, Modified produce INSERT y Deleted produce UPDATE",
-      "option_c": "Todos los estados producen siempre SELECT",
-      "option_d": "Los estados solo afectan a la interfaz",
+      "option_b": "Se devuelve automáticamente una respuesta HTTP 400 con detalles de error",
+      "option_c": "Para especificar reglas de validación de las propiedades del modelo",
+      "option_d": "El binding y la validación ocurren antes de ejecutar la acción",
       "correct": "A",
       "explanation": "La documentación relaciona Added con INSERT, Modified con UPDATE y Deleted con DELETE cuando se llama a SaveChanges.",
       "learning_objective_id": "t22-lo-011",
@@ -761,14 +1036,25 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-MODEL-BINDING-10",
+          "title": "Model binding in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-10.0",
+          "citation": "Model validation in ASP.NET Core MVC and Razor Pages",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against ASPNET-MODEL-BINDING-10 Understand entity states; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[70, 72, 67, 62]."
         },
         "explanation": {
           "status": "passed",
@@ -776,33 +1062,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited ASPNET-MODEL-BINDING-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -810,13 +1096,13 @@
     },
     {
       "id": 1712,
-      "stable_id": "qb-t22-012-3a4d094935dd577b11206e11",
+      "stable_id": "qb-t22-012-66ad9359d6e0ea6ffe373e94",
       "topic_num": 22,
       "question": "¿Qué ocurre con una entidad nueva pasada a Add antes de SaveChanges?",
-      "option_a": "Se marca como Deleted y se elimina",
-      "option_b": "Se marca como Unchanged y nunca se guarda",
+      "option_a": "Los datos enlazados y los errores de binding o validación",
+      "option_b": "El binding y la validación ocurren antes de ejecutar la acción",
       "option_c": "Se marca como Added y SaveChanges genera una inserción",
-      "option_d": "Se convierte en una consulta sin seguimiento",
+      "option_d": "Para especificar reglas de validación de las propiedades del modelo",
       "correct": "C",
       "explanation": "Al pasar una entidad nueva a Add, su estado pasa a Added; al llamar a SaveChanges, el contexto emite un comando INSERT.",
       "learning_objective_id": "t22-lo-012",
@@ -833,14 +1119,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-MODEL-BINDING-10",
+          "title": "Model binding in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-10.0",
+          "citation": "Model Binding in ASP.NET Core",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-MODEL-BINDING-10",
+          "title": "Model binding in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-10.0",
+          "citation": "Model validation in ASP.NET Core MVC and Razor Pages",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against ASPNET-MODEL-BINDING-10 Understand entity states; expected option C."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[57, 62, 54, 67]."
         },
         "explanation": {
           "status": "passed",
@@ -848,33 +1156,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited ASPNET-MODEL-BINDING-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -882,13 +1190,13 @@
     },
     {
       "id": 1713,
-      "stable_id": "qb-t22-013-14ff3160e80332d668c7562d",
+      "stable_id": "qb-t22-013-585c851464a7a10587af257f",
       "topic_num": 22,
       "question": "¿Qué caracteriza al patrón de edición recomendado de lectura y actualización?",
       "option_a": "Leer la entidad existente, actualizar solo propiedades permitidas y guardar los cambios seguidos",
-      "option_b": "Crear siempre una entidad nueva y marcar todas sus columnas como modificadas",
-      "option_c": "Ignorar ModelState y guardar cualquier campo recibido",
-      "option_d": "Aplicar una migración en vez de consultar la entidad",
+      "option_b": "La obtención de datos de la solicitud para poblar parámetros de acción o propiedades del modelo",
+      "option_c": "Son métodos asíncronos de EF Core que representan operaciones de base de datos mediante tareas",
+      "option_d": "Usar Bind con una lista permitida o un view model que contenga solo propiedades actualizables",
       "correct": "A",
       "explanation": "El patrón recomendado recupera primero la entidad y usa una lista explícita de propiedades permitidas para actualizarla antes de guardar los cambios rastreados.",
       "learning_objective_id": "t22-lo-013",
@@ -905,14 +1213,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-MODEL-BINDING-10",
+          "title": "Model binding in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-10.0",
+          "citation": "Model Binding in ASP.NET Core",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Asynchronous Programming - EF Core",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-MODEL-BINDING-10",
+          "title": "Model binding in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-10.0",
+          "citation": "Protect against overposting",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against ASPNET-MODEL-BINDING-10 Use recommended HttpPost Edit code: Read and update; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[96, 95, 94, 93]."
         },
         "explanation": {
           "status": "passed",
@@ -920,33 +1261,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited ASPNET-MODEL-BINDING-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -954,13 +1295,13 @@
     },
     {
       "id": 1714,
-      "stable_id": "qb-t22-014-08dfac9be4dbf73a1027e945",
+      "stable_id": "qb-t22-014-fbdf9b4ac3b9bb0ffa1d5123",
       "topic_num": 22,
       "question": "¿Qué opción ayuda a proteger una acción contra overposting?",
-      "option_a": "Aceptar siempre directamente todas las propiedades de la entidad",
+      "option_a": "Los cambios de varias filas o tablas tienen éxito conjuntamente o se revierten conjuntamente",
       "option_b": "Usar Bind con una lista permitida o un view model que contenga solo propiedades actualizables",
-      "option_c": "Desactivar la validación del servidor",
-      "option_d": "Hacer que el contexto sea global",
+      "option_c": "Son métodos asíncronos de EF Core que representan operaciones de base de datos mediante tareas",
+      "option_d": "Esperar las operaciones EF con await antes de continuar y devolver el resultado de la acción",
       "correct": "B",
       "explanation": "La documentación presenta Bind como una forma de limitar campos y señala los view models como alternativa para exponer solo las propiedades que se quieren actualizar.",
       "learning_objective_id": "t22-lo-014",
@@ -977,14 +1318,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-MODEL-BINDING-10",
+          "title": "Model binding in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-10.0",
+          "citation": "Handle transactions",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Asynchronous Programming - EF Core",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against ASPNET-MODEL-BINDING-10 Protect against overposting; expected option B."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[92, 93, 94, 92]."
         },
         "explanation": {
           "status": "passed",
@@ -992,33 +1355,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited ASPNET-MODEL-BINDING-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1026,13 +1389,13 @@
     },
     {
       "id": 1715,
-      "stable_id": "qb-t22-015-16326e9c80e94c8b9e522e79",
+      "stable_id": "qb-t22-015-a96f5d591d74faf682c2d434",
       "topic_num": 22,
       "question": "¿Qué garantía ofrece por defecto la transacción implícita de EF al llamar a SaveChanges?",
-      "option_a": "Cada fila se confirma aunque falle otra",
+      "option_a": "Esperar las operaciones EF con await antes de continuar y devolver el resultado de la acción",
       "option_b": "Los cambios de varias filas o tablas tienen éxito conjuntamente o se revierten conjuntamente",
-      "option_c": "Solo se guarda la primera propiedad modificada",
-      "option_d": "La transacción sustituye al model binding",
+      "option_c": "Usar Bind con una lista permitida o un view model que contenga solo propiedades actualizables",
+      "option_d": "Son métodos asíncronos de EF Core que representan operaciones de base de datos mediante tareas",
       "correct": "B",
       "explanation": "La documentación del flujo CRUD indica que EF implementa transacciones implícitas para que los cambios tengan éxito todos juntos o fallen y se reviertan todos juntos.",
       "learning_objective_id": "t22-lo-015",
@@ -1049,14 +1412,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Asynchronous Programming - EF Core",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-MODEL-BINDING-10",
+          "title": "Model binding in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-10.0",
+          "citation": "Protect against overposting",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against ASPNET-MODEL-BINDING-10 Handle transactions; expected option B."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[92, 92, 93, 94]."
         },
         "explanation": {
           "status": "passed",
@@ -1064,33 +1449,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited ASPNET-MODEL-BINDING-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1098,13 +1483,13 @@
     },
     {
       "id": 1716,
-      "stable_id": "qb-t22-016-3d0535a679c5bc7b8a9b3812",
+      "stable_id": "qb-t22-016-430a29a9f63b2d804a9596d6",
       "topic_num": 22,
       "question": "Una aplicación inicia dos operaciones EF Core en paralelo usando la misma instancia de DbContext. ¿Qué corrección es adecuada?",
       "option_a": "Esperar cada operación y evitar operaciones paralelas sobre la misma instancia",
-      "option_b": "Compartir el contexto como singleton para sincronizarlas",
-      "option_c": "Convertir todas las consultas en migraciones",
-      "option_d": "Eliminar todos los await",
+      "option_b": "Mantener el esquema de la base de datos sincronizado con un modelo que cambia",
+      "option_c": "Adjuntar o seguir la entidad para procesar sus cambios como una actualización",
+      "option_d": "Traduce la representación de LINQ al lenguaje específico de la base de datos",
       "correct": "A",
       "explanation": "Las operaciones asíncronas deben esperarse y no se admiten operaciones paralelas sobre la misma instancia de DbContext.",
       "learning_objective_id": "t22-lo-016",
@@ -1121,14 +1506,47 @@
           "version_or_as_of": "EF Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Migrations Overview",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "How to track entities",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Querying Data",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against EFCORE-10 Asynchronous Programming - EF Core; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[78, 77, 77, 76]."
         },
         "explanation": {
           "status": "passed",
@@ -1136,33 +1554,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited EFCORE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1170,13 +1588,13 @@
     },
     {
       "id": 1717,
-      "stable_id": "qb-t22-017-710adc72b1414b0c171542d1",
+      "stable_id": "qb-t22-017-ea5a307419fe41c722ebb65a",
       "topic_num": 22,
       "question": "¿Qué tienen en común ToListAsync, FirstOrDefaultAsync y SaveChangesAsync?",
-      "option_a": "Son atributos de validación",
+      "option_a": "El principal es la entidad referenciada y el dependiente contiene normalmente la clave foránea",
       "option_b": "Son métodos asíncronos de EF Core que representan operaciones de base de datos mediante tareas",
-      "option_c": "Solo funcionan durante la compilación",
-      "option_d": "Desactivan siempre el tracking",
+      "option_c": "Generar el modelo desde una base existente, escribirlo manualmente o usar un diseñador visual",
+      "option_d": "Porque permiten revisar y compartir la evolución del esquema junto con el código del proyecto",
       "correct": "B",
       "explanation": "EF Core ofrece métodos asíncronos para consultas y guardado; esos métodos devuelven tareas que deben esperarse para obtener o completar el resultado.",
       "learning_objective_id": "t22-lo-017",
@@ -1193,14 +1611,47 @@
           "version_or_as_of": "EF Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Introduction to relationships",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "The model",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Migrations Overview",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against EFCORE-10 Asynchronous Programming - EF Core; expected option B."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[94, 94, 93, 93]."
         },
         "explanation": {
           "status": "passed",
@@ -1208,33 +1659,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited EFCORE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1242,13 +1693,13 @@
     },
     {
       "id": 1718,
-      "stable_id": "qb-t22-018-1d987a4ca22ed3ff923317e2",
+      "stable_id": "qb-t22-018-7e8d3cdb6b2c726287fb6198",
       "topic_num": 22,
       "question": "En una acción MVC async que consulta y guarda con EF Core, ¿qué secuencia es coherente?",
-      "option_a": "Iniciar las tareas, ignorarlas y devolver inmediatamente la vista",
+      "option_a": "Los cambios de varias filas o tablas tienen éxito conjuntamente o se revierten conjuntamente",
       "option_b": "Esperar las operaciones EF con await antes de continuar y devolver el resultado de la acción",
-      "option_c": "Llamar a SaveChanges antes de crear el contexto",
-      "option_d": "Convertir ModelState en una migración",
+      "option_c": "Corta y asociada normalmente a una unidad de trabajo, desde su creación hasta su liberación",
+      "option_d": "Generar el modelo desde una base existente, escribirlo manualmente o usar un diseñador visual",
       "correct": "B",
       "explanation": "El patrón asíncrono espera las operaciones EF antes de continuar con la unidad de trabajo o devolver el resultado de la acción.",
       "learning_objective_id": "t22-lo-018",
@@ -1265,14 +1716,47 @@
           "version_or_as_of": "EF Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-MODEL-BINDING-10",
+          "title": "Model binding in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-10.0",
+          "citation": "Handle transactions",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "The DbContext lifetime",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "The model",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against EFCORE-10 Asynchronous Programming - EF Core; expected option B."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[92, 92, 91, 93]."
         },
         "explanation": {
           "status": "passed",
@@ -1280,33 +1764,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited EFCORE-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1314,13 +1798,13 @@
     },
     {
       "id": 1719,
-      "stable_id": "qb-t22-019-ed3e5817f530b5ac64462f07",
+      "stable_id": "qb-t22-019-22f2c8b3ac589de12e993711",
       "topic_num": 22,
       "question": "Un formulario contiene un valor que no puede convertirse al tipo de destino y ModelState no es válido. ¿Qué debería hacer la acción?",
-      "option_a": "Guardar de todos modos el modelo parcialmente válido",
+      "option_a": "Los cambios de varias filas o tablas tienen éxito conjuntamente o se revierten conjuntamente",
       "option_b": "Inspeccionar ModelState y redisplayar o devolver los errores sin guardar el dato inválido",
-      "option_c": "Marcar todas las entidades como Deleted",
-      "option_d": "Aplicar SaveChangesAsync antes de validar",
+      "option_c": "Esperar las operaciones EF con await antes de continuar y devolver el resultado de la acción",
+      "option_d": "Usar Bind con una lista permitida o un view model que contenga solo propiedades actualizables",
       "correct": "B",
       "explanation": "Los errores de conversión forman parte de ModelState; la aplicación debe comprobar su validez y reaccionar con errores antes de continuar con el guardado.",
       "learning_objective_id": "t22-lo-019",
@@ -1337,14 +1821,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-MODEL-BINDING-10",
+          "title": "Model binding in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-10.0",
+          "citation": "Handle transactions",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "EFCORE-10",
+          "title": "Overview of Entity Framework Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/ef/core/?view=efcore-10.0",
+          "citation": "Asynchronous Programming - EF Core",
+          "version_or_as_of": "EF Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-MODEL-BINDING-10",
+          "title": "Model binding in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-10.0",
+          "citation": "Protect against overposting",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against ASPNET-MODEL-BINDING-10 Model state; expected option B."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[92, 89, 92, 93]."
         },
         "explanation": {
           "status": "passed",
@@ -1352,33 +1869,33 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited ASPNET-MODEL-BINDING-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
@@ -1386,13 +1903,13 @@
     },
     {
       "id": 1720,
-      "stable_id": "qb-t22-020-4b2be0e25f00eb592a4e4228",
+      "stable_id": "qb-t22-020-2bd9a5b1b6d8f44357f3d6b3",
       "topic_num": 22,
       "question": "Una edición permite que el usuario publique una propiedad Secret que no aparece en el formulario, y la entidad se enlaza directamente. ¿Qué medida corrige el riesgo?",
       "option_a": "Leer la entidad y actualizar solo una lista permitida o usar un view model sin Secret antes de SaveChanges",
-      "option_b": "Aceptar todas las propiedades porque no están visibles",
-      "option_c": "Desactivar ModelState.IsValid",
-      "option_d": "Marcar toda la entidad como Modified sin revisar campos",
+      "option_b": "El primero suele ser de conversión de datos y el segundo indica que los datos no cumplen reglas de negocio",
+      "option_c": "Busca primero el patrón prefijo.propiedad y después el nombre de propiedad sin prefijo si no encuentra el primero",
+      "option_d": "Leer la entidad existente, actualizar solo propiedades permitidas y guardar los cambios seguidos",
       "correct": "A",
       "explanation": "Un atacante puede enviar campos adicionales aunque no estén en el formulario; una lista de propiedades permitidas o un view model limita el binding y protege la propiedad antes de guardar.",
       "learning_objective_id": "t22-lo-020",
@@ -1409,14 +1926,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-12",
           "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-MODEL-BINDING-10",
+          "title": "Model binding in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-10.0",
+          "citation": "Model validation in ASP.NET Core MVC and Razor Pages",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-MODEL-BINDING-10",
+          "title": "Model binding in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-10.0",
+          "citation": "Model Binding in ASP.NET Core",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "ASPNET-MODEL-BINDING-10",
+          "title": "Model binding in ASP.NET Core",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-10.0",
+          "citation": "Use recommended HttpPost Edit code: Read and update",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-12",
-          "checked_at": "2026-10-12",
-          "basis": "Rechecked against ASPNET-MODEL-BINDING-10 Protect against overposting; expected option A."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[106, 106, 113, 96]."
         },
         "explanation": {
           "status": "passed",
@@ -1424,37 +1974,38 @@
           "checked_at": "2026-10-12",
           "basis": "Explanation checked against the cited ASPNET-MODEL-BINDING-10 source and recorded version."
         },
-        "reviewed_at": "2026-10-12",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "stable ID/content digest comparison"
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "accent-folded punctuation-free prompt key"
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "SequenceMatcher over lexical prompt keys; threshold=0.92"
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with the legacy bank or this lot."
         }
       },
       "status": "validated"
     }
-  ]
+  ],
+  "answer_length_balance_audit": "docs/question-bank/answer-length-balance-audit.json"
 }

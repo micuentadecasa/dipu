@@ -3,7 +3,7 @@
   "state": "reviewed",
   "topic_num": 26,
   "lot_num": 11,
-  "revision": 1,
+  "revision": 2,
   "supplemental": true,
   "excluded_from_target_manifest": true,
   "reviewed_at": "2026-10-15",
@@ -20,13 +20,13 @@
   "questions": [
     {
       "id": 4641,
-      "stable_id": "qb-t26-supp-001-e2bd5c01e45e8009f883c524",
+      "stable_id": "qb-t26-supp-001-2d87ca080ab05a34ab0ec41d",
       "topic_num": 26,
       "question": "¿Qué límite tienen los modos de renderizado descritos para Blazor?",
       "option_a": "Se aplican a una Blazor Web App; una WebAssembly standalone solo renderiza en el cliente y no tiene concepto de render mode.",
-      "option_b": "Se aplican únicamente a aplicaciones MVC que devuelven vistas.",
-      "option_c": "Obligan a que toda aplicación WebAssembly mantenga un circuito SignalR.",
-      "option_d": "Solo controlan el formato de los archivos CSS publicados.",
+      "option_b": "La definición requiere una instancia estática del modo; el atributo de instancia puede recibir cualquier instancia de modo.",
+      "option_c": "Para mostrar pronto contenido provisional mientras una tarea asíncrona larga termina durante static SSR o prerendering.",
+      "option_d": "Una aplicación Blazor WebAssembly standalone no necesita una aplicación ASP.NET Core backend para servir sus archivos.",
       "correct": "A",
       "explanation": "La documentación limita los render modes a Blazor Web Apps; una aplicación Blazor WebAssembly standalone renderiza en el cliente y no usa el concepto de render mode.",
       "learning_objective_id": "t26-lo-supp-001",
@@ -43,14 +43,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-15",
           "verified_at": "2026-10-15"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor render modes",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/render-modes?view=aspnetcore-10.0",
+          "citation": "Apply a render mode — component definition versus component instance",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-15",
+          "verified_at": "2026-10-15"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor rendering",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/rendering?view=aspnetcore-10.0",
+          "citation": "Streaming rendering — long-running asynchronous tasks",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-15",
+          "verified_at": "2026-10-15"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "ASP.NET Core Blazor hosting models",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section Render modes — scope and standalone WebAssembly."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[124, 123, 119, 118]."
         },
         "explanation": {
           "status": "passed",
@@ -58,33 +91,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section Render modes — scope and standalone WebAssembly."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         }
       },
@@ -92,13 +125,13 @@
     },
     {
       "id": 4642,
-      "stable_id": "qb-t26-supp-002-c31bc6de64459c3886d9113e",
+      "stable_id": "qb-t26-supp-002-f3d1ee267fccc9d872a565f0",
       "topic_num": 26,
       "question": "En una Blazor Web App que no asigna otro modo, ¿qué comportamiento predeterminado recibe un componente?",
-      "option_a": "InteractiveServer",
+      "option_a": "::deep",
       "option_b": "Static",
-      "option_c": "InteractiveWebAssembly",
-      "option_d": "InteractiveAuto",
+      "option_c": "@bind",
+      "option_d": "Range",
       "correct": "B",
       "explanation": "La tabla de render modes y las reglas de propagación de Microsoft Learn establecen Static como modo predeterminado.",
       "learning_objective_id": "t26-lo-supp-002",
@@ -115,14 +148,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-15",
           "verified_at": "2026-10-15"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "CSS isolation — ::deep",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Data binding — @bind",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Validation — data annotations",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section Render-mode propagation — default render mode."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[6, 6, 5, 5]."
         },
         "explanation": {
           "status": "passed",
@@ -130,33 +196,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section Render-mode propagation — default render mode."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         }
       },
@@ -164,13 +230,13 @@
     },
     {
       "id": 4643,
-      "stable_id": "qb-t26-supp-003-62073ac7ea26da288b60e4d4",
+      "stable_id": "qb-t26-supp-003-1c761c6d9d63ec5ff5d15839",
       "topic_num": 26,
       "question": "¿Qué responsabilidad tiene AddInteractiveServerComponents en la configuración de una Blazor Web App?",
       "option_a": "Añade los servicios necesarios para representar componentes Interactive Server.",
-      "option_b": "Publica el proyecto cliente WebAssembly como archivos estáticos.",
-      "option_c": "Desactiva el prerendering de todos los componentes.",
-      "option_d": "Convierte automáticamente todos los componentes en Static.",
+      "option_b": "Una desconexión de red puede ser no normal y permitir una reconexión posterior.",
+      "option_c": "OnAfterRenderAsync permite realizar trabajo asíncrono posterior al renderizado.",
+      "option_d": "Un componente puede aceptar una expresión o valor mediante un parámetro normal.",
       "correct": "A",
       "explanation": "La guía de habilitación separa la adición de servicios para Interactive Server de la configuración de los endpoints del modo.",
       "learning_objective_id": "t26-lo-supp-003",
@@ -187,14 +253,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-15",
           "verified_at": "2026-10-15"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "ASP.NET Core Blazor hosting models",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "ASP.NET Core Razor component lifecycle",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "ASP.NET Core Blazor data binding",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section Enable support for interactive render modes — AddInteractiveServerComponents."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[79, 79, 79, 79]."
         },
         "explanation": {
           "status": "passed",
@@ -202,33 +301,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section Enable support for interactive render modes — AddInteractiveServerComponents."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         }
       },
@@ -236,13 +335,13 @@
     },
     {
       "id": 4644,
-      "stable_id": "qb-t26-supp-004-6da8b2ef91b97c2987632c53",
+      "stable_id": "qb-t26-supp-004-e34211599a8e38b15a9e2a3f",
       "topic_num": 26,
       "question": "¿Qué API configura el endpoint de renderizado Interactive Server después de registrar sus servicios?",
-      "option_a": "AddInteractiveWebAssemblyComponents",
-      "option_b": "UseStaticFiles",
+      "option_a": "Evita ambigüedad entre valores",
+      "option_b": "Aplicarlo mediante @attribute.",
       "option_c": "AddInteractiveServerRenderMode",
-      "option_d": "MapFallbackToFile",
+      "option_d": "Escuchar el cambio del estado.",
       "correct": "C",
       "explanation": "AddInteractiveServerRenderMode configura el modo de renderizado del endpoint; AddInteractiveServerComponents cubre el registro de servicios.",
       "learning_objective_id": "t26-lo-supp-004",
@@ -259,14 +358,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-15",
           "verified_at": "2026-10-15"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Cascading values and parameters — named cascades",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Apply an attribute",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Respond to validation state",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section Enable support for interactive render modes — AddInteractiveServerRenderMode."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[30, 30, 30, 30]."
         },
         "explanation": {
           "status": "passed",
@@ -274,33 +406,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section Enable support for interactive render modes — AddInteractiveServerRenderMode."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         }
       },
@@ -308,13 +440,13 @@
     },
     {
       "id": 4645,
-      "stable_id": "qb-t26-supp-005-87b70a07e24627a9d8479aca",
+      "stable_id": "qb-t26-supp-005-5ccb34e420d6d1f73044fab2",
       "topic_num": 26,
       "question": "Para habilitar componentes Interactive WebAssembly en una Blazor Web App, ¿qué frontera de proyecto documenta Microsoft?",
-      "option_a": "Un proyecto de base de datos separado que aloje el circuito.",
+      "option_a": "InteractiveAuto usa inicialmente servidor y puede cambiar a WebAssembly cuando está disponible.",
       "option_b": "Un proyecto cliente separado que configure el host WebAssembly y el runtime .NET del navegador.",
-      "option_c": "Una segunda aplicación MVC que sustituya a Components.",
-      "option_d": "Un servicio Windows que ejecute el runtime del navegador.",
+      "option_c": "El despliegue WebAssembly debe considerar el tamaño del runtime y las dependencias descargadas.",
+      "option_d": "Los parámetros de captura de atributos permiten recibir atributos no declarados explícitamente.",
       "correct": "B",
       "explanation": "La documentación requiere un proyecto cliente separado para el host WebAssembly y señala que los componentes deben compilarse desde ese proyecto para entrar en el paquete descargado.",
       "learning_objective_id": "t26-lo-supp-005",
@@ -331,14 +463,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-15",
           "verified_at": "2026-10-15"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "ASP.NET Core Blazor render modes",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "ASP.NET Core Blazor deployment",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "ASP.NET Core Blazor components",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section Enable support for interactive render modes — client project."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[95, 95, 95, 95]."
         },
         "explanation": {
           "status": "passed",
@@ -346,33 +511,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section Enable support for interactive render modes — client project."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         }
       },
@@ -380,13 +545,13 @@
     },
     {
       "id": 4646,
-      "stable_id": "qb-t26-supp-006-c9fc74d6467849623d2929e8",
+      "stable_id": "qb-t26-supp-006-34369c712c6ecfff84320e3a",
       "topic_num": 26,
       "question": "¿Qué diferencia documenta Microsoft entre la directiva @rendermode de una definición y el atributo @rendermode de una instancia?",
       "option_a": "La definición requiere una instancia estática del modo; el atributo de instancia puede recibir cualquier instancia de modo.",
-      "option_b": "La definición solo funciona con CSS y el atributo solo con JavaScript.",
-      "option_c": "La definición se ejecuta en SQL y el atributo en el servidor HTTP.",
-      "option_d": "No hay diferencia semántica ni de ubicación entre ambos usos.",
+      "option_b": "Se aplican a una Blazor Web App; una WebAssembly standalone solo renderiza en el cliente y no tiene concepto de render mode.",
+      "option_c": "Para mostrar pronto contenido provisional mientras una tarea asíncrona larga termina durante static SSR o prerendering.",
+      "option_d": "Una aplicación Blazor WebAssembly standalone no necesita una aplicación ASP.NET Core backend para servir sus archivos.",
       "correct": "A",
       "explanation": "En una definición de componente la directiva exige una instancia de render mode estática, mientras que el atributo aplicado a una instancia admite cualquier instancia de modo.",
       "learning_objective_id": "t26-lo-supp-006",
@@ -403,14 +568,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-15",
           "verified_at": "2026-10-15"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor render modes",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/render-modes?view=aspnetcore-10.0",
+          "citation": "Render modes — scope and standalone WebAssembly",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-15",
+          "verified_at": "2026-10-15"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor rendering",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/rendering?view=aspnetcore-10.0",
+          "citation": "Streaming rendering — long-running asynchronous tasks",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-15",
+          "verified_at": "2026-10-15"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "ASP.NET Core Blazor hosting models",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section Apply a render mode — component definition versus component instance."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[123, 124, 119, 118]."
         },
         "explanation": {
           "status": "passed",
@@ -418,33 +616,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section Apply a render mode — component definition versus component instance."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         }
       },
@@ -452,13 +650,13 @@
     },
     {
       "id": 4647,
-      "stable_id": "qb-t26-supp-007-24562ac36fcbdeea3ab084a9",
+      "stable_id": "qb-t26-supp-007-4f8cfa69c2e8c39ebb0d5e93",
       "topic_num": 26,
       "question": "¿Qué restricción existe al intentar hacer interactivo el componente raíz App?",
-      "option_a": "App solo puede usar InteractiveWebAssembly.",
-      "option_b": "App debe estar dentro de una carpeta .Client.",
+      "option_a": "Una página enrutable se identifica mediante una directiva @page.",
+      "option_b": "Un backend ASP.NET Core que sirve el cliente y puede ofrecer API",
       "option_c": "Hacer interactivo un componente raíz como App no está soportado.",
-      "option_d": "App requiere siempre un circuito por cada archivo CSS.",
+      "option_d": "El navegador recibe recursos para ejecutar la aplicación cliente",
       "correct": "C",
       "explanation": "La guía de aplicación a toda la aplicación indica que un componente raíz como App no puede hacerse interactivo directamente.",
       "learning_objective_id": "t26-lo-supp-007",
@@ -475,14 +673,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-15",
           "verified_at": "2026-10-15"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "ASP.NET Core Blazor routing",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Blazor hosting models — hosted WebAssembly",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Blazor hosting models — WebAssembly payload",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section Apply a render mode to the entire app — root component restriction."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[64, 64, 64, 64]."
         },
         "explanation": {
           "status": "passed",
@@ -490,33 +721,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section Apply a render mode to the entire app — root component restriction."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         }
       },
@@ -524,12 +755,12 @@
     },
     {
       "id": 4648,
-      "stable_id": "qb-t26-supp-008-9fa1182e8b8af70fdc96043c",
+      "stable_id": "qb-t26-supp-008-a599823e3e4860d7c11c486a",
       "topic_num": 26,
       "question": "¿Dónde se suele asignar el modo global cuando una Blazor Web App usa el componente Routes?",
-      "option_a": "En cada archivo de estilos aislados.",
-      "option_b": "En la llamada a la base de datos de la aplicación.",
-      "option_c": "En el proyecto de pruebas únicamente.",
+      "option_a": "El circuito mantiene en servidor el estado asociado a un cliente conectado de Blazor Server.",
+      "option_b": "En .NET 8 y posterior es útil distinguir los modelos por cómo se renderizan los componentes.",
+      "option_c": "Un componente puede requerir un render mode interactivo para responder a eventos de usuario.",
       "option_d": "En la instancia de Routes usada por App.razor, no directamente en App como raíz interactiva.",
       "correct": "D",
       "explanation": "El ejemplo oficial asigna el modo a Routes dentro de Components/App.razor; Router propaga después ese modo a las páginas que enruta.",
@@ -547,14 +778,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-15",
           "verified_at": "2026-10-15"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "ASP.NET Core Blazor hosting models",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "ASP.NET Core Blazor render modes",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section Apply a render mode to the entire app — Routes component."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[92, 92, 92, 92]."
         },
         "explanation": {
           "status": "passed",
@@ -562,33 +815,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section Apply a render mode to the entire app — Routes component."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         }
       },
@@ -596,13 +849,13 @@
     },
     {
       "id": 4649,
-      "stable_id": "qb-t26-supp-009-18270c8224e54cdfd3dd05e8",
+      "stable_id": "qb-t26-supp-009-cdddd70f23268d4baadb6f92",
       "topic_num": 26,
       "question": "¿Qué efecto tiene Router cuando recibe el modo de renderizado aplicado al componente Routes?",
       "option_a": "Propaga el modo a las páginas que enruta.",
-      "option_b": "Elimina las rutas que no sean estáticas.",
-      "option_c": "Traslada todas las páginas al proyecto de base de datos.",
-      "option_d": "Desactiva la navegación del navegador.",
+      "option_b": "Estado asociado a la conexión del cliente",
+      "option_c": "Conexión y estado interactivo por cliente",
+      "option_d": "Invocar el callback expuesto por el padre",
       "correct": "A",
       "explanation": "La documentación señala que Router propaga el render mode a las páginas que enruta.",
       "learning_objective_id": "t26-lo-supp-009",
@@ -619,14 +872,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-15",
           "verified_at": "2026-10-15"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Blazor hosting models — circuit state",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Blazor render modes — InteractiveServer",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Event handling — component callbacks",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section Apply a render mode to the entire app — Router propagation."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[41, 41, 41, 41]."
         },
         "explanation": {
           "status": "passed",
@@ -634,33 +920,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section Apply a render mode to the entire app — Router propagation."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         }
       },
@@ -668,13 +954,13 @@
     },
     {
       "id": 4650,
-      "stable_id": "qb-t26-supp-010-b711eee9963a977e8e7a3ecb",
+      "stable_id": "qb-t26-supp-010-4e06f7aa7da57f62404ea86a",
       "topic_num": 26,
       "question": "Cuando se habilita la interactividad global de una Blazor Web App, ¿qué componente suele recibir también el mismo modo que Routes?",
-      "option_a": "DbContext",
+      "option_a": "@typeparam",
       "option_b": "HeadOutlet",
-      "option_c": "HttpClientFactory",
-      "option_d": "ErrorBoundary del navegador exclusivamente",
+      "option_c": "@rendermode",
+      "option_d": "@bind-value",
       "correct": "B",
       "explanation": "El ejemplo de aplicación global indica que normalmente también se asigna el mismo modo interactivo a HeadOutlet.",
       "learning_objective_id": "t26-lo-supp-010",
@@ -691,14 +977,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-15",
           "verified_at": "2026-10-15"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Templated components — @typeparam",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Blazor render modes — @rendermode",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Data binding — @bind-value",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section Apply a render mode to the entire app — HeadOutlet."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[10, 10, 11, 11]."
         },
         "explanation": {
           "status": "passed",
@@ -706,33 +1025,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section Apply a render mode to the entire app — HeadOutlet."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         }
       },
@@ -740,13 +1059,13 @@
     },
     {
       "id": 4651,
-      "stable_id": "qb-t26-supp-011-c07811c72919fe90dee53ba6",
+      "stable_id": "qb-t26-supp-011-694713d15b20e901a087e8c1",
       "topic_num": 26,
       "question": "¿Qué decisión describe con precisión el modo Interactive Auto mientras un componente permanece en la página?",
-      "option_a": "Cambia continuamente de servidor a WebAssembly en cada evento.",
-      "option_b": "Usa siempre WebAssembly y nunca evalúa el contexto de la página.",
+      "option_a": "La combinación no está soportada; por ejemplo, un componente Server no puede ser hijo de uno WebAssembly.",
+      "option_b": "Los modos interactivos suelen prerenderizar por defecto cuando la aplicación está configurada para ello.",
       "option_c": "Toma una decisión inicial y mantiene ese tipo de interactividad mientras el componente siga en la página.",
-      "option_d": "Desactiva la interactividad después del prerendering.",
+      "option_d": "El pipeline middleware de ASP.NET Core, porque los componentes no se renderizan durante ese procesamiento.",
       "correct": "C",
       "explanation": "La documentación aclara que Auto no cambia dinámicamente el modo de un componente ya presente: decide inicialmente y conserva ese tipo de interactividad mientras permanece en la página.",
       "learning_objective_id": "t26-lo-supp-011",
@@ -763,14 +1082,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-15",
           "verified_at": "2026-10-15"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor render modes",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/render-modes?view=aspnetcore-10.0",
+          "citation": "Render-mode propagation — child components with different interactive modes",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-15",
+          "verified_at": "2026-10-15"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "ASP.NET Core Blazor render modes",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor render modes",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/render-modes?view=aspnetcore-10.0",
+          "citation": "Static server-side rendering — routing and authorization",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-15",
+          "verified_at": "2026-10-15"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section Interactive Auto render mode — initial decision."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[105, 104, 105, 106]."
         },
         "explanation": {
           "status": "passed",
@@ -778,33 +1130,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section Interactive Auto render mode — initial decision."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         }
       },
@@ -812,13 +1164,13 @@
     },
     {
       "id": 4652,
-      "stable_id": "qb-t26-supp-012-370a4dedcb148bd9b467916b",
+      "stable_id": "qb-t26-supp-012-9db6cb74d2fd0afa7ac0f3e0",
       "topic_num": 26,
       "question": "¿Por qué Interactive Auto prefiere coincidir con un modo interactivo ya presente en la página?",
       "option_a": "Para evitar introducir otro runtime interactivo que no comparta estado con el existente.",
-      "option_b": "Para obligar a todas las páginas a usar Static.",
-      "option_c": "Para impedir que se descargue cualquier recurso WebAssembly.",
-      "option_d": "Para convertir el circuito en una base de datos distribuida.",
+      "option_b": "Azure SignalR Service puede ayudar a escalar conexiones de una aplicación Blazor Server.",
+      "option_c": "La interactividad WebAssembly requiere que el cliente descargue los recursos necesarios.",
+      "option_d": "Blazor Server puede conservar circuitos desconectados durante un intervalo configurable.",
       "correct": "A",
       "explanation": "La guía explica que Auto prefiere el modo ya existente para evitar introducir un runtime interactivo nuevo que no comparta estado con el runtime existente.",
       "learning_objective_id": "t26-lo-supp-012",
@@ -835,14 +1187,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-15",
           "verified_at": "2026-10-15"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "ASP.NET Core Blazor hosting models",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "ASP.NET Core Blazor render modes",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section Interactive Auto render mode — existing interactivity."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[88, 88, 88, 88]."
         },
         "explanation": {
           "status": "passed",
@@ -850,33 +1224,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section Interactive Auto render mode — existing interactivity."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         }
       },
@@ -884,12 +1258,12 @@
     },
     {
       "id": 4653,
-      "stable_id": "qb-t26-supp-013-d0db2e96a5a65d628af408dd",
+      "stable_id": "qb-t26-supp-013-bfc8efd8af5537bef6e81fcd",
       "topic_num": 26,
       "question": "En una misma jerarquía de componentes, ¿qué combinación describe una posibilidad documentada?",
-      "option_a": "Todos los hermanos deben compartir obligatoriamente el mismo modo.",
-      "option_b": "Un hermano puede ser Static, pero ningún otro puede ser interactivo.",
-      "option_c": "Solo se permiten dos componentes si ambos usan InteractiveServer.",
+      "option_a": "En WebAssembly se descargan al navegador componentes, dependencias y runtime .NET.",
+      "option_b": "Una PWA Blazor WebAssembly puede usar APIs del navegador para capacidades offline.",
+      "option_c": "Blazor Hybrid aprovecha controles Web View de plataformas móviles o de escritorio.",
       "option_d": "Los hermanos pueden usar distintos modos interactivos, si la jerarquía lo permite.",
       "correct": "D",
       "explanation": "Las reglas de propagación permiten usar los modos interactivos desde componentes, incluidos modos diferentes para componentes hermanos.",
@@ -907,14 +1281,25 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-15",
           "verified_at": "2026-10-15"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "ASP.NET Core Blazor hosting models",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section Render-mode propagation — sibling components."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[82, 82, 82, 82]."
         },
         "explanation": {
           "status": "passed",
@@ -922,33 +1307,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section Render-mode propagation — sibling components."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         }
       },
@@ -956,13 +1341,13 @@
     },
     {
       "id": 4654,
-      "stable_id": "qb-t26-supp-014-7e0650994e2836480f377d65",
+      "stable_id": "qb-t26-supp-014-06ae5b0122ec533c2eb9f4d6",
       "topic_num": 26,
       "question": "¿Qué ocurre si un componente hijo intenta cambiar a otro modo interactivo distinto del modo interactivo de su padre?",
-      "option_a": "El hijo siempre hereda silenciosamente el nuevo modo.",
+      "option_a": "Toma una decisión inicial y mantiene ese tipo de interactividad mientras el componente siga en la página.",
       "option_b": "La combinación no está soportada; por ejemplo, un componente Server no puede ser hijo de uno WebAssembly.",
-      "option_c": "El framework convierte ambos componentes en MVC.",
-      "option_d": "Solo se cambia el color del componente.",
+      "option_c": "Los modos interactivos suelen prerenderizar por defecto cuando la aplicación está configurada para ello.",
+      "option_d": "El pipeline middleware de ASP.NET Core, porque los componentes no se renderizan durante ese procesamiento.",
       "correct": "B",
       "explanation": "La regla de propagación prohíbe cambiar a otro modo interactivo en un hijo; la documentación da como ejemplo que Server no puede ser hijo de WebAssembly.",
       "learning_objective_id": "t26-lo-supp-014",
@@ -979,14 +1364,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-15",
           "verified_at": "2026-10-15"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor render modes",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/render-modes?view=aspnetcore-10.0",
+          "citation": "Interactive Auto render mode — initial decision",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-15",
+          "verified_at": "2026-10-15"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "ASP.NET Core Blazor render modes",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor render modes",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/render-modes?view=aspnetcore-10.0",
+          "citation": "Static server-side rendering — routing and authorization",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-15",
+          "verified_at": "2026-10-15"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section Render-mode propagation — child components with different interactive modes."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[105, 105, 104, 106]."
         },
         "explanation": {
           "status": "passed",
@@ -994,33 +1412,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section Render-mode propagation — child components with different interactive modes."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         }
       },
@@ -1028,13 +1446,13 @@
     },
     {
       "id": 4655,
-      "stable_id": "qb-t26-supp-015-834366d81d1b98a13b24201f",
+      "stable_id": "qb-t26-supp-015-09b05185edb041644d2366de",
       "topic_num": 26,
       "question": "¿Por qué puede fallar al pasar ChildContent como parámetro a un componente con un render mode interactivo?",
       "option_a": "Porque RenderFragment representa código arbitrario que no se puede serializar.",
-      "option_b": "Porque ChildContent solo se admite en componentes Static.",
-      "option_c": "Porque el parámetro siempre se convierte en una consulta SQL.",
-      "option_d": "Porque los layouts no pueden recibir parámetros.",
+      "option_b": "Escalar Blazor Server exige recursos para conexiones y estado de los clientes.",
+      "option_c": "Una aplicación WebAssembly puede desplegar sus assets como archivos estáticos.",
+      "option_d": "Un componente puede declarar un render mode mediante la directiva @rendermode.",
       "correct": "A",
       "explanation": "La documentación muestra InvalidOperationException: un parámetro RenderFragment es un delegado con código arbitrario y no se puede serializar al cruzar la frontera del modo.",
       "learning_objective_id": "t26-lo-supp-015",
@@ -1051,14 +1469,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-15",
           "verified_at": "2026-10-15"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "ASP.NET Core Blazor hosting models",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "ASP.NET Core Blazor render modes",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section Render-mode propagation — RenderFragment serialization."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[78, 78, 78, 78]."
         },
         "explanation": {
           "status": "passed",
@@ -1066,33 +1506,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section Render-mode propagation — RenderFragment serialization."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         }
       },
@@ -1100,13 +1540,13 @@
     },
     {
       "id": 4656,
-      "stable_id": "qb-t26-supp-016-85096785a416bb89a22e37c9",
+      "stable_id": "qb-t26-supp-016-058c0a4e380a3a8828578994",
       "topic_num": 26,
       "question": "¿Qué solución propone la guía para el límite de serialización de ChildContent al aplicar un modo interactivo?",
-      "option_a": "Convertir el fragmento en una consulta SQL.",
-      "option_b": "Eliminar todos los parámetros del componente.",
+      "option_a": "El circuito mantiene en servidor el estado asociado a un cliente conectado de Blazor Server.",
+      "option_b": "En .NET 8 y posterior es útil distinguir los modelos por cómo se renderizan los componentes.",
       "option_c": "Envolver el contenido en otro componente que no tenga ese parámetro en la frontera del modo.",
-      "option_d": "Cambiar siempre a un proyecto MVC.",
+      "option_d": "Un componente puede requerir un render mode interactivo para responder a eventos de usuario.",
       "correct": "C",
       "explanation": "La solución documentada es envolver el componente hijo en otro componente sin el parámetro que cruza la frontera; el template usa este patrón con WrapperComponent y Routes.",
       "learning_objective_id": "t26-lo-supp-016",
@@ -1123,14 +1563,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-15",
           "verified_at": "2026-10-15"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "ASP.NET Core Blazor hosting models",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "ASP.NET Core Blazor render modes",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section Render-mode propagation — wrapper component workaround."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[92, 92, 92, 92]."
         },
         "explanation": {
           "status": "passed",
@@ -1138,33 +1600,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section Render-mode propagation — wrapper component workaround."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         }
       },
@@ -1172,13 +1634,13 @@
     },
     {
       "id": 4657,
-      "stable_id": "qb-t26-supp-017-716370abce81a50f2300aadc",
+      "stable_id": "qb-t26-supp-017-a36a929f15b48fea14d5dc68",
       "topic_num": 26,
       "question": "Una página de Identity necesita leer o escribir cookies en una aplicación con interactividad global. ¿Qué enfoque documentado permite mantenerla en estático?",
-      "option_a": "Forzar InteractiveWebAssembly en la página.",
+      "option_a": "El circuito mantiene en servidor el estado asociado a un cliente conectado de Blazor Server.",
       "option_b": "Usar ExcludeFromInteractiveRouting para que adopte static SSR y fuerce una recarga completa.",
-      "option_c": "Mover las cookies a localStorage durante el prerender.",
-      "option_d": "Desactivar el middleware de autorización del servidor.",
+      "option_c": "En .NET 8 y posterior es útil distinguir los modelos por cómo se renderizan los componentes.",
+      "option_d": "Un componente puede requerir un render mode interactivo para responder a eventos de usuario.",
       "correct": "B",
       "explanation": "La guía usa [ExcludeFromInteractiveRouting] para páginas que deben trabajar en el ciclo petición/respuesta, como las que gestionan cookies; la navegación a ellas fuerza una recarga completa.",
       "learning_objective_id": "t26-lo-supp-017",
@@ -1195,14 +1657,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-15",
           "verified_at": "2026-10-15"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "ASP.NET Core Blazor hosting models",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "ASP.NET Core Blazor render modes",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section Static SSR pages in an interactive app — ExcludeFromInteractiveRouting."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[92, 92, 92, 92]."
         },
         "explanation": {
           "status": "passed",
@@ -1210,33 +1694,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section Static SSR pages in an interactive app — ExcludeFromInteractiveRouting."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         }
       },
@@ -1244,13 +1728,13 @@
     },
     {
       "id": 4658,
-      "stable_id": "qb-t26-supp-018-e43b093c6fd47a04252958a6",
+      "stable_id": "qb-t26-supp-018-1d389358c7d621d0c214206d",
       "topic_num": 26,
       "question": "Durante el prerendering de un componente interactivo, ¿qué valor debe esperarse normalmente en RendererInfo.IsInteractive?",
-      "option_a": "Siempre true, porque el modo asignado ya es interactivo.",
-      "option_b": "El valor depende solo de si existe un archivo .Client.",
+      "option_a": "Un valor en cascada evita pasar explícitamente el mismo valor por cada componente intermedio.",
+      "option_b": "El circuito mantiene en servidor el estado asociado a un cliente conectado de Blazor Server.",
       "option_c": "false, porque el componente aún se está prerenderizando y no está interactivo en ese momento.",
-      "option_d": "Un valor que representa el estado de una conexión SQL.",
+      "option_d": "En .NET 8 y posterior es útil distinguir los modelos por cómo se renderizan los componentes.",
       "correct": "C",
       "explanation": "RendererInfo.IsInteractive es false durante el prerendering y true cuando el componente ya se está renderizando interactivamente.",
       "learning_objective_id": "t26-lo-supp-018",
@@ -1267,14 +1751,36 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-15",
           "verified_at": "2026-10-15"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "ASP.NET Core Blazor cascading values and parameters",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "ASP.NET Core Blazor hosting models",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section Detect rendering location and interactivity — RendererInfo.IsInteractive."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[93, 92, 93, 92]."
         },
         "explanation": {
           "status": "passed",
@@ -1282,33 +1788,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section Detect rendering location and interactivity — RendererInfo.IsInteractive."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         }
       },
@@ -1316,12 +1822,12 @@
     },
     {
       "id": 4659,
-      "stable_id": "qb-t26-supp-019-30fb6cc402a85770179543d8",
+      "stable_id": "qb-t26-supp-019-633559cb846a2815d81e32aa",
       "topic_num": 26,
       "question": "Si un componente usa static SSR sin un modo asignado, ¿qué expone AssignedRenderMode según la guía?",
-      "option_a": "InteractiveServerRenderMode siempre.",
-      "option_b": "InteractiveWebAssemblyRenderMode siempre.",
-      "option_c": "Una instancia de InteractiveAutoRenderMode.",
+      "option_a": "Runtime, dependencias y componentes publicados",
+      "option_b": "El argumento del callback tiene tipo explícito",
+      "option_c": "Después de que el elemento se haya renderizado",
       "option_d": "null, porque no tiene un render mode asignado.",
       "correct": "D",
       "explanation": "AssignedRenderMode expone null cuando no se ha asignado un render mode; los modos interactivos exponen sus tipos correspondientes.",
@@ -1339,14 +1845,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-15",
           "verified_at": "2026-10-15"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Blazor hosting models — WebAssembly payload",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Event handling — EventCallback<TValue>",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Components — ElementReference lifecycle",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section Detect rendering location and interactivity — AssignedRenderMode."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[46, 46, 46, 46]."
         },
         "explanation": {
           "status": "passed",
@@ -1354,33 +1893,33 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section Detect rendering location and interactivity — AssignedRenderMode."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         }
       },
@@ -1388,13 +1927,13 @@
     },
     {
       "id": 4660,
-      "stable_id": "qb-t26-supp-020-e9bd531807069081c779ed37",
+      "stable_id": "qb-t26-supp-020-884addaa4851ae31a221d16f",
       "topic_num": 26,
       "question": "Durante static SSR, ¿qué mecanismo procesa normalmente la autorización de una solicitud de página?",
-      "option_a": "El componente NotAuthorized de Blazor siempre se renderiza antes del middleware.",
-      "option_b": "Un circuito WebAssembly creado durante la solicitud.",
+      "option_a": "Toma una decisión inicial y mantiene ese tipo de interactividad mientras el componente siga en la página.",
+      "option_b": "La combinación no está soportada; por ejemplo, un componente Server no puede ser hijo de uno WebAssembly.",
       "option_c": "El pipeline middleware de ASP.NET Core, porque los componentes no se renderizan durante ese procesamiento.",
-      "option_d": "El almacenamiento local del navegador sin una solicitud al servidor.",
+      "option_d": "Permitir que el flujo del componente renderice el resultado y manejar cancelación/errores según corresponda",
       "correct": "C",
       "explanation": "La documentación indica que durante static SSR las solicitudes de páginas se procesan por el pipeline middleware de ASP.NET Core; las características dedicadas del Router, como NotAuthorized, no operan porque los componentes no se renderizan durante ese procesamiento.",
       "learning_objective_id": "t26-lo-supp-020",
@@ -1411,14 +1950,47 @@
           "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
           "retrieved_at": "2026-10-15",
           "verified_at": "2026-10-15"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor render modes",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/render-modes?view=aspnetcore-10.0",
+          "citation": "Interactive Auto render mode — initial decision",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-15",
+          "verified_at": "2026-10-15"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor render modes",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/render-modes?view=aspnetcore-10.0",
+          "citation": "Render-mode propagation — child components with different interactive modes",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-15",
+          "verified_at": "2026-10-15"
+        },
+        {
+          "source_id": "BLAZOR-10",
+          "title": "ASP.NET Core Blazor documentation",
+          "authority": "Microsoft Learn",
+          "tier": "official_primary",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+          "citation": "Lifecycle — async lifecycle",
+          "version_or_as_of": "ASP.NET Core 10.0, current stable reference at research time",
+          "retrieved_at": "2026-10-12",
+          "verified_at": "2026-10-12"
         }
       ],
       "verification": {
         "answer": {
           "status": "passed",
-          "reviewer": "independent-source-review-2026-10-15",
-          "checked_at": "2026-10-15",
-          "basis": "Independent answer-key check against BLAZOR-10 section Static server-side rendering — routing and authorization."
+          "reviewer": "answer-length-balance-review-2026-10-17",
+          "checked_at": "2026-10-17",
+          "basis": "Correct proposition preserved. Three incorrect choices were replaced with independently reviewed propositions from other objectives; post-revision lengths=[105, 105, 106, 107]."
         },
         "explanation": {
           "status": "passed",
@@ -1426,37 +1998,38 @@
           "checked_at": "2026-10-15",
           "basis": "Explanation checked against the official ASP.NET Core 10.0 page, section Static server-side rendering — routing and authorization."
         },
-        "reviewed_at": "2026-10-15",
+        "reviewed_at": "2026-10-17",
         "reviewer_decision": "accepted"
       },
       "deduplication": {
         "exact": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "near_lexical": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "semantic": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         },
         "concept": {
           "status": "unique",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-17",
           "basis": "Independent proposition/objective review found no collision with published topic-26 records or this supplemental lot."
         }
       },
       "status": "validated"
     }
-  ]
+  ],
+  "answer_length_balance_audit": "docs/question-bank/answer-length-balance-audit.json"
 }
