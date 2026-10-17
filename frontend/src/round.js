@@ -82,10 +82,18 @@ export function shuffle(array, random = Math.random) {
 }
 
 function uniqueQuestions(questions) {
-  const seen = new Set()
+  const seenIds = new Set()
+  const seenPrompts = new Set()
   return questions.filter((question) => {
-    if (!question || question.id == null || seen.has(question.id)) return false
-    seen.add(question.id)
+    if (!question || question.id == null || seenIds.has(question.id)) return false
+
+    const prompt = typeof question.question === 'string'
+      ? question.question.normalize('NFKC').toLocaleLowerCase('es').replace(/\s+/g, ' ').trim()
+      : null
+    if (prompt !== null && seenPrompts.has(prompt)) return false
+
+    seenIds.add(question.id)
+    if (prompt !== null) seenPrompts.add(prompt)
     return true
   })
 }
