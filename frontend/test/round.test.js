@@ -7,6 +7,7 @@ import {
   makeRound,
   markQuestionsShown,
 } from '../src/round.js'
+import { QUESTIONS } from '../src/questions.js'
 
 class MemoryStorage {
   #values = new Map()
@@ -28,6 +29,14 @@ const questions = (count) => Array.from({ length: count }, (_, index) => ({ id: 
 const ids = (round) => round.map((question) => question.id)
 
 const withConstantRandom = () => 0.5
+
+function seededRandom(seed) {
+  let state = seed
+  return () => {
+    state = (state * 1664525 + 1013904223) % 4294967296
+    return state / 4294967296
+  }
+}
 
 test('never duplicates question IDs within a round', () => {
   const round = makeRound([{ id: 1 }, { id: 1 }, { id: 2 }], { random: withConstantRandom })
@@ -119,4 +128,38 @@ test('returns the normal 30-question round size', () => {
 
   assert.equal(round.length, EXAM_SIZE)
   assert.equal(new Set(ids(round)).size, EXAM_SIZE)
+})
+
+test('balances syllabus groups and limits Git questions in every full-bank round', () => {
+  for (let seed = 1; seed <= 25; seed += 1) {
+    const round = makeRound(QUESTIONS, { random: seededRandom(seed) })
+    const topicCounts = new Map()
+    for (const question of round) {
+      topicCounts.set(question.topic_num, (topicCounts.get(question.topic_num) ?? 0) + 1)
+    }
+
+    assert.equal(round.length, EXAM_SIZE)
+    assert.equal(new Set(ids(round)).size, EXAM_SIZE)
+    const constitutionCount = (topicCounts.get(1) ?? 0) + (topicCounts.get(2) ?? 0)
+    assert.equal(constitutionCount, 4, 'Constitution topics should receive four questions')
+    for (let topic = 3; topic <= 12; topic += 1) {
+      assert.equal(topicCounts.get(topic), 1, `topic ${topic} should be represented once`)
+    }
+    for (let topic = 36; topic <= 40; topic += 1) {
+      assert.equal(topicCounts.get(topic), 1, `topic ${topic} should be represented once`)
+    }
+
+    const gitCount = round.filter((question) => question.topic_num >= 33 && question.topic_num <= 35).length
+    const blazorCount = round.filter((question) => question.topic_num >= 26 && question.topic_num <= 32).length
+    assert.ok(gitCount <= 1, `expected at most one Git question, got ${gitCount}`)
+    assert.ok(blazorCount <= 2, `expected at most two Blazor questions, got ${blazorCount}`)
+  }
+})
+
+test('keeps the Git cap when non-Git topic pools are unavailable', () => {
+  const gitOnly = QUESTIONS.filter((question) => question.topic_num >= 33 && question.topic_num <= 35).slice(0, 30)
+  const round = makeRound(gitOnly, { random: seededRandom(7) })
+
+  assert.equal(round.length, 1)
+  assert.ok(round.every((question) => question.topic_num >= 33 && question.topic_num <= 35))
 })

@@ -14,6 +14,7 @@ function App() {
   const [questions, setQuestions] = useState(() => makeRound(QUESTIONS))
   const [answers, setAnswers] = useState({})
   const [showAnswers, setShowAnswers] = useState(false)
+  const [showSummary, setShowSummary] = useState(false)
 
   useEffect(() => {
     markQuestionsShown(questions)
@@ -31,6 +32,7 @@ function App() {
     setQuestions(makeRound(QUESTIONS))
     setAnswers({})
     setShowAnswers(false)
+    setShowSummary(false)
     setRoundId((id) => id + 1)
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
@@ -51,18 +53,29 @@ function App() {
         </p>
       </header>
 
-      <section className="toolbar" aria-label="Resumen del test">
-        <div className="progress-block">
-          <strong>{answeredCount}/{questions.length}</strong>
-          <span>respondidas</span>
-          <div className="progress" aria-hidden="true"><div style={{ width: `${progress}%` }} /></div>
-        </div>
-        <div className="score-pills">
-          <span className="pill ok">{correctCount} bien</span>
-          <span className="pill bad">{wrongCount} mal</span>
-          <span className="pill muted">{questions.length - answeredCount} pendientes</span>
-        </div>
-        <button className="btn secondary" onClick={startNewRound}>Nueva ronda</button>
+      <section className={`toolbar ${showSummary ? 'toolbar-open' : ''}`} aria-label="Controles del test">
+        {showSummary && (
+          <div className="score-panel" id="test-summary">
+            <div className="progress-block">
+              <strong>{answeredCount}/{questions.length}</strong>
+              <span>respondidas</span>
+              <div className="progress" aria-hidden="true"><div style={{ width: `${progress}%` }} /></div>
+            </div>
+            <div className="score-pills">
+              <span className="pill ok">{correctCount} bien</span>
+              <span className="pill bad">{wrongCount} mal</span>
+              <span className="pill muted">{questions.length - answeredCount} pendientes</span>
+            </div>
+          </div>
+        )}
+        <button
+          className="btn secondary summary-toggle"
+          onClick={() => setShowSummary((value) => !value)}
+          aria-expanded={showSummary}
+          aria-controls="test-summary"
+        >
+          {showSummary ? 'Ocultar progreso' : 'Ver progreso'}
+        </button>
       </section>
 
       <main className="question-list">
@@ -70,7 +83,12 @@ function App() {
           <article className="question-card" key={question.id}>
             <div className="question-meta">
               <span>Pregunta {index + 1}</span>
-              <span>Tema {question.topic_num}</span>
+              <span
+                className="question-topic"
+                aria-label={`Tema ${question.topic_num}`}
+              >
+                Tema {question.topic_num}
+              </span>
             </div>
             <h2>{question.question}</h2>
 
@@ -111,9 +129,9 @@ function App() {
 
       <footer className="bottom-actions">
         <button className="btn reveal" onClick={() => setShowAnswers((value) => !value)}>
-          {showAnswers ? 'Ocultar respuestas' : 'Mostrar respuestas correctas'}
+          {showAnswers ? 'Ocultar respuestas' : 'Ver respuestas'}
         </button>
-        <button className="btn primary" onClick={startNewRound}>Nueva ronda de hasta {EXAM_SIZE}</button>
+        <button className="btn primary" onClick={startNewRound}>Nueva ronda</button>
       </footer>
     </div>
   )

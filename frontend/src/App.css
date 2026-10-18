@@ -17,7 +17,10 @@ button { font: inherit; }
 .hero h1 { margin: 0; font-size: clamp(2.1rem, 6vw, 4.6rem); line-height: .95; letter-spacing: -.06em; }
 .hero p { max-width: 720px; margin: 18px 0 0; color: rgba(255,255,255,.86); font-size: 1.08rem; }
 
-.toolbar { position: sticky; top: 12px; z-index: 10; display: grid; grid-template-columns: minmax(180px, 1fr) auto auto; gap: 14px; align-items: center; margin: 20px 0; padding: 14px; border: 1px solid rgba(70, 87, 115, .14); border-radius: 22px; background: rgba(255,255,255,.86); backdrop-filter: blur(14px); box-shadow: 0 14px 36px rgba(18, 38, 63, .08); }
+.toolbar { position: sticky; top: 12px; z-index: 10; display: flex; gap: 14px; align-items: center; justify-content: flex-end; margin: 20px 0; padding: 10px 14px; border: 1px solid rgba(70, 87, 115, .14); border-radius: 22px; background: rgba(255,255,255,.86); backdrop-filter: blur(14px); box-shadow: 0 14px 36px rgba(18, 38, 63, .08); }
+.toolbar-open { justify-content: space-between; }
+.score-panel { display: grid; grid-template-columns: minmax(180px, 1fr) auto; gap: 14px; align-items: center; flex: 1; min-width: 0; }
+.summary-toggle { flex: 0 0 auto; white-space: nowrap; }
 .progress-block strong { display: block; font-size: 1.25rem; }
 .progress-block span { color: #667085; font-size: .88rem; }
 .progress { height: 8px; overflow: hidden; margin-top: 9px; border-radius: 999px; background: #e4eaf3; }
@@ -38,6 +41,7 @@ button { font: inherit; }
 .question-list { display: grid; gap: 18px; }
 .question-card { padding: 22px; border: 1px solid rgba(70, 87, 115, .12); border-radius: 24px; background: rgba(255,255,255,.94); box-shadow: 0 14px 34px rgba(18, 38, 63, .07); }
 .question-meta { display: flex; justify-content: space-between; gap: 12px; margin-bottom: 12px; color: #667085; font-size: .86rem; font-weight: 800; text-transform: uppercase; letter-spacing: .04em; }
+.question-topic { font-size: .75rem; font-weight: 700; letter-spacing: .02em; text-transform: none; }
 .question-card h2 { margin: 0 0 18px; color: #111827; font-size: clamp(1.05rem, 2.2vw, 1.32rem); line-height: 1.35; }
 .options { display: grid; gap: 10px; }
 .option { width: 100%; min-height: 56px; display: grid; grid-template-columns: 38px 1fr; gap: 12px; align-items: center; text-align: left; padding: 13px 14px; border: 2px solid #e3e8f2; border-radius: 18px; color: #263244; background: #fbfcff; cursor: pointer; touch-action: manipulation; }
@@ -56,7 +60,10 @@ button { font: inherit; }
 @media (max-width: 760px) {
   .app { width: min(100% - 18px, 1040px); padding-top: 9px; padding-bottom: calc(175px + env(safe-area-inset-bottom)); }
   .hero { padding: 24px; border-radius: 22px; }
-  .toolbar { position: sticky; top: 8px; grid-template-columns: 1fr; gap: 10px; border-radius: 18px; }
+  .toolbar { position: sticky; top: 8px; flex-wrap: wrap; gap: 10px; border-radius: 18px; }
+  .toolbar-open { align-items: stretch; }
+  .score-panel { grid-template-columns: 1fr; gap: 10px; }
+  .summary-toggle { width: 100%; }
   .question-card { padding: 16px; border-radius: 20px; }
   .option { grid-template-columns: 32px 1fr; padding: 12px; }
   .letter { width: 30px; height: 30px; }
