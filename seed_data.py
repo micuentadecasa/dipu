@@ -43370,3 +43370,4008 @@ SEED_QUESTIONS.extend([
     }
 ])
 # QUESTION_BANK_ACCEPTED_TOPIC_29_LOT_11_END
+
+# QUESTION_BANK_SUPPLEMENTAL_TEN_PER_TOPIC_START
+SEED_QUESTIONS.extend([
+    {
+        "topic_num": 1,
+        "question": "¿Qué lengua es oficial del Estado según la Constitución Española?",
+        "option_a": "El castellano (caso previsto)",
+        "option_b": "Solo las lenguas cooficiales autonómicas",
+        "option_c": "El latín (caso previsto) (caso concreto)",
+        "option_d": "La lengua que determine cada municipio",
+        "correct": "A",
+        "explanation": "El artículo 3.1 establece que el castellano es la lengua española oficial del Estado y que todos tienen el deber de conocerla y el derecho a usarla."
+    },
+    {
+        "topic_num": 1,
+        "question": "¿Qué ciudad designa la Constitución como capital del Estado?",
+        "option_a": "Barcelona (caso previsto) (caso concreto)",
+        "option_b": "Sevilla (caso previsto) (caso concreto) (supuesto dado)",
+        "option_c": "La ciudad que designe el Gobierno en cada legislatura",
+        "option_d": "Madrid (caso previsto) (caso concreto) (supuesto dado)",
+        "correct": "D",
+        "explanation": "El artículo 5 dispone expresamente que la capital del Estado es la villa de Madrid."
+    },
+    {
+        "topic_num": 1,
+        "question": "¿Qué exige la Constitución a la estructura interna y funcionamiento de los partidos políticos?",
+        "option_a": "Que sean necesariamente de ámbito estatal",
+        "option_b": "Que carezcan de organización interna",
+        "option_c": "Que sean democráticos (caso previsto)",
+        "option_d": "Que dependan orgánicamente del Gobierno",
+        "correct": "C",
+        "explanation": "El artículo 6 exige que la estructura interna y el funcionamiento de los partidos sean democráticos."
+    },
+    {
+        "topic_num": 1,
+        "question": "¿Qué misión constitucional corresponde a las Fuerzas Armadas?",
+        "option_a": "Dirigir la política monetaria europea (caso previsto) (caso concreto) (supuesto dado) (marco citado) (regla aplicable)",
+        "option_b": "Garantizar la soberanía e independencia de España y defender su integridad territorial y el ordenamiento constitucional",
+        "option_c": "Aprobar los Presupuestos Generales del Estado (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "option_d": "Resolver recursos de amparo (caso previsto) (caso concreto) (supuesto dado) (marco citado) (regla aplicable)",
+        "correct": "B",
+        "explanation": "El artículo 8.1 atribuye esas misiones al Ejército de Tierra, la Armada y el Ejército del Aire."
+    },
+    {
+        "topic_num": 1,
+        "question": "¿Qué principio debe inspirar el sistema tributario según la Constitución?",
+        "option_a": "Igualdad y progresividad, sin alcance confiscatorio",
+        "option_b": "Uniformidad absoluta de todos los tributos",
+        "option_c": "Confiscación de la renta disponible (caso previsto)",
+        "option_d": "Exención general de las prestaciones patrimoniales",
+        "correct": "A",
+        "explanation": "El artículo 31.1 vincula la contribución a la capacidad económica mediante un sistema justo inspirado en igualdad y progresividad, que no puede tener alcance confiscatorio."
+    },
+    {
+        "topic_num": 1,
+        "question": "¿Qué institución recibe la misión de defender los derechos del Título I frente a la Administración?",
+        "option_a": "El Tribunal de Cuentas",
+        "option_b": "El Consejo de Estado",
+        "option_c": "La Junta Electoral Central",
+        "option_d": "El Defensor del Pueblo",
+        "correct": "D",
+        "explanation": "El artículo 54 configura al Defensor del Pueblo como alto comisionado de las Cortes Generales para la defensa de los derechos del Título I."
+    },
+    {
+        "topic_num": 1,
+        "question": "¿Qué recurso constitucional protege los derechos del artículo 14 y de la Sección primera del Capítulo segundo del Título I?",
+        "option_a": "La cuestión de confianza",
+        "option_b": "La iniciativa legislativa popular",
+        "option_c": "El recurso de amparo (caso previsto)",
+        "option_d": "El recurso de casación civil",
+        "correct": "C",
+        "explanation": "El artículo 53.2 prevé el recurso de amparo ante el Tribunal Constitucional para ese conjunto de derechos."
+    },
+    {
+        "topic_num": 1,
+        "question": "¿Qué derecho permite dirigir peticiones individuales y colectivas por escrito?",
+        "option_a": "El derecho de acceso a archivos sin límites",
+        "option_b": "El derecho de petición (caso previsto)",
+        "option_c": "El derecho de huelga exclusivamente",
+        "option_d": "La libertad de empresa (caso previsto)",
+        "correct": "B",
+        "explanation": "El artículo 29 reconoce el derecho de petición individual y colectiva por escrito, en la forma y con los efectos que determine la ley."
+    },
+    {
+        "topic_num": 1,
+        "question": "¿Qué órgano representa al pueblo español y ejerce la potestad legislativa del Estado?",
+        "option_a": "Las Cortes Generales (caso previsto)",
+        "option_b": "El Gobierno (caso previsto)",
+        "option_c": "El Tribunal Constitucional",
+        "option_d": "El Consejo General del Poder Judicial",
+        "correct": "A",
+        "explanation": "El artículo 66.1 atribuye a las Cortes Generales la representación del pueblo español y el ejercicio de la potestad legislativa estatal."
+    },
+    {
+        "topic_num": 1,
+        "question": "¿Qué tipo de ley se reserva, entre otras materias, para el desarrollo de los derechos fundamentales y las libertades públicas?",
+        "option_a": "La ley de bases",
+        "option_b": "El decreto-ley en todo caso",
+        "option_c": "La orden ministerial",
+        "option_d": "La ley orgánica",
+        "correct": "D",
+        "explanation": "El artículo 81.1 reserva a la ley orgánica el desarrollo de los derechos fundamentales y libertades públicas, entre otras materias."
+    },
+    {
+        "topic_num": 2,
+        "question": "¿Quién propone al Rey el nombramiento y separación de los ministros?",
+        "option_a": "El Presidente del Gobierno",
+        "option_b": "El Presidente del Senado (caso previsto)",
+        "option_c": "El Consejo General del Poder Judicial",
+        "option_d": "El Defensor del Pueblo (caso previsto)",
+        "correct": "A",
+        "explanation": "El artículo 100 atribuye al Presidente del Gobierno la propuesta de nombramiento y separación de los ministros."
+    },
+    {
+        "topic_num": 2,
+        "question": "¿Ante qué Cámara responde políticamente el Gobierno?",
+        "option_a": "Ante el Senado exclusivamente",
+        "option_b": "Ante las diputaciones provinciales",
+        "option_c": "Ante el Tribunal de Cuentas",
+        "option_d": "Ante el Congreso de los Diputados",
+        "correct": "D",
+        "explanation": "El artículo 108 establece que el Gobierno responde solidariamente en su gestión política ante el Congreso de los Diputados."
+    },
+    {
+        "topic_num": 2,
+        "question": "¿Qué instrumento permite al Gobierno solicitar la confianza del Congreso sobre su programa?",
+        "option_a": "El recurso de amparo (caso previsto)",
+        "option_b": "La iniciativa legislativa popular",
+        "option_c": "La cuestión de confianza",
+        "option_d": "La moción de censura (caso previsto)",
+        "correct": "C",
+        "explanation": "El artículo 112 regula la cuestión de confianza planteada por el Presidente del Gobierno, previa deliberación del Consejo de Ministros."
+    },
+    {
+        "topic_num": 2,
+        "question": "¿Qué requisito debe incluir una moción de censura?",
+        "option_a": "Un referéndum municipal (caso previsto)",
+        "option_b": "Un candidato a la Presidencia del Gobierno",
+        "option_c": "Una consulta al Senado (caso previsto)",
+        "option_d": "Una sentencia del Tribunal Constitucional",
+        "correct": "B",
+        "explanation": "El artículo 113 configura la moción de censura como constructiva y exige que incluya un candidato a la Presidencia."
+    },
+    {
+        "topic_num": 2,
+        "question": "¿Quién puede proponer la disolución del Congreso, del Senado o de las Cortes Generales?",
+        "option_a": "El Presidente del Gobierno",
+        "option_b": "El Rey por iniciativa propia",
+        "option_c": "El Presidente del Tribunal Supremo",
+        "option_d": "El Senado mediante decreto",
+        "correct": "A",
+        "explanation": "El artículo 115 permite al Presidente del Gobierno proponer la disolución, previa deliberación del Consejo de Ministros y bajo su responsabilidad."
+    },
+    {
+        "topic_num": 2,
+        "question": "¿Qué órgano autoriza la prórroga del estado de alarma?",
+        "option_a": "El Senado por mayoría simple",
+        "option_b": "El Tribunal Supremo",
+        "option_c": "La Conferencia de Presidentes",
+        "option_d": "El Congreso de los Diputados",
+        "correct": "D",
+        "explanation": "El artículo 116.2 atribuye al Congreso la autorización de la prórroga del estado de alarma."
+    },
+    {
+        "topic_num": 2,
+        "question": "¿Qué norma es la base institucional de cada comunidad autónoma?",
+        "option_a": "El reglamento orgánico municipal",
+        "option_b": "El tratado internacional",
+        "option_c": "El Estatuto de Autonomía",
+        "option_d": "La ordenanza provincial",
+        "correct": "C",
+        "explanation": "El artículo 147.1 define el Estatuto como la norma institucional básica de cada comunidad autónoma."
+    },
+    {
+        "topic_num": 2,
+        "question": "¿Qué principio financiero reconoce la Constitución a las comunidades autónomas?",
+        "option_a": "Capacidad de emitir moneda propia (caso previsto)",
+        "option_b": "Autonomía financiera para el desarrollo de sus competencias",
+        "option_c": "Independencia monetaria frente al Estado (caso previsto)",
+        "option_d": "Ausencia de coordinación con la Hacienda estatal",
+        "correct": "B",
+        "explanation": "El artículo 156.1 reconoce autonomía financiera a las comunidades autónomas, con arreglo a los principios de coordinación y solidaridad."
+    },
+    {
+        "topic_num": 2,
+        "question": "¿Qué principio debe regir la organización territorial de España junto con la autonomía?",
+        "option_a": "La solidaridad (caso previsto)",
+        "option_b": "La subordinación provincial",
+        "option_c": "La uniformidad administrativa absoluta",
+        "option_d": "La independencia de cada municipio",
+        "correct": "A",
+        "explanation": "El artículo 2 garantiza la solidaridad entre nacionalidades y regiones, junto con la unidad y la autonomía."
+    },
+    {
+        "topic_num": 2,
+        "question": "¿Qué mayoría requiere la aprobación de un Estatuto de Autonomía en el Congreso en los casos del artículo 151?",
+        "option_a": "La unanimidad de las Cortes",
+        "option_b": "La mayoría de un tercio (caso previsto)",
+        "option_c": "La mayoría simple del Senado únicamente",
+        "option_d": "La mayoría absoluta (caso previsto)",
+        "correct": "D",
+        "explanation": "El artículo 151.2 prevé la aprobación mediante mayoría absoluta del Congreso en ese procedimiento."
+    },
+    {
+        "topic_num": 3,
+        "question": "En la Ley 7/1985, ¿qué conjunto identifica los elementos del municipio?",
+        "option_a": "El territorio, la población y la organización",
+        "option_b": "El presupuesto, el padrón y la provincia",
+        "option_c": "La comarca, el distrito y el partido judicial",
+        "option_d": "El alcalde, la diputación y el Gobierno",
+        "correct": "A",
+        "explanation": "El artículo 11 de la Ley 7/1985 identifica territorio, población y organización como elementos del municipio."
+    },
+    {
+        "topic_num": 3,
+        "question": "¿Qué instrumento acredita la condición de vecino de un municipio?",
+        "option_a": "El registro mercantil",
+        "option_b": "El libro de actas del Pleno",
+        "option_c": "El censo de funcionarios",
+        "option_d": "El padrón municipal",
+        "correct": "D",
+        "explanation": "El artículo 15 vincula la condición de vecino a la inscripción en el padrón municipal."
+    },
+    {
+        "topic_num": 3,
+        "question": "¿Qué órgano municipal está integrado por todos los concejales y presidido por el alcalde?",
+        "option_a": "La comisión especial de cuentas",
+        "option_b": "La tesorería (caso previsto)",
+        "option_c": "El Pleno (caso previsto)",
+        "option_d": "La Junta de Gobierno Local",
+        "correct": "C",
+        "explanation": "El Pleno está integrado por todos los concejales y es presidido por el alcalde conforme a la organización municipal de la Ley 7/1985."
+    },
+    {
+        "topic_num": 3,
+        "question": "¿Qué competencia propia municipal incluye la promoción de la participación ciudadana?",
+        "option_a": "La regulación de la moneda (caso previsto) (caso concreto)",
+        "option_b": "La información y promoción de la participación ciudadana",
+        "option_c": "La defensa nacional (caso previsto) (caso concreto)",
+        "option_d": "La política exterior (caso previsto) (caso concreto)",
+        "correct": "B",
+        "explanation": "El artículo 25.2 recoge la información y promoción de la participación ciudadana como materia de competencia propia municipal."
+    },
+    {
+        "topic_num": 3,
+        "question": "¿Qué servicio deben prestar todos los municipios?",
+        "option_a": "Alumbrado público, cementerio, recogida de residuos, limpieza viaria, abastecimiento domiciliario de agua potable y alcantarillado",
+        "option_b": "Metro urbano y aeropuerto internacional (caso previsto) (caso concreto) (supuesto dado) (marco citado) (regla aplicable)",
+        "option_c": "Universidad pública y hospital provincial (caso previsto) (caso concreto) (supuesto dado) (marco citado) (regla aplicable)",
+        "option_d": "Transporte ferroviario de alta velocidad (caso previsto) (caso concreto) (supuesto dado) (marco citado) (regla aplicable)",
+        "correct": "A",
+        "explanation": "El artículo 26.1 enumera esos servicios mínimos comunes a todos los municipios."
+    },
+    {
+        "topic_num": 3,
+        "question": "¿Qué órgano gobierna y administra la provincia con carácter general?",
+        "option_a": "La Subdelegación del Gobierno (caso previsto) (caso concreto)",
+        "option_b": "El Tribunal Superior de Justicia (caso previsto)",
+        "option_c": "La Delegación de Hacienda (caso previsto) (caso concreto)",
+        "option_d": "La Diputación u otra corporación de carácter representativo",
+        "correct": "D",
+        "explanation": "El artículo 31.3 atribuye el gobierno y administración autónoma de la provincia a la Diputación u otra corporación representativa."
+    },
+    {
+        "topic_num": 3,
+        "question": "¿Qué finalidad provincial prevé la Ley 7/1985 respecto de los municipios?",
+        "option_a": "Dirigir la Administración del Estado (caso previsto) (caso concreto)",
+        "option_b": "Aprobar leyes autonómicas (caso previsto) (caso concreto) (supuesto dado)",
+        "option_c": "Asegurar la prestación integral y adecuada de los servicios municipales",
+        "option_d": "Sustituir siempre a los ayuntamientos (caso previsto) (caso concreto)",
+        "correct": "C",
+        "explanation": "El artículo 31.2 incluye asegurar la prestación integral y adecuada de los servicios de competencia municipal."
+    },
+    {
+        "topic_num": 3,
+        "question": "¿Qué órgano municipal puede existir en municipios de población superior a 5.000 habitantes?",
+        "option_a": "La Cámara de Cuentas Estatal",
+        "option_b": "La Junta de Gobierno Local",
+        "option_c": "El Consejo de Ministros",
+        "option_d": "La Junta Electoral Provincial",
+        "correct": "B",
+        "explanation": "El artículo 20 contempla la Junta de Gobierno Local en municipios de población superior a 5.000 habitantes y en otros supuestos legales."
+    },
+    {
+        "topic_num": 3,
+        "question": "¿Qué órgano provincial aprueba inicialmente el presupuesto de la Diputación?",
+        "option_a": "El Pleno (caso previsto)",
+        "option_b": "El Delegado del Gobierno",
+        "option_c": "La Secretaría General (caso previsto)",
+        "option_d": "La Comisión de Gobierno autonómica",
+        "correct": "A",
+        "explanation": "La organización provincial atribuye al Pleno las decisiones generales de gobierno, incluida la aprobación presupuestaria en el marco legal local."
+    },
+    {
+        "topic_num": 3,
+        "question": "¿Qué entidad local puede crearse para la gestión conjunta de obras y servicios municipales?",
+        "option_a": "Una sociedad estatal obligatoria",
+        "option_b": "Un distrito judicial",
+        "option_c": "Una comunidad autónoma",
+        "option_d": "Una mancomunidad de municipios",
+        "correct": "D",
+        "explanation": "La Ley 7/1985 permite que los municipios se asocien voluntariamente en mancomunidades para ejecutar obras y servicios determinados."
+    },
+    {
+        "topic_num": 4,
+        "question": "¿Qué texto legal aprueba el régimen local refundido vigente?",
+        "option_a": "El Real Decreto Legislativo 781/1986",
+        "option_b": "El Real Decreto 2568/1986",
+        "option_c": "La Ley 39/2015 (caso previsto)",
+        "option_d": "El Real Decreto 203/2021",
+        "correct": "A",
+        "explanation": "El Real Decreto Legislativo 781/1986 aprueba el texto refundido de las disposiciones legales vigentes en materia de Régimen Local."
+    },
+    {
+        "topic_num": 4,
+        "question": "¿Qué reglamento regula la organización, funcionamiento y régimen jurídico de las entidades locales?",
+        "option_a": "El Real Decreto Legislativo 781/1986",
+        "option_b": "La Ley Orgánica 3/2007 (caso previsto)",
+        "option_c": "El Real Decreto 311/2022",
+        "option_d": "El Real Decreto 2568/1986",
+        "correct": "D",
+        "explanation": "El Real Decreto 2568/1986 aprueba el Reglamento de Organización, Funcionamiento y Régimen Jurídico de las Entidades Locales."
+    },
+    {
+        "topic_num": 4,
+        "question": "¿Qué documento refleja oficialmente las deliberaciones y acuerdos de una sesión local?",
+        "option_a": "La relación de puestos de trabajo",
+        "option_b": "El registro de intereses privado",
+        "option_c": "El acta (caso previsto)",
+        "option_d": "El padrón municipal (caso previsto)",
+        "correct": "C",
+        "explanation": "El ROF exige documentar en acta las circunstancias de la sesión, las deliberaciones esenciales y los acuerdos adoptados."
+    },
+    {
+        "topic_num": 4,
+        "question": "¿Qué carácter tienen normalmente las sesiones del Pleno?",
+        "option_a": "Privado salvo autorización judicial",
+        "option_b": "Público (caso previsto)",
+        "option_c": "Secreto en todos los casos",
+        "option_d": "Reservado solo a funcionarios",
+        "correct": "B",
+        "explanation": "El ROF establece el carácter público de las sesiones del Pleno, con las excepciones legalmente previstas."
+    },
+    {
+        "topic_num": 4,
+        "question": "¿Qué sesión puede convocarse cuando la urgencia no permite respetar la periodicidad ordinaria?",
+        "option_a": "La sesión extraordinaria urgente",
+        "option_b": "La sesión constitutiva anual",
+        "option_c": "La sesión de investidura estatal",
+        "option_d": "La sesión legislativa autonómica",
+        "correct": "A",
+        "explanation": "El ROF distingue sesiones ordinarias, extraordinarias y extraordinarias urgentes cuando la urgencia lo justifica."
+    },
+    {
+        "topic_num": 4,
+        "question": "¿Qué regla general se aplica a los acuerdos de los órganos colegiados locales?",
+        "option_a": "Exigen unanimidad en todo caso (caso previsto)",
+        "option_b": "Se adoptan siempre por sorteo (caso previsto)",
+        "option_c": "Los decide exclusivamente la secretaría (caso previsto)",
+        "option_d": "Se adoptan por mayoría simple de los miembros presentes",
+        "correct": "D",
+        "explanation": "El ROF aplica como regla general la mayoría simple, salvo que una norma exija una mayoría distinta."
+    },
+    {
+        "topic_num": 4,
+        "question": "¿Qué ocurre si una votación local produce empate?",
+        "option_a": "Decide el interventor (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "option_b": "Se remite siempre al Senado (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "option_c": "Se efectúa una nueva votación y, si persiste, decide el voto de calidad de la Presidencia",
+        "option_d": "El acuerdo queda aprobado automáticamente (caso previsto) (caso concreto) (supuesto dado)",
+        "correct": "C",
+        "explanation": "El régimen de votaciones del ROF prevé nueva votación y, de persistir el empate, el voto de calidad de la Presidencia."
+    },
+    {
+        "topic_num": 4,
+        "question": "¿Qué órgano local controla y fiscaliza los órganos de gobierno?",
+        "option_a": "La policía local exclusivamente",
+        "option_b": "El Pleno (caso previsto)",
+        "option_c": "La tesorería (caso previsto)",
+        "option_d": "La junta electoral (caso previsto)",
+        "correct": "B",
+        "explanation": "El Pleno ejerce el control y fiscalización de los órganos de gobierno conforme a la Ley 7/1985 y al ROF."
+    },
+    {
+        "topic_num": 4,
+        "question": "¿Qué formalidad permite que los concejales conozcan los asuntos que se debatirán?",
+        "option_a": "La convocatoria con el orden del día",
+        "option_b": "Una orden verbal posterior a la sesión",
+        "option_c": "El padrón de habitantes (caso previsto)",
+        "option_d": "La publicación de una ley estatal",
+        "correct": "A",
+        "explanation": "La convocatoria debe indicar la sesión y el orden del día para que los miembros conozcan los asuntos a tratar."
+    },
+    {
+        "topic_num": 4,
+        "question": "¿Qué instrumento normativo local regula materias de competencia municipal con carácter general?",
+        "option_a": "El decreto-ley",
+        "option_b": "La ley orgánica",
+        "option_c": "La circular europea",
+        "option_d": "La ordenanza",
+        "correct": "D",
+        "explanation": "Las entidades locales pueden aprobar ordenanzas y reglamentos dentro de sus competencias y con sujeción a la ley."
+    },
+    {
+        "topic_num": 5,
+        "question": "¿Qué derecho tiene el interesado a conocer el estado de la tramitación?",
+        "option_a": "Conocer el estado del procedimiento y obtener copias de los documentos",
+        "option_b": "Modificar unilateralmente la resolución (caso previsto) (caso concreto)",
+        "option_c": "Omitir cualquier identificación (caso previsto) (caso concreto)",
+        "option_d": "Exigir siempre silencio positivo (caso previsto) (caso concreto)",
+        "correct": "A",
+        "explanation": "El artículo 53.1.a reconoce al interesado el derecho a conocer el estado de la tramitación y a obtener copias de los documentos contenidos en el procedimiento."
+    },
+    {
+        "topic_num": 5,
+        "question": "¿Cómo puede acreditarse la representación ante la Administración?",
+        "option_a": "Solo mediante escritura pública (caso previsto) (caso concreto)",
+        "option_b": "Únicamente por declaración telefónica (caso previsto) (caso concreto)",
+        "option_c": "Nunca en un registro electrónico (caso previsto) (caso concreto)",
+        "option_d": "Mediante cualquier medio válido en Derecho que deje constancia fidedigna",
+        "correct": "D",
+        "explanation": "El artículo 5 permite acreditar la representación por cualquier medio válido que deje constancia fidedigna o mediante apoderamiento apud acta."
+    },
+    {
+        "topic_num": 5,
+        "question": "¿Qué sujetos están obligados a relacionarse electrónicamente con las Administraciones?",
+        "option_a": "Nadie en ningún procedimiento (caso previsto) (caso concreto)",
+        "option_b": "Únicamente los órganos constitucionales (caso previsto)",
+        "option_c": "Las personas jurídicas, entre otros sujetos previstos legalmente",
+        "option_d": "Solo las personas físicas jubiladas (caso previsto) (caso concreto)",
+        "correct": "C",
+        "explanation": "El artículo 14.2 incluye a las personas jurídicas entre los sujetos obligados a relacionarse electrónicamente."
+    },
+    {
+        "topic_num": 5,
+        "question": "¿Qué sistema permite identificar al interesado electrónicamente?",
+        "option_a": "Una llamada sin registro (caso previsto) (caso concreto)",
+        "option_b": "Los sistemas basados en certificados electrónicos cualificados",
+        "option_c": "Una contraseña compartida por todos los ciudadanos",
+        "option_d": "El número de expediente de otra persona (caso previsto)",
+        "correct": "B",
+        "explanation": "El artículo 9 contempla sistemas de firma y certificados electrónicos cualificados como medios de identificación."
+    },
+    {
+        "topic_num": 5,
+        "question": "¿Qué función cumple la firma del interesado en un procedimiento?",
+        "option_a": "Acreditar la autenticidad de su voluntad y consentimiento",
+        "option_b": "Sustituir siempre la resolución administrativa",
+        "option_c": "Eliminar la obligación de aportar datos (caso previsto)",
+        "option_d": "Convertir una copia en original histórico (caso previsto)",
+        "correct": "A",
+        "explanation": "El artículo 10 vincula la firma a la autenticidad de la voluntad y consentimiento expresados por el interesado."
+    },
+    {
+        "topic_num": 5,
+        "question": "¿Qué regla se aplica si una solicitud se presenta en una lengua cooficial?",
+        "option_a": "Debe rechazarse siempre (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "option_b": "Solo puede tramitarse en latín (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "option_c": "La Administración puede ignorarla sin resolución (caso previsto) (caso concreto)",
+        "option_d": "Se aplican las reglas lingüísticas previstas en la Constitución y en la normativa autonómica",
+        "correct": "D",
+        "explanation": "El artículo 15 regula la lengua de los procedimientos y remite al régimen de cooficialidad aplicable."
+    },
+    {
+        "topic_num": 5,
+        "question": "¿Qué debe ofrecer cada Administración para recibir solicitudes y escritos?",
+        "option_a": "Un registro mercantil (caso previsto)",
+        "option_b": "Una cuenta personal del funcionario",
+        "option_c": "Un registro electrónico general",
+        "option_d": "Solo un buzón postal privado",
+        "correct": "C",
+        "explanation": "El artículo 16 exige que cada Administración disponga de un Registro Electrónico General."
+    },
+    {
+        "topic_num": 5,
+        "question": "¿Qué regla rige la expedición de copias por las Administraciones?",
+        "option_a": "La copia elimina el documento original (caso previsto)",
+        "option_b": "Deben garantizar la autenticidad y la integridad de la copia",
+        "option_c": "Toda copia es válida aunque esté incompleta (caso previsto)",
+        "option_d": "Solo se permiten copias en papel (caso previsto)",
+        "correct": "B",
+        "explanation": "El artículo 27 exige que las copias auténticas mantengan autenticidad e integridad y cumplan los requisitos establecidos."
+    },
+    {
+        "topic_num": 5,
+        "question": "¿Qué obligación de asistencia tienen las Administraciones respecto de los interesados?",
+        "option_a": "Deben asistir en el uso de medios electrónicos a quienes lo soliciten",
+        "option_b": "Deben presentar siempre la solicitud por el interesado (caso previsto)",
+        "option_c": "Solo deben asistir a personas jurídicas (caso previsto) (caso concreto)",
+        "option_d": "No pueden facilitar ayuda técnica (caso previsto) (caso concreto)",
+        "correct": "A",
+        "explanation": "El artículo 12 reconoce el derecho a ser asistido en el uso de medios electrónicos en los términos previstos."
+    },
+    {
+        "topic_num": 5,
+        "question": "¿Cómo se computan, salvo previsión distinta, los plazos expresados por días?",
+        "option_a": "Por meses lunares (caso previsto)",
+        "option_b": "Solo por domingos (caso previsto)",
+        "option_c": "Por días lectivos de cada Administración",
+        "option_d": "Por días hábiles (caso previsto)",
+        "correct": "D",
+        "explanation": "El artículo 30.2 establece que, salvo disposición en contrario, los plazos señalados por días se entienden hábiles."
+    },
+    {
+        "topic_num": 6,
+        "question": "Respecto de la eficacia temporal, ¿cuál es la regla general para un acto administrativo?",
+        "option_a": "Desde la fecha en que se dicten, salvo que otra cosa dispongan o requieran notificación, publicación o aprobación",
+        "option_b": "Solo al año siguiente (caso previsto) (caso concreto) (supuesto dado) (marco citado) (regla aplicable)",
+        "option_c": "Siempre antes de dictarse (caso previsto) (caso concreto) (supuesto dado) (marco citado) (regla aplicable)",
+        "option_d": "Nunca si son electrónicos (caso previsto) (caso concreto) (supuesto dado) (marco citado) (regla aplicable)",
+        "correct": "A",
+        "explanation": "El artículo 39.1 fija la regla general de eficacia desde la fecha en que se dictan, con las excepciones legales."
+    },
+    {
+        "topic_num": 6,
+        "question": "¿Qué plazo máximo tiene la Administración para cursar una notificación desde que se dicta el acto?",
+        "option_a": "Dos meses en todo caso",
+        "option_b": "Un día natural improrrogable",
+        "option_c": "Un año (caso previsto)",
+        "option_d": "Diez días (caso previsto)",
+        "correct": "D",
+        "explanation": "El artículo 40.2 dispone que toda notificación debe cursarse dentro del plazo de diez días desde que se dicta el acto."
+    },
+    {
+        "topic_num": 6,
+        "question": "¿Qué contenido debe incluir una notificación?",
+        "option_a": "Únicamente el sello de salida (caso previsto) (caso concreto) (supuesto dado) (marco citado) (regla aplicable)",
+        "option_b": "La opinión personal del instructor (caso previsto) (caso concreto) (supuesto dado) (marco citado) (regla aplicable)",
+        "option_c": "El texto íntegro de la resolución, si pone fin o no a la vía administrativa, los recursos, el órgano y el plazo",
+        "option_d": "Solo un resumen informal (caso previsto) (caso concreto) (supuesto dado) (marco citado) (regla aplicable)",
+        "correct": "C",
+        "explanation": "El artículo 40.2 enumera el contenido mínimo que permite conocer la resolución y sus medios de impugnación."
+    },
+    {
+        "topic_num": 6,
+        "question": "¿Qué ocurre con una notificación electrónica que no se abre en el plazo legal?",
+        "option_a": "Se considera siempre inexistente (caso previsto)",
+        "option_b": "Se entiende rechazada en los términos previstos por la ley",
+        "option_c": "Se convierte en una resolución favorable (caso previsto)",
+        "option_d": "Se destruye el expediente (caso previsto) (caso concreto)",
+        "correct": "B",
+        "explanation": "El artículo 43.2 regula el rechazo de la notificación electrónica cuando transcurre el plazo sin acceso, dejando constancia en el expediente."
+    },
+    {
+        "topic_num": 6,
+        "question": "¿Qué defecto determina normalmente anulabilidad y no nulidad de pleno derecho?",
+        "option_a": "Cualquier infracción del ordenamiento que no esté incluida en los supuestos de nulidad",
+        "option_b": "La lesión de un derecho fundamental (caso previsto) (caso concreto) (supuesto dado)",
+        "option_c": "La incompetencia manifiesta por razón de materia (caso previsto) (caso concreto)",
+        "option_d": "La omisión total del procedimiento legal (caso previsto) (caso concreto) (supuesto dado)",
+        "correct": "A",
+        "explanation": "El artículo 48 declara anulables los actos que incurran en cualquier infracción del ordenamiento jurídico, incluida la desviación de poder, salvo los supuestos de nulidad."
+    },
+    {
+        "topic_num": 6,
+        "question": "¿Qué efecto tiene la convalidación de un acto anulable?",
+        "option_a": "Convierte cualquier acto nulo en válido",
+        "option_b": "Elimina toda necesidad de motivación",
+        "option_c": "Impide siempre recurrirlo (caso previsto)",
+        "option_d": "Subsana los vicios de que adolece",
+        "correct": "D",
+        "explanation": "El artículo 52 permite convalidar los actos anulables subsanando los vicios de que adolezcan."
+    },
+    {
+        "topic_num": 6,
+        "question": "¿Qué principio debe respetar la actuación administrativa al fijar términos y plazos?",
+        "option_a": "La suspensión automática de todos los plazos (caso previsto)",
+        "option_b": "El cómputo solo cuando convenga al órgano (caso previsto)",
+        "option_c": "La obligatoriedad para autoridades, personal y personas interesadas",
+        "option_d": "La libertad de incumplir para la Administración (caso previsto)",
+        "correct": "C",
+        "explanation": "El artículo 29 establece la obligatoriedad de los términos y plazos para las autoridades y el personal al servicio de las Administraciones y para los interesados."
+    },
+    {
+        "topic_num": 6,
+        "question": "¿Qué medida puede adoptarse para asegurar la eficacia de la resolución que pudiera recaer?",
+        "option_a": "Una modificación presupuestaria",
+        "option_b": "Una medida provisional (caso previsto)",
+        "option_c": "Una sanción definitiva sin procedimiento",
+        "option_d": "Una sentencia constitucional",
+        "correct": "B",
+        "explanation": "El artículo 56 permite adoptar medidas provisionales motivadas para asegurar la eficacia de la resolución."
+    },
+    {
+        "topic_num": 6,
+        "question": "¿Qué medio de ejecución forzosa puede utilizarse para obligaciones personalísimas de no hacer?",
+        "option_a": "La compulsión sobre las personas en los casos legalmente previstos",
+        "option_b": "La ejecución subsidiaria siempre (caso previsto) (caso concreto)",
+        "option_c": "El apremio sobre el patrimonio en todos los casos (caso previsto)",
+        "option_d": "La publicación automática del acto (caso previsto) (caso concreto)",
+        "correct": "A",
+        "explanation": "El artículo 100 enumera los medios de ejecución forzosa, incluida la compulsión sobre las personas en los supuestos legalmente establecidos."
+    },
+    {
+        "topic_num": 6,
+        "question": "¿Qué supuesto es causa de nulidad de pleno derecho?",
+        "option_a": "Cualquier error material corregible (caso previsto) (caso concreto)",
+        "option_b": "Una demora interna sin perjuicio (caso previsto) (caso concreto)",
+        "option_c": "Una discrepancia de estilo en la resolución (caso previsto) (caso concreto)",
+        "option_d": "La lesión de derechos y libertades susceptibles de amparo constitucional",
+        "correct": "D",
+        "explanation": "El artículo 47.1.a declara nulos los actos que lesionen derechos y libertades susceptibles de amparo constitucional."
+    },
+    {
+        "topic_num": 7,
+        "question": "¿Qué se entiende por prevención en la Ley de Prevención de Riesgos Laborales?",
+        "option_a": "El conjunto de actividades o medidas adoptadas o previstas para evitar o disminuir los riesgos derivados del trabajo",
+        "option_b": "Solo la asistencia sanitaria posterior al accidente (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "option_c": "La sustitución de toda formación por seguros (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "option_d": "La inspección realizada después de un siniestro (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "correct": "A",
+        "explanation": "El artículo 4.1 define la prevención como el conjunto de actividades o medidas para evitar o disminuir los riesgos derivados del trabajo."
+    },
+    {
+        "topic_num": 7,
+        "question": "¿Qué es un riesgo laboral grave e inminente?",
+        "option_a": "Cualquier molestia leve sin posibilidad de daño (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "option_b": "Solo el riesgo ya materializado (caso previsto) (caso concreto) (supuesto dado) (marco citado) (regla aplicable)",
+        "option_c": "Un riesgo que nunca puede evaluarse (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "option_d": "El que resulte probable racionalmente que se materialice en un futuro inmediato y pueda suponer un daño grave",
+        "correct": "D",
+        "explanation": "El artículo 4.4 define el riesgo grave e inminente mediante probabilidad racional de materialización inmediata y posible daño grave."
+    },
+    {
+        "topic_num": 7,
+        "question": "¿Qué principio exige adaptar el trabajo a la persona?",
+        "option_a": "La prevención se limita a entregar equipos (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "option_b": "La organización puede ignorar la evolución técnica (caso previsto) (caso concreto) (supuesto dado)",
+        "option_c": "La acción preventiva debe tener en cuenta las características individuales y adaptar el trabajo a la persona",
+        "option_d": "La persona debe adaptarse siempre al puesto sin cambios (caso previsto) (caso concreto) (supuesto dado)",
+        "correct": "C",
+        "explanation": "El artículo 15.1.d incluye adaptar el trabajo a la persona entre los principios de la acción preventiva."
+    },
+    {
+        "topic_num": 7,
+        "question": "¿Qué obligación tiene el empresario respecto de la evaluación de riesgos?",
+        "option_a": "No necesita conservar sus resultados (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "option_b": "Debe realizar una evaluación inicial y actualizarla cuando cambien las condiciones o se produzcan daños",
+        "option_c": "Solo debe evaluarlos tras una inspección (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "option_d": "Puede sustituirla por una encuesta informal (caso previsto) (caso concreto) (supuesto dado)",
+        "correct": "B",
+        "explanation": "El artículo 16 exige evaluar inicialmente y revisar la evaluación cuando cambien las condiciones o se produzcan daños para la salud."
+    },
+    {
+        "topic_num": 7,
+        "question": "¿Qué derecho tienen los trabajadores frente a los riesgos laborales?",
+        "option_a": "Una protección eficaz en materia de seguridad y salud en el trabajo",
+        "option_b": "Renunciar anticipadamente a toda protección (caso previsto)",
+        "option_c": "Elegir qué normas legales se aplican (caso previsto) (caso concreto)",
+        "option_d": "Obtener siempre una indemnización sin daño (caso previsto)",
+        "correct": "A",
+        "explanation": "El artículo 14 reconoce el derecho de los trabajadores a una protección eficaz en materia de seguridad y salud."
+    },
+    {
+        "topic_num": 7,
+        "question": "¿Qué debe proporcionar el empresario cuando un equipo de protección individual es necesario?",
+        "option_a": "Equipos que el trabajador debe comprar siempre (caso previsto)",
+        "option_b": "Solo una recomendación verbal (caso previsto) (caso concreto)",
+        "option_c": "Un equipo común sin adaptación al riesgo (caso previsto)",
+        "option_d": "Equipos adecuados y gratuitos, además de velar por su uso efectivo",
+        "correct": "D",
+        "explanation": "El artículo 17 obliga a proporcionar equipos adecuados y a velar por su uso efectivo cuando los riesgos no puedan evitarse suficientemente."
+    },
+    {
+        "topic_num": 7,
+        "question": "¿Qué obligación tiene el empresario sobre la información preventiva?",
+        "option_a": "Reservar toda información a la dirección (caso previsto) (caso concreto) (supuesto dado)",
+        "option_b": "Sustituir la información por una cláusula contractual (caso previsto) (caso concreto)",
+        "option_c": "Informar a los trabajadores sobre los riesgos y las medidas de protección y prevención",
+        "option_d": "Informar solo después de un accidente (caso previsto) (caso concreto) (supuesto dado)",
+        "correct": "C",
+        "explanation": "El artículo 18 exige información sobre los riesgos, las medidas y las medidas de emergencia aplicables al puesto."
+    },
+    {
+        "topic_num": 7,
+        "question": "¿Qué debe incluir la formación preventiva?",
+        "option_a": "Una prueba médica en lugar de formación (caso previsto)",
+        "option_b": "Ser teórica y práctica, suficiente y adecuada al puesto o función",
+        "option_c": "Solo una lectura voluntaria de carteles (caso previsto)",
+        "option_d": "Formación idéntica sin atender al puesto (caso previsto)",
+        "correct": "B",
+        "explanation": "El artículo 19 exige formación teórica y práctica, suficiente y adecuada, al inicio y cuando cambien funciones o equipos."
+    },
+    {
+        "topic_num": 7,
+        "question": "¿Qué debe hacer el trabajador con las máquinas y equipos de protección?",
+        "option_a": "Utilizarlos correctamente y conforme a su naturaleza y riesgos previsibles",
+        "option_b": "Modificar sus dispositivos de seguridad (caso previsto) (caso concreto)",
+        "option_c": "Desconectarlos para trabajar más rápido (caso previsto) (caso concreto)",
+        "option_d": "Prestarles uso ajeno al puesto sin autorización (caso previsto)",
+        "correct": "A",
+        "explanation": "El artículo 29 obliga al trabajador a usar adecuadamente máquinas, aparatos, herramientas, sustancias y equipos de protección."
+    },
+    {
+        "topic_num": 7,
+        "question": "¿Qué protección especial prevé la ley para la maternidad cuando existe riesgo?",
+        "option_a": "Excluir automáticamente a la trabajadora del empleo (caso previsto) (caso concreto) (supuesto dado)",
+        "option_b": "Eliminar la evaluación por tratarse de un riesgo privado (caso previsto) (caso concreto) (supuesto dado)",
+        "option_c": "Aplicar siempre una reducción salarial (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "option_d": "Evaluar el riesgo y adoptar medidas, incluyendo adaptación, cambio de puesto o suspensión cuando proceda",
+        "correct": "D",
+        "explanation": "El artículo 26 establece una protección específica de la maternidad mediante evaluación y medidas preventivas progresivas."
+    },
+    {
+        "topic_num": 8,
+        "question": "¿Qué principio informa la actuación de los poderes públicos en igualdad?",
+        "option_a": "La integración transversal del principio de igualdad de trato y oportunidades",
+        "option_b": "La separación de las políticas de igualdad del resto de políticas",
+        "option_c": "La preferencia permanente de un sexo (caso previsto) (caso concreto)",
+        "option_d": "La eliminación de toda acción positiva (caso previsto) (caso concreto)",
+        "correct": "A",
+        "explanation": "El artículo 15 de la Ley Orgánica 3/2007 exige la transversalidad del principio de igualdad en la actuación pública."
+    },
+    {
+        "topic_num": 8,
+        "question": "¿Qué diferencia a la discriminación directa por razón de sexo?",
+        "option_a": "Una medida neutra nunca puede producirla (caso previsto) (caso concreto) (supuesto dado)",
+        "option_b": "Solo existe cuando hay violencia física (caso previsto) (caso concreto) (supuesto dado)",
+        "option_c": "Requiere siempre una sanción penal (caso previsto) (caso concreto) (supuesto dado)",
+        "option_d": "Una persona recibe un trato menos favorable que otra en situación comparable por razón de sexo",
+        "correct": "D",
+        "explanation": "El artículo 6.1 de la LO 3/2007 define la discriminación directa como trato menos favorable por razón de sexo."
+    },
+    {
+        "topic_num": 8,
+        "question": "¿Qué efecto puede producir una disposición aparentemente neutra?",
+        "option_a": "Nulidad constitucional inmediata de toda norma (caso previsto) (caso concreto)",
+        "option_b": "Acoso sexual necesariamente (caso previsto) (caso concreto) (supuesto dado)",
+        "option_c": "Discriminación indirecta si ocasiona una desventaja particular a personas de un sexo",
+        "option_d": "Igualdad automática en todo caso (caso previsto) (caso concreto) (supuesto dado)",
+        "correct": "C",
+        "explanation": "El artículo 6.2 considera indirecta la discriminación derivada de una disposición aparentemente neutra salvo justificación objetiva y medios adecuados y necesarios."
+    },
+    {
+        "topic_num": 8,
+        "question": "Según la LO 3/2007, ¿qué caracteriza al acoso sexual?",
+        "option_a": "Una reclamación presentada por escrito (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "option_b": "Cualquier comportamiento verbal, no verbal o físico de naturaleza sexual que atente contra la dignidad",
+        "option_c": "Una diferencia salarial justificada por convenio (caso previsto) (caso concreto) (supuesto dado)",
+        "option_d": "Una comunicación administrativa neutra (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "correct": "B",
+        "explanation": "El artículo 7.1 define el acoso sexual por su naturaleza y por la lesión de la dignidad."
+    },
+    {
+        "topic_num": 8,
+        "question": "¿Qué instrumento ordena medidas de igualdad en una empresa?",
+        "option_a": "El plan de igualdad",
+        "option_b": "El plan de tesorería",
+        "option_c": "El reglamento de extranjería",
+        "option_d": "El padrón municipal",
+        "correct": "A",
+        "explanation": "El artículo 46 define el plan de igualdad como un conjunto ordenado de medidas evaluables para alcanzar la igualdad efectiva."
+    },
+    {
+        "topic_num": 8,
+        "question": "¿Qué deben incorporar los proyectos de disposiciones generales estatales?",
+        "option_a": "Una auditoría penal obligatoria (caso previsto)",
+        "option_b": "Un certificado de firma extranjera (caso previsto)",
+        "option_c": "Una autorización de la Diputación (caso previsto)",
+        "option_d": "Un informe sobre su impacto por razón de género",
+        "correct": "D",
+        "explanation": "El artículo 19 exige incorporar un informe sobre el impacto por razón de género en los proyectos de disposiciones generales."
+    },
+    {
+        "topic_num": 8,
+        "question": "¿Qué protección recibe quien denuncia o reclama por discriminación?",
+        "option_a": "Pierde automáticamente su puesto (caso previsto) (caso concreto)",
+        "option_b": "Solo puede reclamar de forma anónima (caso previsto) (caso concreto)",
+        "option_c": "No puede sufrir consecuencias adversas como represalia o reacción adversa",
+        "option_d": "Debe renunciar a toda tutela (caso previsto) (caso concreto) (supuesto dado)",
+        "correct": "C",
+        "explanation": "El artículo 9 protege frente a las consecuencias adversas por presentar queja, reclamación o denuncia destinada a impedir la discriminación."
+    },
+    {
+        "topic_num": 8,
+        "question": "¿Qué finalidad tiene la legislación castellano-manchega sobre violencia de género?",
+        "option_a": "Limitar la atención a violencia física (caso previsto) (caso concreto)",
+        "option_b": "Prevenir y erradicar la violencia de género y proteger y atender a las víctimas",
+        "option_c": "Regular exclusivamente contratos públicos (caso previsto) (caso concreto)",
+        "option_d": "Sustituir el Código Penal en todo su contenido (caso previsto) (caso concreto)",
+        "correct": "B",
+        "explanation": "Las leyes autonómicas de igualdad y violencia de género articulan prevención, atención integral y recuperación de las víctimas."
+    },
+    {
+        "topic_num": 8,
+        "question": "¿Qué enfoque exige la igualdad efectiva en las políticas públicas?",
+        "option_a": "Considerar sus efectos diferenciados sobre mujeres y hombres",
+        "option_b": "Aplicar siempre la misma medida sin evaluar sus efectos",
+        "option_c": "Excluir la evaluación presupuestaria (caso previsto)",
+        "option_d": "Delegar toda política en entidades privadas (caso previsto)",
+        "correct": "A",
+        "explanation": "La transversalidad exige integrar la perspectiva de igualdad en diagnóstico, planificación, ejecución y evaluación de políticas."
+    },
+    {
+        "topic_num": 8,
+        "question": "¿Qué principio debe respetarse en el empleo público?",
+        "option_a": "Preferencia automática sin criterios objetivos (caso previsto) (caso concreto)",
+        "option_b": "Exclusión de la promoción profesional (caso previsto) (caso concreto) (supuesto dado)",
+        "option_c": "Selección sin publicidad (caso previsto) (caso concreto) (supuesto dado)",
+        "option_d": "Igualdad, mérito y capacidad, incorporando la igualdad efectiva de mujeres y hombres",
+        "correct": "D",
+        "explanation": "La LO 3/2007 aplica la igualdad efectiva al empleo público y a los procesos de acceso, formación y promoción."
+    },
+    {
+        "topic_num": 9,
+        "question": "¿Qué distingue una firma electrónica de un sello electrónico en eIDAS?",
+        "option_a": "La firma se vincula a una persona física y el sello a una persona jurídica",
+        "option_b": "La firma solo puede usar papel (caso previsto) (caso concreto)",
+        "option_c": "El sello siempre identifica a una persona física (caso previsto)",
+        "option_d": "No existe diferencia jurídica (caso previsto) (caso concreto) (supuesto dado)",
+        "correct": "A",
+        "explanation": "El Reglamento eIDAS define la firma electrónica para personas físicas y el sello electrónico para personas jurídicas."
+    },
+    {
+        "topic_num": 9,
+        "question": "¿Qué requisito adicional caracteriza a una firma electrónica avanzada?",
+        "option_a": "Debe ser siempre manuscrita (caso previsto) (caso concreto)",
+        "option_b": "No necesita detectar cambios posteriores (caso previsto) (caso concreto)",
+        "option_c": "Solo puede usarse dentro de una red privada (caso previsto)",
+        "option_d": "Está vinculada de manera única al firmante y bajo su control exclusivo",
+        "correct": "D",
+        "explanation": "El artículo 26 exige vinculación única, identificación del firmante, control exclusivo y detección de modificaciones posteriores."
+    },
+    {
+        "topic_num": 9,
+        "question": "En eIDAS, ¿qué valor jurídico se reconoce a una firma electrónica cualificada?",
+        "option_a": "Solo sirve para cifrar archivos (caso previsto) (caso concreto)",
+        "option_b": "Sustituye automáticamente a cualquier sello electrónico",
+        "option_c": "Tiene un efecto jurídico equivalente al de una firma manuscrita",
+        "option_d": "Carece de valor probatorio (caso previsto) (caso concreto)",
+        "correct": "C",
+        "explanation": "El artículo 25.2 reconoce a la firma electrónica cualificada efecto jurídico equivalente al de la firma manuscrita."
+    },
+    {
+        "topic_num": 9,
+        "question": "¿Qué elemento permite comprobar la identidad vinculada a un certificado?",
+        "option_a": "El tamaño del documento",
+        "option_b": "La clave pública certificada",
+        "option_c": "La contraseña de otro usuario",
+        "option_d": "El nombre del archivo",
+        "correct": "B",
+        "explanation": "El certificado vincula la identidad del sujeto con una clave pública que puede verificarse mediante la cadena de confianza."
+    },
+    {
+        "topic_num": 9,
+        "question": "¿Qué debe comprobar un servicio de validación de una firma?",
+        "option_a": "La validez de los datos de creación, del certificado y de la integridad de los datos firmados",
+        "option_b": "Solo la extensión del archivo (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "option_c": "Únicamente la fecha del ordenador local (caso previsto) (caso concreto) (supuesto dado)",
+        "option_d": "El contenido sin comprobar al firmante (caso previsto) (caso concreto) (supuesto dado)",
+        "correct": "A",
+        "explanation": "La validación debe comprobar los elementos criptográficos y de confianza exigidos por el Reglamento eIDAS."
+    },
+    {
+        "topic_num": 9,
+        "question": "¿Para qué sirve AutoFirma en el entorno de la Administración?",
+        "option_a": "Para sustituir el registro electrónico (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "option_b": "Para almacenar contraseñas de todos los usuarios (caso previsto) (caso concreto) (supuesto dado)",
+        "option_c": "Para convertir cualquier imagen en firma cualificada (caso previsto) (caso concreto) (supuesto dado)",
+        "option_d": "Para realizar operaciones de firma electrónica desde el equipo del usuario con certificados disponibles",
+        "correct": "D",
+        "explanation": "La documentación oficial de AutoFirma describe su uso como aplicación de firma desde el equipo del usuario integrada con servicios web."
+    },
+    {
+        "topic_num": 9,
+        "question": "¿Qué protege principalmente un sello de tiempo?",
+        "option_a": "La identidad de todos los lectores (caso previsto) (caso concreto)",
+        "option_b": "La disponibilidad permanente del servicio (caso previsto) (caso concreto)",
+        "option_c": "La evidencia de que unos datos existían en una fecha y hora determinadas",
+        "option_d": "La confidencialidad del contenido por sí sola (caso previsto)",
+        "correct": "C",
+        "explanation": "El sello de tiempo vincula datos a una fecha y hora mediante una firma de un prestador de servicios de confianza."
+    },
+    {
+        "topic_num": 9,
+        "question": "¿Qué formato de firma se asocia normalmente a documentos PDF?",
+        "option_a": "SMTP",
+        "option_b": "PAdES",
+        "option_c": "CAdES",
+        "option_d": "XAdES",
+        "correct": "B",
+        "explanation": "PAdES es el formato de firma electrónica asociado a documentos PDF; CAdES y XAdES se orientan a otros contenedores."
+    },
+    {
+        "topic_num": 9,
+        "question": "¿Qué ocurre si se modifica un documento después de firmarlo?",
+        "option_a": "La verificación de integridad debe detectar la modificación",
+        "option_b": "La firma se actualiza automáticamente (caso previsto)",
+        "option_c": "La modificación queda siempre oculta (caso previsto)",
+        "option_d": "Solo cambia el nombre del archivo (caso previsto)",
+        "correct": "A",
+        "explanation": "La detección de cualquier cambio posterior en los datos firmados es una característica de la firma electrónica avanzada."
+    },
+    {
+        "topic_num": 9,
+        "question": "¿Qué principio debe respetar la validación transfronteriza de firmas cualificadas en la Unión Europea?",
+        "option_a": "Solo son válidas las firmas del Estado receptor (caso previsto) (caso concreto) (supuesto dado) (marco citado) (regla aplicable)",
+        "option_b": "Debe imprimirse siempre el documento (caso previsto) (caso concreto) (supuesto dado) (marco citado) (regla aplicable)",
+        "option_c": "La firma requiere una autoridad municipal (caso previsto) (caso concreto) (supuesto dado) (marco citado) (regla aplicable)",
+        "option_d": "No puede denegarse el efecto jurídico de una firma solo por estar en formato electrónico o cualificado en otro Estado miembro",
+        "correct": "D",
+        "explanation": "El artículo 25.1 prohíbe negar efecto jurídico a una firma por su forma electrónica o por no cumplir el requisito de firma manuscrita."
+    },
+    {
+        "topic_num": 10,
+        "question": "¿Qué información identifica el sujeto y la clave pública en un certificado X.509?",
+        "option_a": "La identidad del sujeto y su clave pública",
+        "option_b": "Solo la contraseña privada (caso previsto)",
+        "option_c": "El contenido completo de todos sus mensajes",
+        "option_d": "El historial de navegación (caso previsto)",
+        "correct": "A",
+        "explanation": "RFC 5280 define el certificado como una vinculación entre la identidad del sujeto y una clave pública, firmada por una autoridad."
+    },
+    {
+        "topic_num": 10,
+        "question": "¿Qué lista publica una autoridad para informar de certificados revocados?",
+        "option_a": "La lista DNS",
+        "option_b": "La tabla ARP",
+        "option_c": "El registro MX",
+        "option_d": "La CRL",
+        "correct": "D",
+        "explanation": "RFC 5280 define la Certificate Revocation List como estructura firmada que enumera certificados revocados."
+    },
+    {
+        "topic_num": 10,
+        "question": "¿Qué propiedad de TLS 1.3 impide que una clave de sesión comprometida revele normalmente sesiones anteriores?",
+        "option_a": "El almacenamiento de cookies (caso previsto) (caso concreto)",
+        "option_b": "La ausencia de autenticación (caso previsto) (caso concreto)",
+        "option_c": "El secreto hacia adelante proporcionado por el intercambio efímero",
+        "option_d": "La compresión HTTP (caso previsto) (caso concreto) (supuesto dado)",
+        "correct": "C",
+        "explanation": "TLS 1.3 usa intercambios efímeros para proporcionar forward secrecy en las suites definidas."
+    },
+    {
+        "topic_num": 10,
+        "question": "¿Qué componente del handshake de TLS 1.3 permite negociar versión y parámetros?",
+        "option_a": "La cabecera MIME (caso previsto)",
+        "option_b": "ClientHello y ServerHello",
+        "option_c": "Solo el mensaje Finished del cliente",
+        "option_d": "El registro DNS (caso previsto)",
+        "correct": "B",
+        "explanation": "ClientHello y ServerHello negocian la versión, capacidades y parámetros criptográficos antes de proteger la aplicación."
+    },
+    {
+        "topic_num": 10,
+        "question": "¿Qué tipo de cifrado usa la misma clave secreta para cifrar y descifrar?",
+        "option_a": "El cifrado simétrico",
+        "option_b": "El cifrado asimétrico",
+        "option_c": "El hash unidireccional",
+        "option_d": "La codificación Base64",
+        "correct": "A",
+        "explanation": "Los algoritmos simétricos emplean una clave compartida; los asimétricos emplean un par de claves."
+    },
+    {
+        "topic_num": 10,
+        "question": "¿Qué garantiza un código de autenticación asociado a un cifrado AEAD?",
+        "option_a": "Solo compresión (caso previsto) (caso concreto)",
+        "option_b": "Únicamente anonimato de la red (caso previsto) (caso concreto)",
+        "option_c": "La disponibilidad del servidor (caso previsto) (caso concreto)",
+        "option_d": "Confidencialidad e integridad autenticada del texto cifrado",
+        "correct": "D",
+        "explanation": "Las construcciones AEAD combinan cifrado con autenticación de datos asociados para detectar modificaciones."
+    },
+    {
+        "topic_num": 10,
+        "question": "¿Qué paquete OpenPGP contiene normalmente la firma digital?",
+        "option_a": "Un paquete DNS",
+        "option_b": "Un paquete de sesión HTTP",
+        "option_c": "Un paquete de firma",
+        "option_d": "Un paquete de imagen",
+        "correct": "C",
+        "explanation": "RFC 9580 define el Signature Packet para transportar una firma y sus metadatos."
+    },
+    {
+        "topic_num": 10,
+        "question": "¿Qué operación permite recuperar la clave pública de un certificado emitido por una CA?",
+        "option_a": "El cambio del algoritmo de hash",
+        "option_b": "La validación de la cadena de certificación",
+        "option_c": "La compresión del certificado (caso previsto)",
+        "option_d": "La eliminación de la firma de la CA",
+        "correct": "B",
+        "explanation": "La cadena de confianza permite validar la firma de la CA y usar la clave pública contenida en el certificado."
+    },
+    {
+        "topic_num": 10,
+        "question": "¿Qué uso de clave X.509 indica que una clave puede emplearse para autenticación de servidor?",
+        "option_a": "La extensión Extended Key Usage con serverAuth",
+        "option_b": "La extensión Basic Constraints con cA=false por sí sola",
+        "option_c": "El campo Subject vacío (caso previsto) (caso concreto)",
+        "option_d": "La extensión CRL Distribution Points sin más",
+        "correct": "A",
+        "explanation": "RFC 5280 define serverAuth como uso extendido para autenticación de servidor TLS."
+    },
+    {
+        "topic_num": 10,
+        "question": "¿Qué ventaja aporta la separación entre clave de firma y clave de cifrado?",
+        "option_a": "Elimina la necesidad de proteger la clave privada (caso previsto)",
+        "option_b": "Hace innecesaria la revocación (caso previsto) (caso concreto) (supuesto dado)",
+        "option_c": "Convierte todo cifrado en simétrico (caso previsto) (caso concreto)",
+        "option_d": "Reduce la mezcla de usos y permite aplicar políticas criptográficas distintas",
+        "correct": "D",
+        "explanation": "Separar usos facilita aplicar las restricciones de Key Usage y gestionar la confianza de forma más segura."
+    },
+    {
+        "topic_num": 11,
+        "question": "¿Qué objetivo principal persigue el Esquema Nacional de Seguridad?",
+        "option_a": "Crear las condiciones necesarias para la confianza en el uso de medios electrónicos",
+        "option_b": "Eliminar toda responsabilidad del usuario (caso previsto) (caso concreto)",
+        "option_c": "Sustituir las leyes de protección de datos (caso previsto) (caso concreto)",
+        "option_d": "Aplicar una única tecnología a todos los sistemas (caso previsto) (caso concreto)",
+        "correct": "A",
+        "explanation": "El Real Decreto 311/2022 orienta el ENS a generar confianza en el uso de medios electrónicos mediante medidas de seguridad adecuadas."
+    },
+    {
+        "topic_num": 11,
+        "question": "¿Qué principio exige que las medidas de seguridad sean proporcionales a los riesgos?",
+        "option_a": "La uniformidad tecnológica",
+        "option_b": "La opacidad administrativa",
+        "option_c": "La ausencia de análisis",
+        "option_d": "La proporcionalidad",
+        "correct": "D",
+        "explanation": "El ENS aplica un enfoque basado en el riesgo y exige proporcionalidad entre medidas, riesgos y criticidad."
+    },
+    {
+        "topic_num": 11,
+        "question": "¿Qué función tiene la política de seguridad de la información?",
+        "option_a": "Aprobar contratos privados sin límites (caso previsto) (caso concreto) (supuesto dado)",
+        "option_b": "Definir únicamente el diseño visual (caso previsto) (caso concreto) (supuesto dado)",
+        "option_c": "Fijar los principios y directrices que orientan la protección de la información y los servicios",
+        "option_d": "Sustituir los controles técnicos de cada sistema (caso previsto) (caso concreto) (supuesto dado)",
+        "correct": "C",
+        "explanation": "La política de seguridad establece el marco organizativo y las directrices generales de seguridad."
+    },
+    {
+        "topic_num": 11,
+        "question": "¿Qué exige el principio de mínimo privilegio?",
+        "option_a": "Permitir accesos permanentes sin revisión (caso previsto)",
+        "option_b": "Limitar los privilegios de acceso a los estrictamente necesarios",
+        "option_c": "Conceder permisos globales a todos los usuarios (caso previsto)",
+        "option_d": "Eliminar la autenticación interna (caso previsto) (caso concreto)",
+        "correct": "B",
+        "explanation": "El mínimo privilegio reduce la exposición concediendo solo los permisos necesarios para la función."
+    },
+    {
+        "topic_num": 11,
+        "question": "¿Qué debe hacer una organización ante un incidente de seguridad?",
+        "option_a": "Detectarlo, analizarlo, responder y recuperar el servicio conforme a sus procedimientos",
+        "option_b": "Borrarlo sin dejar trazabilidad (caso previsto) (caso concreto) (supuesto dado)",
+        "option_c": "Esperar siempre a una auditoría anual (caso previsto) (caso concreto) (supuesto dado)",
+        "option_d": "Publicar datos personales del incidente (caso previsto) (caso concreto) (supuesto dado)",
+        "correct": "A",
+        "explanation": "La gestión de incidentes del ENS requiere procedimientos para detección, respuesta, comunicación y recuperación."
+    },
+    {
+        "topic_num": 11,
+        "question": "¿Qué determina la categoría de seguridad de un sistema?",
+        "option_a": "El número de pantallas de la aplicación (caso previsto) (caso concreto) (supuesto dado)",
+        "option_b": "El lenguaje de programación usado (caso previsto) (caso concreto) (supuesto dado)",
+        "option_c": "La antigüedad del edificio (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "option_d": "La valoración de las dimensiones de seguridad afectadas por la información y los servicios",
+        "correct": "D",
+        "explanation": "La categoría se determina valorando confidencialidad, integridad, trazabilidad, autenticidad y disponibilidad en el sistema."
+    },
+    {
+        "topic_num": 11,
+        "question": "¿Qué instrumento documenta la adecuación de un sistema a las exigencias del ENS?",
+        "option_a": "Un contrato de alojamiento sin controles (caso previsto)",
+        "option_b": "Una encuesta de satisfacción (caso previsto) (caso concreto)",
+        "option_c": "La declaración o certificación de conformidad, según corresponda",
+        "option_d": "Una factura de mantenimiento (caso previsto) (caso concreto)",
+        "correct": "C",
+        "explanation": "El ENS contempla declaración de conformidad para determinadas categorías y certificación para los supuestos exigidos."
+    },
+    {
+        "topic_num": 11,
+        "question": "¿Qué principio protege la capacidad de seguir la actividad de usuarios y procesos?",
+        "option_a": "La anonimización total",
+        "option_b": "La trazabilidad",
+        "option_c": "La portabilidad",
+        "option_d": "La compresión",
+        "correct": "B",
+        "explanation": "La trazabilidad permite conocer quién realiza una acción y cuándo, mediante registros y controles adecuados."
+    },
+    {
+        "topic_num": 11,
+        "question": "¿Qué enfoque recomienda el ENS para la protección de los sistemas?",
+        "option_a": "Defensa en profundidad (caso previsto)",
+        "option_b": "Una única barrera perimetral",
+        "option_c": "La eliminación de copias de seguridad",
+        "option_d": "La confianza implícita en cualquier red",
+        "correct": "A",
+        "explanation": "La defensa en profundidad combina medidas organizativas, físicas y lógicas para evitar depender de un único control."
+    },
+    {
+        "topic_num": 11,
+        "question": "¿Qué debe conservar una organización para demostrar la actividad de seguridad?",
+        "option_a": "Solo una declaración verbal (caso previsto) (caso concreto)",
+        "option_b": "Únicamente el código fuente (caso previsto) (caso concreto)",
+        "option_c": "Una copia sin fecha de la política (caso previsto) (caso concreto)",
+        "option_d": "Evidencias y registros de las medidas, controles y decisiones aplicadas",
+        "correct": "D",
+        "explanation": "La responsabilidad y la mejora continua requieren conservar evidencias verificables de controles, riesgos e incidentes."
+    },
+    {
+        "topic_num": 12,
+        "question": "¿Cuál es una base jurídica del tratamiento de datos personales?",
+        "option_a": "El cumplimiento de una obligación legal aplicable al responsable",
+        "option_b": "La mera curiosidad del encargado (caso previsto) (caso concreto)",
+        "option_c": "La publicación de cualquier dato sin finalidad (caso previsto)",
+        "option_d": "El silencio del interesado en todos los casos (caso previsto)",
+        "correct": "A",
+        "explanation": "El artículo 6.1.c del RGPD permite el tratamiento cuando es necesario para cumplir una obligación legal aplicable al responsable."
+    },
+    {
+        "topic_num": 12,
+        "question": "Para que una autorización de tratamiento sea válida, ¿qué cualidades exige el RGPD?",
+        "option_a": "Ser tácito aunque exista oposición (caso previsto)",
+        "option_b": "Ser irrevocable y general para cualquier finalidad",
+        "option_c": "Ser obtenido solo mediante una casilla premarcada",
+        "option_d": "Ser libre, específico, informado e inequívoco",
+        "correct": "D",
+        "explanation": "El artículo 4.11 y el artículo 7 del RGPD exigen consentimiento libre, específico, informado e inequívoco."
+    },
+    {
+        "topic_num": 12,
+        "question": "¿Qué derecho permite recibir los datos personales en un formato estructurado y transmitirlos a otro responsable?",
+        "option_a": "El derecho de rectificación de oficio",
+        "option_b": "El derecho de limitación presupuestaria",
+        "option_c": "El derecho a la portabilidad",
+        "option_d": "El derecho de oposición absoluta",
+        "correct": "C",
+        "explanation": "El artículo 20 del RGPD reconoce la portabilidad cuando el tratamiento se basa en consentimiento o contrato y se realiza por medios automatizados."
+    },
+    {
+        "topic_num": 12,
+        "question": "¿En qué plazo debe notificarse normalmente una violación de seguridad a la autoridad de control?",
+        "option_a": "No existe plazo (caso previsto) (caso concreto)",
+        "option_b": "En un máximo de 72 horas desde que se tenga constancia",
+        "option_c": "En treinta días hábiles siempre (caso previsto)",
+        "option_d": "Solo al finalizar el ejercicio (caso previsto)",
+        "correct": "B",
+        "explanation": "El artículo 33 del RGPD fija el plazo de 72 horas salvo que sea improbable que la violación constituya un riesgo para los derechos y libertades."
+    },
+    {
+        "topic_num": 12,
+        "question": "¿Cuándo puede ser necesaria una evaluación de impacto relativa a la protección de datos?",
+        "option_a": "Antes de un tratamiento que probablemente entrañe un alto riesgo para los derechos y libertades",
+        "option_b": "Solo después de una sanción (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "option_c": "Únicamente para datos ya anonimizados (caso previsto) (caso concreto) (supuesto dado)",
+        "option_d": "Nunca en tratamientos automatizados (caso previsto) (caso concreto) (supuesto dado)",
+        "correct": "A",
+        "explanation": "El artículo 35 exige una evaluación de impacto antes de tratamientos que probablemente entrañen alto riesgo."
+    },
+    {
+        "topic_num": 12,
+        "question": "¿Qué principio exige que los datos sean adecuados, pertinentes y limitados a lo necesario?",
+        "option_a": "La acumulación indefinida",
+        "option_b": "La publicidad universal",
+        "option_c": "La reutilización sin finalidad",
+        "option_d": "La minimización de datos",
+        "correct": "D",
+        "explanation": "El artículo 5.1.c del RGPD formula el principio de minimización."
+    },
+    {
+        "topic_num": 12,
+        "question": "¿Qué excepción puede limitar el derecho de supresión?",
+        "option_a": "La falta de espacio en el servidor (caso previsto) (caso concreto) (supuesto dado) (marco citado) (regla aplicable)",
+        "option_b": "La antigüedad del navegador (caso previsto) (caso concreto) (supuesto dado) (marco citado) (regla aplicable)",
+        "option_c": "La necesidad del tratamiento para cumplir una obligación legal o ejercer la libertad de expresión e información",
+        "option_d": "La simple preferencia comercial del responsable (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "correct": "C",
+        "explanation": "El artículo 17.3 contempla excepciones al derecho de supresión, entre ellas obligaciones legales y libertad de expresión e información."
+    },
+    {
+        "topic_num": 12,
+        "question": "¿Qué debe regular el contrato entre responsable y encargado?",
+        "option_a": "El acceso libre del encargado a cualquier finalidad (caso previsto) (caso concreto)",
+        "option_b": "El objeto, duración, naturaleza, finalidad y tipos de datos y categorías de interesados",
+        "option_c": "Solo el precio del servicio (caso previsto) (caso concreto) (supuesto dado)",
+        "option_d": "La supresión de todos los controles (caso previsto) (caso concreto) (supuesto dado)",
+        "correct": "B",
+        "explanation": "El artículo 28.3 exige que el contrato o acto jurídico detalle esos elementos y las obligaciones del encargado."
+    },
+    {
+        "topic_num": 12,
+        "question": "¿Qué principio exige incorporar garantías de protección desde el diseño?",
+        "option_a": "Protección de datos desde el diseño y por defecto",
+        "option_b": "Protección solo después de una brecha",
+        "option_c": "Conservación máxima por defecto (caso previsto)",
+        "option_d": "Acceso universal por defecto (caso previsto)",
+        "correct": "A",
+        "explanation": "El artículo 25 exige medidas técnicas y organizativas apropiadas desde el diseño y configuraciones por defecto respetuosas."
+    },
+    {
+        "topic_num": 12,
+        "question": "¿Qué umbral de edad usa la LOPDGDD para el consentimiento digital del menor?",
+        "option_a": "Doce años (caso previsto)",
+        "option_b": "Dieciséis años en todo caso",
+        "option_c": "Dieciocho años sin excepción",
+        "option_d": "Catorce años (caso previsto)",
+        "correct": "D",
+        "explanation": "El artículo 7 de la LOPDGDD fija en catorce años la edad para consentir por sí mismo en ese contexto."
+    },
+    {
+        "topic_num": 13,
+        "question": "¿Qué proceso de PostgreSQL acepta conexiones de clientes y crea procesos de backend?",
+        "option_a": "El servidor principal o postmaster",
+        "option_b": "El proceso autovacuum worker",
+        "option_c": "El proceso checkpointer (caso previsto)",
+        "option_d": "El proceso WAL sender exclusivamente",
+        "correct": "A",
+        "explanation": "La arquitectura de PostgreSQL utiliza un proceso servidor principal que escucha conexiones y coordina backends."
+    },
+    {
+        "topic_num": 13,
+        "question": "¿Qué proceso escribe periódicamente páginas modificadas de shared buffers a disco?",
+        "option_a": "El cliente psql (caso previsto)",
+        "option_b": "El autovacuum launcher únicamente",
+        "option_c": "El proceso de autenticación",
+        "option_d": "El background writer (caso previsto)",
+        "correct": "D",
+        "explanation": "El background writer escribe páginas sucias de forma gradual para reducir picos de trabajo durante checkpoints."
+    },
+    {
+        "topic_num": 13,
+        "question": "¿Qué proceso asegura que los registros WAL se escriban antes de confirmar una transacción?",
+        "option_a": "El planificador SQL (caso previsto) (caso concreto)",
+        "option_b": "El servidor DNS (caso previsto) (caso concreto) (supuesto dado)",
+        "option_c": "El WAL writer junto con la política de durabilidad del servidor",
+        "option_d": "El proceso de estadísticas únicamente (caso previsto)",
+        "correct": "C",
+        "explanation": "El subsistema WAL escribe registros de write-ahead logging antes de que los cambios confirmados dependan de las páginas de datos."
+    },
+    {
+        "topic_num": 13,
+        "question": "¿Qué objetivo tiene un checkpoint?",
+        "option_a": "Convertir tablas en vistas (caso previsto) (caso concreto) (supuesto dado)",
+        "option_b": "Escribir páginas sucias y registrar un punto de referencia para la recuperación",
+        "option_c": "Borrar todos los índices (caso previsto) (caso concreto) (supuesto dado)",
+        "option_d": "Reiniciar las conexiones de clientes (caso previsto) (caso concreto)",
+        "correct": "B",
+        "explanation": "Los checkpoints establecen un punto desde el que la recuperación puede aplicar WAL pendiente y reducen el trabajo tras un fallo."
+    },
+    {
+        "topic_num": 13,
+        "question": "¿Qué memoria compartida almacena páginas de tablas e índices usadas recientemente?",
+        "option_a": "shared_buffers (caso previsto)",
+        "option_b": "work_mem (caso previsto)",
+        "option_c": "maintenance_work_mem",
+        "option_d": "temp_buffers exclusivamente",
+        "correct": "A",
+        "explanation": "shared_buffers es la caché compartida principal de páginas de datos de PostgreSQL."
+    },
+    {
+        "topic_num": 13,
+        "question": "¿Qué proceso inicia trabajos periódicos de limpieza automática?",
+        "option_a": "El postmaster de cada consulta",
+        "option_b": "El cliente pg_restore",
+        "option_c": "El planificador de consultas",
+        "option_d": "El autovacuum launcher",
+        "correct": "D",
+        "explanation": "El autovacuum launcher coordina workers que realizan vacuum y analyze automáticos según la actividad."
+    },
+    {
+        "topic_num": 13,
+        "question": "¿Qué unidad administra una instancia PostgreSQL y contiene varias bases de datos?",
+        "option_a": "Un esquema aislado",
+        "option_b": "Una única conexión",
+        "option_c": "El clúster de bases de datos",
+        "option_d": "Una tabla temporal",
+        "correct": "C",
+        "explanation": "En PostgreSQL un clúster es la colección de bases de datos gestionada por una instancia del servidor."
+    },
+    {
+        "topic_num": 13,
+        "question": "¿Qué parámetro limita el número máximo de conexiones simultáneas?",
+        "option_a": "default_statistics_target",
+        "option_b": "max_connections",
+        "option_c": "shared_preload_libraries",
+        "option_d": "work_mem (caso previsto)",
+        "correct": "B",
+        "explanation": "max_connections define el límite de conexiones concurrentes aceptadas por el servidor."
+    },
+    {
+        "topic_num": 13,
+        "question": "¿Qué parámetro puede reservar memoria por operación de ordenación o hash?",
+        "option_a": "work_mem",
+        "option_b": "shared_buffers",
+        "option_c": "max_connections",
+        "option_d": "wal_level",
+        "correct": "A",
+        "explanation": "work_mem establece la cantidad de memoria disponible para operaciones internas antes de usar archivos temporales."
+    },
+    {
+        "topic_num": 13,
+        "question": "¿Qué archivo o directorio identifica el directorio de datos de una instancia?",
+        "option_a": "PGPORT únicamente (caso previsto)",
+        "option_b": "PATH del sistema operativo",
+        "option_c": "El nombre de la base de datos activa",
+        "option_d": "PGDATA (caso previsto) (caso concreto)",
+        "correct": "D",
+        "explanation": "La variable PGDATA o la opción equivalente identifica el directorio de datos del clúster PostgreSQL."
+    },
+    {
+        "topic_num": 14,
+        "question": "¿Qué relación existe entre una base de datos y un esquema en PostgreSQL?",
+        "option_a": "Una base de datos contiene uno o más esquemas que organizan sus objetos",
+        "option_b": "Un esquema contiene varias instancias servidor (caso previsto)",
+        "option_c": "Una base de datos solo puede tener una tabla (caso previsto)",
+        "option_d": "Los esquemas son remotos por definición (caso previsto) (caso concreto)",
+        "correct": "A",
+        "explanation": "Los esquemas son espacios de nombres dentro de una base de datos y agrupan tablas, vistas, funciones y otros objetos."
+    },
+    {
+        "topic_num": 14,
+        "question": "¿Qué función cumple search_path?",
+        "option_a": "Define el puerto TCP (caso previsto) (caso concreto) (supuesto dado)",
+        "option_b": "Cambia el propietario del clúster (caso previsto) (caso concreto)",
+        "option_c": "Activa el cifrado TLS (caso previsto) (caso concreto) (supuesto dado)",
+        "option_d": "Determina el orden en que se buscan objetos no cualificados por esquema",
+        "correct": "D",
+        "explanation": "search_path controla los esquemas consultados cuando una referencia no incluye explícitamente el nombre del esquema."
+    },
+    {
+        "topic_num": 14,
+        "question": "¿Qué objeto materializa físicamente el resultado de una consulta y puede actualizarse con REFRESH?",
+        "option_a": "Un rol (caso previsto)",
+        "option_b": "Una secuencia",
+        "option_c": "Una vista materializada",
+        "option_d": "Una vista ordinaria",
+        "correct": "C",
+        "explanation": "Una materialized view almacena el resultado y puede renovarse mediante REFRESH MATERIALIZED VIEW."
+    },
+    {
+        "topic_num": 14,
+        "question": "¿Qué objeto de PostgreSQL puede suministrar identificadores numéricos consecutivos?",
+        "option_a": "Una función agregada",
+        "option_b": "Una secuencia",
+        "option_c": "Una vista",
+        "option_d": "Un esquema",
+        "correct": "B",
+        "explanation": "Las secuencias son objetos que generan valores numéricos y pueden usarse para identificadores."
+    },
+    {
+        "topic_num": 14,
+        "question": "¿Qué sentencia permite cambiar el propietario de un objeto?",
+        "option_a": "ALTER ... OWNER TO",
+        "option_b": "VACUUM OWNER",
+        "option_c": "SET ROLE ONLY",
+        "option_d": "REINDEX OWNER",
+        "correct": "A",
+        "explanation": "Las sentencias ALTER de los objetos permiten cambiar su propietario con OWNER TO cuando se cumplen los permisos."
+    },
+    {
+        "topic_num": 14,
+        "question": "¿Qué diferencia básica existe entre una función y un procedimiento?",
+        "option_a": "Ambos solo pueden invocarse desde el sistema operativo (caso previsto)",
+        "option_b": "Un procedimiento siempre devuelve una tabla (caso previsto) (caso concreto)",
+        "option_c": "Una función nunca puede recibir parámetros (caso previsto) (caso concreto)",
+        "option_d": "Una función puede usarse en expresiones y un procedimiento se invoca mediante CALL",
+        "correct": "D",
+        "explanation": "PostgreSQL distingue funciones invocadas en expresiones de procedimientos invocados con CALL."
+    },
+    {
+        "topic_num": 14,
+        "question": "¿Qué sentencia concede privilegios sobre objetos?",
+        "option_a": "ANALYZE",
+        "option_b": "CHECKPOINT",
+        "option_c": "GRANT",
+        "option_d": "REVOKE",
+        "correct": "C",
+        "explanation": "GRANT añade privilegios a roles sobre bases de datos, esquemas, tablas y otros objetos."
+    },
+    {
+        "topic_num": 14,
+        "question": "¿Qué sentencia retira privilegios concedidos?",
+        "option_a": "RESET ALL",
+        "option_b": "REVOKE",
+        "option_c": "GRANT",
+        "option_d": "DROP ROLE",
+        "correct": "B",
+        "explanation": "REVOKE elimina privilegios previamente concedidos a un rol."
+    },
+    {
+        "topic_num": 14,
+        "question": "¿Qué objeto puede ejecutar automáticamente una función al ocurrir un evento en una tabla?",
+        "option_a": "Un trigger",
+        "option_b": "Un índice B-tree",
+        "option_c": "Una secuencia",
+        "option_d": "Un tablespace",
+        "correct": "A",
+        "explanation": "Un trigger asocia una función a eventos como INSERT, UPDATE o DELETE en una tabla o vista."
+    },
+    {
+        "topic_num": 14,
+        "question": "¿Qué ventaja aporta calificar una tabla con su esquema?",
+        "option_a": "Desactiva los permisos (caso previsto) (caso concreto) (supuesto dado)",
+        "option_b": "Impide usar índices (caso previsto) (caso concreto) (supuesto dado)",
+        "option_c": "Convierte la tabla en temporal (caso previsto) (caso concreto)",
+        "option_d": "Evita ambigüedades y hace explícito el espacio de nombres del objeto",
+        "correct": "D",
+        "explanation": "La notación esquema.objeto evita depender de search_path y mejora la claridad y resolución de nombres."
+    },
+    {
+        "topic_num": 15,
+        "question": "Al abrir una transacción sin indicar otra opción, ¿qué aislamiento usa PostgreSQL?",
+        "option_a": "Read Committed",
+        "option_b": "Serializable",
+        "option_c": "Read Uncommitted real",
+        "option_d": "Repeatable Read siempre",
+        "correct": "A",
+        "explanation": "PostgreSQL usa Read Committed como nivel de aislamiento predeterminado."
+    },
+    {
+        "topic_num": 15,
+        "question": "¿Qué garantiza Repeatable Read dentro de una transacción?",
+        "option_a": "Que nunca exista bloqueo (caso previsto) (caso concreto)",
+        "option_b": "Que todas las escrituras sean invisibles (caso previsto)",
+        "option_c": "Que no pueda producirse un error de serialización (caso previsto)",
+        "option_d": "Las lecturas de la transacción observan un snapshot consistente",
+        "correct": "D",
+        "explanation": "Repeatable Read mantiene una vista consistente de los datos durante la transacción, aunque puede requerir reintento ante conflictos."
+    },
+    {
+        "topic_num": 15,
+        "question": "¿Qué ocurre normalmente cuando una transacción alcanza un conflicto serializable?",
+        "option_a": "Se ignora el conflicto (caso previsto) (caso concreto) (supuesto dado)",
+        "option_b": "Se cambia silenciosamente a Read Committed (caso previsto) (caso concreto)",
+        "option_c": "Puede abortar con un error de fallo de serialización y debe reintentarse",
+        "option_d": "Se confirma automáticamente (caso previsto) (caso concreto) (supuesto dado)",
+        "correct": "C",
+        "explanation": "El aislamiento Serializable puede abortar una transacción para preservar la serialización, por lo que la aplicación debe reintentarlo."
+    },
+    {
+        "topic_num": 15,
+        "question": "¿Qué sentencia establece un punto al que se puede volver dentro de una transacción?",
+        "option_a": "LOCKPOINT",
+        "option_b": "SAVEPOINT",
+        "option_c": "CHECKPOINT",
+        "option_d": "CREATE SNAPSHOT",
+        "correct": "B",
+        "explanation": "SAVEPOINT crea un punto de restauración transaccional utilizable por ROLLBACK TO SAVEPOINT."
+    },
+    {
+        "topic_num": 15,
+        "question": "¿Qué hace ROLLBACK TO SAVEPOINT?",
+        "option_a": "Deshace los cambios posteriores al punto y mantiene activa la transacción",
+        "option_b": "Confirma toda la transacción (caso previsto) (caso concreto) (supuesto dado)",
+        "option_c": "Cierra la conexión sin cambios (caso previsto) (caso concreto)",
+        "option_d": "Elimina el historial de WAL (caso previsto) (caso concreto) (supuesto dado)",
+        "correct": "A",
+        "explanation": "La sentencia vuelve al savepoint sin terminar la transacción exterior."
+    },
+    {
+        "topic_num": 15,
+        "question": "¿Qué es un deadlock?",
+        "option_a": "Una consulta sin índice que siempre termina (caso previsto)",
+        "option_b": "Un cierre normal del servidor (caso previsto) (caso concreto)",
+        "option_c": "Una lectura consistente sin bloqueo (caso previsto) (caso concreto)",
+        "option_d": "Una espera circular entre transacciones que impide que ninguna progrese",
+        "correct": "D",
+        "explanation": "Un interbloqueo aparece cuando dos o más transacciones esperan recursos retenidos circularmente y el servidor aborta una de ellas."
+    },
+    {
+        "topic_num": 15,
+        "question": "¿Qué vista lógica de PostgreSQL permite observar transacciones activas?",
+        "option_a": "pg_roles_only (caso previsto)",
+        "option_b": "information_schema.views exclusivamente",
+        "option_c": "pg_stat_activity (caso previsto)",
+        "option_d": "pg_indexes (caso previsto) (caso concreto)",
+        "correct": "C",
+        "explanation": "pg_stat_activity muestra actividad y estado de procesos y sesiones, útil para investigar concurrencia."
+    },
+    {
+        "topic_num": 15,
+        "question": "¿Qué comando finaliza una transacción confirmando sus cambios?",
+        "option_a": "VACUUM",
+        "option_b": "COMMIT",
+        "option_c": "ABORT ONLY",
+        "option_d": "SAVEPOINT",
+        "correct": "B",
+        "explanation": "COMMIT hace visibles y duraderos los cambios de la transacción según la política de durabilidad."
+    },
+    {
+        "topic_num": 15,
+        "question": "¿Qué tipo de bloqueo puede impedir que otras transacciones modifiquen una fila seleccionada?",
+        "option_a": "FOR UPDATE",
+        "option_b": "FOR SHARE ONLY",
+        "option_c": "EXPLAIN",
+        "option_d": "ORDER BY",
+        "correct": "A",
+        "explanation": "SELECT ... FOR UPDATE adquiere un bloqueo de fila apropiado para modificar de forma coordinada la fila seleccionada."
+    },
+    {
+        "topic_num": 15,
+        "question": "¿Qué propiedad ACID exige que una transacción se aplique completamente o no se aplique?",
+        "option_a": "Disponibilidad",
+        "option_b": "Compresión",
+        "option_c": "Idempotencia de red",
+        "option_d": "Atomicidad",
+        "correct": "D",
+        "explanation": "La atomicidad expresa el comportamiento todo o nada de una transacción."
+    },
+    {
+        "topic_num": 16,
+        "question": "¿Qué comando de psql ejecuta una consulta SQL escrita en el cliente?",
+        "option_a": "La consulta terminada con punto y coma",
+        "option_b": "Solo una orden del sistema operativo",
+        "option_c": "Un archivo CSS (caso previsto)",
+        "option_d": "Un comando de pg_restore obligatorio",
+        "correct": "A",
+        "explanation": "psql envía al servidor las sentencias SQL terminadas con el delimitador correspondiente."
+    },
+    {
+        "topic_num": 16,
+        "question": "¿Qué meta-comando de psql muestra las tablas del esquema visible?",
+        "option_a": "\\du",
+        "option_b": "\\conninfo",
+        "option_c": "\\copy",
+        "option_d": "\\dt",
+        "correct": "D",
+        "explanation": "\\dt lista relaciones que cumplen el patrón y son visibles para el usuario."
+    },
+    {
+        "topic_num": 16,
+        "question": "¿Qué opción de pg_dump crea un archivo en formato personalizado?",
+        "option_a": "-Xt (caso previsto)",
+        "option_b": "-Z0 (caso previsto)",
+        "option_c": "-Fc (caso previsto)",
+        "option_d": "-Fp exclusivamente",
+        "correct": "C",
+        "explanation": "La opción -Fc produce el formato custom, que puede restaurarse selectivamente con pg_restore."
+    },
+    {
+        "topic_num": 16,
+        "question": "¿Qué herramienta restaura un archivo de pg_dump en formato custom?",
+        "option_a": "vacuumdb",
+        "option_b": "pg_restore",
+        "option_c": "psql siempre",
+        "option_d": "pg_config",
+        "correct": "B",
+        "explanation": "pg_restore procesa los formatos de archivo creados por pg_dump que no son un script SQL plano."
+    },
+    {
+        "topic_num": 16,
+        "question": "¿Qué diferencia principal existe entre COPY y \\copy?",
+        "option_a": "COPY opera desde el servidor y \\copy gestiona el archivo desde el cliente psql",
+        "option_b": "Ambos siempre leen el mismo sistema de archivos (caso previsto) (caso concreto)",
+        "option_c": "COPY solo sirve para índices (caso previsto) (caso concreto) (supuesto dado)",
+        "option_d": "\\copy requiere superusuario en todos los casos (caso previsto) (caso concreto)",
+        "correct": "A",
+        "explanation": "COPY usa archivos accesibles al servidor; \\copy usa el sistema de archivos del cliente psql."
+    },
+    {
+        "topic_num": 16,
+        "question": "¿Qué utilidad permite realizar una copia física base de un clúster en ejecución?",
+        "option_a": "pg_dump únicamente",
+        "option_b": "psql -b (caso previsto)",
+        "option_c": "pg_restore --physical",
+        "option_d": "pg_basebackup",
+        "correct": "D",
+        "explanation": "pg_basebackup toma una copia base de los archivos del clúster para recuperación o replicación."
+    },
+    {
+        "topic_num": 16,
+        "question": "¿Qué comando exporta roles y objetos globales del clúster?",
+        "option_a": "psql \\dt (caso previsto)",
+        "option_b": "pg_restore --roles",
+        "option_c": "pg_dumpall --globals-only",
+        "option_d": "pg_dump --table-only",
+        "correct": "C",
+        "explanation": "La opción --globals-only de pg_dumpall incluye roles y otros objetos globales, no las tablas de las bases."
+    },
+    {
+        "topic_num": 16,
+        "question": "¿Qué opción permite restaurar un archivo custom usando varios trabajos?",
+        "option_a": "--single-transaction obliga a un único trabajo",
+        "option_b": "-j o --jobs (caso previsto) (caso concreto)",
+        "option_c": "-h únicamente (caso previsto) (caso concreto)",
+        "option_d": "--schema-only siempre (caso previsto)",
+        "correct": "B",
+        "explanation": "pg_restore y varias utilidades admiten --jobs para paralelizar operaciones compatibles."
+    },
+    {
+        "topic_num": 16,
+        "question": "¿Qué riesgo debe considerarse al importar datos con COPY desde un servidor?",
+        "option_a": "El archivo debe ser accesible al usuario del proceso servidor y sus permisos deben controlarse",
+        "option_b": "COPY ignora cualquier permiso del sistema (caso previsto) (caso concreto) (supuesto dado)",
+        "option_c": "Solo puede importar imágenes (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "option_d": "Siempre cifra automáticamente el archivo (caso previsto) (caso concreto) (supuesto dado)",
+        "correct": "A",
+        "explanation": "COPY se ejecuta en el contexto del servidor y requiere acceso al archivo y control de permisos."
+    },
+    {
+        "topic_num": 16,
+        "question": "¿Qué información muestra \\conninfo en psql?",
+        "option_a": "El plan de cada consulta futura (caso previsto) (caso concreto)",
+        "option_b": "La lista de todos los roles del sistema (caso previsto)",
+        "option_c": "El contenido de todas las tablas (caso previsto) (caso concreto)",
+        "option_d": "La conexión actual, el servidor, la base de datos y el usuario",
+        "correct": "D",
+        "explanation": "\\conninfo muestra información resumida de la conexión activa de psql."
+    },
+    {
+        "topic_num": 17,
+        "question": "¿Qué diferencia hay entre EXPLAIN y EXPLAIN ANALYZE?",
+        "option_a": "EXPLAIN estima el plan y EXPLAIN ANALYZE ejecuta la consulta y muestra medidas reales",
+        "option_b": "Ambos siempre ejecutan dos veces (caso previsto) (caso concreto) (supuesto dado)",
+        "option_c": "EXPLAIN ANALYZE solo valida sintaxis (caso previsto) (caso concreto) (supuesto dado)",
+        "option_d": "EXPLAIN nunca muestra un plan (caso previsto) (caso concreto) (supuesto dado)",
+        "correct": "A",
+        "explanation": "EXPLAIN genera un plan estimado; ANALYZE ejecuta la consulta y añade tiempos y filas observadas."
+    },
+    {
+        "topic_num": 17,
+        "question": "¿Qué opción de EXPLAIN ayuda a observar accesos de bloques?",
+        "option_a": "TIMING ONLY",
+        "option_b": "SCHEMA",
+        "option_c": "ROLES",
+        "option_d": "BUFFERS",
+        "correct": "D",
+        "explanation": "EXPLAIN (BUFFERS) muestra estadísticas de uso de buffers durante la ejecución."
+    },
+    {
+        "topic_num": 17,
+        "question": "¿Qué operación actualiza las estadísticas que usa el planificador?",
+        "option_a": "REINDEX siempre",
+        "option_b": "GRANT",
+        "option_c": "ANALYZE",
+        "option_d": "COMMIT",
+        "correct": "C",
+        "explanation": "ANALYZE recopila estadísticas sobre la distribución de datos para estimar mejor los planes."
+    },
+    {
+        "topic_num": 17,
+        "question": "¿Qué índice suele ser adecuado para igualdad y rangos ordenados?",
+        "option_a": "BRIN para todas las tablas",
+        "option_b": "B-tree (caso previsto)",
+        "option_c": "GIST exclusivamente",
+        "option_d": "Hash en cualquier orden",
+        "correct": "B",
+        "explanation": "B-tree es el tipo general recomendado para muchas comparaciones de igualdad y orden."
+    },
+    {
+        "topic_num": 17,
+        "question": "¿Qué característica tiene un índice que solo incluye filas seleccionadas?",
+        "option_a": "Un índice construido solo sobre las filas que cumplen un predicado",
+        "option_b": "Un índice que cubre media tabla siempre (caso previsto)",
+        "option_c": "Un índice sin claves (caso previsto) (caso concreto) (supuesto dado)",
+        "option_d": "Una tabla temporal indexada por defecto (caso previsto)",
+        "correct": "A",
+        "explanation": "El predicado de un índice parcial limita las filas indexadas y puede reducir tamaño y coste."
+    },
+    {
+        "topic_num": 17,
+        "question": "¿Qué ventaja tiene un índice sobre una expresión?",
+        "option_a": "Elimina la necesidad de escribir la expresión (caso previsto)",
+        "option_b": "Convierte la columna en una vista (caso previsto) (caso concreto)",
+        "option_c": "Impide cualquier actualización (caso previsto) (caso concreto)",
+        "option_d": "Puede acelerar consultas que aplican esa expresión a la columna",
+        "correct": "D",
+        "explanation": "Un índice de expresión permite usar índices para condiciones como lower(columna) cuando coinciden con la expresión."
+    },
+    {
+        "topic_num": 17,
+        "question": "¿Qué puede provocar una estimación de cardinalidad incorrecta?",
+        "option_a": "La desaparición del esquema (caso previsto) (caso concreto)",
+        "option_b": "La conversión automática a JSON (caso previsto) (caso concreto)",
+        "option_c": "Un plan de ejecución inadecuado para la distribución real de los datos",
+        "option_d": "La validación del certificado TLS (caso previsto) (caso concreto)",
+        "correct": "C",
+        "explanation": "El planificador elige según estadísticas; estimaciones pobres pueden conducir a joins u órdenes poco eficientes."
+    },
+    {
+        "topic_num": 17,
+        "question": "¿Qué operación ayuda a recuperar espacio reutilizable de tuplas muertas?",
+        "option_a": "GRANT",
+        "option_b": "VACUUM",
+        "option_c": "ROLLBACK",
+        "option_d": "EXPLAIN",
+        "correct": "B",
+        "explanation": "VACUUM limpia versiones obsoletas y mantiene la salud de las tablas sin reescribir necesariamente todo el archivo."
+    },
+    {
+        "topic_num": 17,
+        "question": "¿Qué parámetro controla el coste estimado de una página leída aleatoriamente?",
+        "option_a": "random_page_cost",
+        "option_b": "max_connections",
+        "option_c": "default_table_access_method",
+        "option_d": "server_version_num",
+        "correct": "A",
+        "explanation": "random_page_cost participa en el modelo de costes del planificador para accesos aleatorios."
+    },
+    {
+        "topic_num": 17,
+        "question": "¿Qué precaución debe tenerse con EXPLAIN ANALYZE en una sentencia de modificación?",
+        "option_a": "Nunca ejecuta la sentencia (caso previsto) (caso concreto)",
+        "option_b": "Solo analiza el nombre de la tabla (caso previsto)",
+        "option_c": "Desactiva siempre los triggers (caso previsto)",
+        "option_d": "La sentencia se ejecuta realmente y puede modificar datos",
+        "correct": "D",
+        "explanation": "EXPLAIN ANALYZE ejecuta la consulta, por lo que en INSERT, UPDATE o DELETE deben usarse precauciones apropiadas."
+    },
+    {
+        "topic_num": 18,
+        "question": "¿Qué diferencia principal existe entre un tipo valor y un tipo referencia en C#?",
+        "option_a": "Un tipo valor contiene directamente su valor y un tipo referencia contiene una referencia a un objeto",
+        "option_b": "Los tipos referencia nunca pueden ser nulos (caso previsto) (caso concreto) (supuesto dado)",
+        "option_c": "Los tipos valor siempre viven en archivos (caso previsto) (caso concreto) (supuesto dado)",
+        "option_d": "No existe diferencia semántica (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "correct": "A",
+        "explanation": "La distinción afecta asignación, copia y representación de valores y objetos en C#."
+    },
+    {
+        "topic_num": 18,
+        "question": "¿Qué operador permite comprobar y convertir un patrón de tipo de forma segura?",
+        "option_a": "goto",
+        "option_b": "sizeof siempre",
+        "option_c": "lock solamente",
+        "option_d": "is",
+        "correct": "D",
+        "explanation": "El patrón is prueba si un valor coincide con un tipo o patrón y puede declarar una variable coincidente."
+    },
+    {
+        "topic_num": 18,
+        "question": "¿Qué caracteriza a un record en C#?",
+        "option_a": "No admite propiedades (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "option_b": "Es siempre una enumeración (caso previsto) (caso concreto) (supuesto dado)",
+        "option_c": "Está orientado a modelos de datos con igualdad basada en valores y sintaxis concisa",
+        "option_d": "Solo puede representar conexiones de red (caso previsto) (caso concreto)",
+        "correct": "C",
+        "explanation": "Los records proporcionan semántica de valor y características de datos inmutables o no destructivas según su declaración."
+    },
+    {
+        "topic_num": 18,
+        "question": "¿Qué restricción genérica exige que un tipo tenga un constructor público sin parámetros?",
+        "option_a": "default()",
+        "option_b": "new() (caso previsto)",
+        "option_c": "where T : static",
+        "option_d": "where T : namespace",
+        "correct": "B",
+        "explanation": "La restricción new() requiere un constructor público sin parámetros y permite crear instancias del parámetro de tipo."
+    },
+    {
+        "topic_num": 18,
+        "question": "¿Qué hace una expresión lambda?",
+        "option_a": "Representa una función anónima que puede convertirse en delegado o árbol de expresión",
+        "option_b": "Declara siempre una clase (caso previsto) (caso concreto) (supuesto dado)",
+        "option_c": "Crea un hilo del sistema operativo (caso previsto) (caso concreto) (supuesto dado)",
+        "option_d": "Elimina excepciones (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "correct": "A",
+        "explanation": "Las lambdas permiten expresar funciones inline y se usan ampliamente con delegados y LINQ."
+    },
+    {
+        "topic_num": 18,
+        "question": "¿Qué palabra clave permite esperar una operación Task sin bloquear de forma síncrona el flujo?",
+        "option_a": "yield",
+        "option_b": "checked",
+        "option_c": "fixed",
+        "option_d": "await",
+        "correct": "D",
+        "explanation": "await suspende el método asíncrono hasta que termina la tarea y devuelve el control al contexto apropiado."
+    },
+    {
+        "topic_num": 18,
+        "question": "¿Qué bloque se ejecuta para limpiar recursos aunque ocurra una excepción?",
+        "option_a": "default",
+        "option_b": "lock",
+        "option_c": "finally",
+        "option_d": "catch únicamente",
+        "correct": "C",
+        "explanation": "El bloque finally se ejecuta al abandonar el bloque try, normalmente para liberar recursos."
+    },
+    {
+        "topic_num": 18,
+        "question": "¿Qué declaración libera automáticamente un objeto IDisposable al salir del ámbito?",
+        "option_a": "partial",
+        "option_b": "using",
+        "option_c": "namespace",
+        "option_d": "event",
+        "correct": "B",
+        "explanation": "using genera la disposición del recurso al salir del ámbito, incluso cuando se produce una excepción."
+    },
+    {
+        "topic_num": 18,
+        "question": "¿Qué representa un delegado en C#?",
+        "option_a": "Un tipo que encapsula una referencia a uno o varios métodos con una firma determinada",
+        "option_b": "Una base de datos (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "option_c": "Un espacio de nombres (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "option_d": "Un atributo de compilación únicamente (caso previsto) (caso concreto) (supuesto dado)",
+        "correct": "A",
+        "explanation": "Los delegados permiten pasar métodos como valores y definir callbacks tipados."
+    },
+    {
+        "topic_num": 18,
+        "question": "¿Qué permite la coincidencia de patrones en un switch expression?",
+        "option_a": "Cambiar el tipo del ensamblado (caso previsto)",
+        "option_b": "Crear siempre una excepción (caso previsto) (caso concreto)",
+        "option_c": "Desactivar el compilador (caso previsto) (caso concreto)",
+        "option_d": "Seleccionar un resultado según la forma y valores del dato",
+        "correct": "D",
+        "explanation": "Las switch expressions combinan patrones y brazos para producir un valor de forma declarativa."
+    },
+    {
+        "topic_num": 19,
+        "question": "¿Qué componente de MVC recibe la solicitud y coordina la respuesta?",
+        "option_a": "El controlador",
+        "option_b": "La vista",
+        "option_c": "El layout",
+        "option_d": "La hoja CSS",
+        "correct": "A",
+        "explanation": "El controlador procesa la entrada, coordina la lógica y selecciona el resultado que se ejecutará."
+    },
+    {
+        "topic_num": 19,
+        "question": "¿Qué mecanismo de ASP.NET Core MVC asocia una URL con una acción?",
+        "option_a": "La migración de EF Core",
+        "option_b": "El proveedor de configuración",
+        "option_c": "El índice de una tabla",
+        "option_d": "El enrutamiento (caso previsto)",
+        "correct": "D",
+        "explanation": "El routing selecciona un endpoint y sus valores a partir de la URL y las convenciones o atributos."
+    },
+    {
+        "topic_num": 19,
+        "question": "¿Qué archivo suele definir la estructura compartida de varias vistas Razor?",
+        "option_a": "Program.cs exclusivamente",
+        "option_b": "launchSettings.xml únicamente",
+        "option_c": "_Layout.cshtml (caso previsto)",
+        "option_d": "appsettings.json (caso previsto)",
+        "correct": "C",
+        "explanation": "El layout comparte estructura como navegación, scripts y secciones entre vistas."
+    },
+    {
+        "topic_num": 19,
+        "question": "¿Qué elemento Razor permite reutilizar una parte de interfaz sin ser una vista completa?",
+        "option_a": "Un middleware de autenticación",
+        "option_b": "Una vista parcial (caso previsto)",
+        "option_c": "Un DbContext (caso previsto)",
+        "option_d": "Una migración (caso previsto)",
+        "correct": "B",
+        "explanation": "Las vistas parciales encapsulan fragmentos reutilizables de marcado y lógica de presentación."
+    },
+    {
+        "topic_num": 19,
+        "question": "¿Qué característica de MVC protege normalmente un formulario frente a falsificación de solicitudes?",
+        "option_a": "El token antiforgery",
+        "option_b": "El token de caché",
+        "option_c": "El parámetro de paginación",
+        "option_d": "El layout por sí solo",
+        "correct": "A",
+        "explanation": "El token antiforgery vincula la solicitud al contexto esperado y ayuda a mitigar CSRF en formularios."
+    },
+    {
+        "topic_num": 19,
+        "question": "¿Qué componente Razor genera atributos HTML a partir de metadatos del modelo?",
+        "option_a": "Un trigger de PostgreSQL",
+        "option_b": "Un claim JWT",
+        "option_c": "Un índice parcial",
+        "option_d": "Un Tag Helper",
+        "correct": "D",
+        "explanation": "Los Tag Helpers permiten generar y transformar HTML en las vistas usando convenciones y metadatos."
+    },
+    {
+        "topic_num": 19,
+        "question": "¿Qué clase Bootstrap permite organizar columnas en una fila responsive?",
+        "option_a": "modal-dialog (caso previsto)",
+        "option_b": "btn-group (caso previsto)",
+        "option_c": "row (caso previsto)",
+        "option_d": "container-fluid únicamente",
+        "correct": "C",
+        "explanation": "En el sistema de rejilla de Bootstrap, row agrupa columnas dentro de un contenedor."
+    },
+    {
+        "topic_num": 19,
+        "question": "¿Qué clase Bootstrap hace que un contenedor ocupe todo el ancho disponible?",
+        "option_a": "d-none",
+        "option_b": "container-fluid",
+        "option_c": "container-sm",
+        "option_d": "col-auto",
+        "correct": "B",
+        "explanation": "container-fluid aplica un contenedor de ancho completo en los distintos puntos de ruptura."
+    },
+    {
+        "topic_num": 19,
+        "question": "¿Qué resultado MVC es adecuado para devolver una vista con un modelo?",
+        "option_a": "View(model) (caso previsto)",
+        "option_b": "RedirectToAction() siempre",
+        "option_c": "NotFound() siempre",
+        "option_d": "JsonRequestBehavior",
+        "correct": "A",
+        "explanation": "El resultado View puede recibir el modelo que la vista Razor utilizará para generar la respuesta."
+    },
+    {
+        "topic_num": 19,
+        "question": "¿Qué atributo puede restringir una acción MVC a solicitudes HTTP POST?",
+        "option_a": "[FromServices]",
+        "option_b": "[ValidateNever]",
+        "option_c": "[Key]",
+        "option_d": "[HttpPost]",
+        "correct": "D",
+        "explanation": "El atributo HttpPost restringe la acción a solicitudes que usan el método HTTP POST."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué representa una entidad en el modelo de EF Core?",
+        "option_a": "Una instancia de una clase que se corresponde con datos persistidos",
+        "option_b": "Una ruta HTTP (caso previsto) (caso concreto) (supuesto dado)",
+        "option_c": "Un servicio singleton obligatorio (caso previsto) (caso concreto)",
+        "option_d": "Una vista Razor sin modelo (caso previsto) (caso concreto)",
+        "correct": "A",
+        "explanation": "EF Core usa clases de entidad para representar datos que el DbContext consulta y persiste."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué método marca una entidad nueva para insertarla?",
+        "option_a": "Attach solamente",
+        "option_b": "AsNoTracking",
+        "option_c": "Include",
+        "option_d": "Add (caso previsto)",
+        "correct": "D",
+        "explanation": "DbSet.Add o DbContext.Add marca la entidad y su gráfico como Added para la próxima persistencia."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué efecto tiene AsNoTracking en una consulta?",
+        "option_a": "Elimina la base de datos (caso previsto) (caso concreto) (supuesto dado)",
+        "option_b": "Desactiva la traducción SQL (caso previsto) (caso concreto)",
+        "option_c": "Evita que las entidades resultantes se registren en el change tracker",
+        "option_d": "Confirma la transacción (caso previsto) (caso concreto) (supuesto dado)",
+        "correct": "C",
+        "explanation": "AsNoTracking es apropiado para resultados de solo lectura que no necesitan seguimiento de cambios."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué método carga explícitamente una navegación de una entidad rastreada?",
+        "option_a": "FindAsync sin entidad (caso previsto) (caso concreto)",
+        "option_b": "Entry(...).Collection(...).Load() o Reference(...).Load()",
+        "option_c": "SaveChanges solamente (caso previsto) (caso concreto)",
+        "option_d": "Migrate siempre (caso previsto) (caso concreto)",
+        "correct": "B",
+        "explanation": "La carga explícita usa la entrada del contexto para cargar una referencia o colección concreta."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué mecanismo evita sobrescribir cambios concurrentes sin detectarlos?",
+        "option_a": "Un token de concurrencia",
+        "option_b": "Un índice visual",
+        "option_c": "Un DbSet estático",
+        "option_d": "Un layout Razor",
+        "correct": "A",
+        "explanation": "EF Core compara el token de concurrencia durante la actualización y detecta conflictos cuando el valor cambió."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué comando de herramientas genera una migración a partir del cambio de modelo?",
+        "option_a": "dotnet ef database drop siempre",
+        "option_b": "dotnet restore schema",
+        "option_c": "dotnet build migration-only",
+        "option_d": "dotnet ef migrations add",
+        "correct": "D",
+        "explanation": "migrations add compara el modelo actual con el snapshot y crea operaciones de migración."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué representa el modelo snapshot de EF Core?",
+        "option_a": "La sesión HTTP del usuario (caso previsto) (caso concreto)",
+        "option_b": "Un índice de consulta (caso previsto) (caso concreto) (supuesto dado)",
+        "option_c": "La representación del modelo usado como referencia por las migraciones",
+        "option_d": "El contenido de una tabla en tiempo real (caso previsto) (caso concreto)",
+        "correct": "C",
+        "explanation": "El snapshot permite detectar cambios posteriores y generar migraciones incrementales."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué patrón de consulta evita traer columnas que no se necesitan?",
+        "option_a": "Consultar siempre la entidad completa",
+        "option_b": "Proyectar con Select a un tipo o DTO",
+        "option_c": "Usar Include para todas las navegaciones",
+        "option_d": "Llamar SaveChanges (caso previsto)",
+        "correct": "B",
+        "explanation": "La proyección selecciona solo las propiedades necesarias y puede reducir datos transferidos."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué método aplica una migración pendiente a la base de datos?",
+        "option_a": "Database.Migrate()",
+        "option_b": "ChangeTracker.Clear()",
+        "option_c": "Entry.Reload()",
+        "option_d": "ModelBuilder.Apply",
+        "correct": "A",
+        "explanation": "Database.Migrate aplica las migraciones registradas que aún no constan como ejecutadas."
+    },
+    {
+        "topic_num": 20,
+        "question": "¿Qué precaución debe tenerse con Include en varias colecciones?",
+        "option_a": "Siempre mejora el rendimiento (caso previsto) (caso concreto) (supuesto dado)",
+        "option_b": "Elimina todas las filas relacionadas (caso previsto) (caso concreto)",
+        "option_c": "Impide la traducción (caso previsto) (caso concreto) (supuesto dado)",
+        "option_d": "Puede producir un resultado grande y conviene valorar una consulta dividida",
+        "correct": "D",
+        "explanation": "La carga de varias colecciones puede multiplicar filas; una consulta dividida puede ser adecuada según el caso."
+    },
+    {
+        "topic_num": 21,
+        "question": "¿Cuándo se ejecuta normalmente una consulta LINQ con ejecución diferida?",
+        "option_a": "Cuando una operación terminal enumera la secuencia",
+        "option_b": "Siempre al compilar el método (caso previsto)",
+        "option_c": "Solo al declarar la variable (caso previsto)",
+        "option_d": "Nunca si usa IEnumerable (caso previsto)",
+        "correct": "A",
+        "explanation": "Operadores como Where y Select construyen una consulta que se ejecuta al enumerarse, por ejemplo mediante ToList."
+    },
+    {
+        "topic_num": 21,
+        "question": "¿Qué operador aplana secuencias anidadas en una sola secuencia?",
+        "option_a": "Select (caso previsto)",
+        "option_b": "Aggregate",
+        "option_c": "Zip solo para ordenar",
+        "option_d": "SelectMany",
+        "correct": "D",
+        "explanation": "SelectMany proyecta cada elemento a una secuencia y combina los resultados en una secuencia plana."
+    },
+    {
+        "topic_num": 21,
+        "question": "¿Qué operador comprueba si al menos un elemento satisface un predicado?",
+        "option_a": "ContainsKey",
+        "option_b": "Count solo sin enumerar",
+        "option_c": "Any (caso previsto)",
+        "option_d": "All siempre",
+        "correct": "C",
+        "explanation": "Any devuelve true cuando encuentra al menos un elemento que cumple la condición o cuando la secuencia no está vacía sin predicado."
+    },
+    {
+        "topic_num": 21,
+        "question": "¿Qué diferencia hay entre Single y First?",
+        "option_a": "Single nunca lanza excepciones (caso previsto) (caso concreto)",
+        "option_b": "Single exige exactamente un elemento; First exige al menos uno",
+        "option_c": "Ambos siempre devuelven el último (caso previsto) (caso concreto)",
+        "option_d": "First exige exactamente dos (caso previsto) (caso concreto)",
+        "correct": "B",
+        "explanation": "Single valida unicidad y First solo que exista un primer elemento; ambos pueden lanzar si no se cumple su contrato."
+    },
+    {
+        "topic_num": 21,
+        "question": "¿Qué operador materializa una secuencia en una lista?",
+        "option_a": "ToList",
+        "option_b": "AsEnumerable",
+        "option_c": "Cast",
+        "option_d": "Where",
+        "correct": "A",
+        "explanation": "ToList enumera la fuente y crea una List<T> con sus resultados."
+    },
+    {
+        "topic_num": 21,
+        "question": "¿Qué diferencia principal existe entre Enumerable y Queryable?",
+        "option_a": "Enumerable solo trabaja con bases de datos (caso previsto) (caso concreto) (supuesto dado)",
+        "option_b": "Queryable siempre ejecuta en memoria (caso previsto) (caso concreto) (supuesto dado)",
+        "option_c": "No existe diferencia de interfaz (caso previsto) (caso concreto) (supuesto dado)",
+        "option_d": "Queryable puede construir árboles de expresión para que un proveedor traduzca la consulta",
+        "correct": "D",
+        "explanation": "Enumerable usa delegados y Queryable usa expresiones que un proveedor como EF Core puede traducir."
+    },
+    {
+        "topic_num": 21,
+        "question": "¿Qué operador agrupa elementos por una clave?",
+        "option_a": "Join (caso previsto)",
+        "option_b": "DistinctBy solamente",
+        "option_c": "GroupBy (caso previsto)",
+        "option_d": "OrderBy (caso previsto)",
+        "correct": "C",
+        "explanation": "GroupBy produce grupos cuyos elementos comparten la clave seleccionada."
+    },
+    {
+        "topic_num": 21,
+        "question": "¿Qué operador combina dos secuencias por una clave relacionada?",
+        "option_a": "Append",
+        "option_b": "Join",
+        "option_c": "Skip",
+        "option_d": "Reverse",
+        "correct": "B",
+        "explanation": "Join relaciona elementos de dos secuencias por claves y proyecta el resultado."
+    },
+    {
+        "topic_num": 21,
+        "question": "¿Qué efecto tiene Where sobre la fuente?",
+        "option_a": "Filtra los elementos que no satisfacen el predicado",
+        "option_b": "Transforma siempre el tipo de cada elemento",
+        "option_c": "Ordena por defecto (caso previsto) (caso concreto)",
+        "option_d": "Materializa siempre una lista (caso previsto)",
+        "correct": "A",
+        "explanation": "Where devuelve una secuencia de los elementos para los que el predicado es true y normalmente conserva ejecución diferida."
+    },
+    {
+        "topic_num": 21,
+        "question": "¿Qué riesgo existe al cerrar una variable mutable dentro de una consulta LINQ?",
+        "option_a": "La variable se convierte en constante siempre (caso previsto) (caso concreto)",
+        "option_b": "LINQ copia automáticamente todos los valores (caso previsto) (caso concreto)",
+        "option_c": "La consulta se ejecuta durante la compilación (caso previsto) (caso concreto)",
+        "option_d": "La consulta puede observar el valor cuando se ejecuta, no cuando se construyó",
+        "correct": "D",
+        "explanation": "Con ejecución diferida, el cierre y sus variables se evalúan al enumerar la consulta, por lo que el momento importa."
+    },
+    {
+        "topic_num": 22,
+        "question": "¿Qué fuentes puede combinar el model binding de ASP.NET Core?",
+        "option_a": "Ruta, cadena de consulta, formulario, cuerpo y servicios según el parámetro",
+        "option_b": "Solo variables globales (caso previsto) (caso concreto) (supuesto dado)",
+        "option_c": "Únicamente cookies (caso previsto) (caso concreto) (supuesto dado)",
+        "option_d": "Solo el archivo de configuración (caso previsto) (caso concreto)",
+        "correct": "A",
+        "explanation": "El model binding obtiene valores de las fuentes HTTP y de servicios conforme a convenciones y atributos."
+    },
+    {
+        "topic_num": 22,
+        "question": "¿Qué atributo fuerza el binding de un parámetro desde el cuerpo?",
+        "option_a": "[FromRoute]",
+        "option_b": "[FromHeader]",
+        "option_c": "[BindNever]",
+        "option_d": "[FromBody]",
+        "correct": "D",
+        "explanation": "FromBody indica que el valor debe deserializarse desde el cuerpo de la solicitud."
+    },
+    {
+        "topic_num": 22,
+        "question": "¿Qué contiene ModelState?",
+        "option_a": "El plan SQL de EF Core (caso previsto) (caso concreto)",
+        "option_b": "La configuración del servidor (caso previsto) (caso concreto)",
+        "option_c": "Los valores enlazados y los errores de binding o validación",
+        "option_d": "Solo la identidad autenticada (caso previsto) (caso concreto)",
+        "correct": "C",
+        "explanation": "ModelState recopila valores y errores producidos al enlazar y validar datos de la solicitud."
+    },
+    {
+        "topic_num": 22,
+        "question": "¿Qué hace ApiController cuando el ModelState es inválido por defecto?",
+        "option_a": "Redirige siempre a la página de inicio",
+        "option_b": "Produce automáticamente una respuesta HTTP 400",
+        "option_c": "Confirma la transacción (caso previsto)",
+        "option_d": "Ignora los errores (caso previsto)",
+        "correct": "B",
+        "explanation": "La inferencia de ApiController añade el filtro que devuelve 400 ante un ModelState inválido."
+    },
+    {
+        "topic_num": 22,
+        "question": "¿Qué interfaz permite crear un model binder personalizado?",
+        "option_a": "IModelBinder",
+        "option_b": "IActionFilter",
+        "option_c": "IFormatter",
+        "option_d": "IValidatorProvider",
+        "correct": "A",
+        "explanation": "IModelBinder define la operación de enlazar un valor de la solicitud con un modelo o parámetro."
+    },
+    {
+        "topic_num": 22,
+        "question": "¿Qué palabra clave espera una operación asíncrona en una acción?",
+        "option_a": "yield return siempre",
+        "option_b": "lock (caso previsto)",
+        "option_c": "goto (caso previsto)",
+        "option_d": "await (caso previsto)",
+        "correct": "D",
+        "explanation": "await permite esperar Task y mantener el flujo asíncrono sin bloquear el hilo de forma síncrona."
+    },
+    {
+        "topic_num": 22,
+        "question": "¿Qué método de EF Core guarda de forma asíncrona los cambios rastreados?",
+        "option_a": "AddAsync siempre guarda",
+        "option_b": "TrackAsync (caso previsto)",
+        "option_c": "SaveChangesAsync",
+        "option_d": "CommitAsync de LINQ",
+        "correct": "C",
+        "explanation": "SaveChangesAsync persiste los cambios y devuelve una Task que puede esperarse."
+    },
+    {
+        "topic_num": 22,
+        "question": "¿Qué token permite cancelar cooperativamente una acción o consulta?",
+        "option_a": "ValidationToken (caso previsto)",
+        "option_b": "CancellationToken (caso previsto)",
+        "option_c": "RefreshToken (caso previsto)",
+        "option_d": "AntiForgeryToken exclusivamente",
+        "correct": "B",
+        "explanation": "CancellationToken permite propagar una solicitud de cancelación a operaciones que la admiten."
+    },
+    {
+        "topic_num": 22,
+        "question": "¿Qué atributo evita que un parámetro participe en el model binding?",
+        "option_a": "[BindNever] (caso previsto)",
+        "option_b": "[BindRequired]",
+        "option_c": "[FromForm] (caso previsto)",
+        "option_d": "[ValidateAntiForgeryToken]",
+        "correct": "A",
+        "explanation": "BindNever excluye una propiedad o parámetro del binding, útil para evitar asignaciones no deseadas."
+    },
+    {
+        "topic_num": 22,
+        "question": "¿Qué problema puede indicar que el modelo es null tras recibir un JSON válido?",
+        "option_a": "Que el routing siempre falló (caso previsto) (caso concreto)",
+        "option_b": "Que el servidor no admite métodos async (caso previsto) (caso concreto)",
+        "option_c": "Que ModelState no puede existir (caso previsto) (caso concreto)",
+        "option_d": "Una fuente, formato, tipo o Content-Type incompatible con el parámetro",
+        "correct": "D",
+        "explanation": "El binder necesita una fuente compatible, un formatter y un tipo que pueda deserializarse."
+    },
+    {
+        "topic_num": 23,
+        "question": "¿Qué determina una política de autorización?",
+        "option_a": "Los requisitos que debe satisfacer el usuario para acceder a un recurso",
+        "option_b": "El formato JSON de la respuesta (caso previsto) (caso concreto)",
+        "option_c": "El puerto del servidor (caso previsto) (caso concreto) (supuesto dado)",
+        "option_d": "La compresión de archivos (caso previsto) (caso concreto) (supuesto dado)",
+        "correct": "A",
+        "explanation": "Una policy agrupa requisitos y puede aplicarse a endpoints para decidir el acceso."
+    },
+    {
+        "topic_num": 23,
+        "question": "¿Qué representa ClaimsPrincipal?",
+        "option_a": "El modelo de una vista (caso previsto) (caso concreto)",
+        "option_b": "La conexión de base de datos (caso previsto) (caso concreto)",
+        "option_c": "El resultado de un filtro de formato (caso previsto)",
+        "option_d": "La identidad y las identidades asociadas al usuario actual",
+        "correct": "D",
+        "explanation": "ClaimsPrincipal contiene una o más ClaimsIdentity y sus claims usados para autenticación y autorización."
+    },
+    {
+        "topic_num": 23,
+        "question": "¿Qué hace un authorization handler?",
+        "option_a": "Crea migraciones (caso previsto) (caso concreto)",
+        "option_b": "Sirve archivos estáticos (caso previsto)",
+        "option_c": "Evalúa un requisito para determinar si se satisface",
+        "option_d": "Serializa el cuerpo HTTP (caso previsto)",
+        "correct": "C",
+        "explanation": "Un AuthorizationHandler implementa la lógica que decide si una exigencia de la policy se cumple."
+    },
+    {
+        "topic_num": 23,
+        "question": "En un endpoint protegido, ¿qué respuesta distingue identidad ausente de permisos insuficientes?",
+        "option_a": "No existe diferencia (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "option_b": "Challenge solicita autenticación; forbid indica que el usuario autenticado no está autorizado",
+        "option_c": "Ambos siempre significan éxito (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "option_d": "Forbid inicia sesión y challenge borra claims (caso previsto) (caso concreto) (supuesto dado)",
+        "correct": "B",
+        "explanation": "Los handlers de autenticación distinguen la falta de autenticación del acceso denegado a una identidad autenticada."
+    },
+    {
+        "topic_num": 23,
+        "question": "¿Qué esquema se usa habitualmente para sesiones de navegador?",
+        "option_a": "Cookies (caso previsto)",
+        "option_b": "Bearer exclusivamente",
+        "option_c": "Basic sin TLS",
+        "option_d": "Un encabezado SQL",
+        "correct": "A",
+        "explanation": "La autenticación por cookies mantiene la identidad de una sesión de navegador mediante un ticket protegido."
+    },
+    {
+        "topic_num": 23,
+        "question": "¿Qué esquema suele transportar un token de acceso en una API?",
+        "option_a": "CookieForm",
+        "option_b": "DigestOnly",
+        "option_c": "QueryStringIdentity",
+        "option_d": "Bearer (caso previsto)",
+        "correct": "D",
+        "explanation": "El handler Bearer valida tokens enviados normalmente en el encabezado Authorization."
+    },
+    {
+        "topic_num": 23,
+        "question": "¿Qué atributo permite que una acción no requiera autenticación?",
+        "option_a": "[ValidateAntiForgeryToken]",
+        "option_b": "[RequireHttps]",
+        "option_c": "[AllowAnonymous]",
+        "option_d": "[Authorize] (caso previsto)",
+        "correct": "C",
+        "explanation": "AllowAnonymous omite la autorización para el endpoint donde se aplica, incluso si existe una política general."
+    },
+    {
+        "topic_num": 23,
+        "question": "¿Qué elemento expresa una afirmación como el rol o identificador de un usuario?",
+        "option_a": "Un formatter",
+        "option_b": "Un claim",
+        "option_c": "Un route constraint",
+        "option_d": "Un view component",
+        "correct": "B",
+        "explanation": "Los claims son pares de información sobre una identidad que las policies pueden evaluar."
+    },
+    {
+        "topic_num": 23,
+        "question": "¿Qué protección ayuda a evitar que un formulario autenticado sea reutilizado por otro sitio?",
+        "option_a": "La validación antiforgery",
+        "option_b": "El model binding por sí solo",
+        "option_c": "El atributo AllowAnonymous",
+        "option_d": "La caché de respuestas",
+        "correct": "A",
+        "explanation": "El antiforgery token ayuda a demostrar que la solicitud procede del contexto de la aplicación y mitiga CSRF."
+    },
+    {
+        "topic_num": 23,
+        "question": "¿Qué orden general sigue el pipeline respecto de autenticación y autorización?",
+        "option_a": "Autorización antes de routing siempre",
+        "option_b": "Autenticación después de respuesta",
+        "option_c": "No hay relación entre ambas",
+        "option_d": "Autenticación antes de autorización",
+        "correct": "D",
+        "explanation": "El middleware debe autenticar para establecer el usuario antes de que la autorización evalúe sus requisitos."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué atributo asocia una acción de controlador API con solicitudes GET?",
+        "option_a": "[HttpGet]",
+        "option_b": "[FromBody]",
+        "option_c": "[Produces]",
+        "option_d": "[ApiController]",
+        "correct": "A",
+        "explanation": "HttpGet restringe la acción al método HTTP GET y puede incluir una plantilla de ruta."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué resultado indica que se ha creado un recurso y puede incluir su ubicación?",
+        "option_a": "NoContent",
+        "option_b": "Unauthorized",
+        "option_c": "ValidationProblem",
+        "option_d": "CreatedAtAction",
+        "correct": "D",
+        "explanation": "CreatedAtAction genera normalmente una respuesta 201 y una referencia a la acción que recupera el recurso."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué atributo permite declarar restricciones de tipo en una plantilla de ruta?",
+        "option_a": "La propiedad ModelState",
+        "option_b": "El formato ProblemDetails",
+        "option_c": "La restricción {id:int}",
+        "option_d": "El encabezado Accept",
+        "correct": "C",
+        "explanation": "Una restricción de ruta limita las coincidencias a valores que cumplen la restricción indicada."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué resultado representa una respuesta correcta sin cuerpo?",
+        "option_a": "Challenge",
+        "option_b": "NoContent",
+        "option_c": "CreatedAtAction",
+        "option_d": "BadRequest",
+        "correct": "B",
+        "explanation": "NoContent representa normalmente una respuesta HTTP 204 sin contenido en el cuerpo."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué estructura estandariza información de errores HTTP?",
+        "option_a": "ProblemDetails",
+        "option_b": "ActionDescriptor",
+        "option_c": "RouteData",
+        "option_d": "ClaimsPrincipal",
+        "correct": "A",
+        "explanation": "ProblemDetails proporciona una representación estructurada y portable de un error HTTP."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué mecanismo decide el formato de representación de una respuesta?",
+        "option_a": "El nombre del controlador únicamente",
+        "option_b": "El método Dispose (caso previsto)",
+        "option_c": "La ruta física del proyecto (caso previsto)",
+        "option_d": "La negociación de contenido mediante Accept",
+        "correct": "D",
+        "explanation": "El cliente expresa preferencias mediante Accept y ASP.NET Core negocia un formatter compatible."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué clase base no incluye soporte para vistas y se usa habitualmente en API controllers?",
+        "option_a": "DbContext",
+        "option_b": "ComponentBase",
+        "option_c": "ControllerBase",
+        "option_d": "RazorPage",
+        "correct": "C",
+        "explanation": "ControllerBase proporciona resultados y funcionalidades de controlador sin las vistas de Controller."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué atributo activa convenciones específicas para controladores API?",
+        "option_a": "[RouteData] (caso previsto)",
+        "option_b": "[ApiController] (caso previsto)",
+        "option_c": "[ApiExplorerSettings] solamente",
+        "option_d": "[Controller] (caso previsto)",
+        "correct": "B",
+        "explanation": "ApiController activa inferencia de fuentes, respuestas 400 automáticas y otras convenciones de API."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué header describe el formato del cuerpo enviado por el cliente?",
+        "option_a": "Content-Type",
+        "option_b": "Accept",
+        "option_c": "Location",
+        "option_d": "ETag",
+        "correct": "A",
+        "explanation": "Content-Type indica el media type del cuerpo de la solicitud."
+    },
+    {
+        "topic_num": 24,
+        "question": "¿Qué debe consultar un consumidor para conocer rutas, operaciones y esquemas de una API?",
+        "option_a": "El archivo de logs del servidor",
+        "option_b": "El índice de la base de datos",
+        "option_c": "La política de cookies",
+        "option_d": "El documento OpenAPI",
+        "correct": "D",
+        "explanation": "OpenAPI describe el contrato HTTP, incluyendo operaciones, parámetros, respuestas y esquemas."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué elemento del modelo OData identifica de forma única una entidad?",
+        "option_a": "La propiedad clave (caso previsto)",
+        "option_b": "El nombre del host (caso previsto)",
+        "option_c": "El encabezado User-Agent",
+        "option_d": "La opción $format exclusivamente",
+        "correct": "A",
+        "explanation": "Una entidad OData tiene una o más propiedades clave que la identifican dentro de su conjunto."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué opción OData incluye entidades relacionadas en la representación?",
+        "option_a": "$select",
+        "option_b": "$skip",
+        "option_c": "$count",
+        "option_d": "$expand",
+        "correct": "D",
+        "explanation": "$expand solicita que se incluyan recursos relacionados mediante propiedades de navegación."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué opción limita las propiedades devueltas?",
+        "option_a": "$filter",
+        "option_b": "$search",
+        "option_c": "$select",
+        "option_d": "$expand",
+        "correct": "C",
+        "explanation": "$select permite solicitar un subconjunto de propiedades del recurso."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué opción cuenta las entidades de una colección?",
+        "option_a": "$skip",
+        "option_b": "$count",
+        "option_c": "$orderby",
+        "option_d": "$compute",
+        "correct": "B",
+        "explanation": "$count solicita un recuento de los recursos de la colección cuando el servicio lo admite."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué opción OData permite calcular una expresión y exponerla como propiedad?",
+        "option_a": "$compute",
+        "option_b": "$expand",
+        "option_c": "$id",
+        "option_d": "$entity",
+        "correct": "A",
+        "explanation": "$compute define expresiones calculadas que pueden usarse en la representación solicitada."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué recurso devuelve el modelo de un servicio OData?",
+        "option_a": "$schema",
+        "option_b": "$model",
+        "option_c": "$service",
+        "option_d": "$metadata",
+        "correct": "D",
+        "explanation": "$metadata devuelve la representación CSDL del modelo expuesto por el servicio."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué mecanismo permite detectar que una representación no coincide con la versión almacenada?",
+        "option_a": "Content-Length por sí solo",
+        "option_b": "El nombre de la entidad",
+        "option_c": "ETag y la condición If-Match",
+        "option_d": "$skip sin condición",
+        "correct": "C",
+        "explanation": "Las etiquetas de entidad y cabeceras condicionales permiten controlar actualizaciones optimistas."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué recurso representa una colección de entidades del mismo tipo?",
+        "option_a": "Un encabezado HTTP",
+        "option_b": "Un entity set",
+        "option_c": "Un action import",
+        "option_d": "Una función escalar",
+        "correct": "B",
+        "explanation": "El entity set es el punto de acceso a una colección de entidades dentro del entity container."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué opción ordena los resultados?",
+        "option_a": "$orderby",
+        "option_b": "$filter",
+        "option_c": "$expand",
+        "option_d": "$select",
+        "correct": "A",
+        "explanation": "$orderby establece la expresión y dirección de ordenación de los recursos."
+    },
+    {
+        "topic_num": 25,
+        "question": "¿Qué debe hacer un servicio antes de aceptar opciones de consulta potencialmente costosas?",
+        "option_a": "Aceptar cualquier profundidad sin límite",
+        "option_b": "Ignorar la autenticación (caso previsto)",
+        "option_c": "Desactivar el modelo de datos (caso previsto)",
+        "option_d": "Aplicar límites y controles de seguridad apropiados",
+        "correct": "D",
+        "explanation": "La exposición de opciones como $expand o $filter debe limitarse para evitar consumo excesivo y preservar el contrato."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué modelo ejecuta la lógica de componentes en el navegador mediante WebAssembly?",
+        "option_a": "Blazor WebAssembly",
+        "option_b": "Blazor Server exclusivamente",
+        "option_c": "Razor Pages (caso previsto)",
+        "option_d": "ASP.NET MVC (caso previsto)",
+        "correct": "A",
+        "explanation": "Blazor WebAssembly descarga el runtime y los ensamblados necesarios para ejecutar componentes en el navegador."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué modelo mantiene un circuito y ejecuta la lógica en el servidor?",
+        "option_a": "Blazor WebAssembly standalone",
+        "option_b": "Blazor Hybrid sin host",
+        "option_c": "Una vista MVC (caso previsto)",
+        "option_d": "Blazor Server (caso previsto)",
+        "correct": "D",
+        "explanation": "Blazor Server mantiene la ejecución en servidor y comunica eventos y renderizado mediante una conexión."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué entorno ejecuta componentes Razor dentro de una aplicación nativa mediante un WebView?",
+        "option_a": "OData",
+        "option_b": "Razor Pages",
+        "option_c": "Blazor Hybrid",
+        "option_d": "Static SSR",
+        "correct": "C",
+        "explanation": "Blazor Hybrid integra componentes Razor en aplicaciones móviles o de escritorio mediante un control WebView."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué resultado inicial puede producir static SSR?",
+        "option_a": "Un componente ejecutado en SQL (caso previsto) (caso concreto)",
+        "option_b": "HTML generado en el servidor sin interactividad por sí mismo",
+        "option_c": "Un circuito SignalR siempre (caso previsto) (caso concreto)",
+        "option_d": "Una descarga completa de WebAssembly siempre (caso previsto)",
+        "correct": "B",
+        "explanation": "Static SSR genera HTML en el servidor; la interactividad requiere asignar y configurar un modo interactivo."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué componente suele recibir el modo global para enrutar páginas de una Blazor Web App?",
+        "option_a": "Routes (caso previsto)",
+        "option_b": "DbContext (caso previsto)",
+        "option_c": "InputText (caso previsto)",
+        "option_d": "NavLink exclusivamente",
+        "correct": "A",
+        "explanation": "El modo se aplica habitualmente a Routes, que lo propaga a las páginas que enruta."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué necesita una Blazor Web App para habilitar Interactive Server?",
+        "option_a": "Solo copiar un archivo CSS (caso previsto) (caso concreto) (supuesto dado)",
+        "option_b": "Cambiar el puerto de PostgreSQL (caso previsto) (caso concreto)",
+        "option_c": "Eliminar el componente Routes (caso previsto) (caso concreto)",
+        "option_d": "Registrar los servicios y configurar el endpoint del modo de renderizado",
+        "correct": "D",
+        "explanation": "La configuración separa AddInteractiveServerComponents de AddInteractiveServerRenderMode."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué característica distingue Interactive Auto?",
+        "option_a": "Nunca usa prerendering (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "option_b": "Solo se ejecuta en PostgreSQL (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "option_c": "Puede comenzar con renderizado interactivo de servidor y usar WebAssembly cuando está disponible",
+        "option_d": "Solo funciona como static SSR (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "correct": "C",
+        "explanation": "Interactive Auto decide inicialmente y puede aprovechar el runtime cliente descargado en navegaciones posteriores."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué proyecto contiene normalmente el código descargado para Interactive WebAssembly?",
+        "option_a": "La carpeta de logs del servidor",
+        "option_b": "El proyecto cliente .Client",
+        "option_c": "El proyecto de migraciones",
+        "option_d": "El proyecto de pruebas SQL",
+        "correct": "B",
+        "explanation": "El modelo de plantilla separa el proyecto cliente que hospeda runtime y componentes WebAssembly."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué limitación tienen los parámetros RenderFragment al cruzar una frontera de renderizado interactivo?",
+        "option_a": "No pueden serializarse como código arbitrario entre modos",
+        "option_b": "Siempre se convierten en JSON automáticamente",
+        "option_c": "Solo pueden contener números (caso previsto) (caso concreto)",
+        "option_d": "Se ejecutan en el servidor dos veces (caso previsto)",
+        "correct": "A",
+        "explanation": "RenderFragment es un delegado de contenido y no puede serializarse de forma general a través de esa frontera."
+    },
+    {
+        "topic_num": 26,
+        "question": "¿Qué valor suele indicar RendererInfo.IsInteractive durante prerendering?",
+        "option_a": "true siempre",
+        "option_b": "null únicamente",
+        "option_c": "El nombre del modo",
+        "option_d": "false (caso previsto)",
+        "correct": "D",
+        "explanation": "Durante prerendering el componente aún no es interactivo; la propiedad pasa a true cuando se activa el modo."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué atributo marca una propiedad que recibe un valor del componente padre?",
+        "option_a": "[Parameter] (caso previsto)",
+        "option_b": "[CascadingParameter] siempre",
+        "option_c": "[InjectOnly] (caso previsto)",
+        "option_d": "[RouteValue] (caso previsto)",
+        "correct": "A",
+        "explanation": "Parameter declara un parámetro ordinario suministrado por el componente padre."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué tipo de callback comunica eventos del hijo al padre?",
+        "option_a": "RenderFragment",
+        "option_b": "IConfiguration",
+        "option_c": "DbSet (caso previsto)",
+        "option_d": "EventCallback<TValue>",
+        "correct": "D",
+        "explanation": "EventCallback<TValue> expresa un callback de evento tipado y se puede invocar desde el componente hijo."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué atributo recibe un valor en cascada por tipo o nombre?",
+        "option_a": "[FromBody] (caso previsto)",
+        "option_b": "[SupplyParameterFromQuery]",
+        "option_c": "[CascadingParameter]",
+        "option_d": "[Parameter] únicamente",
+        "correct": "C",
+        "explanation": "CascadingParameter obtiene un valor proporcionado por un ancestro mediante CascadingValue."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué propiedad fija un valor cascado que no cambia para evitar suscripciones?",
+        "option_a": "RenderOnce=false",
+        "option_b": "IsFixed=true",
+        "option_c": "IsStatic=false",
+        "option_d": "TrackChanges=true",
+        "correct": "B",
+        "explanation": "IsFixed indica que el valor no cambia y evita que los receptores se suscriban a notificaciones."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué tipo permite recibir una plantilla parametrizada?",
+        "option_a": "RenderFragment<TValue>",
+        "option_b": "EventCallback<TValue> únicamente",
+        "option_c": "IFormFile (caso previsto)",
+        "option_d": "IQueryable<T> (caso previsto)",
+        "correct": "A",
+        "explanation": "RenderFragment<TValue> representa contenido de UI que recibe un valor para renderizar cada instancia."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué directiva permite declarar un parámetro de tipo genérico en un componente?",
+        "option_a": "@inherits",
+        "option_b": "@implements only",
+        "option_c": "@namespace",
+        "option_d": "@typeparam",
+        "correct": "D",
+        "explanation": "@typeparam declara un parámetro de tipo para que el componente pueda reutilizarse con distintos tipos."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué sintaxis captura atributos no declarados de un componente?",
+        "option_a": "@splat",
+        "option_b": "@capture-only",
+        "option_c": "@attributes",
+        "option_d": "@attribute",
+        "correct": "C",
+        "explanation": "El atributo especial @attributes permite aplicar attribute splatting desde un diccionario."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué efecto tiene @key en una lista de componentes?",
+        "option_a": "Desactiva todos los renders (caso previsto) (caso concreto)",
+        "option_b": "Conserva la identidad asociada a cada elemento al cambiar la colección",
+        "option_c": "Ordena automáticamente la colección (caso previsto) (caso concreto)",
+        "option_d": "Cifra los parámetros (caso previsto) (caso concreto) (supuesto dado)",
+        "correct": "B",
+        "explanation": "@key permite al framework asociar elementos o componentes con una identidad estable durante el diff."
+    },
+    {
+        "topic_num": 27,
+        "question": "¿Qué servicio o mecanismo proporciona un valor compartido a descendientes sin pasar parámetros intermedios?",
+        "option_a": "CascadingValue",
+        "option_b": "EditForm",
+        "option_c": "NavigationManager",
+        "option_d": "AuthorizeView",
+        "correct": "A",
+        "explanation": "CascadingValue coloca un dato en el contexto descendiente para que CascadingParameter lo reciba."
+    },
+    {
+        "topic_num": 27,
+        "question": "Tras un cambio externo al flujo normal, ¿cómo pide Blazor otra pasada de render?",
+        "option_a": "SetParametersAsync únicamente",
+        "option_b": "Dispose (caso previsto)",
+        "option_c": "OnInitialized (caso previsto)",
+        "option_d": "StateHasChanged (caso previsto)",
+        "correct": "D",
+        "explanation": "StateHasChanged encola una actualización del componente cuando el cambio no proviene de un evento conocido por Blazor."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué archivo contiene estilos aislados para un componente MyWidget?",
+        "option_a": "MyWidget.razor.css",
+        "option_b": "MyWidget.css.global",
+        "option_c": "styles.sql",
+        "option_d": "appsettings.razor",
+        "correct": "A",
+        "explanation": "Blazor asocia un archivo .razor.css con el componente Razor del mismo nombre para aislar sus estilos."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué selector permite que un estilo aislado atraviese la frontera hacia descendientes?",
+        "option_a": "::global",
+        "option_b": "@through",
+        "option_c": "#shadow",
+        "option_d": "::deep",
+        "correct": "D",
+        "explanation": "El combinador ::deep permite aplicar el estilo aislado a elementos descendientes según las reglas de CSS isolation."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué componente permite seleccionar dinámicamente el tipo de componente a renderizar?",
+        "option_a": "RouterView (caso previsto)",
+        "option_b": "ComponentSelector SQL",
+        "option_c": "DynamicComponent",
+        "option_d": "RenderTreeBuilder solamente",
+        "correct": "C",
+        "explanation": "DynamicComponent recibe un Type y parámetros para renderizar un componente elegido en tiempo de ejecución."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué componente captura excepciones de renderizado de sus descendientes y muestra contenido alternativo?",
+        "option_a": "LayoutView",
+        "option_b": "ErrorBoundary",
+        "option_c": "ValidationSummary",
+        "option_d": "AuthorizeView",
+        "correct": "B",
+        "explanation": "ErrorBoundary permite gestionar excepciones no controladas de un subárbol de componentes."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué método de ciclo de vida es adecuado para trabajo que requiere que el DOM ya exista?",
+        "option_a": "OnAfterRenderAsync (caso previsto)",
+        "option_b": "OnInitialized siempre (caso previsto)",
+        "option_c": "SetParametersAsync antes del markup",
+        "option_d": "DisposeAsync durante la construcción",
+        "correct": "A",
+        "explanation": "OnAfterRenderAsync se ejecuta después del render y permite interoperabilidad que necesita elementos ya creados."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué valor indica el primer renderizado en OnAfterRenderAsync?",
+        "option_a": "firstRender=null",
+        "option_b": "renderedOnce=false siempre",
+        "option_c": "initial=false (caso previsto)",
+        "option_d": "firstRender=true",
+        "correct": "D",
+        "explanation": "El parámetro firstRender permite ejecutar inicialización posterior al primer render una sola vez."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué devuelve ShouldRender para omitir una actualización visual posterior?",
+        "option_a": "true siempre",
+        "option_b": "Un RenderFragment",
+        "option_c": "false",
+        "option_d": "null (caso previsto)",
+        "correct": "C",
+        "explanation": "ShouldRender puede devolver false para evitar que el componente se vuelva a renderizar en esa actualización."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué interfaz permite liberar recursos síncronos de un componente?",
+        "option_a": "IFormFile",
+        "option_b": "IDisposable",
+        "option_c": "IQueryable",
+        "option_d": "IComponentState",
+        "correct": "B",
+        "explanation": "Un componente que implementa IDisposable puede liberar suscripciones y recursos al destruirse."
+    },
+    {
+        "topic_num": 28,
+        "question": "¿Qué interfaz permite liberar recursos asíncronamente?",
+        "option_a": "IAsyncDisposable",
+        "option_b": "IAsyncEnumerable solamente",
+        "option_c": "IServiceScopeFactory",
+        "option_d": "IComponentActivator",
+        "correct": "A",
+        "explanation": "IAsyncDisposable proporciona DisposeAsync para recursos cuya liberación requiere una operación asíncrona."
+    },
+    {
+        "topic_num": 28,
+        "question": "Al desmontar un componente que escucha un evento externo, ¿qué medida evita callbacks tardíos?",
+        "option_a": "Mantenerla después de destruirse (caso previsto)",
+        "option_b": "Llamar a StateHasChanged sin límite",
+        "option_c": "Convertir el evento en una ruta (caso previsto)",
+        "option_d": "Cancelar la suscripción durante su disposición",
+        "correct": "D",
+        "explanation": "La desuscripción evita callbacks a una instancia destruida y fugas de recursos."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué objeto representa el estado de edición y validación de un formulario?",
+        "option_a": "EditContext",
+        "option_b": "DbContext",
+        "option_c": "RenderHandle",
+        "option_d": "NavigationManager",
+        "correct": "A",
+        "explanation": "EditContext mantiene el modelo, los campos modificados y los mensajes de validación."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué callback se ejecuta siempre al enviar un EditForm?",
+        "option_a": "OnValidSubmit siempre además",
+        "option_b": "OnInvalidSubmit siempre además",
+        "option_c": "OnRender (caso previsto)",
+        "option_d": "OnSubmit (caso previsto)",
+        "correct": "D",
+        "explanation": "OnSubmit recibe el EditContext y permite controlar manualmente la validación y el procesamiento."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué callback se ejecuta cuando el formulario es válido?",
+        "option_a": "OnSubmitValidationOnly",
+        "option_b": "OnPrerender",
+        "option_c": "OnValidSubmit",
+        "option_d": "OnInvalidSubmit",
+        "correct": "C",
+        "explanation": "OnValidSubmit se invoca cuando la validación del EditContext no encuentra errores."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué callback se ejecuta cuando la validación detecta errores?",
+        "option_a": "OnFieldParsed",
+        "option_b": "OnInvalidSubmit",
+        "option_c": "OnValidSubmit",
+        "option_d": "OnModelCreated",
+        "correct": "B",
+        "explanation": "OnInvalidSubmit se invoca cuando el formulario se envía con un EditContext inválido."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué componente activa la validación basada en atributos del modelo?",
+        "option_a": "DataAnnotationsValidator",
+        "option_b": "ValidationSummary",
+        "option_c": "InputText (caso previsto)",
+        "option_d": "EditContextProvider",
+        "correct": "A",
+        "explanation": "DataAnnotationsValidator conecta las reglas DataAnnotations con la validación del EditContext."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué componente muestra mensajes asociados a un campo concreto?",
+        "option_a": "ValidationSummary",
+        "option_b": "InputSelect",
+        "option_c": "FieldDisplay",
+        "option_d": "ValidationMessage",
+        "correct": "D",
+        "explanation": "ValidationMessage recibe una expresión de campo y muestra sus mensajes de validación."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué método de EditContext inicia explícitamente la validación?",
+        "option_a": "SubmitAsync()",
+        "option_b": "ParseOnly()",
+        "option_c": "Validate()",
+        "option_d": "CheckFields()",
+        "correct": "C",
+        "explanation": "EditContext.Validate() ejecuta las validaciones registradas y devuelve si el contexto es válido."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Cómo se añaden mensajes desde una validación personalizada?",
+        "option_a": "Con NavigationManager (caso previsto) (caso concreto)",
+        "option_b": "Con ValidationMessageStore asociado al EditContext",
+        "option_c": "Con appsettings.json (caso previsto) (caso concreto)",
+        "option_d": "Con un índice SQL (caso previsto) (caso concreto)",
+        "correct": "B",
+        "explanation": "ValidationMessageStore permite agregar y borrar mensajes para FieldIdentifier durante validación personalizada."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué clase CSS puede proporcionar clases según el estado de un campo?",
+        "option_a": "FieldCssClassProvider",
+        "option_b": "ValidationCssBuilder",
+        "option_c": "EditFormTheme",
+        "option_d": "InputClassProvider",
+        "correct": "A",
+        "explanation": "FieldCssClassProvider permite personalizar las clases CSS para campos modificados, válidos o inválidos."
+    },
+    {
+        "topic_num": 29,
+        "question": "¿Qué protección se integra en formularios interactivos con envío HTTP?",
+        "option_a": "La compresión gzip únicamente",
+        "option_b": "El índice de navegación (caso previsto)",
+        "option_c": "La validación de ruta exclusivamente",
+        "option_d": "La protección antiforgery",
+        "correct": "D",
+        "explanation": "Los formularios que realizan envíos HTTP deben usar la protección antiforgery prevista por Blazor y ASP.NET Core."
+    },
+    {
+        "topic_num": 30,
+        "question": "¿Qué duración tiene normalmente un servicio transient?",
+        "option_a": "Se crea una instancia nueva cada vez que se solicita",
+        "option_b": "Una instancia para toda la aplicación (caso previsto)",
+        "option_c": "Una instancia por circuito siempre (caso previsto)",
+        "option_d": "Una instancia por usuario hasta reinicio",
+        "correct": "A",
+        "explanation": "El lifetime transient registra servicios para crear una instancia nueva por resolución."
+    },
+    {
+        "topic_num": 30,
+        "question": "¿Qué lifetime comparte una instancia dentro de un ámbito de servicio?",
+        "option_a": "Transient (caso previsto) (caso concreto)",
+        "option_b": "Singleton global en todos los procesos",
+        "option_c": "Static (caso previsto) (caso concreto)",
+        "option_d": "Scoped (caso previsto) (caso concreto)",
+        "correct": "D",
+        "explanation": "Scoped comparte una instancia dentro del scope actual, cuyo significado depende del host y modelo Blazor."
+    },
+    {
+        "topic_num": 30,
+        "question": "¿Qué patrón agrupa una sección de configuración en una clase tipada?",
+        "option_a": "Render pattern",
+        "option_b": "Migration pattern",
+        "option_c": "Options pattern",
+        "option_d": "Claims pattern",
+        "correct": "C",
+        "explanation": "El patrón Options enlaza una sección de configuración con una clase de opciones tipada."
+    },
+    {
+        "topic_num": 30,
+        "question": "¿Qué interfaz observa cambios de opciones durante la vida de la aplicación?",
+        "option_a": "IServiceCollectionMonitor",
+        "option_b": "IOptionsMonitor<T> (caso previsto)",
+        "option_c": "IOptions<T> solo lectura inicial",
+        "option_d": "IConfigurationRoot<T>",
+        "correct": "B",
+        "explanation": "IOptionsMonitor permite obtener valores actuales y suscribirse a cambios de configuración cuando el proveedor los admite."
+    },
+    {
+        "topic_num": 30,
+        "question": "¿Qué proveedor suele tener precedencia sobre appsettings.json en producción?",
+        "option_a": "Las variables de entorno",
+        "option_b": "Los comentarios del archivo JSON",
+        "option_c": "El nombre del ensamblado",
+        "option_d": "El contenido de una vista Razor",
+        "correct": "A",
+        "explanation": "La configuración combina proveedores y normalmente los añadidos después, como entorno, sobrescriben valores anteriores."
+    },
+    {
+        "topic_num": 30,
+        "question": "¿Qué extensión valida las opciones al construir el host?",
+        "option_a": "ValidateWhenUsedOnly()",
+        "option_b": "CheckAtRender()",
+        "option_c": "VerifyAtShutdown()",
+        "option_d": "ValidateOnStart()",
+        "correct": "D",
+        "explanation": "ValidateOnStart registra la validación para ejecutarla al iniciar el host y detectar errores temprano."
+    },
+    {
+        "topic_num": 30,
+        "question": "¿Qué directiva inyecta un servicio en un componente Razor?",
+        "option_a": "@typeparam",
+        "option_b": "@implements",
+        "option_c": "@inject",
+        "option_d": "@bind",
+        "correct": "C",
+        "explanation": "@inject solicita una dependencia registrada y la asigna a una propiedad del componente."
+    },
+    {
+        "topic_num": 30,
+        "question": "¿Qué interfaz registra servicios durante la construcción del host?",
+        "option_a": "IHostEnvironmentOnly",
+        "option_b": "IServiceCollection",
+        "option_c": "IConfigurationSection",
+        "option_d": "IOptionsFactory",
+        "correct": "B",
+        "explanation": "IServiceCollection contiene las descripciones de servicios que el contenedor construirá."
+    },
+    {
+        "topic_num": 30,
+        "question": "¿Qué proveedor de configuración lee valores de appsettings.json?",
+        "option_a": "El proveedor JSON (caso previsto)",
+        "option_b": "El proveedor de rutas",
+        "option_c": "El proveedor de Razor components",
+        "option_d": "El proveedor de claims",
+        "correct": "A",
+        "explanation": "El host puede añadir proveedores JSON para cargar valores jerárquicos desde archivos de configuración."
+    },
+    {
+        "topic_num": 30,
+        "question": "¿Qué riesgo tiene registrar como singleton un servicio que depende de un scoped?",
+        "option_a": "Siempre mejora la seguridad (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "option_b": "Convierte automáticamente el servicio en transient (caso previsto) (caso concreto)",
+        "option_c": "Solo cambia el nombre del assembly (caso previsto) (caso concreto) (supuesto dado)",
+        "option_d": "Puede producir una dependencia de lifetime inválida o capturar un servicio demasiado longevo",
+        "correct": "D",
+        "explanation": "Un singleton no debe capturar una dependencia scoped cuya vida sea más corta que la del singleton."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué estado pertenece directamente a la instancia de un componente?",
+        "option_a": "El estado local del componente (caso previsto)",
+        "option_b": "El estado de todas las aplicaciones del servidor",
+        "option_c": "El catálogo de rutas global (caso previsto)",
+        "option_d": "La configuración del proveedor (caso previsto)",
+        "correct": "A",
+        "explanation": "El estado local incluye campos y propiedades que el componente usa para representar su propia UI."
+    },
+    {
+        "topic_num": 31,
+        "question": "Sin propagar cada valor mediante parámetros, ¿qué diseño conserva datos compartidos entre componentes?",
+        "option_a": "Una variable local de cada render",
+        "option_b": "Un archivo CSS aislado (caso previsto)",
+        "option_c": "Una ruta de navegación (caso previsto)",
+        "option_d": "Un servicio de estado registrado en DI",
+        "correct": "D",
+        "explanation": "Un servicio compartido puede mantener datos y notificar cambios a los componentes consumidores."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué almacenamiento del navegador sobrevive al cierre del navegador?",
+        "option_a": "Memoria de un circuito únicamente",
+        "option_b": "RenderFragment (caso previsto)",
+        "option_c": "localStorage (caso previsto)",
+        "option_d": "sessionStorage (caso previsto)",
+        "correct": "C",
+        "explanation": "localStorage conserva valores hasta que se eliminan, mientras que sessionStorage se limita a la sesión."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué almacenamiento se asocia normalmente a la sesión de una pestaña?",
+        "option_a": "ProtectedRouteState",
+        "option_b": "sessionStorage",
+        "option_c": "localStorage",
+        "option_d": "shared_buffers",
+        "correct": "B",
+        "explanation": "sessionStorage dura la sesión de la pestaña o ventana y no pretende persistir indefinidamente."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué debe evitarse al persistir estado en el navegador?",
+        "option_a": "Guardar secretos o datos sensibles sin las garantías apropiadas",
+        "option_b": "Guardar preferencias no sensibles (caso previsto) (caso concreto)",
+        "option_c": "Serializar datos de UI (caso previsto) (caso concreto)",
+        "option_d": "Eliminar estado obsoleto (caso previsto) (caso concreto)",
+        "correct": "A",
+        "explanation": "El almacenamiento del navegador está bajo control del cliente y no debe tratarse como almacén de secretos."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué puede ocurrir con el estado de un componente durante prerendering?",
+        "option_a": "Siempre se comparte automáticamente toda la memoria (caso previsto) (caso concreto)",
+        "option_b": "Nunca se ejecuta renderizado (caso previsto) (caso concreto) (supuesto dado)",
+        "option_c": "Se convierte en estado de base de datos (caso previsto) (caso concreto)",
+        "option_d": "Puede crearse una instancia inicial distinta de la instancia interactiva posterior",
+        "correct": "D",
+        "explanation": "Prerendering y activación interactiva pueden implicar instancias y ciclos de vida distintos."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué representa el estado de circuito en Blazor Server?",
+        "option_a": "El modelo de una sola consulta SQL (caso previsto)",
+        "option_b": "El contenido de localStorage (caso previsto)",
+        "option_c": "Estado asociado a la conexión interactiva de un cliente",
+        "option_d": "Una variable global para todos los clientes",
+        "correct": "C",
+        "explanation": "El circuito mantiene el estado de la interacción server-side de un cliente mientras la conexión está activa."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué riesgo existe al asumir que una reconexión conserva siempre el mismo circuito?",
+        "option_a": "La ruta se convierte en POST (caso previsto) (caso concreto) (supuesto dado)",
+        "option_b": "La conexión puede perderse y el estado puede requerir recuperación o reconstrucción",
+        "option_c": "La UI siempre se cifra de nuevo (caso previsto) (caso concreto) (supuesto dado)",
+        "option_d": "El navegador cambia de motor (caso previsto) (caso concreto) (supuesto dado)",
+        "correct": "B",
+        "explanation": "Una desconexión o pérdida del circuito exige diseñar el estado para tolerar reconexión y recuperación."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué mecanismo puede transportar un valor desde un ancestro a todo un subárbol?",
+        "option_a": "Un valor en cascada",
+        "option_b": "Un query string obligatorio",
+        "option_c": "Un índice B-tree",
+        "option_d": "Una migración (caso previsto)",
+        "correct": "A",
+        "explanation": "Los valores en cascada distribuyen estado contextual sin pasar cada valor por parámetros intermedios."
+    },
+    {
+        "topic_num": 31,
+        "question": "¿Qué ventaja tiene guardar filtros de pantalla en la URL?",
+        "option_a": "Oculta los filtros como secreto (caso previsto) (caso concreto)",
+        "option_b": "Elimina toda validación (caso previsto) (caso concreto)",
+        "option_c": "Impide usar el historial (caso previsto) (caso concreto)",
+        "option_d": "Permite compartir, recuperar y navegar al estado mediante una URI",
+        "correct": "D",
+        "explanation": "El estado serializable de navegación puede representarse en la URL para hacer la pantalla enlazable y recuperable."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué directiva asocia un componente Razor con una plantilla de URL?",
+        "option_a": "@page",
+        "option_b": "@inject",
+        "option_c": "@bind",
+        "option_d": "@typeparam",
+        "correct": "A",
+        "explanation": "@page declara una ruta que permite al Router seleccionar el componente."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué componente selecciona la página para la URI actual?",
+        "option_a": "EditForm (caso previsto)",
+        "option_b": "DynamicComponent sin rutas",
+        "option_c": "InputSelect (caso previsto)",
+        "option_d": "Router (caso previsto)",
+        "correct": "D",
+        "explanation": "Router localiza el componente enrutable y presenta Found, NotFound o estados asociados."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué atributo recibe un valor numérico de la ruta solo si cumple la restricción?",
+        "option_a": "[FromBody] Id (caso previsto) (caso concreto)",
+        "option_b": "Una variable global (caso previsto)",
+        "option_c": "[Parameter] int Id con una plantilla {Id:int}",
+        "option_d": "Una propiedad string sin ruta (caso previsto)",
+        "correct": "C",
+        "explanation": "La restricción int limita la coincidencia y el parámetro recibe el segmento convertido al tipo indicado."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué atributo permite recibir parámetros desde la cadena de consulta?",
+        "option_a": "[RouteParameter]",
+        "option_b": "[SupplyParameterFromQuery]",
+        "option_c": "[SupplyParameterFromBody]",
+        "option_d": "[QueryOnly] (caso previsto)",
+        "correct": "B",
+        "explanation": "SupplyParameterFromQuery enlaza propiedades de componentes con valores de la query string."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué servicio expone la URI actual y permite navegar programáticamente?",
+        "option_a": "NavigationManager",
+        "option_b": "IConfiguration (caso previsto)",
+        "option_c": "EditContext (caso previsto)",
+        "option_d": "IJSInProcessObjectReference",
+        "correct": "A",
+        "explanation": "NavigationManager proporciona Uri, BaseUri y métodos como NavigateTo."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué componente aplica una clase activa al enlace cuya ubicación coincide?",
+        "option_a": "Router",
+        "option_b": "RouteView",
+        "option_c": "AuthorizeRouteView",
+        "option_d": "NavLink",
+        "correct": "D",
+        "explanation": "NavLink genera un enlace que puede reflejar la ubicación activa mediante su clase CSS."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué evento permite reaccionar a cambios de ubicación?",
+        "option_a": "NavigationChangedOnly",
+        "option_b": "RouterSubmitted",
+        "option_c": "LocationChanged",
+        "option_d": "OnRouteParsed",
+        "correct": "C",
+        "explanation": "NavigationManager expone LocationChanged para observar cambios de URI."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué componente puede mostrar una vista distinta cuando la ruta no existe?",
+        "option_a": "EditForm",
+        "option_b": "NotFound",
+        "option_c": "ValidationSummary",
+        "option_d": "HeadOutlet",
+        "correct": "B",
+        "explanation": "El contenido NotFound del Router se representa cuando no se encuentra una página para la URI."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué componente integra autorización en la resolución de páginas?",
+        "option_a": "AuthorizeRouteView",
+        "option_b": "RouteView sin autorización",
+        "option_c": "NavLink (caso previsto)",
+        "option_d": "FocusOnNavigate",
+        "correct": "A",
+        "explanation": "AuthorizeRouteView combina resolución de la ruta con la evaluación de autorización del usuario."
+    },
+    {
+        "topic_num": 32,
+        "question": "¿Qué componente ayuda a mantener el foco al navegar a una nueva página?",
+        "option_a": "FocusAfterSubmit",
+        "option_b": "RouteFocusOnly",
+        "option_c": "NavFocusProvider",
+        "option_d": "FocusOnNavigate",
+        "correct": "D",
+        "explanation": "FocusOnNavigate establece el foco en el contenido apropiado después de la navegación."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué objeto Git almacena el contenido de un archivo?",
+        "option_a": "Un blob (caso previsto)",
+        "option_b": "Un tree (caso previsto)",
+        "option_c": "Un commit",
+        "option_d": "Una referencia remota",
+        "correct": "A",
+        "explanation": "Los blobs almacenan el contenido de archivos; trees organizan nombres y commits apuntan a árboles."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué objeto Git representa un directorio y sus entradas?",
+        "option_a": "Un blob",
+        "option_b": "Un tag ligero",
+        "option_c": "El índice",
+        "option_d": "Un tree",
+        "correct": "D",
+        "explanation": "Un tree contiene nombres, modos y referencias a blobs o a otros trees."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué archivo o estructura representa el área de preparación?",
+        "option_a": "El reflog remoto",
+        "option_b": "El archivo .gitignore",
+        "option_c": "El índice",
+        "option_d": "HEAD siempre",
+        "correct": "C",
+        "explanation": "El índice almacena la próxima instantánea que se convertirá en commit."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué comando muestra las diferencias entre el índice y HEAD?",
+        "option_a": "git show --worktree",
+        "option_b": "git diff --cached",
+        "option_c": "git diff sin opciones",
+        "option_d": "git status --remote",
+        "correct": "B",
+        "explanation": "--cached compara el contenido preparado en el índice con el commit HEAD."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué ámbito de configuración afecta a todos los repositorios del usuario?",
+        "option_a": "La configuración global (caso previsto)",
+        "option_b": "La configuración local del repositorio",
+        "option_c": "La configuración de un blob",
+        "option_d": "El índice temporal (caso previsto)",
+        "correct": "A",
+        "explanation": "git config --global escribe la configuración del usuario y se aplica por defecto a sus repositorios."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué referencia simbólica identifica normalmente el commit comprobado?",
+        "option_a": "FETCH_HEAD siempre (caso previsto)",
+        "option_b": "ORIG_HEAD únicamente (caso previsto)",
+        "option_c": "MERGE_HEAD en repositorios limpios",
+        "option_d": "HEAD (caso previsto) (caso concreto)",
+        "correct": "D",
+        "explanation": "HEAD apunta a la referencia o commit actualmente comprobado."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué registra el reflog?",
+        "option_a": "Los permisos de archivos (caso previsto)",
+        "option_b": "El contenido de objetos borrados siempre",
+        "option_c": "Movimientos recientes de referencias locales",
+        "option_d": "Solo commits publicados en servidores",
+        "correct": "C",
+        "explanation": "El reflog conserva referencias a estados recientes de HEAD y otras referencias locales durante un tiempo configurable."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué caracteriza a un HEAD separado?",
+        "option_a": "El índice se borra (caso previsto) (caso concreto)",
+        "option_b": "HEAD apunta directamente a un commit y no a una rama local",
+        "option_c": "El repositorio deja de tener objetos (caso previsto)",
+        "option_d": "Todos los commits se publican (caso previsto) (caso concreto)",
+        "correct": "B",
+        "explanation": "En detached HEAD se puede explorar o crear commits, pero hay que crear una referencia para conservarlos."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué opción de git reset conserva los cambios en el índice?",
+        "option_a": "--soft",
+        "option_b": "--hard",
+        "option_c": "--delete",
+        "option_d": "--clean-only",
+        "correct": "A",
+        "explanation": "reset --soft mueve HEAD pero deja índice y working tree sin modificar."
+    },
+    {
+        "topic_num": 33,
+        "question": "¿Qué comando muestra el commit y el parche de un objeto?",
+        "option_a": "git init",
+        "option_b": "git clean",
+        "option_c": "git remote",
+        "option_d": "git show",
+        "correct": "D",
+        "explanation": "git show presenta información y contenido de objetos, normalmente commits y sus diferencias."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué representa una rama local de Git?",
+        "option_a": "Una referencia móvil que apunta a un commit",
+        "option_b": "Una copia completa independiente del repositorio",
+        "option_c": "Un archivo de configuración (caso previsto)",
+        "option_d": "Un remoto obligatorio (caso previsto)",
+        "correct": "A",
+        "explanation": "Una rama es una referencia cuyo extremo avanza al crear commits en ella."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué opción crea una rama y cambia a ella con git switch?",
+        "option_a": "-d",
+        "option_b": "--bare",
+        "option_c": "--orphanless",
+        "option_d": "-c",
+        "correct": "D",
+        "explanation": "git switch -c nombre crea la nueva rama y la comprueba en la misma operación."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué es un fast-forward merge?",
+        "option_a": "Borrar la rama incorporada (caso previsto) (caso concreto) (supuesto dado)",
+        "option_b": "Crear siempre dos commits nuevos (caso previsto) (caso concreto) (supuesto dado)",
+        "option_c": "Mover la referencia actual hasta la punta incorporada sin crear commit de merge",
+        "option_d": "Reescribir todos los commits (caso previsto) (caso concreto) (supuesto dado)",
+        "correct": "C",
+        "explanation": "Si la punta actual es ancestro de la otra, Git puede avanzar la referencia directamente."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué debe hacerse después de resolver manualmente un conflicto de merge?",
+        "option_a": "Hacer push sin crear estado final (caso previsto) (caso concreto)",
+        "option_b": "Añadir los archivos resueltos y continuar o finalizar el merge",
+        "option_c": "Borrar .git (caso previsto) (caso concreto) (supuesto dado)",
+        "option_d": "Ejecutar git init de nuevo (caso previsto) (caso concreto)",
+        "correct": "B",
+        "explanation": "La resolución se registra al hacer git add y completar el commit de merge si es necesario."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué efecto tiene rebase sobre los commits de una rama?",
+        "option_a": "Los reaplica sobre otra base y crea nuevos identificadores de commit",
+        "option_b": "Solo cambia el nombre de la rama (caso previsto) (caso concreto)",
+        "option_c": "Convierte commits en tags (caso previsto) (caso concreto)",
+        "option_d": "Nunca cambia la historia (caso previsto) (caso concreto)",
+        "correct": "A",
+        "explanation": "Rebase reescribe la base de una serie y por ello normalmente cambia los IDs de sus commits."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué comando abre una lista para reordenar o editar commits recientes?",
+        "option_a": "git merge --list (caso previsto)",
+        "option_b": "git stash --edit-only",
+        "option_c": "git branch --interactive-remote",
+        "option_d": "git rebase -i (caso previsto)",
+        "correct": "D",
+        "explanation": "El rebase interactivo permite reordenar, editar, combinar o eliminar commits de la serie indicada."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué guarda normalmente git stash?",
+        "option_a": "El contenido de todos los remotos (caso previsto) (caso concreto)",
+        "option_b": "La configuración global (caso previsto) (caso concreto) (supuesto dado)",
+        "option_c": "Cambios locales no confirmados y el estado necesario para restaurarlos",
+        "option_d": "Solo commits ya publicados (caso previsto) (caso concreto)",
+        "correct": "C",
+        "explanation": "stash aparta cambios del working tree y del índice para limpiar temporalmente la rama."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué índice identifica normalmente la entrada de stash más reciente?",
+        "option_a": "stash@{main}",
+        "option_b": "stash@{0}",
+        "option_c": "stash@{HEAD}",
+        "option_d": "stash@{latest}",
+        "correct": "B",
+        "explanation": "Las entradas de reflog de stash se numeran empezando por stash@{0} para la más reciente."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué operación aplica un commit existente sobre la punta actual?",
+        "option_a": "git cherry-pick",
+        "option_b": "git clean",
+        "option_c": "git remote prune",
+        "option_d": "git config --apply",
+        "correct": "A",
+        "explanation": "cherry-pick crea un nuevo commit que aplica los cambios introducidos por otro commit."
+    },
+    {
+        "topic_num": 34,
+        "question": "¿Qué precaución requiere rebase de commits ya compartidos?",
+        "option_a": "Ninguna, siempre es transparente (caso previsto) (caso concreto) (supuesto dado)",
+        "option_b": "Eliminar el remoto antes (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "option_c": "Convertir la rama en tag (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "option_d": "Coordinar la reescritura porque cambia los identificadores que otros pueden haber basado",
+        "correct": "D",
+        "explanation": "Rebase reescribe historia y puede obligar a actualizar referencias remotas y coordinar con colaboradores."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué es una referencia de seguimiento remoto?",
+        "option_a": "Una referencia local que registra el estado conocido de una rama remota",
+        "option_b": "Un commit que solo existe en el servidor (caso previsto) (caso concreto)",
+        "option_c": "Una clave SSH (caso previsto) (caso concreto) (supuesto dado)",
+        "option_d": "Un archivo ignorado (caso previsto) (caso concreto) (supuesto dado)",
+        "correct": "A",
+        "explanation": "Las remote-tracking branches como origin/main reflejan el último estado conocido tras fetch."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué hace git fetch?",
+        "option_a": "Confirma automáticamente la rama actual (caso previsto) (caso concreto)",
+        "option_b": "Borra todas las ramas locales (caso previsto) (caso concreto) (supuesto dado)",
+        "option_c": "Reescribe siempre HEAD (caso previsto) (caso concreto) (supuesto dado)",
+        "option_d": "Descarga objetos y referencias remotas sin integrar cambios en la rama actual",
+        "correct": "D",
+        "explanation": "fetch actualiza las referencias de seguimiento y objetos locales, pero no modifica la rama de trabajo por sí solo."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué combina normalmente git pull?",
+        "option_a": "push y reset --hard (caso previsto) (caso concreto) (supuesto dado)",
+        "option_b": "clone y gc (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "option_c": "fetch seguido de una integración mediante merge o rebase según la configuración",
+        "option_d": "commit y tag siempre (caso previsto) (caso concreto) (supuesto dado)",
+        "correct": "C",
+        "explanation": "pull obtiene cambios y los integra en la rama actual con la estrategia configurada."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué necesita normalmente git push para publicar una rama nueva?",
+        "option_a": "Un stash vacío (caso previsto) (caso concreto)",
+        "option_b": "Un remoto y, si procede, una relación upstream",
+        "option_c": "Un archivo CSS (caso previsto) (caso concreto)",
+        "option_d": "Una migración de base de datos (caso previsto)",
+        "correct": "B",
+        "explanation": "Push necesita un destino remoto y puede establecer upstream con -u para futuros comandos."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué indica un rechazo non-fast-forward al hacer push?",
+        "option_a": "El remoto contiene historia que no está integrada en la referencia que se intenta actualizar",
+        "option_b": "Que el usuario no tiene nombre (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "option_c": "Que el repositorio no contiene objetos (caso previsto) (caso concreto) (supuesto dado)",
+        "option_d": "Que todos los cambios son idénticos (caso previsto) (caso concreto) (supuesto dado)",
+        "correct": "A",
+        "explanation": "Git rechaza por defecto actualizar una rama remota si la operación perdería historia no incorporada."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué finalidad tiene una pull request?",
+        "option_a": "Sustituir el repositorio local (caso previsto) (caso concreto) (supuesto dado)",
+        "option_b": "Crear automáticamente una base de datos (caso previsto) (caso concreto)",
+        "option_c": "Eliminar la historia de la rama (caso previsto) (caso concreto) (supuesto dado)",
+        "option_d": "Revisar, discutir y validar cambios antes de integrarlos en una rama objetivo",
+        "correct": "D",
+        "explanation": "Las pull requests proporcionan revisión colaborativa y comprobaciones antes de fusionar cambios."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué práctica caracteriza un flujo basado en ramas cortas?",
+        "option_a": "Evitar toda automatización (caso previsto) (caso concreto)",
+        "option_b": "Publicar directamente sin revisión siempre (caso previsto)",
+        "option_c": "Integrar cambios pequeños y frecuentes en una rama principal protegida",
+        "option_d": "Mantener ramas divergentes indefinidamente (caso previsto)",
+        "correct": "C",
+        "explanation": "GitHub Flow promueve ramas de trabajo enfocadas, revisión y despliegue desde cambios integrables."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué propósito tiene una rama de tema?",
+        "option_a": "Sustituir todos los remotos (caso previsto)",
+        "option_b": "Aislar un cambio o funcionalidad del trabajo estable",
+        "option_c": "Representar un certificado TLS (caso previsto)",
+        "option_d": "Guardar solo objetos binarios (caso previsto)",
+        "correct": "B",
+        "explanation": "Una topic branch permite desarrollar una unidad de trabajo y revisarla antes de integrarla."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué rama se protege normalmente en un flujo de integración?",
+        "option_a": "La rama principal o de producción",
+        "option_b": "La rama temporal de cada desarrollador",
+        "option_c": "La referencia FETCH_HEAD (caso previsto)",
+        "option_d": "El stash más reciente (caso previsto)",
+        "correct": "A",
+        "explanation": "La rama estable suele protegerse para exigir revisión, comprobaciones y reglas de integración."
+    },
+    {
+        "topic_num": 35,
+        "question": "¿Qué operación actualiza una rama remota con commits locales?",
+        "option_a": "git fetch",
+        "option_b": "git status",
+        "option_c": "git stash",
+        "option_d": "git push",
+        "correct": "D",
+        "explanation": "push transfiere objetos y actualiza la referencia remota si la política lo permite."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué finalidad general presenta SedipuAlba en su portal oficial?",
+        "option_a": "Ofrecer una plataforma para la administración electrónica de entidades públicas",
+        "option_b": "Gestionar exclusivamente repositorios Git (caso previsto) (caso concreto)",
+        "option_c": "Prestar servicios de banca privada (caso previsto) (caso concreto) (supuesto dado)",
+        "option_d": "Sustituir los registros civiles (caso previsto) (caso concreto) (supuesto dado)",
+        "correct": "A",
+        "explanation": "La información pública del portal describe SedipuAlba como solución de administración electrónica para entidades públicas."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué recurso reúne manuales y materiales públicos de SedipuAlba?",
+        "option_a": "El padrón municipal (caso previsto)",
+        "option_b": "La tabla de auditoría de PostgreSQL",
+        "option_c": "El registro de certificados TLS",
+        "option_d": "El índice oficial de documentación",
+        "correct": "D",
+        "explanation": "El portal de documentación organiza manuales y materiales públicos de la plataforma."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué función general cumple una sede electrónica?",
+        "option_a": "Sustituir toda identificación (caso previsto) (caso concreto) (supuesto dado)",
+        "option_b": "Crear ramas de código (caso previsto) (caso concreto) (supuesto dado)",
+        "option_c": "Permitir la relación electrónica con una Administración en trámites y servicios",
+        "option_d": "Servir únicamente imágenes públicas (caso previsto) (caso concreto)",
+        "correct": "C",
+        "explanation": "La sede electrónica es la dirección disponible para que la ciudadanía se relacione electrónicamente con la Administración."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué mecanismo de una sede permite comprobar un documento o justificante?",
+        "option_a": "Una consulta SQL local (caso previsto)",
+        "option_b": "La validación mediante el código de verificación",
+        "option_c": "El hash de una contraseña privada (caso previsto)",
+        "option_d": "El número de puerto HTTP (caso previsto)",
+        "correct": "B",
+        "explanation": "La sede ofrece un servicio de validación que usa el código asociado al documento para comprobar su autenticidad."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué canal permite presentar solicitudes y escritos de forma electrónica?",
+        "option_a": "El registro electrónico de la sede",
+        "option_b": "El menú de noticias (caso previsto)",
+        "option_c": "El visor de estilos CSS",
+        "option_d": "La papelera del navegador",
+        "correct": "A",
+        "explanation": "El registro electrónico recibe solicitudes, escritos y comunicaciones dirigidos a la Administración."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué debe comprobar la ciudadanía antes de realizar un trámite en una sede?",
+        "option_a": "Solo el color de la página (caso previsto) (caso concreto) (supuesto dado)",
+        "option_b": "La versión de PostgreSQL local (caso previsto) (caso concreto) (supuesto dado)",
+        "option_c": "El nombre de una rama Git (caso previsto) (caso concreto) (supuesto dado)",
+        "option_d": "La información del trámite, los requisitos y el medio de identificación exigido",
+        "correct": "D",
+        "explanation": "La ficha del trámite informa de requisitos y acceso, lo que permite preparar correctamente la presentación."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué documento de una sede informa sobre sus características y funcionamiento?",
+        "option_a": "Un commit de la plataforma (caso previsto)",
+        "option_b": "Una tabla de usuarios privada (caso previsto)",
+        "option_c": "La información o carta de servicios de la sede",
+        "option_d": "Un archivo de configuración del navegador",
+        "correct": "C",
+        "explanation": "La sede publica información institucional y de servicios para explicar su ámbito y funcionamiento."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué principio debe respetar una actuación electrónica de una Administración?",
+        "option_a": "Uso exclusivo de papel (caso previsto) (caso concreto) (supuesto dado)",
+        "option_b": "Identificación, autenticidad, integridad y disponibilidad conforme al marco legal",
+        "option_c": "Anonimato obligatorio en todo trámite (caso previsto) (caso concreto)",
+        "option_d": "Ausencia de trazabilidad (caso previsto) (caso concreto) (supuesto dado)",
+        "correct": "B",
+        "explanation": "La actuación administrativa electrónica debe aplicar garantías de confianza y seguridad previstas por la normativa."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué utilidad tiene el justificante de registro electrónico?",
+        "option_a": "Acreditar la presentación con sus datos y fecha",
+        "option_b": "Modificar una resolución ya firme (caso previsto)",
+        "option_c": "Sustituir el documento aportado (caso previsto)",
+        "option_d": "Conceder automáticamente la solicitud",
+        "correct": "A",
+        "explanation": "El justificante permite acreditar qué se presentó y cuándo se registró la entrada."
+    },
+    {
+        "topic_num": 36,
+        "question": "¿Qué fuente es preferente para verificar una característica pública de SedipuAlba?",
+        "option_a": "Un comentario sin referencia (caso previsto)",
+        "option_b": "Una captura anónima (caso previsto)",
+        "option_c": "Una respuesta generada sin fuente",
+        "option_d": "El portal o manual oficial correspondiente",
+        "correct": "D",
+        "explanation": "La documentación oficial es la evidencia primaria para describir plataforma, sede y módulos publicados."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué unidad de trabajo gestiona SEGEX?",
+        "option_a": "El expediente electrónico (caso previsto)",
+        "option_b": "La hoja de estilos del portal (caso previsto)",
+        "option_c": "La conexión de base de datos del ciudadano",
+        "option_d": "El buzón de correo privado (caso previsto)",
+        "correct": "A",
+        "explanation": "El manual de SEGEX presenta el expediente como unidad central de tramitación."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué acción permite iniciar la tramitación de un expediente en SEGEX?",
+        "option_a": "Crear un repositorio Git (caso previsto) (caso concreto)",
+        "option_b": "Emitir una moneda electrónica (caso previsto) (caso concreto)",
+        "option_c": "Cambiar el DNS de la sede (caso previsto) (caso concreto)",
+        "option_d": "Dar de alta o iniciar un expediente conforme al procedimiento",
+        "correct": "D",
+        "explanation": "El tramitador inicia el expediente mediante el alta asociada al procedimiento y sus datos."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué módulo se ocupa de la firma y custodia documental según su manual?",
+        "option_a": "SECOIN (caso previsto)",
+        "option_b": "SECA exclusivamente",
+        "option_c": "SEFYCU (caso previsto)",
+        "option_d": "SERES (caso previsto)",
+        "correct": "C",
+        "explanation": "El manual de SEFYCU describe su uso para firma y custodia de documentos administrativos."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué módulo corresponde al registro general electrónico?",
+        "option_a": "SECOIN",
+        "option_b": "SERES",
+        "option_c": "SEFYCU",
+        "option_d": "SEGEX",
+        "correct": "B",
+        "explanation": "El manual SERES documenta el Registro General Electrónico y sus operaciones."
+    },
+    {
+        "topic_num": 37,
+        "question": "En los manuales de SedipuAlba, ¿qué finalidad se asocia a SECOIN?",
+        "option_a": "SECOIN",
+        "option_b": "SEGEX",
+        "option_c": "SERES",
+        "option_d": "SEFACE",
+        "correct": "A",
+        "explanation": "La documentación de SECOIN describe funciones vinculadas al control interno electrónico."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué módulo se relaciona con la gestión de contratos menores?",
+        "option_a": "SEFYCU",
+        "option_b": "SERES",
+        "option_c": "SEFACE",
+        "option_d": "SECA",
+        "correct": "D",
+        "explanation": "El manual SECA trata la gestión de contratos menores integrada en el entorno de expedientes."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué utilidad tiene una prelación de firmas en un circuito documental?",
+        "option_a": "Eliminar la trazabilidad (caso previsto)",
+        "option_b": "Crear un usuario sin permisos (caso previsto)",
+        "option_c": "Ordenar quién debe firmar y en qué secuencia",
+        "option_d": "Cambiar el contenido firmado automáticamente",
+        "correct": "C",
+        "explanation": "La prelación organiza el orden de las firmas configuradas para un documento o expediente."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué debe conservar un módulo de tramitación para poder revisar una actuación?",
+        "option_a": "Un archivo sin fecha (caso previsto) (caso concreto)",
+        "option_b": "La trazabilidad de acciones, documentos y estados",
+        "option_c": "Solo la última pantalla (caso previsto)",
+        "option_d": "La contraseña del tramitador (caso previsto)",
+        "correct": "B",
+        "explanation": "La trazabilidad permite reconstruir quién actuó, sobre qué elemento y en qué momento."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué criterio debe aplicarse al describir un módulo sin manual público verificable?",
+        "option_a": "Mantener la afirmación en cuarentena hasta disponer de fuente autorizada",
+        "option_b": "Inferir sus funciones por el nombre (caso previsto) (caso concreto)",
+        "option_c": "Copiar una descripción no oficial (caso previsto) (caso concreto)",
+        "option_d": "Publicar la hipótesis como hecho (caso previsto) (caso concreto)",
+        "correct": "A",
+        "explanation": "La política de fuentes del proyecto prohíbe inventar comportamiento de módulos sin evidencia primaria."
+    },
+    {
+        "topic_num": 37,
+        "question": "¿Qué relación puede existir entre SEGEX y SEFYCU?",
+        "option_a": "Ambos son motores de base de datos sin documentos (caso previsto) (caso concreto)",
+        "option_b": "SEFYCU sustituye siempre a la sede (caso previsto) (caso concreto) (supuesto dado)",
+        "option_c": "SEGEX solo gestiona hojas de cálculo (caso previsto) (caso concreto) (supuesto dado)",
+        "option_d": "SEGEX tramita el expediente y SEFYCU puede gestionar firma y custodia de documentos",
+        "correct": "D",
+        "explanation": "Las funciones descritas en los manuales permiten distinguir tramitación de expediente y servicios documentales de firma y custodia."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué principio del Esquema Nacional de Interoperabilidad favorece la cooperación entre Administraciones?",
+        "option_a": "La interoperabilidad (caso previsto)",
+        "option_b": "La dependencia de un formato propietario único",
+        "option_c": "La ausencia de estándares (caso previsto)",
+        "option_d": "La duplicación aislada de registros",
+        "correct": "A",
+        "explanation": "El ENI establece principios y normas para que los sistemas y servicios públicos puedan intercambiar información."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué deben favorecer los estándares abiertos en la Administración?",
+        "option_a": "El bloqueo a un proveedor (caso previsto)",
+        "option_b": "La imposibilidad de reutilizar datos (caso previsto)",
+        "option_c": "La supresión de metadatos (caso previsto)",
+        "option_d": "La interoperabilidad y la independencia tecnológica",
+        "correct": "D",
+        "explanation": "El ENI promueve estándares abiertos para evitar dependencias indebidas y facilitar el intercambio."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué deben conservar los documentos electrónicos durante su ciclo de vida?",
+        "option_a": "Únicamente una copia impresa (caso previsto) (caso concreto)",
+        "option_b": "El contenido sin metadatos (caso previsto) (caso concreto)",
+        "option_c": "Su autenticidad, integridad, disponibilidad y trazabilidad",
+        "option_d": "Solo su nombre de archivo (caso previsto) (caso concreto)",
+        "correct": "C",
+        "explanation": "Las normas de documento y expediente electrónico exigen mantener garantías y metadatos durante el ciclo de vida."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué finalidad tiene un modelo de datos común de intercambio?",
+        "option_a": "Sustituir los procedimientos administrativos (caso previsto) (caso concreto)",
+        "option_b": "Facilitar que distintos sistemas interpreten de forma compatible la información",
+        "option_c": "Cifrar todos los datos con una clave común (caso previsto) (caso concreto)",
+        "option_d": "Impedir la reutilización (caso previsto) (caso concreto) (supuesto dado)",
+        "correct": "B",
+        "explanation": "Los modelos comunes definen estructuras, significados y codificaciones para intercambiar datos."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué debe hacer una Administración que reutiliza una aplicación pública?",
+        "option_a": "Respetar las condiciones de reutilización y mantener la información necesaria para su uso",
+        "option_b": "Eliminar la licencia y la trazabilidad (caso previsto) (caso concreto) (supuesto dado)",
+        "option_c": "Cambiar toda la semántica sin documentarla (caso previsto) (caso concreto) (supuesto dado)",
+        "option_d": "Ocultar el código de integración (caso previsto) (caso concreto) (supuesto dado)",
+        "correct": "A",
+        "explanation": "El ENI fomenta la reutilización ordenada de aplicaciones y exige atender sus condiciones y documentación."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué documento describe la estructura y metadatos de un expediente electrónico?",
+        "option_a": "El registro DNS",
+        "option_b": "El archivo robots.txt",
+        "option_c": "La tabla de sesiones",
+        "option_d": "El índice electrónico",
+        "correct": "D",
+        "explanation": "El índice electrónico relaciona los documentos del expediente y permite preservar su integridad y orden."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué operación convierte un documento en papel en un documento electrónico con garantías?",
+        "option_a": "Cambiar la extensión del archivo (caso previsto)",
+        "option_b": "Enviar un correo sin firma (caso previsto) (caso concreto)",
+        "option_c": "La digitalización conforme a la norma técnica aplicable",
+        "option_d": "Tomar una fotografía sin controles (caso previsto)",
+        "correct": "C",
+        "explanation": "La digitalización debe seguir requisitos técnicos que permitan obtener una copia auténtica e íntegra."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué función cumple la política de firma electrónica?",
+        "option_a": "Impedir cualquier validación (caso previsto) (caso concreto)",
+        "option_b": "Establecer criterios y reglas para crear, validar y conservar firmas",
+        "option_c": "Sustituir el expediente por una contraseña (caso previsto)",
+        "option_d": "Eliminar la identificación del firmante (caso previsto) (caso concreto)",
+        "correct": "B",
+        "explanation": "Las políticas de firma definen perfiles, formatos, validación y conservación de evidencias."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué derecho de la persona interesada facilita la interoperabilidad de datos?",
+        "option_a": "No aportar documentos que ya obren en poder de la Administración cuando proceda",
+        "option_b": "Exigir cualquier dato sin finalidad (caso previsto) (caso concreto)",
+        "option_c": "Impedir toda consulta entre órganos (caso previsto) (caso concreto)",
+        "option_d": "Eliminar los registros electrónicos (caso previsto) (caso concreto)",
+        "correct": "A",
+        "explanation": "La normativa administrativa permite recabar datos ya disponibles conforme a las garantías legales, reduciendo cargas."
+    },
+    {
+        "topic_num": 38,
+        "question": "¿Qué evidencia debe mantenerse para auditar un intercambio de datos?",
+        "option_a": "Solo el tamaño del archivo (caso previsto) (caso concreto)",
+        "option_b": "La contraseña de todos los usuarios (caso previsto) (caso concreto)",
+        "option_c": "Un registro sin fecha (caso previsto) (caso concreto) (supuesto dado)",
+        "option_d": "La trazabilidad de la solicitud, respuesta, finalidad y participantes",
+        "correct": "D",
+        "explanation": "La trazabilidad permite comprobar qué se solicitó, con qué finalidad y qué respuesta se obtuvo."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué finalidad general tiene Cl@ve?",
+        "option_a": "Ofrecer identificación, autenticación y firma electrónica común ante las Administraciones",
+        "option_b": "Gestionar tablas PostgreSQL (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "option_c": "Sustituir todos los registros contables (caso previsto) (caso concreto) (supuesto dado)",
+        "option_d": "Servir páginas estáticas sin identificación (caso previsto) (caso concreto) (supuesto dado)",
+        "correct": "A",
+        "explanation": "La información oficial presenta Cl@ve como sistema común de identificación y autenticación para servicios públicos."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué diferencia existe entre Cl@ve PIN y Cl@ve Permanente?",
+        "option_a": "Son dos nombres del mismo certificado (caso previsto)",
+        "option_b": "Cl@ve PIN solo sirve para firmar documentos físicos (caso previsto)",
+        "option_c": "Cl@ve Permanente no requiere identificación previa (caso previsto)",
+        "option_d": "Son modalidades con mecanismos y usos de autenticación diferentes",
+        "correct": "D",
+        "explanation": "La documentación oficial diferencia modalidades y niveles de uso según el servicio y el registro del usuario."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué es una factura electrónica?",
+        "option_a": "Un mensaje privado sin autenticidad (caso previsto) (caso concreto) (supuesto dado)",
+        "option_b": "Un presupuesto sin emisor (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "option_c": "Una factura expedida y recibida en formato electrónico que cumple los requisitos legales",
+        "option_d": "Una imagen sin datos estructurados siempre (caso previsto) (caso concreto) (supuesto dado)",
+        "correct": "C",
+        "explanation": "La Ley 25/2013 y el portal Facturae regulan la factura electrónica como documento con requisitos de contenido y formato."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué formato estructurado utiliza habitualmente Facturae?",
+        "option_a": "Un PDF sin estructura en todos los casos",
+        "option_b": "Un XML conforme al formato Facturae",
+        "option_c": "Un archivo SQL (caso previsto)",
+        "option_d": "Un documento CSS (caso previsto)",
+        "correct": "B",
+        "explanation": "Facturae define un formato XML estructurado para intercambiar facturas electrónicas."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué función cumple la firma en una factura electrónica?",
+        "option_a": "Acreditar origen e integridad conforme al perfil de firma aplicable",
+        "option_b": "Sustituir el contenido económico (caso previsto) (caso concreto)",
+        "option_c": "Ocultar al emisor (caso previsto) (caso concreto) (supuesto dado)",
+        "option_d": "Eliminar la fecha de emisión (caso previsto) (caso concreto)",
+        "correct": "A",
+        "explanation": "La firma electrónica aporta garantías de autenticidad e integridad del documento firmado."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué debe contener un registro contable de facturas para facilitar su seguimiento?",
+        "option_a": "Solo un nombre abreviado (caso previsto) (caso concreto) (supuesto dado)",
+        "option_b": "Una contraseña del proveedor (caso previsto) (caso concreto) (supuesto dado)",
+        "option_c": "El código fuente de la aplicación (caso previsto) (caso concreto) (supuesto dado)",
+        "option_d": "Datos que permitan identificar la factura, el proveedor, el importe y su tramitación",
+        "correct": "D",
+        "explanation": "La Ley 25/2013 vincula el registro contable con la anotación, seguimiento y control de facturas."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué principio exige la contratación pública al definir sus condiciones?",
+        "option_a": "Preferencia por un proveedor sin justificación (caso previsto) (caso concreto)",
+        "option_b": "Exclusión de la competencia (caso previsto) (caso concreto) (supuesto dado)",
+        "option_c": "Libertad de acceso, publicidad y transparencia, igualdad y no discriminación",
+        "option_d": "Adjudicación sin publicidad en todo caso (caso previsto) (caso concreto)",
+        "correct": "C",
+        "explanation": "La Ley 9/2017 recoge esos principios de contratación pública y libre competencia."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué finalidad tiene la Carpeta Ciudadana cuando se integra con servicios públicos?",
+        "option_a": "Almacenar claves privadas sin protección (caso previsto) (caso concreto) (supuesto dado)",
+        "option_b": "Facilitar el acceso de la persona a información y trámites propios en distintos servicios",
+        "option_c": "Crear una identidad anónima universal (caso previsto) (caso concreto) (supuesto dado)",
+        "option_d": "Sustituir toda sede electrónica (caso previsto) (caso concreto) (supuesto dado)",
+        "correct": "B",
+        "explanation": "La carpeta centraliza acceso a información y servicios de la ciudadanía mediante identificación."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué garantía debe acompañar a una consulta de datos entre Administraciones?",
+        "option_a": "Base jurídica, finalidad y trazabilidad del acceso",
+        "option_b": "Acceso sin control por defecto (caso previsto)",
+        "option_c": "Ausencia de identificación del órgano (caso previsto)",
+        "option_d": "Conservación ilimitada sin finalidad (caso previsto)",
+        "correct": "A",
+        "explanation": "La interoperabilidad no elimina las garantías de protección de datos, competencia, finalidad y registro de actuaciones."
+    },
+    {
+        "topic_num": 39,
+        "question": "¿Qué debe hacer un candidato antes de afirmar cómo funciona un servicio compartido bloqueado?",
+        "option_a": "Inferirlo por su acrónimo (caso previsto) (caso concreto) (supuesto dado)",
+        "option_b": "Usar una publicación anónima (caso previsto) (caso concreto) (supuesto dado)",
+        "option_c": "Presentarlo como comportamiento garantizado (caso previsto) (caso concreto)",
+        "option_d": "Mantener la afirmación en cuarentena hasta verificar una fuente oficial accesible",
+        "correct": "D",
+        "explanation": "El registro de fuentes del proyecto mantiene bloqueadas las afirmaciones de implementación específica sin evidencia primaria."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué principio WCAG exige que la información y los componentes puedan presentarse a los usuarios?",
+        "option_a": "Perceptible",
+        "option_b": "Operable",
+        "option_c": "Comprensible",
+        "option_d": "Robusto",
+        "correct": "A",
+        "explanation": "Perceptible es el primer principio de WCAG y exige que la información y los componentes puedan percibirse."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué exige el criterio 2.1.1 Keyboard?",
+        "option_a": "Que todo contenido tenga audio (caso previsto)",
+        "option_b": "Que se eliminen los formularios (caso previsto)",
+        "option_c": "Que solo funcione con ratón (caso previsto)",
+        "option_d": "Que toda funcionalidad esté disponible mediante teclado",
+        "correct": "D",
+        "explanation": "Keyboard exige que toda funcionalidad del contenido sea operable mediante una interfaz de teclado."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué nivel de conformidad tiene el criterio 1.4.3 Contrast (Minimum)?",
+        "option_a": "AAA",
+        "option_b": "No tiene nivel",
+        "option_c": "AA",
+        "option_d": "A (caso previsto)",
+        "correct": "C",
+        "explanation": "El criterio 1.4.3 está asignado al nivel AA en WCAG 2.1."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué exige el criterio 1.1.1 Non-text Content?",
+        "option_a": "Usar únicamente texto en mayúsculas (caso previsto) (caso concreto) (supuesto dado)",
+        "option_b": "Una alternativa textual para el contenido no textual, salvo excepciones previstas",
+        "option_c": "Eliminar todas las imágenes (caso previsto) (caso concreto) (supuesto dado)",
+        "option_d": "Añadir audio a cada texto (caso previsto) (caso concreto) (supuesto dado)",
+        "correct": "B",
+        "explanation": "El criterio 1.1.1 exige alternativas textuales que sirvan para un propósito equivalente cuando procede."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué exige el criterio 3.3.1 Error Identification?",
+        "option_a": "Identificar el error y describirlo en texto cuando se detecta",
+        "option_b": "Ocultar todo mensaje de error (caso previsto) (caso concreto)",
+        "option_c": "Bloquear el teclado (caso previsto) (caso concreto)",
+        "option_d": "Recargar la página sin información (caso previsto)",
+        "correct": "A",
+        "explanation": "El criterio 3.3.1 exige que el error se describa al usuario mediante texto."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué exige el criterio 2.4.7 Focus Visible?",
+        "option_a": "Que no exista foco (caso previsto) (caso concreto) (supuesto dado)",
+        "option_b": "Que el foco se mueva sin control (caso previsto) (caso concreto)",
+        "option_c": "Que solo se indique en logs (caso previsto) (caso concreto)",
+        "option_d": "Que el indicador de foco del teclado sea visualmente discernible",
+        "correct": "D",
+        "explanation": "Focus Visible permite identificar visualmente el elemento que tiene el foco del teclado."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué exige el criterio 1.2.2 Captions (Prerecorded)?",
+        "option_a": "Eliminar el audio (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "option_b": "Subtítulos únicamente para contenido en directo (caso previsto) (caso concreto)",
+        "option_c": "Subtítulos para contenido de audio sincronizado pregrabado, salvo las excepciones previstas",
+        "option_d": "Solo una transcripción privada (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "correct": "C",
+        "explanation": "El criterio 1.2.2 establece el requisito de captions para audio pregrabado en contenido multimedia sincronizado."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué debe incluir una declaración de accesibilidad del sector público?",
+        "option_a": "Una promesa sin fecha ni contacto (caso previsto) (caso concreto) (supuesto dado)",
+        "option_b": "Información sobre conformidad, contenido no accesible y mecanismos de contacto y reclamación",
+        "option_c": "Solo el nombre del proveedor (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "option_d": "La contraseña del administrador (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "correct": "B",
+        "explanation": "El Real Decreto 1112/2018 exige una declaración con información de accesibilidad y vías para comunicar problemas."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué principio WCAG exige que el contenido funcione con agentes de usuario actuales y futuros?",
+        "option_a": "Robusto",
+        "option_b": "Perceptible",
+        "option_c": "Operable",
+        "option_d": "Comprensible",
+        "correct": "A",
+        "explanation": "Robusto significa que el contenido puede interpretarse de forma fiable por diversos agentes de usuario y tecnologías de asistencia."
+    },
+    {
+        "topic_num": 40,
+        "question": "¿Qué debe hacer un organismo cuando una excepción por carga desproporcionada afecta a contenido?",
+        "option_a": "Aplicarla automáticamente a todo el sitio (caso previsto) (caso concreto) (supuesto dado)",
+        "option_b": "Ocultar la excepción (caso previsto) (caso concreto) (supuesto dado) (marco citado)",
+        "option_c": "Eliminar la declaración de accesibilidad (caso previsto) (caso concreto) (supuesto dado)",
+        "option_d": "Justificarla y documentarla conforme al procedimiento legal, sin usarla como exención genérica",
+        "correct": "D",
+        "explanation": "El Real Decreto 1112/2018 exige valorar y justificar las excepciones, que no pueden convertirse en una exclusión general."
+    }
+])
+# QUESTION_BANK_SUPPLEMENTAL_TEN_PER_TOPIC_END

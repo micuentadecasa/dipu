@@ -191,8 +191,17 @@ def _best_match(
 ) -> tuple[dict[str, Any] | None, float]:
     best_record = None
     best_score = 0.0
+    candidate_key = key(candidate)
+    candidate_length = len(candidate_key)
     for record in existing:
-        score = 1.0 if key(candidate) == key(record["question"]) else difflib.SequenceMatcher(None, key(candidate), key(record["question"])).ratio()
+        record_key = key(record["question"])
+        record_length = len(record_key)
+        if not candidate_length and not record_length:
+            score = 1.0
+        elif 2 * min(candidate_length, record_length) / max(1, candidate_length + record_length) < threshold:
+            continue
+        else:
+            score = 1.0 if candidate_key == record_key else difflib.SequenceMatcher(None, candidate_key, record_key).ratio()
         if score > best_score:
             best_record, best_score = record, score
     return (best_record if best_score >= threshold else None), best_score

@@ -216,6 +216,31 @@ class RuntimeQuestionBankTests(unittest.TestCase):
         self.assertTrue(all(not answer_length_leakage_errors(record) for record in runtime))
         self.assertTrue(all(record["correct"] in "ABCD" for record in runtime))
 
+    def test_launch_batch_adds_exactly_ten_validated_records_per_topic(self):
+        payload = json.loads(
+            (ROOT / "docs/question-bank/accepted/supplemental-ten-per-topic.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        records = payload["questions"]
+
+        self.assertEqual(payload["state"], "reviewed")
+        self.assertEqual(
+            payload["counts"],
+            {"candidates": 400, "accepted": 400, "rejected": 0, "quarantined": 0},
+        )
+        self.assertEqual(len(records), 400)
+        self.assertEqual(
+            Counter(record["topic_num"] for record in records),
+            Counter({topic_num: 10 for topic_num in range(1, 41)}),
+        )
+        self.assertEqual(len({record["stable_id"] for record in records}), 400)
+        self.assertEqual(
+            len({record["learning_objective_id"] for record in records}), 400
+        )
+        self.assertTrue(all(record["status"] == "validated" for record in records))
+        self.assertTrue(all(not validate_record(record) for record in records))
+
     def test_topic26_expansion_is_complete_balanced_and_validated(self):
         records = []
         for lot_num in range(1, 11):
